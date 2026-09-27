@@ -1,0 +1,49 @@
+name: Dispute a verdict
+description: Tell us a verdict is wrong, with evidence.
+title: "Dispute: <claim id>"
+labels: ["dispute"]
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Claim id
+      description: The id shown on the claim, or the row in the dataset.
+    validations:
+      required: true
+  - type: dropdown
+    id: proposed
+    attributes:
+      label: What should the verdict be?
+      options:
+        - hit
+        - partial
+        - miss
+        - unfalsifiable
+        - persisted
+        - faded
+        - renamed
+        - recycled
+        - covered
+        - partly covered
+        - not covered
+        - ranked high
+        - ranked low
+        - absent
+        - appeared
+        - partly appeared
+        - not yet
+        - I am not sure
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Links to sources, with dates. A dispute without evidence cannot reopen a claim.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation (optional)
+      description: If you represent the publisher of the claim, say so.
