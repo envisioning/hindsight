@@ -109,3 +109,23 @@ Append only. Each entry says what was decided, why, what it costs, and what woul
 **Cost.** No browsable reference pages at launch.
 
 **Overturned by.** Citations of the first release, which trigger the reference pages.
+
+## D10: Grading rule for year-placed forecasts
+
+*Recorded 2026-09-27.*
+
+**Decision.** A forecast that places a technology on a year reads as "this technology becomes mainstream around that year". It is graded:
+
+- `hit`: mainstream adoption within 2 years of the placed year.
+- `partial`: real but niche adoption by the placed year, or mainstream 3 to 5 years off.
+- `miss`: not mainstream within 5 years of the placed year, or abandoned.
+- `unfalsifiable`: the label is too vague to test, with the reason stated.
+- Placements after the current year stay `open`.
+
+A quantitative forecast is a `hit` within 10% of the actual figure for its year, `partial` within 25%, and a `miss` beyond that.
+
+**Why.** The first graded source, Envisioning's own "Envisioning Technology" posters (2011, 2012), states that it shows which technologies "should become mainstream in the coming years". The tolerances give year placements a fair margin without letting a decade-late arrival count as a hit.
+
+**Cost.** "Mainstream" needs evidence of adoption, not of existence. Each verdict must cite adoption data.
+
+**Overturned by.** Low agreement between the two grading agents on what counts as mainstream, which would call for a numeric adoption threshold per category.
