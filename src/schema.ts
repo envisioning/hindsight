@@ -202,6 +202,107 @@ export const SubjectTechnologyLink = z.object({
   created_at: z.string().datetime(),
 });
 
+/**
+ * Numeric grading (D16, D18, D19): one row per claim of a numeric source.
+ * Arithmetic, not judgment: no agent, model or prompt version. `status`
+ * is `graded` only when a forecast and an actual on the same definition exist.
+ */
+export const NumericRule = z.enum(["D18", "D16"]);
+export const NumericErrorUnit = z.enum(["pp", "percent of actual"]);
+export const NumericGrade = z
+  .object({
+    claim_id: Id,
+    source_id: Id,
+    subject_id: Id,
+    /** Measure family, for example "real GDP growth" or "solar capacity". */
+    family: z.string().min(1),
+    edition: z.string().min(1),
+    published: IsoDate,
+    target_year: z.number().int().nullable(),
+    /** The source's own period label when it is not one calendar year, for example a fiscal year "2017-18" or a period "2010-2014". */
+    target_period: z.string().nullable(),
+    /** Years between publication and target: 0 = current year, 1 = next year. */
+    horizon_years: z.number().int().nullable(),
+    /** The source's own horizon label, for example `next_year` or `year_3`. */
+    horizon_label: z.string().nullable(),
+    /** Fed, ECB and BCB: which statistic of the published projections the value is. */
+    statistic: z.string().nullable(),
+    forecast: z.number().nullable(),
+    actual: z.number().nullable(),
+    actual_vintage: z.string().nullable(),
+    unit: z.string().nullable(),
+    rule: NumericRule.nullable(),
+    /** D18: forecast minus actual in percentage points. D16: (forecast minus actual) / |actual| in percent. */
+    error: z.number().nullable(),
+    error_unit: NumericErrorUnit.nullable(),
+    status: z.enum(["graded", "ungradable", "open", "excluded"]),
+    verdict: z.enum(["hit", "partial", "miss"]).nullable(),
+    /** The reason for any status other than `graded`, and every definition caveat of a graded row. */
+    note: z.string(),
+  })
+  .refine(
+    (g) =>
+      (g.status === "graded") ===
+      (g.forecast !== null && g.actual !== null && g.rule !== null && g.error !== null && g.error_unit !== null && g.verdict !== null && g.actual_vintage !== null),
+    { message: "a graded row has forecast, actual, vintage, rule, error and verdict; other rows have no verdict" },
+  )
+  .refine((g) => g.status === "graded" || g.note.length > 0, { message: "a row that is not graded states why" });
+
+export const NumericHorizon = z.enum(["all", "current_year", "next_year", "2_years", "3_to_5_years", "6_to_10_years", "over_10_years", "none"]);
+
+/** Counts and accuracy for a group of numeric grade rows. D11: no rate, bias or MAE below 20 graded rows. */
+export const NumericStats = z
+  .object({
+    n_graded: z.number().int().min(0),
+    hits: z.number().int().min(0),
+    partials: z.number().int().min(0),
+    misses: z.number().int().min(0),
+    ungradable: z.number().int().min(0),
+    open: z.number().int().min(0),
+    excluded: z.number().int().min(0),
+    /** Share of graded rows that are hits. Null below 20 graded rows (D11). */
+    hit_rate: z.number().min(0).max(1).nullable(),
+    /** Wilson 95% interval of `hit_rate` (D11). */
+    hit_rate_ci95: z.tuple([z.number(), z.number()]).nullable(),
+    /** One entry per rule present: mean error (bias) and mean absolute error. Null below 20 rows (D11). */
+    errors: z.array(z.object({ rule: NumericRule, unit: NumericErrorUnit, n: z.number().int().min(0), bias: z.number().nullable(), mae: z.number().nullable() })),
+  })
+  .refine((s) => s.n_graded === s.hits + s.partials + s.misses, { message: "graded = hits + partials + misses" })
+  .refine((s) => (s.n_graded >= 20) === (s.hit_rate !== null && s.hit_rate_ci95 !== null), { message: "a rate is published exactly when n >= 20 (D11)" });
+
+export const NumericSummary = z.object({
+  note: z.string().min(1),
+  min_graded_for_rate: z.literal(20),
+  sources: z.array(
+    z.object({
+      source_id: Id,
+      totals: NumericStats,
+      by_horizon: z.array(z.object({ horizon: NumericHorizon, stats: NumericStats })),
+      by_family: z.array(z.object({ family: z.string().min(1), horizon: NumericHorizon, stats: NumericStats })),
+      by_subject: z.array(z.object({ subject_id: Id, family: z.string().min(1), horizon: NumericHorizon, stats: NumericStats })),
+      by_edition: z.array(z.object({ edition: z.string().min(1), published: IsoDate, stats: NumericStats })),
+    }),
+  ),
+});
+
+/** D17 side-by-side view: same subject, same horizon, sources in alphabetical order. No rank, no total. */
+export const NumericComparison = z.object({
+  note: z.string().min(1),
+  subjects: z.array(
+    z.object({
+      subject_id: Id,
+      horizon: z.enum(["current_year", "next_year"]),
+      caveats: z.array(z.string()),
+      sources: z.array(z.object({ source_id: Id, first_target_year: z.number().int().nullable(), last_target_year: z.number().int().nullable(), stats: NumericStats })),
+      /** The same, restricted to target years that every listed source graded. */
+      common_years: z.object({
+        target_years: z.array(z.number().int()),
+        sources: z.array(z.object({ source_id: Id, stats: NumericStats })),
+      }),
+    }),
+  ),
+});
+
 export type Source = z.infer<typeof Source>;
 export type SourceEdition = z.infer<typeof SourceEdition>;
 export type Institution = z.infer<typeof Institution>;
@@ -216,3 +317,9 @@ export type Evidence = z.infer<typeof Evidence>;
 export type VerdictRow = z.infer<typeof VerdictRow>;
 export type Revision = z.infer<typeof Revision>;
 export type SubjectTechnologyLink = z.infer<typeof SubjectTechnologyLink>;
+export type NumericRule = z.infer<typeof NumericRule>;
+export type NumericGrade = z.infer<typeof NumericGrade>;
+export type NumericHorizon = z.infer<typeof NumericHorizon>;
+export type NumericStats = z.infer<typeof NumericStats>;
+export type NumericSummary = z.infer<typeof NumericSummary>;
+export type NumericComparison = z.infer<typeof NumericComparison>;

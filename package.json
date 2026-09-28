@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit",
     "build": "tsc",
     "manifest": "node scripts/manifest.mjs",
-    "normalize": "node src/normalize/index.ts"
+    "normalize": "node src/normalize/index.ts",
+    "grade:numeric": "node src/grade/numeric.ts"
   },
   "dependencies": {
     "zod": "^3.25.76"

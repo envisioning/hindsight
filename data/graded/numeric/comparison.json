@@ -1,0 +1,2876 @@
+{
+ "note": "D17: same subject, same horizon, sources in alphabetical order. No rank and no total score. Intervals that overlap mean the sources cannot be told apart. common_years restricts each source to the target years that all listed sources graded.",
+ "subjects": [
+  {
+   "subject_id": "brazil-real-gdp-growth",
+   "horizon": "current_year",
+   "caveats": [
+    "BCB Focus values are the median of market forecasts, sampled quarterly; the others are institutional forecasts."
+   ],
+   "sources": [
+    {
+     "source_id": "bcb-focus",
+     "first_target_year": 1999,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 106,
+      "hits": 52,
+      "partials": 23,
+      "misses": 31,
+      "ungradable": 0,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": 0.4906,
+      "hit_rate_ci95": [
+       0.3974,
+       0.5844
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 106,
+        "bias": -0.381,
+        "mae": 0.789
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1990,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 72,
+      "hits": 32,
+      "partials": 10,
+      "misses": 30,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.4444,
+      "hit_rate_ci95": [
+       0.3354,
+       0.5591
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 72,
+        "bias": -0.347,
+        "mae": 1.12
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2015,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 21,
+      "hits": 11,
+      "partials": 3,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5238,
+      "hit_rate_ci95": [
+       0.3237,
+       0.7166
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 21,
+        "bias": -0.865,
+        "mae": 0.976
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2006,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 35,
+      "hits": 11,
+      "partials": 8,
+      "misses": 16,
+      "ungradable": 0,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": 0.3143,
+      "hit_rate_ci95": [
+       0.1855,
+       0.4798
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 35,
+        "bias": -0.141,
+        "mae": 1.372
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "bcb-focus",
+      "stats": {
+       "n_graded": 44,
+       "hits": 25,
+       "partials": 5,
+       "misses": 14,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5682,
+       "hit_rate_ci95": [
+        0.4222,
+        0.7032
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 44,
+         "bias": -0.347,
+         "mae": 0.822
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 22,
+       "hits": 12,
+       "partials": 2,
+       "misses": 8,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5455,
+       "hit_rate_ci95": [
+        0.3466,
+        0.7308
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 22,
+         "bias": -0.473,
+         "mae": 0.911
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 21,
+       "hits": 11,
+       "partials": 3,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5238,
+       "hit_rate_ci95": [
+        0.3237,
+        0.7166
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 21,
+         "bias": -0.865,
+         "mae": 0.976
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 22,
+       "hits": 5,
+       "partials": 5,
+       "misses": 12,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.2273,
+       "hit_rate_ci95": [
+        0.1012,
+        0.4344
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 22,
+         "bias": -0.237,
+         "mae": 1.604
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "brazil-real-gdp-growth",
+   "horizon": "next_year",
+   "caveats": [
+    "BCB Focus values are the median of market forecasts, sampled quarterly; the others are institutional forecasts."
+   ],
+   "sources": [
+    {
+     "source_id": "bcb-focus",
+     "first_target_year": 2000,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 102,
+      "hits": 17,
+      "partials": 19,
+      "misses": 66,
+      "ungradable": 0,
+      "open": 6,
+      "excluded": 0,
+      "hit_rate": 0.1667,
+      "hit_rate_ci95": [
+       0.1067,
+       0.2508
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 102,
+        "bias": 0.416,
+        "mae": 1.902
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1991,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 70,
+      "hits": 13,
+      "partials": 7,
+      "misses": 50,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.1857,
+      "hit_rate_ci95": [
+       0.1119,
+       0.2923
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 70,
+        "bias": 0.437,
+        "mae": 2.055
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2016,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 19,
+      "hits": 4,
+      "partials": 2,
+      "misses": 13,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 19,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2007,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 33,
+      "hits": 7,
+      "partials": 3,
+      "misses": 23,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.2121,
+      "hit_rate_ci95": [
+       0.1068,
+       0.3775
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 33,
+        "bias": 1.28,
+        "mae": 2.288
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "bcb-focus",
+      "stats": {
+       "n_graded": 40,
+       "hits": 8,
+       "partials": 6,
+       "misses": 26,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.2,
+       "hit_rate_ci95": [
+        0.105,
+        0.3476
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 40,
+         "bias": 0.208,
+         "mae": 1.859
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 20,
+       "hits": 5,
+       "partials": 1,
+       "misses": 14,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.25,
+       "hit_rate_ci95": [
+        0.1119,
+        0.4687
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 20,
+         "bias": 0.193,
+         "mae": 1.829
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 19,
+       "hits": 4,
+       "partials": 2,
+       "misses": 13,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 19,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 20,
+       "hits": 6,
+       "partials": 2,
+       "misses": 12,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.3,
+       "hit_rate_ci95": [
+        0.1455,
+        0.519
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 20,
+         "bias": 0.51,
+         "mae": 1.898
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "china-real-gdp-growth",
+   "horizon": "current_year",
+   "caveats": [],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1990,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 72,
+      "hits": 35,
+      "partials": 6,
+      "misses": 31,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.4861,
+      "hit_rate_ci95": [
+       0.3743,
+       0.5993
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 72,
+        "bias": -1.17,
+        "mae": 1.307
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2015,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 21,
+      "hits": 18,
+      "partials": 1,
+      "misses": 2,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.8571,
+      "hit_rate_ci95": [
+       0.6536,
+       0.9502
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 21,
+        "bias": -0.352,
+        "mae": 0.513
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2006,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 35,
+      "hits": 22,
+      "partials": 4,
+      "misses": 9,
+      "ungradable": 0,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": 0.6286,
+      "hit_rate_ci95": [
+       0.4634,
+       0.7683
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 35,
+        "bias": -0.064,
+        "mae": 0.659
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 22,
+       "hits": 18,
+       "partials": 1,
+       "misses": 3,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.8182,
+       "hit_rate_ci95": [
+        0.6148,
+        0.9269
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 22,
+         "bias": -0.223,
+         "mae": 0.367
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 21,
+       "hits": 18,
+       "partials": 1,
+       "misses": 2,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.8571,
+       "hit_rate_ci95": [
+        0.6536,
+        0.9502
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 21,
+         "bias": -0.352,
+         "mae": 0.513
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 22,
+       "hits": 16,
+       "partials": 1,
+       "misses": 5,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.7273,
+       "hit_rate_ci95": [
+        0.5185,
+        0.8685
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 22,
+         "bias": 0.044,
+         "mae": 0.628
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "china-real-gdp-growth",
+   "horizon": "next_year",
+   "caveats": [],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1991,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 70,
+      "hits": 20,
+      "partials": 13,
+      "misses": 37,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.2857,
+      "hit_rate_ci95": [
+       0.1932,
+       0.4005
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 70,
+        "bias": -1.464,
+        "mae": 2.092
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2016,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 19,
+      "hits": 11,
+      "partials": 3,
+      "misses": 5,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 19,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2007,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 33,
+      "hits": 13,
+      "partials": 11,
+      "misses": 9,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.3939,
+      "hit_rate_ci95": [
+       0.2468,
+       0.5632
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 33,
+        "bias": 0.075,
+        "mae": 1.064
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 20,
+       "hits": 7,
+       "partials": 9,
+       "misses": 4,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.35,
+       "hit_rate_ci95": [
+        0.1812,
+        0.5671
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 20,
+         "bias": 0.275,
+         "mae": 1.055
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 19,
+       "hits": 11,
+       "partials": 3,
+       "misses": 5,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 19,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 20,
+       "hits": 12,
+       "partials": 2,
+       "misses": 6,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.6,
+       "hit_rate_ci95": [
+        0.3866,
+        0.7812
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 20,
+         "bias": 0.222,
+         "mae": 1.065
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "euro-area-real-gdp-growth",
+   "horizon": "current_year",
+   "caveats": [
+    "OECD 'Euro area' is the euro area members of the OECD (EA16/EA17), not the full euro area.",
+    "The ECB projects working-day-adjusted GDP; its actual (Eurostat) is not calendar adjusted."
+   ],
+   "sources": [
+    {
+     "source_id": "ecb-projections",
+     "first_target_year": 2000,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 101,
+      "hits": 64,
+      "partials": 22,
+      "misses": 15,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.6337,
+      "hit_rate_ci95": [
+       0.5364,
+       0.7211
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 101,
+        "bias": -0.189,
+        "mae": 0.623
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 2000,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 51,
+      "hits": 27,
+      "partials": 16,
+      "misses": 8,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5294,
+      "hit_rate_ci95": [
+       0.3952,
+       0.6595
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 51,
+        "bias": -0.307,
+        "mae": 0.581
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2013,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 23,
+      "hits": 16,
+      "partials": 2,
+      "misses": 5,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.6957,
+      "hit_rate_ci95": [
+       0.4913,
+       0.844
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 23,
+        "bias": -0.622,
+        "mae": 0.723
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 1999,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 42,
+      "hits": 19,
+      "partials": 12,
+      "misses": 11,
+      "ungradable": 0,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": 0.4524,
+      "hit_rate_ci95": [
+       0.3122,
+       0.6005
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 42,
+        "bias": -0.256,
+        "mae": 0.885
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "ecb-projections",
+      "stats": {
+       "n_graded": 52,
+       "hits": 31,
+       "partials": 13,
+       "misses": 8,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5962,
+       "hit_rate_ci95": [
+        0.4607,
+        0.7184
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 52,
+         "bias": -0.34,
+         "mae": 0.717
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 26,
+       "hits": 14,
+       "partials": 8,
+       "misses": 4,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5385,
+       "hit_rate_ci95": [
+        0.3546,
+        0.7124
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 26,
+         "bias": -0.498,
+         "mae": 0.613
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 23,
+       "hits": 16,
+       "partials": 2,
+       "misses": 5,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.6957,
+       "hit_rate_ci95": [
+        0.4913,
+        0.844
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 23,
+         "bias": -0.622,
+         "mae": 0.723
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 26,
+       "hits": 15,
+       "partials": 4,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5769,
+       "hit_rate_ci95": [
+        0.3895,
+        0.7446
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 26,
+         "bias": -0.346,
+         "mae": 0.983
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "euro-area-real-gdp-growth",
+   "horizon": "next_year",
+   "caveats": [
+    "OECD 'Euro area' is the euro area members of the OECD (EA16/EA17), not the full euro area.",
+    "The ECB projects working-day-adjusted GDP; its actual (Eurostat) is not calendar adjusted."
+   ],
+   "sources": [
+    {
+     "source_id": "ecb-projections",
+     "first_target_year": 2001,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 97,
+      "hits": 39,
+      "partials": 18,
+      "misses": 40,
+      "ungradable": 0,
+      "open": 7,
+      "excluded": 0,
+      "hit_rate": 0.4021,
+      "hit_rate_ci95": [
+       0.31,
+       0.5016
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 97,
+        "bias": 0.586,
+        "mae": 1.39
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 2001,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 49,
+      "hits": 20,
+      "partials": 6,
+      "misses": 23,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.4082,
+      "hit_rate_ci95": [
+       0.2822,
+       0.5475
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 49,
+        "bias": 0.63,
+        "mae": 1.35
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2014,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 21,
+      "hits": 11,
+      "partials": 3,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.5238,
+      "hit_rate_ci95": [
+       0.3237,
+       0.7166
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 21,
+        "bias": 0.49,
+        "mae": 1.313
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2000,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 40,
+      "hits": 15,
+      "partials": 8,
+      "misses": 17,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.375,
+      "hit_rate_ci95": [
+       0.2422,
+       0.5297
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 40,
+        "bias": 0.647,
+        "mae": 1.515
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "ecb-projections",
+      "stats": {
+       "n_graded": 48,
+       "hits": 30,
+       "partials": 7,
+       "misses": 11,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.625,
+       "hit_rate_ci95": [
+        0.4836,
+        0.7478
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 48,
+         "bias": 0.425,
+         "mae": 1.229
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 24,
+       "hits": 14,
+       "partials": 4,
+       "misses": 6,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5833,
+       "hit_rate_ci95": [
+        0.3883,
+        0.7553
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 24,
+         "bias": 0.491,
+         "mae": 1.142
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 21,
+       "hits": 11,
+       "partials": 3,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5238,
+       "hit_rate_ci95": [
+        0.3237,
+        0.7166
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 21,
+         "bias": 0.49,
+         "mae": 1.313
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 24,
+       "hits": 11,
+       "partials": 6,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.4583,
+       "hit_rate_ci95": [
+        0.2789,
+        0.6493
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 24,
+         "bias": 0.341,
+         "mae": 1.35
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "india-real-gdp-growth",
+   "horizon": "current_year",
+   "caveats": [
+    "World Bank India rows are graded only for 2023 to 2025 (the only fiscal-year actuals captured)."
+   ],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1990,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 72,
+      "hits": 10,
+      "partials": 18,
+      "misses": 44,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.1389,
+      "hit_rate_ci95": [
+       0.0772,
+       0.2371
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 72,
+        "bias": -0.088,
+        "mae": 1.646
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2015,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 21,
+      "hits": 4,
+      "partials": 9,
+      "misses": 8,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.1905,
+      "hit_rate_ci95": [
+       0.0767,
+       0.4
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 21,
+        "bias": -0.352,
+        "mae": 1.109
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2023,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 6,
+      "hits": 1,
+      "partials": 4,
+      "misses": 1,
+      "ungradable": 29,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 6,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 6,
+       "hits": 2,
+       "partials": 2,
+       "misses": 2,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 6,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 6,
+       "hits": 1,
+       "partials": 3,
+       "misses": 2,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 6,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 6,
+       "hits": 1,
+       "partials": 4,
+       "misses": 1,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 6,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "india-real-gdp-growth",
+   "horizon": "next_year",
+   "caveats": [
+    "World Bank India rows are graded only for 2023 to 2025 (the only fiscal-year actuals captured)."
+   ],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1991,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 70,
+      "hits": 6,
+      "partials": 16,
+      "misses": 48,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.0857,
+      "hit_rate_ci95": [
+       0.0399,
+       0.1747
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 70,
+        "bias": 0.31,
+        "mae": 2.04
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2016,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 19,
+      "hits": 2,
+      "partials": 7,
+      "misses": 10,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 19,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2023,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 6,
+      "hits": 2,
+      "partials": 3,
+      "misses": 1,
+      "ungradable": 27,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 6,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 6,
+       "hits": 1,
+       "partials": 2,
+       "misses": 3,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 6,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 6,
+       "hits": 1,
+       "partials": 2,
+       "misses": 3,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 6,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 6,
+       "hits": 2,
+       "partials": 3,
+       "misses": 1,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 6,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "japan-real-gdp-growth",
+   "horizon": "current_year",
+   "caveats": [],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1990,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 72,
+      "hits": 28,
+      "partials": 17,
+      "misses": 27,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.3889,
+      "hit_rate_ci95": [
+       0.2847,
+       0.5044
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 72,
+        "bias": 0.141,
+        "mae": 0.825
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2013,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 23,
+      "hits": 13,
+      "partials": 5,
+      "misses": 5,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5652,
+      "hit_rate_ci95": [
+       0.3681,
+       0.7437
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 23,
+        "bias": -0.122,
+        "mae": 0.651
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2000,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 41,
+      "hits": 15,
+      "partials": 11,
+      "misses": 15,
+      "ungradable": 0,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": 0.3659,
+      "hit_rate_ci95": [
+       0.2359,
+       0.5188
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 41,
+        "bias": 0.271,
+        "mae": 0.988
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 26,
+       "hits": 13,
+       "partials": 6,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5,
+       "hit_rate_ci95": [
+        0.3206,
+        0.6794
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 26,
+         "bias": 0.045,
+         "mae": 0.62
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 23,
+       "hits": 13,
+       "partials": 5,
+       "misses": 5,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5652,
+       "hit_rate_ci95": [
+        0.3681,
+        0.7437
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 23,
+         "bias": -0.122,
+         "mae": 0.651
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 26,
+       "hits": 11,
+       "partials": 7,
+       "misses": 8,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.4231,
+       "hit_rate_ci95": [
+        0.2554,
+        0.6105
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 26,
+         "bias": 0.222,
+         "mae": 0.844
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "japan-real-gdp-growth",
+   "horizon": "next_year",
+   "caveats": [],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1991,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 70,
+      "hits": 20,
+      "partials": 13,
+      "misses": 37,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.2857,
+      "hit_rate_ci95": [
+       0.1932,
+       0.4005
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 70,
+        "bias": 0.926,
+        "mae": 1.548
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2014,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 21,
+      "hits": 5,
+      "partials": 4,
+      "misses": 12,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.2381,
+      "hit_rate_ci95": [
+       0.1063,
+       0.4509
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 21,
+        "bias": 0.669,
+        "mae": 1.406
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2001,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 39,
+      "hits": 13,
+      "partials": 12,
+      "misses": 14,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.3333,
+      "hit_rate_ci95": [
+       0.2063,
+       0.4902
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 39,
+        "bias": 0.857,
+        "mae": 1.369
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 24,
+       "hits": 7,
+       "partials": 5,
+       "misses": 12,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.2917,
+       "hit_rate_ci95": [
+        0.1491,
+        0.4917
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 24,
+         "bias": 0.614,
+         "mae": 1.196
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 21,
+       "hits": 5,
+       "partials": 4,
+       "misses": 12,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.2381,
+       "hit_rate_ci95": [
+        0.1063,
+        0.4509
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 21,
+         "bias": 0.669,
+         "mae": 1.406
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 24,
+       "hits": 8,
+       "partials": 8,
+       "misses": 8,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.3333,
+       "hit_rate_ci95": [
+        0.1797,
+        0.5329
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 24,
+         "bias": 0.531,
+         "mae": 1.149
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "united-kingdom-real-gdp-growth",
+   "horizon": "current_year",
+   "caveats": [
+    "OBR year_1 is the calendar year of publication of each EFO (spring and autumn)."
+   ],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1990,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 72,
+      "hits": 31,
+      "partials": 21,
+      "misses": 20,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.4306,
+      "hit_rate_ci95": [
+       0.3226,
+       0.5456
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 72,
+        "bias": -0.333,
+        "mae": 0.776
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "obr-forecasts",
+     "first_target_year": 2010,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 32,
+      "hits": 18,
+      "partials": 5,
+      "misses": 9,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5625,
+      "hit_rate_ci95": [
+       0.3933,
+       0.7183
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 32,
+        "bias": -0.217,
+        "mae": 1.056
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2013,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 23,
+      "hits": 13,
+      "partials": 3,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5652,
+      "hit_rate_ci95": [
+       0.3681,
+       0.7437
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 23,
+        "bias": -0.643,
+        "mae": 0.701
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 26,
+       "hits": 15,
+       "partials": 4,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5769,
+       "hit_rate_ci95": [
+        0.3895,
+        0.7446
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 26,
+         "bias": -0.353,
+         "mae": 0.737
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "obr-forecasts",
+      "stats": {
+       "n_graded": 26,
+       "hits": 16,
+       "partials": 3,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.6154,
+       "hit_rate_ci95": [
+        0.4253,
+        0.7757
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 26,
+         "bias": -0.148,
+         "mae": 1.119
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 23,
+       "hits": 13,
+       "partials": 3,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5652,
+       "hit_rate_ci95": [
+        0.3681,
+        0.7437
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 23,
+         "bias": -0.643,
+         "mae": 0.701
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "united-kingdom-real-gdp-growth",
+   "horizon": "next_year",
+   "caveats": [
+    "OBR year_1 is the calendar year of publication of each EFO (spring and autumn)."
+   ],
+   "sources": [
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1991,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 70,
+      "hits": 33,
+      "partials": 12,
+      "misses": 25,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.4714,
+      "hit_rate_ci95": [
+       0.359,
+       0.5868
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 70,
+        "bias": 0.374,
+        "mae": 1.353
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "obr-forecasts",
+     "first_target_year": 2011,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 30,
+      "hits": 12,
+      "partials": 8,
+      "misses": 10,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.4,
+      "hit_rate_ci95": [
+       0.2459,
+       0.5768
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 30,
+        "bias": 0.172,
+        "mae": 1.367
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2014,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 21,
+      "hits": 11,
+      "partials": 4,
+      "misses": 6,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.5238,
+      "hit_rate_ci95": [
+       0.3237,
+       0.7166
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 21,
+        "bias": 0.437,
+        "mae": 1.818
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 24,
+       "hits": 14,
+       "partials": 3,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5833,
+       "hit_rate_ci95": [
+        0.3883,
+        0.7553
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 24,
+         "bias": 0.5,
+         "mae": 1.645
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "obr-forecasts",
+      "stats": {
+       "n_graded": 24,
+       "hits": 10,
+       "partials": 6,
+       "misses": 8,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.4167,
+       "hit_rate_ci95": [
+        0.2447,
+        0.6117
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 24,
+         "bias": 0.107,
+         "mae": 1.492
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 21,
+       "hits": 11,
+       "partials": 4,
+       "misses": 6,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": 0.5238,
+       "hit_rate_ci95": [
+        0.3237,
+        0.7166
+       ],
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 21,
+         "bias": 0.437,
+         "mae": 1.818
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "united-states-real-gdp-growth",
+   "horizon": "current_year",
+   "caveats": [
+    "CBO year_1 comes from January or February baselines; IMF, OECD and World Bank current-year values come from spring and autumn editions."
+   ],
+   "sources": [
+    {
+     "source_id": "cbo-projections",
+     "first_target_year": 2000,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 42,
+      "hits": 20,
+      "partials": 12,
+      "misses": 10,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.4762,
+      "hit_rate_ci95": [
+       0.3336,
+       0.6228
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 42,
+        "bias": 0.121,
+        "mae": 0.815
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1990,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 72,
+      "hits": 42,
+      "partials": 15,
+      "misses": 15,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5833,
+      "hit_rate_ci95": [
+       0.4681,
+       0.6901
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 72,
+        "bias": -0.226,
+        "mae": 0.606
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2013,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 23,
+      "hits": 14,
+      "partials": 6,
+      "misses": 3,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.6087,
+      "hit_rate_ci95": [
+       0.4079,
+       0.7784
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 23,
+        "bias": -0.593,
+        "mae": 0.678
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2000,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 41,
+      "hits": 23,
+      "partials": 6,
+      "misses": 12,
+      "ungradable": 0,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": 0.561,
+      "hit_rate_ci95": [
+       0.4104,
+       0.7011
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 41,
+        "bias": -0.057,
+        "mae": 0.801
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "cbo-projections",
+      "stats": {
+       "n_graded": 15,
+       "hits": 8,
+       "partials": 1,
+       "misses": 6,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 15,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 16,
+       "hits": 10,
+       "partials": 2,
+       "misses": 4,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 16,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 16,
+       "hits": 8,
+       "partials": 5,
+       "misses": 3,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 16,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 16,
+       "hits": 7,
+       "partials": 2,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 16,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "subject_id": "united-states-real-gdp-growth",
+   "horizon": "next_year",
+   "caveats": [
+    "CBO year_1 comes from January or February baselines; IMF, OECD and World Bank current-year values come from spring and autumn editions."
+   ],
+   "sources": [
+    {
+     "source_id": "cbo-projections",
+     "first_target_year": 2001,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 40,
+      "hits": 12,
+      "partials": 9,
+      "misses": 19,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.3,
+      "hit_rate_ci95": [
+       0.1807,
+       0.4543
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 40,
+        "bias": 0.665,
+        "mae": 1.435
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "imf-weo",
+     "first_target_year": 1991,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 70,
+      "hits": 24,
+      "partials": 13,
+      "misses": 33,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.3429,
+      "hit_rate_ci95": [
+       0.2425,
+       0.4596
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 70,
+        "bias": 0.024,
+        "mae": 1.213
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "first_target_year": 2014,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 21,
+      "hits": 8,
+      "partials": 3,
+      "misses": 10,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.381,
+      "hit_rate_ci95": [
+       0.2075,
+       0.5912
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 21,
+        "bias": -0.151,
+        "mae": 1.378
+       }
+      ]
+     }
+    },
+    {
+     "source_id": "world-bank-gep",
+     "first_target_year": 2001,
+     "last_target_year": 2025,
+     "stats": {
+      "n_graded": 39,
+      "hits": 17,
+      "partials": 8,
+      "misses": 14,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.4359,
+      "hit_rate_ci95": [
+       0.293,
+       0.5902
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 39,
+        "bias": 0.331,
+        "mae": 1.113
+       }
+      ]
+     }
+    }
+   ],
+   "common_years": {
+    "target_years": [
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sources": [
+     {
+      "source_id": "cbo-projections",
+      "stats": {
+       "n_graded": 13,
+       "hits": 6,
+       "partials": 1,
+       "misses": 6,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 13,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "imf-weo",
+      "stats": {
+       "n_graded": 14,
+       "hits": 4,
+       "partials": 1,
+       "misses": 9,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 14,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "oecd-economic-outlook",
+      "stats": {
+       "n_graded": 14,
+       "hits": 4,
+       "partials": 0,
+       "misses": 10,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 14,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     },
+     {
+      "source_id": "world-bank-gep",
+      "stats": {
+       "n_graded": 14,
+       "hits": 6,
+       "partials": 1,
+       "misses": 7,
+       "ungradable": 0,
+       "open": 0,
+       "excluded": 0,
+       "hit_rate": null,
+       "hit_rate_ci95": null,
+       "errors": [
+        {
+         "rule": "D18",
+         "unit": "pp",
+         "n": 14,
+         "bias": null,
+         "mae": null
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

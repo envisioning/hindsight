@@ -251,3 +251,22 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** One threshold for all rates treats a 0.5-point miss on volatile inflation the same as on stable growth.
 
 **Overturned by.** Evidence that per-series thresholds are needed, for example from the publishers' own evaluation reports.
+
+## D19: Numeric forecasts are graded by a deterministic command
+
+*Recorded 2026-09-28.*
+
+**Decision.** Numeric forecasts of the 12 numeric sources (IMF, OECD, World Bank, Fed, ECB, CBO, OBR, BCB, EIA, IEA, BP, BNEF) are graded by `pnpm grade:numeric` (`src/grade/numeric.ts`), not by agents.
+
+- The grade is arithmetic under D18 (rates in percent: error in percentage points, hit within 0.5, partial within 1.0) and the D16 numeric rule (levels: error = (forecast minus actual) / |actual|, hit within 10%, partial within 25%). The absolute value in the denominator keeps the sign of the error meaning "forecast too high" for negative actuals such as deficits. A tolerance of 1e-9 absorbs float noise at the thresholds.
+- D7 (two independent agents, kappa) does not apply: the same inputs always give the same verdict. The D11 human audit for these sources checks the forecast-to-actual matching on a random sample (right actual series, same definition, right year), not the arithmetic. D11 minimum samples and Wilson intervals apply unchanged.
+- Each claim gets one of four statuses: `graded`; `ungradable` (the forecast and the captured actual are not on the same definition, or no actual on that definition exists); `open` (target year after 2025, or the actual series does not reach it yet); `excluded` (not a forecast to grade: a scenario, a longer-run projection without a year, an estimate of a year before publication, a value not public at the time, a quote without a value). Every status other than `graded` states its reason.
+- The actual is the latest captured value on the forecast's definition, with its vintage. Where the latest vintage uses another definition, definition wins: EIA forecasts are graded against the actuals of the same AEO Retrospective; IEA forecasts against the IEA's own later-stated history, not Ember.
+- Definition calls made in the command, each written in `data/graded/README.md`: group aggregates whose membership changed (IMF groups, euro area, OECD total) are graded with a note, because every publisher evaluates itself this way and the membership drift is small; World Bank income groups before June 2016 are ungradable, because the WDI groups use today's income classification; OBR public sector net borrowing forecasts before March 2020 are ungradable, because the definition changed (the student-loan reclassification alone is 0.8 to 0.9% of GDP a year); ECB ranges and Fed central tendencies are graded at their midpoint, with a note whether the actual lies inside the published range; Fed medians count as public at the time when the FOMC published them or when they follow from the published dot plot.
+- Schema: `src/schema.ts` gains `NumericGrade`, `NumericStats`, `NumericSummary` and `NumericComparison` (with `NumericRule` and `NumericHorizon`). No existing shape changes. Numeric grades live in `data/graded/numeric/`, not in `verdicts.json`: a `VerdictRow` needs agent, model and evidence rows, which a computation does not have. How numeric grades enter the release export is left to the export step.
+
+**Why.** A computed verdict does not need a second grader, and a second agent adds cost without adding checks. The errors that can happen are matching errors (wrong series, wrong basis, wrong year), and those are what a person should audit.
+
+**Cost.** Each definition call in the command is a judgment made once, in code, for thousands of rows. A wrong call is wrong everywhere until the audit finds it. Rows that are ungradable today (for example India in the World Bank GEP before 2023) need a new actual series, not a regrade.
+
+**Overturned by.** Audit findings that the matching is wrong in more than a few sampled rows, or a numeric claim type that needs judgment to read (for example a prose forecast with a vague quantity).
