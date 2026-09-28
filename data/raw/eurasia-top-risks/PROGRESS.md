@@ -1,0 +1,24 @@
+# Progress
+
+- 2006: missing (existence confirmed, list not found), 2026-09-28
+- 2007: complete, written 2026-09-28
+- 2008: complete, written 2026-09-28
+- 2009: complete, written 2026-09-28
+- 2010: complete, written 2026-09-28
+- 2011: complete, written 2026-09-28
+- 2012: complete, written 2026-09-28
+- 2013: complete, written 2026-09-28
+- 2014: complete, written 2026-09-28
+- 2015: complete, written 2026-09-28
+- 2016: complete, written 2026-09-28
+- 2017: complete, written 2026-09-28
+- 2018: complete, written 2026-09-28
+- 2019: complete, written 2026-09-28
+- 2020: complete, written 2026-09-28
+- 2021: complete, written 2026-09-28
+- 2022: complete, written 2026-09-28
+- 2023: complete, written 2026-09-28
+- 2024: complete, written 2026-09-28
+- 2025: complete, written 2026-09-28
+- 2026: complete, written 2026-09-28
+- self_assessment.json: 2022, 2024, 2025 captured; 2018 video only, 2026-09-28
