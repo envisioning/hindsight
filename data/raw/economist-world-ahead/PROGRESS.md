@@ -1,0 +1,23 @@
+# Progress
+
+- 2026: partial (editor's letter only), written 2026-09-28
+- 2025: partial (editor's letter only), written 2026-09-28
+- 2024: partial (editor's letter, first paragraph of self-review), written 2026-09-28
+- 2023: partial (editor's letter, full self-review), written 2026-09-28
+- 2022: partial (editor's letter, full self-review), written 2026-09-28
+- 2021: partial (editor's letter, full self-review), written 2026-09-28
+- self_assessment.json: 6 reviews (2019 to 2024), 44 claims, written 2026-09-28
+- 2020: partial (press release twelve themes, self-review), written 2026-09-28
+- 2019: partial (press release dozen takeaways, two metered-free articles, self-review), written 2026-09-28
+- 2018: partial (press release twelve themes only), written 2026-09-28
+- 2016: partial (editor's introduction), written 2026-09-28
+- 2015: partial (press release summary), written 2026-09-28
+- 1987, 1988, 1989, 1991: partial (one reprinted article each; 1989 has no testable entry), written 2026-09-28
+- 1990, 1992, 1993, 1994, 1995, 1996: partial (one reprinted article each; 1990, 1992, 1995, 1996 have no testable entry), written 2026-09-28
+- 2017: partial (editor's introduction), written 2026-09-28
+- 1997 to 2004: partial (one reprinted article each; only 2001 and 2002 have testable entries), written 2026-09-28
+- 2005 to 2014: partial (one reprinted article each; 2006 and 2009 reprints are self-reviews), written 2026-09-28
+- 1987, 1988, 1992, 1996, 1997, 2003, 2004: added predictions restated in the 2006 review, 2026-09-28
+- 2018, 2020: added editor's introduction; 2019, 2020: added one metered-free article each, 2026-09-28
+- self_assessment.json: 8 reviews (1987-2005 review, 2008, 2019 to 2024), 69 claims, 2026-09-28
+- All 40 editions (1987 to 2026) have a file. Capture stopped here.
