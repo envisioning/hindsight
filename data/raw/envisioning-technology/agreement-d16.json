@@ -1,0 +1,625 @@
+{
+ "rule": "D16",
+ "graders": [
+  "A",
+  "B"
+ ],
+ "n": 113,
+ "agree": 95,
+ "raw_agreement": 0.8407,
+ "kappa": 0.7541,
+ "passes_d11": true,
+ "graderA": {
+  "hit": 49,
+  "miss": 43,
+  "partial": 18,
+  "unfalsifiable": 3
+ },
+ "graderB": {
+  "hit": 43,
+  "miss": 47,
+  "partial": 20,
+  "unfalsifiable": 3
+ },
+ "agreed": {
+  "hit": 40,
+  "miss": 42,
+  "partial": 13
+ },
+ "hit_rate_agreed": {
+  "hits": 40,
+  "of_graded_hit_partial_miss": 95,
+  "wilson95": [
+   0.327,
+   0.522
+  ],
+  "note": "Among claims both graders agree on, excluding unfalsifiable. Not yet audited (D11 audit pending)."
+ },
+ "consensus": [
+  {
+   "id": "et-2011-003",
+   "label": "Print on demand",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-004",
+   "label": "Memristor",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2011-005",
+   "label": "Cermets",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2011-015",
+   "label": "All media on demand",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-025",
+   "label": "Electronic paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-028",
+   "label": "PAN",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-030",
+   "label": "Social graph",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-033",
+   "label": "Semantic web",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-034",
+   "label": "Linked data",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2011-042",
+   "label": "Medical diagnostics",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-047",
+   "label": "VASIMR",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2011-049",
+   "label": "Superconducting interties",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2011-050",
+   "label": "Nanostructure battery cathodes",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-053",
+   "label": "PV at grid parity",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-055",
+   "label": "Solar thermal",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2011-056",
+   "label": "Location-aware media",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-059",
+   "label": "Immersive 3D projections",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2011-061",
+   "label": "SPIMES",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2011-063",
+   "label": "Virtual property",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-065",
+   "label": "Sensors",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-070",
+   "label": "Tele-medicine",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2011-073",
+   "label": "Regenerative medicine",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-001",
+   "label": "High-frequency trading",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-002",
+   "label": "Cloud computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-003",
+   "label": "Multi touch",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-004",
+   "label": "Depth imaging",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-005",
+   "label": "Tablets",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-006",
+   "label": "Rapid personal gene sequencing",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-008",
+   "label": "Global online population: ± 2 billion",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-009",
+   "label": "Connected devices: ±10 billion",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-010",
+   "label": "Inductive chargers",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-011",
+   "label": "World population: 7 billion",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-013",
+   "label": "Cyber-warfare",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-014",
+   "label": "Gesture recognition",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-015",
+   "label": "Near-field communication",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-016",
+   "label": "Volumetric (3D) screens",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-017",
+   "label": "Appliance robots",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-018",
+   "label": "Self-healing materials",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-019",
+   "label": "Speech recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-020",
+   "label": "Pervasive video capture",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-021",
+   "label": "Tidal turbines",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-022",
+   "label": "Global online population: ± 2.5 billion",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-023",
+   "label": "Connected devices: ±15 billion",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-024",
+   "label": "Natural language interpretation",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-025",
+   "label": "4G",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-028",
+   "label": "Organ printing",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-029",
+   "label": "Fuel cells",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-032",
+   "label": "Augmented reality",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-033",
+   "label": "Biometric sensors",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-034",
+   "label": "Boards",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-035",
+   "label": "Smart toys",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-036",
+   "label": "Graphene",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-039",
+   "label": "4K",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-040",
+   "label": "Smart power meters",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-041",
+   "label": "Modular computers",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-043",
+   "label": "Synthetic blood",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-044",
+   "label": "Personal fabricators",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-045",
+   "label": "Machine translation",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-046",
+   "label": "Virtual currencies",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-047",
+   "label": "Haptics",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-049",
+   "label": "Pico-projectors",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-050",
+   "label": "Self-driving vehicles",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-052",
+   "label": "Multi-segmented smart grids",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-053",
+   "label": "Sub-orbital spaceflight",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-055",
+   "label": "5G",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-056",
+   "label": "Machine vision",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-057",
+   "label": "Eyewear-embedded screens",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-058",
+   "label": "Powered exoskeleton",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-059",
+   "label": "Personalized medicine",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-060",
+   "label": "Meta-materials",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-061",
+   "label": "Photovoltaic glass",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-062",
+   "label": "Space tourism",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-063",
+   "label": "Global online population: 4-5 billion",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-064",
+   "label": "Connected devices: 30-50 billion",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-065",
+   "label": "$150 Hard disk: ±200 Tb",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-066",
+   "label": "Standard RAM: ±750Gb",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-067",
+   "label": "Holography",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-068",
+   "label": "Context-aware computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-069",
+   "label": "Optical invisibility cloaks",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-070",
+   "label": "Piezo-electricity",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-071",
+   "label": "Weather engineering",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-072",
+   "label": "Reputation economy",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-073",
+   "label": "Commercial UAVs",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-074",
+   "label": "In-vitro meat",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-075",
+   "label": "Computational photography",
+   "verdict": "hit"
+  },
+  {
+   "id": "et-2012-076",
+   "label": "Fabric-embedded screens",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-079",
+   "label": "Synthetic biology",
+   "verdict": "partial"
+  },
+  {
+   "id": "et-2012-080",
+   "label": "Petabyte storage standard",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-081",
+   "label": "VR-only lifeforms",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-082",
+   "label": "$ 1.000 computer reaches the capacity of the human brain (± 10^15 calculations per second)",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-083",
+   "label": "Interplanetary internet",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-086",
+   "label": "Stem-cell treatments",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-087",
+   "label": "Biomaterials",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-088",
+   "label": "Biomechanical harvesting",
+   "verdict": "miss"
+  },
+  {
+   "id": "et-2012-089",
+   "label": "Vertical farming",
+   "verdict": "miss"
+  }
+ ],
+ "contested": [
+  {
+   "id": "et-2011-009",
+   "label": "Ultra-capacitors",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "et-2011-014",
+   "label": "Gamification of media",
+   "graderA": "unfalsifiable",
+   "graderB": "miss"
+  },
+  {
+   "id": "et-2012-007",
+   "label": "Additive manufacturing",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "et-2012-012",
+   "label": "Software agents",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "et-2012-026",
+   "label": "Flexible screens",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "et-2012-027",
+   "label": "Telematics",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "et-2012-030",
+   "label": "Commercial spaceflight",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "et-2012-031",
+   "label": "Mesh networking",
+   "graderA": "unfalsifiable",
+   "graderB": "partial"
+  },
+  {
+   "id": "et-2012-037",
+   "label": "Bio-enhanced fuels",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "et-2012-038",
+   "label": "Photonics",
+   "graderA": "hit",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "et-2012-042",
+   "label": "Robotic surgery",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "et-2012-048",
+   "label": "Biomarkers",
+   "graderA": "hit",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "et-2012-051",
+   "label": "Smart drugs",
+   "graderA": "partial",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "et-2012-054",
+   "label": "Procedural storytelling",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "et-2012-077",
+   "label": "Carbon nanotubes",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "et-2012-078",
+   "label": "Telepresence",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "et-2012-084",
+   "label": "Reprogrammable chips",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "et-2012-085",
+   "label": "Domestic robots",
+   "graderA": "partial",
+   "graderB": "hit"
+  }
+ ]
+}
