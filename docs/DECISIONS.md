@@ -129,3 +129,21 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** "Mainstream" needs evidence of adoption, not of existence. Each verdict must cite adoption data.
 
 **Overturned by.** Low agreement between the two grading agents on what counts as mainstream, which would call for a numeric adoption threshold per category.
+
+## D11: Validation thresholds
+
+*Recorded 2026-09-28.*
+
+**Decision.** Accuracy figures publish only under these rules (protocol in issue #40):
+
+- **Grader agreement:** Cohen's kappa between the two grading agents (D7), per source and claim type, is at least 0.6. Below that, the rubric for that source is revised before any verdict publishes.
+- **Human audit:** each release, a person reads a random sample of at least 50 claims or 10% of graded claims, whichever is larger, stratified by verdict and weighted toward `miss` verdicts about named institutions. Sample size, error rate and every correction are published.
+- **Minimum sample:** no rate is published for a band, horizon or source with fewer than 20 graded claims. Below that, counts only.
+- **Uncertainty:** every rate is shown with a Wilson 95% interval, never as a bare percentage, and is recomputed with the audit error rate applied.
+- **Double extraction** wherever a second independent route exists, with the agreement rate published per source.
+
+**Why.** An accuracy figure about a named publisher will be read by people who want it to be wrong. Agreement, audit, sample size and intervals make each figure defensible, and make its limits visible.
+
+**Cost.** Small sources and thin bands publish counts, not rates. The audit takes a person's time each release.
+
+**Overturned by.** Evidence that a threshold is too strict to publish anything useful, or too loose to catch errors the audit finds.
