@@ -1,0 +1,2392 @@
+{
+ "note": "Judgment calls for subjects, read by `pnpm normalize`. `aliases`: labels mapped to a subject by judgment, each with a one-line reason. `subjects`: names for new ids and `related` links (not the same thing, but close). `unmapped`: labels deliberately left without a subject. Quantity subjects keep their related links in src/normalize/quantities.ts.",
+ "aliases": [
+  {
+   "label": "3D Flat-Panel TVs and Displays",
+   "subject_id": "3-d-flat-panel-displays",
+   "reason": "Same Hype Cycle technology group; reworded."
+  },
+  {
+   "label": "3D Bioprinting Systems",
+   "subject_id": "3d-bioprinting",
+   "reason": "Same Hype Cycle technology group; the poster's 'Organ printing' is the same application (printing tissue and organs)."
+  },
+  {
+   "label": "3D Bioprinting Systems for Organ Transplant",
+   "subject_id": "3d-bioprinting",
+   "reason": "Same Hype Cycle technology group; the poster's 'Organ printing' is the same application (printing tissue and organs)."
+  },
+  {
+   "label": "Organ printing",
+   "subject_id": "3d-bioprinting",
+   "reason": "Same Hype Cycle technology group; the poster's 'Organ printing' is the same application (printing tissue and organs)."
+  },
+  {
+   "label": "3D printers",
+   "subject_id": "3d-printing",
+   "reason": "Additive manufacturing is the industry name for 3D printing; Envisioning's own 2011-2012 revision records the change as a rename."
+  },
+  {
+   "label": "Additive Manufacturing",
+   "subject_id": "3d-printing",
+   "reason": "Additive manufacturing is the industry name for 3D printing; Envisioning's own 2011-2012 revision records the change as a rename."
+  },
+  {
+   "label": "Additive manufacturing",
+   "subject_id": "3d-printing",
+   "reason": "Additive manufacturing is the industry name for 3D printing; Envisioning's own 2011-2012 revision records the change as a rename."
+  },
+  {
+   "label": "4G Standard",
+   "subject_id": "4g",
+   "reason": "Same mobile network generation."
+  },
+  {
+   "label": "Fourth-Generation Wireless Technology",
+   "subject_id": "4g",
+   "reason": "Same mobile network generation."
+  },
+  {
+   "label": "LTE / 4G deployment",
+   "subject_id": "4g",
+   "reason": "LTE is the 4G standard."
+  },
+  {
+   "label": "5G networks",
+   "subject_id": "5g",
+   "reason": "Same mobile network generation."
+  },
+  {
+   "label": "Wi-Fi 6",
+   "subject_id": "802-11ax",
+   "reason": "Wi-Fi 6 is the marketing name of IEEE 802.11ax."
+  },
+  {
+   "label": "802.16d WiMAX",
+   "subject_id": "802-16-2004-wimax",
+   "reason": "IEEE 802.16-2004 is the standard also called 802.16d."
+  },
+  {
+   "label": "Agentic AI",
+   "subject_id": "ai-agents",
+   "reason": "Agentic AI is the practice of AI agents."
+  },
+  {
+   "label": "AI-Augmented Development",
+   "subject_id": "ai-augmented-software-engineering",
+   "reason": "Gartner renamed the entry (raw INDEX, renames)."
+  },
+  {
+   "label": "Reversal of aging",
+   "subject_id": "anti-aging-drugs",
+   "reason": "The poster's raw revision records the rename."
+  },
+  {
+   "label": "Audio Mining",
+   "subject_id": "audio-mining-speech-analytics",
+   "reason": "Same technology; Gartner added the alternative name."
+  },
+  {
+   "label": "AR",
+   "subject_id": "augmented-reality",
+   "reason": "The 2011 poster abbreviates augmented reality; the raw revision records the rename."
+  },
+  {
+   "label": "Self-driving vehicles",
+   "subject_id": "autonomous-vehicles",
+   "reason": "Self-driving and autonomous vehicles are the same technology."
+  },
+  {
+   "label": "Big Data and Extreme Information Processing and Management",
+   "subject_id": "big-data",
+   "reason": "Same Hype Cycle technology group; Gartner shortened the label."
+  },
+  {
+   "label": "Bioacustic Sensing",
+   "subject_id": "bioacoustic-sensing",
+   "reason": "Spelling variant in the digitized sheet; same Hype Cycle technology group."
+  },
+  {
+   "label": "Biometric User Identification",
+   "subject_id": "biometric-authentication-methods",
+   "reason": "Same Hype Cycle technology group; Gartner reworded the entry."
+  },
+  {
+   "label": "Biometric authentication",
+   "subject_id": "biometric-authentication-methods",
+   "reason": "Same technology."
+  },
+  {
+   "label": "Biometrix Authentication Methods",
+   "subject_id": "biometric-authentication-methods",
+   "reason": "Same Hype Cycle technology group; Gartner reworded the entry."
+  },
+  {
+   "label": "Public Blockchains",
+   "subject_id": "blockchain",
+   "reason": "ARK's chapter name for public blockchain networks."
+  },
+  {
+   "label": "Brain-Machine Interface",
+   "subject_id": "brain-computer-interface",
+   "reason": "Same interface named in either word order; Gartner's technology group links the Hype Cycle labels."
+  },
+  {
+   "label": "Computer Brain Interface",
+   "subject_id": "brain-computer-interface",
+   "reason": "Same interface named in either word order; Gartner's technology group links the Hype Cycle labels."
+  },
+  {
+   "label": "Computer-Brain Interface",
+   "subject_id": "brain-computer-interface",
+   "reason": "Same interface named in either word order; Gartner's technology group links the Hype Cycle labels."
+  },
+  {
+   "label": "Computer-Brain Interface/Thought Recognition",
+   "subject_id": "brain-computer-interface",
+   "reason": "Same interface named in either word order; Gartner's technology group links the Hype Cycle labels."
+  },
+  {
+   "label": "A carbon removal factory",
+   "subject_id": "carbon-removal",
+   "reason": "MIT's two entries on direct air capture of CO2 (raw INDEX candidate chain)."
+  },
+  {
+   "label": "Carbon dioxide catcher",
+   "subject_id": "carbon-removal",
+   "reason": "MIT's two entries on direct air capture of CO2 (raw INDEX candidate chain)."
+  },
+  {
+   "label": "Chronic disease, developed world",
+   "subject_id": "chronic-disease-in-developed-countries",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Cloud-native apps",
+   "subject_id": "cloud-native",
+   "reason": "Same technology."
+  },
+  {
+   "label": "Private spaceflight",
+   "subject_id": "commercial-spaceflight",
+   "reason": "Same industry; the poster's raw revision records the rename."
+  },
+  {
+   "label": "Commercial UAVs (Drones)",
+   "subject_id": "commercial-uavs",
+   "reason": "Same technology: commercial unmanned aerial vehicles; the poster's raw revision records the rename."
+  },
+  {
+   "label": "UAVs",
+   "subject_id": "commercial-uavs",
+   "reason": "Same technology: commercial unmanned aerial vehicles; the poster's raw revision records the rename."
+  },
+  {
+   "label": "Composite AI adoption",
+   "subject_id": "composite-ai",
+   "reason": "Same technology."
+  },
+  {
+   "label": "Telematics",
+   "subject_id": "consumer-telematics",
+   "reason": "The poster's 'telematics' was graded as consumer vehicle telematics."
+  },
+  {
+   "label": "Conersation User Interfaces",
+   "subject_id": "conversational-user-interfaces",
+   "reason": "Spelling variant or short form of the same interface class."
+  },
+  {
+   "label": "Conversational Interfaces",
+   "subject_id": "conversational-user-interfaces",
+   "reason": "Spelling variant or short form of the same interface class."
+  },
+  {
+   "label": "Coorperate Blogging",
+   "subject_id": "corporate-blogging",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Coorperate blogging",
+   "subject_id": "corporate-blogging",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Coorperate Semantic Web",
+   "subject_id": "corporate-semantic-web",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Breakdown of critical information infrastructure",
+   "subject_id": "critical-information-infrastructure-breakdown",
+   "reason": "Same risk, words reordered."
+  },
+  {
+   "label": "Infrastructure breakdown",
+   "subject_id": "critical-information-infrastructure-breakdown",
+   "reason": "Same risk, words reordered."
+  },
+  {
+   "label": "Virtual currencies",
+   "subject_id": "cryptocurrencies",
+   "reason": "The poster's 2012 'virtual currencies' was graded as cryptocurrencies such as bitcoin."
+  },
+  {
+   "label": "Database Mining",
+   "subject_id": "data-mining",
+   "reason": "Same practice; earlier label."
+  },
+  {
+   "label": "Deep Neural Nets",
+   "subject_id": "deep-learning",
+   "reason": "Deep neural networks are the technique that 'deep learning' names."
+  },
+  {
+   "label": "Frictionless Value Transfers",
+   "subject_id": "digital-wallets",
+   "reason": "ARK renamed this chapter to Digital Wallets (raw INDEX)."
+  },
+  {
+   "label": "Household robots",
+   "subject_id": "domestic-robots",
+   "reason": "Same product class: robots for the home."
+  },
+  {
+   "label": "Light Cargo Delivery Drones",
+   "subject_id": "drone-delivery",
+   "reason": "Same application: drones that deliver light parcels."
+  },
+  {
+   "label": "Digital Video Disk",
+   "subject_id": "dvd",
+   "reason": "DVD is the abbreviation."
+  },
+  {
+   "label": "E-readers and e-books",
+   "subject_id": "e-book-readers",
+   "reason": "Same device class."
+  },
+  {
+   "label": "The inevitable EV",
+   "subject_id": "electric-vehicles",
+   "reason": "MIT's 2023 entry is about electric vehicles."
+  },
+  {
+   "label": "Digital Paper/E-Paper",
+   "subject_id": "electronic-paper",
+   "reason": "Same display technology (e-paper); Gartner's technology group links the first rewording."
+  },
+  {
+   "label": "Electronic Ink/Digital Paper",
+   "subject_id": "electronic-paper",
+   "reason": "Same display technology (e-paper); Gartner's technology group links the first rewording."
+  },
+  {
+   "label": "Erosion of human rights and/or of civic freedoms",
+   "subject_id": "erosion-of-human-rights-and-or-civic-freedoms",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Electric vehicle price parity",
+   "subject_id": "ev-price-parity-with-ice",
+   "reason": "The year electric cars reach price parity with combustion cars; BNEF and ARK state it with their own definitions."
+  },
+  {
+   "label": "electric vehicle price parity",
+   "subject_id": "ev-price-parity-with-ice",
+   "reason": "The year electric cars reach price parity with combustion cars; BNEF and ARK state it with their own definitions."
+  },
+  {
+   "label": "Powered exoskeleton",
+   "subject_id": "exoskeletons",
+   "reason": "Same technology; the poster's raw revision records the rename."
+  },
+  {
+   "label": "Fiscal crises in key economies",
+   "subject_id": "fiscal-crises",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "CRISPR Genome-Editing",
+   "subject_id": "gene-editing",
+   "reason": "Same technology: targeted editing of genomes (CRISPR and related tools)."
+  },
+  {
+   "label": "Genome Editing",
+   "subject_id": "gene-editing",
+   "reason": "Same technology: targeted editing of genomes (CRISPR and related tools)."
+  },
+  {
+   "label": "Gene Therapy 2.0",
+   "subject_id": "gene-therapy",
+   "reason": "MIT's 2016 entry is gene therapy."
+  },
+  {
+   "label": "Dueling Neural Networks",
+   "subject_id": "generative-adversarial-networks",
+   "reason": "MIT's 2018 entry describes generative adversarial networks."
+  },
+  {
+   "label": "Gesture Control Devices",
+   "subject_id": "gesture-control",
+   "reason": "Same Hype Cycle technology group."
+  },
+  {
+   "label": "Gestural Interfaces",
+   "subject_id": "gesture-recognition",
+   "reason": "Same interface technology."
+  },
+  {
+   "label": "Electric vehicle sales",
+   "subject_id": "global-ev-sales",
+   "reason": "ARK's metric is global annual EV sales."
+  },
+  {
+   "label": "Virtual desktop infrastructure",
+   "subject_id": "hosted-virtual-desktops",
+   "reason": "Same technology under its infrastructure name."
+  },
+  {
+   "label": "Artificial limbs",
+   "subject_id": "hybrid-assisted-limbs",
+   "reason": "The poster's raw revision records the rename."
+  },
+  {
+   "label": "In-Nemory Database Management Systems",
+   "subject_id": "in-memory-database-management-systems",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Synthetic meat",
+   "subject_id": "in-vitro-meat",
+   "reason": "Same product (cultured meat); the poster's raw revision records the rename."
+  },
+  {
+   "label": "Industry Clouds",
+   "subject_id": "industry-cloud-platforms",
+   "reason": "Gartner renamed the entry (raw INDEX, renames)."
+  },
+  {
+   "label": "Interactive/ Web TV",
+   "subject_id": "interactive-tv",
+   "reason": "Same entry across 1990s editions, reworded."
+  },
+  {
+   "label": "Interactive/Internet TV",
+   "subject_id": "interactive-tv",
+   "reason": "Same entry across 1990s editions, reworded."
+  },
+  {
+   "label": "Internet micro-payments",
+   "subject_id": "internet-micropayment-systems",
+   "reason": "Same Hype Cycle technology group; 'Micropayments' is the earlier short label."
+  },
+  {
+   "label": "Micropayments",
+   "subject_id": "internet-micropayment-systems",
+   "reason": "Same Hype Cycle technology group; 'Micropayments' is the earlier short label."
+  },
+  {
+   "label": "Intenet of Things",
+   "subject_id": "internet-of-things",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Interstate armed conflict",
+   "subject_id": "interstate-conflict",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Involuntary migration or displacement",
+   "subject_id": "involuntary-migration",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Large-scale involuntary migration",
+   "subject_id": "involuntary-migration",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "IoT Plattform",
+   "subject_id": "iot-platform",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Java Language",
+   "subject_id": "java-the-language",
+   "reason": "Same entry, reworded."
+  },
+  {
+   "label": "Java Platform",
+   "subject_id": "java-the-platform",
+   "reason": "Same entry, reworded."
+  },
+  {
+   "label": "Knowledge Mgt",
+   "subject_id": "knowledge-management",
+   "reason": "Mgt is the abbreviation of management."
+  },
+  {
+   "label": "LEO satellite connectivity",
+   "subject_id": "leo-satellite-broadband",
+   "reason": "Same technology: constellations of low-Earth-orbit satellites for broadband."
+  },
+  {
+   "label": "Low Earth orbit satellite internet",
+   "subject_id": "leo-satellite-broadband",
+   "reason": "Same technology: constellations of low-Earth-orbit satellites for broadband."
+  },
+  {
+   "label": "Low-Earth-Orbit Satellite Systems",
+   "subject_id": "leo-satellite-broadband",
+   "reason": "Same technology: constellations of low-Earth-orbit satellites for broadband."
+  },
+  {
+   "label": "Satellite mega-constellations",
+   "subject_id": "leo-satellite-broadband",
+   "reason": "Same technology: constellations of low-Earth-orbit satellites for broadband."
+  },
+  {
+   "label": "Linux on Desktop for Mainstream Business Users",
+   "subject_id": "linux-on-desktop",
+   "reason": "Same entry, shortened."
+  },
+  {
+   "label": "Location-Aware Technologoy",
+   "subject_id": "location-aware-technology",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Intelligence Amplification",
+   "subject_id": "machine-augmented-cognition",
+   "reason": "The poster's raw revision records the rename."
+  },
+  {
+   "label": "Universal Translation",
+   "subject_id": "machine-translation",
+   "reason": "MIT's 2004 entry is statistical machine translation."
+  },
+  {
+   "label": "Mesh Networks",
+   "subject_id": "mesh-networking",
+   "reason": "Same networking technology."
+  },
+  {
+   "label": "Wireless Sensor Networks",
+   "subject_id": "mesh-networks-sensor",
+   "reason": "Gartner's sensor mesh networks and MIT's 2003 wireless sensor networks are the same technology."
+  },
+  {
+   "label": "Mobile OTA Payment",
+   "subject_id": "mobile-over-the-air-payments",
+   "reason": "Same Hype Cycle technology group; Gartner abbreviated the label."
+  },
+  {
+   "label": "Over-the-Air Mobile Phone Payment Systems, Developed Markets",
+   "subject_id": "mobile-over-the-air-payments",
+   "reason": "Same Hype Cycle technology group; Gartner abbreviated the label."
+  },
+  {
+   "label": "Mobile Phone Payments",
+   "subject_id": "mobile-payment",
+   "reason": "Same practice: paying with a mobile phone."
+  },
+  {
+   "label": "Mobile contactless payments",
+   "subject_id": "mobile-payment",
+   "reason": "Same practice: paying with a mobile phone."
+  },
+  {
+   "label": "Mobile payments (touch commerce)",
+   "subject_id": "mobile-payment",
+   "reason": "Same practice: paying with a mobile phone."
+  },
+  {
+   "label": "Mobile Robozs",
+   "subject_id": "mobile-robots",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Model-driven Approaches",
+   "subject_id": "model-driven-architectures",
+   "reason": "Same Hype Cycle technology group."
+  },
+  {
+   "label": "Natural catastrophes",
+   "subject_id": "natural-disasters",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Natural language interpretation",
+   "subject_id": "natural-language-processing",
+   "reason": "The poster's 'natural language interpretation' is natural language processing."
+  },
+  {
+   "label": "Natural-Language Questioning Answer",
+   "subject_id": "natural-language-question-answering",
+   "reason": "Spelling variant in the digitized sheet."
+  },
+  {
+   "label": "Neuromorphic Chips",
+   "subject_id": "neuromorphic-hardware",
+   "reason": "Same technology."
+  },
+  {
+   "label": "New-wave nuclear power",
+   "subject_id": "next-gen-nuclear",
+   "reason": "MIT's two entries on advanced fission reactors (raw INDEX candidate chain)."
+  },
+  {
+   "label": "Near-field communication",
+   "subject_id": "nfc",
+   "reason": "NFC is the abbreviation; the poster's raw revision records the rename."
+  },
+  {
+   "label": "Nonfungible Tokens (NFT)",
+   "subject_id": "nft",
+   "reason": "Gartner shortened the label (raw INDEX, renames)."
+  },
+  {
+   "label": "OO Programming",
+   "subject_id": "object-oriented-programming",
+   "reason": "OO is the abbreviation of object-oriented."
+  },
+  {
+   "label": "Oil and gas price spike",
+   "subject_id": "oil-price-spikes",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Oil price shock",
+   "subject_id": "oil-price-spikes",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Organic Light-Emitting Devices",
+   "subject_id": "organic-light-emitting-diodes",
+   "reason": "Same OLED technology."
+  },
+  {
+   "label": "PDA phones",
+   "subject_id": "personal-digital-assistant-phones",
+   "reason": "PDA is the abbreviation."
+  },
+  {
+   "label": "PDAs",
+   "subject_id": "personal-digital-assistants",
+   "reason": "PDA is the abbreviation."
+  },
+  {
+   "label": "Fuel cells for portable devices",
+   "subject_id": "personal-fuel-cells",
+   "reason": "Same product class: fuel cells that power portable devices."
+  },
+  {
+   "label": "Pervasive video",
+   "subject_id": "pervasive-video-capture",
+   "reason": "Same entry; the poster's raw revision records the rename."
+  },
+  {
+   "label": "Photvoltaic glass",
+   "subject_id": "photovoltaic-glass",
+   "reason": "Spelling variant."
+  },
+  {
+   "label": "Private 5G networks",
+   "subject_id": "private-5g",
+   "reason": "Same technology."
+  },
+  {
+   "label": "Netcasting/ Push Technology",
+   "subject_id": "push",
+   "reason": "Same push technology entry."
+  },
+  {
+   "label": "Practical Quantum Computers",
+   "subject_id": "quantum-computing",
+   "reason": "Same technology."
+  },
+  {
+   "label": "PGS",
+   "subject_id": "rapid-personal-gene-sequencing",
+   "reason": "PGS is the 2011 poster's acronym for personal gene sequencing; the raw revision records the rename."
+  },
+  {
+   "label": "Passive Radio Frequency Identification",
+   "subject_id": "rfid-passive",
+   "reason": "Same technology, abbreviated."
+  },
+  {
+   "label": "Autonomous Ride-Hail",
+   "subject_id": "robotaxis",
+   "reason": "ARK renamed this chapter over the years (raw INDEX); MIT uses the same term."
+  },
+  {
+   "label": "Autonomous Ride-Hailing",
+   "subject_id": "robotaxis",
+   "reason": "ARK renamed this chapter over the years (raw INDEX); MIT uses the same term."
+  },
+  {
+   "label": "Mobility-as-a-Service",
+   "subject_id": "robotaxis",
+   "reason": "ARK renamed this chapter over the years (raw INDEX); MIT uses the same term."
+  },
+  {
+   "label": "3D Printing & Robotics",
+   "subject_id": "robotics-and-3d-printing",
+   "reason": "Same ARK chapter, words reordered."
+  },
+  {
+   "label": "SOA",
+   "subject_id": "service-oriented-architecture",
+   "reason": "SOA is the abbreviation of service-oriented architecture."
+  },
+  {
+   "label": "Service Oriented Architecture (SOA)",
+   "subject_id": "service-oriented-architecture",
+   "reason": "SOA is the abbreviation of service-oriented architecture."
+  },
+  {
+   "label": "Smart Contracts",
+   "subject_id": "smart-contract-networks",
+   "reason": "Same ARK chapter, reworded."
+  },
+  {
+   "label": "Smart meters",
+   "subject_id": "smart-power-meters",
+   "reason": "Same device; the poster's raw revision records the rename."
+  },
+  {
+   "label": "Societal and/or political polarization",
+   "subject_id": "societal-polarization",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Software-Defined Anything (SDx)",
+   "subject_id": "software-defined-anything",
+   "reason": "Same entry with its abbreviation added."
+  },
+  {
+   "label": "Sovereign and government cloud",
+   "subject_id": "sovereign-cloud",
+   "reason": "Same concept."
+  },
+  {
+   "label": "Speech Recognition for Telephony and the Call Center",
+   "subject_id": "speech-recognition-for-telephony-and-call-center",
+   "reason": "Same entry; spelling and wording vary between editions and sources."
+  },
+  {
+   "label": "Speech Recognition for Telepony and Call Center",
+   "subject_id": "speech-recognition-for-telephony-and-call-center",
+   "reason": "Same entry; spelling and wording vary between editions and sources."
+  },
+  {
+   "label": "Speech recognition in call centers",
+   "subject_id": "speech-recognition-for-telephony-and-call-center",
+   "reason": "Same entry; spelling and wording vary between editions and sources."
+  },
+  {
+   "label": "State collapse or crisis",
+   "subject_id": "state-collapse",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Synthetic data for AI",
+   "subject_id": "synthetic-data",
+   "reason": "Same technology."
+  },
+  {
+   "label": "Media Tablet",
+   "subject_id": "tablets",
+   "reason": "Same device class (tablet computers); the poster's raw revision records the rename."
+  },
+  {
+   "label": "Media Tablets",
+   "subject_id": "tablets",
+   "reason": "Same device class (tablet computers); the poster's raw revision records the rename."
+  },
+  {
+   "label": "Tabs & Pads",
+   "subject_id": "tablets",
+   "reason": "Same device class (tablet computers); the poster's raw revision records the rename."
+  },
+  {
+   "label": "Technology sovereignty",
+   "subject_id": "technological-sovereignty",
+   "reason": "Same concept, reworded."
+  },
+  {
+   "label": "Telehealth (eVisits)",
+   "subject_id": "tele-medicine",
+   "reason": "Same practice: remote clinical visits."
+  },
+  {
+   "label": "Telehealth (video visits)",
+   "subject_id": "tele-medicine",
+   "reason": "Same practice: remote clinical visits."
+  },
+  {
+   "label": "Text-to-speech",
+   "subject_id": "text-to-speech-speech-synthesis",
+   "reason": "Same technology."
+  },
+  {
+   "label": "Trusted Computing Group",
+   "subject_id": "trusted-computing-platforms",
+   "reason": "Gartner's 2005 label names the industry group behind the same trusted platform technology."
+  },
+  {
+   "label": "UWB/803.15.3a/WiMedia",
+   "subject_id": "ultrawideband",
+   "reason": "Same radio technology (UWB); the 2002 label lists its standards."
+  },
+  {
+   "label": "Structurally high unemployment/underemployment",
+   "subject_id": "unemployment-and-underemployment",
+   "reason": "Same risk, reworded."
+  },
+  {
+   "label": "Vertical agriculture",
+   "subject_id": "vertical-farming",
+   "reason": "Same practice; the poster's raw revision records the rename."
+  },
+  {
+   "label": "Intelligent Software Assistant",
+   "subject_id": "virtual-assistants",
+   "reason": "Same Hype Cycle technology group; MIT's 2009 'Intelligent Software Assistant' is the same product class."
+  },
+  {
+   "label": "Virtual Personal Assistants",
+   "subject_id": "virtual-assistants",
+   "reason": "Same Hype Cycle technology group; MIT's 2009 'Intelligent Software Assistant' is the same product class."
+  },
+  {
+   "label": "Immersive virtual reality",
+   "subject_id": "virtual-reality",
+   "reason": "The poster's 'immersive virtual reality' is virtual reality."
+  },
+  {
+   "label": "Public Virtual Worlds",
+   "subject_id": "virtual-worlds",
+   "reason": "Same Hype Cycle technology group; Gartner reworded the label."
+  },
+  {
+   "label": "Virtual Environments/Virtual Worlds",
+   "subject_id": "virtual-worlds",
+   "reason": "Same Hype Cycle technology group; Gartner reworded the label."
+  },
+  {
+   "label": "Voice Over IP",
+   "subject_id": "voip",
+   "reason": "VoIP is the abbreviation of voice over IP."
+  },
+  {
+   "label": "Voice Over IP Services",
+   "subject_id": "voip",
+   "reason": "VoIP is the abbreviation of voice over IP."
+  },
+  {
+   "label": "Voice over IP",
+   "subject_id": "voip",
+   "reason": "VoIP is the abbreviation of voice over IP."
+  },
+  {
+   "label": "3D",
+   "subject_id": "volumetric-3d-screens",
+   "reason": "The 2011 poster's '3D' (3D screens and cameras); the raw revision records the rename."
+  },
+  {
+   "label": "Wearable User Interfaces",
+   "subject_id": "wearables",
+   "reason": "Same Hype Cycle technology group; Gartner shortened the label."
+  },
+  {
+   "label": "Wireless LANs/802.11s",
+   "subject_id": "wireless-lans-802-11",
+   "reason": "Plural spelling of the same entry."
+  },
+  {
+   "label": "Power from the Air",
+   "subject_id": "wireless-power",
+   "reason": "MIT's 2008 entry is wireless power transfer."
+  },
+  {
+   "label": "WAP/Wireless Web",
+   "subject_id": "wireless-web-wap",
+   "reason": "Same entry, words reordered."
+  }
+ ],
+ "subjects": [
+  {
+   "id": "100-genome",
+   "related": [
+    "rapid-personal-gene-sequencing"
+   ]
+  },
+  {
+   "id": "3-d-flat-panel-displays",
+   "related": [
+    "3d-television"
+   ]
+  },
+  {
+   "id": "3-d-metal-printing",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "3d-bioprinting",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "3d-printing",
+   "related": [
+    "3-d-metal-printing",
+    "3d-bioprinting",
+    "3d-printing-for-personalized-products",
+    "3d-printing-market",
+    "4d-printing",
+    "consumer-3d-printing",
+    "enterprise-3d-printing",
+    "microscale-3-d-printing",
+    "nanoscale-3d-printing",
+    "personal-fabricators",
+    "robotics-and-3d-printing"
+   ]
+  },
+  {
+   "id": "3d-printing-for-personalized-products",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "3d-printing-market",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "3d-television",
+   "related": [
+    "3-d-flat-panel-displays"
+   ]
+  },
+  {
+   "id": "4d-printing",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "5g",
+   "related": [
+    "5g-and-lte-advanced",
+    "5g-standalone-networks",
+    "low-cost-5g-smartphones"
+   ]
+  },
+  {
+   "id": "5g-and-lte-advanced",
+   "related": [
+    "5g"
+   ]
+  },
+  {
+   "id": "5g-standalone-networks",
+   "related": [
+    "5g"
+   ]
+  },
+  {
+   "id": "agents",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "agents-as-it-interface",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "agricultural-drones",
+   "related": [
+    "commercial-uavs"
+   ]
+  },
+  {
+   "id": "ai-agent-use-in-the-g2000",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "ai-agents",
+   "related": [
+    "agents",
+    "agents-as-it-interface",
+    "ai-agent-use-in-the-g2000",
+    "autonomous-agents",
+    "enterprise-ai-agents",
+    "intelligent-agents",
+    "multiagent-systems",
+    "software-agents"
+   ]
+  },
+  {
+   "id": "ai-chips",
+   "related": [
+    "deep-neural-network-asics",
+    "edge-ai-chips",
+    "machine-learning-chips"
+   ]
+  },
+  {
+   "id": "ai-generated-misinformation-and-disinformation",
+   "related": [
+    "misinformation-and-disinformation"
+   ]
+  },
+  {
+   "id": "ai-that-makes-images",
+   "related": [
+    "generative-ai"
+   ]
+  },
+  {
+   "id": "apple-pay",
+   "related": [
+    "mobile-payment"
+   ]
+  },
+  {
+   "id": "ar-and-vr-market",
+   "related": [
+    "augmented-reality",
+    "virtual-reality"
+   ]
+  },
+  {
+   "id": "ar-cloud",
+   "related": [
+    "augmented-reality"
+   ]
+  },
+  {
+   "id": "artificial-general-intelligence",
+   "related": [
+    "general-purpose-machine-intelligence"
+   ]
+  },
+  {
+   "id": "augmented-reality",
+   "related": [
+    "ar-and-vr-market",
+    "ar-cloud",
+    "augmented-reality-shopping",
+    "mixed-reality"
+   ]
+  },
+  {
+   "id": "augmented-reality-shopping",
+   "related": [
+    "augmented-reality"
+   ]
+  },
+  {
+   "id": "autonomous-agents",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "autonomous-driving-level-4",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "autonomous-driving-level-5",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "autonomous-field-vehicles",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "autonomous-trucking-cost",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "autonomous-vehicles",
+   "related": [
+    "autonomous-driving-level-4",
+    "autonomous-driving-level-5",
+    "autonomous-field-vehicles",
+    "autonomous-trucking-cost",
+    "flying-autonomous-vehicles",
+    "robotaxis",
+    "self-driving-trucks",
+    "tesla-autopilot"
+   ]
+  },
+  {
+   "id": "babel-fish-earbuds",
+   "related": [
+    "machine-translation"
+   ]
+  },
+  {
+   "id": "base-edited-baby",
+   "related": [
+    "gene-editing"
+   ]
+  },
+  {
+   "id": "bayesian-machine-learning",
+   "related": [
+    "machine-learning"
+   ]
+  },
+  {
+   "id": "bidirectional-brain-machine-interface",
+   "related": [
+    "brain-computer-interface"
+   ]
+  },
+  {
+   "id": "big-data",
+   "related": [
+    "big-data-exploitation",
+    "big-data-from-cheap-phones",
+    "big-data-jobs"
+   ]
+  },
+  {
+   "id": "big-data-exploitation",
+   "related": [
+    "big-data"
+   ]
+  },
+  {
+   "id": "big-data-from-cheap-phones",
+   "related": [
+    "big-data"
+   ]
+  },
+  {
+   "id": "big-data-jobs",
+   "related": [
+    "big-data"
+   ]
+  },
+  {
+   "id": "biodiversity-loss",
+   "related": [
+    "biodiversity-loss-and-ecosystem-collapse"
+   ]
+  },
+  {
+   "id": "biodiversity-loss-and-ecosystem-collapse",
+   "related": [
+    "biodiversity-loss"
+   ]
+  },
+  {
+   "id": "biometric-payments",
+   "related": [
+    "mobile-payment"
+   ]
+  },
+  {
+   "id": "biometric-sensors",
+   "related": [
+    "sensors"
+   ]
+  },
+  {
+   "id": "bitcoin",
+   "related": [
+    "cryptocurrencies"
+   ]
+  },
+  {
+   "id": "blockchain",
+   "related": [
+    "cryptocurrencies",
+    "smart-contract-networks"
+   ]
+  },
+  {
+   "id": "brain-computer-interface",
+   "related": [
+    "bidirectional-brain-machine-interface"
+   ]
+  },
+  {
+   "id": "cable-modems",
+   "related": [
+    "xdsl-cable-modems"
+   ]
+  },
+  {
+   "id": "carbon-removal",
+   "name": "Carbon removal (direct air capture)",
+   "kind": "technology",
+   "related": [
+    "carbon-sequestration"
+   ]
+  },
+  {
+   "id": "carbon-sequestration",
+   "related": [
+    "carbon-removal"
+   ]
+  },
+  {
+   "id": "cell-and-gene-therapy",
+   "related": [
+    "gene-therapy"
+   ]
+  },
+  {
+   "id": "climate-change",
+   "related": [
+    "failure-of-climate-change-adaptation"
+   ]
+  },
+  {
+   "id": "commercial-uavs",
+   "related": [
+    "agricultural-drones",
+    "drone-delivery",
+    "drones",
+    "mass-market-military-drones"
+   ]
+  },
+  {
+   "id": "consumer-3d-printing",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "context-aware-computing",
+   "related": [
+    "context-aware-mobile-services",
+    "context-delivery-architecture",
+    "context-enriched-services"
+   ]
+  },
+  {
+   "id": "context-aware-mobile-services",
+   "related": [
+    "context-aware-computing"
+   ]
+  },
+  {
+   "id": "context-delivery-architecture",
+   "related": [
+    "context-aware-computing"
+   ]
+  },
+  {
+   "id": "context-enriched-services",
+   "related": [
+    "context-aware-computing"
+   ]
+  },
+  {
+   "id": "counterfeit-reality-deepfakes",
+   "related": [
+    "deepfake-detection"
+   ]
+  },
+  {
+   "id": "crispr-for-high-cholesterol",
+   "related": [
+    "gene-editing"
+   ]
+  },
+  {
+   "id": "crispr-in-agriculture",
+   "related": [
+    "gene-editing"
+   ]
+  },
+  {
+   "id": "cryptocurrencies",
+   "related": [
+    "bitcoin",
+    "blockchain",
+    "cryptocurrency-exchange",
+    "digital-money"
+   ]
+  },
+  {
+   "id": "cryptocurrency-exchange",
+   "related": [
+    "cryptocurrencies"
+   ]
+  },
+  {
+   "id": "cyber-attacks",
+   "related": [
+    "cyber-espionage-and-warfare",
+    "cyber-insecurity",
+    "cybersecurity-failure",
+    "widespread-cybercrime-and-cyber-insecurity"
+   ]
+  },
+  {
+   "id": "cyber-espionage-and-warfare",
+   "related": [
+    "cyber-attacks"
+   ]
+  },
+  {
+   "id": "cyber-insecurity",
+   "related": [
+    "cyber-attacks"
+   ]
+  },
+  {
+   "id": "cybersecurity-failure",
+   "related": [
+    "cyber-attacks"
+   ]
+  },
+  {
+   "id": "decentralized-finance",
+   "related": [
+    "smart-contract-networks"
+   ]
+  },
+  {
+   "id": "deep-learning",
+   "related": [
+    "deep-reinforcement-learning",
+    "machine-learning"
+   ]
+  },
+  {
+   "id": "deep-neural-network-asics",
+   "related": [
+    "ai-chips"
+   ]
+  },
+  {
+   "id": "deep-neural-network-speech-recognition",
+   "related": [
+    "speech-recognition"
+   ]
+  },
+  {
+   "id": "deep-reinforcement-learning",
+   "related": [
+    "deep-learning"
+   ]
+  },
+  {
+   "id": "deepfake-detection",
+   "related": [
+    "counterfeit-reality-deepfakes"
+   ]
+  },
+  {
+   "id": "desalination",
+   "related": [
+    "megascale-desalination"
+   ]
+  },
+  {
+   "id": "digital-money",
+   "related": [
+    "cryptocurrencies"
+   ]
+  },
+  {
+   "id": "digital-sovereignty",
+   "related": [
+    "technological-sovereignty"
+   ]
+  },
+  {
+   "id": "digital-wallets",
+   "related": [
+    "mobile-payment"
+   ]
+  },
+  {
+   "id": "direct-to-device-satellite-connectivity",
+   "related": [
+    "leo-satellite-broadband"
+   ]
+  },
+  {
+   "id": "dna-sequencing",
+   "related": [
+    "rapid-personal-gene-sequencing"
+   ]
+  },
+  {
+   "id": "drone-delivery",
+   "related": [
+    "commercial-uavs"
+   ]
+  },
+  {
+   "id": "drones",
+   "related": [
+    "commercial-uavs"
+   ]
+  },
+  {
+   "id": "e-cash",
+   "related": [
+    "internet-micropayment-systems"
+   ]
+  },
+  {
+   "id": "e-payments",
+   "related": [
+    "internet-micropayment-systems"
+   ]
+  },
+  {
+   "id": "edge-ai",
+   "related": [
+    "edge-ai-chips",
+    "edge-ai-inference"
+   ]
+  },
+  {
+   "id": "edge-ai-chips",
+   "related": [
+    "ai-chips",
+    "edge-ai"
+   ]
+  },
+  {
+   "id": "edge-ai-inference",
+   "related": [
+    "edge-ai"
+   ]
+  },
+  {
+   "id": "egg-stem-cells",
+   "related": [
+    "stem-cell-treatments"
+   ]
+  },
+  {
+   "id": "electric-vehicles",
+   "related": [
+    "ev-price-parity-with-ice",
+    "global-ev-sales",
+    "global-passenger-ev-sales"
+   ]
+  },
+  {
+   "id": "engineered-stem-cells",
+   "related": [
+    "stem-cell-treatments"
+   ]
+  },
+  {
+   "id": "enterprise-3d-printing",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "enterprise-ai-agents",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "enterprise-generative-ai",
+   "related": [
+    "generative-ai"
+   ]
+  },
+  {
+   "id": "ethereum-and-defi",
+   "related": [
+    "smart-contract-networks"
+   ]
+  },
+  {
+   "id": "exocortex",
+   "related": [
+    "machine-augmented-cognition"
+   ]
+  },
+  {
+   "id": "extended-reality-headsets",
+   "related": [
+    "virtual-reality"
+   ]
+  },
+  {
+   "id": "failure-of-climate-change-adaptation",
+   "related": [
+    "climate-change",
+    "failure-of-climate-change-mitigation-and-adaptation",
+    "failure-to-mitigate-climate-change"
+   ]
+  },
+  {
+   "id": "failure-of-climate-change-mitigation-and-adaptation",
+   "related": [
+    "failure-of-climate-change-adaptation"
+   ]
+  },
+  {
+   "id": "failure-to-mitigate-climate-change",
+   "related": [
+    "failure-of-climate-change-adaptation"
+   ]
+  },
+  {
+   "id": "federated-machine-learning",
+   "related": [
+    "machine-learning"
+   ]
+  },
+  {
+   "id": "flying-autonomous-vehicles",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "foundation-models",
+   "related": [
+    "generative-ai"
+   ]
+  },
+  {
+   "id": "fuel-cells",
+   "related": [
+    "hydrogen-fuel-cells",
+    "micro-fuel-cells",
+    "personal-fuel-cells"
+   ]
+  },
+  {
+   "id": "gamification",
+   "related": [
+    "gamification-of-media",
+    "nft-gamification"
+   ]
+  },
+  {
+   "id": "gamification-of-media",
+   "related": [
+    "gamification"
+   ]
+  },
+  {
+   "id": "gene-editing",
+   "name": "Gene editing",
+   "kind": "technology",
+   "related": [
+    "base-edited-baby",
+    "crispr-for-high-cholesterol",
+    "crispr-in-agriculture",
+    "gene-editing-market-value",
+    "precise-gene-editing-in-plants",
+    "the-first-gene-editing-treatment"
+   ]
+  },
+  {
+   "id": "gene-editing-market-value",
+   "related": [
+    "gene-editing"
+   ]
+  },
+  {
+   "id": "gene-therapy",
+   "related": [
+    "cell-and-gene-therapy",
+    "gene-therapy-approvals"
+   ]
+  },
+  {
+   "id": "gene-therapy-approvals",
+   "related": [
+    "gene-therapy"
+   ]
+  },
+  {
+   "id": "general-purpose-machine-intelligence",
+   "related": [
+    "artificial-general-intelligence"
+   ]
+  },
+  {
+   "id": "generative-ai",
+   "related": [
+    "ai-that-makes-images",
+    "enterprise-generative-ai",
+    "foundation-models",
+    "generative-ai-in-enterprise-software",
+    "generative-ai-search",
+    "generative-ai-video",
+    "gpt-3"
+   ]
+  },
+  {
+   "id": "generative-ai-in-enterprise-software",
+   "related": [
+    "generative-ai"
+   ]
+  },
+  {
+   "id": "generative-ai-search",
+   "related": [
+    "generative-ai"
+   ]
+  },
+  {
+   "id": "generative-ai-video",
+   "related": [
+    "generative-ai"
+   ]
+  },
+  {
+   "id": "genome-sequencing-cost",
+   "related": [
+    "rapid-personal-gene-sequencing"
+   ]
+  },
+  {
+   "id": "gesture-control",
+   "related": [
+    "gesture-recognition"
+   ]
+  },
+  {
+   "id": "gesture-recognition",
+   "related": [
+    "gesture-control"
+   ]
+  },
+  {
+   "id": "global-gdp",
+   "related": [
+    "world-real-gdp-growth"
+   ]
+  },
+  {
+   "id": "gpt-3",
+   "related": [
+    "generative-ai"
+   ]
+  },
+  {
+   "id": "graphene",
+   "related": [
+    "graphene-transistors"
+   ]
+  },
+  {
+   "id": "graphene-transistors",
+   "related": [
+    "graphene"
+   ]
+  },
+  {
+   "id": "haps",
+   "related": [
+    "project-loon"
+   ]
+  },
+  {
+   "id": "health-wearables",
+   "related": [
+    "wearables"
+   ]
+  },
+  {
+   "id": "holography",
+   "related": [
+    "volumetric-and-holographic-displays"
+   ]
+  },
+  {
+   "id": "human-augmentation",
+   "related": [
+    "machine-augmented-cognition"
+   ]
+  },
+  {
+   "id": "hydrogen-fuel-cells",
+   "related": [
+    "fuel-cells"
+   ]
+  },
+  {
+   "id": "hyper-personalized-medicine",
+   "related": [
+    "personalized-medicine"
+   ]
+  },
+  {
+   "id": "image-recognition",
+   "related": [
+    "machine-vision"
+   ]
+  },
+  {
+   "id": "in-vitro-meat",
+   "related": [
+    "the-cow-free-burger"
+   ]
+  },
+  {
+   "id": "inductive-chargers",
+   "related": [
+    "wireless-power"
+   ]
+  },
+  {
+   "id": "intelligent-agents",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "interactive-tv",
+   "name": "Interactive TV",
+   "kind": "technology",
+   "related": [
+    "internet-tv",
+    "social-tv"
+   ]
+  },
+  {
+   "id": "internet-micropayment-systems",
+   "related": [
+    "e-cash",
+    "e-payments"
+   ]
+  },
+  {
+   "id": "internet-of-things",
+   "related": [
+    "iot-devices"
+   ]
+  },
+  {
+   "id": "internet-tv",
+   "related": [
+    "interactive-tv"
+   ]
+  },
+  {
+   "id": "iot-devices",
+   "related": [
+    "internet-of-things"
+   ]
+  },
+  {
+   "id": "ip-telephony",
+   "related": [
+    "voip"
+   ]
+  },
+  {
+   "id": "leo-satellite-broadband",
+   "name": "Low-Earth-orbit satellite broadband",
+   "kind": "technology",
+   "related": [
+    "direct-to-device-satellite-connectivity",
+    "nanosatellites",
+    "satellite-connectivity",
+    "satellite-constellations"
+   ]
+  },
+  {
+   "id": "leps-oleds",
+   "related": [
+    "organic-light-emitting-diodes"
+   ]
+  },
+  {
+   "id": "light-emitting-polymers",
+   "related": [
+    "organic-light-emitting-diodes"
+   ]
+  },
+  {
+   "id": "low-cost-5g-smartphones",
+   "related": [
+    "5g"
+   ]
+  },
+  {
+   "id": "machine-augmented-cognition",
+   "related": [
+    "exocortex",
+    "human-augmentation"
+   ]
+  },
+  {
+   "id": "machine-learning",
+   "related": [
+    "bayesian-machine-learning",
+    "deep-learning",
+    "federated-machine-learning",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "id": "machine-learning-chips",
+   "related": [
+    "ai-chips"
+   ]
+  },
+  {
+   "id": "machine-translation",
+   "related": [
+    "babel-fish-earbuds",
+    "speech-to-speech-translation"
+   ]
+  },
+  {
+   "id": "machine-vision",
+   "related": [
+    "image-recognition"
+   ]
+  },
+  {
+   "id": "mass-market-military-drones",
+   "related": [
+    "commercial-uavs"
+   ]
+  },
+  {
+   "id": "megascale-desalination",
+   "related": [
+    "desalination"
+   ]
+  },
+  {
+   "id": "mesh-networking",
+   "related": [
+    "mesh-networks-sensor",
+    "mesh-networks-wide-area"
+   ]
+  },
+  {
+   "id": "mesh-networks-sensor",
+   "related": [
+    "mesh-networking",
+    "sensors"
+   ]
+  },
+  {
+   "id": "mesh-networks-wide-area",
+   "related": [
+    "mesh-networking"
+   ]
+  },
+  {
+   "id": "micro-fuel-cells",
+   "related": [
+    "fuel-cells"
+   ]
+  },
+  {
+   "id": "microphotonics",
+   "related": [
+    "photonics"
+   ]
+  },
+  {
+   "id": "microscale-3-d-printing",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "misinformation-and-disinformation",
+   "related": [
+    "ai-generated-misinformation-and-disinformation"
+   ]
+  },
+  {
+   "id": "mixed-reality",
+   "related": [
+    "augmented-reality",
+    "virtual-reality"
+   ]
+  },
+  {
+   "id": "mobile-over-the-air-payments",
+   "name": "Mobile over-the-air payments",
+   "kind": "technology",
+   "related": [
+    "mobile-payment"
+   ]
+  },
+  {
+   "id": "mobile-payment",
+   "related": [
+    "apple-pay",
+    "biometric-payments",
+    "digital-wallets",
+    "mobile-over-the-air-payments",
+    "nfc-payment"
+   ]
+  },
+  {
+   "id": "multi-segmented-smart-grids",
+   "related": [
+    "smart-grid"
+   ]
+  },
+  {
+   "id": "multiagent-systems",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "nanosatellites",
+   "related": [
+    "leo-satellite-broadband"
+   ]
+  },
+  {
+   "id": "nanoscale-3d-printing",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "neuromorphic-computing-digital-wall",
+   "related": [
+    "neuromorphic-hardware"
+   ]
+  },
+  {
+   "id": "neuromorphic-hardware",
+   "related": [
+    "neuromorphic-computing-digital-wall"
+   ]
+  },
+  {
+   "id": "next-gen-nuclear",
+   "related": [
+    "practical-fusion-reactors",
+    "thorium-reactors",
+    "traveling-wave-reactor"
+   ]
+  },
+  {
+   "id": "nfc",
+   "related": [
+    "nfc-payment"
+   ]
+  },
+  {
+   "id": "nfc-payment",
+   "related": [
+    "mobile-payment",
+    "nfc"
+   ]
+  },
+  {
+   "id": "nft-gamification",
+   "related": [
+    "gamification"
+   ]
+  },
+  {
+   "id": "oculus-rift",
+   "related": [
+    "virtual-reality"
+   ]
+  },
+  {
+   "id": "on-device-machine-learning",
+   "related": [
+    "tiny-ai"
+   ]
+  },
+  {
+   "id": "organic-light-emitting-diodes",
+   "related": [
+    "leps-oleds",
+    "light-emitting-polymers"
+   ]
+  },
+  {
+   "id": "p2p-voip",
+   "related": [
+    "voip"
+   ]
+  },
+  {
+   "id": "password-security",
+   "related": [
+    "the-end-of-passwords"
+   ]
+  },
+  {
+   "id": "pen-centric-tablet-pcs",
+   "related": [
+    "tablets"
+   ]
+  },
+  {
+   "id": "personal-digital-assistants",
+   "related": [
+    "virtual-assistants"
+   ]
+  },
+  {
+   "id": "personal-fabricators",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "personal-fuel-cells",
+   "related": [
+    "fuel-cells"
+   ]
+  },
+  {
+   "id": "personal-genomics",
+   "related": [
+    "rapid-personal-gene-sequencing"
+   ]
+  },
+  {
+   "id": "personalized-medicine",
+   "related": [
+    "hyper-personalized-medicine",
+    "precision-therapies"
+   ]
+  },
+  {
+   "id": "photonics",
+   "related": [
+    "microphotonics",
+    "silicon-photonics"
+   ]
+  },
+  {
+   "id": "practical-fusion-reactors",
+   "related": [
+    "next-gen-nuclear"
+   ]
+  },
+  {
+   "id": "precise-gene-editing-in-plants",
+   "related": [
+    "gene-editing"
+   ]
+  },
+  {
+   "id": "precision-therapies",
+   "related": [
+    "personalized-medicine"
+   ]
+  },
+  {
+   "id": "project-loon",
+   "related": [
+    "haps"
+   ]
+  },
+  {
+   "id": "quantum-accelerated-supercomputing",
+   "related": [
+    "quantum-computing"
+   ]
+  },
+  {
+   "id": "quantum-computing",
+   "related": [
+    "quantum-accelerated-supercomputing",
+    "quantum-cryptography",
+    "quantum-ml",
+    "quantum-supremacy"
+   ]
+  },
+  {
+   "id": "quantum-cryptography",
+   "related": [
+    "quantum-computing"
+   ]
+  },
+  {
+   "id": "quantum-ml",
+   "related": [
+    "quantum-computing"
+   ]
+  },
+  {
+   "id": "quantum-supremacy",
+   "related": [
+    "quantum-computing"
+   ]
+  },
+  {
+   "id": "rapid-personal-gene-sequencing",
+   "related": [
+    "100-genome",
+    "dna-sequencing",
+    "genome-sequencing-cost",
+    "personal-genomics"
+   ]
+  },
+  {
+   "id": "reinforcement-learning",
+   "related": [
+    "machine-learning"
+   ]
+  },
+  {
+   "id": "remote-presence",
+   "related": [
+    "telepresence"
+   ]
+  },
+  {
+   "id": "robotaxis",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "robotics-and-3d-printing",
+   "related": [
+    "3d-printing"
+   ]
+  },
+  {
+   "id": "satellite-connectivity",
+   "related": [
+    "leo-satellite-broadband"
+   ]
+  },
+  {
+   "id": "satellite-constellations",
+   "related": [
+    "leo-satellite-broadband"
+   ]
+  },
+  {
+   "id": "self-driving-trucks",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "sensors",
+   "related": [
+    "biometric-sensors",
+    "mesh-networks-sensor"
+   ]
+  },
+  {
+   "id": "silicon-photonics",
+   "related": [
+    "photonics"
+   ]
+  },
+  {
+   "id": "smart-clothing",
+   "related": [
+    "wearables"
+   ]
+  },
+  {
+   "id": "smart-contract-networks",
+   "related": [
+    "blockchain",
+    "decentralized-finance",
+    "ethereum-and-defi"
+   ]
+  },
+  {
+   "id": "smart-grid",
+   "related": [
+    "multi-segmented-smart-grids"
+   ]
+  },
+  {
+   "id": "smart-speakers",
+   "related": [
+    "virtual-assistants"
+   ]
+  },
+  {
+   "id": "smart-watches",
+   "related": [
+    "wearables"
+   ]
+  },
+  {
+   "id": "smooth-talking-ai-assistants",
+   "related": [
+    "virtual-assistants"
+   ]
+  },
+  {
+   "id": "social-tv",
+   "related": [
+    "interactive-tv"
+   ]
+  },
+  {
+   "id": "software-agents",
+   "related": [
+    "ai-agents"
+   ]
+  },
+  {
+   "id": "speech-recognition",
+   "related": [
+    "deep-neural-network-speech-recognition",
+    "speech-recognition-for-mobile-devices",
+    "speech-recognition-for-telephony-and-call-center",
+    "speech-recognition-on-desktops"
+   ]
+  },
+  {
+   "id": "speech-recognition-for-mobile-devices",
+   "related": [
+    "speech-recognition"
+   ]
+  },
+  {
+   "id": "speech-recognition-for-telephony-and-call-center",
+   "related": [
+    "speech-recognition"
+   ]
+  },
+  {
+   "id": "speech-recognition-on-desktops",
+   "related": [
+    "speech-recognition"
+   ]
+  },
+  {
+   "id": "speech-to-speech-translation",
+   "related": [
+    "machine-translation"
+   ]
+  },
+  {
+   "id": "stem-cell-therapies-that-work",
+   "related": [
+    "stem-cell-treatments"
+   ]
+  },
+  {
+   "id": "stem-cell-treatments",
+   "related": [
+    "egg-stem-cells",
+    "engineered-stem-cells",
+    "stem-cell-therapies-that-work"
+   ]
+  },
+  {
+   "id": "synthetic-data",
+   "related": [
+    "synthetic-data-and-privacy"
+   ]
+  },
+  {
+   "id": "synthetic-data-and-privacy",
+   "related": [
+    "synthetic-data"
+   ]
+  },
+  {
+   "id": "tablet-pc",
+   "related": [
+    "tablets"
+   ]
+  },
+  {
+   "id": "tablets",
+   "related": [
+    "pen-centric-tablet-pcs",
+    "tablet-pc",
+    "tablets-in-the-workforce"
+   ]
+  },
+  {
+   "id": "tablets-in-the-workforce",
+   "related": [
+    "tablets"
+   ]
+  },
+  {
+   "id": "technological-sovereignty",
+   "related": [
+    "digital-sovereignty"
+   ]
+  },
+  {
+   "id": "telepresence",
+   "related": [
+    "remote-presence",
+    "video-telepresence"
+   ]
+  },
+  {
+   "id": "tesla-autopilot",
+   "related": [
+    "autonomous-vehicles"
+   ]
+  },
+  {
+   "id": "the-cow-free-burger",
+   "related": [
+    "in-vitro-meat"
+   ]
+  },
+  {
+   "id": "the-end-of-passwords",
+   "related": [
+    "password-security"
+   ]
+  },
+  {
+   "id": "the-first-gene-editing-treatment",
+   "related": [
+    "gene-editing"
+   ]
+  },
+  {
+   "id": "thorium-reactors",
+   "related": [
+    "next-gen-nuclear"
+   ]
+  },
+  {
+   "id": "tiny-ai",
+   "related": [
+    "on-device-machine-learning"
+   ]
+  },
+  {
+   "id": "traveling-wave-reactor",
+   "related": [
+    "next-gen-nuclear"
+   ]
+  },
+  {
+   "id": "us-gdp",
+   "related": [
+    "united-states-real-gdp-growth"
+   ]
+  },
+  {
+   "id": "video-telepresence",
+   "related": [
+    "telepresence"
+   ]
+  },
+  {
+   "id": "virtual-assistants",
+   "related": [
+    "personal-digital-assistants",
+    "smart-speakers",
+    "smooth-talking-ai-assistants",
+    "virtual-personal-assistants-in-business"
+   ]
+  },
+  {
+   "id": "virtual-personal-assistants-in-business",
+   "related": [
+    "virtual-assistants"
+   ]
+  },
+  {
+   "id": "virtual-reality",
+   "related": [
+    "ar-and-vr-market",
+    "extended-reality-headsets",
+    "mixed-reality",
+    "oculus-rift"
+   ]
+  },
+  {
+   "id": "voip",
+   "related": [
+    "ip-telephony",
+    "p2p-voip"
+   ]
+  },
+  {
+   "id": "volumetric-and-holographic-displays",
+   "related": [
+    "holography"
+   ]
+  },
+  {
+   "id": "wearable-computers",
+   "related": [
+    "wearables"
+   ]
+  },
+  {
+   "id": "wearables",
+   "related": [
+    "health-wearables",
+    "smart-clothing",
+    "smart-watches",
+    "wearable-computers"
+   ]
+  },
+  {
+   "id": "widespread-cybercrime-and-cyber-insecurity",
+   "related": [
+    "cyber-attacks"
+   ]
+  },
+  {
+   "id": "wireless-power",
+   "related": [
+    "inductive-chargers"
+   ]
+  },
+  {
+   "id": "xdsl",
+   "related": [
+    "xdsl-cable-modems"
+   ]
+  },
+  {
+   "id": "xdsl-cable-modems",
+   "related": [
+    "cable-modems",
+    "xdsl"
+   ]
+  }
+ ],
+ "unmapped": []
+}

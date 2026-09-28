@@ -147,3 +147,83 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** Small sources and thin bands publish counts, not rates. The audit takes a person's time each release.
 
 **Overturned by.** Evidence that a threshold is too strict to publish anything useful, or too loose to catch errors the audit finds.
+
+## D12: Schema changes for normalized claims
+
+*Recorded 2026-09-28.*
+
+**Decision.** `src/schema.ts` changes, the minimum the raw captures need (issue #38):
+
+- `Claim.quote` is optional. A claim then carries `statement`, and `statement_generated: true` when Hindsight wrote it. Numeric sources (IMF, OECD, World Bank, Fed, ECB, CBO, OBR, BCB, EIA and most IEA and BP rows) are data tables with no prose to quote. A generated statement is never a quote. Every claim has a quote or a statement (enforced).
+- `Claim` gains `unit`, `note` and `phase` (the Hype Cycle phase, D14).
+- `Evidence.date` and `Evidence.stance` are optional. Grader 1 recorded some evidence as "n.d." or "unknown", and recorded what each source shows, not a stance.
+- `Revision.new_claim_id` is absent exactly when `change` is `dropped`: a dropped subject has no claim in the next edition. `Revision` gains `subject_id` and `note`.
+- New shapes: `SubjectAlias`, `HypePhase`, `HypePhaseBoundaries`. `Subject` gains `related` and `notes` (D13).
+- Every normalized claim has `published: true`: it is a fact from a public edition. Verdicts still publish only under D7.
+- The poster verdicts of grader 1 record `model` and `prompt_version` as `unrecorded`, because the grading run did not record them. Grader 2 must record both.
+
+**Why.** Faking a quote for a table value, or a date for undated evidence, would put invented text under a publisher's name.
+
+**Cost.** A page must show a generated statement differently from a quote.
+
+**Overturned by.** A source whose table rows come with a citable sentence each.
+
+## D13: Subjects: deterministic quantities, conservative label merges
+
+*Recorded 2026-09-28.*
+
+**Decision.**
+
+- Economic and energy series map to fixed subject ids in `src/normalize/quantities.ts`. The same economy and measure gets the same id from every publisher (`united-states-real-gdp-growth` from IMF, OECD, World Bank and CBO). A different measure gets its own id and a `related` link, with the difference in `notes`: Q4-over-Q4 growth (Fed SEP) is not annual-average growth; the World Bank world aggregate at market exchange rates is not the IMF's PPP-weighted one; World Bank country groups are not IMF groups of the same name.
+- Publisher labels map through `data/normalized/subject-aliases.json`, a registry that only grows. Method `exact`: the label names the subject. `normalized`: same label after ignoring case, accents, punctuation and a final plural. `judgment`: a merge in `data/normalized/subject-curation.json`, with a one-line reason each.
+- Merge only when the thing is the same (spelling variants, abbreviations, a publisher's own recorded rename, clear synonyms such as additive manufacturing and 3D printing). Otherwise link with `related` (for example 3D printing and Consumer 3D Printing). The Hype Cycle `technology_index` groups are evidence, not truth: "Speech Recognition for Mobile Devices" and "...for Telephony" share a group and stay apart.
+- A claim can carry several subjects: a quantity and the technology it measures (BNEF sales carry `global-passenger-ev-sales` and `electric-vehicles`).
+
+**Why.** Comparing forecasts of the same thing across sources is the point of a subject page. A wrong merge compares different things; a missing merge only hides a comparison.
+
+**Cost.** Many labels stay single-source subjects (1,746 subjects for 20 sources). Judgment calls need review.
+
+**Overturned by.** Subject pages that show wrong comparisons, or a canonical concept layer (D4).
+
+## D14: Hype Cycle phase from measured boundaries
+
+*Recorded 2026-09-28.*
+
+**Decision.** For editions 2005 to 2017, the phase of each entry is derived from its digitized `x_time` and the four phase boundaries measured on that edition's chart, stored as data in `data/normalized/hype-cycle-phase-boundaries.json`. The 2005 chart draws no boundaries; 2005 uses the mean of the 12 measured editions. A phase read on the chart (2016) is kept over the derived one. Entries within 0.5 points of a boundary carry a note. Entries from 1995 to 1998 have no band: they are claims, but they cannot be graded on timing.
+
+**Why.** Phase is part of what Gartner said. The measurements show that in the frame of the digitized positions the boundaries are nearly fixed (spread under 0.7 points across 2006 to 2017), and the 2016 cross-check agrees on 33 of 34 entries; the one disagreement sits on a boundary.
+
+**Cost.** Phases within about half a point of a boundary are uncertain.
+
+**Overturned by.** A primary phase listing for an edition that disagrees with the derived phases away from the boundaries.
+
+## D15: Permanent claim ids
+
+*Recorded 2026-09-28.*
+
+**Decision.** A claim id is `<source>-<edition>-<nnn>`. On the first assignment in an edition, nnn is the row's 1-based position in the raw edition file's `entries`, zero-padded to 3 digits, counting rows that are not claims (base-year rows, Fed SEP medians computed by Hindsight, OBR memo rows), so ids can have gaps. The Envisioning posters keep their raw ids (`et-2012-045` becomes `envisioning-technology-2012-045`). After the first assignment `data/normalized/ids.json` governs: it maps a natural key per raw row to its id, a known key keeps its id forever, and a new key gets the next number above the highest ever used in its edition. The natural key per source is in `data/normalized/PROGRESS.md`.
+
+**Why.** envisioning.com serves a permalink per claim. A re-capture or a reordered raw file must not move a permalink.
+
+**Cost.** The registry is state that must be committed with the data. A natural key that changes in a re-capture (for example a corrected quote in a Gartner prediction) creates a new id; the old id is kept in the registry and never reused.
+
+**Overturned by.** Nothing planned.
+
+## D16: Grading rule for year-placed forecasts, revised (supersedes D10)
+
+*Recorded 2026-09-28.*
+
+**Decision.** A forecast that places a technology on a year reads as "this technology is mainstream around that year".
+
+- **Mainstream** means at least 20% of the target users or households in major markets, or at least 50% of new units shipping with it (for a device feature), or routine use by at least 20% of the relevant industry. The grader names the test used.
+- `hit`: mainstream within 2 years after the placed year, or already mainstream at the placed year (arriving early is not penalised).
+- `partial`: a measurable share of at least 5%, below mainstream, by the placed year; or mainstream 3 to 5 years after the placed year.
+- `miss`: below 5% within 5 years after the placed year, or abandoned. A miss whose 5-year window has not closed yet is marked provisional, with the closing year.
+- `unfalsifiable`: only when the plausible readings of the label give different verdicts and no reading dominated at publication time. Otherwise the dominant reading is graded and recorded.
+- Quantitative forecasts keep the D10 rule: `hit` within 10% of the actual figure for its year, `partial` within 25%, else `miss`.
+
+**Why.** Under D10 the two blind graders of the Envisioning posters agreed on 76 of 113 claims, kappa 0.52, below the D11 floor of 0.6. The disagreements clustered on three gaps in D10: no floor under "niche" (partial or miss, 18 cases), no threshold for "mainstream" and no rule for early arrival (hit or partial, 13 cases), and no test for vague labels (5 cases). This decision closes all three with numbers.
+
+**Cost.** Thresholds are a convention; a technology at 19% of households is a partial and one at 21% a hit. Early arrival is not penalised, so a forecast that names something already here scores a hit; that trades rigour on foresight for a simpler, more testable rule.
+
+**Overturned by.** A kappa below 0.6 on the re-grade under this rule, or audit findings that the thresholds misclassify clear cases.
