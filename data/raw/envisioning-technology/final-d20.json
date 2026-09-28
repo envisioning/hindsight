@@ -1,0 +1,661 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.7541,
+ "n": 113,
+ "counts": {
+  "hit": 49,
+  "miss": 46,
+  "contested": 3,
+  "partial": 13,
+  "unfalsifiable": 2
+ },
+ "hit_rate": {
+  "hits": 49,
+  "of_graded_hit_partial_miss": 108,
+  "rate": 0.4537,
+  "wilson95": [
+   0.363,
+   0.548
+  ]
+ },
+ "hit_or_partial_rate": 0.5741,
+ "adjudicated": 18,
+ "audit": {
+  "sample": 50,
+  "audited": 50,
+  "confirmed": 46,
+  "corrected": 1,
+  "contested": 3,
+  "error_rate": 0.08
+ },
+ "verdicts": [
+  {
+   "id": "et-2011-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-005",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "The only cited source (zcccuttingtools.com, vendor post of 2022) gives undated shares (US 3-4%, Japan 8-10%, Germany ~12%) with no data year, so the share at 2015 is not established; cermets were an established tool material long before 2011, and no independent market data supports either partial or an early-arrival hit."
+  },
+  {
+   "id": "et-2011-009",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "Both graders use the same reading. Under that reading the target is energy storage in general. Ultracapacitors stayed far below 5% of it: Maxwell, the largest Western maker, had 114.5M USD ultracapacitor revenue in 2015, and the whole supercapacitor market stays under 5B USD against a lithium-ion market above 300B USD. The 65% share of electric wind-pitch systems (grader B) is a share of one sub-niche, not of the target users of the reading. A sub-niche share does not meet the D16 partial floor for the claim as read. Miss, window closed 2020."
+  },
+  {
+   "id": "et-2011-014",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "miss",
+   "reason": "The label says 'of media' and sits in the MEDIA track. That wording rules out grader A's second reading (game elements in apps in general). The media reading dominates. Under it the 2011 wave failed: GetGlue/tvtag, the lead social-TV badge app, shut on 2015-01-01, and Gartner put gamification into the trough of disillusionment in 2014. No source shows 5% of media consumption gamified by 2020. Miss, window closed 2020."
+  },
+  {
+   "id": "et-2011-015",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-025",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-028",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-030",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-033",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-034",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-042",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-047",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-049",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-050",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-053",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-055",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-056",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-059",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-061",
+   "verdict": "miss",
+   "status": "corrected",
+   "was": "partial",
+   "reason": "Wikipedia 'Spime' (cited by grader B) calls spimes largely theoretical and states RFID is only one of six required technologies, so item-level RFID (SupplyChainBrain 2015: 47% of apparel items tagged) is not a share of spimes. Under the dominant (Sterling) reading no measurable 5% share exists by 2025; miss, provisional until 2030."
+  },
+  {
+   "id": "et-2011-063",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-065",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2011-070",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2011-073",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-003",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-004",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-005",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-006",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The D16 industry test is routine use by at least 20% of the relevant industry. The PwC/SME 2014 survey of large US manufacturers found two-thirds used 3D printing in some way, 24.6% in prototyping and a further 9.6% in prototyping and production. About 34% routine use in 2014 is within 2 years of 2012. Grader B restricted the reading to production use only (9.6%, partial); the label 'additive manufacturing' covers prototyping, which was the main industrial use in 2012. Hit."
+  },
+  {
+   "id": "et-2012-008",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-009",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-010",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-012",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Both graders use the same reading. D16 allows the device-feature test: at least 50% of new units shipping with it. By 2014 a built-in assistant shipped on iOS (Siri, 2011) and Android (Google Now, 2012) phones, and Windows Phone added Cortana in 2014. iOS and Android together were well over 90% of new smartphones, so the feature test was met at the placed year. Grader B applied only the user test and had no figure before 2017 (46% of US adults, Pew). The device-feature test is valid for this reading. Hit."
+  },
+  {
+   "id": "et-2012-013",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-014",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-016",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-017",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-018",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-021",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-022",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-024",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-025",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-026",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Two readings exist. Plastic-substrate OLED panels inside rigid curved or notchless phones gave about 3% of phones in 2016 and passed 20% about 2021 (partial). Displays that bend in use reached consumers only as foldables from 2019, about 1.4-1.6% of smartphones in 2023 (miss). I grade the user-facing reading: 'flexible screens' in a UBICOMP track describes what the user gets, and a rigid curved phone is not a flexible screen to its user. The panel reading is an industry-internal sense. Under 5% within 5 years of 2016. Miss, window closed 2021. Low certainty: the panel reading is also plausible."
+  },
+  {
+   "id": "et-2012-027",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Fleet telematics is the core use of the term. Berg Insight put fleet-management penetration at 22.9% of non-privately owned commercial vehicles in North America in 2016, above the 20% industry threshold at the placed year. Grader B used only the worldwide new-car device test (51% in 2019, 3 years late); North America was already at 37% of new cars in 2015. The industry test in a major market is met in 2016. Hit."
+  },
+  {
+   "id": "et-2012-028",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-029",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-030",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Commercial satellite launch by established operators (Arianespace, commercial Proton) was routine since the 1980s; it was not the new thing a 2012 futures poster placed at 2016. The 2012 term meant private NewSpace, including people. Private NewSpace launch had a measurable share at 2016 (Falcon 9 about 9-15% of about 85-91 orbital launches a year, 2016-2018). SpaceX alone passed 20% of launches only in 2020-2022, and private crew flights began in 2020 (Crew Dragon) and 2021 (Inspiration4, New Shepard). Mainstream 4-5 years after 2016 gives partial. Grader B's FAA-licensed count (25% in 2017) mixes in established commercial launch."
+  },
+  {
+   "id": "et-2012-031",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "partial",
+   "reason": "In an INTERNET track in 2012 the label fits reading (a), the decentralised-internet sense (community meshes, Serval, later FireChat); that stayed far below 5% of internet access: miss. Reading (b) fits the generic technology label: RF-mesh smart meters were routine for US utilities by 2017 and home mesh Wi-Fi reached 11% of US broadband households by 2019: hit or partial. Grader B's partial rests on Amazon Sidewalk coverage (population reached by the signal), not adoption. The label gives neither reading a lead, and the verdicts differ. Unfalsifiable under D16."
+  },
+  {
+   "id": "et-2012-032",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-033",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-034",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-035",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Both graders rest the miss on absence of evidence (NPD 1999 2.5% share, toys-to-life only). A Juniper Research release (May 2018, found by search) puts smart-toy revenue at about USD 6bn in 2018 rising to USD 18bn by 2023, against a global toy market near USD 90bn, which implies a share above 5% near the placed year; definitions differ and no source settles the share, so neither miss nor partial is established."
+  },
+  {
+   "id": "et-2012-036",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-037",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "'Bio-enhanced fuels' is not a standard term. Read literally, E10 gasoline is a petroleum fuel enhanced with bio-ethanol, and nearly all US gasoline was E10 before 2012: hit by early arrival. Read as fuels enhanced by biotechnology, which the word 'enhanced' and a 2017 placement suggest, advanced biofuels were about 9% of biofuels and biofuels about 3.7% of transport fuel in 2018, so under 1% of fuel: miss. Both readings are faithful to the words and give different verdicts. Unfalsifiable under D16."
+  },
+  {
+   "id": "et-2012-038",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "reason": "The label is the generic field name 'Photonics' in the INTERNET track, not 'silicon photonics'. The generic reading is the most faithful to the text. Under it the user-facing test is met at the placed year: fibre passed 25% of fixed broadband subscriptions across the OECD in mid-2018, above 70% in Korea and Japan. D16 does not penalise early arrival of the backbone use. The narrower silicon-photonics reading (grader B's miss case) gives partial at worst, since silicon photonics shipped in volume from 2018; it is a sub-reading, not an equal rival. Hit."
+  },
+  {
+   "id": "et-2012-039",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-040",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-041",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-042",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Both graders use the same reading and the same study. The D16 industry test is routine use by at least 20% of the relevant industry; the industry is surgeons and hospitals, not procedures. In 73 Michigan hospitals 35.1% of general surgeons performed robotic surgery in 2018, up from 8.7% in 2012. Robot-assisted prostatectomy was already the most common US approach by 2013. Procedure share (15.1% of general surgery in 2018) is a stricter test than D16 names. Hit."
+  },
+  {
+   "id": "et-2012-043",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-044",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-045",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-046",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-047",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-048",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "reason": "The SENSORS track fixes the reading to biomarker sensing, not the biomarker concept. Two of the three readings give hit: clinical biomarker tests were routine before 2019 (early arrival), and CGM use in US type 1 diabetes rose from 7% (2010-2012) to 30% (2016-2018), 51% in children under 6, and became standard of care. Only a narrow reading (multi-analyte sweat or breath wearables for the general public) gives miss, and the label does not name that. Unfalsifiable needs equally faithful readings with different verdicts; that is not the case here. Hit."
+  },
+  {
+   "id": "et-2012-049",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-050",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-051",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "unfalsifiable",
+   "reason": "'Smart drugs' in common 2012 use meant cognitive enhancers (the 2011 film Limitless, press on students and modafinil). Targeted drug delivery is normally called 'targeted' or 'smart drug delivery', not 'smart drugs'. The popular sense dominates. Under it the Global Drug Survey found past-year use for cognitive enhancement rose from 5% (2015) to 14% (2017) across 15 countries, 23% in the UK. The sample is self-selected and overstates population use, but it shows a measurable share above 5% by 2019, with no representative figure at 20%. Partial."
+  },
+  {
+   "id": "et-2012-052",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-053",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-054",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "The label sits in the AI track, not a games track, so AI story and role-play tools count; grader B limited it to game titles. Generated narrative was niche at 2020 (AI Dungeon, RimWorld). By 2025 a representative NORC survey for Common Sense Media found 72% of US teens had used AI companions and about a third used them for social interaction including role-play; Pew found 22% of US adults used ChatGPT for entertainment. That is mainstream in a target group about 5 years after the placed year, which is partial. Not hit: no mainstream use by 2022."
+  },
+  {
+   "id": "et-2012-055",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-056",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-057",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-058",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-059",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-060",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-061",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-062",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-063",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-064",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-065",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-066",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-067",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-068",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-069",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-070",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-071",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "WMO statement (14 June 2025) confirms operational programmes in more than 50 countries (about 25% of countries) with efficacy hard to establish. The graders' own named test (about 25% of countries) passes the D16 20% line, which gives hit, and they downgrade to partial on efficacy, which D16 does not use; but a count of countries with any programme is not routine use by 20% of the water or farm sector, and the geoengineering reading (controlled weather) gives miss. Neither partial nor another verdict is established."
+  },
+  {
+   "id": "et-2012-072",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-073",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-074",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-075",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-076",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-077",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The label is the generic material. The D16 industry test is routine use by at least 20% of the relevant industry. CNT conductive agent was in 31.8% of Chinese power lithium batteries in 2018 (GaoGong data via Industrial Securities), forecast to 80% by 2025; China makes most of the world's EV batteries, and CNT conductive paste shipments in China were projected above 120,000 t in 2022. Routine use before the placed year gives hit by early arrival. Grader B had no share figure; this figure fills the gap. Caveat: the 31.8% figure comes through a CNT maker's blog, not the primary report."
+  },
+  {
+   "id": "et-2012-078",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "In 2012 'telepresence' named a product class defined against ordinary video calls (Cisco TelePresence rooms, Double and iRobot Ava robots); Skype already had hundreds of millions of users, so a 2024 placement cannot mean plain video calls. The term's meaning at publication dominates. Under it no source shows 5% adoption of immersive telepresence or telepresence robots by 2024; Google Beam/Starline is early commercial. Grader A graded the video-call reading (81% of US adults, Pew 2021), which is the thing the term was defined against. Provisional miss, window closes 2029."
+  },
+  {
+   "id": "et-2012-079",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "et-2012-080",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-081",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-082",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-083",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-084",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "In 2012 'reprogrammable chips' named FPGA-class reconfigurable logic; that is the plain meaning of the label. Grader B dropped this reading because FPGAs were already routine in 2012, but D16 does not penalise early arrival and does not allow the placed year to exclude a reading. Under the plain reading the industry test is met: FPGAs are standard in telecom base stations and networking, Microsoft deployed them across Azure from 2018, and the FPGA market was about 9.8B USD in 2020. Grader B's narrower reading (user-reconfigurable logic in everyday devices) would give miss, but the label does not state it. Hit."
+  },
+  {
+   "id": "et-2012-085",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Both graders use this reading; it matches the standard industry category name (IFR 'domestic robots' counts floor-cleaning and lawn-mowing robots). Robots were about 20% of worldwide vacuum-cleaner sales in 2016 (iRobot) and iRobot alone sold over 40M units by 2021. Market estimates put US household ownership of robot vacuums at about 20-25% in 2024 and Germany at about 18-22% in 2026. Mainstream (20% of households in major markets) at or within 2 years of 2026. Hit. Caveat: the household figures come from market-research summaries, not a representative survey; if a survey shows under 20% through 2028 the verdict falls to partial."
+  },
+  {
+   "id": "et-2012-086",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-087",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-088",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "et-2012-089",
+   "verdict": "miss",
+   "status": "audited"
+  }
+ ]
+}
