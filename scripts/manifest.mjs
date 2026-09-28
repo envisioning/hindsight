@@ -1,19 +1,29 @@
-// Writes data/raw/manifest.json: the list of sources, edition files and other
-// files. The envisioning.com Hindsight pages read it to find files on GitHub.
-// Run after any change under data/raw: `pnpm manifest`.
-import { readdirSync, statSync, writeFileSync } from "node:fs";
+// Writes data/raw/manifest.json: the sources, edition files and other files
+// that are tracked in git, which is what GitHub serves to the
+// envisioning.com Hindsight pages. Untracked work in progress is left out.
+// Stage new data first (`git add data/raw/<source>`), then run `pnpm manifest`.
+import { execFileSync } from "node:child_process";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const root = new URL("../data/raw/", import.meta.url).pathname;
+const repo = new URL("..", import.meta.url).pathname;
 const EDITION = /^\d{4}(-\d{2})?\.json$/;
+const tracked = execFileSync("git", ["ls-files", "data/raw"], { cwd: repo, encoding: "utf8" })
+	.split("\n")
+	.filter(Boolean);
 const sources = {};
-for (const name of readdirSync(root).sort()) {
-	if (!statSync(join(root, name)).isDirectory()) continue;
-	const files = readdirSync(join(root, name)).sort();
-	sources[name] = {
-		editions: files.filter((f) => EDITION.test(f)).map((f) => f.replace(/\.json$/, "")),
-		files: files.filter((f) => !EDITION.test(f)),
-	};
+for (const file of tracked) {
+	const parts = file.split("/");
+	if (parts.length !== 4) continue; // data/raw/<source>/<file>
+	const [, , name, f] = parts;
+	sources[name] ??= { editions: [], files: [] };
+	if (EDITION.test(f)) sources[name].editions.push(f.replace(/\.json$/, ""));
+	else sources[name].files.push(f);
 }
-writeFileSync(join(root, "manifest.json"), `${JSON.stringify({ sources }, null, 1)}\n`);
-console.log(`manifest: ${Object.keys(sources).length} sources`);
+const sorted = Object.fromEntries(
+	Object.keys(sources)
+		.sort()
+		.map((k) => [k, { editions: sources[k].editions.sort(), files: sources[k].files.sort() }]),
+);
+writeFileSync(join(repo, "data/raw/manifest.json"), `${JSON.stringify({ sources: sorted }, null, 1)}\n`);
+console.log(`manifest: ${Object.keys(sorted).length} tracked sources`);
