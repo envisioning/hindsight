@@ -1,0 +1,105 @@
+{
+ "edition": "2013-02",
+ "published": "2013-02",
+ "publisher": "Congressional Budget Office",
+ "series": "The Budget and Economic Outlook (baseline projections)",
+ "status": "partial",
+ "sources": [
+  "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+  "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx"
+ ],
+ "entries": [
+  {
+   "metric": "10-year Treasury note rate, average",
+   "label": "Fig. 13 / CBO Forecast / 2013-2014",
+   "target_year": 2014,
+   "target_period": "2013-2014",
+   "horizon": "2_year_average",
+   "value": 2.367,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Arithmetic average of the annual rate over the period."
+  },
+  {
+   "metric": "CPI inflation, average",
+   "label": "Fig. 9 / CBO Forecast / 2013-2014",
+   "target_year": 2014,
+   "target_period": "2013-2014",
+   "horizon": "2_year_average",
+   "value": 1.713,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Average annual CPI growth over the period. CBO forecast the CPI-U except in 1986 to 1989 (CPI-W), per the 2025 report appendix."
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 2013,
+   "period": "fiscal year",
+   "horizon": "year_1",
+   "value": -861.699,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 2014,
+   "period": "fiscal year",
+   "horizon": "year_2",
+   "value": -606.696,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 2015,
+   "period": "fiscal year",
+   "horizon": "year_3",
+   "value": -424.832,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 2016,
+   "period": "fiscal year",
+   "horizon": "year_4",
+   "value": -473.086,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 2017,
+   "period": "fiscal year",
+   "horizon": "year_5",
+   "value": -532.946,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "real GDP growth, average",
+   "label": "Fig. 7 / CBO Forecast / 2013-2014",
+   "target_year": 2014,
+   "target_period": "2013-2014",
+   "horizon": "2_year_average",
+   "value": 2.014,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Average annual growth of real output over the period (geometric average of calendar-year growth)."
+  }
+ ],
+ "notes": "Gaps: unemployment rate (not in the 2017 supplement; no annual data file for this baseline)."
+}

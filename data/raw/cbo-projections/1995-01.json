@@ -1,0 +1,141 @@
+{
+ "edition": "1995-01",
+ "published": "1995-01",
+ "publisher": "Congressional Budget Office",
+ "series": "The Budget and Economic Outlook (baseline projections)",
+ "status": "partial",
+ "sources": [
+  "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+  "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx"
+ ],
+ "entries": [
+  {
+   "metric": "10-year Treasury note rate, average",
+   "label": "Fig. 13 / CBO Forecast / 1995-1996",
+   "target_year": 1996,
+   "target_period": "1995-1996",
+   "horizon": "2_year_average",
+   "value": 7.349,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Arithmetic average of the annual rate over the period."
+  },
+  {
+   "metric": "10-year Treasury note rate, average",
+   "label": "Fig. 22 / CBO Forecast / 1995-1996",
+   "target_year": 1999,
+   "target_period": "1995-1999",
+   "horizon": "5_year_average",
+   "value": 6.959,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "medium",
+   "note": "Arithmetic average of the annual rate over the period. The source sheet labels this row \"1995-1996\", but the values are five-year averages (see INDEX.md); the period here is 1995-1999."
+  },
+  {
+   "metric": "CPI inflation, average",
+   "label": "Fig. 9 / CBO Forecast / 1995-1996",
+   "target_year": 1996,
+   "target_period": "1995-1996",
+   "horizon": "2_year_average",
+   "value": 3.25,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Average annual CPI growth over the period. CBO forecast the CPI-U except in 1986 to 1989 (CPI-W), per the 2025 report appendix."
+  },
+  {
+   "metric": "CPI inflation, average",
+   "label": "Fig. 18 / CBO Forecast / 1995-1999",
+   "target_year": 1999,
+   "target_period": "1995-1999",
+   "horizon": "5_year_average",
+   "value": 3.34,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Average annual CPI growth over the period. CBO forecast the CPI-U except in 1986 to 1989 (CPI-W), per the 2025 report appendix."
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 1995,
+   "period": "fiscal year",
+   "horizon": "year_1",
+   "value": -175.619,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 1996,
+   "period": "fiscal year",
+   "horizon": "year_2",
+   "value": -207.439,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 1997,
+   "period": "fiscal year",
+   "horizon": "year_3",
+   "value": -223.656,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 1998,
+   "period": "fiscal year",
+   "horizon": "year_4",
+   "value": -222.305,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "federal budget deficit",
+   "label": "deficit, Total (baselines.csv)",
+   "target_year": 1999,
+   "period": "fiscal year",
+   "horizon": "year_5",
+   "value": -253.221,
+   "unit": "billion USD (negative = deficit)",
+   "source_url": "https://github.com/US-CBO/eval-projections/blob/main/input_data/baselines.csv",
+   "confidence": "high"
+  },
+  {
+   "metric": "real GDP growth, average",
+   "label": "Fig. 7 / CBO Forecast / 1995-1996",
+   "target_year": 1996,
+   "target_period": "1995-1996",
+   "horizon": "2_year_average",
+   "value": 2.448,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Average annual growth of real output over the period (geometric average of calendar-year growth)."
+  },
+  {
+   "metric": "real GDP growth, average",
+   "label": "Fig. 16 / CBO Forecast / 1995-1999",
+   "target_year": 1999,
+   "target_period": "1995-1999",
+   "horizon": "5_year_average",
+   "value": 2.379,
+   "unit": "%",
+   "source_url": "https://www.cbo.gov/system/files/115th-congress-2017-2018/reports/53090-supplementarytables.xlsx",
+   "confidence": "high",
+   "note": "Average annual growth of real output over the period (geometric average of calendar-year growth)."
+  }
+ ],
+ "notes": "Gaps: unemployment rate (not in the 2017 supplement; no annual data file for this baseline)."
+}
