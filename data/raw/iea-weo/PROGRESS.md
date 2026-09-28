@@ -1,0 +1,29 @@
+# Progress: iea-weo
+- 22:54 started; reading secondary analyses
+- 22:57 2025: complete, 28 entries
+- 22:59 2024: complete, 20 entries
+- 22:59 2023: complete, 20 entries
+- 22:59 2022: complete, 16 entries
+- 22:59 2021: complete, 16 entries
+- 22:59 2020: complete, 16 entries
+- 22:59 2019: complete, 20 entries
+- 23:01 2018: complete, 20 entries
+- 23:01 2017: complete, 20 entries
+- 23:01 2016: complete, 24 entries
+- 23:02 2015: complete, 24 entries
+- 23:02 2014: complete, 24 entries
+- 23:02 2013: complete, 20 entries
+- 23:02 2012: complete, 24 entries
+- 23:02 2011: complete, 24 entries
+- 23:02 2010: complete, 24 entries
+- 23:03 2009: complete, 20 entries
+- 23:03 2008: complete, 20 entries
+- 23:03 2007: complete, 6 entries
+- 23:03 2006: complete, 12 entries
+- 23:04 2004: complete, 16 entries
+- 23:04 2002: complete, 16 entries
+- 23:05 2000: partial, 1 entries
+- 23:05 2001: partial, 0 entries
+- 23:05 2003: partial, 0 entries
+- 23:05 2005: partial, 0 entries
+- 23:07 realized.json and INDEX.md written; done

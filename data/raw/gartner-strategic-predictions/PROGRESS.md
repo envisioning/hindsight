@@ -1,0 +1,25 @@
+# Progress
+
+- 2025: complete, written 2026-09-27 23:04
+- 2024: complete, written 2026-09-27 23:04
+- 2023: complete, written 2026-09-27 23:04
+- 2022: complete, written 2026-09-27 23:04
+- 2021: complete, written 2026-09-27 23:04
+- 2020: complete, written 2026-09-27 23:04
+- 2019: complete, written 2026-09-27 23:04
+- 2018: complete, written 2026-09-27 23:04
+- 2017: complete, written 2026-09-27 23:04
+- 2016: complete, written 2026-09-27 23:04
+- 2015: complete, written 2026-09-27 23:04
+- 2014: complete, written 2026-09-27 23:04
+- 2013: complete, written 2026-09-27 23:04
+- 2012: complete, written 2026-09-27 23:04
+- 2011: complete, written 2026-09-27 23:04
+- 2010-11: complete, written 2026-09-27 23:04
+- 2010-01: complete, written 2026-09-27 23:04
+- 2009: complete, written 2026-09-27 23:04
+- 2008: complete, written 2026-09-27 23:04
+- 2006: complete, written 2026-09-27 23:04
+- 2004: partial (secondary source), written 2026-09-27 23:05
+- 2005: missing (no top-predictions release found)
+- 2007: no edition in calendar year

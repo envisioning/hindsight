@@ -1,0 +1,23 @@
+# Progress
+
+- 2006: complete, written 2026-09-27
+- 2007: complete, written 2026-09-27
+- 2008: complete, written 2026-09-27
+- 2009: complete, written 2026-09-27
+- 2010: complete, written 2026-09-27
+- 2011: complete, written 2026-09-27
+- 2012: complete, written 2026-09-27
+- 2013: complete, written 2026-09-27
+- 2014: complete, written 2026-09-27
+- 2015: complete, written 2026-09-27
+- 2016: complete, written 2026-09-27
+- 2017: complete, written 2026-09-27
+- 2018: complete, written 2026-09-27
+- 2019: complete, written 2026-09-27
+- 2020: complete, written 2026-09-27
+- 2021: complete, written 2026-09-27
+- 2022: complete, written 2026-09-27
+- 2023: complete, written 2026-09-27
+- 2024: complete, written 2026-09-27
+- 2025: complete, written 2026-09-27
+- 2026: complete, written 2026-09-27
