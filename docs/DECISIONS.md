@@ -148,6 +148,8 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 
 **Overturned by.** Evidence that a threshold is too strict to publish anything useful, or too loose to catch errors the audit finds.
 
+**Amended by D20:** the audit is done by an independent agent, not a person.
+
 ## D12: Schema changes for normalized claims
 
 *Recorded 2026-09-28.*
@@ -270,3 +272,20 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** Each definition call in the command is a judgment made once, in code, for thousands of rows. A wrong call is wrong everywhere until the audit finds it. Rows that are ungradable today (for example India in the World Bank GEP before 2023) need a new actual series, not a regrade.
 
 **Overturned by.** Audit findings that the matching is wrong in more than a few sampled rows, or a numeric claim type that needs judgment to read (for example a prose forecast with a vague quantity).
+
+## D20: Agents do all grading, adjudication and audit (amends D7, D11)
+
+*Recorded 2026-09-28.*
+
+**Decision.** Hindsight is the grader. No verdict, adjudication or audit decision is handed to a person at Envisioning.
+
+- **Contested verdicts:** where the two blind graders (D7) disagree, a third agent adjudicates. It reads the claim, both readings, both verdicts and both sets of evidence, may search for more, and picks the verdict under the source's rule. The result is marked `adjudicated`, with its reason. Agreed verdicts are not reopened by the adjudicator.
+- **Ambiguous claims:** the adjudicator also takes claims where both graders flagged the reading as uncertain. It picks one reading, states it, and grades that reading. If no reading is more faithful to the text than another and the readings give different verdicts, the verdict is `unfalsifiable` (D16).
+- **Audit (D11):** an independent agent audits the fixed-seed sample of agreed verdicts. It checks each cited source says what the grader says it says, applies the rule again, and records confirm, correct or contest in `audit-d11.json`. The sample rule, sample size and published error rate are unchanged.
+- **Definition calls** in numeric grading (D19) are made in code with the reason written in `data/graded/README.md`, as before.
+- **People** outside the grading process correct verdicts through a public dispute (GitHub issue). A dispute is graded by an agent under the same rule, and the result and reason are published.
+
+**Why.** A benchmark whose verdicts depend on its publisher's staff judgment is not independent of that publisher. Envisioning is one of the graded publishers. Agents working from written rules and cited evidence give a record anyone can re-run and check.
+
+**Cost.** An agent auditor shares blind spots with agent graders. The audit error rate measures how often the evidence does not support the verdict, not how often agents are wrong in ways all agents are wrong. Disputes are the check on that.
+
