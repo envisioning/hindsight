@@ -1,0 +1,802 @@
+{
+ "rule": "D16",
+ "graders": [
+  "A",
+  "B"
+ ],
+ "n": 147,
+ "agree": 118,
+ "raw_agreement": 0.8027,
+ "kappa": 0.7072,
+ "passes_d11": true,
+ "graderA": {
+  "hit": 58,
+  "partial": 40,
+  "miss": 47,
+  "unfalsifiable": 2
+ },
+ "graderB": {
+  "hit": 58,
+  "partial": 45,
+  "miss": 40,
+  "unfalsifiable": 4
+ },
+ "agreed": {
+  "hit": 49,
+  "partial": 30,
+  "miss": 38,
+  "unfalsifiable": 1
+ },
+ "hit_rate_agreed": {
+  "hits": 49,
+  "of_graded_hit_partial_miss": 117,
+  "wilson95": [
+   0.333,
+   0.509
+  ],
+  "note": "Among claims both graders agree on, excluding unfalsifiable. Not yet audited (D11 audit pending)."
+ },
+ "consensus": [
+  {
+   "id": "kurzweil-1999-001",
+   "label": "Individuals primarily use portable computers.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-002",
+   "label": "Portable computers will have become dramatically lighter and thinner than the notebook computers of ten years earlier.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-003",
+   "label": "Personal computers are available in a wide range of sizes and shapes, and are commonly embedded in clothing and jewelry such as wristwatches, rings, earrings and other body ornaments.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-004",
+   "label": "Computers with a high-resolution visual interface range from rings and pins and credit cards up to the size of a thin book.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-005",
+   "label": "People typically have at least a dozen computers on and around their bodies, which are networked using “body LANs” (local area networks).",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-007",
+   "label": "Most portable computers do not have keyboards.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-008",
+   "label": "Most users have servers in their homes and offices where they keep large stores of digital “objects,” including their software, databases, documents, music, and movies.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-009",
+   "label": "Digital objects such as books, music albums, movies, and software are rapidly distributed as data files through the wireless network, and typically do not have a physical object associated with them.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-010",
+   "label": "Most users have servers where they keep digital “objects” such as virtual reality environments (although these are still at an early stage).",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-011",
+   "label": "There are services to keep one’s digital objects in central repositories, but most people prefer to keep their private information under their own physical control.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-012",
+   "label": "Cables are disappearing. Communication between components, such as pointing devices, microphones, displays, printers, and the occasional keyboard uses short-distance wireless technology.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-013",
+   "label": "Computers routinely include wireless technology to plug into the ever-present worldwide network, providing reliable, instantly available, very high bandwidth communication.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-014",
+   "label": "The majority of text is created using continuous speech recognition (CSR) dictation software, but keyboards are still used. CSR is very accurate, far more so than the human transcriptionists who were used up until a few years ago.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-015",
+   "label": "Also ubiquitous are language user interfaces (LUIs), which combine continuous speech recognition (CSR) and natural language understanding. For routine matters, such as simple business transactions and information inquiries, LUIs are quite responsive and precise. They tend to be narrowly focused, however, on specific types of tasks. LUIs are frequently combined with animated personalities. ...",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-016",
+   "label": "Computer displays have all the display qualities of paper — high resolution, high contrast, large viewing angle, and no flicker. Books, magazines, and newspapers are now routinely read on displays that are the size of, well, small books.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-017",
+   "label": "Computer displays built into eyeglasses are also used. These specialized glasses allow users to see the normal visual environment, while creating a virtual image that appears to hover in front of the viewer. The virtual images are created by a tiny laser built into the glasses that projects the images directly onto the user’s retinas.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-018",
+   "label": "Computers routinely include moving picture image cameras and are able to reliably identify their owners from their faces.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-019",
+   "label": "In terms of circuitry, three-dimensional chips are commonly used, and there is a transition taking place from the older single-layer chips.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-020",
+   "label": "Sound producing speakers are being replaced with very small chip-based devices that can place high-resolution sound anywhere in three-dimensional space. This technology is based on creating audible frequency sounds from the spectrum created by the interaction of very high frequency tones. As a result, very small speakers can create very robust three-dimensional sound.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-021",
+   "label": "A $1,000 personal computer can perform about a trillion calculations per second.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-022",
+   "label": "Supercomputers match at least the hardware capacity of the human brain — 20 million billion calculations per second (20 petaflops).",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-023",
+   "label": "Unused computes on the Internet are being harvested, creating virtual parallel supercomputers with human brain hardware capacity.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-024",
+   "label": "There is increasing interest in massively parallel neural nets, genetic algorithms and other forms of “chaotic” or complexity theory computing, although most computer computations are still done using conventional sequential processing, albeit with some limited parallel processing.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-026",
+   "label": "Research has been initiated on reverse-engineering the human brain through both destructive scans of the brains of recently deceased persons as well as noninvasive scans using high- resolution magnetic resonance imaging (MRI) of living persons and animals.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-027",
+   "label": "In the twentieth century, computers in schools were mostly on the trailing edge, with most effective learning from computers taking place in the home. Now in 2009, while schools are still not on the cutting edge, the profound importance of the computer as a knowledge tool is widely recognized.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-029",
+   "label": "The majority of reading is done on displays, although the “installed base” of paper documents is still formidable.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-031",
+   "label": "Documents, circa 2009, routinely include embedded moving images and sounds.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-033",
+   "label": "Students interact with their computers primarily by voice and by pointing with a device that looks like a pencil.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-034",
+   "label": "Keyboards still exist, but most textual language is created by speaking.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-036",
+   "label": "Intelligent courseware has emerged as a common means of learning.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-037",
+   "label": "Recent controversial studies have shown that students can learn basic skills such as reading and math just as readily with interactive learning software as with human teachers, particularly when the ratio of students to human teachers is more than one to one. Although the studies have come under attack, most students and their parents have accepted this notion for years.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-039",
+   "label": "Many children learn to read on their own using their personal computers before entering grade school.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-040",
+   "label": "Preschool and elementary school children routinely read at their intellectual level using print-to-speech reading software until their reading skill level catches up.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-041",
+   "label": "These print-to-speech reading systems display the full image of documents, and can read the print aloud while highlighting what is being read.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-042",
+   "label": "Synthetic voices sound fully human.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-044",
+   "label": "Studies have shown that students improve their reading skills by being exposed to synchronized visual and auditory presentations of text.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-045",
+   "label": "Learning at a distance (e.g., lectures and seminars in which the participants are geographically scattered) is commonplace.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-048",
+   "label": "Persons with disabilities are rapidly overcoming their handicaps through the intelligent technology of 2009.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-049",
+   "label": "Students with reading disabilities routinely ameliorate their disability using print-to-speech reading systems.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-050",
+   "label": "Print-to-speech reading machines for the blind are now very small, inexpensive, palm-sized devices that can read books (those that still exist in paper form) and other printed documents, and other real-world text such as signs and displays.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-051",
+   "label": "These reading systems are equally adept at reading the trillions of electronic documents that are instantly available from the ubiquitous wireless worldwide network.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-053",
+   "label": "A blind person can interact with her personal reading-navigation systems through voice communication, kind of like a Seeing Eye dog that reads and talks.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-054",
+   "label": "Deaf persons — or anyone with a hearing impairment — commonly use portable speech-to-text listening machines, which display a real-time transcription of what people are saying. The deaf user has the choice of either reading the transcribed speech as displayed text, or watching an animated person gesturing in sign language. These have eliminated the primary communication handicap associated ...",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-056",
+   "label": "Computer-controlled orthotic devices have been introduced. These “walking machines” enable paraplegic persons to walk and climb stairs. The prosthetic devices are not yet usable by all paraplegic persons, as many physically disabled persons have dysfunctional joints from years of disuse. However, the advent of orthotic walking systems is providing more motivation to have these joints replaced.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-057",
+   "label": "There is a growing perception that the primary disabilities of blindness, deafness, and physical impairment do not necessarily impart handicaps. Disabled persons routinely describe their disabilities as mere inconveniences. Intelligent technology has become the great leveler.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-058",
+   "label": "Translating telephone technology (where you speak in English and your Japanese friend hears you in Japanese, and vice versa) is commonly used for many language pairs. It is a routine capability of an individual’s personal computer.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-059",
+   "label": "…which also serves as her phone.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-060",
+   "label": "“Telephone” communication is primarily wireless.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-061",
+   "label": "…and routinely includes high-resolution moving images.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-062",
+   "label": "Meetings of all kinds and sizes routinely take place among geographically separated participants.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-063",
+   "label": "There is effective convergence, at least on the hardware and supporting software level, of all media, which exist as digital objects (i.e., files).",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-065",
+   "label": "Users can instantly download books, magazines, newspapers, television, radio, movies, and other forms of software to their highly portable personal communication devices.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-066",
+   "label": "Virtually all communication is digital and encrypted…",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-067",
+   "label": "…with keys available to government authorities.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-068",
+   "label": "Many individuals and groups, including but not limited to criminal organizations, use an additional layer of virtually unbreakable encryption codes with no third party keys.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-069",
+   "label": "Haptic technologies are emerging that allow people to touch and feel objects and other persons at a distance.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-070",
+   "label": "These force feedback devices are widely used in games and in training simulation systems.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-071",
+   "label": "Interactive games routinely include all-encompassing visual and auditory environments…",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-072",
+   "label": "…but a satisfactory, all-encompassing tactile environment is not yet available.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-073",
+   "label": "The online chat rooms of the late 1990s have been replaced with virtual environments where you can meet people with full visual realism.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-075",
+   "label": "But the lack of the “surround” tactile environment has thus far kept virtual sex out of the mainstream.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-077",
+   "label": "And phone sex is a lot more popular now that phones routinely include high resolution real-time moving images of the person on the other end.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-078",
+   "label": "Despite occasional corrections, the ten years leading up to 2009 have seen continuous economic expansion and prosperity due to the dominance of the knowledge content of products and services.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-079",
+   "label": "The greatest gains continue to be in the value of the stock market",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-080",
+   "label": "Price deflation concerned economists in the early ’00 years, but they quickly realized it was a good thing. The high tech community pointed out that significant deflation had existed in the computer hardware and software industries for many years earlier without detriment.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-081",
+   "label": "The United States continues to be the economic leader due to its primacy in popular culture and its entrepreneurial environment.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-083",
+   "label": "China has also emerged as a powerful economic player.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-085",
+   "label": "At least half of all transactions are conducted on-line.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-086",
+   "label": "Intelligent assistants which combine continuous speech recognition, natural language understanding, problem solving, and animated personalities routinely assist with finding information, answering questions and conducting transactions. Intelligent assistants have become a primary interface for interacting with information-based services, with a wide range of choices available. A recent poll ...",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-087",
+   "label": "Most purchases of books, musical “albums,” videos, games and other forms of software do not involve any physical object, so new business models for distributing these forms of information have emerged.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-089",
+   "label": "There are many types and gradations of transactions to gain access to these products. You can “buy” a book, musical album, video, etc. which gives you unlimited permanent access.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-090",
+   "label": "Alternatively, you can rent access to read, view, or listen once, or a few times. Or you can rent access by the minute.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-091",
+   "label": "Access may be limited to one person or to a group of persons (for example, a family or a company). Alternatively, access may be limited to a particular computer, or to any computer accessed by a particular person or by a set of persons.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-092",
+   "label": "There is a strong trend towards the geographic separation of work groups. People are successfully working together despite living and working in different places.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-093",
+   "label": "The average household has more than a hundred computers, most of which are embedded in appliances and built-in communication systems.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-094",
+   "label": "Household robots have emerged, but are not yet fully accepted.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-095",
+   "label": "Intelligent roads are in use, primarily for long-distance travel. Once your car’s computer guidance system locks onto the control sensors on one of these highways, you can sit back and relax. Local roads, though, are still predominantly conventional.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-096",
+   "label": "A company west of the Mississippi and north of the Mason-Dixon Line has surpassed a trillion dollars in market capitalization.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-097",
+   "label": "Privacy has emerged as a primary political issue. The virtually constant use of electronic communication technologies is leaving a highly detailed trail of every person’s every move.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-098",
+   "label": "Litigation, of which there has been a great deal, has placed some constraints on the widespread distribution of personal data.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-099",
+   "label": "Government agencies, however, continue to have the right to gain access to people’s files…",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-100",
+   "label": "…which has resulted in the popularity of unbreakable encryption technologies.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-101",
+   "label": "There is a growing neo-Luddite movement, as the skill ladder continues to accelerate upwards.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-103",
+   "label": "The movement does succeed in establishing continuing education as a primary right associated with employment.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-104",
+   "label": "There is continuing concern with an underclass that the skill ladder has left far behind. The size of the underclass appears to be stable, however.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-106",
+   "label": "The high quality of computer screens, and the facilities of computer-assisted visual rendering software, have made the computer screen a medium of choice for visual art.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-107",
+   "label": "Most visual art is the result of collaboration between human artists and their intelligent art software.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-108",
+   "label": "Virtual paintings — high-resolution, wall-hung displays — have become popular. Rather than always displaying the same work of art, as with a conventional painting or poster, these virtual paintings can change the displayed work at the user’s verbal command, or can cycle through collections of art. The displayed artwork can be works by human artists or original art created in real time by ...",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-110",
+   "label": "The creation of music has become available to persons who are not musicians.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-111",
+   "label": "Creating music does not necessarily require the fine motor coordination of using traditional controllers.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-113",
+   "label": "Interactive brain-generated music, which creates a resonance between the user’s brainwaves and the music being listened to, is another popular genre.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-114",
+   "label": "Musicians commonly use electronic controllers which emulate the playing style of the old acoustic instruments (e.g., piano, guitar, violin, drums).",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-115",
+   "label": "…but there is a surge of interest in the new “air” controllers in which you create music by moving your hands, feet, mouth and other body parts.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-116",
+   "label": "Other music controllers involve interacting with specially designed devices.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-117",
+   "label": "Writers use voice-activated word processing…",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-118",
+   "label": "Grammar checkers are now actually useful.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-119",
+   "label": "Distribution of written documents from articles to books typically does not involve paper and ink.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-120",
+   "label": "Style improvement and automatic editing software is widely used to improve the quality of writing.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-122",
+   "label": "Nonetheless, the core process of creating written language is less affected by intelligent software technologies than the visual and musical arts. However, “cybernetic” authors are emerging.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-124",
+   "label": "Users also experience fantasy environments with no counterpart in the physical world.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-126",
+   "label": "The security of computation and communication is the primary focus of the U.S. Department of Defense. There is general recognition that the side that can maintain the integrity of its computational resources will dominate the battlefield.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-127",
+   "label": "Humans are generally far removed from the scene of battle.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-129",
+   "label": "Many of these flying weapons are the size of small birds, or smaller.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-130",
+   "label": "The U.S. continues to be the world’s dominant military power, which is largely accepted by the rest of the world, as most countries concentrate on economic competition.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-131",
+   "label": "Military conflicts between nations are rare, and most conflicts are between nations and smaller bands of terrorists.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-132",
+   "label": "The greatest threat to national security comes from bioengineered weapons.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-133",
+   "label": "Bioengineered treatments have reduced the toll from cancer, heart disease, and a variety of other health problems.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-134",
+   "label": "Significant progress is being made in understanding the information processing basis of disease.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-135",
+   "label": "Telemedicine is widely used. Physicians can examine patients using visual, auditory and haptic examination from a distance. Health clinics with relatively inexpensive equipment and a single technician bring health care to remote areas where doctors had previously been scarce.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-136",
+   "label": "Computer-based pattern recognition is routinely used to interpret imaging data and other diagnostic procedures.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-137",
+   "label": "The use of noninvasive imaging technologies has substantially increased.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-138",
+   "label": "Diagnosis almost always involves collaboration between a human physician and a pattern recognition-based expert system.",
+   "verdict": "miss"
+  },
+  {
+   "id": "kurzweil-1999-139",
+   "label": "Doctors routinely consult knowledge-based systems (generally through two-way voice communication augmented by visual displays), which provide automated guidance, access to the most recent medical research, and practice guidelines.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-141",
+   "label": "Privacy issues concerning access to these records (as with many other data bases of personal information) have emerged as a major issue.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-142",
+   "label": "Doctors routinely train in virtual reality environments, which include a haptic interface. These systems simulate the visual, auditory and tactile experience of medical procedures, including surgery.",
+   "verdict": "partial"
+  },
+  {
+   "id": "kurzweil-1999-143",
+   "label": "Simulated patients are available for continuing medical education, for medical students, and for people who just want to play doctor.",
+   "verdict": "hit"
+  },
+  {
+   "id": "kurzweil-1999-146",
+   "label": "There is serious speculation on the potential sentience (i.e., consciousness) of computer-based intelligence.",
+   "verdict": "hit"
+  }
+ ],
+ "contested": [
+  {
+   "id": "kurzweil-1999-006",
+   "label": "For the most part, these truly personal computers have no moving parts. Memory is completely electronic.",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-025",
+   "label": "Autonomous nanoengineered machines (i.e., machines constructed atom by atom and molecule by molecule) have been demonstrated and include their own computational controls. However, nanoengineering is not yet considered a practical technology.",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-028",
+   "label": "Computers play a central role in all facets of education, as they do in other spheres of life.",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-030",
+   "label": "The generation of paper documents is dwindling, as the books and other papers of largely twentieth century vintage are being rapidly scanned and stored.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-032",
+   "label": "Students of all ages typically have a computer of their own, which is a thin tablet-like device weighing under a pound with a very high-resolution display suitable for reading.",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-035",
+   "label": "Learning materials are accessed through wireless communication.",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-038",
+   "label": "The traditional mode of a human teacher instructing a group of children is still prevalent, but schools are increasingly relying on software approaches, leaving human teachers to attend primarily to issues of motivation, psychological well-being, and socialization.",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-043",
+   "label": "Although some educators expressed concern in the early ‘00 years that students would rely unduly on reading software, such systems have been readily accepted by children and their parents.",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-046",
+   "label": "Learning is becoming a significant portion of most jobs.",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-047",
+   "label": "Training and developing new skills is emerging as an ongoing responsibility in most careers, not just an occasional supplement, as the level of skill needed for meaningful employment soars ever higher.",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-052",
+   "label": "After decades of ineffective attempts, useful navigation devices have been introduced that can assist blind people in avoiding physical obstacles in their path, and finding their way around, using global positioning system (“GPS”) technology.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-055",
+   "label": "Listening machines can also translate what is being said into another language in real time, so they are commonly used by hearing people as well.",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-064",
+   "label": "…distributed by the ever-present, high-bandwidth, wireless information web.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-074",
+   "label": "People have sexual experiences at a distance with other persons as well as virtual partners.",
+   "graderA": "miss",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-076",
+   "label": "Virtual partners are popular as forms of sexual entertainment, but they are more game-like than real.",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-082",
+   "label": "Since information markets are largely world markets, the U.S. has benefited greatly from its immigrant history. Being comprised of all the world’s peoples — specifically, the descendants of peoples from around the globe who had endured great risk for a better life — it has the ideal heritage for the new knowledge-based economy.",
+   "graderA": "hit",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "kurzweil-1999-084",
+   "label": "Europe has been somewhat quicker than Japan and Korea in adopting the American emphasis on venture capital, employee stock options, and tax policies that encourage entrepreneurship, although these practices have become popular throughout the world.",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-088",
+   "label": "One shops for these information objects by “strolling” through virtual malls, sampling and selecting objects of interest, rapidly (and securely) conducting an on-line transaction, and then quickly downloading the information using high-speed wireless communication.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-102",
+   "label": "As with earlier Luddite movements, its influence is limited by the level of prosperity made possible by new technology.",
+   "graderA": "miss",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "kurzweil-1999-105",
+   "label": "Although not politically popular, the underclass is politically neutralized through public assistance and the generally high level of affluence.",
+   "graderA": "hit",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "kurzweil-1999-109",
+   "label": "Human musicians routinely jam with cybernetic musicians.",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "kurzweil-1999-112",
+   "label": "Cybernetic music creation systems allow people who appreciate music but who are not knowledgeable about music theory and practice to create music in collaboration with their automatic composition software.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-121",
+   "label": "Language translation software is also widely used to translate written works in a variety of languages.",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-123",
+   "label": "Beyond music recordings, images, and movie videos, the most popular type of digital entertainment object is virtual experience software. These interactive virtual environments allow you to go whitewater rafting on virtual rivers, to hang glide in a virtual Grand Canyon, or to engage in intimate encounters with your favorite movie star.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-125",
+   "label": "The visual and auditory experience of virtual reality is compelling, but tactile interaction is still limited.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-128",
+   "label": "Warfare is dominated by unmanned intelligent airborne devices.",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "kurzweil-1999-140",
+   "label": "Lifetime patient records are maintained in computer databases.",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "kurzweil-1999-144",
+   "label": "There is renewed interest in the Turing test, first proposed by Alan Turing in 1950 as a means for testing intelligence in a machine. Recall that the Turing test contemplates a situation in which a human judge interviews the computer and a human “foil,” communicating with both over terminal lines. If the human judge is unable to tell which interviewee is human and which is machine, the ...",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "kurzweil-1999-145",
+   "label": "Although computers still fail the test, confidence is increasing that they will be in a position to pass it within another one or two decades.",
+   "graderA": "unfalsifiable",
+   "graderB": "partial"
+  }
+ ]
+}
