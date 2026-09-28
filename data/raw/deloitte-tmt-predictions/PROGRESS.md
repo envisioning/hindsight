@@ -1,0 +1,25 @@
+# Progress
+
+- 2011: complete, 18 entries, written 2026-09-28 08:24
+- 2012: complete, 18 entries, written 2026-09-28 08:24
+- 2013: complete, 16 entries, written 2026-09-28 08:24
+- 2014: complete, 14 entries, written 2026-09-28 08:25
+- 2015: complete, 13 entries, written 2026-09-28 08:25
+- 2016: complete, 17 entries, written 2026-09-28 08:26
+- 2017: complete, 10 entries, written 2026-09-28 08:26
+- 2018: complete, 11 entries, written 2026-09-28 08:27
+- 2020: complete, 10 entries, written 2026-09-28 08:29
+- 2021: complete, 9 entries, written 2026-09-28 08:30
+- 2022: complete, 19 entries, written 2026-09-28 08:31
+- 2023: complete, 15 entries, written 2026-09-28 08:31
+- 2024: complete, 19 entries, written 2026-09-28 08:32
+- 2025: complete, 21 entries, written 2026-09-28 08:33
+- 2026: complete, 13 entries, written 2026-09-28 08:35
+- 2019: complete, 10 entries, written 2026-09-28 08:36
+- 2010: partial (Media 8, Technology 7, Telecommunications 0), 15 entries, written 2026-09-28 08:40
+- 2009: partial (Technology Part One 6, Telecommunications Part One 5, Media 0), 11 entries, written 2026-09-28 08:41
+- 2008: partial (Media Part 1 5, Technology Part 1 4), 9 entries, written 2026-09-28 08:43
+- 2007: partial (Technology Part One 4, Media Part Two 1, Telecommunications Part Two 4), 9 entries, written 2026-09-28 08:43
+- 2006: partial (Technology executive summary, 5 entries), written 2026-09-28 08:43
+- 2005: partial (Technology report complete, 10 of 10; Media and Telecom not found), 10 entries, written 2026-09-28 08:43
+- 2002, 2003, 2004: missing (not found; archive.org offline at capture)

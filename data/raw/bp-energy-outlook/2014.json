@@ -1,0 +1,59 @@
+{
+ "edition": "2014",
+ "published": "2014-01-15",
+ "status": "partial",
+ "sources": [
+  "https://www.bp.com/api/files/6cqieuqhq4no/master/4h1ggwVhMywIYD98483GHZ/071f4dbd892eafc1ab9e7b3206a041af/bp-energy-outlook-2014.pdf"
+ ],
+ "publisher": "BP p.l.c.",
+ "series": "BP Energy Outlook",
+ "title": "BP Energy Outlook 2035",
+ "scenarios": [
+  "base case"
+ ],
+ "central_scenario": "base case",
+ "scenario_note": "bp describes a single 'most likely' view.",
+ "entries": [
+  {
+   "subject": "oil",
+   "metric": "global liquids demand (oil, biofuels and other liquids)",
+   "target_year": 2035,
+   "value": 109,
+   "unit": "Mb/d",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "quote": "Global liquids demand (oil, biofuels, and other liquids) nonetheless is likely to rise by around 19 Mb/d, to reach 109 Mb/d by 2035.",
+   "source_url": "https://www.bp.com/api/files/6cqieuqhq4no/master/4h1ggwVhMywIYD98483GHZ/071f4dbd892eafc1ab9e7b3206a041af/bp-energy-outlook-2014.pdf",
+   "confidence": "high"
+  },
+  {
+   "subject": "renewables",
+   "metric": "renewables share of primary energy (renewables incl. biofuels, excl. hydro)",
+   "target_year": 2035,
+   "value": 7,
+   "unit": "percent",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "quote": "Among non-fossil fuels, renewables (including biofuels) gain share rapidly, from around 2% today to 7% by 2035, while hydro and nuclear remain fairly flat.",
+   "source_url": "https://www.bp.com/api/files/6cqieuqhq4no/master/4h1ggwVhMywIYD98483GHZ/071f4dbd892eafc1ab9e7b3206a041af/bp-energy-outlook-2014.pdf",
+   "confidence": "high"
+  },
+  {
+   "subject": "electric vehicles",
+   "metric": "plug-in vehicle share of new vehicle sales",
+   "target_year": 2035,
+   "value": 7,
+   "unit": "percent",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "quote": "Plug-in vehicles, including full battery electric vehicles (BEVs), are forecast to make up 7% of sales in 2035.",
+   "source_url": "https://www.bp.com/api/files/6cqieuqhq4no/master/4h1ggwVhMywIYD98483GHZ/071f4dbd892eafc1ab9e7b3206a041af/bp-energy-outlook-2014.pdf",
+   "confidence": "high",
+   "note": "Sales share, not a fleet count."
+  }
+ ],
+ "notes": "Summary tables exist (.xls on archive.org) but the old binary .xls format was not parsed (no xls reader available without adding a dependency). Figures from report text. No EV count."
+}

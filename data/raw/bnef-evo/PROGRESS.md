@@ -1,0 +1,14 @@
+# Progress: bnef-evo
+- 08:17 started; verify-first on public summaries
+- 08:17 2016: complete, 5 entries
+- 08:18 2017: complete, 6 entries
+- 08:19 2018: complete, 7 entries
+- 08:20 2019: complete, 7 entries (public exec summary PDF)
+- 08:21 2020: complete, 10 entries
+- 08:22 2021: partial, 6 entries (press only)
+- 08:22 2022: partial, 3 entries
+- 08:23 2023: complete, 7 entries
+- 08:23 2024: complete, 5 entries
+- 08:24 2025: complete, 5 entries
+- 08:24 2026: complete, 5 entries
+- 08:25 realized.json (IEA GEVO 2026 via OWID) and INDEX.md written. BNEF done.
