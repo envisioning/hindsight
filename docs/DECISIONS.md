@@ -227,3 +227,27 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** Thresholds are a convention; a technology at 19% of households is a partial and one at 21% a hit. Early arrival is not penalised, so a forecast that names something already here scores a hit; that trades rigour on foresight for a simpler, more testable rule.
 
 **Overturned by.** A kappa below 0.6 on the re-grade under this rule, or audit findings that the thresholds misclassify clear cases.
+
+## D17: Publishers side by side, not ranked (amends D6)
+
+*Recorded 2026-09-28.*
+
+**Decision.** Publishers of the same claim type may be shown in one table: each with its hit rate, its Wilson 95% interval, its sample size and its unfalsifiable share. The table is sorted alphabetically, never by score. There is still no single total score and no rank position. Claim types are never mixed in one table: technology placements, numeric forecasts, rankings and scenarios each get their own.
+
+**Why.** Readers want to know how Envisioning's record compares with others. A side-by-side table answers that; intervals show where two publishers cannot be told apart, which a rank would hide.
+
+**Cost.** Readers will rank the table themselves. The intervals and sample sizes are the counterweight.
+
+**Overturned by.** Evidence that the table is read and cited as a league table despite the design.
+
+## D18: Grading numeric forecasts of rates
+
+*Recorded 2026-09-28.*
+
+**Decision.** For forecasts of a rate in percent (GDP growth, inflation, unemployment, interest rates), the error is the forecast minus the actual, in percentage points. `hit`: within 0.5 points. `partial`: within 1.0 point. `miss`: more than 1.0 point off. Every publisher also gets its mean error (bias), mean absolute error, and error by horizon (current year, next year, further). The actual value is the latest published figure, with its vintage recorded; a first-release comparison may be added later. Forecasts of levels (for example GW of solar, oil in Mb/d, a count of devices) keep the D16 percentage rule: within 10% hit, within 25% partial.
+
+**Why.** A 10% relative band on a growth rate is meaningless (10% of 2% is 0.2 points). Percentage points are how these forecasters and their evaluators measure error.
+
+**Cost.** One threshold for all rates treats a 0.5-point miss on volatile inflation the same as on stable growth.
+
+**Overturned by.** Evidence that per-series thresholds are needed, for example from the publishers' own evaluation reports.
