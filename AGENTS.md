@@ -10,6 +10,9 @@ pnpm typecheck    the green gate
 pnpm build        compile src to dist
 pnpm normalize    data/raw -> data/normalized (Node 24 type stripping)
 pnpm grade:numeric    grade numeric forecasts -> data/graded (deterministic, D19)
+pnpm manifest     list git-tracked raw files for the live site (run after git add)
+node scripts/final-d20.mjs <source>    agreed + adjudicated + audited -> final-d20.json (D20)
+scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
 ```
 
 pnpm only. The build is the gate. MZ tests by hand: do not write automated tests or drive a browser unless asked.
@@ -30,7 +33,13 @@ pnpm only. The build is the gate. MZ tests by hand: do not write automated tests
 - **Append-only history.** Verdicts, links and revisions are new rows. A change never overwrites a row.
 - **Facts only from third parties.** Keep who said what, when, about which subject, with which timing, and short attributed quotes (max 400 characters, enforced in `Claim.quote`). Never store charts, figures or full text.
 - **Grading rules.** Scenarios and fiction are never graded hit or miss. `VERDICTS_BY_TYPE` in `src/schema.ts` lists the verdicts each claim type allows. A claim is graded only against what it said at the time, at its own target date.
-- **Agentic verdicts.** Two independent agents grade each claim. The second agent does not see the first agent's reasoning. A verdict publishes only on agreement and with at least one evidence row. Every verdict row records model and prompt version. See D7.
+- **Agentic verdicts (D7, D20).** Agents make every call; never ask a person at Envisioning to settle a verdict. Per judgment source, in order:
+  1. Two blind graders (`verdicts-d16-graderA.json`, `-graderB.json`). The second never sees the first. Kappa >= 0.6 or the rubric is revised (D11).
+  2. `agreement-d16.json`: consensus and contested lists.
+  3. An adjudicator agent settles contested claims (`adjudicated-d20.json`).
+  4. An auditor agent checks a fixed-seed sample of 50 agreed claims (`audit-d11.json`). Seed `d11:<source>:d16`; the draw is `drawSample` in the www repo `app/hindsight/_lib/audit.ts` until #41 moves it here.
+  5. `node scripts/final-d20.mjs <source>` writes `final-d20.json`, which the site reads first.
+  Every verdict needs at least one evidence row. Where the audit contests a verdict, no verdict publishes.
 - **No total score, no ranking of institutions.**
 
 ## Seams
@@ -45,5 +54,7 @@ Hindsight connects to other Envisioning systems only where the product needs it.
 
 ## Traps
 
-- **Embeddings for linking.** The Core CMS column `technologies.embedding` is `vector(1536)` with `text-embedding-3-small`. The migration file in the Core repo that says 3072 is stale. Read the live schema. Subject embeddings must use the same model and text recipe, or similarity scores mean nothing.
-- **Not every technology has an embedding.** A technology without one gets no link proposal. Do not loosen the method to cover the gap.
+- **Embeddings for linking.** The Core CMS column `technologies.embedding` is `vector(1536)` holding `text-embedding-3-large` requested with `dimensions: 1536`. It is not `3-small` (cosine about 0 against stored rows) and not 3072 (the Core migration file is stale). Text recipe: title, summary, description joined by blank lines. Before writing or comparing vectors, re-embed two stored rows and confirm cosine above 0.9. Subject embeddings must use the same model and dimensions.
+- **All 4,807 technologies have embeddings** (backfill 2026-09-28, research `scripts/sync-cms-embeddings.ts`). New ones depend on auto-embedding on insert (core#168); a technology without one gets no link proposal.
+- **Web search budget.** Grading agents share a web-search limit of about 200 per session. Prefer WebFetch on known sources; cap WebSearch per agent.
+- **`.next` race in www.** A www build can fail with `ENOTEMPTY ... rmdir .next/server` when another build or dev server touches `.next`. Rerun; check the exit code before committing.
