@@ -1,6 +1,6 @@
 # Hindsight: agent notes
 
-Hindsight is a public record of published forecasts, graded against what happened. Read `README.md` for what it is and `docs/DECISIONS.md` for why it is built this way.
+Hindsight is a public record of published forecasts, graded against what happened. Read `README.md` for what it is and `docs/DECISIONS.md` for why it is built this way. Current state and order of work: `docs/HANDOFF.md`. Rules for every agent: `docs/AGENT-RULES.md`.
 
 ## Commands
 
