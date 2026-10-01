@@ -34,7 +34,7 @@ A public, citable record of published forecasts (publications x predictions), gr
   - Scenarios (D34): IPCC 11 covered, 7 partly, 0 not covered; Shell 14, 32, 11 (`coverage-d34.json`); CH4 has no observed series on the scenarios' definition. NIC: 2000 and 2004 sets covered, 2008 set not covered.
 - **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month (6 sources due on 2026-11-01). Export runs (`pnpm export`); no release tagged.
 - **Subjects:** 5,360. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
-- **Site:** live but `noindex`, "review build" banner (#60). www issues: envisioning.com#46 (wave-aware sample check), #47 (per-edition Kurzweil rate), #48 (rate_withheld and audit-adjusted interval), #49 (per-claim numeric verdicts, D17 tables).
+- **Site:** launched 2026-10-01 (envisioning.com dd9e9ceb): indexable, per-source validation status instead of the review banner, read-only audit pages, `/sitemap-hindsight.xml` (claims with a published verdict), listed in llms.txt. www #46 to #50 done (audit-adjusted intervals, wave-aware audit check, per-edition rates, numeric claim verdicts, /hindsight/comparisons, D31 to D34 measures). Another session added the score visualisations (34765a48, `_components/viz.tsx`).
 
 ## Running in a cloud session
 
@@ -54,10 +54,9 @@ A public, citable record of published forecasts (publications x predictions), gr
 ## Order of work
 
 1. **#26** FTSG: full capture of 2019, 2020 and 2023 (then re-grade the `gap` rows as a new pass), fix misaligned 2023-2024 quotes. **#36** Long Bets capture as baseline only (D35).
-2. **www:** show the D31, D32, D33 and D34 measures (new issue).
 3. **#66** numeric open items (ECB GDP basis, AEO2009 case, BCB Selic, World Bank World, IMF India, IEA restatements, FRED vintage refresh before release).
 4. **#59** links (needs `OPENROUTER_API_KEY`). **#26** FTSG 2015-2017 transcripts. **#27** McKinsey 2026 PDF re-capture.
-5. **www** issues #46 to #49 (envisioning.com), then **#60** launch and **#3** first tagged release, as MZ decides.
+5. **#3** first tagged dataset release (export is built; ask MZ before tagging). The forecasts block on research pages (#59) after links exist.
 6. **#64** housekeeping: close or comment the older capture issues (#2, #4 to #25) from each PROGRESS.md.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
