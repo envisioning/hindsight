@@ -1,0 +1,97 @@
+{
+  "rule": "D16",
+  "role": "adjudicator (D20)",
+  "model": "agent (model not recorded in the public repo)",
+  "verdicts": [
+    {
+      "id": "idc-futurescape-2023-004",
+      "graderA": "ungradable",
+      "graderB": "hit",
+      "verdict": "ungradable",
+      "reading": "In 2024, providers across the hardware, software and services spectrum aggressively expand private and open-source data portfolios, and this makes strategic partnering decisions less stable.",
+      "reason": "Qualitative claim with no number. Its content is 'aggressive' expansion across the whole provider spectrum plus a consequence (partnering instability); no public series measures either for 2024 (D22). Grader B graded only the weakest part (some expansion happened) from anecdotes, which is a proxy, not a measure; one of its examples is a reading error: Reddit is a data seller, not a hardware, software or services provider, so its licensing deals show buyers acquiring data rather than a provider portfolio measure. Isolated events (IBM Granite open release, Databricks-Tabular) cannot settle 'aggressively' or 'across the spectrum'. Consistent with the 147 agreed ungradable claims of this source, which include every other unquantified IDC claim.",
+      "evidence": [
+        {
+          "url": "https://www.idc.com/research/viewtoc.jsp?containerId=US50435423",
+          "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (table of contents)",
+          "date": "2023-10",
+          "shows": "States the claim as prediction 4; no metric or value."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/IBM_Granite",
+          "title": "IBM Granite (Wikipedia)",
+          "date": "2026-10-01",
+          "shows": "May 2024 open-source release of Granite code models by IBM: one instance of the event, not a measure of its breadth or intensity (cited by grader B)."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Databricks",
+          "title": "Databricks (Wikipedia)",
+          "date": "2026",
+          "shows": "June 2024 acquisition of Tabular: one instance, not a measure (cited by grader A)."
+        }
+      ]
+    },
+    {
+      "id": "idc-futurescape-2023-017",
+      "graderA": "ungradable",
+      "graderB": "hit",
+      "verdict": "hit",
+      "reading": "By 2024, 35% of CIOs (their organizations) have embraced GenAI, read as having deployed it (the 'early short-term advantage' clause implies use, not plans).",
+      "reason": "Session rule: a share of CIOs is gradable against a survey of the same population and behaviour at the target year or the year before. The 2025 Gartner CIO and Technology Executive Survey (3,186 CIOs and technology executives, 88 countries, fielded 2024, published October 2024) reports 37% of organizations had already deployed GenAI. Error |35-37|/37 = 5.4%: hit under D16 numeric. Grader A's factor-of-2 range mixes populations and years: the Gartner Q4 2023 survey (29%) and McKinsey State of AI (about 65%) are not CIO surveys, and the 2024 CIO survey (9% deployed) was fielded in 2023 and is superseded by the target-year survey of the same population. With same-population data only, D23's range test does not trigger. Uncertainty: the 37% figure was confirmed via search results only (Gartner pages return 403 to fetch); a broader reading of 'embrace' (deployed or piloting) is not measured by any CIO survey and would not lower the verdict below partial.",
+      "evidence": [
+        {
+          "url": "https://www.idc.com/research/viewtoc.jsp?containerId=US51294523",
+          "title": "IDC FutureScape: Worldwide CIO Agenda 2024 Predictions (table of contents)",
+          "date": "2023-10",
+          "shows": "States the claim as prediction 7: 35% of CIOs by 2024."
+        },
+        {
+          "url": "https://www.gartner.com/en/documents/5848147",
+          "title": "Gartner, 2025 CIO and Technology Executive Agenda (2025 Gartner CIO and Technology Executive Survey)",
+          "date": "2024-10",
+          "shows": "37% of respondents' organizations had already deployed GenAI, another 35% planned to by end of 2025; n=3,186 CIOs and technology executives in 88 countries. Seen via search results; page returns 403 to fetch."
+        },
+        {
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+          "title": "Gartner Survey of Over 2,400 CIOs (2024 CIO and Technology Executive Survey)",
+          "date": "2023-10-17",
+          "shows": "Year-before survey of the same population (fielded 2023): 9% deployed GenAI. Shows the trajectory; the target-year survey governs."
+        }
+      ]
+    },
+    {
+      "id": "idc-futurescape-2024-012",
+      "graderA": "ungradable",
+      "graderB": "partial",
+      "verdict": "partial",
+      "reading": "By 2025, 85% of organizations have or are putting in place formal AI-risk policies and oversight ('be formalizing' counts work in progress).",
+      "reason": "Surveys of organizations measuring this behaviour exist for 2024 and 2025, so grader A's 'no such survey found' is a search gap. Estimates on the dominant reading (in place or in progress): IAPP, spring 2024, 77% working on AI governance; Pacific AI, Feb-May 2025, 75% have AI usage policies; PEX Report 2025/26, 43% have an AI governance policy plus 25% implementing one = 68%. Range 68-77%, within a factor of 2 (D23). Median 75%; |85-75|/75 = 13.3%: partial. Grader B's median of two (76%, 11.8%) gives the same verdict. Narrower readings (formal governance framework 36%, dedicated role 59%, risk-evaluation process 45%) would be a miss, but 'be formalizing' is progressive and names policies first, so the broad reading dominates. Sample caveat: all three are self-selected professional surveys, not representative panels.",
+      "evidence": [
+        {
+          "url": "https://www.idc.com/research/viewtoc.jsp?containerId=US52641324",
+          "title": "IDC FutureScape: Worldwide CIO Agenda 2025 Predictions (table of contents)",
+          "date": "2024-10",
+          "shows": "States the claim as prediction 2: 85% of organizations by 2025."
+        },
+        {
+          "url": "https://iapp.org/resources/article/ai-governance-profession-report/",
+          "title": "IAPP, AI Governance Profession Report 2025",
+          "date": "2025-04",
+          "shows": "Survey spring 2024, more than 670 respondents, 45 countries: 77% of organizations currently working on AI governance (nearly 90% of AI users)."
+        },
+        {
+          "url": "https://pacific.ai/2025-ai-governance-survey/",
+          "title": "Pacific AI, 2025 AI Governance Survey",
+          "date": "2025",
+          "shows": "Fielded 14 Feb to 29 May 2025, n=351, 91% US: 75% have AI usage policies; 59% a dedicated AI governance role; 45% an AI risk-evaluation process."
+        },
+        {
+          "url": "https://www.aidataanalytics.network/data-science-ai/news-trends/less-than-half-of-businesses-have-an-ai-governance-policy",
+          "title": "Less than half of businesses have an AI governance policy (PEX Report 2025/26)",
+          "date": "2025-09-30",
+          "shows": "More than 200 professionals: 43% have an AI governance policy, 25% are implementing one, 29% have none."
+        }
+      ]
+    }
+  ]
+}

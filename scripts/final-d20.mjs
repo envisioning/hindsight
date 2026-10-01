@@ -91,6 +91,7 @@ const agreedUnfalsifiable = (agreement.agreed?.unfalsifiable ?? 0) - rows.filter
 if (agreedUnfalsifiable) counts.unfalsifiable = (counts.unfalsifiable ?? 0) + agreedUnfalsifiable;
 const agreedUngradable = agreement.ungradable_agreed?.length ?? 0;
 if (agreedUngradable) counts.ungradable = (counts.ungradable ?? 0) + agreedUngradable;
+const MIN_RATE_N = 20;
 const hits = counts.hit ?? 0;
 const graded = hits + (counts.partial ?? 0) + (counts.miss ?? 0);
 const recs = Object.values(audit?.records ?? {});
@@ -113,8 +114,10 @@ const out = {
 	kappa: agreement.kappa,
 	n: rows.length + agreedUnfalsifiable + agreedUngradable,
 	counts,
-	hit_rate: graded ? { hits, of_graded_hit_partial_miss: graded, rate: Math.round((hits / graded) * 10000) / 10000, wilson95: wilson(hits, graded) } : null,
-	hit_or_partial_rate: graded ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,
+	// D11: no rate below 20 graded claims; counts only.
+	...(graded < MIN_RATE_N ? { rate_withheld: `D11: ${graded} graded claims, fewer than ${MIN_RATE_N}; counts only.` } : {}),
+	hit_rate: graded >= MIN_RATE_N ? { hits, of_graded_hit_partial_miss: graded, rate: Math.round((hits / graded) * 10000) / 10000, wilson95: wilson(hits, graded) } : null,
+	hit_or_partial_rate: graded >= MIN_RATE_N ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,
 	adjudicated: rows.filter((r) => r.status === "adjudicated").length,
 	audit: auditOut,
 	verdicts: rows.sort((a, b) => a.id.localeCompare(b.id)),

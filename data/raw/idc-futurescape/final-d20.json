@@ -1,0 +1,88 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.8166,
+ "n": 157,
+ "counts": {
+  "contested": 1,
+  "miss": 3,
+  "hit": 4,
+  "ungradable": 148,
+  "partial": 1
+ },
+ "rate_withheld": "D11: 8 graded claims, fewer than 20; counts only.",
+ "hit_rate": null,
+ "hit_or_partial_rate": null,
+ "adjudicated": 3,
+ "audit": {
+  "sample": 7,
+  "audited": 7,
+  "confirmed": 6,
+  "corrected": 0,
+  "contested": 1,
+  "error_rate": 0.143
+ },
+ "verdicts": [
+  {
+   "id": "idc-futurescape-2014-006",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Wikipedia (citing PwC/Strategy&) confirms 21% of large public companies had a CDO by 2020, but that measures CDO presence, not CIOs supplanted by a CDO for digital product delivery; no survey of the same population and behaviour exists for 2019-2020 (session rule, D22/D23 same-quantity), so the bound argument does not support a published verdict."
+  },
+  {
+   "id": "idc-futurescape-2015-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "idc-futurescape-2015-006",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "idc-futurescape-2017-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "idc-futurescape-2018-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "idc-futurescape-2019-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "idc-futurescape-2023-004",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "Qualitative claim with no number. Its content is 'aggressive' expansion across the whole provider spectrum plus a consequence (partnering instability); no public series measures either for 2024 (D22). Grader B graded only the weakest part (some expansion happened) from anecdotes, which is a proxy, not a measure; one of its examples is a reading error: Reddit is a data seller, not a hardware, software or services provider, so its licensing deals show buyers acquiring data rather than a provider portfolio measure. Isolated events (IBM Granite open release, Databricks-Tabular) cannot settle 'aggressively' or 'across the spectrum'. Consistent with the 147 agreed ungradable claims of this source, which include every other unquantified IDC claim."
+  },
+  {
+   "id": "idc-futurescape-2023-017",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "Session rule: a share of CIOs is gradable against a survey of the same population and behaviour at the target year or the year before. The 2025 Gartner CIO and Technology Executive Survey (3,186 CIOs and technology executives, 88 countries, fielded 2024, published October 2024) reports 37% of organizations had already deployed GenAI. Error |35-37|/37 = 5.4%: hit under D16 numeric. Grader A's factor-of-2 range mixes populations and years: the Gartner Q4 2023 survey (29%) and McKinsey State of AI (about 65%) are not CIO surveys, and the 2024 CIO survey (9% deployed) was fielded in 2023 and is superseded by the target-year survey of the same population. With same-population data only, D23's range test does not trigger. Uncertainty: the 37% figure was confirmed via search results only (Gartner pages return 403 to fetch); a broader reading of 'embrace' (deployed or piloting) is not measured by any CIO survey and would not lower the verdict below partial."
+  },
+  {
+   "id": "idc-futurescape-2024-006",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "idc-futurescape-2024-012",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "partial",
+   "reason": "Surveys of organizations measuring this behaviour exist for 2024 and 2025, so grader A's 'no such survey found' is a search gap. Estimates on the dominant reading (in place or in progress): IAPP, spring 2024, 77% working on AI governance; Pacific AI, Feb-May 2025, 75% have AI usage policies; PEX Report 2025/26, 43% have an AI governance policy plus 25% implementing one = 68%. Range 68-77%, within a factor of 2 (D23). Median 75%; |85-75|/75 = 13.3%: partial. Grader B's median of two (76%, 11.8%) gives the same verdict. Narrower readings (formal governance framework 36%, dedicated role 59%, risk-evaluation process 45%) would be a miss, but 'be formalizing' is progressive and names policies first, so the broad reading dominates. Sample caveat: all three are self-selected professional surveys, not representative panels."
+  }
+ ]
+}
