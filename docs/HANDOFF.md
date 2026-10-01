@@ -1,6 +1,6 @@
-# Hindsight handoff (2026-09-30)
+# Hindsight handoff (2026-10-01)
 
-Read this first, then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D20). Every next step is an open issue in envisioning/hindsight.
+Read this first, then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D23). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -39,18 +39,22 @@ A public, citable record of published forecasts (publications x predictions), gr
 - **Secrets:** `.env` files do not exist in the cloud. #59 needs `OPENROUTER_API_KEY` and read access to the Core CMS (`NEXT_PUBLIC_SUPABASE_URL_CMS`, `NEXT_PUBLIC_SUPABASE_ANON_KEY_CMS`). MZ sets them as environment variables of the cloud environment. Never ask for them in chat, never print them.
 - **Not available:** the Meet connector (#65) and local apps. Leave those issues for a local session.
 - **Fits the cloud best:** #41, #42, the grading waves (#43 to #51, #63), #52, #53, #54, #61, #62. These need only this repo and the web.
-- **Pushing:** commit to `main` and push after `pnpm typecheck` and `pnpm build` pass, the same as locally. The live site reads `main` through GitHub raw.
+- **Pushing:** commit to `main` and push after `pnpm typecheck` and `pnpm build` pass, the same as locally. The live site reads `main` through GitHub raw. Check push first: `git push --dry-run origin HEAD:main`. A 403 "Claude doesn't have GitHub access" means the Claude GitHub App is not installed on this repo; MZ fixes that in the org's GitHub App settings. Do not work around it through `gh api` writes; the proxy blocks them.
+- **Network:** check page access first: `curl -sS -o /dev/null -w "%{http_code}" https://en.wikipedia.org/wiki/Smartphone` must print 200. The "Trusted" network level blocks almost every data source (Wikipedia, IEA, BEA, Pew). Grading needs the "Full" level. Without it, agents see search snippets only and the audit cannot check sources. Do not start a grading wave without page access.
+- **Model ids:** grader files must not name a specific model. Write `"model": "agent (model not recorded in the public repo)"`.
+- **Search budget used on 2026-10-01:** about 130 of 200 (Hype Cycle adjudication and audit, ARK round 1). A new session has a new budget.
 
 ## Order of work
 
 1. **#41** Grading pipeline: done. Commands in `AGENTS.md` (Agentic verdicts), prompts in `docs/grading/`.
 2. **#42** Hype Cycle: done (D21). `final-d20.json` written.
-3. **#59** Links, phase 1 (both directions). No web search needed. Key is in `.env`. Model: `text-embedding-3-large`, `dimensions: 1536`. The site part goes to a new issue in envisioning/envisioning.com once the data exists.
-4. **#53** Numeric matching audit, then **#61** (audit error in rates) and **#54** (definition calls).
-5. **#62** Dispute handling.
-6. **#52** Normalize adapters for eurasia, economist, kurzweil, pew-elon. Needed before #46, #47, #50.
-7. Grading waves, bounded by the web-search budget: **#43, #44, #45, #49, #51, #63**, then **#46, #50**. **#47 and #48** need a rule decision first.
-8. **#56** (site numeric verdicts), **#64** (issue housekeeping), **#58** (yearly refresh), **#3** (release).
+3. **Re-checks from 2026-10-01** (with page access): ARK re-grade under D23 (#49): two new blind graders on all 75 claims (`docs/grading/grader.md` plus the D23 rules), then the standard pipeline. Then re-check the Hype Cycle adjudicated timelines and audit sources that cite "search summary" or "not re-fetched" (`timelines-adjudicated-d20.json`, `audit-d11.json`); record changes as a new adjudication or audit pass, never overwrite.
+4. **#59** Links, phase 1 (both directions). No web search needed. Key is in `.env`. Model: `text-embedding-3-large`, `dimensions: 1536`. The site part goes to a new issue in envisioning/envisioning.com once the data exists.
+5. **#53** Numeric matching audit, then **#61** (audit error in rates) and **#54** (definition calls).
+6. **#62** Dispute handling.
+7. **#52** Normalize adapters for eurasia, economist, kurzweil, pew-elon. Needed before #46, #47, #50.
+8. Grading waves, bounded by the web-search budget: **#43, #44, #45, #51, #63**, then **#46, #50**. **#47 and #48** need a rule decision first.
+9. **#56** (site numeric verdicts), **#64** (issue housekeeping), **#58** (yearly refresh), **#3** (release).
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
