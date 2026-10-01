@@ -1,35 +1,68 @@
 {
  "rule": "D16",
  "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
- "kappa": 0.7072,
- "n": 147,
+ "kappa": 0.7193,
+ "n": 271,
  "counts": {
-  "hit": 65,
-  "miss": 41,
-  "partial": 37,
-  "contested": 1,
+  "hit": 99,
+  "partial": 78,
+  "miss": 85,
+  "contested": 3,
+  "ungradable": 3,
   "unfalsifiable": 3
  },
  "hit_rate": {
-  "hits": 65,
-  "of_graded_hit_partial_miss": 143,
-  "rate": 0.4545,
+  "hits": 99,
+  "of_graded_hit_partial_miss": 262,
+  "rate": 0.3779,
   "wilson95": [
-   0.375,
-   0.536
+   0.321,
+   0.438
   ]
  },
- "hit_or_partial_rate": 0.7133,
- "adjudicated": 29,
+ "hit_or_partial_rate": 0.6756,
+ "adjudicated": 52,
  "audit": {
-  "sample": 50,
-  "audited": 50,
-  "confirmed": 47,
+  "sample": 100,
+  "audited": 100,
+  "confirmed": 95,
   "corrected": 2,
-  "contested": 1,
-  "error_rate": 0.06
+  "contested": 3,
+  "waves": [
+   "w1",
+   "w2"
+  ],
+  "error_rate": 0.05
  },
  "verdicts": [
+  {
+   "id": "kurzweil-1990-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1990-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1990-003",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1990-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1990-006",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Both graders agree on the fact: Google Translate's Android Conversation Mode launched January 2011 (English-Spanish; 14 languages by October 2011). D16 grades hit if true by target_year + 2; January 2011 is well inside the 2010+2 window, and the rule does not penalise arrival within two years. Grader B applied a late-arrival penalty that D16 does not impose inside the +2 window. Hit."
+  },
   {
    "id": "kurzweil-1999-001",
    "verdict": "hit",
@@ -851,6 +884,661 @@
   {
    "id": "kurzweil-1999-146",
    "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-148",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-149",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-150",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-151",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-152",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-153",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-154",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-155",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-156",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-157",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-158",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-159",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Compound claim. The communication half held strongly (93% of world population within 3G+ reach, 95% mobile-broadband coverage by 2021; 4G speeds orders above 1999 dial-up). The 'computing embedded everywhere' half (ubiquitous computing in objects) was only partly realised by 2021 (see the separate 148 claim). One half mainstream, one half below it = partly true. Partial."
+  },
+  {
+   "id": "kurzweil-1999-160",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-161",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-162",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-163",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-164",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-165",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "reason": "Grader A called it ungradable for want of a direct workload-share series, but the claim is a 'majority' (>50%) threshold that bounding evidence clearly falsifies: in 2019-2024 the overwhelming bulk of executed compute ran conventional software (OS, web, databases, business apps), AI-accelerated servers were a minority even of data-centre growth, and genetic algorithms are marginal. A threshold this far from met does not need a precise series to be graded, so D22 ungradable does not apply. Miss."
+  },
+  {
+   "id": "kurzweil-1999-166",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-167",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-168",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-169",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-170",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-171",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-172",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-173",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-174",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-175",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-176",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "The sentence predicts two modes: reading on hand-held screens and, as the more common mode, direct-eye displays. Hand-held reading became routine and mainstream (phones, tablets, e-readers carried the majority of reading). The 'more commonly direct-eye' mode failed (AR/retinal eyewear stayed niche). One named mode held at mainstream, the dominant mode failed = partly true. Grader A graded only the failed direct-eye mode; the hand-held clause is part of the forecast and held. Partial."
+  },
+  {
+   "id": "kurzweil-1999-177",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-178",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-179",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-180",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-182",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-183",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-184",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-185",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-186",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-187",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-188",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-189",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-190",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-191",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-192",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-193",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-194",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The claim's wording is 'very effective and widely used', not 'used by a majority of candidates'. Both parts held: implants are the established, highly effective standard of care for severe-to-profound deafness, with ~736,900 registered worldwide by December 2019 (over 1 million by 2022) and routine deployment across all major markets, including the majority of eligible children in developed countries. Grader B's 20%-of-all-candidates test reads in a penetration threshold the claim does not state. Hit."
+  },
+  {
+   "id": "kurzweil-1999-195",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-196",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-197",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-198",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-199",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The verb is 'have emerged' - an existence/appearance claim, not a mainstream-adoption claim. Commercial glasses-free 'holographic' light-field displays existed by 2018 (Looking Glass shipped December 2018), satisfying emergence. Grader B graded down because true diffraction holograms remained prototypes, but that imposes a stricter definition than the label's 'emerged'. The dominant reading of the claim is met. Hit."
+  },
+  {
+   "id": "kurzweil-1999-200",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-201",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-202",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-203",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Under the decade-chapter rule (hit if true by target_year + 2 = 2021), the claim held: by 2020-2021 meetings moved online at scale (Zoom to >300 million daily participants April 2020; 67% of US white-collar workers remote in part by September 2021), so most meetings did not require physical proximity. The rule grades the outcome inside the window; the pandemic cause and the later partial reversal do not disqualify a within-window hit. Grader A's requirement of a durable majority of all meetings is stricter than D16's window test. Hit."
+  },
+  {
+   "id": "kurzweil-1999-204",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-205",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "Two components. The 'all done through the ever-present web' component held near-universally (streaming, web-delivered media and calls were ubiquitous by 2019). The 'via worn/direct-eye devices' delivery mechanism failed (media ran on phones/PCs/TVs; AR/VR headsets 11.2M shipments in 2021, far below any share threshold; 3D calls niche). One component true at mainstream, the specific delivery mechanism below 5% = partly true. Grader A graded only the worn-device mechanism; the web-delivery of these activities is real and massive. Partial."
+  },
+  {
+   "id": "kurzweil-1999-206",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-207",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-208",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-209",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-210",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-211",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-212",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-213",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-214",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-215",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-216",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-217",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-218",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-219",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-220",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-221",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "The claim is modest ('superior in SOME ways, such as...') and names two specific advantages: very reliable memory and programmable personalities. Both held by 2019-2021: assistants and companion apps (Replika, voice assistants used by ~1 billion people) had exact recall of stored data and configurable, scripted personas. Grader A graded down on conversational-memory limits, but the claim's 'very reliable memories' points to stored-data recall, which digital systems trivially have. The stated narrow superiorities held. Hit."
+  },
+  {
+   "id": "kurzweil-1999-222",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "First clause held throughout 2019-2021 (chatbots widely seen as far less subtle than humans). The second clause only requires that 'there is disagreement', a low bar met by 2019-2021: companion-app users (Replika) treated bots as partners, a visible minority dissent, later sharpened by the June 2022 LaMDA episode. Grader A set the bar at a prominent public controversy and so dated it to 2022; the claim's wording ('there is disagreement') was already satisfied within the 2019+2 window. Hit."
+  },
+  {
+   "id": "kurzweil-1999-223",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-1999-224",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-225",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-226",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-227",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-228",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-229",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-230",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-231",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "unfalsifiable",
+   "reason": "The dominant reading of 'sufficient prosperity to provide' is a capacity claim, not a claim that necessities are universally provided, so this is not a case of two equally faithful readings diverging - D16 unfalsifiable does not apply, and Grader B's call is set aside. Under the dominant (capacity) reading: the controversies-persist clause held (welfare/responsibility debates continued), and aggregate world output could cover basic necessities at modest cost; but necessities were in fact not secured for ~700 million people in extreme poverty, so the implied state of affairs was only partly realised. Partly true. Partial."
+  },
+  {
+   "id": "kurzweil-1999-232",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "reason": "The claim states a specific quantity: the share of working time (across most jobs) spent on the employee's own learning, and that it is growing. No public series measures this. Grader A graded partial off adult-learning participation rates (share of adults who take any training), which is a different quantity - a proxy, not a measure of the stated share of work time. Under D23 a proxy of another quantity is not a measure. Ungradable (looked for: share of working time spent learning across employment; ATD State-of-the-Industry hours-per-employee and OECD/Eurostat adult-learning participation measure neither the share of work time nor its trend)."
+  },
+  {
+   "id": "kurzweil-1999-234",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "By 2018-2019 AI artists were emerging and taken seriously in visual art (Edmond de Belamy sold at Christie's for $432,500, 2018) and music (AIVA recognised by SACEM, 2016), but critics largely treated these as novelty, and 'all of the arts' (literature and others) lagged. Wide serious engagement across the arts arrived with the 2022-2024 generative-AI wave (within the 3-5-year window). The claim's qualifiers ('all', 'taken seriously') were only partly met by 2021. Grader A's hit undervalues those qualifiers. Partial."
+  },
+  {
+   "id": "kurzweil-1999-235",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-236",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-237",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "Cited sources (Wikipedia 'Midjourney', 'Theatre D'opera Spatial', 'AIVA') are anecdotes with no share of working artists using AI, in 2019 or 2022-2024, so neither the >=5% nor the mainstream-in-3-5-years branch is shown. Readings also split: machine-intelligence features in standard tools (auto-tune, content-aware fill) were typical in 2019, which would read as hit."
+  },
+  {
+   "id": "kurzweil-1999-238",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Video games clearly surpassed film and recorded music by revenue (US games matched US film at ~$43bn in 2018; global games ~$179bn 2020, ~$191bn 2021, roughly double film). But the claim is 'the type ... in greatest demand ... continues to be', i.e. the single largest over all entertainment, and television/video (pay-TV plus advertising plus streaming) remains a larger aggregate that neither grader shows smaller. Games is the largest discrete interactive product but not clearly the single greatest entertainment product overall. Partly true. Partial."
+  },
+  {
+   "id": "kurzweil-1999-239",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-240",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-241",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-242",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-243",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "World Bank SP.DYN.LE00.IN 2019 vs 100 years (D16 numeric, error relative to actual): World 72.9 (37%, miss), US 78.8 (27%, miss), but EU 81.3 (23%), OECD 80.2 (24.6%), high income 80.2 (24.7%) and Japan 84.4 (18.5%) are within 25%, i.e. partial. The industrial-revolution frame points to developed countries, which sit at the partial/miss boundary; A misapplied the band (miss at 15%) and B wrongly said the developed-country reading is a miss."
+  },
+  {
+   "id": "kurzweil-1999-244",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-245",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The 2017 horsepox synthesis (~$100,000, mail-order DNA, a funded university team) shows the capability had descended to a modestly resourced lab and drew expert alarm - but it required ~$100k, specialised tacit skill and controls, which is above the claim's specific 'typical graduate student' threshold. Grader A equates 'academic lab/team' with 'typical graduate student'; the claim names the latter. Capability trending toward but not yet at the stated level = partly true. Partial."
+  },
+  {
+   "id": "kurzweil-1999-246",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "reason": "The claim has checkable components, so D22 ungradable (Grader B) does not apply. The 'major focus of international security agencies' component is falsifiable and largely failed pre-COVID (the 2018 US National Defense Strategy centred on great-power competition, not biothreats); bioengineered countermeasures did advance (mRNA design in days; first authorisation Dec 2020) but were not recognised as a 'comparable' offset and biosecurity was not the agencies' major focus in 2019. Part true, part false. Partial."
+  },
+  {
+   "id": "kurzweil-1999-247",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-248",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-249",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The 'do not meet expert criteria' clause held strongly (Eugene Goostman's 2014 'pass' widely rejected by experts). But the 'prevalent reports' clause was not met by 2019: Turing-pass reports were occasional (Goostman and a few chatbot claims), not prevalent, until the generative-AI wave of 2022-2023, 3-4 years after target (within the 3-5-year window). Grader A's hit understates 'prevalent'. Partly true. Partial."
+  },
+  {
+   "id": "kurzweil-1999-250",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "The consensus clause ('not yet passed') held firmly through 2019-2021. The 'growing controversy' clause, read as a genuine live dispute over whether machines had passed a valid test, materialised with large language models in 2022-2024 (LaMDA sentience claim June 2022; 'ChatGPT broke the Turing test' 2023; GPT-4/GPT-4.5 pass studies 2024-2025), 3-5 years after target. In 2019-2021 the matter was relatively settled among experts. Partly true (consensus held; the growing controversy came in the 3-5-year window). Partial."
+  },
+  {
+   "id": "kurzweil-1999-251",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-1999-252",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-2005-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-2005-002",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The dominant reading - devices tapping vast remote compute and memory over high-speed links - was realised by 2010-2012 via cloud computing (AWS 2006, Azure 2010) plus mobile broadband, with mobile apps routinely offloading to the cloud. The parenthetical 'mesh' (every device becoming a web server in a peer supercomputer) is Kurzweil's gloss on the architecture and did not form, but the substantive claim held. Grader B weights the failed peer-mesh detail over the realised substance. Hit."
+  },
+  {
+   "id": "kurzweil-2005-003",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Always-on wireless Internet was arriving (3G smartphones gave constant connectivity, LTE launched Dec 2009), satisfying 'at all times'. But 'very high-bandwidth' is the load-bearing qualifier: around 2010-2012 most mobile data still ran on 3G (a few Mbps), and very-high-bandwidth 4G/LTE did not reach mainstream (~20% of users in major markets) until ~2013-2014 - mainstream 3-5 years after the placed year. Grader A counts the LTE launch but it was not widespread by 2012. Partly true. Partial."
+  },
+  {
+   "id": "kurzweil-2005-004",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-2005-005",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "Read in context (items 004-007 describe tiny displays projecting images, AR overlays and augmented perception), 'project auditory environments' means immersive/spatial soundscapes, not ordinary stereo earphones. Immersive spatial audio in tiny earbuds arrived ~2020 (AirPods Pro spatial audio), ten years late and beyond the 5-year window. The trivial 'personal audio' reading that Grader B uses treats the prediction as the already-mundane earphone, which is not the dominant contextual reading. Miss."
+  },
+  {
+   "id": "kurzweil-2005-006",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "kurzweil-2005-007",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "Around 2010 AR existed only as niche smartphone apps (Layar/Wikitude 2009, Word Lens Dec 2010), well below the D16 5% partial floor, and mass AR use (Pokemon Go) did not arrive until July 2016 - six years later, outside the 3-5-year mainstream window. Neither D16 partial condition is met (no >=5% share by 2010-2012; mainstream not reached within 3-5 years). Grader B granted partial on the mere existence of AR apps without a 5% share. Miss."
+  },
+  {
+   "id": "kurzweil-2005-008",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-2005-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-2005-010",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-2005-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-2005-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "kurzweil-2005-013",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "The claim's mechanism is brain scanning contributing to the model. By 2025-2026 it has not: the effective AI systems of the period (LLMs/GPT-4) are trained on text, not derived from brain scans, and connectomics remains at fruit-fly / ~1 mm3-mouse scale with no scan-derived model of human intelligence. Grader A graded partial by crediting LLMs, but LLMs do not satisfy 'brain scanning contributes'. The stated route did not deliver; a reversal by 2027-2030 is not supported by current connectomics. Miss (window nominally open to 2030, but the brain-scanning mechanism shows no sign of delivering)."
+  },
+  {
+   "id": "kurzweil-2010-001",
+   "verdict": "partial",
    "status": "audited"
   }
  ]

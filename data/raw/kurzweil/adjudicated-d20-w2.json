@@ -1,0 +1,278 @@
+{
+ "rule": "D16",
+ "role": "adjudicator (D20)",
+ "wave": "w2",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "kurzweil-1990-006",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "A translating telephone (speech in one language rendered as speech in another during a call/conversation) is available by 2010.",
+   "reason": "Both graders agree on the fact: Google Translate's Android Conversation Mode launched January 2011 (English-Spanish; 14 languages by October 2011). D16 grades hit if true by target_year + 2; January 2011 is well inside the 2010+2 window, and the rule does not penalise arrival within two years. Grader B applied a late-arrival penalty that D16 does not impose inside the +2 window. Hit.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Google_Translate", "title": "Google Translate (Wikipedia)", "date": "2011-01", "shows": "January 2011 Android release added Conversation Mode for spoken cross-language communication; 14 languages by October 2011, within the 2010+2 window."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-159",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "By 2019 computing AND extremely-high-bandwidth communication are embedded everywhere in the environment.",
+   "reason": "Compound claim. The communication half held strongly (93% of world population within 3G+ reach, 95% mobile-broadband coverage by 2021; 4G speeds orders above 1999 dial-up). The 'computing embedded everywhere' half (ubiquitous computing in objects) was only partly realised by 2021 (see the separate 148 claim). One half mainstream, one half below it = partly true. Partial.",
+   "evidence": [
+    {"url": "https://www.itu.int/en/mediacentre/Pages/2019-PR19.aspx", "title": "ITU: 2019 data on Internet uptake", "date": "2019-11-05", "shows": "97% of world population had mobile coverage, 93% 3G+; 53.6% used the internet in 2019 (communication half)."},
+    {"url": "https://en.wikipedia.org/wiki/Internet_of_things", "title": "Internet of things (Wikipedia)", "date": "2017", "shows": "Embedded/online-capable devices growing (8.4bn in 2017) but computing not yet embedded in everything (computing half)."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-165",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "verdict": "miss",
+   "reading": "By 2019 the majority of computation actually performed by computers runs massively parallel neural nets and genetic algorithms.",
+   "reason": "Grader A called it ungradable for want of a direct workload-share series, but the claim is a 'majority' (>50%) threshold that bounding evidence clearly falsifies: in 2019-2024 the overwhelming bulk of executed compute ran conventional software (OS, web, databases, business apps), AI-accelerated servers were a minority even of data-centre growth, and genetic algorithms are marginal. A threshold this far from met does not need a precise series to be graded, so D22 ungradable does not apply. Miss.",
+   "evidence": [
+    {"url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai", "title": "Energy and AI: Energy demand from AI (IEA)", "date": "2025-04", "shows": "Data centres ~1.5% of global electricity in 2024; accelerated (AI) servers only ~half of the net increase to 2030, i.e. a minority share in the early 2020s."},
+    {"url": "https://aiimpacts.org/global-computing-capacity/", "title": "Global computing capacity (AI Impacts)", "date": "2016", "shows": "General computing capacity is dominated by conventional CPU/GPU hardware, not neural-net workloads."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-176",
+   "graderA": "miss",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "By 2019 people read documents on hand-held displays or, more commonly, from text projected by ubiquitous direct-eye displays.",
+   "reason": "The sentence predicts two modes: reading on hand-held screens and, as the more common mode, direct-eye displays. Hand-held reading became routine and mainstream (phones, tablets, e-readers carried the majority of reading). The 'more commonly direct-eye' mode failed (AR/retinal eyewear stayed niche). One named mode held at mainstream, the dominant mode failed = partly true. Grader A graded only the failed direct-eye mode; the hand-held clause is part of the forecast and held. Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Mobile_web", "title": "Mobile web (Wikipedia)", "date": "2015-04", "shows": "Hand-held devices carried the majority of web traffic by 2015; hand-held reading mainstream (the first mode held)."},
+    {"url": "https://en.wikipedia.org/wiki/Smart_glasses", "title": "Smart glasses (Wikipedia)", "date": "2024", "shows": "Direct-eye/retinal eyewear remained niche through 2024; Google Glass consumer product discontinued 2015 (the 'more common' mode failed)."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-194",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "By 2019 cochlear and other hearing implants are very effective and widely used.",
+   "reason": "The claim's wording is 'very effective and widely used', not 'used by a majority of candidates'. Both parts held: implants are the established, highly effective standard of care for severe-to-profound deafness, with ~736,900 registered worldwide by December 2019 (over 1 million by 2022) and routine deployment across all major markets, including the majority of eligible children in developed countries. Grader B's 20%-of-all-candidates test reads in a penetration threshold the claim does not state. Hit.",
+   "evidence": [
+    {"url": "https://www.nidcd.nih.gov/health/cochlear-implants", "title": "Cochlear Implants (NIDCD, NIH)", "date": "2019-12", "shows": "~736,900 implants registered worldwide by December 2019 (US ~118,100 adults, 65,000 children); standard of care for severe-to-profound deafness."},
+    {"url": "https://www.nidcd.nih.gov/health/statistics/quick-statistics-hearing", "title": "Quick Statistics About Hearing (NIDCD)", "date": "2022-07", "shows": "More than 1 million implants worldwide by July 2022, confirming sustained wide use."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-199",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "By 2019 three-dimensional holographic displays have emerged (exist as commercial products).",
+   "reason": "The verb is 'have emerged' - an existence/appearance claim, not a mainstream-adoption claim. Commercial glasses-free 'holographic' light-field displays existed by 2018 (Looking Glass shipped December 2018), satisfying emergence. Grader B graded down because true diffraction holograms remained prototypes, but that imposes a stricter definition than the label's 'emerged'. The dominant reading of the claim is met. Hit.",
+   "evidence": [
+    {"url": "https://www.kickstarter.com/projects/lookingglass/the-looking-glass-a-holographic-display-for-3d-cre", "title": "The Looking Glass: A Holographic Display (Kickstarter)", "date": "2018-08-23", "shows": "Commercial desktop 'holographic' (light-field) display, funded Aug 2018, shipping Dec 2018 - 3D holography displays emerged as products."},
+    {"url": "https://en.wikipedia.org/wiki/Project_Starline", "title": "Project Starline / Google Beam (Wikipedia)", "date": "2021-05-18", "shows": "2021 light-field display showing people in 3D, further evidence of emergence."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-203",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "By 2019 the majority of meetings no longer require participants to be physically together.",
+   "reason": "Under the decade-chapter rule (hit if true by target_year + 2 = 2021), the claim held: by 2020-2021 meetings moved online at scale (Zoom to >300 million daily participants April 2020; 67% of US white-collar workers remote in part by September 2021), so most meetings did not require physical proximity. The rule grades the outcome inside the window; the pandemic cause and the later partial reversal do not disqualify a within-window hit. Grader A's requirement of a durable majority of all meetings is stricter than D16's window test. Hit.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Zoom_(software)", "title": "Zoom (software) (Wikipedia)", "date": "2020-04", "shows": "10 million daily participants Dec 2019 rising to >300 million by April 2020."},
+    {"url": "https://news.gallup.com/poll/355907/remote-work-persisting-trending-permanent.aspx", "title": "Remote Work Persisting (Gallup)", "date": "2021-10", "shows": "Sept 2021: 45% of US full-time employees and 67% of white-collar workers fully or partly remote, inside the 2019+2 window."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-205",
+   "graderA": "miss",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "By 2019 reading, music, 3D video, 3D visual calls and virtual environments are all done through the ever-present web reached via worn/direct-eye devices.",
+   "reason": "Two components. The 'all done through the ever-present web' component held near-universally (streaming, web-delivered media and calls were ubiquitous by 2019). The 'via worn/direct-eye devices' delivery mechanism failed (media ran on phones/PCs/TVs; AR/VR headsets 11.2M shipments in 2021, far below any share threshold; 3D calls niche). One component true at mainstream, the specific delivery mechanism below 5% = partly true. Grader A graded only the worn-device mechanism; the web-delivery of these activities is real and massive. Partial.",
+   "evidence": [
+    {"url": "https://www.businesswire.com/news/home/20220321005698/en/", "title": "AR/VR Headset Shipments Grew Dramatically in 2021 (IDC)", "date": "2022-03-21", "shows": "Worldwide AR/VR headset shipments 11.2 million units in 2021 - the worn-device mechanism stayed niche."},
+    {"url": "https://en.wikipedia.org/wiki/Streaming_media", "title": "Streaming media (Wikipedia)", "date": "2019", "shows": "Reading, music and video delivered over the ever-present web were near-universal by 2019, but via hand-held screens, not worn displays."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-221",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "By 2019 automated personalities are superior to humans in some ways, such as very reliable (stored-data) memory and predictable, programmable personalities.",
+   "reason": "The claim is modest ('superior in SOME ways, such as...') and names two specific advantages: very reliable memory and programmable personalities. Both held by 2019-2021: assistants and companion apps (Replika, voice assistants used by ~1 billion people) had exact recall of stored data and configurable, scripted personas. Grader A graded down on conversational-memory limits, but the claim's 'very reliable memories' points to stored-data recall, which digital systems trivially have. The stated narrow superiorities held. Hit.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Virtual_assistant", "title": "Virtual assistant (Wikipedia)", "date": "2017", "shows": "~1 billion frequent users of virtual assistants by mid-2017; exact recall of stored lists, calendars and data (reliable memory)."},
+    {"url": "https://en.wikipedia.org/wiki/Replika", "title": "Replika (Wikipedia)", "date": "2017-11", "shows": "Users select configurable personas (friend/romance/mentor) - programmable personalities."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-222",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "Around 2019 automated personalities are not regarded as equal to humans in subtlety of personality, though there is disagreement on the point.",
+   "reason": "First clause held throughout 2019-2021 (chatbots widely seen as far less subtle than humans). The second clause only requires that 'there is disagreement', a low bar met by 2019-2021: companion-app users (Replika) treated bots as partners, a visible minority dissent, later sharpened by the June 2022 LaMDA episode. Grader A set the bar at a prominent public controversy and so dated it to 2022; the claim's wording ('there is disagreement') was already satisfied within the 2019+2 window. Hit.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Replika", "title": "Replika (Wikipedia)", "date": "2017-11", "shows": "Users formed strong emotional/romantic bonds with a chatbot, a visible dissent from the general view of chatbots as limited - disagreement existed by 2019-2021."},
+    {"url": "https://en.wikipedia.org/wiki/LaMDA", "title": "LaMDA (Wikipedia)", "date": "2022-06-11", "shows": "June 2022 sentience claim sharpened an already-existing disagreement."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-231",
+   "graderA": "partial",
+   "graderB": "unfalsifiable",
+   "verdict": "partial",
+   "reading": "Around 2019 there is enough prosperity to provide basic necessities without significant strain to the economy, while old controversies over responsibility and opportunity persist.",
+   "reason": "The dominant reading of 'sufficient prosperity to provide' is a capacity claim, not a claim that necessities are universally provided, so this is not a case of two equally faithful readings diverging - D16 unfalsifiable does not apply, and Grader B's call is set aside. Under the dominant (capacity) reading: the controversies-persist clause held (welfare/responsibility debates continued), and aggregate world output could cover basic necessities at modest cost; but necessities were in fact not secured for ~700 million people in extreme poverty, so the implied state of affairs was only partly realised. Partly true. Partial.",
+   "evidence": [
+    {"url": "https://www.worldbank.org/en/publication/poverty-prosperity-and-planet", "title": "World Bank: Poverty, Prosperity and Planet 2024", "date": "2024", "shows": "~700 million people (8.5%) lived below $2.15/day around 2019-2020; necessities not secured for all, though the aggregate cost to close the gap is a small share of world GDP."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-232",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "verdict": "ungradable",
+   "reading": "By 2019 a growing part of most employment is devoted to the employee's own learning and skill acquisition.",
+   "reason": "The claim states a specific quantity: the share of working time (across most jobs) spent on the employee's own learning, and that it is growing. No public series measures this. Grader A graded partial off adult-learning participation rates (share of adults who take any training), which is a different quantity - a proxy, not a measure of the stated share of work time. Under D23 a proxy of another quantity is not a measure. Ungradable (looked for: share of working time spent learning across employment; ATD State-of-the-Industry hours-per-employee and OECD/Eurostat adult-learning participation measure neither the share of work time nor its trend).",
+   "evidence": [
+    {"url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Adult_learning_statistics", "title": "Eurostat: Adult learning statistics", "date": "2023", "shows": "Measures participation in education/training (46.6% of EU adults 25-64 in 2022), not the share of working time spent learning - a different quantity from the claim."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-234",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "By 2019 virtual (AI) artists in all of the arts are emerging and are taken seriously.",
+   "reason": "By 2018-2019 AI artists were emerging and taken seriously in visual art (Edmond de Belamy sold at Christie's for $432,500, 2018) and music (AIVA recognised by SACEM, 2016), but critics largely treated these as novelty, and 'all of the arts' (literature and others) lagged. Wide serious engagement across the arts arrived with the 2022-2024 generative-AI wave (within the 3-5-year window). The claim's qualifiers ('all', 'taken seriously') were only partly met by 2021. Grader A's hit undervalues those qualifiers. Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Edmond_de_Belamy", "title": "Edmond de Belamy (Wikipedia)", "date": "2018-10-25", "shows": "GAN portrait sold at Christie's for $432,500; emergence in visual art, but critics questioned whether it is art."},
+    {"url": "https://en.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_D%27op%C3%A9ra_Spatial", "title": "Theatre D'opera Spatial (Wikipedia)", "date": "2022-08-29", "shows": "AI image won a state-fair art prize in 2022; broad serious engagement across the arts arrived 3 years after target."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-238",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "partial",
+   "reading": "Around 2019 virtual-experience software (games/VR/simulations) is the single artistic and entertainment product in greatest demand by revenue.",
+   "reason": "Video games clearly surpassed film and recorded music by revenue (US games matched US film at ~$43bn in 2018; global games ~$179bn 2020, ~$191bn 2021, roughly double film). But the claim is 'the type ... in greatest demand ... continues to be', i.e. the single largest over all entertainment, and television/video (pay-TV plus advertising plus streaming) remains a larger aggregate that neither grader shows smaller. Games is the largest discrete interactive product but not clearly the single greatest entertainment product overall. Partly true. Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Video_game_industry", "title": "Video game industry (Wikipedia)", "date": "2021", "shows": "Global game revenue ~$179bn (2020), ~$191bn (2021), about double international film; US games matched US film (~$43bn) in 2018 - larger than film and music, but TV/video not shown smaller."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-245",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "By 2019 the knowledge and equipment available to a typical graduate student suffice to create disease agents with enormous destructive potential.",
+   "reason": "The 2017 horsepox synthesis (~$100,000, mail-order DNA, a funded university team) shows the capability had descended to a modestly resourced lab and drew expert alarm - but it required ~$100k, specialised tacit skill and controls, which is above the claim's specific 'typical graduate student' threshold. Grader A equates 'academic lab/team' with 'typical graduate student'; the claim names the latter. Capability trending toward but not yet at the stated level = partly true. Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Horsepox", "title": "Horsepox (Wikipedia)", "date": "2017", "shows": "University team synthesised horsepox for ~$100,000 from mail-order DNA - within reach of a funded lab, above a typical graduate student's resources."},
+    {"url": "https://www.nationalacademies.org/publications/24890", "title": "Biodefense in the Age of Synthetic Biology (National Academies)", "date": "2018-06-19", "shows": "Expert assessment that synthetic-biology misuse capability is increasingly accessible but still gated by cost and tacit skill."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-246",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "verdict": "partial",
+   "reading": "By 2019 the bio-threat is offset to some extent by comparable gains in bioengineered antiviral treatments, an uneasy balance that is a major focus of international security agencies.",
+   "reason": "The claim has checkable components, so D22 ungradable (Grader B) does not apply. The 'major focus of international security agencies' component is falsifiable and largely failed pre-COVID (the 2018 US National Defense Strategy centred on great-power competition, not biothreats); bioengineered countermeasures did advance (mRNA design in days; first authorisation Dec 2020) but were not recognised as a 'comparable' offset and biosecurity was not the agencies' major focus in 2019. Part true, part false. Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/National_Defense_Strategy_(United_States)", "title": "National Defense Strategy, US (Wikipedia)", "date": "2018-01", "shows": "2018 NDS: inter-state strategic competition, not biothreats, is the primary concern - the 'major focus of security agencies' component largely failed."},
+    {"url": "https://en.wikipedia.org/wiki/MRNA_vaccine", "title": "mRNA vaccine (Wikipedia)", "date": "2020-12-02", "shows": "First mRNA vaccine authorised ~1 year after sequencing; countermeasures advanced, supporting the 'some offset' component."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-249",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "By 2019 there are prevalent reports of computers passing the Turing Test, though these do not meet the criteria set by knowledgeable observers.",
+   "reason": "The 'do not meet expert criteria' clause held strongly (Eugene Goostman's 2014 'pass' widely rejected by experts). But the 'prevalent reports' clause was not met by 2019: Turing-pass reports were occasional (Goostman and a few chatbot claims), not prevalent, until the generative-AI wave of 2022-2023, 3-4 years after target (within the 3-5-year window). Grader A's hit understates 'prevalent'. Partly true. Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Eugene_Goostman", "title": "Eugene Goostman (Wikipedia)", "date": "2014-06-07", "shows": "2014 'pass' (33% of judges, 5 minutes) reported and rejected by experts - a single widely-covered episode, not yet 'prevalent' reports."},
+    {"url": "https://en.wikipedia.org/wiki/Turing_test", "title": "Turing test (Wikipedia)", "date": "2023", "shows": "'ChatGPT broke the Turing test' (2023) and GPT-4 pass studies (2024) - prevalent reports arrived 2022-2024, within the 3-5-year window."}
+   ]
+  },
+  {
+   "id": "kurzweil-1999-250",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "partial",
+   "reading": "By 2019 the consensus is that computers have not passed a valid Turing Test, but there is growing controversy on the point.",
+   "reason": "The consensus clause ('not yet passed') held firmly through 2019-2021. The 'growing controversy' clause, read as a genuine live dispute over whether machines had passed a valid test, materialised with large language models in 2022-2024 (LaMDA sentience claim June 2022; 'ChatGPT broke the Turing test' 2023; GPT-4/GPT-4.5 pass studies 2024-2025), 3-5 years after target. In 2019-2021 the matter was relatively settled among experts. Partly true (consensus held; the growing controversy came in the 3-5-year window). Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Eugene_Goostman", "title": "Eugene Goostman (Wikipedia)", "date": "2014-06-07", "shows": "Experts held the 'not passed' consensus through 2019; 2014 claim rejected as invalid."},
+    {"url": "https://en.wikipedia.org/wiki/Turing_test", "title": "Turing test (Wikipedia)", "date": "2023", "shows": "The real growth in controversy (2023 Nature piece, 2024 GPT-4 study) came 2022-2024, within the 3-5-year window after 2019."}
+   ]
+  },
+  {
+   "id": "kurzweil-2005-002",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "Around 2010 our devices tap into a worldwide network of high-speed communications and remote computational resources.",
+   "reason": "The dominant reading - devices tapping vast remote compute and memory over high-speed links - was realised by 2010-2012 via cloud computing (AWS 2006, Azure 2010) plus mobile broadband, with mobile apps routinely offloading to the cloud. The parenthetical 'mesh' (every device becoming a web server in a peer supercomputer) is Kurzweil's gloss on the architecture and did not form, but the substantive claim held. Grader B weights the failed peer-mesh detail over the realised substance. Hit.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Cloud_computing", "title": "Cloud computing (Wikipedia)", "date": "2010", "shows": "AWS EC2/S3 (2006) and Azure (2010) gave on-demand access to pooled worldwide compute/memory; integral to mobile devices by 2010-2012."},
+    {"url": "https://www.pewresearch.org/internet/fact-sheet/mobile/", "title": "Pew: Mobile fact sheet", "date": "2012", "shows": "US adult smartphone ownership 35% (2011), 46% (2012) - personal devices routinely tapping networked resources."}
+   ]
+  },
+  {
+   "id": "kurzweil-2005-003",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "Around 2010 we have very high-bandwidth wireless Internet access at all times.",
+   "reason": "Always-on wireless Internet was arriving (3G smartphones gave constant connectivity, LTE launched Dec 2009), satisfying 'at all times'. But 'very high-bandwidth' is the load-bearing qualifier: around 2010-2012 most mobile data still ran on 3G (a few Mbps), and very-high-bandwidth 4G/LTE did not reach mainstream (~20% of users in major markets) until ~2013-2014 - mainstream 3-5 years after the placed year. Grader A counts the LTE launch but it was not widespread by 2012. Partly true. Partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/LTE_(telecommunication)", "title": "LTE (telecommunication) (Wikipedia)", "date": "2013", "shows": "First commercial LTE Dec 2009, US rollouts late 2010, but most 2010-2011 mobile data on slower 3G; LTE scaled to mainstream only from ~2013."}
+   ]
+  },
+  {
+   "id": "kurzweil-2005-005",
+   "graderA": "miss",
+   "graderB": "partial",
+   "verdict": "miss",
+   "reading": "Around 2010 tiny worn devices project immersive auditory environments (the audio counterpart to the surrounding augmented-perception predictions).",
+   "reason": "Read in context (items 004-007 describe tiny displays projecting images, AR overlays and augmented perception), 'project auditory environments' means immersive/spatial soundscapes, not ordinary stereo earphones. Immersive spatial audio in tiny earbuds arrived ~2020 (AirPods Pro spatial audio), ten years late and beyond the 5-year window. The trivial 'personal audio' reading that Grader B uses treats the prediction as the already-mundane earphone, which is not the dominant contextual reading. Miss.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/AirPods_Pro", "title": "AirPods Pro (Wikipedia)", "date": "2020-09", "shows": "Spatial/immersive audio in tiny earbuds arrived 2019-2020, ~10 years after the ~2010 target."}
+   ]
+  },
+  {
+   "id": "kurzweil-2005-007",
+   "graderA": "miss",
+   "graderB": "partial",
+   "verdict": "miss",
+   "reading": "Around 2010 we have augmented reality with displays overlaying the real world to provide real-time guidance and explanations.",
+   "reason": "Around 2010 AR existed only as niche smartphone apps (Layar/Wikitude 2009, Word Lens Dec 2010), well below the D16 5% partial floor, and mass AR use (Pokemon Go) did not arrive until July 2016 - six years later, outside the 3-5-year mainstream window. Neither D16 partial condition is met (no >=5% share by 2010-2012; mainstream not reached within 3-5 years). Grader B granted partial on the mere existence of AR apps without a 5% share. Miss.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Layar", "title": "Layar (Wikipedia)", "date": "2009", "shows": "AR browser overlaying info on the camera view launched 2009; AR was niche (<5%) around 2010."},
+    {"url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go", "title": "Pokemon Go (Wikipedia)", "date": "2016-07-06", "shows": "First mass AR use arrived July 2016, six years after target - outside the 3-5-year window."}
+   ]
+  },
+  {
+   "id": "kurzweil-2005-013",
+   "graderA": "partial",
+   "graderB": "miss",
+   "verdict": "miss",
+   "reading": "By the mid-2020s brain scanning contributes to an effective software model of human intelligence.",
+   "reason": "The claim's mechanism is brain scanning contributing to the model. By 2025-2026 it has not: the effective AI systems of the period (LLMs/GPT-4) are trained on text, not derived from brain scans, and connectomics remains at fruit-fly / ~1 mm3-mouse scale with no scan-derived model of human intelligence. Grader A graded partial by crediting LLMs, but LLMs do not satisfy 'brain scanning contributes'. The stated route did not deliver; a reversal by 2027-2030 is not supported by current connectomics. Miss (window nominally open to 2030, but the brain-scanning mechanism shows no sign of delivering).",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Connectome", "title": "Connectome (Wikipedia)", "date": "2025", "shows": "By 2024-2025 the largest complete connectome is the fruit fly (~139k neurons); mouse ~1 mm3; human work is macroscale MRI - no scan-derived model of human intelligence."},
+    {"url": "https://en.wikipedia.org/wiki/GPT-4", "title": "GPT-4 (Wikipedia)", "date": "2023-03-14", "shows": "The period's capable AI is trained on text, not reverse-engineered from brain scans - the stated mechanism did not contribute."}
+   ]
+  }
+ ]
+}
