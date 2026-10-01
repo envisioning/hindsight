@@ -1,0 +1,868 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "pew-elon-imagining-2005-001",
+   "verdict": "miss",
+   "reading": "Between 2005 and 2014 at least one devastating attack hits US networked information infrastructure or the US power grid.",
+   "mainstream_test": "A cyber or physical attack on US network infrastructure or the US grid in 2005-2014 that caused widespread outage or major national damage.",
+   "reason": "No devastating attack on US infrastructure or grid occurred in the window. The most serious grid attack, Metcalf 2013, damaged 17 transformers (~$15M) but power was rerouted and only nearby neighborhoods briefly lost power. Stuxnet (2010) targeted Iran, not 'the country'.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Metcalf_sniper_attack",
+     "title": "2013 Metcalf sniper attack (Wikipedia)",
+     "date": "2013-04-16",
+     "shows": "Largest US grid attack of the decade: >$15M equipment damage, outage avoided by rerouting power; big users unaware."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-002",
+   "verdict": "hit",
+   "reading": "By 2014 networked devices enable more government surveillance and arrests based on it rise in democracies and authoritarian states.",
+   "mainstream_test": "Documented growth by 2014 in law-enforcement use of device/phone surveillance leading to investigations and arrests in democracies and authoritarian regimes.",
+   "reason": "Phone-location and device surveillance grew sharply: US cell-site simulators spread to dozens of agencies (Florida police alone used them 200+ times since 2010; DOJ spent $71M 2010-14), and Snowden (2013) documented mass device surveillance. Authoritarian use (e.g. Iran 2009) is well documented. No single arrest count exists, but the stated trend held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Stingray_phone_tracker",
+     "title": "Stingray phone tracker (Wikipedia)",
+     "date": "2014",
+     "shows": "Rapid spread of cell-site simulators in US policing 2006-2014; $71M DOJ and $24M DHS spending 2010-14; 42 agencies in 17 states by 2014."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-003",
+   "verdict": "miss",
+   "reading": "By 2014 most (US) students spend part of their school days in online virtual classes.",
+   "mainstream_test": "D16 adoption: at least 20% of K-12 students taking online/virtual classes by 2016; partial at >=5% by 2014; miss below 5% through 2019.",
+   "reason": "NCES counted 1.8M distance-education course enrollments in 2009-10 (not unique students) against ~49M public-school students, under 4%; by 2017-18 only 21% of public schools even offered a fully online course. Mass virtual schooling came only with COVID in 2020, outside the 5-year window (2019).",
+   "evidence": [
+    {
+     "url": "https://nces.ed.gov/pubs2012/2012008.pdf",
+     "title": "NCES, Distance Education Courses for Public Elementary and Secondary School Students: 2009-10",
+     "date": "2011-11",
+     "shows": "Districts reported about 1,816,400 distance-education course enrollments in 2009-10, 74% in high schools."
+    },
+    {
+     "url": "https://nces.ed.gov/fastfacts/display.asp?id=79",
+     "title": "NCES Fast Facts: Distance learning",
+     "date": "2020",
+     "shows": "21% of public schools offered any course entirely online in 2017-18; mass move online only in spring 2020."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-004",
+   "verdict": "ungradable",
+   "reading": "By 2014 telework and home-schooling expand and work-leisure boundaries diminish significantly, sharply altering family dynamics.",
+   "mainstream_test": "A public measure of the work-leisure boundary or of family dynamics attributable to telework, at 2014.",
+   "reason": "Telework rose only modestly (ATUS: share doing some work at home 19% in 2003 to 23% in 2014). The graded core, a significant erosion of the work-leisure boundary and a sharp change in family dynamics, has no public measure. Looked for ATUS work-at-home series and family time-use studies.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/news.release/archives/atus_06242015.htm",
+     "title": "BLS American Time Use Survey 2014 results",
+     "date": "2015-06-24",
+     "shows": "23% of employed did some or all work at home on days worked in 2014, vs 19% in 2003."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-005",
+   "verdict": "hit",
+   "reading": "By 2014 a large body of independently produced creative work circulates freely online and draws wide public attention.",
+   "mainstream_test": "Free user-produced creative content platforms with mass audiences (>=20% of internet users) by 2014.",
+   "reason": "YouTube, SoundCloud, Wattpad, webcomics and self-publishing made independent work a mass phenomenon; YouTube alone had 100 hours uploaded per minute in 2013 and 300 by Nov 2014, with billions of daily views.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/YouTube",
+     "title": "YouTube (Wikipedia)",
+     "date": "2014-11",
+     "shows": "Uploads rose from 48 h/min (2011) to 300 h/min by Nov 2014; 3B+ views per day already in 2011."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-006",
+   "verdict": "partial",
+   "reading": "By 2014 all home media arrive over the internet and an internet-connected computer replaces the TV as the living-room centerpiece.",
+   "mainstream_test": "Internet-delivered media as the main home video source (>=20% of households relying on it) and connected devices displacing linear TV, by 2014 (hit by 2016, partial 2017-2019).",
+   "reason": "In 2014 linear pay TV still dominated; internet-only TV households reached ~22M only by 2017 and cord-cutters became the majority by 2022. Streaming through connected TVs became mainstream 3-5 years after the placed year, and 'all media' never streamed by 2014.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cord-cutting",
+     "title": "Cord-cutting (Wikipedia)",
+     "date": "2022",
+     "shows": "22.2M US households relied entirely on internet TV in 2017 (0.9M in 2008); cable/satellite fell below 50% only in 2022."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-007",
+   "verdict": "miss",
+   "reading": "By 2014, 90% of US adults go online from home via high-speed broadband.",
+   "mainstream_test": "D16 numeric: forecast 90% vs actual US home broadband share in 2014; hit within 10%, partial within 25% of actual.",
+   "reason": "Pew measured home broadband at 70% of adults in 2013 and 67% in 2015. 90 vs ~70 is ~29% above the actual, beyond the 25% band. The 'dramatically faster' qualifier is not needed to reach a miss.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/fact-sheet/internet-broadband/",
+     "title": "Pew Research Center, Internet/Broadband Fact Sheet",
+     "date": "2024",
+     "shows": "Home broadband 70% of US adults in 2013, 67% in 2015."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-008",
+   "verdict": "hit",
+   "reading": "In 2014 most internet users can still easily copy and distribute digital products through P2P networks.",
+   "mainstream_test": "Whether P2P sharing remained easily available to ordinary users in 2014 with large active user bases.",
+   "reason": "BitTorrent still had ~150M active users (2012) and 15-27M concurrent users in 2013; enforcement (200,000+ US lawsuits since 2010) did not stop mass sharing. 'Anonymous' was overstated since peer IPs are visible, but the stated capability held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/BitTorrent",
+     "title": "BitTorrent (Wikipedia)",
+     "date": "2013-02",
+     "shows": "15-27M concurrent users in 2013; 3.35% of world bandwidth; peers' IPs visible; 200,000+ US suits since 2010."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-009",
+   "verdict": "hit",
+   "reading": "By 2014 extremist political, religious and violent groups solidify and grow through online networks.",
+   "mainstream_test": "Documented growth of online-organized extremist groups by 2014.",
+   "reason": "ISIS used social media to draw some 27,000-31,000 foreign fighters to Syria/Iraq by 2015, the defining example of online-networked violent zealotry; online radicalization was a mainstream security concern by 2014.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Foreign_fighters_in_the_Syrian_civil_war_and_War_in_Iraq",
+     "title": "Foreign fighters in the Syrian civil war and War in Iraq (Wikipedia)",
+     "date": "2015-12-07",
+     "shows": "Soufan Group: 27,000-31,000 foreign fighters, incl. ~5,000 from Western Europe; online propaganda role."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-010",
+   "verdict": "miss",
+   "reading": "By 2014 US civic involvement and group membership rise substantially thanks to the internet.",
+   "mainstream_test": "US volunteering / civic participation rate in 2014 vs 2005 (CPS Volunteer Supplement).",
+   "reason": "The BLS volunteer rate fell from 28.8% (2005) to 25.3% (2014) and 24.9% (2015); civic participation did not rise.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/news.release/volun.nr0.htm",
+     "title": "BLS Volunteering in the United States, 2015",
+     "date": "2016-02-25",
+     "shows": "Volunteer rate 26.8% (2011) declining to 25.3% (2014) and 24.9% (2015)."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-011",
+   "verdict": "miss",
+   "reading": "By 2014 online medical resources substantially improve US healthcare problems: costs, service, medical errors, malpractice and access.",
+   "mainstream_test": "Measurable improvement by 2014 in US health cost growth or access attributable to online resources (e.g. health spending share of GDP falling).",
+   "reason": "US health spending kept rising as a share of GDP (16% in 2008, ~17.4% in 2014); the 2014 coverage gains came from the ACA, not online resources; no measure shows substantial improvement in errors or malpractice. The stated outcome did not occur.",
+   "evidence": [
+    {
+     "url": "https://www.kff.org/health-costs/issue-brief/snapshots-health-care-spending-in-the-united-states-selected-oecd-countries/",
+     "title": "KFF, Health care spending in the US and selected OECD countries",
+     "date": "2011",
+     "shows": "US health spending rose from 9% of GDP (1980) to 16% (2008), well above peers; the rise continued after."
+    },
+    {
+     "url": "https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical",
+     "title": "CMS National Health Expenditure Data, historical",
+     "date": "2025",
+     "shows": "NHE series from 1960; health spending at 18.0% of GDP in 2024, no reversal of the cost trend."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-012",
+   "verdict": "miss",
+   "reading": "By 2014 the internet enlarges people's social networks and this raises social trust.",
+   "mainstream_test": "US interpersonal trust (GSS 'most people can be trusted') higher in 2014 than in 2004.",
+   "reason": "Network size may have grown, but the graded consequence, more trust in society, did not happen: GSS generalized trust drifted down (about 34% in 2004 to about 30% in 2014), and in 2019 71% of Americans said interpersonal trust had declined over 20 years.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/politics/2019/07/22/trust-and-distrust-in-america/",
+     "title": "Pew Research Center, Trust and Distrust in America",
+     "date": "2019-07-22",
+     "shows": "71% say interpersonal trust has declined over the past 20 years; 35% of adults consistently distrustful vs 22% high-trust."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-013",
+   "verdict": "hit",
+   "reading": "It is not the case that by 2014 most people use the internet to filter out challenging political views, making consensus impossible.",
+   "mainstream_test": "Share of Americans living in ideologically filtered media environments in 2014 (majority or not).",
+   "reason": "Pew's 2014 study found only ~20% of Americans are consistent ideologues with insulated media diets; mixed-view Americans use broad sources, and 'it is virtually impossible to live in an ideological bubble'. Most people did not filter in the stated way, so the negative view holds, though polarization did rise among a minority.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/journalism/2014/10/21/political-polarization-media-habits/",
+     "title": "Pew Research Center, Political Polarization & Media Habits",
+     "date": "2014-10-21",
+     "shows": "Consistent liberals/conservatives ~20% of public; the other 80% have mixed views and varied sources."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2005-014",
+   "verdict": "hit",
+   "reading": "It is not the case that by 2014 network security is solved and over half of US votes are cast online with higher turnout.",
+   "mainstream_test": "Share of US votes cast over the internet in the 2014 election, and 2014 turnout.",
+   "reason": "Internet voting stayed limited to niche uses (party primaries, some overseas/military ballots); 2014 midterm turnout was 36.4%, the lowest since 1942. The predicted state did not happen.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2014_United_States_elections",
+     "title": "2014 United States elections (Wikipedia)",
+     "date": "2014-11-04",
+     "shows": "Turnout 36.4%, down from 40.9% in 2010, lowest since 1942."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Internet_voting",
+     "title": "Internet voting (Wikipedia)",
+     "date": "2025",
+     "shows": "Internet voting used nationally only in Estonia and Switzerland; in the US limited to e.g. party primaries."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2006-001",
+   "verdict": "partial",
+   "reading": "By 2020 mobile networks interoperate seamlessly and mobile communication is available to anyone anywhere at extremely low cost.",
+   "mainstream_test": "Global mobile-broadband coverage near universal and entry broadband affordable (<2% of GNI p.c.) in developing countries by 2020.",
+   "reason": "Coverage was near-universal (93% of the world under 3G+; 75 active mobile-broadband subscriptions per 100), but ITU says mobile access 'remains too expensive for many in the developing world', the basket in LDCs was well above the 2% GNI affordability target, and a quarter of LDC populations lacked mobile broadband. Coverage part held, cost/everyone part did not.",
+   "evidence": [
+    {
+     "url": "https://www.itu.int/en/ITU-D/Statistics/Documents/facts/FactsFigures2020.pdf",
+     "title": "ITU, Measuring digital development: Facts and figures 2020",
+     "date": "2020-11",
+     "shows": "93.2% of world population under 3G+; 75 mobile-broadband subs per 100; LDC prices well above affordability target; 3.7B offline end-2019."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2006-002",
+   "verdict": "hit",
+   "reading": "It is not the case that by 2020 the internet has made English so indispensable that it displaces some languages.",
+   "mainstream_test": "Whether English's share of the online world grew to displace other languages by 2020 (share of internet users and content by language).",
+   "reason": "English's share of internet users fell to about 26% by 2020 (Chinese 19%, Spanish 8%), and non-English languages grew far faster online (Arabic +2,501%, Russian +1,826% vs English +281% in 2001-2011). No evidence that the internet made English displace languages.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Languages_used_on_the_Internet",
+     "title": "Languages used on the Internet (Wikipedia)",
+     "date": "2020",
+     "shows": "Internet users by language 2020: English 25.9%, Chinese 19.4%, Spanish 7.9%; English growth far slower than other languages."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2006-003",
+   "verdict": "ungradable",
+   "reading": "It is not the case that by 2020 autonomous systems remove humans from key security activities so that unrecognized dangers become irreversible.",
+   "mainstream_test": "A public measure of irreversible, unrecognized dangers from autonomous control systems at 2020.",
+   "reason": "The view turns on dangers 'not recognized until impossible to reverse', which by construction has no public measure. Looked for incident databases of autonomous-system harms; they record recognized, reported incidents only.",
+   "evidence": [
+    {
+     "url": "https://incidentdatabase.ai/",
+     "title": "AI Incident Database",
+     "date": "2025",
+     "shows": "Indexes realized, reported AI harms; does not measure unrecognized or irreversible dependencies."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2006-004",
+   "verdict": "ungradable",
+   "reading": "It is not the case that by 2020 growing personal transparency has made the world better, with benefits outweighing costs.",
+   "mainstream_test": "A public measure of the net benefit of personal transparency at 2020.",
+   "reason": "A net-benefit value judgment (D27 example). Opinion data exist (Pew 2019: 81% say risks of company data collection outweigh benefits) but that measures attitudes, not the stated outcome. Looked for a welfare measure of transparency; none.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "title": "Pew Research Center, Americans and Privacy",
+     "date": "2019-11-15",
+     "shows": "81% think risks of company data collection outweigh benefits; 79% concerned; opinion only."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2006-005",
+   "verdict": "miss",
+   "reading": "By 2020 most people in tech-savvy communities are more productive in internet VR than in the real world, and VR addiction is widespread.",
+   "mainstream_test": "D16: VR used for work/daily life by at least 20% of users in advanced markets by 2022; miss if below 5% by 2025.",
+   "reason": "VR stayed a niche gaming device: Quest 2, the best seller, shipped about 10M units by late 2021 worldwide; no VR work adoption near 5% of workers, and VR addiction is not a recognized widespread problem. Window closed in 2025.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Oculus_Quest_2",
+     "title": "Quest 2 (Wikipedia)",
+     "date": "2021-11",
+     "shows": "At least 10M Quest 2 shipped worldwide by Nov 2021, the market-leading headset."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2006-006",
+   "verdict": "miss",
+   "reading": "By 2020 free information flow completely blurs national boundaries, with city-states and corporate or networked groupings replacing them.",
+   "mainstream_test": "Whether nation-state boundaries were replaced or eroded by 2020 (e.g. state control of the internet).",
+   "reason": "The opposite happened: Freedom House reports ten straight years of declining internet freedom to 2020 and states 'erecting their own digital borders' (cyber sovereignty). Nation-states remained the units of governance.",
+   "evidence": [
+    {
+     "url": "https://freedomhouse.org/report/freedom-net/2020/pandemics-digital-shadow",
+     "title": "Freedom House, Freedom on the Net 2020",
+     "date": "2020-10-14",
+     "shows": "Tenth consecutive year of decline; rise of cyber sovereignty, countries erecting digital borders."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2006-007",
+   "verdict": "partial",
+   "reading": "By 2020 people left behind by ICT form a self-segregating refusenik group, some living off-grid and some committing violence against technology.",
+   "mainstream_test": "Documented acts of violence against technology/infrastructure by tech opponents by 2020, and an identifiable self-segregating refusenik group.",
+   "reason": "The violence part happened: in 2020 almost 90 mobile masts were attacked and nearly 50 telecom engineers assaulted in the UK, with tower arson in the Netherlands and Canada, driven by anti-5G beliefs. A distinct, self-segregating refusenik cultural group did not measurably form. Part of the stated scenario held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/5G_misinformation",
+     "title": "5G misinformation (Wikipedia)",
+     "date": "2020-04",
+     "shows": "~90 attacks on UK mobile masts and ~50 assaults on engineers during 2020 lockdown; arson in the Netherlands and Canada."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-001",
+   "verdict": "hit",
+   "reading": "In 2020 the mobile phone is the primary, and for most the only, internet connection for most people online worldwide, and developing countries hold most internet users.",
+   "mainstream_test": "Mobile vs fixed broadband subscriptions worldwide in 2020, and share of internet users in developing countries.",
+   "reason": "ITU: 75 active mobile-broadband subscriptions per 100 people in 2020 against roughly 15 fixed-broadband per 100; just over half the world was online at end-2019, mostly in developing countries, where mobile is the main access route. The scenario's core held.",
+   "evidence": [
+    {
+     "url": "https://www.itu.int/en/ITU-D/Statistics/Documents/facts/FactsFigures2020.pdf",
+     "title": "ITU, Measuring digital development: Facts and figures 2020",
+     "date": "2020-11",
+     "shows": "Active mobile-broadband 75 per 100 inhabitants in 2020, far above fixed broadband; 93% under 3G+; just over half of world online."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-002",
+   "verdict": "hit",
+   "reading": "It is not the case that by 2020 the internet has made people more tolerant, with less violence, sectarian strife and hate crime.",
+   "mainstream_test": "US hate crime incident counts 2008 vs 2020 and later (FBI UCR).",
+   "reason": "US hate crimes declined slowly then rose from the mid-2010s; 2020 reached about 8,200 incidents, the highest since 2008, and DOJ reports 11,679 in 2024. Sectarian conflict (Syria, Myanmar) was severe in the 2010s. The predicted tolerance gain did not happen, so the majority's 'no' holds.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hate_crime_laws_in_the_United_States",
+     "title": "Hate crime laws in the United States (Wikipedia)",
+     "date": "2018",
+     "shows": "FBI data: after a slow decline, hate crimes increased from the mid-2010s."
+    },
+    {
+     "url": "https://www.justice.gov/hatecrimes/hate-crime-statistics",
+     "title": "US DOJ, Hate Crime Statistics",
+     "date": "2025",
+     "shows": "11,679 hate crime incidents reported in 2024, well above late-2000s levels."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-003",
+   "verdict": "hit",
+   "reading": "It is not the case that by 2020 strict copyright controls exist with automatic billing of users and ISPs reporting circumventers to authorities.",
+   "mainstream_test": "Existence in 2020 of automatic billing for copyrighted use and ISP reporting to authorities in major markets.",
+   "reason": "No such regime existed in 2020. The US industry's graduated-response Copyright Alert System (2013) only warned subscribers, never involved authorities, and was shut down in January 2017 for failing to reduce piracy; SOPA/PIPA were withdrawn in 2012.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Copyright_Alert_System",
+     "title": "Copyright Alert System (Wikipedia)",
+     "date": "2017-01-30",
+     "shows": "ISP warning system began Feb 2013, ended Jan 2017; warnings to subscribers only, no reporting to authorities."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-004",
+   "verdict": "partial",
+   "reading": "In 2020 people share far more personal information, privacy norms have loosened, and people are more responsible and forgiving.",
+   "mainstream_test": "Social media use and public privacy attitudes in 2019-2021 vs 2008.",
+   "reason": "Sharing rose sharply: 72% of US adults used social media in 2021 (84% of 18-29s), against roughly a quarter in 2008. But privacy norms did not loosen: in 2019, 79% were concerned about company data use and 81% felt little control. The 'more forgiving' part has no measure. Part of the scenario held.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2021/04/07/social-media-use-in-2021/",
+     "title": "Pew Research Center, Social Media Use in 2021",
+     "date": "2021-04-07",
+     "shows": "72% of US adults use social media; 84% of 18-29."
+    },
+    {
+     "url": "https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/",
+     "title": "Pew Research Center, Americans and Privacy",
+     "date": "2019-11-15",
+     "shows": "79% concerned about company data use; 81% feel little or no control."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-005",
+   "verdict": "partial",
+   "reading": "In 2020 virtual worlds and AR are popular, a metaverse/geoWeb presence is needed to be fully connected, and most well-equipped users spend time in augmented or alternate worlds.",
+   "mainstream_test": "D16: monthly AR/VR use by at least 20% of users in a major market by 2022, plus a metaverse presence being required of organizations.",
+   "reason": "eMarketer estimated 83.1M US monthly AR users in 2020 (25% of population), mostly camera filters and map-style overlays, so AR use passed the mainstream bar. The scenario's core, that organizations and individuals must be present in a metaverse to be connected, did not happen. Part held.",
+   "evidence": [
+    {
+     "url": "https://www.emarketer.com/content/us-virtual-and-augmented-reality-users-2020",
+     "title": "eMarketer, US Virtual and Augmented Reality Users 2020",
+     "date": "2020",
+     "shows": "83.1M people in the US to use AR at least monthly in 2020, 25.0% of the population."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-006",
+   "verdict": "partial",
+   "reading": "By 2020 dictating to devices in public is normal and haptic virtual keyboards on any surface make 'air-typing' common.",
+   "mainstream_test": "D16: voice input used by at least 20% of adults; virtual/projection keyboards or air-typing used by at least 20%, by 2022.",
+   "reason": "Voice input became mainstream (46% of US adults used voice assistants in 2017, mostly on phones). Projection/virtual keyboards and air-typing stayed niche gadgets with no mass adoption. Half the scenario held.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2017/12/12/nearly-half-of-americans-use-digital-voice-assistants-mostly-on-their-smartphones/",
+     "title": "Pew Research Center, Nearly half of Americans use digital voice assistants",
+     "date": "2017-12-12",
+     "shows": "46% of US adults use voice assistants, 42% on smartphones."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Projection_keyboard",
+     "title": "Projection keyboard (Wikipedia)",
+     "date": "2025",
+     "shows": "Niche Bluetooth accessory history; no evidence of mass adoption."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-007",
+   "verdict": "hit",
+   "reading": "In 2020 the original internet architecture is still being refined, not replaced, and crime remains possible.",
+   "mainstream_test": "Whether the TCP/IP architecture was replaced by a new system by 2020.",
+   "reason": "The internet in 2020 still ran on TCP/IP; IPv6 extended rather than replaced it, coexisting with IPv4 by design; cybercrime remained widespread. The state held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/IPv6_deployment",
+     "title": "IPv6 deployment (Wikipedia)",
+     "date": "2024",
+     "shows": "IPv6 coexists with IPv4 via dual-stack; an extension of, not a replacement for, the architecture."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2008-008",
+   "verdict": "ungradable",
+   "reading": "In 2020 knowledge workers in developed nations have willingly erased work/personal-time boundaries, work and play blend seamlessly, and this is a net positive.",
+   "mainstream_test": "A public measure of work-life boundary integration among knowledge workers, and of its net effect, at 2020.",
+   "reason": "No survey measures 'seamless integration' or its net benefit; the net-positive part is a value judgment (D27). Looked for time-use and policy evidence: right-to-disconnect laws (France 2017, Slovakia 2021, Ontario 2021) show boundaries were contested, and 2020 remote work was forced by COVID, but neither measures the claim.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Right_to_disconnect",
+     "title": "Right to disconnect (Wikipedia)",
+     "date": "2024",
+     "shows": "Laws restoring work/personal boundaries: France 2017, Slovakia 2021, Ontario 2021, Australia 2024."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-02-001",
+   "verdict": "ungradable",
+   "reading": "By 2020 internet use has made people smarter and better at choices.",
+   "mainstream_test": "A public measure of population intelligence or decision quality attributable to internet use, at 2020.",
+   "reason": "No measure ties intelligence change to the internet. Looked for IQ trend data: the Flynn effect stalled or reversed in Norway, Denmark and the UK from the late 1990s-2000s, but attribution to the internet is unestablished, so the claim cannot be tested as stated.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Flynn_effect",
+     "title": "Flynn effect (Wikipedia)",
+     "date": "2024",
+     "shows": "IQ gains stopped or reversed in Norway, Denmark, UK; social media cited only as a possible factor."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-02-002",
+   "verdict": "ungradable",
+   "reading": "By 2020 it is clear that the internet has improved reading, writing and the rendering of knowledge.",
+   "mainstream_test": "A public measure of reading/writing quality attributable to internet use at 2020.",
+   "reason": "Skill measures exist but none isolates the internet's effect; the claim is a causal judgment. Looked at NAEP: US test scores declined from 2015 onward, which argues against a clear improvement but cannot attribute cause. Recorded as ungradable rather than guessing from the proxy.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Assessment_of_Educational_Progress",
+     "title": "National Assessment of Educational Progress (Wikipedia)",
+     "date": "2025",
+     "shows": "NAEP test scores declined from 2015 through 2025 across groups; not attributable to internet use."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-02-003",
+   "verdict": "unfalsifiable",
+   "reading": "The hot gadgets and apps of 2020 come 'out of the blue', unanticipated by the savviest innovators of 2010.",
+   "mainstream_test": "Whether 2020's leading gadgets/apps were foreseen in 2010.",
+   "reason": "Two equally faithful readings diverge: by product (TikTok, launched 2016-17 with ~800M MAU by mid-2020, was not foreseen in 2010, so hit) or by category (short video, smartwatches, voice assistants, wireless earbuds were all anticipated in 2010, so miss). No reading dominated and no measure of 'anticipated by innovators' exists.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/TikTok",
+     "title": "TikTok (Wikipedia)",
+     "date": "2020-07",
+     "shows": "Launched Sept 2016/2017; nearly 800M MAU by July 2020 - a product unforeseen in 2010, in an anticipated category."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-02-004",
+   "verdict": "partial",
+   "reading": "Through 2020 the internet stays mostly end-to-end and most disputes over information flow are resolved toward minimal restrictions.",
+   "mainstream_test": "Internet freedom trend 2010-2020 (Freedom on the Net) and survival of the end-to-end TCP/IP model.",
+   "reason": "The technical end-to-end architecture largely persisted, but disputes were mostly resolved toward more restriction: Freedom House recorded ten consecutive years of decline in internet freedom to 2020, rising cyber sovereignty, and the US repealed net neutrality in 2017. Only the first half held.",
+   "evidence": [
+    {
+     "url": "https://freedomhouse.org/report/freedom-net/2020/pandemics-digital-shadow",
+     "title": "Freedom House, Freedom on the Net 2020",
+     "date": "2020-10-14",
+     "shows": "Tenth consecutive year of decline in global internet freedom; states erecting digital borders."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/IPv6_deployment",
+     "title": "IPv6 deployment (Wikipedia)",
+     "date": "2024",
+     "shows": "Core architecture extended, not replaced."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-02-005",
+   "verdict": "hit",
+   "reading": "In 2020 it is still relatively easy to create content, communicate and browse online without publicly disclosing identity.",
+   "mainstream_test": "Availability in 2020 of pseudonymous accounts and anonymity tools usable by ordinary users.",
+   "reason": "Pseudonymous posting remained standard on Reddit, Twitter and forums, and Tor, described as easy to use, had millions of users; no major market imposed real-name requirements for general browsing by 2020. The state held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Tor_(network)",
+     "title": "Tor (network) (Wikipedia)",
+     "date": "2020",
+     "shows": "Tor had ~4M users by 2013, described as easy for normal people to browse and chat anonymously."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-03-001",
+   "verdict": "ungradable",
+   "reading": "By 2020 online cooperation makes governments, business and nonprofits significantly more efficient and responsive.",
+   "mainstream_test": "A public measure of institutional efficiency/responsiveness attributable to online cooperation at 2020.",
+   "reason": "No measure of 'efficiency and responsiveness' across institutions exists. Looked for trust in and performance of government: US trust in government fell from ~22-24% (2010) to 17-20% (2019-20), a perception proxy that cannot test the claim.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/politics/2024/06/24/public-trust-in-government-1958-2024/",
+     "title": "Pew Research Center, Public Trust in Government: 1958-2024",
+     "date": "2024-06-24",
+     "shows": "Trust in federal government 22-24% in 2010, 17% in 2019, 20% in Aug 2020; attitudes, not efficiency."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-05-001",
+   "verdict": "hit",
+   "reading": "By 2020 the semantic web is not as effective as its creators hoped and average users have not noticed much difference.",
+   "mainstream_test": "Whether the Semantic Web vision was realised for general web users by 2020.",
+   "reason": "The full vision remained largely unrealised; uptake came through lightweight schema.org markup and proprietary knowledge graphs, invisible to most users. The pessimistic view held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Semantic_Web",
+     "title": "Semantic Web (Wikipedia)",
+     "date": "2020",
+     "shows": "Vision 'largely unrealized'; ~4M of ~250M domains with markup in 2013; partial success via schema.org and knowledge graphs."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-06-001",
+   "verdict": "partial",
+   "reading": "By 2020 most people do their work in internet-based applications and smartphone apps rather than in software on a general-purpose PC.",
+   "mainstream_test": "D16: cloud/SaaS apps in routine use by at least 20% of workers by 2022, and decline of the PC as the main work device.",
+   "reason": "Browser and SaaS tools (Google Workspace, Microsoft 365 online, Slack, Zoom) were routine by 2020, so the cloud-app half passed the mainstream bar. But the PC did not recede: shipments rose to 275M in 2020 and 340M in 2021 as remote work ran on laptops, and desktop software stayed central. Partly held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Market_share_of_personal_computer_vendors",
+     "title": "Market share of personal computer vendors (Wikipedia)",
+     "date": "2021",
+     "shows": "Worldwide PC shipments 262.6M (2019), 275M (2020), 339.8M (2021), boosted by pandemic remote work."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-07-001",
+   "verdict": "ungradable",
+   "reading": "In 2020 the respondent judges that the internet has mostly been a positive force in his or her own social world.",
+   "mainstream_test": "A public measure of individuals' judgment that the internet improved their own relationships, at 2020.",
+   "reason": "A first-person value judgment with no public population measure (capture note agrees). Looked at Pew social media use data, which measures use, not the claimed net effect on relationships.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2021/04/07/social-media-use-in-2021/",
+     "title": "Pew Research Center, Social Media Use in 2021",
+     "date": "2021-04-07",
+     "shows": "Measures adoption (72% of adults) only; no measure of the internet's net effect on personal relationships."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2010-07-002",
+   "verdict": "hit",
+   "reading": "By 2020 millennials keep broadcasting and sharing personal information online as they age.",
+   "mainstream_test": "Social media use among millennials (about 24-40 in 2020) at least 20%, and sustained.",
+   "reason": "In 2021, 84% of 18-29s and a large majority of 30-49s used social media, with daily use common; millennials did not withdraw from sharing as they aged. Shift toward ephemeral and private formats is a nuance, not a reversal.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2021/04/07/social-media-use-in-2021/",
+     "title": "Pew Research Center, Social Media Use in 2021",
+     "date": "2021-04-07",
+     "shows": "84% of 18-29 use social media; 72% of all adults; majority of users visit daily."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-02-001",
+   "verdict": "ungradable",
+   "reading": "In 2020 hyperconnected young people's brains are wired differently, without notable cognitive deficits, and the change is broadly positive.",
+   "mainstream_test": "A public measure of cognitive outcomes of multitasking youth vs over-35s at 2020.",
+   "reason": "No population measure of 'wiring' or of the net cognitive effect exists; the positive outcome is a value judgment. Looked at NAEP achievement data (declines since 2015) and IQ trend data, neither of which tests the claim.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Assessment_of_Educational_Progress",
+     "title": "National Assessment of Educational Progress (Wikipedia)",
+     "date": "2025",
+     "shows": "Scores declined 2015-2025; no measure of brain wiring or multitasking effects."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-03-001",
+   "verdict": "miss",
+   "reading": "In 2020 the open Web is stronger than ever and the main place for most online activity, with apps confined to a limited set of specialized functions.",
+   "mainstream_test": "Share of US digital media time spent in apps vs on the web around 2016-2020.",
+   "reason": "The opposite happened: comScore found smartphone apps alone took 50% of all US digital media time (desktop 32%, smartphone web 7%), and mobile reached 79% of digital minutes by August 2020, overwhelmingly in apps. Apps, not the open web, became the main venue.",
+   "evidence": [
+    {
+     "url": "https://www.comscore.com/Insights/Blog/Smartphone-Apps-Are-Now-50-of-All-US-Digital-Media-Time-Spent",
+     "title": "comScore, Smartphone apps are now 50% of all US digital media time spent",
+     "date": "2016-09",
+     "shows": "Smartphone apps 50% of digital media time vs desktop 32%, smartphone web 7%, tablet web 2%."
+    },
+    {
+     "url": "https://www.comscore.com/Insights/Press-Releases/2020/11/Comscore-Research-Captures-Evolving-Consumer-Mobile-Behavior",
+     "title": "comScore, Research captures evolving consumer mobile behavior",
+     "date": "2020-11",
+     "shows": "79% of US digital minutes on mobile in Aug 2020."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-04-001",
+   "verdict": "partial",
+   "reading": "By 2020 most people in advanced countries pay by tapping smart devices, so cash and cards have mostly disappeared from transactions.",
+   "mainstream_test": "Share of US consumer payments by instrument in 2020; mobile-wallet adoption by at least 20% of consumers.",
+   "reason": "Mobile wallets reached a measurable minority (roughly a quarter of US consumers by 2020), but cash and cards did not disappear: the Fed's 2020 diary shows cash 19%, debit 28% and credit 27% of all payments, cards still dominant. Adoption grew, the stated displacement did not happen.",
+   "evidence": [
+    {
+     "url": "https://www.frbservices.org/news/research/2021-findings-from-the-diary-of-consumer-payment-choice/",
+     "title": "Federal Reserve, 2021 Findings from the Diary of Consumer Payment Choice",
+     "date": "2021-05",
+     "shows": "Oct 2020: cash 19%, debit 28%, credit 27% of US payments; cards remain the majority."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-05-001",
+   "verdict": "hit",
+   "reading": "By 2020 gamification is widely adopted in education, health and work and part of many connected people's daily activities.",
+   "mainstream_test": "D16: gamified apps/devices in routine use by at least 20% of internet users in a major market by 2022.",
+   "reason": "Gamified goal systems reached the mainstream bar: 21% of US adults used smartwatches or fitness trackers with streaks and badges in 2019, and Duolingo (streaks, leagues, badges) had ~30M MAU by end-2019 and grew further. Loyalty apps and gamified fitness were routine.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2020/01/09/about-one-in-five-americans-use-a-smart-watch-or-fitness-tracker/",
+     "title": "Pew Research Center, About one-in-five Americans use a smart watch or fitness tracker",
+     "date": "2020-01-09",
+     "shows": "21% of US adults regularly use a smartwatch or fitness tracker (2019)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Duolingo",
+     "title": "Duolingo (Wikipedia)",
+     "date": "2022",
+     "shows": "30M active users Dec 2019; core gamification (streaks, leagues, badges)."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-06-001",
+   "verdict": "partial",
+   "reading": "By 2020 connected smart-home systems let households manage energy, water and other resources efficiently, bringing the Home of the Future close to reality.",
+   "mainstream_test": "D16: smart resource-management devices (e.g. smart thermostats) in at least 20% of US households by 2022; partial at 5-20% by 2020.",
+   "reason": "Smart thermostats were in 13% of US broadband households in 2020 and 16% later; about a third owned some smart-home device. A measurable share above 5% but below the 20% mainstream bar for resource management.",
+   "evidence": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/parks-associates-29-of-us-broadband-households-plan-to-purchase-a-smart-thermostat-in-2020-300998468.html",
+     "title": "Parks Associates: 29% of US broadband households plan to purchase a smart thermostat in 2020",
+     "date": "2020-01",
+     "shows": "13% of US broadband households owned a smart thermostat in early 2020."
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/parks-associates-16-of-us-internet-households-have-a-smart-thermostat-301735558.html",
+     "title": "Parks Associates: 16% of US internet households have a smart thermostat",
+     "date": "2023-02",
+     "shows": "Smart thermostat ownership at 16%, still below 20%."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-07-001",
+   "verdict": "miss",
+   "reading": "In 2020 Western tech firms are bound by norms such that helping an authoritarian government monitor or block protesters brings significant penalties in other markets.",
+   "mainstream_test": "Whether Western firms supplying censorship or monitoring to authoritarian states faced significant penalties by 2020.",
+   "reason": "No such norm bound firms in 2020: Sandvine (North American) equipment was used by Belarus in 2020 to cut internet during protests and by Egypt, Turkey and others for censorship; the first US penalty (Entity List) came only in Feb 2024 and was lifted in Oct 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sandvine",
+     "title": "Sandvine (Wikipedia)",
+     "date": "2024-10",
+     "shows": "Equipment used for Belarus 2020 shutdowns and Egyptian censorship; Entity List only in Feb 2024, removed Oct 2024."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-07-002",
+   "verdict": "partial",
+   "reading": "By 2020 large-dataset analysis, including nowcasting, improves social, political and economic intelligence, and Big Data is a huge net positive for society.",
+   "mainstream_test": "Routine use of big-data nowcasting by economic institutions by 2020 (at least 20% of central banks/agencies); the net-positive part has no measure.",
+   "reason": "The factual half held: nowcasting became routine at central banks (Atlanta Fed GDPNow from 2014, NY Fed nowcast) and expanded to alternative data. The 'huge positive in nearly all respects' half is a value judgment with no public measure, and was contested (privacy, Cambridge Analytica). Graded on the measurable half as partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nowcasting_(economics)",
+     "title": "Nowcasting (economics) (Wikipedia)",
+     "date": "2024",
+     "shows": "Central banks are primary users; GDPNow launched 2014, NY Fed dynamic factor nowcast; ML and social data added."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2012-07-003",
+   "verdict": "hit",
+   "reading": "By 2020 higher education is quite different, with mass adoption of distance learning and hybrid classes and more customized graduation outcomes.",
+   "mainstream_test": "D16: share of US postsecondary students in any distance-education course at least 20% by 2022.",
+   "reason": "Distance learning was mainstream before the pandemic (36% of undergraduates and 42% of postbaccalaureate students in fall 2019) and reached 75% in fall 2020. Customized graduation requirements did not broadly arrive, but the core adoption held.",
+   "evidence": [
+    {
+     "url": "https://nces.ed.gov/fastfacts/display.asp?id=80",
+     "title": "NCES Fast Facts: Distance learning (postsecondary)",
+     "date": "2022",
+     "shows": "Undergraduates in any distance course: 36% fall 2019, 75% fall 2020; postbaccalaureate 42% and 71%."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2014-05-001",
+   "verdict": "hit",
+   "reading": "By 2025 the Internet of Things has widespread and beneficial effects on everyday life.",
+   "mainstream_test": "D16: connected home/personal IoT devices in at least 20% of households in major markets by 2025-2027.",
+   "reason": "IoT is widespread: 18.5B connected IoT devices in 2024, ~21B forecast for 2025; about a third of US broadband households owned a smart-home device by 2021 and ~21% of adults a wearable by 2019. 'Beneficial' is a value judgment not graded; the adoption part is clearly met.",
+   "evidence": [
+    {
+     "url": "https://iot-analytics.com/number-connected-iot-devices/",
+     "title": "IoT Analytics, Number of connected IoT devices",
+     "date": "2025",
+     "shows": "18.5B connected IoT devices in 2024, 21.1B expected end-2025."
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/parks-associates-34-of-us-broadband-households-own-a-smart-home-device-and-23-own-three-or-more-smart-home-devices-301226746.html",
+     "title": "Parks Associates: 34% of US broadband households own a smart home device",
+     "date": "2021-02",
+     "shows": "34% of US broadband households own a smart-home device; 23% own three or more."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2014-07-001",
+   "verdict": "miss",
+   "reading": "By 2025 there will be no significant changes for the worse in how people get and share content online compared with 2014.",
+   "mainstream_test": "Global internet freedom trend 2014-2025 (Freedom on the Net: blocking, arrests, content limits).",
+   "reason": "Conditions worsened significantly: Freedom House recorded 14 consecutive years of decline to 2024, website blocking of political/social/religious speech in at least 41 countries, arrests for online expression in 56 of 72 countries, and content-limit scores at their lowest in more than a decade.",
+   "evidence": [
+    {
+     "url": "https://freedomhouse.org/report/freedom-net/2024/struggle-trust-online",
+     "title": "Freedom House, Freedom on the Net 2024",
+     "date": "2024-10",
+     "shows": "14th consecutive year of decline; blocking in 41+ countries; arrests in 56 of 72; content limits at decade low."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2014-08-001",
+   "verdict": "hit",
+   "reading": "By 2025 AI and robotics will not have displaced more jobs than they created.",
+   "mainstream_test": "Net employment in major economies in 2025 (e.g. US unemployment rate near historic lows, employment at record levels).",
+   "reason": "No net job loss: US unemployment stayed at 4.0-4.4% through 2025, near historic lows, and employment was at record levels; no major economy showed AI-driven net job destruction by 2025.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm",
+     "title": "BLS, Civilian unemployment rate",
+     "date": "2025-09",
+     "shows": "US unemployment 4.0% (Jan 2025) to 4.4% (Sep 2025)."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2014-10-001",
+   "verdict": "hit",
+   "reading": "By 2025 a major cyberattack has caused widespread harm to a nation's security, with significant loss of life or losses in the tens of billions of dollars.",
+   "mainstream_test": "A single cyberattack by 2025 with losses on the order of $10B+ that harmed a nation's security and defensive capacity.",
+   "reason": "NotPetya (2017), attributed to Russian military intelligence, hit Ukrainian ministries, banks, metro and state enterprises and knocked Chernobyl radiation monitoring offline, with total damage put at over $10B by the US Homeland Security adviser - 'the most destructive and costly cyberattack in history'. That meets the stated scale at its lower bound.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2017_Ukraine_ransomware_attacks",
+     "title": "2017 Ukraine ransomware attacks (Wikipedia)",
+     "date": "2017-06-27",
+     "shows": "NotPetya: >$10B damage; Ukrainian ministries, banks, metro, state firms hit; attributed to Russia's GRU."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2014-12-001",
+   "verdict": "hit",
+   "reading": "By 2025 there will be no secure, popularly accepted and trusted privacy-rights infrastructure giving individuals easy control over their data.",
+   "mainstream_test": "Public trust and sense of control over personal data in 2023-2025 (US), and existence of a comprehensive framework.",
+   "reason": "No trusted infrastructure emerged: in 2023, 73% of Americans felt little or no control over company data, only 20% trusted data holders to act responsibly, 72% wanted more regulation; the US still had no federal privacy law. The 'no' view held.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/",
+     "title": "Pew Research Center, How Americans View Data Privacy",
+     "date": "2023-10-18",
+     "shows": "73% little/no control over company data; 20% trust holders; 72% want more regulation."
+    }
+   ]
+  },
+  {
+   "id": "pew-elon-imagining-2021-02-001",
+   "verdict": "ungradable",
+   "reading": "Changes set in motion by COVID-19 make life in 2025 mostly worse for most people than at the start of the pandemic.",
+   "mainstream_test": "A public measure of whether life is better or worse for most people in 2025 than in early 2020, attributable to pandemic-driven change.",
+   "reason": "A whole-of-life value judgment (like the D27 'net effect' example). Looked for UNDP Human Development Index data: the 2023/24 report describes recovery to record global HDI but uneven, with many poorer countries below pre-pandemic paths; no measure isolates pandemic-driven change or 'most people's' lives.",
+   "evidence": [
+    {
+     "url": "https://hdr.undp.org/content/human-development-report-2023-24",
+     "title": "UNDP, Human Development Report 2023/24",
+     "date": "2024-03-13",
+     "shows": "Post-pandemic recovery uneven and rising inequality; no measure of 'mostly worse for most people' due to pandemic changes."
+    }
+   ]
+  }
+ ]
+}
