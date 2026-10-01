@@ -96,7 +96,13 @@ export function accentureTechVision(): Bundle {
     keyRule: "entries: label; 2017 predictions box: prediction + quote with case and punctuation removed",
     key: (e) => (e._prediction ? `prediction|${lc(e.quote)}` : lc(e.label)),
     labels: techLabel,
-    extra: (d) => ((d.predictions ?? []) as Raw[]).map((p) => ({ ...p, _prediction: true })),
+    // The 2017 PREDICTIONS box: each prediction belongs to the trend with rank `trend_rank`.
+    extra: (d) =>
+      ((d.predictions ?? []) as Raw[]).map((p) => {
+        const t = ((d.entries ?? []) as Raw[]).find((e) => e.rank === p.trend_rank);
+        if (t === undefined) throw new Error(`accenture-tech-vision ${d.edition}: prediction for unknown trend ${p.trend_rank}`);
+        return { ...p, label: t.label, subject: t.subject, section: `trend ${t.rank}: ${t.label}`, _prediction: true };
+      }),
     claim: (e, d, ed) => {
       const c = trendClaim(e, d, ed, "Accenture Technology Vision", Boolean(e._prediction));
       return e._prediction ? { ...c, position: [c.position, "PREDICTIONS box"].filter(Boolean).join("; ") } : c;
