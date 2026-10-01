@@ -107,6 +107,8 @@ const auditOut = audit
 if (auditOut && auditPasses.length) auditOut.passes = [1, ...auditPasses.map(([n]) => n)];
 if (auditOut && waveAudits.length) auditOut.waves = ["w1", ...waveAudits.map((f) => f.match(/w\d+/)[0])];
 if (auditOut) auditOut.error_rate = auditOut.audited ? Math.round(((auditOut.corrected + auditOut.contested) / auditOut.audited) * 1000) / 1000 : null;
+// D28: the audit error rate widens the published interval on both sides.
+const widen = (ci, e) => (ci && typeof e === "number" ? [Math.max(0, Math.round((ci[0] - e) * 1000) / 1000), Math.min(1, Math.round((ci[1] + e) * 1000) / 1000)] : null);
 
 const out = {
 	rule: "D16",
@@ -116,7 +118,10 @@ const out = {
 	counts,
 	// D11: no rate below 20 graded claims; counts only.
 	...(graded < MIN_RATE_N ? { rate_withheld: `D11: ${graded} graded claims, fewer than ${MIN_RATE_N}; counts only.` } : {}),
-	hit_rate: graded >= MIN_RATE_N ? { hits, of_graded_hit_partial_miss: graded, rate: Math.round((hits / graded) * 10000) / 10000, wilson95: wilson(hits, graded) } : null,
+	hit_rate:
+		graded >= MIN_RATE_N
+			? { hits, of_graded_hit_partial_miss: graded, rate: Math.round((hits / graded) * 10000) / 10000, wilson95: wilson(hits, graded), audit_adjusted95: widen(wilson(hits, graded), auditOut?.error_rate) }
+			: null,
 	hit_or_partial_rate: graded >= MIN_RATE_N ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,
 	adjudicated: rows.filter((r) => r.status === "adjudicated").length,
 	audit: auditOut,

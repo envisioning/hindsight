@@ -384,3 +384,44 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** A source's error rate pools audits drawn at different times with different seeds. A small wave gets an audit of all its agreed claims, which costs more per claim. The site's sample check (www `drawSample`) must filter by wave before it can verify a later wave.
 
 **Overturned by.** A release process that grades every source from scratch each year.
+
+## D27: Year-ahead event claims (The Economist) and panel majority views (Pew/Elon)
+
+*Recorded 2026-10-01.*
+
+**Decision.** Two source rules under D16, from issues #46 and #50.
+
+- **The Economist, The World in / The World Ahead (#46).** Most claims state an event or a state of affairs in the edition's year, not an adoption. A claim is read as "this happens in the target year, as stated".
+  - `hit`: it happened in the target year, as stated. A claim that something will not happen is a hit when it did not happen.
+  - `partial`: it happened in part in the target year (for example a smaller or slower version of the stated event), or in full in the next year.
+  - `miss`: it did not happen by the end of the target year, and not in full in the next year.
+  - A quantity uses D18 for rates (percentage points) and the D16 numeric rule for levels. A direction ("faster than last year") is a hit when the direction is right and a miss when it is wrong; the size word ("a bit") is not graded.
+  - A claim that only states a possibility ("could", "may", "has the potential to") with no expectation is `unfalsifiable`: both outcomes agree with it. The grader names the hedge word.
+  - A claim restated in a later Economist review (`recalled_in_self_review`) is graded on the words quoted, never on the review's own verdict.
+- **Pew Research Center / Elon University canvassings (#50).** The claim is the majority view of the expert panel, not the question. For a tension pair the majority view is the scenario the majority chose; for yes/no and two-way questions it is the answer the majority gave.
+  - The majority view is graded under D16 at its target year. Where it names an adoption, the D16 thresholds apply. Where it names a state of affairs, the test is whether the state held at the target year, with the measure named.
+  - A view that is only a value judgment with no public measure (for example "the net effect will be positive") is `ungradable` (D22), with what was looked for. A view whose plausible readings give different verdicts is `unfalsifiable` (D16).
+  - The panel shares and respondent counts are context. They are not graded and never weight a verdict.
+
+**Why.** D16 was written for technology placements. Issue #46 and issue #50 state how it reduces for these two sources; writing the reduction down lets two blind graders apply the same rule and lets a reader check it.
+
+**Cost.** Possibility claims leave the Economist rate as `unfalsifiable`, so the rate covers fewer claims. The Pew rate covers the panel's view, which is not a forecast by Pew or Elon in their own voice.
+
+**Overturned by.** Kappa below 0.6 on either source (D11), or audit findings that the "next year" partial window or the possibility rule misclassifies clear cases.
+
+## D28: The audit error rate widens every published interval (D11, issue #61)
+
+*Recorded 2026-10-01.*
+
+**Decision.** D11 says every rate is shown "recomputed with the audit error rate applied". The rule:
+
+- The audit error rate `e` is (corrected + contested) / audited, as published.
+- The published rate keeps its point estimate. Its interval is widened by `e` on both sides and clipped to [0, 1]: `[max(0, L - e), min(1, U + e)]`, where `[L, U]` is the Wilson 95% interval of the verdict counts. This is the `audit_adjusted95` interval.
+- Both intervals are published. Pages show the adjusted interval as the main one and the count interval as a detail.
+- Judgment sources: `scripts/final-d20.mjs` writes `hit_rate.audit_adjusted95`. Numeric sources: the matching audit of #53 (`data/graded/audit/<source>.json`) gives `e`; `src/grade/numeric.ts` writes `audit` and `hit_rate_audit_adjusted95` per source in `summary.json`. A source with no audit has no adjusted interval, and a page says the audit is pending.
+
+**Why.** An audit error means a share of verdicts may be wrong. In the worst case all of them move the rate the same way, so the rate can move by up to that share. This is the plain reading of D11.
+
+**Cost.** An audit with no error gives no widening, although a small clean audit does not prove an error rate of zero. The upper end of the error rate's own interval would cover that, but it widens the Hype Cycle interval from 55-64% to 33-86% and leaves no rate readable; that was tried and rejected for this release. Treating every error as moving the rate overstates the effect when errors cancel.
+
+**Overturned by.** A per-verdict error model from larger audits (hit-to-miss and miss-to-hit rates measured separately), or audits large enough that the error rate's own interval is narrow.

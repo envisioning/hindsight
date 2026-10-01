@@ -42,9 +42,10 @@ function edition(ed) {
 	return editions.get(ed);
 }
 function label(id) {
-	const parts = id.split("-");
-	const entries = edition(parts.at(-2));
-	const e = entries.find((x) => x.id === id) ?? entries[Number(parts.at(-1)) - 1];
+	// Edition is YYYY or YYYY-MM (pew-elon-imagining-2010-02-001).
+	const m = id.match(/-(\d{4}(?:-\d{2})?)-(\d+)$/);
+	const entries = m ? edition(m[1]) : [];
+	const e = entries.find((x) => x.id === id) ?? entries[Number(m?.[2]) - 1];
 	return e?.label ?? e?.quote ?? e?.claim ?? e?.statement ?? "";
 }
 
