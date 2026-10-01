@@ -10,12 +10,14 @@
     "build": "tsc",
     "manifest": "node scripts/manifest.mjs",
     "normalize": "node src/normalize/index.ts",
-    "grade:numeric": "node src/grade/numeric.ts"
+    "grade:numeric": "node src/grade/numeric.ts",
+    "export": "node src/export/index.ts"
   },
   "dependencies": {
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "zod-to-json-schema": "^3.25.2"
   }
 }

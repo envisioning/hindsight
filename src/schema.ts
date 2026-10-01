@@ -310,6 +310,23 @@ export const NumericSummary = z.object({
   ),
 });
 
+/**
+ * The published verdict of one judgment-source claim, as `scripts/final-d20.mjs` resolves it
+ * (D20: graders, adjudicator, audit, re-check passes, disputes). The release export (#3) writes
+ * one row per claim graded under D20. `contested` and `ungradable` are outcomes, never verdicts (D11, D22).
+ */
+export const PublishedVerdict = z.object({
+  claim_id: Id,
+  source_id: Id,
+  verdict: z.union([Verdict, z.enum(["contested", "ungradable"])]),
+  status: z.enum(["agreed", "audited", "corrected", "contested", "adjudicated", "rechecked", "disputed"]),
+  /** The grading rule of the source, for example "D16". */
+  rule: z.string().min(1),
+  /** The verdict before an audit correction or an upheld dispute. */
+  was: z.string().optional(),
+  reason: z.string().optional(),
+});
+
 /** D17 side-by-side view: same subject, same horizon, sources in alphabetical order. No rank, no total. */
 export const NumericComparison = z.object({
   note: z.string().min(1),
@@ -343,6 +360,7 @@ export type VerdictRow = z.infer<typeof VerdictRow>;
 export type Revision = z.infer<typeof Revision>;
 export type SubjectTechnologyLink = z.infer<typeof SubjectTechnologyLink>;
 export type NumericRule = z.infer<typeof NumericRule>;
+export type PublishedVerdict = z.infer<typeof PublishedVerdict>;
 export type NumericAudit = z.infer<typeof NumericAudit>;
 export type NumericGrade = z.infer<typeof NumericGrade>;
 export type NumericHorizon = z.infer<typeof NumericHorizon>;
