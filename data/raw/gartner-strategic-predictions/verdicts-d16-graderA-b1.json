@@ -1,0 +1,1027 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "gartner-strategic-predictions-2004-001",
+   "verdict": "hit",
+   "reading": "By 2009 at least one major scandal involving both news media and politics will be caused by fabricated or manipulated media (counterfeit reality).",
+   "mainstream_test": "Event test: did a major media and political scandal driven by faked or doctored images, video or documents occur between publication (Nov 2004) and end of 2009?",
+   "reason": "In August 2006 Reuters withdrew all 920 photos of freelancer Adnan Hajj after he digitally added smoke and missiles to Beirut war images during the Israel-Hezbollah war; Reuters fired a top photo editor in January 2007. A doctored war photo scandal at a global wire service, in a political conflict, within the window. (The CBS Killian documents of Sept 2004 predate the edition and are not counted.)",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Adnan_Hajj_photographs_controversy",
+     "title": "2006 Lebanon War photographs controversies (Wikipedia)",
+     "date": "2006-08",
+     "shows": "Reuters freelancer manipulated Beirut war photos with Photoshop; Reuters cut ties on Aug 6 2006, withdrew 920 photos, fired a top photo editor in Jan 2007; AP and NYT also issued corrections."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2004-002",
+   "verdict": "ungradable",
+   "reading": "The number of cyberattacks exploiting software vulnerabilities in 2006 will be twice the 2004 level.",
+   "mainstream_test": "D16 numeric: count of attacks exploiting software flaws in 2006 vs 2004, hit within 10% of 2x.",
+   "reason": "No public series counts attacks against software flaws for 2004-2006. CERT/CC stopped publishing incident counts after 2003 because automated attacks made counts meaningless. Vulnerability disclosures (CVE/NVD counts, roughly 2,450 in 2004 vs 6,600 in 2006) measure flaws, not attacks, so are a proxy of another quantity (D23).",
+   "evidence": [
+    {
+     "url": "https://www.markwilson.co.uk/blog/2005/01/gartners-top-predictions-for-2005-and.htm",
+     "title": "Gartner's top predictions for 2005 and beyond (blog quoting Gartner)",
+     "date": "2005-01-25",
+     "shows": "Claim text: cyberattacks against software flaws will double by 2006; no baseline count given."
+    },
+    {
+     "url": "https://nvd.nist.gov/general/visualizations/vulnerability-visualizations/cvss-severity-distribution-over-time",
+     "title": "NVD CVSS severity distribution over time",
+     "date": "2006",
+     "shows": "Published vulnerability counts per year (flaws disclosed), not attacks; looked for an attack count series, none found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2004-003",
+   "verdict": "miss",
+   "reading": "Between late 2004 and end of 2007, three of the vendors then in the worldwide top 10 PC makers will leave the PC market (exit or be absorbed).",
+   "mainstream_test": "D16 numeric on the count: exits by end-2007 among the 2004 top 10, hit if 3 (within 10%), partial within 25%, else miss.",
+   "reason": "2004 worldwide top 10 included Dell, HP, IBM, Fujitsu(-Siemens), Acer, Lenovo, Toshiba, NEC, Apple and Gateway (8th). By end of 2007 two exited: IBM (PC business sold to Lenovo, 2005) and Gateway (acquired by Acer, Oct 2007). Packard Bell was not top 10 and its sale to Acer closed in 2008. 2 vs 3 is a 50% error, a miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Market_share_of_personal_computer_vendors",
+     "title": "Market share of personal computer vendors (Wikipedia)",
+     "date": "2004-2007",
+     "shows": "IBM 3rd in 2004 (6.8%), absent from 2005 after sale to Lenovo; Dell, HP, Acer, Lenovo, Toshiba remain top vendors through 2007."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gateway,_Inc.",
+     "title": "Gateway, Inc. (Wikipedia)",
+     "date": "2007-10",
+     "shows": "Gateway was 8th largest PC maker globally in 2004; acquired by Acer, announced Aug 2007, completed Oct 2007."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2004-004",
+   "verdict": "miss",
+   "reading": "By 2008 PCs, mobile devices, e-books, TVs and cell phones will no longer differ technologically (full device convergence).",
+   "mainstream_test": "Event test: by end of 2008, had these device classes become technologically indistinguishable?",
+   "reason": "Distinct device classes persisted and new single-purpose ones launched: Amazon's dedicated e-ink Kindle reader (Nov 2007), the iPhone as a separate phone platform (2007), TVs without general computing. Convergence was partial at most and differences were not eradicated.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+     "title": "Amazon Kindle (Wikipedia)",
+     "date": "2007-11-19",
+     "shows": "First Kindle launched Nov 2007 as a dedicated e-ink e-book reader, a distinct device class with its own display technology."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
+     "title": "iPhone (1st generation) (Wikipedia)",
+     "date": "2007-06-29",
+     "shows": "Smartphone launched 2007 as a separate category from PCs and TVs; device classes remained distinct in 2008."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2004-005",
+   "verdict": "ungradable",
+   "reading": "By 2015, 40% of the IT job roles existing in 2004 will have been eliminated by automation.",
+   "mainstream_test": "D16 numeric: share of 2004 IT job roles lost to automation by 2015, hit within 10% of 40%.",
+   "reason": "No public measure of IT roles lost to automation exists; this is an attributed value (D23). Total US computer occupation employment rose from about 2.9 million (2004) to about 4.2 million (2015), which shows no net loss but cannot isolate automation-driven role elimination.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/oes/tables.htm",
+     "title": "BLS Occupational Employment Statistics, national tables 2004 and 2015",
+     "date": "2015-05",
+     "shows": "Computer and mathematical occupations employment grew between 2004 and 2015; no series measures roles lost to automation."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-001",
+   "verdict": "ungradable",
+   "reading": "The combined share of the IT outsourcing market held by the 10 largest IT outsourcers will fall from 43.5% (2006) to 40.0% by 2009.",
+   "mainstream_test": "D16 numeric: top-10 IT outsourcer share of the IT outsourcing market in 2009 (or 2008), hit within 10% of 40.0%.",
+   "reason": "The baseline and the market definition are Gartner's proprietary IT outsourcing market share data; no public series gives the top-10 share of the same market for 2008 or 2009. Vendor revenues are public but the market denominator on Gartner's definition is not.",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text with baseline 43.5% from Gartner market share data; no public follow-up of the same measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-002",
+   "verdict": "ungradable",
+   "reading": "Up to and in 2010, exactly one service provider headquartered in Asia/Pacific will be among the 20 largest IT services providers worldwide.",
+   "mainstream_test": "Count of Asia/Pacific-headquartered firms in the global top-20 IT services ranking for 2007-2010.",
+   "reason": "Read literally the claim was already false at publication: Japanese firms Fujitsu, NEC, Hitachi and NTT Data were in the global top 20 of IT services by revenue in 2006 and stayed there through 2010, so the intended scope almost certainly excluded Japan (offshore providers such as Indian firms). The edition does not state the scope, and the Gartner top-20 ranking for 2010 is not public, so the count under the intended scope cannot be checked.",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text only; no definition of Asia/Pacific scope or of the ranking basis."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Fujitsu",
+     "title": "Fujitsu (Wikipedia)",
+     "date": "2010",
+     "shows": "Fujitsu, a Japan-based firm, was among the largest IT services providers worldwide throughout 2006-2010, so the literal reading fails at publication."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-003",
+   "verdict": "miss",
+   "reading": "The number of people blogging and contributing to online communities will reach its maximum in the first half of 2007 and level off or decline afterwards.",
+   "mainstream_test": "Event test: did the population of bloggers and online community contributors stop growing after H1 2007?",
+   "reason": "Pew found the share of online adults keeping a blog roughly flat at about one in ten from 2005 to 2009, with blogging among 30+ adults rising from 7% (Dec 2007) to 11% (2009); since internet users kept growing, blogger numbers kept rising. Community contribution (social networks) grew sharply after 2007: Facebook went from about 50 million to over 500 million users by 2010. No peak in H1 2007.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2010/02/03/social-media-and-young-adults/",
+     "title": "Pew Research: Social Media and Young Adults",
+     "date": "2010-02-03",
+     "shows": "About 1 in 10 online adults blog consistently since 2005; 30+ blogging up from 7% (2007) to 11% (2009); 18-29 down from 24% to 15%."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Facebook",
+     "title": "Facebook (Wikipedia)",
+     "date": "2010-07",
+     "shows": "Facebook reached 500 million users in July 2010, up from tens of millions in 2007: online community contribution kept growing."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-004",
+   "verdict": "ungradable",
+   "reading": "By 2009 boards and executives will rank corporate social responsibility as a higher priority than regulatory compliance.",
+   "mainstream_test": "Survey of board/executive priorities in 2008-2009 ranking CSR vs regulatory compliance.",
+   "reason": "Looked for a 2008-2009 survey of boards or executives ranking CSR against regulatory compliance on a common scale; none found. CEO surveys of the period (e.g. PwC Global CEO Survey 2009) rank threats and priorities with categories that do not match these two.",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text; no measure named."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-005",
+   "verdict": "ungradable",
+   "reading": "By end of 2007, 75% of enterprises will host undetected, financially motivated, targeted malware that evaded their perimeter and host defenses.",
+   "mainstream_test": "D16 numeric: share of enterprises infected with undetected targeted malware at end 2007, survey of enterprises 2006-2007.",
+   "reason": "The claim is about undetected infections, which no survey of enterprises can measure by construction; no 2006-2007 survey of the same population measured this.",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text; the quantity (undetected infections) is not observable in public data."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-007",
+   "verdict": "ungradable",
+   "reading": "By 2010 the average total cost of ownership of a newly bought PC will be half its 2006 level.",
+   "mainstream_test": "D16 numeric: change in average PC TCO 2006-2010 on one TCO model, hit within 10% of -50%.",
+   "reason": "PC TCO is a model-based figure (Gartner's own TCO model); no public series measures it for 2006 and 2010 on one method. PC prices alone are a proxy of another quantity (D23).",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text; no public TCO series on this definition found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-008",
+   "verdict": "ungradable",
+   "reading": "By 2010, 60% of mobile subscribers worldwide will carry devices whose location can be tracked through location-aware internet services.",
+   "mainstream_test": "D16 numeric: share of world mobile subscribers trackable via location-based internet services in 2010.",
+   "reason": "'Trackable via a follow-me Internet' has no public measure. Every phone is locatable by cell ID (about 100%), while GPS-equipped handsets in use were a minority in 2010; neither measures the stated quantity, and the two candidate measures differ by far more than a factor of 2.",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text with 'trackable' in quotes and no definition."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-009",
+   "verdict": "ungradable",
+   "reading": "Cumulatively up to 2011, enterprises will spend $100 billion on networking technologies and services that were the wrong choice.",
+   "mainstream_test": "D16 numeric: cumulative wasted networking spend through 2011.",
+   "reason": "Wasted spend on wrong choices is an attributed value with no public measure (D23).",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text; no measure of wasted spending exists."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-010",
+   "verdict": "ungradable",
+   "reading": "By 2008 close to half of data centers worldwide will not have enough power and cooling capacity for high-density equipment.",
+   "mainstream_test": "D16 numeric: share of data centers lacking power/cooling capacity in 2007-2008, from a survey of data centers.",
+   "reason": "Looked for a 2007-2008 survey of data centers worldwide measuring current insufficiency of power and cooling for high-density equipment. Operator surveys of the period (Uptime Institute, AFCOM) report expected capacity shortfalls within some years, a different quantity, and are not worldwide samples.",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner highlights key predictions for IT organizations in 2007 and beyond",
+     "date": "2006-12-13",
+     "shows": "Claim text; no matching survey found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-001",
+   "verdict": "hit",
+   "reading": "Apple's unit share of PC shipments in the U.S. and in Western Europe in 2011 will be twice its 2007 share (Gartner's own release framed this as Apple above 12% of the U.S. market by 2011).",
+   "mainstream_test": "D16 numeric on Gartner PC shipment shares: 2011 share vs 2x the 2007 share, hit within 10%.",
+   "reason": "Gartner's 2008 framing put the U.S. target at just over 12% (baseline about 6% in 2007). Gartner's 2011 U.S. quarterly shares were 9.3% (Q1), about 11% (Q2) and 12.9% (Q3), an annual level near 11%, within 10% of 12%. In Western Europe Gartner reported Apple at 7.6% in Q3 2011 vs 5.7% a year earlier, up from roughly 3-4% around 2007, near a doubling. Both regions about doubled; graded hit, with uncertainty on the Western Europe baseline, which was not found in a primary source.",
+   "evidence": [
+    {
+     "url": "https://appleinsider.com/articles/08/01/31/gartner_apple_to_claim_over_12_of_us_pc_market_by_2011",
+     "title": "Gartner: Apple to claim over 12% of US PC market by 2011 (AppleInsider)",
+     "date": "2008-01-31",
+     "shows": "Headline states the prediction's U.S. target: over 12% by 2011 (implying a 2007 baseline near 6%)."
+    },
+    {
+     "url": "https://appleinsider.com/articles/11/04/14/gartner_rivals_idc_to_report_apple_fifth_largest_with_9_3_share_of_us_pc_market",
+     "title": "Gartner: Apple fifth largest with 9.3% share of US PC market (AppleInsider)",
+     "date": "2011-04-14",
+     "shows": "Gartner Q1 2011 U.S. share 9.3%."
+    },
+    {
+     "url": "https://macdailynews.com/2011/10/12/gartner-apple-mac-grabbed-12-9-share-of-u-s-pc-market-in-q311/",
+     "title": "Gartner: Apple Mac grabbed 12.9% share of U.S. PC market in Q3 2011 (MacDailyNews)",
+     "date": "2011-10-12",
+     "shows": "Gartner Q3 2011 U.S. share 12.9%; Western Europe Q3 2011 share reported at 7.6% vs 5.7% a year earlier."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-002",
+   "verdict": "ungradable",
+   "reading": "By 2012 half of traveling workers will travel without a notebook PC, using other devices instead.",
+   "mainstream_test": "D16 numeric: share of traveling workers leaving notebooks at home in 2011-2012, from a survey of traveling workers.",
+   "reason": "Looked for a 2011-2012 survey of business travelers measuring the share who travel without a notebook; none on this population and definition found. Tablet adoption surveys measure ownership, not leaving the notebook behind.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=593207",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2008 and Beyond",
+     "date": "2008-01-31",
+     "shows": "Claim text; no measure named. (Page not retrievable now; Gartner returns 403.)"
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-003",
+   "verdict": "ungradable",
+   "reading": "By 2012, 80% of commercial software products will contain some open-source code.",
+   "mainstream_test": "D16 numeric: share of commercial software products/codebases containing open-source components in 2011-2012.",
+   "reason": "Looked for a 2011-2012 codebase audit giving the share of commercial software containing open-source components. Black Duck's codebase audit statistics start in 2016 (over 90% contain open source), four years after the target; surveys of the period measure company use, not the share of products. No measure at the target year.",
+   "evidence": [
+    {
+     "url": "https://www.blackduck.com/resources/analyst-reports/open-source-security-risk-analysis.html",
+     "title": "Black Duck Open Source Security and Risk Analysis",
+     "date": "2016",
+     "shows": "Codebase audit series on open-source content starts years after 2012; no 2011-2012 value on the same quantity."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-004",
+   "verdict": "miss",
+   "reading": "In 2012 at least a third of spending on business application software will be subscriptions (software as a service) rather than licenses.",
+   "mainstream_test": "D16 numeric: SaaS share of enterprise application software spending in 2012, hit within 10% of 33%.",
+   "reason": "Gartner's own figures: SaaS revenue $14.5 billion in 2012, against an enterprise application software market of $115.1 billion in 2011 (about $120 billion in 2012). SaaS share about 12%, far below one third (error over 60%).",
+   "evidence": [
+    {
+     "url": "https://www.datamation.com/trends/gartner-saas-market-to-grow-17-9-to-14-5b/",
+     "title": "Gartner: SaaS Market to Grow 17.9% to $14.5B (Datamation)",
+     "date": "2012-03",
+     "shows": "Gartner: SaaS market $14.5 billion in 2012."
+    },
+    {
+     "url": "https://softwarestrategiesblog.com/tag/market-share-analysis/",
+     "title": "Software Strategies Blog: market share analysis (citing Gartner)",
+     "date": "2012",
+     "shows": "Gartner: worldwide enterprise application software revenue $115.1 billion in 2011, forecast $157.6 billion by 2016."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-005",
+   "verdict": "ungradable",
+   "reading": "By 2011 early technology adopters will buy 40% of their IT infrastructure as a service instead of as capital purchases.",
+   "mainstream_test": "D16 numeric: share of IT infrastructure bought as a service by early adopters in 2010-2011.",
+   "reason": "'Early technology adopters' is an undefined population and no survey measures the share of their infrastructure bought as a service in 2010-2011.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=593207",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2008 and Beyond",
+     "date": "2008-01-31",
+     "shows": "Claim text; population and measure undefined."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-006",
+   "verdict": "ungradable",
+   "reading": "By 2009 over a third of IT organizations will include at least one environmental criterion among their top six criteria for buying IT goods.",
+   "mainstream_test": "D16 numeric: share of IT organizations, from a 2008-2009 survey of IT organizations' buying criteria.",
+   "reason": "A share of organizations needs a survey of the same population at the target year or the year before; looked for a 2008-2009 survey ranking IT buying criteria with environmental items, none public found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=593207",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2008 and Beyond",
+     "date": "2008-01-31",
+     "shows": "Claim text; no survey named."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-007",
+   "verdict": "ungradable",
+   "reading": "By 2010, 75% of organizations will make full life-cycle energy and CO2 footprint a mandatory criterion when buying PCs.",
+   "mainstream_test": "D16 numeric: share of organizations with mandatory lifecycle energy/CO2 PC buying criteria, survey 2009-2010.",
+   "reason": "No 2009-2010 survey of organizations measuring mandatory lifecycle CO2 criteria for PC procurement found. EPEAT/Energy Star procurement requirements (e.g. US federal) cover energy labels, not full life-cycle CO2.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=593207",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2008 and Beyond",
+     "date": "2008-01-31",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-008",
+   "verdict": "ungradable",
+   "reading": "By 2011 suppliers to large global enterprises will have to prove green credentials through an audited process to keep preferred-supplier status.",
+   "mainstream_test": "D16 mainstream: at least 20% of large global enterprises requiring audited green credentials from preferred suppliers by 2011-2013.",
+   "reason": "Supplier sustainability programs grew (CDP Supply Chain, Walmart's 2009 supplier sustainability questionnaire), but these were self-reported disclosures, and no source measures the share of large enterprises requiring audited green credentials for preferred-supplier status.",
+   "evidence": [
+    {
+     "url": "https://www.cdp.net/en/supply-chain",
+     "title": "CDP Supply Chain program",
+     "date": "2011",
+     "shows": "Large buyers request supplier environmental disclosure through a questionnaire; not an audit requirement and no share of enterprises given."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-009",
+   "verdict": "ungradable",
+   "reading": "By 2010 end-user preferences will decide up to half of the software, hardware and services purchases made by IT departments.",
+   "mainstream_test": "D16 numeric: share of IT acquisitions decided by end-user preference in 2009-2010.",
+   "reason": "No public survey measures the share of IT acquisitions decided by end-user preferences; 'as much as' makes the figure an upper bound.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=593207",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2008 and Beyond",
+     "date": "2008-01-31",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-010",
+   "verdict": "miss",
+   "reading": "The installed base of 3-D printers in homes and businesses in 2011 will be 100 times its 2006 level.",
+   "mainstream_test": "D16 numeric: installed 3-D printers 2011 / 2006, hit within 10% of 100x.",
+   "reason": "Wohlers Report 2012: about 49,000 industrial additive manufacturing systems sold cumulatively through 2011 plus roughly 35,000 personal 3-D printers sold 2007-2011 (23,265 in 2011). The 2006 installed base was in the tens of thousands of industrial systems, so 2011 was a few times the 2006 level, nowhere near 100x (which would need millions of units).",
+   "evidence": [
+    {
+     "url": "https://wohlersassociates.com/press56.html",
+     "title": "Wohlers Report 2012 press release (Wohlers Associates)",
+     "date": "2012-05",
+     "shows": "Industry tracker counts: cumulative industrial AM systems about 49,000 through 2011; personal 3-D printer sales 23,265 in 2011. Page returns 403 to automated fetch; figures as published in the report summary."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-001",
+   "verdict": "ungradable",
+   "reading": "By 2012 video telepresence will replace 2.1 million airline seats a year, costing the travel industry $3.5 billion a year.",
+   "mainstream_test": "D16 numeric: airline seats per year displaced by telepresence in 2011-2012.",
+   "reason": "Seats displaced by telepresence is an attributed value; no airline, IATA or travel-industry source measures it (D23).",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=876512",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2010 and Beyond",
+     "date": "2009-01",
+     "shows": "Claim text; the quantity is a model estimate with no public measurement. (Gartner page returns 403 now.)"
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-002",
+   "verdict": "ungradable",
+   "reading": "The server virtualization software market will grow at 28% a year from $1.8 billion (2009) to $6.2 billion (2013).",
+   "mainstream_test": "D16 numeric: server virtualization software market revenue in 2013 (or 2012) on Gartner's definition, hit within 10% of $6.2 billion.",
+   "reason": "No public 2012 or 2013 value of the same market found. Gartner's later public figure is $5.6 billion in 2016, up 5.7% from about $5.3 billion in 2015, which bounds 2013 below about $5.3 billion (at least 17% under the forecast, so partial at best and likely miss), but the exact 2013 value decides partial vs miss and was not found.",
+   "evidence": [
+    {
+     "url": "https://www.informationweek.com/it-infrastructure/virtualization-market-now-mature-gartner-finds",
+     "title": "Virtualization Market Now 'Mature,' Gartner Finds (InformationWeek)",
+     "date": "2016-05",
+     "shows": "Gartner: x86 server virtualization revenue to reach $5.6 billion in 2016, up 5.7% from 2015; no 2013 figure."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-003",
+   "verdict": "ungradable",
+   "reading": "By 2011, 30% of consulting and systems integration revenue will come from cloud computing work.",
+   "mainstream_test": "D16 numeric: cloud share of C&SI revenue in 2010-2011.",
+   "reason": "No public series splits consulting and systems integration revenue by cloud vs non-cloud for 2010-2011; vendor filings do not report it on a common definition.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=876512",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2010 and Beyond",
+     "date": "2009-01",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-004",
+   "verdict": "ungradable",
+   "reading": "By 2012, 5 of the 20 largest business process outsourcing providers (as of 2009) will have been acquired or merged away.",
+   "mainstream_test": "D16 numeric on the count: how many of the 2009 top-20 BPO providers ceased to exist separately by 2012.",
+   "reason": "Several large BPO providers were absorbed in the window (ACS by Xerox 2010, Hewitt by Aon 2010, Perot Systems by Dell 2009, Patni by iGate 2011), but the top-20 list the claim refers to is Gartner's proprietary ranking, so the denominator and which firms count cannot be checked.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Affiliated_Computer_Services",
+     "title": "Affiliated Computer Services (Wikipedia)",
+     "date": "2010-02",
+     "shows": "ACS, a large BPO provider, was acquired by Xerox in Feb 2010; the Gartner top-20 BPO list itself is not public."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-005",
+   "verdict": "ungradable",
+   "reading": "By 2012 successful enterprises will actively encourage and reward failure to find the best approach faster.",
+   "mainstream_test": "D16 mainstream: at least 20% of successful enterprises with practices that reward failure, by 2012-2014.",
+   "reason": "'Successful enterprises' and 'reward failures' have no public measure; no survey of the share of firms rewarding failure was found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=876512",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2010 and Beyond",
+     "date": "2009-01",
+     "shows": "Claim text; no measure."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-006",
+   "verdict": "ungradable",
+   "reading": "In 2012 the major PC vendors will take back and recycle only one PC for every five they ship.",
+   "mainstream_test": "D16 numeric: PCs recycled by major vendors / PCs shipped in 2012, hit within 10% of 0.2.",
+   "reason": "Vendors report recycling in pounds or tonnes (e.g. Dell, HP sustainability reports), not units, and not on a common basis; converting weight to units is a proxy. No unit ratio found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=876512",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2010 and Beyond",
+     "date": "2009-01",
+     "shows": "Claim text; no unit-based recycling series found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-007",
+   "verdict": "ungradable",
+   "reading": "In 2012, 30% of mobile PCs sold to consumers worldwide will be priced below $300.",
+   "mainstream_test": "D16 numeric: share of worldwide consumer mobile PC units sold under $300 in 2012.",
+   "reason": "Price-band splits of worldwide consumer notebook sales are in paid IDC/Gartner trackers; no public 2011-2012 figure for this share found. Netbook volumes fell sharply after 2010, but that is not the stated quantity.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=876512",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2010 and Beyond",
+     "date": "2009-01",
+     "shows": "Claim text; no public price-band share found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-008",
+   "verdict": "ungradable",
+   "reading": "By end of 2013, 40% of enterprise knowledge workers will have given up or removed their desk phone.",
+   "mainstream_test": "D16 numeric: share of enterprise knowledge workers without a desk phone, survey 2012-2013.",
+   "reason": "Looked for a 2012-2013 survey of enterprise knowledge workers on desk-phone removal; none on this population found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=876512",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2010 and Beyond",
+     "date": "2009-01",
+     "shows": "Claim text; no matching survey found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-009",
+   "verdict": "partial",
+   "reading": "By end of 2010 most wireless operators will stop offering unlimited flat-rate mobile data plans to new customers.",
+   "mainstream_test": "Event test: by end-2010 had most major operators withdrawn unlimited data plans? Partial if the shift happened partly by 2010 or completed within the D16 late window.",
+   "reason": "The shift happened but only partly by end-2010: AT&T (June 2010) and O2 UK (June 2010) dropped unlimited smartphone data, Verizon followed in July 2011, while Sprint and T-Mobile US kept unlimited plans, as did several European operators (e.g. Three UK). Not most operators by end-2010; the trend completed among large US carriers only later.",
+   "evidence": [
+    {
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2014/10/ftc-says-att-has-misled-millions-consumers-unlimited-data-promises",
+     "title": "FTC Says AT&T Has Misled Millions of Consumers with 'Unlimited' Data Promises",
+     "date": "2014-10-28",
+     "shows": "AT&T unlimited plans were legacy plans kept by existing customers and throttled from 2011, after AT&T stopped selling them to new customers (June 2010)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Microsoft_Kin",
+     "title": "Microsoft Kin (Wikipedia)",
+     "date": "2011",
+     "shows": "Verizon's move to tiered data plans marked the end of its unlimited data (2011), after the end-2010 target."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-010",
+   "verdict": "miss",
+   "reading": "By end of 2012, traffic generated by physical sensors will be 20% of all non-video internet traffic.",
+   "mainstream_test": "D16 numeric: sensor (machine-to-machine) traffic / non-video IP traffic in 2012, hit within 10% of 20%.",
+   "reason": "Cisco VNI (2012-2017 forecast) put all machine-to-machine traffic, a superset of sensor traffic, at well under 1% of global IP traffic in 2012, with non-video traffic roughly 40% of the total, so sensors were at most a few percent of non-video traffic, far below 20%.",
+   "evidence": [
+    {
+     "url": "https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/VNI_Hyperconnectivity_WP.html",
+     "title": "Cisco Visual Networking Index (Zettabyte Era / Annual Internet Report series)",
+     "date": "2013-05",
+     "shows": "Cisco VNI series: video the majority of IP traffic; M2M a fraction of a percent of IP traffic in 2012 (the current page shows the later 2018-2023 edition; 2012 values from the 2012-2017 white paper)."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-001",
+   "verdict": "ungradable",
+   "reading": "By 2012, one in five businesses will own no IT assets (all IT consumed as services).",
+   "mainstream_test": "D16 numeric: share of businesses owning no IT assets, from a 2011-2012 survey of businesses.",
+   "reason": "A share of businesses needs a survey of the same population in 2011-2012; none measuring ownership of zero IT assets found. Cloud adoption surveys measure use of some cloud services, not owning no assets.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=1278413",
+     "title": "Gartner Reveals Five Predictions for 2010 and Beyond",
+     "date": "2010-01-13",
+     "shows": "Claim text; no measure found. (Gartner page returns 403 now.)"
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-002",
+   "verdict": "ungradable",
+   "reading": "By 2012 India-centric IT services firms will make up 20% of the leading cloud aggregators.",
+   "mainstream_test": "D16 numeric: share of leading cloud aggregators/brokers that are India-centric IT services firms in 2012.",
+   "reason": "No public list of 'leading cloud aggregators' exists for 2011-2012 to form the denominator; the category was Gartner's own.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=1278413",
+     "title": "Gartner Reveals Five Predictions for 2010 and Beyond",
+     "date": "2010-01-13",
+     "shows": "Claim text; the population is undefined in public data."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-003",
+   "verdict": "hit",
+   "reading": "By 2012 Facebook will be the main hub through which websites integrate social networking (social login, sharing, identity).",
+   "mainstream_test": "Event/leadership test: was Facebook the leading social integration platform for third-party sites in 2012, measured by share of social logins?",
+   "reason": "Janrain and Gigya social-login trackers put Facebook first in 2012 with roughly 45-54% of social logins on client sites, ahead of Google (about 25-31%) and others. Facebook Connect/Login and the Like button were the dominant web socialization layer.",
+   "evidence": [
+    {
+     "url": "https://martech.org/facebook-approaching-50-percent-share-of-social-logins-study/",
+     "title": "Facebook Approaching 50 Percent Share Of Social Logins [Study] (Marketing Land)",
+     "date": "2012",
+     "shows": "Janrain data: Facebook near half of all social logins in 2012, the leading provider."
+    },
+    {
+     "url": "https://techcrunch.com/2013/04/08/report-46-of-social-login-users-still-choose-facebook-but-google-is-quickly-gaining-ground/",
+     "title": "Report: 46% of social login users still choose Facebook (TechCrunch)",
+     "date": "2013-04-08",
+     "shows": "Janrain: Facebook share 54% to 49% during Q4 2012, Google 25% to 31%; Facebook still first."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-004",
+   "verdict": "ungradable",
+   "reading": "By 2014 most IT business cases will include the cost of carbon remediation.",
+   "mainstream_test": "D16 numeric: share of IT business cases including carbon costs, survey 2013-2014.",
+   "reason": "No 2013-2014 survey measures the share of IT business cases that include carbon remediation costs.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=1278413",
+     "title": "Gartner Reveals Five Predictions for 2010 and Beyond",
+     "date": "2010-01-13",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-005",
+   "verdict": "ungradable",
+   "reading": "For a PC sold in 2012, 60% of its life-cycle greenhouse gas emissions will occur before first use (manufacture and transport).",
+   "mainstream_test": "D16 numeric: pre-use share of life-cycle GHG for a typical new PC in 2012, from product life-cycle assessments.",
+   "reason": "Published 2012 LCAs vary by form factor and use assumptions: notebook reports (e.g. Apple MacBook) put production and transport at roughly 70-80% of life-cycle emissions, desktops with display around 40-50%. No market-weighted average exists, and estimates span about a factor of 2 (D23).",
+   "evidence": [
+    {
+     "url": "https://www.apple.com/environment/",
+     "title": "Apple Product Environmental Reports",
+     "date": "2012",
+     "shows": "Notebook LCAs attribute the large majority of life-cycle emissions to production; desktop shares are lower; no average across all new PCs."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-006",
+   "verdict": "miss",
+   "reading": "By 2015 internet marketing will be regulated, with more than $250 billion a year of worldwide internet marketing spend under that regulation.",
+   "mainstream_test": "D16 numeric on the spend: worldwide internet marketing/advertising spend in 2015 vs more than $250 billion; plus whether a regulatory regime covered it.",
+   "reason": "Worldwide digital ad spending in 2015 was about $170 billion (eMarketer), so even if all of it were regulated the figure is about 32% short of $250 billion (error over 25%). No comprehensive internet-marketing regulation had arrived by 2015 (GDPR was adopted 2016, applied 2018).",
+   "evidence": [
+    {
+     "url": "https://www.emarketer.com/Article/Digital-Ad-Spending-Worldwide-Hit-3637-Billion-2016/1013982",
+     "title": "Digital Ad Spending Worldwide (eMarketer)",
+     "date": "2016",
+     "shows": "eMarketer: worldwide digital ad spending about $170 billion in 2015, rising toward $194 billion in 2016."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/General_Data_Protection_Regulation",
+     "title": "General Data Protection Regulation (Wikipedia)",
+     "date": "2016-04-27",
+     "shows": "GDPR adopted April 2016, applicable May 2018: after the 2015 target."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-007",
+   "verdict": "hit",
+   "reading": "By 2014 more than 3 billion adults worldwide will be able to make electronic transactions via mobile or internet (i.e. hold an account usable for electronic payments).",
+   "mainstream_test": "D16 numeric: adults with a financial or mobile money account in 2014 vs 3 billion.",
+   "reason": "World Bank Global Findex 2014: 62% of adults worldwide had an account at a financial institution or mobile money provider, with about 2 billion adults unbanked out of roughly 5.2-5.3 billion adults, i.e. about 3.2-3.3 billion account holders, above 3 billion. Uncertainty: account ownership is the closest measure of ability to transact electronically.",
+   "evidence": [
+    {
+     "url": "https://globalfindex.worldbank.org/",
+     "title": "World Bank Global Findex Database 2014",
+     "date": "2015-04",
+     "shows": "62% of adults had an account in 2014 (up from 51% in 2011); about 2 billion adults remained unbanked."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-008",
+   "verdict": "ungradable",
+   "reading": "By 2015 context (location, presence, preferences) will be as influential for mobile consumer services as search engines are for the Web.",
+   "mainstream_test": "Comparison of influence of context-awareness on mobile services vs search on the Web, by 2015.",
+   "reason": "'As influential as search engines' has no public measure; no metric compares context-aware services with search.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/it/page.jsp?id=1278413",
+     "title": "Gartner Reveals Five Predictions for 2010 and Beyond",
+     "date": "2010-01-13",
+     "shows": "Claim text; no measurable quantity."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-009",
+   "verdict": "hit",
+   "reading": "By 2013 the number of browser-equipped mobile phones in use worldwide will exceed the number of PCs in use, making the phone the most common web access device.",
+   "mainstream_test": "Event test: did web-capable phones in use exceed PCs in use by 2013?",
+   "reason": "By 2013 active mobile-broadband subscriptions reached about 2.1 billion (ITU) and smartphones in use passed 1 billion in 2012, plus hundreds of millions of browser-equipped feature phones, against a PC installed base of about 1.5-1.8 billion. On device count the overtake happened by 2013. (On web traffic share, mobile passed desktop only in late 2016 per StatCounter; the release framed the claim on devices.)",
+   "evidence": [
+    {
+     "url": "https://www.itu.int/en/ITU-D/Statistics/Documents/facts/ICTFactsFigures2013-e.pdf",
+     "title": "ITU ICT Facts and Figures 2013",
+     "date": "2013-02",
+     "shows": "About 2.1 billion active mobile-broadband subscriptions in 2013 vs about 0.7 billion fixed broadband."
+    },
+    {
+     "url": "https://gs.statcounter.com/press/mobile-and-tablet-internet-usage-exceeds-desktop-for-first-time-worldwide",
+     "title": "StatCounter: mobile and tablet internet usage exceeds desktop for first time worldwide",
+     "date": "2016-11-01",
+     "shows": "Traffic-share overtake only in Oct 2016, the alternative (traffic) reading."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-001",
+   "verdict": "hit",
+   "reading": "By 2015 critical infrastructure of a G20 country will be disrupted and damaged by an online sabotage attack.",
+   "mainstream_test": "Event test: between late 2010 and end-2015, did a cyberattack disrupt and damage critical infrastructure in a G20 nation?",
+   "reason": "In August 2012 the Shamoon malware wiped over 30,000 computers at Saudi Aramco, the national oil company of Saudi Arabia (a G20 member); business systems stayed down for weeks and fuel trucks could not be loaded. Energy is critical infrastructure; damage and disruption both occurred, though oil production itself was not reported halted. A 2014 attack that damaged a blast furnace at a German steel mill (BSI report) is a second case.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Shamoon",
+     "title": "Shamoon (Wikipedia)",
+     "date": "2012-08-15",
+     "shows": "Over 30,000 Saudi Aramco Windows systems overwritten; business systems inoperable into September 2012, trucks unable to load; called the biggest hack in history."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-002",
+   "verdict": "ungradable",
+   "reading": "By 2015 the compensation of most newly hired Global 2000 CIOs will be set by the new revenue IT generates each year.",
+   "mainstream_test": "D16 numeric: share of new G2000 CIOs whose pay is tied to IT-generated revenue, 2014-2015.",
+   "reason": "CIO compensation structures of Global 2000 firms are not publicly reported on this basis (CIOs are rarely named executive officers in proxy filings); no survey measured it.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1480514",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2011 and Beyond",
+     "date": "2010-11-30",
+     "shows": "Claim text; no measure found. (Gartner page returns 403 now.)"
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-003",
+   "verdict": "ungradable",
+   "reading": "By 2015 'information-smart' businesses will have raised recognized IT spending per employee by 60%.",
+   "mainstream_test": "D16 numeric: change in IT spend per head at information-smart businesses to 2015.",
+   "reason": "'Information-smart businesses' is an undefined population and 'recognized IT spending per head' is Gartner's benchmark metric; no public series.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1480514",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2011 and Beyond",
+     "date": "2010-11-30",
+     "shows": "Claim text; population and metric undefined publicly."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-004",
+   "verdict": "ungradable",
+   "reading": "By 2015 tools and automation will have removed 25% of the labor hours in IT services.",
+   "mainstream_test": "D16 numeric: share of IT services labor hours eliminated by automation by 2015.",
+   "reason": "Labor hours eliminated by automation is an attributed value with no public measure (D23).",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1480514",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2011 and Beyond",
+     "date": "2010-11-30",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-005",
+   "verdict": "ungradable",
+   "reading": "By 2015, 20% of the non-IT companies in the Global 500 will offer cloud services as providers.",
+   "mainstream_test": "D16 numeric: share of non-IT Global 500 firms acting as cloud service providers in 2014-2015.",
+   "reason": "No public census of which non-IT Fortune/Global 500 firms sell cloud services exists; 'cloud service provider' for a non-IT firm is undefined.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1480514",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2011 and Beyond",
+     "date": "2010-11-30",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-006",
+   "verdict": "ungradable",
+   "reading": "By 2014, 90% of organizations will support corporate applications on employee-owned devices.",
+   "mainstream_test": "D16 numeric: share of organizations supporting corporate apps on personal devices, survey of organizations 2013-2014.",
+   "reason": "Surveys of the period differ in definition and timing: Cisco IBSG (2012, outside the target-year window) found 89% of IT departments enabling BYOD in some form, while Tech Pro Research (2014) reported 74% of organizations using or planning BYOD. No 2013-2014 survey on the stated quantity (corporate applications supported on personal devices) was retrieved and verified.",
+   "evidence": [
+    {
+     "url": "https://www.cisco.com/c/dam/en_us/about/ac79/docs/re/byod/BYOD-Horizons-Global.pdf",
+     "title": "Cisco IBSG Horizons: BYOD, A Global Perspective",
+     "date": "2012-05",
+     "shows": "89% of IT departments enable BYOD in some form (2012, two years before target; different definition)."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-007",
+   "verdict": "ungradable",
+   "reading": "By 2013, 80% of businesses will support employees using tablets.",
+   "mainstream_test": "D16 numeric: share of businesses supporting tablet use by the workforce, survey 2012-2013.",
+   "reason": "Looked for a 2012-2013 survey of businesses on tablet support; enterprise mobility surveys of the period report tablet adoption in varying samples and definitions, none verified on this population.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1480514",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2011 and Beyond",
+     "date": "2010-11-30",
+     "shows": "Claim text; no verified matching survey."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-008",
+   "verdict": "ungradable",
+   "reading": "By 2015, 10% of a typical user's online social network 'friends' will be non-human (bots, brands, fake accounts).",
+   "mainstream_test": "D16 numeric: share of social network connections that are non-human in 2014-2015.",
+   "reason": "Platforms report the share of fake or duplicate accounts (Facebook 10-K: duplicate about 5%, false/misclassified about 1-2% of MAU in 2014; Twitter up to 8.5% automated users), but no source measures the share of friends/connections that are non-human; accounts are a different quantity (D23). Brand pages followed would also count under the claim.",
+   "evidence": [
+    {
+     "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001326801&type=10-K",
+     "title": "Facebook Form 10-K filings (2014)",
+     "date": "2015-01",
+     "shows": "Estimates of duplicate and false accounts as a share of MAU; not a share of friend connections."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-001",
+   "verdict": "ungradable",
+   "reading": "By 2015 low-cost cloud services will take up to 15% of the revenue of the top outsourcing providers.",
+   "mainstream_test": "D16 numeric: share of top outsourcers' revenue lost to cloud substitution by 2015.",
+   "reason": "Revenue cannibalized by cloud is an attributed value; outsourcers do not report it and no tracker measures it (D23). 'Up to' also makes it an upper bound.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1862714",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2012 and Beyond",
+     "date": "2011-12-01",
+     "shows": "Claim text; no measure found. (Gartner page returns 403 now.)"
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-002",
+   "verdict": "miss",
+   "reading": "The investment bubble in consumer social networks will burst in 2013, and in enterprise social software in 2014 (sharp fall in valuations and funding).",
+   "mainstream_test": "Event test: did consumer social network valuations/funding collapse in 2013, and enterprise social software in 2014?",
+   "reason": "No burst: Twitter's November 2013 IPO valued it at about $31 billion on the first day, Facebook's stock recovered past its IPO price in 2013, and in 2014 Facebook paid about $19 billion for WhatsApp; social funding and valuations rose. Enterprise social software saw consolidation (Microsoft-Yammer 2012) and weak Jive shares, but no sector-wide collapse in 2014.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Twitter,_Inc.",
+     "title": "Twitter, Inc. (Wikipedia)",
+     "date": "2013-11-07",
+     "shows": "Twitter IPO in November 2013 with a first-day valuation of about $31 billion."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/WhatsApp",
+     "title": "WhatsApp (Wikipedia)",
+     "date": "2014-02-19",
+     "shows": "Facebook agreed to acquire WhatsApp for about $19 billion in February 2014, the opposite of a burst bubble."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-003",
+   "verdict": "ungradable",
+   "reading": "By 2016 at least half of enterprise email users will mainly use a browser, tablet or mobile client rather than a desktop email client.",
+   "mainstream_test": "D16 numeric: share of enterprise email users primarily on non-desktop clients, 2015-2016.",
+   "reason": "Email-open trackers (e.g. Litmus) measure opens across all, mostly consumer and marketing, email, not enterprise users' primary client; no survey of enterprise email users found. Different population (D23).",
+   "evidence": [
+    {
+     "url": "https://www.litmus.com/blog/email-client-market-share",
+     "title": "Litmus email client market share",
+     "date": "2016",
+     "shows": "Shares of email opens by client for marketing email, not enterprise users' primary client."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-004",
+   "verdict": "ungradable",
+   "reading": "By 2015 mobile app development projects for smartphones and tablets will outnumber native PC app projects four to one.",
+   "mainstream_test": "D16 numeric: ratio of mobile to native PC development projects in 2014-2015.",
+   "reason": "No public count of development projects by target platform exists; developer surveys report platform interest, not project counts.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1862714",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2012 and Beyond",
+     "date": "2011-12-01",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-005",
+   "verdict": "ungradable",
+   "reading": "By 2016, 40% of enterprises will require proof of independent security testing before using any cloud service.",
+   "mainstream_test": "D16 numeric: share of enterprises with this precondition, survey of enterprises 2015-2016.",
+   "reason": "No 2015-2016 survey of enterprises measuring a requirement for independent security testing proof (e.g. SOC 2 / ISO 27001 attestations) as a precondition for all cloud use was found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1862714",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2012 and Beyond",
+     "date": "2011-12-01",
+     "shows": "Claim text; no matching survey."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-006",
+   "verdict": "ungradable",
+   "reading": "By end-2016 more than half of Global 1000 companies will have stored customer-sensitive data in the public cloud.",
+   "mainstream_test": "D16 numeric: share of Global 1000 firms storing customer-sensitive data in public cloud, 2015-2016.",
+   "reason": "No survey of the Global 1000 population on this question was found; cloud security surveys of the period use broader samples of organizations.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1862714",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2012 and Beyond",
+     "date": "2011-12-01",
+     "shows": "Claim text; no survey of this population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-007",
+   "verdict": "ungradable",
+   "reading": "By 2015, 35% of enterprise IT spending will be managed outside the IT department's budget.",
+   "mainstream_test": "D16 numeric: share of enterprise IT spend outside the IT budget in 2014-2015.",
+   "reason": "Estimates of 'shadow' or business-unit IT spend in 2014-2015 differ widely by source and definition (consultancy surveys from about 20% to over 40%), spanning about a factor of 2; no single public series on this definition (D23).",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1862714",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2012 and Beyond",
+     "date": "2011-12-01",
+     "shows": "Claim text; the quantity is Gartner's own benchmark definition."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-008",
+   "verdict": "miss",
+   "reading": "By 2014, 20% of the Asia-sourced finished goods and assemblies consumed in the U.S. will have shifted to production in the Americas.",
+   "mainstream_test": "D16 numeric: change in U.S. sourcing from Asia vs the Americas, 2011-2014; a 20% shift requires Asia-sourced imports to fall by about a fifth.",
+   "reason": "U.S. goods imports from China, the largest Asian source, rose from $399.4 billion (2011) to $468.5 billion (2014), up 17%; there was no 20% shift away from Asia. A.T. Kearney's Reshoring Index likewise found no net reshoring by 2014.",
+   "evidence": [
+    {
+     "url": "https://www.census.gov/foreign-trade/balance/c5700.html",
+     "title": "U.S. Census Bureau: Trade in Goods with China",
+     "date": "2015",
+     "shows": "U.S. imports from China $399,371.2 million in 2011 and $468,474.9 million in 2014."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-009",
+   "verdict": "ungradable",
+   "reading": "Each year through 2016 the financial impact of cybercrime will grow by 10%.",
+   "mainstream_test": "D18 rate: annual growth of cybercrime financial impact 2012-2016 vs 10%, hit within 0.5 pt.",
+   "reason": "Estimates of cybercrime's financial impact disagree far beyond a factor of 2 in growth: FBI IC3 reported U.S. losses rose from $485 million (2011) to $1.45 billion (2016), about 25% a year, while McAfee/CSIS global estimates ($375-575 billion in 2014, $445-600 billion in 2017) imply single-digit growth. Neither is a measure of the stated global impact on a consistent method (D23).",
+   "evidence": [
+    {
+     "url": "https://www.ic3.gov/AnnualReport/Reports/2016_IC3Report.pdf",
+     "title": "FBI IC3 2016 Internet Crime Report",
+     "date": "2017",
+     "shows": "Reported losses $1.45 billion in 2016, with yearly totals rising much faster than 10% a year (U.S. complaints only)."
+    },
+    {
+     "url": "https://www.csis.org/analysis/economic-impact-cybercrime",
+     "title": "CSIS/McAfee: Economic Impact of Cybercrime",
+     "date": "2018-02",
+     "shows": "Global cost estimate $445-600 billion (2017) vs $375-575 billion (2014): ranges, different method from IC3."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-010",
+   "verdict": "miss",
+   "reading": "By 2015 the prices of 80% of cloud services will carry a global energy surcharge.",
+   "mainstream_test": "D16 numeric/event: share of cloud services priced with an energy surcharge in 2015.",
+   "reason": "The major cloud providers (AWS, Microsoft Azure, Google Cloud) never added energy surcharges; their 2014-2015 list prices fell repeatedly in a price war. The share of cloud services with an energy surcharge was near zero.",
+   "evidence": [
+    {
+     "url": "https://aws.amazon.com/ec2/pricing/on-demand/",
+     "title": "Amazon EC2 On-Demand Pricing",
+     "date": "2015",
+     "shows": "Per-hour instance prices with no energy surcharge component."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_Web_Services",
+     "title": "Amazon Web Services (Wikipedia)",
+     "date": "2014",
+     "shows": "AWS cut prices dozens of times through 2014-2015; no surcharge model."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-011",
+   "verdict": "ungradable",
+   "reading": "Up to and in 2015 more than 85% of Fortune 500 firms will fail to exploit big data effectively for competitive advantage.",
+   "mainstream_test": "D16 numeric: share of Fortune 500 firms not effectively exploiting big data, 2014-2015.",
+   "reason": "'Effectively exploit for competitive advantage' has no public measure; executive surveys of the period (e.g. NewVantage Partners, Fortune 1000) report adoption and investment, not effective exploitation on a defined test.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/1862714",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2012 and Beyond",
+     "date": "2011-12-01",
+     "shows": "Claim text; no measure of effective exploitation found."
+    }
+   ]
+  }
+ ]
+}

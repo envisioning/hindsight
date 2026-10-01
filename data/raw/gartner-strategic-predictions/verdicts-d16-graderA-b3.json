@@ -1,0 +1,985 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "gartner-strategic-predictions-2016-002",
+   "verdict": "ungradable",
+   "reading": "In 2020, 30% of all web browsing sessions worldwide are conducted through screenless interfaces (voice assistants, smart speakers).",
+   "mainstream_test": "D16 numeric: share of browsing sessions without a screen in 2020 vs 30%.",
+   "reason": "No public series measures browsing sessions by screen/screenless interface. Traffic trackers (StatCounter platform share) count only screen devices (desktop, mobile, tablet); voice-query counts are a different quantity (D23 proxy). Looked for: screenless share of web sessions 2019-2020.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text; no definition of how sessions are counted."
+    },
+    {
+     "url": "https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet",
+     "title": "StatCounter, desktop vs mobile vs tablet market share",
+     "date": "2020",
+     "shows": "Platform share series covers only screen devices; no screenless category exists."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-003",
+   "verdict": "ungradable",
+   "reading": "By 2019, 20% of brands that had a mobile app discontinue it.",
+   "mainstream_test": "D16 numeric: share of brands abandoning their apps by 2019 vs 20%.",
+   "reason": "Share of organizations: no survey of brands measuring app abandonment in 2018-2019 found. Looked for brand app discontinuation surveys.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text; population 'brands' undefined."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-004",
+   "verdict": "ungradable",
+   "reading": "By 2020, more than 1 billion workers worldwide have their work behaviour positively changed by algorithms.",
+   "mainstream_test": "D16 numeric: count of workers whose behaviour is altered by algorithms vs 1 billion.",
+   "reason": "No public measure of workers whose behaviour is altered by algorithms; attributed effect (D23). Looked for ILO/OECD counts of algorithmically managed workers.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text; quantity is an attributed effect without a defined measure."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-005",
+   "verdict": "hit",
+   "reading": "By 2022, at least one business built on blockchain is valued at $10 billion or more.",
+   "mainstream_test": "Event: a blockchain-based company reaches a $10B valuation by 2022.",
+   "reason": "Coinbase (crypto exchange on blockchain networks) was valued at $8B in its 2018 Series E and listed on Nasdaq on 14 April 2021 with a reference price implying about $47B, well above $10B before 2022.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Coinbase",
+     "title": "Coinbase - Wikipedia",
+     "date": "2021-04-14",
+     "shows": "Nasdaq reference price $250/share gave estimated value of $47B at the April 2021 direct listing."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-006",
+   "verdict": "ungradable",
+   "reading": "By 2021, 20% of all of an individual's activities involve at least one of Google, Apple, Facebook, Amazon, Baidu, Alibaba, Tencent.",
+   "mainstream_test": "D16 numeric: share of all individual activities involving a top-7 digital giant vs 20%.",
+   "reason": "No time-use or activity series measures the share of all activities involving these firms. Looked for time-use surveys with platform attribution.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text; 'activities' undefined."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-007",
+   "verdict": "ungradable",
+   "reading": "Through 2019, each $1 of enterprise innovation spending requires $7 of additional core-execution spending.",
+   "mainstream_test": "D16 numeric: ratio of core-execution to innovation spending vs 7.",
+   "reason": "No public survey measures this ratio for enterprises in 2018-2019. Looked for IT spending splits (run/grow/transform); those are a different quantity.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text; ratio not defined by a public series."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-008",
+   "verdict": "ungradable",
+   "reading": "Through 2020, IoT raises data-centre storage demand by less than 3%.",
+   "mainstream_test": "D16 numeric: IoT-attributable share of data-centre storage demand growth vs <3%.",
+   "reason": "Attributed value (D23): no public source separates IoT-driven data-centre storage demand. Looked for IDC Global DataSphere IoT shares; these measure data created, not data-centre storage demand.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text; IoT-attributed storage demand."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-009",
+   "verdict": "ungradable",
+   "reading": "By 2022, IoT saves consumers and businesses $1 trillion a year in maintenance, services and consumables.",
+   "mainstream_test": "D16 numeric: annual IoT-attributed savings in 2022 vs $1T.",
+   "reason": "Attributed value (D23): no public source measures IoT savings in maintenance, services and consumables for 2022. Looked for McKinsey/IDC IoT value estimates; they are forecasts or economic-value potential, not measured savings.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text; savings attributed to IoT."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-010",
+   "verdict": "ungradable",
+   "reading": "By 2020, 40% of employees are able to reduce their healthcare costs by wearing a fitness tracker (via employer programmes).",
+   "mainstream_test": "D16 numeric: share of employees with a tracker-linked health-cost reduction vs 40%.",
+   "reason": "Share of a population with an attributed benefit: no survey measures employees who can cut healthcare costs via trackers in 2019-2020. Employer wellness surveys (KFF) report programme offers, not this quantity.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2016",
+     "date": "2016-10-18",
+     "shows": "Claim text."
+    },
+    {
+     "url": "https://www.kff.org/health-costs/report/2020-employer-health-benefits-survey/",
+     "title": "KFF 2020 Employer Health Benefits Survey",
+     "date": "2020-10-08",
+     "shows": "Reports wellness programme offers by firms, not share of employees able to cut costs by wearing trackers."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-001",
+   "verdict": "ungradable",
+   "reading": "By 2021, early-adopter brands that redesign websites for visual and voice search raise digital commerce revenue by 30%.",
+   "mainstream_test": "D16 numeric: revenue uplift of redesigning brands vs 30%.",
+   "reason": "Attributed effect for an undefined cohort; no public study measures it. Looked for voice/visual search commerce uplift studies.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text; cohort and baseline undefined."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-002",
+   "verdict": "ungradable",
+   "reading": "By 2020, five of the top seven digital giants deliberately disrupt their own business to create the next leadership opportunity.",
+   "mainstream_test": "Event count: number of the seven giants that self-disrupt by 2020 vs 5.",
+   "reason": "'Willfully self-disrupt' has no operational definition and no public tally exists; any count would be the grader's judgment, not a measure. Looked for reporting framing these firms' moves as self-disruption.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text; 'self-disrupt' undefined."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-003",
+   "verdict": "ungradable",
+   "reading": "By end 2020, banks derive $1B of business value from blockchain-based cryptocurrencies.",
+   "mainstream_test": "D16 numeric: banking business value from cryptocurrencies in 2020 vs $1B.",
+   "reason": "Attributed value (D23): no public source measures bank business value from crypto for 2020. Looked for bank crypto revenue tallies.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text; attributed 'business value'."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-004",
+   "verdict": "ungradable",
+   "reading": "By 2022, most people in mature economies consume more false than true information.",
+   "mainstream_test": "Share of people in mature economies whose information intake is majority false vs >50%.",
+   "reason": "No survey measures the true/false balance of individuals' information consumption. Studies (e.g. Reuters Digital News Report) measure concern about misinformation, a different quantity.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text."
+    },
+    {
+     "url": "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2022",
+     "title": "Reuters Institute Digital News Report 2022",
+     "date": "2022-06-15",
+     "shows": "Measures trust and concern about false information, not the share of false information consumed."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-005",
+   "verdict": "hit",
+   "reading": "By 2020, AI tools that generate fake content (deepfakes) are better than AI tools that detect it.",
+   "mainstream_test": "Event: state of the art in AI fake-media detection fails to keep pace with generation by 2020.",
+   "reason": "The Deepfake Detection Challenge (Facebook et al.), results June 2020: the best model reached only 65.18% accuracy on the black-box set, showing detection lagged generation in 2020.",
+   "evidence": [
+    {
+     "url": "https://ai.meta.com/blog/deepfake-detection-challenge-results-an-open-initiative-to-advance-ai/",
+     "title": "Deepfake Detection Challenge results",
+     "date": "2020-06-12",
+     "shows": "Top entrant 65.18% accuracy on black-box dataset of unseen deepfakes."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-006",
+   "verdict": "ungradable",
+   "reading": "By 2021, more than 50% of enterprises spend more per year on bots/chatbots than on traditional mobile app development.",
+   "mainstream_test": "D16 numeric: share of enterprises with bot spend > app spend vs 50%.",
+   "reason": "Share of enterprises: no survey of enterprises comparing bot vs mobile-app spending in 2020-2021 found.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-007",
+   "verdict": "ungradable",
+   "reading": "By 2021, 40% of IT staff hold multiple roles, mostly business-related.",
+   "mainstream_test": "D16 numeric: share of IT staff who are versatilists vs 40%.",
+   "reason": "No labour survey measures IT staff holding multiple mostly-business roles. Looked for IT workforce role surveys.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-008",
+   "verdict": "ungradable",
+   "reading": "In 2020, AI creates 2.3 million jobs and eliminates 1.8 million.",
+   "mainstream_test": "D16 numeric: AI-attributed jobs created and destroyed in 2020.",
+   "reason": "Attributed value (D23): no statistics office measures jobs created or eliminated by AI for 2020. Looked for OECD/BLS AI job attribution.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text; AI-attributed job counts."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-009",
+   "verdict": "ungradable",
+   "reading": "By 2020, 95% of new electronics product designs include IoT technology.",
+   "mainstream_test": "D16 numeric: share of new electronic product designs with IoT vs 95%.",
+   "reason": "No public series measures IoT inclusion in new electronics designs. Looked for industry design trackers.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-010",
+   "verdict": "ungradable",
+   "reading": "Through 2022, half of IoT security budgets go to fault remediation, recalls and safety failures rather than protection.",
+   "mainstream_test": "D16 numeric: share of IoT security budgets spent on remediation vs 50%.",
+   "reason": "No survey reports the split of IoT security budgets. Looked for IoT security spending surveys.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2017-10-03-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2018-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2017",
+     "date": "2017-10-03",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-001",
+   "verdict": "ungradable",
+   "reading": "Through 2020, 80% of AI projects remain dependent on scarce specialists and do not scale in the organization.",
+   "mainstream_test": "D16 numeric: share of AI projects that remain 'alchemy' vs 80%.",
+   "reason": "'Alchemy' has no measure; surveys report AI projects not reaching production, a different quantity (D23 proxy).",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2018-10-16-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2019-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2018",
+     "date": "2018-10-16",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-002",
+   "verdict": "miss",
+   "reading": "By 2023, the number of missing people in mature markets falls 80% from the 2018 level, due to AI face recognition.",
+   "mainstream_test": "D16 numeric: change in missing persons 2018 to 2023 vs -80%; US NCIC as the largest mature-market series.",
+   "reason": "US NCIC missing person entries fell only 8% (612,846 in 2018 to 563,389 in 2023) and active records rose 13% (85,459 to 96,955). Any AI-attributable reduction is bounded by the total change, so far below 80%.",
+   "evidence": [
+    {
+     "url": "https://www.fbi.gov/file-repository/2018-ncic-missing-person-and-unidentified-person-statistics.pdf",
+     "title": "FBI, 2018 NCIC Missing Person and Unidentified Person Statistics",
+     "date": "2019",
+     "shows": "612,846 missing person records entered into NCIC in 2018; 85,459 active records at 31 Dec 2018."
+    },
+    {
+     "url": "https://le.fbi.gov/file-repository/2023-ncic-missing-person-and-unidentified-person-statistics.pdf",
+     "title": "FBI, 2023 NCIC Missing Person and Unidentified Person Statistics",
+     "date": "2024",
+     "shows": "563,389 missing person records entered in 2023 (-8% vs 2018); 96,955 active records at 31 Dec 2023 (+13% vs 2018)."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-003",
+   "verdict": "miss",
+   "reading": "By 2023, US emergency department visits are 20 million lower due to AI-enhanced virtual care for chronically ill patients.",
+   "mainstream_test": "D16 numeric: fall in US ED visits by 2023 vs 20 million.",
+   "reason": "US ED visits rose from 130.0M (NHAMCS 2018) to 155.4M (NHAMCS 2022). No reduction occurred; a 20M reduction attributed to virtual care is not supported.",
+   "evidence": [
+    {
+     "url": "https://www.cdc.gov/nchs/data/nhamcs/web_tables/2018-ed-web-tables-508.pdf",
+     "title": "NHAMCS 2018 Emergency Department Summary Tables",
+     "date": "2021",
+     "shows": "All visits 129,974 thousand in 2018."
+    },
+    {
+     "url": "https://www.cdc.gov/nchs/fastats/emergency-department.htm",
+     "title": "CDC FastStats: Emergency Department Visits",
+     "date": "2024",
+     "shows": "155.4 million ED visits in 2022."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-004",
+   "verdict": "ungradable",
+   "reading": "By 2023, 25% of organizations require employees to sign an anti-cyberbullying affidavit, and 70% of these initiatives fail.",
+   "mainstream_test": "D16 numeric: share of organizations with such affidavits vs 25%.",
+   "reason": "Share of organizations: no survey of organizations measuring cyberbullying affidavits in 2022-2023 found.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2018-10-16-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2019-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2018",
+     "date": "2018-10-16",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-005",
+   "verdict": "ungradable",
+   "reading": "Through 2022, 75% of organizations with diverse, inclusive frontline decision teams exceed their financial targets.",
+   "mainstream_test": "D16 numeric: share of such organizations exceeding financial targets vs 75%.",
+   "reason": "Conditional subset of organizations; no survey measures target attainment for this population. McKinsey diversity studies measure profitability likelihood, a different quantity.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2018-10-16-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2019-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2018",
+     "date": "2018-10-16",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-006",
+   "verdict": "ungradable",
+   "reading": "By 2021, 75% of public blockchains contain inserted personal data making them noncompliant with privacy law.",
+   "mainstream_test": "D16 numeric: share of public blockchains with privacy poisoning vs 75%.",
+   "reason": "No census of public blockchains for inserted personal data exists. Looked for studies of personal data on public chains.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2018-10-16-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2019-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2018",
+     "date": "2018-10-16",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-007",
+   "verdict": "miss",
+   "reading": "By 2023, EU ePrivacy regulation sharply limits cookies, raising online costs and crippling internet ad revenue.",
+   "mainstream_test": "Event: ePrivacy rules in force that cut cookie use and internet ad revenue falls by 2023.",
+   "reason": "The ePrivacy Regulation was never adopted (still in trilogue, later withdrawn in the Commission 2025 work programme), and internet ad revenue kept growing: US internet ad revenue reached a record $225B in 2023, +7.3%.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+     "title": "ePrivacy Regulation - Wikipedia",
+     "date": "2024",
+     "shows": "Regulation intended for May 2018 has not been adopted."
+    },
+    {
+     "url": "https://www.iab.com/insights/internet-advertising-revenue-report-2024/",
+     "title": "IAB/PwC Internet Advertising Revenue Report 2024",
+     "date": "2024-04",
+     "shows": "US internet ad revenue record $225B in 2023, +7.3% YoY."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-008",
+   "verdict": "ungradable",
+   "reading": "Through 2022, converting internal capabilities into external cloud-based revenue products is a fast path to digital business.",
+   "mainstream_test": "Whether this strategy was a fast path to digital through 2022.",
+   "reason": "Prescriptive statement with no measurable quantity or event; no public measure of 'fast path'. Looked for any measure of revenue from productized internal capabilities.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2018-10-16-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2019-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2018",
+     "date": "2018-10-16",
+     "shows": "Claim text; advice rather than a measurable forecast."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-009",
+   "verdict": "ungradable",
+   "reading": "By 2022, companies using digital giants' gatekeeper positions hold 40% global share in their industries on average.",
+   "mainstream_test": "D16 numeric: average industry share of such companies vs 40%.",
+   "reason": "Cohort undefined and no market-share series identifies 'gatekeeper-leveraging' firms. Looked for industry concentration data.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2018-10-16-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2019-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2018",
+     "date": "2018-10-16",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-010",
+   "verdict": "hit",
+   "reading": "Through 2021, social media scandals and security breaches cause no lasting loss of consumers or usage for the firms involved.",
+   "mainstream_test": "Event: affected firms (e.g. Facebook after Cambridge Analytica) retain or grow users and revenue through 2021.",
+   "reason": "After the 2018 Cambridge Analytica scandal Facebook's stock losses were recovered by May 2018, users kept growing, and by Q4 2021 Facebook had 2.91B MAU (+4% YoY) and Meta revenue $117.9B (+37%).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal",
+     "title": "Facebook-Cambridge Analytica data scandal - Wikipedia",
+     "date": "2018",
+     "shows": "Stock fell 24% then recovered by 10 May 2018; users grew 1.8% in Q4 2018."
+    },
+    {
+     "url": "https://investor.atmeta.com/investor-news/press-release-details/2022/Meta-Reports-Fourth-Quarter-and-Full-Year-2021-Results/default.aspx",
+     "title": "Meta Reports Fourth Quarter and Full Year 2021 Results",
+     "date": "2022-02-02",
+     "shows": "Facebook MAU 2.91B Dec 2021 (+4%); 2021 revenue $117.9B (+37%)."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-001",
+   "verdict": "miss",
+   "reading": "By 2023, the number of employed people with disabilities triples (from 2019 level).",
+   "mainstream_test": "D16 numeric: ratio of employed people with disability 2023/2018 vs 3; US BLS CPS as the available national series (scope not stated, dominant reading).",
+   "reason": "US BLS: 5.767M employed persons with a disability in 2018, 7.528M in 2023, a factor of 1.31, not 3 (error far beyond 25%).",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/news.release/archives/disabl_02262019.htm",
+     "title": "BLS, Persons with a Disability: Labor Force Characteristics 2018",
+     "date": "2019-02-26",
+     "shows": "5.767M employed persons with a disability; employment-population ratio 19.1%."
+    },
+    {
+     "url": "https://www.bls.gov/news.release/archives/disabl_02222024.htm",
+     "title": "BLS, Persons with a Disability: Labor Force Characteristics 2023",
+     "date": "2024-02-22",
+     "shows": "7.528M employed; ratio 22.5%, highest since 2008."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-002",
+   "verdict": "ungradable",
+   "reading": "By 2024, AI emotion recognition influences more than half of online ads a person sees.",
+   "mainstream_test": "D16 numeric: share of online ads influenced by AI emotion identification vs >50%.",
+   "reason": "No ad-industry series measures the share of ads targeted using emotion recognition. Looked for IAB/eMarketer emotion-AI ad shares.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2019-22-10-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2020-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2019",
+     "date": "2019-10-22",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-003",
+   "verdict": "ungradable",
+   "reading": "Through 2023, 30% of IT organizations extend BYOD policies to 'bring your own enhancement' for augmented humans.",
+   "mainstream_test": "D16 numeric: share of IT organizations with BYOE policies vs 30%.",
+   "reason": "Share of organizations: no survey measures BYOE policies.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2019-22-10-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2020-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2019",
+     "date": "2019-10-22",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-004",
+   "verdict": "ungradable",
+   "reading": "By 2025, half of unbanked smartphone owners use a mobile-accessible cryptocurrency account.",
+   "mainstream_test": "D16 numeric: share of unbanked smartphone owners with a crypto account in 2024-2025 vs 50%.",
+   "reason": "Global Findex 2025 reports unbanked adults and phone ownership but not crypto accounts; crypto-ownership surveys cover all adults, not unbanked smartphone owners (D23 scope).",
+   "evidence": [
+    {
+     "url": "https://www.worldbank.org/en/publication/globalfindex",
+     "title": "World Bank Global Findex 2025",
+     "date": "2025-07",
+     "shows": "79% of adults have an account; mobile phone data; no cryptocurrency account measure."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-005",
+   "verdict": "miss",
+   "reading": "By 2023, at least four G7 countries have a self-regulating professional association that oversees AI/ML designers.",
+   "mainstream_test": "Event: such associations exist in >=4 G7 countries by 2023.",
+   "reason": "No G7 country has a self-regulating oversight body for AI/ML designers; the G7 response was a government-led voluntary code (Hiroshima Process, Oct 2023) addressed to organizations, not a professional self-regulating association.",
+   "evidence": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-international-code-conduct-advanced-ai-systems",
+     "title": "Hiroshima Process International Code of Conduct for Advanced AI Systems",
+     "date": "2023-10-30",
+     "shows": "G7 voluntary code for organizations developing advanced AI; no self-regulating designer association."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-006",
+   "verdict": "ungradable",
+   "reading": "By 2023, 40% of professional workers assemble their own business application experiences like a music playlist.",
+   "mainstream_test": "D16 numeric: share of professional workers orchestrating their app experiences vs 40%.",
+   "reason": "No workforce survey measures this behaviour. Looked for composable/low-code end-user surveys; different quantity.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2019-22-10-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2020-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2019",
+     "date": "2019-10-22",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-007",
+   "verdict": "miss",
+   "reading": "By 2023, about 30% of world news and video content is authenticated by blockchain against deepfakes.",
+   "mainstream_test": "D16 numeric/adoption: share of world news content blockchain-authenticated by 2023 vs 30% (below 5% = miss).",
+   "reason": "Industry provenance effort converged on C2PA, which uses signed manifests, not blockchain; blockchain news authentication stayed at pilot scale (e.g. NYT News Provenance Project). Share far below 5%.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Coalition_for_Content_Provenance_and_Authenticity",
+     "title": "Coalition for Content Provenance and Authenticity - Wikipedia",
+     "date": "2024",
+     "shows": "C2PA uses hash codes and certified digital signatures, not blockchain."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-008",
+   "verdict": "ungradable",
+   "reading": "Through 2021, digital transformation at large traditional enterprises takes twice as long and costs twice as much as planned, on average.",
+   "mainstream_test": "D16 numeric: average time and cost overrun ratio vs 2x.",
+   "reason": "No public survey measures average digital-transformation overruns for this population in 2020-2021.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2019-22-10-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2020-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2019",
+     "date": "2019-10-22",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-009",
+   "verdict": "ungradable",
+   "reading": "By 2023, 40% of people worldwide have benefit or service eligibility influenced by digitally tracked behaviour.",
+   "mainstream_test": "D16 numeric: share of world population vs 40%.",
+   "reason": "No global measure of behaviour-tracked eligibility exists. Looked for social credit / usage-based eligibility coverage counts.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2019-22-10-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2020-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2019",
+     "date": "2019-10-22",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-010",
+   "verdict": "miss",
+   "reading": "By 2024, WHO formally identifies online shopping as an addictive disorder.",
+   "mainstream_test": "Event: WHO classification (ICD-11) lists online shopping as an addictive disorder by 2024.",
+   "reason": "ICD-11 'disorders due to addictive behaviours' lists only gambling and gaming; compulsive buying-shopping disorder appears only as an example under 'other specified impulse control disorders' (6C7Y), not as an addictive disorder or as online shopping.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Compulsive_buying_disorder",
+     "title": "Compulsive buying disorder - Wikipedia",
+     "date": "2024",
+     "shows": "ICD-11 places compulsive buying-shopping disorder under other specified impulse control disorders (6C7Y); no separate online shopping disorder."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-001",
+   "verdict": "ungradable",
+   "reading": "By 2024, 25% of traditional large-enterprise CIOs are accountable for digital business operational results.",
+   "mainstream_test": "D16 numeric: share of such CIOs vs 25%.",
+   "reason": "No public survey reports this share for 2023-2024; Gartner CIO survey results with this item are not public. Looked for CIO role surveys.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-002",
+   "verdict": "ungradable",
+   "reading": "By 2025, 75% of workplace conversations are recorded and analysed.",
+   "mainstream_test": "D16 numeric: share of workplace conversations recorded and analysed vs 75%.",
+   "reason": "No public measure of the share of workplace conversations recorded. Looked for meeting-recording adoption surveys; they measure tools, not conversation share.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-003",
+   "verdict": "miss",
+   "reading": "By 2025, conventional (CMOS/von Neumann) computing hits a performance wall that forces a shift to new paradigms such as neuromorphic computing.",
+   "mainstream_test": "Event: conventional computing stalls and mainstream computing shifts to new paradigms by 2025.",
+   "reason": "Conventional scaling continued: TSMC entered volume production of its 2nm (GAA) process in Q4 2025; mainstream compute growth came from GPUs on conventional silicon, and neuromorphic chips stayed niche.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2_nm_process",
+     "title": "2 nm process - Wikipedia",
+     "date": "2025-12",
+     "shows": "TSMC risk production July 2024, volume production Q4 2025."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-004",
+   "verdict": "ungradable",
+   "reading": "By 2024, 30% of digital businesses mandate DNA storage trials.",
+   "mainstream_test": "D16 numeric: share of digital businesses with DNA storage trial mandates vs 30%.",
+   "reason": "Share of organizations: no survey measures DNA storage trials.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-005",
+   "verdict": "ungradable",
+   "reading": "By 2025, 40% of physical-experience businesses improve results by adding paid virtual experiences.",
+   "mainstream_test": "D16 numeric: share of such businesses vs 40%.",
+   "reason": "Share of organizations: no survey of this population measures it.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-006",
+   "verdict": "ungradable",
+   "reading": "By 2025, more than 20% of the world's products and produce are first touched by the customer (fully automated handling).",
+   "mainstream_test": "D16 numeric: share of products untouched by humans before the customer vs >20%.",
+   "reason": "No public series measures this share. Looked for warehouse/agri automation measures; different quantities.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-007",
+   "verdict": "ungradable",
+   "reading": "By 2025, customers pay freelance service experts to resolve 75% of their customer service needs.",
+   "mainstream_test": "D16 numeric: share of customer service needs resolved by paid freelancers vs 75%.",
+   "reason": "No public measure of how customer service needs are resolved by channel/payer. Looked for customer service channel surveys.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-008",
+   "verdict": "ungradable",
+   "reading": "By 2024, 30% of major organizations use a 'voice of society' metric.",
+   "mainstream_test": "D16 numeric: share of major organizations vs 30%.",
+   "reason": "Share of organizations: no survey measures this metric.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-009",
+   "verdict": "ungradable",
+   "reading": "By 2023, large organizations that convert office space to childcare/education raise retention by more than 20%.",
+   "mainstream_test": "D16 numeric: retention uplift vs >20%.",
+   "reason": "Attributed effect for an undefined cohort; no public study measures it.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-010",
+   "verdict": "ungradable",
+   "reading": "By 2024, content moderation is surveyed as a top CEO priority in 30% of large organizations.",
+   "mainstream_test": "D16 numeric: share of large-org CEOs ranking content moderation a top priority vs 30%.",
+   "reason": "Public CEO surveys (e.g. Gartner/PwC CEO surveys) do not report this item for 2023-2024.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2020-10-21-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2021-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2020",
+     "date": "2020-10-21",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2021-001",
+   "verdict": "ungradable",
+   "reading": "By 2024, 40% of consumers deliberately feed false signals to behaviour tracking.",
+   "mainstream_test": "D16 numeric: share of consumers vs 40%.",
+   "reason": "No consumer survey measures deliberate tracking obfuscation at this definition. Privacy surveys measure ad-blocking or opting out, different quantities.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2021-10-19-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2022-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2021",
+     "date": "2021-10-19",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2021-002",
+   "verdict": "ungradable",
+   "reading": "By 2024, 30% of corporate teams have no manager.",
+   "mainstream_test": "D16 numeric: share of corporate teams without a boss vs 30%.",
+   "reason": "No survey measures the share of manager-less teams.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2021-10-19-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2022-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2021",
+     "date": "2021-10-19",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2021-003",
+   "verdict": "ungradable",
+   "reading": "By 2025, synthetic data use avoids 70% of privacy violation sanctions.",
+   "mainstream_test": "D16 numeric: share of sanctions avoided due to synthetic data vs 70%.",
+   "reason": "Attributed counterfactual (D23); no public measure.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2021-10-19-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2022-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2021",
+     "date": "2021-10-19",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2021-004",
+   "verdict": "miss",
+   "reading": "By 2024, a G20 member answers a cyberattack on its critical infrastructure with a declared physical (military) attack.",
+   "mainstream_test": "Event: declared kinetic retaliation by a G20 member for a cyberattack on critical infrastructure by end 2024.",
+   "reason": "No such case: the major critical-infrastructure cyberattack on a G20 member (Colonial Pipeline, US, 2021) drew emergency declarations, an executive order, law enforcement and rewards, not military retaliation. No G20 member declared a physical attack in response to a cyberattack through 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack",
+     "title": "Colonial Pipeline ransomware attack - Wikipedia",
+     "date": "2021-05",
+     "shows": "US response: state of emergency, EO 14028, DOJ task force, ransom recovery, $10M reward; no military retaliation."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2021-005",
+   "verdict": "ungradable",
+   "reading": "By 2024, 80% of surveyed CIOs list composable modular business redesign as a top-5 reason for accelerated performance.",
+   "mainstream_test": "D16 numeric: share of surveyed CIOs vs 80%.",
+   "reason": "The referenced Gartner CIO survey item for 2024 is not public; no other survey asks it.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2021-10-19-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2022-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2021",
+     "date": "2021-10-19",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2021-006",
+   "verdict": "ungradable",
+   "reading": "By 2025, 75% of companies drop poor-fit customers.",
+   "mainstream_test": "D16 numeric: share of companies vs 75%.",
+   "reason": "Share of companies: no survey measures it.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2021-10-19-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2022-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2021",
+     "date": "2021-10-19",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2022-002",
+   "verdict": "ungradable",
+   "reading": "By 2025, absent sustainable AI practices, AI uses more energy than the human workforce.",
+   "mainstream_test": "Compare AI energy use in 2025 with the energy use of the human workforce.",
+   "reason": "Conditional claim (D23): the condition 'without sustainable AI practices' is not established, and 'energy of the human workforce' has no defined public measure. AI share of data-centre electricity is estimated (IEA), but the comparator is undefined.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2022-10-18-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2023-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2022",
+     "date": "2022-10-18",
+     "shows": "Claim text; comparator and condition undefined."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2022-004",
+   "verdict": "ungradable",
+   "reading": "Through 2025, cloud ecosystems reduce the number of vendors by 30%.",
+   "mainstream_test": "D16 numeric: reduction in vendor landscape vs 30%.",
+   "reason": "No public count of software vendors defines the 'vendor landscape'. Looked for vendor consolidation measures.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2022-10-18-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2023-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2022",
+     "date": "2022-10-18",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2022-005",
+   "verdict": "ungradable",
+   "reading": "Through 2024, regulator-sanctioned jointly owned sovereign cloud partnerships raise stakeholder trust in global cloud brands.",
+   "mainstream_test": "Event plus attributed effect: such partnerships exist and raise trust.",
+   "reason": "Partnerships of this kind were formed (e.g. S3NS, Bleu in France), but no public measure of stakeholder trust attributable to them exists.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2022-10-18-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2023-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2022",
+     "date": "2022-10-18",
+     "shows": "Claim text; trust effect unmeasured."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2022-006",
+   "verdict": "ungradable",
+   "reading": "By 2025, 40% of organizations report a material business loss from labour volatility.",
+   "mainstream_test": "D16 numeric: share of organizations vs 40%.",
+   "reason": "Share of organizations: no survey measures material loss from labour volatility in 2024-2025.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2022-10-18-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2023-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2022",
+     "date": "2022-10-18",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2022-007",
+   "verdict": "ungradable",
+   "reading": "By 2025, shareholder acceptance of moonshot investments doubles.",
+   "mainstream_test": "D16 numeric: change in shareholder acceptance vs 2x.",
+   "reason": "'Acceptance' has no public measure.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2022-10-18-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2023-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2022",
+     "date": "2022-10-18",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2022-009",
+   "verdict": "ungradable",
+   "reading": "By 2025, organizations that close gender pay gaps cut women's attrition by 30%.",
+   "mainstream_test": "D16 numeric: attrition reduction vs 30%.",
+   "reason": "Attributed effect for a cohort; no public study measures it at the target year.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2022-10-18-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2023-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2022",
+     "date": "2022-10-18",
+     "shows": "Claim text."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2022-010",
+   "verdict": "ungradable",
+   "reading": "Through 2025, employee value metrics override ROI in 30% of successful growth investment decisions.",
+   "mainstream_test": "D16 numeric: share of investment decisions vs 30%.",
+   "reason": "No public measure of how investment decisions are made.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2022-10-18-gartner-unveils-top-predictions-for-it-organizations-and-users-in-2023-and-beyond",
+     "title": "Gartner Top Strategic Predictions, edition 2022",
+     "date": "2022-10-18",
+     "shows": "Claim text."
+    }
+   ]
+  }
+ ]
+}

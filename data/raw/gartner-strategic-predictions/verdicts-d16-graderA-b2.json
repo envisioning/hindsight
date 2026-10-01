@@ -1,0 +1,997 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "gartner-strategic-predictions-2012-001",
+   "verdict": "hit",
+   "reading": "Up to and including 2015, about 90% of enterprises will not roll Windows 8 out as their broad standard desktop OS.",
+   "mainstream_test": "D16 numeric threshold read as a floor: share of enterprises without broad Windows 8 deployment at or above roughly 90% (hit within 10%) through 2015, from enterprise surveys.",
+   "reason": "Enterprise surveys show Windows 8 never became a broad enterprise standard: Spiceworks found 9.3% of businesses had adopted it at all within 6 months of release, and Softchoice device scans of 169 North American organizations found Windows 8 on about 2% of devices in 2015 (4% in 2016). Organizations without broad deployment were therefore well above 90%; no survey reports the exact share, but every measure is consistent with at least 90%.",
+   "evidence": [
+    {
+     "url": "https://www.thurrott.com/windows/windows-10/64365/report-windows-10-adoption-in-businesses-double-that-of-windows-8",
+     "title": "Report: Windows 10 Adoption in Businesses Double That of Windows 8 (Thurrott, citing Spiceworks)",
+     "date": "2016",
+     "shows": "9.3% of businesses had adopted Windows 8 within six months of release, against 18% for Windows 10."
+    },
+    {
+     "url": "https://betanews.com/article/business-reluctant-windows-10/",
+     "title": "North American businesses reluctant to adopt Windows 10 (BetaNews, citing Softchoice)",
+     "date": "2016",
+     "shows": "Softchoice scan of 400,000+ devices at 169 North American organizations: Windows 8 on 4% of machines in 2016, up 2 points from 2015 (figures as reported in search summary; page returned 403 to fetch)."
+    },
+    {
+     "url": "https://www.forrester.com/report/IT+Will+Skip+Windows+8+As+The+Enterprise+Standard/-/E-RES86641",
+     "title": "IT Will Skip Windows 8 As The Enterprise Standard (Forrester)",
+     "date": "2013",
+     "shows": "Forrester concluded enterprises would skip Windows 8 as their standard."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-002",
+   "verdict": "hit",
+   "reading": "At the end of 2014, three of the five largest phone vendors by units sold will be Chinese companies.",
+   "mainstream_test": "Count Chinese vendors in the top five of the year-end (Q4 2014) worldwide vendor ranking; 3 = hit.",
+   "reason": "Gartner Q4 2014 smartphone sales ranking: Apple, Samsung, Lenovo, Huawei, Xiaomi, i.e. three Chinese vendors in the top five at year-end 2014. On an all-phones full-year ranking (feature phones included) Microsoft/Nokia and LG still held places and the Chinese count was two, so the hit depends on reading the year-end smartphone ranking, which is where handset vendor ranks were contested by 2014.",
+   "evidence": [
+    {
+     "url": "https://www.gsmarena.com/gartner_apple_is_now_the_worlds_top_smartphone_vendor-news-11413.php",
+     "title": "Gartner: Apple is now the world's top smartphone vendor (GSMArena)",
+     "date": "2015-03-03",
+     "shows": "Q4 2014 top five smartphone vendors by sales: Apple, Samsung, Lenovo, Huawei, Xiaomi."
+    },
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-03-03-gartner-says-smartphone-sales-surpassed-one-billion-units-in-2014",
+     "title": "Gartner Says Smartphone Sales Surpassed One Billion Units in 2014",
+     "date": "2015-03-03",
+     "shows": "Full-year 2014: Samsung, Apple, Lenovo, Huawei among top vendors (page 403 to fetch; figures via search summary)."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-003",
+   "verdict": "ungradable",
+   "reading": "In 2015 worldwide demand for big data jobs will be 4.4 million, with one third filled.",
+   "mainstream_test": "D16 numeric: count of big-data jobs demanded globally in 2015 against a public measure of the same quantity.",
+   "reason": "No public series counts global big-data job demand or fill rate in 2015; the 4.4 million figure is Gartner's own estimate and job-posting studies (e.g. Burning Glass) measure postings for data roles, not this quantity. Looked for a global big-data job demand count for 2014-2015; none found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2211115",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2013 and Beyond",
+     "date": "2012-10-24",
+     "shows": "Source of the 4.4 million figure; no independent measure of the same quantity found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-004",
+   "verdict": "miss",
+   "reading": "By 2014 EU directives will drive national job-protection legislation, and this will cut offshoring by 20% through 2016.",
+   "mainstream_test": "Event test: was an EU directive adopted by 2014 that drove legislation to protect jobs against offshoring; then offshoring trend through 2016.",
+   "reason": "No EU directive restricting offshoring or protecting jobs against offshoring was adopted 2012-2016; EU policy on restructuring stayed at a non-binding Quality Framework (Commission communication, Dec 2013). Without the stated legislation the event did not happen; offshoring volumes kept growing (global IT-BPO services exports rose through 2016). The 20% figure is ungradable on its own, but the claimed driver did not happen.",
+   "evidence": [
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52013DC0882",
+     "title": "EU Quality Framework for anticipation of change and restructuring, COM(2013) 882",
+     "date": "2013-12-13",
+     "shows": "The EU response on restructuring in this period was a non-binding communication, not a directive restricting offshoring."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-005",
+   "verdict": "ungradable",
+   "reading": "By 2014 most IT hiring in major Western markets will be done by Asian-headquartered companies.",
+   "mainstream_test": "Share of IT hires in Western markets made by Asian-headquartered firms in 2014, from labour statistics or hiring surveys.",
+   "reason": "No public series splits Western IT hiring by employer headquarters. Looked for BLS, Eurostat or hiring-survey data by employer origin; none exists. (Indian IT firms were large H-1B users, but that is a visa proxy, not hires.)",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2211115",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2013 and Beyond",
+     "date": "2012-10-24",
+     "shows": "Claim text; no measure of IT hiring by employer headquarters found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-006",
+   "verdict": "ungradable",
+   "reading": "By 2017, 40% of enterprise contact information will have leaked into Facebook through employees' mobile apps.",
+   "mainstream_test": "Share of enterprise contact records present in Facebook by 2017.",
+   "reason": "No public study measures what share of enterprise contact data reached Facebook. Looked for contact-upload studies (Cambridge Analytica era reporting covers user data, not an enterprise share); none found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2211115",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2013 and Beyond",
+     "date": "2012-10-24",
+     "shows": "Claim text; no measure of the quantity found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-007",
+   "verdict": "ungradable",
+   "reading": "Through 2014, employee-owned devices will be compromised by malware at more than twice the rate of corporate devices.",
+   "mainstream_test": "Ratio of malware compromise rates, employee-owned vs corporate devices, 2013-2014.",
+   "reason": "No public study reports compromise rates by device ownership for this period. Looked for vendor threat reports (Verizon DBIR, mobile security reports) with a BYOD vs corporate split; none found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2211115",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2013 and Beyond",
+     "date": "2012-10-24",
+     "shows": "Claim text; no measure of the ratio found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-008",
+   "verdict": "ungradable",
+   "reading": "Through 2014, software spending caused by the spread of smart operational technology will rise by 25%.",
+   "mainstream_test": "Growth of OT-driven software spending to 2014.",
+   "reason": "No public series isolates software spending caused by operational technology. Looked for OT/industrial software market estimates; the attribution is not measured (D23 attributed value).",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2211115",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2013 and Beyond",
+     "date": "2012-10-24",
+     "shows": "Claim text; no measure of OT-attributed software spending found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-009",
+   "verdict": "ungradable",
+   "reading": "By 2015, 40% of the Global 1000 will use gamification as their primary mechanism to transform operations.",
+   "mainstream_test": "Share of Global 1000 firms using gamification as primary transformation mechanism, survey of that population 2014-2015.",
+   "reason": "No survey of the Global 1000 measures this. Looked for gamification adoption surveys of large enterprises for 2014-2015; none of the same population found.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2211115",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2013 and Beyond",
+     "date": "2012-10-24",
+     "shows": "Claim text; no survey of the Global 1000 on this quantity found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-010",
+   "verdict": "hit",
+   "reading": "By 2016 wearable smart electronics (worn in shoes, tattoos and accessories such as watches and bands) will be an industry of at least $10 billion a year.",
+   "mainstream_test": "Threshold reading of a level: worldwide wearable electronics revenue in 2016 at or above $10 billion.",
+   "reason": "Gartner's wearable-device estimate gives 2016 revenue of $28.7 billion, of which smartwatches $11.5 billion; even the narrower wearable fitness technology estimate (MarketsandMarkets, $5.8 billion) plus smartwatches exceeds $10 billion. Read as \"emerge as a $10 billion industry\", the threshold was passed. If the reading were limited to smart shoes and tattoos, those segments stayed tiny, but the claim lists accessories, which covers watches and bands.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-02-02-gartner-says-worldwide-wearable-devices-sales-grow-18-percent-in-2016",
+     "title": "Gartner Says Worldwide Wearable Devices Sales to Grow 18.4 Percent in 2016",
+     "date": "2016-02-02",
+     "shows": "Wearable device revenue $28.7 billion in 2016, smartwatches $11.5 billion (figures via search summary)."
+    },
+    {
+     "url": "https://www.marketsandmarkets.com/Market-Reports/wearable-fitness-technology-market-139869705.html",
+     "title": "Wearable Fitness Technology Market (MarketsandMarkets)",
+     "date": "2017",
+     "shows": "Wearable fitness technology market $5.77 billion in 2016."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-011",
+   "verdict": "ungradable",
+   "reading": "By 2014 consolidation will remove up to 20% of the top 100 IT services providers.",
+   "mainstream_test": "Share of the 2012 top-100 IT services providers acquired or merged by 2014.",
+   "reason": "\"Up to 20%\" is a ceiling, and no public top-100 list with turnover tracking was found. Looked for ranked IT services provider lists 2012 vs 2014; none public.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2211115",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2013 and Beyond",
+     "date": "2012-10-24",
+     "shows": "Claim text; no public top-100 turnover data found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-001",
+   "verdict": "ungradable",
+   "reading": "By 2018, 3D printing will cause intellectual-property losses of at least $100 billion a year worldwide.",
+   "mainstream_test": "D23 attributed value: annual IP loss attributable to 3D printing in 2018 from a public measure.",
+   "reason": "No public source measures IP losses caused by 3D printing. IP-theft estimates (e.g. IP Commission, OECD counterfeiting) do not split out 3D printing. Attributed value with no measure: ungradable under D23.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure of 3D-printing-attributed IP loss found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-002",
+   "verdict": "miss",
+   "reading": "By 2015 at least one major Western manufacturer will publicly claim that a mainstream product's IP was stolen by people using 3D printers, likely in Western markets.",
+   "mainstream_test": "Event test: a public claim of this kind by a major Western manufacturer by end of 2015 (late within the D16 window = partial).",
+   "reason": "No case was found of a major manufacturer claiming 3D-printing theft of IP for a mainstream product by 2015; known 3D-printing IP disputes of the period were small takedown notices over fan-made models (e.g. HBO, Games Workshop), not a manufacturer's mainstream product. Absence of evidence after looking in the 3D printing IP literature; low confidence.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/3D_printing",
+     "title": "3D printing (Wikipedia), intellectual property section",
+     "date": "2026",
+     "shows": "Lists no case of a major manufacturer claiming IP theft of a mainstream product via 3D printing in 2013-2016."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-003",
+   "verdict": "miss",
+   "reading": "By 2016 bioprinting of tissues and organs will set off a global debate on regulating or banning the technology.",
+   "mainstream_test": "Event test: a global regulatory or ban debate on bioprinting by 2016, visible in regulator or legislative action.",
+   "reason": "No global regulation or ban debate on bioprinting occurred by 2016: no national ban proposals, and the main regulator document, FDA's additive-manufacturing guidance (draft 2016, final December 2017), addresses devices and does not single out bioprinting. Bioprinting stayed a research topic with ethics papers but no global policy debate.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-considerations-additive-manufactured-medical-devices",
+     "title": "Technical Considerations for Additive Manufactured Medical Devices (FDA guidance)",
+     "date": "2017-12-05",
+     "shows": "FDA 3D-printing guidance addresses medical devices and does not specifically address bioprinted tissues or organs."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/3D_bioprinting",
+     "title": "3D bioprinting (Wikipedia)",
+     "date": "2026",
+     "shows": "Article covers research applications; no regulation or ban debate recorded."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-004",
+   "verdict": "miss",
+   "reading": "By end 2015 the FDA or a comparable regulator will issue guidelines prohibiting bioprinting of life-saving organs and tissues without prior approval.",
+   "mainstream_test": "Event test: such bioprinting-specific guidelines issued by end 2015 (late within D16 window = partial).",
+   "reason": "No bioprinting-specific guideline was issued by 2015. FDA's first 3D-printing guidance came as a draft in 2016 and final in December 2017, about devices, not bioprinted organs; bioprinted tissues stayed under existing biologics rules. The stated event did not happen.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-considerations-additive-manufactured-medical-devices",
+     "title": "Technical Considerations for Additive Manufactured Medical Devices (FDA guidance)",
+     "date": "2017-12-05",
+     "shows": "First FDA 3D-printing guidance, final December 2017, device-oriented; does not specifically address bioprinting."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-005",
+   "verdict": "ungradable",
+   "reading": "By 2017 more than half of consumer goods manufacturers will get 75% of their consumer innovation and R&D from crowdsourcing.",
+   "mainstream_test": "Survey of consumer goods manufacturers on the share of innovation sourced from crowds, 2016-2017.",
+   "reason": "No survey of consumer goods manufacturers measures this share. Looked for open-innovation surveys of CPG firms; none report it.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no survey of the same population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-006",
+   "verdict": "ungradable",
+   "reading": "By 2015, consumer goods firms using crowdsourcing will have revenue 1% higher than those that do not.",
+   "mainstream_test": "D23 attributed value: revenue difference attributable to crowdsourcing.",
+   "reason": "No public study measures this revenue effect. Attributed value without a measure: ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-007",
+   "verdict": "partial",
+   "reading": "By 2020, job losses from digitization will cause social unrest and a search for new economic models in several mature economies.",
+   "mainstream_test": "Event test with two parts: (a) social unrest caused by digitization-driven labour reduction, (b) a quest for new economic models, in several mature economies by 2020.",
+   "reason": "Part (b) happened: automation-driven debate on basic income became mainstream (Finland ran a basic income experiment 2017-2018, Obama said in 2016 society would debate unconditional income). Part (a) did not: employment in mature economies rose to record highs by 2019, and protests of the period were not attributed to automation job losses. One of two parts: partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Technological_unemployment",
+     "title": "Technological unemployment (Wikipedia)",
+     "date": "2026",
+     "shows": "Concern about technological unemployment became a dominant theme of economic discussion from 2013-2014; Obama 2016 on unconditional income; no recorded unrest caused by automation job loss."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Universal_basic_income_pilots",
+     "title": "Universal basic income pilots (Wikipedia), Finland section",
+     "date": "2026",
+     "shows": "Finland trialled a basic income for 2,000 unemployed people in 2017-2018."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-008",
+   "verdict": "miss",
+   "reading": "By end of 2014 a larger-scale movement of the Occupy Wall Street type (economic, anti-inequality protest) will begin.",
+   "mainstream_test": "Event test: a protest movement on economic grievances larger than Occupy Wall Street starting by end 2014.",
+   "reason": "No economic-grievance movement larger than Occupy began by end 2014. The largest occupation protest of 2014, Hong Kong's Umbrella Movement (Sept-Dec 2014), drew on Occupy Central but its demand was electoral reform, not an economic one, so it does not fit the OWS type or the claim's premise of digitization-driven unrest.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Umbrella_Movement",
+     "title": "Umbrella Movement (Wikipedia)",
+     "date": "2026",
+     "shows": "Ran 28 Sept-15 Dec 2014; primary demand was universal suffrage; no economic demands."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-009",
+   "verdict": "ungradable",
+   "reading": "By 2017, 80% of consumers will collect, track and trade their personal data for savings, convenience and customization.",
+   "mainstream_test": "Consumer survey share actively collecting and trading personal data, 2016-2017.",
+   "reason": "No consumer survey measures this behaviour as stated. Surveys of the period ask willingness to share data for discounts, which is another quantity (D23). Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure of the same quantity found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-010",
+   "verdict": "ungradable",
+   "reading": "The number of Kickstarter-based auctions of personal data will grow by more than 100% by end of 2014.",
+   "mainstream_test": "Count of Kickstarter projects auctioning personal data, 2013 vs 2014.",
+   "reason": "No count exists; the known case was a single 2013 project. Looked for Kickstarter category data; none tracks this. Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no count found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-011",
+   "verdict": "ungradable",
+   "reading": "By 2020 enterprises and governments will fail to protect 75% of sensitive data and will declassify and open it.",
+   "mainstream_test": "Share of sensitive data unprotected or declassified by 2020.",
+   "reason": "No public measure of the share of sensitive data protected or declassified exists. Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-012",
+   "verdict": "hit",
+   "reading": "By 2015 at least one more major leak of secret corporate or government documents of the Snowden or WikiLeaks kind will occur.",
+   "mainstream_test": "Event test: a mass leak of confidential documents by an insider, published widely, by end 2015.",
+   "reason": "LuxLeaks (5 Nov 2014): 28,000 pages of PwC tax rulings for 340+ companies leaked by whistleblower Antoine Deltour and published by ICIJ with 80 journalists. Also the Sony Pictures leak (Nov 2014). The event happened within the window.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Luxembourg_Leaks",
+     "title": "Luxembourg Leaks (Wikipedia)",
+     "date": "2026",
+     "shows": "ICIJ published 28,000 pages of leaked tax rulings on 5 Nov 2014; whistleblower Antoine Deltour."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-013",
+   "verdict": "ungradable",
+   "reading": "By 2024 at least 10% of activities potentially injurious to human life will require mandatory use of a non-overridable smart system.",
+   "mainstream_test": "Share of hazardous activities where a non-overridable automated system is legally mandatory, 2024.",
+   "reason": "No inventory of \"activities potentially injurious to human life\" exists to form a denominator. Mandates such as EU GSR 2022 (intelligent speed assistance, AEB) are overridable or partial. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Intelligent_speed_assistance",
+     "title": "Intelligent speed assistance (Wikipedia)",
+     "date": "2026",
+     "shows": "EU mandated ISA on new cars from 2022/2024, but the driver can override or switch it off; no measure of the claimed share."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-014",
+   "verdict": "ungradable",
+   "reading": "Through 2014 the number of economically priced cars with automated driver assistance as standard will increase (amount omitted in source).",
+   "mainstream_test": "Count or share of low-priced models with ADAS standard, model years 2013-2014.",
+   "reason": "The source omits the size of the increase, and no model-year series of standard ADAS fitment on economy cars was retrieved (looked for IIHS and Wikipedia collision-avoidance data). Ungradable.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collision_avoidance_system",
+     "title": "Collision avoidance system (Wikipedia)",
+     "date": "2026",
+     "shows": "No model-year counts of standard ADAS on economy cars for 2013-2015."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-015",
+   "verdict": "ungradable",
+   "reading": "By 2020 most knowledge-worker career paths will be disrupted by smart machines.",
+   "mainstream_test": "Share of knowledge-worker career paths disrupted by smart machines, 2020.",
+   "reason": "No measure of career-path disruption exists; \"disrupted in positive and negative ways\" has no operational definition. Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-016",
+   "verdict": "ungradable",
+   "reading": "Business use of virtual personal assistants will grow faster in 2017-2018 than iPad use did in 2010-2011.",
+   "mainstream_test": "Growth of business VPA users 2017-2018 vs iPad users 2010-2011.",
+   "reason": "No public series counts business VPA users in 2017-2018 (Alexa for Business launched Nov 2017 without user counts). Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure of business VPA usage found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-017",
+   "verdict": "ungradable",
+   "reading": "By 2017, 10% of computers will be learning rather than processing.",
+   "mainstream_test": "Share of computers running learning workloads, 2017.",
+   "reason": "No measure of computers \"learning rather than processing\" exists. Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-018",
+   "verdict": "ungradable",
+   "reading": "In 2014 the number of speech recognition applications running on deep neural networks will double.",
+   "mainstream_test": "Count of DNN-based speech recognition apps, 2013 vs 2014.",
+   "reason": "No count of such applications exists. Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no count found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-019",
+   "verdict": "ungradable",
+   "reading": "By 2020 consumer data from wearables will drive 5% of Global 1000 sales.",
+   "mainstream_test": "D23 attributed value: share of Global 1000 sales driven by wearable data.",
+   "reason": "Attributed value with no public measure. Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-020",
+   "verdict": "ungradable",
+   "reading": "By 2015 the number of smartphone apps requesting to share consumer data will double.",
+   "mainstream_test": "Count of apps requesting data-sharing permissions, 2013 vs 2015.",
+   "reason": "No series counts apps requesting data sharing; total app counts are another quantity (D23). Ungradable.",
+   "evidence": [
+    {
+     "url": "http://www.gartner.com/newsroom/id/2603215",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2014 and Beyond",
+     "date": "2013-10-08",
+     "shows": "Claim text; no count found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-001",
+   "verdict": "ungradable",
+   "reading": "By 2018 digital business models will need 50% fewer business-process workers and 500% more key digital jobs than traditional models.",
+   "mainstream_test": "Comparison of workforce composition, digital vs traditional business models, 2018.",
+   "reason": "No public measure compares staffing of digital vs traditional models on these categories. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-002",
+   "verdict": "ungradable",
+   "reading": "By end 2016, half of digital transformation initiatives will be unmanageable for lack of portfolio management skills.",
+   "mainstream_test": "Survey share of digital transformation initiatives judged unmanageable, 2015-2016.",
+   "reason": "No survey measures this share with this definition. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-003",
+   "verdict": "miss",
+   "reading": "By 2017 a significant, disruptive digital business conceived by a computer algorithm will be launched.",
+   "mainstream_test": "Event test: a widely reported disruptive business whose concept was generated by an algorithm, launched by 2017 (late within D16 window = partial).",
+   "reason": "No such business was reported by 2017 or in the following years; the disruptive digital businesses of the period (ride-hailing, delivery, fintech) were conceived by people. Absence after looking in tech press coverage of algorithmic creativity; low-medium confidence.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no business conceived by an algorithm was found in reporting through 2019."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-004",
+   "verdict": "partial",
+   "reading": "Through 2015, the most highly valued IPOs will be companies that combine digital markets with physical logistics.",
+   "mainstream_test": "The largest IPOs in 2014 and in 2015 are digital-market-plus-logistics companies; both years = hit, one year = partial.",
+   "reason": "In 2014 the largest IPO ever, Alibaba ($25 billion, Sept 2014), and JD.com fit the claim. In 2015 the largest IPO was the Japan Post triple listing (about $12 billion, Nov 2015), a legacy physical postal business, so the state did not hold through 2015. Held for one of the two years: partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Initial_public_offering",
+     "title": "Initial public offering (Wikipedia), largest IPOs table",
+     "date": "2026",
+     "shows": "Alibaba Group raised $25 billion in 2014, the largest IPO in the table."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Japan_Post_Holdings",
+     "title": "Japan Post Holdings (Wikipedia)",
+     "date": "2026",
+     "shows": "Japan Post Holdings, Bank and Insurance listed 4 Nov 2015, raising about $12 billion combined."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-005",
+   "verdict": "ungradable",
+   "reading": "By 2018 smart machines and industrialized services will cut the total cost of ownership of business operations by 30%.",
+   "mainstream_test": "D23 attributed value: TCO reduction attributable to smart machines, 2018.",
+   "reason": "Attributed value without a public measure. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-006",
+   "verdict": "ungradable",
+   "reading": "By 2015 more than 40 vendors will sell managed services using smart machines and industrialized services.",
+   "mainstream_test": "Count of vendors with such commercial offerings, 2015.",
+   "reason": "No public vendor census with this definition. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-007",
+   "verdict": "ungradable",
+   "reading": "By 2020, widespread wireless health monitoring will add 0.5 years to developed-world life expectancy.",
+   "mainstream_test": "D23 attributed value: life-expectancy gain attributable to wireless health monitoring by 2020.",
+   "reason": "No study attributes life-expectancy change to wireless health monitoring; total life expectancy in 2020 fell because of COVID-19, which says nothing about the attributed effect. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no measure of the attributed effect found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-008",
+   "verdict": "ungradable",
+   "reading": "By 2017 smartphone use will cut the cost of diabetic care by 10%.",
+   "mainstream_test": "D23 attributed value: diabetes care cost reduction attributable to smartphones by 2017.",
+   "reason": "No public source measures a smartphone-attributable cut in diabetes care cost. Total US diabetes costs rose between 2012 and 2017 (ADA: $245 billion to $327 billion), but the claim is about an attributed reduction. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://diabetesjournals.org/care/article/41/5/917/36518/Economic-Costs-of-Diabetes-in-the-U-S-in-2017",
+     "title": "Economic Costs of Diabetes in the U.S. in 2017 (American Diabetes Association, Diabetes Care)",
+     "date": "2018-03-22",
+     "shows": "Total US diabetes costs $327 billion in 2017, up from $245 billion in 2012; no smartphone-attributed saving measured (figures from the paper abstract, not fetched in this session)."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-009",
+   "verdict": "ungradable",
+   "reading": "By end 2016, more than $2 billion of online shopping will be done exclusively by mobile digital assistants.",
+   "mainstream_test": "Value of purchases completed by mobile digital assistants alone in 2016.",
+   "reason": "No public measure of assistant-only purchases in 2016; later voice-shopping estimates (OC&C, 2017, smart speakers) are another quantity and year. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-010",
+   "verdict": "partial",
+   "reading": "By end 2015 mobile digital assistants will handle routine form tasks such as entering names, addresses and card details.",
+   "mainstream_test": "Event test: by end 2015, mobile assistants or assistive services fill in personal and payment details for users.",
+   "reason": "The tasks were automated on mobile by end 2015, but by wallet and autofill services rather than by digital assistants: Apple Pay (Oct 2014) with an in-app checkout API, Android Pay (Sept 2015), browser autofill of addresses and cards. Assistants such as Siri or Google Now did not fill forms. The outcome happened through a different agent: partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Apple_Pay",
+     "title": "Apple Pay (Wikipedia)",
+     "date": "2026",
+     "shows": "Launched 20 Oct 2014 with an API for in-app checkout."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Pay_(payment_method)",
+     "title": "Google Pay (payment method) (Wikipedia)",
+     "date": "2026",
+     "shows": "Launched as Android Pay on 11 Sept 2015."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-011",
+   "verdict": "ungradable",
+   "reading": "By 2017 mobile commerce will be 50% of US digital commerce revenue.",
+   "mainstream_test": "D16 numeric: mobile share of US digital commerce revenue in 2017 (or 2016), from a commerce tracker.",
+   "reason": "Looked for eMarketer, comScore and Digital Commerce 360 mobile-share figures for 2016-2017; the pages were unavailable or did not give the year. Digital Commerce 360 reports mobile at 56.4% of transactions only in the 2025 holiday season. No fetched measure for 2017, so ungradable here although trackers of the period are generally recalled at roughly one third.",
+   "evidence": [
+    {
+     "url": "https://www.digitalcommerce360.com/article/us-ecommerce-sales/",
+     "title": "US ecommerce sales (Digital Commerce 360)",
+     "date": "2026",
+     "shows": "Mobile devices at 56.4% of transactions in the 2025 holiday season; no 2017 figure on the page."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-012",
+   "verdict": "hit",
+   "reading": "In 2015 interest in mobile payment will revive, with a significant rise in mobile commerce, helped by Apple Pay and competitors.",
+   "mainstream_test": "Event test: new major mobile payment launches and rising mobile commerce in 2015.",
+   "reason": "Apple Pay launched Oct 2014; Android Pay launched 11 Sept 2015 and Samsung Pay on 20 Aug 2015 (Korea) and 28 Sept 2015 (US). The renewed push in mobile payments by the major platforms happened in 2015 as stated.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Samsung_Pay",
+     "title": "Samsung Pay (Wikipedia)",
+     "date": "2026",
+     "shows": "Launched 20 Aug 2015 in South Korea and 28 Sept 2015 in the US."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Pay_(payment_method)",
+     "title": "Google Pay (payment method) (Wikipedia)",
+     "date": "2026",
+     "shows": "Launched as Android Pay on 11 Sept 2015."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-013",
+   "verdict": "ungradable",
+   "reading": "By 2017, 70% of successful digital business models will rely on deliberately unstable processes.",
+   "mainstream_test": "Share of successful digital business models with such processes, 2017.",
+   "reason": "No measure or population definition exists. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-014",
+   "verdict": "ungradable",
+   "reading": "By end 2015, 5% of global organizations will design \"supermaneuverable\" processes.",
+   "mainstream_test": "Survey share of organizations with such processes, 2014-2015.",
+   "reason": "No survey of organizations measures this. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-015",
+   "verdict": "ungradable",
+   "reading": "By 2017 half of consumer product investments will be redirected to customer experience innovation.",
+   "mainstream_test": "Share of consumer product investment going to CX innovation, 2017.",
+   "reason": "No public measure of investment allocation with this definition. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-016",
+   "verdict": "ungradable",
+   "reading": "By 2015 more than half of traditional consumer products will have native digital extensions.",
+   "mainstream_test": "Share of traditional consumer products with built-in digital extensions, 2015.",
+   "reason": "No census of consumer products by digital extension exists. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-017",
+   "verdict": "ungradable",
+   "reading": "By 2017 nearly 20% of durable goods e-tailers will use 3D printing for personalized products.",
+   "mainstream_test": "Survey share of durable goods e-tailers using 3D printing, 2016-2017.",
+   "reason": "No survey of this population found. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-018",
+   "verdict": "ungradable",
+   "reading": "By 2015 more than 90% of durable goods e-tailers will seek external partnerships for personalized products.",
+   "mainstream_test": "Survey share of durable goods e-tailers seeking such partnerships, 2014-2015.",
+   "reason": "No survey of this population found. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-019",
+   "verdict": "ungradable",
+   "reading": "By 2020 retailers using targeted messaging with indoor positioning will see a 5% sales increase.",
+   "mainstream_test": "D23 attributed value: sales uplift from IPS-targeted messaging, 2020.",
+   "reason": "Attributed value without a public measure. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2015 and Beyond",
+     "date": "2014-10-07",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-020",
+   "verdict": "hit",
+   "reading": "By 2016 retailers will make more offers based on a customer's location and time in store.",
+   "mainstream_test": "Event test: growth in location-triggered in-store offers by retailers by 2016.",
+   "reason": "Retailers deployed proximity beacons for in-store offers from late 2013: Apple activated iBeacons in its 254 US stores in Dec 2013, McDonald's used beacons for in-store special offers by Dec 2014, and other chains followed. The number of location-based retail offers rose over 2014-2016 as stated (directional claim, no amount).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/IBeacon",
+     "title": "iBeacon (Wikipedia)",
+     "date": "2026",
+     "shows": "Apple activated iBeacons in 254 US stores on 6 Dec 2013; McDonald's used beacons for in-store special offers (ref. Dec 2014)."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-001",
+   "verdict": "ungradable",
+   "reading": "By 2018, 20% of business content will be written by machines.",
+   "mainstream_test": "Share of business content authored by machines, 2018.",
+   "reason": "No public measure of machine-authored business content exists. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-002",
+   "verdict": "ungradable",
+   "reading": "By 2018 six billion connected things will be requesting support.",
+   "mainstream_test": "Count of connected things requesting support, 2018.",
+   "reason": "IoT installed-base estimates count connected devices, not devices requesting support (another quantity, D23). Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-003",
+   "verdict": "ungradable",
+   "reading": "By 2020 autonomous software agents outside human control will take part in 5% of all economic transactions.",
+   "mainstream_test": "Share of economic transactions involving autonomous agents, 2020.",
+   "reason": "No public measure. Algorithmic trading shares cover one market only. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-004",
+   "verdict": "hit",
+   "reading": "By 2018 more than 3 million workers worldwide will be managed by algorithmic \"robo-bosses\".",
+   "mainstream_test": "D16 numeric lower bound: count of workers whose work is assigned and monitored by algorithms, 2018; at or above 3 million = hit.",
+   "reason": "Uber alone had 3.9 million drivers on its platform in Q4 2018, all dispatched, rated and deactivated by algorithm; other platforms (Lyft, Didi, delivery apps) add more. The lower bound of 3 million was passed.",
+   "evidence": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000119312519103850/d647752ds1.htm",
+     "title": "Uber Technologies Form S-1",
+     "date": "2019-04-11",
+     "shows": "\"There were 3.9 million Drivers on our platform for the quarter ended December 31, 2018.\""
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-005",
+   "verdict": "ungradable",
+   "reading": "By end 2018, 20% of smart buildings will have suffered digital vandalism.",
+   "mainstream_test": "Share of smart buildings with a digital vandalism incident by 2018.",
+   "reason": "No survey or incident series measures this share. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-006",
+   "verdict": "ungradable",
+   "reading": "By 2018, 45% of the fastest-growing companies will have fewer employees than smart machines.",
+   "mainstream_test": "Share of fastest-growing firms with more smart machines than employees, 2018.",
+   "reason": "No measure of smart-machine instances per firm exists. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-007",
+   "verdict": "partial",
+   "reading": "By end 2018 customer digital assistants will recognize individuals by face and voice, across channels and partners.",
+   "mainstream_test": "Event test with parts: face recognition, voice recognition, and cross-channel/partner recognition by end 2018.",
+   "reason": "Face recognition of the user became mainstream on phones with Face ID (Nov 2017), and assistant speakers added per-user voice recognition (Alexa voice profiles and Google Voice Match, 2017). Recognition across channels and partners, one identity recognized by face and voice by different companies' assistants, did not happen by 2018. Partly happened: partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Face_ID",
+     "title": "Face ID (Wikipedia)",
+     "date": "2026",
+     "shows": "Face ID released 3 Nov 2017 with iPhone X, used for unlock and payments."
+    },
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim requires recognition across channels and partners; no such cross-company recognition found by 2018."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-008",
+   "verdict": "ungradable",
+   "reading": "By 2018 two million employees will be required to wear health and fitness trackers as a condition of employment.",
+   "mainstream_test": "Count of employees required to wear trackers, 2018.",
+   "reason": "No public count; corporate wellness tracker programmes reported in the period were voluntary. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-009",
+   "verdict": "miss",
+   "reading": "By 2020 smart agents will mediate 40% of mobile interactions and the post-app era will begin to dominate.",
+   "mainstream_test": "Two-part test: a 40% agent share of mobile interactions (no measure) and dominance of a post-app model by 2020.",
+   "reason": "The post-app era did not begin to dominate: app stores kept growing to 2020 (Apple App Store about 1.8 million apps in 2020, cumulative developer revenue $155 billion by 2020) and mobile use stayed app-centric. The 40% share has no measure, but the conjoined claim fails on its second part.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/App_Store_(Apple)",
+     "title": "App Store (Apple) (Wikipedia)",
+     "date": "2026",
+     "shows": "About 1.8 million apps in 2020; cumulative developer revenue reached $155 billion by 2020."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-010",
+   "verdict": "ungradable",
+   "reading": "Through 2020, 95% of cloud security failures will be the customer's fault.",
+   "mainstream_test": "Share of cloud security failures caused by customers, through 2020.",
+   "reason": "No incident census splits cloud failures by fault with this definition; reports of misconfiguration as a leading cause are not a share of all failures. Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2015-10-06-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2016-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2016 and Beyond",
+     "date": "2015-10-06",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-001",
+   "verdict": "ungradable",
+   "reading": "By 2020, 100 million consumers will shop using augmented reality.",
+   "mainstream_test": "Count of consumers who shopped with AR in 2020.",
+   "reason": "AR user counts (all uses) exist but no public count of consumers shopping in AR in 2019-2020 was found; AR users of any kind are another quantity (D23). Ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2016-10-18-gartner-reveals-top-predictions-for-it-organizations-and-users-in-2017-and-beyond",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users in 2017 and Beyond",
+     "date": "2016-10-18",
+     "shows": "Claim text; no public measure of the same quantity and population found."
+    }
+   ]
+  }
+ ]
+}
