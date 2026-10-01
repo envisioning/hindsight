@@ -1,0 +1,578 @@
+{
+ "rule": "D33",
+ "process": "Mechanical subject matching, then two blind rename checkers on the rest, adjudicator on disagreements, agent audit of agreed checks (D20, D11). Never a hit rate.",
+ "editions": [
+  "2011",
+  "2012",
+  "2013",
+  "2014",
+  "2015",
+  "2016",
+  "2017",
+  "2018",
+  "2019",
+  "2020",
+  "2021",
+  "2022",
+  "2023",
+  "2024",
+  "2025"
+ ],
+ "n": 78,
+ "counts": {
+  "renamed": 26,
+  "faded": 43,
+  "contested": 1,
+  "open": 8
+ },
+ "shares": {
+  "persisted": {
+   "k": 0,
+   "n": 69,
+   "share": 0,
+   "wilson95": [
+    0,
+    0.053
+   ]
+  },
+  "renamed": {
+   "k": 26,
+   "n": 69,
+   "share": 0.3768,
+   "wilson95": [
+    0.272,
+    0.495
+   ]
+  },
+  "faded": {
+   "k": 43,
+   "n": 69,
+   "share": 0.6232,
+   "wilson95": [
+    0.505,
+    0.728
+   ]
+  },
+  "recycled": {
+   "k": 0,
+   "n": 69,
+   "share": 0,
+   "wilson95": [
+    0,
+    0.053
+   ]
+  }
+ },
+ "audit": {
+  "seed": "d11:accenture-tech-vision:d33",
+  "sample": 50,
+  "audited": 50,
+  "confirmed": 49,
+  "corrected": 0,
+  "contested": 1,
+  "error_rate": 0.02,
+  "resolved_by_gap_rule": 0,
+  "residual_error_rate": 0.02
+ },
+ "verdicts": [
+  {
+   "id": "accenture-tech-vision-2011-001",
+   "edition": "2011",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2012-003"
+  },
+  {
+   "id": "accenture-tech-vision-2011-002",
+   "edition": "2011",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2013-003"
+  },
+  {
+   "id": "accenture-tech-vision-2011-003",
+   "edition": "2011",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2012-005"
+  },
+  {
+   "id": "accenture-tech-vision-2011-004",
+   "edition": "2011",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2011-005",
+   "edition": "2011",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2012-006"
+  },
+  {
+   "id": "accenture-tech-vision-2011-006",
+   "edition": "2011",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2011-007",
+   "edition": "2011",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2012-004"
+  },
+  {
+   "id": "accenture-tech-vision-2011-008",
+   "edition": "2011",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2012-001",
+   "edition": "2012",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2012-002",
+   "edition": "2012",
+   "verdict": "faded",
+   "status": "adjudicated",
+   "reason": "Bridging relational and non-relational data architectures; Data supply chain (2014) is about data flow across the organisation, not architecture."
+  },
+  {
+   "id": "accenture-tech-vision-2012-003",
+   "edition": "2012",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "accenture-tech-vision-2014-003"
+  },
+  {
+   "id": "accenture-tech-vision-2012-004",
+   "edition": "2012",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "accenture-tech-vision-2013-004"
+  },
+  {
+   "id": "accenture-tech-vision-2012-005",
+   "edition": "2012",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "accenture-tech-vision-2013-007"
+  },
+  {
+   "id": "accenture-tech-vision-2012-006",
+   "edition": "2012",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "accenture-tech-vision-2013-006"
+  },
+  {
+   "id": "accenture-tech-vision-2013-001",
+   "edition": "2013",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2015-001"
+  },
+  {
+   "id": "accenture-tech-vision-2013-002",
+   "edition": "2013",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2013-003",
+   "edition": "2013",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2013-004",
+   "edition": "2013",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2013-005",
+   "edition": "2013",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2013-006",
+   "edition": "2013",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2013-007",
+   "edition": "2013",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2014-001",
+   "edition": "2014",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2015-002"
+  },
+  {
+   "id": "accenture-tech-vision-2014-002",
+   "edition": "2014",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2016-002"
+  },
+  {
+   "id": "accenture-tech-vision-2014-003",
+   "edition": "2014",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2014-004",
+   "edition": "2014",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2014-005",
+   "edition": "2014",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2014-006",
+   "edition": "2014",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2015-001",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2017-004"
+  },
+  {
+   "id": "accenture-tech-vision-2015-002",
+   "edition": "2015",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2015-003",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2016-003"
+  },
+  {
+   "id": "accenture-tech-vision-2015-004",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2016-001"
+  },
+  {
+   "id": "accenture-tech-vision-2015-005",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2016-001"
+  },
+  {
+   "id": "accenture-tech-vision-2016-001",
+   "edition": "2016",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2016-002",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2017-003"
+  },
+  {
+   "id": "accenture-tech-vision-2016-003",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2017-002"
+  },
+  {
+   "id": "accenture-tech-vision-2016-004",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2017-005"
+  },
+  {
+   "id": "accenture-tech-vision-2016-005",
+   "edition": "2016",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2017-001",
+   "edition": "2017",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2017-002",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "accenture-tech-vision-2018-004"
+  },
+  {
+   "id": "accenture-tech-vision-2017-003",
+   "edition": "2017",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2017-004",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "accenture-tech-vision-2019-002"
+  },
+  {
+   "id": "accenture-tech-vision-2017-005",
+   "edition": "2017",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2018-001",
+   "edition": "2018",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2018-002",
+   "edition": "2018",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "renamed",
+   "reason": "contest: DARQ Power is a bundle of four distinct technologies (DLT, AI, XR, quantum), not a broader version of XR; XR is one member. That is the same broad field, not the same phenomenon one step broader. Also inconsistent with the agreed faded for 2019-001 (DARQ), where AI and Me was not taken as one step narrower. Likely faded unless 2020 The I in Experience is read as XR (not supported by its claim text)."
+  },
+  {
+   "id": "accenture-tech-vision-2018-003",
+   "edition": "2018",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2018-004",
+   "edition": "2018",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2018-005",
+   "edition": "2018",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2019-001",
+   "edition": "2019",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2019-002",
+   "edition": "2019",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2020-001"
+  },
+  {
+   "id": "accenture-tech-vision-2019-003",
+   "edition": "2019",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2020-002"
+  },
+  {
+   "id": "accenture-tech-vision-2019-004",
+   "edition": "2019",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2019-005",
+   "edition": "2019",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2020-001",
+   "edition": "2020",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2020-002",
+   "edition": "2020",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2020-003",
+   "edition": "2020",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2020-004",
+   "edition": "2020",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2020-005",
+   "edition": "2020",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2021-001",
+   "edition": "2021",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2021-002",
+   "edition": "2021",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2021-003",
+   "edition": "2021",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2021-004",
+   "edition": "2021",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2021-005",
+   "edition": "2021",
+   "verdict": "faded",
+   "status": "adjudicated",
+   "reason": "Multiparty systems for partnering; 2023 Your data, my data, our data is about data transparency."
+  },
+  {
+   "id": "accenture-tech-vision-2022-001",
+   "edition": "2022",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "accenture-tech-vision-2024-003"
+  },
+  {
+   "id": "accenture-tech-vision-2022-002",
+   "edition": "2022",
+   "verdict": "faded",
+   "status": "agreed"
+  },
+  {
+   "id": "accenture-tech-vision-2022-003",
+   "edition": "2022",
+   "verdict": "faded",
+   "status": "adjudicated",
+   "reason": "Synthetic content and authenticity; Generalizing AI (2023) is foundation models as a platform."
+  },
+  {
+   "id": "accenture-tech-vision-2022-004",
+   "edition": "2022",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2023-004"
+  },
+  {
+   "id": "accenture-tech-vision-2023-001",
+   "edition": "2023",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2023-002",
+   "edition": "2023",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2023-003",
+   "edition": "2023",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "accenture-tech-vision-2024-001"
+  },
+  {
+   "id": "accenture-tech-vision-2023-004",
+   "edition": "2023",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2024-001",
+   "edition": "2024",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "accenture-tech-vision-2024-002",
+   "edition": "2024",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "accenture-tech-vision-2024-003",
+   "edition": "2024",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "accenture-tech-vision-2024-004",
+   "edition": "2024",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "accenture-tech-vision-2025-001",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "accenture-tech-vision-2025-002",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "accenture-tech-vision-2025-003",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "accenture-tech-vision-2025-004",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  }
+ ]
+}

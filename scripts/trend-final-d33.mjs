@@ -1,0 +1,107 @@
+// Final trend verdicts under D33, per trend source.
+// Usage: node scripts/trend-final-d33.mjs <source|--all>
+// Reads data/raw/<source>/: trends-d33.json (mechanical rows), renames-d33-checkerA/B.json
+// (two blind rename checkers), renames-adjudicated-d33.json (adjudicator on disagreements) and
+// renames-audit-d33.json (agent audit of agreed checks: correct replaces, contest withholds).
+// Verdicts: persisted (shared subject in the next two editions, or a wording variant: "same"),
+// renamed, faded, recycled, open (fewer than two later editions), gap (faded, but a next edition
+// is a partial capture: not counted). Writes final-d33.json with
+// shares over graded trends (not open), each with a Wilson 95% interval. Never a hit rate (D33).
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import path from "node:path";
+
+const SOURCES = ["accenture-tech-vision", "a16z-big-ideas", "deloitte-tech-trends", "ftsg-tech-trends", "mckinsey-tech-trends", "trendwatching"];
+const arg = process.argv[2];
+const sources = arg === "--all" ? SOURCES : [arg];
+if (!arg || !sources.every((s) => SOURCES.includes(s))) throw new Error(`usage: trend-final-d33.mjs <${SOURCES.join("|")}|--all>`);
+const root = path.resolve(import.meta.dirname, "..");
+
+function wilson(k, n, z = 1.96) {
+	if (!n) return null;
+	const p = k / n;
+	const d = 1 + (z * z) / n;
+	const c = p + (z * z) / (2 * n);
+	const r = z * Math.sqrt((p * (1 - p)) / n + (z * z) / (4 * n * n));
+	return [(c - r) / d, (c + r) / d].map((x) => Math.round(x * 1000) / 1000);
+}
+
+for (const source of sources) {
+	const dir = path.join(root, "data/raw", source);
+	const read = (f) => (existsSync(path.join(dir, f)) ? JSON.parse(readFileSync(path.join(dir, f), "utf8")) : null);
+	const mech = read("trends-d33.json");
+	const A = new Map((read("renames-d33-checkerA.json")?.verdicts ?? []).map((v) => [v.id, v]));
+	const B = new Map((read("renames-d33-checkerB.json")?.verdicts ?? []).map((v) => [v.id, v]));
+	const adj = new Map((read("renames-adjudicated-d33.json")?.verdicts ?? []).map((v) => [v.id, v]));
+	const audit = read("renames-audit-d33.json");
+	const recs = audit?.records ?? {};
+	const toVerdict = (v) => (v === "same" ? "persisted" : v);
+	const rows = [];
+	let pending = 0;
+	// A faded verdict is only supported where both next editions were captured in full. Where the
+	// window includes a partial edition, faded becomes `gap`: reported, not counted in any share.
+	const partial = new Set(mech.partial_editions ?? []);
+	const nextOf = new Map(mech.rows.filter((r) => r.status === "candidate").map((r) => [r.id, r.next_editions ?? []]));
+	const gapIfPartial = (row) => (row.verdict === "faded" && (nextOf.get(row.id) ?? []).some((e) => partial.has(typeof e === "string" ? e : e.edition)) ? { ...row, verdict: "gap", was: "faded", reason: [row.reason, "A next edition is a partial capture; not finding the trend there is not evidence it faded."].filter(Boolean).join(" ") } : row);
+	for (const r of mech.rows) {
+		if (r.status !== "candidate") {
+			rows.push({ id: r.id, edition: r.edition, verdict: r.status, status: "computed", ...(r.matched_in ? { matched_in: r.matched_in } : {}) });
+			continue;
+		}
+		const a = A.get(r.id);
+		const b = B.get(r.id);
+		if (!a || !b) {
+			pending++;
+			continue;
+		}
+		if (a.verdict === b.verdict) {
+			const rec = recs[r.id];
+			if (rec?.decision === "correct") rows.push({ id: r.id, edition: r.edition, verdict: toVerdict(rec.corrected_verdict), status: "corrected", was: toVerdict(a.verdict), match_id: rec.corrected_match_id, reason: rec.note });
+			else if (rec?.decision === "contest" && a.verdict === "faded" && (r.next_editions ?? []).some((e) => partial.has(e)))
+				// The audit contested a faded verdict because a next edition is partial: the gap rule resolves it.
+				rows.push({ id: r.id, edition: r.edition, verdict: "faded", status: "audited", reason: rec.note });
+			else if (rec?.decision === "contest") rows.push({ id: r.id, edition: r.edition, verdict: "contested", status: "contested", was: toVerdict(a.verdict), reason: rec.note });
+			else rows.push({ id: r.id, edition: r.edition, verdict: toVerdict(a.verdict), status: rec ? "audited" : "agreed", ...(a.match_id ? { match_id: a.match_id } : {}) });
+		} else {
+			const j = adj.get(r.id);
+			rows.push(j ? { id: r.id, edition: r.edition, verdict: toVerdict(j.verdict), status: "adjudicated", ...(j.match_id ? { match_id: j.match_id } : {}), reason: j.reason } : { id: r.id, edition: r.edition, verdict: "contested", status: "contested" });
+		}
+	}
+	for (let i = 0; i < rows.length; i++) rows[i] = gapIfPartial(rows[i]);
+	const counts = {};
+	for (const r of rows) counts[r.verdict] = (counts[r.verdict] ?? 0) + 1;
+	const graded = ["persisted", "renamed", "faded", "recycled"].reduce((s, v) => s + (counts[v] ?? 0), 0);
+	const share = (v) => (graded >= 20 ? { k: counts[v] ?? 0, n: graded, share: Math.round(((counts[v] ?? 0) / graded) * 10000) / 10000, wilson95: wilson(counts[v] ?? 0, graded) } : null);
+	const recList = Object.values(recs);
+	const auditOut = audit
+		? {
+				seed: audit.seed,
+				sample: audit.sample.length,
+				audited: recList.length,
+				confirmed: recList.filter((x) => x.decision === "confirm").length,
+				corrected: recList.filter((x) => x.decision === "correct").length,
+				contested: recList.filter((x) => x.decision === "contest").length,
+			}
+		: null;
+	if (auditOut) {
+		auditOut.error_rate = auditOut.audited ? Math.round(((auditOut.corrected + auditOut.contested) / auditOut.audited) * 1000) / 1000 : null;
+		// Contests resolved by the partial-edition gap rule are not residual errors.
+		const resolved = Object.entries(recs).filter(([id, x]) => x.decision === "contest" && rows.find((r) => r.id === id)?.verdict === "gap").length;
+		auditOut.resolved_by_gap_rule = resolved;
+		auditOut.residual_error_rate = auditOut.audited ? Math.round(((auditOut.corrected + auditOut.contested - resolved) / auditOut.audited) * 1000) / 1000 : null;
+	}
+	const out = {
+		rule: "D33",
+		process: "Mechanical subject matching, then two blind rename checkers on the rest, adjudicator on disagreements, agent audit of agreed checks (D20, D11). Never a hit rate.",
+		editions: mech.editions,
+		...(mech.capture_gaps_before ? { capture_gaps_before: mech.capture_gaps_before } : {}),
+		n: rows.length,
+		...(pending ? { pending } : {}),
+		counts,
+		shares: graded >= 20 ? { persisted: share("persisted"), renamed: share("renamed"), faded: share("faded"), recycled: share("recycled") } : null,
+		...(graded < 20 ? { shares_withheld: `D11: ${graded} graded trends, fewer than 20; counts only.` } : {}),
+		audit: auditOut,
+		verdicts: rows.sort((x, y) => x.id.localeCompare(y.id)),
+	};
+	writeFileSync(path.join(dir, "final-d33.json"), `${JSON.stringify(out, null, 1)}\n`);
+	console.log(source, JSON.stringify({ n: out.n, pending, counts, faded: out.shares?.faded?.share, audit: auditOut?.error_rate }));
+}

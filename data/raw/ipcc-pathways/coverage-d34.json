@@ -1,0 +1,975 @@
+{
+ "rule": "D34",
+ "note": "Pathway coverage: is the observed value inside the edition's scenario range for that metric and year? Covered share is a property of the set, never a hit rate. Arithmetic, as D19.",
+ "counts": {
+  "covered": 11,
+  "partly_covered": 7,
+  "not_covered": 0,
+  "no_observed": 7,
+  "unmapped_claims": 4
+ },
+ "coverage_share": 0.6111,
+ "by_edition": {
+  "1992": {
+   "covered": 0,
+   "partly_covered": 6,
+   "not_covered": 0
+  },
+  "2000": {
+   "covered": 6,
+   "partly_covered": 0,
+   "not_covered": 0
+  },
+  "2013": {
+   "covered": 5,
+   "partly_covered": 0,
+   "not_covered": 0
+  },
+  "2021": {
+   "covered": 0,
+   "partly_covered": 1,
+   "not_covered": 0
+  }
+ },
+ "rows": [
+  {
+   "edition": "1992",
+   "metric": "CO2 concentration, as reported in the SAR",
+   "year": 2000,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-1992-017",
+     "scenario": "IS92a",
+     "value": 372
+    }
+   ],
+   "range": [
+    372,
+    372
+   ],
+   "scenarios": 1,
+   "observed": 368.96,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0082,
+   "closest_scenario": "IS92a",
+   "closest_id": "ipcc-pathways-1992-017"
+  },
+  {
+   "edition": "1992",
+   "metric": "CO2 concentration, as reported in the SAR",
+   "year": 2010,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-1992-018",
+     "scenario": "IS92a",
+     "value": 393
+    }
+   ],
+   "range": [
+    393,
+    393
+   ],
+   "scenarios": 1,
+   "observed": 388.75,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0108,
+   "closest_scenario": "IS92a",
+   "closest_id": "ipcc-pathways-1992-018"
+  },
+  {
+   "edition": "1992",
+   "metric": "CO2 concentration, as reported in the SAR",
+   "year": 2020,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-1992-019",
+     "scenario": "IS92a",
+     "value": 418
+    }
+   ],
+   "range": [
+    418,
+    418
+   ],
+   "scenarios": 1,
+   "observed": 412.44,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0133,
+   "closest_scenario": "IS92a",
+   "closest_id": "ipcc-pathways-1992-019"
+  },
+  {
+   "edition": "1992",
+   "metric": "CO2 emissions from fossil fuel and industrial processes",
+   "year": 2010,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-1992-015",
+     "scenario": "IS92a",
+     "value": 8.68
+    }
+   ],
+   "range": [
+    8.68,
+    8.68
+   ],
+   "scenarios": 1,
+   "observed": 9.0933,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0476,
+   "closest_scenario": "IS92a",
+   "closest_id": "ipcc-pathways-1992-015"
+  },
+  {
+   "edition": "1992",
+   "metric": "CO2 emissions from fossil fuel and industrial processes",
+   "year": 2020,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-1992-016",
+     "scenario": "IS92a",
+     "value": 10.26
+    }
+   ],
+   "range": [
+    10.26,
+    10.26
+   ],
+   "scenarios": 1,
+   "observed": 9.5956,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0648,
+   "closest_scenario": "IS92a",
+   "closest_id": "ipcc-pathways-1992-016"
+  },
+  {
+   "edition": "1992",
+   "metric": "CO2 emissions, total (energy, deforestation, cement)",
+   "year": 2000,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-1992-009",
+     "scenario": "IS92a",
+     "value": 8.4
+    }
+   ],
+   "range": [
+    8.4,
+    8.4
+   ],
+   "scenarios": 1,
+   "observed": 8.6401,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0286,
+   "closest_scenario": "IS92a",
+   "closest_id": "ipcc-pathways-1992-009"
+  },
+  {
+   "edition": "1992",
+   "metric": "CO2 emissions, total (energy, deforestation, cement)",
+   "year": 2025,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-1992-010",
+     "scenario": "IS92a",
+     "value": 12.2
+    }
+   ],
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year"
+  },
+  {
+   "edition": "2000",
+   "metric": "CH4 total",
+   "year": 2010,
+   "unit": "Mt CH4/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-009",
+     "scenario": "A1B",
+     "value": 373
+    },
+    {
+     "id": "ipcc-pathways-2000-022",
+     "scenario": "A1FI",
+     "value": 359
+    },
+    {
+     "id": "ipcc-pathways-2000-035",
+     "scenario": "A1T",
+     "value": 362
+    },
+    {
+     "id": "ipcc-pathways-2000-048",
+     "scenario": "A2",
+     "value": 370
+    },
+    {
+     "id": "ipcc-pathways-2000-061",
+     "scenario": "B1",
+     "value": 349
+    },
+    {
+     "id": "ipcc-pathways-2000-074",
+     "scenario": "B2",
+     "value": 349
+    }
+   ],
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year"
+  },
+  {
+   "edition": "2000",
+   "metric": "CH4 total",
+   "year": 2020,
+   "unit": "Mt CH4/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-010",
+     "scenario": "A1B",
+     "value": 421
+    },
+    {
+     "id": "ipcc-pathways-2000-023",
+     "scenario": "A1FI",
+     "value": 416
+    },
+    {
+     "id": "ipcc-pathways-2000-036",
+     "scenario": "A1T",
+     "value": 415
+    },
+    {
+     "id": "ipcc-pathways-2000-049",
+     "scenario": "A2",
+     "value": 424
+    },
+    {
+     "id": "ipcc-pathways-2000-062",
+     "scenario": "B1",
+     "value": 377
+    },
+    {
+     "id": "ipcc-pathways-2000-075",
+     "scenario": "B2",
+     "value": 384
+    }
+   ],
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year"
+  },
+  {
+   "edition": "2000",
+   "metric": "CO2 abundance, ISAM model (reference)",
+   "year": 2010,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-012",
+     "scenario": "A1B",
+     "value": 391
+    },
+    {
+     "id": "ipcc-pathways-2000-025",
+     "scenario": "A1FI",
+     "value": 389
+    },
+    {
+     "id": "ipcc-pathways-2000-038",
+     "scenario": "A1T",
+     "value": 389
+    },
+    {
+     "id": "ipcc-pathways-2000-051",
+     "scenario": "A2",
+     "value": 390
+    },
+    {
+     "id": "ipcc-pathways-2000-064",
+     "scenario": "B1",
+     "value": 388
+    },
+    {
+     "id": "ipcc-pathways-2000-077",
+     "scenario": "B2",
+     "value": 388
+    }
+   ],
+   "range": [
+    388,
+    391
+   ],
+   "scenarios": 6,
+   "observed": 388.75,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "A1FI",
+   "closest_id": "ipcc-pathways-2000-025"
+  },
+  {
+   "edition": "2000",
+   "metric": "CO2 abundance, ISAM model (reference)",
+   "year": 2020,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-013",
+     "scenario": "A1B",
+     "value": 420
+    },
+    {
+     "id": "ipcc-pathways-2000-026",
+     "scenario": "A1FI",
+     "value": 417
+    },
+    {
+     "id": "ipcc-pathways-2000-039",
+     "scenario": "A1T",
+     "value": 412
+    },
+    {
+     "id": "ipcc-pathways-2000-052",
+     "scenario": "A2",
+     "value": 417
+    },
+    {
+     "id": "ipcc-pathways-2000-065",
+     "scenario": "B1",
+     "value": 412
+    },
+    {
+     "id": "ipcc-pathways-2000-078",
+     "scenario": "B2",
+     "value": 408
+    }
+   ],
+   "range": [
+    408,
+    420
+   ],
+   "scenarios": 6,
+   "observed": 412.44,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "A1T",
+   "closest_id": "ipcc-pathways-2000-039"
+  },
+  {
+   "edition": "2000",
+   "metric": "Fossil Fuel CO2",
+   "year": 2010,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-003",
+     "scenario": "A1B",
+     "value": 9.68
+    },
+    {
+     "id": "ipcc-pathways-2000-016",
+     "scenario": "A1FI",
+     "value": 8.65
+    },
+    {
+     "id": "ipcc-pathways-2000-029",
+     "scenario": "A1T",
+     "value": 8.33
+    },
+    {
+     "id": "ipcc-pathways-2000-042",
+     "scenario": "A2",
+     "value": 8.46
+    },
+    {
+     "id": "ipcc-pathways-2000-055",
+     "scenario": "B1",
+     "value": 8.5
+    },
+    {
+     "id": "ipcc-pathways-2000-068",
+     "scenario": "B2",
+     "value": 7.99
+    }
+   ],
+   "range": [
+    7.99,
+    9.68
+   ],
+   "scenarios": 6,
+   "observed": 9.0933,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "A1FI",
+   "closest_id": "ipcc-pathways-2000-016",
+   "note": "SRES fossil CO2 includes cement; GCB fossil and industrial, gross of the carbonation sink."
+  },
+  {
+   "edition": "2000",
+   "metric": "Fossil Fuel CO2",
+   "year": 2020,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-004",
+     "scenario": "A1B",
+     "value": 12.12
+    },
+    {
+     "id": "ipcc-pathways-2000-017",
+     "scenario": "A1FI",
+     "value": 11.19
+    },
+    {
+     "id": "ipcc-pathways-2000-030",
+     "scenario": "A1T",
+     "value": 10
+    },
+    {
+     "id": "ipcc-pathways-2000-043",
+     "scenario": "A2",
+     "value": 11.01
+    },
+    {
+     "id": "ipcc-pathways-2000-056",
+     "scenario": "B1",
+     "value": 10
+    },
+    {
+     "id": "ipcc-pathways-2000-069",
+     "scenario": "B2",
+     "value": 9.02
+    }
+   ],
+   "range": [
+    9.02,
+    12.12
+   ],
+   "scenarios": 6,
+   "observed": 9.5956,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "A1T",
+   "closest_id": "ipcc-pathways-2000-030",
+   "note": "SRES fossil CO2 includes cement; GCB fossil and industrial, gross of the carbonation sink."
+  },
+  {
+   "edition": "2000",
+   "metric": "Total CO2 (fossil fuel and other)",
+   "year": 2010,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-006",
+     "scenario": "A1B",
+     "value": 10.88
+    },
+    {
+     "id": "ipcc-pathways-2000-019",
+     "scenario": "A1FI",
+     "value": 9.73
+    },
+    {
+     "id": "ipcc-pathways-2000-032",
+     "scenario": "A1T",
+     "value": 9.38
+    },
+    {
+     "id": "ipcc-pathways-2000-045",
+     "scenario": "A2",
+     "value": 9.58
+    },
+    {
+     "id": "ipcc-pathways-2000-058",
+     "scenario": "B1",
+     "value": 9.28
+    },
+    {
+     "id": "ipcc-pathways-2000-071",
+     "scenario": "B2",
+     "value": 8.78
+    }
+   ],
+   "range": [
+    8.78,
+    10.88
+   ],
+   "scenarios": 6,
+   "observed": 10.8721,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "A1B",
+   "closest_id": "ipcc-pathways-2000-006",
+   "note": "Land-use CO2 in the scenarios comes from integrated assessment models, in GCB from bookkeeping models."
+  },
+  {
+   "edition": "2000",
+   "metric": "Total CO2 (fossil fuel and other)",
+   "year": 2020,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2000-007",
+     "scenario": "A1B",
+     "value": 12.64
+    },
+    {
+     "id": "ipcc-pathways-2000-020",
+     "scenario": "A1FI",
+     "value": 12.73
+    },
+    {
+     "id": "ipcc-pathways-2000-033",
+     "scenario": "A1T",
+     "value": 10.26
+    },
+    {
+     "id": "ipcc-pathways-2000-046",
+     "scenario": "A2",
+     "value": 12.25
+    },
+    {
+     "id": "ipcc-pathways-2000-059",
+     "scenario": "B1",
+     "value": 10.63
+    },
+    {
+     "id": "ipcc-pathways-2000-072",
+     "scenario": "B2",
+     "value": 9.05
+    }
+   ],
+   "range": [
+    9.05,
+    12.73
+   ],
+   "scenarios": 6,
+   "observed": 10.8283,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "B1",
+   "closest_id": "ipcc-pathways-2000-059",
+   "note": "Land-use CO2 in the scenarios comes from integrated assessment models, in GCB from bookkeeping models."
+  },
+  {
+   "edition": "2013",
+   "metric": "CH4 emissions",
+   "year": 2015,
+   "unit": "Mt CH4/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-009",
+     "scenario": "RCP2.6",
+     "value": 296.7
+    },
+    {
+     "id": "ipcc-pathways-2013-025",
+     "scenario": "RCP4.5",
+     "value": 329.03
+    },
+    {
+     "id": "ipcc-pathways-2013-041",
+     "scenario": "RCP6.0",
+     "value": 318.17
+    },
+    {
+     "id": "ipcc-pathways-2013-057",
+     "scenario": "RCP8.5",
+     "value": 383.23
+    }
+   ],
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year"
+  },
+  {
+   "edition": "2013",
+   "metric": "CH4 emissions",
+   "year": 2020,
+   "unit": "Mt CH4/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-010",
+     "scenario": "RCP2.6",
+     "value": 256.77
+    },
+    {
+     "id": "ipcc-pathways-2013-026",
+     "scenario": "RCP4.5",
+     "value": 335.51
+    },
+    {
+     "id": "ipcc-pathways-2013-042",
+     "scenario": "RCP6.0",
+     "value": 311.65
+    },
+    {
+     "id": "ipcc-pathways-2013-058",
+     "scenario": "RCP8.5",
+     "value": 419.07
+    }
+   ],
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year"
+  },
+  {
+   "edition": "2013",
+   "metric": "CH4 emissions",
+   "year": 2025,
+   "unit": "Mt CH4/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-011",
+     "scenario": "RCP2.6",
+     "value": 246.2
+    },
+    {
+     "id": "ipcc-pathways-2013-027",
+     "scenario": "RCP4.5",
+     "value": 337.25
+    },
+    {
+     "id": "ipcc-pathways-2013-043",
+     "scenario": "RCP6.0",
+     "value": 318.98
+    },
+    {
+     "id": "ipcc-pathways-2013-059",
+     "scenario": "RCP8.5",
+     "value": 451.64
+    }
+   ],
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year"
+  },
+  {
+   "edition": "2013",
+   "metric": "CO2 concentration, annual global mean",
+   "year": 2015,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-014",
+     "scenario": "RCP2.6",
+     "value": 400.68
+    },
+    {
+     "id": "ipcc-pathways-2013-030",
+     "scenario": "RCP4.5",
+     "value": 399.97
+    },
+    {
+     "id": "ipcc-pathways-2013-046",
+     "scenario": "RCP6.0",
+     "value": 399.39
+    },
+    {
+     "id": "ipcc-pathways-2013-062",
+     "scenario": "RCP8.5",
+     "value": 401.63
+    }
+   ],
+   "range": [
+    399.39,
+    401.63
+   ],
+   "scenarios": 4,
+   "observed": 399.65,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "RCP6.0",
+   "closest_id": "ipcc-pathways-2013-046"
+  },
+  {
+   "edition": "2013",
+   "metric": "CO2 concentration, annual global mean",
+   "year": 2020,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-015",
+     "scenario": "RCP2.6",
+     "value": 412.07
+    },
+    {
+     "id": "ipcc-pathways-2013-031",
+     "scenario": "RCP4.5",
+     "value": 411.13
+    },
+    {
+     "id": "ipcc-pathways-2013-047",
+     "scenario": "RCP6.0",
+     "value": 409.36
+    },
+    {
+     "id": "ipcc-pathways-2013-063",
+     "scenario": "RCP8.5",
+     "value": 415.78
+    }
+   ],
+   "range": [
+    409.36,
+    415.78
+   ],
+   "scenarios": 4,
+   "observed": 412.44,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "RCP2.6",
+   "closest_id": "ipcc-pathways-2013-015"
+  },
+  {
+   "edition": "2013",
+   "metric": "CO2 concentration, annual global mean",
+   "year": 2025,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-016",
+     "scenario": "RCP2.6",
+     "value": 422.52
+    },
+    {
+     "id": "ipcc-pathways-2013-032",
+     "scenario": "RCP4.5",
+     "value": 422.66
+    },
+    {
+     "id": "ipcc-pathways-2013-048",
+     "scenario": "RCP6.0",
+     "value": 419.04
+    },
+    {
+     "id": "ipcc-pathways-2013-064",
+     "scenario": "RCP8.5",
+     "value": 431.47
+    }
+   ],
+   "range": [
+    419.04,
+    431.47
+   ],
+   "scenarios": 4,
+   "observed": 425.62,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "RCP4.5",
+   "closest_id": "ipcc-pathways-2013-032"
+  },
+  {
+   "edition": "2013",
+   "metric": "Fossil & Industrial CO2 (fossil, cement, gas flaring and bunker fuels)",
+   "year": 2015,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-004",
+     "scenario": "RCP2.6",
+     "value": 9.0546
+    },
+    {
+     "id": "ipcc-pathways-2013-020",
+     "scenario": "RCP4.5",
+     "value": 9.2394
+    },
+    {
+     "id": "ipcc-pathways-2013-036",
+     "scenario": "RCP6.0",
+     "value": 8.731
+    },
+    {
+     "id": "ipcc-pathways-2013-052",
+     "scenario": "RCP8.5",
+     "value": 10.2316
+    }
+   ],
+   "range": [
+    8.731,
+    10.2316
+   ],
+   "scenarios": 4,
+   "observed": 9.6625,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "RCP4.5",
+   "closest_id": "ipcc-pathways-2013-020"
+  },
+  {
+   "edition": "2013",
+   "metric": "Fossil & Industrial CO2 (fossil, cement, gas flaring and bunker fuels)",
+   "year": 2020,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-005",
+     "scenario": "RCP2.6",
+     "value": 9.2877
+    },
+    {
+     "id": "ipcc-pathways-2013-021",
+     "scenario": "RCP4.5",
+     "value": 9.8715
+    },
+    {
+     "id": "ipcc-pathways-2013-037",
+     "scenario": "RCP6.0",
+     "value": 8.9504
+    },
+    {
+     "id": "ipcc-pathways-2013-053",
+     "scenario": "RCP8.5",
+     "value": 11.5375
+    }
+   ],
+   "range": [
+    8.9504,
+    11.5375
+   ],
+   "scenarios": 4,
+   "observed": 9.5956,
+   "observed_series": "gcb",
+   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "RCP4.5",
+   "closest_id": "ipcc-pathways-2013-021"
+  },
+  {
+   "edition": "2013",
+   "metric": "Fossil & Industrial CO2 (fossil, cement, gas flaring and bunker fuels)",
+   "year": 2025,
+   "unit": "GtC/yr",
+   "values": [
+    {
+     "id": "ipcc-pathways-2013-006",
+     "scenario": "RCP2.6",
+     "value": 8.2223
+    },
+    {
+     "id": "ipcc-pathways-2013-022",
+     "scenario": "RCP4.5",
+     "value": 10.4124
+    },
+    {
+     "id": "ipcc-pathways-2013-038",
+     "scenario": "RCP6.0",
+     "value": 9.4727
+    },
+    {
+     "id": "ipcc-pathways-2013-054",
+     "scenario": "RCP8.5",
+     "value": 12.6883
+    }
+   ],
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year"
+  },
+  {
+   "edition": "2021",
+   "metric": "CO2 concentration, annual global mean",
+   "year": 2025,
+   "unit": "ppm",
+   "values": [
+    {
+     "id": "ipcc-pathways-2021-008",
+     "scenario": "SSP1-1.9",
+     "value": 426.52
+    },
+    {
+     "id": "ipcc-pathways-2021-016",
+     "scenario": "SSP1-2.6",
+     "value": 427.67
+    },
+    {
+     "id": "ipcc-pathways-2021-024",
+     "scenario": "SSP2-4.5",
+     "value": 429.03
+    },
+    {
+     "id": "ipcc-pathways-2021-032",
+     "scenario": "SSP3-7.0",
+     "value": 432.35
+    },
+    {
+     "id": "ipcc-pathways-2021-040",
+     "scenario": "SSP5-8.5",
+     "value": 431.83
+    }
+   ],
+   "range": [
+    426.52,
+    432.35
+   ],
+   "scenarios": 5,
+   "observed": 425.62,
+   "observed_series": "noaa",
+   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0021,
+   "closest_scenario": "SSP1-1.9",
+   "closest_id": "ipcc-pathways-2021-008"
+  }
+ ]
+}

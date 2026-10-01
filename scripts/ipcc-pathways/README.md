@@ -41,3 +41,19 @@ python3 scripts/ipcc-pathways/build.py --in <download folder>
 ```
 
 Writes the five edition files to `data/raw/ipcc-pathways/`. Entry order is fixed by the script (claim ids are positions, D15): do not reorder the tables in `build.py` after the first normalize. `INDEX.md` and `PROGRESS.md` are written by hand.
+
+## Observed values (`observed.py`)
+
+Writes `data/raw/ipcc-pathways/realized.json` (GCB 2025 CO2 emissions, NOAA global CO2, EDGAR CH4, Global Methane Budget top-down totals). Reuses `scripts/shell-scenarios/xlsx_dump.py`. Inputs, downloaded with `curl -sL -A "Mozilla/5.0" -o <name> <url>` into a folder outside the repo:
+
+| File name | URL |
+|---|---|
+| `gcb-2025-global.xlsx` | https://globalcarbonbudget.org/download/2341/ (Global Carbon Budget v2025 xlsx, from https://globalcarbonbudget.org/datahub/the-latest-gcb-data-2025/) |
+| `noaa-co2-annmean-gl.txt` | https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt |
+| `EDGAR_CH4_1970_2025.xlsx` | unzip https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EDGAR/datasets/EDGAR_2026_GHG/EDGAR_CH4_1970_2025.zip |
+
+GCB 2025 projections for 2025 and the Global Methane Budget values are transcribed in the script from the paper abstracts (https://essd.copernicus.org/articles/18/3211/2026/, https://essd.copernicus.org/articles/17/1873/2025/).
+
+```
+python3 scripts/ipcc-pathways/observed.py <input_dir>
+```

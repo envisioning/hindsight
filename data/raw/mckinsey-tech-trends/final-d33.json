@@ -1,0 +1,608 @@
+{
+ "rule": "D33",
+ "process": "Mechanical subject matching, then two blind rename checkers on the rest, adjudicator on disagreements, agent audit of agreed checks (D20, D11). Never a hit rate.",
+ "editions": [
+  "2021",
+  "2022",
+  "2023",
+  "2024",
+  "2025",
+  "2026"
+ ],
+ "n": 81,
+ "counts": {
+  "faded": 3,
+  "persisted": 37,
+  "renamed": 14,
+  "open": 27
+ },
+ "shares": {
+  "persisted": {
+   "k": 37,
+   "n": 54,
+   "share": 0.6852,
+   "wilson95": [
+    0.553,
+    0.793
+   ]
+  },
+  "renamed": {
+   "k": 14,
+   "n": 54,
+   "share": 0.2593,
+   "wilson95": [
+    0.161,
+    0.389
+   ]
+  },
+  "faded": {
+   "k": 3,
+   "n": 54,
+   "share": 0.0556,
+   "wilson95": [
+    0.019,
+    0.151
+   ]
+  },
+  "recycled": {
+   "k": 0,
+   "n": 54,
+   "share": 0,
+   "wilson95": [
+    0,
+    0.066
+   ]
+  }
+ },
+ "audit": {
+  "seed": "d11:mckinsey-tech-trends:d33",
+  "sample": 18,
+  "audited": 18,
+  "confirmed": 18,
+  "corrected": 0,
+  "contested": 0,
+  "error_rate": 0,
+  "resolved_by_gap_rule": 0,
+  "residual_error_rate": 0
+ },
+ "verdicts": [
+  {
+   "id": "mckinsey-tech-trends-2021-001",
+   "edition": "2021",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-003",
+   "edition": "2021",
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "mckinsey-tech-trends-2022-001",
+   "reason": "Future of connectivity and Advanced connectivity are wording variants."
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-005",
+   "edition": "2021",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2022"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-007",
+   "edition": "2021",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2022-015"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-009",
+   "edition": "2021",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2022"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-010",
+   "edition": "2021",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2022-012"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-011",
+   "edition": "2021",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2022-017"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-013",
+   "edition": "2021",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2022-022"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-014",
+   "edition": "2021",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-015",
+   "edition": "2021",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2022-024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-001",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2023-011"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-003",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-004",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-008",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-011",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-012",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-015",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-017",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-021",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-022",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-024",
+   "edition": "2022",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2023-027"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-028",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-031",
+   "edition": "2022",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2023"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-035",
+   "edition": "2022",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2023-028"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-001",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-002",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-004",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-007",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-009",
+   "edition": "2023",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2024-006"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-010",
+   "edition": "2023",
+   "verdict": "faded",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-011",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-012",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-015",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-016",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-017",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-021",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-024",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-027",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-028",
+   "edition": "2023",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-001",
+   "edition": "2024",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2025-002"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-003",
+   "edition": "2024",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2025-002"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-004",
+   "edition": "2024",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2025-002"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-005",
+   "edition": "2024",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2026-008"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-006",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-007",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-008",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-009",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-012",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-013",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-014",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-017",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-018",
+   "edition": "2024",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2025"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-020",
+   "edition": "2024",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2025-027"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-022",
+   "edition": "2024",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "mckinsey-tech-trends-2025-027"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-001",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-002",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-005",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-009",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-013",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-016",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-018",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-019",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-020",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-022",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-025",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-026",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-027",
+   "edition": "2025",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-001",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-002",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-003",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-004",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-005",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-006",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-007",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-008",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-009",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-010",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-011",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-012",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-013",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  },
+  {
+   "id": "mckinsey-tech-trends-2026-014",
+   "edition": "2026",
+   "verdict": "open",
+   "status": "computed"
+  }
+ ]
+}

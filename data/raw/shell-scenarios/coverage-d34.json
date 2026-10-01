@@ -1,0 +1,1964 @@
+{
+ "rule": "D34",
+ "note": "Pathway coverage: is the observed value inside the edition's scenario range for that metric and year? Covered share is a property of the set, never a hit rate. Arithmetic, as D19.",
+ "counts": {
+  "covered": 14,
+  "partly_covered": 32,
+  "not_covered": 11,
+  "no_observed": 0,
+  "unmapped_claims": 54
+ },
+ "coverage_share": 0.2456,
+ "by_edition": {
+  "2013": {
+   "covered": 0,
+   "partly_covered": 4,
+   "not_covered": 3
+  },
+  "2021": {
+   "covered": 9,
+   "partly_covered": 17,
+   "not_covered": 6
+  },
+  "2023": {
+   "covered": 5,
+   "partly_covered": 11,
+   "not_covered": 2
+  }
+ },
+ "rows": [
+  {
+   "edition": "2013",
+   "metric": "total primary energy: Coal",
+   "year": 2020,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2013-008",
+     "scenario": "Mountains",
+     "value": 184.8
+    },
+    {
+     "id": "shell-scenarios-2013-023",
+     "scenario": "Oceans",
+     "value": 202.7
+    }
+   ],
+   "range": [
+    184.8,
+    202.7
+   ],
+   "scenarios": 2,
+   "observed": 157.4102,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.1482,
+   "closest_scenario": "Mountains",
+   "closest_id": "shell-scenarios-2013-008"
+  },
+  {
+   "edition": "2013",
+   "metric": "total primary energy: Natural Gas",
+   "year": 2020,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2013-006",
+     "scenario": "Mountains",
+     "value": 149.7
+    },
+    {
+     "id": "shell-scenarios-2013-021",
+     "scenario": "Oceans",
+     "value": 147.9
+    }
+   ],
+   "range": [
+    147.9,
+    149.7
+   ],
+   "scenarios": 2,
+   "observed": 139.1931,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0589,
+   "closest_scenario": "Oceans",
+   "closest_id": "shell-scenarios-2013-021"
+  },
+  {
+   "edition": "2013",
+   "metric": "total primary energy: Nuclear",
+   "year": 2020,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2013-011",
+     "scenario": "Mountains",
+     "value": 37.5
+    },
+    {
+     "id": "shell-scenarios-2013-026",
+     "scenario": "Oceans",
+     "value": 33.3
+    }
+   ],
+   "range": [
+    33.3,
+    37.5
+   ],
+   "scenarios": 2,
+   "observed": 29.2262,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.1223,
+   "closest_scenario": "Oceans",
+   "closest_id": "shell-scenarios-2013-026"
+  },
+  {
+   "edition": "2013",
+   "metric": "total primary energy: Oil",
+   "year": 2020,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2013-004",
+     "scenario": "Mountains",
+     "value": 190.2
+    },
+    {
+     "id": "shell-scenarios-2013-019",
+     "scenario": "Oceans",
+     "value": 196.4
+    }
+   ],
+   "range": [
+    190.2,
+    196.4
+   ],
+   "scenarios": 2,
+   "observed": 172.8649,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0911,
+   "closest_scenario": "Mountains",
+   "closest_id": "shell-scenarios-2013-004"
+  },
+  {
+   "edition": "2013",
+   "metric": "total primary energy: Solar",
+   "year": 2020,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2013-014",
+     "scenario": "Mountains",
+     "value": 3.6
+    },
+    {
+     "id": "shell-scenarios-2013-029",
+     "scenario": "Oceans",
+     "value": 4.4
+    }
+   ],
+   "range": [
+    3.6,
+    4.4
+   ],
+   "scenarios": 2,
+   "observed": 4.6238,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0509,
+   "closest_scenario": "Oceans",
+   "closest_id": "shell-scenarios-2013-029"
+  },
+  {
+   "edition": "2013",
+   "metric": "total primary energy: Wind",
+   "year": 2020,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2013-015",
+     "scenario": "Mountains",
+     "value": 3
+    },
+    {
+     "id": "shell-scenarios-2013-030",
+     "scenario": "Oceans",
+     "value": 4.7
+    }
+   ],
+   "range": [
+    3,
+    4.7
+   ],
+   "scenarios": 2,
+   "observed": 5.7638,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.2263,
+   "closest_scenario": "Oceans",
+   "closest_id": "shell-scenarios-2013-030"
+  },
+  {
+   "edition": "2013",
+   "metric": "total primary energy",
+   "year": 2020,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2013-017",
+     "scenario": "Mountains",
+     "value": 647
+    },
+    {
+     "id": "shell-scenarios-2013-032",
+     "scenario": "Oceans",
+     "value": 668
+    }
+   ],
+   "range": [
+    647,
+    668
+   ],
+   "scenarios": 2,
+   "observed": 583.6611,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0979,
+   "closest_scenario": "Mountains",
+   "closest_id": "shell-scenarios-2013-017"
+  },
+  {
+   "edition": "2021",
+   "metric": "CO2 emissions from energy",
+   "year": 2022,
+   "unit": "Gt CO2/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-050",
+     "scenario": "Waves",
+     "value": 35.4
+    },
+    {
+     "id": "shell-scenarios-2021-098",
+     "scenario": "Islands",
+     "value": 34.782
+    },
+    {
+     "id": "shell-scenarios-2021-146",
+     "scenario": "Sky 1.5",
+     "value": 35.012
+    }
+   ],
+   "range": [
+    34.782,
+    35.4
+   ],
+   "scenarios": 3,
+   "observed": 35.7188,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.009,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-050",
+   "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
+  },
+  {
+   "edition": "2021",
+   "metric": "CO2 emissions from energy",
+   "year": 2023,
+   "unit": "Gt CO2/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-051",
+     "scenario": "Waves",
+     "value": 35.9
+    },
+    {
+     "id": "shell-scenarios-2021-099",
+     "scenario": "Islands",
+     "value": 35.038
+    },
+    {
+     "id": "shell-scenarios-2021-147",
+     "scenario": "Sky 1.5",
+     "value": 35.287
+    }
+   ],
+   "range": [
+    35.038,
+    35.9
+   ],
+   "scenarios": 3,
+   "observed": 36.0401,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0039,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-051",
+   "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
+  },
+  {
+   "edition": "2021",
+   "metric": "CO2 emissions from energy",
+   "year": 2024,
+   "unit": "Gt CO2/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-052",
+     "scenario": "Waves",
+     "value": 36.474
+    },
+    {
+     "id": "shell-scenarios-2021-100",
+     "scenario": "Islands",
+     "value": 35.228
+    },
+    {
+     "id": "shell-scenarios-2021-148",
+     "scenario": "Sky 1.5",
+     "value": 35.609
+    }
+   ],
+   "range": [
+    35.228,
+    36.474
+   ],
+   "scenarios": 3,
+   "observed": 36.4591,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-052",
+   "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
+  },
+  {
+   "edition": "2021",
+   "metric": "CO2 emissions from energy",
+   "year": 2025,
+   "unit": "Gt CO2/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-053",
+     "scenario": "Waves",
+     "value": 36.863
+    },
+    {
+     "id": "shell-scenarios-2021-101",
+     "scenario": "Islands",
+     "value": 35.411
+    },
+    {
+     "id": "shell-scenarios-2021-149",
+     "scenario": "Sky 1.5",
+     "value": 35.849
+    }
+   ],
+   "range": [
+    35.411,
+    36.863
+   ],
+   "scenarios": 3,
+   "observed": 35.8062,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-149",
+   "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Coal",
+   "year": 2022,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-020",
+     "scenario": "Waves",
+     "value": 160.29
+    },
+    {
+     "id": "shell-scenarios-2021-068",
+     "scenario": "Islands",
+     "value": 157.51
+    },
+    {
+     "id": "shell-scenarios-2021-116",
+     "scenario": "Sky 1.5",
+     "value": 157.631
+    }
+   ],
+   "range": [
+    157.51,
+    160.29
+   ],
+   "scenarios": 3,
+   "observed": 169.3846,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0567,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-020"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Coal",
+   "year": 2023,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-021",
+     "scenario": "Waves",
+     "value": 162.074
+    },
+    {
+     "id": "shell-scenarios-2021-069",
+     "scenario": "Islands",
+     "value": 158.164
+    },
+    {
+     "id": "shell-scenarios-2021-117",
+     "scenario": "Sky 1.5",
+     "value": 158.61
+    }
+   ],
+   "range": [
+    158.164,
+    162.074
+   ],
+   "scenarios": 3,
+   "observed": 169.6301,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0466,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-021"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Coal",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-022",
+     "scenario": "Waves",
+     "value": 164.297
+    },
+    {
+     "id": "shell-scenarios-2021-070",
+     "scenario": "Islands",
+     "value": 158.996
+    },
+    {
+     "id": "shell-scenarios-2021-118",
+     "scenario": "Sky 1.5",
+     "value": 159.855
+    }
+   ],
+   "range": [
+    158.996,
+    164.297
+   ],
+   "scenarios": 3,
+   "observed": 171.7203,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0452,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-022"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Coal",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-023",
+     "scenario": "Waves",
+     "value": 165.578
+    },
+    {
+     "id": "shell-scenarios-2021-071",
+     "scenario": "Islands",
+     "value": 159.494
+    },
+    {
+     "id": "shell-scenarios-2021-119",
+     "scenario": "Sky 1.5",
+     "value": 160.726
+    }
+   ],
+   "range": [
+    159.494,
+    165.578
+   ],
+   "scenarios": 3,
+   "observed": 166.0302,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0027,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-023"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Natural gas",
+   "year": 2022,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-014",
+     "scenario": "Waves",
+     "value": 142.049
+    },
+    {
+     "id": "shell-scenarios-2021-062",
+     "scenario": "Islands",
+     "value": 139.993
+    },
+    {
+     "id": "shell-scenarios-2021-110",
+     "scenario": "Sky 1.5",
+     "value": 140.65
+    }
+   ],
+   "range": [
+    139.993,
+    142.049
+   ],
+   "scenarios": 3,
+   "observed": 143.043,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.007,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-014"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Natural gas",
+   "year": 2023,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-015",
+     "scenario": "Waves",
+     "value": 144.578
+    },
+    {
+     "id": "shell-scenarios-2021-063",
+     "scenario": "Islands",
+     "value": 141.3
+    },
+    {
+     "id": "shell-scenarios-2021-111",
+     "scenario": "Sky 1.5",
+     "value": 142.693
+    }
+   ],
+   "range": [
+    141.3,
+    144.578
+   ],
+   "scenarios": 3,
+   "observed": 143.1071,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-111"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Natural gas",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-016",
+     "scenario": "Waves",
+     "value": 147.714
+    },
+    {
+     "id": "shell-scenarios-2021-064",
+     "scenario": "Islands",
+     "value": 142.826
+    },
+    {
+     "id": "shell-scenarios-2021-112",
+     "scenario": "Sky 1.5",
+     "value": 145.425
+    }
+   ],
+   "range": [
+    142.826,
+    147.714
+   ],
+   "scenarios": 3,
+   "observed": 145.3235,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-112"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Natural gas",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-017",
+     "scenario": "Waves",
+     "value": 149.926
+    },
+    {
+     "id": "shell-scenarios-2021-065",
+     "scenario": "Islands",
+     "value": 144.416
+    },
+    {
+     "id": "shell-scenarios-2021-113",
+     "scenario": "Sky 1.5",
+     "value": 148.402
+    }
+   ],
+   "range": [
+    144.416,
+    149.926
+   ],
+   "scenarios": 3,
+   "observed": 150.6973,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0051,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-017"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Nuclear",
+   "year": 2022,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-026",
+     "scenario": "Waves",
+     "value": 31.48
+    },
+    {
+     "id": "shell-scenarios-2021-074",
+     "scenario": "Islands",
+     "value": 29.143
+    },
+    {
+     "id": "shell-scenarios-2021-122",
+     "scenario": "Sky 1.5",
+     "value": 31.698
+    }
+   ],
+   "range": [
+    29.143,
+    31.698
+   ],
+   "scenarios": 3,
+   "observed": 29.4787,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-074"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Nuclear",
+   "year": 2023,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-027",
+     "scenario": "Waves",
+     "value": 32.467
+    },
+    {
+     "id": "shell-scenarios-2021-075",
+     "scenario": "Islands",
+     "value": 29.618
+    },
+    {
+     "id": "shell-scenarios-2021-123",
+     "scenario": "Sky 1.5",
+     "value": 32.617
+    }
+   ],
+   "range": [
+    29.618,
+    32.617
+   ],
+   "scenarios": 3,
+   "observed": 29.8656,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-075"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Nuclear",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-028",
+     "scenario": "Waves",
+     "value": 33.916
+    },
+    {
+     "id": "shell-scenarios-2021-076",
+     "scenario": "Islands",
+     "value": 30.562
+    },
+    {
+     "id": "shell-scenarios-2021-124",
+     "scenario": "Sky 1.5",
+     "value": 33.42
+    }
+   ],
+   "range": [
+    30.562,
+    33.916
+   ],
+   "scenarios": 3,
+   "observed": 30.5849,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-076"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Nuclear",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-029",
+     "scenario": "Waves",
+     "value": 34.864
+    },
+    {
+     "id": "shell-scenarios-2021-077",
+     "scenario": "Islands",
+     "value": 31.077
+    },
+    {
+     "id": "shell-scenarios-2021-125",
+     "scenario": "Sky 1.5",
+     "value": 34.07
+    }
+   ],
+   "range": [
+    31.077,
+    34.864
+   ],
+   "scenarios": 3,
+   "observed": 31.0406,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0012,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-077"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Oil",
+   "year": 2022,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-008",
+     "scenario": "Waves",
+     "value": 193.778
+    },
+    {
+     "id": "shell-scenarios-2021-056",
+     "scenario": "Islands",
+     "value": 190.195
+    },
+    {
+     "id": "shell-scenarios-2021-104",
+     "scenario": "Sky 1.5",
+     "value": 193.082
+    }
+   ],
+   "range": [
+    190.195,
+    193.778
+   ],
+   "scenarios": 3,
+   "observed": 186.2607,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0207,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-056"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Oil",
+   "year": 2023,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-009",
+     "scenario": "Waves",
+     "value": 196.603
+    },
+    {
+     "id": "shell-scenarios-2021-057",
+     "scenario": "Islands",
+     "value": 192.042
+    },
+    {
+     "id": "shell-scenarios-2021-105",
+     "scenario": "Sky 1.5",
+     "value": 194.549
+    }
+   ],
+   "range": [
+    192.042,
+    196.603
+   ],
+   "scenarios": 3,
+   "observed": 190.6783,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0071,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-057"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Oil",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-010",
+     "scenario": "Waves",
+     "value": 199.457
+    },
+    {
+     "id": "shell-scenarios-2021-058",
+     "scenario": "Islands",
+     "value": 192.448
+    },
+    {
+     "id": "shell-scenarios-2021-106",
+     "scenario": "Sky 1.5",
+     "value": 196.065
+    }
+   ],
+   "range": [
+    192.448,
+    199.457
+   ],
+   "scenarios": 3,
+   "observed": 193.2651,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-058"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Oil",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-011",
+     "scenario": "Waves",
+     "value": 201.874
+    },
+    {
+     "id": "shell-scenarios-2021-059",
+     "scenario": "Islands",
+     "value": 193.551
+    },
+    {
+     "id": "shell-scenarios-2021-107",
+     "scenario": "Sky 1.5",
+     "value": 196.955
+    }
+   ],
+   "range": [
+    193.551,
+    201.874
+   ],
+   "scenarios": 3,
+   "observed": 200.973,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-011"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Solar",
+   "year": 2022,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-032",
+     "scenario": "Waves",
+     "value": 4.786
+    },
+    {
+     "id": "shell-scenarios-2021-080",
+     "scenario": "Islands",
+     "value": 4.727
+    },
+    {
+     "id": "shell-scenarios-2021-128",
+     "scenario": "Sky 1.5",
+     "value": 6.101
+    }
+   ],
+   "range": [
+    4.727,
+    6.101
+   ],
+   "scenarios": 3,
+   "observed": 9.5199,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.5604,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-128"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Solar",
+   "year": 2023,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-033",
+     "scenario": "Waves",
+     "value": 5.441
+    },
+    {
+     "id": "shell-scenarios-2021-081",
+     "scenario": "Islands",
+     "value": 5.141
+    },
+    {
+     "id": "shell-scenarios-2021-129",
+     "scenario": "Sky 1.5",
+     "value": 7.122
+    }
+   ],
+   "range": [
+    5.141,
+    7.122
+   ],
+   "scenarios": 3,
+   "observed": 11.712,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.6445,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-129"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Solar",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-034",
+     "scenario": "Waves",
+     "value": 6.237
+    },
+    {
+     "id": "shell-scenarios-2021-082",
+     "scenario": "Islands",
+     "value": 5.622
+    },
+    {
+     "id": "shell-scenarios-2021-130",
+     "scenario": "Sky 1.5",
+     "value": 8.383
+    }
+   ],
+   "range": [
+    5.622,
+    8.383
+   ],
+   "scenarios": 3,
+   "observed": 13.884,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.6562,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-130"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Solar",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-035",
+     "scenario": "Waves",
+     "value": 7.188
+    },
+    {
+     "id": "shell-scenarios-2021-083",
+     "scenario": "Islands",
+     "value": 6.224
+    },
+    {
+     "id": "shell-scenarios-2021-131",
+     "scenario": "Sky 1.5",
+     "value": 9.914
+    }
+   ],
+   "range": [
+    6.224,
+    9.914
+   ],
+   "scenarios": 3,
+   "observed": 10.1198,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0208,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-131"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Wind",
+   "year": 2022,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-038",
+     "scenario": "Waves",
+     "value": 6.553
+    },
+    {
+     "id": "shell-scenarios-2021-086",
+     "scenario": "Islands",
+     "value": 6.065
+    },
+    {
+     "id": "shell-scenarios-2021-134",
+     "scenario": "Sky 1.5",
+     "value": 6.616
+    }
+   ],
+   "range": [
+    6.065,
+    6.616
+   ],
+   "scenarios": 3,
+   "observed": 7.4609,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.1277,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-134"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Wind",
+   "year": 2023,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-039",
+     "scenario": "Waves",
+     "value": 7.299
+    },
+    {
+     "id": "shell-scenarios-2021-087",
+     "scenario": "Islands",
+     "value": 6.443
+    },
+    {
+     "id": "shell-scenarios-2021-135",
+     "scenario": "Sky 1.5",
+     "value": 7.317
+    }
+   ],
+   "range": [
+    6.443,
+    7.317
+   ],
+   "scenarios": 3,
+   "observed": 8.3557,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.142,
+   "closest_scenario": "Sky 1.5",
+   "closest_id": "shell-scenarios-2021-135"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Wind",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-040",
+     "scenario": "Waves",
+     "value": 8.16
+    },
+    {
+     "id": "shell-scenarios-2021-088",
+     "scenario": "Islands",
+     "value": 6.844
+    },
+    {
+     "id": "shell-scenarios-2021-136",
+     "scenario": "Sky 1.5",
+     "value": 8.078
+    }
+   ],
+   "range": [
+    6.844,
+    8.16
+   ],
+   "scenarios": 3,
+   "observed": 9.4195,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.1544,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-040"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy: Wind",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-041",
+     "scenario": "Waves",
+     "value": 9.116
+    },
+    {
+     "id": "shell-scenarios-2021-089",
+     "scenario": "Islands",
+     "value": 7.282
+    },
+    {
+     "id": "shell-scenarios-2021-137",
+     "scenario": "Sky 1.5",
+     "value": 8.882
+    }
+   ],
+   "range": [
+    7.282,
+    9.116
+   ],
+   "scenarios": 3,
+   "observed": 9.7706,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0718,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-041"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy",
+   "year": 2022,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-044",
+     "scenario": "Waves",
+     "value": 616.721
+    },
+    {
+     "id": "shell-scenarios-2021-092",
+     "scenario": "Islands",
+     "value": 603.87
+    },
+    {
+     "id": "shell-scenarios-2021-140",
+     "scenario": "Sky 1.5",
+     "value": 612.847
+    }
+   ],
+   "range": [
+    603.87,
+    616.721
+   ],
+   "scenarios": 3,
+   "observed": 623.567,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0111,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-044"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy",
+   "year": 2023,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-045",
+     "scenario": "Waves",
+     "value": 628.15
+    },
+    {
+     "id": "shell-scenarios-2021-093",
+     "scenario": "Islands",
+     "value": 609.983
+    },
+    {
+     "id": "shell-scenarios-2021-141",
+     "scenario": "Sky 1.5",
+     "value": 620.277
+    }
+   ],
+   "range": [
+    609.983,
+    628.15
+   ],
+   "scenarios": 3,
+   "observed": 634.7344,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0105,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-045"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-046",
+     "scenario": "Waves",
+     "value": 641.717
+    },
+    {
+     "id": "shell-scenarios-2021-094",
+     "scenario": "Islands",
+     "value": 615.866
+    },
+    {
+     "id": "shell-scenarios-2021-142",
+     "scenario": "Sky 1.5",
+     "value": 629.334
+    }
+   ],
+   "range": [
+    615.866,
+    641.717
+   ],
+   "scenarios": 3,
+   "observed": 647.9218,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0097,
+   "closest_scenario": "Waves",
+   "closest_id": "shell-scenarios-2021-046"
+  },
+  {
+   "edition": "2021",
+   "metric": "total primary energy",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2021-047",
+     "scenario": "Waves",
+     "value": 652.464
+    },
+    {
+     "id": "shell-scenarios-2021-095",
+     "scenario": "Islands",
+     "value": 621.714
+    },
+    {
+     "id": "shell-scenarios-2021-143",
+     "scenario": "Sky 1.5",
+     "value": 637.896
+    }
+   ],
+   "range": [
+    621.714,
+    652.464
+   ],
+   "scenarios": 3,
+   "observed": 600.3129,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0344,
+   "closest_scenario": "Islands",
+   "closest_id": "shell-scenarios-2021-095",
+   "note": "Observed value confidence low (ei_fallback)."
+  },
+  {
+   "edition": "2023",
+   "metric": "net energy-related CO2 emissions",
+   "year": 2024,
+   "unit": "Gt CO2/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-025",
+     "scenario": "Archipelagos",
+     "value": 35.208
+    },
+    {
+     "id": "shell-scenarios-2023-052",
+     "scenario": "Sky 2050",
+     "value": 34.79
+    }
+   ],
+   "range": [
+    34.79,
+    35.208
+   ],
+   "scenarios": 2,
+   "observed": 36.4591,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0355,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-025"
+  },
+  {
+   "edition": "2023",
+   "metric": "net energy-related CO2 emissions",
+   "year": 2025,
+   "unit": "Gt CO2/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-026",
+     "scenario": "Archipelagos",
+     "value": 35.553
+    },
+    {
+     "id": "shell-scenarios-2023-053",
+     "scenario": "Sky 2050",
+     "value": 34.599
+    }
+   ],
+   "range": [
+    34.599,
+    35.553
+   ],
+   "scenarios": 2,
+   "observed": 35.8062,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0071,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-026"
+  },
+  {
+   "edition": "2023",
+   "metric": "stock of electric passenger vehicles (BEV and PHEV)",
+   "year": 2024,
+   "unit": "million vehicles",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-028",
+     "scenario": "Archipelagos",
+     "value": 51.902
+    },
+    {
+     "id": "shell-scenarios-2023-055",
+     "scenario": "Sky 2050",
+     "value": 59.403
+    }
+   ],
+   "range": [
+    51.902,
+    59.403
+   ],
+   "scenarios": 2,
+   "observed": 56,
+   "observed_series": "iea_gevo",
+   "observed_vintage": "IEA Global EV Outlook 2026 data (Global EV Data Explorer, historical, data to 2025)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-055"
+  },
+  {
+   "edition": "2023",
+   "metric": "stock of electric passenger vehicles (BEV and PHEV)",
+   "year": 2025,
+   "unit": "million vehicles",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-029",
+     "scenario": "Archipelagos",
+     "value": 66.604
+    },
+    {
+     "id": "shell-scenarios-2023-056",
+     "scenario": "Sky 2050",
+     "value": 80.885
+    }
+   ],
+   "range": [
+    66.604,
+    80.885
+   ],
+   "scenarios": 2,
+   "observed": 75,
+   "observed_series": "iea_gevo",
+   "observed_vintage": "IEA Global EV Outlook 2026 data (Global EV Data Explorer, historical, data to 2025)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-056"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Coal",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-010",
+     "scenario": "Archipelagos",
+     "value": 160.876
+    },
+    {
+     "id": "shell-scenarios-2023-037",
+     "scenario": "Sky 2050",
+     "value": 160.955
+    }
+   ],
+   "range": [
+    160.876,
+    160.955
+   ],
+   "scenarios": 2,
+   "observed": 171.7203,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0669,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-037"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Coal",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-011",
+     "scenario": "Archipelagos",
+     "value": 162.567
+    },
+    {
+     "id": "shell-scenarios-2023-038",
+     "scenario": "Sky 2050",
+     "value": 159.322
+    }
+   ],
+   "range": [
+    159.322,
+    162.567
+   ],
+   "scenarios": 2,
+   "observed": 166.0302,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0213,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-011"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Natural gas",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-007",
+     "scenario": "Archipelagos",
+     "value": 139.932
+    },
+    {
+     "id": "shell-scenarios-2023-034",
+     "scenario": "Sky 2050",
+     "value": 136.365
+    }
+   ],
+   "range": [
+    136.365,
+    139.932
+   ],
+   "scenarios": 2,
+   "observed": 145.3235,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0385,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-007"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Natural gas",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-008",
+     "scenario": "Archipelagos",
+     "value": 140.97
+    },
+    {
+     "id": "shell-scenarios-2023-035",
+     "scenario": "Sky 2050",
+     "value": 136.456
+    }
+   ],
+   "range": [
+    136.456,
+    140.97
+   ],
+   "scenarios": 2,
+   "observed": 150.6973,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.069,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-008"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Nuclear",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-013",
+     "scenario": "Archipelagos",
+     "value": 30.384
+    },
+    {
+     "id": "shell-scenarios-2023-040",
+     "scenario": "Sky 2050",
+     "value": 30.635
+    }
+   ],
+   "range": [
+    30.384,
+    30.635
+   ],
+   "scenarios": 2,
+   "observed": 30.5849,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-040"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Nuclear",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-014",
+     "scenario": "Archipelagos",
+     "value": 30.705
+    },
+    {
+     "id": "shell-scenarios-2023-041",
+     "scenario": "Sky 2050",
+     "value": 31
+    }
+   ],
+   "range": [
+    30.705,
+    31
+   ],
+   "scenarios": 2,
+   "observed": 31.0406,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0013,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-041"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Oil",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-004",
+     "scenario": "Archipelagos",
+     "value": 193.298
+    },
+    {
+     "id": "shell-scenarios-2023-031",
+     "scenario": "Sky 2050",
+     "value": 191.318
+    }
+   ],
+   "range": [
+    191.318,
+    193.298
+   ],
+   "scenarios": 2,
+   "observed": 193.2651,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-004"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Oil",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-005",
+     "scenario": "Archipelagos",
+     "value": 195.917
+    },
+    {
+     "id": "shell-scenarios-2023-032",
+     "scenario": "Sky 2050",
+     "value": 192.292
+    }
+   ],
+   "range": [
+    192.292,
+    195.917
+   ],
+   "scenarios": 2,
+   "observed": 200.973,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0258,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-005"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Solar - photovoltaic",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-016",
+     "scenario": "Archipelagos",
+     "value": 5.616
+    },
+    {
+     "id": "shell-scenarios-2023-043",
+     "scenario": "Sky 2050",
+     "value": 5.957
+    }
+   ],
+   "range": [
+    5.616,
+    5.957
+   ],
+   "scenarios": 2,
+   "observed": 11.9223,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 1.0014,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-043"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Solar - photovoltaic",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-017",
+     "scenario": "Archipelagos",
+     "value": 6.723
+    },
+    {
+     "id": "shell-scenarios-2023-044",
+     "scenario": "Sky 2050",
+     "value": 7.751
+    }
+   ],
+   "range": [
+    6.723,
+    7.751
+   ],
+   "scenarios": 2,
+   "observed": 10.1198,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "not_covered",
+   "status": "graded",
+   "gap_outside_range": 0.3056,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-044"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Wind",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-019",
+     "scenario": "Archipelagos",
+     "value": 9.197
+    },
+    {
+     "id": "shell-scenarios-2023-046",
+     "scenario": "Sky 2050",
+     "value": 9.695
+    }
+   ],
+   "range": [
+    9.197,
+    9.695
+   ],
+   "scenarios": 2,
+   "observed": 9.4195,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "covered",
+   "status": "graded",
+   "gap_outside_range": 0,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-019"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy: Wind",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-020",
+     "scenario": "Archipelagos",
+     "value": 10.323
+    },
+    {
+     "id": "shell-scenarios-2023-047",
+     "scenario": "Sky 2050",
+     "value": 11.915
+    }
+   ],
+   "range": [
+    10.323,
+    11.915
+   ],
+   "scenarios": 2,
+   "observed": 9.7706,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0535,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-020"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy",
+   "year": 2024,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-022",
+     "scenario": "Archipelagos",
+     "value": 620.654
+    },
+    {
+     "id": "shell-scenarios-2023-049",
+     "scenario": "Sky 2050",
+     "value": 616.61
+    }
+   ],
+   "range": [
+    616.61,
+    620.654
+   ],
+   "scenarios": 2,
+   "observed": 647.9218,
+   "observed_series": "shell_history",
+   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0439,
+   "closest_scenario": "Archipelagos",
+   "closest_id": "shell-scenarios-2023-022"
+  },
+  {
+   "edition": "2023",
+   "metric": "total primary energy",
+   "year": 2025,
+   "unit": "EJ/year",
+   "values": [
+    {
+     "id": "shell-scenarios-2023-023",
+     "scenario": "Archipelagos",
+     "value": 630.493
+    },
+    {
+     "id": "shell-scenarios-2023-050",
+     "scenario": "Sky 2050",
+     "value": 622.597
+    }
+   ],
+   "range": [
+    622.597,
+    630.493
+   ],
+   "scenarios": 2,
+   "observed": 600.3129,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
+   "verdict": "partly_covered",
+   "status": "graded",
+   "gap_outside_range": 0.0358,
+   "closest_scenario": "Sky 2050",
+   "closest_id": "shell-scenarios-2023-050",
+   "note": "Observed value confidence low (ei_fallback)."
+  }
+ ]
+}

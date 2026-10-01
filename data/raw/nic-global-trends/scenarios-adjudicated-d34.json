@@ -1,0 +1,117 @@
+{
+ "rule": "D34",
+ "role": "adjudicator (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "nic-global-trends-2000-017",
+   "graderA": "not_covered",
+   "graderB": "partly_covered",
+   "verdict": "not_covered",
+   "reason": "Defining premise (GT2015 p.83-84): the majority fails to benefit, the global economy splits with many developing countries at low or negative per-capita growth, weak governance. None held by 2015: extreme poverty fell from 36% to 13% and low/middle-income per-capita growth was positive every year 2000-2015. 'Global elites thrive' alone does not distinguish this scenario from Inclusive Globalization. The features that did occur (sarin at Ghouta 2013, the 2015 migration surge) are side details, not the premise, so partly_covered does not apply.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2001/http://www.cia.gov/cia/reports/globaltrends2015/globaltrends2015.pdf",
+     "title": "NIC, Global Trends 2015 (Dec 2000), Appendix, Scenario Two",
+     "date": "2000-12",
+     "shows": "Premise: global elites thrive but the majority fails to benefit; economy splits into three; WMD used in at least one internal conflict listed among consequences."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/SI.POV.DDAY?date=2000:2015&format=json",
+     "title": "World Bank WDI: Poverty headcount ratio at $2.15/day, World",
+     "date": "2000-2015",
+     "shows": "Extreme poverty fell from 36.2% (2000) to 13.4% (2015)."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/LMY/indicator/NY.GDP.PCAP.KD.ZG?date=2000:2015&format=json",
+     "title": "World Bank WDI: GDP per capita growth, low and middle income",
+     "date": "2000-2015",
+     "shows": "Positive every year 2000-2015 (2.1% to 7.3%); no split with developing countries stagnating."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ghouta_chemical_attack",
+     "title": "Ghouta chemical attack",
+     "date": "2013-08-21",
+     "shows": "Sarin used in the Syrian civil war: the WMD side detail occurred."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-018",
+   "graderA": "not_covered",
+   "graderB": "partly_covered",
+   "verdict": "not_covered",
+   "reason": "Defining premise (GT2015 p.84): regional identities sharpen in Europe, Asia and the Americas, driven by European and East Asian resistance to US preponderance; regional institutions thrive and take responsibilities from global ones. By 2015 none held in full: both graders rate the premise features only 'partly'. The one regional alternative was China-led (AIIB 2014-15); Europe was in the euro crisis, not thriving, and moved closer to the US after Crimea (joint sanctions, ERI 2014); Japan and Korea stayed US allies; global institutions (IMF, G20) carried the crisis response. 'No military conflict among the three regions' held but is a side condition shared with the status quo. No defining feature held, so not_covered.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2001/http://www.cia.gov/cia/reports/globaltrends2015/globaltrends2015.pdf",
+     "title": "NIC, Global Trends 2015 (Dec 2000), Appendix, Scenario Three",
+     "date": "2000-12",
+     "shows": "Premise: regional identities sharpen; resistance in Europe and East Asia to US preponderance; responsibilities shift from global to regional institutions; no military conflict among the regions."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Asian_Infrastructure_Investment_Bank",
+     "title": "Asian Infrastructure Investment Bank",
+     "date": "2015-03",
+     "shows": "China-led AIIB founded 2014; UK and other Europeans joined in 2015 over US objection: one partial instance of resistance."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Euro_area_crisis",
+     "title": "Euro area crisis",
+     "date": "2009-2018",
+     "shows": "Eurozone bailouts through 2015: European regional institutions under strain, not thriving."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/International_sanctions_during_the_Russo-Ukrainian_War",
+     "title": "International sanctions during the Russo-Ukrainian War",
+     "date": "2014-03-17",
+     "shows": "US, EU and Canada imposed coordinated sanctions in 2014: transatlantic alignment, not a separate European bloc."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-015",
+   "graderA": "partly_covered",
+   "graderB": "not_covered",
+   "verdict": "partly_covered",
+   "reason": "The premise has two defining halves: US predominance survives, and it is used to fashion a new inclusive order. Both graders found the first held in 2020 (US largest economy and military spender). That is a defining premise feature, not a side detail, so partly_covered applies. The second half failed: by 2020 the US had left TPP, Paris, JCPOA and UNHRC and announced a WHO exit, while China built parallel institutions (AIIB, BRI). Not covered in full.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/USA;CHN;IND;BRA;RUS;WLD/indicator/NY.GDP.MKTP.CD?date=2024&format=json",
+     "title": "World Bank WDI: GDP (current US$)",
+     "date": "2024",
+     "shows": "US $29.3T vs China $18.7T: US remains the largest economy (~26% of world)."
+    },
+    {
+     "url": "https://www.sipri.org/media/press-release/2025/unprecedented-rise-global-military-expenditure-european-and-middle-east-spending-surges",
+     "title": "SIPRI: Unprecedented rise in global military expenditure",
+     "date": "2025-04-28",
+     "shows": "US spent $997bn in 2024 (37% of world), China $314bn: US military predominance persists."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Foreign_policy_of_the_first_Trump_administration",
+     "title": "Foreign policy of the first Trump administration",
+     "date": "2017-2020",
+     "shows": "US left TPP, Paris, JCPOA, UNHRC and announced WHO exit: no US-led inclusive order by 2020."
+    }
+   ]
+  }
+ ],
+ "sets": {
+  "2000": {
+   "covered": true,
+   "closest": "nic-global-trends-2000-016",
+   "reason": "Inclusive Globalization covered (both graders agree): majority benefited, developing-world growth, conflict concentrated in left-behind regions. Pernicious Globalization and Regional Competition not covered."
+  },
+  "2004": {
+   "covered": true,
+   "closest": "nic-global-trends-2004-014",
+   "reason": "Davos World covered (both graders agree): China- and India-led growth and a less Western globalization to 2020. Pax Americana partly covered (US predominance survived, inclusive order did not form)."
+  },
+  "2008": {
+   "covered": false,
+   "closest": "nic-global-trends-2008-017",
+   "reason": "Both graders agree no scenario's defining premise held in 2025; A World Without the West is closest (Russia-China alignment, SCO/BRICS growth, US retreat) but the West was not supplanted."
+  }
+ }
+}

@@ -1,0 +1,661 @@
+{
+ "rule": "D33",
+ "checker": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tech-trends-2010-001",
+   "verdict": "faded",
+   "reason": "Enterprise information foundations; 2011-12 analytics/big data chapters make a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2010-002",
+   "verdict": "faded",
+   "reason": "Running IT operations well; no 2011-12 trend on IT operational excellence"
+  },
+  {
+   "id": "deloitte-tech-trends-2010-004",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2011-002",
+   "reason": "Alternatives to single-instance ERP recur as lightweight \"almost-enterprise\" apps"
+  },
+  {
+   "id": "deloitte-tech-trends-2010-006",
+   "verdict": "faded",
+   "reason": "Higher-order virtualization; 2011-12 cloud chapters are a different phenomenon"
+  },
+  {
+   "id": "deloitte-tech-trends-2010-007",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2011-006",
+   "reason": "Automating \"what I need to know\" is analytics; continues as Real Analytics"
+  },
+  {
+   "id": "deloitte-tech-trends-2010-008",
+   "verdict": "faded",
+   "reason": "Application management services not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2010-010",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2012-010",
+   "reason": "SOA services thinking reappears as outside-in, service/API-based architecture"
+  },
+  {
+   "id": "deloitte-tech-trends-2010-011",
+   "verdict": "faded",
+   "reason": "Sensor-based asset intelligence; no IoT or sensor trend in 2011-12"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-001",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2013-006",
+   "reason": "Data visualization continues as Finding the Face of Your Data"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-002",
+   "verdict": "faded",
+   "reason": "Lightweight enterprise apps not listed again; User Empowerment is consumerization, a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-006",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2012-006",
+   "reason": "Enterprise analytics continues as Big Data Goes to Work"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-007",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2012-001",
+   "reason": "Enterprise social computing renamed Social Business"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-008",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2013-004",
+   "reason": "User-down engagement/enterprise UX continues as Design as a Discipline"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-010",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2012-005",
+   "reason": "Enterprise cloud adoption evolves from capability clouds to hyper-hybrid cloud"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-001",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2013-003",
+   "reason": "Social business renamed Social Reengineering by Design"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-004",
+   "verdict": "faded",
+   "reason": "Consumerization of IT not listed again; Design as a Discipline is a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-005",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2014-008",
+   "reason": "Hybrid cloud continues as cloud orchestration across hybrid/multi clouds"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-006",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2013-006",
+   "reason": "Big data analytics continues as Finding the Face of Your Data"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-007",
+   "verdict": "faded",
+   "reason": "Location intelligence; data visualization in 2013 is only the same broad field"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-008",
+   "verdict": "faded",
+   "reason": "Digital identity management; later cyber chapters are a broader field only"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-009",
+   "verdict": "faded",
+   "reason": "Innovation as institutional discipline not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2012-010",
+   "verdict": "faded",
+   "reason": "Outside-in architecture not listed in 2013-14 (API economy only in 2015)"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-002",
+   "verdict": "faded",
+   "reason": "Mobile-only not listed again; wearables is a different device trend"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-003",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2014-007",
+   "reason": "Social business strategy continues as Social activation"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-004",
+   "verdict": "faded",
+   "reason": "Enterprise design discipline not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-005",
+   "verdict": "faded",
+   "reason": "IPv6 not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-006",
+   "verdict": "faded",
+   "reason": "Visualization/analytics; 2014 cognitive analytics is AI, same broad field only"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-007",
+   "verdict": "faded",
+   "reason": "Gamification not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-008",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2015-006",
+   "reason": "ERP/core engine reinvention continues as Core renaissance"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-010",
+   "verdict": "faded",
+   "reason": "IT management systems; CIO as VC is portfolio management, a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-001",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2015-001",
+   "reason": "Annual CIO-role chapter continues with a new role metaphor"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-002",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2015-007",
+   "reason": "AI/ML analytics continues as Amplified intelligence"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-003",
+   "verdict": "faded",
+   "reason": "Crowdsourcing not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-004",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2015-004",
+   "reason": "Personalized contextual engagement narrows to marketing technology (Dimensional marketing)"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-005",
+   "verdict": "faded",
+   "reason": "Wearables not listed again; AR/VR and ambient computing are different phenomena"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-006",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2015-006",
+   "reason": "Paying down technical debt continues as Core renaissance"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-007",
+   "verdict": "faded",
+   "reason": "Social marketing not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-008",
+   "verdict": "faded",
+   "reason": "Cloud orchestration not listed again; software-defined infrastructure is a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-009",
+   "verdict": "faded",
+   "reason": "In-memory computing not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-010",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2016-005",
+   "reason": "DevOps continues inside Autonomic platforms (DevOps, containers, self-managing IT)"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-013",
+   "verdict": "same",
+   "match_id": "deloitte-tech-trends-2015-014",
+   "reason": "Identical label Cyber security"
+  },
+  {
+   "id": "deloitte-tech-trends-2014-015",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2015-012",
+   "reason": "Advanced computing narrows to Quantum computing"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-001",
+   "verdict": "faded",
+   "reason": "CIO-role chapter not listed in 2016-17"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-003",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2016-003",
+   "reason": "Ambient computing (putting IoT to work) renamed IoT: From sensing to doing"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-004",
+   "verdict": "faded",
+   "reason": "Marketing technology not listed in 2016-17"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-005",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2016-005",
+   "reason": "Software-defined infrastructure continues as Autonomic platforms"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-007",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2017-003",
+   "reason": "Augmented AI continues as Machine intelligence"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-009",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2017-003",
+   "reason": "AI continues as Machine intelligence"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-010",
+   "verdict": "faded",
+   "reason": "Robotics not listed in 2016-17"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-011",
+   "verdict": "faded",
+   "reason": "Additive manufacturing not listed in 2016-17"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-013",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2017-010",
+   "reason": "Industrial biology continues as Synthetic biology"
+  },
+  {
+   "id": "deloitte-tech-trends-2015-014",
+   "verdict": "faded",
+   "reason": "Cyber security not listed in 2016-17"
+  },
+  {
+   "id": "deloitte-tech-trends-2016-001",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2017-001",
+   "reason": "IT delivery/operating model transformation continues as IT unbounded"
+  },
+  {
+   "id": "deloitte-tech-trends-2016-002",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2017-004",
+   "reason": "Enterprise AR/VR renamed Mixed reality"
+  },
+  {
+   "id": "deloitte-tech-trends-2016-003",
+   "verdict": "faded",
+   "reason": "IoT not listed in 2017-18"
+  },
+  {
+   "id": "deloitte-tech-trends-2016-004",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2018-004",
+   "reason": "Core systems modernization continues as The new core"
+  },
+  {
+   "id": "deloitte-tech-trends-2016-005",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2017-005",
+   "reason": "Containers/cloud self-managing IT continues as Inevitable architecture"
+  },
+  {
+   "id": "deloitte-tech-trends-2016-007",
+   "verdict": "faded",
+   "reason": "Analytics at scale; dark analytics and data sovereignty make different claims"
+  },
+  {
+   "id": "deloitte-tech-trends-2016-008",
+   "verdict": "faded",
+   "reason": "Social impact of exponentials not listed in 2017-18"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-002",
+   "verdict": "faded",
+   "reason": "Unstructured-data analytics not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-003",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2019-001",
+   "reason": "Enterprise machine intelligence continues as AI-fueled organizations"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-004",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2018-005",
+   "reason": "Mixed reality renamed Digital reality"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-005",
+   "verdict": "faded",
+   "reason": "Flexible architecture not listed again; Reengineering technology is IT operating model"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-006",
+   "verdict": "faded",
+   "reason": "XaaS not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-007",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2018-006",
+   "reason": "Enterprise blockchain continues as Blockchain to blockchains"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-008",
+   "verdict": "faded",
+   "reason": "Nano-engineered materials not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-009",
+   "verdict": "faded",
+   "reason": "Energy storage not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-010",
+   "verdict": "faded",
+   "reason": "Synthetic biology not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2017-011",
+   "verdict": "faded",
+   "reason": "Quantum optimization; 2018 quantum encryption is a different application"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-001",
+   "verdict": "faded",
+   "reason": "IT reengineering not listed in 2019-20"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-002",
+   "verdict": "faded",
+   "reason": "Human-machine workforce not listed again; AI-fueled orgs is a broader AI claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-003",
+   "verdict": "faded",
+   "reason": "Data management/governance not listed in 2019-20"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-004",
+   "verdict": "faded",
+   "reason": "Digital core (finance/supply chain) not listed in 2019-20"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-005",
+   "verdict": "faded",
+   "reason": "AR/VR not listed in 2019-20"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-006",
+   "verdict": "faded",
+   "reason": "Blockchain not listed in 2019-20"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-007",
+   "verdict": "faded",
+   "reason": "APIs not listed in 2019-20"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-008",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2020-007",
+   "reason": "AGI horizon continues as Exponential intelligence (broad, deep reasoning AI)"
+  },
+  {
+   "id": "deloitte-tech-trends-2018-009",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2020-008",
+   "reason": "Quantum encryption broadens to Quantum"
+  },
+  {
+   "id": "deloitte-tech-trends-2019-001",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2021-004",
+   "reason": "Enterprise AI at scale continues as MLOps: Industrialized AI"
+  },
+  {
+   "id": "deloitte-tech-trends-2019-002",
+   "verdict": "faded",
+   "reason": "Serverless/NoOps not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2019-003",
+   "verdict": "faded",
+   "reason": "5G/edge connectivity not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2019-004",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2020-006",
+   "reason": "New interfaces continue as Ambient experience"
+  },
+  {
+   "id": "deloitte-tech-trends-2019-005",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2021-008",
+   "reason": "Personalized customer experience continues as Bespoke for billions"
+  },
+  {
+   "id": "deloitte-tech-trends-2019-006",
+   "verdict": "faded",
+   "reason": "DevSecOps; zero trust is a different security approach"
+  },
+  {
+   "id": "deloitte-tech-trends-2020-001",
+   "verdict": "faded",
+   "reason": "Ethical tech not listed in 2021-22"
+  },
+  {
+   "id": "deloitte-tech-trends-2020-002",
+   "verdict": "faded",
+   "reason": "IT funding not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2020-003",
+   "verdict": "faded",
+   "reason": "Digital twins not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2020-005",
+   "verdict": "faded",
+   "reason": "Architecture role not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2020-006",
+   "verdict": "same",
+   "match_id": "deloitte-tech-trends-2022-009",
+   "reason": "Same label Ambient experience plus subtitle"
+  },
+  {
+   "id": "deloitte-tech-trends-2020-007",
+   "verdict": "same",
+   "match_id": "deloitte-tech-trends-2022-008",
+   "reason": "Same label Exponential intelligence plus subtitle"
+  },
+  {
+   "id": "deloitte-tech-trends-2020-008",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2022-007",
+   "reason": "Quantum continues as Quantum and then some"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-001",
+   "verdict": "faded",
+   "reason": "Strategy platforms not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-002",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2023-006",
+   "reason": "Core modernization narrows to mainframe modernization"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-003",
+   "verdict": "faded",
+   "reason": "Supply chain not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-004",
+   "verdict": "faded",
+   "reason": "Industrialized ML ops; trust in AI (2023) is a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-005",
+   "verdict": "faded",
+   "reason": "Data for ML; data sharing is a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-006",
+   "verdict": "faded",
+   "reason": "Zero trust; Cyber AI is a different security claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-007",
+   "verdict": "faded",
+   "reason": "Digital workplace; 2023 tech workforce is a narrower different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-008",
+   "verdict": "faded",
+   "reason": "Personalized phygital experience not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2021-009",
+   "verdict": "faded",
+   "reason": "DEI tech not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-001",
+   "verdict": "faded",
+   "reason": "Data sharing not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-002",
+   "verdict": "faded",
+   "reason": "Industry clouds; multicloud management is a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-003",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2023-005",
+   "reason": "Blockchain continues as decentralized architectures"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-004",
+   "verdict": "faded",
+   "reason": "IT automation not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-005",
+   "verdict": "faded",
+   "reason": "AI in cyber defense; synthetic-media defense is a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-006",
+   "verdict": "faded",
+   "reason": "Physical tech stack not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-007",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2024-003",
+   "reason": "Quantum folds into specialized compute beyond brute force"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-008",
+   "verdict": "faded",
+   "reason": "Affective computing not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2022-009",
+   "verdict": "faded",
+   "reason": "Ambient computing; immersive/spatial is a different interface claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2023-001",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2024-001",
+   "reason": "Immersive internet/enterprise metaverse continues as spatial computing and industrial metaverse"
+  },
+  {
+   "id": "deloitte-tech-trends-2023-002",
+   "verdict": "faded",
+   "reason": "Trust in AI not listed again; GenAI growth is a different claim"
+  },
+  {
+   "id": "deloitte-tech-trends-2023-003",
+   "verdict": "faded",
+   "reason": "Multicloud management not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2023-004",
+   "verdict": "faded",
+   "reason": "Tech workforce reinvention not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2023-005",
+   "verdict": "faded",
+   "reason": "Blockchain/Web3 not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2023-006",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2024-006",
+   "reason": "Mainframe modernization broadens to core modernization (Core workout)"
+  },
+  {
+   "id": "deloitte-tech-trends-2024-001",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2025-001",
+   "reason": "Spatial computing takes center stage"
+  },
+  {
+   "id": "deloitte-tech-trends-2024-002",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2025-002",
+   "reason": "Generative AI continues as What's next for AI"
+  },
+  {
+   "id": "deloitte-tech-trends-2024-003",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2025-003",
+   "reason": "Specialized compute hardware continues as Hardware is eating the world"
+  },
+  {
+   "id": "deloitte-tech-trends-2024-004",
+   "verdict": "faded",
+   "reason": "Developer experience not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2024-005",
+   "verdict": "faded",
+   "reason": "Synthetic-media defense not listed again"
+  },
+  {
+   "id": "deloitte-tech-trends-2024-006",
+   "verdict": "renamed",
+   "match_id": "deloitte-tech-trends-2025-006",
+   "reason": "Core modernization continues as The intelligent core"
+  }
+ ]
+}

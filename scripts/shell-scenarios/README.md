@@ -32,3 +32,16 @@ python3 scripts/shell-scenarios/extract_data.py <input_dir> <output_dir>
 Writes `<output_dir>/<edition>.pathways.json` for 2011, 2013, 2021, 2023 and 2025: world primary energy by source and total (EJ/year), energy CO2 (Gt CO2/year) and, for 2023, the electric passenger vehicle stock, for every scenario and every target year from the first year the scenarios diverge up to 2025. Those rows were appended, in that order, after the hand-curated text entries in each edition file.
 
 Helpers: `xlsx_dump.py` and `xlsb_dump.py` dump a workbook sheet to TSV (`--list` lists sheets). `xlsb_dump.py` is a minimal BIFF12 reader (numbers, RK, shared and inline strings, cached formula results).
+
+## Observed values (`observed.py`)
+
+Writes `data/raw/shell-scenarios/realized.json`: Shell's own history columns (years equal in every scenario sheet) from the 2025 workbook, the 2023 workbook for EV stock, Energy Institute values where Shell states none, and the IEA EV stock. Inputs in the same folder as above (`src-2025x.xlsb`, `src-2023x.xlsb`) plus:
+
+| File name | URL |
+|---|---|
+| `ei-2026-all.xlsx` | https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx (energyinst.org itself returns a bot check) |
+| `iea-ev.json` | https://api.iea.org/evs?parameters=EV%20stock&category=Historical&mode=Cars&region=World |
+
+```
+python3 scripts/shell-scenarios/observed.py <input_dir>
+```

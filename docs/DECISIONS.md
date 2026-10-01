@@ -526,3 +526,15 @@ It applies first to NIC Global Trends projections, McKinsey Technology Trends Ou
 **Cost.** Long Bets' resolved bets are used only as a baseline.
 
 **Overturned by.** A published individual forecaster whose record readers ask for.
+
+## D36: Trend persistence across a partial edition (amends D33)
+
+*Recorded 2026-10-01.*
+
+**Decision.** A trend whose next two editions include an edition captured only in part (raw `status: partial`) is not graded `faded` when it is not found there: the verdict is `gap`, reported but left out of every share. `persisted`, `renamed` and `recycled` stand, because a match is evidence even in a partial edition. An audit that contested a `faded` verdict for this reason is resolved by this rule and counted as resolved, not as a residual error. Trend labels are stored once per edition in `trends-d33.json`; candidate rows name the next editions by id.
+
+**Why.** The audit of FTSG Tech Trends contested 21 of 50 sampled `faded` verdicts: the 2023 capture holds 6 of 14 volumes, so a 2022 trend missing from 2023 may sit in a volume that was not captured. Calling it faded would put a false statement under the publisher's name.
+
+**Cost.** FTSG has 424 trends in `gap`; its churn figure rests on the 2020 window and on trends matched in later editions. A full capture of FTSG 2019, 2020 and 2023 would let these be graded (#26).
+
+**Overturned by.** A full capture of the partial editions, after which the rows are graded again as a new pass.
