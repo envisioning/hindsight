@@ -444,3 +444,25 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** One agent per dispute and one more file per source. A single agent decides a dispute, where a verdict had two graders; the published reason and evidence are the check, and a further dispute is open to anyone.
 
 **Overturned by.** A dispute volume that needs two blind agents per dispute, or disputes that agents decide against clear evidence.
+
+## D30: Event and state-of-affairs forecasts in any source (extends D27)
+
+*Recorded 2026-10-01.*
+
+**Decision.** A forecast that names an event or a state of affairs, not a technology's adoption, is graded under D16 as D27 grades The Economist, with the target read from its own words:
+
+- "in Y" is the year Y; "by Y" is any time up to the end of Y.
+- `hit`: it happened, or held, as stated within the target. A forecast that something will not happen is a hit when it did not happen.
+- `partial`: it happened in part within the target, or in full in the year after.
+- `miss`: otherwise.
+- A quantity uses D18 for rates and shares stated in percent (percentage points) and the D16 numeric rule for levels and counts; D23 applies to whether a quantity is measured.
+- A possibility-only claim ("could", "may", "risk of") is `unfalsifiable` (D27). A third-party figure that the publisher only quotes is not the publisher's forecast: it is `ungradable`, with the reason.
+- An event that already happened before publication, or before the target window opened, is graded on the words: if the claim says it happens in Y, an earlier occurrence is a `miss` unless it also holds in Y (closes the gap the Economist audit found, #46).
+
+It applies first to NIC Global Trends projections, McKinsey Technology Trends Outlook forecasts and Accenture's 2017 predictions.
+
+**Why.** D27 was written for one source; the same kind of claim now appears in three more. One rule keeps the four comparable, and the audit of #46 asked for the early-event case to be settled.
+
+**Cost.** "In part" still needs judgment per claim; the adjudicator and the audit are the check.
+
+**Overturned by.** Kappa below 0.6 on any of these sources, or audit findings that the "year after" window misclassifies clear cases.
