@@ -1,0 +1,3363 @@
+{
+ "rule": "D32",
+ "role": "event-list adjudicator (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "consistency_rules": [
+  "Death tally: UCDP best estimate (all violence types: state-based, non-state, one-sided), summed over the countries where the named event takes place, from UCDP GED via Our World in Data (geolocated); 2025 uses UCDP Candidate Events (preliminary). Another tally (official, EM-DAT, WHO, peer-reviewed study) is used only where UCDP does not cover the event: natural disasters, epidemics, heat, famine. IBC, ACLED, NST, SOHR and Wikipedia tallies are not used for any conflict UCDP covers, even where both builders agreed on them.",
+  "Criminal violence (Mexico) counts only where a conflict dataset lists it with >= 10,000 deaths in the year: UCDP non-state conflicts between cartels, so Mexico counts 2018-2024 and not in 2010, 2011, 2016, 2017 or 2025. Homicide statistics do not count.",
+  "Heat mortality counts only where a peer-reviewed estimate for that year exists: Russia 2010 (Shaposhnikov et al. 2014, about 11,000 in Moscow alone), Europe 2022, 2023, 2024 (Nature Medicine). Europe 2025 rests on a rapid non-peer-reviewed study and is dropped.",
+  "Residual COVID-19 counts while WHO-reported COVID-19 deaths in the year are >= 10,000: kept for 2020-2025.",
+  "Review criterion: the event must be named as a shock or main downside development in the executive summary or chapter 1 overview of the IMF WEO (April Y+1 or January update) or the World Bank GEP (January Y+1). A mention only in a country forecast or a special feature does not count. Upside developments (AI investment surge) do not count. A commodity price collapse counts as a shock because the reviews treat it as one.",
+  "Agreed events are still tested against these rules; an agreed event that fails is recorded as dropped (in_builders A,B). Neither-builder events found by applying the same UCDP rule across years are added as kept with in_builders [] (Ethiopia 2020; Mexico 2022-2024).",
+  "Duplicates: one development split into two entries by a builder is merged into one event (Brazil/Russia recessions 2015 into the commodity slump)."
+ ],
+ "years": {
+  "2007": [
+   {
+    "event": "US subprime mortgage crisis and global financial turmoil (from August 2007)",
+    "category": "financial crisis",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2008 exec summary: 'The financial shock that erupted in August 2007, as the U.S. subprime mortgage market was derailed by the reversal of the housing boom, has spread quickly and unpredictably'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2008/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2008",
+      "date": "2008-04",
+      "shows": "Executive summary names the August 2007 subprime-triggered financial shock as the main development; 'The global expansion is losing speed in the face of a major financial crisis'"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2008/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2008: Executive Summary",
+      "date": "2008-04",
+      "shows": "names the financial crisis triggered by the US housing/subprime reversal as the main 2007 development"
+     }
+    ]
+   },
+   {
+    "event": "Food and energy price surge (oil, grains)",
+    "category": "commodity price shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2008: headline inflation 'boosted by the continuing buoyancy of food and energy prices'; 'Commodity markets have continued to boom'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WEO Apr 2008 names food and energy price buoyancy as a main 2007 development driving inflation (downside shock for importers)",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2008/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2008: Executive Summary",
+      "date": "2008-04",
+      "shows": "names the food and energy price run-up as a main development"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/2007–2008_world_food_price_crisis",
+      "title": "Wikipedia: 2007–2008 world food price crisis",
+      "date": "accessed 2026-10-01",
+      "shows": "world food prices increased dramatically in 2007 and H1 2008"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2008/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2008",
+      "date": "2008-04",
+      "shows": "Executive summary names rising food and energy prices and the commodity boom as a main development of 2007"
+     }
+    ]
+   },
+   {
+    "event": "Iraq war and sectarian violence",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 4,513 deaths in 2007 (Iraq); builder tally: 26,112 documented civilian deaths in 2007 (Iraq Body Count)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 4,513 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; both builders used Iraq Body Count (26,112 civilian deaths); UCDP does not count much of the unattributed sectarian killing",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2007: Iraq 4,513"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Iraq_Body_Count_project",
+      "title": "Wikipedia: Iraq Body Count project",
+      "date": "accessed 2026-10-01",
+      "shows": "IBC annual table: 26,112 documented civilian deaths in Iraq in 2007"
+     },
+     {
+      "url": "https://www.iraqbodycount.org/database/",
+      "title": "Iraq Body Count database",
+      "date": "accessed 2026-10-01",
+      "shows": "annual civilian death counts"
+     }
+    ]
+   }
+  ],
+  "2008": [
+   {
+    "event": "Global financial crisis (Lehman collapse, banking panic)",
+    "category": "financial crisis",
+    "criteria": [
+     "gdp",
+     "review"
+    ],
+    "measure": "WEO Apr 2009: global economy 'in a severe recession inflicted by a massive financial crisis'; advanced economies' real GDP fell an annualized 7.5% in 2008Q4; world output contracted in 2009 (-0.5% per WEO Apr 2010)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2009/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2009: Executive Summary",
+      "date": "2009-04",
+      "shows": "names the financial crisis and global slump as the main development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2010/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2010: Executive Summary",
+      "date": "2010-04",
+      "shows": "world output contracted by about 0.5 percent in 2009"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2009/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2009",
+      "date": "2009-04",
+      "shows": "Executive summary names the financial crisis and the Q4 2008 collapse in output and trade as the main shock"
+     }
+    ]
+   },
+   {
+    "event": "Oil and food price spike to mid-2008, then collapse",
+    "category": "commodity price shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2009: 'Commodity prices fell sharply from midyear highs, causing an especially large loss of income' for commodity exporters",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2009/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2009: Executive Summary",
+      "date": "2009-04",
+      "shows": "names the commodity price swing as a main 2008 development"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/2007–2008_world_food_price_crisis",
+      "title": "Wikipedia: 2007–2008 world food price crisis",
+      "date": "accessed 2026-10-01",
+      "shows": "food prices peaked in Q2 2008"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2009/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2009",
+      "date": "2009-04",
+      "shows": "Executive summary names the commodity price swing of 2008 as a main development"
+     }
+    ]
+   },
+   {
+    "event": "Cyclone Nargis (Myanmar)",
+    "category": "tropical cyclone",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "at least 138,373 deaths",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; 138,373 deaths (official/EM-DAT); UCDP does not cover natural disasters",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/wiki/Cyclone_Nargis",
+      "title": "Wikipedia: Cyclone Nargis",
+      "date": "accessed 2026-10-01",
+      "shows": "at least 138,373 fatalities, May 2008"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_natural_disasters_by_death_toll",
+      "title": "List of natural disasters by death toll (Wikipedia)",
+      "date": "accessed 2026-10-01",
+      "shows": "Deadliest natural disaster of 2008: Cyclone Nargis, 138,373 deaths"
+     }
+    ]
+   },
+   {
+    "event": "Sichuan (Wenchuan) earthquake, China",
+    "category": "earthquake",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "69,196 dead and 18,379 missing presumed dead",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; 69,196 dead plus 18,379 missing; UCDP does not cover natural disasters",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/wiki/2008_Sichuan_earthquake",
+      "title": "Wikipedia: 2008 Sichuan earthquake",
+      "date": "accessed 2026-10-01",
+      "shows": "69,196 dead, 18,379 missing, 12 May 2008"
+     }
+    ]
+   },
+   {
+    "event": "Iraq war and insurgency",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 2,778 deaths in 2008 (Iraq); builder tally: 10,286 documented civilian deaths in 2008 (Iraq Body Count)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 2,778 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used IBC 10,286 (borderline)",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2008: Iraq 2,778"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Iraq_Body_Count_project",
+      "title": "Wikipedia: Iraq Body Count project",
+      "date": "accessed 2026-10-01",
+      "shows": "IBC annual table: 10,286 documented civilian deaths in Iraq in 2008"
+     }
+    ]
+   }
+  ],
+  "2009": [
+   {
+    "event": "Great Recession: global output contraction and collapse in world trade",
+    "category": "financial crisis / global recession",
+    "criteria": [
+     "gdp",
+     "review"
+    ],
+    "measure": "WEO Apr 2010: world output rose 'about 4¼ percent [in 2010], following a ½ percent contraction in 2009'; WEO Apr 2009: 'The global economy is in a severe recession inflicted by a massive financial crisis'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2010/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2010",
+      "date": "2010-04",
+      "shows": "World output contracted ½ percent in 2009; recovery from the recession is the main development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2009/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2009",
+      "date": "2009-04",
+      "shows": "Severe global recession, world output projected -1.3% for 2009"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2010/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2010: Executive Summary",
+      "date": "2010-04",
+      "shows": "0.5% contraction of world output in 2009"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2009/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2009: Executive Summary",
+      "date": "2009-04",
+      "shows": "world output projected to decline by 1.3 percent in 2009"
+     }
+    ]
+   },
+   {
+    "event": "H1N1 influenza pandemic",
+    "category": "pandemic",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "18,449 lab-confirmed deaths; estimated 151,700 to 575,400 deaths in the first year (CDC-led estimate)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; peer-reviewed modelled estimate 151,700-575,400 deaths in the first 12 months (Dawood et al., Lancet Infect Dis 2012); WHO lab-confirmed 18,449 also >= 10,000",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/wiki/2009_swine_flu_pandemic",
+      "title": "2009 swine flu pandemic (Wikipedia)",
+      "date": "accessed 2026-10-01",
+      "shows": "WHO 18,449 confirmed deaths; WHO-CDC study estimate about 284,000 (150,000 to 575,000)"
+     },
+     {
+      "url": "https://doi.org/10.1016/S1473-3099(12)70121-4",
+      "title": "Dawood et al., Estimated global mortality associated with the first 12 months of 2009 pandemic influenza A H1N1 virus circulation, Lancet Infect Dis",
+      "date": "2012-06",
+      "shows": "151,700-575,400 deaths"
+     }
+    ]
+   },
+   {
+    "event": "Sri Lankan civil war, final offensive against the LTTE",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 10,413 deaths in 2009 (Sri Lanka); builder tally: UCDP: 10,413 deaths in 2009 (state-based 10,165 + one-sided 248)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 10,413 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2009: Sri Lanka 10,413"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Sri Lanka 2009 best estimate 10,165 battle-related deaths, plus 248 one-sided"
+     }
+    ]
+   }
+  ],
+  "2010": [
+   {
+    "event": "Haiti earthquake",
+    "category": "earthquake",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "100,000-160,000 dead (scholarly); Haitian government 220,000-316,000",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; at least 100,000 deaths in any tally; UCDP does not cover natural disasters",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/wiki/2010_Haiti_earthquake",
+      "title": "Wikipedia: 2010 Haiti earthquake",
+      "date": "accessed 2026-10-01",
+      "shows": "death toll 100,000-160,000; government estimates 220,000-316,000"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_natural_disasters_by_death_toll",
+      "title": "List of natural disasters by death toll (Wikipedia)",
+      "date": "accessed 2026-10-01",
+      "shows": "Deadliest natural disaster of 2010: Haiti earthquake, 100,000-316,000 deaths"
+     }
+    ]
+   },
+   {
+    "event": "Russian heat wave and wildfires",
+    "category": "extreme heat",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "55,736 heat-wave deaths (CRED/EM-DAT)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; EM-DAT 55,736; heat rule met: peer-reviewed estimate of about 11,000 excess deaths in Moscow alone (Shaposhnikov et al. 2014)",
+    "evidence": [
+     {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24598414/",
+      "title": "Shaposhnikov et al., Mortality related to air pollution with the Moscow heat wave and wildfire of 2010, Epidemiology 25(3):359-64",
+      "date": "2014-05",
+      "shows": "close to 11,000 excess nonaccidental deaths in Moscow alone during the 44-day 2010 heat wave (peer-reviewed)"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/2010_Russian_wildfires",
+      "title": "Wikipedia: 2010 Russian wildfires",
+      "date": "accessed 2026-10-01",
+      "shows": "55,736 deaths in heat wave per CRED; Munich Re ~56,000"
+     },
+     {
+      "url": "http://cred.be/sites/default/files/PressConference2010.pdf",
+      "title": "CRED: Disasters in numbers 2010",
+      "date": "2011-01",
+      "shows": "Russia heat wave 55,736 deaths"
+     }
+    ]
+   },
+   {
+    "event": "Euro area sovereign debt crisis (Greece, then Ireland bailouts)",
+    "category": "sovereign debt crisis",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2011: 'The problems of the European Union periphery, stemming from the combined interactions of low growth, fiscal woes, and financial pressures, are particularly acute'; 'weak sovereign balance sheets ... especially in certain euro area economies'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2011/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2011",
+      "date": "2011-04",
+      "shows": "Executive summary and chapter text name euro-periphery sovereign stress (Greece crisis May 2010, Ireland crisis Nov 2010) as a main development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2011/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2011: Executive Summary",
+      "date": "2011-04",
+      "shows": "names euro area sovereign stress as a main concern"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2010/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2010: Executive Summary",
+      "date": "2010-04",
+      "shows": "sovereign risk premiums rose sharply"
+     }
+    ]
+   },
+   {
+    "event": "Food and commodity price surge (2010-11)",
+    "category": "commodity price shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2011: 'Rising food and commodity prices pose a threat to poor households, adding to social and economic tensions, notably in the Middle East and North Africa'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WEO Apr 2011 names rising food and commodity prices as a threat to poor households (downside shock)",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2011/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2011",
+      "date": "2011-04",
+      "shows": "Executive summary names rising food and commodity prices as a main development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2011/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2011: Executive Summary",
+      "date": "2011-04",
+      "shows": "names rising food and commodity prices as a main development"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [],
+    "measure": "UCDP best estimate 6,280 deaths in 2010 (Mexico); builder tally: 15,273 drug-related killings in 2010 (Mexican government data)",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 6,280 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; criminal violence counts only via a conflict dataset; UCDP non-state count for Mexico is below threshold; builder A used government homicide data",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2010: Mexico 6,280"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Mexican_drug_war",
+      "title": "Wikipedia: Mexican drug war",
+      "date": "accessed 2026-10-01",
+      "shows": "government data: 9,616 in 2009, 15,273 in 2010, 47,515 total 2006-Jan 2012"
+     }
+    ]
+   }
+  ],
+  "2011": [
+   {
+    "event": "Tohoku earthquake and tsunami and Fukushima nuclear accident (Japan)",
+    "category": "earthquake / tsunami",
+    "criteria": [
+     "deaths",
+     "review"
+    ],
+    "measure": "about 15,900 confirmed dead plus about 2,500 missing; WEO Apr 2012: supply disruptions 'from the earthquake and tsunami in Japan and the floods in Thailand'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/wiki/2011_Tōhoku_earthquake_and_tsunami",
+      "title": "Wikipedia: 2011 Tōhoku earthquake and tsunami",
+      "date": "accessed 2026-10-01",
+      "shows": "death toll ~15,900 confirmed, ~2,500 missing"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/c1.pdf",
+      "title": "IMF World Economic Outlook, April 2012, Chapter 1",
+      "date": "2012-04",
+      "shows": "names Japan earthquake/tsunami supply disruptions in 2011"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_natural_disasters_by_death_toll",
+      "title": "List of natural disasters by death toll (Wikipedia)",
+      "date": "accessed 2026-10-01",
+      "shows": "Deadliest natural disaster of 2011: Tohoku earthquake and tsunami, 19,749 deaths"
+     }
+    ]
+   },
+   {
+    "event": "Euro area sovereign debt and banking crisis (Italy/Spain contagion)",
+    "category": "sovereign debt crisis",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2012: 'After suffering a major setback during 2011 ... activity took a sharp turn for the worse during the fourth quarter, mainly in the euro area'; damage 'done by deteriorating sovereign and banking sector developments in the euro area'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2012",
+      "date": "2012-04",
+      "shows": "Executive summary and chapter 1 name the euro area crisis as the main setback of 2011"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2012: Executive Summary",
+      "date": "2012-04",
+      "shows": "names the euro area crisis as the main 2011 setback"
+     }
+    ]
+   },
+   {
+    "event": "Somalia famine and East Africa drought",
+    "category": "famine/drought",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "about 258,000 excess deaths in southern/central Somalia Oct 2010-Apr 2012, concentrated May-Aug 2011 (FAO/FEWS NET, Checchi & Robinson 2013); Wikipedia range 50,000-260,000",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; about 258,000 excess deaths Oct 2010-Apr 2012, peak May-Aug 2011 (Checchi & Robinson 2013, FAO/FEWS NET); not a heat estimate, UCDP does not cover famine",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/wiki/2011_East_Africa_drought",
+      "title": "Wikipedia: 2011 East Africa drought",
+      "date": "accessed 2026-10-01",
+      "shows": "total deaths 50,000-260,000; NYT: 'Famine Toll in 2011 Was Larger Than Previously Reported'"
+     },
+     {
+      "url": "https://www.fsnau.org/downloads/Somalia_Mortality_Estimates_Final_Report_8May2013_upload.pdf",
+      "title": "FAO FSNAU / FEWS NET: Mortality among populations of southern and central Somalia affected by severe food insecurity and famine 2010-2012",
+      "date": "2013-05",
+      "shows": "about 258,000 excess deaths (not fetched directly; cited via Wikipedia)"
+     },
+     {
+      "url": "https://www.fao.org/somalia/news/detail-events/en/c/247642/",
+      "title": "FAO: Study suggests 258,000 Somalis died due to severe food insecurity and famine",
+      "date": "2013-05-02",
+      "shows": "258,000 deaths Oct 2010-Apr 2012, mortality peaked about 30,000 per month May-Aug 2011"
+     }
+    ]
+   },
+   {
+    "event": "Arab Spring unrest and Libyan oil supply disruption (oil price spike)",
+    "category": "political unrest / oil supply shock",
+    "criteria": [],
+    "measure": "WEO Apr 2012: 'Geopolitical oil supply risks were a prominent feature throughout 2011. They first increased in early 2011 with the unrest in the Middle East and North Africa'",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "review criterion not met: WEO Apr 2012 executive summary names only the euro area crisis as the 2011 setback and mentions oil only as a forward risk; the A quote is from a chapter 1 commodity feature, not a main shock; GEP Jan 2012 also centres on the euro crisis; no single-year death or GDP criterion shown (Libya UCDP 3,917)",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2012: Executive Summary",
+      "date": "2012-04",
+      "shows": "names the euro area sovereign and banking crisis as the cause of the 2011 setback; mentions oil only as a forward risk from geopolitical uncertainty; no mention of Thailand floods"
+     },
+     {
+      "url": "https://www.worldbank.org/en/news/feature/2012/01/18/turbulent-year-ahead-for-global-economy",
+      "title": "World Bank: Turbulent Year Ahead for Global Economy (GEP January 2012 launch)",
+      "date": "2012-01-18",
+      "shows": "main 2011 development is euro area debt turmoil spreading to developing and other high-income countries"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/c1.pdf",
+      "title": "IMF World Economic Outlook, April 2012, Chapter 1 (commodity special feature)",
+      "date": "2012-04",
+      "shows": "names MENA unrest/Libya supply disruption and oil price rise in 2011"
+     }
+    ]
+   },
+   {
+    "event": "Thailand floods (global supply-chain disruption)",
+    "category": "flood",
+    "criteria": [],
+    "measure": "WEO Apr 2012: 'Real GDP also contracted in Japan, reflecting supply disruptions related to floods in Thailand'; 815 deaths",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "815 deaths; named in WEO Apr 2012 chapter 1 only as a cause of Japan's GDP contraction, not as a main global shock in the executive summary or GEP Jan 2012; no world GDP measure >= 0.5%",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2012: Executive Summary",
+      "date": "2012-04",
+      "shows": "names the euro area sovereign and banking crisis as the cause of the 2011 setback; mentions oil only as a forward risk from geopolitical uncertainty; no mention of Thailand floods"
+     },
+     {
+      "url": "https://www.worldbank.org/en/news/feature/2012/01/18/turbulent-year-ahead-for-global-economy",
+      "title": "World Bank: Turbulent Year Ahead for Global Economy (GEP January 2012 launch)",
+      "date": "2012-01-18",
+      "shows": "main 2011 development is euro area debt turmoil spreading to developing and other high-income countries"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/c1.pdf",
+      "title": "IMF World Economic Outlook, April 2012, Chapter 1",
+      "date": "2012-04",
+      "shows": "Thai floods supply disruptions named among 2011 developments"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [],
+    "measure": "UCDP best estimate 4,920 deaths in 2011 (Mexico); builder tally: about 12,900 drug-related killings in 2011 (government total 47,515 for 2006-Jan 2012 minus earlier years)",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 4,920 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builder A used government homicide data",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2011: Mexico 4,920"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Mexican_drug_war",
+      "title": "Wikipedia: Mexican drug war",
+      "date": "accessed 2026-10-01",
+      "shows": "government data totals 47,515 killings 2006-Jan 2012; 15,273 in 2010"
+     }
+    ]
+   }
+  ],
+  "2012": [
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 53,690 deaths in 2012 (Syria); builder tally: UCDP: 50,742 deaths in 2012",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 53,690 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2012: Syria 53,690"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Syria 2012: 50,444 battle-related (best) + non-state 110 + one-sided 142"
+     }
+    ]
+   },
+   {
+    "event": "Euro area crisis (Greek restructuring, threat of euro breakup)",
+    "category": "sovereign debt crisis",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2013: 'advanced economy policymakers have successfully defused two of the biggest short-term threats to the global recovery, the threat of a euro area breakup and a sharp fiscal contraction in the United States caused by a plunge off the \"fiscal cliff.\"'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2013/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2013",
+      "date": "2013-04",
+      "shows": "Executive summary names the euro area breakup threat as one of the two biggest threats of 2012"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2013/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2013: Executive Summary",
+      "date": "2013-04",
+      "shows": "names the euro area breakup threat as a main 2012 development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2012/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2012: Executive Summary",
+      "date": "2012-04",
+      "shows": "euro area projected to go into recession in 2012 'as a result of the sovereign debt crisis'"
+     }
+    ]
+   },
+   {
+    "event": "US fiscal cliff standoff",
+    "category": "fiscal crisis",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2013: 'a sharp fiscal contraction in the United States caused by a plunge off the \"fiscal cliff\"' named as one of the two biggest short-term threats",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "kept",
+    "reason": "WEO Apr 2013 executive summary names the fiscal cliff as one of the two biggest short-term threats of 2012 (a main downside development, alongside euro breakup)",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2013/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2013: Executive Summary",
+      "date": "2013-04",
+      "shows": "names the fiscal cliff as a main 2012 threat"
+     }
+    ]
+   },
+   {
+    "event": "Emerging market slowdown",
+    "category": "economic slowdown",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2013: 'There was a noticeable slowdown in the emerging market and developing economies during 2012'",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "kept",
+    "reason": "WEO Apr 2013 executive summary names the EMDE slowdown of 2012 as a main downside development; same rule as China slowdown 2015",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2013/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2013: Executive Summary",
+      "date": "2013-04",
+      "shows": "names the EM slowdown of 2012"
+     }
+    ]
+   }
+  ],
+  "2013": [
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 76,462 deaths in 2013 (Syria); builder tally: UCDP: 76,149 deaths in 2013",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 76,462 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2013: Syria 76,462"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Syria 2013: 70,516 battle-related (best) + non-state 1,011 + one-sided 3,122"
+     }
+    ]
+   },
+   {
+    "event": "Fed taper tantrum and emerging market capital outflows",
+    "category": "financial market shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2014: 'Activity in many emerging market economies has disappointed in a less favorable external financial environment'; longer-term rates rose 'since May 2013, when the Federal Reserve announced its intention to begin tapering its asset purchase program'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2014/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2014",
+      "date": "2014-04",
+      "shows": "Executive summary and chapter 1 name EM slowdown under tighter external financing after the May 2013 tapering announcement as a main development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2014/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2014: Executive Summary",
+      "date": "2014-04",
+      "shows": "names EM financial tightening and volatility as main development"
+     }
+    ]
+   }
+  ],
+  "2014": [
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 78,627 deaths in 2014 (Syria); builder tally: UCDP: 76,513 deaths in 2014; SOHR 110,920",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 78,627 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2014: Syria 78,627"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Syria 2014: state-based 65,345 + non-state 10,356 + one-sided 812"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2014",
+      "title": "Wikipedia: List of armed conflicts in 2014",
+      "date": "accessed 2026-10-01",
+      "shows": "Syria 110,920 (SOHR)"
+     }
+    ]
+   },
+   {
+    "event": "Islamic State offensive and war in Iraq",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 16,437 deaths in 2014 (Iraq); builder tally: IBC 20,218 civilian deaths; UCDP 13,861",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 16,437 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2014: Iraq 16,437"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Iraq_Body_Count_project",
+      "title": "Wikipedia: Iraq Body Count project",
+      "date": "accessed 2026-10-01",
+      "shows": "IBC annual table: 20,218 documented civilian deaths in Iraq in 2014"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Iraq 2014: 13,797 battle-related + 64 non-state"
+     }
+    ]
+   },
+   {
+    "event": "War in Afghanistan",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 12,565 deaths in 2014 (Afghanistan); builder tally: UCDP: 12,591 deaths in 2014",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 12,565 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2014: Afghanistan 12,565"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Afghanistan 2014: 12,351 battle-related + 240 one-sided"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2014",
+      "title": "Wikipedia: List of armed conflicts in 2014",
+      "date": "accessed 2026-10-01",
+      "shows": "Afghanistan 14,277"
+     }
+    ]
+   },
+   {
+    "event": "Boko Haram insurgency (Nigeria)",
+    "category": "insurgency / terrorism",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 10,287 deaths in 2014 (Nigeria); builder tally: UCDP: 11,327 (Nigeria 6,193 + one-sided by Boko Haram across Nigeria/Cameroon/Chad 5,134); NST 10,849",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 10,287 >= 10,000; Nigeria total includes some non-Boko Haram violence; Cameroon (1,034) and Chad add Boko Haram deaths, so the event clears 10,000 either way",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2014: Nigeria 10,287"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Nigeria 2014 6,193 + Cameroon/Chad/Nigeria one-sided 5,134"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2014",
+      "title": "Wikipedia: List of armed conflicts in 2014",
+      "date": "accessed 2026-10-01",
+      "shows": "Boko Haram insurgency 10,849 (Nigeria Security Tracker)"
+     }
+    ]
+   },
+   {
+    "event": "Oil price collapse (from mid-2014)",
+    "category": "commodity price shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2015: 'Lower oil prices—which reflect to a significant extent supply factors—provide a boost to growth globally'; Russia hit by 'sharply lower oil prices and increased geopolitical tensions'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WEO Apr 2015 treats lower oil prices as a global shock with large terms-of-trade losses for exporters (counted as a shock, not an upside development)",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2015/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2015: Executive Summary",
+      "date": "2015-04",
+      "shows": "names the oil price drop as a main 2014 development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2015/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2015",
+      "date": "2015-04",
+      "shows": "Chapter 1 names the oil price decline as one of the key developments shaping 2014-15"
+     }
+    ]
+   },
+   {
+    "event": "South Sudanese civil war",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 2,461 deaths in 2014 (South Sudan); builder tally: about 50,000 killed (AFP / ICG estimate); not confirmed by UCDP counts",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 2,461 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builder A used an AFP/ICG estimate of about 50,000; UCDP covers South Sudan",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2014: South Sudan 2,461"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2014",
+      "title": "Wikipedia: List of armed conflicts in 2014",
+      "date": "accessed 2026-10-01",
+      "shows": "South Sudanese Civil War 50,000 fatalities in 2014"
+     }
+    ]
+   },
+   {
+    "event": "Russia-Ukraine conflict (Crimea annexation, Donbas war) and sanctions",
+    "category": "interstate conflict",
+    "criteria": [],
+    "measure": "WEO Apr 2015: 'The growth forecasts for Russia reflect the economic impact of sharply lower oil prices and increased geopolitical tensions'; 4,771 deaths in 2014",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "WEO Apr 2015 executive summary cites geopolitical tensions only as one factor in Russia's country forecast, not as a main global shock; UCDP Ukraine 2014 4,943 < 10,000",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2015/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2015: Executive Summary",
+      "date": "2015-04",
+      "shows": "geopolitical tensions cited only as one factor in Russia's growth forecast; global drivers named are lower oil prices, legacies, China slowdown"
+     },
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2014: Ukraine 4,943"
+     }
+    ]
+   }
+  ],
+  "2015": [
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 59,544 deaths in 2015 (Syria); builder tally: UCDP: 57,131 deaths in 2015",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 59,544 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2015: Syria 59,544"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Syria 2015: state-based 50,181 + non-state 6,462 + one-sided 488"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2015",
+      "title": "Wikipedia: List of armed conflicts in 2015",
+      "date": "accessed 2026-10-01",
+      "shows": "Syria 85,527 (SOHR-based)"
+     }
+    ]
+   },
+   {
+    "event": "War in Afghanistan",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 18,016 deaths in 2015 (Afghanistan); builder tally: UCDP: 17,978 deaths in 2015",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 18,016 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2015: Afghanistan 18,016"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Afghanistan 2015: 17,285 battle-related + 532 non-state + 161 one-sided"
+     }
+    ]
+   },
+   {
+    "event": "War against Islamic State in Iraq",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 11,300 deaths in 2015 (Iraq); builder tally: IBC 17,578 civilian deaths; UCDP 11,116",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 11,300 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2015: Iraq 11,300"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Iraq_Body_Count_project",
+      "title": "Wikipedia: Iraq Body Count project",
+      "date": "accessed 2026-10-01",
+      "shows": "IBC annual table: 17,578 documented civilian deaths in Iraq in 2015"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Iraq 2015: 10,982 battle-related + 26 + 108"
+     }
+    ]
+   },
+   {
+    "event": "China slowdown, stock market crash and renminbi devaluation",
+    "category": "economic slowdown / financial market shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2016: 'concerns about the global impact of the unwinding of prior excesses in China's economy'; major realignments include 'the slowdown and rebalancing in China'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2016/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2016: Executive Summary",
+      "date": "2016-04",
+      "shows": "names China slowdown and financial turbulence as main development"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2016/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2016",
+      "date": "2016-04",
+      "shows": "Executive summary names China's rebalancing and financial turbulence as a main headwind of late 2015"
+     }
+    ]
+   },
+   {
+    "event": "Commodity and oil price slump, with deep recessions in Brazil and Russia",
+    "category": "commodity price shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2016: 'a further decline in commodity prices, especially for oil, with sizable redistributive consequences'; 'Brazil and Russia—are still mired in deep recessions'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WEO Apr 2016 names the further fall in commodity prices and the Brazil/Russia recessions; B's separate Brazil/Russia entry merged here",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2016/01/pdf/exesum.pdf",
+      "title": "IMF World Economic Outlook, April 2016: Executive Summary",
+      "date": "2016-04",
+      "shows": "names commodity price decline and EM recessions"
+     },
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2016/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2016",
+      "date": "2016-04",
+      "shows": "Executive summary names falling commodity prices and EM distress as a main development"
+     }
+    ]
+   },
+   {
+    "event": "Deep recessions in Brazil and Russia",
+    "category": "economic recession",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2016: 'a number of large emerging markets—including Brazil and Russia—are still mired in deep recessions'",
+    "in_builders": [
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "duplicate: same development as the commodity price slump (A lists it inside that event); merged, not counted twice",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/external/pubs/ft/weo/2016/01/pdf/text.pdf",
+      "title": "IMF World Economic Outlook, April 2016",
+      "date": "2016-04",
+      "shows": "Executive summary names Brazil and Russia recessions"
+     }
+    ]
+   },
+   {
+    "event": "Boko Haram insurgency (Nigeria and Lake Chad)",
+    "category": "insurgency / terrorism",
+    "criteria": [],
+    "measure": "UCDP all-violence total in Nigeria+Cameroon+Chad+Niger 11,278, but Nigeria's 9,093 includes non-Boko Haram communal violence; builder A's UCDP extract gives 5,608 for Nigeria; NST 11,778",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers it; the Boko Haram share of UCDP deaths across the Lake Chad states is below 10,000 (Nigeria 5,608 per A's UCDP extract plus about 2,200 in neighbours); NST tally not used under the UCDP-first rule",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2015: Nigeria 9,093, Cameroon 1,263, Chad 389, Niger 533; total 11,278"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2015",
+      "title": "Wikipedia: List of armed conflicts in 2015",
+      "date": "accessed 2026-10-01",
+      "shows": "Boko Haram insurgency 11,778 (NST)"
+     },
+     {
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "UCDP Battle-Related Deaths (conflict) v25.1, One-sided v25.1, Non-state v25.1",
+      "date": "2025",
+      "shows": "Nigeria 2015 5,608 (state + non-state + one-sided located in Nigeria)"
+     }
+    ]
+   }
+  ],
+  "2016": [
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 53,851 deaths in 2016 (Syria); builder tally: 64,126 deaths in 2016 (SOHR, as listed on Wikipedia)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 53,851 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2016: Syria 53,851"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2016",
+      "title": "List of armed conflicts in 2016",
+      "date": "2016",
+      "shows": "Syrian Civil War in 10,000+ tier with 64,126 deaths in 2016"
+     }
+    ]
+   },
+   {
+    "event": "War in Iraq against ISIS (incl. battle of Mosul)",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 12,046 deaths in 2016 (Iraq); builder tally: 23,898+ deaths in 2016 (Iraq Body Count, UN)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 12,046 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2016: Iraq 12,046"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2016",
+      "title": "List of armed conflicts in 2016",
+      "date": "2016",
+      "shows": "Iraqi conflict in 10,000+ tier with 23,898+ deaths"
+     }
+    ]
+   },
+   {
+    "event": "War in Afghanistan",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 18,991 deaths in 2016 (Afghanistan); builder tally: 23,539+ deaths in 2016",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 18,991 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2016: Afghanistan 18,991"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2016",
+      "title": "List of armed conflicts in 2016",
+      "date": "2016",
+      "shows": "War in Afghanistan in 10,000+ tier with 23,539+ deaths"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [],
+    "measure": "UCDP best estimate 4,275 deaths in 2016 (Mexico); builder tally: 12,224 deaths in 2016 (Excelsior count, as listed on Wikipedia)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 4,275 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used Excelsior homicide count 12,224",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2016: Mexico 4,275"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2016",
+      "title": "List of armed conflicts in 2016",
+      "date": "2016",
+      "shows": "Mexican Drug War in 10,000+ tier with 12,224 deaths"
+     }
+    ]
+   },
+   {
+    "event": "UK Brexit referendum and policy uncertainty",
+    "category": "political / policy uncertainty shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "GEP Jan 2017: 'Stagnant global trade, subdued investment, and heightened policy uncertainty marked another difficult year for the world economy.' Brexit vote of June 2016 named as source of uncertainty.",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/83336e68-2b7f-569a-bf4d-23d83aa04966/content",
+      "title": "World Bank, Global Economic Prospects, January 2017",
+      "date": "2017-01-10",
+      "shows": "Executive summary names heightened policy uncertainty as a defining feature of 2016; chapter 1 cites the June 2016 Brexit vote"
+     },
+     {
+      "url": "https://web.archive.org/web/20171227215000/http://www.imf.org/~/media/Files/Publications/WEO/2017/April/pdf/text.ashx",
+      "title": "IMF World Economic Outlook, April 2017: Gaining Momentum?",
+      "date": "2017-04",
+      "shows": "Ch.1 Recent Developments names the Brexit vote as a 2016 development and source of uncertainty"
+     }
+    ]
+   },
+   {
+    "event": "Oil and commodity price slump hitting commodity exporters",
+    "category": "commodity price shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "GEP Jan 2017: 'some commodity exporters struggle to adjust to low commodity prices'; crude oil recovered 'from a low of $30' in 2016",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/83336e68-2b7f-569a-bf4d-23d83aa04966/content",
+      "title": "World Bank, Global Economic Prospects, January 2017",
+      "date": "2017-01-10",
+      "shows": "Low commodity prices named as main drag on commodity-exporting EMDEs in 2016; global growth at post-crisis low of 2.3%"
+     },
+     {
+      "url": "https://web.archive.org/web/20171227215000/http://www.imf.org/~/media/Files/Publications/WEO/2017/April/pdf/text.ashx",
+      "title": "IMF World Economic Outlook, April 2017: Gaining Momentum?",
+      "date": "2017-04",
+      "shows": "Ch.1 names commodity exporters' adjustment to the terms-of-trade decline as a main 2016 development"
+     }
+    ]
+   },
+   {
+    "event": "Yemeni civil war and Saudi-led intervention",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 4,166 deaths in 2016 (Yemen); builder tally: UN: 150,000+ killed in violence 2014-2021 (avg ~19,000/yr) plus indirect deaths; Wikipedia 2016 list gives only 1,500, so year count is inferred, low confidence",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 4,166 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; A's figure was an average inferred from a multi-year UN total",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2016: Yemen 4,166"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)",
+      "title": "Yemeni civil war (2014-present)",
+      "date": "2026",
+      "shows": "UN: 150,000+ killed in violence 2014-2021 and 377,000+ direct and indirect deaths; average well above 10,000 per year"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2016",
+      "title": "List of armed conflicts in 2016",
+      "date": "2016",
+      "shows": "Lists Yemeni Crisis with 1,500 deaths in 2016 (inconsistent with UN totals)"
+     }
+    ]
+   }
+  ],
+  "2017": [
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 38,472 deaths in 2017 (Syria); builder tally: 39,000 deaths in 2017 (Syria Human Rights Committee)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 38,472 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2017: Syria 38,472"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2017",
+      "title": "List of armed conflicts in 2017",
+      "date": "2017",
+      "shows": "Syrian Civil War in 10,000+ tier, 39,000 deaths"
+     }
+    ]
+   },
+   {
+    "event": "War in Afghanistan",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 19,766 deaths in 2017 (Afghanistan); builder tally: 23,065 deaths in 2017",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 19,766 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2017: Afghanistan 19,766"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2017",
+      "title": "List of armed conflicts in 2017",
+      "date": "2017",
+      "shows": "War in Afghanistan in 10,000+ tier, 23,065 deaths"
+     }
+    ]
+   },
+   {
+    "event": "War in Iraq against ISIS (Mosul)",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 11,437 deaths in 2017 (Iraq); builder tally: 13,187 deaths in 2017 (Iraq Body Count)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 11,437 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2017: Iraq 11,437"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2017",
+      "title": "List of armed conflicts in 2017",
+      "date": "2017",
+      "shows": "Iraq conflict in 10,000+ tier, 13,187 deaths"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [],
+    "measure": "UCDP best estimate 9,713 deaths in 2017 (Mexico); builder tally: 14,771-31,174 deaths in 2017",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 9,713 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; close to threshold (9,713)",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2017: Mexico 9,713"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2017",
+      "title": "List of armed conflicts in 2017",
+      "date": "2017",
+      "shows": "Mexican Drug War in 10,000+ tier"
+     }
+    ]
+   },
+   {
+    "event": "Yemeni civil war and Saudi-led intervention",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 3,642 deaths in 2017 (Yemen); builder tally: UN: 150,000+ killed in violence 2014-2021 (avg ~19,000/yr) plus indirect deaths; Wikipedia 2017 list gives only 1,438, so year count is inferred, low confidence",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 3,642 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; A's figure was an average inferred from a multi-year UN total",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2017: Yemen 3,642"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)",
+      "title": "Yemeni civil war (2014-present)",
+      "date": "2026",
+      "shows": "UN: 150,000+ killed in violence 2014-2021 and 377,000+ direct and indirect deaths; average well above 10,000 per year"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2017",
+      "title": "List of armed conflicts in 2017",
+      "date": "2017",
+      "shows": "Lists Yemeni Civil War with only 1,438 deaths in 2017 (inconsistent with UN totals)"
+     }
+    ]
+   }
+  ],
+  "2018": [
+   {
+    "event": "War in Afghanistan",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 26,849 deaths in 2018 (Afghanistan); builder tally: 35,941 deaths in 2018 (ACLED)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 26,849 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2018: Afghanistan 26,849"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2018",
+      "title": "List of armed conflicts in 2018",
+      "date": "2018",
+      "shows": "10,000+ tier, 35,941"
+     }
+    ]
+   },
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 21,679 deaths in 2018 (Syria); builder tally: 19,799-23,000 deaths in 2018 (SOHR)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 21,679 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2018: Syria 21,679"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2018",
+      "title": "List of armed conflicts in 2018",
+      "date": "2018",
+      "shows": "10,000+ tier, 19,799-23,000"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 11,175 deaths in 2018 (Mexico); builder tally: 27,765 deaths in 2018",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 11,175 >= 10,000; counts because UCDP lists Mexico's cartel conflicts as non-state conflicts",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2018: Mexico 11,175"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2018",
+      "title": "List of armed conflicts in 2018",
+      "date": "2018",
+      "shows": "10,000+ tier, 27,765"
+     }
+    ]
+   },
+   {
+    "event": "Yemeni civil war and Saudi-led intervention",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 5,042 deaths in 2018 (Yemen); builder tally: 25,705 deaths in 2018 (ACLED; 22,201 in Yemen)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 5,042 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 25,705",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2018: Yemen 5,042"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2018",
+      "title": "List of armed conflicts in 2018",
+      "date": "2018",
+      "shows": "10,000+ tier, 25,705"
+     }
+    ]
+   },
+   {
+    "event": "US-China trade war (tariff escalation)",
+    "category": "trade conflict",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2019 ch.1: expansion decelerated in H2 2018 'amid an increase in trade tensions and tariff hikes between the United States and China'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://web.archive.org/web/20190531140740/https://www.imf.org/en/Publications/WEO/Issues/2019/03/28/world-economic-outlook-april-2019",
+      "title": "IMF World Economic Outlook, April 2019: Growth Slowdown, Precarious Recovery",
+      "date": "2019-04",
+      "shows": "Exec summary and ch.1 name US-China trade tensions as the main 2018 shock"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/96955875-42ab-5b4e-9999-00258953baf3/content",
+      "title": "World Bank, Global Economic Prospects, January 2019, Chapter 1",
+      "date": "2019-01-08",
+      "shows": "Trade tensions among major economies named in the chapter summary as a main development of 2018"
+     }
+    ]
+   },
+   {
+    "event": "Emerging-market currency and financial stress (Argentina, Turkey)",
+    "category": "financial crisis",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2019: 'financial conditions tightening for vulnerable emerging markets in the spring of 2018'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://web.archive.org/web/20190531140740/https://www.imf.org/en/Publications/WEO/Issues/2019/03/28/world-economic-outlook-april-2019",
+      "title": "IMF World Economic Outlook, April 2019",
+      "date": "2019-04",
+      "shows": "Names EM financial tightening in 2018 as a factor in the slowdown"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/96955875-42ab-5b4e-9999-00258953baf3/content",
+      "title": "World Bank, Global Economic Prospects, January 2019, Chapter 1",
+      "date": "2019-01-08",
+      "shows": "EMDE financial stress and currency pressures named in the chapter summary as a main development of 2018"
+     }
+    ]
+   }
+  ],
+  "2019": [
+   {
+    "event": "War in Afghanistan",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 30,434 deaths in 2019 (Afghanistan); builder tally: 41,735 deaths in 2019 (ACLED)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 30,434 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2019: Afghanistan 30,434"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2019",
+      "title": "List of armed conflicts in 2019",
+      "date": "2019",
+      "shows": "10,000+ tier, 41,735"
+     }
+    ]
+   },
+   {
+    "event": "Syrian civil war",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 11,168 deaths in 2019 (Syria); builder tally: 11,244 deaths in 2019",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 11,168 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2019: Syria 11,168"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2019",
+      "title": "List of armed conflicts in 2019",
+      "date": "2019",
+      "shows": "10,000+ tier, 11,244"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 10,432 deaths in 2019 (Mexico); builder tally: 35,588 deaths in 2019 (CRS)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 10,432 >= 10,000; counts because UCDP lists Mexico's cartel conflicts as non-state conflicts",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2019: Mexico 10,432"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2019",
+      "title": "List of armed conflicts in 2019",
+      "date": "2019",
+      "shows": "10,000+ tier, 35,588"
+     }
+    ]
+   },
+   {
+    "event": "Yemeni civil war and Saudi-led intervention",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 2,987 deaths in 2019 (Yemen); builder tally: 20,882 deaths in 2019 (ACLED)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 2,987 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 20,882",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2019: Yemen 2,987"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2019",
+      "title": "List of armed conflicts in 2019",
+      "date": "2019",
+      "shows": "10,000+ tier, 20,882"
+     }
+    ]
+   },
+   {
+    "event": "US-China trade war and global manufacturing and trade slowdown",
+    "category": "trade conflict",
+    "criteria": [
+     "gdp",
+     "review"
+    ],
+    "measure": "IMF WEO Oct 2019: US-China trade tensions to cumulatively reduce the level of global GDP by 0.8% by 2020. GEP Jan 2020: 'Global growth decelerated markedly in 2019 ... a prolonged period of rising trade disputes between the two countries, which has heightened policy uncertainty and weighed on international trade, confidence, and investment.'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.imf.org/en/blogs/articles/2019/10/15/the-world-economy-synchronized-slowdown-precarious-outlook",
+      "title": "IMF blog, The World Economy: Synchronized Slowdown, Precarious Outlook (WEO Oct 2019)",
+      "date": "2019-10-15",
+      "shows": "IMF estimate that US-China trade tensions cut global GDP level by 0.8% by 2020 (page blocked to fetch; figure confirmed via search snippet only)"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/29dcbcde-ae9c-56b8-8b66-aeb97eea4736/content",
+      "title": "World Bank, Global Economic Prospects, January 2020, Chapter 1",
+      "date": "2020-01-08",
+      "shows": "US-China trade disputes named in chapter summary as main cause of 2019 slowdown to 2.4%, post-crisis low"
+     },
+     {
+      "url": "https://web.archive.org/web/20191201/https://blogs.imf.org/2019/10/15/the-world-economy-synchronized-slowdown-precarious-outlook/",
+      "title": "IMF Blog: The World Economy: Synchronized Slowdown, Precarious Outlook",
+      "date": "2019-10-15",
+      "shows": "Trade tensions cut global GDP level by 0.8% by 2020"
+     },
+     {
+      "url": "https://web.archive.org/web/20200301/https://www.imf.org/en/Publications/WEO/Issues/2020/01/20/weo-update-january2020",
+      "title": "IMF WEO Update, January 2020",
+      "date": "2020-01",
+      "shows": "2019 growth 2.9%; names US-China trade negotiations, no-deal Brexit fears and social unrest as the shaping developments"
+     }
+    ]
+   }
+  ],
+  "2020": [
+   {
+    "event": "COVID-19 pandemic and global recession",
+    "category": "pandemic",
+    "criteria": [
+     "deaths",
+     "gdp",
+     "review"
+    ],
+    "measure": "1,897,533 deaths reported to WHO in 2020; WEO Apr 2020 projected world GDP -3% in 2020; WEO Apr 2021: 'contraction of activity in 2020 was unprecedented in living memory'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-data.csv",
+      "title": "WHO COVID-19 global data (daily reported cases and deaths)",
+      "date": "2026",
+      "shows": "Sum of New_deaths for 2020 = 1,897,533"
+     },
+     {
+      "url": "https://web.archive.org/web/20200602033922/https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/weo-april-2020",
+      "title": "IMF WEO April 2020: The Great Lockdown",
+      "date": "2020-04",
+      "shows": "Global economy projected to contract -3% in 2020 as a result of the pandemic"
+     },
+     {
+      "url": "https://web.archive.org/web/20210602000646/https://www.imf.org/en/Publications/WEO/Issues/2021/03/23/world-economic-outlook-april-2021",
+      "title": "IMF WEO April 2021: Managing Divergent Recoveries",
+      "date": "2021-04",
+      "shows": "Names the 2020 pandemic contraction as the main development of 2020"
+     },
+     {
+      "url": "https://www.who.int/news/item/05-05-2022-14.9-million-excess-deaths-were-associated-with-the-covid-19-pandemic-in-2020-and-2021",
+      "title": "WHO, 14.9 million excess deaths were associated with the COVID-19 pandemic in 2020 and 2021",
+      "date": "2022-05-05",
+      "shows": "Excess mortality of about 14.9 million (13.3-16.6 million) over 2020-2021"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/008daeed-aa8d-578e-ae24-02239e02ec4e/content",
+      "title": "World Bank, Global Economic Prospects, January 2021, Chapter 1",
+      "date": "2021-01-05",
+      "shows": "Global GDP contracted 4.3% in 2020; COVID-19 named as the cause of the global recession"
+     }
+    ]
+   },
+   {
+    "event": "War in Afghanistan",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 20,836 deaths in 2020 (Afghanistan); builder tally: 19,444 deaths in 2020 (ACLED)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 20,836 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2020: Afghanistan 20,836"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2020",
+      "title": "List of armed conflicts in 2020",
+      "date": "2020",
+      "shows": "List of armed conflicts in 2020: Afghan conflict in 10,000+ tier, 19,444"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 13,326 deaths in 2020 (Mexico); builder tally: 34,512 deaths in 2020 (mainly homicides)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 13,326 >= 10,000; counts because UCDP lists Mexico's cartel conflicts as non-state conflicts",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2020: Mexico 13,326"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2020",
+      "title": "List of armed conflicts in 2020",
+      "date": "2020",
+      "shows": "List of armed conflicts in 2020: Mexican Drug War in 10,000+ tier, 34,512"
+     }
+    ]
+   },
+   {
+    "event": "Yemeni civil war and Saudi-led intervention",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 6,736 deaths in 2020 (Yemen); builder tally: 19,056 deaths in 2020 (ACLED)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 6,736 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 19,056",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2020: Yemen 6,736"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_armed_conflicts_in_2020",
+      "title": "List of armed conflicts in 2020",
+      "date": "2020",
+      "shows": "List of armed conflicts in 2020: Yemeni Crisis in 10,000+ tier, 19,056"
+     }
+    ]
+   },
+   {
+    "event": "Tigray war, Ethiopia (from November 2020)",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 24,419 deaths in 2020 (Ethiopia)",
+    "in_builders": [],
+    "decision": "kept",
+    "reason": "added by adjudicator: neither builder listed it, but UCDP best estimate 24,419 >= 10,000 and the same rule keeps this event in other years",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2020: Ethiopia 24,419"
+     }
+    ]
+   }
+  ],
+  "2021": [
+   {
+    "event": "COVID-19 pandemic (Delta and Omicron waves)",
+    "category": "pandemic",
+    "criteria": [
+     "deaths",
+     "review"
+    ],
+    "measure": "WHO reported COVID-19 deaths in 2021: 3,549,358 (sum of daily WHO country reports). Excess deaths about 14.9 million over 2020-2021 (WHO), the larger share in 2021. GEP Jan 2022: 'resurgences of the COVID-19 pandemic and widespread supply bottlenecks weighed appreciably on global activity in the second half of last year.'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://www.who.int/news/item/05-05-2022-14.9-million-excess-deaths-were-associated-with-the-covid-19-pandemic-in-2020-and-2021",
+      "title": "WHO, 14.9 million excess deaths were associated with the COVID-19 pandemic in 2020 and 2021",
+      "date": "2022-05-05",
+      "shows": "Excess mortality of about 14.9 million over 2020-2021"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/a879a935-80da-5c37-882b-d06f2d9d56d6/content",
+      "title": "World Bank, Global Economic Prospects, January 2022, Chapter 1",
+      "date": "2022-01-11",
+      "shows": "Pandemic resurgences named in chapter summary as main drag on 2021 activity"
+     },
+     {
+      "url": "https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-data.csv",
+      "title": "WHO COVID-19 global data (daily country reports)",
+      "date": "accessed 2026-10-01",
+      "shows": "Sum of New_deaths dated 2021: 3,549,358"
+     }
+    ]
+   },
+   {
+    "event": "War in Afghanistan and Taliban takeover",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 36,375 deaths in 2021 (Afghanistan); builder tally: 41,728 deaths in 2021",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 36,375 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2021: Afghanistan 36,375"
+     },
+     {
+      "url": "https://web.archive.org/web/20220113160338/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2022-01-13",
+      "shows": "Major wars table: Afghanistan conflict, 41,728 fatalities in 2021"
+     }
+    ]
+   },
+   {
+    "event": "Yemeni civil war and Saudi-led intervention",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 23,444 deaths in 2021 (Yemen); builder tally: 26,344 deaths in 2021",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 23,444 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2021: Yemen 23,444"
+     },
+     {
+      "url": "https://web.archive.org/web/20220113160338/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2022-01-13",
+      "shows": "Major wars table: Yemeni Crisis, 26,344 fatalities in 2021"
+     }
+    ]
+   },
+   {
+    "event": "Tigray war (Ethiopia, Eritrea)",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 129,481 deaths in 2021 (Ethiopia); builder tally: 19,200 deaths in 2021 (battle deaths; famine deaths additional)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 129,481 >= 10,000; UCDP far above both builders' ACLED-based ranges",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2021: Ethiopia 129,481"
+     },
+     {
+      "url": "https://web.archive.org/web/20220113160338/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2022-01-13",
+      "shows": "Major wars table: Tigray War, 19,200 fatalities in 2021"
+     }
+    ]
+   },
+   {
+    "event": "Myanmar coup and civil war",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 1,738 deaths in 2021 (Myanmar); builder tally: 11,114 deaths in 2021",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 1,738 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; ACLED upper bound 11,114; UCDP is known to record far fewer Myanmar deaths",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2021: Myanmar 1,738"
+     },
+     {
+      "url": "https://web.archive.org/web/20220113160338/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2022-01-13",
+      "shows": "Myanmar internal conflict, 11,114 fatalities in 2021"
+     }
+    ]
+   },
+   {
+    "event": "Post-pandemic supply-chain disruptions, energy price surge and inflation spike",
+    "category": "supply-chain disruption / inflation shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Jan 2022: 'Rising energy prices and supply disruptions have resulted in higher and more broad-based inflation than anticipated'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://web.archive.org/web/20220301202712/https://www.imf.org/en/Publications/WEO/Issues/2022/01/25/world-economic-outlook-update-january-2022",
+      "title": "IMF WEO Update January 2022: Rising Caseloads, A Disrupted Recovery, and Higher Inflation",
+      "date": "2022-01",
+      "shows": "Names supply disruptions, energy prices and inflation as main 2021 developments"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/a879a935-80da-5c37-882b-d06f2d9d56d6/content",
+      "title": "World Bank, Global Economic Prospects, January 2022, Chapter 1",
+      "date": "2022-01-11",
+      "shows": "Supply bottlenecks and higher food and energy prices named in the chapter summary as main developments of 2021"
+     }
+    ]
+   },
+   {
+    "event": "China property sector crisis (Evergrande) and zero-COVID disruption",
+    "category": "real estate / financial crisis",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Jan 2022: 'ongoing retrenchment of China's real estate sector'; 'protracted financial stress among property developers' induced a 0.8 pp downgrade for China",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "kept",
+    "reason": "WEO Update Jan 2022 names China's property-sector retrenchment as a main downside development of 2021 behind the downgrade",
+    "evidence": [
+     {
+      "url": "https://web.archive.org/web/20220301202712/https://www.imf.org/en/Publications/WEO/Issues/2022/01/25/world-economic-outlook-update-january-2022",
+      "title": "IMF WEO Update January 2022",
+      "date": "2022-01",
+      "shows": "Names China's property sector stress as a main development"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 15,022 deaths in 2021 (Mexico); builder tally: 8,297-18,811 deaths in 2021 (upper bound over 10,000; borderline)",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "kept",
+    "reason": "UCDP best estimate 15,022 >= 10,000; A listed it as borderline from homicide ranges; UCDP clears the threshold",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2021: Mexico 15,022"
+     },
+     {
+      "url": "https://web.archive.org/web/20230108042227/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2023-01-08",
+      "shows": "Mexican drug war 2021 fatalities 8,297-18,811"
+     }
+    ]
+   }
+  ],
+  "2022": [
+   {
+    "event": "Russian full-scale invasion of Ukraine",
+    "category": "interstate war",
+    "criteria": [
+     "deaths",
+     "gdp",
+     "review"
+    ],
+    "measure": "UCDP best estimate 100,595 deaths in 2022 (Ukraine); builder tally: 36,000-240,400+ deaths in 2022; WEO Apr 2022 cut 2022 world growth 0.8 pp to 3.6% 'largely as a consequence of the war in Ukraine'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 100,595 >= 10,000; WEO Apr 2022 cut 2022 world growth 0.8 pp largely because of the war; GEP Jan 2023 names it as a main shock",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2022: Ukraine 100,595"
+     },
+     {
+      "url": "https://web.archive.org/web/20230108042227/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2023-01-08",
+      "shows": "Major wars table: Russo-Ukrainian War, 36,000-240,400+ fatalities in 2022"
+     },
+     {
+      "url": "https://web.archive.org/web/20220601125304/https://www.imf.org/en/Publications/WEO/Issues/2022/04/19/world-economic-outlook-april-2022",
+      "title": "IMF WEO April 2022: War Sets Back the Global Recovery",
+      "date": "2022-04",
+      "shows": "Growth 6.1% (2021) to 3.6% (2022), 0.8 pp below January, largely due to the war"
+     }
+    ]
+   },
+   {
+    "event": "Energy and food price shock (European gas crisis, grain disruption)",
+    "category": "commodity price shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2022: costs of war spread 'through commodity markets'; 'Fuel and food price rises are already having a global impact'; WEO Apr 2023 notes food and energy prices 'have come down' from 2022 peaks",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://web.archive.org/web/20220601125304/https://www.imf.org/en/Publications/WEO/Issues/2022/04/19/world-economic-outlook-april-2022",
+      "title": "IMF WEO April 2022",
+      "date": "2022-04",
+      "shows": "Fuel and food price shock"
+     },
+     {
+      "url": "https://web.archive.org/web/20230601222820/https://www.imf.org/en/Publications/WEO/Issues/2023/04/11/world-economic-outlook-april-2023",
+      "title": "IMF WEO April 2023: A Rocky Recovery",
+      "date": "2023-04",
+      "shows": "Describes 2022 inflation and energy/food price peaks"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/04e61507-dd9d-5227-a030-512f1aefe30f/content",
+      "title": "World Bank, Global Economic Prospects, January 2023, Chapter 1",
+      "date": "2023-01-10",
+      "shows": "Energy and commodity supply shock named in chapter summary as main development of 2022"
+     }
+    ]
+   },
+   {
+    "event": "Global inflation surge and synchronized monetary tightening",
+    "category": "inflation / monetary shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2023 exec summary: inflation 'stubbornly high'; 'fast rise in policy rates'; WEO Apr 2024: 'global inflation descended from its mid-2022 peak'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both builders list it; criterion met",
+    "evidence": [
+     {
+      "url": "https://web.archive.org/web/20230601222820/https://www.imf.org/en/Publications/WEO/Issues/2023/04/11/world-economic-outlook-april-2023",
+      "title": "IMF WEO April 2023",
+      "date": "2023-04",
+      "shows": "Inflation and rate hikes as the main development"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/04e61507-dd9d-5227-a030-512f1aefe30f/content",
+      "title": "World Bank, Global Economic Prospects, January 2023, Chapter 1",
+      "date": "2023-01-10",
+      "shows": "High inflation and monetary tightening named in chapter summary as main development of 2022"
+     }
+    ]
+   },
+   {
+    "event": "Ethiopian civil war (Tigray war, final offensive)",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 164,991 deaths in 2022 (Ethiopia); builder tally: 6,487-105,900 deaths in 2022 (Ethiopian civil conflict; wide range)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 164,991 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2022: Ethiopia 164,991"
+     },
+     {
+      "url": "https://web.archive.org/web/20230108042227/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2023-01-08",
+      "shows": "Ethiopian civil conflict, 6,487-105,900 fatalities in 2022"
+     }
+    ]
+   },
+   {
+    "event": "Myanmar civil war",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 2,738 deaths in 2022 (Myanmar); builder tally: 20,206 deaths in 2022",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 2,738 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 20,206",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2022: Myanmar 2,738"
+     },
+     {
+      "url": "https://web.archive.org/web/20230108042227/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2023-01-08",
+      "shows": "Myanmar internal conflict, 20,206 fatalities in 2022"
+     }
+    ]
+   },
+   {
+    "event": "European summer heatwaves 2022",
+    "category": "extreme heat",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "61,672 heat-related deaths in Europe, summer 2022 (ISGlobal, Nature Medicine)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; peer-reviewed estimate 61,672 heat-related deaths (Ballester et al., Nature Medicine 2023)",
+    "evidence": [
+     {
+      "url": "https://www.nature.com/articles/s41591-023-02419-z",
+      "title": "Heat-related mortality in Europe during the summer of 2022 (Nature Medicine)",
+      "date": "2023-07-10",
+      "shows": "61,672 heat-attributable deaths"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/2023_European_heatwaves",
+      "title": "2023 European heatwaves (Wikipedia), citing Nature Medicine study",
+      "date": "accessed 2026-10-01",
+      "shows": "'in the record breaking summer of 2022, 61,672 people died'"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/2022_European_heatwaves",
+      "title": "2022 European heatwaves (Wikipedia)",
+      "date": "accessed 2026-10-01",
+      "shows": "ISGlobal revised estimate of over 70,000 deaths"
+     }
+    ]
+   },
+   {
+    "event": "Somalia drought (Horn of Africa drought)",
+    "category": "famine/drought",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "An estimated 43,000 excess deaths in 2022 (LSHTM/Imperial for WHO, UNICEF, Somali MoH)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; estimated 43,000 excess deaths in 2022 (LSHTM/Imperial study for WHO, UNICEF, Somali MoH)",
+    "evidence": [
+     {
+      "url": "https://somalia.un.org/en/224951-new-study-finds-43000-%E2%80%9Cexcess-deaths%E2%80%9D-may-have-occurred-2022-drought-somalia",
+      "title": "New study finds that 43,000 excess deaths may have occurred in 2022 from the drought in Somalia",
+      "date": "2023-03-20",
+      "shows": "43,000 excess deaths Jan-Dec 2022"
+     }
+    ]
+   },
+   {
+    "event": "COVID-19 pandemic",
+    "category": "pandemic",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "1,248,805 deaths reported to WHO in 2022",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WHO-reported deaths in 2022 1,248,805 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-data.csv",
+      "title": "WHO COVID-19 global data (daily reported cases and deaths)",
+      "date": "2026",
+      "shows": "Sum of New_deaths for 2022 = 1,248,805"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 12,507 deaths in 2022 (Mexico)",
+    "in_builders": [],
+    "decision": "kept",
+    "reason": "added by adjudicator: neither builder listed it, but UCDP best estimate 12,507 >= 10,000 and the same rule keeps this event in other years",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2022: Mexico 12,507"
+     }
+    ]
+   }
+  ],
+  "2023": [
+   {
+    "event": "Turkey-Syria earthquakes",
+    "category": "earthquake",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "59,488-62,013 deaths (Turkey 53,537; Syria 5,951-8,476)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; about 59,500-62,000 deaths; UCDP does not cover natural disasters",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/wiki/2023_Turkey%E2%80%93Syria_earthquakes",
+      "title": "2023 Turkey-Syria earthquakes",
+      "date": "2023-02-06",
+      "shows": "Death toll 59,488-62,013; damage US$157.8bn"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=2023_Turkey%E2%80%93Syria_earthquakes&oldid=1372760952",
+      "title": "2023 Turkey-Syria earthquakes (Wikipedia)",
+      "date": "accessed 2026-10-01",
+      "shows": "Confirmed death toll in Turkey 53,537; Syria 5,951-8,476"
+     }
+    ]
+   },
+   {
+    "event": "Russia-Ukraine war",
+    "category": "interstate war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 76,664 deaths in 2023 (Ukraine+Russia); builder tally: 29,534-95,088+ deaths in 2023",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 76,664 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2023: Ukraine 76,467, Russia 197; total 76,664"
+     },
+     {
+      "url": "https://web.archive.org/web/20240110132528/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2024-01-10",
+      "shows": "Major wars table: Russo-Ukrainian War, 29,534-95,088+ in 2023"
+     }
+    ]
+   },
+   {
+    "event": "Israel-Hamas war in Gaza (from 7 October 2023)",
+    "category": "interstate / asymmetric war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 27,647 deaths in 2023 (Palestine+Israel+Lebanon); builder tally: 24,550-33,115 deaths in 2023",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 27,647 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2023: Palestine 26,228, Israel 1,296, Lebanon 123; total 27,647"
+     },
+     {
+      "url": "https://web.archive.org/web/20240110132528/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2024-01-10",
+      "shows": "Major wars table: Israeli-Palestinian conflict, 24,550-33,115 in 2023"
+     }
+    ]
+   },
+   {
+    "event": "Myanmar civil war (incl. Operation 1027)",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 3,043 deaths in 2023 (Myanmar); builder tally: 14,841+ deaths in 2023",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 3,043 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 14,841-15,773",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2023: Myanmar 3,043"
+     },
+     {
+      "url": "https://web.archive.org/web/20240110132528/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2024-01-10",
+      "shows": "Major wars table: Myanmar, 14,841+ in 2023"
+     }
+    ]
+   },
+   {
+    "event": "Jihadist insurgency in the Sahel (Burkina Faso, Mali, Niger)",
+    "category": "insurgency / terrorism",
+    "criteria": [],
+    "measure": "UCDP best estimate 8,902 deaths in 2023 (Burkina Faso+Mali+Niger); builder tally: 13,626+ deaths in 2023",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 8,902 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 13,626-14,728",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2023: Burkina Faso 6,363, Mali 2,065, Niger 474; total 8,902"
+     },
+     {
+      "url": "https://web.archive.org/web/20240110132528/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2024-01-10",
+      "shows": "Major wars table: Insurgency in the Maghreb/Sahel, 13,626+ in 2023"
+     }
+    ]
+   },
+   {
+    "event": "Sudan civil war (SAF vs RSF, from April 2023)",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 14,687 deaths in 2023 (Sudan); builder tally: 12,785+ deaths in 2023",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 14,687 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2023: Sudan 14,687"
+     },
+     {
+      "url": "https://web.archive.org/web/20240110132528/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2024-01-10",
+      "shows": "Major wars table: War in Sudan, 12,785+ in 2023"
+     }
+    ]
+   },
+   {
+    "event": "European summer heatwaves 2023",
+    "category": "extreme heat",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "47,690 heat-related deaths in Europe in 2023 (Gallo et al., Nature Medicine 2024); revised to 50,798 in the 2025 study",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; peer-reviewed estimate 47,690 heat-related deaths (Gallo et al., Nature Medicine 2024)",
+    "evidence": [
+     {
+      "url": "https://doi.org/10.1038/s41591-024-03186-1",
+      "title": "Gallo et al., Heat-related mortality in Europe during 2023 and the role of adaptation in protecting health (Nature Medicine)",
+      "date": "2024-08-12",
+      "shows": "Abstract: 'We estimated 47,690 (95% CI 28,853 to 66,525) heat-related deaths in 2023'"
+     },
+     {
+      "url": "https://www.nature.com/articles/s41591-024-03186-1",
+      "title": "Heat-related mortality in Europe during 2023 and the role of adaptation in protecting health (Nature Medicine)",
+      "date": "2024-08-12",
+      "shows": "47,690 heat-attributable deaths"
+     }
+    ]
+   },
+   {
+    "event": "COVID-19 pandemic (late phase)",
+    "category": "pandemic",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "318,570 deaths reported to WHO in 2023",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WHO-reported deaths in 2023 318,570 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-data.csv",
+      "title": "WHO COVID-19 global data (daily reported cases and deaths)",
+      "date": "2026",
+      "shows": "Sum of New_deaths for 2023 = 318,570"
+     }
+    ]
+   },
+   {
+    "event": "High inflation and tight monetary policy (post-pandemic tightening cycle)",
+    "category": "inflation / monetary shock",
+    "criteria": [
+     "review"
+    ],
+    "measure": "GEP Jan 2024: 'Global economic activity continues to soften, amid the effects of tight monetary policies, restrictive financial conditions, and weak global trade growth.'",
+    "in_builders": [
+     "B"
+    ],
+    "decision": "kept",
+    "reason": "GEP Jan 2024 chapter summary names tight monetary policy and restrictive financial conditions as the main drag on 2023 activity (main downside development); same rule as 2022 inflation/tightening",
+    "evidence": [
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/0245342f-38cd-4a7a-9936-35368744555d/content",
+      "title": "World Bank, Global Economic Prospects, January 2024, Chapter 1 (Global Outlook)",
+      "date": "2024-01-09",
+      "shows": "Tight monetary policy and restrictive financial conditions named in chapter summary as main drag in 2023"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 10,830 deaths in 2023 (Mexico)",
+    "in_builders": [],
+    "decision": "kept",
+    "reason": "added by adjudicator: neither builder listed it, but UCDP best estimate 10,830 >= 10,000 and the same rule keeps this event in other years",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2023: Mexico 10,830"
+     }
+    ]
+   }
+  ],
+  "2024": [
+   {
+    "event": "Russia-Ukraine war (incl. Kursk incursion)",
+    "category": "interstate war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 102,364 deaths in 2024 (Ukraine+Russia); builder tally: 72,597 deaths in 2024",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 102,364 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2024: Ukraine 91,779, Russia 10,585; total 102,364"
+     },
+     {
+      "url": "https://web.archive.org/web/20250107075441/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2025-01-07",
+      "shows": "Major wars table: Russo-Ukrainian War, 72,597 in 2024"
+     }
+    ]
+   },
+   {
+    "event": "Israel-Gaza war and Israel-Hezbollah war in Lebanon",
+    "category": "interstate / asymmetric war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 26,157 deaths in 2024 (Palestine+Lebanon+Israel+Iran); builder tally: 29,898 deaths in 2024",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 26,157 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2024: Palestine 21,542, Lebanon 4,335, Israel 62, Iran 218; total 26,157"
+     },
+     {
+      "url": "https://web.archive.org/web/20250107075441/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2025-01-07",
+      "shows": "Major wars table: Arab-Israeli conflict, 29,898 in 2024"
+     }
+    ]
+   },
+   {
+    "event": "Myanmar civil war",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 2,859 deaths in 2024 (Myanmar); builder tally: 18,980 deaths in 2024",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 2,859 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 18,980-19,715",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2024: Myanmar 2,859"
+     },
+     {
+      "url": "https://web.archive.org/web/20250107075441/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2025-01-07",
+      "shows": "Major wars table: Myanmar, 18,980 in 2024"
+     }
+    ]
+   },
+   {
+    "event": "Sudan civil war and famine",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 6,996 deaths in 2024 (Sudan); builder tally: 14,105 deaths in 2024 (battle; famine deaths additional)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 6,996 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 14,105-16,575; famine deaths have no peer-reviewed 2024 national estimate, so they are not added",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2024: Sudan 6,996"
+     },
+     {
+      "url": "https://web.archive.org/web/20250107075441/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2025-01-07",
+      "shows": "Major wars table: Sudanese civil war, 14,105 in 2024"
+     }
+    ]
+   },
+   {
+    "event": "Jihadist insurgency in the Sahel (Burkina Faso, Mali, Niger)",
+    "category": "insurgency / terrorism",
+    "criteria": [],
+    "measure": "UCDP best estimate 7,356 deaths in 2024 (Burkina Faso+Mali+Niger); builder tally: 13,806 deaths in 2024",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 7,356 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 13,806-20,667",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2024: Burkina Faso 4,253, Mali 1,876, Niger 1,227; total 7,356"
+     },
+     {
+      "url": "https://web.archive.org/web/20250107075441/https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, archived)",
+      "date": "2025-01-07",
+      "shows": "Major wars table: Maghreb/Sahel insurgency, 13,806 in 2024"
+     }
+    ]
+   },
+   {
+    "event": "Ethiopian internal conflict (Amhara Fano insurgency, Oromia)",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 4,140 deaths in 2024 (Ethiopia); builder tally: 10,179 deaths in 2024",
+    "in_builders": [
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 4,140 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builder B used ACLED 10,179",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2024: Ethiopia 4,140"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=List_of_ongoing_armed_conflicts&oldid=1277944750",
+      "title": "List of ongoing armed conflicts (Wikipedia, revision of 2025-02-27)",
+      "date": "2025-02-27",
+      "shows": "Ethiopian civil conflict (2018-present) in major wars table, 10,179 fatalities in 2024"
+     }
+    ]
+   },
+   {
+    "event": "European summer heatwaves 2024",
+    "category": "extreme heat",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "62,775 heat-related deaths in Europe, summer 2024 (ISGlobal, Nature Medicine)",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; peer-reviewed estimate 62,775 heat-related deaths (Nature Medicine)",
+    "evidence": [
+     {
+      "url": "https://www.nature.com/nature-index/article/10.1038/s41591-025-03954-7",
+      "title": "Heat-related mortality in Europe during 2024 (Nature Medicine)",
+      "date": "2025",
+      "shows": "62,775 heat-attributable deaths"
+     },
+     {
+      "url": "https://doi.org/10.1038/s41591-025-03954-7",
+      "title": "Heat-related mortality in Europe during 2024 and health emergency forecasting to reduce preventable deaths (Nature Medicine)",
+      "date": "2025-09-22",
+      "shows": "Abstract: 'We estimated 62,775 ... heat-related deaths in 2024'"
+     }
+    ]
+   },
+   {
+    "event": "COVID-19 pandemic (residual)",
+    "category": "pandemic",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "67,860 deaths reported to WHO in 2024",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WHO-reported deaths in 2024 67,860 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-data.csv",
+      "title": "WHO COVID-19 global data (daily reported cases and deaths)",
+      "date": "2026",
+      "shows": "Sum of New_deaths for 2024 = 67,860"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 10,946 deaths in 2024 (Mexico)",
+    "in_builders": [],
+    "decision": "kept",
+    "reason": "added by adjudicator: neither builder listed it, but UCDP best estimate 10,946 >= 10,000 and the same rule keeps this event in other years",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated)",
+      "date": "accessed 2026-10-01",
+      "shows": "2024: Mexico 10,946"
+     }
+    ]
+   }
+  ],
+  "2025": [
+   {
+    "event": "Russia-Ukraine war",
+    "category": "interstate war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 94,765 deaths in 2025 (Ukraine+Russia) [preliminary]; builder tally: 80,245 deaths in 2025",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 94,765 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Ukraine 90,345, Russia 4,420; total 94,765"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Russo-Ukrainian war, 80,245 in 2025"
+     }
+    ]
+   },
+   {
+    "event": "Middle East wars (Gaza, Israel-Iran war of June 2025, Lebanon)",
+    "category": "interstate / asymmetric war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 16,131 deaths in 2025 (Palestine+Iran+Lebanon+Israel) [preliminary]; builder tally: 28,111 deaths in 2025",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 16,131 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Palestine 14,505, Iran 1,243, Lebanon 347, Israel 36; total 16,131"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Arab-Israeli/Iran-Israel proxy wars, 28,111 in 2025"
+     }
+    ]
+   },
+   {
+    "event": "Sudan civil war and famine (incl. fall of El Fasher)",
+    "category": "civil war",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "UCDP best estimate 75,164 deaths in 2025 (Sudan) [preliminary]; builder tally: 21,994-80,000+ deaths in 2025",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "UCDP best estimate 75,164 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Sudan 75,164"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Sudanese civil wars, 21,994-80,000+ in 2025"
+     }
+    ]
+   },
+   {
+    "event": "Jihadist insurgency in the Sahel",
+    "category": "insurgency / terrorism",
+    "criteria": [],
+    "measure": "UCDP best estimate 7,738 deaths in 2025 (Burkina Faso+Mali+Niger) [preliminary]; builder tally: 24,046 deaths in 2025",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 7,738 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED 21,185-24,046",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Burkina Faso 4,475, Mali 2,152, Niger 1,111; total 7,738"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Islamist insurgencies in Maghreb/Sahel, 24,046 in 2025"
+     }
+    ]
+   },
+   {
+    "event": "Myanmar civil war",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 2,309 deaths in 2025 (Myanmar) [preliminary]; builder tally: 15,824 deaths in 2025",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 2,309 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED about 15,700",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Myanmar 2,309"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Myanmar civil war, 15,824 in 2025"
+     }
+    ]
+   },
+   {
+    "event": "Somali civil war (al-Shabaab offensive)",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 3,869 deaths in 2025 (Somalia) [preliminary]; builder tally: 10,788 deaths in 2025",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 3,869 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met; builders used ACLED about 10,785",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Somalia 3,869"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Somali Civil War, 10,788 in 2025"
+     }
+    ]
+   },
+   {
+    "event": "Eastern DR Congo war (M23 offensive)",
+    "category": "civil war",
+    "criteria": [],
+    "measure": "UCDP best estimate 8,860 deaths in 2025 (Democratic Republic of Congo) [preliminary]; builder tally: 7,737-10,000+ deaths in 2025 (borderline)",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 8,860 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Democratic Republic of Congo 8,860"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Congolese conflicts, 7,737-10,000+ in 2025"
+     }
+    ]
+   },
+   {
+    "event": "Mexican drug war (cartel conflicts)",
+    "category": "criminal violence / non-state conflict",
+    "criteria": [],
+    "measure": "UCDP best estimate 7,833 deaths in 2025 (Mexico) [preliminary]; builder tally: 8,973-10,767 deaths in 2025 (upper bound over 10,000; borderline)",
+    "in_builders": [
+     "A"
+    ],
+    "decision": "dropped",
+    "reason": "UCDP covers this conflict and its best estimate is 7,833 < 10,000; other tallies (IBC/ACLED/Wikipedia) not used under the UCDP-first rule; no review or GDP criterion met",
+    "evidence": [
+     {
+      "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+      "title": "Our World in Data: Deaths in armed conflicts based on where they occurred (UCDP GED best estimate, all violence types, geolocated) (2025: UCDP Candidate Events, preliminary)",
+      "date": "accessed 2026-10-01",
+      "shows": "2025: Mexico 7,833"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/List_of_ongoing_armed_conflicts",
+      "title": "List of ongoing armed conflicts (Wikipedia, current)",
+      "date": "2026-10-01",
+      "shows": "Major wars table: Mexican drug war, 8,973-10,767 in 2025"
+     }
+    ]
+   },
+   {
+    "event": "US tariff escalation and global trade tensions",
+    "category": "trade conflict",
+    "criteria": [
+     "review"
+    ],
+    "measure": "WEO Apr 2025: forecasts 'revised markedly down' (2025 world growth 3.3% Jan to 2.8%, -0.5 pp) 'reflecting effective tariff rates at levels not seen in a century'; WEO Apr 2026: activity withstood 'higher trade barriers and elevated uncertainty last year'",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; GEP Jan 2026 and WEO Apr 2026 name tariffs and trade-policy uncertainty as the main 2025 shock; A's GDP measure is a forecast revision (-0.5 pp), not a realized effect, so only the review criterion is recorded",
+    "evidence": [
+     {
+      "url": "https://web.archive.org/web/20250601180908/https://www.imf.org/en/Publications/WEO/Issues/2025/04/22/world-economic-outlook-april-2025",
+      "title": "IMF WEO April 2025: A Critical Juncture amid Policy Shifts",
+      "date": "2025-04",
+      "shows": "Global growth revised markedly down because of tariffs"
+     },
+     {
+      "url": "https://www.imf.org/en/publications/weo/issues/2026/04/14/world-economic-outlook-april-2026",
+      "title": "IMF WEO April 2026: Global Economy in the Shadow of War",
+      "date": "2026-04-14",
+      "shows": "Names higher trade barriers and uncertainty as the 2025 development (seen via search snippet; page returns 403)"
+     },
+     {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/a9e24256-baf8-45bb-9075-75e437e1d6f7/content",
+      "title": "World Bank, Global Economic Prospects, January 2026",
+      "date": "2026-01",
+      "shows": "Executive summary names heightened trade tensions, policy uncertainty and rising trade barriers as the main shock of 2025"
+     }
+    ]
+   },
+   {
+    "event": "COVID-19 pandemic (residual)",
+    "category": "pandemic",
+    "criteria": [
+     "deaths"
+    ],
+    "measure": "26,889 deaths reported to WHO in 2025",
+    "in_builders": [
+     "A",
+     "B"
+    ],
+    "decision": "agreed",
+    "reason": "both list it; WHO-reported deaths in 2025 26,889 >= 10,000",
+    "evidence": [
+     {
+      "url": "https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-data.csv",
+      "title": "WHO COVID-19 global data (daily reported cases and deaths)",
+      "date": "2026",
+      "shows": "Sum of New_deaths for 2025 = 26,889"
+     }
+    ]
+   },
+   {
+    "event": "Russia-Ukraine war",
+    "category": "technology investment boom",
+    "criteria": [],
+    "measure": "80,205 deaths in 2025",
+    "in_builders": [
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "upside development: GEP Jan 2026 names AI spending as supporting activity; only shocks or main downside developments count",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=List_of_ongoing_armed_conflicts&oldid=1340936320",
+      "title": "List of ongoing armed conflicts (Wikipedia, revision of 2026-02-28)",
+      "date": "2026-02-28",
+      "shows": "Russo-Ukrainian war in major wars table, 80,205 fatalities in 2025"
+     }
+    ]
+   },
+   {
+    "event": "European summer heatwaves 2025",
+    "category": "extreme heat",
+    "criteria": [],
+    "measure": "about 24,000 heat deaths estimated (rapid study: about 16,500 deaths attributable to climate change, 68% of the heat toll)",
+    "in_builders": [
+     "B"
+    ],
+    "decision": "dropped",
+    "reason": "no peer-reviewed estimate for summer 2025 yet; the figure comes from a rapid, non-peer-reviewed attribution study",
+    "evidence": [
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=2025_European_heatwaves&oldid=1376471118",
+      "title": "2025 European heatwaves (Wikipedia)",
+      "date": "accessed 2026-10-01",
+      "shows": "'around 16,500 people may have died as a result of climate change during the summer, equating to about 68% of deaths in the heatwave'"
+     }
+    ]
+   }
+  ]
+ }
+}

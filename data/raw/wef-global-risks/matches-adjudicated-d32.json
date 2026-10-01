@@ -1,0 +1,37 @@
+{
+ "rule": "D32",
+ "role": "adjudicator (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "year": 2023,
+   "event": "High inflation and tight monetary policy (post-pandemic tightening cycle)",
+   "matcherA": "ranked_low",
+   "matcherB": "ranked_high",
+   "verdict": "ranked_low",
+   "wef_label": "Failure to stabilize price trajectories",
+   "wef_ranking": "2-year #12",
+   "reason": "The event is a macro shock to the general price level and the policy response to it; the 2023 appendix defines exactly that risk as 'Failure to stabilize price trajectories': \"Inability to control the general price level of goods and services ... Inclusive of an unmanageable increase (inflation)\" (PDF p74), ranked #12 on the 2-year list (PDF p11, Figure E), outside the top 10. 'Cost-of-living crisis' is defined as a household outcome, \"inability among broad sections of populations to maintain their current lifestyle due to increases in the cost of essential goods which are not matched with a rise in real household income\" (PDF p75): a consequence of inflation, not the inflation shock itself, and it says nothing about monetary tightening. WEF lists both as separate risks in the same survey, so the event takes the risk that names the price level itself.",
+   "evidence": [
+    {
+     "url": "https://www3.weforum.org/docs/WEF_Global_Risks_Report_2023.pdf",
+     "title": "The Global Risks Report 2023 (World Economic Forum)",
+     "date": "2023-01",
+     "shows": "PDF p74, Appendix A Table A.1: 'Failure to stabilize price trajectories' = 'Inability to control the general price level of goods and services, including commodities. Inclusive of an unmanageable increase (inflation) or decrease (deflation) of prices.'"
+    },
+    {
+     "url": "https://www3.weforum.org/docs/WEF_Global_Risks_Report_2023.pdf",
+     "title": "The Global Risks Report 2023 (World Economic Forum)",
+     "date": "2023-01",
+     "shows": "PDF p75, Appendix A Table A.1: 'Cost-of-living crisis' = household inability to maintain lifestyle as essential-goods costs outpace real household income (a separate risk from price-level instability)."
+    },
+    {
+     "url": "https://www3.weforum.org/docs/WEF_Global_Risks_Report_2023.pdf",
+     "title": "The Global Risks Report 2023 (World Economic Forum)",
+     "date": "2023-01",
+     "shows": "PDF p11, Figure E (global risks ranked by severity, short term/2 years): Cost-of-living crisis #1, Failure to stabilize price trajectories #12, so it falls outside the 2-year top 10."
+    }
+   ]
+  }
+ ]
+}

@@ -27,7 +27,11 @@ A public, citable record of published forecasts (publications x predictions), gr
   - Deloitte TMT 61% (52-70) over 116, after the fetch-failure pass (D24, `adjudicated-d20-pass1.json`): 7 of 29 re-checked claims now graded. IDC 49 re-checked, all stay ungradable (paywalled, not blocked). Gartner SP 1 of 6 now graded.
   - New this session: The Economist (#46, D27) 59% (50-67) [42-75] over 127, kappa 0.90. Pew/Elon (#50, D27) 40% (27-55) [24-57] over 45, kappa 0.64. NIC Global Trends projections (D30) 69% (57-79) [55-81] over 68, kappa 0.89. McKinsey dated forecasts (D30) counts only (7 graded: 6 hit, 1 partial; 10 ungradable, mostly third-party figures). Accenture 2017 predictions counts only (1 hit, 1 partial, 1 miss).
 - **Numeric (D19):** 12 publishers, matching audit done (#53): 1,184 sampled rows; errors fixed in code for every row (IMF India before July 2013 and old group definitions; World Bank World before 2019; OBR unrounded actuals; EIA early publication dates and two Retrospective 2025 series; CBO deficits in percent of GDP; World Bank India fiscal year). Residual: ECB 4, BCB 3, EIA 4, BNEF 1, BP 1. Open items: #66.
-- **Not graded yet, waiting on rules:** Eurasia (#47), WEF (#48), the trend claims of six trend sources and the scenario sets (NIC scenarios, Shell, IPCC). Proposed rules are in the Meet decision queue (see below).
+- **Graded under D31 to D36 (2026-10-01, after MZ approved the rules):**
+  - Eurasia (D31): top risks materialised in 70% of 184 graded (63-76%, audit-adjusted 57-82%); red herrings stayed calm in 68% of 72 (57-78%). Never merged (`summary-d31.json`, `rate-policy.json`).
+  - WEF (D32): of 53 major events 2007-2020 (fixed criteria, UCDP-first death tallies), WEF ranked 14 high the January before (26%, 16-40%); 2021-2022 and 2023-2025 counts only (4 of 15, 9 of 18). `summary-d32.json`.
+  - Trends (D33, D36): faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 8% (424 FTSG trends in `gap` because 2019, 2020 and 2023 are partial captures). `final-d33.json`.
+  - Scenarios (D34): IPCC 11 covered, 7 partly, 0 not covered; Shell 14, 32, 11 (`coverage-d34.json`); CH4 has no observed series on the scenarios' definition. NIC: 2000 and 2004 sets covered, 2008 set not covered.
 - **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month (6 sources due on 2026-11-01). Export runs (`pnpm export`); no release tagged.
 - **Subjects:** 5,360. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
 - **Site:** live but `noindex`, "review build" banner (#60). www issues: envisioning.com#46 (wave-aware sample check), #47 (per-edition Kurzweil rate), #48 (rate_withheld and audit-adjusted interval), #49 (per-claim numeric verdicts, D17 tables).
@@ -49,8 +53,8 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **Grade under the approved rules:** #47 Eurasia (D31), #48 WEF (D32), trend sources #26 to #31 (D33), scenario sets #32 to #34 (D34; capture observed emissions, CO2 concentration and primary energy first).
-2. **#36** Long Bets capture as baseline only (D35).
+1. **#26** FTSG: full capture of 2019, 2020 and 2023 (then re-grade the `gap` rows as a new pass), fix misaligned 2023-2024 quotes. **#36** Long Bets capture as baseline only (D35).
+2. **www:** show the D31, D32, D33 and D34 measures (new issue).
 3. **#66** numeric open items (ECB GDP basis, AEO2009 case, BCB Selic, World Bank World, IMF India, IEA restatements, FRED vintage refresh before release).
 4. **#59** links (needs `OPENROUTER_API_KEY`). **#26** FTSG 2015-2017 transcripts. **#27** McKinsey 2026 PDF re-capture.
 5. **www** issues #46 to #49 (envisioning.com), then **#60** launch and **#3** first tagged release, as MZ decides.
