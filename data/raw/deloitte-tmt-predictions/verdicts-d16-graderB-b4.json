@@ -1,0 +1,1084 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2022-005",
+   "verdict": "partial",
+   "reading": "Average semiconductor order lead times will be about 10-20 weeks by end-2022.",
+   "mainstream_test": "D16 numeric: actual end-2022 average lead time vs the 10-20 week range; nearest bound 20 weeks.",
+   "reason": "Susquehanna's December 2022 average chip lead time was about 24 weeks, 20% above the 20-week upper bound: within 25%, not within 10%.",
+   "evidence": [
+    {
+     "url": "https://www.semimedia.cc/13932.html",
+     "title": "Chip lead times were significantly shortened in December 2022 (SemiMedia, citing Susquehanna)",
+     "date": "2023-01-20",
+     "shows": "Average chip lead time in December 2022 about 24 weeks, 3 weeks below the May 2022 peak."
+    },
+    {
+     "url": "https://www.astutegroup.com/news/general/chip-lead-times-shorten-but-still-24-weeks/",
+     "title": "Chip lead times shorten, but still 24 weeks (Astute Group)",
+     "date": "2023-01",
+     "shows": "Confirms about 24 weeks average lead time at end-2022."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-006",
+   "verdict": "hit",
+   "reading": "Global VC investment in semiconductor companies in 2022 will exceed US$6 billion.",
+   "mainstream_test": "D16 numeric threshold: 2022 global VC into chip startups > US$6B.",
+   "reason": "PitchBook counted US$7.8B of global VC into semiconductor startups in 2022 (to Dec 5), above US$6B. PitchBook's method differs from Deloitte's baseline (PitchBook 2021: US$14.5B, so 2022 was not a new high on its series); the stated threshold is met.",
+   "evidence": [
+    {
+     "url": "https://www.theregister.com/on-prem/2022/12/10/semiconductor-vc-funding-dives-startups-plan-for-next-boom/1125700",
+     "title": "As semiconductor VC funding dips, startups trip, crash, build for the next boom (The Register, PitchBook data)",
+     "date": "2022-12-10",
+     "shows": "Global VC funding for semiconductor startups US$7.8B in 2022 as of Dec 5, down 46% from US$14.5B in 2021."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-007",
+   "verdict": "ungradable",
+   "reading": "The market (revenue) for RISC-V processor cores in 2022 will be double its 2021 size.",
+   "mainstream_test": "D23 same quantity: a public series of RISC-V core market value for 2021 and 2022.",
+   "reason": "No public series measuring RISC-V core/IP market value for both 2021 and 2022 was found; available figures are vendor forecasts or shipment counts of other quantities (proxies, not measures).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2022.html",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Edition states the doubling claim without a named tracked series that could be checked against 2022 actuals; no independent 2022 measure located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-008",
+   "verdict": "partial",
+   "reading": "Global fixed wireless access connections will be roughly 88 million at end-2022.",
+   "mainstream_test": "D16 numeric: 88M vs actual end-2022 global FWA connections.",
+   "reason": "Ericsson Mobility Report puts global FWA connections at 100 million at end-2022; 88M is 12% below: within 25%, not 10%. Ericsson's counting method differs from Deloitte's baseline.",
+   "evidence": [
+    {
+     "url": "https://www.ericsson.com/49d3a0/assets/local/reports-papers/mobility-report/documents/2023/ericsson-mobility-report-june-2023.pdf",
+     "title": "Ericsson Mobility Report, June 2023",
+     "date": "2023-06",
+     "shows": "'From 100 million at the end of 2022, FWA connections worldwide are projected to increase to 300 million by the end of 2028.'"
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-009",
+   "verdict": "ungradable",
+   "reading": "At least 2.5 billion Wi-Fi 6 devices will ship worldwide in 2022.",
+   "mainstream_test": "D23 same quantity: a public 2022 count of Wi-Fi 6 device shipments.",
+   "reason": "No public 2022 Wi-Fi 6 device shipment figure was retrievable (IDC pages 403; Wi-Fi Alliance page gives only a 2026 chipset projection). Chipset projections are a different quantity.",
+   "evidence": [
+    {
+     "url": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-6",
+     "title": "Wi-Fi CERTIFIED 6 (Wi-Fi Alliance)",
+     "date": "2026",
+     "shows": "Only shipment figure is a projection of 2.2B Wi-Fi 6 chipset shipments in 2026 (ABI Research); no 2022 device count."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-010",
+   "verdict": "ungradable",
+   "reading": "320 million consumer health and wellness wearables (smartwatches, fitness trackers and similar health-sensing devices) will ship worldwide in 2022.",
+   "mainstream_test": "D23 same quantity and scope: a 2022 shipment series for health/wellness wearables as Deloitte scoped them.",
+   "reason": "The tracker (IDC wearables) reports categories (earwear, smartwatches, wristbands) that do not match Deloitte's 'health and wellness' scope, and its release was not retrievable (403). No matching-scope measure found.",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=prUS50440623",
+     "title": "IDC Worldwide Quarterly Wearable Device Tracker press release (2022 full year)",
+     "date": "2023-03",
+     "shows": "Access blocked (403); IDC categories are device-form based and include earwear, not a health-and-wellness scope."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-011",
+   "verdict": "ungradable",
+   "reading": "Global consumer spending on mobile mental health apps in 2022 will be close to US$500 million.",
+   "mainstream_test": "D23 same quantity: a public 2022 figure for consumer spend on mental health apps.",
+   "reason": "App-store spend by category is held in paid app-intelligence datasets (Sensor Tower, data.ai); no public 2022 figure for mental-health app spend was found; market-size reports measure a different quantity (vendor revenue incl. B2B).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2022.html",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Claim rests on app-store spend data; no public 2022 actual of the same quantity located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-012",
+   "verdict": "ungradable",
+   "reading": "Smartphones (manufacture, shipping, use, end of life) will generate 146 Mt CO2e in 2022.",
+   "mainstream_test": "D23: a public measured estimate of total smartphone lifecycle emissions for 2022.",
+   "reason": "No public measured series of global smartphone lifecycle emissions for 2022 exists; the figure is a model output with no independent measurement.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2022.html",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Figure is Deloitte's own lifecycle model; no independent 2022 measure found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-013",
+   "verdict": "miss",
+   "reading": "Cumulative global installed floating PV capacity will reach 5.2 GWp by end-2022.",
+   "mainstream_test": "D16 numeric: 5.2 GWp vs actual end-2022 global floating PV capacity.",
+   "reason": "Reported global floating PV capacity was about 13 GW in 2022 (Bloomberg, cited by Wikipedia); 5.2 is 60% below. Estimates of FPV capacity vary by source; only one end-2022 figure was retrieved.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Floating_solar",
+     "title": "Floating solar (Wikipedia)",
+     "date": "2026",
+     "shows": "'Installed power grew from 3 GW in 2020, to 13 GW in 2022, mostly in Asia', citing Bloomberg 2023-08-03."
+    },
+    {
+     "url": "https://www.bloomberg.com/news/articles/2023-08-03/floating-solar-panels-turn-old-industrial-sites-into-green-energy-goldmines",
+     "title": "Floating Solar Panels Turn Old Industrial Sites Into Green Energy Goldmines (Bloomberg)",
+     "date": "2023-08-03",
+     "shows": "Source of the 13 GW (2022) global floating PV figure (paywalled; via Wikipedia)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-014",
+   "verdict": "hit",
+   "reading": "In 2022 men and boys will continue to read books less often and for less time than women and girls in almost every country.",
+   "mainstream_test": "Event/state test: time-use and reading surveys for 2022 show a female lead in book reading.",
+   "reason": "Time-use data for 2022 (US ATUS) continue to show women spending more time reading for personal interest than men, consistent with the long-standing cross-country gap; no evidence of reversal. Multi-country 2022 time-use data are sparse, so certainty is moderate.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/news.release/archives/atus_06222023.htm",
+     "title": "American Time Use Survey - 2022 Results (BLS)",
+     "date": "2023-06-22",
+     "shows": "2022 ATUS release with reading-for-personal-interest time by sex in its tables (Table 11); women's reading time exceeds men's."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-015",
+   "verdict": "ungradable",
+   "reading": "The average overall female share of the workforce across large global tech firms (Deloitte's tracked set) will be nearly 33% in 2022.",
+   "mainstream_test": "D23 same quantity and scope: a public average female workforce share for the same set of large tech firms in 2022.",
+   "reason": "The figure is Deloitte's own average over a firm set it selected; no public series measures the same average for 2022. Recomputing it from individual diversity reports would be a reconstruction with an unknown firm list.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2022.html",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Metric is an average over Deloitte's own sample of large tech firms; no independent 2022 series of the same scope found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-016",
+   "verdict": "ungradable",
+   "reading": "Sports-media NFTs (moments, cards, fan tokens) will generate more than US$2 billion in transaction volume globally in 2022.",
+   "mainstream_test": "D23 same quantity: a public 2022 aggregate of sports NFT transaction volume.",
+   "reason": "Per-collection trackers exist (CryptoSlam) but no public aggregate of 2022 sports NFT transactions was retrievable; the CryptoSlam NBA Top Shot page did not render data. Summing collections would be a reconstruction.",
+   "evidence": [
+    {
+     "url": "https://www.cryptoslam.io/nba-top-shot/sales/summary",
+     "title": "NBA Top Shot sales volume (CryptoSlam)",
+     "date": "2026",
+     "shows": "Tracker page for one sports NFT collection; numeric data not retrievable, and no all-sports 2022 aggregate."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-017",
+   "verdict": "ungradable",
+   "reading": "The combined market for homomorphic encryption and federated learning will exceed US$250 million in 2022.",
+   "mainstream_test": "D23 same quantity: a public 2022 measure of HE + FL market revenue.",
+   "reason": "Only commercial market-sizing reports with incompatible definitions exist for HE and FL separately; no measured 2022 combined figure found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2022.html",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Combined HE+FL market is Deloitte's own construct; no independent 2022 measure located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-018",
+   "verdict": "hit",
+   "reading": "Multiple quantum computer makers will at least double their machines' quantum volume in 2022 versus 2021.",
+   "mainstream_test": "Event test: did at least two makers' record QV double from 2021 to 2022.",
+   "reason": "Quantinuum went from QV 2^11 (Dec 2021) to 2^13 (Sep 2022), 4x; IBM reached QV 2^9 (May 2022) from 2^7 in its prior systems, 4x.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Quantum_volume",
+     "title": "Quantum volume (Wikipedia)",
+     "date": "2026",
+     "shows": "Record table: Quantinuum 2^11 (Dec 2021), 2^12 (Apr 2022), 2^13 (Sep 2022); IBM Falcon r10 Prague 2^8 (Apr 2022), 2^9 (May 2022)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-019",
+   "verdict": "hit",
+   "reading": "2022 will bring many proposals to regulate AI systematically, with enforced regulation mostly in 2023 or later.",
+   "mainstream_test": "Event test: major AI regulation proposals advanced in 2022 and enforced regulation came 2023+.",
+   "reason": "In 2022 the EU Council adopted its AI Act general approach (Dec 2022) and the US published the Blueprint for an AI Bill of Rights; the AI Act entered into force in Aug 2024 with application from 2025.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act",
+     "title": "Artificial Intelligence Act (Wikipedia)",
+     "date": "2026",
+     "shows": "Proposed Apr 2021; Council general approach 6 Dec 2022; Parliament vote Mar 2024; entry into force 1 Aug 2024."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-001",
+   "verdict": "hit",
+   "reading": "More than 5,000 broadband satellites will be in low Earth orbit by end-2023 across two working constellations.",
+   "mainstream_test": "D16 numeric threshold: LEO broadband satellites in orbit at end-2023 > 5,000.",
+   "reason": "Starlink alone had about 5,000+ satellites in orbit by end-2023 (per McDowell's tracking, launches through Dec 2023), plus OneWeb's ~630-satellite completed first-generation constellation; two working constellations served subscribers (Starlink 2.3M in Dec 2023, above the 'nearly a million' sub-claim).",
+   "evidence": [
+    {
+     "url": "https://planet4589.org/space/con/star/stats.html",
+     "title": "Starlink statistics (Jonathan McDowell)",
+     "date": "2026-09-28",
+     "shows": "Per-launch table of Starlink satellites launched and in orbit, including the December 2023 launches (Group 6-21 to 7-5)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Starlink",
+     "title": "Starlink (Wikipedia)",
+     "date": "2026",
+     "shows": "Subscriber table: 2,300,000 subscribers in December 2023."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-002",
+   "verdict": "partial",
+   "reading": "In 2023 the first 5G smartphones retailing at US$99 (or local equivalent) will launch.",
+   "mainstream_test": "Event test: a 5G phone launched at a list price of about US$99 equivalent in 2023; late arrival within the D16 window is partial.",
+   "reason": "The cheapest 5G phone launched in 2023 was the itel P55 5G (Oct 2023) at Rs 9,699, about US$116; a roughly US$99-equivalent 5G phone (Poco C75 5G, Rs 7,999-8,599) came in Dec 2024. Event arrived late, within the window.",
+   "evidence": [
+    {
+     "url": "https://themobileindian.com/news/itel-p55-launched-as-cheapest-5g-phone-in-india-itel-s23-tags-along",
+     "title": "Itel P55 launched as cheapest 5G phone in India (The Mobile Indian)",
+     "date": "2023-10",
+     "shows": "itel P55 5G launched Oct 2023 as India's cheapest 5G phone at Rs 9,699 (4/64GB), about US$116."
+    },
+    {
+     "url": "https://www.cashify.in/poco-c75-5g-price-in-india",
+     "title": "POCO C75 5G price in India (Cashify)",
+     "date": "2024-12",
+     "shows": "Poco C75 5G launched in India Dec 2024 at Rs 8,599, seen at Rs 7,999 in sales (about US$94-101)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-003",
+   "verdict": "miss",
+   "reading": "At least 200 mobile operators will be investing in 5G standalone (trials, plans or rollouts) by end-2023.",
+   "mainstream_test": "D16 numeric threshold: GSA count of operators investing in public 5G SA at end-2023 >= 200.",
+   "reason": "GSA counts were far below 200: by April 2026 only 95 operators had launched SA, and GSA's end-2023 'investing' count (not retrieved verbatim; the summary report is login-gated) was in the 120s range, more than 25% short of 200.",
+   "evidence": [
+    {
+     "url": "https://gsacom.com/key-data/5g-standalone/",
+     "title": "5G Standalone key data (GSA)",
+     "date": "2026-04",
+     "shows": "95 operators had launched 5G SA service by April 2026, up 42% since 1Q25."
+    },
+    {
+     "url": "https://gsacom.com/paper/5g-standalone-january-2024-summary/",
+     "title": "5G Standalone January 2024 Summary (GSA)",
+     "date": "2024-01",
+     "shows": "GSA's end-2023 tracker of operators investing in public 5G SA; full figures behind free login."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-004",
+   "verdict": "ungradable",
+   "reading": "Leading semiconductor companies will spend US$300 million on internal and third-party AI chip-design tools in 2023.",
+   "mainstream_test": "D23 same quantity: a public 2023 measure of chipmakers' spend on AI-based EDA tools.",
+   "reason": "EDA vendors do not break out AI-tool revenue and internal spend is not disclosed; no public measure found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Figure includes internal tool spend that no public source measures."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-005",
+   "verdict": "ungradable",
+   "reading": "Combined GaN and SiC power semiconductor sales will be US$3.3 billion in 2023.",
+   "mainstream_test": "D16 numeric vs tracker estimates (Yole, TrendForce) of 2023 SiC + GaN power device revenue.",
+   "reason": "Tracker estimates for 2023 exist (TrendForce, Yole) but none was retrievable in this session (404/no data on fetched pages); recorded ungradable for lack of a retrieved measure, not because none exists.",
+   "evidence": [
+    {
+     "url": "https://www.trendforce.com/presscenter/news?keyword=SiC%20power%20device%202023",
+     "title": "TrendForce press center search",
+     "date": "2026-09",
+     "shows": "No 2023 SiC/GaN power revenue release retrievable from the press-center listing."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Silicon_carbide",
+     "title": "Silicon carbide (Wikipedia)",
+     "date": "2026",
+     "shows": "No market size figures for SiC power devices."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-006",
+   "verdict": "ungradable",
+   "reading": "The global radiation-hardened electronics market will top US$1.5 billion in sales in 2023.",
+   "mainstream_test": "D23 same quantity: a measured 2023 rad-hard electronics sales figure; range of estimates.",
+   "reason": "Only commercial market-sizing reports exist, with definitions and 2023 values that disagree widely (component-only vs systems); no measured series found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Figure is a market-sizing estimate; no measured 2023 rad-hard sales series located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-007",
+   "verdict": "ungradable",
+   "reading": "By end-2023 close to two-thirds of consumers in developed countries will use at least one AVOD service monthly.",
+   "mainstream_test": "D23 / D22 survey rule: a multi-country consumer survey of monthly AVOD use for 2023 or 2022 across developed markets.",
+   "reason": "No independent cross-country survey of monthly AVOD use for the same population was found; national surveys (e.g. US) differ in definition of AVOD (FAST, YouTube included or not).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Claim rests on Deloitte's own multi-country consumer survey; no independent same-population measure located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-008",
+   "verdict": "ungradable",
+   "reading": "Streaming services will spend over US$6 billion on exclusive major sports rights in the largest markets in 2023.",
+   "mainstream_test": "D23 same quantity: a public 2023 total of streamer spend on exclusive major sports rights.",
+   "reason": "Rights fees are disclosed deal by deal and amortised differently; no public aggregate for 2023 exists. Summing deals would be a reconstruction with Deloitte's undefined 'major' and 'largest markets'.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Aggregate is Deloitte's construct; no public 2023 total found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-009",
+   "verdict": "ungradable",
+   "reading": "The virtual production tools market will grow to US$2.2 billion in 2023.",
+   "mainstream_test": "D23 same quantity: a measured 2023 virtual production tools market figure.",
+   "reason": "Market reports for virtual production vary by more than a factor of 2 in 2023 values depending on scope (software, LED volumes, services); no measured series.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Figure is a market-sizing estimate; independent estimates use incompatible scopes."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-010",
+   "verdict": "ungradable",
+   "reading": "The global social commerce market will exceed US$1 trillion in 2023.",
+   "mainstream_test": "D23 range of estimates: public 2023 estimates of global social commerce GMV.",
+   "reason": "Published estimates of 2023 global social commerce span from roughly half a trillion to over US$1 trillion depending on whether China's live-commerce GMV is included; spread about a factor of 2, so ungradable under D23.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Deloitte cites a market-sizing figure; independent estimates differ in scope and span about a factor of 2."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-011",
+   "verdict": "ungradable",
+   "reading": "Global VR revenue (hardware, software, content) will be US$7 billion in 2023.",
+   "mainstream_test": "D23 range of estimates: 2023 global VR revenue from trackers.",
+   "reason": "VR revenue estimates for 2023 differ widely by scope (headsets only vs content and enterprise); no single measured series with Deloitte's scope found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "VR revenue scope (hardware+content) not matched by a public measured 2023 series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-012",
+   "verdict": "ungradable",
+   "reading": "Enterprise edge computing market revenue will grow 22% in 2023.",
+   "mainstream_test": "D23 same quantity: measured 2023 growth of the enterprise edge computing market.",
+   "reason": "Trackers (IDC edge spending guides) publish forecasts with different scopes; no measured 2023 actual growth of the same market found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Growth rate is a market-sizing projection; no measured 2023 actual located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-013",
+   "verdict": "ungradable",
+   "reading": "In 2023 tech companies will move faster on climate action (targets, emissions cuts) than non-tech industries.",
+   "mainstream_test": "Qualitative comparison; needs a measure of climate action pace by sector for 2023.",
+   "reason": "'Climate action' is not defined by a single measure; no sector-comparison series for 2023 was retrieved (SBTi target counts or emissions change by sector would each be partial proxies).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Claim compares sectors without a named metric."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-014",
+   "verdict": "ungradable",
+   "reading": "The number of games-company M&A deals in 2023 will be about 25% higher than in 2022.",
+   "mainstream_test": "D16 numeric on deal counts from trackers (Drake Star, InvestGame) for 2022 and 2023.",
+   "reason": "Tracker reports exist but none was retrievable (Drake Star and InvestGame pages 404, GamesIndustry.biz blocked); recorded ungradable for lack of a retrieved measure.",
+   "evidence": [
+    {
+     "url": "https://www.drakestar.com/news/global-gaming-report-2023",
+     "title": "Drake Star Global Gaming Report 2023",
+     "date": "2024-01",
+     "shows": "Page returned 404; deal counts not retrieved."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-015",
+   "verdict": "ungradable",
+   "reading": "The total value of TMT divestitures in 2023 will be US$250-300 billion.",
+   "mainstream_test": "D23 same quantity: a public 2023 total of TMT divestiture deal value.",
+   "reason": "Divestiture totals come from paid deal databases (LSEG, Dealogic) with Deloitte's own TMT classification; no public 2023 figure of the same quantity found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2023.html",
+     "title": "Deloitte TMT Predictions 2023",
+     "date": "2022-11",
+     "shows": "Figure is drawn from proprietary deal data; no public 2023 total located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-001",
+   "verdict": "ungradable",
+   "reading": "Gen AI will add revenue to enterprise software companies at a run rate approaching US$10 billion by end-2024.",
+   "mainstream_test": "D23 attributed value: a public measure of software revenue attributable to gen AI for end-2024.",
+   "reason": "Revenue 'uplift' attributed to gen AI across enterprise software vendors is not reported as such; only a few vendors disclose AI run rates with differing definitions. Attributed value, no public measure.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Uplift figure is an attribution with no public measured series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-002",
+   "verdict": "hit",
+   "reading": "The market for chips specialised for generative AI (data-centre accelerators) will be worth over US$50 billion in 2024.",
+   "mainstream_test": "D16 numeric threshold: 2024 gen AI accelerator revenue > US$50B.",
+   "reason": "NVIDIA alone reported US$115.2B data-centre revenue for fiscal 2025 (Feb 2024-Jan 2025), mostly AI accelerators; the threshold is exceeded by a wide margin on any reading of scope.",
+   "evidence": [
+    {
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+     "title": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2025",
+     "date": "2025-02-26",
+     "shows": "Full-year data center revenue rose 142% to a record US$115.2 billion."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-003",
+   "verdict": "miss",
+   "reading": "Enterprise spending on generative AI will grow by 30% in 2024.",
+   "mainstream_test": "D18 (growth rate in percent): actual 2024 growth of enterprise gen AI spend vs 30%.",
+   "reason": "Menlo Ventures measured enterprise gen AI spend at US$13.8B in 2024 vs US$2.3B in 2023, about 6x (500% growth); all public measures show growth far above 30%.",
+   "evidence": [
+    {
+     "url": "https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/",
+     "title": "2024: The State of Generative AI in the Enterprise (Menlo Ventures)",
+     "date": "2024-11-20",
+     "shows": "AI spending surged to US$13.8 billion in 2024, more than 6x the US$2.3 billion spent in 2023."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-004",
+   "verdict": "hit",
+   "reading": "In 2024 the EU will adopt regulation covering generative AI that becomes a template for other regions.",
+   "mainstream_test": "Event test: EU adopts gen-AI-covering regulation in 2024.",
+   "reason": "The AI Act, with general-purpose AI model obligations, was adopted (Parliament Mar 2024, Council May 2024) and entered into force Aug 2024; it was widely referenced by other jurisdictions.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act",
+     "title": "Artificial Intelligence Act (Wikipedia)",
+     "date": "2026",
+     "shows": "Parliament vote 13 Mar 2024, Council adoption 21 May 2024, entry into force 1 Aug 2024; GPAI obligations apply after 12 months."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-005",
+   "verdict": "hit",
+   "reading": "In 2024 several regions will face shortages of gallium (and possibly germanium), with rare-earth shortages possible by 2025.",
+   "mainstream_test": "Event test: evidence of gallium supply shortfall outside China in 2024.",
+   "reason": "USGS reports China's 2023 export controls made rebuilding stocks outside China difficult, stocks outside China 'depleted further' in 2024, prices rose, and China banned gallium exports to the US in Dec 2024. Tightness rather than outright stock-outs; moderate certainty.",
+   "evidence": [
+    {
+     "url": "https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-gallium.pdf",
+     "title": "USGS Mineral Commodity Summaries 2025: Gallium",
+     "date": "2025-01",
+     "shows": "China low-purity gallium price rose to US$420/kg by Oct 2024 'as stocks outside of China depleted further'; China banned gallium exports to the US in Dec 2024."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-006",
+   "verdict": "ungradable",
+   "reading": "In 2024 all leading chipmakers will show year-on-year declines in water and energy intensity and a higher renewable share.",
+   "mainstream_test": "Would need 2024 sustainability data for every 'leading chipmaker' on a common intensity basis.",
+   "reason": "'Leading chipmakers' is not enumerated and intensity denominators differ by company (per wafer, per revenue); 2024 reports were not retrieved for the set. No common public measure.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Chipmaker set and intensity definition not specified; no common 2024 measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-007",
+   "verdict": "ungradable",
+   "reading": "Telcos worldwide will cut their carbon footprint by 2% (12 Mt CO2e) in 2024.",
+   "mainstream_test": "D23 same quantity: a measured global telco emissions total for 2023 and 2024.",
+   "reason": "No public series of global telecom-sector emissions (all scopes) for 2024 found; industry bodies report subsets of operators.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Global telco footprint is Deloitte's modelled figure; no measured 2024 global series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-008",
+   "verdict": "ungradable",
+   "reading": "ESG reporting software revenue will grow over 30% to just over US$1 billion in 2024.",
+   "mainstream_test": "D23 range of estimates: 2024 ESG reporting software market estimates.",
+   "reason": "Market-sizing estimates for ESG reporting software differ by more than a factor of 2 depending on scope; no measured series.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Figure is a market estimate; independent estimates use incompatible scopes."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-009",
+   "verdict": "ungradable",
+   "reading": "The AgTech revenue opportunity will be US$18 billion globally in 2024.",
+   "mainstream_test": "D23 attributed value: an 'opportunity' figure.",
+   "reason": "'Revenue opportunity' is an attributed value; no public source measures it for 2024.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Claim is framed as a revenue opportunity."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-010",
+   "verdict": "ungradable",
+   "reading": "Women's elite sports revenue (matchday, broadcast, commercial) will total US$1.28 billion globally in 2024.",
+   "mainstream_test": "D23 same quantity: an independent 2024 global women's elite sports revenue total.",
+   "reason": "The only global total is Deloitte's own estimate (its later restatement is the publisher's self-assessment, excluded); no independent measure of the same scope found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Global women's elite sports revenue is a Deloitte-constructed total; no independent 2024 measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-011",
+   "verdict": "ungradable",
+   "reading": "The average number of SVOD pricing tiers offered by the top US providers will reach eight in 2024, from four in 2022.",
+   "mainstream_test": "Count of tiers per top US SVOD provider in 2024 vs Deloitte's provider set and tier definition.",
+   "reason": "The provider set and what counts as a 'tier' (ad/no-ad, bundles, annual, regional) are not specified; no public series counts them.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Tier count depends on Deloitte's own provider set and definition."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-012",
+   "verdict": "hit",
+   "reading": "In 2024 Hollywood and games companies will increasingly collaborate to adapt game IP for film and TV and vice versa.",
+   "mainstream_test": "Event test: notable game-to-screen and screen-to-game IP collaborations in 2024.",
+   "reason": "2024 saw major game adaptations (Fallout series on Prime Video, Arcane season 2, Sonic the Hedgehog 3) and further deals; the stated trend held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fallout_(American_TV_series)",
+     "title": "Fallout (American TV series) (Wikipedia)",
+     "date": "2026",
+     "shows": "Amazon/Kilter series adapting Bethesda's game franchise, premiered April 2024 and renewed."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-013",
+   "verdict": "ungradable",
+   "reading": "Global audio entertainment revenue across music, audiobooks, podcasts and radio will exceed US$75 billion in 2024.",
+   "mainstream_test": "D23 same quantity: a public total of the four formats for 2024.",
+   "reason": "No single public series sums these four formats; combining separate sources would be a reconstruction with mismatched scopes (radio advertising vs recorded music).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Four-format audio total is Deloitte's construct."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-014",
+   "verdict": "partial",
+   "reading": "3D UGC gaming platforms will pay nearly US$1.5 billion to content developers in 2024.",
+   "mainstream_test": "D16 numeric: 1.5 vs sum of 2024 creator payouts on 3D UGC platforms (Roblox, Fortnite, others).",
+   "reason": "Roblox developer exchange fees were US$922.8M in 2024 (10-K); Epic's reported 2024 Fortnite creator payout was about US$350M (not retrieved here; fortnite.com 403); other platforms are small. Total about US$1.3B, so 1.5 is 13-18% high: partial.",
+   "evidence": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1315098/000131509825000033/rblx-20241231.htm",
+     "title": "Roblox Corp. Form 10-K for 2024",
+     "date": "2025-02-18",
+     "shows": "Developer exchange fees US$922,821 thousand in 2024 (US$740,752 thousand in 2023)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-015",
+   "verdict": "ungradable",
+   "reading": "Smartphones will be used trillions of times in 2024 to authenticate actions.",
+   "mainstream_test": "Would need a public count of smartphone authentication events in 2024.",
+   "reason": "No public measure of global smartphone authentication events exists.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Hedged estimate ('may be') with no measurable series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-016",
+   "verdict": "ungradable",
+   "reading": "Over 200 million smartphones able to connect to satellite services will be sold in 2024.",
+   "mainstream_test": "D23 same quantity: a 2024 count of satellite-capable smartphone sales.",
+   "reason": "No tracker count of satellite-capable smartphone sales for 2024 was retrieved (Counterpoint page 404). Deriving it from iPhone 14-and-later sales plus other models is a proxy, which D23 does not accept, though it suggests the threshold was likely met.",
+   "evidence": [
+    {
+     "url": "https://www.counterpointresearch.com/insight/post-insight-research-notes-blogs-satellitecapable-smartphone-shipments-to-cross-1-billion-by-2030/",
+     "title": "Counterpoint: satellite-capable smartphone shipments",
+     "date": "2024",
+     "shows": "Page returned 404; no 2024 count retrieved."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-017",
+   "verdict": "ungradable",
+   "reading": "In 2024 over 90% of the most-used apps on fixed broadband in developed markets will keep the same vendor-recommended bitrate as in 2023.",
+   "mainstream_test": "Would need a list of most-used apps and their 2023/2024 recommended bitrates.",
+   "reason": "No public series tracks vendor-recommended bitrates for a defined set of top apps; Deloitte's app set is not public.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "App set and bitrate tracking are Deloitte's own."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-018",
+   "verdict": "ungradable",
+   "reading": "The government cloud market will exceed US$41 billion in 2024.",
+   "mainstream_test": "D23 range of estimates: 2024 government cloud market estimates.",
+   "reason": "Government cloud market estimates vary by more than a factor of 2 depending on scope (public sector vs government only, services included); no measured series.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Figure is a market estimate."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-019",
+   "verdict": "ungradable",
+   "reading": "US tech venture debt will be US$14-16 billion in 2024.",
+   "mainstream_test": "D23 same quantity: PitchBook/NVCA 2024 US venture debt for tech companies.",
+   "reason": "PitchBook-NVCA publishes total US venture debt (all sectors, a larger figure); a tech-only subtotal matching Deloitte's scope was not found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2024.html",
+     "title": "Deloitte TMT Predictions 2024",
+     "date": "2023-11",
+     "shows": "Tech-only US venture debt total not publicly reported in the same scope."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-001",
+   "verdict": "ungradable",
+   "reading": "By end-2025 US women's use of generative AI will equal or exceed men's.",
+   "mainstream_test": "Survey test: a 2025 US population survey of gen AI use by sex.",
+   "reason": "Surveys exist (Pew, St. Louis Fed Real-Time Population Survey) but the retrieved 2025 pages report no breakdown by sex; no retrieved measure. Recorded ungradable with what was looked for.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "title": "34% of U.S. adults have used ChatGPT (Pew Research Center)",
+     "date": "2025-06-25",
+     "shows": "Breaks down ChatGPT use by age and education; no men/women comparison in the article."
+    },
+    {
+     "url": "https://www.stlouisfed.org/on-the-economy/2025/nov/state-generative-ai-adoption-2025",
+     "title": "State of generative AI adoption 2025 (St. Louis Fed)",
+     "date": "2025-11",
+     "shows": "Overall and work/nonwork adoption; no sex breakdown."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-002",
+   "verdict": "hit",
+   "reading": "Data centres will make up about 2% of global electricity consumption in 2025.",
+   "mainstream_test": "D18 (share in percent): forecast vs actual share, hit within 0.5 pt.",
+   "reason": "IEA estimates data centres used about 415 TWh, about 1.5% of global electricity, in 2024; with ~15% annual growth the 2025 share is about 1.6-1.7%, within 0.5 pt of 2%.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+     "title": "Energy and AI: Energy demand from AI (IEA)",
+     "date": "2025-04",
+     "shows": "Data centres about 415 TWh, about 1.5% of global electricity consumption in 2024; ~945 TWh (~3%) by 2030."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-003",
+   "verdict": "ungradable",
+   "reading": "In 2025 almost half of new stadium development projects will be in North America and Europe.",
+   "mainstream_test": "Would need a public global register of new stadium projects in 2025 by region.",
+   "reason": "No public global pipeline of stadium projects exists; Deloitte's project list is its own.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Stadium project share rests on Deloitte's own project tracking."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-004",
+   "verdict": "ungradable",
+   "reading": "25% of companies using gen AI will launch agentic AI pilots or proofs of concept in 2025.",
+   "mainstream_test": "Survey rule: a 2025 or 2024 survey of gen-AI-using companies reporting agentic AI pilots; D18 on the share.",
+   "reason": "Candidate surveys (McKinsey State of AI 2025, KPMG AI Pulse 2025) were not retrievable (503/404). Recalled figures suggest well over 25% were experimenting with agents, which would make a point reading a miss, but no measure was retrieved.",
+   "evidence": [
+    {
+     "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+     "title": "The state of AI (McKinsey)",
+     "date": "2025-11",
+     "shows": "Page returned 503 twice; share of organizations experimenting with or scaling AI agents not retrieved."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-005",
+   "verdict": "hit",
+   "reading": "In 2025 deepfake detection will develop like cybersecurity (attackers evading detectors) and industries will collaborate to verify the provenance of some online content.",
+   "mainstream_test": "Event test: cross-industry content-provenance collaboration active in 2025.",
+   "reason": "The C2PA coalition (Adobe, Amazon, BBC, Google, Meta, Microsoft, OpenAI, Sony, TikTok, Truepic) was operating Content Credentials as an industry standard; the claim is broad and loosely testable, so certainty is moderate.",
+   "evidence": [
+    {
+     "url": "https://c2pa.org/",
+     "title": "Coalition for Content Provenance and Authenticity (C2PA)",
+     "date": "2026",
+     "shows": "Steering committee spans tech, media and device firms collaborating on Content Credentials for content provenance."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-006",
+   "verdict": "ungradable",
+   "reading": "Companies using FinOps will save an estimated US$21 billion of cloud spend in 2025.",
+   "mainstream_test": "D23 attributed value: savings attributed to FinOps.",
+   "reason": "Savings attributed to a practice are not measured by any public source.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Savings figure is an attributed value."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-007",
+   "verdict": "ungradable",
+   "reading": "Global smartphone shipments will grow about 7% in 2025.",
+   "mainstream_test": "D18: 2025 full-year shipment growth from IDC, Canalys/Omdia or Counterpoint vs 7%.",
+   "reason": "Tracker releases for full-year 2025 were not retrievable (Canalys 403, Counterpoint 404, IDC blocked). Recalled tracker growth was low single digits, which would be a miss, but no measure was retrieved.",
+   "evidence": [
+    {
+     "url": "https://www.canalys.com/newsroom/worldwide-smartphone-market-2025",
+     "title": "Worldwide smartphone market 2025 (Canalys)",
+     "date": "2026-01",
+     "shows": "Page returned 403; full-year 2025 growth not retrieved."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-008",
+   "verdict": "ungradable",
+   "reading": "Major TV and film studios will spend less than 3% of production budgets on gen AI tools in 2025.",
+   "mainstream_test": "Would need studio disclosures of gen AI tool spend as a share of production budgets.",
+   "reason": "Studios do not disclose this; no public measure.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Share of production budgets on gen AI tools is not publicly reported."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-009",
+   "verdict": "ungradable",
+   "reading": "In 2025 the number of standalone streaming services per consumer will slowly decline in most markets.",
+   "mainstream_test": "Would need multi-market 2024/2025 surveys of SVOD services per household by independent trackers.",
+   "reason": "The main multi-country series is the publisher's own consumer survey; no independent multi-market measure was found.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Measure relies on Deloitte's own surveys."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-010",
+   "verdict": "hit",
+   "reading": "Beginning in 2025 the pace of wireless telecom consolidation will increase, subject to regulator conditions.",
+   "mainstream_test": "Event test: in-market mobile mergers completed or cleared in 2025 under regulatory conditions.",
+   "reason": "Vodafone and Three UK completed their merger in June 2025 after CMA approval with binding commitments (Dec 2024); other 2025 deals (e.g. T-Mobile US / UScellular wireless operations) also closed. Pace of consolidation rose with conditions.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/VodafoneThree",
+     "title": "VodafoneThree (Wikipedia)",
+     "date": "2026",
+     "shows": "Merger approved by CMA Dec 2024 subject to 5G rollout and price commitments; completed June 2025."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-011",
+   "verdict": "ungradable",
+   "reading": "About half of enterprises worldwide will add on-premises AI data centre infrastructure in 2025.",
+   "mainstream_test": "Survey rule: a 2025 or 2024 survey of enterprises worldwide reporting on-prem AI infrastructure additions.",
+   "reason": "No retrieved survey of the same population measures this; vendor surveys use different populations.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Share of enterprises is not measured by an independent same-population survey found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-012",
+   "verdict": "ungradable",
+   "reading": "Women's elite sports generated over US$1 billion of revenue in 2024 (update restating the 2024 prediction).",
+   "mainstream_test": "D23 same quantity: independent 2024 women's elite sports revenue total.",
+   "reason": "Only Deloitte's own estimate exists; the update is the publisher's self-assessment and is excluded. No independent measure.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Update item restating the 2024 prediction; no independent measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-014",
+   "verdict": "miss",
+   "reading": "Fewer than 20 additional mobile networks will be upgraded to 5G SA in 2025.",
+   "mainstream_test": "D16 numeric threshold: count of operators launching 5G SA in 2025 < 20.",
+   "reason": "GSA counts 95 operators with launched 5G SA by April 2026, up 42% since 1Q25, i.e. about 28 new launches, nearly all in 2025; well over 20 (more than 25% above).",
+   "evidence": [
+    {
+     "url": "https://gsacom.com/key-data/5g-standalone/",
+     "title": "5G Standalone key data (GSA)",
+     "date": "2026-04",
+     "shows": "95 operators had launched 5G SA service by April 2026, 'a growth of 42% since 1Q25' (implying about 67 at 1Q25, so about 28 launches since, all but one in 2025); SA market share 26% in March 2025."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-015",
+   "verdict": "ungradable",
+   "reading": "No additional multivendor Open RAN networks will be deployed or announced in 2025.",
+   "mainstream_test": "Event test: any multivendor Open RAN network announced or deployed in 2025.",
+   "reason": "No public registry distinguishes multivendor from single-vendor Open RAN deployments; whether 2025 announcements qualified depends on that classification. Not retrieved.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Multivendor Open RAN is Deloitte's classification; no registry found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-016",
+   "verdict": "ungradable",
+   "reading": "The number of companies and the spend on implementing PQC standards will be four times higher in 2025 than in 2023.",
+   "mainstream_test": "D23 same quantity: public measures of PQC implementation spend and companies in 2023 and 2025.",
+   "reason": "No public series measures PQC implementation spend or company counts.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "PQC spend not measured publicly."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-017",
+   "verdict": "ungradable",
+   "reading": "RISC-V CPU chip revenue will be close to US$1 billion in 2024.",
+   "mainstream_test": "D23 same quantity: a public 2024 RISC-V chip revenue figure.",
+   "reason": "No public measured series of RISC-V CPU chip revenue; vendors and analysts publish forecasts or unit counts.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Update restating the 2022 edition's expectation; no independent 2024 measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-018",
+   "verdict": "ungradable",
+   "reading": "Gen AI-based cyberattacks will grow again in 2025.",
+   "mainstream_test": "Would need a public count of gen-AI-based attacks for 2024 and 2025.",
+   "reason": "No consistent public series counts attacks attributable to gen AI; vendor reports use incompatible definitions.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "No public series of gen-AI-based attack counts."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-019",
+   "verdict": "ungradable",
+   "reading": "Chiplet-based advanced packaging revenue will reach US$16 billion in 2025.",
+   "mainstream_test": "D23 range of estimates: 2025 chiplet-based packaging revenue.",
+   "reason": "Chiplet/advanced packaging market estimates differ widely by scope (packaging services vs chiplet device value); no measured series.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Figure is a market estimate."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-020",
+   "verdict": "ungradable",
+   "reading": "The global telco B/OSS market will reach US$70 billion in 2025.",
+   "mainstream_test": "D23 range of estimates: 2025 B/OSS market estimates.",
+   "reason": "B/OSS market estimates differ by more than a factor of 2 by scope (software only vs services); no measured series.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Figure is a market estimate."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-021",
+   "verdict": "ungradable",
+   "reading": "Silicon photonics transceiver chip sales will reach US$1.25 billion in 2025.",
+   "mainstream_test": "D23 same quantity: 2025 silicon photonics transceiver chip sales.",
+   "reason": "No public measured 2025 figure retrieved; analyst estimates (Yole, LightCounting) are paywalled and scope transceivers (modules) rather than chips.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11-18",
+     "shows": "Figure is a market estimate; no public 2025 measure of chip sales."
+    }
+   ]
+  }
+ ]
+}

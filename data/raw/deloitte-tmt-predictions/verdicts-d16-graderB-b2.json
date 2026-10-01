@@ -1,0 +1,1084 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2011-012",
+   "verdict": "ungradable",
+   "reading": "Global video game revenue from 'new' sources (online subscriptions, microtransactions, digital add-ons) would be at most about $10 billion, about 16% of total game revenue, in 2012.",
+   "mainstream_test": "D16 numeric against a public 2012 series of game revenue from these new sources, same scope (global); D23 same-quantity rule.",
+   "reason": "No public series measures Deloitte's bundle of 'relatively new sources' for 2012. Tracker splits of digital or free-to-play revenue (DFC, Newzoo, SuperData) use different definitions and differ by more than a factor of 2 depending on whether digital full-game downloads and mobile are included. 'Could be as high as' is also an upper bound, not a point estimate. Looked for: Newzoo/DFC digital vs. packaged and microtransaction revenue for 2012.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions2011.pdf",
+     "title": "Deloitte TMT Predictions 2011",
+     "date": "2011-01",
+     "shows": "The claim defines the quantity as revenue from relatively new sources (online, microtransactions), an upper bound of $10bn or 16% of total game revenue by end 2012; no matching public series found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-013",
+   "verdict": "ungradable",
+   "reading": "In 2011 live music companies, led by festival organisers, would start doing more artist development (A&R) work.",
+   "mainstream_test": "Event test: did festival organisers measurably expand talent development in 2011?",
+   "reason": "Qualitative trend with no threshold and no public measure of A&R activity by live music firms. Looked for: industry data on live-promoter artist development or festival-run talent programmes in 2011; none quantifies an expansion.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions2011.pdf",
+     "title": "Deloitte TMT Predictions 2011",
+     "date": "2011-01",
+     "shows": "Claim states a start of a trend with no measurable threshold."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-014",
+   "verdict": "hit",
+   "reading": "In 2011 digital music sales would exceed physical music sales in at least one major market, most likely the US.",
+   "mainstream_test": "Event test: digital > physical in a major market in 2011.",
+   "reason": "In the US, digital music sales topped physical sales in 2011 (Nielsen SoundScan: digital 50.3% of music purchases; RIAA digital value about half of the market). The stated event happened in the named market in the target year.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Music_industry",
+     "title": "Music industry - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "States that by 2011 digital music sales topped physical sales of music in the US."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-015",
+   "verdict": "miss",
+   "reading": "By end 2011 fewer than 30 carriers, in about six countries, would offer commercial LTE service.",
+   "mainstream_test": "D16 numeric on the count of commercial LTE networks at end 2011 (GSA count), threshold <30.",
+   "reason": "GSA counted 80 commercial LTE networks in 38 countries by June 2012 and about 146 at end 2012; its own statement that the count had quadrupled in just over a year puts mid-2011 near 20 and end 2011 near 45-50 (GSA's end-2011 figure is commonly cited as 49 networks in 29 countries). The count and especially the country spread far exceed '<30 in six countries'; more than 25% above the bound.",
+   "evidence": [
+    {
+     "url": "https://convergedigest.com/gsa-80-lte-networks-launched-subscriber/",
+     "title": "GSA: 80 LTE Networks Launched, Subscriber Growth Accelerates",
+     "date": "2012-06-09",
+     "shows": "80 commercial LTE networks in 38 countries by June 2012; count quadrupled in just over a year."
+    },
+    {
+     "url": "https://www.telecompaper.com/news/about-200-lte-networks-operational-worldwide-gsa--960125",
+     "title": "About 200 LTE networks operational worldwide - GSA",
+     "date": "2013-08-08",
+     "shows": "Nearly 146 commercial LTE networks at end 2012; 106 launched in the 12 months to July 2013."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-016",
+   "verdict": "ungradable",
+   "reading": "In 2011 portable-device data volume over public Wi-Fi would grow 25-50% faster than (or at 25-50% while outpacing) cellular broadband data volume.",
+   "mainstream_test": "D16 numeric against measured 2011 growth of public Wi-Fi data from portable devices vs cellular data.",
+   "reason": "No public series measures portable-device traffic over public Wi-Fi hotspots for 2011; Cisco VNI reports mobile cellular traffic and Wi-Fi offload estimates, not public-hotspot volume. The phrasing is also ambiguous between a growth rate and a growth gap. Looked for: Cisco VNI 2011/2012, hotspot operator traffic statistics.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions2011.pdf",
+     "title": "Deloitte TMT Predictions 2011",
+     "date": "2011-01",
+     "shows": "Claim names public Wi-Fi traffic from portable devices, a quantity without a public measured series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-017",
+   "verdict": "ungradable",
+   "reading": "About 25% of North American big-box and anchor-tenant retailers would begin offering free in-store Wi-Fi to shoppers in 2011.",
+   "mainstream_test": "D16 numeric (D18 points for a share) against a survey of North American big-box retailers for 2010-2011.",
+   "reason": "A share of organisations is gradable only against a survey of the same population at the target year or the year before (task rule). No public survey of North American big-box/anchor retailers' in-store Wi-Fi launches for 2010-2011 was found; announcements by individual chains (e.g. Starbucks, McDonald's, Best Buy, Macy's) are not a share. Looked for: RSR Research / EKN retail Wi-Fi surveys 2011.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions2011.pdf",
+     "title": "Deloitte TMT Predictions 2011",
+     "date": "2011-01",
+     "shows": "Claim is a share of a retailer population; no survey of that population found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-018",
+   "verdict": "ungradable",
+   "reading": "In 2011 video calling would become cheaper, better and more widely available, but demand would not boom.",
+   "mainstream_test": "Two-part event test: wider availability (yes/no) and no demand boom; 'boom' has no threshold.",
+   "reason": "Availability clearly widened in 2011 (FaceTime, Skype mobile video, Google Hangouts), but 'boom in demand' has no stated threshold and no public series of video-call usage across platforms for 2010-2011 settles whether growth was a boom. Pew data on US video calling (page not retrievable) cover adoption, not demand growth. Looked for: Pew video calling surveys, Skype video minutes.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions2011.pdf",
+     "title": "Deloitte TMT Predictions 2011",
+     "date": "2011-01",
+     "shows": "Claim's second half ('boom in demand is unlikely') has no measurable threshold."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-001",
+   "verdict": "hit",
+   "reading": "Global consumer technology demand would grow in 2012, with record numbers of smartphones and tablets bought.",
+   "mainstream_test": "Event test: record smartphone and tablet unit sales in 2012 and overall unit growth.",
+   "reason": "Smartphone shipments reached a record of about 725 million in 2012 (up from about 490 million in 2011) and tablet shipments a record of about 120-130 million (up from about 70 million), outweighing the roughly 3-4% fall in PC units. The named records happened in 2012.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smartphone",
+     "title": "Smartphone - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "2012 smartphone shipments about 725 million; 2013 topped 1 billion, up 38%."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Tablet_computer",
+     "title": "Tablet computer - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Android tablet volumes rose strongly 2012-2013; iPad passed 100 million cumulative by October 2012, consistent with record tablet sales in 2012."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-002",
+   "verdict": "ungradable",
+   "reading": "About 5% of tablets sold in 2012 (about 5 million units, $1.5-2 billion) would go to people or households that already owned a tablet.",
+   "mainstream_test": "D16 numeric against a measured share of 2012 tablet sales to existing owners.",
+   "reason": "No public tracker reports the share of 2012 tablet sales made to existing tablet owners globally. Looked for: IDC/Gartner tablet buyer surveys, NPD repeat-buyer data.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim quantity (tablets sold to multi-tablet owners) has no public measured series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-003",
+   "verdict": "ungradable",
+   "reading": "In 2012 the 'big data' market would grow at an accelerating rate and penetrate further.",
+   "mainstream_test": "Event test: big data spending growth rate in 2012 above 2011's.",
+   "reason": "'Accelerating growth' needs a consistent market series across 2010-2012; the public big data market estimates of the time (Wikibon, IDC, Gartner) use different scopes and do not give a comparable 2011 vs 2012 growth rate. Looked for: Wikibon big data market size 2011-2012.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim states accelerating growth with no defined market or metric."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-004",
+   "verdict": "hit",
+   "reading": "By end 2012 more than 90% of storage in small mobile devices (MP3 players, smartphones, tablets) would be solid state (flash) rather than hard disk.",
+   "mainstream_test": "Threshold test: flash share of storage in small mobile devices shipped in 2012 above 90%.",
+   "reason": "Every smartphone (about 725 million in 2012) and every tablet (over 100 million) used flash storage; hard-disk players had shrunk to a single residual line (iPod classic) selling a few million units. On any unit-based reading the flash share is well above 90%. Low-to-moderate certainty: no tracker publishes the share directly.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smartphone",
+     "title": "Smartphone - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "About 725 million smartphones shipped in 2012, a device class that uses flash storage only."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-005",
+   "verdict": "hit",
+   "reading": "In 2012 ambient RF power-harvesting products would remain a niche market with only moderate growth.",
+   "mainstream_test": "D16 mainstream rule in reverse: the claim says niche (below 5% of the relevant device market); hit if it stayed niche.",
+   "reason": "Ambient RF harvesting remained confined to low-power niche uses (passive RFID-style tags, sensor nodes); no consumer device category adopted it in 2012 or later. The predicted state (niche) held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Energy_harvesting",
+     "title": "Energy harvesting - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "RF harvesting needs large collection area or proximity to a source; used in passive RFID and individual sensor nodes, no mass-market use."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-006",
+   "verdict": "ungradable",
+   "reading": "In 2012 3D printers would become a viable segment within markets such as the $22bn power tools market and industrial manufacturing, growing more than 100% over 2011.",
+   "mainstream_test": "D16 numeric on 2012 vs 2011 growth of the named 3D printing segments.",
+   "reason": "No public series measures 3D printers as a segment of the power tools market or of industrial manufacturing for 2011-2012. Wohlers Associates reports total additive manufacturing revenue, a different quantity (and its 2012 growth was far below 100%), but D23 does not allow a proxy of another quantity. Looked for: Wohlers Report 2013 figures, Gartner shipments (series starts later).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim's quantity is growth of 3D printing within named markets; no matching series."
+    },
+    {
+     "url": "https://3dprintingindustry.com/news/2-million-3dp-shipments-by-2018-35328/",
+     "title": "Gartner: 3D Printers to Reach 2.3 Million Shipments by 2018",
+     "date": "2015",
+     "shows": "Gartner's unit series reports 108,151 units in 2014; no 2011-2012 segment series by market."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-007",
+   "verdict": "ungradable",
+   "reading": "Targeted (addressable) TV advertising would be under 0.1% of global TV ad revenue in 2012, below $200 million of $227 billion.",
+   "mainstream_test": "Threshold test against a measured 2012 global addressable TV ad revenue figure.",
+   "reason": "No public measure of global addressable TV ad revenue for 2012 found; US-only estimates (e.g. for Cablevision, DirecTV, Dish addressable) are scattered and not global. Looked for: eMarketer/Magna addressable TV spending 2012.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim names global targeted TV ad revenue; no global series found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-008",
+   "verdict": "ungradable",
+   "reading": "Globally in 2012, 95% of TV programmes watched would be viewed live or within 24 hours of broadcast.",
+   "mainstream_test": "D18 points against a measured global share of live plus same-day viewing in 2012.",
+   "reason": "Scope is global; no global measure of live plus within-24-hour viewing exists. National panels (BARB UK, Nielsen US) report live and timeshifted shares under different windows (same day, 3 or 7 days), not a global figure, and the UK reference page could not be retrieved. Looked for: BARB/Thinkbox 2012 live share, Nielsen Live+SD.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim is a global viewing share; only national panels exist."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-009",
+   "verdict": "ungradable",
+   "reading": "In 2012 smartphone and tablet owners would watch about 5 billion hours of recorded/catch-up TV while commuting on public transport.",
+   "mainstream_test": "D16 numeric against a measured 2012 total of commuting TV viewing on mobile devices.",
+   "reason": "No public series measures hours of TV watched on phones and tablets while commuting. Looked for: Ofcom, Nielsen cross-platform reports 2012 (they report mobile video time, not by commuting context).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim quantity (commuting catch-up TV hours) has no public measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-010",
+   "verdict": "ungradable",
+   "reading": "Global online brand advertising would grow faster than traditional or direct-response online ads in 2012, rising 50% to $20 billion.",
+   "mainstream_test": "D16 numeric against a global 2012 measure of online brand (display/video) ad spend.",
+   "reason": "No public global series splits online ad spend into brand and direct-response; display/video proxies (IAB, ZenithOptimedia) are a different quantity and US-only or defined differently. Looked for: IAB/PwC 2012 format split, ZenithOptimedia global display 2012.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim names global online brand advertising, a split not published by trackers."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-011",
+   "verdict": "ungradable",
+   "reading": "In 2012 a growing share of MRI machines and MRI hours would be used for neuromarketing (fine-tuning products and messages).",
+   "mainstream_test": "Event test: rising share of MRI hours used for market research in 2012.",
+   "reason": "No public measure of MRI hours by use exists; neuromarketing usage is not tracked. Looked for: neuromarketing industry statistics 2011-2012.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim quantity (share of MRI hours for marketing) has no measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-012",
+   "verdict": "ungradable",
+   "reading": "Global social games revenue growth would slow to under 20% in 2012.",
+   "mainstream_test": "Threshold test on 2012 social games revenue growth.",
+   "reason": "No single social-games market series; available indicators disagree in direction: Zynga (largest social game firm) grew revenue about 12% in 2012, while Facebook's payments revenue (mostly game purchases) grew about 45% (2012 $810m vs 2011 $557m). Company figures are proxies, not the market. Looked for: SuperData/eMarketer social gaming market 2011-2012.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim names social games industry revenue growth; no market series found, company proxies conflict."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-013",
+   "verdict": "ungradable",
+   "reading": "In 2012 the number of people subscribed to online coupon newsletters, and the number of coupon intermediaries, would decline moderately.",
+   "mainstream_test": "Event test: year-on-year decline in daily-deal subscribers and sites in 2012.",
+   "reason": "Groupon stopped reporting subscriber counts in 2012 and reported active customers (which rose); no industry subscriber total is public. The number of daily-deal sites did shrink (Yipit-tracked closures), but the first, headline quantity is unmeasured. Looked for: Groupon 10-K 2012 subscribers, Yipit daily deal reports.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim names coupon-newsletter subscriber totals, which are not published."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-014",
+   "verdict": "ungradable",
+   "reading": "By end 2012 over 500 million smartphones with retail price of $100 or less would be in use worldwide.",
+   "mainstream_test": "Threshold test on the installed base of sub-$100 smartphones at end 2012.",
+   "reason": "No tracker publishes an installed base by retail price band; IDC/Gartner report shipments by ASP band for new units only. Deloitte's own definition counts devices whose price fell to $100. Looked for: installed base by price tier 2012.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim names an installed base by price band, not published by trackers."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-015",
+   "verdict": "ungradable",
+   "reading": "Shipments of NFC-equipped devices would roughly double to almost 200 million in 2012.",
+   "mainstream_test": "D16 numeric against a measured 2012 NFC device shipment figure.",
+   "reason": "No retrievable public actual for 2012 NFC device shipments; analyst figures (IHS, ABI, Juniper) circulated only in paywalled reports and press summaries that mixed forecasts with actuals. Looked for: Wikipedia NFC article (no shipment data), IHS/ABI 2012 NFC handset shipments.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "No shipment figures for 2012-2015 NFC devices."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-016",
+   "verdict": "ungradable",
+   "reading": "By end 2012 over 80% of wireless traffic over short-range (under 10 m) links would be data.",
+   "mainstream_test": "Threshold test on the data share of short-range wireless traffic.",
+   "reason": "No public measure of short-range wireless traffic by type exists. Looked for: Bluetooth SIG or Wi-Fi Alliance traffic composition statistics.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim quantity has no public measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-017",
+   "verdict": "ungradable",
+   "reading": "In 2012 a further 100 million wired broadband users would become subject to data caps.",
+   "mainstream_test": "D16 numeric on the 2012 increase in capped wired broadband users.",
+   "reason": "No public count of wired broadband users under data caps by year. Looked for: OECD broadband caps data, operator cap announcements (AT&T, Comcast) - no global user total.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim quantity (new capped users) has no public measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-018",
+   "verdict": "hit",
+   "reading": "By end 2012 the total number of apps available across all app stores would exceed two million.",
+   "mainstream_test": "D16 numeric: sum of apps listed in all stores at end 2012 vs 2 million (within 10% hit).",
+   "reason": "Apple App Store about 775,000 (7 Jan 2013); Google Play 700,000 in October 2012 and about 1 million by July 2013, so about 800,000 at year end; plus BlackBerry App World (about 100,000+), Windows Phone Store (about 130,000-150,000), Nokia Store, Amazon Appstore (tens of thousands each). Total about 1.9-2.1 million counting each store's listings, at or within 10% of the threshold.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/App_Store_(Apple)",
+     "title": "App Store (Apple) - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "775,000+ apps on 7 January 2013; 800,000+ on 28 January 2013."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Play",
+     "title": "Google Play - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "About 700,000 apps in October 2012; 1 million by July 2013."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-001",
+   "verdict": "miss",
+   "reading": "In 2013 more than 80% of global Internet traffic in bits would still come from desktop and laptop PCs.",
+   "mainstream_test": "Threshold on a share in percent (D18 points): PC share of 2013 global IP traffic vs 80%.",
+   "reason": "Cisco VNI (2013-2018 edition) reports that 33% of IP traffic in 2013 originated from non-PC devices, so PCs were about 67%, 13 points below the 80% floor (D18 miss; also 16% below in relative terms). Caveat: Cisco's IP total includes managed IPTV to set-top boxes; an Internet-only split would raise the PC share somewhat, but not plausibly by 13 points.",
+   "evidence": [
+    {
+     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2014/m06/cisco-visual-networking-index-predicts-annual-internet-traffic-to-grow-more-than-20-percent-reaching-1-6-zettabytes-by-2018.html",
+     "title": "Cisco Visual Networking Index Predicts Annual Internet Traffic to Grow More Than 20 Percent by 2018",
+     "date": "2014-06-10",
+     "shows": "In 2013, 33 percent of IP traffic originated with non-PC devices; 57 percent by 2018."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-002",
+   "verdict": "ungradable",
+   "reading": "In 2013 very few additional companies would adopt a bring-your-own-computer policy, and some existing adopters would drop it.",
+   "mainstream_test": "Survey test: change in share of companies with BYOC policies 2012-2013.",
+   "reason": "A share of organisations is gradable only against a survey of the same population; no public survey tracks BYOC (laptop, not phone) policy adoption and abandonment for 2012-2013. Looked for: Gartner/Forrester BYOD-BYOC surveys (they mix phones and PCs).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim names BYOC policy adoption counts, with no measured series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-003",
+   "verdict": "ungradable",
+   "reading": "In 2013 more than 90% of user-generated passwords, even 'strong' ones, would be vulnerable to hacking.",
+   "mainstream_test": "Threshold test on the share of user-chosen passwords crackable in 2013.",
+   "reason": "No population measure exists; password-cracking studies (e.g. Ars Technica's 2013 cracking of 90% of a leaked hash list) are single-dataset demonstrations, not a measure of all user passwords. 'Vulnerable' has no fixed test.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim's quantity ('vulnerable to hacking') has no defined measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-004",
+   "verdict": "ungradable",
+   "reading": "By end 2013 more than 90% of Fortune 500 companies would have partially or fully implemented an enterprise social network.",
+   "mainstream_test": "Threshold on a share of organisations, gradable only against a survey of the Fortune 500 in 2012-2013.",
+   "reason": "No survey of the Fortune 500 on ESN implementation for 2012-2013 found. Vendor claims (Yammer said it was used at about 85% of the Fortune 500 in 2012) count any employee use, are not a survey, and are not the same quantity. Looked for: Fortune 500 ESN adoption surveys.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim is a share of the Fortune 500; no survey of that population found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-005",
+   "verdict": "ungradable",
+   "reading": "Crowdfunding portals worldwide would raise  billion in 2013, double the .5 billion of 2011.",
+   "mainstream_test": "D16 numeric against 2013 global crowdfunding volume; D23 range rule.",
+   "reason": "Public estimates of 2013 global crowdfunding volume disagree by more than a factor of 2: about .8 billion (figure cited on Wikipedia, from Pew's crowdfunded-journalism analysis) versus about .1 billion in Massolution's later 2015CF report (the series that gives .47bn for 2011, Deloitte's baseline; figure from memory, not retrieved). Under D23 a spread above factor 2 is ungradable. Against .8bn alone the claim would be a hit; against .1bn a miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Crowdfunding",
+     "title": "Crowdfunding - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "$1.47 billion in 2011, $2.66 billion in 2012; journalism was 0.13% of the $2.8 billion raised in 2013."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-006",
+   "verdict": "ungradable",
+   "reading": "In 2013 tens (not hundreds) of high-end TV models would include gesture or voice control.",
+   "mainstream_test": "Count test: number of 2013 TV models with gesture or voice control between 10 and 99.",
+   "reason": "No public count of 2013 TV models with gesture or voice control; manufacturers' line-ups (Samsung Smart Interaction, LG Magic Remote voice) vary by region and model variant, so 'tens vs hundreds' depends on counting SKUs or series. Looked for: model counts by DisplaySearch/IHS.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim is a count of TV models with no published tally."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-007",
+   "verdict": "hit",
+   "reading": "In 2013 the TV industry would begin rolling out 4K (Ultra HD) television.",
+   "mainstream_test": "Event test: commercial 4K launches (sets, channels, content) in 2013.",
+   "reason": "Consumer 4K sets went on sale from late 2012 (LG 84-inch, Sony XBR-84X900) and spread in 2013 (Sharp, Panasonic with HDMI 2.0); Eutelsat started the first dedicated 4K channel on 8 January 2013. The roll-out commenced in 2013.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ultra-high-definition_television",
+     "title": "Ultra-high-definition television - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Eutelsat 4K channel started 8 January 2013; Sharp and Panasonic 4K TVs launched 2013; LG and Sony 4K sets from late 2012."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-008",
+   "verdict": "ungradable",
+   "reading": "In 2013 about 10% of developed-country households (3% in developing countries) would watch two video streams at once (dual video screening) monthly.",
+   "mainstream_test": "D18 points against a measured 2013 share of households dual video screening monthly.",
+   "reason": "No public survey measures monthly simultaneous viewing of two video streams by household across developed countries; second-screen surveys measure any second-device use, not video on both. Looked for: Ofcom, Nielsen second-screen studies 2013.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim quantity (dual video screening households) has no public measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-009",
+   "verdict": "hit",
+   "reading": "In 2013 the global installed base of TV sets with integrated Internet connectivity would exceed 100 million.",
+   "mainstream_test": "Threshold test on the 2013 global installed base of connected-capable TV sets.",
+   "reason": "An estimated 25 million US households alone owned a TV with built-in network capability in 2012; with smart TVs at roughly a quarter or more of global TV shipments of about 230-250 million a year from 2011, the global base passed 100 million by 2013. Moderate certainty: built from a US figure and shipment shares, not a published global installed-base series.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smart_TV",
+     "title": "Smart TV - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "In 2012 an estimated 25 million US households owned a set with built-in network capability (12 million connected)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-010",
+   "verdict": "ungradable",
+   "reading": "In 2013, in markets where available, two of the top three OTT TV and film services would be run by existing broadcasters and distributors.",
+   "mainstream_test": "Ranking test per market: top three OTT services by usage, count of legacy-operated ones.",
+   "reason": "No cross-market ranking of OTT services by usage for 2013; results differ by market (UK: BBC iPlayer and Sky ahead of Netflix; US: Netflix and YouTube ahead, Hulu broadcaster-owned) and by ranking metric (users, hours, revenue). Looked for: Ofcom and comScore OTT rankings 2013.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim spans all markets with OTT services; no consistent ranking data."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-011",
+   "verdict": "hit",
+   "reading": "In 2013 almost all North American households paying for TV through an MVPD would keep subscribing.",
+   "mainstream_test": "Event test: 2013 net loss of US pay-TV households small (around 1% or less).",
+   "reason": "US pay-TV households were about 100 million at the 2011 peak; 2013 brought the first year-on-year industry decline, a small fraction of one percent, and the base was still above 95 million in 2017. Almost all subscribers stayed.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cord-cutting",
+     "title": "Cord-cutting - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Nearly 101 million US households subscribed at the 2011 peak, below 95 million only by 2017; 2013 was the first annual decline."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-012",
+   "verdict": "hit",
+   "reading": "By end 2013 more than 200 operators in 75 countries would have launched commercial LTE networks.",
+   "mainstream_test": "Threshold test on GSA count of commercial LTE networks at end 2013.",
+   "reason": "GSA counted 200 networks in 76 countries by 31 July 2013 and 251 commercial LTE networks in 93 countries by 19 December 2013. Both thresholds exceeded.",
+   "evidence": [
+    {
+     "url": "https://www.telecompaper.com/news/lte-networks-present-in-93-countries-gsa--986730",
+     "title": "LTE networks present in 93 countries - GSA",
+     "date": "2013-12-19",
+     "shows": "251 commercial LTE networks in 93 countries."
+    },
+    {
+     "url": "https://www.telecompaper.com/news/about-200-lte-networks-operational-worldwide-gsa--960125",
+     "title": "About 200 LTE networks operational worldwide - GSA",
+     "date": "2013-08-08",
+     "shows": "200 networks in 76 countries by 31 July 2013."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-013",
+   "verdict": "hit",
+   "reading": "Global smartphone shipments would exceed one billion units for the first time in 2013.",
+   "mainstream_test": "Threshold test on 2013 global smartphone shipments.",
+   "reason": "Worldwide smartphone shipments topped 1 billion in 2013, up 38% from about 725 million in 2012 (IDC).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smartphone",
+     "title": "Smartphone - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Worldwide shipments of smartphones topped 1 billion units in 2013, up 38% from 2012's 725 million."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-014",
+   "verdict": "ungradable",
+   "reading": "In 2013 'mobile' advertising would be split into separate tablet and smartphone categories.",
+   "mainstream_test": "Event test: industry ad measurement and buying split tablet from smartphone in 2013.",
+   "reason": "No defined test of when the industry 'split' the category; some trackers and ad networks reported tablet and smartphone separately in 2013 while IAB/PwC and most budgets kept a single mobile line. Looked for: IAB/PwC 2013 report format categories.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim is a change in industry categorisation with no measurable threshold."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-015",
+   "verdict": "ungradable",
+   "reading": "In 2013 between 50 and 100 mobile operators would offer unlimited access to specific applications (zero-rated or all-you-can-eat app plans).",
+   "mainstream_test": "Count test of operators with app-specific unlimited plans in 2013.",
+   "reason": "No public census of operators offering app-specific unlimited plans in 2013. Looked for: GSMA/Allot zero-rating surveys (later years only).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim is a count of operators with a plan type not tallied publicly for 2013."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-016",
+   "verdict": "ungradable",
+   "reading": "In 2013 spectrum shortage would worsen in many countries, especially dense urban areas, despite new spectrum releases.",
+   "mainstream_test": "Event test: measured worsening of mobile spectrum congestion in 2013.",
+   "reason": "No public metric of 'spectrum exhaustion' by country; congestion indicators are operator-internal. Looked for: ITU/GSMA spectrum demand vs assignment data 2013.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-TMT-Predictions2013-Final.pdf",
+     "title": "Deloitte TMT Predictions 2013",
+     "date": "2013-01",
+     "shows": "Claim is qualitative with no measurable threshold."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-001",
+   "verdict": "ungradable",
+   "reading": "Global sales of smartphones, tablets, PCs, TV sets and game consoles would exceed $750 billion in 2014, up $50 billion on 2013.",
+   "mainstream_test": "Threshold test on a measured 2014 revenue total for these five device classes.",
+   "reason": "No public series sums revenue across these five categories; the total can only be built from units times ASPs of different trackers, which D23 treats as a proxy, not a measure. Broader CE spending totals (CEA/GfK, about $1 trillion) are a different quantity. Looked for: GfK/CTA global device revenue 2014.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim defines a custom five-category revenue aggregate with no public series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-002",
+   "verdict": "miss",
+   "reading": "Smart glasses, fitness bands and smartwatches together would sell about 10 million units, $3 billion, in 2014.",
+   "mainstream_test": "D16 numeric on 2014 unit sales of these wearables (within 10% hit, 25% partial).",
+   "reason": "Fitbit alone sold 10.9 million connected devices in 2014 (S-1), and other bands and watches (Jawbone, Garmin, Samsung Gear, Pebble, Xiaomi Mi Band from mid-2014) added millions more; IDC's 2014 wearables total was about 19.6 million (recalled, not retrieved). The actual was roughly double the forecast, beyond 25%. Caveat: some Fitbit units are clip trackers rather than bands, but the gap is too large to close.",
+   "evidence": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1447599/000119312515196965/d875679ds1a.htm",
+     "title": "Fitbit Inc. Form S-1/A",
+     "date": "2015-05-21",
+     "shows": "Fitbit sold 4.5 million devices in 2013 and 10.9 million in 2014."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-003",
+   "verdict": "ungradable",
+   "reading": "In Q1 2014 the installed base of compact tablets (under 8.5 inches) would pass that of larger tablets for the first time (about 165 million units).",
+   "mainstream_test": "Event test against an installed-base split by screen size for Q1 2014.",
+   "reason": "No public tracker publishes the tablet installed base by screen size; shipment splits by size exist only in paywalled IDC/DisplaySearch data. Looked for: Wikipedia tablet article (no size split), IDC size-band data.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Tablet_computer",
+     "title": "Tablet computer - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "No sales or installed-base breakdown by screen size for 2010-2015."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-004",
+   "verdict": "hit",
+   "reading": "By 2014 MOOC course registrations would exceed 10 million, double 2012.",
+   "mainstream_test": "Threshold test on cumulative or annual MOOC course registrations in 2014.",
+   "reason": "Learners (people, each usually registering for several courses) already numbered about 5 million on Coursera plus 1.3 million on edX by October 2013, up from 1.5 million across the three main platforms in June 2012; course registrations in 2014 were therefore well above 10 million. Moderate certainty: the registration count for 2014 itself was not retrieved (Class Central report blocked).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Massive_open_online_course",
+     "title": "Massive open online course - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "1.5 million registered on Coursera, Udacity, edX by June 2012; Coursera over 5 million and edX 1.3 million by October 2013."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-005",
+   "verdict": "ungradable",
+   "reading": "There would be 100 million eVisits (online doctor consultations) globally in 2014.",
+   "mainstream_test": "D16 numeric against a measured 2014 global count of eVisits.",
+   "reason": "No global count of online medical consultations for 2014; national telehealth counts use different definitions (video, phone, e-mail). Looked for: American Telemedicine Association, IHS telehealth 2014.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim names a global eVisit count with no public measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-006",
+   "verdict": "ungradable",
+   "reading": "By end 2014 up to 50 million homes worldwide would have two or more pay-TV subscriptions, worth about $5 billion.",
+   "mainstream_test": "Threshold test on homes with multiple pay-TV subscriptions at end 2014.",
+   "reason": "No public series counts homes with two or more separate pay-TV subscriptions. Looked for: Digital TV Research, Ofcom multi-subscription data.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim quantity has no public measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-007",
+   "verdict": "ungradable",
+   "reading": "In 2014 TV viewing measurement would become more accurate in several countries, including Germany and the UK, through hybrid (panel plus census) measurement.",
+   "mainstream_test": "Event test: hybrid measurement introduced in Germany and the UK in 2014.",
+   "reason": "Could not establish when hybrid measurement went live: BARB's Dovetail fusion of panel and device data exists, but the BARB article gives no start date, and AGF (Germany) streaming measurement dates were not retrieved. 'More accurate' has no test. Looked for: BARB Project Dovetail launch, AGF Videostreaming start.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Broadcasters%27_Audience_Research_Board",
+     "title": "Broadcasters' Audience Research Board - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "BARB combines panel and device data via Dovetail Fusion; no launch date given."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-008",
+   "verdict": "ungradable",
+   "reading": "Worldwide premium sports broadcast rights would rise 14% to $24.2 billion in 2014.",
+   "mainstream_test": "D16 numeric against a 2014 total of premium sports rights.",
+   "reason": "'Premium' sports rights is Deloitte's own selection of events; public totals (SportBusiness, Two Circles) cover all sports rights with other scopes. Looked for: global sports media rights 2014.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim uses a custom 'premium' scope with no matching public series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-009",
+   "verdict": "ungradable",
+   "reading": "Global recorded-music performance-rights revenue would exceed $1 billion for the first time in 2014.",
+   "mainstream_test": "D16 numeric against IFPI 2014 performance-rights revenue (within 10% hit).",
+   "reason": "IFPI's two vintages of 2014 performance-rights revenue disagree by about a factor of 2: about $948 million (+8.7%) in the Digital Music Report 2015, versus about $2 billion after IFPI widened the category in its 2016 report (both recalled; IFPI pages returned 404 or were blocked). D23: a spread above factor 2 is ungradable. Against the first vintage the forecast is 5% high (threshold not crossed); against the second it is crossed.",
+   "evidence": [
+    {
+     "url": "https://www.ifpi.org/wp-content/uploads/2020/07/Digital-Music-Report-2015.pdf",
+     "title": "IFPI Digital Music Report 2015",
+     "date": "2015-04-14",
+     "shows": "Source of the 2014 performance-rights figure (about $948m); file not retrievable in this session."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-010",
+   "verdict": "ungradable",
+   "reading": "In 2014 the number of video-on-demand users in Sub-Saharan Africa would grow by about one million.",
+   "mainstream_test": "D16 numeric on the 2014 increase in SSA VOD users.",
+   "reason": "No public series of VOD users in Sub-Saharan Africa for 2013-2014. Looked for: Digital TV Research Africa OTT, operator (iROKOtv, ShowMax launched 2015) user counts.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim names a regional VOD user increase with no public measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-011",
+   "verdict": "hit",
+   "reading": "In 2014 mobile instant messaging would carry more than twice the daily volume of SMS (about 50 billion vs 21 billion messages a day).",
+   "mainstream_test": "Ratio test: MIM daily volume at least twice SMS daily volume in 2014 (the headline claim); the 50bn level is the stated estimate.",
+   "reason": "WhatsApp alone handled over 30 billion messages a day by early January 2015, against roughly 20 billion SMS a day; adding Facebook Messenger, WeChat, LINE, iMessage and others, MIM volume was well over twice SMS. Uncertain: if the 50bn figure is read as the claim, the total (likely well above 60bn, but no single measured series) would make it a miss or ungradable.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/WhatsApp",
+     "title": "WhatsApp - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Over 30 billion messages every day by early January 2015."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-012",
+   "verdict": "ungradable",
+   "reading": "In 2014 phablets (5.0-6.9 inch smartphones) would be a quarter of smartphones sold, 300 million units.",
+   "mainstream_test": "D16 numeric on 2014 shipments of 5.0-6.9 inch smartphones.",
+   "reason": "Public phablet counts use other screen bands (IDC: 5.5-7 inch, about 175 million in 2014), a different quantity; no public series for 5.0-6.9 inch shipments in 2014 was retrieved. Looked for: IDC/Counterpoint screen-size splits 2014.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim defines phablets as 5.0-6.9 inches, unlike tracker definitions."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-013",
+   "verdict": "ungradable",
+   "reading": "In 2014 over-55s would show the fastest year-on-year rise in smartphone penetration of any age group across developed markets.",
+   "mainstream_test": "Comparison of 2013-2014 smartphone penetration growth by age group across developed markets.",
+   "reason": "No cross-market series by age; national data (Ofcom UK, Pew US) differ in age bands and whether growth is in points or percent, and Deloitte's own survey is not independent. Looked for: Ofcom 2014, Pew 2013-2014 smartphone by age.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim spans developed markets with no common age-band series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-014",
+   "verdict": "ungradable",
+   "reading": "In 2014 the entry price of a ruggedised connected data device for field workers would fall to $250.",
+   "mainstream_test": "Event test: rugged connected device available at about $250 in 2014.",
+   "reason": "No price tracker for rugged devices; 'ruggedised' and 'entry price' have no fixed definition (consumer rugged phones vs enterprise-grade handhelds). Looked for: VDC Research rugged device pricing 2014.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01-14",
+     "shows": "Claim's device category and price point have no tracked series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-001",
+   "verdict": "ungradable",
+   "reading": "In 2015 one billion wireless IoT devices would ship (up 60%), for an installed base of 2.8 billion.",
+   "mainstream_test": "D16 numeric on 2015 wireless IoT shipments; D23 range rule.",
+   "reason": "Public IoT estimates for 2015 differ by more than a factor of 2 depending on definition (Gartner 4.9 billion connected things in use; IoT Analytics and Ericsson counts of IoT connections differ widely; shipment series are rarer). Looked for: Gartner, IoT Analytics, Ericsson Mobility 2015.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim uses Deloitte's own IoT definition (wireless, things not people)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-002",
+   "verdict": "ungradable",
+   "reading": "In 2015 the active base of non-military drones costing $200 or more would exceed one million units worldwide.",
+   "mainstream_test": "Threshold test on the 2015 global active base of $200+ civilian drones.",
+   "reason": "No global installed-base series by price; FAA registrations (over 300,000 in the first month, Dec 2015-Jan 2016) cover the US only and all drones over 250 g. Looked for: FAA registration data, Gartner drone shipments.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim names a global active base with a price filter, not measured publicly."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-003",
+   "verdict": "hit",
+   "reading": "Nearly 220,000 3D printers, worth $1.6 billion, would be sold worldwide in 2015 (in line with Gartner's consensus).",
+   "mainstream_test": "D16 numeric on Gartner's 2015 worldwide 3D printer shipments (within 10% hit).",
+   "reason": "Gartner, the consensus Deloitte cites, forecast 217,350 for 2015 (October 2014) and later reported 2015 shipments of about 219,000 (recalled from its October 2016 release, which was blocked), within 1%. Wohlers' desktop counts are higher (about 278,000), so the median of estimates (about 245,000) would still be within about 10%. Low-to-moderate certainty on the actual.",
+   "evidence": [
+    {
+     "url": "https://www.computerworld.com/article/1608038/global-3d-printer-shipments-will-double-over-the-next-year.html",
+     "title": "Global 3D printer shipments will double over the next year",
+     "date": "2014-10-27",
+     "shows": "Gartner: 108,151 units in 2014, forecast 217,350 in 2015."
+    },
+    {
+     "url": "https://3dprintingindustry.com/news/2-million-3dp-shipments-by-2018-35328/",
+     "title": "Gartner: 3D Printers to Reach 2.3 Million Shipments by 2018",
+     "date": "2015",
+     "shows": "Gartner series: 108,151 units shipped in 2014."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-004",
+   "verdict": "ungradable",
+   "reading": "Click-and-collect locations in Europe would reach 500,000 in 2015, up 20%.",
+   "mainstream_test": "D16 numeric on the count of European click-and-collect points in 2015.",
+   "reason": "No public pan-European count of click-and-collect locations (stores, lockers, pick-up points). Looked for: Verdict Retail, Last Mile Experts pick-up point counts 2015.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim names a count with no public series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-005",
+   "verdict": "hit",
+   "reading": "Smartphone lithium-ion battery technology would improve only modestly in 2015, with no breakthrough.",
+   "mainstream_test": "Event test: no step change in commercial Li-ion energy density in 2015.",
+   "reason": "Li-ion energy density improved about 7.5% a year on average over 2011-2017; 2015 brought lab demonstrations of fast charging but no commercial breakthrough in smartphone batteries. Modest improvement held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery",
+     "title": "Lithium-ion battery - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Energy density progress averaged 7.5% a year 2011-2017; 2015 fast-charging results were lab demonstrations."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-006",
+   "verdict": "ungradable",
+   "reading": "By end 2015 more than 500 nanosatellites would be in orbit.",
+   "mainstream_test": "Threshold test on nanosatellites in orbit at end 2015 (not launched cumulative).",
+   "reason": "The Nanosatellite and CubeSat Database gives yearly launch counts only as charts, and no retrieved source gives the number in orbit at end 2015 (many 2014-2015 Flock CubeSats re-entered within months). Wikipedia gives about 75 CubeSats by 2012 and no 2015 total. Looked for: nanosats.eu, CubeSat article.",
+   "evidence": [
+    {
+     "url": "https://www.nanosats.eu/",
+     "title": "Nanosats Database",
+     "date": "2026-07-31",
+     "shows": "Launch counts per year shown only in figures; no in-orbit count for end 2015 in text."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/CubeSat",
+     "title": "CubeSat - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "About 75 CubeSats entered orbit by 2012; no end-2015 total."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-007",
+   "verdict": "ungradable",
+   "reading": "In 2015 the impetus for IT adoption would swing back from consumers to enterprises.",
+   "mainstream_test": "Event test: enterprise IT spending growth exceeding consumer tech growth in 2015.",
+   "reason": "'Impetus' has no measure; spending series (Gartner IT spending, consumer device sales) both fell in dollar terms in 2015 because of the strong dollar. Looked for: Gartner 2015 IT spending by segment.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim is a qualitative shift with no defined metric."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-008",
+   "verdict": "ungradable",
+   "reading": "In 2015 short-form online video (under 20 minutes) would be under 3% of all video time on all screens, globally.",
+   "mainstream_test": "Threshold on a share (D18 points) of global video time.",
+   "reason": "No global measure of video time by duration across all screens; Nielsen and Ofcom report national time on TV vs online video, not by clip length. Looked for: Nielsen Total Audience Report 2015, Ofcom CMR 2015.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim names a global share by video length, not measured publicly."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-009",
+   "verdict": "ungradable",
+   "reading": "US and Canadian millennials would spend over $62 billion on media content in 2015.",
+   "mainstream_test": "Threshold test on 2015 millennial media-content spend in the US and Canada.",
+   "reason": "No public series of media spending by age cohort for the US and Canada; the BLS Consumer Expenditure Survey uses different categories and age bands. Looked for: BLS CE by age 2015.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim names spending by a generational cohort, not published."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-010",
+   "verdict": "hit",
+   "reading": "In 2015 print would be more than 80% of worldwide book sales by value.",
+   "mainstream_test": "Threshold test: print share of 2015 global book revenue above 80%.",
+   "reason": "E-book shares by value were about a fifth or less even in the most digital markets (US trade about 20%; UK consumer about 29% by volume in Q1 2015, lower by value) and a few percent elsewhere (Germany 4.3%, Brazil 3.5% of trade), while educational and professional print adds to the base; the global print share by value was well above 80%. Moderate certainty: no single global series retrieved.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/E-book",
+     "title": "E-book - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "UK e-book share 20-33% (2012-2014), 29% in Q1 2015; Germany 4.3% (2015); Brazil 3.5% of trade titles (2014)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-011",
+   "verdict": "ungradable",
+   "reading": "In 2015 one billion smartphones would be bought as upgrades (by existing smartphone owners), generating over $300 billion.",
+   "mainstream_test": "D16 numeric on 2015 replacement smartphone purchases.",
+   "reason": "Trackers report total shipments (about 1.43 billion in 2015, IDC) but no public split of upgrades versus first-time buyers. Looked for: IDC/Gartner replacement share 2015.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim names replacement purchases, a split not published by trackers."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-012",
+   "verdict": "ungradable",
+   "reading": "Global broadband homes would grow about 2% to 715 million by end 2015.",
+   "mainstream_test": "D16 numeric on 2015 global fixed-broadband households.",
+   "reason": "Public series count fixed broadband subscriptions including business lines (ITU, Point Topic, roughly 0.8 billion in 2015), not homes; no public residential-only global count was retrieved. A subscription total is a different quantity. Looked for: ITU fixed broadband 2015, Point Topic Q4 2015.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim counts broadband homes, a residential quantity without a matching public global series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-013",
+   "verdict": "ungradable",
+   "reading": "By end 2015, 5% of the 600-650 million NFC phones would be used at least monthly for in-store contactless payments.",
+   "mainstream_test": "D18 points on the share of NFC phones used monthly for payments.",
+   "reason": "No public measure of monthly active mobile contactless payers relative to the NFC phone base for 2015; Apple Pay and Android Pay did not publish active-user counts. Looked for: Wikipedia NFC (no figures), payment network disclosures.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "No figures on NFC phone base or payment usage for 2015."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-001",
+   "verdict": "hit",
+   "reading": "By end 2016 fewer than 25% of IT jobs in developed countries would be held by women.",
+   "mainstream_test": "Threshold on a share (below 25%) of women in IT employment in developed countries, 2015-2016.",
+   "reason": "Women were about 16.5% of ICT specialists in the EU in 2015 (Eurostat: men 83.5%); in the US women held about a quarter of computer and mathematical occupations (BLS, about 25-26%, recalled). The combined developed-country share is below 25%.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=ICT_specialists_in_employment",
+     "title": "ICT specialists in employment - Eurostat Statistics Explained",
+     "date": "2026",
+     "shows": "Men 80.5% of ICT employment in 2025, 3 points lower than in 2015, so women about 16.5% in 2015."
+    }
+   ]
+  }
+ ]
+}

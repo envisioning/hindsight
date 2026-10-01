@@ -1,0 +1,1084 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2016-002",
+   "verdict": "ungradable",
+   "reading": "Among age groups, 18-24 year olds would show the highest PC ownership/usage/intent in 2016.",
+   "mainstream_test": "Qualitative ranking claim; needs an independent 2016 survey ranking PC ownership or use by age group across Deloitte's markets.",
+   "reason": "No independent survey ranking PC affinity by age group on Deloitte's 18-24 definition for 2016 found; only Deloitte's own Global Mobile Consumer Survey defines it. Looked for Pew/Ofcom PC ownership by age 2016 with the same comparison; none states 18-24 as most pro-PC across markets.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "Edition; the claim rests on Deloitte's own survey definition of 'pro-PC'; no third-party measure on that definition located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-003",
+   "verdict": "ungradable",
+   "reading": "About 50 million people would regularly use a third-party touch-based (fingerprint) payment service for mobile online purchases in 2016.",
+   "mainstream_test": "D16 numeric: 50M vs measured regular users, if a series exists.",
+   "reason": "No public series counts regular users of touch-authenticated third-party payment for in-app/online mobile checkout (Apple Pay in-app, Android Pay etc.) in 2016; vendor user counts mix in-store use and are not disclosed as regular users. D23 proxy rule.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "Edition defines the metric (third-party touch-based payment for mobile online purchases); no third-party count on that definition found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-004",
+   "verdict": "ungradable",
+   "reading": "Global graphene materials market in 2016 would be in the low tens of millions of US dollars.",
+   "mainstream_test": "D16 numeric against a 2016 graphene materials market estimate.",
+   "reason": "Wikipedia gives graphene market $9M (2012) and about $380M (2022) but no 2016 value; analyst estimates for 2015-2017 (IDTechEx, Lux, market-research firms) were not retrievable and are known to span more than a factor of 2 by definition (materials vs products). Ungradable under D23 range rule.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Graphene",
+     "title": "Graphene - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "Market $9M in 2012 and est. $380M in 2022; no 2016 figure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-005",
+   "verdict": "ungradable",
+   "reading": "By end-2016 more than 80 of the 100 largest enterprise software companies by revenue would have integrated cognitive technologies into products.",
+   "mainstream_test": "Count of top-100 enterprise software vendors with cognitive features, from an independent audit.",
+   "reason": "No independent count of top-100 enterprise software vendors shipping cognitive (ML/NLP/vision) features at end-2016 exists; the count is Deloitte's own construct.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "Edition defines the top-100 list and 'cognitive technologies'; no third-party tally found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-006",
+   "verdict": "ungradable",
+   "reading": "Global VR revenue in 2016 would reach about $1 billion ($700M hardware, rest content).",
+   "mainstream_test": "D16 numeric: $1B vs measured 2016 VR revenue (hardware+content).",
+   "reason": "Industry estimates for 2016 VR revenue (SuperData, IDC, Greenlight) could not be retrieved with page access in this session; SuperData's 2016 year-in-review page fetched gives VR units (Gear VR 2.3M, Daydream 261k, Cardboard 88.4M) but no revenue. Without a revenue measure, ungradable; units are a proxy (D23).",
+   "evidence": [
+    {
+     "url": "https://www.pocketgamer.biz/superdata-research-2016-in-review/",
+     "title": "SuperData Research 2016 in review (PocketGamer.biz)",
+     "date": "2016-12-21",
+     "shows": "VR unit shipments only; no VR revenue figure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-007",
+   "verdict": "partial",
+   "reading": "Global mobile (smartphone+tablet) games software revenue in 2016 would be about $35B, making mobile the leading games platform.",
+   "mainstream_test": "D16 numeric: $35B vs median of 2016 estimates (Newzoo, SuperData).",
+   "reason": "Newzoo $38.6B, SuperData $40.6B; median $39.6B. $35B is 11.6% below: partial. Mobile did become the largest games segment in 2016 per both.",
+   "evidence": [
+    {
+     "url": "https://gamesbeat.com/newzoo-mobile-game-revenue-will-grow-66-from-38-billion-in-2016-to-65-billion-in-2020/",
+     "title": "Newzoo: Mobile game revenue $38 billion in 2016 (GamesBeat)",
+     "date": "2017",
+     "shows": "Newzoo 2016 mobile games revenue $38.6B."
+    },
+    {
+     "url": "https://www.pocketgamer.biz/superdata-research-2016-in-review/",
+     "title": "Mobile games generated $40.6 billion in revenues in 2016 (PocketGamer.biz)",
+     "date": "2016-12-21",
+     "shows": "SuperData 2016 mobile games revenue $40.6B."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-008",
+   "verdict": "ungradable",
+   "reading": "Only 0.3% of mobile device owners worldwide would use an ad blocker by end-2016.",
+   "mainstream_test": "D18 points: 0.3% vs measured share of mobile owners blocking ads.",
+   "reason": "PageFair's 2017 Adblock Report (Dec 2016 data) put mobile-web ad-blocking devices in the hundreds of millions, mostly via browsers with built-in blocking (UC Browser), which would make this a clear miss; however the report pages were unreachable (pagefair.com redirects, archive blocked), and Deloitte's reading may exclude built-in browser blocking. Recorded ungradable for lack of a retrieved measure; likely miss on the dominant reading.",
+   "evidence": [
+    {
+     "url": "https://pagefair.com/blog/2017/adblockreport/",
+     "title": "PageFair 2017 Global Adblock Report",
+     "date": "2017-02-01",
+     "shows": "Source located but not retrievable (301 to blockthrough.com, 404); figure not verified in session."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-009",
+   "verdict": "hit",
+   "reading": "US and Canada box office in 2016 would be about $10.6B (down ~3%).",
+   "mainstream_test": "D16 numeric: $10.6B vs actual 2016 domestic gross.",
+   "reason": "Box Office Mojo 2016 domestic total $11.374B (2015: $11.099B). $10.6B is 6.8% below the actual: within 10%, hit. Note the direction was wrong (box office rose 2.5%, not fell 3%).",
+   "evidence": [
+    {
+     "url": "https://www.boxofficemojo.com/year/?grossesOption=totalGrosses",
+     "title": "Box Office Mojo domestic yearly totals",
+     "date": "accessed 2026-10-01",
+     "shows": "2015 $11,099M; 2016 $11,374M; 2017 $11,127M."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-010",
+   "verdict": "partial",
+   "reading": "US pay-TV household penetration would fall to 81% in 2016.",
+   "mainstream_test": "D18 points (penetration is a rate in percent): forecast minus actual.",
+   "reason": "Leichtman Research: 82% of US TV households subscribed in 2016 (83% in 2015, 79% in 2017). 81 vs 82 = -1.0 pt: partial.",
+   "evidence": [
+    {
+     "url": "https://www.telecompaper.com/news/82-of-tv-households-in-us-subscribe-to-pay-tv-service--1163879",
+     "title": "82% of TV households in US subscribe to pay-TV service (Telecompaper, LRG)",
+     "date": "2016",
+     "shows": "LRG 2016: 82% of TV households subscribe to pay-TV."
+    },
+    {
+     "url": "https://www.broadbandtvnews.com/2017/09/27/us-pay-tv-universe-shrinks-to-79-of-households/",
+     "title": "US pay-TV universe shrinks to 79% of households",
+     "date": "2017-09-27",
+     "shows": "LRG 2017: 79%."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-011",
+   "verdict": "hit",
+   "reading": "European football market revenue in season 2016/17 would be about EUR 27bn ($30bn).",
+   "mainstream_test": "D16 numeric: EUR 27bn vs measured 2016/17 market size.",
+   "reason": "Deloitte Sports Business Group Annual Review of Football Finance 2018 put the European football market at EUR 25.5bn in 2016/17 (the standard measure; same publisher but a measurement, not a self-assessment). 27 vs 25.5 = +5.9%: hit. Figure from the ARFF 2018 headline; page not retrieved in session.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/uk/en/pages/sports-business-group/articles/annual-review-of-football-finance.html",
+     "title": "Deloitte Annual Review of Football Finance 2018",
+     "date": "2018-06",
+     "shows": "European football market EUR 25.5bn in 2016/17 (headline figure; page redirected/404 in session, not verified here)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-012",
+   "verdict": "hit",
+   "reading": "Global eSports revenue in 2016 would be about $500 million.",
+   "mainstream_test": "D16 numeric: $500M vs measured 2016 global eSports revenue.",
+   "reason": "Newzoo Global eSports Market Report (Feb 2017): $493M in 2016. 500 vs 493 = +1.4%: hit. SuperData published a higher 2016 figure (about $0.9B, broader scope incl. other revenue lines); not retrieved here, and under 2x spread it would pull a median toward a miss, so this is the least certain part.",
+   "evidence": [
+    {
+     "url": "https://pocketgamer.biz/newzoo-esports-report-2017/",
+     "title": "Revenues from eSports expected to hit $696 million in 2017 (Newzoo, PocketGamer.biz)",
+     "date": "2017-02-14",
+     "shows": "Newzoo: global eSports revenue $493M in 2016."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-013",
+   "verdict": "ungradable",
+   "reading": "There would be about 10 million gigabit-per-second internet connections worldwide by end-2016.",
+   "mainstream_test": "D16 numeric: 10M vs a global count of 1 Gbit/s subscriptions.",
+   "reason": "No public global count of gigabit subscriptions at end-2016 (OECD and FTTH Council publish fibre subscriptions, not tier-of-service counts; vendor tallies list networks, not lines). Fibre subscriptions are a proxy (D23).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "Edition states the 10M figure; no third-party count of gigabit connections located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-014",
+   "verdict": "ungradable",
+   "reading": "About 120 million used smartphones would be sold or traded in by consumers in 2016, worth over $17B to owners.",
+   "mainstream_test": "D16 numeric against a count of used smartphones sold/traded in 2016.",
+   "reason": "Public trackers measure refurbished smartphone shipments (IDC, Counterpoint), not consumer resale plus trade-in of all used phones; another quantity, so a proxy under D23.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "Metric defined as consumer sell or trade-in; no tracker on that definition found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-015",
+   "verdict": "ungradable",
+   "reading": "26% of smartphone users in developed markets would make no traditional voice calls in a given week in 2016.",
+   "mainstream_test": "D18 points against a 2016 multi-country survey of weekly call behaviour.",
+   "reason": "Only Deloitte's own Global Mobile Consumer Survey asks this question on this definition; no independent multi-country measure found (Ofcom reports UK call use but not the share making zero calls weekly across developed markets).",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "Metric from Deloitte's own survey; no independent series found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-016",
+   "verdict": "hit",
+   "reading": "About 100 carriers worldwide would offer at least one packet-based voice service (VoLTE or VoWiFi) by end-2016.",
+   "mainstream_test": "D16 numeric: ~100 vs GSA count of commercial launches at end-2016.",
+   "reason": "GSA status update of 31 Jan 2017: 102 operators had commercially launched VoLTE in 54 countries (VoWiFi-only operators would add to this). 100 vs 102 = -2%: hit.",
+   "evidence": [
+    {
+     "url": "https://gsacom.com/paper/gsa-status-update-volte-vilte-evs/",
+     "title": "GSA Status Update: VoLTE, ViLTE, EVS",
+     "date": "2017-01-31",
+     "shows": "102 operators commercially launched VoLTE HD voice in 54 countries."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-017",
+   "verdict": "ungradable",
+   "reading": "2.5 trillion photos would be shared or stored online in 2016.",
+   "mainstream_test": "D16 numeric vs a measured count of photos shared/stored online in 2016.",
+   "reason": "No measured count exists; published numbers (InfoTrends/Keypoint, Mylio) are modelled estimates of photos taken, a different quantity, and not a measure.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "Edition states the figure; no measured series located."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-001",
+   "verdict": "ungradable",
+   "reading": "The active installed base of devices with fingerprint readers would exceed 1 billion in early 2017.",
+   "mainstream_test": "Threshold claim vs a measured active base of fingerprint-equipped devices.",
+   "reason": "No tracker publishes an active installed base of fingerprint-reader devices; shipment shares of fingerprint smartphones (IHS, Counterpoint) are a proxy requiring a survival model (D23). Likely true on such proxies but not measured.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-2017-tmt-predictions.pdf",
+     "title": "Deloitte TMT Predictions 2017",
+     "date": "2017-01",
+     "shows": "Edition states the threshold; no installed-base series found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-002",
+   "verdict": "miss",
+   "reading": "In 2017 there would be on average about one DDoS attack of 1 Tbit/s or more per month (about 12 in the year).",
+   "mainstream_test": "Event frequency: count of reported >=1 Tbit/s attacks in 2017.",
+   "reason": "No terabit-scale attack was reported in 2017; the next record after the 2016 Mirai attacks (~1 Tbit/s, OVH/Dyn) was GitHub's 1.35 Tbit/s memcached attack on 28 Feb 2018, reported as a new record. Arbor/NETSCOUT's report for 2017 gave a largest attack of about 600 Gbit/s (not retrieved here). Far below ~12 Tbit/s attacks: miss.",
+   "evidence": [
+    {
+     "url": "https://github.blog/news-insights/company-news/ddos-incident-report/",
+     "title": "February 28th DDoS Incident Report (GitHub)",
+     "date": "2018-03-01",
+     "shows": "Attack peaked at 1.35 Tbit/s on 2018-02-28."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Denial-of-service_attack",
+     "title": "Denial-of-service attack - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "Attacks exceeded 1 Tbit/s by 2016; no 2017 terabit attacks listed."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-003",
+   "verdict": "miss",
+   "reading": "By 2022 annual US motor vehicle fatalities could fall by about 6,000 (16%) from the ~2017 level, i.e. to roughly 31,500.",
+   "mainstream_test": "Event/numeric: 2022 deaths vs 2017 level minus 6,000.",
+   "reason": "US motor vehicle deaths were 37,473 in 2017 and 42,514 in 2022: up about 5,000, not down 6,000. Miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Motor_vehicle_fatality_rate_in_U.S._by_year",
+     "title": "Motor vehicle fatality rate in U.S. by year - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "2017: 37,473 deaths; 2022: 42,514 deaths."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-004",
+   "verdict": "hit",
+   "reading": "By end-2017 over 200 carriers would offer LTE-Advanced in part of their network, and over 20 LTE-A Pro.",
+   "mainstream_test": "Threshold: GSA count of commercially launched LTE-A networks at end-2017 >200.",
+   "reason": "GSA reported 195 launched LTE-Advanced/Pro networks in April 2017 and 304 LTE-Advanced networks in August 2019; the count passed 200 during 2017 on that growth path. Exact end-2017 figure and the LTE-A Pro sub-count not retrieved; headline graded hit.",
+   "evidence": [
+    {
+     "url": "https://gsacom.com/paper/evolution-lte-5g/",
+     "title": "GSA: Evolution from LTE to 5G",
+     "date": "2017-04-24",
+     "shows": "195 launched LTE-Advanced or LTE-Advanced Pro networks in 95 countries."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/LTE_Advanced",
+     "title": "LTE Advanced - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "GSA Aug 2019: 304 commercially launched LTE-Advanced networks."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-005",
+   "verdict": "ungradable",
+   "reading": "Over 300 million smartphones sold in 2017 (over a fifth of units) would have on-board neural-network machine-learning capability.",
+   "mainstream_test": "D16 numeric vs a 2017 count of smartphones shipped with on-device ML hardware.",
+   "reason": "No tracker counts 2017 shipments on Deloitte's definition (it counts chipsets able to run neural networks, incl. GPU/DSP); trackers that count dedicated NPUs (A11, Kirin 970) give a much smaller, different quantity. No same-quantity measure (D23).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-2017-tmt-predictions.pdf",
+     "title": "Deloitte TMT Predictions 2017",
+     "date": "2017-01",
+     "shows": "Edition defines on-board neural network capability broadly; no tracker on that definition found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-006",
+   "verdict": "ungradable",
+   "reading": "As of 2022 at least a quarter of all precision digital navigation uses would include an indoor leg or be entirely indoor.",
+   "mainstream_test": "Share of navigation uses with an indoor leg, from a usage measure.",
+   "reason": "No public measure of navigation sessions by indoor/outdoor leg exists.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-2017-tmt-predictions.pdf",
+     "title": "Deloitte TMT Predictions 2017",
+     "date": "2017-01",
+     "shows": "Edition states the 25% share; no usage series found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-007",
+   "verdict": "ungradable",
+   "reading": "US TV advertising revenue in 2017 would be flat versus 2016 (0% change).",
+   "mainstream_test": "D18 points: 0% vs measured 2017 growth of US TV ad revenue.",
+   "reason": "Estimates of 2017 US TV ad revenue change (MAGNA, eMarketer, GroupM, which differ on scope: national vs local, political, digital extensions) could not be retrieved with page access this session. Recorded ungradable for lack of a retrieved measure; my recollection is a low single-digit decline, which would be a partial or miss.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-2017-tmt-predictions.pdf",
+     "title": "Deloitte TMT Predictions 2017",
+     "date": "2017-01",
+     "shows": "Edition states flat US TV ad revenue; tracker pages (eMarketer) returned 404."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-008",
+   "verdict": "ungradable",
+   "reading": "2017 global tablet unit sales would be below 165 million, down about 10% from 182 million in 2016.",
+   "mainstream_test": "Threshold: measured 2017 tablet shipments <165M.",
+   "reason": "IDC/Gartner full-year 2017 tablet figures could not be retrieved (IDC press releases 403; news pages blocked). IDC is understood to have reported about 164M (incl. detachables), which would be a hit, but this was not verified in session.",
+   "evidence": [
+    {
+     "url": "https://my.idc.com/getdoc.jsp?containerId=prUS43548018",
+     "title": "IDC tablet tracker press release",
+     "date": "2018-02",
+     "shows": "Not retrievable (403); 2017 total not verified."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-009",
+   "verdict": "ungradable",
+   "reading": "Global vinyl revenue in 2017 would approach $1 billion for the first time this millennium.",
+   "mainstream_test": "D16 numeric: ~$1B vs measured 2017 global vinyl revenue.",
+   "reason": "Estimates differ by basis: IFPI trade value (well under $1B) vs retail value incl. used sales (around $1B); the IFPI series pages were not retrievable and the search snippet figures were inconsistent. Basis spread and no verified figure: ungradable.",
+   "evidence": [
+    {
+     "url": "https://www.hotpress.com/music/revenue-from-vinyl-sales-grows-by-almost-14-23134536",
+     "title": "Revenue from vinyl sales grows by almost 14% (Hot Press)",
+     "date": "n.d.",
+     "shows": "Search result only; no verified 2017 global figure on a stated basis."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-010",
+   "verdict": "ungradable",
+   "reading": "Worldwide IT-as-a-Service spending (data centre, software, services) would be just under $550B by end-2018.",
+   "mainstream_test": "D16 numeric vs a 2018 ITaaS spending measure on Deloitte's definition.",
+   "reason": "IT-as-a-Service is Deloitte's aggregate; trackers measure public cloud services (Gartner ~$180B in 2018) or total IT spend, other quantities. No same-quantity series.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-2017-tmt-predictions.pdf",
+     "title": "Deloitte TMT Predictions 2017",
+     "date": "2017-01",
+     "shows": "Edition defines ITaaS as an aggregate; no tracker uses it."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-001",
+   "verdict": "ungradable",
+   "reading": "Over a billion smartphone users would create AR content at least once in 2018.",
+   "mainstream_test": "D16 numeric vs a measured count of AR content creators.",
+   "reason": "No public count of people creating AR content (lenses/filters use is not disclosed on this definition).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Edition states the figure; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-002",
+   "verdict": "hit",
+   "reading": "By end-2023, smartphone penetration among adults in developed countries would exceed 90%.",
+   "mainstream_test": "Threshold (D18 points): adult smartphone ownership in developed markets >90% by end-2023.",
+   "reason": "Pew: US adult smartphone ownership 90% in 2023 and 91% in early 2024; the US is among the lower developed markets, and others (UK, Nordics, Netherlands) report mid-90s. At or above 90% by end-2023 within 0.5 pt: hit.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/fact-sheet/mobile/",
+     "title": "Mobile Fact Sheet (Pew Research Center)",
+     "date": "2024",
+     "shows": "US adults owning a smartphone: 77% (2018), 85% (2021), 90% (2023), 91% (2024)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-003",
+   "verdict": "ungradable",
+   "reading": "45% of adult smartphone users worldwide would worry about overuse in 2018, and 45% would try to limit use.",
+   "mainstream_test": "D18 points vs a 2018 multi-country survey on this question.",
+   "reason": "Only Deloitte's Global Mobile Consumer Survey asks this; no independent multi-country measure found (Pew asks different questions in the US).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Metric from Deloitte's own survey."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-004",
+   "verdict": "ungradable",
+   "reading": "By end-2018 over 25% of chips used to accelerate ML in data centres would be FPGAs and ASICs.",
+   "mainstream_test": "Share of data-centre ML accelerator chips by type, 2018.",
+   "reason": "No public unit split of data-centre ML accelerators by chip type for 2018; vendor revenue shares are a proxy (D23).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Edition states the share; no tracker found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-005",
+   "verdict": "ungradable",
+   "reading": "Enterprise ML implementations and pilots would double in 2018 vs 2017 and double again by 2020.",
+   "mainstream_test": "Count of enterprise ML implementations/pilots by year.",
+   "reason": "No public count of enterprise ML implementations and pilots exists; surveys report shares of firms, a different quantity.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Edition states the doubling; no count series found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-006",
+   "verdict": "ungradable",
+   "reading": "Live broadcast and live events would generate $545B in direct revenue in 2018.",
+   "mainstream_test": "D16 numeric vs a measured aggregate of live broadcast plus events revenue.",
+   "reason": "The $545B is Deloitte's own aggregate across TV, radio, live music, sports, theatre etc.; no public series measures this aggregate (D23).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Edition defines the aggregate; no tracker found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-007",
+   "verdict": "ungradable",
+   "reading": "By end-2018 half of adults in developed countries would have at least two online-only media subscriptions.",
+   "mainstream_test": "D18 points vs a 2018 multi-country survey of subscription counts.",
+   "reason": "No independent multi-country survey of online-only media subscription counts per adult for 2018 on this definition found (Deloitte's own Digital Media Trends is the source).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Metric from Deloitte's own surveys; no independent measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-008",
+   "verdict": "ungradable",
+   "reading": "10% of North American adults would use four or more ad-blocking behaviours simultaneously in 2018.",
+   "mainstream_test": "D18 points vs a 2018 survey counting ad-avoidance behaviours.",
+   "reason": "Count of 'ad-blocking behaviours' is Deloitte's construct; no independent survey measures it.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Edition defines the behaviours; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-009",
+   "verdict": "ungradable",
+   "reading": "Traditional TV viewing by 18-24 year olds would fall 5-15% a year in the US, Canada and the UK in 2018 and 2019.",
+   "mainstream_test": "Annual change in broadcast TV minutes for 18-24s (Nielsen US, Numeris Canada, Ofcom/BARB UK) in 2018 and 2019 within -5% to -15%.",
+   "reason": "Ofcom Media Nations (UK, BARB) and Nielsen Total Audience (US) carry these series but were not retrievable (Ofcom 403); Numeris Canada data not public by this age band. My recollection is UK 16-24 declines of roughly 8-15% a year, within the band, but unverified here.",
+   "evidence": [
+    {
+     "url": "https://www.ofcom.org.uk/research-and-data/tv-radio-and-on-demand/media-nations-reports/media-nations-2020",
+     "title": "Ofcom Media Nations 2020",
+     "date": "2020-08",
+     "shows": "Holds 16-24 broadcast viewing by year; returned 403."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-010",
+   "verdict": "partial",
+   "reading": "20% of North Americans with internet access would get all home data via cellular (mobile-only) in 2018.",
+   "mainstream_test": "D18 points vs share of internet users who are smartphone-only (Pew, US).",
+   "reason": "Pew: 20% of US adults smartphone-dependent in Jan 2018 and 17% in Feb 2019; as a share of internet users (89-90% of adults) that is about 22.5% and 19%. Averaged across 2018 about 20.8%, within 1.0 pt but not 0.5 pt: partial. US only; no Canadian measure on this basis.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/fact-sheet/mobile/",
+     "title": "Mobile Fact Sheet (Pew Research Center)",
+     "date": "2024",
+     "shows": "Smartphone dependent (no home broadband): 20% of US adults in 2018, 17% in 2019."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-011",
+   "verdict": "ungradable",
+   "reading": "In 2018 about one billion passenger journeys (about a quarter of total) would be on aircraft with in-flight connectivity.",
+   "mainstream_test": "D16 numeric vs a count of passengers on IFC-equipped aircraft.",
+   "reason": "No public count of passenger journeys on connected aircraft; trackers (Euroconsult, Valour) report connected aircraft, a proxy requiring load assumptions (D23).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-deloitte-tmt-2018-predictions-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2018",
+     "date": "2018-01",
+     "shows": "Edition states the figure; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-001",
+   "verdict": "miss",
+   "reading": "By end-2019 about 25 operators would have launched 5G service in at least part of their territory.",
+   "mainstream_test": "D16 numeric: 25 vs GSA count of operators with launched 5G at end-2019.",
+   "reason": "GSA: 56 operators with commercially launched 3GPP 5G services in December 2019 (61 networks by January 2020). 25 is 55% below: miss. The qualitative headline (5G arrives at scale in 2019) was right, but the graded number undershot by more than half.",
+   "evidence": [
+    {
+     "url": "https://gsacom.com/paper/lte-5g-market-statistics-december-2019/",
+     "title": "GSA LTE-5G Market Statistics December 2019",
+     "date": "2019-12",
+     "shows": "56 operators with commercially launched 3GPP-compliant 5G services."
+    },
+    {
+     "url": "https://gsacom.com/paper/5g-market-status-snapshot-january-2020/",
+     "title": "GSA 5G Market Status Snapshot January 2020",
+     "date": "2020-01",
+     "shows": "61 commercial 5G networks in 34 countries."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-002",
+   "verdict": "ungradable",
+   "reading": "By 2020, 87% of companies using AI would use enterprise software with integrated AI and 83% cloud-based AI platforms.",
+   "mainstream_test": "Share of AI-using companies, from a survey of the same population in 2019-2020.",
+   "reason": "Only Deloitte's own State of AI in the Enterprise survey covers this population; no independent survey of AI-using companies with these categories at 2019/2020 found. Per the 'of organizations' rule: ungradable.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/TMT-Predictions_2019/DI_TMT-predictions_2019.pdf",
+     "title": "Deloitte TMT Predictions 2019",
+     "date": "2018-12",
+     "shows": "Shares based on Deloitte's own survey of AI-using companies."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-003",
+   "verdict": "ungradable",
+   "reading": "The smart speaker industry would be worth $7B in 2019, with 164M units at $43 ASP.",
+   "mainstream_test": "D16 numeric: $7B vs measured 2019 smart speaker revenue (units as secondary).",
+   "reason": "No public 2019 revenue measure was retrieved; unit trackers (Strategy Analytics, Canalys) were not reachable (403/404). Strategy Analytics is understood to have reported about 147M units for 2019, which would make the unit figure about 12% high (partial), but unverified and units are not the headline quantity.",
+   "evidence": [
+    {
+     "url": "https://www.canalys.com/newsroom/canalys-global-smart-speaker-shipments-q4-2019",
+     "title": "Canalys smart speaker shipments Q4 2019",
+     "date": "2020-02",
+     "shows": "Returned 403; 2019 total not verified."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-004",
+   "verdict": "ungradable",
+   "reading": "In 2019, 60% of North American men aged 18-34 who watch TV sports would also bet on sports.",
+   "mainstream_test": "D18 points vs a 2019 survey of this population.",
+   "reason": "Only Deloitte's own survey measures this population on this question; no independent 2019 survey of NA men 18-34 sports viewers' betting rate found.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/TMT-Predictions_2019/DI_TMT-predictions_2019.pdf",
+     "title": "Deloitte TMT Predictions 2019",
+     "date": "2018-12",
+     "shows": "Share from Deloitte's own survey."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-005",
+   "verdict": "ungradable",
+   "reading": "The North American eSports market would grow 35% in 2019.",
+   "mainstream_test": "D18 points: 35% vs measured 2019 growth of NA eSports revenue (Newzoo).",
+   "reason": "Newzoo's 2019/2020 Global Esports Market Reports carry North America revenue by year but were not retrievable (newzoo.com blocked; PocketGamer copies 404). Not verified; recollection is NA growth near 20%, which would be a miss.",
+   "evidence": [
+    {
+     "url": "https://www.pocketgamer.biz/industry/newzoo/",
+     "title": "Newzoo company profile (PocketGamer.biz)",
+     "date": "accessed 2026-10-01",
+     "shows": "No 2019 NA esports figure retrievable."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-006",
+   "verdict": "ungradable",
+   "reading": "Global radio revenue would reach $40B in 2019, up 1%.",
+   "mainstream_test": "D16 numeric vs 2019 global radio revenue (PwC Outlook, Ofcom International).",
+   "reason": "Global radio revenue series (PwC Global E&M Outlook, paywalled; Ofcom International Communications Market, discontinued) were not retrievable; definitions (ad only vs ad+licence fee+subscription) differ. No verified measure.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/TMT-Predictions_2019/DI_TMT-predictions_2019.pdf",
+     "title": "Deloitte TMT Predictions 2019",
+     "date": "2018-12",
+     "shows": "Edition states $40B; no retrievable global series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-007",
+   "verdict": "ungradable",
+   "reading": "3D printing sales by large public companies (printers, materials, services) would exceed $2.7B in 2019.",
+   "mainstream_test": "D16 numeric vs summed 2019 3D printing revenue of the named large public companies.",
+   "reason": "The company set is Deloitte's own; summing Stratasys, 3D Systems, etc. requires choosing members and excluding non-AM revenue of conglomerates (HP, GE). No public series on this scope (D23).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/TMT-Predictions_2019/DI_TMT-predictions_2019.pdf",
+     "title": "Deloitte TMT Predictions 2019",
+     "date": "2018-12",
+     "shows": "Scope 'large public companies' not enumerated in a public series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-008",
+   "verdict": "ungradable",
+   "reading": "About 600 million people in China would use phones for mobile payments as of the start of 2019.",
+   "mainstream_test": "D16 numeric vs CNNIC mobile payment users at end-2018.",
+   "reason": "CNNIC's 43rd Statistical Report (Feb 2019, data at Dec 2018) is the measure; the report archive page lists only the 46th edition onward and the 43rd could not be retrieved. Recollection is about 583M (within 10%: hit), not verified here.",
+   "evidence": [
+    {
+     "url": "https://www.cnnic.com.cn/IDR/ReportDownloads/",
+     "title": "CNNIC Statistical Reports on Internet Development",
+     "date": "accessed 2026-10-01",
+     "shows": "Archive lists 46th-55th editions only; Dec 2018 figure not retrievable."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-009",
+   "verdict": "ungradable",
+   "reading": "Revenue of semiconductors manufactured in China would grow 25% to about $110B in 2019.",
+   "mainstream_test": "D16 numeric vs 2019 revenue of chips made in China.",
+   "reason": "Estimates of 'semiconductors manufactured in China' span far more than a factor of 2 by definition: CSIA total IC industry (design+fab+packaging, about RMB 756B ~ $110B) vs IC Insights China-based IC production (about $20B). D23 range rule: ungradable.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/TMT-Predictions_2019/DI_TMT-predictions_2019.pdf",
+     "title": "Deloitte TMT Predictions 2019",
+     "date": "2018-12",
+     "shows": "Edition's scope is ambiguous between industry sales and domestic production; estimates diverge by >2x."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-001",
+   "verdict": "ungradable",
+   "reading": "More than 750 million edge AI chips would be sold in 2020.",
+   "mainstream_test": "D16 numeric vs a count of edge AI chips sold in 2020.",
+   "reason": "No tracker counts edge AI chips (incl. parts of SoCs) on Deloitte's definition; AI-capable smartphone shares are a proxy (D23).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/722835_tmt-predictions-2020/DI_TMT-Prediction-2020.pdf",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edition defines edge AI chips broadly; no measure found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-002",
+   "verdict": "miss",
+   "reading": "Professional service robots would generate more than $16B in revenue in 2020.",
+   "mainstream_test": "D16 numeric: >$16B vs IFR 2020 professional service robot turnover.",
+   "reason": "IFR World Robotics 2021: professional service robots turnover $6.7B in 2020 (+12%), 131,800 units. $16B is 2.4x the actual: miss.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/service-robots-hit-double-digit-growth-worldwide",
+     "title": "Service Robots hit double digit growth worldwide (IFR)",
+     "date": "2021-11-04",
+     "shows": "Professional service robots: $6.7B turnover in 2020, 131,800 units."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-003",
+   "verdict": "hit",
+   "reading": "More than 100 companies worldwide would have begun testing private 5G by end-2020.",
+   "mainstream_test": "Threshold: count of organisations with private 5G pilots/deployments by end-2020 >100.",
+   "reason": "GSA's private mobile networks catalogue (2020-21) listed 370 private networks globally including over 120 projects involving 5G; manufacturing alone had nearly 80 pilot/production projects. Above 100: hit. Exact catalogue date not shown in the retrieved excerpt.",
+   "evidence": [
+    {
+     "url": "https://gsacom.com/?s=private+5G+2020",
+     "title": "GSA search results: private mobile networks catalogue",
+     "date": "2020-2021",
+     "shows": "370 private mobile networks, over 120 projects involving 5G."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-004",
+   "verdict": "hit",
+   "reading": "By end-2020 there would be over 700 LEO satellites seeking to offer global broadband, up from about 200 at end-2019.",
+   "mainstream_test": "Threshold: LEO broadband satellites in orbit at end-2020 >700.",
+   "reason": "Starlink: roughly 950 satellites launched by end-2020; OneWeb about 110 in orbit by end-2020 (146 per Wikipedia count incl. Dec 2020 launch). Well over 700: hit.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_Starlink_and_Starshield_launches",
+     "title": "List of Starlink and Starshield launches - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "About 950 Starlink satellites launched through end-2020."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/OneWeb",
+     "title": "OneWeb - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "OneWeb constellation over 100 satellites by end-2020."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-005",
+   "verdict": "ungradable",
+   "reading": "The 'smartphone multiplier' (accessories, apps, ads etc. enabled by smartphones) would drive $459B of revenue in 2020.",
+   "mainstream_test": "D16 numeric vs a measured attributed revenue.",
+   "reason": "Attributed value (revenue 'driven by' smartphones); no public source measures this attribution for 2020. D23 attributed-value rule.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/722835_tmt-predictions-2020/DI_TMT-Prediction-2020.pdf",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edition's own aggregate of smartphone-driven revenue."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-006",
+   "verdict": "ungradable",
+   "reading": "At least 1.6 billion people (450M households) worldwide would get some TV from an antenna in 2020.",
+   "mainstream_test": "Threshold vs a global count of households using terrestrial TV reception.",
+   "reason": "No global measure of people/households using any over-the-air reception; national figures (e.g. US OTA homes) exist but no global aggregate.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/722835_tmt-predictions-2020/DI_TMT-Prediction-2020.pdf",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edition's own global estimate; no tracker found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-007",
+   "verdict": "ungradable",
+   "reading": "The global CDN market would reach $14B in 2020, up more than 25% from about $11B.",
+   "mainstream_test": "D16 numeric vs 2020 global CDN market estimates.",
+   "reason": "Market-research estimates for the 2020 CDN market (MarketsandMarkets, Grand View, Research and Markets) are paywalled, differ in scope (security, video services) and were not retrieved; no verified figure.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/722835_tmt-predictions-2020/DI_TMT-Prediction-2020.pdf",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edition states $14B; no retrievable estimate on the same scope."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-008",
+   "verdict": "ungradable",
+   "reading": "Global ad-supported video (AVOD) revenue would reach about $32B in 2020.",
+   "mainstream_test": "D16 numeric vs 2020 global AVOD revenue.",
+   "reason": "Deloitte's AVOD scope includes YouTube and social video ads; trackers (Digital TV Research) measure long-form AVOD only, a different scope. No same-scope measure retrieved.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/722835_tmt-predictions-2020/DI_TMT-Prediction-2020.pdf",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edition's AVOD scope; no matching tracker found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-009",
+   "verdict": "ungradable",
+   "reading": "The global audiobook market would grow 25% to $3.5B in 2020 (podcasting +30% to $1.1B).",
+   "mainstream_test": "D16 numeric vs 2020 global audiobook market.",
+   "reason": "No authoritative global audiobook revenue series; APA reports US only (about $1.3B in 2020) and market-research estimates for the global market differ widely by basis and were not retrieved.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/722835_tmt-predictions-2020/DI_TMT-Prediction-2020.pdf",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edition states $3.5B global; only US series (APA) exist."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-010",
+   "verdict": "ungradable",
+   "reading": "In 2022 there would be tens of billions of additional bicycle trips per year globally over 2019 levels.",
+   "mainstream_test": "Count of additional bike trips per year globally, 2022 vs 2019.",
+   "reason": "No global bike-trip count exists; city counters and national travel surveys cover limited areas.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/us/articles/722835_tmt-predictions-2020/DI_TMT-Prediction-2020.pdf",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edition's own estimate; no global measure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-001",
+   "verdict": "ungradable",
+   "reading": "The global intelligent edge market would expand to $12B in 2021.",
+   "mainstream_test": "D16 numeric vs a 2021 'intelligent edge' market estimate.",
+   "reason": "The intelligent edge market is Deloitte's own construct (edge compute plus AI at the edge); no public series measures it.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/US103959_TMT-Predictions-2021/DI_TMT-Predictions-2021.pdf",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Edition defines the market; no tracker found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-002",
+   "verdict": "miss",
+   "reading": "Cloud revenue growth would stay at or above 30% a year for 2021 through 2025.",
+   "mainstream_test": "Annual cloud revenue growth >=30% in every year 2021-2025 (Synergy Research public cloud / cloud infrastructure).",
+   "reason": "Synergy Research: total public cloud revenues grew 21% in 2022; Q2 2025 cloud infrastructure market growing 25% YoY. Growth fell below 30% from 2022: miss.",
+   "evidence": [
+    {
+     "url": "https://www.srgresearch.com/articles/total-public-cloud-revenues-jumped-21-in-2022-surpassing-500-billion-despite-economic-headwinds",
+     "title": "Total Public Cloud Revenues Jumped 21% in 2022 (Synergy Research)",
+     "date": "2023",
+     "shows": "2022 public cloud revenue growth 21%."
+    },
+    {
+     "url": "https://www.srgresearch.com/articles/q2-cloud-market-nears-100-billion-milestone-and-its-still-growing-by-25-year-over-year",
+     "title": "Q2 Cloud Market Nears $100 Billion Milestone (Synergy Research)",
+     "date": "2025",
+     "shows": "Cloud infrastructure growing 25% YoY in Q2 2025."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-003",
+   "verdict": "hit",
+   "reading": "In 2021, radiation from 5G networks and phones would very likely not affect the health of any individual.",
+   "mainstream_test": "Event (negative): no established causal health effect of 5G exposure by end-2021.",
+   "reason": "WHO (Feb 2020): no adverse health effect causally linked to wireless technologies; exposure below guidelines has no anticipated public-health consequences. No contrary finding emerged in 2021. Hit.",
+   "evidence": [
+    {
+     "url": "https://www.who.int/news-room/questions-and-answers/item/radiation-5g-mobile-networks-and-health",
+     "title": "Radiation: 5G mobile networks and health (WHO Q&A)",
+     "date": "2020-02-27",
+     "shows": "No adverse health effect causally linked with wireless exposure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-004",
+   "verdict": "ungradable",
+   "reading": "Global active public-network Open RAN deployments could double in 2021 (about 35 to 70).",
+   "mainstream_test": "D16 numeric: ~70 deployments vs a count of active public Open RAN deployments.",
+   "reason": "No public tracker counts 'active public network Open RAN deployments' on Deloitte's definition (TIP/O-RAN Alliance and analysts count trials, MoUs and launches differently); the only restatement found is Deloitte's own, excluded as self-assessment.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/US103959_TMT-Predictions-2021/DI_TMT-Predictions-2021.pdf",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Edition's own count basis (35 deployments); no independent tracker found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-005",
+   "verdict": "ungradable",
+   "reading": "Global women's sports revenues in 2021 would be well under $1B.",
+   "mainstream_test": "Threshold vs a measured global women's sports revenue for 2021.",
+   "reason": "No independent global series of women's sports revenue (broadcast, sponsorship, matchday) for 2021; the available aggregate is Deloitte's own sports group estimate.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/US103959_TMT-Predictions-2021/DI_TMT-Predictions-2021.pdf",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Edition's own estimate; no independent measure found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-006",
+   "verdict": "ungradable",
+   "reading": "By end-2021 multiple professional sports leagues would establish new formal policies on collecting, using and commercialising player data.",
+   "mainstream_test": "Event: at least two pro leagues adopt new formal player-data policies during 2021.",
+   "reason": "Player-data provisions sit in collective bargaining agreements and league rules (NFL 2020 CBA, WNBA 2020 CBA, NWSL 2022 CBA, MLB 2022 CBA); none clearly dated to 2021 was found, but league policy changes are not systematically published, so absence cannot be established. Ungradable rather than miss.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/US103959_TMT-Predictions-2021/DI_TMT-Predictions-2021.pdf",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Edition states the event; no dated register of league data policies found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-007",
+   "verdict": "ungradable",
+   "reading": "8K TVs and related would generate $3.3B in global revenue in 2021.",
+   "mainstream_test": "D16 numeric vs 2021 global 8K revenue.",
+   "reason": "Trackers (Omdia, TrendForce) publish 8K TV unit shipments (a few hundred thousand), not revenue; revenue from units x ASP is a proxy (D23).",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/US103959_TMT-Predictions-2021/DI_TMT-Predictions-2021.pdf",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Edition states revenue; only unit trackers exist."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-008",
+   "verdict": "ungradable",
+   "reading": "Enterprise and education sales of VR/AR/MR headsets would double in 2021 over 2019.",
+   "mainstream_test": "Growth of enterprise+education XR headset unit sales 2019 to 2021.",
+   "reason": "Trackers (IDC AR/VR) split consumer vs commercial shipments only in paywalled data; no public enterprise+education series retrieved.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/US103959_TMT-Predictions-2021/DI_TMT-Predictions-2021.pdf",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Edition states doubling; no public segment series found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-009",
+   "verdict": "ungradable",
+   "reading": "Video visits would be 5% of all doctor visits globally in 2021, up from 1% in 2019.",
+   "mainstream_test": "D18 points vs a global share of physician visits by video, 2021.",
+   "reason": "No global measure of the share of doctor visits by video; national data (US, Canada) mix phone and video.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/US103959_TMT-Predictions-2021/DI_TMT-Predictions-2021.pdf",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Edition's global estimate; no global series exists."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-001",
+   "verdict": "ungradable",
+   "reading": "At least 150 million paid SVOD subscriptions would be cancelled worldwide in 2022.",
+   "mainstream_test": "Threshold vs a global count of SVOD cancellations in 2022.",
+   "reason": "No global count of SVOD cancellations; Antenna measures US gross cancellations only.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/us164916_tmt-predictions-2022/DI_TMT-Predictions-2022.pdf",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Edition's global estimate; only US churn trackers exist."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-002",
+   "verdict": "ungradable",
+   "reading": "The console games market (hardware plus software and services) would generate $81B in 2022, up 10%.",
+   "mainstream_test": "D16 numeric vs 2022 console market revenue on the same scope.",
+   "reason": "Newzoo's console segment (about $52B in 2022) excludes hardware; adding hardware needs unit x ASP assumptions (proxy, D23). Newzoo pages blocked; no same-scope measure retrieved.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/us164916_tmt-predictions-2022/DI_TMT-Predictions-2022.pdf",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Edition's scope includes hardware; no same-scope tracker retrieved."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-003",
+   "verdict": "ungradable",
+   "reading": "Global addressable TV advertising would be about $7.5B in 2022.",
+   "mainstream_test": "D16 numeric vs 2022 global addressable TV ad revenue.",
+   "reason": "Only US estimates (eMarketer) exist and they vary by inclusion of CTV; no global measure.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/insights/articles/us164916_tmt-predictions-2022/DI_TMT-Predictions-2022.pdf",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Edition's global figure; no global tracker found."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-004",
+   "verdict": "ungradable",
+   "reading": "In the UK, 2022 would be the last year in which broadcasters' traditional TV is more than 50% of all video viewing on all screens.",
+   "mainstream_test": "Event: broadcast TV share of total video viewing >50% in 2022 and <=50% in 2023 (Ofcom Media Nations, BARB).",
+   "reason": "Ofcom Media Nations 2023/2024 carry the series but ofcom.org.uk returned 403 to page and curl access, and BBC/news copies were blocked. Not verified.",
+   "evidence": [
+    {
+     "url": "https://www.ofcom.org.uk/media-use-and-attitudes/media-habits-adults/media-nations-2024",
+     "title": "Ofcom Media Nations 2024",
+     "date": "2024-08",
+     "shows": "Holds broadcast share of total video viewing; returned 403."
+    }
+   ]
+  }
+ ]
+}
