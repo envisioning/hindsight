@@ -42,7 +42,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **#41** Grading pipeline: generic agreement script, sample draw in this repo, prompts in `docs/grading/` (drafted). Everything after uses it.
+1. **#41** Grading pipeline: done. Commands in `AGENTS.md` (Agentic verdicts), prompts in `docs/grading/`.
 2. **#42** Hype Cycle verdicts from the saved timelines. Record the method as D21. Needs no new web research until adjudication.
 3. **#59** Links, phase 1 (both directions). No web search needed. Key is in `.env`. Model: `text-embedding-3-large`, `dimensions: 1536`. The site part goes to a new issue in envisioning/envisioning.com once the data exists.
 4. **#53** Numeric matching audit, then **#61** (audit error in rates) and **#54** (definition calls).

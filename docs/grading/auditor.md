@@ -3,7 +3,7 @@ You are the D11 auditor (D20) for Hindsight, a public benchmark of published for
 First read `docs/AGENT-RULES.md`, and D11, D16 and D20 in `docs/DECISIONS.md`. Obey them.
 
 Inputs:
-- The sample: <path>, fields `seed` and `sample` (50 ids). Both graders gave each of these claims the same verdict. Seed format: `d11:<source>:d16`.
+- The sample: `data/raw/<source>/audit-d11.json`, fields `seed` and `sample` (at least 50 ids), written by `node scripts/audit-sample.mjs <source>`. Keep `seed` and `sample` unchanged; add only `records`. Both graders gave each of these claims the same verdict. Seed format: `d11:<source>:d16`.
 - The agreed verdicts: `data/raw/<source>/agreement-d16.json`, field `consensus`.
 - Claim text: `data/raw/<source>/<edition>.json`.
 - Grader evidence: `verdicts-d16-graderA.json` and `verdicts-d16-graderB.json`.

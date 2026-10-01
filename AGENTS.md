@@ -11,7 +11,9 @@ pnpm build        compile src to dist
 pnpm normalize    data/raw -> data/normalized (Node 24 type stripping)
 pnpm grade:numeric    grade numeric forecasts -> data/graded (deterministic, D19)
 pnpm manifest     list git-tracked raw files for the live site (run after git add)
-node scripts/final-d20.mjs <source>    agreed + adjudicated + audited -> final-d20.json (D20)
+node scripts/agreement-d16.mjs <source>    grader A + grader B -> agreement-d16.json (kappa, consensus, contested)
+node scripts/audit-sample.mjs <source>     agreement -> fixed-seed D11 sample in audit-d11.json (--check to verify)
+node scripts/final-d20.mjs <source>        agreed + adjudicated + audited -> final-d20.json (D20)
 scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
 ```
 
@@ -34,11 +36,12 @@ pnpm only. The build is the gate. MZ tests by hand: do not write automated tests
 - **Facts only from third parties.** Keep who said what, when, about which subject, with which timing, and short attributed quotes (max 400 characters, enforced in `Claim.quote`). Never store charts, figures or full text.
 - **Grading rules.** Scenarios and fiction are never graded hit or miss. `VERDICTS_BY_TYPE` in `src/schema.ts` lists the verdicts each claim type allows. A claim is graded only against what it said at the time, at its own target date.
 - **Agentic verdicts (D7, D20).** Agents make every call; never ask a person at Envisioning to settle a verdict. Per judgment source, in order:
-  1. Two blind graders (`verdicts-d16-graderA.json`, `-graderB.json`). The second never sees the first. Kappa >= 0.6 or the rubric is revised (D11).
-  2. `agreement-d16.json`: consensus and contested lists.
-  3. An adjudicator agent settles contested claims (`adjudicated-d20.json`).
-  4. An auditor agent checks a fixed-seed sample of 50 agreed claims (`audit-d11.json`). Seed `d11:<source>:d16`; the draw is `drawSample` in the www repo `app/hindsight/_lib/audit.ts` until #41 moves it here.
-  5. `node scripts/final-d20.mjs <source>` writes `final-d20.json`, which the site reads first.
+  1. **Grade A and B.** Two blind grader agents (`docs/grading/grader.md`) write `verdicts-d16-graderA.json` and `-graderB.json` (or batch files `verdicts-d16-grader<A|B>-<batch>.json`). The second never sees the first.
+  2. **Agreement.** `node scripts/agreement-d16.mjs <source>` writes `agreement-d16.json`: kappa, consensus and contested lists. Kappa >= 0.6 or the rubric is revised before step 3 (D11).
+  3. **Adjudicate.** An adjudicator agent (`docs/grading/adjudicator.md`) settles contested claims in `adjudicated-d20.json`.
+  4. **Audit.** `node scripts/audit-sample.mjs <source>` writes the fixed-seed sample (at least 50 agreed claims, seed `d11:<source>:d16`) to `audit-d11.json`. The draw is the same as `drawSample` in the www repo `app/hindsight/_lib/audit.ts`. Then an auditor agent (`docs/grading/auditor.md`) adds a record per sampled claim.
+  5. **Final.** `node scripts/final-d20.mjs <source>` writes `final-d20.json`, which the site reads first.
+  6. **Manifest.** `git add data/raw/<source>`, then `pnpm manifest`, so the live site lists the new files.
   Every verdict needs at least one evidence row. Where the audit contests a verdict, no verdict publishes.
 - **No total score, no ranking of institutions.**
 
