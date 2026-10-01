@@ -538,3 +538,23 @@ It applies first to NIC Global Trends projections, McKinsey Technology Trends Ou
 **Cost.** FTSG has 424 trends in `gap`; its churn figure rests on the 2020 window and on trends matched in later editions. A full capture of FTSG 2019, 2020 and 2023 would let these be graded (#26).
 
 **Overturned by.** A full capture of the partial editions, after which the rows are graded again as a new pass.
+
+## D37: Envisioning study posters: education 2012, health 2012, Horizons 2014
+
+*Recorded 2026-10-01. Scope approved by MZ; grading rule pending.*
+
+**Decision.** Three more Envisioning posters are captured as their own sources, published and CC BY-SA at the time: `envisioning-education` (2012, 42 placements), `envisioning-health` (2012, 55) and `envisioning-horizons` (2014, 88, commissioned by Policy Horizons Canada and published in MetaScan 3, which the poster prints). Each claim says what its poster says, not the 2011 and 2012 posters' "becomes mainstream":
+
+- Education: "<Label> starts to influence learning environments around <year>". The poster organises technologies "likely to influence education in the upcoming decades". Use is tested in schools and learning, not in general.
+- Health: "<Label> starts to affect health care around <year>". Years are decade-coarse (2020, 2030, 2040 bands).
+- Horizons: "<Label> reaches R&D prototyping or venture investment around <year>", from the poster's "mainstream point", which its legend defines as "becomes avilable for prototyping in R&D labs, or when VCs and startups start investing in it". The scientifically viable and financially viable ("generally available on Kickstarter") marks are kept in the raw file and the claim note, not as claims.
+
+Not captured: the Future of Money timeline and reports (no dated claims), the Future of Finance poster (a readiness scale with no years), and client roadmaps that were never published.
+
+**Grading.** None yet. D16's mainstream thresholds do not fit these claims. The rule for "starts to influence" and for the Horizons R&D mark is written as an amendment before grader A and B run, and needs MZ's approval like D31 to D35.
+
+**Why.** Envisioning grades its own record first, and these are the dated forecasts it published between 2012 and 2014. Grading a poster against a stronger claim than it made would misstate it.
+
+**Cost.** Three sources, three thresholds. Their rates are not comparable with the posters graded under D16, and are shown separately.
+
+**Overturned by.** Evidence that a poster's own text meant mainstream adoption after all.

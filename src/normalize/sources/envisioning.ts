@@ -1,24 +1,48 @@
 /**
- * Envisioning Technology posters (2011, 2012). One claim per placement. The
- * posters keep their raw ids: et-2012-045 becomes envisioning-technology-2012-045.
+ * Envisioning's own posters: the technology posters (2011, 2012) and the
+ * study posters (education 2012, health 2012, Horizons 2014). One claim per
+ * placement. Raw ids keep their number: et-2012-045 becomes
+ * envisioning-technology-2012-045, edu-2012-007 becomes envisioning-education-2012-007.
  * Proposed verdicts (grader 1 of 2, D7) go to verdicts.json, not into the claim.
  */
 import { join } from "node:path";
 import { firstUrl, type Bundle, type Raw, RAW, type VerdictDraft, clean, editionFiles, editionId, fit, readJson, str, year } from "../lib.ts";
 
-const SOURCE = "envisioning-technology";
 const ISO = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 
-export function envisioningPosters(): Bundle {
+interface Poster {
+  source: string;
+  prefix: string;
+  series: string;
+  url: string;
+}
+
+export const envisioningPosters = (): Bundle =>
+  poster({ source: "envisioning-technology", prefix: "et", series: "Envisioning Technology posters", url: "https://www.envisioning.com/work/2012" });
+export const envisioningEducation = (): Bundle =>
+  poster({ source: "envisioning-education", prefix: "edu", series: "Envisioning the future of education technology", url: "https://www.envisioning.com/work" });
+export const envisioningHealth = (): Bundle =>
+  poster({ source: "envisioning-health", prefix: "health", series: "Envisioning the future of health technology", url: "https://www.envisioning.com/work" });
+export const envisioningHorizons = (): Bundle =>
+  poster({ source: "envisioning-horizons", prefix: "hz", series: "Envisioning Emerging Technologies (Policy Horizons Canada, MetaScan 3)", url: "https://www.envisioning.com/work" });
+
+const MILESTONES: [string, string][] = [
+  ["scientifically_viable", "scientifically viable"],
+  ["mainstream", "mainstream"],
+  ["financially_viable", "financially viable"],
+];
+
+function poster({ source: SOURCE, prefix, series, url }: Poster): Bundle {
   const b: Bundle = {
-    source: { id: SOURCE, publisher_id: "envisioning", series: "Envisioning Technology posters", url: "https://www.envisioning.com/work/2012" },
+    source: { id: SOURCE, publisher_id: "envisioning", series, url },
     institution: { id: "envisioning", name: "Envisioning", kind: "research_firm" },
     editions: [],
     drafts: [],
     skipped: {},
     verdicts: [],
-    keyRule: "raw placement id (et-<edition>-<nnn>); the id number is kept",
+    keyRule: `raw placement id (${prefix}-<edition>-<nnn>); the id number is kept`,
   };
+  const idPattern = new RegExp(`^${prefix}-(\\d{4})-(\\d+)$`);
   for (const f of editionFiles(SOURCE)) {
     const d = readJson(join(RAW, SOURCE, f));
     const ed = String(d.edition);
@@ -26,15 +50,19 @@ export function envisioningPosters(): Bundle {
     b.editions.push(clean({ id: editionId(SOURCE, ed), source_id: SOURCE, edition: ed, published: String(d.published), url: firstUrl(sources) }));
     for (const e of d.entries as Raw[]) {
       const rawId = String(e.id);
-      const m = /^et-(\d{4})-(\d+)$/.exec(rawId);
+      const m = idPattern.exec(rawId);
       if (m === null || m[1] !== ed) throw new Error(`poster ${ed}: unexpected id ${rawId}`);
       const quantitative = e.kind === "quantitative";
       const band = str(e.band);
       const bandText = band === undefined ? undefined : band.endsWith("+") ? `after ${band.slice(0, -1)}` : band.replace("-", " to ");
+      const ms = e.milestones as Raw | undefined;
+      const milestones =
+        ms === undefined ? undefined : MILESTONES.filter(([k]) => ms[k] != null).map(([k, name]) => `${name} ${String(ms[k])}`).join(", ");
       const notes = [
         str(e.note),
+        milestones ? `Poster milestones: ${milestones}.` : undefined,
         str(e.interpretation) ? `Reading: ${e.interpretation}` : undefined,
-        e.verdict_status === "graded_via_2012" ? `Graded once, on its 2012 placement (${String(e.graded_via).replace(/^et-/, `${SOURCE}-`)}).` : undefined,
+        e.verdict_status === "graded_via_2012" ? `Graded once, on its 2012 placement (${String(e.graded_via).replace(new RegExp(`^${prefix}-`), `${SOURCE}-`)}).` : undefined,
         str(e.open_reason),
         e.confidence && e.confidence !== "high" ? `Extraction confidence: ${e.confidence}.` : undefined,
       ].filter((s): s is string => s !== undefined);

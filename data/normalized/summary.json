@@ -1,6 +1,9 @@
 {
  "claims": {
   "envisioning-technology": 229,
+  "envisioning-education": 42,
+  "envisioning-health": 55,
+  "envisioning-horizons": 88,
   "gartner-hype-cycle": 941,
   "mit-tr-10-breakthrough": 254,
   "gartner-strategic-predictions": 224,
@@ -34,11 +37,11 @@
   "shell-scenarios": 340,
   "ipcc-pathways": 205
  },
- "subjects": 5360,
+ "subjects": 5497,
  "aliases": {
-  "exact": 5290,
+  "exact": 5431,
   "judgment": 175,
-  "normalized": 200
+  "normalized": 203
  },
  "cross_source": [
   {
@@ -46,6 +49,7 @@
    "sources": [
     "ark-big-ideas",
     "deloitte-tmt-predictions",
+    "envisioning-education",
     "envisioning-technology",
     "ftsg-tech-trends",
     "gartner-hype-cycle",
@@ -85,6 +89,16 @@
     "ftsg-tech-trends",
     "gartner-hype-cycle",
     "mit-tr-10-breakthrough"
+   ]
+  },
+  {
+   "subject_id": "5g",
+   "sources": [
+    "deloitte-tmt-predictions",
+    "envisioning-horizons",
+    "envisioning-technology",
+    "ftsg-tech-trends",
+    "gartner-hype-cycle"
    ]
   },
   {
@@ -128,12 +142,22 @@
    ]
   },
   {
-   "subject_id": "5g",
+   "subject_id": "virtual-reality",
    "sources": [
     "deloitte-tmt-predictions",
+    "envisioning-education",
     "envisioning-technology",
     "ftsg-tech-trends",
     "gartner-hype-cycle"
+   ]
+  },
+  {
+   "subject_id": "anti-aging-drugs",
+   "sources": [
+    "envisioning-health",
+    "envisioning-horizons",
+    "envisioning-technology",
+    "mit-tr-10-breakthrough"
    ]
   },
   {
@@ -236,6 +260,33 @@
    ]
   },
   {
+   "subject_id": "synthetic-biology",
+   "sources": [
+    "envisioning-horizons",
+    "envisioning-technology",
+    "ftsg-tech-trends",
+    "mit-tr-10-breakthrough"
+   ]
+  },
+  {
+   "subject_id": "tablets",
+   "sources": [
+    "deloitte-tmt-predictions",
+    "envisioning-education",
+    "envisioning-technology",
+    "gartner-hype-cycle"
+   ]
+  },
+  {
+   "subject_id": "telepresence",
+   "sources": [
+    "envisioning-education",
+    "envisioning-horizons",
+    "envisioning-technology",
+    "gartner-hype-cycle"
+   ]
+  },
+  {
    "subject_id": "united-states-real-gdp-growth",
    "sources": [
     "cbo-projections",
@@ -245,11 +296,10 @@
    ]
   },
   {
-   "subject_id": "virtual-reality",
+   "subject_id": "3d-bioprinting-systems-for-organ-transplant",
    "sources": [
-    "deloitte-tmt-predictions",
+    "envisioning-horizons",
     "envisioning-technology",
-    "ftsg-tech-trends",
     "gartner-hype-cycle"
    ]
   },
@@ -350,10 +400,34 @@
    ]
   },
   {
+   "subject_id": "exoskeletons",
+   "sources": [
+    "envisioning-health",
+    "envisioning-technology",
+    "gartner-hype-cycle"
+   ]
+  },
+  {
+   "subject_id": "fuel-cells",
+   "sources": [
+    "envisioning-horizons",
+    "envisioning-technology",
+    "shell-scenarios"
+   ]
+  },
+  {
    "subject_id": "gene-editing",
    "sources": [
     "ark-big-ideas",
     "ftsg-tech-trends",
+    "mit-tr-10-breakthrough"
+   ]
+  },
+  {
+   "subject_id": "gene-therapy",
+   "sources": [
+    "envisioning-health",
+    "envisioning-technology",
     "mit-tr-10-breakthrough"
    ]
   },
@@ -363,6 +437,14 @@
     "deloitte-tech-trends",
     "gartner-hype-cycle",
     "mckinsey-tech-trends"
+   ]
+  },
+  {
+   "subject_id": "graphene",
+   "sources": [
+    "deloitte-tmt-predictions",
+    "envisioning-horizons",
+    "envisioning-technology"
    ]
   },
   {
@@ -382,11 +464,35 @@
    ]
   },
   {
+   "subject_id": "meta-materials",
+   "sources": [
+    "envisioning-horizons",
+    "envisioning-technology",
+    "ftsg-tech-trends"
+   ]
+  },
+  {
+   "subject_id": "natural-language-processing",
+   "sources": [
+    "envisioning-health",
+    "envisioning-technology",
+    "mit-tr-10-breakthrough"
+   ]
+  },
+  {
    "subject_id": "nfc",
    "sources": [
     "deloitte-tmt-predictions",
     "envisioning-technology",
     "gartner-hype-cycle"
+   ]
+  },
+  {
+   "subject_id": "personalized-medicine",
+   "sources": [
+    "envisioning-health",
+    "envisioning-horizons",
+    "envisioning-technology"
    ]
   },
   {
@@ -406,6 +512,14 @@
    ]
   },
   {
+   "subject_id": "self-healing-materials",
+   "sources": [
+    "envisioning-horizons",
+    "envisioning-technology",
+    "ftsg-tech-trends"
+   ]
+  },
+  {
    "subject_id": "semantic-web",
    "sources": [
     "envisioning-technology",
@@ -422,6 +536,14 @@
    ]
   },
   {
+   "subject_id": "space-based-solar-power",
+   "sources": [
+    "envisioning-horizons",
+    "envisioning-technology",
+    "ftsg-tech-trends"
+   ]
+  },
+  {
    "subject_id": "spatial-computing",
    "sources": [
     "accenture-tech-vision",
@@ -430,25 +552,17 @@
    ]
   },
   {
-   "subject_id": "synthetic-biology",
-   "sources": [
-    "envisioning-technology",
-    "ftsg-tech-trends",
-    "mit-tr-10-breakthrough"
-   ]
-  },
-  {
-   "subject_id": "tablets",
-   "sources": [
-    "deloitte-tmt-predictions",
-    "envisioning-technology",
-    "gartner-hype-cycle"
-   ]
-  },
-  {
    "subject_id": "tele-medicine",
    "sources": [
     "deloitte-tmt-predictions",
+    "envisioning-technology",
+    "ftsg-tech-trends"
+   ]
+  },
+  {
+   "subject_id": "tidal-turbines",
+   "sources": [
+    "envisioning-horizons",
     "envisioning-technology",
     "ftsg-tech-trends"
    ]
