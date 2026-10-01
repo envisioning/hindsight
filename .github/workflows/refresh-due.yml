@@ -1,0 +1,23 @@
+# Yearly refresh (#58): once a month, open one issue per source whose new edition is due.
+name: refresh-due
+on:
+  schedule:
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  open-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: gh label create refresh -R envisioning/hindsight -c 1D76DB -d "A new edition of a source is due (#58)" || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: node scripts/refresh-due.mjs --open
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
