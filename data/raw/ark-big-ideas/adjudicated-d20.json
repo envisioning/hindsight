@@ -1,0 +1,70 @@
+{
+ "rule": "D16",
+ "rubric": "D23",
+ "role": "adjudicator (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "ark-big-ideas-2017-002",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "verdict": "ungradable",
+   "reading": "The all-in price per mile paid for an autonomous taxi ride in 2020 would be about USD 0.35 (chart bar 'Autonomous Taxi 2020', half of USD 0.70 for a personal car).",
+   "reason": "D23 same-quantity clause requires a public measure of the price per mile of autonomous taxi rides in the target year or the year before (2019-2020). None exists: Waymo One (Phoenix, the only paid service) published no fare data, and per-mile robotaxi fare tracking (Obi) starts in 2025. Grader B's evidence is outside the window: one Reuters test ride at launch (December 2018) and Obi data from 2025. Both suggest the figure was far too low, but D23 does not grade from anecdotes or out-of-window data. Grader A is upheld. Not conditional: the claim states no condition, so the conditional clause is not used.",
+   "evidence": [
+    {"url": "https://techcrunch.com/2025/06/12/waymo-rides-cost-more-than-uber-or-lyft-and-people-are-paying-anyway", "title": "Waymo rides cost more than Uber or Lyft, and people are paying anyway (TechCrunch)", "date": "2025-06-12", "shows": "The first systematic per-distance robotaxi fare comparison (Obi) is from 2025, outside the 2019-2020 window."},
+    {"url": "https://en.wikipedia.org/wiki/Waymo", "title": "Waymo (Wikipedia)", "date": "2026", "shows": "Waymo One launched December 2018 in the Phoenix area at pilot scale; no published fare series for 2019-2020."}
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-019",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "verdict": "miss",
+   "reading": "The average price per whole human genome sequenced would fall to about USD 200 in 2023, from USD 1,600 in 2018 (edition p66: NGS revenue / genomes sequenced).",
+   "reason": "D23 same-quantity clause: NHGRI's cost per genome measures the same quantity, the all-in price or cost of one whole genome, by a different method (production cost at funded centres). ARK's own baseline confirms this: its 2018 ASP of USD 1,600 sits inside NHGRI's 2018 points (USD 1,232 to 1,467 per quarter, USD 1,844 in late 2017). The edition also cites NHGRI for its cost charts (pp61-62). The last NHGRI point is USD 525 (Feb and May 2022), in the year before the target year, which D23 allows. (200 - 525) / 525 = -62%, so a miss. Grader B treated the cost-versus-ASP method difference as a different quantity; D23 asks graders to state such a difference and still grade. Vendor list claims of USD 100-200 (NovaSeq X, Ultima) are consumable costs on one platform at full throughput, a proxy and not a market average, so they are not a second estimate.",
+   "evidence": [
+    {"url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data", "title": "DNA Sequencing Costs: Data (NHGRI), spreadsheet saved 2023-05-15", "date": "2023-05-15", "shows": "Cost per genome USD 524.62 at Feb and May 2022 (last points); 2018 points USD 1,232 to 1,467."},
+    {"url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/Big-Ideas-2019-ARKInvest.pdf", "title": "Big Ideas 2019 (ARK Invest), p66 'Sizing the Opportunity'", "date": "2019-01", "shows": "2018: USD 3.8 billion revenue, USD 1,600 ASP, 2.4 million genomes; 2023: USD 200 ASP, 100 million genomes. NHGRI is cited for the cost series on pp61-62."}
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-003",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "verdict": "ungradable",
+   "reading": "Total streaming revenue as ARK defines it on p19 (video: SVOD, ad-supported and user-generated; audio; game: live and cloud) would reach about USD 390 billion in 2024, from USD 86 billion in 2019.",
+   "reason": "D23 same-quantity clause: no public series measures this composite. A total can only be built from components with different sources and scopes, and the user-generated video part needs an attribution no source publishes. Grader A's sum (Omdia video streaming about USD 190 billion, which excludes social video, plus YouTube ads USD 36 billion, IFPI music USD 20 billion and a few billion for games) is about USD 250 billion, a miss. Adding the ad revenue of TikTok and Douyin as 'user-generated video' raises the total past the partial threshold (USD 312 billion) and possibly into the hit band. So A's statement that every generous construction stays below USD 300 billion does not hold. The edition does not say whether Chinese short-video platforms are in scope. Grader B is upheld.",
+   "evidence": [
+    {"url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/Big%20Ideas%202020-Final_011020.pdf", "title": "Big Ideas 2020 (ARK Invest), p19 streaming chart", "date": "2020-01", "shows": "The composite of SVOD, ad-supported and user-generated video, audio, live and cloud game streaming is built by ARK from Zenith, Newzoo, RIAA and Roundhill data; no single public series."},
+    {"url": "https://omdia.tech.informa.com/pr/2025/oct/global-tv-and-video-market-to-reach-1-trillion-by-2030-as-online-video-surges", "title": "Global TV and video market to reach $1 trillion by 2030 (Omdia)", "date": "2025-10", "shows": "Video streaming revenue USD 214.6 billion in 2025 (+12.8%), one component only. It excludes social/user-generated video."},
+    {"url": "https://www.ifpi.org/global-music-report-2025/", "title": "IFPI Global Music Report 2025", "date": "2025-03", "shows": "Recorded-music streaming about USD 20.4 billion in 2024, one component only."}
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-004",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "verdict": "partial",
+   "reading": "Global ad revenue of ad-supported OTT streaming services, ARK's 'OTT Services' share of global TV advertising (Zenith-based chart, p15; 28% of the total in 2024; the 2019 base of about USD 6 billion excludes YouTube), would reach about USD 44 billion in 2024.",
+   "reason": "The edition's chart settles the scope: global streaming TV advertising inside the TV ad market, without social video. Two public global estimates exist on this scope. (1) Omdia premium streaming advertising: USD 42.1 billion in 2025, up 15.6%, which gives USD 36.4 billion in 2024. (2) GroupM This Year Next Year (Dec 2024): global TV USD 169.1 billion in 2025, linear 72.6% of it, streaming +19.3%, which gives about USD 38.8 billion for streaming TV in 2024 (GroupM's June 2024 forecast: USD 38.3 billion). The estimates are well within a factor of 2. Median about USD 37.6 billion; 44 / 37.6 = +17%, a partial. Each estimate alone also gives a partial (+21%, +13%). Grader B's range included US-only figures (Magna, US CTV), which are a different scope, not estimates of the same global quantity. That is a reading error. Grader A's arithmetic is correct (+20.8%).",
+   "evidence": [
+    {"url": "https://omdia.tech.informa.com/pr/2025/oct/global-tv-and-video-market-to-reach-1-trillion-by-2030-as-online-video-surges", "title": "Global TV and video market to reach $1 trillion by 2030 (Omdia)", "date": "2025-10", "shows": "Premium advertising revenue USD 42.1 billion worldwide in 2025, up 15.6% over 2024 (about USD 36.4 billion in 2024)."},
+    {"url": "https://www.adexchanger.com/marketers/global-ad-revenue-cracks-the-1-trillion-dollar-mark-in-2024/", "title": "Global Ad Revenue Cracks The $1 Trillion Dollar Mark In 2024 (AdExchanger, GroupM TYNY)", "date": "2024-12", "shows": "Total TV revenue USD 169.1 billion in 2025 (+1.9%); linear about USD 122 billion (72.6%), down 3.4%; streaming +19.3%. This gives global streaming TV of about USD 38.8 billion in 2024."},
+    {"url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/Big%20Ideas%202020-Final_011020.pdf", "title": "Big Ideas 2020 (ARK Invest), p15", "date": "2020-01", "shows": "Chart 'Global TV Advertising Market Share: OTT Services vs Television Advertising', Zenith source, OTT at 28% in 2024."}
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-025",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "verdict": "ungradable",
+   "reading": "The enterprise value attributable to autonomous ride-hailing platform operation would reach about USD 3.8 trillion by 2025.",
+   "reason": "D23 attributed-value clause: this is a value attributed to a technology business, and no public source measures it for 2025. The operators are mostly units of larger companies (Waymo in Alphabet, Apollo Go in Baidu, Tesla). Grader B argued that every construction gives a miss, but that does not hold. Counting whole parent companies (Alphabet alone had a market cap of roughly USD 3.5 to 3.9 trillion in late 2025; not fetched here) reaches or passes the figure, so the verdict depends entirely on an attribution no source publishes. B noted itself that the strict D23 reading is ungradable. Grader A is upheld.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Waymo", "title": "Waymo (Wikipedia)", "date": "2026", "shows": "Waymo is an Alphabet subsidiary valued only through private rounds (USD 126 billion, Feb 2026); no public measure of the sector's enterprise value."},
+    {"url": "https://companiesmarketcap.com/tesla/marketcap/", "title": "Tesla market cap (CompaniesMarketCap)", "date": "2026", "shows": "Tesla's whole-company market cap (USD 1.58 trillion, end-2025) is not an autonomous-platform value; the attribution is unmeasured."}
+   ]
+  }
+ ]
+}
