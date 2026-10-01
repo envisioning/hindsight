@@ -1,0 +1,498 @@
+{
+ "rule": "D37",
+ "grader": "B",
+ "verdicts": [
+  {
+   "id": "health-2012-001",
+   "verdict": "partial",
+   "reading": "Manufactured or lab-grown blood substitutes start to be used for transfusion in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of transfusions use a substitute by 2022 = hit; real use below 5% (pilots, niche approvals) or 5% in 2023-2025 = partial; no real use by 2025 = miss.",
+   "reason": "No substitute is approved in the US or EU; Hemopure is approved only in South Africa and Russia and sees niche use. The first lab-grown red cells were transfused to volunteers in the RESTORE trial in Nov 2022. Real use exists only as niche approvals and a first-in-human pilot, far below 5% of transfusions.",
+   "evidence": [
+    {
+     "url": "https://www.nhsbt.nhs.uk/news/first-ever-clinical-trial-of-laboratory-grown-red-blood-cells-being-transfused-into-another-person/",
+     "title": "First ever clinical trial of laboratory grown red blood cells being transfused into another person",
+     "date": "2022-11-07",
+     "shows": "RESTORE trial: first two people transfused with lab-grown red cells; research stage."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Blood_substitute",
+     "title": "Blood substitute (Wikipedia)",
+     "date": "2026",
+     "shows": "Fluosol was the only FDA-approved oxygen therapeutic (1989, withdrawn 1994); Hemopure approved only in South Africa and Russia; none approved in the US."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-002",
+   "verdict": "partial",
+   "reading": "Therapies that regrow or repair damaged human tissue start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant procedures (e.g. cartilage repair, chronic wound care) use regenerative tissue products by 2022 = hit; real but smaller use = partial; none by 2025 = miss.",
+   "reason": "Approved regenerative products are in routine use: MACI autologous chondrocyte implants (FDA, re-approved through 2024) and cellular skin substitutes for chronic wounds. No source found showing they reach 5% of the relevant procedures by 2022; use is real but niche.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/maci-autologous-cultured-chondrocytes-porcine-collagen-membrane",
+     "title": "MACI (Autologous Cultured Chondrocytes on a Porcine Collagen Membrane)",
+     "date": "2024-08-23",
+     "shows": "FDA-approved cultured-cell scaffold that repairs knee cartilage defects; in clinical use."
+    },
+    {
+     "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+     "title": "Approved Cellular and Gene Therapy Products",
+     "date": "2026",
+     "shows": "Small list of approved cell-based regenerative products, indicating niche, specialised use."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-003",
+   "verdict": "partial",
+   "reading": "Engineered or bioartificial blood vessels for implantation start to be used in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of vascular grafting procedures use engineered vessels by 2022 = hit; real use below 5% or 5% in 2023-2025 = partial; no real use by 2025 = miss.",
+   "reason": "The first tissue-engineered vessel (Humacyte Symvess) was FDA-approved in Dec 2024 for extremity vascular trauma, inside the 5-year window. Use in 2025 is niche (one indication, early launch). Conventional synthetic Dacron/ePTFE grafts predate the poster and are not what the label means.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-acellular-tissue-engineered-vessel-treat-vascular-trauma-extremities",
+     "title": "FDA Approves First Acellular Tissue Engineered Vessel to Treat Vascular Trauma in Extremities",
+     "date": "2024-12-20",
+     "shows": "First approval of a tissue-engineered vessel, late 2024; no earlier routine use."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-009",
+   "verdict": "partial",
+   "reading": "Pharmaceuticals made by 3D printing, including patient-tailored dosing, start to be dispensed in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of dispensed drugs or pharmacies by 2022 = hit; real but niche use = partial; none by 2025 = miss.",
+   "reason": "Spritam (levetiracetam), the first 3D-printed drug, was FDA-approved in 2015 and marketed; hospital pilots of printed personalised doses followed. Use is real but a tiny share of prescriptions.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Spritam",
+     "title": "Spritam (Wikipedia)",
+     "date": "2026",
+     "shows": "First 3D-printed drug approved by FDA in 2015; no other approved printed drugs listed."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-010",
+   "verdict": "partial",
+   "reading": "Stem-cell therapies for disease or injury (regenerative uses beyond the long-established bone-marrow transplant) start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of patients in the target indications receive stem-cell therapy by 2022 = hit; real but niche approved use = partial; none by 2025 = miss.",
+   "reason": "Approved regenerative stem-cell products exist (EU Holoclar, Alofisel; US Ryoncil approved Dec 2024, Omisirge, Lantidra) and are used, but in narrow indications and small numbers. Haematopoietic stem-cell transplant was routine long before 2012 and is not the poster's forward-looking reading; under that reading the claim would be an earlier hit, noted as a minority reading.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+     "title": "Approved Cellular and Gene Therapy Products",
+     "date": "2026",
+     "shows": "Approved stem-cell products are cord-blood HPC units plus a few MSC/islet products (Ryoncil, Omisirge, Lantidra), all narrow indications."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-011",
+   "verdict": "partial",
+   "reading": "Genetic modification of embryos or fetuses before birth starts to be used in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant IVF/prenatal cases by 2022 = hit; real clinical use below 5% (licensed niche service) = partial; no real use by 2025 or abandoned = miss.",
+   "reason": "CRISPR embryo editing produced three babies in China (2018) and was criminalised, so that path is abandoned. But licensed mitochondrial donation (pronuclear transfer, a germline modification of the embryo) runs as an NHS clinical service in Newcastle (licensed 2017), with eight babies reported in July 2025. Real, licensed, tiny-scale use inside the window = partial. A strict 'nuclear gene editing' reading would give miss.",
+   "evidence": [
+    {
+     "url": "https://www.ncl.ac.uk/press/articles/archive/2025/07/mitochondrialdonationtreatment/",
+     "title": "Eight babies born after Mitochondrial donation",
+     "date": "2025-07-16",
+     "shows": "Licensed clinical mitochondrial donation by pronuclear transfer at Newcastle; eight babies born; licence granted 2017."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/He_Jiankui_affair",
+     "title": "He Jiankui affair (Wikipedia)",
+     "date": "2026",
+     "shows": "Only three CRISPR-edited babies (2018-2019); researcher jailed; China criminalised human germline editing in 2020."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-012",
+   "verdict": "hit",
+   "reading": "Treatment selected or designed for a patient's genetics and other characteristics starts to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant treatments or new therapies are biomarker-guided by 2022 = hit.",
+   "reason": "Personalized medicines made up 34% of FDA new molecular entity approvals in 2022 and at least 25% for eight years running; biomarker-guided oncology treatment and companion diagnostics are routine. Well above 5% by 2022.",
+   "evidence": [
+    {
+     "url": "https://www.personalizedmedicinecoalition.org/personalized-medicines-topped-25-percent-of-new-drug-approvals-for-eighth-year-in-a-row-in-2022-accounting-for-34-percent-of-new-molecular-entities-approved/",
+     "title": "Personalized Medicines Topped 25 Percent of New Drug Approvals for Eighth Year in a Row in 2022",
+     "date": "2023-02",
+     "shows": "12 personalized medicines, 34% of 2022 NMEs; >=25% each year 2015-2022."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-023",
+   "verdict": "hit",
+   "reading": "Surgery performed with robotic systems starts to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant surgical procedures are robot-assisted by 2022 = hit.",
+   "reason": "In 73 Michigan hospitals the robotic share of general surgery rose from 1.8% (2012) to 15.1% (2018), above 5% before the placed year. The remote (telesurgery) sense is not required by the label.",
+   "evidence": [
+    {
+     "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2758472",
+     "title": "Trends in the Adoption of Robotic Surgery for Common Surgical Procedures (JAMA Netw Open)",
+     "date": "2020-01-10",
+     "shows": "Robotic share of general surgery 1.8% in 2012 to 15.1% in 2018 (169,404 patients, 73 hospitals)."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-024",
+   "verdict": "hit",
+   "reading": "Diagnosis delivered through smartphone apps (mHealth) starts to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant users (adults seeking diagnosis) used app-based diagnostics by 2022 = hit.",
+   "reason": "A July 2022 representative-style German survey found 6.5% of adults had used symptom checkers; FDA-cleared app diagnostics (Apple Watch ECG AF detection, 2018; KardiaMobile) were in wide consumer use. Just above the 5% line by 2022; margin is thin.",
+   "evidence": [
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10337374/",
+     "title": "Characteristics of Users and Nonusers of Symptom Checkers in Germany: Cross-Sectional Survey Study",
+     "date": "2023",
+     "shows": "Survey of 1,084 German residents, July 2022: 6.5% had used symptom checkers."
+    },
+    {
+     "url": "https://www.pewresearch.org/short-reads/2020/01/09/about-one-in-five-americans-use-a-smart-watch-or-fitness-tracker/",
+     "title": "About one-in-five Americans use a smart watch or fitness tracker (Pew)",
+     "date": "2020-01-09",
+     "shows": "21% of US adults use a smartwatch or fitness tracker, the platform for app-based ECG/AF checks."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-025",
+   "verdict": "hit",
+   "reading": "Software that understands patient and clinician language starts to be used in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of clinicians or hospitals use clinical NLP/speech understanding by 2022 = hit.",
+   "reason": "Nuance Dragon Medical clinical speech recognition was used by over 550,000 physicians and Nuance solutions by 77% of US hospitals (July 2022). Clinical NLP for documentation and coding was routine before 2022.",
+   "evidence": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/nuance-expands-dragon-medical-one-availability-through-the-microsoft-marketplace-to-reduce-clinician-burnout-301589038.html",
+     "title": "Nuance Expands Dragon Medical One Availability through the Microsoft Marketplace",
+     "date": "2022-07-19",
+     "shows": "Over 550,000 physicians use Dragon Medical; 77% of US hospitals use Nuance solutions."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-026",
+   "verdict": "partial",
+   "reading": "Augmented-reality overlays guiding surgeons during operations start to be used in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant (e.g. spine, navigated) procedures use AR guidance by 2022 = hit; real use below 5% = partial; none by 2025 = miss.",
+   "reason": "Augmedics xvision was FDA-cleared Dec 2019, first US case June 2020, and reached 10,000 cumulative procedures only in April 2025; other AR systems are similarly small. Real routine use in some hospitals, far below 5% of spine surgeries (well over a million a year in the US).",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20200611005726/en/First-Augmented-Reality-Spine-Surgery-Using-FDA-Cleared-Augmedics-xvision-Spine-System-Completed-in-U.S.",
+     "title": "First Augmented Reality Spine Surgery Using FDA-Cleared Augmedics xvision Spine System Completed in U.S.",
+     "date": "2020-06-11",
+     "shows": "First US AR spine surgery at Johns Hopkins after Dec 2019 FDA clearance."
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20250422053433/en/Augmedics-Completes-10000th-Augmented-Reality-Spine-Surgery-With-xvision-Spine-System",
+     "title": "Augmedics Completes 10,000th Augmented Reality Spine Surgery With xvision Spine System",
+     "date": "2025-04-22",
+     "shows": "Only 10,000 cumulative AR spine procedures by 2025: niche use."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-027",
+   "verdict": "hit",
+   "reading": "Remote, software- or video-based assessment of care urgency starts to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of urgent-care contacts in a health system are triaged remotely by software by 2022 = hit.",
+   "reason": "England's NHS 111 triages about 16-20 million calls a year with the NHS Pathways clinical decision-support software (a registered medical device), a large share of urgent-care contacts for a population of ~56 million; COVID-era online and video triage expanded this. Above 5% by 2022 (and already before).",
+   "evidence": [
+    {
+     "url": "https://digital.nhs.uk/services/nhs-pathways/nhs-pathways-is-a-class-1-medical-device",
+     "title": "NHS Pathways is a Class 1 medical device (NHS England Digital)",
+     "date": "2024",
+     "shows": "NHS Pathways is the software used to triage NHS 111 and 999 calls."
+    },
+    {
+     "url": "https://www.medrxiv.org/content/10.1101/2023.03.20.23287449v1.full",
+     "title": "An analysis of NHS 111 demand for primary care services",
+     "date": "2023-03-20",
+     "shows": "NHS 111 triages over 16.6 million calls per year with NHS Pathways."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-028",
+   "verdict": "hit",
+   "reading": "Remote transmission of patient vital signs and device data to clinicians starts to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant patients (e.g. implanted cardiac device holders, chronic-condition patients) are remotely monitored by 2022 = hit.",
+   "reason": "In 211,346 Medicare beneficiaries with new cardiac implantable devices (2015-2020), roughly two-thirds had at least one remote-monitoring encounter (over one-third had none); CMS added RPM billing codes in 2019. Well above 5% by 2022, though adherence to recommended frequency was low.",
+   "evidence": [
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39396601/",
+     "title": "Cardiac implantable electronic device patient follow-up: Assessment of U.S. practice (Heart Rhythm)",
+     "date": "2024",
+     "shows": "Medicare CIED cohort 2015-2020: over one-third never had remote monitoring, so most did; <5% at recommended frequency."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-033",
+   "verdict": "miss",
+   "reading": "Blood-glucose monitoring without skin pricking or an implanted/inserted sensor starts to be used in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of glucose-monitoring diabetics use it by 2022 = hit; real use below 5% = partial; no real use by 2025 = miss.",
+   "reason": "No non-invasive glucose monitor is FDA-authorised; in Feb 2024 FDA warned against smartwatches and rings claiming it. Diabetes care moved to minimally invasive CGMs (filament under the skin), which do not meet the label. A few CE-marked devices (e.g. GlucoTrack) never reached routine use, and GlucoTrack pivoted to an implantable sensor.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatches-or-smart-rings-measure-blood-glucose-levels-fda-safety-communication",
+     "title": "Do Not Use Smartwatches or Smart Rings to Measure Blood Glucose Levels: FDA Safety Communication",
+     "date": "2024-02-21",
+     "shows": "FDA has not authorised any smartwatch or smart ring that measures blood glucose on its own."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-034",
+   "verdict": "hit",
+   "reading": "Patient health records that are open, portable and accessible to patients and providers start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of patients access their records online / via apps by 2022 = hit.",
+   "reason": "About 3 in 5 US individuals were offered and accessed their online medical record or patient portal in 2022 (ONC), backed by the 21st Century Cures Act information-blocking rule (2021) and FHIR app access. Far above 5%.",
+   "evidence": [
+    {
+     "url": "https://healthit.gov/data/data-briefs/individuals-access-and-use-patient-portals-and-smartphone-health-apps-2022/",
+     "title": "Individuals' Access and Use of Patient Portals and Smartphone Health Apps, 2022 (ONC Data Brief 69)",
+     "date": "2023-10",
+     "shows": "~57% of US individuals offered and accessed their online record in 2022, up 50% since 2020."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-035",
+   "verdict": "partial",
+   "reading": "Thin skin-mounted electronic sensors ('electronic skin' patches) that monitor body signals start to be used in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant monitored patients (e.g. NICU, inpatients) use epidermal sensors by 2022 = hit; real clinical use below 5% = partial; none by 2025 = miss.",
+   "reason": "The Rogers-lab line reached clinic: Sibel Health's ANNE skin sensors gained FDA 510(k) clearances (ANNE One, May 2023, for neonates to adults; ANNE Maternal) and are deployed in some hospitals and low-income-country NICUs. Use is real but limited to pilots and early deployments, well under 5% of monitored patients. Conventional adhesive ECG patches are not the thin epidermal electronics the label names.",
+   "evidence": [
+    {
+     "url": "https://aasm.org/anne-one-wireless-monitoring-platform-receives-new-fda-clearance/",
+     "title": "ANNE One wireless monitoring platform receives FDA clearance (AASM)",
+     "date": "2023-05",
+     "shows": "FDA 510(k) for Sibel's ANNE One skin-mounted wireless sensors, neonates to adults."
+    },
+    {
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9246120/",
+     "title": "Evaluation of Sibel's Advanced Neonatal Epidermal (ANNE) wireless continuous physiological monitor in Nairobi, Kenya",
+     "date": "2022",
+     "shows": "Epidermal sensors at evaluation/pilot stage in neonatal care."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-036",
+   "verdict": "partial",
+   "reading": "Computing systems like IBM Watson that answer clinical questions from large medical corpora start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of clinicians use such systems by 2022 = hit; real use below 5% by 2022, or 5% reached 2023-2025 = partial; no real use by 2025 = miss.",
+   "reason": "Watson for Oncology had niche hospital deployments and was wound down when IBM sold Watson Health in 2022, so by 2022 use was well under 5%. LLM-based clinical QA then crossed the line: OpenEvidence was used by about 40% of US physicians by mid-2025 (60% claimed by Sept 2025). 5% reached within 3-5 years after 2020 = partial.",
+   "evidence": [
+    {
+     "url": "https://www.healthcareittoday.com/2025/08/04/openevidence-the-fastest-growing-application-for-physicians-in-history-announces-210-million-round-at-3-5-billion-valuation/",
+     "title": "OpenEvidence, the Fastest-Growing Application for Physicians in History, Announces $210 Million Round",
+     "date": "2025-08-04",
+     "shows": "OpenEvidence used by ~40% of US physicians by mid-2025 (company figure)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/OpenEvidence",
+     "title": "OpenEvidence (Wikipedia)",
+     "date": "2026",
+     "shows": "Clinical question-answering system over medical literature; launched 2023."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-037",
+   "verdict": "partial",
+   "reading": "Swallowable sensor pills that report from inside the body start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant diagnostic procedures or medication-adherence patients use ingestible sensors by 2022 = hit; real but niche use = partial; none or abandoned by 2025 = miss.",
+   "reason": "Sensor-in-pill adherence (Proteus, Abilify MyCite) reached market but was abandoned (Proteus bankrupt 2020; MyCite discontinued Oct 2024). Capsule endoscopy and motility capsules remain routine niche procedures (over 4 million PillCams sold) but are a small share of GI diagnostics and predate the poster. Real, niche use = partial; reading only the adherence-sensor line would give miss.",
+   "evidence": [
+    {
+     "url": "https://www.drugs.com/history/abilify-mycite.html",
+     "title": "Abilify MyCite FDA Approval History (Drugs.com)",
+     "date": "2024",
+     "shows": "Approved 2017; Otsuka discontinued US commercialisation in Oct 2024."
+    },
+    {
+     "url": "https://endoscopyonair.com/wp-content/uploads/2021/06/PillCam-Capsule-Endoscopy-Platform.pdf",
+     "title": "PillCam Capsule Endoscopy Platform (Medtronic brochure)",
+     "date": "2021",
+     "shows": "More than 4 million PillCam capsules sold worldwide; ambulatory GI procedure."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-038",
+   "verdict": "hit",
+   "reading": "Fast, cheap sequencing of a patient's genome or tumour for diagnosis starts to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant patients (e.g. advanced cancer, rare disease, prenatal screening) receive sequencing-based diagnosis by 2022 = hit.",
+   "reason": "In a US cohort of 63,294 patients, NGS after metastatic diagnosis in 2021 reached 34.5% (breast) to 62.9% (colorectal) and 61.4% in advanced NSCLC; NGS-based prenatal cfDNA screening and rapid NICU genome sequencing are also routine. Far above 5% by 2022.",
+   "evidence": [
+    {
+     "url": "https://www.sciencedirect.com/science/article/pii/S1525157824000114",
+     "title": "Next-Generation Sequencing Trends among Adult Patients with Select Advanced Tumor Types: A Real-World Evidence Evaluation (J Mol Diagn)",
+     "date": "2024",
+     "shows": "2021: NGS received by 34.5-62.9% of US patients with select metastatic tumours."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-039",
+   "verdict": "hit",
+   "reading": "Diagnostic sensors used at home (external sensors) start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant patients use home diagnostic sensors by 2022 = hit (earlier counts).",
+   "reason": "Self-measured home blood-pressure monitoring was used by about 61% of US adults with hypertension in 2019 (20 states) and by ~37-39% monthly in NHANES 2009-2014; home glucose meters, pulse oximeters and home sleep tests are routine. Above 5% before the placed year.",
+   "evidence": [
+    {
+     "url": "https://academic.oup.com/ajh/article/34/11/1148/6294650",
+     "title": "Self-Measured Blood Pressure Monitoring Among Adults With Self-Reported Hypertension in 20 US States and the District of Columbia, 2019 (Am J Hypertens)",
+     "date": "2021",
+     "shows": "About 61% of adults with hypertension reported home BP monitoring in 2019."
+    },
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23604493",
+     "title": "Home blood pressure monitoring and hypertension status among US adults: NHANES 2009-2010",
+     "date": "2013",
+     "shows": "36.6% of hypertensives monitored BP at home monthly or more."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-040",
+   "verdict": "partial",
+   "reading": "Online patient communities that pool members' health data start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of patients with a given condition take part in data-pooling communities by 2022 = hit; real use below 5% = partial; none by 2025 = miss.",
+   "reason": "PatientsLikeMe, the archetype, has run since 2005 with ~830,000 members, about 2% of US MS patients; it was bought by UnitedHealth in 2019 and runs on as an Optum-backed company. Real, routine use but below 5% of patients in its conditions. General online health forums (higher reach) do not pool structured health data, so are not the label's sense.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/PatientsLikeMe",
+     "title": "PatientsLikeMe (Wikipedia)",
+     "date": "2026",
+     "shows": "Over 830,000 members across 2,900 conditions; roughly 2% of US MS patients; acquired by UnitedHealth 2019."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-041",
+   "verdict": "partial",
+   "reading": "Sensors implanted in body tissue for continuous monitoring start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant patients (e.g. CGM users, heart-failure or arrhythmia monitoring) use implanted sensors by 2022 = hit; real use below 5% = partial; none by 2025 = miss.",
+   "reason": "Fully implanted monitoring sensors are in routine but niche use: Eversense implantable CGM (FDA June 2018), CardioMEMS pulmonary-artery sensor (2014) and insertable cardiac loop recorders. Each serves a small slice of its population; most CGM users wear transcutaneous (not implanted) sensors. No evidence of 5% share by 2022.",
+   "evidence": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/fda-approves-first-continuous-glucose-monitoring-system-with-a-fully-implantable-glucose-sensor-and-compatible-mobile-app-for-adults-with-diabetes-300670465.html",
+     "title": "FDA approves first continuous glucose monitoring system with a fully implantable glucose sensor",
+     "date": "2018-06-21",
+     "shows": "First fully implantable CGM sensor approved (Eversense, 90 days, subcutaneous)."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-046",
+   "verdict": "partial",
+   "reading": "Powered wearable limb-assist suits like Cyberdyne's HAL start to be used in health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant rehabilitation patients or facilities use HAL-type suits by 2022 = hit; real use below 5% = partial; none by 2025 = miss.",
+   "reason": "HAL received EU medical certification in 2013, Japanese medical-device approval with insurance coverage for neuromuscular diseases in 2015, and FDA clearance in 2017; it is used in a few hundred facilities. Real routine use, small share of rehab patients.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hybrid_Assistive_Limb",
+     "title": "Hybrid Assistive Limb (Wikipedia)",
+     "date": "2026",
+     "shows": "EC medical certificate Aug 2013; over 300 suits in 130 Japanese facilities by 2012; niche institutional rental use."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-047",
+   "verdict": "miss",
+   "reading": "Devices that convey visual information to blind people through sound (visual-to-auditory sensory substitution) start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of blind people or vision-rehabilitation services use it by 2022 = hit; real routine use below 5% = partial; no real use in care by 2025 = miss.",
+   "reason": "Visual-to-auditory sensory substitution (the vOICe, EyeMusic) stayed in research; reviews state only a few SSDs were ever used outside the lab and none was adopted by a wide blind community, with training as the bottleneck. No routine use in vision rehabilitation found. AI scene-description apps (Seeing AI, Be My Eyes) speak descriptions rather than substitute a sense and are not counted.",
+   "evidence": [
+    {
+     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8078811/",
+     "title": "A self-training program for sensory substitution devices (PLoS One)",
+     "date": "2021",
+     "shows": "Only a few visual-to-auditory/tactile SSDs used outside the lab; none adopted as main tool by a wide blind community."
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5044782/",
+     "title": "Designing sensory-substitution devices: Principles, pitfalls and potential",
+     "date": "2016",
+     "shows": "Auditory SSDs face adoption barriers (training, unpleasant cues)."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-048",
+   "verdict": "hit",
+   "reading": "Prosthetic limbs controlled by the user's muscle signals start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of upper-limb amputees fitted with prostheses use myoelectric devices by 2022 = hit (earlier counts).",
+   "reason": "Myoelectric prostheses have been fitted routinely for decades; in a national study of US veterans with upper-limb amputation, 46% of recent combat veterans and 22% of Vietnam veterans used myoelectric devices. Far above 5%, already at the poster's date.",
+   "evidence": [
+    {
+     "url": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0213578",
+     "title": "A national study of Veterans with major upper limb amputation: Survey methods, participants, and summary findings (PLoS One)",
+     "date": "2019-03-14",
+     "shows": "Myoelectric device use 46% (OIF/OEF veterans) and 22% (Vietnam veterans)."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-049",
+   "verdict": "partial",
+   "reading": "Wearable powered exoskeletons that support or strengthen the body start to be used in health care (mainly rehabilitation) around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant rehabilitation facilities or patients (SCI, stroke) use exoskeletons by 2022 = hit; real use below 5% = partial; none by 2025 = miss.",
+   "reason": "Medical exoskeletons (ReWalk FDA 2014, Ekso, Indego, HAL) are in routine use in rehab centres, but volumes are small: Ekso, the leading clinical vendor, booked only 100 devices in all of 2022 on $12.9M revenue. Real niche use; no evidence of 5% patient share.",
+   "evidence": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1549084/000154908423000008/eksoq42022pr.htm",
+     "title": "Ekso Bionics Reports Fourth Quarter and Full Year 2022 Financial Results",
+     "date": "2023-02",
+     "shows": "100 EksoHealth devices booked in 2022; revenue $12.9M: small clinical installed base."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-050",
+   "verdict": "miss",
+   "reading": "Technology that extends the human sense of smell starts to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant users by 2022 = hit; real routine use below 5% = partial; no real use in care by 2025 = miss.",
+   "reason": "Olfactory augmentation remains lab research: olfactory displays and an implant-style smell-restoration prosthesis (VCU) are at prototype or early human-study stage. No product in routine clinical or consumer health use by 2025. Electronic noses that diagnose disease do not extend the human sense and are not counted.",
+   "evidence": [
+    {
+     "url": "https://news.vcu.edu/article/vcu_researchers_are_developing_a_device_to_restore_a_persons",
+     "title": "VCU researchers are developing a device to restore a person's sense of smell",
+     "date": "2023",
+     "shows": "Olfactory implant/prosthesis still in development."
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10255882/",
+     "title": "The Development of a Simple Projection-Based, Portable Olfactory Display Device",
+     "date": "2023",
+     "shows": "Olfactory devices tested on four volunteers: research stage."
+    }
+   ]
+  },
+  {
+   "id": "health-2012-051",
+   "verdict": "hit",
+   "reading": "Devices interfacing with the nervous system to replace or restore function (cochlear implants, brain-controlled prostheses) start to affect health care around 2020.",
+   "mainstream_test": "D37 health: >=5% of relevant patients (e.g. severe-profound deafness) receive neuroprostheses by 2022 = hit (earlier counts).",
+   "reason": "The label explicitly includes cochlear implants: about 736,900 implanted worldwide by Dec 2019 (118,100 US adults, 65,000 US children), standard care for severe-to-profound deafness, with deep-brain stimulation also routine. Above 5% of the eligible pediatric population in high-income countries well before 2022. Brain-controlled prostheses alone would be partial (trials, Neuralink first implant 2024).",
+   "evidence": [
+    {
+     "url": "https://www.nidcd.nih.gov/health/cochlear-implants",
+     "title": "Cochlear Implants (NIDCD)",
+     "date": "2021",
+     "shows": "~736,900 cochlear implants worldwide by Dec 2019; ~183,100 in the US."
+    }
+   ]
+  }
+ ]
+}

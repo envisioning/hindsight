@@ -138,7 +138,8 @@ if (auditOut) auditOut.error_rate = auditOut.audited ? Math.round(((auditOut.cor
 const widen = (ci, e) => (ci && typeof e === "number" ? [Math.max(0, Math.round((ci[0] - e) * 1000) / 1000), Math.min(1, Math.round((ci[1] + e) * 1000) / 1000)] : null);
 
 const out = {
-	rule: "D16",
+	// The source's grading rule, as the graders recorded it (D16 unless a source rule replaces it, e.g. D37).
+	rule: read("verdicts-d16-graderA.json")?.rule ?? "D16",
 	process: "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
 	kappa: agreement.kappa,
 	n: rows.length + agreedUnfalsifiable + agreedUngradable,

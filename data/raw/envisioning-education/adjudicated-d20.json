@@ -1,0 +1,100 @@
+{
+ "rule": "D37",
+ "role": "adjudicator (D20)",
+ "verdicts": [
+  {
+   "id": "edu-2012-007",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "App marketplaces for educational software, used by schools and teachers, are already in use around 2012 (first-row placement = already here). Test: at least 5% of schools acquiring apps through an education store or education purchasing channel by 2014.",
+   "reason": "Apple's Volume Purchase Program for Education (US 2010) is an education-only storefront through which schools buy and distribute App Store apps, and iTunes U is an education-only content store; with 4.5M iPads in US schools by Feb 2013, well over 5% of US schools used that channel by 2014. B required a store that is education-dedicated in its catalogue and found no share figure; the VPP education store meets the label's sense. Google Play for Education closing in 2016 is after Y+2 and does not undo the hit.",
+   "evidence": [
+    {
+     "url": "https://techcrunch.com/2013/02/28/apple-has-sold-over-8m-ipads-direct-to-education-worldwide-with-more-than-1b-itunes-u-downloads/",
+     "title": "Apple Has Sold Over 8M iPads Direct To Education Worldwide, With More Than 1B iTunes U Downloads",
+     "date": "2013-02-28",
+     "shows": "8M iPads sold direct to education (4.5M US); iTunes U over 1B downloads"
+    },
+    {
+     "url": "https://appleinsider.com/articles/10/08/10/apple_offers_volume_educational_discounts_for_app_store_purchases",
+     "title": "Apple offers volume educational discounts for App Store purchases",
+     "date": "2010-08-10",
+     "shows": "Education-specific app purchasing program for US schools launched 2010"
+    },
+    {
+     "url": "https://www.edsurge.com/news/2016-02-17-google-play-for-education-is-going-away",
+     "title": "Google Play For Education Is Going Away",
+     "date": "2016-02-17",
+     "shows": "A second dedicated education store ran 2013-2016"
+    }
+   ]
+  },
+  {
+   "id": "edu-2012-009",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "E-ink e-readers are already used for school reading around 2012. Test: at least 5% of schools or school libraries using them by 2014.",
+   "reason": "The LJ/SLJ ebook survey found 6% of school libraries circulating preloaded e-reading devices, and among those the devices were mostly e-ink (Sony Reader 64%, Kindle 47%, Nook 15%, iPad 4%). That crosses D37's 5% bar by Y+2, narrowly. B's evidence measures student interest in e-books, not the share of schools using e-readers, so it does not test the threshold.",
+   "evidence": [
+    {
+     "url": "https://www.schoollibraryjournal.com/story/ebooks-take-hold-slowly",
+     "title": "Ebooks Take Hold in Schools - Slowly (SLJ)",
+     "date": "2012",
+     "shows": "6% of school libraries circulate preloaded e-reading devices; 36% considering; devices mostly Sony Reader and Kindle (via search snippet; page returned 403)"
+    }
+   ]
+  },
+  {
+   "id": "edu-2012-025",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "Cameras or sensors that track where a student is looking are used in learning environments around 2022. Test: at least 5% of institutions using gaze tracking in learning or assessment by 2024.",
+   "reason": "A's hit counts remote proctoring as eye tracking. Proctorio, the leading tool, states it does not track eye movements; it flags face presence and head turning away. So the 54% proctoring share measures webcam face monitoring, not eye tracking. True eye tracking in learning stayed in research and pilots, with some gaze-estimation features in proctoring. Real use below 5% = partial.",
+   "evidence": [
+    {
+     "url": "https://proctorio.com/faq",
+     "title": "Proctorio: Frequently asked questions",
+     "date": "accessed 2026-10-01",
+     "shows": "Proctorio does not track eye movements; uses face detection to check whether the test-taker looks away"
+    },
+    {
+     "url": "https://er.educause.edu/articles/2021/2/proctoring-software-in-higher-ed-prevalence-and-patterns",
+     "title": "Proctoring Software in Higher Ed: Prevalence and Patterns (EDUCAUSE Review)",
+     "date": "2021-02",
+     "shows": "54% of institutions used remote proctoring in 2020, i.e. webcam monitoring, not necessarily eye tracking"
+    },
+    {
+     "url": "https://arxiv.org/pdf/2409.16923",
+     "title": "AI-assisted Gaze Detection for Proctoring Online Exams",
+     "date": "2024",
+     "shows": "Gaze detection for proctoring still presented as a research contribution in 2024"
+    }
+   ]
+  },
+  {
+   "id": "edu-2012-026",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "Computing and sensing embedded in everyday classroom objects (internet of things) influences learning environments around 2022. Test: at least 5% of schools using intelligent, networked classroom objects by 2024.",
+   "reason": "A's two cases do not meet the reading: England's CO2 monitors are single-purpose building sensors with no intelligence, and the micro:bit is a programmable board taught as a computer, not intelligence embedded in everyday objects. Both show real adjacent use; no measure puts smart classroom objects at 5% of schools. Real but limited = partial.",
+   "evidence": [
+    {
+     "url": "https://explore-education-statistics.service.gov.uk/find-statistics/co2-monitors-cumulative-delivery-statistics/2021-week-48",
+     "title": "CO2 monitors: cumulative delivery statistics (DfE)",
+     "date": "2021-11",
+     "shows": "329,231 CO2 monitors delivered to English state schools: simple sensors, not intelligent objects"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Micro_Bit",
+     "title": "Micro Bit",
+     "date": "accessed 2026-10-01",
+     "shows": "About 1M micro:bit boards given to UK Year 7 pupils from 2016"
+    }
+   ]
+  }
+ ]
+}

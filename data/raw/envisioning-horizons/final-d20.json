@@ -1,0 +1,325 @@
+{
+ "rule": "D37",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.919,
+ "n": 56,
+ "counts": {
+  "hit": 41,
+  "partial": 6,
+  "contested": 1,
+  "miss": 8
+ },
+ "hit_rate": {
+  "hits": 41,
+  "of_graded_hit_partial_miss": 55,
+  "rate": 0.7455,
+  "wilson95": [
+   0.617,
+   0.842
+  ],
+  "audit_adjusted95": [
+   0.597,
+   0.862
+  ]
+ },
+ "hit_or_partial_rate": 0.8545,
+ "adjudicated": 2,
+ "audit": {
+  "sample": 50,
+  "audited": 50,
+  "confirmed": 49,
+  "corrected": 0,
+  "contested": 1,
+  "error_rate": 0.02
+ },
+ "verdicts": [
+  {
+   "id": "hz-2014-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-013",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-014",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-015",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-018",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "miss",
+   "reason": "A's reading (a), generic intelligence-amplifying software, was available long before 2014 and would make the 2022 placement empty; it is not equally faithful, so unfalsifiable does not apply. B's miss overlooks consumer closed-loop neurostimulation: Dreem (2017, $499) read EEG and played phase-timed sound to deepen slow-wave sleep, and Elemind (June 2024 launch, $349, shipping Sept 2024) reads EEG and applies phase-locked acoustic stimulation for sleep onset. Both read the brain and stimulate it to accomplish a brain function, buyable by consumers within Y+2. But they target sleep, not cognition proper, and are single niche products; no cognition-augmenting closed-loop product is sold. Real but limited = partial. A strict 'cognition only' reading gives provisional miss, so this call is less certain."
+  },
+  {
+   "id": "hz-2014-019",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "Graders call Eversense (2018) the single niche product, but Medtronic Reveal LINQ (FDA Feb 2014, ~1 cc implant with remote CareLink reporting) and sensing pacemakers/ICDs were sold widely before 2019, which would give hit under an implanted-biometric-sensor reading; under the poster's 'microscopic' reading nothing exists (miss). Readings diverge, partial is not supported by either."
+  },
+  {
+   "id": "hz-2014-022",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-023",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-024",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-027",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-028",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-029",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-031",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-032",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-033",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-034",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-036",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-038",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-039",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-040",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-041",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-043",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-044",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-046",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-047",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-048",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-049",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-052",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-053",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-056",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-057",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-059",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-060",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-061",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-063",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-064",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-069",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-070",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-071",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "hz-2014-072",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-073",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "D37 tests availability, not market share. Raizen's Costa Pinto plant (built 2014, ~40 million L/yr) sold cellulosic E2G commercially, including export cargoes to the EU; in Nov 2022 Raizen signed a 3.3 billion litre E2G offtake with Shell to 2037, and Bonfim started in 2023. Business buyers could buy 2G ethanol outside pilots by 2023. A graded volume and refinery closures (a share test) rather than availability. Algal biodiesel was abandoned, but the label is the category and one named pathway is commercially sold."
+  },
+  {
+   "id": "hz-2014-074",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-077",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-078",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-079",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-081",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "hz-2014-082",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "hz-2014-083",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "hz-2014-086",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-087",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "hz-2014-088",
+   "verdict": "hit",
+   "status": "audited"
+  }
+ ]
+}

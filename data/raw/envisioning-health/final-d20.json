@@ -1,0 +1,184 @@
+{
+ "rule": "D37",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.8777,
+ "n": 28,
+ "counts": {
+  "partial": 13,
+  "hit": 12,
+  "miss": 3
+ },
+ "hit_rate": {
+  "hits": 12,
+  "of_graded_hit_partial_miss": 28,
+  "rate": 0.4286,
+  "wilson95": [
+   0.265,
+   0.609
+  ],
+  "audit_adjusted95": [
+   0.227,
+   0.647
+  ]
+ },
+ "hit_or_partial_rate": 0.8929,
+ "adjudicated": 2,
+ "audit": {
+  "sample": 26,
+  "audited": 26,
+  "confirmed": 25,
+  "corrected": 1,
+  "contested": 0,
+  "error_rate": 0.038
+ },
+ "verdicts": [
+  {
+   "id": "health-2012-001",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-002",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-003",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-009",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-010",
+   "verdict": "hit",
+   "status": "corrected",
+   "was": "partial",
+   "reason": "The capture reads the label as therapies using stem cells to treat disease, which includes HSCT, and D37 counts earlier use. AutoHCT reached 27.4% of US myeloma patients diagnosed 2011-2016 (PMC11624524), above 5%. Both graders excluded HSCT on an unstated forward-looking reading and said it would otherwise be a hit."
+  },
+  {
+   "id": "health-2012-011",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "CRISPR editing of embryos (He Jiankui, 2018) was criminalised and abandoned. But Newcastle has held a clinical licence for mitochondrial donation by pronuclear transfer since 2017, inside the NHS pathway though framed as a research study, and eight babies were reported in 2025. Licensed, tiny-scale use within the window = D37 partial. A misses this path; a strict nuclear-editing reading would give miss, which is why this call is less certain."
+  },
+  {
+   "id": "health-2012-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-023",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-024",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-025",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-026",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-027",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-028",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-033",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-034",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-035",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-036",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-037",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-038",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-039",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-040",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-041",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-046",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-047",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "The vOICe has been free since the 1990s, and a handful of blind individuals use it daily, but reviews describe these devices as used mainly in research, not in practical rehabilitation. No rehab service or care pathway adopted them by 2025. Scattered self-use by a few individuals is not use in health care. A's own evidence shows availability, not use in care."
+  },
+  {
+   "id": "health-2012-048",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-049",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-050",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "health-2012-051",
+   "verdict": "hit",
+   "status": "audited"
+  }
+ ]
+}

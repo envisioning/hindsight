@@ -1,0 +1,1064 @@
+{
+ "rule": "D37",
+ "grader": "B",
+ "verdicts": [
+  {
+   "id": "hz-2014-003",
+   "verdict": "hit",
+   "reading": "Products or services that use neural networks to recognise image content (not reverse image search) are generally available around 2022.",
+   "mainstream_test": "Ordinary consumers or businesses could buy/use a neural-network image recognition product by 2024 (earlier counts).",
+   "reason": "Google Photos launched in May 2015 with neural-network content search; Google Cloud Vision API (2016) and Amazon Rekognition (2016) sold image labelling to businesses. Available well before 2022.",
+   "evidence": [
+    {
+     "url": "https://blog.google/products/photos/picture-this-fresh-approach-to-photos/",
+     "title": "Picture this: a fresh approach to Photos",
+     "date": "2015-05-28",
+     "shows": "Google Photos consumer launch, searchable by image content without tagging."
+    },
+    {
+     "url": "https://aws.amazon.com/about-aws/whats-new/2016/11/introducing-amazon-rekognition/",
+     "title": "Introducing Amazon Rekognition",
+     "date": "2016-11-30",
+     "shows": "Deep-learning image recognition sold as a general AWS service."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-004",
+   "verdict": "hit",
+   "reading": "Products or services that use sensors, computer vision and algorithms to identify the likely emotions of people in a crowd are generally available around 2019.",
+   "mainstream_test": "Emotion-recognition products could be bought by businesses outside pilots by 2021 (earlier counts).",
+   "reason": "Microsoft's Emotion API (Project Oxford, 2015), Amazon Rekognition emotion attributes (2016) and Affectiva's commercial SDK sold facial emotion detection to any business; retail and security vendors embedded it. Available before 2019.",
+   "evidence": [
+    {
+     "url": "https://blogs.microsoft.com/ai/microsoft-project-oxford-emotion-recognition/",
+     "title": "Microsoft Project Oxford emotion recognition tool",
+     "date": "2015-11-11",
+     "shows": "Public emotion-recognition API detecting eight emotions from faces in images."
+    },
+    {
+     "url": "https://docs.aws.amazon.com/rekognition/latest/dg/faces-detect-images.html",
+     "title": "Amazon Rekognition: detecting faces in an image",
+     "date": "2016-11-30",
+     "shows": "Commercial API returns emotion estimates for every face detected, including multiple faces in one image."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-005",
+   "verdict": "hit",
+   "reading": "Software agents that anticipate a user's needs (scheduling meetings, sorting email, selective notifications) are generally available around 2017.",
+   "mainstream_test": "Consumers or businesses could use such an agent by 2019 (earlier counts).",
+   "reason": "Google Now (2012) gave proactive predictive cards; Gmail Priority Inbox (2010) and Inbox by Gmail (2014) sorted email; AI meeting-scheduling assistants (x.ai, Clara) were sold by 2016. Available by 2017.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Now",
+     "title": "Google Now",
+     "date": "2012-07-09",
+     "shows": "Proactive assistant delivering predicted information cards to Android users from 2012."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Inbox",
+     "title": "Inbox by Gmail",
+     "date": "2014-10-22",
+     "shows": "Email client that auto-bundled mail and surfaced proactive reminders, available to consumers from 2014."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-007",
+   "verdict": "hit",
+   "reading": "Neuropharmacological drugs with improved sensitivity and specificity, from better understanding of the nervous system, reach the market around 2023.",
+   "mainstream_test": "Such drugs were approved and prescribable by 2025 (earlier counts).",
+   "reason": "The label is broad. Mechanistically novel, more selective CNS drugs reached patients near the mark: esketamine (2019), zuranolone (2023) and the muscarinic xanomeline-trospium (Cobenfy, Sept 2024), the first new antipsychotic mechanism in decades. Graded hit, but the vagueness of 'next-generation' makes this low-certainty.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-drug-new-mechanism-action-treatment-schizophrenia",
+     "title": "FDA Approves Drug with New Mechanism of Action for Treatment of Schizophrenia",
+     "date": "2024-09-26",
+     "shows": "Cobenfy approved, targeting muscarinic receptors rather than dopamine receptors."
+    },
+    {
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-treatment-postpartum-depression",
+     "title": "FDA Approves First Oral Treatment for Postpartum Depression",
+     "date": "2023-08-04",
+     "shows": "Zuranolone, a neuroactive steroid GABA-A modulator, approved."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-008",
+   "verdict": "hit",
+   "reading": "Products using capacitive micromachined ultrasonic transducers (CMUTs) are generally available around 2020.",
+   "mainstream_test": "A CMUT-based product could be bought by ordinary customers (clinicians/businesses) by 2022 (earlier counts).",
+   "reason": "Butterfly iQ, a CMUT ultrasound-on-a-chip probe, was FDA-cleared in Oct 2017 and sold to clinicians from 2018. The poster's example use (remote alertness stimulation in soldiers) never became a product; graded on the label, the technology.",
+   "evidence": [
+    {
+     "url": "https://www.globenewswire.com/news-release/2017/10/27/1182618/0/en/First-Ultrasound-on-a-Chip-receives-broadest-FDA-510-k-clearance.html",
+     "title": "First Ultrasound-on-a-Chip receives broadest FDA 510(k) clearance",
+     "date": "2017-10-27",
+     "shows": "Butterfly iQ cleared for 13 clinical applications; MEMS (CMUT) sensor array on an IC."
+    },
+    {
+     "url": "https://www.researchgate.net/publication/338341750_CMUTCMOS-based_Butterfly_iQ_-_A_Portable_Personal_Sonoscope",
+     "title": "CMUT/CMOS-based Butterfly iQ - A Portable Personal Sonoscope",
+     "date": "2019",
+     "shows": "Confirms the commercial iQ uses CMUT transducers."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-009",
+   "verdict": "hit",
+   "reading": "Products or services providing real-time EEG/fMRI biofeedback of brain activity are generally available around 2017.",
+   "mainstream_test": "Neurofeedback products or services could be bought by consumers or clinics by 2019 (earlier counts).",
+   "reason": "EEG neurofeedback was a paid clinical service for decades, and consumer EEG feedback headbands (InteraXon Muse, 2014) were sold at retail. Available before 2017.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Neurofeedback",
+     "title": "Neurofeedback",
+     "date": "2014",
+     "shows": "EEG neurofeedback in clinical practice since the 1970s-90s."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Muse_(headband)",
+     "title": "Muse (headband)",
+     "date": "2014",
+     "shows": "Consumer EEG biofeedback headband on sale from 2014."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-013",
+   "verdict": "hit",
+   "reading": "Products or services using transcranial magnetic stimulation are generally available around 2022.",
+   "mainstream_test": "TMS devices or treatments could be bought by clinics or patients by 2024 (earlier counts).",
+   "reason": "Neuronetics' NeuroStar TMS was FDA-cleared for depression in 2008 and sold to clinics; TMS therapy was widely reimbursed by 2014. Available long before the mark.",
+   "evidence": [
+    {
+     "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf8/K083538.pdf",
+     "title": "FDA 510(k) K083538 NeuroStar TMS Therapy System",
+     "date": "2008-12-16",
+     "shows": "FDA clearance of a commercial TMS system for major depressive disorder."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-014",
+   "verdict": "partial",
+   "reading": "Higher spatial/temporal resolution fMRI scanners, with ~14-tesla machines becoming common instead of 3 T, are generally available around 2019.",
+   "mainstream_test": "Ultra-high-field (beyond 3 T) MRI scanners could be bought for routine use by 2021; the poster's 14 T 'common' is the stronger form.",
+   "reason": "The first clinical 7 T scanner (Siemens Magnetom Terra) was FDA-cleared Oct 2017 and is sold to hospitals, so higher-resolution fMRI is purchasable. But 7 T remains limited to a small number of centres, and no 14 T human scanner exists commercially. Real but limited availability of the stated form.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20171012006107/en/FDA-Clears-MAGNETOM-Terra-7T-MRI-Scanner",
+     "title": "FDA Clears MAGNETOM Terra 7T MRI Scanner From Siemens Healthineers",
+     "date": "2017-10-12",
+     "shows": "First 7 T MRI cleared for clinical use (head and extremities)."
+    },
+    {
+     "url": "https://newsnetwork.mayoclinic.org/discussion/1st-clinical-7-tesla-mri-scanner-in-north-america-will-enable-mayo-clinic-to-achieve-higher-resolution-imaging-for-patients/",
+     "title": "1st clinical 7-Tesla MRI scanner in North America",
+     "date": "2017-10",
+     "shows": "7 T clinical use starting at a few large centres, not common."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-015",
+   "verdict": "hit",
+   "reading": "Products using EEG as a brain-computer interface are generally available around 2020.",
+   "mainstream_test": "EEG BCI products could be bought by consumers or businesses by 2022 (earlier counts).",
+   "reason": "Emotiv EPOC (2009) and NeuroSky MindWave (2011) EEG headsets with BCI software were sold to consumers; g.tec sold research BCI systems. Available before 2020.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Emotiv",
+     "title": "Emotiv",
+     "date": "2009",
+     "shows": "Consumer EEG BCI headset EPOC released 2009."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/NeuroSky",
+     "title": "NeuroSky",
+     "date": "2011",
+     "shows": "MindWave consumer EEG headset with BCI games and apps."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-018",
+   "verdict": "miss",
+   "provisional": true,
+   "window_closes": 2027,
+   "reading": "Closed-loop systems that read information from the brain and feed back stimulation to augment human cognition are generally available around 2022.",
+   "mainstream_test": "A product that reads brain signals and stimulates to augment cognition could be bought by ordinary customers by 2024; partial if limited or by 2025-2027.",
+   "reason": "Closed-loop neurostimulators exist only as therapies for disease (NeuroPace RNS for epilepsy, 2013; Medtronic adaptive DBS for Parkinson's, 2025), not cognitive augmentation. Consumer neurostimulation headsets are open-loop and their cognitive claims are unproven. No cognition-augmenting closed-loop product by 2026.",
+   "evidence": [
+    {
+     "url": "https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons",
+     "title": "Medtronic earns FDA approval for first adaptive DBS system",
+     "date": "2025-02-24",
+     "shows": "First closed-loop DBS approved, for Parkinson's motor symptoms, not cognition."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Responsive_neurostimulation_device",
+     "title": "Responsive neurostimulation device",
+     "date": "2013-11",
+     "shows": "Closed-loop brain stimulation approved only to treat epilepsy."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-019",
+   "verdict": "partial",
+   "reading": "Implanted (micro-scale) devices that extract biometric data from the body and improve biological function through feedback are generally available around 2019.",
+   "mainstream_test": "Implanted biometric-sensing products with feedback could be bought by ordinary patients by 2021; partial if limited/niche.",
+   "reason": "Senseonics' Eversense, a fully implanted glucose sensor with phone alerts, was FDA-approved June 2018 and sold from July 2018; it later integrated with insulin pumps (2024). It is a single niche product and not microscopic; no general class of 'bionic' micro-implants exists. Real but limited.",
+   "evidence": [
+    {
+     "url": "https://www.senseonics.com/investor-relations/news-releases/2018/06-21-2018-201353063",
+     "title": "FDA Approves World's First Long-Term Implantable Continuous Glucose Monitoring System",
+     "date": "2018-06-21",
+     "shows": "Implanted biometric sensor approved and distributed from July 2018."
+    },
+    {
+     "url": "https://www.healio.com/news/endocrinology/20240430/fullyimplantable-cgm-receives-fda-authorization-for-integration-with-insulin-pumps",
+     "title": "Fully-implantable CGM receives FDA authorization for integration with insulin pumps",
+     "date": "2024-04-30",
+     "shows": "Feedback (pump integration) arrived only in 2024."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-022",
+   "verdict": "miss",
+   "provisional": true,
+   "window_closes": 2029,
+   "reading": "Services that directly modify an embryo's or fetus's genome are generally available around 2024.",
+   "mainstream_test": "Ordinary customers could buy embryo/fetal genome editing by 2026; partial if limited (e.g. a licensed clinic) or by 2027-2029.",
+   "reason": "Heritable human genome editing is banned or not authorised in the US, UK, EU and China after He Jiankui's 2018 experiment, which led to his imprisonment. No clinic offers it as of 2026. Window to 2029 is open.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/He_Jiankui_affair",
+     "title": "He Jiankui affair",
+     "date": "2019-12-30",
+     "shows": "The only known embryo editing was illegal; He was sentenced to three years in prison."
+    },
+    {
+     "url": "https://www.who.int/publications/i/item/9789240030381",
+     "title": "WHO Human genome editing: a framework for governance",
+     "date": "2021-07-12",
+     "shows": "WHO advises against clinical heritable editing; no approved service."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-023",
+   "verdict": "hit",
+   "reading": "Therapies that target epigenetic gene-expression mechanisms (e.g. in cancer) are generally available around 2022.",
+   "mainstream_test": "Epigenetic drugs were approved and prescribable by 2024 (earlier counts).",
+   "reason": "DNA methyltransferase inhibitors (azacitidine 2004, decitabine 2006) and HDAC inhibitors (vorinostat 2006) were approved epigenetic cancer therapies; EZH2 inhibitor tazemetostat followed in 2020.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Tazemetostat",
+     "title": "Tazemetostat",
+     "date": "2020-01-23",
+     "shows": "First EZH2 (epigenetic) inhibitor approved by FDA in 2020."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Vorinostat",
+     "title": "Vorinostat",
+     "date": "2006-10",
+     "shows": "HDAC inhibitor approved for cutaneous T-cell lymphoma in 2006."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-024",
+   "verdict": "partial",
+   "reading": "Products or services that print cells and biomaterials to repair or replace tissues or whole organs are generally available around 2019.",
+   "mainstream_test": "Bioprinted tissue or organ products usable by patients or businesses by 2021; partial for research-only products or later availability.",
+   "reason": "Bioprinters (Cellink, 2016) and bioprinted tissue models (Organovo exVive3D liver, 2014) were sold to researchers, but no printed tissue or organ for repair/replacement was approved for patients by 2024; 3DBio's printed ear implant was a 2022 trial. Real but limited availability.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Organovo",
+     "title": "Organovo",
+     "date": "2014-11",
+     "shows": "exVive3D bioprinted liver tissue sold for drug testing, not implantation."
+    },
+    {
+     "url": "https://www.nytimes.com/2022/06/02/health/ear-transplant-3d-printer.html",
+     "title": "Doctors Transplant Ear of Human Cells, Made by 3-D Printer",
+     "date": "2022-06-02",
+     "shows": "First printed implant was a clinical trial in 2022."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-027",
+   "verdict": "hit",
+   "reading": "Products and services for biohacking (DIY biology and managing one's own biology with medical, nutritional and electronic tools) are generally available around 2022.",
+   "mainstream_test": "Consumers could buy biohacking products/services by 2024 (earlier counts).",
+   "reason": "DIY genetic engineering kits (The ODIN CRISPR kit, 2016), DNA tests (23andMe) and self-tracking wearables were on sale; non-prescription CGMs for self-optimisation followed (Dexcom Stelo, 2024).",
+   "evidence": [
+    {
+     "url": "https://www.the-odin.com/diy-bacterial-gene-engineering-crispr-kit/",
+     "title": "The ODIN: DIY Bacterial Gene Engineering CRISPR Kit",
+     "date": "2016",
+     "shows": "Consumer DIY-bio CRISPR kits sold online."
+    },
+    {
+     "url": "https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor",
+     "title": "FDA Clears First Over-the-Counter Continuous Glucose Monitor",
+     "date": "2024-03-05",
+     "shows": "Self-monitoring biometric device sold without prescription."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-028",
+   "verdict": "hit",
+   "reading": "Lab-on-a-chip devices integrating lab functions on a chip are generally available around 2018.",
+   "mainstream_test": "Lab-on-a-chip products could be bought by clinics/businesses by 2020 (earlier counts).",
+   "reason": "Abbott's i-STAT handheld blood analyser (microfluidic cartridges, 1990s) and Cepheid GeneXpert cartridges were sold widely before 2014.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lab-on-a-chip",
+     "title": "Lab-on-a-chip",
+     "date": "2014",
+     "shows": "Commercial LOC devices in point-of-care diagnostics."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/GeneXpert_MTB/RIF",
+     "title": "GeneXpert MTB/RIF",
+     "date": "2010-12",
+     "shows": "Cartridge-based integrated lab test endorsed by WHO and deployed in clinics."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-029",
+   "verdict": "hit",
+   "reading": "Biometric sensors that transmit body measurements (e.g. blood levels) remotely over telecom networks are generally available around 2015.",
+   "mainstream_test": "Remote biometric sensing products could be bought by consumers or providers by 2017 (earlier counts).",
+   "reason": "Dexcom G5 CGM sending glucose readings to smartphones was FDA-approved in 2015; connected heart-rate wearables and remote patient monitoring services were sold by then.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dexcom",
+     "title": "Dexcom",
+     "date": "2015",
+     "shows": "Dexcom G5 Mobile CGM transmitting readings to smartphones approved and sold from 2015."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-031",
+   "verdict": "hit",
+   "reading": "Collars and tags with GPS/RFID/biometrics relaying livestock vital data in real time are generally available around 2020.",
+   "mainstream_test": "Farmers could buy livestock biometric monitoring products by 2022 (earlier counts).",
+   "reason": "SCR (Allflex) Heatime rumination/activity collars and CowManager ear sensors were sold commercially in the 2000s-2010s.",
+   "evidence": [
+    {
+     "url": "https://www.allflex.global/livestock-monitoring/",
+     "title": "Allflex Livestock Monitoring (SCR)",
+     "date": "2014",
+     "shows": "Commercial collar-based cow monitoring for heat and health."
+    },
+    {
+     "url": "https://www.cowmanager.com/",
+     "title": "CowManager",
+     "date": "2014",
+     "shows": "Ear sensor measuring temperature, rumination, activity sold to dairy farms."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-032",
+   "verdict": "hit",
+   "reading": "Crop sensors (optical or drone-based) that tell application equipment how much fertiliser to apply are generally available around 2019.",
+   "mainstream_test": "Farmers could buy crop-sensing products by 2021 (earlier counts).",
+   "reason": "Trimble GreenSeeker and Ag Leader OptRx active crop sensors for variable nitrogen were sold before 2014; NDVI drone services followed by 2016.",
+   "evidence": [
+    {
+     "url": "https://agriculture.trimble.com/en/products/hardware/greenseeker-handheld-crop-sensor",
+     "title": "Trimble GreenSeeker crop sensor",
+     "date": "2014",
+     "shows": "Commercial optical crop sensor for nitrogen management."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-033",
+   "verdict": "hit",
+   "reading": "Telematics that let tractors report likely failures to mechanics are generally available around 2017.",
+   "mainstream_test": "Farm equipment telematics could be bought by farmers by 2019 (earlier counts).",
+   "reason": "John Deere JDLink telematics with remote diagnostics was sold from 2008-2011; similar offerings from AGCO and CNH.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/John_Deere",
+     "title": "John Deere",
+     "date": "2011",
+     "shows": "JDLink telematics and remote diagnostics offered on Deere equipment."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-034",
+   "verdict": "hit",
+   "reading": "Air and soil sensors giving real-time farm, forest or water conditions are generally available around 2015.",
+   "mainstream_test": "Such sensors could be bought by farmers by 2017 (earlier counts).",
+   "reason": "Commercial soil-moisture probes (Decagon/METER, Sentek) and farm weather stations (Davis) were sold long before 2015.",
+   "evidence": [
+    {
+     "url": "https://www.metergroup.com/en/meter-environment",
+     "title": "METER Group (formerly Decagon) environment sensors",
+     "date": "2014",
+     "shows": "Commercial soil moisture and weather sensors for agriculture."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-036",
+   "verdict": "miss",
+   "provisional": true,
+   "window_closes": 2027,
+   "reading": "Foods from new animal and plant strains engineered from the ground up (beyond gene modification) are generally available around 2022.",
+   "mainstream_test": "Consumers could buy de novo-designed food organisms by 2024; partial if limited or by 2025-2027.",
+   "reason": "Food on sale by 2024 came from edits of existing strains (Calyxt high-oleic soybean oil 2019, Sanatech GABA tomato 2021, Pairwise greens 2023), not organisms designed from scratch. The poster explicitly sets this apart from GM food. Window open to 2027.",
+   "evidence": [
+    {
+     "url": "https://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=19024",
+     "title": "Japan Starts Sale of Genome-Edited High-GABA Tomato",
+     "date": "2021-09-22",
+     "shows": "First gene-edited food on sale is a single-base edit of an existing tomato variety, not a de novo design."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Genetically_modified_food",
+     "title": "Genetically modified food",
+     "date": "2024",
+     "shows": "No commercially sold food organism designed from the ground up."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-038",
+   "verdict": "hit",
+   "reading": "Precision agriculture services (satellite imagery, sensors, intra-field variability management) are generally available around 2023.",
+   "mainstream_test": "Farmers could buy precision-ag products/services by 2025 (earlier counts).",
+   "reason": "GPS guidance, yield mapping and variable-rate application were widely sold from the late 1990s.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Precision_agriculture",
+     "title": "Precision agriculture",
+     "date": "2023",
+     "shows": "GPS guidance, yield mapping and variable-rate application commercially used since the 1990s-2000s."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-039",
+   "verdict": "hit",
+   "reading": "Robots automating agricultural tasks (harvesting, picking, weeding, planting) are generally available around 2021.",
+   "mainstream_test": "Farmers could buy agricultural robots outside pilots by 2023 (earlier counts).",
+   "reason": "Robotic milking systems (Lely Astronaut) were sold since the 1990s; Naio Oz weeding robots were sold from 2013-2016; Carbon Robotics LaserWeeder and Deere's autonomous 8R tractor were sold in 2022.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Automatic_milking",
+     "title": "Automatic milking",
+     "date": "1992",
+     "shows": "Commercial milking robots in use for decades."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Autonomous_tractor",
+     "title": "Autonomous tractor",
+     "date": "2022-01",
+     "shows": "John Deere's autonomous 8R tractor announced for sale in 2022."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-040",
+   "verdict": "hit",
+   "reading": "Selective breeding where outcomes are measured quantitatively and improvements suggested algorithmically is generally available around 2017.",
+   "mainstream_test": "Breeders could buy or use algorithmic/genomic selection services by 2019 (earlier counts).",
+   "reason": "Genomic selection with official genomic evaluations has been used in US dairy cattle since 2009 and offered by commercial genotyping firms.",
+   "evidence": [
+    {
+     "url": "https://www.journalofdairyscience.org/article/S0022-0302(09)70493-6/fulltext",
+     "title": "Invited review: Reliability of genomic predictions for North American Holstein bulls",
+     "date": "2009",
+     "shows": "Algorithmic genomic evaluations in commercial dairy breeding from 2009."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-041",
+   "verdict": "hit",
+   "reading": "Variable-rate application and automatic section/swath control on tractors are generally available around 2016.",
+   "mainstream_test": "Farmers could buy swath control and variable-rate systems by 2018 (earlier counts).",
+   "reason": "Automatic section control and prescription-based variable-rate controllers (Raven, Trimble, Deere) were sold commercially since the 2000s.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Precision_agriculture",
+     "title": "Precision agriculture",
+     "date": "2023",
+     "shows": "GPS guidance, yield mapping and variable-rate application commercially used since the 1990s-2000s."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-043",
+   "verdict": "hit",
+   "reading": "Products and services using synthetic biology (engineering organisms from standardised parts) are generally available around 2024.",
+   "mainstream_test": "Synthetic-biology products or services could be bought by 2026 (earlier counts).",
+   "reason": "Engineered-organism products were on sale well before 2024: Impossible Burger's yeast-made heme (2016), Amyris squalane, and Ginkgo Bioworks' organism-engineering services.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Impossible_Foods",
+     "title": "Impossible Foods",
+     "date": "2016-07",
+     "shows": "Consumer product using heme from engineered yeast."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ginkgo_Bioworks",
+     "title": "Ginkgo Bioworks",
+     "date": "2021",
+     "shows": "Commercial organism-design services sold to businesses."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-044",
+   "verdict": "miss",
+   "provisional": true,
+   "window_closes": 2027,
+   "reading": "Scaled closed ecological systems that recycle waste into oxygen, food and water to support life are generally available around 2022.",
+   "mainstream_test": "A life-supporting closed ecosystem product beyond small scale could be bought by 2024; partial if limited or by 2025-2027.",
+   "reason": "Only small sealed ecospheres (sold since the 1980s, which the poster already acknowledges) exist. Life-support-scale systems remain research (ESA MELiSSA pilot plant). None on sale.",
+   "evidence": [
+    {
+     "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Melissa",
+     "title": "ESA MELiSSA",
+     "date": "2024",
+     "shows": "Closed-loop life support still at pilot-plant research stage."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Closed_ecological_system",
+     "title": "Closed ecological system",
+     "date": "2024",
+     "shows": "Large-scale closed systems are experiments; small ecospheres are novelties."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-046",
+   "verdict": "partial",
+   "reading": "Glazing/shading products using thermally activated bimetals that self-shade in the sun are generally available around 2022.",
+   "mainstream_test": "Thermo-bimetal shading products could be bought by building owners by 2024; partial for a single niche product.",
+   "reason": "TBM Designs' InVert self-shading window (thermobimetal pieces in double glazing), developed since 2015, was marketed as commercially available around 2021. It is a single niche startup product. Real but limited.",
+   "evidence": [
+    {
+     "url": "https://today.usc.edu/doris-sung-usc-architecture-national-design-award-self-shading-window/",
+     "title": "Award-winning design from USC's Doris Sung saves energy",
+     "date": "2021",
+     "shows": "InVert thermobimetal window described as commercially available."
+    },
+    {
+     "url": "https://www.dezeen.com/2019/04/19/doris-sung-invert-thermobimetal-shutters/",
+     "title": "Thermobimetal shutters by Doris Sung self-regulate the temperature of buildings",
+     "date": "2019-04-19",
+     "shows": "Product still in development/launch in 2019."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-047",
+   "verdict": "hit",
+   "reading": "Products using aerogel are generally available around 2021.",
+   "mainstream_test": "Aerogel products could be bought by consumers or businesses by 2023 (earlier counts).",
+   "reason": "Aspen Aerogels sold aerogel insulation blankets from the early 2000s (IPO 2014); aerogel-insulated apparel and Cabot Lumira glazing were also sold.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aspen_Aerogels",
+     "title": "Aspen Aerogels",
+     "date": "2014",
+     "shows": "Commercial aerogel blanket insulation for industry and buildings."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-048",
+   "verdict": "hit",
+   "reading": "Products using auxetic materials (armour, padding, shock absorbers, mops) are generally available around 2018.",
+   "mainstream_test": "Auxetic products could be bought by consumers by 2020 (earlier counts).",
+   "reason": "Nike's Free RN 2016 and Under Armour's ArchiTech used auxetic sole/upper structures; Nike marketed the auxetic outsole in 2016. Available before 2018.",
+   "evidence": [
+    {
+     "url": "https://news.nike.com/news/nike-free-rn-flyknit-2016",
+     "title": "Nike Free RN Flyknit 2016",
+     "date": "2016",
+     "shows": "Consumer shoe with auxetic tri-star sole pattern that expands in two directions."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Auxetics",
+     "title": "Auxetics",
+     "date": "2018",
+     "shows": "Commercial applications in footwear and protective gear."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-049",
+   "verdict": "hit",
+   "reading": "Coatings or materials that repel both water-based and oily liquids are generally available around 2015.",
+   "mainstream_test": "Such coatings could be bought by consumers or businesses by 2017 (earlier counts).",
+   "reason": "UltraTech's Ultra-Ever Dry, a superhydrophobic and oleophobic two-part coating, went on sale Feb 2013 at retail prices. True all-liquid omniphobicity remains a lab goal, which leaves some doubt.",
+   "evidence": [
+    {
+     "url": "https://newatlas.com/hydrophobic-coating-repels-liquids/26286/",
+     "title": "Ultra-Ever Dry hydrophobic coating repels almost any liquid",
+     "date": "2013-02-25",
+     "shows": "Commercial coating repelling water and hydrocarbons, priced per quart."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-052",
+   "verdict": "hit",
+   "reading": "Products using engineered metamaterials to manipulate light or sound are generally available around 2021.",
+   "mainstream_test": "Metamaterial products could be bought by businesses or consumers by 2023 (earlier counts).",
+   "reason": "Kymeta's metamaterial flat-panel satellite antenna (u7/KyWay) shipped commercially in 2017; Echodyne metamaterial radar sold from 2018; Metalenz metasurface optics shipped in ST sensors in 2022.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kymeta",
+     "title": "Kymeta",
+     "date": "2017",
+     "shows": "Commercial metamaterial electronically steered antenna."
+    },
+    {
+     "url": "https://www.st.com/content/st_com/en/about/media-center/press-item.html/t4430.html",
+     "title": "STMicroelectronics and Metalenz bring metasurface optics to market",
+     "date": "2022-06",
+     "shows": "First mass-market metasurface optical product."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-053",
+   "verdict": "hit",
+   "reading": "Biomaterials that enhance or replace body functions (drug release, grafting) are generally available around 2017.",
+   "mainstream_test": "Biomaterial products could be bought by clinicians/patients by 2019 (earlier counts).",
+   "reason": "Biomaterials were routine before 2014: drug-eluting stents with polymer release, resorbable sutures, collagen grafts and bone substitutes; the poster itself says 'already used'.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Drug-eluting_stent",
+     "title": "Drug-eluting stent",
+     "date": "2003",
+     "shows": "Polymer biomaterials for extended drug release in routine use since 2003."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-056",
+   "verdict": "miss",
+   "provisional": true,
+   "window_closes": 2027,
+   "reading": "Atomically precise, self-replicating molecular machines that build DNA, RNA or protein sequences bottom-up are generally available around 2022.",
+   "mainstream_test": "Products using controlled molecular self-assembly machines of this kind could be bought by 2024; partial if limited or by 2025-2027.",
+   "reason": "Atomically precise self-replicating assemblers do not exist. DNA nanotechnology (origami) remains a research tool; commercial DNA/protein synthesis uses chemical or enzymatic synthesisers, not self-assembling machines.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Molecular_assembler",
+     "title": "Molecular assembler",
+     "date": "2024",
+     "shows": "No working molecular assembler has been built."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/DNA_origami",
+     "title": "DNA origami",
+     "date": "2024",
+     "shows": "Self-assembly is a research technique, not a product of this kind."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-057",
+   "verdict": "hit",
+   "reading": "Products made of self-healing materials that repair mechanical damage are generally available around 2019.",
+   "mainstream_test": "Self-healing material products could be bought by consumers by 2021 (earlier counts).",
+   "reason": "Nissan Scratch Shield self-healing clear coat (2005) and the LG G Flex phone with a self-healing back (2013) were sold to consumers.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/LG_G_Flex",
+     "title": "LG G Flex",
+     "date": "2013-11",
+     "shows": "Consumer phone with a self-healing back coating."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Self-healing_material",
+     "title": "Self-healing material",
+     "date": "2019",
+     "shows": "Commercial self-healing coatings (e.g. Nissan Scratch Shield)."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-059",
+   "verdict": "miss",
+   "reading": "Products using lithium-air batteries are generally available around 2020.",
+   "mainstream_test": "Li-air battery products could be bought by 2022; partial if limited or by 2023-2025; miss if not available by 2025.",
+   "reason": "No lithium-air battery was commercially available by 2025 (or 2026); work remains at prototype stage (Argonne 2025 prototype, CATL 2026 announcement).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery",
+     "title": "Lithium-air battery",
+     "date": "2026",
+     "shows": "Practical power and cycle life still need improvement before any market niche; only prototypes."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-060",
+   "verdict": "hit",
+   "reading": "Fuel-cell products for stationary power or large vehicles are generally available around 2016.",
+   "mainstream_test": "Fuel-cell products could be bought by businesses or consumers by 2018 (earlier counts).",
+   "reason": "Bloom Energy servers were sold to businesses from 2008; Toyota Mirai went on sale Dec 2014 in Japan, 2015 in the US; fuel-cell buses operated in commercial fleets.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bloom_Energy_Server",
+     "title": "Bloom Energy Server",
+     "date": "2010",
+     "shows": "Commercial stationary solid-oxide fuel cells sold to businesses."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Toyota_Mirai",
+     "title": "Toyota Mirai",
+     "date": "2014-12",
+     "shows": "Fuel-cell car on general sale."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-061",
+   "verdict": "partial",
+   "reading": "Grids that transport and store hydrogen as an energy carrier in place of electricity are generally available around 2022.",
+   "mainstream_test": "Hydrogen energy storage/transport services could be bought outside pilots by 2024; partial if pilots/limited or by 2025-2027.",
+   "reason": "Hydrogen storage and transport exist as industrial supply (pipelines, salt caverns), and power-to-gas plants and grid blending ran as pilots (Energiepark Mainz 2015, HyDeploy 2019). No hydrogen grid replaces electricity transmission. Real but limited.",
+   "evidence": [
+    {
+     "url": "https://hydeploy.co.uk/",
+     "title": "HyDeploy",
+     "date": "2019-2021",
+     "shows": "Hydrogen blending into a gas network trialled, not commercial."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Power-to-gas",
+     "title": "Power-to-gas",
+     "date": "2024",
+     "shows": "Power-to-hydrogen storage plants mostly demonstration scale."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-063",
+   "verdict": "hit",
+   "reading": "Products and services for distributed electricity generation from many small sources are generally available around 2022.",
+   "mainstream_test": "Consumers or businesses could buy distributed generation (e.g. rooftop solar) by 2024 (earlier counts).",
+   "reason": "Rooftop solar and small CHP were sold widely before 2014; the US had over 400,000 solar homes by 2013 and millions by 2022.",
+   "evidence": [
+    {
+     "url": "https://www.seia.org/solar-industry-research-data",
+     "title": "SEIA Solar Industry Research Data",
+     "date": "2022",
+     "shows": "Residential distributed solar sold at large scale for years."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-064",
+   "verdict": "hit",
+   "reading": "Smart meters reporting consumption in real time to the utility (first-generation smart grid) are generally available around 2016.",
+   "mainstream_test": "Utilities/customers could get smart meters by 2018 (earlier counts).",
+   "reason": "US utilities had installed about 46 million smart meters by 2012 (EIA); Italy's Enel rolled out smart meters in the 2000s.",
+   "evidence": [
+    {
+     "url": "https://www.eia.gov/tools/faqs/faq.php?id=108&t=3",
+     "title": "EIA: How many smart meters are installed in the United States?",
+     "date": "2013",
+     "shows": "Tens of millions of advanced meters installed before 2016."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-069",
+   "verdict": "miss",
+   "provisional": true,
+   "window_closes": 2029,
+   "reading": "Small transportable sealed nuclear reactors (~10-50 MW) are generally available around 2024.",
+   "mainstream_test": "Customers could buy power or units from a micro-reactor by 2026; partial if pilots or by 2027-2029.",
+   "reason": "No commercial micro-reactor operates as of 2026. Project Pele is a military demonstrator targeting first power around 2028; Kairos and others target ~2030. Window open to 2029.",
+   "evidence": [
+    {
+     "url": "https://inl.gov/news-release/inl-advances-department-of-wars-project-pele-demonstration-microreactor-with-first-triso-fuel-delivery/",
+     "title": "INL advances Project Pele demonstration microreactor with first TRISO fuel delivery",
+     "date": "2025",
+     "shows": "Leading microreactor still a demonstration with first power years away."
+    },
+    {
+     "url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+     "title": "The Janus Five: 20+ Commercial Nuclear Microreactors, Starting in 2028",
+     "date": "2025",
+     "shows": "Commercial microreactors planned from 2028, none earlier."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-070",
+   "verdict": "miss",
+   "provisional": true,
+   "window_closes": 2027,
+   "reading": "Electricity products or services from inertial confinement fusion are generally available around 2022.",
+   "mainstream_test": "Customers could buy ICF-generated power by 2024; partial if pilots or by 2025-2027.",
+   "reason": "NIF achieved scientific ignition in Dec 2022, but no ICF power plant or product exists; commercial ICF firms target the 2030s.",
+   "evidence": [
+    {
+     "url": "https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition",
+     "title": "DOE National Laboratory Makes History by Achieving Fusion Ignition",
+     "date": "2022-12-13",
+     "shows": "Scientific milestone only; no electricity generation."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-071",
+   "verdict": "hit",
+   "reading": "Glass with integrated solar cells for building roofs and facades is generally available around 2022.",
+   "mainstream_test": "Building owners could buy photovoltaic glazing by 2024 (earlier counts).",
+   "reason": "Onyx Solar has sold semi-transparent PV glass for facades and skylights since the early 2010s; Ubiquitous Energy and others sell transparent PV glazing commercially.",
+   "evidence": [
+    {
+     "url": "https://www.onyxsolar.com/",
+     "title": "Onyx Solar photovoltaic glass",
+     "date": "2014",
+     "shows": "Commercial transparent/semi-transparent PV glass for building envelopes."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Building-integrated_photovoltaics",
+     "title": "Building-integrated photovoltaics",
+     "date": "2022",
+     "shows": "Transparent PV windows on the market."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-072",
+   "verdict": "partial",
+   "reading": "Tidal turbines converting tidal energy to electricity are generally available, beyond small scale, around 2018.",
+   "mainstream_test": "Tidal-turbine power or units could be bought outside pilots by 2020; partial if limited/demonstration.",
+   "reason": "Tidal turbines produce grid power only in small arrays: MeyGen's 6 MW demonstration array entered operations in April 2018; global tidal-stream capacity stays tens of MW. Real but limited.",
+   "evidence": [
+    {
+     "url": "https://www.power-technology.com/news/meygen-phase-1a-enters-25-year-operations-phase/",
+     "title": "MeyGen Phase 1A enters 25-year operations phase",
+     "date": "2018-04",
+     "shows": "6 MW, four-turbine demonstration array exporting to the grid."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/MeyGen",
+     "title": "MeyGen",
+     "date": "2024",
+     "shows": "Largest tidal-stream project still small scale."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-073",
+   "verdict": "hit",
+   "reading": "Second-generation biofuels (cellulosic ethanol, algal biodiesel) are generally available around 2021.",
+   "mainstream_test": "Second-generation biofuel could be bought by fuel businesses outside pilots by 2023 (earlier counts).",
+   "reason": "Raízen has sold cellulosic (E2G) ethanol from its Costa Pinto plant since 2015 and opened the world's largest E2G plant at Bonfim in Oct 2023 with 80% of output under contract. Algal biodiesel was abandoned, and volumes are small, which lowers certainty.",
+   "evidence": [
+    {
+     "url": "https://bioenergyinternational.com/raizen-starts-worlds-largest-cellulosic-ethanol-plant/",
+     "title": "Raízen starts world's largest cellulosic ethanol plant",
+     "date": "2023-10-05",
+     "shows": "Industrial-scale E2G production with contracted commercial sales; second plant after Costa Pinto."
+    },
+    {
+     "url": "https://ri.raizen.com.br/en/e2g/",
+     "title": "E2G - Second Generation Ethanol - Raízen RI",
+     "date": "2023",
+     "shows": "E2G sold commercially."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-074",
+   "verdict": "miss",
+   "reading": "Small robots that reposition solar panels by conditions, replacing per-panel motorised trackers, are generally available around 2017.",
+   "mainstream_test": "Robotic panel-positioning products could be bought by 2019; partial if limited or by 2020-2022; miss if not by 2022.",
+   "reason": "QBotix, the leading robotic tracker company, shut down in Aug 2015 after failing to win customers; conventional single-axis trackers won. No such product on the market by 2022.",
+   "evidence": [
+    {
+     "url": "https://fortune.com/2015/09/22/robot-solar-startup-shut-down/",
+     "title": "As a Valley solar startup shuts down, the solar sector booms",
+     "date": "2015-09-22",
+     "shows": "QBotix robotic tracker startup closed."
+    },
+    {
+     "url": "https://www.solarchoice.net.au/blog/news/robotic-solar-tracker-startup-qbotix-closes-shop-240915/",
+     "title": "Robotic solar tracker startup QBotix closes shop",
+     "date": "2015-09-24",
+     "shows": "Approach abandoned commercially."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-077",
+   "verdict": "hit",
+   "reading": "Electronic devices made by printing functional inks on substrates are generally available around 2022.",
+   "mainstream_test": "Printed-electronics products could be bought by 2024 (earlier counts).",
+   "reason": "Screen-printed glucose test strips, printed RFID antennas and printed sensors were mass-market products before 2014; JOLED shipped inkjet-printed OLED panels in 2017.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Printed_electronics",
+     "title": "Printed electronics",
+     "date": "2022",
+     "shows": "Commercial printed electronics (RFID, sensors, displays)."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-078",
+   "verdict": "hit",
+   "reading": "Services that assign tasks done by humans to autonomous software agents are generally available around 2020.",
+   "mainstream_test": "Businesses could buy task-automation software agents by 2022 (earlier counts).",
+   "reason": "Robotic process automation from UiPath, Blue Prism and Automation Anywhere was sold widely by 2018; Gartner counted RPA as the fastest-growing enterprise software segment in 2018.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2019-06-24-gartner-says-worldwide-robotic-process-automation-sof",
+     "title": "Gartner Says Worldwide RPA Software Revenue to Reach Nearly $1.3 Billion in 2019",
+     "date": "2019-06-24",
+     "shows": "Software bots replacing human tasks sold at scale."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-079",
+   "verdict": "hit",
+   "reading": "Non-government digital currencies used in real-goods transactions are generally available around 2017.",
+   "mainstream_test": "Consumers could buy/use digital currency by 2019 (earlier counts).",
+   "reason": "Bitcoin could be bought on exchanges (Coinbase from 2012) and spent at merchants (Overstock, 2014) before 2017.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bitcoin",
+     "title": "Bitcoin",
+     "date": "2014",
+     "shows": "Digital currency traded and accepted by merchants by 2014."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-081",
+   "verdict": "hit",
+   "reading": "WiGig (802.11ad, multi-gigabit 60 GHz wireless) products are generally available around 2022.",
+   "mainstream_test": "Consumers could buy WiGig devices by 2024 (earlier counts).",
+   "reason": "802.11ad routers (TP-Link Talon AD7200, Netgear Nighthawk X10) and docks/laptops (Dell, 2015) were sold at retail from 2016, though the category stayed small.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/WiGig",
+     "title": "WiGig",
+     "date": "2016",
+     "shows": "Commercial 802.11ad routers and devices on sale."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-082",
+   "verdict": "hit",
+   "reading": "5G mobile network services are generally available around 2022.",
+   "mainstream_test": "Consumers could subscribe to 5G service by 2024 (earlier counts).",
+   "reason": "Commercial 5G launched in South Korea and the US in April 2019; GSA counted hundreds of operators with launched 5G by 2022.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/5G",
+     "title": "5G",
+     "date": "2019-04",
+     "shows": "Commercial 5G deployments from April 2019."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-083",
+   "verdict": "hit",
+   "reading": "MOOC services (large-scale open online courses) are generally available around 2021.",
+   "mainstream_test": "Learners could enrol in MOOCs by 2023 (earlier counts).",
+   "reason": "Coursera, edX and Udacity offered MOOCs from 2012, with millions enrolled by 2014.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Massive_open_online_course",
+     "title": "Massive open online course",
+     "date": "2012",
+     "shows": "MOOCs widely available from 2012 ('year of the MOOC')."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-086",
+   "verdict": "hit",
+   "reading": "Tileable, interactive wall-sized screens for home and professional use are generally available around 2023.",
+   "mainstream_test": "Consumers or businesses could buy wall-sized tileable screens by 2025 (earlier counts).",
+   "reason": "Samsung's modular MicroLED The Wall went on sale in 2018, followed by LG and Sony tiled displays; tiled LCD video walls and interactive touch walls were sold to businesses. Domination of surfaces is not required by the availability test.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/MicroLED",
+     "title": "MicroLED",
+     "date": "2018",
+     "shows": "Samsung's modular MicroLED 'The Wall' commercialised from 2018."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Video_wall",
+     "title": "Video wall",
+     "date": "2023",
+     "shows": "Tiled wall displays sold commercially."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-087",
+   "verdict": "hit",
+   "reading": "Glasses overlaying contextual information on the user's view (like Google Glass) are generally available around 2020.",
+   "mainstream_test": "Consumers or businesses could buy annotated-reality glasses by 2022 (earlier counts).",
+   "reason": "Glass Enterprise Edition was sold to businesses from 2017; Vuzix Blade (2019) and Epson Moverio were sold to consumers.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Glass",
+     "title": "Google Glass",
+     "date": "2017-07",
+     "shows": "Glass Enterprise Edition sold to businesses from 2017."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Vuzix",
+     "title": "Vuzix",
+     "date": "2019",
+     "shows": "Vuzix Blade smart glasses on consumer sale."
+    }
+   ]
+  },
+  {
+   "id": "hz-2014-088",
+   "verdict": "hit",
+   "reading": "Devices that sense and react to their environment and the user's situation are generally available around 2017.",
+   "mainstream_test": "Consumers could buy context-aware devices by 2019 (earlier counts).",
+   "reason": "Smartphones with location/activity awareness (Google Now, 2012) and the Nest Learning Thermostat (2011), which senses occupancy and learns habits, were on sale before 2017.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nest_Learning_Thermostat",
+     "title": "Nest Learning Thermostat",
+     "date": "2011-10",
+     "shows": "Consumer device that senses occupancy and learns user behaviour."
+    }
+   ]
+  }
+ ]
+}
