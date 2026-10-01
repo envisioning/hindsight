@@ -1,0 +1,732 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.8984,
+ "n": 148,
+ "counts": {
+  "hit": 75,
+  "partial": 23,
+  "contested": 3,
+  "miss": 29,
+  "unfalsifiable": 17,
+  "ungradable": 1
+ },
+ "hit_rate": {
+  "hits": 75,
+  "of_graded_hit_partial_miss": 127,
+  "rate": 0.5906,
+  "wilson95": [
+   0.504,
+   0.672
+  ],
+  "audit_adjusted95": [
+   0.424,
+   0.752
+  ]
+ },
+ "hit_or_partial_rate": 0.7717,
+ "adjudicated": 10,
+ "audit": {
+  "sample": 50,
+  "audited": 50,
+  "confirmed": 46,
+  "corrected": 1,
+  "contested": 3,
+  "error_rate": 0.08
+ },
+ "verdicts": [
+  {
+   "id": "economist-world-ahead-1987-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1987-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1987-003",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1987-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1987-005",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1987-006",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1987-007",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Wikipedia 1987 UK election confirms Thatcher's 102-seat win, but the cited Shearson Lehman Brothers page does not mention Nippon Life or any Japanese stake, so the takeover leg rests on an unsupported citation; the moral-majority leg (Robertson's 1987 campaign) was dismissed as vague, not checked, and if it holds the claim is partial on the 1-of-n logic used elsewhere."
+  },
+  {
+   "id": "economist-world-ahead-1987-008",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1988-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1988-002",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "'Threat of a heterosexual epidemic' in 1987 usage meant the feared generalised spread to the general population; that reading dominates over a reading on the heterosexual share of cases, which the text does not name. CDC 1988 update: heterosexually acquired cases 4.8% of adult cases in 1988 vs 5.2% in 1983, concentrated in discrete groups (partners of IV-drug users, Black/Hispanic women). No generalised epidemic took off in the US or western Europe. A's divergence rests on a rising heterosexual share in the 1990s, which is a different measure (and beyond the D27 window), so no second equally faithful reading. Low-medium certainty: 'threat' is partly perceptual."
+  },
+  {
+   "id": "economist-world-ahead-1988-003",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1991-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1991-002",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1992-001",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1992-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1993-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1993-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1994-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-1996-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-1996-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-1997-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2001-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2001-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2002-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2003-001",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2003-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2004-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2005-001",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2005-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-003",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-004",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-005",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-006",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-007",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2008-008",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2011-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2015-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2015-003",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2015-004",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2015-005",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2016-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2016-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2016-003",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2016-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2016-005",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2016-006",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2017-001",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The claim says 'set about' and 'rollback', not repeal. Both graders agree on the facts: repeal bills failed (July 2017), but CSR payments were ended (Oct 2017), an executive order loosened ACA rules, and the TCJA (signed 22 Dec 2017) zeroed the individual-mandate penalty. That is a rollback begun in 2017 as stated. B graded against 'repealed or materially rolled back' and treated failed repeal as a smaller event; the stated event was never full repeal."
+  },
+  {
+   "id": "economist-world-ahead-2017-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2017-003",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2017-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2018-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2018-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2018-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2018-005",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2018-006",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2018-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2018-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "miss",
+   "reason": "Full press-release sentence: 'Telling trends of 2018 will include ... the rise of private space ventures reflected most dramatically in SpaceX's plan to send tourists around the Moon'. The words say 'plan'; a flight is not stated, so B's flight reading adds a claim the text does not make. The original Dragon/Falcon Heavy plan (Feb 2017, for late 2018) was shelved in Feb 2018, but SpaceX announced the larger dearMoon tourist lunar flyby on 14 Sep 2018, the year's most prominent private-space announcement; the plan 'to send tourists around the Moon' stood in 2018. Low certainty: a reader in Nov 2017 knew the plan meant a 2018 flight, which reads as miss; A's unfalsifiable is defensible."
+  },
+  {
+   "id": "economist-world-ahead-2018-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2018-010",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "miss",
+   "reason": "Hedge 'with luck' (D27 possibility rule). 'With luck, X will happen' states a hope; both outcomes agree with it (eradication = luck held; none = luck did not). The 'will' is inside the conditional. For the record, wild poliovirus type 1 was still endemic in Afghanistan and Pakistan in 2018 (33 cases) and 2019, so under an expectation reading it would be a miss."
+  },
+  {
+   "id": "economist-world-ahead-2018-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2018-013",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2018-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2018-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2018-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-002",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-003",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-004",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "miss",
+   "reason": "'Flirt with' has one dominant reading (near-crisis stress without a crisis), so not unfalsifiable. Monthly 10y Italy-Germany spread (OECD via FRED): 263-277bp Jan-May 2019, close to the late-2018 peak of ~307bp, then 204bp Jul and ~150-165bp Sep-Dec. ECB put Banca Carige under temporary administration on 2 Jan 2019; Lega brought down the government in Aug 2019. Stress in H1 was real but below the 2018 peak and faded after mid-year: a smaller version of the stated event, partial. B's claim that 2019 spreads 'stayed below the late-2018 peak' is right but ignores H1 stress near it."
+  },
+  {
+   "id": "economist-world-ahead-2019-005",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-006",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-007",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-012",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-013",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-015",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2019-017",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-018",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-019",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-020",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2019-021",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-003",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "Wikipedia 2019 UK general election: the election was legislated 29-31 Oct 2019 and held 12 Dec 2019, i.e. scheduled before the edition's 21 Nov 2019 publication and held before the 2020 target year. D27 grades events in the target year; the graders imported D16's early-adoption clause and both note a strict D27 reading gives miss, so the rule does not support hit over miss (or exclusion)."
+  },
+  {
+   "id": "economist-world-ahead-2020-004",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "The firm forecast of change is 'America will flirt with recession', i.e. near but not in recession; the US entered recession (NBER peak Feb 2020, trough Apr 2020) with the sharpest quarterly fall since WWII, so the stated state did not hold (an overshoot is not a 'smaller version'). The negative-rates clause is the status quo (ECB deposit rate -0.5% since Sep 2019) and markets reviving (S&P 500 +16%) sits under the 'don't be surprised if' hedge. B credits the hedged and status-quo clauses as parts; the core US clause is wrong, so miss. Medium certainty."
+  },
+  {
+   "id": "economist-world-ahead-2020-005",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-006",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-007",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-008",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-009",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-010",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-011",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-012",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The same article forecasts a later revival separately ('As investors start to price in aggressive fiscal stimulus, stock prices will revive', its own claim), so 'come under greater pressure' is an interim phase, not an end-year level. Equities crashed Feb-Mar 2020 (pressure as stated). US 10y fell from ~1.9% (end-2019) to ~0.9% (end-2020); Bund 10y from about -0.19% to about -0.57%. All legs happened. B's partial grades the stock leg on the year-end level, which reads in the separate revival claim; a reading error."
+  },
+  {
+   "id": "economist-world-ahead-2020-013",
+   "verdict": "partial",
+   "status": "corrected",
+   "was": "hit",
+   "reason": "The instruments happened (Fed cut to 0-0.25% on 15 Mar 2020 per federalreserve.gov; ECB PEPP; PBoC cuts), but the stated outcome, credit 'flowing smoothly', failed in March 2020: Wikipedia 2020 stock market crash documents the commercial-paper and money-fund dysfunction that forced the CPFF backstops. Grader A's PEPP citation returns 404. Happened in part."
+  },
+  {
+   "id": "economist-world-ahead-2020-014",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-015",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2020-017",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2021-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2021-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2021-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2021-004",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2021-006",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "IEA OMR Dec 2021 / Jan 2022: demand rose a record 5.4-5.5 mb/d in 2021 but stayed below the pre-pandemic ~99.5-99.7 mb/d until 2022. Graded only on the self-review's paraphrase; 'stay depressed' read against 2019 holds for 2021 (hit or partial), read as 'no rebound' fails (miss), and the original wording is not available to pick the dominant reading."
+  },
+  {
+   "id": "economist-world-ahead-2022-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2022-003",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Government employees launched in 2022: 20 (Crew-4 4, Crew-5 4, Soyuz MS-21 3, MS-22 3, Shenzhou-14 3, Shenzhou-15 3). Paying passengers: New Shepard NS-20/21/22 carried 18, of whom Gary Lai was a Blue Origin employee, so 17 (counting sponsored seats as paid); Ax-1 carried 3 paying passengers plus commander Lopez-Alegria, an Axiom employee. Total 20 paying vs 20 government: not 'more'. 2021 already had more private flyers than government (Inspiration4, New Shepard x3, Virgin Galactic Unity 22, Soyuz MS-20 tourists), so 'first year' is also wrong. 2023 had fewer paying passengers than government crew (no crewed New Shepard), so no next-year credit. A's '~22 private' counted two employees (Lai, Lopez-Alegria) as paying passengers: a counting error."
+  },
+  {
+   "id": "economist-world-ahead-2022-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2022-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2022-006",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2022-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2022-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "economist-world-ahead-2022-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2022-011",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-002",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-003",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-005",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-006",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "The 1.8bn 2019 base is not UNWTO's arrivals series (~1.46bn in 2019), so comparing 1.6bn with UNWTO's 1.3bn mixes two measures; the forecast is only testable consistently as the stated relation and ratio. UN Tourism: 2023 arrivals ~1.3bn, 88% of 2019 vs the forecast's ~89%, and below 2019 as stated. A's partial (1.6 vs 1.3bn, ~23% off) compares across measures: a reading error, not arithmetic. Medium certainty: if the level must be graded on UNWTO alone it is partial."
+  },
+  {
+   "id": "economist-world-ahead-2023-008",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-009",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2023-012",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2024-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2025-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "economist-world-ahead-2025-004",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "The forecast change is the backlash diminishing; it grew instead, with coordinated protests in June 2025 across southern Europe (a 'second wave'). The 'restrictions will remain' clause is the status quo qualifier and is right (Venice fee, Amsterdam measures kept), but it does not make the stated event happen in part. A counted the status-quo clause as half the claim."
+  }
+ ]
+}

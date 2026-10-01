@@ -1,0 +1,805 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "economist-world-ahead-2016-005",
+   "verdict": "hit",
+   "reading": "Rousseff will face an impeachment fight in 2016.",
+   "mainstream_test": "An impeachment process against Rousseff was under way in 2016.",
+   "reason": "Chamber voted to impeach in April 2016; Senate removed her 31 Aug 2016. The fight happened (and she lost); the claim states only the fight.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Impeachment_of_Dilma_Rousseff",
+     "title": "Impeachment of Dilma Rousseff",
+     "date": "2016-08-31",
+     "shows": "Impeachment proceedings ran through 2016; removed from office 31 Aug 2016."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2016-006",
+   "verdict": "miss",
+   "reading": "India will win the ICC World Twenty20 in March 2016.",
+   "mainstream_test": "India won the 2016 tournament.",
+   "reason": "West Indies won the final against England on 3 April 2016; India lost the semi-final.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2016_ICC_World_Twenty20",
+     "title": "2016 ICC World Twenty20",
+     "date": "2016-04-03",
+     "shows": "West Indies champions; India eliminated in semi-final by West Indies."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2017-001",
+   "verdict": "partial",
+   "reading": "Trump will in 2017 begin undoing Obama's work, including rolling back the Affordable Care Act.",
+   "mainstream_test": "ACA repealed or materially rolled back in 2017.",
+   "reason": "Repeal bills failed in the Senate (July 2017); partial rollback via TCJA (Dec 2017) zeroing the individual-mandate penalty from 2019 and the end of CSR payments (Oct 2017). Smaller version of the stated event.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Efforts_to_repeal_the_Affordable_Care_Act",
+     "title": "Efforts to repeal the Affordable Care Act",
+     "date": "2017-12-22",
+     "shows": "Full repeal failed in 2017; TCJA set the mandate penalty to $0."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2017-002",
+   "verdict": "hit",
+   "reading": "Britain will formally trigger Article 50 in 2017, amid bitter dispute.",
+   "mainstream_test": "Article 50 notification delivered in 2017.",
+   "reason": "May invoked Article 50 on 29 March 2017; the negotiations and domestic politics were contentious.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/United_Kingdom_invocation_of_Article_50_of_the_Treaty_on_European_Union",
+     "title": "UK invocation of Article 50",
+     "date": "2017-03-29",
+     "shows": "Notification letter delivered 29 March 2017."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2017-003",
+   "verdict": "hit",
+   "reading": "India will stay among the fastest-growing big emerging markets in 2017.",
+   "mainstream_test": "India's 2017 real GDP growth among the top of large EMs.",
+   "reason": "World Bank: India 6.8% in 2017, just behind China 6.9%, ahead of Brazil, Russia, Indonesia etc.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/IND;CHN/indicator/NY.GDP.MKTP.KD.ZG?date=2017&format=json",
+     "title": "World Bank WDI real GDP growth",
+     "date": "2017",
+     "shows": "India 6.80%, China 6.89% in 2017."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2017-004",
+   "verdict": "hit",
+   "reading": "Australia's run without recession will reach its 26th year in 2017.",
+   "mainstream_test": "No Australian recession in 2017 (last one 1991).",
+   "reason": "Australia's expansion ran from 1991 to the 2020 COVID recession; 2017 was its 26th year.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Australia",
+     "title": "Economy of Australia",
+     "date": "2020",
+     "shows": "No recession between 1991 and 2020."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-001",
+   "verdict": "unfalsifiable",
+   "reading": "Democrats could win the House in 2018, opening a possible impeachment.",
+   "mainstream_test": "Possibility only (hedge word 'could').",
+   "reason": "D27: possibility-only claim; both outcomes agree with it. (Democrats did win the House in Nov 2018.)",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2018_United_States_House_of_Representatives_elections",
+     "title": "2018 US House elections",
+     "date": "2018-11-06",
+     "shows": "Democrats gained 41 seats and won the majority."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-002",
+   "verdict": "hit",
+   "reading": "Russia will host the 2018 World Cup shortly after an election that gives Putin another term.",
+   "mainstream_test": "Election and World Cup both happen in 2018 as stated.",
+   "reason": "Putin re-elected 18 March 2018; World Cup 14 June-15 July 2018 in Russia.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2018_Russian_presidential_election",
+     "title": "2018 Russian presidential election",
+     "date": "2018-03-18",
+     "shows": "Putin won a fourth term."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup",
+     "title": "2018 FIFA World Cup",
+     "date": "2018-07-15",
+     "shows": "Held in Russia June-July 2018."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-003",
+   "verdict": "hit",
+   "reading": "In 2018 Akihito prepares to abdicate and Raul Castro steps down; Salman 'may' abdicate (hedged, not graded).",
+   "mainstream_test": "Firm clauses: Castro leaves presidency in 2018; Akihito's abdication preparations under way in 2018.",
+   "reason": "Castro handed over to Diaz-Canel on 19 April 2018; Akihito's abdication was legislated in 2017 and prepared through 2018 for 30 April 2019. Salman clause is a possibility ('may') and did not occur.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2019_Japanese_imperial_transition",
+     "title": "2019 Japanese imperial transition",
+     "date": "2019-04-30",
+     "shows": "Abdication set by 2017 law, carried out 30 April 2019."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Castro",
+     "title": "Raul Castro",
+     "date": "2018-04-19",
+     "shows": "Stepped down as president 19 April 2018."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-004",
+   "verdict": "hit",
+   "reading": "Maduro will try to hold on to power in 2018.",
+   "mainstream_test": "Maduro sought and retained office in 2018.",
+   "reason": "Maduro ran in the May 2018 election, declared winner, and stayed in office.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2018_Venezuelan_presidential_election",
+     "title": "2018 Venezuelan presidential election",
+     "date": "2018-05-20",
+     "shows": "Maduro declared winner amid boycott and fraud allegations."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-005",
+   "verdict": "miss",
+   "reading": "A no-deal Brexit at the March 2019 departure date is likely.",
+   "mainstream_test": "UK leaves the EU without a deal (by end 2019).",
+   "reason": "No no-deal exit occurred: the March 2019 date was extended and the UK left on 31 Jan 2020 with a withdrawal agreement.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Brexit_withdrawal_agreement",
+     "title": "Brexit withdrawal agreement",
+     "date": "2020-01-31",
+     "shows": "UK left under a ratified withdrawal agreement."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-006",
+   "verdict": "partial",
+   "reading": "2018: Bhutan fastest-growing economy; China could overtake Italy in World Heritage sites (hedged); India completes the world's tallest statue.",
+   "mainstream_test": "Firm clauses: Bhutan top growth in 2018; Statue of Unity completed in 2018.",
+   "reason": "Statue of Unity inaugurated 31 Oct 2018 (hit). Bhutan grew 3.5% in 2018, far from top (miss). China/Italy clause is hedged ('could'). One of two firm clauses happened.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/BTN/indicator/NY.GDP.MKTP.KD.ZG?date=2018&format=json",
+     "title": "World Bank WDI real GDP growth",
+     "date": "2018",
+     "shows": "Bhutan 3.50% in 2018."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Statue_of_Unity",
+     "title": "Statue of Unity",
+     "date": "2018-10-31",
+     "shows": "Inaugurated 31 Oct 2018, world's tallest statue."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-007",
+   "verdict": "hit",
+   "reading": "SUVs and crossovers will become the largest new-vehicle segment globally in 2018.",
+   "mainstream_test": "SUVs largest segment of global new-car sales in 2018.",
+   "reason": "JATO: SUVs 36.4% of global sales in 2018 (29.8m), the largest segment.",
+   "evidence": [
+    {
+     "url": "https://www.greencarcongress.com/2019/02/20190224-jato.html",
+     "title": "JATO: 2018 record year for EVs ... as SUVs rule",
+     "date": "2019-02-24",
+     "shows": "SUVs 36.4% share in 2018, largest segment."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-008",
+   "verdict": "miss",
+   "reading": "Private space ventures rise in 2018, highlighted by SpaceX flying tourists around the Moon (planned for late 2018).",
+   "mainstream_test": "SpaceX tourist lunar flyby flown in 2018 or 2019.",
+   "reason": "No crewed SpaceX lunar flight happened in 2018 or 2019; the Falcon Heavy/Dragon plan was dropped and dearMoon was later cancelled (2024).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/DearMoon_project",
+     "title": "dearMoon project",
+     "date": "2024-06-01",
+     "shows": "Replaced the 2017 Dragon plan; never flew; cancelled 2024."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-009",
+   "verdict": "hit",
+   "reading": "The first RNAi drug will be approved in 2018.",
+   "mainstream_test": "Regulatory approval of an RNAi therapeutic in 2018.",
+   "reason": "FDA approved patisiran (Onpattro) on 10 Aug 2018, the first siRNA drug.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Patisiran",
+     "title": "Patisiran",
+     "date": "2018-08-10",
+     "shows": "FDA approval August 2018, first RNAi therapeutic."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-010",
+   "verdict": "miss",
+   "reading": "With luck, wild polio will be eradicated in 2018.",
+   "mainstream_test": "Wild poliovirus transmission ended (eradication) in 2018 or 2019.",
+   "reason": "Wild poliovirus type 1 still circulated in Pakistan and Afghanistan in 2018-2019 (and after). 'With luck' qualifies but the verb is 'will'.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Poliomyelitis_eradication",
+     "title": "Poliomyelitis eradication",
+     "date": "2019",
+     "shows": "WPV1 still endemic in Pakistan and Afghanistan; 33 cases in 2018, 176 in 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-011",
+   "verdict": "unfalsifiable",
+   "reading": "The recovery may be nearing its end; recessions recur every 8-10 years.",
+   "mainstream_test": "Possibility only (hedge 'may'); no dated forecast.",
+   "reason": "D27: the capture note says the clause is 'may in fact be approaching the end' with no firm date; both outcomes fit. (No global recession in 2018.)",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Great_Recession",
+     "title": "Great Recession",
+     "date": "2009",
+     "shows": "Last global recession ended 2009; next came 2020."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-012",
+   "verdict": "miss",
+   "reading": "India will be the fastest-growing big economy in 2018, with China close behind.",
+   "mainstream_test": "India's 2018 growth above China's.",
+   "reason": "World Bank: China 6.76% vs India 6.45% in 2018; the order is reversed on current data.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/IND;CHN/indicator/NY.GDP.MKTP.KD.ZG?date=2018&format=json",
+     "title": "World Bank WDI real GDP growth",
+     "date": "2018",
+     "shows": "India 6.45%, China 6.76%."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-013",
+   "verdict": "hit",
+   "reading": "Venezuela's 2018 presidential election will not threaten Maduro's hold on power.",
+   "mainstream_test": "Maduro keeps office after the 2018 election.",
+   "reason": "Maduro declared winner on 20 May 2018 and stayed in power.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2018_Venezuelan_presidential_election",
+     "title": "2018 Venezuelan presidential election",
+     "date": "2018-05-20",
+     "shows": "Maduro re-elected; opposition largely barred/boycotted."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-014",
+   "verdict": "hit",
+   "reading": "Raul Castro will retire as Cuba's president in 2018.",
+   "mainstream_test": "Castro leaves the presidency in 2018.",
+   "reason": "Miguel Diaz-Canel succeeded him on 19 April 2018.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Castro",
+     "title": "Raul Castro",
+     "date": "2018-04-19",
+     "shows": "Stepped down as president."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-015",
+   "verdict": "hit",
+   "reading": "Canada and California will legalise recreational marijuana (sales) in 2018.",
+   "mainstream_test": "Legal recreational cannabis in both in 2018.",
+   "reason": "California legal retail sales from 1 Jan 2018; Canada's Cannabis Act in force 17 Oct 2018.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cannabis_Act",
+     "title": "Cannabis Act (Canada)",
+     "date": "2018-10-17",
+     "shows": "Recreational cannabis legal in Canada."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cannabis_in_California",
+     "title": "Cannabis in California",
+     "date": "2018-01-01",
+     "shows": "Recreational sales began 1 Jan 2018."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2018-016",
+   "verdict": "hit",
+   "reading": "Mary Poppins Returns will be released at the end of 2018.",
+   "mainstream_test": "Theatrical release in late 2018.",
+   "reason": "Released in the US on 19 Dec 2018.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mary_Poppins_Returns",
+     "title": "Mary Poppins Returns",
+     "date": "2018-12-19",
+     "shows": "US release 19 December 2018."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-001",
+   "verdict": "hit",
+   "reading": "By mid-2019 the US expansion becomes its longest on record; the recession clause is hedged ('could').",
+   "mainstream_test": "Expansion reaches a record length by mid-2019.",
+   "reason": "In July 2019 the expansion (from June 2009) passed 120 months, the longest in NBER records. The 'could' recession clause is not graded.",
+   "evidence": [
+    {
+     "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions",
+     "title": "NBER US business cycle expansions and contractions",
+     "date": "2020",
+     "shows": "Expansion June 2009-Feb 2020, 128 months, longest on record."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-002",
+   "verdict": "partial",
+   "reading": "In 2019 China's growth slows and India's accelerates.",
+   "mainstream_test": "Direction of 2019 vs 2018 real GDP growth for both.",
+   "reason": "China slowed 6.76%->6.07% (right); India slowed 6.45%->3.87% (wrong). Half the compound held.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/IND;CHN/indicator/NY.GDP.MKTP.KD.ZG?date=2018:2019&format=json",
+     "title": "World Bank WDI real GDP growth",
+     "date": "2019",
+     "shows": "China 6.07%, India 3.87% in 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-003",
+   "verdict": "partial",
+   "reading": "In 2019 Syria grows fastest in the world; Venezuela and Iran shrink, at the bottom.",
+   "mainstream_test": "Syria top of 2019 growth ranking; Venezuela and Iran contract.",
+   "reason": "Venezuela -27.6% and Iran -2.4% shrank (bottom clause roughly right); Syria grew about 1.2%, nowhere near the top.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/SYR;IRN;VEN/indicator/NY.GDP.MKTP.KD.ZG?date=2019&format=json",
+     "title": "World Bank WDI real GDP growth",
+     "date": "2019",
+     "shows": "Syria 1.22%, Iran -2.36%, Venezuela -27.6%."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-004",
+   "verdict": "miss",
+   "reading": "Italy will come close to a financial crisis in 2019.",
+   "mainstream_test": "Acute Italian sovereign or banking stress in 2019 (spread blow-out, rescue, bank failures).",
+   "reason": "BTP-Bund spreads stayed below the late-2018 peak and fell sharply after mid-2019 when the M5S-PD government formed; no financial crisis. 'Flirt with' is vague; the stress-only reading is weak.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Conte_II_Cabinet",
+     "title": "Conte II Cabinet",
+     "date": "2019-09-05",
+     "shows": "Political crisis resolved Sept 2019; markets rallied, no financial crisis."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-005",
+   "verdict": "hit",
+   "reading": "In 2019 the gap closes via the rest of the world's stocks rising rather than US stocks falling.",
+   "mainstream_test": "US market does not fall and non-US markets rise in 2019.",
+   "reason": "S&P 500 rose about 29% and MSCI ACWI ex-US about 22% in 2019: rest of world rose, US did not fall. On a relative reading (rest outperforms US) it would miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/S%26P_500",
+     "title": "S&P 500",
+     "date": "2019-12-31",
+     "shows": "S&P 500 total return about 31% in 2019."
+    },
+    {
+     "url": "https://www.msci.com/indexes/index/892400",
+     "title": "MSCI ACWI ex USA index",
+     "date": "2019-12-31",
+     "shows": "Index rose about 22% (gross) in 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-006",
+   "verdict": "partial",
+   "reading": "Britain will leave the EU in 2019.",
+   "mainstream_test": "UK formally leaves in calendar 2019.",
+   "reason": "UK left on 31 Jan 2020: in full in the next year.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Brexit",
+     "title": "Brexit",
+     "date": "2020-01-31",
+     "shows": "UK withdrew 31 January 2020."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-007",
+   "verdict": "hit",
+   "reading": "In 2019 the EU gets a new Commission, a new Parliament and a new ECB president.",
+   "mainstream_test": "All three changes take place in 2019.",
+   "reason": "EP elections May 2019; Lagarde took office 1 Nov 2019; von der Leyen Commission 1 Dec 2019.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Von_der_Leyen_Commission_I",
+     "title": "Von der Leyen Commission I",
+     "date": "2019-12-01",
+     "shows": "Took office 1 Dec 2019."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Christine_Lagarde",
+     "title": "Christine Lagarde",
+     "date": "2019-11-01",
+     "shows": "ECB president from 1 Nov 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-008",
+   "verdict": "hit",
+   "reading": "New Horizons will fly by Ultima Thule (2014 MU69) in 2019.",
+   "mainstream_test": "Flyby occurs in 2019.",
+   "reason": "Flyby on 1 Jan 2019.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/486958_Arrokoth",
+     "title": "486958 Arrokoth",
+     "date": "2019-01-01",
+     "shows": "New Horizons flyby 1 Jan 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-009",
+   "verdict": "hit",
+   "reading": "Half the world's population will be online in 2019.",
+   "mainstream_test": "ITU internet-user share >=50% in 2019 (D16 level rule).",
+   "reason": "ITU estimated 53.6% (4.1bn) in 2019, within 10% of 50.",
+   "evidence": [
+    {
+     "url": "https://www.itu.int/en/mediacentre/Pages/2019-PR19.aspx",
+     "title": "ITU: New ITU data reveal growing Internet uptake",
+     "date": "2019-11-05",
+     "shows": "4.1bn people, 53.6% of world population online in 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-010",
+   "verdict": "miss",
+   "reading": "India's nominal GDP will overtake Britain's in 2019.",
+   "mainstream_test": "India's 2019 nominal USD GDP above UK's.",
+   "reason": "World Bank: India $2.84tn vs UK $2.88tn in 2019; still below in 2020; India passed the UK only in 2021-22.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/IND;GBR/indicator/NY.GDP.MKTP.CD?date=2018:2022&format=json",
+     "title": "World Bank WDI GDP current US$",
+     "date": "2019",
+     "shows": "IND 2.836tn vs GBR 2.876tn (2019); IND 2.675 vs GBR 2.724 (2020)."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-011",
+   "verdict": "hit",
+   "reading": "Nigeria's population will reach 200m in 2019.",
+   "mainstream_test": "2019 population within 10% of 200m (D16 level rule).",
+   "reason": "World Bank latest: 209.5m in 2019; UN WPP 2019 gave about 201m. Within 10%.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/NGA/indicator/SP.POP.TOTL?date=2019&format=json",
+     "title": "World Bank WDI population",
+     "date": "2019",
+     "shows": "Nigeria 209,485,641 in 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-012",
+   "verdict": "hit",
+   "reading": "US millennials will outnumber baby-boomers in 2019.",
+   "mainstream_test": "Census-based estimate shows millennials > boomers in 2019.",
+   "reason": "Pew (Census Bureau estimates): 72.1m millennials vs 71.6m boomers in 2019.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2020/04/28/millennials-overtake-baby-boomers-as-americas-largest-generation/",
+     "title": "Pew: Millennials overtake Baby Boomers as America's largest generation",
+     "date": "2020-04-28",
+     "shows": "Millennials 72.1m vs boomers 71.6m as of July 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-013",
+   "verdict": "miss",
+   "reading": "May will get a deal through and Britain will leave on 29 March 2019 as planned.",
+   "mainstream_test": "UK exits with a deal on 29 March 2019.",
+   "reason": "May's deal was rejected three times; Article 50 extended; exit on 31 Jan 2020 under Johnson's revised deal.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Brexit_withdrawal_agreement",
+     "title": "Brexit withdrawal agreement",
+     "date": "2019-03-29",
+     "shows": "Deal defeated in Commons; 29 March date passed without exit."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-014",
+   "verdict": "hit",
+   "reading": "Theresa May will face a leadership challenge in 2019.",
+   "mainstream_test": "May's leadership challenged in 2019 (formal or forced contest).",
+   "reason": "No formal no-confidence vote in 2019 (rules barred one after Dec 2018), but party pressure forced her resignation announcement on 24 May 2019 and a leadership contest followed (June-July 2019).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2019_Conservative_Party_leadership_election",
+     "title": "2019 Conservative Party leadership election",
+     "date": "2019-07-23",
+     "shows": "Contest after May's resignation under party pressure."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-015",
+   "verdict": "partial",
+   "reading": "May is likely to lose a challenge and Sajid Javid is the front-runner to succeed her.",
+   "mainstream_test": "May ousted in 2019; Javid becomes leader.",
+   "reason": "May was forced out (right) but Boris Johnson won; Javid was eliminated in the 4th ballot.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2019_Conservative_Party_leadership_election",
+     "title": "2019 Conservative Party leadership election",
+     "date": "2019-07-23",
+     "shows": "Johnson elected; Javid eliminated in the fourth ballot."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-016",
+   "verdict": "hit",
+   "reading": "ITU estimates will show over 50% of humanity online in 2019.",
+   "mainstream_test": "ITU share >50% for 2019.",
+   "reason": "ITU: 53.6% in 2019.",
+   "evidence": [
+    {
+     "url": "https://www.itu.int/en/mediacentre/Pages/2019-PR19.aspx",
+     "title": "ITU: New ITU data reveal growing Internet uptake",
+     "date": "2019-11-05",
+     "shows": "53.6% of world population using the internet in 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-017",
+   "verdict": "miss",
+   "reading": "The Fed will raise its policy rate again in 2019.",
+   "mainstream_test": "At least one fed funds target increase in 2019.",
+   "reason": "No hike in 2019; the Fed cut three times (July, Sept, Oct).",
+   "evidence": [
+    {
+     "url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+     "title": "Federal Reserve: Open Market Operations, target rate history",
+     "date": "2019",
+     "shows": "2019 changes: -25bp on 31 Jul, 18 Sep, 30 Oct; no increases."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-018",
+   "verdict": "miss",
+   "reading": "The US federal deficit will approach 6% of GDP in 2019.",
+   "mainstream_test": "D18 rate rule: forecast ~6% vs actual FY2019 deficit share.",
+   "reason": "FY2019 deficit $984bn = 4.6% of GDP; more than 1 point below ~6.",
+   "evidence": [
+    {
+     "url": "https://www.cbo.gov/publication/56324",
+     "title": "CBO Monthly Budget Review: Summary for Fiscal Year 2019",
+     "date": "2019-11-07",
+     "shows": "Deficit $984bn, 4.6% of GDP."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-019",
+   "verdict": "miss",
+   "reading": "India's real GDP growth will be 7.6% in 2019.",
+   "mainstream_test": "D18: within 0.5 pts hit, 1.0 pt partial.",
+   "reason": "World Bank: 3.87% in 2019 (FY2019-20 about 3.9%); error about 3.7 pts.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/IND/indicator/NY.GDP.MKTP.KD.ZG?date=2019&format=json",
+     "title": "World Bank WDI real GDP growth",
+     "date": "2019",
+     "shows": "India 3.87% in 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-020",
+   "verdict": "hit",
+   "reading": "No US recession will begin before late 2019.",
+   "mainstream_test": "No US recession starting in H1 (or Q1-Q3) 2019.",
+   "reason": "NBER: peak Feb 2020; no recession began in 2019. The dominant (conditional, 'any') reading holds; the implied reading that one starts late 2019 would give partial (began Feb 2020).",
+   "evidence": [
+    {
+     "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions",
+     "title": "NBER US business cycle expansions and contractions",
+     "date": "2021-07-19",
+     "shows": "Peak February 2020, trough April 2020."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2019-021",
+   "verdict": "miss",
+   "reading": "A couple of big European banks will merge in 2019.",
+   "mainstream_test": "A merger of two large European banks agreed in 2019.",
+   "reason": "Deutsche Bank-Commerzbank talks ended 25 April 2019; no large European bank merger in 2019. Graded on the words quoted, not the review.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Commerzbank",
+     "title": "Commerzbank",
+     "date": "2019-04-25",
+     "shows": "Merger talks with Deutsche Bank abandoned April 2019."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2020-001",
+   "verdict": "hit",
+   "reading": "The Senate will acquit Trump in the 2019-20 impeachment.",
+   "mainstream_test": "Senate acquittal in 2020.",
+   "reason": "Acquitted on both articles on 5 Feb 2020.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/First_impeachment_of_Donald_Trump",
+     "title": "First impeachment of Donald Trump",
+     "date": "2020-02-05",
+     "shows": "Senate acquitted Trump."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2020-002",
+   "verdict": "hit",
+   "reading": "Trump will lose the November 2020 election (forecast voiced through an AI interview).",
+   "mainstream_test": "Trump loses in Nov 2020.",
+   "reason": "Biden won 306-232. Graded on the words quoted; attribution to GPT-2 noted.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2020_United_States_presidential_election",
+     "title": "2020 United States presidential election",
+     "date": "2020-11-03",
+     "shows": "Biden defeated Trump."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2020-003",
+   "verdict": "hit",
+   "reading": "Britons will probably soon vote in a general election on Johnson.",
+   "mainstream_test": "A UK general election held (it was already called for 12 Dec 2019).",
+   "reason": "Held 12 Dec 2019, three weeks after publication; earlier than the target year but the stated event happened. If target year 2020 is strict, this would be a miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2019_United_Kingdom_general_election",
+     "title": "2019 United Kingdom general election",
+     "date": "2019-12-12",
+     "shows": "Election held; Conservative majority of 80."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2020-004",
+   "verdict": "partial",
+   "reading": "In 2020 European banks struggle with negative rates; the US nears recession but likely avoids disaster and markets revive.",
+   "mainstream_test": "ECB rates negative in 2020; US avoids recession; stocks rise.",
+   "reason": "ECB deposit rate -0.5% all 2020 (right); markets revived (S&P 500 +16%); but the US did enter recession (Feb-Apr 2020), the outcome the claim leaned against.",
+   "evidence": [
+    {
+     "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions",
+     "title": "NBER US business cycle expansions and contractions",
+     "date": "2021-07-19",
+     "shows": "Recession Feb-Apr 2020."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/S%26P_500",
+     "title": "S&P 500",
+     "date": "2020-12-31",
+     "shows": "Index ended 2020 up about 16%."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2020-005",
+   "verdict": "partial",
+   "reading": "China will claim in 2020 to have met its 'moderately prosperous society' target.",
+   "mainstream_test": "Official claim of achieving xiaokang made in 2020.",
+   "reason": "Oct 2020 plenum spoke of 'decisive achievements'; the formal declaration came from Xi on 1 July 2021 (next year).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Xiaokang",
+     "title": "Xiaokang",
+     "date": "2021-07-01",
+     "shows": "Xi declared a moderately prosperous society achieved on 1 July 2021."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2020-006",
+   "verdict": "partial",
+   "reading": "In 2020 the Tokyo Olympics draw a huge audience and Euro 2020 is played across 12 countries.",
+   "mainstream_test": "Both events held in 2020 as stated.",
+   "reason": "Both postponed to 2021 by COVID; Olympics held 2021 (large audience), Euro held 2021 in 11 countries. Next year, not in full as stated.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2020_Summer_Olympics",
+     "title": "2020 Summer Olympics",
+     "date": "2021-07-23",
+     "shows": "Postponed to July-Aug 2021."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/UEFA_Euro_2020",
+     "title": "UEFA Euro 2020",
+     "date": "2021-06-11",
+     "shows": "Held June-July 2021 in 11 host countries."
+    }
+   ]
+  },
+  {
+   "id": "economist-world-ahead-2020-007",
+   "verdict": "miss",
+   "reading": "The 2020 NPT review conference will be held and be fraught.",
+   "mainstream_test": "Review conference held in 2020.",
+   "reason": "Postponed by COVID; not held in 2020 or 2021; convened Aug 2022 and ended without consensus.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_on_the_Non-Proliferation_of_Nuclear_Weapons",
+     "title": "Treaty on the Non-Proliferation of Nuclear Weapons",
+     "date": "2022-08-26",
+     "shows": "Tenth Review Conference postponed from 2020 to 2022."
+    }
+   ]
+  }
+ ]
+}
