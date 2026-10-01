@@ -49,7 +49,8 @@ const onlyA = [...A.keys()].filter((id) => !B.has(id));
 const onlyB = [...B.keys()].filter((id) => !A.has(id));
 const n = pairs.length;
 if (!n) throw new Error(`${source}: no claim graded by both graders`);
-const CATS = ["hit", "partial", "miss", "unfalsifiable"];
+// ungradable: no public measure of the claim exists (not a D16 verdict; never published as one).
+const CATS = ["hit", "partial", "miss", "unfalsifiable", "ungradable"];
 for (const [a, b] of pairs) for (const v of [a.verdict, b.verdict]) if (!CATS.includes(v)) throw new Error(`${source}: ${a.id} has verdict ${v}`);
 
 const count = (xs) => Object.fromEntries(CATS.map((c) => [c, xs.filter((x) => x === c).length]).filter(([, k]) => k));
@@ -67,7 +68,7 @@ function wilson(k, m, z = 1.96) {
 	return [(c - r) / d, (c + r) / d].map((x) => Math.round(x * 1000) / 1000);
 }
 
-const consensus = agreeing.filter(([a]) => a.verdict !== "unfalsifiable").map(([a]) => ({ id: a.id, label: label(a.id), verdict: a.verdict }));
+const consensus = agreeing.filter(([a]) => a.verdict !== "unfalsifiable" && a.verdict !== "ungradable").map(([a]) => ({ id: a.id, label: label(a.id), verdict: a.verdict }));
 const hits = consensus.filter((c) => c.verdict === "hit").length;
 const r4 = (x) => Math.round(x * 10000) / 10000;
 
@@ -86,9 +87,13 @@ const out = {
 		hits,
 		of_graded_hit_partial_miss: consensus.length,
 		wilson95: wilson(hits, consensus.length),
-		note: "Among claims both graders agree on, excluding unfalsifiable. Not yet audited (D11 audit pending).",
+		note: "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending).",
 	},
 	consensus,
+	// Both graders unfalsifiable: listed for the adjudicator (D20), counted in final-d20 when not adjudicated.
+	unfalsifiable_agreed: agreeing.filter(([a]) => a.verdict === "unfalsifiable").map(([a]) => ({ id: a.id, label: label(a.id) })),
+	// Both graders ungradable: no public measure. Counted in final-d20, never in a rate.
+	ungradable_agreed: agreeing.filter(([a]) => a.verdict === "ungradable").map(([a]) => ({ id: a.id, label: label(a.id) })),
 	contested: pairs.filter(([a, b]) => a.verdict !== b.verdict).map(([a, b]) => ({ id: a.id, label: label(a.id), graderA: a.verdict, graderB: b.verdict })),
 };
 writeFileSync(path.join(dir, "agreement-d16.json"), `${JSON.stringify(out, null, 1)}\n`);

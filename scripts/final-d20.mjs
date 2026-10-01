@@ -47,9 +47,16 @@ function wilson(k, m, z = 1.96) {
 
 const counts = {};
 for (const r of rows) counts[r.verdict] = (counts[r.verdict] ?? 0) + 1;
-// The consensus list leaves out claims both graders called unfalsifiable; count them here.
-const agreedUnfalsifiable = agreement.agreed?.unfalsifiable ?? 0;
+// Claims both graders called unfalsifiable (D20: the adjudicator may take them). An
+// adjudicated one is a row; the rest are counted here, as the consensus list leaves them out.
+for (const u of agreement.unfalsifiable_agreed ?? []) {
+	const a = adj.get(u.id);
+	if (a) rows.push({ id: u.id, verdict: a.verdict, status: "adjudicated", graderA: "unfalsifiable", graderB: "unfalsifiable", reason: a.reason ?? "" });
+}
+const agreedUnfalsifiable = (agreement.agreed?.unfalsifiable ?? 0) - rows.filter((r) => r.status === "adjudicated" && r.graderA === "unfalsifiable" && r.graderB === "unfalsifiable").length;
 if (agreedUnfalsifiable) counts.unfalsifiable = (counts.unfalsifiable ?? 0) + agreedUnfalsifiable;
+const agreedUngradable = agreement.ungradable_agreed?.length ?? 0;
+if (agreedUngradable) counts.ungradable = (counts.ungradable ?? 0) + agreedUngradable;
 const hits = counts.hit ?? 0;
 const graded = hits + (counts.partial ?? 0) + (counts.miss ?? 0);
 const recs = Object.values(audit?.records ?? {});
@@ -68,7 +75,7 @@ const out = {
 	rule: "D16",
 	process: "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
 	kappa: agreement.kappa,
-	n: rows.length + agreedUnfalsifiable,
+	n: rows.length + agreedUnfalsifiable + agreedUngradable,
 	counts,
 	hit_rate: graded ? { hits, of_graded_hit_partial_miss: graded, rate: Math.round((hits / graded) * 10000) / 10000, wilson95: wilson(hits, graded) } : null,
 	hit_or_partial_rate: graded ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,

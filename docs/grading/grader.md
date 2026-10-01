@@ -19,6 +19,7 @@ For each claim:
    - partial
    - miss (provisional if the window is still open)
    - unfalsifiable (only when two equally faithful readings give different verdicts)
+   - ungradable (only when no public measure of the claim exists at its target year; name what you looked for). Not a verdict; it is never published as one (D22).
 
 Write <output path> after every 5 claims. Keep the input order. Format:
 {"rule":"D16","grader":"<A|B>","verdicts":[{"id","verdict","reading","mainstream_test","reason","evidence":[{"url","title","date","shows"}]}]}

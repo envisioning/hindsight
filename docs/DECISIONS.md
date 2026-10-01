@@ -289,3 +289,34 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 
 **Cost.** An agent auditor shares blind spots with agent graders. The audit error rate measures how often the evidence does not support the verdict, not how often agents are wrong in ways all agents are wrong. Disputes are the check on that.
 
+
+## D21: Hype Cycle verdicts from blind adoption timelines
+
+*Recorded 2026-10-01.*
+
+**Decision.** The Gartner Hype Cycle is graded per subject, not per claim. A Hype Cycle entry places a technology on a band of years to mainstream adoption; many entries name the same technology in several editions.
+
+- **Timelines.** Two blind builders write one adoption timeline per subject (199 subjects, `timeline-subjects.json`): the reading of the label, the test, `year_5pct`, `year_mainstream`, `abandoned` and `abandoned_year`, with evidence. A builder that finds no dominant reading of a label writes `ambiguous:` in the reading and leaves the years null.
+- **Claims graded.** An entry with a band of `<2`, `2-5` or `5-10` years. The placed year is the edition plus the upper bound of the band (2, 5, 10). An entry is gradable when the placed year plus 5 is not after 2026, so a `miss` is never provisional. Entries with a band of more than 10 years, with no band (1995 to 1998, some later rows) or marked obsolete before plateau are not graded by this method.
+- **Verdict.** Computed by `scripts/gartner-hype-cycle/rule.mjs` under D16: `hit` when mainstream by the placed year plus 2 (earlier counts) and not abandoned before the placed year; `partial` when mainstream 3 to 5 years after, or at least 5% by the placed year; `miss` otherwise; `unfalsifiable` for an ambiguous label. `scripts/gartner-hype-cycle/verdicts.mjs` writes one verdict file per builder in the grader format, so the generic pipeline (agreement, audit sample, final) applies unchanged.
+- **Agreement** (D11) is Cohen's kappa on the computed verdicts, not on the years. First run: 409 gradable claims, 325 agreed, kappa 0.66.
+- **Adjudication** (D20) settles the timeline of each subject with a contested claim, or with a claim both builders called unfalsifiable. The verdict of each such claim is then computed from the settled timeline by the same rule (`adjudicate.mjs`). Agreed claims are not reopened, even where the settled timeline would give them another verdict; the audit is the check on those.
+- **Audit** (D11, D20) is the standard fixed-seed sample of 50 agreed claims.
+
+**Why.** A builder who grades each claim separately can give the same technology different adoption years in different editions. One timeline per subject makes every edition's claim about that technology consistent, and a builder writes 199 timelines instead of 409 verdicts. Computing verdicts from timelines keeps the rule in code where anyone can re-run it.
+
+**Cost.** One wrong year in a timeline is wrong for every edition of that subject. Agreement on verdicts can hide disagreement on years that does not change a verdict. Placing at the upper bound of the band is generous to the forecast: a `2-5` entry is a hit at mainstream up to 7 years after the edition.
+
+**Overturned by.** Audit findings that the timelines misplace years for many subjects, or evidence that readers take the band's midpoint, not its upper bound, as Gartner's forecast.
+
+## D22: `ungradable` as a grader outcome for judgment sources
+
+*Recorded 2026-10-01.*
+
+**Decision.** A grader may record `ungradable` for a claim when no public measure of what it states exists at its target year (for example a "market cap created by" figure, or a share of organizations that no survey measures). The grader names what it looked for. `ungradable` is not a D16 verdict and is never published as one: the agreement script (`scripts/agreement-d16.mjs`) counts it as a category for kappa, keeps claims both graders call ungradable out of the consensus and out of every rate (`ungradable_agreed`), and sends a one-sided `ungradable` to the adjudicator like any other disagreement. `final-d20.json` counts it under `counts.ungradable`. It mirrors the numeric `ungradable` status of D19.
+
+**Why.** Without it a grader must call an unmeasurable claim `unfalsifiable`, which D16 reserves for claims whose readings diverge, or guess a verdict from a proxy. Both put a false statement under a publisher's name.
+
+**Cost.** A grader can use `ungradable` to avoid a hard claim. The adjudicator and the audit see every one-sided use, and the share per source is published.
+
+**Overturned by.** A high ungradable share that the audit finds measurable.

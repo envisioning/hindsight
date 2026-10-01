@@ -1,0 +1,2173 @@
+{
+ "rule": "D16",
+ "graders": [
+  "A",
+  "B"
+ ],
+ "n": 409,
+ "agree": 325,
+ "raw_agreement": 0.7946,
+ "kappa": 0.6634,
+ "passes_d11": true,
+ "graderA": {
+  "hit": 229,
+  "partial": 65,
+  "miss": 101,
+  "unfalsifiable": 14
+ },
+ "graderB": {
+  "hit": 215,
+  "partial": 91,
+  "miss": 99,
+  "unfalsifiable": 4
+ },
+ "agreed": {
+  "hit": 196,
+  "partial": 48,
+  "miss": 79,
+  "unfalsifiable": 2
+ },
+ "hit_rate_agreed": {
+  "hits": 196,
+  "of_graded_hit_partial_miss": 323,
+  "wilson95": [
+   0.553,
+   0.659
+  ],
+  "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
+ },
+ "consensus": [
+  {
+   "id": "gartner-hype-cycle-1999-002",
+   "label": "Digital Ink",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-003",
+   "label": "Text Mining",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-004",
+   "label": "Synthetic Characters",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-005",
+   "label": "Wearable Computers",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-006",
+   "label": "Biometrics",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-008",
+   "label": "Linux",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-010",
+   "label": "Jini",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-011",
+   "label": "Knowledge Mgt",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-012",
+   "label": "XML",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-014",
+   "label": "E-cash",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-015",
+   "label": "3D Web",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-016",
+   "label": "Speech Recognition",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-017",
+   "label": "Smart Cards",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-018",
+   "label": "xDSL/Cable Modems",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-020",
+   "label": "PDAs",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-021",
+   "label": "Java Language",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-003",
+   "label": "Synthetic Characters",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-004",
+   "label": "Digital Ink",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-005",
+   "label": "Biometrics",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-006",
+   "label": "Voice Portals",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-007",
+   "label": "WAP/Wireless Web",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-009",
+   "label": "Webtops",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-011",
+   "label": "Enterprise Portals",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-012",
+   "label": "Jini",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-013",
+   "label": "3-D Web",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-016",
+   "label": "Speech Recognition",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-017",
+   "label": "XML",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-018",
+   "label": "Smart Cards",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-019",
+   "label": "xDSL/Cable Modems",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-020",
+   "label": "Java Language",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-001",
+   "label": "Personal Fuel Cells",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-002",
+   "label": "Head Mounted Displays",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-004",
+   "label": "Synthetic Characters",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-006",
+   "label": "Web Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-008",
+   "label": "M-Commerce",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-009",
+   "label": "Digital Signatures",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-010",
+   "label": "P2P",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-011",
+   "label": "Wireless Web/WAP",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-012",
+   "label": "B2B E-Markets",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-015",
+   "label": "B2C E-Business",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-016",
+   "label": "E-Payments",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-017",
+   "label": "Voice Over IP",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-018",
+   "label": "Enterprise Portals",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-001",
+   "label": "Personal fuel cells",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-006",
+   "label": "Biometrics",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-008",
+   "label": "Web services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-009",
+   "label": "Personal digital assistant phones",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-011",
+   "label": "WAP/Wireless Web",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-012",
+   "label": "Location sensing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-013",
+   "label": "Speech recognition on desktops",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-014",
+   "label": "E-payments",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-016",
+   "label": "Bluetooth",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-017",
+   "label": "Voice over IP",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-018",
+   "label": "Speech recognition in call centers",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-019",
+   "label": "Text-to-speech",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-020",
+   "label": "Wireless LANs/802.11s",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-021",
+   "label": "Virtual private networks",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-001",
+   "label": "802.15.4 (ZigBee)",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-003",
+   "label": "Ultrawideband",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-005",
+   "label": "Information Extraction",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-006",
+   "label": "Trusted Computing Platforms",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-007",
+   "label": "Mesh Networks",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-008",
+   "label": "Electronic Ink/Digital Paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-011",
+   "label": "Micro Fuel Cells",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-012",
+   "label": "Linux on Desktop",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-013",
+   "label": "Commercial Grids",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-014",
+   "label": "Light-Emitting Polymers",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-015",
+   "label": "Organic Light-Emitting Diodes",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-016",
+   "label": "Passive Radio Frequency Identification",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-017",
+   "label": "Tablet PC",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-018",
+   "label": "Web-Services-Enabled Business Models",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-021",
+   "label": "Multimedia Messaging Service",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-023",
+   "label": "802.11g",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-024",
+   "label": "Microelectromechanical Systems",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-026",
+   "label": "Bluetooth Cable Replacement",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-027",
+   "label": "IP Telephony",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-028",
+   "label": "Location-Aware Services",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-030",
+   "label": "Speech Recognition for Telephony and the Call Center",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-031",
+   "label": "Internal Web Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-006",
+   "label": "Trusted Computing Group",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-008",
+   "label": "Information Extraction",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-009",
+   "label": "Wikis",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-011",
+   "label": "Electronic Ink/Digital Paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-012",
+   "label": "Micro Fuel Cells",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-013",
+   "label": "Speech Recognition for Mobile Devices",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-014",
+   "label": "Inkjet Processes",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-015",
+   "label": "External MPP Grids",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-016",
+   "label": "Linux on Desktop for Mainstream Business Users",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-018",
+   "label": "802.16d WiMAX",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-019",
+   "label": "Unified Communications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-020",
+   "label": "UWB/803.15.3a/WiMedia",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-021",
+   "label": "LEPs/OLEDs",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-022",
+   "label": "Service-Oriented Architecture",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-023",
+   "label": "Really Simple Syndication",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-024",
+   "label": "Web-Services-Enabled Business Models",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-025",
+   "label": "Mesh Networks — Sensor",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-026",
+   "label": "Mesh Networks — Wide Area",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-028",
+   "label": "Smartphone",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-029",
+   "label": "Tablet PC",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-030",
+   "label": "XBRL",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-031",
+   "label": "Wi-Fi Hot Spots",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-033",
+   "label": "VoIP",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-035",
+   "label": "Speech Recognition for Telephony and Call Center",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-036",
+   "label": "Instant Messaging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-037",
+   "label": "Internal Web Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-005",
+   "label": "4G",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-006",
+   "label": "Coorperate Semantic Web",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-007",
+   "label": "Business Process Platforms",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-008",
+   "label": "Augmented Reality",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-009",
+   "label": "Text Mining",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-010",
+   "label": "Podcasting",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-013",
+   "label": "Electronic Ink/Digital Paper",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-015",
+   "label": "P2P VoIP",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-017",
+   "label": "BPM Suites",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-018",
+   "label": "Desktop Search",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-019",
+   "label": "Linux on Desktop for Mainstream Business Users",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-020",
+   "label": "Micro Fuel Cells",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-021",
+   "label": "Really Simple Syndication",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-025",
+   "label": "802.16 2004 WiMAX",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-026",
+   "label": "Wikis",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-027",
+   "label": "Organic Light-Emitting Devices",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-029",
+   "label": "Web Services-Enabled Business Models",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-030",
+   "label": "Trusted Computing Group",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-031",
+   "label": "Service Oriented Architecture (SOA)",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-033",
+   "label": "Tablet PC",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-034",
+   "label": "XBRL",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-035",
+   "label": "RFID (passive)",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-036",
+   "label": "Video Conferencing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-039",
+   "label": "Location \"Aware\" Applications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-040",
+   "label": "Business Rule Engines",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-041",
+   "label": "VOIP",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-042",
+   "label": "Text-to-Speech/Speech Synthesis",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-043",
+   "label": "Speech Recognition for Telepony and Call Center",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-044",
+   "label": "Internal Web Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-004",
+   "label": "Prediction Markets",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-006",
+   "label": "Offline Ajax",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-007",
+   "label": "Speech-to-Speech Translation",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-009",
+   "label": "Event-Driven Architecture",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-012",
+   "label": "RSS Enterprises",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-013",
+   "label": "Corporate Semantic Web",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-014",
+   "label": "Speech Recognition for Mobile Devices",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-015",
+   "label": "IPv6",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-016",
+   "label": "Mashup",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-017",
+   "label": "Web 2.0",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-018",
+   "label": "Folksonomies",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-019",
+   "label": "Digital Paper/E-Paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-020",
+   "label": "Social Network Analysis",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-021",
+   "label": "RFID",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-023",
+   "label": "Ajax",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-025",
+   "label": "Biometric Payments",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-026",
+   "label": "Wikis",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-027",
+   "label": "Corporate Blogging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-029",
+   "label": "Tablet PC",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-030",
+   "label": "Mobile Phone Payments",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-032",
+   "label": "Enterprise Instant Messaging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-033",
+   "label": "Location-Aware Applications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-035",
+   "label": "Internal Web Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-036",
+   "label": "VoIP",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-004",
+   "label": "Ambient and Glanceable Displays",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-012",
+   "label": "Gesture Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-013",
+   "label": "Mashup",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-014",
+   "label": "Virtual Environments/Virtual Worlds",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-016",
+   "label": "Idea Management",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-017",
+   "label": "Web 2.0 Workplace Technologies",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-018",
+   "label": "Electronic Paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-019",
+   "label": "Web 2.0",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-020",
+   "label": "RFID (Item)",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-022",
+   "label": "RSS Enterprise",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-024",
+   "label": "Wikis",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-026",
+   "label": "SOA",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-028",
+   "label": "Location-Aware Applications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-029",
+   "label": "Enterprise Instant Messaging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-002",
+   "label": "Context Delivery Architecture",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-006",
+   "label": "Surface Computers",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-009",
+   "label": "Microblogging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-011",
+   "label": "Social Computing Platforms",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-013",
+   "label": "Solid-State Drives",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-014",
+   "label": "Public Virtual Worlds",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-015",
+   "label": "Web 2.0",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-017",
+   "label": "Virtual Assistants",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-019",
+   "label": "Corporate Blogging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-020",
+   "label": "Idea Management",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-022",
+   "label": "Wikis",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-023",
+   "label": "Electronic Paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-024",
+   "label": "Tablet PC",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-025",
+   "label": "SOA",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-026",
+   "label": "Location-Aware Applications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-027",
+   "label": "Basic Web Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-002",
+   "label": "3-D Flat-Panel Displays",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-004",
+   "label": "Context Delivery Architecture",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-005",
+   "label": "Video Search",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-008",
+   "label": "Surface Computers",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-009",
+   "label": "Augmented Reality",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-011",
+   "label": "Internet TV",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-012",
+   "label": "Wireless Power",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-013",
+   "label": "Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-014",
+   "label": "E-Book Readers",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-015",
+   "label": "Social Software Suites",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-016",
+   "label": "Microblogging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-020",
+   "label": "Online Video",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-022",
+   "label": "Public Virtual Worlds",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-024",
+   "label": "Over-the-Air Mobile Phone Payment Systems, Developed Markets",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-026",
+   "label": "Web 2.0",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-027",
+   "label": "Idea Management",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-028",
+   "label": "Tablet PC",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-029",
+   "label": "Electronic Paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-030",
+   "label": "Wikis",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-031",
+   "label": "Coorperate Blogging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-032",
+   "label": "Location-Aware Applications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-033",
+   "label": "SOA",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-034",
+   "label": "Speech Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-002",
+   "label": "Context Delivery Architecture",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-008",
+   "label": "Video Search",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-010",
+   "label": "Social Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-012",
+   "label": "Speech-to-Speech Translation",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-013",
+   "label": "Internet TV",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-014",
+   "label": "Private Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-015",
+   "label": "Augmented Reality",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-016",
+   "label": "Media Tablet",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-017",
+   "label": "Wireless Power",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-018",
+   "label": "3D Flat-Panel TVs and Displays",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-019",
+   "label": "4G Standard",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-020",
+   "label": "Activity Streams",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-021",
+   "label": "Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-023",
+   "label": "Gesture Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-025",
+   "label": "Microblogging",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-026",
+   "label": "E-Book Readers",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-029",
+   "label": "Virtual Assistants",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-030",
+   "label": "Public Virtual Worlds",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-031",
+   "label": "Consumer-Generated Media",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-032",
+   "label": "Idea Management",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-033",
+   "label": "Mobile Application Stores",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-034",
+   "label": "Biometric Authentication Methods",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-037",
+   "label": "Predictive Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-038",
+   "label": "Electronic Paper",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-039",
+   "label": "Location-Aware Applications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-040",
+   "label": "Speech Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-041",
+   "label": "Pen-Centric Tablet PCs",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-006",
+   "label": "Social TV",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-007",
+   "label": "Big Data and Extreme Information Processing and Management",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-009",
+   "label": "Natural Language Question Answering",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-010",
+   "label": "Internet of Things",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-011",
+   "label": "Speech-to-Speech Translation",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-012",
+   "label": "Context-Enriched Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-013",
+   "label": "Image Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-016",
+   "label": "Group Buying",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-017",
+   "label": "Social Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-018",
+   "label": "Wireless Power",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-019",
+   "label": "Activity Streams",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-020",
+   "label": "Internet TV",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-021",
+   "label": "NFC Payment",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-022",
+   "label": "Private Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-023",
+   "label": "Augmented Reality",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-024",
+   "label": "Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-025",
+   "label": "Media Tablet",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-026",
+   "label": "Virtual Assistants",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-027",
+   "label": "In-Memory Database Management Systems",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-028",
+   "label": "Gesture Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-029",
+   "label": "Machine-to-Machine Communication Services",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-032",
+   "label": "Hosted Virtual Desktops",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-033",
+   "label": "Virtual Worlds",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-034",
+   "label": "E-Book Readers",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-035",
+   "label": "Consumerization",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-036",
+   "label": "QR/Color Code",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-037",
+   "label": "Idea Management",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-038",
+   "label": "Biometrix Authentication Methods",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-039",
+   "label": "Mobile Application Stores",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-040",
+   "label": "Predictive Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-041",
+   "label": "Speech Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-042",
+   "label": "Location-Aware Applications",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-011",
+   "label": "Silicon Anode Batteries",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-014",
+   "label": "Big Data",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-018",
+   "label": "Wireless Power",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-020",
+   "label": "BYOD",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-022",
+   "label": "Social Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-023",
+   "label": "Private Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-026",
+   "label": "In-Memory Database Management Systems",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-027",
+   "label": "Activity Streams",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-031",
+   "label": "NFC",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-032",
+   "label": "Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-035",
+   "label": "Gesture Control",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-036",
+   "label": "In-Memory Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-037",
+   "label": "Text Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-039",
+   "label": "Hosted Virtual Desktops",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-041",
+   "label": "Mobile OTA Payment",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-042",
+   "label": "Media Tablets",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-043",
+   "label": "Consumerization",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-044",
+   "label": "Biometric Authentication Methods",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-045",
+   "label": "Idea Management",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-047",
+   "label": "Speech Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-048",
+   "label": "Predictive Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-004",
+   "label": "Quantified Self",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-026",
+   "label": "In-Nemory Database Management Systems",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-027",
+   "label": "Virtual Assistants",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-031",
+   "label": "NFC",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-033",
+   "label": "Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-035",
+   "label": "In-Memory Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-036",
+   "label": "Gesture Control",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-037",
+   "label": "Activity Streams",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-038",
+   "label": "Enterprise 3D Printing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-039",
+   "label": "Biometric Authentication Methods",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-042",
+   "label": "Speech Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-043",
+   "label": "Predictive Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-018",
+   "label": "Data Science",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-029",
+   "label": "In-Memory Database Management Systems",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-031",
+   "label": "Hybrid Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-036",
+   "label": "Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-037",
+   "label": "NFC",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-039",
+   "label": "Gesture Control",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-040",
+   "label": "In-Memory Analytics",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-041",
+   "label": "Activity Streams",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-042",
+   "label": "Enterprise 3D Printing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-045",
+   "label": "Speech Recognition",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-016",
+   "label": "Citizen Data Science",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-025",
+   "label": "Speech-to-Speech Translation",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-026",
+   "label": "Machine Learning",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-031",
+   "label": "Hybrid Cloud Computing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-033",
+   "label": "Cryptocurrency Exchange",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-034",
+   "label": "Autonomous Field Vehicles",
+   "verdict": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-036",
+   "label": "Gesture Control",
+   "verdict": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-037",
+   "label": "Enterprise 3D Printing",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2016-026",
+   "label": "Machine Learning",
+   "verdict": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2016-031",
+   "label": "Natural-Language Question Answering",
+   "verdict": "hit"
+  }
+ ],
+ "unfalsifiable_agreed": [
+  {
+   "id": "gartner-hype-cycle-2002-002",
+   "label": "E-tags"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-005",
+   "label": "Web Platforms"
+  }
+ ],
+ "ungradable_agreed": [],
+ "contested": [
+  {
+   "id": "gartner-hype-cycle-1999-007",
+   "label": "Bluetooth",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-009",
+   "label": "Enterprise Portals",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-013",
+   "label": "Voice over IP",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-019",
+   "label": "Data Mining",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-002",
+   "label": "Audio Mining",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-008",
+   "label": "ASPs",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-010",
+   "label": "Bluetooth",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-014",
+   "label": "Micropayments",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-015",
+   "label": "Voice over IP",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-003",
+   "label": "Semantic Web",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-005",
+   "label": "PDA phones",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-007",
+   "label": "Enterprise Instant Messaging",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-013",
+   "label": "ASPs",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-014",
+   "label": "Bluetooth",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-019",
+   "label": "Wireless LANs/802.11",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-004",
+   "label": "Identity services",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-005",
+   "label": "Natural-language search",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-007",
+   "label": "Grid computing",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-010",
+   "label": "Peer-to-peer computing",
+   "graderA": "miss",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-015",
+   "label": "Public key infrastructure",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-009",
+   "label": "Unified Communications",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-010",
+   "label": "Semantic Web",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-020",
+   "label": "Extensible Business Reporting Language",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-022",
+   "label": "Smartphones",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-029",
+   "label": "Voice Over IP Services",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-010",
+   "label": "Social Network Analysis",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-017",
+   "label": "Semantic Web",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-027",
+   "label": "RFID (Case/Pallet)",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-032",
+   "label": "Location \"Aware\" Services",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-034",
+   "label": "Internal MPP Grids",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-003",
+   "label": "Networked Collective Intelligence",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-012",
+   "label": "Model-driven Approaches",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-014",
+   "label": "Inkjet Manufacturing",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-023",
+   "label": "Grid Computing",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-024",
+   "label": "Coorperate blogging",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-028",
+   "label": "Mesh Network-Sensors",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-032",
+   "label": "Internet micro-payments",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-037",
+   "label": "Handwriting Recognition",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-038",
+   "label": "Software as Service/ASAP",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-010",
+   "label": "Collective Intelligence",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-011",
+   "label": "Model-Driven Architectures",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-022",
+   "label": "Grid Computing",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-024",
+   "label": "RFID (Case/Pallet)",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-031",
+   "label": "Location-Aware Technologoy",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-034",
+   "label": "Smartphone",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-002",
+   "label": "Behavioral Economics",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-006",
+   "label": "Portable Personality",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-007",
+   "label": "3-D Printing",
+   "graderA": "miss",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-008",
+   "label": "Content Analytics",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-009",
+   "label": "Video Telepresence",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-010",
+   "label": "Collective Intelligence",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-011",
+   "label": "Expertise Location and Management",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-021",
+   "label": "Social Network Analysis",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-023",
+   "label": "RFID (Case/Pallet)",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-027",
+   "label": "Location-Aware Technology",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-003",
+   "label": "Behavioral Economics",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-007",
+   "label": "Cloud Computing",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-008",
+   "label": "3-D Printing",
+   "graderA": "miss",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-010",
+   "label": "Green IT",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-012",
+   "label": "Video Telepresence",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-016",
+   "label": "Service-Oriented Business Applications",
+   "graderA": "partial",
+   "graderB": "unfalsifiable"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-018",
+   "label": "RFID (Case/Pallet)",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-021",
+   "label": "Social Network Analysis",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-010",
+   "label": "3-D Printing",
+   "graderA": "miss",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-017",
+   "label": "Green IT",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-018",
+   "label": "Video Telepresence",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-021",
+   "label": "Home Health Monitoring",
+   "graderA": "miss",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-023",
+   "label": "RFID (Case/Pallet)",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-025",
+   "label": "Social Network Analysis",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-006",
+   "label": "Extreme Transaction Processing",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-011",
+   "label": "3D Printing",
+   "graderA": "miss",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-022",
+   "label": "Cloud/Web Platforms",
+   "graderA": "unfalsifiable",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-027",
+   "label": "Video Telepresence",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-035",
+   "label": "Internet Micropayment Systems",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-036",
+   "label": "Interactive TV",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-005",
+   "label": "Video Analytics for Customer Service",
+   "graderA": "hit",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-014",
+   "label": "3D Printing",
+   "graderA": "miss",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-015",
+   "label": "Gamification",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-031",
+   "label": "Cloud/Web Platforms",
+   "graderA": "unfalsifiable",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-041",
+   "label": "Location Intelligence",
+   "graderA": "partial",
+   "graderB": "hit"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-030",
+   "label": "Content Analytics",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-043",
+   "label": "3D Scanners",
+   "graderA": "partial",
+   "graderB": "miss"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-022",
+   "label": "Advanced Analytics With Self-Service Delivery",
+   "graderA": "hit",
+   "graderB": "partial"
+  },
+  {
+   "id": "gartner-hype-cycle-2016-030",
+   "label": "Software-Defined Anything (SDx)",
+   "graderA": "unfalsifiable",
+   "graderB": "hit"
+  }
+ ]
+}
