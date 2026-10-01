@@ -10,6 +10,8 @@ One file per role. The coordinating session fills the placeholders (`<source>`, 
 | 4a | Audit sample (script) | `node scripts/audit-sample.mjs <source>` | `audit-d11.json` (seed and sample, no records) |
 | 4b | Auditor | `auditor.md` | `audit-d11.json` (records) |
 | 5 | Final (script) | `node scripts/final-d20.mjs <source>` | `final-d20.json` |
+| later | Dispute agent, one per dispute issue (D29) | `dispute.md` | a record appended to `disputes.json` by the coordinating session |
+| later | Re-check adjudicator (D24) | `adjudicator.md` plus the pass reason | `adjudicated-d20-pass<N>.json` |
 
 Split large sources into batches of about 75 claims per grader agent. Both graders get the same batches. A batch writes `verdicts-d16-grader<A|B>-<batch>.json` (batch name in lowercase letters, digits and hyphens); the agreement script merges every batch file of a grader and fails on a duplicate id.
 

@@ -82,6 +82,18 @@ for (const u of agreement.unfalsifiable_agreed ?? []) {
 	if (a) rows.push({ id: u.id, verdict: a.verdict, status: "adjudicated", graderA: "unfalsifiable", graderB: "unfalsifiable", reason: a.reason ?? "" });
 }
 
+// Disputes (D29): data/raw/<source>/disputes.json, append-only. The latest record per claim applies;
+// an upheld dispute replaces the verdict and keeps the earlier one in `was`.
+const disputes = read("disputes.json")?.disputes ?? [];
+const latestDispute = new Map();
+for (const d of disputes) latestDispute.set(d.claim_id, d);
+for (const [id, d] of latestDispute) {
+	const row = rows.find((r) => r.id === id);
+	if (!row) throw new Error(`disputes.json: issue #${d.issue} is about ${id}, which has no row in final-d20`);
+	row.dispute = { issue: d.issue, outcome: d.outcome };
+	if (d.outcome === "upheld" && d.verdict_after !== row.verdict) Object.assign(row, { was: row.verdict, verdict: d.verdict_after, status: "disputed", reason: d.reason ?? "" });
+}
+
 function wilson(k, m, z = 1.96) {
 	if (!m) return null;
 	const p = k / m;
@@ -135,6 +147,7 @@ const out = {
 			: null,
 	hit_or_partial_rate: graded >= MIN_RATE_N ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,
 	adjudicated: rows.filter((r) => r.status === "adjudicated").length,
+	...(disputes.length ? { disputes: { records: disputes.length, upheld: rows.filter((r) => r.status === "disputed").length } } : {}),
 	...(adjPassFiles.length ? { rechecked: rows.filter((r) => r.status === "rechecked").length, recheck_passes: adjPassFiles } : {}),
 	audit: auditOut,
 	verdicts: rows.sort((a, b) => a.id.localeCompare(b.id)),

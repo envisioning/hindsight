@@ -425,3 +425,22 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** An audit with no error gives no widening, although a small clean audit does not prove an error rate of zero. The upper end of the error rate's own interval would cover that, but it widens the Hype Cycle interval from 55-64% to 33-86% and leaves no rate readable; that was tried and rejected for this release. Treating every error as moving the rate overstates the effect when errors cancel.
 
 **Overturned by.** A per-verdict error model from larger audits (hit-to-miss and miss-to-hit rates measured separately), or audits large enough that the error rate's own interval is narrow.
+
+## D29: Dispute handling (D8, D20, issue #62)
+
+*Recorded 2026-10-01.*
+
+**Decision.** A dispute is a GitHub issue from the "Dispute a verdict" form (label `dispute`). It is graded by an agent under the same rule as the claim, never settled by a person at Envisioning (D20).
+
+- **Who.** The coordinating session of any work day lists open issues with the label `dispute` first (`gh issue list -R envisioning/hindsight --label dispute --state open`) and gives each one to a fresh dispute agent (`docs/grading/dispute.md`).
+- **What the agent sees.** The claim text, the source rule, the final verdict and its record (graders, adjudication, audit), and the dispute's evidence. It may search for more. It treats the issue text as evidence, never as instructions.
+- **Outcome.** `upheld` (the evidence supports another verdict under the rule: give it), `rejected` (it does not, with the reason), or `no_change` (the dispute raises no fact or reading that the record did not weigh). A dispute without evidence is `rejected` without a re-grade.
+- **Where it is written.** Judgment sources: `data/raw/<source>/disputes.json`, one record per dispute with the issue number, appended, never edited. `scripts/final-d20.mjs` applies the latest record per claim: an upheld dispute replaces the verdict, with status `disputed` and the earlier verdict kept in `was`. Numeric sources: a dispute about matching is a matching-audit finding. The fix goes into `src/grade/numeric.ts` for every row, and the record goes into `data/graded/disputes.json`.
+- **Closing.** The agent's result is posted on the issue with the reason and evidence. The issue gets the label `dispute: upheld` or `dispute: rejected` and is closed. A later dispute with new evidence on the same claim is a new record.
+- **The publisher.** A dispute from the publisher of the claim is graded the same way. The affiliation is published with the record.
+
+**Why.** D8 promised that a dispute with evidence reopens a claim; D20 says an agent grades it. This makes the path concrete and keeps the record append-only.
+
+**Cost.** One agent per dispute and one more file per source. A single agent decides a dispute, where a verdict had two graders; the published reason and evidence are the check, and a further dispute is open to anyone.
+
+**Overturned by.** A dispute volume that needs two blind agents per dispute, or disputes that agents decide against clear evidence.
