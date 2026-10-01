@@ -5,26 +5,30 @@
  "n": 186,
  "counts": {
   "hit": 14,
-  "miss": 28,
+  "miss": 29,
   "contested": 4,
   "partial": 4,
-  "ungradable": 136
+  "ungradable": 135
  },
  "hit_rate": {
   "hits": 14,
-  "of_graded_hit_partial_miss": 46,
-  "rate": 0.3043,
+  "of_graded_hit_partial_miss": 47,
+  "rate": 0.2979,
   "wilson95": [
-   0.191,
-   0.448
+   0.187,
+   0.44
   ],
   "audit_adjusted95": [
-   0.072,
-   0.567
+   0.068,
+   0.559
   ]
  },
- "hit_or_partial_rate": 0.3913,
+ "hit_or_partial_rate": 0.383,
  "adjudicated": 9,
+ "rechecked": 6,
+ "recheck_passes": [
+  "adjudicated-d20-pass1.json"
+ ],
  "audit": {
   "sample": 42,
   "audited": 42,
@@ -63,6 +67,15 @@
    "reason": "D16 quantitative rule on the US measure. Forecast about 12.2% (2 x 6.1%). Actual 2011: IDC full year 10.73%; Gartner quarters 9.3%, 12.9% (Q3), 11.6% (Q4), annual level about 11%. Error vs forecast 10-14% of the actual (ratio 1.76x-1.82x vs 2.0x): outside the 10% hit band, inside 25%: partial. Western Europe not verified by either grader. Grader A error: its cited MacDailyNews page (2011-10-12) gives no Western Europe share; the 7.6% vs 5.7% figure is not on the page, so A's 'both regions about doubled' is unsupported. A also rounded an about-11% annual US level to 'within 10% of 12%', which holds only at the top of the range."
   },
   {
+   "id": "gartner-strategic-predictions-2008-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Edition text now read: the claim is about traveling workers leaving the notebook behind in favour of pocketable devices and web apps. Looked for a 2011-2012 survey of business travelers or mobile workers measuring the share who travel without a notebook. The iPass Mobile Workforce Reports (quarterly, 1,100+ enterprises, 2011-2012) are the closest series; they report devices carried (3.5 devices for work in Q1 2012, 'at least one laptop'), tablet adoption (64%) and desktop abandonment (38%), but never the share leaving the notebook at home on trips. Tablet ownership is a different quantity (D23). No public measure of the stated quantity at 2011-2012.",
+   "pass": 1
+  },
+  {
    "id": "gartner-strategic-predictions-2008-004",
    "verdict": "miss",
    "status": "audited"
@@ -71,6 +84,15 @@
    "id": "gartner-strategic-predictions-2008-010",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Edition text now read (Sydney release, 2009-02-06): a modelled displacement of seats by telepresence. Seats displaced by telepresence is an attributed value (D23); IATA, ICAO and airline traffic statistics report passengers carried, not seats substituted by video meetings, and no travel-industry body measured the substitution for 2011-2012. Page access does not change this.",
+   "pass": 1
   },
   {
    "id": "gartner-strategic-predictions-2009-009",
@@ -86,6 +108,15 @@
    "graderA": "miss",
    "graderB": "ungradable",
    "reason": "A public measure exists: Cisco VNI (May 2013) puts all machine-to-machine traffic, a superset of sensor traffic, at 0.5% of global IP traffic in 2012. Even if non-video traffic were only 40% of IP traffic, M2M would be at most about 1.25% of non-video traffic, an order of magnitude below 20%. An upper bound this far below the forecast settles the claim; it is not a proxy of another quantity (D23). Miss. Grader B's ungradable rested on Cisco VNI being unreachable; the 2013 Cisco release is reachable."
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Edition text now read: the claim concerns ownership of IT hardware shifting to third parties (cloud, virtualization, employee-owned PCs). Looked for a 2011-2012 survey of businesses measuring the share that own no IT hardware at all; cloud-adoption and BYOD surveys measure use of some services or devices, not zero ownership, which is a different quantity (D23). No public measure found.",
+   "pass": 1
   },
   {
    "id": "gartner-strategic-predictions-2010-01-003",
@@ -115,6 +146,33 @@
    "status": "contested",
    "was": "hit",
    "reason": "Wikipedia Shamoon: 30,000+ Aramco Windows workstations wiped and fuel-truck loading halted, but exploration and production systems were on isolated networks and unaffected, so whether 'critical infrastructure' was damaged depends on the reading. The 2014 German steel mill case is not cited with any source; evidence too weak for hit or miss."
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Edition text now read: it narrows the claim to the incentive portion of pay of new G2000 CIOs. CIOs are rarely named executive officers, so proxy filings do not disclose their incentive metrics; no public CIO survey of 2014-2015 reports the basis of incentive pay for this population. No public measure.",
+   "pass": 1
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-006",
+   "verdict": "miss",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Edition text says the claim is about supporting corporate applications on employee-owned notebooks and smartphones, which is what organization-level BYOD surveys measure (organization allows employees to use own devices for work). In-window estimates (2013-2014, D23): Tech Pro Research Feb 2013, 44% of organizations allowing BYOD (18% more planning, 37% vetoed); Tech Pro Research Nov 2014, 74% using or planning to allow, about a quarter ruled out, with currently allowed at 71% for firms of 50-249 staff and 54% for the largest firms reported. Even the upper bound (74%, which includes plans) is 21.6% below 90; currently-allowed shares (44-71%) put 90 more than 25% above the actual. Median of in-window estimates is well under 72, so 90 is beyond 25%: miss under D10. Cisco IBSG 89% 'enable BYOD in some form' is from 2012, outside the target-year window, and not used.",
+   "pass": 1
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Edition text now read: cannibalization of current and potential outsourcing revenue by low-cost cloud services. Revenue lost to cloud substitution is an attributed value (D23); outsourcers' filings report total and segment revenue, not revenue cannibalized by cloud, and no tracker publishes that attribution for 2014-2015. 'Up to' also makes the figure a ceiling. No public measure.",
+   "pass": 1
   },
   {
    "id": "gartner-strategic-predictions-2011-002",

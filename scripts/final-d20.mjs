@@ -82,6 +82,12 @@ for (const u of agreement.unfalsifiable_agreed ?? []) {
 	if (a) rows.push({ id: u.id, verdict: a.verdict, status: "adjudicated", graderA: "unfalsifiable", graderB: "unfalsifiable", reason: a.reason ?? "" });
 }
 
+// Both graders ungradable, re-decided by a re-check pass (D24): a row; the rest stay counted as ungradable.
+for (const u of agreement.ungradable_agreed ?? []) {
+	const r = recheck.get(u.id);
+	if (r) rows.push({ id: u.id, verdict: r.verdict, status: "rechecked", graderA: "ungradable", graderB: "ungradable", reason: r.reason ?? "", pass: r.pass });
+}
+
 // Disputes (D29): data/raw/<source>/disputes.json, append-only. The latest record per claim applies;
 // an upheld dispute replaces the verdict and keeps the earlier one in `was`.
 const disputes = read("disputes.json")?.disputes ?? [];
@@ -107,11 +113,6 @@ const counts = {};
 for (const r of rows) counts[r.verdict] = (counts[r.verdict] ?? 0) + 1;
 const agreedUnfalsifiable = (agreement.agreed?.unfalsifiable ?? 0) - rows.filter((r) => r.status === "adjudicated" && r.graderA === "unfalsifiable" && r.graderB === "unfalsifiable").length;
 if (agreedUnfalsifiable) counts.unfalsifiable = (counts.unfalsifiable ?? 0) + agreedUnfalsifiable;
-// Both graders ungradable, re-decided by a re-check pass (D24): a row; the rest stay counted as ungradable.
-for (const u of agreement.ungradable_agreed ?? []) {
-	const r = recheck.get(u.id);
-	if (r) rows.push({ id: u.id, verdict: r.verdict, status: "rechecked", graderA: "ungradable", graderB: "ungradable", reason: r.reason ?? "", pass: r.pass });
-}
 const agreedUngradable = (agreement.ungradable_agreed?.length ?? 0) - (agreement.ungradable_agreed ?? []).filter((u) => recheck.has(u.id)).length;
 if (agreedUngradable) counts.ungradable = (counts.ungradable ?? 0) + agreedUngradable;
 const MIN_RATE_N = 20;

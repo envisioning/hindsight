@@ -13,7 +13,11 @@
  "rate_withheld": "D11: 8 graded claims, fewer than 20; counts only.",
  "hit_rate": null,
  "hit_or_partial_rate": null,
- "adjudicated": 3,
+ "adjudicated": 2,
+ "rechecked": 49,
+ "recheck_passes": [
+  "adjudicated-d20-pass1.json"
+ ],
  "audit": {
   "sample": 7,
   "audited": 7,
@@ -29,6 +33,15 @@
    "status": "contested",
    "was": "miss",
    "reason": "Wikipedia (citing PwC/Strategy&) confirms 21% of large public companies had a CDO by 2020, but that measures CDO presence, not CIOs supplanted by a CDO for digital product delivery; no survey of the same population and behaviour exists for 2019-2020 (session rule, D22/D23 same-quantity), so the bound argument does not support a published verdict."
+  },
+  {
+   "id": "idc-futurescape-2015-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Looked for a public 2016-2017 value of 3rd Platform share of IT spending. IDC's public Black Book releases opened now (CEMA release 2017-04-28 via Wayback; Business Wire release 2017-10-18 via Wayback; Black Book 3rd Platform Highlights PDF, 2018-03) give only forecasts (3rd Platform 75% of ICT spending by 2021), total ICT ($4.3T in 2016) and 'the 2nd Platform still represents more than $1 trillion in annual ICT spending today'. That last figure is a lower bound for 2017 ICT (incl. telecom services and consumer spend), not organizations' IT spending, and gives no 3rd Platform share; deriving a share from it would be a proxy of another scope (D23). The only public measured share found by grader B is ~29% for 2014. No public measure at the target year: ungradable.",
+   "pass": 1
   },
   {
    "id": "idc-futurescape-2015-003",
@@ -56,12 +69,409 @@
    "status": "audited"
   },
   {
+   "id": "idc-futurescape-2020-013",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 survey of CIOs giving the share burdened by technical debt accumulated during the pandemic (IDC, Gartner CIO Agenda, Foundry State of the CIO). 'Shadow' has no survey definition; tech-debt surveys report concern or priority, not this share. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2020-014",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 CIO survey with the share of CIOs integral to business decisions under a comparable definition; Foundry and Gartner publish role perceptions and digital-leadership co-ownership (different behaviours). No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2020-015",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 CIO survey with the share accelerating automation for distributed work; automation-adoption surveys measure organizations' use, not acceleration by CIOs for this purpose. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2020-016",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for any survey counting permanent CIO-led adversity or resilience centers in enterprises in 2022-2023; the construct is IDC's own and is not measured publicly. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2020-017",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of CIOs or organizations giving the share with AI deployed for customer-behaviour sensing and prediction. General AI-adoption surveys (e.g. McKinsey State of AI) measure AI use in any function, a different behaviour; using them would be a proxy (D23). No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2020-018",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of the share of CIOs or IT organizations with formal low-code/no-code governance in place. Public low-code reports measure adoption or use, not governance. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2020-019",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for any survey measuring IDC's 'control systems' construct; the term is not defined or measured outside IDC. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2020-020",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 CIO survey on ownership of employee health, welfare and location data. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Looked for a public 2023-2024 measure of the as-a-service plus outcome-based share of total tech and services spending. Public trackers measure narrower or different quantities: public cloud services (Gartner end-user spending), IDC cloud infrastructure, and IDC 'whole cloud' spending, which is a 2021 forecast ($1.3T by 2025), not a measured 2024 share and not the same quantity (it excludes non-cloud managed and outcome-based services). Dividing any of these by total IT spending would be a proxy of another quantity (D23). No public measure of the claim's quantity at the target year: ungradable.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 survey of G2000 or large enterprises measuring a reset of cloud selection criteria toward business outcomes. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 enterprise survey on use of AI-assisted cloud governance services, and on value achieved; the category is IDC-defined. Cloud-management surveys (e.g. Flexera State of the Cloud) report cloud challenges and FinOps practice, not this service category. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-004",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2021-2022 measure of the share of large-enterprise IT budgets moved by aaS bundles in these four areas. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-006",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 study comparing returns on augmenting vs automating investments across G2000; the 2x ratio is not measured publicly. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-007",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 enterprise survey on data-governance restructuring caused by divergent regional mandates; privacy surveys (IAPP) measure governance programmes generally, not restructuring caused by divergence. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-008",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 measure of G2000 new hardware/connectivity spending allocated to in-person customer and employee experiences. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-009",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of G2000 or large enterprises with dedicated digital sustainability teams; sustainability surveys measure CSO roles or ESG reporting, a different behaviour. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-010",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Attributed value (D23): no public source decomposes company valuations into confidence in data controls vs financial controls for 2025. Nothing was blocked; both graders' reasons hold with page access.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-012",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 CIO survey on the primary basis of CIO performance measurement; Foundry and Gartner publish priorities and role perceptions, not the primary measurement basis. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-013",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of CIOs/CFOs on formal technical-debt management practice adopted for this cause; vendor surveys report tech-debt concern or spend, not the share with formal practice. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-014",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 CIO survey on COE-based user-support teams for hybrid work. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-016",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 measure of CIO failure on these capabilities; 'fail to effectively evolve' is not surveyed. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-017",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 survey or benchmark (e.g. TBM/Apptio) of the share of organizations allocating at least 25% of IT spend as LOB direct cost; none public reports this threshold share. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-018",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The earlier block (Okta Secure Sign-in Trends pages returned 404) is now cleared: the 2023 report's executive summary PDF opened. It reports MFA adoption as a share of Okta Workforce Identity users (about 65% by end of 2022 per the report; by country 25-79%; 54% at 20,000+ employee firms). That is a share of workforce users at Okta customers, not a share of CIOs or organizations, and covers workforce sign-in, not ecosystem-wide (partner and customer) MFA. Using it would grade a different population and quantity (D23 proxy). No public 2021-2022 survey of the share of organizations requiring MFA across their ecosystem was found: ungradable.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-019",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 CIO survey on industry-ecosystem collaboration for these purposes. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2021-020",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). The earlier call rested on IDC paywall, not a fetch block; with page access the IDC pages show abstracts only. Looked for: a 2022-2023 survey of G2000 (or largest-enterprise) CIOs measuring a mandate to implement sustainable IT across acquisition-to-disposal. The public 2023 Gartner CIO survey release (opened via Wayback) reports no sustainability-mandate share. No public measure of this population and behaviour found.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). Quantity is a share of vendor offerings; no public census of offerings by control-plane type exists. Cloud spending series (Gartner public cloud forecast) measure spend, a different quantity (proxy, D23). Looked for: IDC/Gartner tracker of offerings requiring cloud-based control planes, 2024-2025.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). 'Full value' attainment attributed to skills shortfalls is not measured by any public survey found for 2023-2024. Skills-gap surveys report shares citing skills as a barrier, which is a different quantity. Looked for: IDC, Gartner, Foundry surveys of businesses on value realisation blocked by skills.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-004",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). Share of G2000 IT and data assets moved for sovereignty, sustainability or residency reasons has no public measure. Looked for: IDC/Gartner sovereign-cloud surveys giving a share of assets affected, 2024-2025; found none with this quantity.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-005",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). Needs a 2022-2023 enterprise survey that ranks 'cannot assess promised gains' against cost as the main aaS barrier. None found; cloud-barrier surveys (e.g. Flexera State of the Cloud) list cost and skills but not this comparison. Looked for: IDC, Gartner, Flexera barrier rankings.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-006",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). 'Platinum-level' is a vendor tier with no common definition and no public census of such offerings or their bundled services. Looked for: tracker or survey of premium aaS tiers including expert teams, 2023-2024.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-007",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). A count of 'high-visibility' launches delayed by silicon or code supply chains has no public tally; 'high-visibility' is undefined. Isolated 2025 delays (e.g. GPU shortages) are anecdotes, not a count.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-011",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). Gartner's CIO survey (opened via Wayback) measures co-ownership of digital delivery (45% of CIOs, 12% 'franchisers'), not CIOs whose role is challenged; Foundry State of the CIO public page gives role self-identification only. Neither is the claim's quantity. Looked for: 2024-2025 CIO survey on role challenge by LOB leaders. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape. Its public abstract would not change the call.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-012",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). 'Effective governance of pervasive IT' has no public survey measure. Gartner's 2023 survey gives operator 55% / explorer 33% / franchiser 12% profiles of digital-delivery ownership, a different construct and fielded two years before the target year. Looked for: 2024-2025 CIO survey on governance of business-led and partner IT. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape. Its public abstract would not change the call.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-014",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). No public survey measures CIOs using resilience as competitive differentiation. Gartner's 2023 CIO survey (opened via Wayback) reports investment priorities and outcomes, not this. Looked for: 2023-2024 CIO surveys (Gartner, Foundry, IDC) on resilience as differentiator. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape. Its public abstract would not change the call.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-015",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). 'True intelligent enterprise' has no public measure. McKinsey State of AI 2025 (scaling agentic AI 23%; high performers about 6%) and similar maturity surveys use other constructs; using them would be a proxy. Looked for: 2024-2025 surveys of AI plus automation maturity matching the definition. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-017",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). No public 2024-2025 CIO survey measures increased reliance on edge-collected operational data. Edge spending forecasts are market totals, not a share of CIOs. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-018",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). No public CIO survey measures this mandate (ethical employee-insight technology plus brand amplification). Looked for: 2023-2024 Gartner, Foundry, IDC CIO surveys on employee-experience mandates. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2022-020",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D23 conditional claim). Condition first: public cloud (the core of 'as a service') is about $723B of roughly $5.6T IT spending in 2025, about 13% (Gartner). Whether the condition held depends on whether managed and outsourced services count as 'as a service'; no public series measures IDC's aaS share, so the condition is not shown to hold. The consequent (size of lasting opex resets) has no public measure either. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2023-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D23). No public series gives AI as a share of core IT spend for the G2000. ISG's survey of 300 G2000 executives (Oct-Nov 2024) reports only that AI is 30% of the 2025 budget increase and AI spend grows 5.7% vs 1.8% for IT, not the level share. Related estimates disagree by far more than a factor of 2: Oxford Economics puts AI under 4% of enterprise tech spend in 2025 (all enterprises, model-based); BCG AI Radar has large firms planning AI spend of about 5% of revenue, which would be comparable to or above typical IT budgets. Under D23 (scope not matched; estimates span >2x) this stays ungradable, though every estimate found sits well below 40%.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2023-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22). Qualitative, universal claim ('all enterprises') with no public measure of stop-gap measures or of their effect on cloud-economics goals. GPU scarcity in 2024 is anecdotal support only.",
+   "pass": 1
+  },
+  {
    "id": "idc-futurescape-2023-004",
    "verdict": "ungradable",
-   "status": "adjudicated",
+   "status": "rechecked",
    "graderA": "ungradable",
    "graderB": "hit",
-   "reason": "Qualitative claim with no number. Its content is 'aggressive' expansion across the whole provider spectrum plus a consequence (partnering instability); no public series measures either for 2024 (D22). Grader B graded only the weakest part (some expansion happened) from anecdotes, which is a proxy, not a measure; one of its examples is a reading error: Reddit is a data seller, not a hardware, software or services provider, so its licensing deals show buyers acquiring data rather than a provider portfolio measure. Isolated events (IBM Granite open release, Databricks-Tabular) cannot settle 'aggressively' or 'across the spectrum'. Consistent with the 147 agreed ungradable claims of this source, which include every other unquantified IDC claim."
+   "reason": "Still ungradable (D22). With page access nothing changes: 'aggressive' expansion across the provider spectrum and partnering instability have no public series. Individual events (IBM Granite open release, Databricks-Tabular) are anecdotes, not a measure. Earlier adjudication stands.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2023-006",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D23). No public measure of the share of service engagements with GenAI-enabled delivery. Services firms disclose GenAI bookings or revenue (e.g. Accenture), a share of value, not of engagements: a proxy. Looked for: IDC services trackers, provider disclosures counting engagements.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2023-012",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D23). Opened the pages the earlier pass could not: Gartner's 2023 CIO survey (n=2,457) reports 70% call GenAI game-changing, 9% deployed, 55% plan to within 24 months: attitude and plans, not pressure. Salesforce/Vanson Bourne (600 IT professionals, Dec 2023-Jan 2024) says GenAI is the #1 technology IT feels pressure to onboard quickly and 88% cannot keep up with AI requests, but gives no share of CIOs feeling pressure. RWS reports 87% of C-suite executives feel pressure, a different population. EY 2024 US CIO sentiment survey has no pressure share. No measure of this population and behaviour.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2023-014",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D23). Public CIO surveys rank data and analytics among top investment areas (Gartner 2023 release: cybersecurity, data analytics, cloud) but give no share of CIOs prioritising strategic data management with a comparable definition. Ranking is not the share.",
+   "pass": 1
+  },
+  {
+   "id": "idc-futurescape-2023-015",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). No public survey measures attainment of CIOs' 2025 digital revenue goals. Gartner's 2023 survey reports share of digital initiatives meeting outcome targets (43% operator, 63% franchiser), a different quantity and year.",
+   "pass": 1
   },
   {
    "id": "idc-futurescape-2023-017",
@@ -72,9 +482,27 @@
    "reason": "Session rule: a share of CIOs is gradable against a survey of the same population and behaviour at the target year or the year before. The 2025 Gartner CIO and Technology Executive Survey (3,186 CIOs and technology executives, 88 countries, fielded 2024, published October 2024) reports 37% of organizations had already deployed GenAI. Error |35-37|/37 = 5.4%: hit under D16 numeric. Grader A's factor-of-2 range mixes populations and years: the Gartner Q4 2023 survey (29%) and McKinsey State of AI (about 65%) are not CIO surveys, and the 2024 CIO survey (9% deployed) was fielded in 2023 and is superseded by the target-year survey of the same population. With same-population data only, D23's range test does not trigger. Uncertainty: the 37% figure was confirmed via search results only (Gartner pages return 403 to fetch); a broader reading of 'embrace' (deployed or piloting) is not measured by any CIO survey and would not lower the verdict below partial."
   },
   {
+   "id": "idc-futurescape-2023-018",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). No public 2024-2025 CIO survey gives a share motivated or planning to automate compliance and ESG reporting. Looked for: Gartner, Foundry, IDC CIO surveys on compliance/ESG automation.",
+   "pass": 1
+  },
+  {
    "id": "idc-futurescape-2024-006",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "idc-futurescape-2024-011",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D22/D23). No public survey of the G1000 (or the largest firms) measures difficulty with divergent regulation in 2025. Looked for: IDC, Gartner, KPMG/EY large-enterprise regulatory surveys giving this share. Note: earlier graders cite US51736824, the IT Industry 2025 edition; the claim is from the CIO Agenda 2025 FutureScape.",
+   "pass": 1
   },
   {
    "id": "idc-futurescape-2024-012",
@@ -83,6 +511,15 @@
    "graderA": "ungradable",
    "graderB": "partial",
    "reason": "Surveys of organizations measuring this behaviour exist for 2024 and 2025, so grader A's 'no such survey found' is a search gap. Estimates on the dominant reading (in place or in progress): IAPP, spring 2024, 77% working on AI governance; Pacific AI, Feb-May 2025, 75% have AI usage policies; PEX Report 2025/26, 43% have an AI governance policy plus 25% implementing one = 68%. Range 68-77%, within a factor of 2 (D23). Median 75%; |85-75|/75 = 13.3%: partial. Grader B's median of two (76%, 11.8%) gives the same verdict. Narrower readings (formal governance framework 36%, dedicated role 59%, risk-evaluation process 45%) would be a miss, but 'be formalizing' is progressive and names policies first, so the broad reading dominates. Sample caveat: all three are self-selected professional surveys, not representative panels."
+  },
+  {
+   "id": "idc-futurescape-2024-013",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still ungradable (D23). Found IDC's 2023/2024 CIO Sentiment Survey via CIO.com: nearly 4 in 10 CIOs expected to overspend on digital infrastructure and 47% of those blamed tech debt; CIOs ranked tech debt elimination well below AI and security. Neither is the share of CIOs driving enterprise remediation initiatives, and it predates the target year. Gartner's '<20% of software leaders are very effective at managing tech debt' is another construct. No measure of the claim's quantity. Note: earlier graders cite US51736824, the IT Industry 2025 edition; the claim is from the CIO Agenda 2025 FutureScape.",
+   "pass": 1
   }
  ]
 }

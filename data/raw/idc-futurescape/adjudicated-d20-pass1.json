@@ -1,0 +1,887 @@
+{
+ "rule": "D16",
+ "role": "re-check pass 1 (D24): ungradable calls made without page access",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "idc-futurescape-2015-002",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2017, over 50% of organizations' IT spending goes to IDC's 3rd Platform (cloud, mobile, big data/analytics, social); over 60% by 2020.",
+   "reason": "Looked for a public 2016-2017 value of 3rd Platform share of IT spending. IDC's public Black Book releases opened now (CEMA release 2017-04-28 via Wayback; Business Wire release 2017-10-18 via Wayback; Black Book 3rd Platform Highlights PDF, 2018-03) give only forecasts (3rd Platform 75% of ICT spending by 2021), total ICT ($4.3T in 2016) and 'the 2nd Platform still represents more than $1 trillion in annual ICT spending today'. That last figure is a lower bound for 2017 ICT (incl. telecom services and consumer spend), not organizations' IT spending, and gives no 3rd Platform share; deriving a share from it would be a proxy of another scope (D23). The only public measured share found by grader B is ~29% for 2014. No public measure at the target year: ungradable.",
+   "fetched": "IDC CEMA press release 2017-04-28 (Wayback 20170504 snapshot) and Business Wire 2017-10-18 release (Wayback 20171018 snapshot); IDC Black Book highlights PDF from my.idc.com. idc.com getdoc pages still redirect.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20170504102841/http://idc-cema.com/eng/about-idc/press-center/64772-annual-ict-spending-to-reach-5-5-trillion-by-2020-according-to-idc-s-black-book-3rd-platform-edition",
+     "title": "Annual ICT Spending to Reach $5.5 Trillion by 2020 According to IDC's Black Book (3rd Platform Edition)",
+     "date": "2017-04-28",
+     "shows": "All ICT growth comes from the 3rd Platform; 2nd Platform 'still represents more than $1 trillion in annual ICT spending today'. No 3rd Platform share of IT spending for 2016 or 2017."
+    },
+    {
+     "url": "https://web.archive.org/web/20171018143909/http://www.businesswire.com/news/home/20171018005296/en/New-Technologies-Drive-ICT-Spending-Double-Rate",
+     "title": "New Technologies Will Drive ICT Spending Back to Double the Rate of GDP Growth, According to IDC",
+     "date": "2017-10-18",
+     "shows": "Total ICT $4.3T in 2016; 3rd Platform forecast to account for 75% of ICT spending by 2021 (a forecast, not a measured 2017 share)."
+    },
+    {
+     "url": "https://my.idc.com/downloads/BlackBook_3rdPlatform_Highlights.pdf",
+     "title": "2017-2021: ICT Spending Highlights (IDC Worldwide Black Book, 3rd Platform Edition)",
+     "date": "2018-03",
+     "shows": "Total worldwide ICT spend $4,562.8B; growth charts and regional shares of 3rd Platform spend; no 3rd Platform share of total IT spending."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-013",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "Through 2023, about 70% of CIOs are burdened ('shadowed') by pandemic-era technical debt causing financial stress, drag on agility and forced cloud migrations.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 survey of CIOs giving the share burdened by technical debt accumulated during the pandemic (IDC, Gartner CIO Agenda, Foundry State of the CIO). 'Shadow' has no survey definition; tech-debt surveys report concern or priority, not this share. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 3); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-014",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2023, 75% of CIOs are integral to business decision making.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 CIO survey with the share of CIOs integral to business decisions under a comparable definition; Foundry and Gartner publish role perceptions and digital-leadership co-ownership (different behaviours). No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 4); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-015",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 50% of CIOs accelerate robotization, automation and augmentation to support distributed work.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 CIO survey with the share accelerating automation for distributed work; automation-adoption surveys measure organizations' use, not acceleration by CIOs for this purpose. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 5); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-016",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2023, CIO-led 'adversity centers' are a permanent fixture in 65% of enterprises.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for any survey counting permanent CIO-led adversity or resilience centers in enterprises in 2022-2023; the construct is IDC's own and is not measured publicly. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 6); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-017",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 80% of CIOs, with LOBs, implement intelligent (AI) capabilities to sense, learn and predict changing customer behaviour.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of CIOs or organizations giving the share with AI deployed for customer-behaviour sensing and prediction. General AI-adoption surveys (e.g. McKinsey State of AI) measure AI use in any function, a different behaviour; using them would be a proxy (D23). No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 7); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-018",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 60% of CIOs implement governance for low-code/no-code tools.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of the share of CIOs or IT organizations with formal low-code/no-code governance in place. Public low-code reports measure adoption or use, not governance. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 8); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-019",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 65% of CIOs implement ecosystem, application and infrastructure 'control systems' founded on interoperability, flexibility, scalability, portability and timeliness.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for any survey measuring IDC's 'control systems' construct; the term is not defined or measured outside IDC. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 9); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2020-020",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 75% of CIOs absorb accountability for employee health, welfare and location data for underwriting, health, safety and tax compliance.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 CIO survey on ownership of employee health, welfare and location data. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20201027005274/en/IDC-FutureScape-Highlights-What-Will-Happen-Next-as-Enterprises-and-the-IT-Industry-Respond-to-the-Disruptions-Caused-by-COVID-19",
+     "title": "IDC FutureScape Worldwide CIO Agenda 2021 predictions (Business Wire)",
+     "date": "2020-10-27",
+     "shows": "Claim as published (CIO Agenda 2021 FutureScape, prediction 10); an IDC-defined behaviour of CIOs or enterprises with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-001",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2024, digital-first enterprises shift 70% of all tech and services spending to as-a-service and outcomes-centric models.",
+   "reason": "Looked for a public 2023-2024 measure of the as-a-service plus outcome-based share of total tech and services spending. Public trackers measure narrower or different quantities: public cloud services (Gartner end-user spending), IDC cloud infrastructure, and IDC 'whole cloud' spending, which is a 2021 forecast ($1.3T by 2025), not a measured 2024 share and not the same quantity (it excludes non-cloud managed and outcome-based services). Dividing any of these by total IT spending would be a proxy of another quantity (D23). No public measure of the claim's quantity at the target year: ungradable.",
+   "fetched": "Gartner's April 2024 IT spending release still returns 403 directly and a Cloudflare challenge page from the Wayback snapshot; IDC getdoc pages redirect. One search for an IDC public as-a-service share for 2024 found none.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 1); no follow-up measure of this quantity is attached."
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20210914005759/en/IDC-Forecasts-Worldwide-Whole-Cloud-Spending-to-Reach-%241.3-Trillion-by-2025",
+     "title": "IDC Forecasts Worldwide Whole Cloud Spending to Reach $1.3 Trillion by 2025",
+     "date": "2021-09-14",
+     "shows": "Closest public IDC series (whole cloud) is a forecast of a different, cloud-only quantity; no measured as-a-service plus outcome-based share of all tech spending for 2024."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-002",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2023, 40% of G2000 reset cloud selection to focus on business outcomes rather than IT requirements.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 survey of G2000 or large enterprises measuring a reset of cloud selection criteria toward business outcomes. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 2); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-003",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2023, 80% of enterprises use AI-assisted, cloud-linked governance services for dispersed resources and data; 70% do not achieve full value due to skills mismatches.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 enterprise survey on use of AI-assisted cloud governance services, and on value achieved; the category is IDC-defined. Cloud-management surveys (e.g. Flexera State of the Cloud) report cloud challenges and FinOps practice, not this service category. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 3); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-004",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2022, 40% of large enterprises' IT budgets are redistributed due to adoption of integrated as-a-service bundles (security, cloud platforms, virtual workspace, connectivity).",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2021-2022 measure of the share of large-enterprise IT budgets moved by aaS bundles in these four areas. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 4); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-006",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 70% of G2000 gain twice the returns on tech investments that augment employee/customer activities versus those that automate processes.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 study comparing returns on augmenting vs automating investments across G2000; the 2x ratio is not measured publicly. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 6); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-007",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, divergent regional data mandates force 80% of enterprises to restructure data governance processes.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 enterprise survey on data-governance restructuring caused by divergent regional mandates; privacy surveys (IAPP) measure governance programmes generally, not restructuring caused by divergence. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 7); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-008",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2023, 50% of G2000 shift half of new hardware/connectivity spending to in-person experiences in their own locations.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 measure of G2000 new hardware/connectivity spending allocated to in-person customer and employee experiences. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 8); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-009",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 60% of G2000 have digital sustainability teams assessing, certifying and coordinating sustainability data and analytics platforms.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of G2000 or large enterprises with dedicated digital sustainability teams; sustainability surveys measure CSO roles or ESG reporting, a different behaviour. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 9); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-012",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2023, 60% of CIOs are primarily measured on their ability to co-create new business models and outcomes through ecosystem collaboration.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2022-2023 CIO survey on the primary basis of CIO performance measurement; Foundry and Gartner publish priorities and role perceptions, not the primary measurement basis. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide CIO Agenda 2022 FutureScape, prediction 2); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-013",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 75% of CIOs and CFOs are forced to accelerate or enact formal technical debt management practices because of tech-debt-caused delays or failures.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 survey of CIOs/CFOs on formal technical-debt management practice adopted for this cause; vendor surveys report tech-debt concern or spend, not the share with formal practice. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide CIO Agenda 2022 FutureScape, prediction 3); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-014",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 60% of CIOs reimagine user support and create COE-based teams for hybrid and smart workplaces.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 CIO survey on COE-based user-support teams for hybrid work. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide CIO Agenda 2022 FutureScape, prediction 4); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-016",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 40% of CIOs fail to evolve IT's capability to deliver modern digital infrastructure, ecosystem tech governance and architecture-driven outcomes.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 measure of CIO failure on these capabilities; 'fail to effectively evolve' is not surveyed. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide CIO Agenda 2022 FutureScape, prediction 6); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-017",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 40% of organizations shift at least 25% of IT spending to direct cost aligned with specific LOB products/services.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2023-2024 survey or benchmark (e.g. TBM/Apptio) of the share of organizations allocating at least 25% of IT spend as LOB direct cost; none public reports this threshold share. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide CIO Agenda 2022 FutureScape, prediction 7); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-019",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 60% of CIOs collaborate to harness industry ecosystem capabilities for innovation, data sharing, differentiation and cyber risk management.",
+   "reason": "No blocked page was the cause: both graders' reasons cite paywalled IDC follow-up surveys, not a fetch failure. With page access (Wayback reachable) nothing new is public. Looked for a 2024-2025 CIO survey on industry-ecosystem collaboration for these purposes. No public measure of this population and behaviour at the target year or the year before (D22/D23).",
+   "fetched": "Nothing was blocked for this claim; the edition's Business Wire release is reachable and states the claim only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide CIO Agenda 2022 FutureScape, prediction 9); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-010",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2025, public enterprises' valuations rest as much on confidence in data controls as on financial controls, focusing spend on data-centric solutions.",
+   "reason": "Attributed value (D23): no public source decomposes company valuations into confidence in data controls vs financial controls for 2025. Nothing was blocked; both graders' reasons hold with page access.",
+   "fetched": "Nothing was blocked for this claim.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide IT Industry 2022 FutureScape, prediction 10); no follow-up measure of this quantity is attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-018",
+   "earlier": "ungradable_agreed (graders A and B both ungradable; not adjudicated)",
+   "verdict": "ungradable",
+   "reading": "By 2022, 60% of CIOs embrace ecosystem-wide multifactor authentication (across employees, partners and customers) as an essential minimum.",
+   "reason": "The earlier block (Okta Secure Sign-in Trends pages returned 404) is now cleared: the 2023 report's executive summary PDF opened. It reports MFA adoption as a share of Okta Workforce Identity users (about 65% by end of 2022 per the report; by country 25-79%; 54% at 20,000+ employee firms). That is a share of workforce users at Okta customers, not a share of CIOs or organizations, and covers workforce sign-in, not ecosystem-wide (partner and customer) MFA. Using it would grade a different population and quantity (D23 proxy). No public 2021-2022 survey of the share of organizations requiring MFA across their ecosystem was found: ungradable.",
+   "fetched": "Okta 'Secure Sign-in Trends Report 2023' executive summary PDF (okta.com/sites/default/files/2023-06/...); the report landing pages cited earlier still 404 under their old URLs.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions (Business Wire)",
+     "date": "2021-10-27",
+     "shows": "Claim as published (Worldwide CIO Agenda 2022 FutureScape, prediction 8); no follow-up measure of this quantity is attached."
+    },
+    {
+     "url": "https://www.okta.com/sites/default/files/2023-06/Okta-State-of-Secure-Sign-in-Exec-Summary-UK.pdf",
+     "title": "Executive Summary: The Secure Sign-in Trends Report 2023 (Okta)",
+     "date": "2023-06",
+     "shows": "MFA adoption as a share of Okta workforce users by country (Italy 79% ... South Korea 25%) and by company size (54% at 20,000+ employees); user-level workforce MFA, not share of CIOs/organizations with ecosystem-wide MFA."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2021-020",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2023, businesses require 55% of G2000 CIOs to implement sustainable IT with ESG practices across the technology life cycle.",
+   "reason": "Still ungradable (D22/D23). The earlier call rested on IDC paywall, not a fetch block; with page access the IDC pages show abstracts only. Looked for: a 2022-2023 survey of G2000 (or largest-enterprise) CIOs measuring a mandate to implement sustainable IT across acquisition-to-disposal. The public 2023 Gartner CIO survey release (opened via Wayback) reports no sustainability-mandate share. No public measure of this population and behaviour found.",
+   "fetched": "Gartner CIO survey release (live 403) via Wayback; IDC doc pages now return 200 but are abstract-only.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20211027005081/en/IDC-Unveils-Worldwide-CIO-Agenda-2022-Predictions",
+     "title": "IDC Unveils Worldwide CIO Agenda 2022 Predictions",
+     "date": "2021-10-27",
+     "shows": "States the claim (prediction 10). No follow-up figure."
+    },
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-002",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "In 2025, 60% of infrastructure, security, data and network offerings require cloud-based control platforms.",
+   "reason": "Still ungradable (D22/D23). Quantity is a share of vendor offerings; no public census of offerings by control-plane type exists. Cloud spending series (Gartner public cloud forecast) measure spend, a different quantity (proxy, D23). Looked for: IDC/Gartner tracker of offerings requiring cloud-based control planes, 2024-2025.",
+   "fetched": "IDC FutureScape abstract page US49563122 (now 200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-003",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "Through 2024, skills shortfalls prevent 65% of businesses from achieving full value from cloud, data and automation investments.",
+   "reason": "Still ungradable (D22/D23). 'Full value' attainment attributed to skills shortfalls is not measured by any public survey found for 2023-2024. Skills-gap surveys report shares citing skills as a barrier, which is a different quantity. Looked for: IDC, Gartner, Foundry surveys of businesses on value realisation blocked by skills.",
+   "fetched": "IDC FutureScape abstract page US49563122 (now 200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-004",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "Through 2025, sovereignty demands force G2000 CIOs to shift staff, budgets and processes for more than 35% of IT and data assets.",
+   "reason": "Still ungradable (D22/D23). Share of G2000 IT and data assets moved for sovereignty, sustainability or residency reasons has no public measure. Looked for: IDC/Gartner sovereign-cloud surveys giving a share of assets affected, 2024-2025; found none with this quantity.",
+   "fetched": "IDC FutureScape abstract page US49563122 (now 200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-005",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "In 2023, for 70% of enterprises, adoption of aaS infrastructure/software is curbed more by inability to assess promised gains than by cost concerns.",
+   "reason": "Still ungradable (D22/D23). Needs a 2022-2023 enterprise survey that ranks 'cannot assess promised gains' against cost as the main aaS barrier. None found; cloud-barrier surveys (e.g. Flexera State of the Cloud) list cost and skills but not this comparison. Looked for: IDC, Gartner, Flexera barrier rankings.",
+   "fetched": "IDC FutureScape abstract page US49563122 (now 200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-006",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By end 2024, 60% of platinum-level aaS offerings in security, business operations and DaaS bundle access to specialized SME teams.",
+   "reason": "Still ungradable (D22/D23). 'Platinum-level' is a vendor tier with no common definition and no public census of such offerings or their bundled services. Looked for: tracker or survey of premium aaS tiers including expert teams, 2023-2024.",
+   "fetched": "IDC FutureScape abstract page US49563122 (now 200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-007",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "In 2025, 20 high-visibility digital product launches reliant on intelligent automation and aaS face major delays due to silicon or code supply-chain issues.",
+   "reason": "Still ungradable (D22/D23). A count of 'high-visibility' launches delayed by silicon or code supply chains has no public tally; 'high-visibility' is undefined. Isolated 2025 delays (e.g. GPU shortages) are anecdotes, not a count.",
+   "fetched": "IDC FutureScape abstract page US49563122 (now 200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-011",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 70% of CIOs find their roles challenged by LOB counterparts better at aligning technology with mission and customers.",
+   "reason": "Still ungradable (D22/D23). Gartner's CIO survey (opened via Wayback) measures co-ownership of digital delivery (45% of CIOs, 12% 'franchisers'), not CIOs whose role is challenged; Foundry State of the CIO public page gives role self-identification only. Neither is the claim's quantity. Looked for: 2024-2025 CIO survey on role challenge by LOB leaders. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape. Its public abstract would not change the call.",
+   "fetched": "Gartner CIO survey release via Wayback (live 403); Foundry State of the CIO landing page.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    },
+    {
+     "url": "https://foundryco.com/research/state-of-the-cio/",
+     "title": "Foundry State of the CIO (landing page)",
+     "date": "2026",
+     "shows": "662 IT heads and 249 LOB respondents; 46% of CIOs identify as business leaders. No share of CIOs whose role is challenged by LOB counterparts."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-012",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 60% of CIOs effectively govern 'pervasive IT' spanning LOBs and ecosystem partners.",
+   "reason": "Still ungradable (D22/D23). 'Effective governance of pervasive IT' has no public survey measure. Gartner's 2023 survey gives operator 55% / explorer 33% / franchiser 12% profiles of digital-delivery ownership, a different construct and fielded two years before the target year. Looked for: 2024-2025 CIO survey on governance of business-led and partner IT. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape. Its public abstract would not change the call.",
+   "fetched": "Gartner CIO survey release via Wayback (live 403).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-014",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 65% of CIOs harness resilience capabilities as a competitive advantage.",
+   "reason": "Still ungradable (D22/D23). No public survey measures CIOs using resilience as competitive differentiation. Gartner's 2023 CIO survey (opened via Wayback) reports investment priorities and outcomes, not this. Looked for: 2023-2024 CIO surveys (Gartner, Foundry, IDC) on resilience as differentiator. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape. Its public abstract would not change the call.",
+   "fetched": "Gartner CIO survey release via Wayback (live 403).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-015",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "Through 2025, only 45% of CIOs achieve a true intelligent enterprise blending AI/ML and deep automation at speed and scale.",
+   "reason": "Still ungradable (D22/D23). 'True intelligent enterprise' has no public measure. McKinsey State of AI 2025 (scaling agentic AI 23%; high performers about 6%) and similar maturity surveys use other constructs; using them would be a proxy. Looked for: 2024-2025 surveys of AI plus automation maturity matching the definition. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "fetched": "No earlier block applied beyond IDC paywall; IDC abstract page reopened (200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-017",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 70% of CIOs rely more on operational data collected at the edge for real-time decisions.",
+   "reason": "Still ungradable (D22/D23). No public 2024-2025 CIO survey measures increased reliance on edge-collected operational data. Edge spending forecasts are market totals, not a share of CIOs. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "fetched": "IDC abstract page reopened (200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-018",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 40% of CIOs are tasked with ethically using technology to gain insight into employee experience and amplify the brand.",
+   "reason": "Still ungradable (D22/D23). No public CIO survey measures this mandate (ethical employee-insight technology plus brand amplification). Looked for: 2023-2024 Gartner, Foundry, IDC CIO surveys on employee-experience mandates. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "fetched": "Gartner CIO survey release via Wayback (live 403); no relevant share in it.",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    },
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2022-020",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, with 40% or more of IT spending as a service, enterprises must make lasting opex resets of 10-30% in software and resources instead of short capex cuts.",
+   "reason": "Still ungradable (D23 conditional claim). Condition first: public cloud (the core of 'as a service') is about $723B of roughly $5.6T IT spending in 2025, about 13% (Gartner). Whether the condition held depends on whether managed and outsourced services count as 'as a service'; no public series measures IDC's aaS share, so the condition is not shown to hold. The consequent (size of lasting opex resets) has no public measure either. Note: the earlier graders cite US49563122, the IT Industry 2023 edition; the claim is from the CIO Agenda 2023 FutureScape.",
+   "fetched": "Gartner public cloud forecast release (live 403) via Wayback.",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US49563122",
+     "title": "IDC FutureScape: Worldwide IT Industry 2023 Predictions (abstract page)",
+     "date": "2022-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    },
+    {
+     "url": "https://web.archive.org/web/20241128030514/https://www.gartner.com/en/newsroom/press-releases/2024-11-19-gartner-forecasts-worldwide-public-cloud-end-user-spending-to-total-723-billion-dollars-in-2025",
+     "title": "Gartner Forecasts Worldwide Public Cloud End-User Spending to Total $723 Billion in 2025 (Wayback copy)",
+     "date": "2024-11-19",
+     "shows": "Public cloud end-user spending $723.4B in 2025 (SaaS $299.1B, PaaS $208.6B, IaaS $211.9B, DaaS $3.8B). Gartner's 2025 total IT spending forecast is about $5.6T (Jan 2025 release, not reopened: Wayback offline at the time), so public cloud is roughly 13% of IT spend. Live page 403; Wayback copy opened."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-001",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, G2000 companies allocate over 40% of core IT spend to AI initiatives.",
+   "reason": "Still ungradable (D23). No public series gives AI as a share of core IT spend for the G2000. ISG's survey of 300 G2000 executives (Oct-Nov 2024) reports only that AI is 30% of the 2025 budget increase and AI spend grows 5.7% vs 1.8% for IT, not the level share. Related estimates disagree by far more than a factor of 2: Oxford Economics puts AI under 4% of enterprise tech spend in 2025 (all enterprises, model-based); BCG AI Radar has large firms planning AI spend of about 5% of revenue, which would be comparable to or above typical IT budgets. Under D23 (scope not matched; estimates span >2x) this stays ungradable, though every estimate found sits well below 40%.",
+   "fetched": "ISG release (Business Wire copy 403, ISG IR copy opened); Oxford Economics and Computer Weekly/BCG pages opened.",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US50435423",
+     "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (abstract page)",
+     "date": "2023-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    },
+    {
+     "url": "https://ir.isg-one.com/news-market-information/press-releases/news-details/2024/Enterprise-AI-Spending-to-Rise-5.7-Percent-in-2025-Despite-Overall-IT-Budget-Increase-of-Less-than-2-Percent-ISG-Study/default.aspx",
+     "title": "Enterprise AI Spending to Rise 5.7 Percent in 2025, Despite Overall IT Budget Increase of Less than 2 Percent: ISG Study",
+     "date": "2024-12-05",
+     "shows": "300 G2000 executives, fielded Oct-Nov 2024: IT budgets +1.8%, AI spending +5.7% in 2025; AI is $3.4M, 30%, of the average $11.5M budget increase. No AI share of total IT spend."
+    },
+    {
+     "url": "https://www.oxfordeconomics.com/resource/the-ai-share-of-enterprise-tech-budgets-is-set-to-rise-sharply-worldwide/",
+     "title": "The AI share of enterprise tech budgets is set to rise sharply worldwide",
+     "date": "2026-05-12",
+     "shows": "AI under 4% of total enterprise tech spend worldwide in 2025 (model estimate, all enterprises), $340B."
+    },
+    {
+     "url": "https://www.computerweekly.com/news/366618023/Larger-businesses-spend-spend-spend-on-AI",
+     "title": "Larger businesses spend, spend, spend on AI",
+     "date": "2025-01-15",
+     "shows": "BCG AI Radar (1,803 executives): UK firms over $500M revenue plan AI spend of about 5% of revenue in 2025; article notes AI costs are often outside the IT budget. Different denominator."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-003",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "Into 2025, all enterprises face uncertain infrastructure costs and accessibility, triggering stop-gap measures that hinder cloud economics and data logistics goals.",
+   "reason": "Still ungradable (D22). Qualitative, universal claim ('all enterprises') with no public measure of stop-gap measures or of their effect on cloud-economics goals. GPU scarcity in 2024 is anecdotal support only.",
+   "fetched": "IDC abstract page US50435423 reopened (200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US50435423",
+     "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (abstract page)",
+     "date": "2023-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-004",
+   "earlier": "adjudicated ungradable (A ungradable, B hit)",
+   "verdict": "ungradable",
+   "reading": "In 2024, providers across hardware, software and services aggressively expand private and open-source data portfolios, making strategic partnering decisions less stable.",
+   "reason": "Still ungradable (D22). With page access nothing changes: 'aggressive' expansion across the provider spectrum and partnering instability have no public series. Individual events (IBM Granite open release, Databricks-Tabular) are anecdotes, not a measure. Earlier adjudication stands.",
+   "fetched": "IDC abstract page US50435423 reopened (200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US50435423",
+     "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (abstract page)",
+     "date": "2023-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-006",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 40% of service engagements include GenAI-enabled delivery.",
+   "reason": "Still ungradable (D23). No public measure of the share of service engagements with GenAI-enabled delivery. Services firms disclose GenAI bookings or revenue (e.g. Accenture), a share of value, not of engagements: a proxy. Looked for: IDC services trackers, provider disclosures counting engagements.",
+   "fetched": "IDC abstract page US50435423 reopened (200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US50435423",
+     "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (abstract page)",
+     "date": "2023-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-012",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2024, 65% of CIOs face pressure to adopt GenAI and deep intelligence, with limited IT support diminishing benefits.",
+   "reason": "Still ungradable (D23). Opened the pages the earlier pass could not: Gartner's 2023 CIO survey (n=2,457) reports 70% call GenAI game-changing, 9% deployed, 55% plan to within 24 months: attitude and plans, not pressure. Salesforce/Vanson Bourne (600 IT professionals, Dec 2023-Jan 2024) says GenAI is the #1 technology IT feels pressure to onboard quickly and 88% cannot keep up with AI requests, but gives no share of CIOs feeling pressure. RWS reports 87% of C-suite executives feel pressure, a different population. EY 2024 US CIO sentiment survey has no pressure share. No measure of this population and behaviour.",
+   "fetched": "Gartner CIO survey release via Wayback (live 403); Salesforce and EY pages opened.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    },
+    {
+     "url": "https://www.salesforce.com/news/stories/ai-it-demand-gap/",
+     "title": "AI Balancing Act: Leaders Want Speed, IT Wants Security (Salesforce)",
+     "date": "2024-03-06",
+     "shows": "600 IT professionals (200 leaders) in 5 countries: GenAI is the #1 technology IT feels pressure to onboard quickly; 88% unable to support AI request volume. No share of CIOs under pressure."
+    },
+    {
+     "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-us/campaigns/cio/documents/ey-us-cio-sentiment-survey-in-the-age-of-genai-06-2024.pdf",
+     "title": "EY 2024 CIO Sentiment Survey: Will you set the GenAI agenda or follow the leaders?",
+     "date": "2024-06",
+     "shows": "US CIO survey on GenAI leadership and budgets (63% of CIOs lead the GenAI agenda); no share of CIOs facing pressure to adopt."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-014",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, 45% of CIOs prioritize strategic data management and a data-centric culture.",
+   "reason": "Still ungradable (D23). Public CIO surveys rank data and analytics among top investment areas (Gartner 2023 release: cybersecurity, data analytics, cloud) but give no share of CIOs prioritising strategic data management with a comparable definition. Ranking is not the share.",
+   "fetched": "Gartner CIO survey release via Wayback (live 403).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US50435423",
+     "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (abstract page)",
+     "date": "2023-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    },
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-015",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "Two-thirds of CIOs miss their 2025 digital revenue goals due to misaligned investments.",
+   "reason": "Still ungradable (D22/D23). No public survey measures attainment of CIOs' 2025 digital revenue goals. Gartner's 2023 survey reports share of digital initiatives meeting outcome targets (43% operator, 63% franchiser), a different quantity and year.",
+   "fetched": "Gartner CIO survey release via Wayback (live 403).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US50435423",
+     "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (abstract page)",
+     "date": "2023-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    },
+    {
+     "url": "https://web.archive.org/web/20231018095528/https://www.gartner.com/en/newsroom/press-releases/2023-10-17-gartner-survey-of-over-2400-cios-reveals-that-45-percent-of-cios-are-driving-a-shift-to-co-ownership-of-digital-leadership",
+     "title": "Gartner Survey of Over 2,400 CIOs Reveals That 45% of CIOs are Driving a Shift to Co-Ownership of Digital Leadership (Wayback copy)",
+     "date": "2023-10-17",
+     "shows": "2024 Gartner CIO and Technology Executive Survey, n=2,457 CIOs, 84 countries: 45% co-lead digital delivery with CxOs; 70% call GenAI game-changing; 9% have deployed GenAI, 55% plan to within 24 months; 64% low-code deployed or planned. Live page is 403 (Cloudflare); Wayback copy opened."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2023-018",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "By 2025, nearly half of CIOs are motivated to automate regulatory compliance and ESG.",
+   "reason": "Still ungradable (D22/D23). No public 2024-2025 CIO survey gives a share motivated or planning to automate compliance and ESG reporting. Looked for: Gartner, Foundry, IDC CIO surveys on compliance/ESG automation.",
+   "fetched": "IDC abstract page US50435423 reopened (200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US50435423",
+     "title": "IDC FutureScape: Worldwide IT Industry 2024 Predictions (abstract page)",
+     "date": "2023-10",
+     "shows": "Opened now (HTTP 200). Public page carries title, authors and abstract only; full document needs login. No follow-up measure of the claim is on it."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2024-011",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "In 2025, 50% of the G1000 struggle with divergent regulatory changes and evolving compliance standards that hamper AI innovation.",
+   "reason": "Still ungradable (D22/D23). No public survey of the G1000 (or the largest firms) measures difficulty with divergent regulation in 2025. Looked for: IDC, Gartner, KPMG/EY large-enterprise regulatory surveys giving this share. Note: earlier graders cite US51736824, the IT Industry 2025 edition; the claim is from the CIO Agenda 2025 FutureScape.",
+   "fetched": "IDC abstract page US51736824 reopened (200, abstract only).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US51736824",
+     "title": "IDC FutureScape: Worldwide IT Industry 2025 Predictions (abstract page)",
+     "date": "2024-10",
+     "shows": "Opened now (HTTP 200). This is the IT Industry edition, not the CIO Agenda edition the claim comes from; the earlier graders cited it. Public page has abstract only; no follow-up measure."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2024-013",
+   "earlier": "ungradable_agreed (A ungradable, B ungradable)",
+   "verdict": "ungradable",
+   "reading": "In 2025, 40% of CIOs drive enterprise initiatives to remediate technical debt in high-impact areas.",
+   "reason": "Still ungradable (D23). Found IDC's 2023/2024 CIO Sentiment Survey via CIO.com: nearly 4 in 10 CIOs expected to overspend on digital infrastructure and 47% of those blamed tech debt; CIOs ranked tech debt elimination well below AI and security. Neither is the share of CIOs driving enterprise remediation initiatives, and it predates the target year. Gartner's '<20% of software leaders are very effective at managing tech debt' is another construct. No measure of the claim's quantity. Note: earlier graders cite US51736824, the IT Industry 2025 edition; the claim is from the CIO Agenda 2025 FutureScape.",
+   "fetched": "CIO.com article on IDC CIO Sentiment Survey opened.",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=US51736824",
+     "title": "IDC FutureScape: Worldwide IT Industry 2025 Predictions (abstract page)",
+     "date": "2024-10",
+     "shows": "Opened now (HTTP 200). This is the IT Industry edition, not the CIO Agenda edition the claim comes from; the earlier graders cited it. Public page has abstract only; no follow-up measure."
+    },
+    {
+     "url": "https://www.cio.com/article/3481651/aware-of-what-tech-debt-costs-them-cios-still-cant-make-it-an-it-priority.html",
+     "title": "Aware of what tech debt costs them, CIOs still can't make it an IT priority (CIO.com)",
+     "date": "2024-08-06",
+     "shows": "IDC CIO Sentiment Survey: nearly 4 in 10 CIOs expect to overspend on digital infrastructure; 47% of those cite excessive tech debt; tech debt elimination ranked far below AI and cybersecurity. No share of CIOs running remediation initiatives."
+    }
+   ]
+  }
+ ]
+}

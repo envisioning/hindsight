@@ -1,0 +1,127 @@
+{
+ "rule": "D16",
+ "role": "re-check pass 1 (D24): ungradable calls made without page access",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "gartner-strategic-predictions-2008-002",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2012 half of traveling workers will travel without a notebook PC, using other devices instead.",
+   "reason": "Edition text now read: the claim is about traveling workers leaving the notebook behind in favour of pocketable devices and web apps. Looked for a 2011-2012 survey of business travelers or mobile workers measuring the share who travel without a notebook. The iPass Mobile Workforce Reports (quarterly, 1,100+ enterprises, 2011-2012) are the closest series; they report devices carried (3.5 devices for work in Q1 2012, 'at least one laptop'), tablet adoption (64%) and desktop abandonment (38%), but never the share leaving the notebook at home on trips. Tablet ownership is a different quantity (D23). No public measure of the stated quantity at 2011-2012.",
+   "fetched": "Gartner 2008 edition press release (Wayback 2008-12-17 capture); iPass Mobile Workforce Report press releases Q2 2011 to Q4 2012 (Wayback); iPass Q4 2012 report (SlideShare).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20081217170251/http://www.gartner.com:80/it/page.jsp?id=593207",
+     "title": "Gartner Highlights Key Predictions for IT Organisations and Users in 2008 and Beyond",
+     "date": "2008-01-31",
+     "shows": "Claim text and rationale (weight of notebooks, sub-$400 pocketable devices, web apps); no measure named."
+    },
+    {
+     "url": "https://web.archive.org/web/2013/http://www.ipass.com/press-releases/mwrq12012/",
+     "title": "iPass Mobile Workforce Report Q1 2012 (press release)",
+     "date": "2012-03-06",
+     "shows": "Mobile workers carry 3.5 devices for work 'including at least one laptop, a smartphone and a tablet'; 64% have a tablet. No share of travelers leaving the notebook behind."
+    },
+    {
+     "url": "https://www.slideshare.net/iPass/mobile-workforce-report-q4-2012",
+     "title": "iPass Mobile Workforce Report Q4 2012",
+     "date": "2012-11",
+     "shows": "Device ownership and reliance (iPad 54% own or plan; 38% no longer use desktops); no measure of travel without a notebook."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-001",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2012 high-definition video meeting (telepresence) solutions will replace 2.1 million airline seats a year, costing travel and hospitality US$3.5 billion a year.",
+   "reason": "Edition text now read (Sydney release, 2009-02-06): a modelled displacement of seats by telepresence. Seats displaced by telepresence is an attributed value (D23); IATA, ICAO and airline traffic statistics report passengers carried, not seats substituted by video meetings, and no travel-industry body measured the substitution for 2011-2012. Page access does not change this.",
+   "fetched": "Gartner 2009 edition press release (Wayback 2009-02-10 capture).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20090210235751/http://www.gartner.com:80/it/page.jsp?id=876512",
+     "title": "Gartner Predicts Video Telepresence Will Replace 2.1 Million Airline Seats Per Year by 2012",
+     "date": "2009-02-06",
+     "shows": "Claim text: HD video meeting solutions will replace 2.1 million airline seats annually, costing travel and hospitality US$3.5 billion per year; a model estimate, no measure named."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-001",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2012, 20% of businesses will own no IT hardware assets (hardware owned by third parties, consumed as services or employee-owned).",
+   "reason": "Edition text now read: the claim concerns ownership of IT hardware shifting to third parties (cloud, virtualization, employee-owned PCs). Looked for a 2011-2012 survey of businesses measuring the share that own no IT hardware at all; cloud-adoption and BYOD surveys measure use of some services or devices, not zero ownership, which is a different quantity (D23). No public measure found.",
+   "fetched": "Gartner January 2010 edition press release (Wayback 2010-01-17 capture).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20100117072643/http://www.gartner.com:80/it/page.jsp?id=1278413",
+     "title": "Gartner Reveals Five Predictions for 2010 and Beyond",
+     "date": "2010-01-13",
+     "shows": "Claim text and rationale (virtualization, cloud services, employee-owned notebooks; ownership of hardware shifting to third parties); no measure named."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-002",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In 2015 the new revenue generated by IT initiatives will be the primary factor setting the incentive portion of annual pay for most newly hired Global 2000 CIOs.",
+   "reason": "Edition text now read: it narrows the claim to the incentive portion of pay of new G2000 CIOs. CIOs are rarely named executive officers, so proxy filings do not disclose their incentive metrics; no public CIO survey of 2014-2015 reports the basis of incentive pay for this population. No public measure.",
+   "fetched": "Gartner November 2010 edition press release (Wayback capture).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2011/http://www.gartner.com/newsroom/id/1480514",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2011 and Beyond",
+     "date": "2010-11-30",
+     "shows": "Claim text: in 2015 new revenue from IT initiatives becomes the primary factor determining the incentive portion of new Global 2000 CIOs' annual compensation; no measure named."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-006",
+   "earlier": "ungradable_agreed",
+   "verdict": "miss",
+   "reading": "By 2014, 90% of organizations will support corporate applications on employee-owned notebooks and smartphones (i.e. allow BYOD for work applications).",
+   "reason": "Edition text says the claim is about supporting corporate applications on employee-owned notebooks and smartphones, which is what organization-level BYOD surveys measure (organization allows employees to use own devices for work). In-window estimates (2013-2014, D23): Tech Pro Research Feb 2013, 44% of organizations allowing BYOD (18% more planning, 37% vetoed); Tech Pro Research Nov 2014, 74% using or planning to allow, about a quarter ruled out, with currently allowed at 71% for firms of 50-249 staff and 54% for the largest firms reported. Even the upper bound (74%, which includes plans) is 21.6% below 90; currently-allowed shares (44-71%) put 90 more than 25% above the actual. Median of in-window estimates is well under 72, so 90 is beyond 25%: miss under D10. Cisco IBSG 89% 'enable BYOD in some form' is from 2012, outside the target-year window, and not used.",
+   "fetched": "Gartner Nov 2010 edition text (Wayback); ZDNet report of Tech Pro Research Nov 2014 and Feb 2013 BYOD surveys (Wayback); PhoneArena summary of the 2014 survey (Wayback). Before, the Tech Pro Research/ZDNet page was not reachable.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2011/http://www.gartner.com/newsroom/id/1480514",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2011 and Beyond",
+     "date": "2010-11-30",
+     "shows": "Claim text: supporting corporate applications on employee-owned notebooks and smartphones will become commonplace; 90% by 2014."
+    },
+    {
+     "url": "https://web.archive.org/web/2015/http://www.zdnet.com/article/research-74-percent-using-or-adopting-byod/",
+     "title": "Research: 74 percent using or adopting BYOD (ZDNet, Tech Pro Research)",
+     "date": "2015-01-05",
+     "shows": "Nov 2014 survey: 74% of organizations using or planning BYOD, about a quarter ruled it out; 71% of 50-249-employee firms currently allow it. Feb 2013 survey: 44% allowing, 18% planning, 37% vetoed."
+    },
+    {
+     "url": "https://web.archive.org/web/2015/http://www.phonearena.com/news/74-of-businesses-now-allow-BYOD-for-employees_id64385",
+     "title": "74% of businesses now allow BYOD for employees (PhoneArena)",
+     "date": "2015-01",
+     "shows": "Same Tech Pro Research 2014 survey: 74% allowing or planning; 71% of smaller firms allow; 54% of the larger firms allow."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-001",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2015 industrialized low-cost cloud services will cannibalize up to 15% of the revenue of the top IT outsourcing providers.",
+   "reason": "Edition text now read: cannibalization of current and potential outsourcing revenue by low-cost cloud services. Revenue lost to cloud substitution is an attributed value (D23); outsourcers' filings report total and segment revenue, not revenue cannibalized by cloud, and no tracker publishes that attribution for 2014-2015. 'Up to' also makes the figure a ceiling. No public measure.",
+   "fetched": "Gartner 2011 (for 2012) edition press release (Wayback 2013-01-25 capture).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20130125060436/http://www.gartner.com:80/newsroom/id/1862714",
+     "title": "Gartner Reveals Top Predictions for IT Organizations and Users for 2012 and Beyond",
+     "date": "2011-12-01",
+     "shows": "Claim text and rationale (industrialized low-cost IT services will cannibalize current and potential outsourcing revenue); no measure named."
+    }
+   ]
+  }
+ ]
+}

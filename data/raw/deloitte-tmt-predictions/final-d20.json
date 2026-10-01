@@ -4,27 +4,31 @@
  "kappa": 0.7952,
  "n": 276,
  "counts": {
-  "hit": 70,
-  "miss": 23,
-  "partial": 16,
+  "hit": 71,
+  "miss": 26,
+  "partial": 19,
   "contested": 5,
-  "ungradable": 162
+  "ungradable": 155
  },
  "hit_rate": {
-  "hits": 70,
-  "of_graded_hit_partial_miss": 109,
-  "rate": 0.6422,
+  "hits": 71,
+  "of_graded_hit_partial_miss": 116,
+  "rate": 0.6121,
   "wilson95": [
-   0.549,
-   0.726
+   0.521,
+   0.696
   ],
   "audit_adjusted95": [
-   0.449,
-   0.826
+   0.421,
+   0.796
   ]
  },
- "hit_or_partial_rate": 0.789,
- "adjudicated": 31,
+ "hit_or_partial_rate": 0.7759,
+ "adjudicated": 29,
+ "rechecked": 29,
+ "recheck_passes": [
+  "adjudicated-d20-pass1.json"
+ ],
  "audit": {
   "sample": 50,
   "audited": 50,
@@ -214,12 +218,30 @@
    "status": "audited"
   },
   {
+   "id": "deloitte-tmt-predictions-2009-006",
+   "verdict": "miss",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The quantity is measured by IDC's worldwide disk storage systems tracker. IDC reported full-year 2009 disk storage sales down 0.7% year over year (Q4 2009 up 0.2% to $7.3bn), after quarterly declines of up to 18% in H1 2009. Even the steepest quarterly fall is far from a halving; error well beyond 25%. Miss.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2009-007",
    "verdict": "hit",
    "status": "adjudicated",
    "graderA": "miss",
    "graderB": "hit",
    "reason": "Two public estimates of the same quantity disagree: Gartner sales to end users 172.4m, +23.8%; IDC shipments 174.2m, +15.1% (from 151.4m in 2008). D23: grade against their median, 19.45%, which is under 20% and within 0.5 pt of a forecast of just under 20%: hit. Grader A used Gartner only, which D23 does not allow when a second estimate exists. Sub-parts went worse: all-phone growth was about -1% (Gartner), not +4%, and Gartner shows no 15-point fall in smartphone growth; the headline smartphone level is graded. Low confidence: the trackers straddle the threshold."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-009",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Not a page-access problem: no public series measures inbox checks per office worker per day for 2009. Radicati counts emails sent and received per business user, a different quantity (D23). Looked for a 2009 time-use or workplace survey of email checking frequency; none found.",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2009-010",
@@ -245,6 +267,15 @@
    "id": "deloitte-tmt-predictions-2010-003",
    "verdict": "hit",
    "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-004",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No public count of seats moved to VDI or thin client in 2010. IDC thin-client device shipments sit in paid trackers and are a different quantity from VDI seats (VDI also runs on repurposed PCs), so would be a proxy (D23). Earlier reason was paywalled analyst data, not a blocked page; no public press-release figure located.",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2010-006",
@@ -278,6 +309,15 @@
    "status": "agreed"
   },
   {
+   "id": "deloitte-tmt-predictions-2010-013",
+   "verdict": "partial",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "IFPI Digital Music Report 2012 gives an estimated 8.2 million paying subscribers globally in 2010 (13.4 million in 2011). The 10 million threshold was not crossed in 2010; the forecast is 22% above the actual (10 vs 8.2), within 25%: partial under the D16 quantitative rule. Threshold crossed in 2011.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2010-014",
    "verdict": "partial",
    "status": "agreed"
@@ -299,6 +339,24 @@
    "graderA": "miss",
    "graderB": "hit",
    "reason": "The title names each device class, so the per-class reading is more faithful than grader B's combined smartphone-plus-tablet pool. By end-2011 Android passed 50% of quarterly smartphone sales (Q4 2011, Gartner) with a lead of more than 25 points over the next OS, and iPad held 61.5% of tablet shipments in Q3 2011 (IDC). Each class had a dominant OS at the target date: miss. Medium confidence on where 'dominant' starts."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No public series splits 2011 tablet purchases by enterprise vs consumer buyer. IDC/Gartner commercial-vs-consumer splits for 2011 are in paid trackers; no public press-release figure for the 2011 enterprise share was located. Total tablet shipments are a different quantity (D23).",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-004",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Eurostat's enterprise e-government series is the matching measure. With archive access, the 2010 reference-year values were found (Jan 2011 survey, EU27: 74% obtaining information, 76% downloading forms, 69% returning completed forms), which match Deloitte's 75% baseline. No 2011 reference-year value was found: the Eurostat datasets (tin00107, isoc_bde15ei) are no longer disseminated, the archived Statistics Explained pages stop at 2010, and the 2012 ICT-usage-in-enterprises Statistics in Focus carries no e-government figure. The only year-before value is the claim's own baseline, so grading against it would test nothing. Ungradable for 2011; low certainty, a 2011 OECD or Eurostat figure may exist offline.",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2011-005",
@@ -366,6 +424,33 @@
    "status": "audited"
   },
   {
+   "id": "deloitte-tmt-predictions-2012-006",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No series measures 3D printers as a segment of the power-tools or industrial-manufacturing markets. Wohlers total additive-manufacturing revenue is a different quantity (D23). Not a page-access gap: even with Wohlers open, the named segment is unmeasured.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-008",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Scope is global and the window is 24 hours. National panels (BARB UK, Nielsen US) publish live vs time-shifted within 7 days (BARB) or Live+SD/+3/+7 (Nielsen), not a global or 24-hour share. Ofcom access would only add UK 7-day data, a different window and scope. Ungradable stays.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-015",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Only analyst estimates (IHS, ABI, Juniper, Berg) of NFC device or handset shipments exist, in paid reports with differing device scopes; no public 2012 actual was located. Not a blocked-page case.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2012-018",
    "verdict": "hit",
    "status": "agreed"
@@ -393,10 +478,11 @@
   {
    "id": "deloitte-tmt-predictions-2013-009",
    "verdict": "ungradable",
-   "status": "adjudicated",
+   "status": "rechecked",
    "graderA": "ungradable",
    "graderB": "hit",
-   "reason": "No public global installed-base figure for 2013 was found by either grader or the adjudicator; the Wikipedia article gives only US 2012 ownership (25m households) and a global 1.26bn connected TVs at end-2019. Grader B's estimate rests on unsourced shipment shares (about a quarter of 230-250m a year), a constructed estimate not a measure (D23). Likely exceeded, but ungradable on the evidence."
+   "reason": "Earlier adjudication stands: no public global installed-base figure for 2013; available figures are US-only (25m households in 2012) or 2019 (1.26bn connected TVs). Building a base from shipment shares is a constructed estimate (D23). Likely exceeded, but not measured.",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2013-011",
@@ -419,6 +505,15 @@
    "status": "agreed"
   },
   {
+   "id": "deloitte-tmt-predictions-2014-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No tracker publishes tablet installed base by screen size; deriving it from shipments needs replacement assumptions (proxy, D23). Not a page-access gap.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2014-004",
    "verdict": "hit",
    "status": "agreed"
@@ -432,12 +527,39 @@
    "reason": "The event can be dated: Germany's AGF restructured in 2017 so that streaming data enter the ratings measurement; in the UK, BARB's fusion of panel and device data (Dovetail) is documented only for later years, not 2014. Neither market shows hybrid ratings in 2014 or within 2 years in the evidence; Germany's came 3 years after the placed year, which D16 grades partial. Low confidence: no retrieved launch date for BARB's hybrid, and an earlier German streaming pilot cannot be ruled out."
   },
   {
+   "id": "deloitte-tmt-predictions-2014-009",
+   "verdict": "hit",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "IFPI Digital Music Report 2015 (contemporaneous vintage): 2014 performance rights revenue $948m, +8.3%, on an amended scope that moved US SoundExchange to digital and gave US performance rights a nil value. $1bn vs $948m is 5.5% off: hit under the D16 quantitative rule (within 10%). On the scope in force when Deloitte forecast, IFPI's DMR 2014 already put 2013 at $1.1bn (+19%), so the threshold was crossed on that basis too (early arrival not penalised). Both vintages give hit; the threshold-not-crossed reading on the new scope is the only weakness. Grader B's 'factor 2 spread' rested on a later restatement not used here; vintages of the same quantity are gradable (D23).",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2014-011",
    "verdict": "ungradable",
    "status": "adjudicated",
    "graderA": "ungradable",
    "graderB": "hit",
    "reason": "The claim states a level (50bn a day) as well as a ratio. No aggregate of MIM traffic exists; per-app disclosures use different counts (WhatsApp reported 30bn a day by January 2015, while earlier WhatsApp figures counted sent and received separately, which differ by about a factor of 2), and WeChat, Messenger, LINE and iMessage gave no comparable 2014 counts. Estimates of the total therefore span more than a factor of 2 depending on the counting convention: ungradable under D23. Grader B's sum is a construction from partial disclosures. The ratio half very likely held (WhatsApp alone at or above the SMS level), noted but not graded alone."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-013",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The claim spans developed markets; only single-country surveys (Ofcom UK, Pew US) exist, with different age bands and growth bases (points vs percent). Opening Ofcom would give one country, not the stated scope. Not re-attempted beyond confirming no cross-market series.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No installed-base series of civil drones by price. FAA registrations began Dec 2015, cover the US only and all drones over 250 g. Not a page-access gap.",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2015-003",
@@ -471,6 +593,15 @@
    "status": "agreed"
   },
   {
+   "id": "deloitte-tmt-predictions-2016-004",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Only bracketing market-research figures ($9m in 2012, about $380m in 2022) were found; 2016 estimates from market-research firms differ by scope (materials vs products) and span more than a factor of 2 (D23). Not resolved by page access.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2016-006",
    "verdict": "miss",
    "status": "adjudicated",
@@ -485,11 +616,12 @@
   },
   {
    "id": "deloitte-tmt-predictions-2016-008",
-   "verdict": "ungradable",
-   "status": "adjudicated",
+   "verdict": "miss",
+   "status": "rechecked",
    "graderA": "miss",
    "graderB": "ungradable",
-   "reason": "Both graders cite PageFair's 2017 report (hundreds of millions of mobile devices blocking, mostly via browsers with built-in blocking such as UC Browser), but neither could open it, and the adjudicator's attempts also failed (pagefair.com redirects to blockthrough.com, 403). The only retrieved figure (Met Facts, Q2 2016: 72m Americans blocking on PCs, smartphones or tablets) does not separate mobile. Whether built-in browser blocking counts as 'using an ad-blocker' also changes the measure. No retrieved measure: ungradable. Likely a miss on the dominant reading if the PageFair figure holds."
+   "reason": "PageFair's 2017 Adblock Report (Dec 2016 data) counts 380 million mobile devices using adblock software on mobile browsers, up 108 million in 2016, 94% in Asia-Pacific. Against the edition's own base of 3.4 billion mobile devices that is about 11%, some 37 times the forecast; even if PageFair overstated by a factor of 10 the share would exceed 1%. Reading note: PageFair's mobile count is of adblocking browsers (UC Browser and similar), while the chapter frames ad-blockers as installed software and iOS content blockers; an adblocking browser is installed ad-blocking software on the device, so the plain reading 'use an ad-blocker' covers it, and the chapter does not exclude it. Miss.",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2016-009",
@@ -548,6 +680,15 @@
    "status": "agreed"
   },
   {
+   "id": "deloitte-tmt-predictions-2018-009",
+   "verdict": "partial",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "UK (BARB via Ofcom, ages 16-24, live plus 7-day): 2018 down 15% to 85 minutes a day (at the top of the band); 2019 down 18% to 70 minutes (outside the band, 20% beyond its 15% edge; H1 2019 was down 22%). A conjunctive band claim is capped by its worst measured component: the UK 2019 value is within 25% of the band edge, so at most partial. US (Nielsen) and Canada (Numeris) 18-24 series were not retrieved (Nielsen report pages give no data without the PDF; Numeris not public), so a larger US or Canadian decline could make this a miss. Low certainty.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2018-010",
    "verdict": "partial",
    "status": "adjudicated",
@@ -561,12 +702,48 @@
    "status": "audited"
   },
   {
+   "id": "deloitte-tmt-predictions-2019-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The headline quantity is industry revenue. Trackers (Canalys, Strategy Analytics) publish unit shipments; units times an assumed ASP is a proxy (D23). No public 2019 smart-speaker revenue measure.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-005",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Newzoo is the tracker. Via Wayback its Feb 2019 release was opened: it gives North America at $409.1m for 2019, but this is Newzoo's in-year forecast, and no 2018 North America base or 2019 actual was retrieved (2020 report pages and articles not archived at the URLs found; newzoo.com returns 403). A growth rate cannot be computed from one number. Ungradable; low certainty, the 2020 report would settle it.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-006",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Global radio revenue series (PwC Global Entertainment & Media Outlook) are paywalled and differ in scope (advertising only vs advertising plus licence fee and subscription). No public 2019 global figure on the same scope located.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2019-008",
    "verdict": "hit",
    "status": "adjudicated",
    "graderA": "hit",
    "graderB": "ungradable",
    "reason": "CNNIC 43rd Statistical Report (retrieved by the adjudicator): mobile payment users reached 583 million at end-2018, up 10.7%. 600m is 2.9% above: hit. Grader B could not retrieve the report."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Deloitte's definition counts parts of chips; no tracker counts that quantity. AI-capable smartphone shares or vendor accelerator counts are proxies (D23).",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2020-002",
@@ -586,6 +763,15 @@
    "status": "audited"
   },
   {
+   "id": "deloitte-tmt-predictions-2020-007",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "2020 CDN market estimates come from market-research firms with paywalled reports and scopes that differ (security, video services); figures that circulate span widely. No same-scope public measure retrieved.",
+   "pass": 1
+  },
+  {
    "id": "deloitte-tmt-predictions-2021-002",
    "verdict": "miss",
    "status": "audited"
@@ -594,6 +780,33 @@
    "id": "deloitte-tmt-predictions-2021-003",
    "verdict": "hit",
    "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-008",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Trackers split AR/VR shipments by device type and, at most, consumer vs commercial in paid data; no public series of enterprise-plus-education headset sales. Not a page-access gap.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Newzoo's console segment excludes hardware; adding hardware needs unit times ASP assumptions (proxy, D23). No same-scope public measure.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-004",
+   "verdict": "partial",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Ofcom Media Nations (Barb in-home basis, recalculated for 2022): broadcaster content (live, recorded playback, BVoD) was 61% of video viewing in 2022, 57% in 2023 and 56% in 2024. The threshold event did not happen: 2022 was not the final year above 50%, and the share was still above half in 2024. On the D16 quantitative rule the stated path is 14% off in 2023 (49 vs 57) and 13% off in 2022 (53 vs 61), within 25%: partial. Ofcom's switch to in-home-only viewing moves shares by about a point (out-of-home added just under 2% to total viewing), which does not change the result. If the claim is read as a binary event, it is a miss; the edition gives explicit numbers, so the quantitative reading is used (same treatment as other threshold claims in this pass).",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2022-005",
@@ -615,6 +828,24 @@
    "graderA": "ungradable",
    "graderB": "partial",
    "reason": "Ericsson Mobility Report June 2023 (text verified by the adjudicator): 'From 100 million at the end of 2022, FWA connections worldwide are projected to increase to 300 million by the end of 2028.' 88m is 12% below: within 25%, not 10%: partial."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-009",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No public annual Wi-Fi 6 device shipment actual for 2022 was found. Wi-Fi Alliance newsroom pages tried returned 404; IDC figures are forecasts or paywalled; chipset projections are a different quantity. Low certainty: a Wi-Fi Alliance or IDC public actual may exist.",
+   "pass": 1
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-010",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "IDC reports wearables by form (earwear, smartwatches, wristbands); Deloitte's 'health and wellness' scope matches none, and the two candidate scopes (all wearables about 500m; watches plus bands) give opposite verdicts. No same-scope measure (D23).",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2022-013",
@@ -654,6 +885,15 @@
    "id": "deloitte-tmt-predictions-2023-003",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-014",
+   "verdict": "miss",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Drake Star's gaming deal tracker: 163 M&A deals announced in 2023 (Q1 2023: 43). For 2022 its quarterly releases give Q4 2022 alone at 76 M&A deals, Q1 2022 at about 100 (387 transactions less 287 financings), and 132 PC/console and mobile M&A transactions in the first nine months; 2022 M&A count was therefore well above 200, and total gaming deals fell from 1,300+ (2022) to 960 (2023). The count fell by roughly a quarter or more instead of rising 25%: miss. Drake Star itself describes 2023 deal activity as shifting back to pre-COVID levels. The exact 2022 M&A total sits in the gated PDF; the direction is not in doubt.",
+   "pass": 1
   },
   {
    "id": "deloitte-tmt-predictions-2024-002",
@@ -726,6 +966,15 @@
    "id": "deloitte-tmt-predictions-2025-014",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-021",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "2025 actuals for silicon photonics chips (not modules) are not yet public; analyst figures (Yole, LightCounting) are paywalled, forecast-based and scope modules or PICs differently, spanning more than a factor of 2 (D23).",
+   "pass": 1
   }
  ]
 }

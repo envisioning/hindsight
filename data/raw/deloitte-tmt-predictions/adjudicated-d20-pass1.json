@@ -1,0 +1,537 @@
+{
+ "rule": "D16",
+ "role": "re-check pass 1 (D24): ungradable calls made without page access",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2009-006",
+   "earlier": "ungradable_agreed",
+   "verdict": "miss",
+   "reading": "Quantitative (D16/D10 rule): enterprise spending on physical (disk) storage in 2009 falls by about 50% from 2008.",
+   "reason": "The quantity is measured by IDC's worldwide disk storage systems tracker. IDC reported full-year 2009 disk storage sales down 0.7% year over year (Q4 2009 up 0.2% to $7.3bn), after quarterly declines of up to 18% in H1 2009. Even the steepest quarterly fall is far from a halving; error well beyond 25%. Miss.",
+   "fetched": "IDC 2009 full-year disk storage result via Computerworld report of IDC tracker (graders could not reach IDC/Business Wire).",
+   "evidence": [
+    {
+     "url": "https://www.computerworld.com/article/2762927/idc--worldwide-disk-storage-capacity-grows-33--in-2009.html",
+     "title": "IDC: Worldwide disk storage capacity grows 33% in 2009 (Computerworld)",
+     "date": "2010-03-07",
+     "shows": "Per IDC, disk storage sales dropped 0.7% in 2009; Q4 2009 revenue grew 0.2% to $7.3bn."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-009",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In 2009 office workers on average check email more than 50 times a day and send more than 160 messages a day.",
+   "reason": "Not a page-access problem: no public series measures inbox checks per office worker per day for 2009. Radicati counts emails sent and received per business user, a different quantity (D23). Looked for a 2009 time-use or workplace survey of email checking frequency; none found.",
+   "fetched": "Nothing new needed; earlier reason was absence of a measure, not a blocked page.",
+   "evidence": [
+    {
+     "url": "https://www.mondaq.com/uk/new-media/73116/technology-predictions-tmt-trends-2009-part-one",
+     "title": "Technology Predictions TMT Trends 2009 Part One (Mondaq republication of Deloitte)",
+     "date": "2009-01",
+     "shows": "Claim: >50 inbox checks and >160 messages sent per office worker per day in 2009."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-004",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Over one million seats move to thin client / VDI in 2010.",
+   "reason": "No public count of seats moved to VDI or thin client in 2010. IDC thin-client device shipments sit in paid trackers and are a different quantity from VDI seats (VDI also runs on repurposed PCs), so would be a proxy (D23). Earlier reason was paywalled analyst data, not a blocked page; no public press-release figure located.",
+   "fetched": "No new public source found.",
+   "evidence": [
+    {
+     "url": "https://media.hotnews.ro/assets/document/2010/01/19/6828395-0.pdf",
+     "title": "Deloitte TMT Predictions 2010 (Media/Technology copy)",
+     "date": "2010-01",
+     "shows": "Forecast: over one million seats may go thin client in 2010."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-013",
+   "earlier": "ungradable_agreed",
+   "verdict": "partial",
+   "reading": "Quantitative: global paying subscribers to music subscription services exceed 10 million in 2010.",
+   "reason": "IFPI Digital Music Report 2012 gives an estimated 8.2 million paying subscribers globally in 2010 (13.4 million in 2011). The 10 million threshold was not crossed in 2010; the forecast is 22% above the actual (10 vs 8.2), within 25%: partial under the D16 quantitative rule. Threshold crossed in 2011.",
+   "fetched": "IFPI Digital Music Report 2012 PDF via the Wayback Machine (ifpi.org returned 404 for graders).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2013/http://www.ifpi.org/content/library/DMR2012.pdf",
+     "title": "IFPI Digital Music Report 2012",
+     "date": "2012-01",
+     "shows": "Estimated paying subscribers to music subscription services globally: 8.2 million in 2010, 13.4 million in 2011 (IFPI estimates)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-003",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "More than 25% of tablets bought in 2011 are bought by enterprises.",
+   "reason": "No public series splits 2011 tablet purchases by enterprise vs consumer buyer. IDC/Gartner commercial-vs-consumer splits for 2011 are in paid trackers; no public press-release figure for the 2011 enterprise share was located. Total tablet shipments are a different quantity (D23).",
+   "fetched": "No new source; earlier reason was a paywalled split rather than a 403.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions2011.pdf",
+     "title": "Deloitte TMT Predictions 2011",
+     "date": "2011-01",
+     "shows": "Forecast: more than 25% of tablets (over 10 million units) bought by enterprises in 2011."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-004",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Across developed countries the share of businesses using eGov for at least one process averages over 90% in 2011, up from 75% in 2010.",
+   "reason": "Eurostat's enterprise e-government series is the matching measure. With archive access, the 2010 reference-year values were found (Jan 2011 survey, EU27: 74% obtaining information, 76% downloading forms, 69% returning completed forms), which match Deloitte's 75% baseline. No 2011 reference-year value was found: the Eurostat datasets (tin00107, isoc_bde15ei) are no longer disseminated, the archived Statistics Explained pages stop at 2010, and the 2012 ICT-usage-in-enterprises Statistics in Focus carries no e-government figure. The only year-before value is the claim's own baseline, so grading against it would test nothing. Ungradable for 2011; low certainty, a 2011 OECD or Eurostat figure may exist offline.",
+   "fetched": "Eurostat Statistics in Focus 65/2011 and archived Statistics Explained 'Information society statistics' (2013 snapshot) via Wayback.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/documents/3433488/5579940/KS-SF-11-065-EN.PDF/b359b480-9454-4790-b169-b304eb76dcfe",
+     "title": "Eurostat Statistics in Focus 65/2011: ICT usage in enterprises 2011",
+     "date": "2011-12",
+     "shows": "During 2010, EU27 enterprises: 74% obtained information, 76% downloaded forms, 69% submitted completed forms to public authorities online."
+    },
+    {
+     "url": "https://web.archive.org/web/2013/http://epp.eurostat.ec.europa.eu/statistics_explained/index.php/Information_society_statistics",
+     "title": "Eurostat Statistics Explained: Information society statistics (archived)",
+     "date": "2013",
+     "shows": "As of January 2011 about three quarters of EU-27 enterprises used the internet to obtain forms or information from public authorities; no later enterprise e-government value."
+    },
+    {
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tin00107",
+     "title": "Eurostat API: tin00107",
+     "date": "accessed 2026-10-01",
+     "shows": "Dataset not available for dissemination (404)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-006",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "3D printers become a viable segment in power tools and industrial manufacturing, growing over 100% vs 2011.",
+   "reason": "No series measures 3D printers as a segment of the power-tools or industrial-manufacturing markets. Wohlers total additive-manufacturing revenue is a different quantity (D23). Not a page-access gap: even with Wohlers open, the named segment is unmeasured.",
+   "fetched": "Not re-attempted; the measure does not exist for the named segments.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim names 3D printing within the power-tools and industrial-manufacturing markets."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-008",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Globally in 2012, 95% of TV programmes watched are viewed live or within 24 hours of broadcast.",
+   "reason": "Scope is global and the window is 24 hours. National panels (BARB UK, Nielsen US) publish live vs time-shifted within 7 days (BARB) or Live+SD/+3/+7 (Nielsen), not a global or 24-hour share. Ofcom access would only add UK 7-day data, a different window and scope. Ungradable stays.",
+   "fetched": "Ofcom pages now reachable via Wayback, but they carry no 24-hour or global measure.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions-2012.pdf",
+     "title": "Deloitte TMT Predictions 2012",
+     "date": "2012-01",
+     "shows": "Claim: 95% of TV programmes watched live or within 24 hours, global."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-015",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Shipments of NFC-equipped devices roughly double to almost 200 million in 2012.",
+   "reason": "Only analyst estimates (IHS, ABI, Juniper, Berg) of NFC device or handset shipments exist, in paid reports with differing device scopes; no public 2012 actual was located. Not a blocked-page case.",
+   "fetched": "No new public source found.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "No 2012 NFC device shipment figure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-009",
+   "earlier": "adjudicated ungradable (graders: A ungradable, B hit)",
+   "verdict": "ungradable",
+   "reading": "The global installed base of TV sets with integrated connectivity exceeds 100 million in 2013.",
+   "reason": "Earlier adjudication stands: no public global installed-base figure for 2013; available figures are US-only (25m households in 2012) or 2019 (1.26bn connected TVs). Building a base from shipment shares is a constructed estimate (D23). Likely exceeded, but not measured.",
+   "fetched": "Nothing new; the gap was a paywalled series, not a 403.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smart_TV",
+     "title": "Smart TV - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "US 2012 ownership only; no global installed base for 2013."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-003",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In Q1 2014 the installed base of compact tablets (<8.5 inches) passes that of larger tablets.",
+   "reason": "No tracker publishes tablet installed base by screen size; deriving it from shipments needs replacement assumptions (proxy, D23). Not a page-access gap.",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01",
+     "shows": "The 165m compact base is Deloitte's own model."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-009",
+   "earlier": "ungradable_agreed",
+   "verdict": "hit",
+   "reading": "Quantitative: global recorded-music performance rights revenue exceeds $1bn in 2014.",
+   "reason": "IFPI Digital Music Report 2015 (contemporaneous vintage): 2014 performance rights revenue $948m, +8.3%, on an amended scope that moved US SoundExchange to digital and gave US performance rights a nil value. $1bn vs $948m is 5.5% off: hit under the D16 quantitative rule (within 10%). On the scope in force when Deloitte forecast, IFPI's DMR 2014 already put 2013 at $1.1bn (+19%), so the threshold was crossed on that basis too (early arrival not penalised). Both vintages give hit; the threshold-not-crossed reading on the new scope is the only weakness. Grader B's 'factor 2 spread' rested on a later restatement not used here; vintages of the same quantity are gradable (D23).",
+   "fetched": "IFPI Digital Music Report 2015 and 2014 PDFs via the Wayback Machine (graders got 404).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2016/http://www.ifpi.org/downloads/Digital-Music-Report-2015.pdf",
+     "title": "IFPI Digital Music Report 2015",
+     "date": "2015-04",
+     "shows": "Performance rights revenue rose 8.3% in 2014 to US$948 million (6% of industry revenue), on amended methodology excluding US SoundExchange."
+    },
+    {
+     "url": "https://web.archive.org/web/2014/http://www.ifpi.org/downloads/Digital-Music-Report-2014.pdf",
+     "title": "IFPI Digital Music Report 2014",
+     "date": "2014-03",
+     "shows": "Performance rights income was US$1.1 billion globally in 2013, up an estimated 19%."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-013",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In 2014 over-55s show the fastest year-on-year rise in smartphone penetration of any age group across developed markets.",
+   "reason": "The claim spans developed markets; only single-country surveys (Ofcom UK, Pew US) exist, with different age bands and growth bases (points vs percent). Opening Ofcom would give one country, not the stated scope. Not re-attempted beyond confirming no cross-market series.",
+   "fetched": "Ofcom reachable via Wayback this session, but UK-only.",
+   "evidence": [
+    {
+     "url": "https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/dttl_TMT_Predictions-2014-lc2.pdf",
+     "title": "Deloitte TMT Predictions 2014",
+     "date": "2014-01",
+     "shows": "Claim scope: developed markets."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-002",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "The global active base of non-military drones costing $200 or more exceeds one million in 2015.",
+   "reason": "No installed-base series of civil drones by price. FAA registrations began Dec 2015, cover the US only and all drones over 250 g. Not a page-access gap.",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-pred15-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2015",
+     "date": "2015-01",
+     "shows": "Claim names a global active base filtered by price."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-004",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "The global graphene materials market in 2016 is in the low tens of millions of dollars.",
+   "reason": "Only bracketing market-research figures ($9m in 2012, about $380m in 2022) were found; 2016 estimates from market-research firms differ by scope (materials vs products) and span more than a factor of 2 (D23). Not resolved by page access.",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Graphene",
+     "title": "Graphene - Wikipedia",
+     "date": "accessed 2026-10-01",
+     "shows": "Market $9M in 2012 and about $380M in 2022; no 2016 figure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-008",
+   "earlier": "adjudicated ungradable (graders: A miss, B ungradable)",
+   "verdict": "miss",
+   "reading": "Quantitative: share of the world's mobile device owners (smartphones and tablets, about 3.4 billion devices per the edition) using ad-blocking software at end-2016 is about 0.3%.",
+   "reason": "PageFair's 2017 Adblock Report (Dec 2016 data) counts 380 million mobile devices using adblock software on mobile browsers, up 108 million in 2016, 94% in Asia-Pacific. Against the edition's own base of 3.4 billion mobile devices that is about 11%, some 37 times the forecast; even if PageFair overstated by a factor of 10 the share would exceed 1%. Reading note: PageFair's mobile count is of adblocking browsers (UC Browser and similar), while the chapter frames ad-blockers as installed software and iOS content blockers; an adblocking browser is installed ad-blocking software on the device, so the plain reading 'use an ad-blocker' covers it, and the chapter does not exclude it. Miss.",
+   "fetched": "PageFair 2017 Adblock Report page and PDF via the Wayback Machine (pagefair.com redirects/403 for graders and earlier adjudicator); Deloitte 2016 chapter text.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2017/https://pagefair.com/blog/2017/adblockreport/",
+     "title": "PageFair: 2017 Adblock Report",
+     "date": "2017-02-01",
+     "shows": "Mobile adblock usage grew by 108 million to reach 380 million devices (Dec 2016); 615 million devices in total."
+    },
+    {
+     "url": "https://web.archive.org/web/2017/https://pagefair.com/downloads/2017/01/PageFair-2017-Adblock-Report.pdf",
+     "title": "PageFair 2017 Adblock Report (PDF)",
+     "date": "2017-01",
+     "shows": "Mobile count is smartphones using adblocking browsers (UC Browser and others), 94% in Asia-Pacific; 59% of smartphones in India."
+    },
+    {
+     "url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-prediction-2016-full-report.pdf",
+     "title": "Deloitte TMT Predictions 2016",
+     "date": "2016-01",
+     "shows": "0.3% of mobile device owners will use an ad-blocker by end-2016; base of 3.4 billion smartphones and tablets in use."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-009",
+   "earlier": "ungradable_agreed",
+   "verdict": "partial",
+   "reading": "Quantitative band: traditional (broadcast) TV viewing by 18-24s falls by 5-15% a year in each of the US, Canada and the UK in both 2018 and 2019 (no tipping point).",
+   "reason": "UK (BARB via Ofcom, ages 16-24, live plus 7-day): 2018 down 15% to 85 minutes a day (at the top of the band); 2019 down 18% to 70 minutes (outside the band, 20% beyond its 15% edge; H1 2019 was down 22%). A conjunctive band claim is capped by its worst measured component: the UK 2019 value is within 25% of the band edge, so at most partial. US (Nielsen) and Canada (Numeris) 18-24 series were not retrieved (Nielsen report pages give no data without the PDF; Numeris not public), so a larger US or Canadian decline could make this a miss. Low certainty.",
+   "fetched": "Ofcom Media Nations 2019 and 2020 UK reports (PDF), found through Wayback snapshots of the Ofcom landing pages (Ofcom returned 403 for graders).",
+   "evidence": [
+    {
+     "url": "https://www.ofcom.org.uk/__data/assets/pdf_file/0019/160714/media-nations-2019-uk-report.pdf",
+     "title": "Ofcom Media Nations: UK 2019",
+     "date": "2019-08",
+     "shows": "16-24s watched 85 minutes of broadcast TV a day in 2018, 15 minutes (15%) less than in 2017; H1 2019 down 22% to 1h10."
+    },
+    {
+     "url": "https://www.ofcom.org.uk/__data/assets/pdf_file/0010/200503/media-nations-2020-uk-report.pdf",
+     "title": "Ofcom Media Nations: UK 2020",
+     "date": "2020-08",
+     "shows": "Broadcast TV viewing among 16-24s down 18% in 2019, to 1 hour 10 minutes a day."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-003",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "The smart speaker industry is worth $7bn in 2019 (164m units at $43 ASP).",
+   "reason": "The headline quantity is industry revenue. Trackers (Canalys, Strategy Analytics) publish unit shipments; units times an assumed ASP is a proxy (D23). No public 2019 smart-speaker revenue measure.",
+   "fetched": "Not re-attempted: tracker pages would give units only.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/insights/articles/2019/tmt-predictions_2019/di-tmt-predictions-2019.pdf",
+     "title": "Deloitte TMT Predictions 2019",
+     "date": "2018-12",
+     "shows": "Value claim of $7bn, with 164m units at $43."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-005",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "The North American eSports market grows 35% in 2019.",
+   "reason": "Newzoo is the tracker. Via Wayback its Feb 2019 release was opened: it gives North America at $409.1m for 2019, but this is Newzoo's in-year forecast, and no 2018 North America base or 2019 actual was retrieved (2020 report pages and articles not archived at the URLs found; newzoo.com returns 403). A growth rate cannot be computed from one number. Ungradable; low certainty, the 2020 report would settle it.",
+   "fetched": "Newzoo 2019 esports release via the Wayback Machine (newzoo.com 403).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2019/https://newzoo.com/insights/articles/newzoo-global-esports-economy-will-top-1-billion-for-the-first-time-in-2019/",
+     "title": "Newzoo: Global Esports Economy Will Top $1 Billion for the First Time in 2019",
+     "date": "2019-02",
+     "shows": "North America forecast at $409.1m in 2019; no 2018 base stated on the page."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-006",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Global radio revenue reaches $40bn in 2019, up 1%.",
+   "reason": "Global radio revenue series (PwC Global Entertainment & Media Outlook) are paywalled and differ in scope (advertising only vs advertising plus licence fee and subscription). No public 2019 global figure on the same scope located.",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/content/dam/insights/articles/2019/tmt-predictions_2019/di-tmt-predictions-2019.pdf",
+     "title": "Deloitte TMT Predictions 2019",
+     "date": "2018-12",
+     "shows": "Claim of $40bn global radio revenue."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-001",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "More than 750 million edge AI chips (including parts of SoCs) are sold in 2020.",
+   "reason": "Deloitte's definition counts parts of chips; no tracker counts that quantity. AI-capable smartphone shares or vendor accelerator counts are proxies (D23).",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2020.html",
+     "title": "Deloitte TMT Predictions 2020",
+     "date": "2019-12",
+     "shows": "Edge AI chip definition includes parts of chips."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-007",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "The global CDN market reaches $14bn in 2020.",
+   "reason": "2020 CDN market estimates come from market-research firms with paywalled reports and scopes that differ (security, video services); figures that circulate span widely. No same-scope public measure retrieved.",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www.marketsandmarkets.com/Market-Reports/content-delivery-networks-cdn-market-657.html",
+     "title": "Content Delivery Network Market - MarketsandMarkets",
+     "date": "accessed 2026-10-01",
+     "shows": "Current page shows only 2025 and 2030 values."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-008",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Enterprise and education sales of VR/AR/MR headsets double in 2021 over 2019.",
+   "reason": "Trackers split AR/VR shipments by device type and, at most, consumer vs commercial in paid data; no public series of enterprise-plus-education headset sales. Not a page-access gap.",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2021.html",
+     "title": "Deloitte TMT Predictions 2021",
+     "date": "2020-12",
+     "shows": "Claim is a buyer-segment quantity."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-002",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "The console market (hardware, software and services) generates $81bn in 2022, up 10%.",
+   "reason": "Newzoo's console segment excludes hardware; adding hardware needs unit times ASP assumptions (proxy, D23). No same-scope public measure.",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2022.html",
+     "title": "Deloitte TMT Predictions 2022",
+     "date": "2021-12",
+     "shows": "Scope includes hardware."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-004",
+   "earlier": "ungradable_agreed",
+   "verdict": "partial",
+   "reading": "Quantitative, on the edition's own definition and source: broadcaster content (live, time-shifted and broadcaster on-demand) as a share of UK video viewing on all screens (Ofcom/Barb basis) falls below 50% in 2023 (forecast 53% in 2022, 49% in 2023).",
+   "reason": "Ofcom Media Nations (Barb in-home basis, recalculated for 2022): broadcaster content (live, recorded playback, BVoD) was 61% of video viewing in 2022, 57% in 2023 and 56% in 2024. The threshold event did not happen: 2022 was not the final year above 50%, and the share was still above half in 2024. On the D16 quantitative rule the stated path is 14% off in 2023 (49 vs 57) and 13% off in 2022 (53 vs 61), within 25%: partial. Ofcom's switch to in-home-only viewing moves shares by about a point (out-of-home added just under 2% to total viewing), which does not change the result. If the claim is read as a binary event, it is a miss; the edition gives explicit numbers, so the quantitative reading is used (same treatment as other threshold claims in this pass).",
+   "fetched": "Ofcom Media Nations 2024 and 2025 UK reports (PDF; Ofcom pages returned 403 for graders, 2024 link found via a Wayback snapshot); Deloitte 2022 chapter text with definition and 53%/49% path.",
+   "evidence": [
+    {
+     "url": "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/media-nations/2024/media-nations-2024-uk.pdf?v=371192",
+     "title": "Ofcom Media Nations: UK 2024",
+     "date": "2024-07-31",
+     "shows": "Broadcaster content (live, recorded playback, BVoD) fell from 61% of Barb-measured in-home video viewing in 2022 to 57% in 2023."
+    },
+    {
+     "url": "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/multi-sector/media-nations/2025/media-nations-2025-uk-report.pdf?v=401287",
+     "title": "Ofcom Media Nations: UK 2025",
+     "date": "2025-07-30",
+     "shows": "Broadcaster content still the majority of in-home video viewing at 56% in 2024 (57% in 2023)."
+    },
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2022.html",
+     "title": "Deloitte TMT Predictions 2022 (full report PDF)",
+     "date": "2021-12",
+     "shows": "Traditional TV from broadcasters, whether live, time-shifted or on demand; forecast 53% in 2022 and 49% in 2023, based on Ofcom Media Nations."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-009",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "At least 2.5 billion Wi-Fi 6 devices ship worldwide in 2022.",
+   "reason": "No public annual Wi-Fi 6 device shipment actual for 2022 was found. Wi-Fi Alliance newsroom pages tried returned 404; IDC figures are forecasts or paywalled; chipset projections are a different quantity. Low certainty: a Wi-Fi Alliance or IDC public actual may exist.",
+   "fetched": "Retried Wi-Fi Alliance pages: 404.",
+   "evidence": [
+    {
+     "url": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-6",
+     "title": "Wi-Fi CERTIFIED 6 - Wi-Fi Alliance",
+     "date": "accessed 2026-10-01",
+     "shows": "Only a 2026 chipset projection; no 2022 device count."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-010",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "320 million consumer health and wellness wearables ship worldwide in 2022.",
+   "reason": "IDC reports wearables by form (earwear, smartwatches, wristbands); Deloitte's 'health and wellness' scope matches none, and the two candidate scopes (all wearables about 500m; watches plus bands) give opposite verdicts. No same-scope measure (D23).",
+   "fetched": "Not re-attempted: the gap is scope, not access.",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/getdoc.jsp?containerId=prUS50440623",
+     "title": "IDC wearables release",
+     "date": "2023-03",
+     "shows": "Categories are device-form based; scope does not match."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-014",
+   "earlier": "ungradable_agreed",
+   "verdict": "miss",
+   "reading": "Quantitative: the number of games-company M&A deals in 2023 is about 25% higher than in 2022.",
+   "reason": "Drake Star's gaming deal tracker: 163 M&A deals announced in 2023 (Q1 2023: 43). For 2022 its quarterly releases give Q4 2022 alone at 76 M&A deals, Q1 2022 at about 100 (387 transactions less 287 financings), and 132 PC/console and mobile M&A transactions in the first nine months; 2022 M&A count was therefore well above 200, and total gaming deals fell from 1,300+ (2022) to 960 (2023). The count fell by roughly a quarter or more instead of rising 25%: miss. Drake Star itself describes 2023 deal activity as shifting back to pre-COVID levels. The exact 2022 M&A total sits in the gated PDF; the direction is not in doubt.",
+   "fetched": "Drake Star Global Gaming Report pages for FY2022, Q1/H1/Q3 2022, Q1 2023, Q3 2023 and FY2023 (the URL graders tried was a 404; the report pages exist under other slugs).",
+   "evidence": [
+    {
+     "url": "https://www.drakestar.com/news/global-gaming-report-q4-2023",
+     "title": "Drake Star Global Gaming Report Q4 2023",
+     "date": "2024-01-24",
+     "shows": "960 announced deals in 2023; 163 M&A deals announced in 2023; activity shifted back to pre-COVID levels."
+    },
+    {
+     "url": "https://www.drakestar.com/news/global-gaming-report-q1-2023",
+     "title": "Drake Star Global Gaming Report Q1 2023",
+     "date": "2023-04",
+     "shows": "43 announced M&A deals in Q1 2023 compared to 76 deals in Q4 2022."
+    },
+    {
+     "url": "https://www.drakestar.com/news/global-gaming-report-2022",
+     "title": "Drake Star Global Gaming Report 2022",
+     "date": "2023-01-18",
+     "shows": "Over 1,300 deals in 2022, 900+ of them financing rounds."
+    },
+    {
+     "url": "https://www.drakestar.com/news/global-gaming-report-q1-2022",
+     "title": "Drake Star Global Gaming Report March 2022",
+     "date": "2022-04-21",
+     "shows": "387 transactions in Q1 2022, of which 287 private financing deals."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-021",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Silicon photonics transceiver chip sales reach $1.25bn in 2025.",
+   "reason": "2025 actuals for silicon photonics chips (not modules) are not yet public; analyst figures (Yole, LightCounting) are paywalled, forecast-based and scope modules or PICs differently, spanning more than a factor of 2 (D23).",
+   "fetched": "Nothing new.",
+   "evidence": [
+    {
+     "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/tmt-predictions-introduction.html",
+     "title": "Deloitte TMT Predictions 2025",
+     "date": "2024-11",
+     "shows": "Claim of $1.25bn in 2025."
+    }
+   ]
+  }
+ ]
+}
