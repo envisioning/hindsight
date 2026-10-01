@@ -30,7 +30,7 @@ A public, citable record of published forecasts (publications x predictions), gr
   - MIT TR10 (#51, D25): 31% hit (19 to 48) over 35 graded, kappa 0.67, audit error 7%. Only Availability-line horizons (2017 on) are graded; 70 body-text timings are not graded.
   - ARK Big Ideas (#49, D23 re-grade): 14% hit (7 to 28) over 42 graded, kappa 0.89 (round 1: 0.53, kept in `round1/`), audit error 2%.
   - IDC FutureScape (#45): counts only (D11): 8 graded (4 hit, 1 partial, 3 miss), 148 ungradable, kappa 0.82.
-  - Deloitte TMT (#44): graded, kappa 0.80; adjudication and audit in progress at the time of this handoff.
+  - Deloitte TMT (#44): 64% hit (55 to 73) over 109 graded, kappa 0.80, audit error 10%. 162 of 276 ungradable; several are fetch failures (Gartner, IDC, Newzoo, Ofcom blocked).
 - **Numeric, graded by command (D19):** 12 publishers with a rate from IEA 10% to ECB 57% (BP and BNEF under 20 graded, counts only). No matching audit yet (#53).
 - **Subjects:** 1,746, alias review done (#55 closed).
 - **Links to research technologies:** planned, not built (#59).

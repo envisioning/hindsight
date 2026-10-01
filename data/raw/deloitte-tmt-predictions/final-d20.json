@@ -1,0 +1,727 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.7952,
+ "n": 276,
+ "counts": {
+  "hit": 70,
+  "miss": 23,
+  "partial": 16,
+  "contested": 5,
+  "ungradable": 162
+ },
+ "hit_rate": {
+  "hits": 70,
+  "of_graded_hit_partial_miss": 109,
+  "rate": 0.6422,
+  "wilson95": [
+   0.549,
+   0.726
+  ]
+ },
+ "hit_or_partial_rate": 0.789,
+ "adjudicated": 31,
+ "audit": {
+  "sample": 50,
+  "audited": 50,
+  "confirmed": 45,
+  "corrected": 0,
+  "contested": 5,
+  "error_rate": 0.1
+ },
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2005-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-003",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "The edition settles the scope (D23: read the scope from the edition): the chapter lists hard drives, smaller/faster processors and storage, sunblock, car tyres and fabrics as the mainstream applications, not nano-labelled consumer gadgets. Nanoscale features were in essentially all new hard drives and processors (90 nm node, GMR heads) by 2005, so at least 50% of new units shipped with it: mainstream at the placed year. Grader A's two readings are therefore not equally faithful; the consumer-product-count reading is not what the chapter says. Grader B's directional test is not the D16 test, but its verdict stands under the D16 test."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-005",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "The chapter is about household robots starting with the robot vacuum. D16 reads a year placement as mainstream around that year; 'increasingly' does not turn it into a directional claim (grader B's test is not D16). iRobot had sold about 1 million Roombas by 2004 and only about 30 million home robots in total by 2020; robots reached 20% of vacuum-cleaner sales (a flow, not household stock) only in 2016. Household penetration in major markets stayed well under 5% through 2010, so miss, window closed."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-006",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-008",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-003",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "The claim states a state of worry among consumers and businesses. Grader B's evidence (EPA report on data-centre electricity, Aug 2007) shows policy attention to data-centre energy in general; it does not measure consumer or business concern about storage costs, so it is a proxy of another quantity (D23). No 2007 survey of that concern was found by either grader. Ungradable (D22)."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-004",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "By 2007 biometrics were routine in one application, e-passports (EU states, Japan, US from 2005-2007), a measurable share of users. Across the 'large range of applications' the claim names, consumer device use (laptops, phones) became mainstream only after Touch ID in 2013 and its spread to most phones by about 2016-2017, 6 or more years late. Measurable share by the placed year, mainstream across applications not within 2 years: partial. Grader B graded only the passport rollout, which is one application."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-007",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "The edition text settles grader A's objection: the sentences after the quote are about access to broadband conferring benefits, and the chapter defines the second chasm as between those with broadband 'at a speed and contention ratio sufficient' and those without (under 5% of the world had broadband at the start of 2007); the voice divide in the same chapter is said to be narrowing. ITU: fixed broadband per 100 inhabitants rose from 4.3 (2006) to 5.2 (2007) worldwide while LDCs stayed at about 0, so the gap widened in absolute terms. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-001",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "reason": "A series exists (ZenithOptimedia global internet adspend), so this is gradable; grader B recorded ungradable only for lack of a retrieved figure. Zenith's later tally for 2008 is about $51.1bn (via Statista), consistent with Zenith's mid-2008 estimate of internet at 10.8% of global adspend in 2008 (roughly $50bn of a total near $480bn). $41.6bn is about 18-19% below: within 25%, not 10%. Deloitte's own base ($41.6bn = +23% implies about $33.8bn in 2007) is lower than Zenith's, a method difference of the same quantity (D23), stated here. The radio comparison held. Partial; one tracker only, medium-low confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-003",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-008",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-001",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "reason": "One public estimate of the same quantity for 2009 was found: the global smart grid market at $69.3bn (with the US at $21.4bn), cited on Wikipedia. D23 makes a claim ungradable when estimates span more than a factor of 2; grader A asserted such a spread but cited no second global estimate, so the rule does not apply on the evidence. Against $69.3bn the forecast is 64% low: miss. Against the US-only figure it would be partial, but the edition is global. Low confidence: smart grid scope varies by source."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-002",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "The core of the claim is an event (a significant expansion of the subsidy model in 2009), and it happened: from late 2008 and through 2009 major operators in the US and Europe sold netbooks at low or zero upfront price on mobile-broadband contracts, the 'cellphone-like contract deals' trend. 'Pervasive' is read as widely offered by operators, which held; no series gives the share of devices sold this way, so a share reading is not tested. Grader A's ungradable rests on the share reading only. Moderate-low confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "Two public estimates of the same quantity disagree: Gartner sales to end users 172.4m, +23.8%; IDC shipments 174.2m, +15.1% (from 151.4m in 2008). D23: grade against their median, 19.45%, which is under 20% and within 0.5 pt of a forecast of just under 20%: hit. Grader A used Gartner only, which D23 does not allow when a second estimate exists. Sub-parts went worse: all-phone growth was about -1% (Gartner), not +4%, and Gartner shows no 15-point fall in smartphone growth; the headline smartphone level is graded. Low confidence: the trackers straddle the threshold."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-011",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-003",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-006",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "The chapter is about sector performance in a recovery ('CleanTech makes a comeback'), so the investment reading dominates. Yahoo Finance monthly adjusted closes, re-fetched by the adjudicator: Guggenheim Solar ETF (TAN) 75.80 (Dec 2009) to 54.20 (Dec 2010), -28.5%; PowerShares WilderHill Clean Energy (PBW) 39.24 to 37.06, -5.6%. Solar underperformed the broad clean-energy index by about 23 points: hit. Grader A could not retrieve the index data."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-009",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "reason": "A series exists and was retrieved: ZenithOptimedia put internet at 16.0% of global adspend in 2011 ($76.4bn). D18 rate: 15 - 16.0 = -1.0 pt, within 1.0: partial. Deloitte's 'roughly 10% at end-2009' base is lower than Zenith's, a baseline difference of the same quantity (D23). Grader B's ungradable was for lack of retrieval only."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-011",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-014",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-002",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "The title names each device class, so the per-class reading is more faithful than grader B's combined smartphone-plus-tablet pool. By end-2011 Android passed 50% of quarterly smartphone sales (Q4 2011, Gartner) with a lead of more than 25 points over the next OS, and iPad held 61.5% of tablet shipments in Q3 2011 (IDC). Each class had a dominant OS at the target date: miss. Medium confidence on where 'dominant' starts."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-005",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "The claim is comparative ('more ... than ever before'); both graders cite only 2011 events (Wikipedia PSN breach, cookie directive) with no measure against 2010, itself a peak privacy year (Facebook settings, Street View Wi-Fi). Evidence does not support any verdict on the comparison."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-006",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-007",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-009",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "The claim is a rate threshold, graded under D18, not the D16 placement windows grader B applied (late arrival 3-5 years is a placement rule, not a numeric one). US DVR penetration was 32% (2009) and 38% (2010); at that pace about 44% at end-2011, and the edition itself put the US crossing in 2011-2012. No source shows the US near 50% in 2011, so the US is more than 1 pt short and the two-market claim fails: miss. TV advertising was little affected, as stated, but the headline is the penetration number. Medium confidence: no retrieved 2011 US figure; 2011 is extrapolated by both graders."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-011",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-014",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2011-015",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2012-018",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-001",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Cisco VNI release (June 2014) gives 33% of IP traffic from non-PC devices, but IP traffic includes managed IPTV/VoD to set-top boxes; the claim is about Internet traffic. The release has no Internet-only device split, and removing managed video plausibly puts the PC share near 80%, so the miss rests on an unconfirmed figure."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-005",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "Deloitte's 2011 baseline ($1.5bn) is Massolution's $1.47bn. The same series gives $2.66bn for 2012 and, in the 2015CF report, $6.1bn for 2013 ($16.2bn in 2014, +167%). $3bn is 51% below: miss. The $2.8bn for 2013 on Wikipedia (journalism passage) has no stated source or scope and sits barely above the same series' 2012 value, so it is not treated as an estimate of the same quantity; the D23 factor-2 rule is not triggered. Grader B's $6.1bn was from memory; it is now retrieved via the Massolution release. Medium-low confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-009",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "No public global installed-base figure for 2013 was found by either grader or the adjudicator; the Wikipedia article gives only US 2012 ownership (25m households) and a global 1.26bn connected TVs at end-2019. Grader B's estimate rests on unsourced shipment shares (about a quarter of 230-250m a year), a constructed estimate not a measure (D23). Likely exceeded, but ungradable on the evidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-012",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2013-013",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-007",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "reason": "The event can be dated: Germany's AGF restructured in 2017 so that streaming data enter the ratings measurement; in the UK, BARB's fusion of panel and device data (Dovetail) is documented only for later years, not 2014. Neither market shows hybrid ratings in 2014 or within 2 years in the evidence; Germany's came 3 years after the placed year, which D16 grades partial. Low confidence: no retrieved launch date for BARB's hybrid, and an earlier German streaming pilot cannot be ruled out."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2014-011",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "The claim states a level (50bn a day) as well as a ratio. No aggregate of MIM traffic exists; per-app disclosures use different counts (WhatsApp reported 30bn a day by January 2015, while earlier WhatsApp figures counted sent and received separately, which differ by about a factor of 2), and WeChat, Messenger, LINE and iMessage gave no comparable 2014 counts. Estimates of the total therefore span more than a factor of 2 depending on the counting convention: ungradable under D23. Grader B's sum is a construction from partial disclosures. The ratio half very likely held (WhatsApp alone at or above the SMS level), noted but not graded alone."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-003",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "Gartner, the consensus series Deloitte cites (forecast 217,350 for 2015 in Oct 2014), later reported 219,168 units shipped in 2015 (in its 2016 forecast, 455,772 for 2016). 220,000 vs 219,168 is +0.4%: hit. Grader A did not retrieve the figure (403); grader B recalled it, now confirmed via search. Wohlers' desktop counts for 2015 are higher, but no Wohlers figure was retrieved, so the D23 median rule is applied to the one retrieved estimate. Medium confidence; a higher Wohlers count could move this to partial."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-005",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2015-012",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "ITU (Nov 2022 vintage): fixed-broadband subscriptions 730.8m (2014) and 834.9m (2015). 715m is 14.4% below: within 25%, not 10%, partial; growth was about 14%, not 2%. Business lines are a minority of subscriptions; even removing 10% for them gives about 750m and a hit, but no residential series exists, so the graded figure is subscriptions, the same quantity with a stated scope difference (D23). Grader A's own figure (about 795m) is 10.1% above 715m, outside the 10% hit band, so its hit was an arithmetic error; its residential adjustment was unsourced. Speed sub-claim not graded."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-006",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "SuperData put 2016 VR revenue at $1.8bn (games 44% of it), fetched by the adjudicator from VGChartz's report of the SuperData release. $1.0bn is 44% below: miss. Grader B fetched only SuperData's unit counts. Medium confidence; one estimate."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-007",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-008",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "Both graders cite PageFair's 2017 report (hundreds of millions of mobile devices blocking, mostly via browsers with built-in blocking such as UC Browser), but neither could open it, and the adjudicator's attempts also failed (pagefair.com redirects to blockthrough.com, 403). The only retrieved figure (Met Facts, Q2 2016: 72m Americans blocking on PCs, smartphones or tablets) does not separate mobile. Whether built-in browser blocking counts as 'using an ad-blocker' also changes the measure. No retrieved measure: ungradable. Likely a miss on the dominant reading if the PageFair figure holds."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-010",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "partial",
+   "reason": "Leichtman Research: about 82% of US TV households subscribed to pay TV in 2016 (fetched; 87% in 2011), 79% in 2017. D18: 81 - 82 = -1.0 pt, within 1.0: partial. Grader A's Pew figure is an adult base and was rightly set aside, but a household series was retrievable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2016-016",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-003",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2017-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "IDC: 163.5m tablets shipped in 2017, down 6.5% from 174.8m in 2016 (IDC table on Wikipedia, retrieved by the adjudicator). Under the 165m ceiling: hit. The 'down about 10% from 182m' part uses a different 2016 base than IDC's."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2018-010",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The claim's base is people with internet access, not all adults. Pew: smartphone-dependent 20% of adults (Jan 2018 survey) and 17% (Feb 2019); internet users 89% and 90%. On the claim's base: 22.5% and 18.9%, which bracket 2018; the midpoint is about 20.7%, 0.7 pt off: partial (D18). Grader A graded on the all-adult base (20% exactly) although it noted the base difference: a reading error. Canada has no measure on this basis. Low confidence: single surveys move a lot year to year."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2019-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "CNNIC 43rd Statistical Report (retrieved by the adjudicator): mobile payment users reached 583 million at end-2018, up 10.7%. 600m is 2.9% above: hit. Grader B could not retrieve the report."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-003",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "GSA Dec 2020 update counts 259 companies deploying LTE or 5G (500+ incl. trials) with no 5G split; GSA's Aug 2021 release (Grader B's '120+ 5G projects') post-dates the target and says LTE was in 81% of networks in Oct 2020, implying well under 100 catalogued 5G at end-2020. No source confirms >100 companies testing 5G by end-2020."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2020-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2021-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-005",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-006",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "PitchBook counted US$7.8bn of global VC into semiconductor startups in 2022 (to 5 December), fetched from The Register. That is above the US$6bn floor: hit. PitchBook's 2021 figure (US$14.5bn) is higher than Deloitte's base, a method difference of the same quantity (D23), stated; the 'new highs' framing failed on PitchBook's series, but the stated threshold is the claim. Grader A found no figure; one was retrievable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-008",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "partial",
+   "reason": "Ericsson Mobility Report June 2023 (text verified by the adjudicator): 'From 100 million at the end of 2022, FWA connections worldwide are projected to increase to 300 million by the end of 2028.' 88m is 12% below: within 25%, not 10%: partial."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-013",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Estimates of end-2022 floating PV conflict: REN21 GSR 2024 'at least 5.6 GW operational' (5.2 is 7% below, a hit), REN21 GSR 2023 'well over 3 GW', Wikipedia/Bloomberg 13 GW (miss). Spread exceeds 2x (D23), so the agreed miss is not supported."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-014",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2022-019",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-002",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "Graders' 2023 price evidence (itel P55 5G at Rs 9,699, ~US$116) returned 404; only Lava Blaze 5G (Oct 2022, ~US$125) and Poco C75 5G (Dec 2024, Rs 7,399 per Cashify) were confirmed. A 2023 phone within 10% of US$99 (with offers) would make it a hit, so partial rests on an unconfirmed figure."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2023-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-003",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-004",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-005",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "USGS (verified): China's gallium exports recovered in 2024 as licences were granted; prices rose (to $420/kg by October) 'as stocks outside of China depleted further'; China banned gallium exports to the US only in December 2024. Supply tightened and stocks ran down, but with exports flowing again there is no evidence of an actual shortfall in multiple regions during 2024. Partly happened: partial. Moderate-low confidence on what counts as 'running short'."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-014",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2024-016",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "Every iPhone 14 or later supports satellite messaging (Apple). IDC puts Apple's 2025 shipments at 247.4m, +6.1%, so about 233m in 2024; the iPhone 13 and SE, the only non-satellite iPhones on sale in 2024, were the cheap tail of the line. Satellite-capable Huawei Mate 60 and Pura 70 and Pixel 9 models add to that. This counts units of the same quantity (satellite-capable phones), not a proxy of another quantity, so D23 does not bar it. Even with 15% of iPhones non-satellite the total is above 200m, and D16 allows a hit down to 180m. Medium confidence: no tracker count retrieved; the Apple 2025 figure is from IDC's release title."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-005",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "The claim has two observable parts and both held. Industry collaboration on content provenance was active in 2025: the C2PA coalition (Adobe, Amazon, BBC, Google, Meta, Microsoft, OpenAI, Sony, TikTok and others) runs Content Credentials as a cross-industry standard. Detection evasion is the documented pattern. It was partly in place before 2025, and D16 does not penalise early arrival. Grader A's ungradable treats it as an unmeasurable pattern, but its parts are events, which are gradable. Moderate confidence: 'at least some' is a low bar."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-007",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "Counterpoint (fetched): global smartphone shipments grew 2% in 2025; IDC preliminary 1.9%. D18: about 5 pt below: miss. Grader B could not retrieve tracker releases."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2025-014",
+   "verdict": "miss",
+   "status": "audited"
+  }
+ ]
+}
