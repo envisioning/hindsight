@@ -25,7 +25,7 @@ import { type Bundle, OUT, RAW, REPO, clean, editionId, writeJson, writeText } f
 import { QUANTITIES, QUANTITY_BY_ID } from "./quantities.ts";
 import { posterRevisions, serialRevisions } from "./revisions.ts";
 import { type PhaseCheck, hypeCycle } from "./sources/hype-cycle.ts";
-import { envisioningPosters } from "./sources/envisioning.ts";
+import { envisioningEducation, envisioningHealth, envisioningHorizons, envisioningPosters } from "./sources/envisioning.ts";
 import { ARK_GENERIC_IDEAS, arkBigIdeas, deloittePredictions, gartnerPredictions, idcFuturescape, mitBreakthrough, wefGlobalRisks } from "./sources/lists.ts";
 import { cboProjections, ecbProjections, fedSep, obrForecasts, oecdOutlook, worldBankGep } from "./sources/macro.ts";
 import { bcbFocus, bnefEvo, bpEnergyOutlook, eiaAeo, ieaWeo, imfWeo } from "./sources/numeric.ts";
@@ -38,6 +38,9 @@ type ClaimRow = Claim & { edition: string };
 /** Adapters in processing order. The order fixes which label names a new subject. */
 const ADAPTERS: Record<string, () => Bundle> = {
   "envisioning-technology": envisioningPosters,
+  "envisioning-education": envisioningEducation,
+  "envisioning-health": envisioningHealth,
+  "envisioning-horizons": envisioningHorizons,
   "gartner-hype-cycle": hypeCycle,
   "mit-tr-10-breakthrough": mitBreakthrough,
   "gartner-strategic-predictions": gartnerPredictions,
