@@ -49,8 +49,8 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **Decisions in Meet** (below). When answered: record each approved rule as a decision (the numbers D28/D29 named in the asks are now D31 and up; D28 is the audit interval, D29 disputes), then grade under it.
-2. **#47 Eurasia, #48 WEF** after their rules. **Trend sources** (#26 to #31) and **scenario sets** (#32 to #34) after the trend and scenario rules. Scenario coverage needs observed series first (Global Carbon Budget, NOAA CO2, Energy Institute).
+1. **Grade under the approved rules:** #47 Eurasia (D31), #48 WEF (D32), trend sources #26 to #31 (D33), scenario sets #32 to #34 (D34; capture observed emissions, CO2 concentration and primary energy first).
+2. **#36** Long Bets capture as baseline only (D35).
 3. **#66** numeric open items (ECB GDP basis, AEO2009 case, BCB Selic, World Bank World, IMF India, IEA restatements, FRED vintage refresh before release).
 4. **#59** links (needs `OPENROUTER_API_KEY`). **#26** FTSG 2015-2017 transcripts. **#27** McKinsey 2026 PDF re-capture.
 5. **www** issues #46 to #49 (envisioning.com), then **#60** launch and **#3** first tagged release, as MZ decides.
@@ -58,14 +58,11 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
-## Decisions waiting for MZ (Meet decision queue)
+## Decisions taken by MZ (2026-10-01, in chat)
 
-- **#47** Eurasia rule, **#48** WEF surprise measure (default 2026-10-06).
-- **Trend and scenario rules** (D31/D32 proposals, default 2026-10-08).
-- **#64** Long Bets in scope (default 2026-10-08). **#60** launch timing (default 2026-10-08).
-- **#36** written permission request to Metaculus and Good Judgment (default 2026-10-15).
+D31 Eurasia (#47), D32 WEF (#48), D33 trends, D34 scenarios, D35 individual forecasters (#64): all approved as proposed. #60: launch after www #46, #48, #49; the forecasts block on research pages ships later. #36: keep the crowd baseline in scope for meta-analysis; no outreach to Metaculus or Good Judgment for now. MZ prefers to answer Hindsight questions in chat, not in the Meet queue.
 
-Read answers with the Meet `ask_decision` tool (`action: list`) before acting. Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
+Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
 
 ## Blocked
 

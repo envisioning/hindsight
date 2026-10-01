@@ -4,18 +4,17 @@ You continue Hindsight (envisioning/hindsight): a public record of published for
 
 ## Read first
 
-`docs/HANDOFF.md` (state, decisions waiting, notes, traps), `AGENTS.md`, `docs/AGENT-RULES.md`, `docs/DECISIONS.md` (D1 to D30), `docs/grading/`.
+`docs/HANDOFF.md` (state, decisions waiting, notes, traps), `AGENTS.md`, `docs/AGENT-RULES.md`, `docs/DECISIONS.md` (D1 to D35), `docs/grading/`.
 
 ## Start checks (stop and report if one fails)
 
 - `git push --dry-run origin HEAD:main`
 - `curl -sS -o /dev/null -w "%{http_code}" https://en.wikipedia.org/wiki/Smartphone` prints 200.
 - Open disputes: `gh issue list -R envisioning/hindsight --label dispute --state open` (D29). Handle them first.
-- Answers in the Meet decision queue (`ask_decision`, `action: list`, `status: resolved`). Act only on answered decisions.
 
 ## Work, in this order
 
-1. **Answered decisions:** record each approved rule in DECISIONS (next free number, D31 on), then grade: #47 Eurasia, #48 WEF, trend sources (#26 to #31), scenario sets (#32 to #34; capture observed emissions, CO2 concentration and primary energy first).
+1. **Grade under the approved rules:** #47 Eurasia (D31), #48 WEF (D32), trend sources #26 to #31 (D33), scenario sets #32 to #34 (D34; capture observed emissions, CO2 concentration and primary energy first). Long Bets as baseline only (D35).
 2. **#66** numeric open items.
 3. **#59** links, only if `OPENROUTER_API_KEY` is set.
 4. **#26** FTSG 2015-2017 transcripts; **#27** McKinsey 2026 PDF.
@@ -36,7 +35,7 @@ You continue Hindsight (envisioning/hindsight): a public record of published for
 - Downloads go in the scratchpad, one folder per agent, never in the repo.
 - Cap WebSearch per agent (3 to 5); about 200 per session. Prefer WebFetch and Wayback copies.
 - At most 20 concurrent sub-agents.
-- Agents make every verdict, adjudication and audit call. Ask MZ only through the Meet decision queue, and only about policy.
+- Agents make every verdict, adjudication and audit call. Ask MZ only about policy, in chat (AskUserQuestion) when MZ is present.
 - Commit only files you checked. Leave `main` green.
 
 Report to MZ in short ASD-STE100 English. No time estimates.

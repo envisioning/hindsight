@@ -466,3 +466,63 @@ It applies first to NIC Global Trends projections, McKinsey Technology Trends Ou
 **Cost.** "In part" still needs judgment per claim; the adjudicator and the audit are the check.
 
 **Overturned by.** Kappa below 0.6 on any of these sources, or audit findings that the "year after" window misclassifies clear cases.
+
+## D31: Eurasia Group Top Risks: materialised share and red herrings (issue #47)
+
+*Recorded 2026-10-01. Approved by MZ.*
+
+**Decision.** A top risk reads as "this risk materially occurs in the edition year": `hit` when the development in the entry's summary or quote happened in that calendar year with a documented effect, `partial` when it happened in part (smaller scale, or only some named countries or channels), `miss` otherwise. A red herring reads as "this feared risk does not materialise in the year": `hit` when it stayed calm, `partial` when it materialised in part, `miss` when it materialised. Long-term risks (no year) and wildcards are not graded. Top risks publish a materialised share with its Wilson interval, labelled a calibration measure, not a hit rate; red herrings publish a normal hit rate; the two never merge. D20 pipeline unchanged.
+
+**Why.** A risk list is meant to include risks that do not happen, so a hit rate on top risks would punish good practice; red herrings are directional forecasts and can be graded as such.
+
+**Cost.** "Materially occurs" is a judgment per risk; kappa may need a rubric revision.
+
+**Overturned by.** Kappa below 0.6 after one revision.
+
+## D32: WEF Global Risks: surprise measure (issue #48)
+
+*Recorded 2026-10-01. Approved by MZ.*
+
+**Decision.** The unit is the event, not the WEF entry. For each year Y from 2007 to 2025, two blind agents list the major global events of Y: at least 10,000 deaths, or a world GDP effect of at least 0.5%, or named as a main shock in the IMF or World Bank review of Y+1. An adjudicator merges the lists. Each event is matched to the edition published in January of Y: `ranked_high` when its risk is in that edition's top 5 by likelihood or impact (from 2023: the 2-year top 10), `ranked_low` when it appears lower in a published ranking, `absent` when not listed. Published: the share of major events ranked high, with a Wilson interval, per method block (2007-2020, 2021-2022, 2023-2026). Never a hit rate. 2006 is not graded. Schema gains a `RiskEvent` row and its match verdict; the 355 WEF claims are not graded one by one.
+
+**Why.** WEF ranks perceived risks; it does not predict events. The fair test is whether the events that happened were on its list.
+
+**Cost.** The event list is itself a judgment; fixed criteria and two blind lists are the check.
+
+**Overturned by.** Low agreement between the two event lists.
+
+## D33: Trend claims: persistence across the publisher's own editions (issues #26 to #31)
+
+*Recorded 2026-10-01. Approved by MZ.*
+
+**Decision.** A trend in edition Y is compared with the same publisher's next two editions after subject mapping (D13): `persisted` when the same subject is listed again within two editions; `renamed` when an entry within two editions is the same phenomenon under a new label (two blind agents, adjudicator); `faded` when neither, and not listed again later; `recycled` when dropped for at least one edition, then listed again later as new. Editions in the last two years stay open. Published per publisher: churn (share faded after one edition), recycled share, unfalsifiable share. Never a hit rate. A reality check of persisted trends against adoption data (D16) may follow as a second layer.
+
+**Why.** D6 says trends are not graded hit or miss. Persistence and recycling are what a trend list can be held to.
+
+**Cost.** It measures the publisher's consistency, not whether trends came true.
+
+**Overturned by.** A reality-check layer that readers find more useful.
+
+## D34: Scenario sets: coverage (issues #32 to #34)
+
+*Recorded 2026-10-01. Approved by MZ.*
+
+**Decision.** Pathway sets (Shell, IPCC): for each set, metric and passed target year, the observed value is compared with the set's scenarios: `covered` inside the set's range, `partly_covered` within 10% of the nearest edge, `not_covered` outside; the closest scenario is recorded. Observed series are captured first (Global Carbon Budget CO2, NOAA CO2 concentration, Energy Institute primary energy). Narrative sets (NIC): two blind agents judge whether the world at the horizon year fell inside any scenario's premise; regional scenarios are not graded. Published: coverage share per set. Never a hit rate.
+
+**Why.** D6: a scenario set is good when reality falls inside it, not when one scenario "wins".
+
+**Cost.** A wide set covers more by being wide; the closest-scenario record shows where reality fell.
+
+**Overturned by.** Evidence that coverage rewards uninformatively wide sets, which would call for a width penalty.
+
+## D35: Individual forecasters (issue #64)
+
+*Recorded 2026-10-01. Approved by MZ.*
+
+**Decision.** Predictions by private individuals (Long Bets) enter only the crowd baseline (#36): captured as comparison data, never graded by Hindsight, and no individual gets a publisher page or a rate. Published authors of books (Kurzweil) stay graded as `author` institutions. The crowd baseline stays in scope for meta-analysis; no request for permission is sent to Metaculus or Good Judgment for now.
+
+**Why.** Grading named private people adds dispute exposure without adding to the institutional record.
+
+**Cost.** Long Bets' resolved bets are used only as a baseline.
+
+**Overturned by.** A published individual forecaster whose record readers ask for.
