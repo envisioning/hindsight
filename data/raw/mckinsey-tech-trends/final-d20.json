@@ -1,0 +1,72 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.9206,
+ "n": 20,
+ "counts": {
+  "contested": 1,
+  "hit": 6,
+  "partial": 1,
+  "unfalsifiable": 2,
+  "ungradable": 10
+ },
+ "rate_withheld": "D11: 7 graded claims, fewer than 20; counts only.",
+ "hit_rate": null,
+ "hit_or_partial_rate": null,
+ "adjudicated": 1,
+ "audit": {
+  "sample": 7,
+  "audited": 7,
+  "confirmed": 6,
+  "corrected": 0,
+  "contested": 1,
+  "error_rate": 0.143
+ },
+ "verdicts": [
+  {
+   "id": "mckinsey-tech-trends-2022-018",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "Quote and footnote confirmed (2022 PDF p.96) and Gartner (Jul 2025) security services 2025 = $83.8bn (+21%, partial), but Precedence Research puts 2025 cybersecurity services (professional incl. integration, support, consulting + managed) at $177.3bn (-43%, miss); estimates of the same quantity span >2x, so under D23 the claim is ungradable, not partial. Graders used one estimate only."
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-006",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-014",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-026",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-011",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-015",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "Third-party question (D30): the edition (p. text checked in the archived PDF) states the figure in McKinsey's own voice ('are expected to open by 2025') with no footnote or attribution; the match to DOE's Dec-2021 list of 13 new gigafactories is grader A's inference, and the edition's frame (13 of ~30, incl. already-operational plants) is not the DOE frame (13 new plants). So it is the publisher's forecast, not a quoted figure. Measure (D23): the Dallas Fed (2026-03-03) counts the same quantity for the same scope - US battery gigafactories of the recent build-out: 12 operating and 23 under construction (35 total, consistent with the edition's ~30 frame). Different vintage/method of the same quantity is gradable under D23; only one public tally found, so no range test applies. Grader A's 'no public tally found' is superseded by this source, which grader B cited. Arithmetic: 13 forecast vs 12 actual, error 1/12 = 8.3% (B's '+8%' is correct) -> within 10% -> hit. Grader B's alternative DOE-list reading (miss) is less faithful because the edition does not cite or reproduce that list. Uncertainty: the Dallas Fed count is dated March 2026 rather than 31 Dec 2025 and does not state whether pre-2021 plants (e.g. Panasonic Nevada, AESC Smyrna, LGES Holland) are included; if they were added the operating count would be ~15 and the verdict would drop to partial (13 vs 15 = 13%)."
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "accenture-tech-vision-2017-015",
+   "verdict": "miss",
+   "reading": "By end 2022 the industrial-era corporation and its management model will have been replaced as the dominant form of business organization, displaced by digitally connected marketplaces (platform ecosystems).",
+   "mainstream_test": "D30 state of affairs 'by 2022': hit if by end 2022 the largest businesses were predominantly platform/marketplace ecosystems rather than traditional hierarchical corporations; partial if in part, or in full in 2023.",
+   "reason": "No such displacement held in 2022. The 2022 Fortune Global 500 top 10 is mostly industrial-era firms (Walmart, State Grid, CNPC, Sinopec, Saudi Aramco, Volkswagen, China State Construction, CVS); only Amazon and Apple are digital. The one notable change in stated corporate purpose (Business Roundtable 2019) moved toward stakeholder capitalism, not toward marketplaces, and kept the corporation as the unit. Platforms grew alongside corporations rather than replacing them. Claim is rhetorical; a literal reading is clearly not met, and no measure shows replacement.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fortune_Global_500",
+     "title": "Fortune Global 500 (Wikipedia)",
+     "date": "2022",
+     "shows": "2022 top 10 by revenue: Walmart, Amazon, State Grid, CNPC, Sinopec, Saudi Aramco, Apple, Volkswagen, China State Construction, CVS Health; 8 of 10 traditional industrial/retail firms."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Business_Roundtable",
+     "title": "Business Roundtable (Wikipedia)",
+     "date": "2019-08-19",
+     "shows": "Statement on the Purpose of a Corporation shifts from shareholder primacy to stakeholders; corporate form and management model retained, no displacement by digital marketplaces."
+    }
+   ]
+  },
+  {
+   "id": "accenture-tech-vision-2017-018",
+   "verdict": "partial",
+   "reading": "By end 2022 multinational organizations will have introduced employee-facing technology that detects a worker's frustration and automatically adapts the tone and style of the feedback or guidance it gives that worker.",
+   "mainstream_test": "D30 event 'by 2022': hit if by end 2022 multinationals had deployed tools that detect worker frustration and adapt the tone/style of their automated guidance; partial if detection plus automated guidance was deployed but adaptation of the guidance's own tone is not shown.",
+   "reason": "Cogito's real-time call-centre software was deployed at MetLife and Humana (rolled out to 36+ US call centres by mid-2019). It detects when the agent sounds tired, irritated or rushed and pushes automated cues ('slow down', 'think about how the customer is feeling'). So detection of worker emotional state with automated guidance existed at multinationals by 2019. What is not documented is the specific stated feature: the system altering the tone and style of its own feedback according to the worker's frustration; its cues target the agent's tone toward the customer. Stated event happened in part.",
+   "evidence": [
+    {
+     "url": "https://time.com/collections/life-reinvented/5610094/cogito-ai-artificial-intelligence/",
+     "title": "Cogito AI Software Coaches Customer Service Workers (TIME)",
+     "date": "2019-07-08",
+     "shows": "Humana and MetLife use Cogito in 36+ call centres; it detects agents sounding bored, tired, irritated or rushed and shows guidance notifications; no statement that the guidance tone adapts to the agent's state."
+    },
+    {
+     "url": "https://emerj.com/artificial-intelligence-at-metlife/",
+     "title": "Artificial Intelligence at MetLife - Three Use Cases (Emerj)",
+     "date": "2019",
+     "shows": "MetLife deployed Cogito to analyse emotions in calls in real time and suggest agents alter their tone; framed as helping agents with emotional fatigue."
+    }
+   ]
+  },
+  {
+   "id": "accenture-tech-vision-2017-021",
+   "verdict": "hit",
+   "reading": "By end 2020 there will be whole business ecosystems (networks of participants) in which using smart contracts is a condition of taking part.",
+   "mainstream_test": "D30 state of affairs 'by 2020': hit if by end 2020 at least one functioning multi-party ecosystem existed where participation required transacting via smart contracts.",
+   "reason": "By 2020 several such ecosystems operated. DeFi on Ethereum, where every interaction is a smart-contract call, held about $9bn in collateral by September 2020. Enterprise networks ran on smart contracts too: TradeLens (IBM/Maersk, carriers, ports, customs) used smart-contract workflows, and we.trade (12 shareholder banks, live, extending to more banks from July 2020) used DLT smart contracts to automate SME trade-finance payments. Participation in these networks meant using their smart contracts.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Decentralized_finance",
+     "title": "Decentralized finance (Wikipedia)",
+     "date": "2020-09",
+     "shows": "DeFi protocols are built on smart contracts; Bloomberg reported DeFi collateral of $9bn in September 2020."
+    },
+    {
+     "url": "https://newsroom.ibm.com/2020-05-21-we-trade-Digital-Trade-Finance-Network-strengthens-collaboration-with-IBM",
+     "title": "we.trade Digital Trade Finance Network strengthens collaboration with IBM (IBM newsroom)",
+     "date": "2020-05-21",
+     "shows": "we.trade, backed by 12 banks, runs on DLT and smart contracts that automate payments on pre-defined events; expanding to more banks from July 2020."
+    },
+    {
+     "url": "https://www.supplychain247.com/article/maersk_ibm_introduce_tradelens_blockchain_shipping_solution",
+     "title": "Maersk and IBM Introduce TradeLens Blockchain Global Shipping Solution (Supply Chain 24/7)",
+     "date": "2018-08",
+     "shows": "TradeLens uses blockchain smart-contract workflows connecting carriers, ports, customs and other ecosystem participants."
+    }
+   ]
+  }
+ ]
+}

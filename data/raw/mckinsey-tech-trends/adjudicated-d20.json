@@ -1,0 +1,35 @@
+{
+ "rule": "D16",
+ "role": "adjudicator (D20)",
+ "verdicts": [
+  {
+   "id": "mckinsey-tech-trends-2024-015",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "Of the ~30 US battery factories planned, under construction or operating in mid-2024, 13 are open (operating) by the end of 2025. D30 state-of-affairs claim with a count, graded on the D16 numeric rule for levels/counts (hit within 10%).",
+   "reason": "Third-party question (D30): the edition (p. text checked in the archived PDF) states the figure in McKinsey's own voice ('are expected to open by 2025') with no footnote or attribution; the match to DOE's Dec-2021 list of 13 new gigafactories is grader A's inference, and the edition's frame (13 of ~30, incl. already-operational plants) is not the DOE frame (13 new plants). So it is the publisher's forecast, not a quoted figure. Measure (D23): the Dallas Fed (2026-03-03) counts the same quantity for the same scope - US battery gigafactories of the recent build-out: 12 operating and 23 under construction (35 total, consistent with the edition's ~30 frame). Different vintage/method of the same quantity is gradable under D23; only one public tally found, so no range test applies. Grader A's 'no public tally found' is superseded by this source, which grader B cited. Arithmetic: 13 forecast vs 12 actual, error 1/12 = 8.3% (B's '+8%' is correct) -> within 10% -> hit. Grader B's alternative DOE-list reading (miss) is less faithful because the edition does not cite or reproduce that list. Uncertainty: the Dallas Fed count is dated March 2026 rather than 31 Dec 2025 and does not state whether pre-2021 plants (e.g. Panasonic Nevada, AESC Smyrna, LGES Holland) are included; if they were added the operating count would be ~15 and the verdict would drop to partial (13 vs 15 = 13%).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20240717233936/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202024/mckinsey-technology-trends-outlook-2024.pdf",
+     "title": "McKinsey Technology Trends Outlook 2024, Future of mobility",
+     "date": "2024-07",
+     "shows": "'approximately 30 battery factories are currently planned, being constructed, or operational in the United States alone; 13 of them are expected to open by 2025.' No footnote or attribution on the sentence (checked in pdftotext of the archived PDF)."
+    },
+    {
+     "url": "https://www.dallasfed.org/research/economics/2026/0303",
+     "title": "Dallas Fed, U.S. battery industry cuts losses, shifts to new ventures amid EV bust",
+     "date": "2026-03-03",
+     "shows": "After 'several dozen new gigafactories in the U.S. have been announced in the past five years': '12 plants operating and another 23 are at various stages of construction'. No plant list or type split in the text."
+    },
+    {
+     "url": "https://electrek.co/2021/12/27/13-battery-gigafactories-coming-us-2025-ushering-new-era/",
+     "title": "Electrek, 13 battery gigafactories coming to the US by 2025",
+     "date": "2021-12-27",
+     "shows": "DOE 2021 list of 13 new planned plants; possible origin of the number, but a different frame (13 new plants, not 13 of ~30) and not cited by the edition."
+    }
+   ]
+  }
+ ],
+ "model": "agent (model not recorded in the public repo)"
+}

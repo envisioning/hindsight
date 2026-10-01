@@ -1,0 +1,40 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 1,
+ "n": 3,
+ "counts": {
+  "miss": 1,
+  "partial": 1,
+  "hit": 1
+ },
+ "rate_withheld": "D11: 3 graded claims, fewer than 20; counts only.",
+ "hit_rate": null,
+ "hit_or_partial_rate": null,
+ "adjudicated": 0,
+ "audit": {
+  "sample": 3,
+  "audited": 3,
+  "confirmed": 3,
+  "corrected": 0,
+  "contested": 0,
+  "error_rate": 0
+ },
+ "verdicts": [
+  {
+   "id": "accenture-tech-vision-2017-015",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2017-018",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "accenture-tech-vision-2017-021",
+   "verdict": "hit",
+   "status": "audited"
+  }
+ ]
+}

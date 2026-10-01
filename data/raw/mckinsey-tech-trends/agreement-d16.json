@@ -1,0 +1,136 @@
+{
+ "rule": "D16",
+ "graders": [
+  "A",
+  "B"
+ ],
+ "n": 20,
+ "agree": 19,
+ "raw_agreement": 0.95,
+ "kappa": 0.9206,
+ "passes_d11": true,
+ "graderA": {
+  "hit": 5,
+  "partial": 2,
+  "unfalsifiable": 2,
+  "ungradable": 11
+ },
+ "graderB": {
+  "hit": 6,
+  "partial": 2,
+  "unfalsifiable": 2,
+  "ungradable": 10
+ },
+ "agreed": {
+  "hit": 5,
+  "partial": 2,
+  "unfalsifiable": 2,
+  "ungradable": 10
+ },
+ "hit_rate_agreed": {
+  "hits": 5,
+  "of_graded_hit_partial_miss": 7,
+  "wilson95": [
+   0.359,
+   0.918
+  ],
+  "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
+ },
+ "consensus": [
+  {
+   "id": "mckinsey-tech-trends-2022-018",
+   "label": "Trust architectures and digital identity",
+   "verdict": "partial"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-005",
+   "label": "Generative AI",
+   "verdict": "hit"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-006",
+   "label": "Generative AI",
+   "verdict": "hit"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-014",
+   "label": "Immersive-reality technologies",
+   "verdict": "hit"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-026",
+   "label": "Future of space technologies",
+   "verdict": "partial"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-002",
+   "label": "Generative AI",
+   "verdict": "hit"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-011",
+   "label": "Cloud and edge computing",
+   "verdict": "hit"
+  }
+ ],
+ "unfalsifiable_agreed": [
+  {
+   "id": "mckinsey-tech-trends-2021-002",
+   "label": "Next-level process automation and virtualization"
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-016",
+   "label": "Future of mobility"
+  }
+ ],
+ "ungradable_agreed": [
+  {
+   "id": "mckinsey-tech-trends-2021-006",
+   "label": "Distributed infrastructure"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-002",
+   "label": "Advanced connectivity"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-006",
+   "label": "Cloud and edge computing"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-007",
+   "label": "Cloud and edge computing"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-013",
+   "label": "Next-generation software development"
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-020",
+   "label": "Trust architectures and digital identity"
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-003",
+   "label": "Industrializing machine learning"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-004",
+   "label": "Artificial intelligence"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-010",
+   "label": "Advanced connectivity"
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-017",
+   "label": "Immersive-reality technologies"
+  }
+ ],
+ "contested": [
+  {
+   "id": "mckinsey-tech-trends-2024-015",
+   "label": "Future of mobility",
+   "graderA": "ungradable",
+   "graderB": "hit"
+  }
+ ]
+}

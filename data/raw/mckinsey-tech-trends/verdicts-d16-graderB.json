@@ -1,0 +1,379 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "mckinsey-tech-trends-2021-002",
+   "verdict": "unfalsifiable",
+   "reading": "Half of the work activities of 2021 could be automated by 2025.",
+   "mainstream_test": "D27/D30 possibility rule: 'could' with no stated expectation; under a realised-automation reading the test would be >=45% of activities actually automated by end-2025, under a technical-potential reading the test would be a potential estimate within 10% of 50%.",
+   "reason": "Hedge word 'could'. The slide states a technical potential, not an expected outcome (source line 'McKinsey analysis'). The two plausible readings diverge: realised automation of half of all work activities by 2025 clearly did not happen (miss); technical automation potential of ~50% was already McKinsey's own estimate and was later raised to 60-70% for current technology (hit/partial). Possibility-only under D30 -> unfalsifiable.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20210930082044/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%20final/tech-trends-exec-summary.pdf",
+     "title": "McKinsey, The top trends in tech, executive summary (slide 'Effects of technology trends up to 2050')",
+     "date": "2021-06",
+     "shows": "Figure label '50% of today's work activities could be automated by 2025'; slide source 'McKinsey analysis'; worded as a possibility."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2021-006",
+   "verdict": "ungradable",
+   "reading": "More than 75% of enterprise-generated data will be processed by edge or cloud computing by 2025.",
+   "mainstream_test": "Share of enterprise-generated data processed at the edge or in the cloud in 2025 >= 75% (D16 numeric: within 10% hit).",
+   "reason": "No public series measures the share of enterprise-generated data processed by edge or cloud computing. Looked for: IDC Global DataSphere (measures data created/stored by location, not processing share; paywalled), Gartner edge statistics (the well-known Gartner line is a prediction that 75% of enterprise data would be created and processed OUTSIDE the data center or cloud, i.e. a different and prospective figure, not a measurement; page 403). No measured value for 2024/2025 found (D22/D23).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20210930082044/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%20final/tech-trends-exec-summary.pdf",
+     "title": "McKinsey, The top trends in tech, executive summary",
+     "date": "2021-06",
+     "shows": "Figure label '>75% of enterprise-generated data will be processed by edge or cloud computing by 2025'; slide source 'McKinsey analysis'."
+    },
+    {
+     "url": "https://www.gartner.com/smarterwithgartner/what-edge-computing-means-for-infrastructure-and-operations-leaders",
+     "title": "Gartner, What edge computing means for infrastructure and operations leaders (looked for a measured share; HTTP 403)",
+     "date": "2018-10",
+     "shows": "Only a forward prediction exists in this family of sources; no measured 2025 share of data processed at edge or cloud was found."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-002",
+   "verdict": "ungradable",
+   "reading": "About 51.9 billion connected devices worldwide in 2025.",
+   "mainstream_test": "Count of connected devices in 2025 within 10% of 51.9 billion (D16 numeric).",
+   "reason": "D30: third-party figure the publisher only quotes. The slide's source line names IDC's Worldwide Global DataSphere IoT Device and Data Forecast 2021-2025 and IDC DataSphere Forecast; the 51.9 billion is IDC's forecast reproduced as a figure label. Also, published 2025 counts use different definitions (IoT-only counts ~19-21 billion vs all connected devices incl. phones/PCs), which would be a D23 scope problem.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20220910124235/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202022/mckinsey-tech-trends-outlook-2022-full-report.pdf",
+     "title": "McKinsey Technology Trends Outlook 2022, Advanced connectivity, 'Why should leaders pay attention?' (p.11)",
+     "date": "2022-08",
+     "shows": "Figure '~51.9 billion total number of connected devices expected in 2025'; Source line: IDC DataSphere Forecast 2020-2025; IDC Worldwide Global DataSphere IoT Device and Data Forecast 2021-2025."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-006",
+   "verdict": "ungradable",
+   "reading": "Worldwide spending on edge computing about $250 billion in 2025.",
+   "mainstream_test": "IDC-defined worldwide edge spending in 2025 within 10% of $250 billion (D16 numeric).",
+   "reason": "D30: third-party figure the publisher only quotes. The slide's source line is 'IDC; Omdia' and the figure is IDC's edge spending guide forecast. IDC's own later spending guides are the only series on this definition (paywalled, press pages 403); not graded as McKinsey's forecast.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20220910124235/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202022/mckinsey-tech-trends-outlook-2022-full-report.pdf",
+     "title": "McKinsey Technology Trends Outlook 2022, Cloud and edge computing, 'Why should leaders pay attention?' (p.36)",
+     "date": "2022-08",
+     "shows": "Figure '~$250 billion projected worldwide spending on edge computing in 2025'; Source: IDC; Omdia."
+    },
+    {
+     "url": "https://my.idc.com/getdoc.jsp?containerId=prUS53275225",
+     "title": "IDC press release on worldwide edge spending (looked for 2025 actual; HTTP 403)",
+     "date": "2025",
+     "shows": "Only IDC measures this quantity on this definition; not retrievable."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-007",
+   "verdict": "ungradable",
+   "reading": "26% of servers shipped in 2024 will be deployed at the edge, up from 20% in 2019.",
+   "mainstream_test": "Edge share of 2024 server shipments within 0.5 percentage points of 26% (D18 share in percent).",
+   "reason": "D30: third-party figure quoted (slide source 'IDC; Omdia'). In addition no public series of the edge share of server shipments for 2024 was found (Omdia/IDC server trackers are paywalled) -> also ungradable under D22/D23.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20220910124235/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202022/mckinsey-tech-trends-outlook-2022-full-report.pdf",
+     "title": "McKinsey Technology Trends Outlook 2022, Cloud and edge computing (p.36)",
+     "date": "2022-08",
+     "shows": "Figure '26% forecast share of servers shipped in 2024 that will be deployed at the edge'; Source: IDC; Omdia."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-013",
+   "verdict": "ungradable",
+   "reading": "About 70% of new application development will use low-code/no-code by 2025.",
+   "mainstream_test": "Share of new applications developed with low-code/no-code in 2025 within 0.5 percentage points of 70% (D18).",
+   "reason": "D30: this is Gartner's prediction (70% of new applications using low-code/no-code by 2025, vs <25% in 2020) reproduced on the slide, whose source line starts with 'Gartner'. No public survey measures the share of new application development that uses low-code/no-code in 2025 either (D22).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20220910124235/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202022/mckinsey-tech-trends-outlook-2022-full-report.pdf",
+     "title": "McKinsey Technology Trends Outlook 2022, Next-generation software development, 'Why should leaders pay attention?'",
+     "date": "2022-08",
+     "shows": "Figure '~70% share of new application development that will leverage low-code/no-code by 2025 (vs <25% in 2020)'; Source: Gartner; IndustryARC; Red Hat; GitLab; Forrester; Snyk."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-018",
+   "verdict": "partial",
+   "reading": "Spending on digital-trust service providers (consulting, hardware support, implementation, outsourcing) will be $101.5 billion in 2025.",
+   "mainstream_test": "Worldwide security-services spending in 2025 within 10% (hit) / 25% (partial) of $101.5 billion (D16 numeric, level).",
+   "reason": "The slide's footnote defines service providers as consultants, hardware support, implementation and outsourcing, which matches Gartner's 'security services' segment. The figure is not attributed to a third party on the slide (sources list CSIS, IBM, ITRC, Kaspersky, NCSC, PurpleSec, Statista, McKinsey Cyber Market Map, MGI), so it is graded. Gartner's July 2025 forecast puts 2025 security services at $83.8 billion (2024: $77.1 billion). Error (101.5-83.8)/83.8 = +21% -> within 25% -> partial. Definition match is close but not certain.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20220910124235/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202022/mckinsey-tech-trends-outlook-2022-full-report.pdf",
+     "title": "McKinsey Technology Trends Outlook 2022, Trust architectures and digital identity (p.96)",
+     "date": "2022-08",
+     "shows": "'$101.5 billion projected spending on service providers in digital trust by 2025'; footnote 1: service providers include consultants, hardware support, implementation, and outsourcing."
+    },
+    {
+     "url": "https://www.gartner.com/en/newsroom/press-releases/2025-07-29-gartner-forecasts-worldwide-end-user-spending-on-information-security-to-total-213-billion-us-dollars-in-2025",
+     "title": "Gartner Forecasts Worldwide End-User Spending on Information Security to Total $213 Billion in 2025",
+     "date": "2025-07-29",
+     "shows": "Table (seen via search result extract; direct fetch 403): Security Services $77,130M in 2024, $83,812M in 2025; total $213.0B in 2025."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2022-020",
+   "verdict": "ungradable",
+   "reading": "Annual global costs and losses from cybercrime will be about $10.5 trillion in 2025.",
+   "mainstream_test": "Measured global cybercrime costs/losses in 2025 within 10% of $10.5 trillion (D16 numeric).",
+   "reason": "No public measurement of total global cybercrime costs exists; the $10.5T figure itself is a modelled projection (Cybersecurity Ventures). The only measured series of losses, FBI IC3, recorded $16.6 billion in reported US losses in 2024, roughly 600x smaller; available 'estimates' of global cost span far more than a factor of 2, so D23 (range of estimates) makes the claim ungradable.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20220910124235/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202022/mckinsey-tech-trends-outlook-2022-full-report.pdf",
+     "title": "McKinsey Technology Trends Outlook 2022, Trust architectures and digital identity (p.96)",
+     "date": "2022-08",
+     "shows": "'~$10.5 trillion forecast costs and losses related to cybercrime by 2025, representing a 15% annual increase'."
+    },
+    {
+     "url": "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf",
+     "title": "FBI Internet Crime Complaint Center, 2024 Internet Crime Report",
+     "date": "2025-04",
+     "shows": "Reported losses to IC3 in 2024 totalled $16.6 billion (US complaints only); the only measured loss series, not comparable to a $10.5T global estimate."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-003",
+   "verdict": "ungradable",
+   "reading": "60% of enterprises will have implemented MLOps by 2024.",
+   "mainstream_test": "Share of enterprises with MLOps implemented in 2024 within 0.5 points of 60% (D18).",
+   "reason": "D30: the edition explicitly attributes the figure to IDC ('IDC predicts that ...'); a third-party figure the publisher only quotes is not McKinsey's forecast. Also no public survey measures MLOps implementation share of enterprises in 2024 on a comparable definition.",
+   "evidence": [
+    {
+     "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202023/mckinsey-technology-trends-outlook-2023-v5.pdf",
+     "title": "McKinsey Technology Trends Outlook 2023, Industrializing machine learning",
+     "date": "2023-07",
+     "shows": "Text: 'IDC predicts that 60 percent of enterprises will have implemented MLOps by 2024.'"
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-005",
+   "verdict": "hit",
+   "reading": "Generative AI's interest, investment, innovation and talent metrics will grow significantly in 2023.",
+   "mainstream_test": "D30 state of affairs: gen AI equity investment and job postings both rose substantially in 2023 vs 2022 (direction plus 'significant' = large rise).",
+   "reason": "Equity/private investment in gen AI rose from about $5B (2022) to $36B (2023) per McKinsey's 2024 data, and Stanford AI Index reports gen AI private funding nearly octupled to $25.2B in 2023 despite overall AI investment falling. Gen AI job postings rose 111% 2022-23. Interest (ChatGPT adoption) and innovation also surged. Held in 2023 -> hit.",
+   "evidence": [
+    {
+     "url": "https://hai.stanford.edu/ai-index/2024-ai-index-report",
+     "title": "Stanford HAI, AI Index Report 2024",
+     "date": "2024-04",
+     "shows": "Funding for generative AI nearly octupled from 2022 to reach $25.2 billion in 2023."
+    },
+    {
+     "url": "https://web.archive.org/web/20240717233936/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202024/mckinsey-technology-trends-outlook-2024.pdf",
+     "title": "McKinsey Technology Trends Outlook 2024, Generative AI scoring",
+     "date": "2024-07",
+     "shows": "Reported data: gen AI equity investment 2023 $36 billion (vs $5 billion in 2022 per 2023 edition); job postings 2022-23 +111%."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-006",
+   "verdict": "hit",
+   "reading": "Hiring demand (job postings) for generative AI will be significantly higher in 2023 than in 2022.",
+   "mainstream_test": "D30: gen AI job postings in 2023 substantially above 2022 (direction graded).",
+   "reason": "Gen AI job postings rose 111% from 2022 to 2023 (2024 edition data, measured on the same job-postings series used in the 2023 edition). Direction right and large -> hit.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20240717233936/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202024/mckinsey-technology-trends-outlook-2024.pdf",
+     "title": "McKinsey Technology Trends Outlook 2024, Generative AI talent demand",
+     "date": "2024-07",
+     "shows": "Job postings for generative AI changed +111% from 2022 to 2023."
+    },
+    {
+     "url": "https://hai.stanford.edu/ai-index/2024-ai-index-report",
+     "title": "Stanford HAI, AI Index Report 2024",
+     "date": "2024-04",
+     "shows": "Corroborates the 2023 surge in gen AI investment that drove demand."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-014",
+   "verdict": "hit",
+   "reading": "New VR headsets will be released during 2023 while peripherals keep advancing.",
+   "mainstream_test": "D30 event: at least one major new VR headset launched in calendar 2023.",
+   "reason": "PlayStation VR2 released 22 Feb 2023; Meta Quest 3 released 10 Oct 2023; Apple Vision Pro announced June 2023 (shipped Feb 2024). Happened in 2023 -> hit.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/PlayStation_VR2",
+     "title": "PlayStation VR2 - Wikipedia",
+     "date": "2026-10-01 (accessed)",
+     "shows": "Released February 22, 2023."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Meta_Quest_3",
+     "title": "Meta Quest 3 - Wikipedia",
+     "date": "2026-10-01 (accessed)",
+     "shows": "Unveiled June 1, 2023, released October 10, 2023; Apple Vision Pro announced at WWDC June 2023."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2023-026",
+   "verdict": "partial",
+   "reading": "Starship, Vulcan Centaur and New Glenn will each make their debut launch in 2023 or 2024.",
+   "mainstream_test": "D30 event: all three named vehicles flew for the first time by end-2024 (hit); some by end-2024 or all by end-2025 (partial).",
+   "reason": "Starship first integrated flight 20 Apr 2023 and Vulcan maiden flight 8 Jan 2024 were inside the window; New Glenn first launched 16 Jan 2025, in the year after. Two of three in the window and the third in full the year after -> partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/SpaceX_Starship_flight_tests",
+     "title": "SpaceX Starship flight tests - Wikipedia",
+     "date": "2026-10-01 (accessed)",
+     "shows": "Flight 1, first integrated Starship/Super Heavy launch, 20 April 2023."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Vulcan_Centaur",
+     "title": "Vulcan Centaur - Wikipedia",
+     "date": "2026-10-01 (accessed)",
+     "shows": "First launch 8 January 2024 (Peregrine)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/New_Glenn",
+     "title": "New Glenn - Wikipedia",
+     "date": "2026-10-01 (accessed)",
+     "shows": "First launch 16 January 2025 (NG-1)."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-002",
+   "verdict": "hit",
+   "reading": "In 2024 organizations will invest in the risk mitigation, operating model, talent and technology needed to scale gen AI.",
+   "mainstream_test": "D30 state of affairs: enterprise spending on gen AI capabilities rose materially in 2024.",
+   "reason": "Menlo Ventures' enterprise survey: enterprise gen AI spending reached $13.8B in 2024, about 6x 2023 ($2.3B); application-layer spend almost 8x. Investment in technology and talent to scale gen AI clearly happened in 2024. The risk/operating-model components lack a separate measure, but the dominant reading (organizations invest to scale gen AI) held -> hit.",
+   "evidence": [
+    {
+     "url": "https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/",
+     "title": "Menlo Ventures, 2024: The State of Generative AI in the Enterprise",
+     "date": "2024-11",
+     "shows": "$13.8B spent on gen AI in 2024, a 6x increase from 2023; $4.6B on gen AI applications, almost 8x the prior year; notes salary premiums for AI talent."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-011",
+   "verdict": "hit",
+   "reading": "Companies will run AI inference at scale in 2024, after a 2023 focused on training.",
+   "mainstream_test": "D30 state of affairs: inference is a large share of AI compute demand during 2024.",
+   "reason": "Nvidia estimated that about 40% of its Data Center revenue in fiscal 2024 (to Jan 2024) was for AI inference, and over 40% for the trailing four quarters to Q2 FY2025 (mid-2024). Inference at scale held in 2024 (it was already under way, but D30 early occurrence counts because it also holds in 2024) -> hit.",
+   "evidence": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm",
+     "title": "NVIDIA Form 10-K, fiscal 2024",
+     "date": "2024-02-21",
+     "shows": "Estimates about 40% of Data Center revenue in fiscal 2024 was for AI inference (via search extract)."
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000262/q2fy25pr.htm",
+     "title": "NVIDIA Q2 FY2025 results / CFO commentary",
+     "date": "2024-08-28",
+     "shows": "Inference drove over 40% of Data Center revenue over the trailing four quarters (via search extract)."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-015",
+   "verdict": "hit",
+   "reading": "Of the ~30 US battery factories planned, under construction or operating, 13 will be open by end-2025.",
+   "mainstream_test": "Count of operating US battery (cell) gigafactories at end-2025 within 10% of 13 (D16 numeric, count).",
+   "reason": "Dallas Fed (March 2026): 12 plants operating and 23 at various stages of construction - i.e. ~35 total, matching the edition's ~30 frame. 13 vs 12: error +8% -> hit. Alternative reading (the DOE's 2021 list of 13 NEW plants all open by 2025) would be a miss: Ford BlueOval City TN, BlueOval SK Kentucky 2, VW Chattanooga, a GM-LG fourth plant were not open and Stellantis-LG is in Canada. The edition does not cite the DOE list, so the operating-count reading is graded.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20240717233936/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202024/mckinsey-technology-trends-outlook-2024.pdf",
+     "title": "McKinsey Technology Trends Outlook 2024, Future of mobility",
+     "date": "2024-07",
+     "shows": "'approximately 30 battery factories are currently planned, being constructed, or operational in the United States alone; 13 of them are expected to open by 2025.' No footnote on this sentence."
+    },
+    {
+     "url": "https://www.dallasfed.org/research/economics/2026/0303",
+     "title": "Dallas Fed, U.S. battery industry cuts losses, shifts to new ventures amid EV bust",
+     "date": "2026-03-03",
+     "shows": "'There are 12 plants operating and another 23 are at various stages of construction.'"
+    },
+    {
+     "url": "https://electrek.co/2021/12/27/13-battery-gigafactories-coming-us-2025-ushering-new-era/",
+     "title": "Electrek, 13 battery gigafactories coming to the US by 2025 (DOE list)",
+     "date": "2021-12-27",
+     "shows": "DOE list of 13 announced plants (alternative reading); several were later delayed, cancelled or outside the US."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2024-016",
+   "verdict": "unfalsifiable",
+   "reading": "2024 could be a watershed year for autonomous trucking as companies begin larger-scale on-road pilots.",
+   "mainstream_test": "D27/D30 possibility rule; a graded reading would test whether larger-scale on-road (driverless) pilots began in 2024.",
+   "reason": "Hedge word 'could' governs the claim ('could be a watershed one'). Readings diverge: driverless commercial operations (Aurora) began only in late April 2025 (miss/partial for 'watershed'), while expanded supervised pilots continued in 2024 (hit for 'larger pilots'). Possibility-only -> unfalsifiable.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aurora_Innovation",
+     "title": "Aurora Innovation - Wikipedia",
+     "date": "2026-10-01 (accessed)",
+     "shows": "Driverless commercial trucking on Dallas-Houston began late April 2025; in 2024 Aurora unveiled the Volvo VNL Autonomous and ran pilots with safety drivers."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-004",
+   "verdict": "ungradable",
+   "reading": "Alphabet, Amazon, Meta and Microsoft will each spend $70 billion to over $100 billion on AI-related capex in 2025.",
+   "mainstream_test": "Each company's 2025 capex within the $70B-$100B+ band (D16 numeric).",
+   "reason": "D30: a third-party projection the publisher only quotes ('are each projected to spend'), footnoted to CNBC (Feb 2025, 'Tech megacaps plan to spend more than $300 billion in 2025') and Reuters, i.e. company guidance reported by news. Also 'AI-related' capex is not reported separately (companies report total capex), a D23 same-quantity problem. For the record: reported 2025 total capex of all four is broadly in or above the band.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20250728164924/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202025/mckinsey-technology-trends-outlook-2025.pdf",
+     "title": "McKinsey Technology Trends Outlook 2025, Artificial intelligence, footnote 9",
+     "date": "2025-07",
+     "shows": "Sentence 'are each projected to spend $70 billion to more than $100 billion'; footnote 9 cites CNBC (2025-02-08) and Reuters (2025-07-15)."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-010",
+   "verdict": "ungradable",
+   "reading": "The global network-slicing market will reach $1.69 billion in 2025, up 49.6% from $1.13 billion in 2024.",
+   "mainstream_test": "Global network-slicing market 2025 within 10% of $1.69B (D16 numeric).",
+   "reason": "D30: third-party figure only quoted; footnote 4 cites Straits Research, 'Network slicing market size, share and forecast to 2033'. Market-sizing firms' estimates for this market also disagree by well over a factor of 2, so D23 would apply as well.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20250728164924/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202025/mckinsey-technology-trends-outlook-2025.pdf",
+     "title": "McKinsey Technology Trends Outlook 2025, Advanced connectivity, footnote 4",
+     "date": "2025-07",
+     "shows": "'projected to reach $1.69 billion in 2025 ... compared with $1.13 billion in 2024'; footnote 4: Straits Research, accessed May 14, 2025."
+    }
+   ]
+  },
+  {
+   "id": "mckinsey-tech-trends-2025-017",
+   "verdict": "ungradable",
+   "reading": "AR/VR headset shipment growth will slow in 2025 after +10% in 2024.",
+   "mainstream_test": "Direction: 2025 headset shipment growth below 2024's 10%.",
+   "reason": "D30: the forecast is quoted from a third party ('forecasts suggest', footnote: Neowin, 'The AR/VR market rebounded in 2024, but forecast suggests 2025 growth pause', reporting an IDC forecast); it is not McKinsey's own forecast. The 2024 part is past data. It is also hedged ('may slow'), which would make it unfalsifiable under D27 if treated as the publisher's.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20250728164924/https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202025/mckinsey-technology-trends-outlook-2025.pdf",
+     "title": "McKinsey Technology Trends Outlook 2025, Immersive-reality technologies, footnote 1",
+     "date": "2025-07",
+     "shows": "Sentence attributes the 2025 outlook to 'forecasts'; footnote cites Paul Hill, Neowin, March 26, 2025."
+    }
+   ]
+  }
+ ]
+}

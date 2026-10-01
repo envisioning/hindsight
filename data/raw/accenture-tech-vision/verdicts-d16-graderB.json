@@ -1,0 +1,76 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "accenture-tech-vision-2017-015",
+   "verdict": "miss",
+   "reading": "By end of 2022 the industrial-era corporation and its management model will have been replaced as the dominant form of economic organisation by digitally connected marketplaces (state of affairs, D30).",
+   "mainstream_test": "D30 state of affairs: by 2022 the largest economic actors are predominantly platform/marketplace organisations rather than traditional industrial-era corporations.",
+   "reason": "The text says 'will be replaced' (strong, dominant reading). In 2022 the largest firms by revenue were still mostly traditional industrial-era corporations (Walmart, State Grid, CNPC, Sinopec, Saudi Aramco, Volkswagen, CSCEC, CVS); only Amazon is a digital marketplace in the top 10. Digital platforms grew but did not displace the corporate form or its purpose. No reading of comparable faithfulness supports a hit; a weak 'partly displaced' reading would at most give partial, but it is not the text's wording.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fortune_Global_500",
+     "title": "Fortune Global 500 (Wikipedia)",
+     "date": "2022",
+     "shows": "2022 top 10 by revenue: Walmart, Amazon, State Grid, CNPC, Sinopec, Saudi Aramco, Apple, Volkswagen, China State Construction, CVS Health; 9 of 10 are not marketplace platforms."
+    }
+   ]
+  },
+  {
+   "id": "accenture-tech-vision-2017-018",
+   "verdict": "partial",
+   "reading": "By end of 2022 at least one multinational will have deployed employee-facing software that detects a worker's frustration and automatically changes the tone/style of the feedback or guidance it gives that worker (event, D30, 'by Y').",
+   "mainstream_test": "D30 event: a documented deployment by a multinational of employee-facing tech that detects the worker's own frustration and adapts feedback tone, by 2022.",
+   "reason": "Emotion-AI coaching for employees was deployed at multinationals by 2018-2019 (Cogito at MetLife, Warwick RI call center): it reads voice signals in real time and nudges agents (e.g. coffee-cup cue for the agent's low energy). But the documented systems mainly read the customer's emotion and the agent's energy, and give fixed cues; I found no documented multinational deployment that detects the worker's frustration and automatically alters the tone/style of the guidance itself. Part of the stated event happened within the window.",
+   "evidence": [
+    {
+     "url": "https://www.bostonglobe.com/business/2019/02/08/feeling-emotional-the-machines-know/zWmGiTGC7jCtSI1TrnIs4O/story.html",
+     "title": "Feeling emotional? The machines know (Boston Globe)",
+     "date": "2019-02-08",
+     "shows": "MetLife began using Cogito in its Warwick, RI call center in 2018; it reads vocal tension, pitch and pace and gives agents visual cues (coffee cup for low energy, heart for caller's emotional state); supervisors see tallies."
+    },
+    {
+     "url": "https://emerj.com/artificial-intelligence-at-metlife/",
+     "title": "Artificial Intelligence at MetLife - Three Use Cases (Emerj)",
+     "date": "2023-04-10",
+     "shows": "Cogito analyzes emotions in calls and suggests agents alter their tone toward the customer; framed as customer-emotion analysis, not adaptation of feedback to the worker's frustration."
+    },
+    {
+     "url": "https://www.cloudnowconsulting.com/news/emotion-detection-with-ai-the-next-frontier-in-customer-and-employee-experience",
+     "title": "Emotion Detection with AI (search result, where looked)",
+     "date": "n.d.",
+     "shows": "Generic vendor claims that emotion AI detects overwhelmed agents and recommends breaks; no named multinational deployment adapting feedback tone to worker frustration found."
+    }
+   ]
+  },
+  {
+   "id": "accenture-tech-vision-2017-021",
+   "verdict": "hit",
+   "reading": "By end of 2020 there will exist whole business ecosystems in which participation requires using smart contracts (event/state of affairs, D30, 'by Y').",
+   "mainstream_test": "D30 state of affairs: at least one ecosystem (multi-party platform) live by 2020 whose participants must transact through smart contracts.",
+   "reason": "Both enterprise and public-chain readings are met. we.trade (12 European banks incl. HSBC, Deutsche Bank, Santander, UniCredit; IBM, Hyperledger Fabric) went live in 2018 as a trade finance platform whose trades execute via smart contracts. Ethereum DeFi, where all transactions are mediated by smart contracts, reached about $9B collateral by September 2020.",
+   "evidence": [
+    {
+     "url": "https://www.finextra.com/pressarticle/81035/caixabank-implements-wetrade-blockchain-platform",
+     "title": "CaixaBank implements we.trade blockchain platform (Finextra)",
+     "date": "2019",
+     "shows": "we.trade bank consortium platform in production, built on Hyperledger Fabric with smart contracts linking buyer, seller, their banks and transporter, auto-payment when conditions are met."
+    },
+    {
+     "url": "https://www.ibm.com/case-studies/wetrade-blockchain-fintech-trade-finance",
+     "title": "Helping companies trade seamlessly (IBM case study, we.trade)",
+     "date": "n.d.",
+     "shows": "we.trade launched 2018 by a consortium of 12 banks; trade process executed on the platform's smart contracts."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Decentralized_finance",
+     "title": "Decentralized finance (Wikipedia)",
+     "date": "2020-09",
+     "shows": "DeFi transactions are mediated by smart contract programs; Bloomberg reported DeFi collateral of $9B in September 2020."
+    }
+   ]
+  }
+ ]
+}

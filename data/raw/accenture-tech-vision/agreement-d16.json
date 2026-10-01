@@ -1,0 +1,56 @@
+{
+ "rule": "D16",
+ "graders": [
+  "A",
+  "B"
+ ],
+ "n": 3,
+ "agree": 3,
+ "raw_agreement": 1,
+ "kappa": 1,
+ "passes_d11": true,
+ "graderA": {
+  "hit": 1,
+  "partial": 1,
+  "miss": 1
+ },
+ "graderB": {
+  "hit": 1,
+  "partial": 1,
+  "miss": 1
+ },
+ "agreed": {
+  "hit": 1,
+  "partial": 1,
+  "miss": 1
+ },
+ "hit_rate_agreed": {
+  "hits": 1,
+  "of_graded_hit_partial_miss": 3,
+  "wilson95": [
+   0.061,
+   0.792
+  ],
+  "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
+ },
+ "consensus": [
+  {
+   "id": "accenture-tech-vision-2017-015",
+   "label": "",
+   "verdict": "miss"
+  },
+  {
+   "id": "accenture-tech-vision-2017-018",
+   "label": "",
+   "verdict": "partial"
+  },
+  {
+   "id": "accenture-tech-vision-2017-021",
+   "label": "",
+   "verdict": "hit"
+  }
+ ],
+ "unfalsifiable_agreed": [],
+ "ungradable_agreed": [],
+ "contested": []
+}
