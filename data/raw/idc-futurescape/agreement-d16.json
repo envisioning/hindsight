@@ -1,0 +1,685 @@
+{
+ "rule": "D16",
+ "graders": [
+  "A",
+  "B"
+ ],
+ "n": 157,
+ "agree": 154,
+ "raw_agreement": 0.9809,
+ "kappa": 0.8166,
+ "passes_d11": true,
+ "graderA": {
+  "hit": 3,
+  "miss": 4,
+  "ungradable": 150
+ },
+ "graderB": {
+  "hit": 5,
+  "partial": 1,
+  "miss": 4,
+  "ungradable": 147
+ },
+ "agreed": {
+  "hit": 3,
+  "miss": 4,
+  "ungradable": 147
+ },
+ "hit_rate_agreed": {
+  "hits": 3,
+  "of_graded_hit_partial_miss": 7,
+  "wilson95": [
+   0.158,
+   0.75
+  ],
+  "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
+ },
+ "consensus": [
+  {
+   "id": "idc-futurescape-2014-006",
+   "label": "By 2020, 60% of CIOs in Global Organizations Will Be Supplanted by the Chief Digital Officer for Delivery of IT-Enabled Products and Digital Services",
+   "verdict": "miss"
+  },
+  {
+   "id": "idc-futurescape-2015-003",
+   "label": "By 2018, at Least Half of IT Spending Will Be Cloud Based, Reaching 60% of All IT Infrastructure and 60-70% of All Software, Services, and Technology Spending by 2020",
+   "verdict": "miss"
+  },
+  {
+   "id": "idc-futurescape-2015-006",
+   "label": "By 2018, There Will Be 22 Billion IoT Devices Installed, Driving the Development of Over 200,000 New IoT Apps and Services",
+   "verdict": "miss"
+  },
+  {
+   "id": "idc-futurescape-2017-003",
+   "label": "By 2021, Enterprises' Spending on Cloud Services and Cloud-Enabling Hardware, Software, and Services Will More than Double to Over $530 Billion, Leveraging the Diversifying Cloud Environment That Is 20% at the Edge, Over 15% Specialized (Non-x86) Compute, and Over 90% Multicloud",
+   "verdict": "hit"
+  },
+  {
+   "id": "idc-futurescape-2018-010",
+   "label": "By 2022, the Top 4 Cloud \"Megaplatforms\" Will Host 80% of IaaS/PaaS Deployments, But by 2024, 90% of G1000 Organizations Will Mitigate Lock-In Through Multicloud/Hybrid Technologies and Tools",
+   "verdict": "hit"
+  },
+  {
+   "id": "idc-futurescape-2019-010",
+   "label": "By 2023, the Top 5 public cloud megaplatforms will consolidate at least 75% of market share; the Top 10 pureplay SaaS vendors will generate an average of near 20% revenue from expanding PaaS services",
+   "verdict": "hit"
+  },
+  {
+   "id": "idc-futurescape-2024-006",
+   "label": "By 2025, 50% of Organizations Will Use Enterprise Agents Configured for Specific Business Functions, Instead of Focusing on Individual Copilot Technologies to Achieve Faster Business Value from AI",
+   "verdict": "miss"
+  }
+ ],
+ "unfalsifiable_agreed": [],
+ "ungradable_agreed": [
+  {
+   "id": "idc-futurescape-2014-001",
+   "label": "By 2017, 80% of the CIO's Time Will Be Focused on Analytics, Cybersecurity, and Creating New Revenue Streams Through Digital Services"
+  },
+  {
+   "id": "idc-futurescape-2014-002",
+   "label": "By 2016, 65% of Global Competitive Strategies Will Require Real-Time 3rd Platform IT as a Service"
+  },
+  {
+   "id": "idc-futurescape-2014-003",
+   "label": "By 2016, Security Will Be a Top 3 Business Priority for 70% of CEOs of Global Enterprises"
+  },
+  {
+   "id": "idc-futurescape-2014-004",
+   "label": "By 2015, 60% of CIOs Will Use DevOps as Their Primary Tool to Address the Speed and Sprawl of Mobile, Cloud, and Open Source Applications"
+  },
+  {
+   "id": "idc-futurescape-2014-005",
+   "label": "By 2016, 80% of CIOs Will Deliver a New Architectural Framework That Enables Innovation and Improved Business Decision Making"
+  },
+  {
+   "id": "idc-futurescape-2014-007",
+   "label": "By 2016, 80% of CIOs Will Accelerate 3rd Platform Migration to Counter Premature Obsolescence of Current IT Assets"
+  },
+  {
+   "id": "idc-futurescape-2014-008",
+   "label": "By 2018, 30% of CIOs of Global Organizations Will Have Rolled Out a Pan-Enterprise Data and Analytics Strategy"
+  },
+  {
+   "id": "idc-futurescape-2014-009",
+   "label": "By 2017, 35% of Vendor Sourcing Relationships Around 3rd Platform Technologies Will Fail, Causing CIOs to Roll Out New Sourcing Processes"
+  },
+  {
+   "id": "idc-futurescape-2014-010",
+   "label": "By 2018, 50% of CIOs Will Relinquish IT's Traditional Mode of Technology Control in Favor of an Open Standards–Based Framework"
+  },
+  {
+   "id": "idc-futurescape-2015-001",
+   "label": "By the End of 2017, Two-Thirds of the CEOs of Global 2000 Enterprises Will Have Digital Transformation at the Center of Their Corporate Strategy"
+  },
+  {
+   "id": "idc-futurescape-2015-002",
+   "label": "By 2017, Over 50% of Organizations' IT Spending Will Be for 3rd Platform Technologies, Solutions, and Services, Rising to Over 60% by 2020"
+  },
+  {
+   "id": "idc-futurescape-2015-004",
+   "label": "By 2018, Enterprises Pursuing DX Strategies Will More than Double Software Development Capabilities; 2/3 of Their Coders Will Focus on Strategic DX Apps/Services"
+  },
+  {
+   "id": "idc-futurescape-2015-005",
+   "label": "By 2018, Enterprises with DX Strategies Will Expand External Data Sources by at Least 3- to 5-Fold and Delivery of Data to the Market by 100-Fold or More"
+  },
+  {
+   "id": "idc-futurescape-2015-007",
+   "label": "By 2018, Over 50% of Developer Teams Will Embed Cognitive Services in Their Apps (vs. 1% Today), Providing U.S. Enterprises $60+ Billion Annual Savings by 2020"
+  },
+  {
+   "id": "idc-futurescape-2015-008",
+   "label": "By 2018, Over 50% of Enterprises Will Create and/or Partner with Industry Cloud Platforms to Distribute Their Own Innovations, Source Others'"
+  },
+  {
+   "id": "idc-futurescape-2015-009",
+   "label": "By 2018, 80% of B2C and 60% of B2B Enterprises Will Overhaul Their \"Digital Front Door\" to Support 1,000–10,000 Times More Customers and Customer Touch Points"
+  },
+  {
+   "id": "idc-futurescape-2015-010",
+   "label": "By 2020, More than 30% of the IT Vendors Will Not Exist as We Know Them Today, Requiring Realignment of Preferred Vendor Relationships"
+  },
+  {
+   "id": "idc-futurescape-2015-011",
+   "label": "by 2018, 35% of IT resources will be spent to support the creation of new digital revenue streams"
+  },
+  {
+   "id": "idc-futurescape-2015-012",
+   "label": "By 2017, 80% of global CIOs will initiate a data transformation and governance framework to turn information into a competitive business differentiator"
+  },
+  {
+   "id": "idc-futurescape-2015-013",
+   "label": "By 2016, 70% of IT organizations will shift their focus to advanced 'contain and control' security away from a perimeter mentality"
+  },
+  {
+   "id": "idc-futurescape-2015-014",
+   "label": "By 2017, 60% of digital transformation initiatives will not be able to scale due to a lack of a strategic architecture"
+  },
+  {
+   "id": "idc-futurescape-2016-001",
+   "label": "By 2019, 40% of IT Projects Will Create New Digital Services and Revenue Streams That Monetize Data"
+  },
+  {
+   "id": "idc-futurescape-2016-002",
+   "label": "By 2018, 65% of IT Organizations Will Create New Customer-Facing and Ecosystem-Facing Services to Meet the Business DX Needs"
+  },
+  {
+   "id": "idc-futurescape-2016-003",
+   "label": "Lack of Vision, Credibility, or Ability to Influence Will Keep 40% of CIOs from Attaining Leadership Roles in Enterprise DX by 2017"
+  },
+  {
+   "id": "idc-futurescape-2016-004",
+   "label": "By 2019, 75% of CIOs Will Recognize the Limitations of Traditional IT and Embrace a Leadership Approach That Embodies a Virtuous Cycle of Innovation (Leading in 3D)"
+  },
+  {
+   "id": "idc-futurescape-2016-005",
+   "label": "40% of CIOs Will Advance DX Initiatives by Building Organizational Linkages with LOB Technology Teams and Across IT Organizational Silos, Empowering Changes in Thinking, Culture, and Practices by 2018"
+  },
+  {
+   "id": "idc-futurescape-2016-006",
+   "label": "By 2019, 80% of Bimodal IT Organizations Will Accumulate a Crippling Technical Debt, Resulting in Spiraling Complexity, Costs, and Lost Credibility"
+  },
+  {
+   "id": "idc-futurescape-2016-007",
+   "label": "45% of CIOs Will Shift Primary Focus from Physical to Digital and Move Away from BPM and Optimization by 2018 to Deliver Scale, Predictability, and Speed"
+  },
+  {
+   "id": "idc-futurescape-2016-008",
+   "label": "By 2018, 45% of CIOs Will Focus on Platformization, Using DevOps for Rapid Development, Cost Reduction, and Enterprise Agility"
+  },
+  {
+   "id": "idc-futurescape-2016-009",
+   "label": "By 2019, 70% of IT Organizations Will Shift Their Culture to a Start-Up-Like Work Environment by Embracing Agile Practices and Open Source Communities"
+  },
+  {
+   "id": "idc-futurescape-2016-010",
+   "label": "By 2017, 80% of CIOs Will Help Drive Global Risk Portfolios That Enable Adaptive Responses to Security, Compliance, Business, or Catastrophic Threats"
+  },
+  {
+   "id": "idc-futurescape-2017-001",
+   "label": "By 2021, at Least 50% of Global GDP Will Be Digitized, with Growth in Every Industry Driven by Digitally Enhanced Offerings, Operations, and Relationships; by 2020, Investors Will Use Platform, Data Value, and Customer Engagement Metrics as Valuation Factors for All Enterprises"
+  },
+  {
+   "id": "idc-futurescape-2017-002",
+   "label": "By 2020, 60% of All Enterprises Will Have Fully Articulated an Organizationwide Digital Transformation Platform Strategy and Will Be in the Process of Implementing That Strategy as the New IT Core for Competing in the Digital Economy"
+  },
+  {
+   "id": "idc-futurescape-2017-004",
+   "label": "By 2019, 40% of Digital Transformation Initiatives Will Use AI Services; by 2021, 75% of Commercial Enterprise Apps Will Use AI, Over 90% of Consumers Will Interact with Customer Support Bots, and Over 50% of New Industrial Robots Will Leverage AI"
+  },
+  {
+   "id": "idc-futurescape-2017-005",
+   "label": "By 2021, Enterprise Apps Will Shift Toward Hyperagile Architectures, with 80% of Application Development on Cloud Platforms (PaaS) Using Microservices and Cloud Functions (e.g., AWS Lambda and Azure Functions) and Over 95% of New Microservices Deployed in Containers (e.g., Docker)"
+  },
+  {
+   "id": "idc-futurescape-2017-006",
+   "label": "By 2020, Human-Digital Interfaces Will Diversify, as 25% of Field Service Techs and Over 25% of Info Workers Use Augmented Reality, Nearly 50% of New Mobile Apps Use Voice as a Primary Interface, and 50% of the Consumer-Facing G2000 Use Biometric Sensors to Personalize Experiences"
+  },
+  {
+   "id": "idc-futurescape-2017-007",
+   "label": "By 2021, at Least 25% of the G2000 Will Use Blockchain Services as a Foundation for Digital Trust at Scale; by 2020, 25% of Top Global Transaction Banks, Nearly 30% of Manufacturers and Retailers, and 20% of Healthcare Organizations Will Use Blockchain Networks in Production"
+  },
+  {
+   "id": "idc-futurescape-2017-008",
+   "label": "By 2020, 90% of Large Enterprises Will Generate Revenue from Data as a Service — from the Sale of Raw Data, Derived Metrics, Insights, and Recommendations — Up from Nearly 50% in 2017"
+  },
+  {
+   "id": "idc-futurescape-2017-009",
+   "label": "Improvements in Simple (\"Low Code/No Code\") Development Tools Will Dramatically Expand the Number of Nontech Developers Over the Next 36 Months; by 2021, These Nontraditional Developers Will Build 20% of Business Applications and 30% of New Application Features (60% by 2027)"
+  },
+  {
+   "id": "idc-futurescape-2017-010",
+   "label": "By 2021, More than Half of the G2000 Will See an Average of One-Third of Their Digital Services Interactions Come Through Their Open API Ecosystems, Up from Virtually 0% in 2017 — Amplifying Their Digital Reach Far Beyond Their Own Customer Interactions"
+  },
+  {
+   "id": "idc-futurescape-2017-011",
+   "label": "75 percent of CIOs will put experiential engagement, data monetization, or digital business at scale at the top of their agenda by 2018."
+  },
+  {
+   "id": "idc-futurescape-2017-012",
+   "label": "75 percent of CIOs and their enterprises will fail to meet all of their digital objectives through 2019, dragged down by conflicting digital transformation imperatives, ineffective technology innovation, cloud infrastructure transition, and underfunded end-of-life core systems."
+  },
+  {
+   "id": "idc-futurescape-2017-013",
+   "label": "60 percent of the CIOs who have crossed the digital divide will prevail in c-suite turmoil and competition to become digital business leaders for their enterprises by 2020."
+  },
+  {
+   "id": "idc-futurescape-2017-014",
+   "label": "60 percent of CIOs will complete infrastructure and application re-platforming using cloud, mobile, and devops, clearing the deck for accelerated enterprise digital transformation by 2019."
+  },
+  {
+   "id": "idc-futurescape-2017-015",
+   "label": "60 percent of it organizations will deploy DX platforms supporting new customer- and ecosystem-facing business models by 2019."
+  },
+  {
+   "id": "idc-futurescape-2017-016",
+   "label": "75 percent of CIOs will refocus cybersecurity around authentication and trust to manage business risks, initiating the retirement of systems that cannot ensure data protection by 2019."
+  },
+  {
+   "id": "idc-futurescape-2017-017",
+   "label": "40 percent of CIOs will leverage vision- and mission-driven leadership to inspire and empower their organizations to create digital transformation capabilities by 2020."
+  },
+  {
+   "id": "idc-futurescape-2017-018",
+   "label": "40 percent of CIOs will adopt new digital governance models to accelerate innovation and speed by 2019 recognizing the failure of existing it governance and the need for a shared digital transformation vision."
+  },
+  {
+   "id": "idc-futurescape-2017-019",
+   "label": "70 percent of CIOs will take agility to the next level, gearing up to a product model using design thinking and devops by 2018."
+  },
+  {
+   "id": "idc-futurescape-2017-020",
+   "label": "60 percent of CIOs will implement an it business model and culture that shifts focus from it projects to digitally-oriented products by 2020."
+  },
+  {
+   "id": "idc-futurescape-2018-001",
+   "label": "By 2022, 60%+ of Global GDP Will Be Digitized, with Growth in Every Industry Driven by Digitally Enhanced Offerings, Operations, and Relationships and Almost $7 Trillion in IT-Related Spending in 2019–2022"
+  },
+  {
+   "id": "idc-futurescape-2018-002",
+   "label": "By 2023, 75% of All IT Spending Will Be on 3rd Platform Technologies, as Over 90% of All Enterprises Build \"Digital Native\" IT Environments to Thrive in the Digital Economy"
+  },
+  {
+   "id": "idc-futurescape-2018-003",
+   "label": "By 2022, Over 40% of Organizations' Cloud Deployments Will Include Edge Computing and 25% of Endpoint Devices and Systems Will Execute AI Algorithms"
+  },
+  {
+   "id": "idc-futurescape-2018-004",
+   "label": "By 2022, 90% of All New Apps Will Feature Microservices Architectures That Improve the Ability to Design, Debug, Update, and Leverage Third-Party Code; 35% of All Production Apps Will Be Cloud Native"
+  },
+  {
+   "id": "idc-futurescape-2018-005",
+   "label": "By 2024, a New Class of Professional Developers Producing Code Without Custom Scripting Will Expand the Developer Population by 30%, Accelerating Digital Transformation"
+  },
+  {
+   "id": "idc-futurescape-2018-006",
+   "label": "From 2018 to 2023 — with New Tools/Platforms, More Developers, Agile Methods, and Lots of Code Reuse — 500 Million New Logical Apps Will Be Created, Equal to the Number Built Over the Past 40 Years"
+  },
+  {
+   "id": "idc-futurescape-2018-007",
+   "label": "By 2022, 25% of Public Cloud Computing Will Be Based on Non-x86 Processors (Including Quantum); by 2022, Organizations Will Spend More on Vertical SaaS Apps than Horizontal Apps"
+  },
+  {
+   "id": "idc-futurescape-2018-008",
+   "label": "By 2024, AI-Enabled User Interfaces and Process Automation Will Replace One-Third of Today's Screen-Based Apps; by 2022, 30% of Enterprises Will Use Conversational Speech Tech for Customer Engagement"
+  },
+  {
+   "id": "idc-futurescape-2018-009",
+   "label": "By 2022, 50% of Servers Will Encrypt Data at Rest and in Motion, Over 50% of Security Alerts Will Be Handled by AI-Powered Automation, and 150 Million People Will Have Blockchain-Based Digital Identities"
+  },
+  {
+   "id": "idc-futurescape-2018-011",
+   "label": "By 2021, Driven by LOB Needs, 70% of CIOs Will Deliver \"Agile Connectivity\" via APIs and Architectures That Interconnect Digital Solutions from Cloud Vendors, System Developers, Start-Ups, and Others"
+  },
+  {
+   "id": "idc-futurescape-2018-012",
+   "label": "Compelled to Curtail IT Spending, Improve Enterprise IT Agility, and Accelerate Innovation, 70% of CIOs Will Aggressively Apply Data and AI to IT Operations, Tools, and Processes by 2021"
+  },
+  {
+   "id": "idc-futurescape-2018-013",
+   "label": "By 2022, 65% of Enterprises Will Task CIOs to Transform and Modernize Governance Policies to Seize the Opportunities and Confront New Risks Posed by AI, ML, and Data Privacy and Ethics"
+  },
+  {
+   "id": "idc-futurescape-2018-014",
+   "label": "Through 2022, 75% of Successful Digital Strategies Will Be Built by a Transformed IT Organization, with Modernized and Rationalized Infrastructure, Applications, and Data Architectures"
+  },
+  {
+   "id": "idc-futurescape-2018-015",
+   "label": "By 2020, 80% of IT Executive Leadership Will Be Compensated Based on Business KPIs and Metrics That Measure IT's Effectiveness in Driving Business Performance and Growth, Not IT Operational Measures"
+  },
+  {
+   "id": "idc-futurescape-2018-016",
+   "label": "By 2020, 60% of CIOs Will Initiate a Digital Trust Framework That Goes Beyond Preventing Cyberattacks and Enables Organizations to Resiliently Rebound from Adverse Situations, Events, and Effects"
+  },
+  {
+   "id": "idc-futurescape-2018-017",
+   "label": "By 2022, 75% of CIOs Who Do Not Shift Their Organizations to Empowered IT Product Teams to Enable Digital Innovation, Disruption, and Scale Will Fail in Their Roles"
+  },
+  {
+   "id": "idc-futurescape-2018-018",
+   "label": "Through 2022, the Talent Pool for Emerging Technologies Will Be Inadequate to Fill at Least 30% of Global Demand and Effective Skills Development and Retention Will Become Differentiating Strategies"
+  },
+  {
+   "id": "idc-futurescape-2018-019",
+   "label": "By 2021, 65% of CIOs Will Expand Agile/DevOps Practices into the Wider Business to Achieve the Velocity Necessary for Innovation, Execution, and Change"
+  },
+  {
+   "id": "idc-futurescape-2018-020",
+   "label": "By 2023, 70% of CIOs Who Cannot Manage the IT Governance, Strategy, and Operations Divides Between LOB-Dominated Edge Computing, Operational Technology, and IT Will Fail Professionally"
+  },
+  {
+   "id": "idc-futurescape-2019-001",
+   "label": "By 2023, over 50% of all ICT spending will be directly for digital transformation and innovation (up from 27% in 2018), growing at 17% CAGR (vs. -3.5% for the rest of ICT)"
+  },
+  {
+   "id": "idc-futurescape-2019-002",
+   "label": "By 2022, 70% of enterprises will integrate cloud management — across their public and private clouds — by deploying unified hybrid/multicloud management technologies, tools, and processes"
+  },
+  {
+   "id": "idc-futurescape-2019-003",
+   "label": "By 2023, over 50% of new enterprise IT infrastructure deployed will be at the edge rather than corporate datacenters, up from less than 10% today; by 2024, the number of apps at the edge will increase 800%"
+  },
+  {
+   "id": "idc-futurescape-2019-004",
+   "label": "By 2025, nearly two-thirds of enterprises will be prolific software producers with code deployed daily, over 90% of new apps cloud native, 80% of code externally sourced, and 1.6 times more developers"
+  },
+  {
+   "id": "idc-futurescape-2019-005",
+   "label": "By 2023, over 500 million digital apps and services will be developed and deployed using cloud-native approaches, most of those targeted at industry-specific digital transformation use cases"
+  },
+  {
+   "id": "idc-futurescape-2019-006",
+   "label": "By 2025, at least 90% of new enterprise apps will embed AI; by 2024, over 50% of user interface interactions will use AI-enabled computer vision, speech, natural language processing, and AR/VR"
+  },
+  {
+   "id": "idc-futurescape-2019-007",
+   "label": "By 2023, 50% of the G2000 will name a Chief Trust Officer, who"
+  },
+  {
+   "id": "idc-futurescape-2019-008",
+   "label": "By 2023, 60% of the G2000 will have a digital developer ecosystem with thousands of developers; half of those enterprises will drive 20%+ of digital revenue through their digital ecosystem/platform"
+  },
+  {
+   "id": "idc-futurescape-2019-009",
+   "label": "By 2025, 20% of revenue growth will be from \"white space\" offerings that"
+  },
+  {
+   "id": "idc-futurescape-2019-011",
+   "label": "By 2024, the IT Strategy for 80% of Digitally Advanced Organizations Will Evolve to a Broad, Flexible, Self-Service Mashup of Digital Tools to Replace the \"Walled Garden\" IT-as-an-Enabler Model"
+  },
+  {
+   "id": "idc-futurescape-2019-012",
+   "label": "By 2023, 65% of CIOs Will Be Entrepreneurial Leaders Who Evolve Their Organizations into Centers of Excellence That Engineer Enterprisewide Collaboration and Innovation"
+  },
+  {
+   "id": "idc-futurescape-2019-013",
+   "label": "Driven Both by Escalating Cyberthreats and Needed New Functionality, 65% of Enterprises Will Aggressively Modernize Legacy Systems with Extensive New Technology Platform Investments Through 2023"
+  },
+  {
+   "id": "idc-futurescape-2019-014",
+   "label": "By 2023, as a Pillar of Their IT Multicloud Approach, 70% of IT Organizations Will Implement a Strategic Container/Abstraction/API Playbook to Enhance Application Portability and Hosting Flexibility"
+  },
+  {
+   "id": "idc-futurescape-2019-015",
+   "label": "By 2022, 70% of IT Organizations Will Have Transitioned from Builders and Operators to Designers and Integrators of Digital Solutions That Come to Define Every Product, Service, or Process"
+  },
+  {
+   "id": "idc-futurescape-2019-016",
+   "label": "Through 2023, 80% of IT Organizations Will Accelerate Software Development to Enable Them to Deploy at Least Weekly Code Updates/Revisions and Business Value Delivery"
+  },
+  {
+   "id": "idc-futurescape-2019-017",
+   "label": "By 2022, as Innovation Becomes Synonymous with Disruption, 40% of CIOs Will Co-Lead Innovation, Articulating Digital Visions and Infusing Intelligence Enterprisewide"
+  },
+  {
+   "id": "idc-futurescape-2019-018",
+   "label": "Through 2022, Deployment of Artificial Intelligence to Augment, Streamline, and Accelerate IT Operations Will Be a Principal IT Transformation Initiative for 60% of Enterprise IT Organizations"
+  },
+  {
+   "id": "idc-futurescape-2019-019",
+   "label": "Through 2024, 75% of CIOs Will Reshape All IT Resources, Including Budgets, Assets, and Talent, to Support Real-Time Resource Allocation and Enterprise Agility, Dramatically Reducing Fixed Costs"
+  },
+  {
+   "id": "idc-futurescape-2019-020",
+   "label": "By 2023, Driven by the Mandate to Deliver Engaging, Agile, Continuous Learning-Fueled Workspaces, 60% of CIOs Will Implement Formal Employee Experience Programs"
+  },
+  {
+   "id": "idc-futurescape-2020-001",
+   "label": "By the End of 2021, Based on Lessons Learned, 80% of Enterprises Will Put a Mechanism in Place to Shift to Cloud-Centric Infrastructure and Applications Twice as Fast as Before the Pandemic"
+  },
+  {
+   "id": "idc-futurescape-2020-002",
+   "label": "Through 2023, Reactions to Changed Workforce and Operations Practices During the Pandemic Will Be the Dominant Accelerators for 80% of Edge-Driven Investments and Business Model Changes in Most Industries"
+  },
+  {
+   "id": "idc-futurescape-2020-003",
+   "label": "By 2023, 75% of G2000 Companies Will Commit to Providing Technical Parity to a Workforce That Is Hybrid by Design Rather than by Circumstance, Enabling Them to Work Together Separately and in Real Time"
+  },
+  {
+   "id": "idc-futurescape-2020-004",
+   "label": "Through 2023, Coping with Technical Debt Accumulated During the Pandemic Will Shadow 70% of CIOs, Causing Financial Stress, Inertial Drag on IT Agility, and \"Forced March\" Migrations to the Cloud"
+  },
+  {
+   "id": "idc-futurescape-2020-005",
+   "label": "In 2022, Enterprises Focused on Digital Resiliency Will Adapt to Disruption and Extend Services to Respond to New Conditions 50% Faster than Ones Fixated on Restoring Existing Business/IT Resiliency Levels"
+  },
+  {
+   "id": "idc-futurescape-2020-006",
+   "label": "By 2023, an Emerging Cloud Ecosystem for Extending Resource Control and Real-Time Analytics Will Be the Underlying Platform for All IT and Business Automation Initiatives Anywhere and Everywhere"
+  },
+  {
+   "id": "idc-futurescape-2020-007",
+   "label": "By 2023, Driven by the Goal to Embed Intelligence in Products and Services, One-Quarter of G2000 Companies Will Acquire at Least One AI Software Start-Up to Ensure Ownership of Differentiated Skills and IP"
+  },
+  {
+   "id": "idc-futurescape-2020-008",
+   "label": "By 2024, 80% of Enterprises Will Overhaul Relationships with Suppliers, Providers, and Partners to Better Execute Digital Strategies for Ubiquitous Deployment of Resources and for Autonomous IT Operations"
+  },
+  {
+   "id": "idc-futurescape-2020-009",
+   "label": "By 2025, 90% of G2000 Companies Will Mandate Reusable Materials in IT Hardware Supply Chains, Carbon Neutrality Targets for Providers' Facilities, and Lower Energy Use as Prerequisites for Doing Business"
+  },
+  {
+   "id": "idc-futurescape-2020-010",
+   "label": "Through 2023, Half of Enterprises' Hybrid Workforce and Business Automation Efforts Will Be Delayed or Will Fail Outright Due to Underinvestment in Building IT/Sec/DevOps Teams with the Right Tools/Skills"
+  },
+  {
+   "id": "idc-futurescape-2020-011",
+   "label": "By 2022, 65% of CIOs Will Digitally Empower and Enable Frontline Workers with Data, AI, and Security to Extend Their Productivity, Adaptability, and Decision Making in the Face of Rapid Changes"
+  },
+  {
+   "id": "idc-futurescape-2020-012",
+   "label": "By 2021, Unable to Find Adaptive Ways to Counter Escalating Cyberattacks, Unrest, Trade Wars, and Sudden Collapses, 30% of CIOs Will Fail in Protecting Trust — the Foundation of Customer Confidence"
+  },
+  {
+   "id": "idc-futurescape-2020-013",
+   "label": "Through 2023, Coping with Technical Debt Accumulated During the Pandemic Will Shadow 70% of CIOs, Causing Financial Stress, Inertial Drag on IT Agility, and \"Forced March\" Migrations to the Cloud"
+  },
+  {
+   "id": "idc-futurescape-2020-014",
+   "label": "By 2023, Global Crises Will Make 75% of CIOs Integral to Business Decision Making as Digital Infrastructure Becomes the Business OS While Moving from Business Continuation to Reconceptualization"
+  },
+  {
+   "id": "idc-futurescape-2020-015",
+   "label": "By 2024, to Support Safe, Distributed Work Environments, 50% of CIOs Will Accelerate Robotization, Automation, and Augmentation, Making Change Management a Formidable Imperative"
+  },
+  {
+   "id": "idc-futurescape-2020-016",
+   "label": "By 2023, CIO-Led Adversity Centers Will Become a Permanent Fixture in 65% of Enterprises, Focused on Building Resilience with Digital Infrastructure and Flexible Funding for Diverse Scenarios"
+  },
+  {
+   "id": "idc-futurescape-2020-017",
+   "label": "By 2025, 80% of CIOs Alongside LOBs Will Implement Intelligent Capabilities to Sense, Learn, and Predict Changing Customer Behaviors, Enabling Exclusive Customer Experiences for Engagement and Loyalty"
+  },
+  {
+   "id": "idc-futurescape-2020-018",
+   "label": "By 2025, 60% of CIOs Will Implement Governance for Low-Code/No-Code Tools to Increase IT and Business Productivity, Help LOB Developers Meet Unpredictable Needs, and Foster Innovation at the Edge"
+  },
+  {
+   "id": "idc-futurescape-2020-019",
+   "label": "By 2025, 65% of CIOs Will Implement Ecosystem, Application, and Infrastructure Control Systems Founded on Interoperability, Flexibility, Scalability, Portability, and Timeliness"
+  },
+  {
+   "id": "idc-futurescape-2020-020",
+   "label": "By 2024, 75% of CIOs Will Absorb New Accountabilities for the Management of Operational Health, Welfare, and Employee Location Data for Underwriting, Health, Safety, and Tax Compliance Purposes"
+  },
+  {
+   "id": "idc-futurescape-2021-001",
+   "label": "By 2024, Digital-First Enterprises Will Enable Empathetic Customer Experiences and Resilient Operating Models by Shifting 70% of All Tech and Services Spending to as-a-Service and Outcomes-Centric Models"
+  },
+  {
+   "id": "idc-futurescape-2021-002",
+   "label": "By 2023, 40% of G2000 Will Reset Cloud Selection Processes to Focus on Business Outcomes Rather than IT Requirements, Valuing Access to Providers' Portfolios from Device to Edge and from Data to Ecosystem"
+  },
+  {
+   "id": "idc-futurescape-2021-003",
+   "label": "By 2023, 80% of Enterprises Will Use AI-Assisted, Cloud-Linked Governance Services to Manage, Optimize, and Secure Dispersed Resources/Data, But 70% Will Not Achieve Full Value Due to IT Skills Mismatches"
+  },
+  {
+   "id": "idc-futurescape-2021-004",
+   "label": "By 2022, 40% of Large Enterprises' IT Budgets Will Be Redistributed Due to Adoption of Integrated as-a-Service Bundles in Areas of Security, Cloud Platforms, Virtual Workspace, and Connectivity"
+  },
+  {
+   "id": "idc-futurescape-2021-006",
+   "label": "By 2024, 70% of G2000 Will Gain Twice as Much, in Terms of Meaningful Returns, on Tech Investments That Augment Employee/Customer Activities Compared with Ones That Automate Individual Processes"
+  },
+  {
+   "id": "idc-futurescape-2021-007",
+   "label": "By 2025, Regional Divergences in Data Privacy, Security, and Placement/Use/Disclosure Mandates Will Force 80% of Enterprises to Restructure Their Data Governance Processes Built on an Autonomic Foundation"
+  },
+  {
+   "id": "idc-futurescape-2021-008",
+   "label": "By 2023, 50% of G2000 Will Shift Half of Their New Technology Hardware/Connectivity Spending to Modernize and Reconceptualize In-Person Experiences for Customers and Employees in Their Own Locations"
+  },
+  {
+   "id": "idc-futurescape-2021-009",
+   "label": "By 2025, 60% of G2000 Will Have Digital Sustainability Teams, Tasked with Assessing, Certifying, and Coordinating Use of Business and IT Sustainability Data and Analytic Platforms Offered by ICT Providers"
+  },
+  {
+   "id": "idc-futurescape-2021-010",
+   "label": "By 2025, Public Enterprises' Valuations Will Be Based as Much on Confidence in Data Controls for Proper/Effective Use of Data as in Financial Controls, Focusing Increased Spend on Data-Centric Solutions"
+  },
+  {
+   "id": "idc-futurescape-2021-012",
+   "label": "By 2023, 60% of CIOs Will Be Primarily Measured for Their Ability to Cocreate New Business Models and Outcomes Through Extensive Enterprise and Ecosystemwide Collaboration"
+  },
+  {
+   "id": "idc-futurescape-2021-013",
+   "label": "By 2025, 75% of CIOs and CFOs Will Be Forced to Accelerate or Enact Formal Technical Debt Management Practices Due to Project Delays or Failures Caused by Unresolved Technical Debt"
+  },
+  {
+   "id": "idc-futurescape-2021-014",
+   "label": "Given the Rising Imperative for Hybrid and Smart Workplaces, by 2024, 60% of CIOs Will Reimagine User Support and Create COE-Based Teams to Guide the Necessary Investments in Technology and Process"
+  },
+  {
+   "id": "idc-futurescape-2021-016",
+   "label": "By 2024, 40% of CIOs Will Fail to Effectively Evolve IT's Capability to Deliver Modern Digital Infrastructures, Provide Ecosystem Tech Governance, and Support Architecture-Driven Business Outcomes"
+  },
+  {
+   "id": "idc-futurescape-2021-017",
+   "label": "Driven by Investor Pressure to Minimize SG&A Expenses, by 2024, 40% of Organizations Will Shift at Least 25% of IT Spending to Direct Cost Aligned with Specific LOB Products/Services"
+  },
+  {
+   "id": "idc-futurescape-2021-018",
+   "label": "Despite the Cost and Friction, 60% of CIOs Will Embrace Ecosystemwide Multifactor Authentication for Its Efficacy as an Essential Minimum to Counter Rising Cybersecurity Threats by 2022"
+  },
+  {
+   "id": "idc-futurescape-2021-019",
+   "label": "By 2025, 60% of CIOs Will Collaborate to Harness Industry Ecosystem Capabilities as a Critical Source of Innovation, Data Sharing, Differentiation, and Cybersecurity Risk Management"
+  },
+  {
+   "id": "idc-futurescape-2021-020",
+   "label": "By 2023, Businesses Will Require 55% of G2000 CIOs to Implement Sustainable IT, Embedding Environmental, Social, and Governance Practices into the Technology Life Cycle from Acquisition to Disposal"
+  },
+  {
+   "id": "idc-futurescape-2022-002",
+   "label": "In 2025, 60% of Infrastructure, Security, Data, and Network Offerings Will Require Cloud-Based Control Platforms That Enable Extensive Automation and Promise Major Reductions in Ongoing Operating Costs"
+  },
+  {
+   "id": "idc-futurescape-2022-003",
+   "label": "Through 2024, Shortcomings in Critical Skills Creation and Training Efforts by IT Industry Leaders Will Prevent 65% of Businesses from Achieving Full Value from Cloud, Data, and Automation Investments"
+  },
+  {
+   "id": "idc-futurescape-2022-004",
+   "label": "Sovereign Assertions in Sustainability, Resiliency, and Asset Residency Through 2025 Will Force G2000 CIOs to Shift Staff, Budgets, and Operating Processes for More than 35% of IT and Data Assets"
+  },
+  {
+   "id": "idc-futurescape-2022-005",
+   "label": "In 2023, 70% of Enterprises' Adoption of as-a-Service Infrastructure/Software Will Be Curbed More by an Inability to Assess Promises of Faster Innovation and Operational Gains than by Cost Concerns"
+  },
+  {
+   "id": "idc-futurescape-2022-006",
+   "label": "By the End of 2024, 60% of Platinum-Level aaS Offerings in Security, Business Operations, and DaaS Will Include Bundled Access to Specialized SME Teams to Help Reduce Impact of Skills Shortages"
+  },
+  {
+   "id": "idc-futurescape-2022-007",
+   "label": "In 2025, 20 High-Visibility Digital Product Launches Reliant on Intelligent Automation and aaS Delivery Will Face Major Delays Due to Global or Regional Silicon and Code Supply Chain Issues"
+  },
+  {
+   "id": "idc-futurescape-2022-011",
+   "label": "By 2025, 70% of CIOs Will Find Their Roles Being Challenged by LOB Counterparts Who Better Demonstrate the Ability to Align Technology with the Organization's Mission and Customers"
+  },
+  {
+   "id": "idc-futurescape-2022-012",
+   "label": "By 2025, 60% of CIOs Will Increase Their Reach and Impact by Effectively Governing \"Pervasive IT\" Spanning LOBs and Ecosystem Partners and Optimizing Services from the Best Contributors"
+  },
+  {
+   "id": "idc-futurescape-2022-014",
+   "label": "By 2024, 65% of CIOs Will Actively Harness Resilience Capabilities as a Competitive Advantage to Deliver Financial, Supply Chain, Ecosystem, and Sustainability Differentiation"
+  },
+  {
+   "id": "idc-futurescape-2022-015",
+   "label": "Through 2025, Only 45% of CIOs Will Achieve a True Intelligent Enterprise That Blends AI/ML and Deep Automation with Speed and Scale to Monetize Changing Business Environments"
+  },
+  {
+   "id": "idc-futurescape-2022-017",
+   "label": "By 2025, 70% of CIOs Will Rely More on Operational Data and Information Collected on the \"Edge,\" as Businesses Look to Act on Multiple Source Real-Time Data for Faster Decision Making"
+  },
+  {
+   "id": "idc-futurescape-2022-018",
+   "label": "By 2024, 40% of CIOs Will Be Tasked with Using Technology Ethically to Gain Insight into Employee Experience and Their Perceptions of the Company's Offerings and to Enable Them to Amplify the Brand"
+  },
+  {
+   "id": "idc-futurescape-2022-020",
+   "label": "By 2025, with 40% or More of IT Spending as a Service, Use of Short Duration Capex Cutting Tactics Will be Constrained, Instead Requiring Lasting Opex Resets of 10–30% in Software and Resources"
+  },
+  {
+   "id": "idc-futurescape-2023-001",
+   "label": "By 2025, the G2000 Will Allocate Over 40% of Core IT Spend to AI Initiatives, Leading to a Double-Digit Increase in the Rate of Product and Process Innovations"
+  },
+  {
+   "id": "idc-futurescape-2023-003",
+   "label": "Into 2025, All Enterprises Will Deal with Uncertain Infrastructure Costs and Accessibility, Triggering the Use of Stop-Gap Measures That Make Cloud Economics and Data Logistics Goals Harder to Achieve"
+  },
+  {
+   "id": "idc-futurescape-2023-006",
+   "label": "By 2025, 40% of Service Engagements Will Include GenAI-Enabled Delivery, Triggering a Shift in Human-Delivered Services for Strategy, Change, and Training to Prepare Organizations for AI Everywhere"
+  },
+  {
+   "id": "idc-futurescape-2023-012",
+   "label": "By 2024, 65% of CIOs Will Face Pressure to Adopt Digital Tech Such as GenAI and Deep Intelligence, But limited IT Support Will Diminish the Benefits and Heighten Risks"
+  },
+  {
+   "id": "idc-futurescape-2023-014",
+   "label": "By 2025, 45% of CIOs Will Prioritize Strategic Data Management and Foster a Data-Centric Culture, Ensuring Competitive Differentiation in the Digital Era"
+  },
+  {
+   "id": "idc-futurescape-2023-015",
+   "label": "Two-Thirds of CIOs Will Not Meet Their 2025 Digital Revenue Goals Due to Misaligned Investments Hindering Business Performance"
+  },
+  {
+   "id": "idc-futurescape-2023-018",
+   "label": "To Mitigate Legal Risks and Enhance Their Brand and Competitive Advantage, Nearly Half of CIOs Will Be Motivated to Automate Regulatory Compliance and ESG by 2025"
+  },
+  {
+   "id": "idc-futurescape-2024-011",
+   "label": "In 2025, 50% of the G1000 Will Struggle with Divergent Regulatory Changes and Rapidly Evolving Compliance Standards, Challenging Their Ability to Adapt to Market Conditions and Drive AI Innovation"
+  },
+  {
+   "id": "idc-futurescape-2024-013",
+   "label": "Responding to the Drag of Technical Debt, 40% of CIOs in 2025 Will Drive Enterprise Initiatives in High-Impact Areas to Remediate Technical Debt for Competitive Advantage"
+  }
+ ],
+ "contested": [
+  {
+   "id": "idc-futurescape-2023-004",
+   "label": "In 2024, Providers Across the Hardware, Software, and Services Spectrum Will Aggressively Expand Their Private and Open Source Data Portfolios, Making Strategic Partnering Decisions More Unstable",
+   "graderA": "ungradable",
+   "graderB": "hit"
+  },
+  {
+   "id": "idc-futurescape-2023-017",
+   "label": "By 2024, 35% of CIOs Will Embrace GenAI, Securing an Early Short-Term Advantage Over Competitors While Cultivating a Foundation of Talent, Experience, and Training Data",
+   "graderA": "ungradable",
+   "graderB": "hit"
+  },
+  {
+   "id": "idc-futurescape-2024-012",
+   "label": "By 2025, 85% of Organizations Will Be Formalizing Policies and Oversight to Address AI Risks (e.g., Ethical, Brand, and PII), Aligning AI Governance with Strategic Business Goals",
+   "graderA": "ungradable",
+   "graderB": "partial"
+  }
+ ]
+}

@@ -1,0 +1,820 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "idc-futurescape-2014-001",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of CIO time focused on analytics, cybersecurity and new digital revenue streams will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a public time-use survey of CIOs splitting time across analytics, cybersecurity and digital revenue for 2016-2017 (IDC CIO surveys, Foundry/CIO State of the CIO); none measures the combined share of CIO time on these three areas.",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-002",
+   "verdict": "ungradable",
+   "reading": "By 2016, share of global competitive strategies requiring real-time 3rd Platform ITaaS will be 65 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for any measure of the share of 'global competitive strategies' requiring 3rd Platform ITaaS; the quantity is IDC-defined and no public series exists.",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-003",
+   "verdict": "ungradable",
+   "reading": "By 2016, share of CEOs of global enterprises with security as a top 3 business priority will be 70 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2015-2016 survey of CEOs of global enterprises ranking security among top-3 business priorities (PwC CEO Survey, KPMG CEO Outlook measure concern about cyber threats, not top-3 priority rank); no same-behaviour measure.",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-004",
+   "verdict": "ungradable",
+   "reading": "By 2015, share of CIOs using DevOps as primary tool will be 60 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2014-2015 CIO survey on DevOps as primary tool for mobile/cloud/open source sprawl (State of DevOps reports survey practitioners, not CIOs, and measure adoption, not 'primary tool').",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-005",
+   "verdict": "ungradable",
+   "reading": "By 2016, share of CIOs delivering a new architectural framework will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a CIO survey of delivery of a 'new architectural framework' for 2015-2016; the behaviour is not defined in any public survey.",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-006",
+   "verdict": "miss",
+   "reading": "By 2020, in 60% of global organizations the CDO, not the CIO, will lead delivery of IT-enabled products and digital services.",
+   "mainstream_test": "D16 numeric on the share; supplanting by a CDO requires a CDO to exist, so the share of large firms with a CDO is an upper bound on the share in which a CDO supplanted the CIO.",
+   "reason": "PwC/Strategy& found about 21% of large public companies had a CDO role by 2020. The share in which a CDO supplanted the CIO cannot exceed that, so the actual is at most 21% against 60% stated: more than 25% off. Miss. Uses an upper bound, not a direct measure.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chief_digital_officer",
+     "title": "Chief digital officer - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "PwC research (2020): 21% of large public enterprises had created a CDO role by 2020, growth decelerating."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-007",
+   "verdict": "ungradable",
+   "reading": "By 2016, share of CIOs accelerating 3rd Platform migration will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a CIO survey of accelerated 3rd Platform migration for 2015-2016; none public.",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-008",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of CIOs of global organizations with a pan-enterprise data and analytics strategy will be 30 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 survey of CIOs of global organizations with a rolled-out pan-enterprise data and analytics strategy (NewVantage Big Data Executive Survey measures 'data-driven organization', a different behaviour and population).",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-009",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of 3rd Platform vendor sourcing relationships that fail will be 35 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for any measure of the failure rate of 3rd Platform vendor sourcing relationships in 2016-2017; none public.",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2014-010",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of CIOs relinquishing traditional technology control for an open standards framework will be 50 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a CIO survey of relinquishing traditional technology control for an open-standards framework in 2017-2018; none public.",
+   "evidence": [
+    {
+     "url": "https://businesswire.com/news/home/20141029006429/en/IDC-Reveals-CIO-Agenda-Predictions-2015",
+     "title": "IDC FutureScape press release (2014-10)",
+     "date": "2014-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-001",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of G2000 CEOs with DX at the center of corporate strategy will be 67 % (two-thirds) (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2016-2017 survey of G2000 CEOs with DX at the center of corporate strategy (Gartner CEO surveys use a different sample and ask about digital initiatives, not centrality to strategy).",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-002",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of organizations' IT spending on 3rd Platform technologies will be over 50 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for an IDC or other public series giving 3rd Platform share of total IT spending for 2016-2017; IDC publishes 3rd Platform figures only in paid Black Book/spending guides, no public share for 2017.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-003",
+   "verdict": "miss",
+   "reading": "By 2018 at least half of worldwide IT spending will be on cloud (cloud services plus cloud-deployed infrastructure).",
+   "mainstream_test": "D16 numeric: cloud-based IT spending / total IT spending in 2018 vs 50%.",
+   "reason": "IDC: public cloud services revenue about $183B in 2018; cloud IT infrastructure was roughly half of IT infrastructure only (crossed traditional in Q3 2018). Gartner: total IT spending about $3.7T in 2018 (about $1.6T excluding devices and telecom). Even counting cloud infrastructure, cloud-based spend is well under 25% of either total. Miss. The infrastructure sub-reading (cloud ~half of infrastructure by 2018) would be closer, but the headline names all IT spending.",
+   "evidence": [
+    {
+     "url": "https://convergedigest.com/idc-worldwide-public-cloud-service/",
+     "title": "IDC: Worldwide public cloud service revenue hit $183B in 2018",
+     "date": "2019-07",
+     "shows": "Public cloud services revenue about $183B in 2018, +27.4%."
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20180409005920/en/Gartner-Global-Spending-Grow-6.2-Percent-2018",
+     "title": "Gartner Says Global IT Spending to Grow 6.2 Percent in 2018",
+     "date": "2018-04-09",
+     "shows": "Worldwide IT spending about $3.7 trillion in 2018."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-004",
+   "verdict": "ungradable",
+   "reading": "By 2018, change in software development capabilities of enterprises with DX strategies will be more than 2 x (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for any measure of the change in software development capacity of DX enterprises 2015-2018; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-005",
+   "verdict": "ungradable",
+   "reading": "By 2018, expansion of external data sources by enterprises with DX strategies will be 3 to 5 x (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for any measure of external data source expansion by DX enterprises 2015-2018; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-006",
+   "verdict": "miss",
+   "reading": "By 2018 the installed base of IoT devices worldwide will be 22 billion.",
+   "mainstream_test": "D16 numeric (level): installed IoT devices 2018 vs 22 billion; within 10% hit, 25% partial.",
+   "reason": "IoT Analytics counts 7 billion IoT devices in 2018 (excluding phones, tablets, PCs) and 17 billion connected devices of all kinds. 22B is 214% above the IoT count and 29% above even the all-devices count. Miss under either reading.",
+   "evidence": [
+    {
+     "url": "https://iot-analytics.com/state-of-the-iot-update-q1-q2-2018-number-of-iot-devices-now-7b/",
+     "title": "State of the IoT 2018: Number of IoT devices now at 7B",
+     "date": "2018-08-08",
+     "shows": "7 billion IoT devices in use in 2018; over 17 billion connected devices including phones and PCs."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-007",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of developer teams embedding cognitive services will be over 50 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 survey of developer teams embedding cognitive/AI services (Evans Data, Stack Overflow developer surveys measure individual developers working on ML, not teams embedding cognitive services in apps).",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-008",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of enterprises creating or partnering with industry cloud platforms will be over 50 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 enterprise survey on creating or partnering with industry cloud platforms; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-009",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of B2C enterprises overhauling their digital front door will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 survey of B2C enterprises overhauling their 'digital front door'; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-010",
+   "verdict": "ungradable",
+   "reading": "By 2020, share of IT vendors that will not exist as known today will be more than 30 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a measure of the share of IT vendors that 'will not exist as we know them'; the quantity is not defined by any series.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-011",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of IT resources spent to support new digital revenue streams will be 35 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a measure of the share of IT resources spent on new digital revenue streams in 2017-2018; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-012",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of global CIOs initiating a data transformation and governance framework will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2016-2017 survey of global CIOs initiating a data transformation and governance framework; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-013",
+   "verdict": "ungradable",
+   "reading": "By 2016, share of IT organizations shifting to contain-and-control security will be 70 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2015-2016 survey of IT organizations shifting to 'contain and control' security; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2015-014",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of DX initiatives unable to scale for lack of strategic architecture will be 60 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a measure of the share of DX initiatives unable to scale for lack of strategic architecture in 2016-2017; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20151104005180/en/IDC-Predicts-Emergence-DX-Economy-Critical-Period",
+     "title": "IDC FutureScape press release (2015-11)",
+     "date": "2015-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-001",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of IT projects creating digital services and revenue streams that monetize data will be 40 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a measure of the share of IT projects creating data-monetizing services in 2018-2019; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-002",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of IT organizations creating customer- and ecosystem-facing services will be 65 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 survey of IT organizations creating customer- and ecosystem-facing services; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-003",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of CIOs kept from DX leadership roles will be 40 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2016-2017 survey of CIOs kept from DX leadership by lack of vision or credibility; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-004",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of CIOs embracing an innovation-cycle leadership approach will be 75 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 CIO survey of 'Leading in 3D' adoption; the behaviour is IDC's own construct.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-005",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of CIOs advancing DX through links with LOB technology teams will be 40 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 CIO survey on organizational linkages with LOB technology teams; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-006",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of bimodal IT organizations accumulating crippling technical debt will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 survey of bimodal IT organizations with 'crippling' technical debt; none public, and 'crippling' has no threshold.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-007",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of CIOs shifting primary focus from physical to digital will be 45 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 CIO survey of shifting primary focus from physical to digital; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-008",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of CIOs focusing on platformization with DevOps will be 45 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 CIO survey of platformization with DevOps as focus; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-009",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of IT organizations shifting to a start-up-like culture will be 70 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 survey of IT organizations shifting to a start-up-like culture; none public (agile adoption surveys such as VersionOne/Digital.ai measure agile use, not culture shift, and a self-selected sample).",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2016-010",
+   "verdict": "ungradable",
+   "reading": "By 2017, share of CIOs helping drive global risk portfolios will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2016-2017 CIO survey of driving global risk portfolios; none public.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20161102005206/en/IDC-Reveals-Worldwide-CIO-Agenda-2017-Predictions",
+     "title": "IDC FutureScape press release (2016-11)",
+     "date": "2016-11",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-001",
+   "verdict": "ungradable",
+   "reading": "By 2021, share of global GDP digitized will be at least 50 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a measure of 'share of global GDP digitized' for 2020-2021; the quantity is an IDC attribution with no public statistical series (D23 attributed value).",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-002",
+   "verdict": "ungradable",
+   "reading": "By 2020, share of enterprises with a fully articulated DX platform strategy will be 60 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2019-2020 enterprise survey of a fully articulated DX platform strategy being implemented; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-003",
+   "verdict": "hit",
+   "reading": "By 2021, enterprise spending on cloud services plus cloud-enabling hardware, software and services ('whole cloud') will exceed $530 billion.",
+   "mainstream_test": "D16 numeric threshold: 2021 actual above $530B is a hit.",
+   "reason": "IDC trackers: public cloud services revenue $408.6B in 2021 and cloud infrastructure (compute and storage) $73.9B, together $482.5B before cloud-enabling software and professional/managed services; IDC's whole-cloud forecast of $1.3T by 2025 at 16.9% CAGR implies roughly $600-700B in 2021. Over $530B. Hit. The sub-claims (20% edge, 15% non-x86, 90% multicloud) are not graded.",
+   "evidence": [
+    {
+     "url": "https://techblog.comsoc.org/2022/07/02/idc-worldwide-public-cloud-services-revenues-grew-29-to-408-6-billion-in-2021/",
+     "title": "IDC: Worldwide Public Cloud Services Revenues Grew 29% to $408.6 Billion in 2021",
+     "date": "2022-07-02",
+     "shows": "Public cloud services revenue $408.6B in 2021."
+    },
+    {
+     "url": "https://techblog.comsoc.org/2022/04/12/idc-cloud-infrastructure-spending-13-5-yoy-in-4q-2021-to-21-1-billion-forecast-cagr-of-12-6-from-2021-2026/",
+     "title": "IDC: Cloud Infrastructure Spending +13.5% YoY in 4Q-2021",
+     "date": "2022-04-12",
+     "shows": "Full-year 2021 cloud infrastructure spending $73.9B."
+    },
+    {
+     "url": "https://www.digitalisationworld.com/news/62277/idc-forecasts-worldwide-whole-cloud-spending-to-reach-13-trillion-by-2025",
+     "title": "IDC forecasts worldwide 'Whole Cloud' spending to reach $1.3 trillion by 2025",
+     "date": "2021",
+     "shows": "IDC whole cloud (services, supply-chain hardware/software, professional and managed services) $1.3T by 2025."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-004",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of digital transformation initiatives using AI services will be 40 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 measure of the share of DX initiatives using AI services; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-005",
+   "verdict": "ungradable",
+   "reading": "By 2021, share of application development on cloud platforms using microservices and cloud functions will be 80 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2020-2021 measure of the share of PaaS application development using microservices and cloud functions; none public (CNCF surveys measure organizations using serverless, not share of development).",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-006",
+   "verdict": "ungradable",
+   "reading": "By 2020, share of field service techs using augmented reality will be 25 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2019-2020 measure of the share of field service technicians using AR; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-007",
+   "verdict": "ungradable",
+   "reading": "By 2021, share of G2000 using blockchain services will be at least 25 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2020-2021 survey of the G2000 using blockchain services as a trust foundation (Deloitte blockchain surveys sample executives across firm sizes and measure production deployment, not G2000).",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-008",
+   "verdict": "ungradable",
+   "reading": "By 2020, share of large enterprises generating revenue from data as a service will be 90 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2019-2020 survey of large enterprises generating data-as-a-service revenue; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-009",
+   "verdict": "ungradable",
+   "reading": "By 2021, share of business applications built by nontraditional developers will be 20 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2020-2021 measure of the share of business applications built by nontraditional developers; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-010",
+   "verdict": "ungradable",
+   "reading": "By 2021, share of G2000 with one-third of digital services interactions through open API ecosystems will be more than 50 % (more than half) (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2020-2021 measure of G2000 digital interactions coming through open API ecosystems; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-011",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of CIOs with experiential engagement, data monetization or digital business at scale at top of agenda will be 75 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 CIO survey of top agenda items matching the three IDC categories; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-012",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of CIOs and enterprises failing to meet all digital objectives will be 75 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 survey of CIOs failing to meet all digital objectives; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-013",
+   "verdict": "ungradable",
+   "reading": "By 2020, share of CIOs who crossed the digital divide prevailing as digital business leaders will be 60 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2019-2020 survey of CIOs who 'crossed the digital divide' becoming digital business leaders; the population is IDC-defined, no public measure.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-014",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of CIOs completing infrastructure and application re-platforming will be 60 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 CIO survey of completed infrastructure and application re-platforming; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-015",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of IT organizations deploying DX platforms will be 60 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 survey of IT organizations deploying DX platforms; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-016",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of CIOs refocusing cybersecurity on authentication and trust will be 75 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 CIO survey of refocusing cybersecurity on authentication and trust; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-017",
+   "verdict": "ungradable",
+   "reading": "By 2020, share of CIOs using vision- and mission-driven leadership will be 40 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2019-2020 CIO survey of vision- and mission-driven leadership; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-018",
+   "verdict": "ungradable",
+   "reading": "By 2019, share of CIOs adopting new digital governance models will be 40 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2018-2019 CIO survey of adopting new digital governance models; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  },
+  {
+   "id": "idc-futurescape-2017-019",
+   "verdict": "ungradable",
+   "reading": "By 2018, share of CIOs moving to a product model will be 70 % (the population and behaviour as IDC names them).",
+   "mainstream_test": "D23 share-of-organizations rule: gradable only against a public survey of the same population measuring the same behaviour in the target year or the year before; then D16 numeric (within 10% hit, 25% partial).",
+   "reason": "No public measure of the same quantity and population at the target year or the year before. Looked for a 2017-2018 CIO survey of moving to a product model with design thinking and DevOps; none public.",
+   "evidence": [
+    {
+     "url": "https://infotechlead.com/cio/cio-predictions-2018-ahead-digital-transformation-idc-51850",
+     "title": "IDC FutureScape press release (2017-10)",
+     "date": "2017-10",
+     "shows": "The claim as published; it names an IDC-defined behaviour and population with no public series attached."
+    }
+   ]
+  }
+ ]
+}

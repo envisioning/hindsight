@@ -1,0 +1,1343 @@
+{
+ "rule": "D16",
+ "rubric": "D23",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "ark-big-ideas-2017-002",
+   "verdict": "miss",
+   "reading": "An autonomous taxi ride in 2020 would cost the rider about USD 0.35 per mile all-in, half the USD 0.70 per mile of a personal car (chart 'All-in Cost Per Mile of Vehicle Services', bar 'Autonomous Taxi 2020').",
+   "mainstream_test": "D16 numeric: within 10% of the actual price per mile = hit, within 25% = partial.",
+   "reason": "The only paid autonomous taxi service around the target date, Waymo One in the Phoenix area, priced like conventional ride-hailing: a Reuters test ride at launch cost USD 7.59 for about 3 miles (about USD 2.5 per mile), and later comparisons still put Waymo above Uber and Lyft per mile. No service anywhere offered USD 0.35 per mile in 2019-2020. Actual is several times the forecast.",
+   "evidence": [
+    {
+     "url": "https://www.aol.com/finance/waymo-unveils-self-driving-taxi-160147521.html",
+     "title": "Waymo unveils self-driving taxi service in Arizona for paying customers (Reuters)",
+     "date": "2018-12-05",
+     "shows": "Waymo One launch; a 3-mile, 15-minute test ride cost USD 7.59, about USD 2.5 per mile."
+    },
+    {
+     "url": "https://techcrunch.com/2025/06/12/waymo-rides-cost-more-than-uber-or-lyft-and-people-are-paying-anyway",
+     "title": "Waymo rides cost more than Uber or Lyft, and people are paying anyway",
+     "date": "2025-06-12",
+     "shows": "Obi data: Waymo rides average more than Uber and Lyft per trip and per distance, confirming robotaxi pricing never approached USD 0.35 per mile."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2017-003",
+   "verdict": "hit",
+   "reading": "By 2022 the MSRP (excluding subsidies) of a 200-mile-range EV would be at or below the MSRP of a Toyota Camry, the comparator on the edition's chart.",
+   "mainstream_test": "Binary price comparison per the edition's chart: cheapest 200+-mile EV MSRP <= base Camry MSRP in 2022 = hit.",
+   "reason": "In June 2022 GM priced the 2023 Bolt EV (EPA 259 miles) at USD 26,595 including USD 995 destination; the 2023 Camry LE listed at USD 26,320 before about USD 1,095 destination (about USD 27,400 delivered). The cheapest 200-mile EV was at or slightly below the Camry in 2022. Caveat: the Bolt is a smaller car and the average EV still cost far more; graded on the chart's own comparison.",
+   "evidence": [
+    {
+     "url": "https://www.edmunds.com/chevrolet/bolt-ev/2023/msrp/",
+     "title": "2023 Chevy Bolt EV Prices (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Bolt EV 1LT from USD 26,595 including USD 995 destination, a USD 5,900 cut from the 2022 model."
+    },
+    {
+     "url": "https://www.edmunds.com/toyota/camry/2023/msrp/",
+     "title": "2023 Toyota Camry MSRP and Invoice Prices (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Camry LE base MSRP about USD 26,320, plus destination."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2017-004",
+   "verdict": "miss",
+   "reading": "Global annual EV (BEV+PHEV) sales would be about 17 million in 2022.",
+   "mainstream_test": "D16 numeric: within 10% of actual = hit, within 25% = partial.",
+   "reason": "IEA: global electric car sales were about 10 million in 2022 (13.5-14 million in 2023, 17 million in 2024). 17 million is about 70% above the 2022 actual.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2023/executive-summary",
+     "title": "Global EV Outlook 2023, executive summary (IEA)",
+     "date": "2023-04",
+     "shows": "Electric car sales exceeded 10 million in 2022."
+    },
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2025/trends-in-electric-car-markets-2",
+     "title": "Global EV Outlook 2025: trends in electric car markets (IEA)",
+     "date": "2025-05",
+     "shows": "Sales topped 17 million only in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2017-006",
+   "verdict": "miss",
+   "reading": "The global 3D printing (additive manufacturing) market would reach about USD 41 billion in 2020.",
+   "mainstream_test": "D16 numeric: within 10% of actual = hit, within 25% = partial.",
+   "reason": "Wohlers, the standard industry tracker: AM industry about USD 18.0 billion in 2022 after 18.3% growth in 2022 and 19.5% in 2021, which puts 2020 at about USD 12.7-12.8 billion. Forecast is over 3x the actual.",
+   "evidence": [
+    {
+     "url": "https://www.plasticsnews.com/news/wohlers-additive-manufacturing-grew-18-2022/",
+     "title": "Wohlers Report: Additive manufacturing grew 18% in 2022",
+     "date": "2023-03",
+     "shows": "AM industry about USD 18 billion in 2022, growth 18.3% (2022) and 19.5% (2021), implying about USD 12.7 billion in 2020."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2017-007",
+   "verdict": "miss",
+   "reading": "Smartphone users would equal 75% of world population in 2020.",
+   "mainstream_test": "Penetration level: within 10% of actual = hit, within 25% = partial (same verdict under a percentage-point test).",
+   "reason": "Estimates for 2020: Statista smartphone users about 34% of world population; GSMA mobile internet users (an upper bound, includes feature phones) about 51%. Median about 43%, spread under 2x. 75% is far above every estimate.",
+   "evidence": [
+    {
+     "url": "https://www.bankmycell.com/blog/how-many-phones-are-in-the-world",
+     "title": "How many smartphones are in the world (BankMyCell, citing Statista)",
+     "date": "2026",
+     "shows": "2020: 2.67 billion smartphone users, 34% of world population."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_web",
+     "title": "Mobile web (Wikipedia, citing GSMA)",
+     "date": "2025",
+     "shows": "About half of the world population (51-52%) used mobile internet around 2020."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2017-008",
+   "verdict": "ungradable",
+   "reading": "Global transaction value flowing through mobile payments would reach about USD 15 trillion in 2020 (from USD 1.1 trillion in 2015).",
+   "mainstream_test": "D16 numeric against the median of public estimates of global mobile payment value, if estimates agree within a factor of 2.",
+   "reason": "D23 range clause. Public estimates of mobile payment value differ by far more than 2x depending on scope: China alone recorded RMB 445 trillion (about USD 67 trillion) of bank plus non-bank mobile payments in 2018 and a forecast of RMB 777.5 trillion for 2020, while narrow consumer mobile-wallet measures (the scope implied by ARK's USD 1.1 trillion 2015 baseline) are in the low trillions of USD. No single public series matches ARK's scope.",
+   "evidence": [
+    {
+     "url": "https://www.globenewswire.com/news-release/2020/05/28/2040017/0/en/China-s-Mobile-Payment-Industry-2020-Mobile-Payment-Transactions-in-China-Forecast-to-Reach-RMB777-5-trillion-in-2020-Surging-by-31-8-on-an-Annualized-Basis.html",
+     "title": "China's Mobile Payment Industry 2020 (Research and Markets)",
+     "date": "2020-05-28",
+     "shows": "China mobile payments RMB 445.22 trillion in 2018 (all providers) vs RMB 277.4 trillion for bank mobile payments; RMB 777.5 trillion forecast for 2020. Estimates in China alone exceed ARK's global figure several-fold."
+    },
+    {
+     "url": "https://www.brookings.edu/wp-content/uploads/2020/04/FP_20200427_china_digital_payments_klein.pdf",
+     "title": "China's Digital Payments Revolution (Brookings, Aaron Klein)",
+     "date": "2020-04",
+     "shows": "Definitions of mobile/digital payment volume vary widely between bank, third-party and consumer-payment measures."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-001",
+   "verdict": "miss",
+   "reading": "The inflation-adjusted cost of point-to-point mobility would fall from USD 0.70 per mile (personal car, 2016) to USD 0.35 per mile in 2021, via autonomous taxis.",
+   "mainstream_test": "D16 numeric: within 10% of the actual cost per mile of the cheapest mainstream point-to-point mode = hit, within 25% = partial.",
+   "reason": "In 2021 the personal car still cost about USD 0.64-0.66 per mile all-in (AAA: nearly USD 10,000 a year at 15,000 miles); ride-hailing and the only robotaxi service (Waymo One, priced at or above Uber) cost well over USD 1 per mile. No point-to-point mode reached USD 0.35. Actual is nearly double the forecast or more.",
+   "evidence": [
+    {
+     "url": "https://newsroom.aaa.com/tag/your-driving-costs/",
+     "title": "AAA Your Driving Costs releases",
+     "date": "2021-08-19",
+     "shows": "2021: owning a new vehicle costs nearly USD 10,000 a year (about USD 0.65 per mile at 15,000 miles)."
+    },
+    {
+     "url": "https://www.aol.com/finance/waymo-unveils-self-driving-taxi-160147521.html",
+     "title": "Waymo unveils self-driving taxi service in Arizona for paying customers (Reuters)",
+     "date": "2018-12-05",
+     "shows": "Robotaxi fares about USD 2.5 per mile on a test ride, in line with ride-hailing."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-003",
+   "verdict": "hit",
+   "reading": "By 2022 the MSRP (excluding subsidies) of a 200-mile-range EV would be at or below that of a comparable gas car, the Toyota Camry on ARK's chart.",
+   "mainstream_test": "Binary price comparison per the chart: cheapest 200+-mile EV MSRP <= base Camry MSRP in 2022 = hit.",
+   "reason": "Same as the 2017 claim: 2023 Bolt EV (259 miles) priced in June 2022 at USD 26,595 delivered vs 2023 Camry LE about USD 26,320 plus about USD 1,095 destination. Parity reached in 2022 on the chart's comparison; the Bolt is a smaller car and average EV prices stayed higher.",
+   "evidence": [
+    {
+     "url": "https://www.edmunds.com/chevrolet/bolt-ev/2023/msrp/",
+     "title": "2023 Chevy Bolt EV Prices (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Bolt EV 1LT USD 26,595 including destination."
+    },
+    {
+     "url": "https://www.edmunds.com/toyota/camry/2023/msrp/",
+     "title": "2023 Toyota Camry MSRP (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Camry LE base MSRP about USD 26,320 before destination."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-004",
+   "verdict": "miss",
+   "reading": "Global annual EV sales would be about 17 million in 2022.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "IEA: just over 10 million electric cars sold in 2022. Forecast about 70% too high.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2023/executive-summary",
+     "title": "Global EV Outlook 2023, executive summary (IEA)",
+     "date": "2023-04",
+     "shows": "Electric car sales exceeded 10 million in 2022."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-006",
+   "verdict": "ungradable",
+   "reading": "The average unit cost of an industrial robot would fall to about USD 11,000 (2015 dollars) by 2025.",
+   "mainstream_test": "D16 numeric against a public series of average industrial robot unit price.",
+   "reason": "D23 same-quantity clause. IFR, the industry tracker, publishes unit installations (542,000 in 2024; 575,000 projected for 2025) but no average unit price series for 2024-2025; deriving price from market value over units would be a proxy, and no current market value is published. No public measure of the quantity.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "World Robotics 2025 press release (IFR)",
+     "date": "2025-09-25",
+     "shows": "Reports units installed (542,000 in 2024) and regional splits; no average unit price."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-007",
+   "verdict": "miss",
+   "reading": "Global industrial robot unit sales would grow at about 19% a year to 2025 (chart starts 2014; start year not stated).",
+   "mainstream_test": "D18 rate test (percentage points): within 0.5 pt = hit, within 1.0 pt = partial. Measured with IFR installations to 2024 (year before target) and IFR's 2025 projection.",
+   "reason": "IFR installations: about 221,000 in 2014 ('more than doubled' to 542,000 in 2024), about 294,000 in 2016, 575,000 projected for 2025. CAGR 2014-2025 about 9%, 2016-2024 about 8%. About 10 points below the forecast under any start year.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "World Robotics 2025 press release (IFR)",
+     "date": "2025-09-25",
+     "shows": "542,000 installations in 2024, more than double 2014; 575,000 projected for 2025."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-008",
+   "verdict": "miss",
+   "reading": "Collaborative robot unit sales would grow about 50% a year from 2016 to 2025.",
+   "mainstream_test": "D18 rate test: within 0.5 pt = hit, within 1.0 pt = partial.",
+   "reason": "IFR: cobot installations grew from 11,100 in 2017 to 64,500 in 2024, a CAGR of about 29%; share of all installations rose from 2.8% to about 11.9%. Roughly 20 points below 50%.",
+   "evidence": [
+    {
+     "url": "https://robotnik.eu/industrial-robotics-in-2025-trends-figures-and-global-outlook/",
+     "title": "Industrial robotics in 2025: trends, figures, and global outlook (citing IFR World Robotics 2025)",
+     "date": "2025",
+     "shows": "Cobot installations 11,100 (2017) to 64,500 (2024); share 2.8% to about 11.9%."
+    },
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "World Robotics 2025 press release (IFR)",
+     "date": "2025-09-25",
+     "shows": "Total installations 542,000 in 2024; cobot chart 2017-2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-010",
+   "verdict": "miss",
+   "reading": "By 2022 the cost of sequencing a whole human genome would drop below USD 100.",
+   "mainstream_test": "Upper-bound numeric: actual at or below USD 100 (or within 10%) = hit, within 25% = partial.",
+   "reason": "NHGRI cost-per-genome series: about USD 525 in early-mid 2022 (USD 552 late 2021). Illumina's NovaSeq X (USD ~200 claim) shipped only in 2023; Ultima's USD 100 genome was not commercially available in 2022. Actual about 5x the bound.",
+   "evidence": [
+    {
+     "url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data",
+     "title": "DNA Sequencing Costs: Data (NHGRI)",
+     "date": "2023-05-16",
+     "shows": "Data table (May 2022): cost per genome about USD 525 in 2022, USD 552 in Q4 2021."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-011",
+   "verdict": "ungradable",
+   "reading": "About 170 million human genomes would have been sequenced cumulatively by 2022.",
+   "mainstream_test": "D16 numeric against a public count of cumulative human genomes sequenced.",
+   "reason": "D23 same-quantity clause. No statistics office, consortium or industry tracker publishes a cumulative count of human genomes sequenced (whole-genome or otherwise); NHGRI tracks cost, not volume; vendor statements are not a series. Looked for NHGRI, Illumina disclosures and genomics consortia counts.",
+   "evidence": [
+    {
+     "url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data",
+     "title": "DNA Sequencing Costs: Data (NHGRI)",
+     "date": "2023-05-16",
+     "shows": "NHGRI tracks cost per genome only; no count of genomes sequenced."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-012",
+   "verdict": "ungradable",
+   "reading": "CRISPR would add about USD 170 billion of revenue to the global agricultural market by 2025.",
+   "mainstream_test": "D16 numeric against a public measure of agricultural revenue attributable to CRISPR.",
+   "reason": "D23 attributed-value clause: incremental agricultural revenue created by CRISPR is not measured by any public source (FAO, USDA, industry trackers). Commercial gene-edited crops remained a handful of niche products by 2025.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Genome_editing",
+     "title": "Genome editing (Wikipedia)",
+     "date": "2025",
+     "shows": "Gene-edited crops commercialised are few (e.g., high-oleic soybean oil, GABA tomato); no measure of revenue attributable to CRISPR in agriculture."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-013",
+   "verdict": "ungradable",
+   "reading": "CRISPR-driven productivity gains would let agriculture feed about 800 million additional people by 2025.",
+   "mainstream_test": "D16 numeric against a public measure of people fed attributable to CRISPR yield gains.",
+   "reason": "D23 attributed-value clause: no FAO, USDA or other public source measures calories or people fed attributable to CRISPR-edited crops. Gene-edited crops remained niche through 2025.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Genome_editing",
+     "title": "Genome editing (Wikipedia)",
+     "date": "2025",
+     "shows": "Only a handful of gene-edited crops commercialised; no attribution of food supply or yield to CRISPR is published."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-014",
+   "verdict": "ungradable",
+   "reading": "Global mobile value transfers would reach about USD 30 trillion in 2022, China about 65%.",
+   "mainstream_test": "D16 numeric against the median of public estimates of global mobile payment value, if they agree within 2x.",
+   "reason": "D23 range clause: estimates of mobile payment value differ by far more than 2x with scope (China all-provider mobile payments RMB 445 trillion, about USD 67 trillion, already in 2018; bank-only RMB 277 trillion; consumer mobile-wallet measures in the low USD trillions). No public series matches ARK's scope.",
+   "evidence": [
+    {
+     "url": "https://www.globenewswire.com/news-release/2020/05/28/2040017/0/en/China-s-Mobile-Payment-Industry-2020-Mobile-Payment-Transactions-in-China-Forecast-to-Reach-RMB777-5-trillion-in-2020-Surging-by-31-8-on-an-Annualized-Basis.html",
+     "title": "China's Mobile Payment Industry 2020 (Research and Markets)",
+     "date": "2020-05-28",
+     "shows": "China mobile payments RMB 445.22 trillion (2018, all providers) vs RMB 277.4 trillion (bank mobile); scope drives a several-fold spread."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2018-015",
+   "verdict": "miss",
+   "reading": "The global 3D printing market would reach about USD 65 billion in 2022.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Wohlers: AM industry about USD 18.0 billion in 2022 (18.3% growth). Forecast about 3.6x actual.",
+   "evidence": [
+    {
+     "url": "https://www.plasticsnews.com/news/wohlers-additive-manufacturing-grew-18-2022/",
+     "title": "Wohlers Report: Additive manufacturing grew 18% in 2022",
+     "date": "2023-03",
+     "shows": "Global AM industry about USD 18 billion in 2022."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-003",
+   "verdict": "ungradable",
+   "reading": "If a digital wallet customer were valued like a bank customer (median USD 3,400 per US demand deposit), digital wallet providers could be worth about USD 700 billion in 2023.",
+   "mainstream_test": "Conditional valuation; graded only if the condition held (D23).",
+   "reason": "D23 conditional and attributed-value clauses: the condition (markets valuing wallet customers at bank-customer value) is a hypothetical valuation assumption, not an observable event, and the value of 'digital wallet providers' as a category (PayPal, Block, Apple, Amazon) is not separately measured. Not gradable.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/Big-Ideas-2019-ARKInvest.pdf",
+     "title": "Big Ideas 2019 (ARK Invest), digital wallets slide",
+     "date": "2019-01",
+     "shows": "Figure stated as 'If the value of a digital wallet customer were that of a bank customer'; computed from ARK's 200 million customers estimate."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-004",
+   "verdict": "miss",
+   "reading": "There would be about 200 million digital wallet customers in the US in 2023 (US scope from the slide's US bank/FDIC context and the 2020 edition's US series).",
+   "mainstream_test": "D16 numeric against the median of public estimates of US digital wallet users: within 10% = hit, within 25% = partial.",
+   "reason": "eMarketer: US mobile P2P payment app users about 159 million in 2023 (169.6 million in 2024 after 6.7% growth); US proximity mobile payment users about 115 million in 2023. Median about 137 million, spread under 2x. 200 million is about 46% above the median and 26% above even the higher P2P estimate.",
+   "evidence": [
+    {
+     "url": "https://www.emarketer.com/content/p2p-transaction-value-growth-outpaces-user-growth",
+     "title": "P2P transaction value growth will rapidly outpace user growth (eMarketer)",
+     "date": "2024",
+     "shows": "169.6 million US mobile P2P payment users in 2024, 6.7% user growth (about 159 million in 2023)."
+    },
+    {
+     "url": "https://www.emarketer.com/content/mobile-proximity-payments-entering-mainstream",
+     "title": "Mobile proximity payments are entering the mainstream (eMarketer)",
+     "date": "2023",
+     "shows": "About 114.8 million US proximity mobile payment users in 2023."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-005",
+   "verdict": "ungradable",
+   "reading": "Global mobile value transfers would reach about USD 55 trillion in 2022, China about 80%.",
+   "mainstream_test": "D16 numeric against the median of public estimates of global mobile payment value, if they agree within 2x.",
+   "reason": "D23 range clause: public estimates of mobile payment value span far more than 2x by scope (China all-provider mobile payments about USD 67 trillion already in 2018 vs bank-only about USD 42 trillion vs consumer mobile-wallet measures in the low USD trillions). No series matches ARK's scope.",
+   "evidence": [
+    {
+     "url": "https://www.globenewswire.com/news-release/2020/05/28/2040017/0/en/China-s-Mobile-Payment-Industry-2020-Mobile-Payment-Transactions-in-China-Forecast-to-Reach-RMB777-5-trillion-in-2020-Surging-by-31-8-on-an-Annualized-Basis.html",
+     "title": "China's Mobile Payment Industry 2020 (Research and Markets)",
+     "date": "2020-05-28",
+     "shows": "China mobile payments RMB 445.22 trillion (2018, all providers) vs RMB 277.4 trillion (bank mobile); RMB 777.5 trillion forecast for 2020."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-006",
+   "verdict": "miss",
+   "reading": "Global annual EV sales would exceed 26 million (26.4 million) in 2023.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "IEA: about 14 million electric cars sold in 2023 (17 million in 2024 after 25% growth). Forecast about 90% above actual.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2025/trends-in-electric-car-markets-2",
+     "title": "Global EV Outlook 2025 (IEA)",
+     "date": "2025-05",
+     "shows": "17 million in 2024, up more than 25% (about 13.5-14 million in 2023)."
+    },
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-batteries",
+     "title": "Global EV Outlook 2024: trends in EV batteries (IEA)",
+     "date": "2024-04",
+     "shows": "2023 battery demand growth driven by EV sales of about 14 million."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-007",
+   "verdict": "miss",
+   "reading": "Annual battery demand from EVs would reach about 1,300 GWh (1.3 billion kWh) in 2023.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "IEA: EV battery demand was a little over 750 GWh in 2023 (up 40%). Forecast about 70% above actual.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-electric-vehicle-batteries",
+     "title": "Global EV Outlook 2024: trends in EV batteries (IEA)",
+     "date": "2024-04",
+     "shows": "EV battery demand reached 750+ GWh in 2023."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-008",
+   "verdict": "hit",
+   "reading": "By 2022 a 200-mile-range EV would have an MSRP (excl. subsidies) at or below a comparable gas car, the Toyota Camry on the chart.",
+   "mainstream_test": "Binary price comparison per the chart: cheapest 200+-mile EV MSRP <= base Camry MSRP in 2022 = hit.",
+   "reason": "2023 Bolt EV (259 miles) priced in June 2022 at USD 26,595 delivered vs 2023 Camry LE about USD 26,320 plus about USD 1,095 destination. Parity met in 2022 on the chart's comparison; the slide's broader 2025 'every price point' line is not graded here.",
+   "evidence": [
+    {
+     "url": "https://www.edmunds.com/chevrolet/bolt-ev/2023/msrp/",
+     "title": "2023 Chevy Bolt EV Prices (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Bolt EV 1LT USD 26,595 including destination."
+    },
+    {
+     "url": "https://www.edmunds.com/toyota/camry/2023/msrp/",
+     "title": "2023 Toyota Camry MSRP (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Camry LE base MSRP about USD 26,320 before destination."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-009",
+   "verdict": "miss",
+   "reading": "The levelized cost of utility-scale energy storage would fall to about USD 0.08 per kWh by 2023, below a gas peaker (USD 0.14).",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Lazard LCOE+ (April 2023), the standard public benchmark: unsubsidized LCOS of a 100 MW / 4-hour standalone utility-scale battery USD 170-296 per MWh (USD 0.17-0.30 per kWh); even subsidized USD 124-226. Low end is about 2x the forecast.",
+   "evidence": [
+    {
+     "url": "https://www.lazard.com/media/nltb551p/lazards-lcoeplus-april-2023.pdf",
+     "title": "Lazard LCOE+ April 2023",
+     "date": "2023-04",
+     "shows": "Utility-scale 100 MW/4h standalone storage LCOS USD 170-296/MWh unsubsidized."
+    },
+    {
+     "url": "https://www.energy-storage.news/lazard-ira-brings-lcos-of-100mw-4-hour-standalone-bess-down-as-low-as-us124-mwh/",
+     "title": "Lazard: IRA brings LCOS of 100MW, 4-hour standalone BESS down as low as US$124/MWh",
+     "date": "2023-04",
+     "shows": "Unsubsidized USD 170-296/MWh; subsidized from USD 124/MWh."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-010",
+   "verdict": "ungradable",
+   "reading": "At scale, autonomous taxis would cost consumers about USD 0.26 per mile, placed at 2021 on the chart.",
+   "mainstream_test": "Conditional numeric (D23): graded only if autonomous taxis operated at scale by the target year.",
+   "reason": "D23 conditional clause; the quote says 'at scale', the rubric's own example. The condition did not hold in 2020-2021: the only paid driverless service (Waymo One, Phoenix suburbs) ran a small fleet in one metro, priced like ride-hailing (about USD 2.5 per mile on a Reuters test ride). Condition named: robotaxis at scale.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Robotaxi",
+     "title": "Robotaxi (Wikipedia)",
+     "date": "2026",
+     "shows": "In 2020-2021 driverless paid service was limited to Waymo's small Phoenix-area fleet; no robotaxi network at scale."
+    },
+    {
+     "url": "https://www.aol.com/finance/waymo-unveils-self-driving-taxi-160147521.html",
+     "title": "Waymo unveils self-driving taxi service in Arizona for paying customers (Reuters)",
+     "date": "2018-12-05",
+     "shows": "Waymo One fares in line with ride-hailing (USD 7.59 for about 3 miles)."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-011",
+   "verdict": "ungradable",
+   "reading": "If Tesla's fleet became autonomous and all eligible vehicles joined the Tesla Network, US autonomous adoption could reach 8% of urban miles in 2020.",
+   "mainstream_test": "Conditional (D23): graded only if the condition held by 2020.",
+   "reason": "D23 conditional clause. Condition named: Tesla's fleet becoming autonomous and joining a Tesla Network. It did not happen in 2020 (Tesla launched no driverless ride-hailing service until a small supervised pilot in Austin in 2025).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Robotaxi",
+     "title": "Robotaxi (Wikipedia)",
+     "date": "2026",
+     "shows": "Tesla's robotaxi service started only as a limited pilot in Austin in June 2025; no Tesla Network in 2020."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-018",
+   "verdict": "miss",
+   "reading": "Global next-generation sequencing revenue would reach about USD 20 billion in 2023 (from about USD 4 billion in 2018).",
+   "mainstream_test": "D16 numeric against the median of public NGS market estimates: within 10% = hit, within 25% = partial.",
+   "reason": "2023 NGS market estimates: Allied USD 13.0 billion, SNS Insider USD 8.3 billion, Introspective USD 8.35 billion, Vision Research USD 8.43 billion; median about USD 8.4 billion, spread 1.6x. Forecast about 2.4x the median; even the highest estimate is 35% below.",
+   "evidence": [
+    {
+     "url": "https://www.alliedmarketresearch.com/next-generation-sequencing-market",
+     "title": "Next Generation Sequencing Market (Allied Market Research)",
+     "date": "2024",
+     "shows": "Global NGS market USD 12.98 billion in 2023."
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2024/09/19/2949079/0/en/Next-Generation-Sequencing-Market-Size-to-Surpass-USD-50-Billion-by-2032-Driven-by-a-22-CAGR-SNS-Insider.html",
+     "title": "NGS Market Size to Surpass USD 50 Billion by 2032 (SNS Insider)",
+     "date": "2024-09-19",
+     "shows": "Global NGS market USD 8.3 billion in 2023."
+    },
+    {
+     "url": "https://introspectivemarketresearch.com/reports/next-generation-sequencing-market/",
+     "title": "NGS Market Report (Introspective Market Research)",
+     "date": "2024",
+     "shows": "USD 8.35 billion in 2023, USD 10.16 billion in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-019",
+   "verdict": "ungradable",
+   "reading": "The average selling price of a whole-genome sequence would be about USD 200 in 2023.",
+   "mainstream_test": "D16 numeric against a public series of the average price per whole genome.",
+   "reason": "D23 same-quantity clause. NHGRI's cost-per-genome series ends in 2022 (about USD 525) with nothing for 2022-2023 beyond that point; vendor claims (Illumina NovaSeq X 'USD 200 genome' launched 2023) are list consumable cost on one platform at full throughput, a different quantity from an average selling price across the market. No public measure of the average price in 2022-2023.",
+   "evidence": [
+    {
+     "url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data",
+     "title": "DNA Sequencing Costs: Data (NHGRI)",
+     "date": "2023-05-16",
+     "shows": "Series ends mid-2022 at about USD 525 per genome; no 2023 data."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-020",
+   "verdict": "miss",
+   "reading": "Global industrial robot unit sales would reach about 3.4 million in 2025.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "IFR: 542,000 installations in 2024, 575,000 projected for 2025. Forecast about 6x actual.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "World Robotics 2025 press release (IFR)",
+     "date": "2025-09-25",
+     "shows": "542,000 units installed in 2024; 575,000 forecast for 2025."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-021",
+   "verdict": "ungradable",
+   "reading": "The average unit cost of an industrial robot would fall to about USD 11,000 (2017 dollars) in 2025.",
+   "mainstream_test": "D16 numeric against a public series of average industrial robot unit price.",
+   "reason": "D23 same-quantity clause: IFR publishes unit installations, not average unit price, and no current market-value series exists; a value-over-units derivation would be a proxy. Looked for IFR and industry tracker price series for 2024-2025.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "World Robotics 2025 press release (IFR)",
+     "date": "2025-09-25",
+     "shows": "Unit counts only; no average price per robot."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2019-022",
+   "verdict": "miss",
+   "reading": "The global 3D printing market would reach about USD 94 billion in 2023.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Wohlers: USD 21.8 billion in 2024 after 9.1% growth, so about USD 20.0 billion in 2023. Forecast about 4.7x actual.",
+   "evidence": [
+    {
+     "url": "https://wohlersassociates.com/news/wohlers-report-2025-shows-9-1-am-industry-growth/",
+     "title": "Wohlers Report 2025 shows 9.1% AM industry growth",
+     "date": "2025-04",
+     "shows": "Global AM industry USD 21.8 billion in 2024, up 9.1% (about USD 20.0 billion in 2023)."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-001",
+   "verdict": "miss",
+   "reading": "Global AI accelerator chip revenue would grow at 36% a year from USD 4 billion (2019) to about USD 18 billion in 2024.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Nvidia alone reported data center revenue of USD 115.2 billion for fiscal 2025 (Feb 2024-Jan 2025), overwhelmingly AI accelerators; AMD, Google TPU and others add more. Actual is more than 6x the forecast (a miss on the low side).",
+   "evidence": [
+    {
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+     "title": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2025",
+     "date": "2025-02-26",
+     "shows": "Full-year data center revenue USD 115.2 billion, up 142%."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-003",
+   "verdict": "ungradable",
+   "reading": "Total streaming revenue (video: SVOD, ad-supported, user-generated; audio; game: live and cloud) would grow from about USD 86 billion in 2019 to about USD 390 billion in 2024.",
+   "mainstream_test": "D16 numeric against a public measure of the same composite.",
+   "reason": "D23 same-quantity and range clauses: no public series measures ARK's composite. Building it requires attributing revenue of platforms such as YouTube, TikTok/Douyin and Chinese live-streaming to 'user-generated video streaming', and that choice moves the total from roughly USD 200 billion to over USD 300 billion (Netflix alone USD 39 billion, YouTube ads USD 36 billion, recorded music streaming USD 20 billion in 2024), a span that decides between miss and partial. Not gradable without a measure of the named quantity.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/Big%20Ideas%202020-Final_011020.pdf",
+     "title": "Big Ideas 2020 (ARK Invest), streaming chart",
+     "date": "2020-01",
+     "shows": "Composite of SVOD, ad-supported, user-generated video, audio streaming, live and cloud game streaming."
+    },
+    {
+     "url": "https://www.ifpi.org/global-music-report-2025/",
+     "title": "IFPI Global Music Report 2025",
+     "date": "2025-03",
+     "shows": "Recorded music streaming revenue about USD 20.4 billion in 2024, one component only."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-004",
+   "verdict": "ungradable",
+   "reading": "Global ad revenue of OTT streaming services (ARK's 'OTT Services' share of TV advertising, Zenith-based chart) would rise from nearly USD 6 billion in 2019 to about USD 44 billion in 2024.",
+   "mainstream_test": "D16 numeric against the median of public estimates of global OTT/streaming TV ad revenue.",
+   "reason": "D23 range clause: public estimates differ by more than 2x with scope (US national streaming TV about USD 10 billion per Magna; US CTV in total roughly USD 25-30 billion; global estimates including or excluding YouTube range from tens of billions to well above USD 60 billion). ARK's baseline excludes YouTube but no public series uses that scope.",
+   "evidence": [
+    {
+     "url": "https://www.nexttv.com/news/magna-sees-national-tv-ad-revenue-down-47-in-2024",
+     "title": "Magna Sees National TV Ad Revenue Down 4.7% In 2024",
+     "date": "2024-03",
+     "shows": "US national streaming (AVOD, CTV, FAST) about USD 10 billion in 2024; one scope of many."
+    },
+    {
+     "url": "https://www.hollywoodreporter.com/business/business-news/global-advertising-revenue-1-trillion-linear-tv-decline-1236079668/",
+     "title": "Global Advertising Revenue Is Recovering, Except for Linear TV (GroupM)",
+     "date": "2024-12",
+     "shows": "Global streaming TV ad revenue reported under scopes different from ARK's chart."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-005",
+   "verdict": "partial",
+   "reading": "US music streaming revenue would grow from about USD 8 billion in 2019 to about USD 18 billion in 2024 (RIAA retail-value basis, which matches ARK's 2019 baseline of about USD 8.8 billion).",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "RIAA: US streaming revenue USD 14.9 billion in 2024 (84% of USD 17.7 billion). Forecast is 21% above actual: partial.",
+   "evidence": [
+    {
+     "url": "https://www.riaa.com/reports/2024-year-end-music-industry-revenue-report-riaa/",
+     "title": "2024 Year-End Music Industry Revenue Report (RIAA)",
+     "date": "2025-03",
+     "shows": "US streaming revenue USD 14.9 billion in 2024, up 4%; total USD 17.7 billion."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-006",
+   "verdict": "miss",
+   "reading": "Global cloud gaming revenue would grow from about USD 263 million in 2019 to USD 13.5 billion in 2024 (6.3% of a USD 216 billion game market).",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Newzoo, the tracker behind ARK's game-market figures, put cloud gaming at USD 1.5 billion in 2021 and expected about USD 6.3-6.5 billion in 2024; the overall 2024 games market came in at USD 182.7 billion, below projections, so the realised cloud figure is no higher. Forecast is at least 2x the best available estimate.",
+   "evidence": [
+    {
+     "url": "https://gameworldobserver.com/2022/04/07/newzoo-cloud-gaming-global-revenues-to-quadruple-to-6-3-billion-by-2024",
+     "title": "Newzoo: cloud gaming global revenues to quadruple to $6.3 billion by 2024",
+     "date": "2022-04-07",
+     "shows": "Cloud gaming USD 1.5 billion in 2021; about USD 6.3 billion expected in 2024."
+    },
+    {
+     "url": "https://gameworldobserver.com/2025/06/26/newzoo-in-2024-the-global-video-game-market-generated-182-7-billion-which-is-below-projections",
+     "title": "Newzoo: in 2024 the global video game market generated $182.7 billion",
+     "date": "2025-06-26",
+     "shows": "Total 2024 games market USD 182.7 billion vs ARK's USD 216 billion."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-007",
+   "verdict": "miss",
+   "reading": "Global EV sales would reach about 37 million units in 2024 (the headline forecast; the slide's 'if automakers scale production' is the forecast's own mechanism, not an external condition).",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "IEA: electric car sales topped 17 million in 2024. Forecast more than 2x actual.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2025/trends-in-electric-car-markets-2",
+     "title": "Global EV Outlook 2025 (IEA)",
+     "date": "2025-05",
+     "shows": "Electric car sales topped 17 million worldwide in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-008",
+   "verdict": "hit",
+   "reading": "A 250-mile-range EV would reach MSRP parity with or undercut a Toyota Camry, with the chart's cross-over between 2020 and 2022.",
+   "mainstream_test": "Binary price comparison per the chart: cheapest 250+-mile EV MSRP <= base Camry MSRP by 2022 = hit.",
+   "reason": "In June 2022 the 2023 Chevrolet Bolt EV (EPA 259 miles) was priced at USD 26,595 delivered, below the 2023 Camry LE (about USD 26,320 plus about USD 1,095 destination). Cross-over occurred in 2022 on the chart's comparison; the Bolt is smaller than a Camry.",
+   "evidence": [
+    {
+     "url": "https://www.edmunds.com/chevrolet/bolt-ev/2023/msrp/",
+     "title": "2023 Chevy Bolt EV Prices (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Bolt EV 1LT USD 26,595 including destination; 259-mile EPA range."
+    },
+    {
+     "url": "https://www.edmunds.com/toyota/camry/2023/msrp/",
+     "title": "2023 Toyota Camry MSRP (Edmunds)",
+     "date": "2022",
+     "shows": "2023 Camry LE base MSRP about USD 26,320 before destination."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-009",
+   "verdict": "ungradable",
+   "reading": "Automation would add about USD 800 billion to US GDP by 2024.",
+   "mainstream_test": "D16 numeric against a public measure of US GDP attributable to automation.",
+   "reason": "D23 attributed-value clause: BEA and other statistical agencies do not measure GDP added by automation; no public source attributes a dollar figure for 2023-2024.",
+   "evidence": [
+    {
+     "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+     "title": "Gross Domestic Product (BEA)",
+     "date": "2026",
+     "shows": "GDP published by industry and expenditure; no attribution to automation."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-011",
+   "verdict": "ungradable",
+   "reading": "The average industrial robot unit price would fall to about USD 13,000 in 2024.",
+   "mainstream_test": "D16 numeric against a public series of average industrial robot unit price.",
+   "reason": "D23 same-quantity clause: no public series of average industrial robot price for 2023-2024; IFR reports units only. Value-over-units derivations would be a proxy and no current market value series is published.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "World Robotics 2025 press release (IFR)",
+     "date": "2025-09-25",
+     "shows": "Unit installations only; no unit price."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-012",
+   "verdict": "miss",
+   "reading": "Global industrial robot unit sales would quadruple from about 420,000 in 2018 to about 1.6 million in 2024.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "IFR: 542,000 installations in 2024. Forecast about 3x actual.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "World Robotics 2025 press release (IFR)",
+     "date": "2025-09-25",
+     "shows": "542,000 industrial robots installed in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-013",
+   "verdict": "miss",
+   "reading": "The global 3D printing market would grow from USD 10 billion (2018) to about USD 97 billion in 2024.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Wohlers: USD 21.8 billion in 2024. Forecast about 4.4x actual.",
+   "evidence": [
+    {
+     "url": "https://wohlersassociates.com/news/wohlers-report-2025-shows-9-1-am-industry-growth/",
+     "title": "Wohlers Report 2025 shows 9.1% AM industry growth",
+     "date": "2025-04",
+     "shows": "Global AM industry USD 21.8 billion in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-014",
+   "verdict": "ungradable",
+   "reading": "The 10-year net present value of autonomous ride-hailing cash flows would reach about USD 5 trillion by 2024.",
+   "mainstream_test": "D16 numeric against a public measure of the NPV of autonomous ride-hailing cash flows.",
+   "reason": "D23 attributed-value clause: an NPV of a sector's projected cash flows is a model output, not measured by any public source; market values of Alphabet, Tesla and others do not isolate it.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Robotaxi",
+     "title": "Robotaxi (Wikipedia)",
+     "date": "2026",
+     "shows": "Autonomous ride-hailing in 2024 limited to a few operators and cities; no public valuation of sector cash flows."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-016",
+   "verdict": "ungradable",
+   "reading": "At scale, autonomous taxis would cost consumers about USD 0.25 per mile (2019 dollars), placed at 2024 on the chart.",
+   "mainstream_test": "Conditional numeric (D23): graded only if robotaxis operated at scale by 2024.",
+   "reason": "D23 conditional clause; condition named: robotaxis at scale. In 2024 driverless ride-hailing ran in a handful of cities (Waymo in Phoenix, San Francisco, Los Angeles; Baidu in Wuhan), a negligible share of trips, not the at-scale networks ARK modelled. Observed Waymo fares stayed above Uber and Lyft (about USD 20 per average ride in 2025), but the stated figure is conditional and is not graded as a miss.",
+   "evidence": [
+    {
+     "url": "https://techcrunch.com/2025/06/12/waymo-rides-cost-more-than-uber-or-lyft-and-people-are-paying-anyway",
+     "title": "Waymo rides cost more than Uber or Lyft, and people are paying anyway",
+     "date": "2025-06-12",
+     "shows": "Waymo average fare about USD 20.43 vs Uber USD 15.58 and Lyft USD 14.44; service confined to a few cities."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Robotaxi",
+     "title": "Robotaxi (Wikipedia)",
+     "date": "2026",
+     "shows": "Robotaxi deployment in 2024 limited to a few cities."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-022",
+   "verdict": "miss",
+   "reading": "Global NGS revenue would grow 43% a year from USD 3.5 billion (2019) to about USD 21 billion in 2024.",
+   "mainstream_test": "D16 numeric against the median of public NGS market estimates: within 10% = hit, within 25% = partial.",
+   "reason": "2024 NGS market estimates: Polaris USD 10.4 billion, Introspective USD 10.16 billion, Intelevo USD 10.3 billion, Market Data Forecast USD 6.06 billion; median about USD 10.2 billion, spread 1.7x. Forecast about 2x the median.",
+   "evidence": [
+    {
+     "url": "https://www.polarismarketresearch.com/industry-analysis/next-generation-sequencing-ngs-market",
+     "title": "NGS Market Size (Polaris Market Research)",
+     "date": "2025",
+     "shows": "USD 10.4 billion in 2024."
+    },
+    {
+     "url": "https://introspectivemarketresearch.com/reports/next-generation-sequencing-market/",
+     "title": "NGS Market Report (Introspective Market Research)",
+     "date": "2025",
+     "shows": "USD 10.16 billion in 2024."
+    },
+    {
+     "url": "https://www.marketdataforecast.com/market-reports/next-generation-sequencing-market",
+     "title": "NGS Market Size (Market Data Forecast)",
+     "date": "2025",
+     "shows": "USD 6.06 billion in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-023",
+   "verdict": "ungradable",
+   "reading": "Whole human genomes sequenced per year would rise from about 2.6 million (2019) to about 105 million in 2024.",
+   "mainstream_test": "D16 numeric against a public count of whole human genomes sequenced per year.",
+   "reason": "D23 same-quantity clause: no public series counts whole human genomes sequenced per year worldwide; NHGRI tracks cost only and vendors do not disclose genome counts. Deriving a count from vendor revenue divided by price would be a proxy, which D23 excludes.",
+   "evidence": [
+    {
+     "url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data",
+     "title": "DNA Sequencing Costs: Data (NHGRI)",
+     "date": "2023-05-16",
+     "shows": "Cost-per-genome series only; no count of genomes sequenced."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-024",
+   "verdict": "ungradable",
+   "reading": "The average price to sequence a whole human genome would fall to about USD 200 by 2024.",
+   "mainstream_test": "D16 numeric against a public series of the average price per whole genome.",
+   "reason": "D23 same-quantity clause: NHGRI's cost-per-genome series stops in mid-2022 (about USD 525); for 2023-2024 only vendor list claims exist (Illumina NovaSeq X about USD 200, Ultima about USD 100), which are consumable costs on one platform at full throughput, not an average price across the market. No public measure of the named quantity.",
+   "evidence": [
+    {
+     "url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data",
+     "title": "DNA Sequencing Costs: Data (NHGRI)",
+     "date": "2023-05-16",
+     "shows": "Series ends mid-2022 at about USD 525; no 2023-2024 data."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-025",
+   "verdict": "ungradable",
+   "reading": "Better R&D efficiency could add about USD 9 trillion to the market capitalisation of therapeutics companies by 2024.",
+   "mainstream_test": "D16 numeric against a public measure of market cap added by R&D efficiency.",
+   "reason": "D23 attributed-value clause: the claim attributes market value to R&D efficiency gains; no public source measures that attribution. Total sector market cap would be a different quantity.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/Big%20Ideas%202020-Final_011020.pdf",
+     "title": "Big Ideas 2020 (ARK Invest), therapeutics slide",
+     "date": "2020-01",
+     "shows": "Footnote: market cap expectations based on expected incremental sales from R&D spend, a model attribution."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-026",
+   "verdict": "ungradable",
+   "reading": "If each US digital wallet user were valued at a bank's customer lifetime value (USD 3,650), US digital wallets could be worth about USD 800 billion by 2024.",
+   "mainstream_test": "Conditional valuation (D23): graded only if the condition held.",
+   "reason": "D23 conditional and attributed-value clauses: the condition is a hypothetical valuation per user, not an observable event; the value of 'digital wallets' is not separately measured within PayPal, Block, Apple or others.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/Big%20Ideas%202020-Final_011020.pdf",
+     "title": "Big Ideas 2020 (ARK Invest), digital wallets slide",
+     "date": "2020-01",
+     "shows": "'if every user were to be valued according to the lifetime value of traditional bank customers'."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2020-027",
+   "verdict": "miss",
+   "reading": "There would be about 220 million digital wallet users in the US in 2024 (chart 'Digital Wallet Users in the US', 27% CAGR).",
+   "mainstream_test": "D16 numeric against the median of public estimates of US digital wallet users: within 10% = hit, within 25% = partial.",
+   "reason": "eMarketer: 169.6 million US mobile P2P payment app users in 2024; US proximity mobile payment users about 115 million in 2023 and growing slowly. Median about 140-145 million, spread under 2x. 220 million is about 30% above even the higher P2P estimate.",
+   "evidence": [
+    {
+     "url": "https://www.emarketer.com/content/p2p-transaction-value-growth-outpaces-user-growth",
+     "title": "P2P transaction value growth will rapidly outpace user growth (eMarketer)",
+     "date": "2024",
+     "shows": "169.6 million US mobile P2P payment users in 2024 (68.1% of smartphone users)."
+    },
+    {
+     "url": "https://www.emarketer.com/content/mobile-proximity-payments-entering-mainstream",
+     "title": "Mobile proximity payments are entering the mainstream (eMarketer)",
+     "date": "2023",
+     "shows": "About 114.8 million US proximity mobile payment users in 2023."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-001",
+   "verdict": "hit",
+   "reading": "The cost to train a state-of-the-art AI model would exceed USD 100 million by 2025.",
+   "mainstream_test": "Lower bound: a frontier training run costing more than USD 100 million by 2025 (measured in 2024-2025) = hit.",
+   "reason": "Stanford AI Index 2025 (Epoch AI estimates, compute rental basis): Gemini 1.0 Ultra about USD 192 million, Llama 3.1-405B (2024) about USD 170 million, Grok-2 about USD 107 million. Epoch AI: frontier run costs grow about 2.4x a year. The bound was exceeded by 2024.",
+   "evidence": [
+    {
+     "url": "https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf",
+     "title": "AI Index Report 2025, chapter 1: Research and Development (Stanford HAI)",
+     "date": "2025-04",
+     "shows": "Estimated training costs: Gemini 1.0 Ultra USD 192 million, Llama 3.1-405B USD 170 million, Grok-2 USD 107 million."
+    },
+    {
+     "url": "https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models",
+     "title": "How much does it cost to train frontier AI models? (Epoch AI)",
+     "date": "2024-06-03",
+     "shows": "Amortized final-run cost grows about 2.4x per year; billion-dollar runs expected by 2027."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-002",
+   "verdict": "miss",
+   "reading": "Data center spending on AI processors would grow from about USD 5 billion a year to about USD 22 billion in 2025.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Nvidia alone reported data center revenue of USD 115.2 billion in fiscal 2025 and USD 193.7 billion in fiscal 2026 (Feb 2025-Jan 2026), mostly AI accelerators. Actual is roughly 9x the forecast (miss on the low side).",
+   "evidence": [
+    {
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+     "title": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026",
+     "date": "2026-02",
+     "shows": "Fiscal 2026 data center revenue USD 193.7 billion."
+    },
+    {
+     "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025",
+     "title": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2025",
+     "date": "2025-02-26",
+     "shows": "Fiscal 2025 data center revenue USD 115.2 billion."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-009",
+   "verdict": "miss",
+   "reading": "Revenue from virtual worlds, which the edition's 'Sizing the opportunity' slide defines as the global gaming market plus consumer AR/VR software, would grow from about USD 180 billion to about USD 390 billion in 2025.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Gaming dominates the composite: Newzoo global games market USD 182.7 billion in 2024 (about USD 189 billion expected 2025). Consumer AR/VR software adds at most a few billion. Total around USD 190-200 billion, about half the forecast.",
+   "evidence": [
+    {
+     "url": "https://gameworldobserver.com/2025/06/26/newzoo-in-2024-the-global-video-game-market-generated-182-7-billion-which-is-below-projections",
+     "title": "Newzoo: in 2024, the global video game market generated $182.7 billion",
+     "date": "2025-06-26",
+     "shows": "Global games market USD 182.7 billion in 2024."
+    },
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/ARK%E2%80%93Invest_BigIdeas_2021.pdf",
+     "title": "Big Ideas 2021 (ARK Invest), virtual worlds sizing slide",
+     "date": "2021-01",
+     "shows": "Virtual worlds revenue sized as global gaming market (USD 365 billion) plus AR & VR consumer software (USD 28 billion) in 2025."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-010",
+   "verdict": "ungradable",
+   "reading": "In-game purchases (ARK's footnoted definition: items, passes, currencies, expansions) would reach 95% of total gaming revenue by 2025.",
+   "mainstream_test": "D16 numeric against a public series of the in-game share of global games revenue.",
+   "reason": "D23 same-quantity clause: Newzoo and other trackers publish revenue by platform (mobile, console, PC), not a public in-game vs premium split matching ARK's definition; ARK's own 75% was an internal construction from several sources. No public measure for 2024-2025.",
+   "evidence": [
+    {
+     "url": "https://gameworldobserver.com/2025/06/26/newzoo-in-2024-the-global-video-game-market-generated-182-7-billion-which-is-below-projections",
+     "title": "Newzoo: 2024 global video game market (Game World Observer)",
+     "date": "2025-06-26",
+     "shows": "Public Newzoo figures split by platform segment, not by in-game vs premium revenue."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-013",
+   "verdict": "miss",
+   "reading": "The global gaming market would grow at 16% a year from USD 175 billion in 2020 to about USD 365 billion in 2025 (Newzoo-based figures).",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Newzoo: global games market USD 182.7 billion in 2024, below its own projections, with about USD 189 billion expected for 2025. Forecast is about 2x actual.",
+   "evidence": [
+    {
+     "url": "https://gameworldobserver.com/2025/06/26/newzoo-in-2024-the-global-video-game-market-generated-182-7-billion-which-is-below-projections",
+     "title": "Newzoo: in 2024, the global video game market generated $182.7 billion",
+     "date": "2025-06-26",
+     "shows": "Global games market USD 182.7 billion in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-014",
+   "verdict": "ungradable",
+   "reading": "The AR and VR market, which the edition's footnote defines as consumer-based software revenues (VR, AR glasses, AR smartphone), would grow from USD 3 billion to USD 28 billion in 2025.",
+   "mainstream_test": "D16 numeric against the median of public estimates of consumer AR/VR software revenue.",
+   "reason": "D23 same-quantity and range clauses: no tracker publishes consumer AR/VR software revenue in ARK's scope; public 'AR/VR market' estimates mix hardware, enterprise spending and advertising and range from below USD 20 billion to over USD 40 billion for 2024-2025, far wider than 2x once scope is aligned. Looked for IDC, Statista and market-research AR/VR estimates.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/ARK%E2%80%93Invest_BigIdeas_2021.pdf",
+     "title": "Big Ideas 2021 (ARK Invest), virtual worlds sizing slide",
+     "date": "2021-01",
+     "shows": "Footnote 1: 'ARK's AR & VR market size is an estimate of consumer-based software revenues', a scope no public series uses."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-015",
+   "verdict": "ungradable",
+   "reading": "If digital wallet users were valued at up to USD 20,000 each, US digital wallets would represent a USD 4.6 trillion opportunity by 2025.",
+   "mainstream_test": "Attributed/conditional value (D23).",
+   "reason": "D23 attributed-value and conditional clauses: an 'opportunity' at a hypothetical per-user value is not an observable quantity, and no public source values digital wallets as a category separately from PayPal, Block, Apple and others.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/ARK%E2%80%93Invest_BigIdeas_2021.pdf",
+     "title": "Big Ideas 2021 (ARK Invest), digital wallets",
+     "date": "2021-01",
+     "shows": "USD 4.6 trillion computed as 230 million users times a potential USD 19,900 per user."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-016",
+   "verdict": "miss",
+   "reading": "There would be about 230 million digital wallet users in the US by 2025.",
+   "mainstream_test": "D16 numeric against the median of public estimates of US digital wallet users: within 10% = hit, within 25% = partial.",
+   "reason": "eMarketer: 169.6 million US mobile P2P app users in 2024 with user growth slowing from 6.7% (so roughly 175-180 million in 2025); proximity mobile payment users around 115-125 million. Median roughly 150 million, spread under 2x. 230 million is about 30% above even the highest estimate.",
+   "evidence": [
+    {
+     "url": "https://www.emarketer.com/content/p2p-transaction-value-growth-outpaces-user-growth",
+     "title": "P2P transaction value growth will rapidly outpace user growth (eMarketer)",
+     "date": "2024",
+     "shows": "169.6 million US mobile P2P payment users in 2024; growth decelerating to 2.9% by 2028."
+    },
+    {
+     "url": "https://www.emarketer.com/content/mobile-proximity-payments-entering-mainstream",
+     "title": "Mobile proximity payments are entering the mainstream (eMarketer)",
+     "date": "2023",
+     "shows": "About 114.8 million US proximity mobile payment users in 2023."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-017",
+   "verdict": "miss",
+   "reading": "US bank interest income on credit cards would fall from about USD 130 billion (2019) to about USD 95 billion by 2025.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "CFPB: consumers paid more than USD 160 billion in credit card interest in 2024 (up about 50% from USD 105 billion in 2022) as balances passed USD 1.2 trillion and APRs reached about 25%. CFPB measures interest charged by issuers rather than bank income only, a method difference; direction and size both wrong. Actual about 70% above forecast.",
+   "evidence": [
+    {
+     "url": "https://www.federalregister.gov/documents/2026/01/07/2026-00081/consumer-credit-card-market-report-of-the-consumer-financial-protection-bureau-2025",
+     "title": "Consumer Credit Card Market Report, 2025 (CFPB, Federal Register)",
+     "date": "2026-01-07",
+     "shows": "More than USD 160 billion in credit card interest charged in 2024."
+    },
+    {
+     "url": "https://www.paymentsdive.com/news/cfpb-credit-card-fee-interest-debt-rohit-chopra-visa-mastercard-discover-american-express-amex/697867/",
+     "title": "CFPB: Consumers paid record credit card fees in 2022",
+     "date": "2023-10",
+     "shows": "USD 105 billion in interest charged in 2022."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-019",
+   "verdict": "miss",
+   "reading": "Global EV sales would rise about 20-fold from about 2.2 million in 2020 to about 40 million in 2025 (headline forecast; the slide's 'if traditional automakers overcome obstacles' is the forecast's own mechanism, not an external condition).",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Rho Motion: 20.7 million EVs sold in 2025; IEA Global EV Outlook 2026: just over 20 million electric cars. Forecast nearly 2x actual.",
+   "evidence": [
+    {
+     "url": "https://rhomotion.com/news/global-ev-sales-reach-20-7-million-units-in-2025-growing-by-20/",
+     "title": "Global EV sales reach 20.7 million units in 2025, growing by 20% (Rho Motion)",
+     "date": "2026-01",
+     "shows": "20.7 million EVs sold worldwide in 2025."
+    },
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars",
+     "title": "Global EV Outlook 2026: trends in electric cars (IEA)",
+     "date": "2026",
+     "shows": "Electric car sales exceeded 20 million in 2025, about 25% of car sales."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-020",
+   "verdict": "ungradable",
+   "reading": "Automation could add about 5%, or USD 1.2 trillion, to US GDP during 2020-2025.",
+   "mainstream_test": "D16 numeric against a public measure of US GDP attributable to automation.",
+   "reason": "D23 attributed-value clause: BEA does not attribute GDP to automation and no public source measures that attribution for 2024-2025.",
+   "evidence": [
+    {
+     "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+     "title": "Gross Domestic Product (BEA)",
+     "date": "2026",
+     "shows": "GDP by expenditure and industry; no attribution to automation."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-021",
+   "verdict": "hit",
+   "reading": "US real GDP growth would average about 3.4% a year over the five years 2021-2025 (the edition's 'during the next five years', chart 'Real US GDP Growth (2020-2025)', with 2020 as base).",
+   "mainstream_test": "D18 rate test: within 0.5 percentage points = hit, within 1.0 = partial.",
+   "reason": "BEA annual real GDP growth (FRED vintage 2026-09-30): 2021 6.3%, 2022 2.4%, 2023 2.9%, 2024 3.0%, 2025 2.3%; mean 3.38%, 0.02 pt from the forecast. Including 2020 (-2.1%) in a six-year mean gives 2.47% (partial), but the edition frames five years ahead from 2020. Note: the outcome owes much to the post-pandemic rebound, not demonstrably to automation; graded on the stated figure only.",
+   "evidence": [
+    {
+     "url": "https://fred.stlouisfed.org/data/A191RL1A225NBEA.txt",
+     "title": "Real Gross Domestic Product, percent change from preceding period, annual (BEA via FRED)",
+     "date": "2026-09-30",
+     "shows": "2020 -2.1, 2021 6.3, 2022 2.4, 2023 2.9, 2024 3.0, 2025 2.3."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-024",
+   "verdict": "ungradable",
+   "reading": "If Tesla launched its autonomous ride-hailing service successfully in 2022, North American autonomous adoption could approach 20% by 2025.",
+   "mainstream_test": "Conditional (D23): graded only if the condition held.",
+   "reason": "D23 conditional clause. Condition named: a successful Tesla autonomous ride-hailing launch in 2022. Tesla launched no such service in 2022; its first robotaxi pilot (with safety monitors, Austin) began in June 2025.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Robotaxi",
+     "title": "Robotaxi (Wikipedia)",
+     "date": "2026",
+     "shows": "Tesla robotaxi pilot began in Austin in June 2025; no 2022 launch."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-025",
+   "verdict": "miss",
+   "reading": "The combined enterprise value of autonomous ride-hailing platform operators would reach about USD 3.8 trillion by 2025.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "No reading reaches the partial band (USD 2.85 trillion). Pure-play and separately valued operators: Waymo USD 126 billion (Feb 2026 round), Pony.ai and WeRide a few billion each. Even counting all of Tesla (market cap USD 1.58 trillion at end-2025) as an autonomous platform operator, the total is about USD 1.7 trillion, under half the forecast. Under D23 a strict attribution reading would be ungradable; graded because every construction gives a miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Waymo",
+     "title": "Waymo (Wikipedia)",
+     "date": "2026",
+     "shows": "February 2026 raise of USD 16 billion valued Waymo at USD 126 billion."
+    },
+    {
+     "url": "https://companiesmarketcap.com/tesla/marketcap/",
+     "title": "Tesla market cap (CompaniesMarketCap)",
+     "date": "2026",
+     "shows": "Tesla market cap USD 1.58 trillion at end of 2025."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-027",
+   "verdict": "ungradable",
+   "reading": "Drone delivery platforms would generate nearly USD 50 billion in revenue by 2025.",
+   "mainstream_test": "D16 numeric against the median of public estimates of global drone delivery revenue.",
+   "reason": "D23 range clause: public estimates of the 2024-2025 drone package delivery market span far more than 2x (GM Insights USD 0.53 billion and Research and Markets USD 0.69 billion for 2024; Mordor USD 0.97 billion, Fact.MR USD 1.0 billion, Fortune USD 3.47 billion, DataBridge USD 3.57 billion, Business Research Company USD 4.4 billion for 2025). Recorded as the rubric requires; note that every estimate is more than 10x below the forecast, so no reading supports it.",
+   "evidence": [
+    {
+     "url": "https://www.mordorintelligence.com/industry-reports/drone-package-delivery-market",
+     "title": "Drone Package Delivery Market (Mordor Intelligence)",
+     "date": "2025",
+     "shows": "About USD 0.97 billion in 2025."
+    },
+    {
+     "url": "https://www.fortunebusinessinsights.com/drone-package-delivery-market-104332",
+     "title": "Drone Delivery Service Market (Fortune Business Insights)",
+     "date": "2025",
+     "shows": "About USD 3.47 billion in 2025."
+    },
+    {
+     "url": "https://www.gminsights.com/industry-analysis/delivery-drone-market",
+     "title": "Delivery Drone Market (GM Insights)",
+     "date": "2025",
+     "shows": "About USD 0.53 billion in 2024."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-029",
+   "verdict": "ungradable",
+   "reading": "The market for connected planes, trains and motor vehicles (onboard connectivity) would reach about USD 36 billion in 2025, a figure taken from an Allied Market Research forecast.",
+   "mainstream_test": "D16 numeric against the median of public estimates of the onboard connectivity market.",
+   "reason": "D23 same-quantity and range clauses: 'onboard connectivity' across planes, trains and road vehicles is a market-research construct with no public series; published estimates (in-flight connectivity alone, connected-car alone, or combined) differ by scope and by more than 2x. Looked for Allied Market Research, in-flight connectivity and connected-car revenue trackers.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/ARK%E2%80%93Invest_BigIdeas_2021.pdf",
+     "title": "Big Ideas 2021 (ARK Invest), satellite/connectivity slide",
+     "date": "2021-01",
+     "shows": "Figure sourced from a third-party (Allied Market Research) forecast; scope combines planes, trains and motor vehicles."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-030",
+   "verdict": "miss",
+   "reading": "The global 3D printing market would grow about 60% a year from USD 12 billion (2020) to about USD 120 billion in 2025.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "Wohlers: USD 21.8 billion in 2024 (9.1% growth) and about USD 24.2 billion reported for 2025 (10.9% growth). Forecast about 5x actual.",
+   "evidence": [
+    {
+     "url": "https://wohlersassociates.com/news/wohlers-report-2025-shows-9-1-am-industry-growth/",
+     "title": "Wohlers Report 2025 shows 9.1% AM industry growth",
+     "date": "2025-04",
+     "shows": "Global AM industry USD 21.8 billion in 2024."
+    },
+    {
+     "url": "https://www.designnews.com/3d-printing/the-24-2b-additive-manufacturing-market-has-entered-maturity-",
+     "title": "The $24.2B Additive Manufacturing Market Has Entered Maturity (Design News)",
+     "date": "2026",
+     "shows": "Global AM revenue USD 24.2 billion in 2025, up 10.9%."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-031",
+   "verdict": "ungradable",
+   "reading": "Drone hardware revenue would total about USD 100 billion by 2025 (scope unclear: the edition elsewhere puts drone-delivery hardware at USD 14 billion; this line may cover all drones incl. military and consumer).",
+   "mainstream_test": "D16 numeric against the median of public estimates of drone hardware revenue in the edition's scope.",
+   "reason": "D23 scope and range clauses: the edition gives two incompatible figures for drone hardware in 2025 (USD 14 billion and USD 100 billion) and does not settle the scope of this one; public estimates of the 2024-2025 drone market (consumer, commercial, military; hardware vs services) span well over 2x. No dominant reading can be fixed.",
+   "evidence": [
+    {
+     "url": "https://research.ark-invest.com/hubfs/1_Download_Files_ARK-Invest/White_Papers/ARK%E2%80%93Invest_BigIdeas_2021.pdf",
+     "title": "Big Ideas 2021 (ARK Invest)",
+     "date": "2021-01",
+     "shows": "Drone hardware sales of USD 14 billion by 2025 (delivery chapter) vs about USD 100 billion (this line); scope not stated."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-032",
+   "verdict": "miss",
+   "reading": "Long-read sequencing revenue would grow from about USD 250 million in 2020 to about USD 5 billion in 2025.",
+   "mainstream_test": "D16 numeric: within 10% = hit, within 25% = partial.",
+   "reason": "The two long-read vendors: PacBio full-year 2025 revenue USD 160.0 million; Oxford Nanopore about GBP 223 million (about USD 295 million). Combined about USD 0.45 billion, roughly a tenth of the forecast.",
+   "evidence": [
+    {
+     "url": "https://www.pacb.com/press_releases/pacbio-announces-fourth-quarter-and-full-year-2025-financial-results/",
+     "title": "PacBio Announces Fourth Quarter and Full Year 2025 Financial Results",
+     "date": "2026-02-12",
+     "shows": "Full-year 2025 revenue about USD 160 million."
+    },
+    {
+     "url": "https://www.investegate.co.uk/announcement/rns/oxford-nanopore-technologies--ont/full-year-trading-update-and-notice-of-results/9346318",
+     "title": "Oxford Nanopore: Full Year Trading Update",
+     "date": "2026-01",
+     "shows": "2025 revenue about GBP 223-224 million, up about 22% from GBP 183.2 million."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-033",
+   "verdict": "miss",
+   "reading": "By the end of 2025 the cost of a highly accurate long-read human genome would approach parity with a short-read genome.",
+   "mainstream_test": "Price comparison: long-read cost within 10% of short-read cost = hit, within 25% = partial.",
+   "reason": "End of 2025: PacBio's SPRQ chemistry put a HiFi human genome at just under USD 500 (SPRQ-Nx, list USD 345, shipped later), while short-read genomes cost about USD 200 on Illumina NovaSeq X and about USD 100 on Ultima. Long-read stayed roughly 1.7x to 5x short-read, outside the 25% band.",
+   "evidence": [
+    {
+     "url": "https://www.pacb.com/press_releases/pacbio-announces-sprq-chemistry-for-revio-sequencing-systems-a-major-advance-reducing-the-cost-of-a-hifi-human-genome-to-less-than-500/",
+     "title": "PacBio Announces SPRQ Chemistry for Revio, reducing the cost of a HiFi human genome to less than $500",
+     "date": "2024-10",
+     "shows": "HiFi human genome just under USD 500 on Revio with SPRQ."
+    },
+    {
+     "url": "https://www.pacb.com/press_releases/pacbio-sprq-nx-chemistry-now-shipping-worldwide-enabling-sub-300-hifi-genomes-for-large-scale-projects-and-ai-enhanced-sequencing/",
+     "title": "PacBio SPRQ-Nx Chemistry Now Shipping Worldwide, Enabling Sub-$300 HiFi Genomes",
+     "date": "2026",
+     "shows": "List price USD 345 per genome, sub-USD 300 only at production scale; still above short-read costs of about USD 100-200."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-034",
+   "verdict": "ungradable",
+   "reading": "The cost of goods of a multi-cancer screening test would fall to about USD 250 in 2025.",
+   "mainstream_test": "D16 numeric against a public measure of per-test cost of goods.",
+   "reason": "D23 same-quantity clause: GRAIL (Galleri, the only scaled multi-cancer test) reports aggregate cost of revenue and tests sold but no per-test cost of goods; dividing aggregates would be a proxy including fixed lab costs. No public measure for 2024-2025. Looked at GRAIL filings and investor materials.",
+   "evidence": [
+    {
+     "url": "https://investors.grail.com/",
+     "title": "GRAIL investor relations",
+     "date": "2026",
+     "shows": "Reports revenue, tests sold and aggregate cost of revenue; no per-test cost of goods disclosed."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2021-036",
+   "verdict": "miss",
+   "reading": "The FDA would approve the first CAR-T therapy for solid tumors in 2025.",
+   "mainstream_test": "Dated event: approval in 2025 = hit; none = miss.",
+   "reason": "FDA's list of approved cellular and gene therapy products (current to 17 September 2026) contains no CAR-T approved for a solid tumor; all CAR-Ts (Abecma, Breyanzi, Carvykti, Tecartus, Yescarta, Kymriah, Aucatzyl) treat blood cancers. The 2024 solid-tumor cell therapies Amtagvi (TIL) and Tecelra (engineered TCR) are not CAR-T.",
+   "evidence": [
+    {
+     "url": "https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products",
+     "title": "Approved Cellular and Gene Therapy Products (FDA)",
+     "date": "2026-09-17",
+     "shows": "No CAR-T product approved for a solid tumor indication through September 2026."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2022-028",
+   "verdict": "miss",
+   "reading": "EV production costs and sticker prices would fall below comparable gas cars within one to two years and undercut them by 25-35% in 2025 (chart: 350-mile EV vs Camry, US).",
+   "mainstream_test": "Price comparison: EV price 25-35% below comparable gas car (within the band = hit; within 25% of the band edge = partial).",
+   "reason": "Sticker prices are measured; production costs are not public (that part alone would be ungradable). IEA: in the US in 2024, battery-electric SUVs still carried an average premium of about 25% over ICE equivalents, and only 2 EV models were under USD 30,000 vs more than 50 ICE models; in Germany and the UK EV SUVs carried 20-30% premiums. EVs were priced above, not 25-35% below, comparable gas cars in ARK's US frame.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2025/trends-in-electric-car-affordability",
+     "title": "Global EV Outlook 2025: trends in electric car affordability (IEA)",
+     "date": "2025-05",
+     "shows": "US battery-electric SUVs about 25% price premium over ICE in 2024; Germany 20%, UK 30%; China near or below parity in many segments."
+    }
+   ]
+  },
+  {
+   "id": "ark-big-ideas-2022-034",
+   "verdict": "ungradable",
+   "reading": "The cost (to SpaceX) of a satellite broadband end-user antenna would fall from about USD 1,000 to USD 500 once cumulative production reached one million units by end-2023.",
+   "mainstream_test": "D16 numeric against a public measure of Starlink terminal unit cost.",
+   "reason": "D23 same-quantity clause: SpaceX does not publish terminal production cost; only executive remarks and retail prices exist, and retail price (a different quantity, set with subsidies) is not a measure of cost. No public measure for 2022-2023.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Starlink",
+     "title": "Starlink (Wikipedia)",
+     "date": "2026",
+     "shows": "Terminal retail prices and occasional executive cost remarks; no published production cost series."
+    }
+   ]
+  }
+ ]
+}
