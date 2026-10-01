@@ -60,7 +60,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 5. **#53** Numeric matching audit, then **#61** (audit error in rates) and **#54** (definition calls).
 6. **#62** Dispute handling.
 7. **#52** Normalize adapters for eurasia, economist, kurzweil, pew-elon. Needed before #46, #47, #50.
-8. Grading waves: **#43, #44, #45, #51, #63** done (final files written). Next **#46, #50** (need #52 first). **#47 and #48** need a rule decision first. Issues #43, #44, #45, #49, #51, #63 can be closed after MZ reviews the results.
+8. Grading waves: **#43, #44, #45, #51, #63** done (final files written). Next **#46, #50** (need #52 first). **#47 and #48** need a rule decision first. Issues #43, #44, #45, #49, #51, #63 closed with result comments.
 9. **#56** (site numeric verdicts), **#64** (issue housekeeping), **#58** (yearly refresh), **#3** (release).
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
