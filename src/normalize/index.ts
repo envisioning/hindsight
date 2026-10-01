@@ -30,6 +30,7 @@ import { ARK_GENERIC_IDEAS, arkBigIdeas, deloittePredictions, gartnerPredictions
 import { cboProjections, ecbProjections, fedSep, obrForecasts, oecdOutlook, worldBankGep } from "./sources/macro.ts";
 import { bcbFocus, bnefEvo, bpEnergyOutlook, eiaAeo, ieaWeo, imfWeo } from "./sources/numeric.ts";
 import { SubjectResolver } from "./subjects.ts";
+import { a16zBigIdeas, accentureTechVision, deloitteTechTrends, ftsgTechTrends, ipccPathways, mckinseyTechTrends, nicGlobalTrends, shellScenarios, trendwatching } from "./sources/tier3.ts";
 import { economistWorldAhead, eurasiaTopRisks, kurzweil, pewElonImagining } from "./sources/tier2.ts";
 
 type ClaimRow = Claim & { edition: string };
@@ -60,6 +61,15 @@ const ADAPTERS: Record<string, () => Bundle> = {
   "economist-world-ahead": economistWorldAhead,
   kurzweil,
   "pew-elon-imagining": pewElonImagining,
+  "mckinsey-tech-trends": mckinseyTechTrends,
+  "accenture-tech-vision": accentureTechVision,
+  "deloitte-tech-trends": deloitteTechTrends,
+  trendwatching,
+  "a16z-big-ideas": a16zBigIdeas,
+  "ftsg-tech-trends": ftsgTechTrends,
+  "nic-global-trends": nicGlobalTrends,
+  "shell-scenarios": shellScenarios,
+  "ipcc-pathways": ipccPathways,
 };
 
 interface Progress {
