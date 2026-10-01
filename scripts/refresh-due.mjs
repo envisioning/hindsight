@@ -25,6 +25,9 @@ for (const e of editions) bySource.set(e.source_id, [...(bySource.get(e.source_i
 // Series that publish no more editions (the reason is in each source's INDEX.md).
 const ENDED = {
 	"envisioning-technology": "posters ended with the 2012 edition",
+	"envisioning-education": "one poster (2012); no later edition",
+	"envisioning-health": "one poster (2012); no later edition",
+	"envisioning-horizons": "one poster (2014); no later edition",
 	"nic-global-trends": "the DNI ended the Global Trends program in September 2025",
 	"ftsg-tech-trends": "FTSG retired the Tech Trends format in 2026 (Convergence Outlook instead)",
 };

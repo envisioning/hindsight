@@ -1,6 +1,6 @@
 # Hindsight handoff (2026-10-01, third session, local)
 
-Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D30). Every next step is an open issue in envisioning/hindsight.
+Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D37). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -27,7 +27,7 @@ A public, citable record of published forecasts (publications x predictions), gr
   - Deloitte TMT 61% (52-70) over 116, after the fetch-failure pass (D24, `adjudicated-d20-pass1.json`): 7 of 29 re-checked claims now graded. IDC 49 re-checked, all stay ungradable (paywalled, not blocked). Gartner SP 1 of 6 now graded.
   - New this session: The Economist (#46, D27) 59% (50-67) [42-75] over 127, kappa 0.90. Pew/Elon (#50, D27) 40% (27-55) [24-57] over 45, kappa 0.64. NIC Global Trends projections (D30) 69% (57-79) [55-81] over 68, kappa 0.89. McKinsey dated forecasts (D30) counts only (7 graded: 6 hit, 1 partial; 10 ungradable, mostly third-party figures). Accenture 2017 predictions counts only (1 hit, 1 partial, 1 miss).
 - **Numeric (D19):** 12 publishers, matching audit done (#53): 1,184 sampled rows; errors fixed in code for every row (IMF India before July 2013 and old group definitions; World Bank World before 2019; OBR unrounded actuals; EIA early publication dates and two Retrospective 2025 series; CBO deficits in percent of GDP; World Bank India fiscal year). Residual: ECB 4, BCB 3, EIA 4, BNEF 1, BP 1. Open items: #66.
-- **Envisioning study posters (D37, 2026-10-01, #67):** education 2012 75% (57-87) [53-91] over 28, kappa 0.63, audit 1/25; health 2012 43% (27-61) [23-65] over 28, kappa 0.88, audit 1/26; Horizons 2014 (financially viable mark) 75% (62-84) [60-86] over 55, kappa 0.92, audit 1/50. 60 later placements stay open. Not comparable with the D16 posters: weaker claims (D37).
+- **Envisioning study posters (D37, 2026-10-01, #67):** education 2012 75% (57-87) [53-91] over 28, kappa 0.63, audit 1/25; health 2012 43% (27-61) [23-65] over 28, kappa 0.88, audit 1/26; Horizons 2014 (financially viable mark) 75% (62-84) [60-86] over 55, kappa 0.92, audit 1/50. 72 later placements stay open (#69). Not comparable with the D16 posters: weaker claims (D37).
 - **Graded under D31 to D36 (2026-10-01, after MZ approved the rules):**
   - Eurasia (D31): top risks materialised in 70% of 184 graded (63-76%, audit-adjusted 57-82%); red herrings stayed calm in 68% of 72 (57-78%). Never merged (`summary-d31.json`, `rate-policy.json`).
   - WEF (D32): of 53 major events 2007-2020 (fixed criteria, UCDP-first death tallies), WEF ranked 14 high the January before (26%, 16-40%); 2021-2022 and 2023-2025 counts only (4 of 15, 9 of 18). `summary-d32.json`.
@@ -58,7 +58,8 @@ A public, citable record of published forecasts (publications x predictions), gr
 3. **#66** numeric open items (ECB GDP basis, AEO2009 case, BCB Selic, World Bank World, IMF India, IEA restatements, FRED vintage refresh before release).
 4. **#59** links (needs `OPENROUTER_API_KEY`). **#26** FTSG 2015-2017 transcripts. **#27** McKinsey 2026 PDF re-capture.
 5. **#3** first tagged dataset release (export is built; ask MZ before tagging). The forecasts block on research pages (#59) after links exist.
-6. **#64** housekeeping: close or comment the older capture issues (#2, #4 to #25) from each PROGRESS.md.
+6. **#69** Envisioning study posters: grade open placements each January as their windows close (D37, D26 waves).
+7. **#64** housekeeping: close or comment the older capture issues (#2, #4 to #25) from each PROGRESS.md.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
