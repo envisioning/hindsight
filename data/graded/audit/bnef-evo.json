@@ -14,5 +14,51 @@
   "bnef-evo-2023-003",
   "bnef-evo-2025-001"
  ],
- "records": {}
+ "records": {
+  "bnef-evo-2019-002": {
+   "decision": "confirm",
+   "note": "Forecast 10M passenger EV sales in 2025 is the EVO 2019 executive summary figure (raw quote). Actual 21.2M for 2025 matches OWID/IEA GEVO 2026 World electric cars (BEV+PHEV); IEA cars and BNEF passenger EVs are the same scope; D16 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2020-001": {
+   "decision": "confirm",
+   "note": "BNEF 2020 release re-fetched: 'fall 18% in 2020, to 1.7 million worldwide' (passenger EVs). Actual 2.98M for 2020 matches OWID CSV and IEA API (3.0M rounded); D16 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2020-002": {
+   "decision": "confirm",
+   "note": "BNEF 2020 release re-fetched: 'Electric models are seen accounting for 3% of global car sales in 2020'; quote in claim file is a fragment but the value is right. Actual 4.4% (IEA API 4.4, OWID 4.4); error -1.4 pp is a miss under any rounding of the actual; D18 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2020-003": {
+   "decision": "confirm",
+   "note": "Same sentence in the BNEF 2020 release: '7% in 2023, at some 5.4 million units'. Actual 13.7M for 2023 matches OWID (IEA API 14M rounded); D16 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2020-004": {
+   "decision": "confirm",
+   "note": "Same sentence: 7% share in 2023. Actual 18% (IEA API and OWID); miss is robust to the IEA rounding; D18 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2022-002": {
+   "decision": "confirm",
+   "note": "EVO 2022 release: 21 million passenger EV sales in 2025 (main ETS case). Actual 21.2M for 2025 (OWID; IEA API 21M rounded); hit, D16 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2023-002": {
+   "decision": "confirm",
+   "note": "EVO 2023 release: ETS (main case) 22 million passenger EV sales in 2025. Actual 21.2M (OWID/IEA GEVO 2026); hit, D16 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2023-003": {
+   "decision": "contest",
+   "note": "Forecast 26% (EVO 2023 ETS) and series (IEA electric car share of new car sales, 2025) are right, but the IEA publishes 25% rounded to integer (API value 25, GEVO 2026 text 'increased to 25%'); the true share lies in [24.5, 25.5), so the error is 0.5 to 1.5 pp and the verdict can be hit, partial or miss. The recorded partial sits exactly on the 1.0 pp boundary and cannot be confirmed; a systematic issue for every IEA share row from 2022 graded under D18 near a threshold.",
+   "at": "2026-10-01T10:19:43+00:00"
+  },
+  "bnef-evo-2025-001": {
+   "decision": "confirm",
+   "note": "EVO 2025 release: 'almost 22 million global passenger EV sales this year' (current-year forecast, June 2025). Actual 21.2M (OWID/IEA GEVO 2026); hit, D16 correct.",
+   "at": "2026-10-01T10:19:43+00:00"
+  }
+ }
 }

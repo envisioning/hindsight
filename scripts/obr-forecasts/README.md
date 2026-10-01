@@ -11,6 +11,7 @@ Download these into one input folder outside the repo (default: `inputs/` next t
 | `Historical_official_forecasts_database_Spring_2026.xlsx` | https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx (linked from https://obr.uk/data/). Snapshot used: `https://web.archive.org/web/20260326123133id_/<url>` |
 | `ons/ihyp.json` | https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/ihyp/pn2/data |
 | `ons/d7g7.json` | https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23/data |
+| `ons/abmi.json` | https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2/data (GDP levels; growth is computed unrounded) |
 
 Example:
 

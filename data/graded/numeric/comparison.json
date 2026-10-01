@@ -1336,33 +1336,33 @@
    "subject_id": "india-real-gdp-growth",
    "horizon": "current_year",
    "caveats": [
-    "World Bank India rows are graded only for 2023 to 2025 (the only fiscal-year actuals captured)."
+    "World Bank India rows are fiscal-year forecasts graded against fiscal-year actuals (GEP June 2026 for 2023 to 2025, WDI before); rows whose table does not state the basis are ungradable."
    ],
    "sources": [
     {
      "source_id": "imf-weo",
-     "first_target_year": 1990,
+     "first_target_year": 2013,
      "last_target_year": 2025,
      "stats": {
-      "n_graded": 72,
-      "hits": 10,
-      "partials": 18,
-      "misses": 44,
-      "ungradable": 0,
+      "n_graded": 25,
+      "hits": 5,
+      "partials": 10,
+      "misses": 10,
+      "ungradable": 47,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.1389,
+      "hit_rate": 0.2,
       "hit_rate_ci95": [
-       0.0772,
-       0.2371
+       0.0886,
+       0.3913
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 72,
-        "bias": -0.088,
-        "mae": 1.646
+        "n": 25,
+        "bias": -0.037,
+        "mae": 1.532
        }
       ]
      }
@@ -1397,25 +1397,28 @@
     },
     {
      "source_id": "world-bank-gep",
-     "first_target_year": 2023,
+     "first_target_year": 2010,
      "last_target_year": 2025,
      "stats": {
-      "n_graded": 6,
-      "hits": 1,
-      "partials": 4,
-      "misses": 1,
-      "ungradable": 29,
+      "n_graded": 31,
+      "hits": 7,
+      "partials": 10,
+      "misses": 14,
+      "ungradable": 4,
       "open": 2,
       "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
+      "hit_rate": 0.2258,
+      "hit_rate_ci95": [
+       0.114,
+       0.3981
+      ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
-        "bias": null,
-        "mae": null
+        "n": 31,
+        "bias": 0.351,
+        "mae": 1.608
        }
       ]
      }
@@ -1423,6 +1426,14 @@
    ],
    "common_years": {
     "target_years": [
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
      2023,
      2024,
      2025
@@ -1431,22 +1442,25 @@
      {
       "source_id": "imf-weo",
       "stats": {
-       "n_graded": 6,
-       "hits": 2,
-       "partials": 2,
-       "misses": 2,
+       "n_graded": 22,
+       "hits": 5,
+       "partials": 10,
+       "misses": 7,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": null,
-       "hit_rate_ci95": null,
+       "hit_rate": 0.2273,
+       "hit_rate_ci95": [
+        0.1012,
+        0.4344
+       ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
-         "n": 6,
-         "bias": null,
-         "mae": null
+         "n": 22,
+         "bias": 0.247,
+         "mae": 1.451
         }
        ]
       }
@@ -1454,22 +1468,25 @@
      {
       "source_id": "oecd-economic-outlook",
       "stats": {
-       "n_graded": 6,
-       "hits": 1,
-       "partials": 3,
-       "misses": 2,
+       "n_graded": 21,
+       "hits": 4,
+       "partials": 9,
+       "misses": 8,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": null,
-       "hit_rate_ci95": null,
+       "hit_rate": 0.1905,
+       "hit_rate_ci95": [
+        0.0767,
+        0.4
+       ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
-         "n": 6,
-         "bias": null,
-         "mae": null
+         "n": 21,
+         "bias": -0.352,
+         "mae": 1.109
         }
        ]
       }
@@ -1477,22 +1494,25 @@
      {
       "source_id": "world-bank-gep",
       "stats": {
-       "n_graded": 6,
-       "hits": 1,
-       "partials": 4,
-       "misses": 1,
+       "n_graded": 22,
+       "hits": 5,
+       "partials": 8,
+       "misses": 9,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": null,
-       "hit_rate_ci95": null,
+       "hit_rate": 0.2273,
+       "hit_rate_ci95": [
+        0.1012,
+        0.4344
+       ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
-         "n": 6,
-         "bias": null,
-         "mae": null
+         "n": 22,
+         "bias": 0.514,
+         "mae": 1.795
         }
        ]
       }
@@ -1504,33 +1524,33 @@
    "subject_id": "india-real-gdp-growth",
    "horizon": "next_year",
    "caveats": [
-    "World Bank India rows are graded only for 2023 to 2025 (the only fiscal-year actuals captured)."
+    "World Bank India rows are fiscal-year forecasts graded against fiscal-year actuals (GEP June 2026 for 2023 to 2025, WDI before); rows whose table does not state the basis are ungradable."
    ],
    "sources": [
     {
      "source_id": "imf-weo",
-     "first_target_year": 1991,
+     "first_target_year": 2014,
      "last_target_year": 2025,
      "stats": {
-      "n_graded": 70,
-      "hits": 6,
-      "partials": 16,
-      "misses": 48,
-      "ungradable": 0,
+      "n_graded": 23,
+      "hits": 1,
+      "partials": 10,
+      "misses": 12,
+      "ungradable": 47,
       "open": 3,
       "excluded": 0,
-      "hit_rate": 0.0857,
+      "hit_rate": 0.0435,
       "hit_rate_ci95": [
-       0.0399,
-       0.1747
+       0.0077,
+       0.2099
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 70,
-        "bias": 0.31,
-        "mae": 2.04
+        "n": 23,
+        "bias": 0.941,
+        "mae": 2.365
        }
       ]
      }
@@ -1562,25 +1582,28 @@
     },
     {
      "source_id": "world-bank-gep",
-     "first_target_year": 2023,
+     "first_target_year": 2011,
      "last_target_year": 2025,
      "stats": {
-      "n_graded": 6,
-      "hits": 2,
-      "partials": 3,
-      "misses": 1,
-      "ungradable": 27,
+      "n_graded": 29,
+      "hits": 4,
+      "partials": 7,
+      "misses": 18,
+      "ungradable": 4,
       "open": 4,
       "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
+      "hit_rate": 0.1379,
+      "hit_rate_ci95": [
+       0.055,
+       0.3056
+      ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
-        "bias": null,
-        "mae": null
+        "n": 29,
+        "bias": 0.893,
+        "mae": 2.501
        }
       ]
      }
@@ -1588,6 +1611,13 @@
    ],
    "common_years": {
     "target_years": [
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
      2023,
      2024,
      2025
@@ -1596,22 +1626,25 @@
      {
       "source_id": "imf-weo",
       "stats": {
-       "n_graded": 6,
+       "n_graded": 20,
        "hits": 1,
-       "partials": 2,
-       "misses": 3,
+       "partials": 10,
+       "misses": 9,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": null,
-       "hit_rate_ci95": null,
+       "hit_rate": 0.05,
+       "hit_rate_ci95": [
+        0.0089,
+        0.2361
+       ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
-         "n": 6,
-         "bias": null,
-         "mae": null
+         "n": 20,
+         "bias": 1.36,
+         "mae": 2.442
         }
        ]
       }
@@ -1619,10 +1652,10 @@
      {
       "source_id": "oecd-economic-outlook",
       "stats": {
-       "n_graded": 6,
-       "hits": 1,
-       "partials": 2,
-       "misses": 3,
+       "n_graded": 19,
+       "hits": 2,
+       "partials": 7,
+       "misses": 10,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
@@ -1632,7 +1665,7 @@
         {
          "rule": "D18",
          "unit": "pp",
-         "n": 6,
+         "n": 19,
          "bias": null,
          "mae": null
         }
@@ -1642,22 +1675,25 @@
      {
       "source_id": "world-bank-gep",
       "stats": {
-       "n_graded": 6,
-       "hits": 2,
-       "partials": 3,
-       "misses": 1,
+       "n_graded": 20,
+       "hits": 4,
+       "partials": 4,
+       "misses": 12,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": null,
-       "hit_rate_ci95": null,
+       "hit_rate": 0.2,
+       "hit_rate_ci95": [
+        0.0807,
+        0.416
+       ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
-         "n": 6,
-         "bias": null,
-         "mae": null
+         "n": 20,
+         "bias": 0.975,
+         "mae": 2.846
         }
        ]
       }
@@ -2081,23 +2117,23 @@
      "last_target_year": 2025,
      "stats": {
       "n_graded": 32,
-      "hits": 18,
-      "partials": 5,
-      "misses": 9,
+      "hits": 19,
+      "partials": 3,
+      "misses": 10,
       "ungradable": 0,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.5625,
+      "hit_rate": 0.5938,
       "hit_rate_ci95": [
-       0.3933,
-       0.7183
+       0.4226,
+       0.7448
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
         "n": 32,
-        "bias": -0.217,
+        "bias": -0.218,
         "mae": 1.056
        }
       ]
@@ -2179,24 +2215,24 @@
       "source_id": "obr-forecasts",
       "stats": {
        "n_graded": 26,
-       "hits": 16,
-       "partials": 3,
-       "misses": 7,
+       "hits": 17,
+       "partials": 1,
+       "misses": 8,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": 0.6154,
+       "hit_rate": 0.6538,
        "hit_rate_ci95": [
-        0.4253,
-        0.7757
+        0.4622,
+        0.8059
        ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
          "n": 26,
-         "bias": -0.148,
-         "mae": 1.119
+         "bias": -0.153,
+         "mae": 1.116
         }
        ]
       }
@@ -2271,24 +2307,24 @@
      "last_target_year": 2025,
      "stats": {
       "n_graded": 30,
-      "hits": 12,
-      "partials": 8,
+      "hits": 11,
+      "partials": 9,
       "misses": 10,
       "ungradable": 0,
       "open": 3,
       "excluded": 0,
-      "hit_rate": 0.4,
+      "hit_rate": 0.3667,
       "hit_rate_ci95": [
-       0.2459,
-       0.5768
+       0.2187,
+       0.5449
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
         "n": 30,
-        "bias": 0.172,
-        "mae": 1.367
+        "bias": 0.17,
+        "mae": 1.363
        }
       ]
      }
@@ -2384,8 +2420,8 @@
          "rule": "D18",
          "unit": "pp",
          "n": 24,
-         "bias": 0.107,
-         "mae": 1.492
+         "bias": 0.103,
+         "mae": 1.483
         }
        ]
       }

@@ -27,6 +27,11 @@ const waveFiles = (re) =>
 		.map((m) => m[0]);
 const adjudicated = read("adjudicated-d20.json") ?? { verdicts: [] };
 for (const f of waveFiles(/^adjudicated-d20-w(\d+)\.json$/)) adjudicated.verdicts.push(...read(f).verdicts);
+// Re-check passes (D24): adjudicated-d20-pass<N>.json re-decides claims that ended ungradable without page access.
+// A later pass replaces the earlier decision of the same claim; earlier files are never edited.
+const adjPassFiles = waveFiles(/^adjudicated-d20-pass(\d+)\.json$/);
+const recheck = new Map();
+for (const f of adjPassFiles) for (const v of read(f).verdicts) recheck.set(v.id, { ...v, pass: Number(f.match(/pass(\d+)/)[1]) });
 const audit = read("audit-d11.json");
 const auditPasses = readdirSync(dir)
 	.map((f) => f.match(/^audit-d11-pass(\d+)\.json$/))
@@ -60,11 +65,12 @@ for (const c of agreement.consensus ?? []) {
 	else rows.push({ id: c.id, verdict: c.verdict, status: rec ? "audited" : "agreed" });
 }
 const adj = new Map((adjudicated?.verdicts ?? []).map((v) => [v.id, v]));
+for (const [id, v] of recheck) adj.set(id, v);
 for (const c of agreement.contested ?? []) {
 	const a = adj.get(c.id);
 	rows.push(
 		a
-			? { id: c.id, verdict: a.verdict, status: "adjudicated", graderA: c.graderA, graderB: c.graderB, reason: a.reason ?? "" }
+			? { id: c.id, verdict: a.verdict, status: a.pass ? "rechecked" : "adjudicated", graderA: c.graderA, graderB: c.graderB, reason: a.reason ?? "", ...(a.pass ? { pass: a.pass } : {}) }
 			: { id: c.id, verdict: "contested", status: "contested", graderA: c.graderA, graderB: c.graderB },
 	);
 }
@@ -89,7 +95,12 @@ const counts = {};
 for (const r of rows) counts[r.verdict] = (counts[r.verdict] ?? 0) + 1;
 const agreedUnfalsifiable = (agreement.agreed?.unfalsifiable ?? 0) - rows.filter((r) => r.status === "adjudicated" && r.graderA === "unfalsifiable" && r.graderB === "unfalsifiable").length;
 if (agreedUnfalsifiable) counts.unfalsifiable = (counts.unfalsifiable ?? 0) + agreedUnfalsifiable;
-const agreedUngradable = agreement.ungradable_agreed?.length ?? 0;
+// Both graders ungradable, re-decided by a re-check pass (D24): a row; the rest stay counted as ungradable.
+for (const u of agreement.ungradable_agreed ?? []) {
+	const r = recheck.get(u.id);
+	if (r) rows.push({ id: u.id, verdict: r.verdict, status: "rechecked", graderA: "ungradable", graderB: "ungradable", reason: r.reason ?? "", pass: r.pass });
+}
+const agreedUngradable = (agreement.ungradable_agreed?.length ?? 0) - (agreement.ungradable_agreed ?? []).filter((u) => recheck.has(u.id)).length;
 if (agreedUngradable) counts.ungradable = (counts.ungradable ?? 0) + agreedUngradable;
 const MIN_RATE_N = 20;
 const hits = counts.hit ?? 0;
@@ -124,6 +135,7 @@ const out = {
 			: null,
 	hit_or_partial_rate: graded >= MIN_RATE_N ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,
 	adjudicated: rows.filter((r) => r.status === "adjudicated").length,
+	...(adjPassFiles.length ? { rechecked: rows.filter((r) => r.status === "rechecked").length, recheck_passes: adjPassFiles } : {}),
 	audit: auditOut,
 	verdicts: rows.sort((a, b) => a.id.localeCompare(b.id)),
 };

@@ -11,9 +11,11 @@
  * Writes data/graded/numeric/<source>.json after each source, then
  * summary.json, comparison.json, README.md and PROGRESS.md.
  */
+import { existsSync } from "node:fs";
 import { join } from "node:path";
 import {
   type Claim,
+  type NumericAudit,
   NumericComparison,
   NumericGrade,
   type NumericHorizon,
@@ -49,7 +51,14 @@ interface Series {
 }
 
 type Match =
-  | { kind: "actual"; actual: number; vintage: string; notes: string[] }
+  | {
+      kind: "actual";
+      actual: number;
+      vintage: string;
+      notes: string[];
+      /** Forecast and actual restated on another scale (CBO deficits in % of GDP, #54); graded under D18. */
+      rescaled?: { forecast: number; unit: string };
+    }
   | { kind: "ungradable" | "open" | "excluded"; reason: string };
 
 const ungradable = (reason: string): Match => ({ kind: "ungradable", reason });
@@ -114,8 +123,17 @@ function imf(): Grader {
   const s = new Map([...by].map(([k, v]) => [k, series(`IMF ${k}`, v)]));
   const groups = new Set(["World", "Advanced economies", "Emerging market and developing economies", "Euro area"]);
   return {
-    match: ({ e, target }) => {
+    match: ({ e, ed, target }) => {
       const eco = String(e?.economy);
+      // #53 audit: before these editions the IMF published a different measure under the same subject.
+      if (eco === "India" && ed < "2013-07")
+        return ungradable("India forecasts before the July 2013 WEO Update are calendar-year figures; the captured IMF India actual is fiscal-year (April to March), and no calendar-year actual was captured");
+      if (eco === "Emerging market and developing economies" && ed < "2004-04")
+        return ungradable("before the April 2004 WEO this row is the old 'developing countries' group, which left out the countries in transition (about 15% of today's group); a different group, not membership drift");
+      if (eco === "Advanced economies" && ed < "1997-04")
+        return ungradable("before the May 1997 WEO this row is the old 'industrial countries' group, without the Asian newly industrialized economies and Israel; a different group, not membership drift");
+      if (eco === "World" && ed < "1993-04")
+        return ungradable("before the May 1993 WEO world growth was weighted at market exchange rates; the actual is PPP-weighted");
       const notes = groups.has(eco) ? [GROUP_COMPOSITION] : [];
       if (eco === "India") notes.push("India on a fiscal-year basis (April to March) in both forecast and actual.");
       return lookup(s.get(eco), target as number, target as number, notes);
@@ -174,7 +192,7 @@ function worldBank(): Grader {
   const g = new Map([...gep].map(([k, v]) => [k, series(`GEP June 2026 ${k}`, v)]));
   const w = new Map([...wdi].map(([k, v]) => [k, series(`WDI ${k}`, v)]));
   return {
-    match: ({ e, target }) => {
+    match: ({ e, ed, target }) => {
       const eco = String(e?.economy);
       const y = target as number;
       const note = String(e?.note ?? "");
@@ -184,9 +202,12 @@ function worldBank(): Grader {
         );
       const fromGep = g.get(eco)?.values.get(String(y));
       if (eco === "India") {
-        if (!/fiscal year/i.test(note)) return ungradable("India: the table does not state the basis of this forecast, and the captured WDI India series is recorded as calendar year");
-        if (fromGep === undefined) return ungradable("India fiscal-year forecast; the only captured India actual on a fiscal-year basis is the GEP June 2026 table (2023 to 2025); the WDI series is recorded as calendar year");
-        return lookup(g.get(eco), y, y, ["India on a fiscal-year basis (April to March) in both forecast and actual."]);
+        // #54: WDI reports India's national accounts on a fiscal-year basis (WDI country metadata, SpecialNotes:
+        // "fiscal year-end: March 31"), labelled like the GEP tables (WDI 2023 = 7.21 = GEP FY2023/24 column 2023).
+        if (!/fiscal year/i.test(note)) return ungradable("India: the table does not state the basis of this forecast (fiscal or calendar year), so no actual on the same basis can be chosen");
+        const basis = "India on a fiscal-year basis (April to March) in both forecast and actual.";
+        if (fromGep !== undefined) return lookup(g.get(eco), y, y, [basis]);
+        return lookup(w.get(eco), y, y, [basis, "Actual from WDI, which reports India on a fiscal-year basis with the same year labels as the GEP tables (2023 = FY2023/24)."]);
       }
       if (eco === "Advanced economies" || eco === "Emerging market and developing economies") {
         if (fromGep === undefined) return y > 2025 ? open("target year after 2025") : ungradable("no actual captured for this World Bank group and year (WDI does not publish the GEP groups; the GEP June 2026 table covers 2023 to 2025)");
@@ -196,7 +217,11 @@ function worldBank(): Grader {
       if (eco === "Euro area") notes.push(GROUP_COMPOSITION);
       if (eco === "World") notes.push("World aggregate at market exchange rates in forecast and actual.");
       if (fromGep !== undefined) return lookup(g.get(eco), y, y, notes);
-      if (eco === "World") notes.push("Actual from WDI (constant 2015 USD weights); GEP tables weight at the edition's base-year prices.");
+      // #53 audit: before 2019 the GEP weighted World at 1995, 2000 or 2005 prices; WDI World uses 2015 USD weights,
+      // which give emerging economies far more weight (gaps of 0.4 to 1.0 points). From 2019 the gap is 0.1 to 0.2 points.
+      if (eco === "World" && ed < "2019-01")
+        return ungradable("GEP World growth of this edition is weighted at an older price base (1995, 2000 or 2005 prices); the WDI World actual uses 2015 USD weights, a different aggregate. The GEP's own later-stated values on the edition's base are not captured");
+      if (eco === "World") notes.push("Actual from WDI (constant 2015 USD weights); GEP tables from 2019 weight at 2010 or 2010-19 average prices (gap 0.1 to 0.2 points in the #53 audit).");
       return lookup(w.get(eco), y, y, notes);
     },
   };
@@ -284,10 +309,25 @@ function cbo(): Grader {
       const annual = ANNUAL[metric];
       if (annual !== undefined) {
         const notes: string[] = [];
-        if (metric === "federal budget deficit")
-          notes.push("Actual is CBO's own deficit actual (the basis CBO uses to evaluate its baselines), not FRED FYFSD, which differs by up to 345 billion USD (FY2023).");
         if (/computed from the calendar-year levels/.test(String(e?.note ?? ""))) notes.push("Forecast growth computed by the capture from the levels in CBO's file.");
-        return lookup(bySeries.get(annual), y, y, notes);
+        if (metric !== "federal budget deficit") return lookup(bySeries.get(annual), y, y, notes);
+        // #54: a deficit is graded in percent of GDP (D18, points), as CBO evaluates its own deficit projections.
+        // A relative error in dollars explodes when the actual is near zero (FY1997 to FY2001).
+        notes.push("Actual is CBO's own deficit actual (the basis CBO uses to evaluate its baselines), not FRED FYFSD, which differs by up to 345 billion USD (FY2023).");
+        const m = lookup(bySeries.get(annual), y, y, notes);
+        if (m.kind !== "actual") return m;
+        const usd = bySeries.get("FYFSD")?.values.get(String(y))?.value;
+        const pct = bySeries.get("FYFSGDA188S")?.values.get(String(y))?.value;
+        if (typeof usd !== "number" || typeof pct !== "number" || pct === 0) return ungradable(`no fiscal-year ${y} GDP from FRED FYFSD / FYFSGDA188S to express the deficit in percent of GDP`);
+        const gdpBn = usd / 1000 / (pct / 100);
+        const f = Number(e?.value);
+        return {
+          ...m,
+          actual: (m.actual / gdpBn) * 100,
+          rescaled: { forecast: (f / gdpBn) * 100, unit: "% of GDP" },
+          vintage: `${m.vintage}; fiscal-year GDP ${Math.round(gdpBn)} billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-09-28)`,
+          notes: [...m.notes, `Graded in percent of GDP (#54): forecast ${f} and actual ${m.actual} billion USD, each divided by actual fiscal-year GDP, as CBO's own evaluations do.`],
+        };
       }
       if (metric === "Aaa corporate bond rate, average") return ungradable("no Aaa corporate bond rate actual was captured");
       const avg = AVERAGE[metric];
@@ -329,8 +369,9 @@ function obr(): Grader {
     if (x === undefined) throw new Error(`obr-forecasts: no realized series ${id}`);
     return series(id, (x.entries as Raw[]).map((e) => [String(e.target_year), { value: e.value, vintage }] as [string, Actual]));
   };
-  const gdp = find("ONS IHYP (PN2)", "ONS IHYP (PN2), release 2026-08-13");
-  const cpi = find("ONS D7G7 (MM23)", "ONS D7G7 (MM23), release 2026-09-16");
+  // #53 audit: unrounded actuals. IHYP and D7G7 print one decimal, which flips verdicts at the D18 thresholds.
+  const gdp = find("ONS ABMI (PN2) growth", "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded");
+  const cpi = find('OBR database "CPI" outturn row', "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded");
   const psnbPct = find('OBR database "PSNB" outturn row', "OBR historical official forecasts database, outturn row (March 2026)");
   const psnbGbp = find('OBR database "£PSNB" outturn row', "OBR historical official forecasts database, outturn row (March 2026)");
   return {
@@ -410,6 +451,11 @@ function eia(): Grader {
       const unit = (v.units as Raw)[key];
       if (unit === undefined) return ungradable(`the ${retro.replace("_", " ")} actuals do not include this series`);
       if (unit !== e?.unit) return ungradable(`unit differs from the retrospective's actuals (${e?.unit} vs ${unit})`);
+      // #53 audit: two Retrospective 2025 actuals are on another definition than the forecasts.
+      if (retro === "retrospective_2025" && key === "solar_generation")
+        return ungradable("the AEO Retrospective 2025 actual row is utility-scale solar only; the forecast is all-sector solar including small-scale PV (AEO 2023 states 205.0 billion kWh for 2022, the actual row about 144)");
+      if (retro === "retrospective_2025" && key === "total_energy_consumption")
+        return ungradable("the AEO Retrospective 2025 actuals use EIA's captured-energy basis for wind, solar and hydro; the forecasts use the fossil-fuel-equivalence basis (the 2021 actual is 97.30 in the 2022 Retrospective and 93.36 in the 2025 one)");
       const values = (v.series as Raw)[key] as Record<string, number>;
       const vintage = `EIA ${retro.replace("retrospective_", "AEO Retrospective ")} actuals (${v.data_as_of})`;
       const s = series(`${retro} ${key}`, Object.entries(values).map(([yy, val]) => [yy, { value: val, vintage }] as [string, Actual]));
@@ -564,7 +610,8 @@ const MATCH_RULES: Record<string, string[]> = {
   "imf-weo": [
     "Actual: IMF WEO April 2026 (DataMapper), the same series and weights (world at PPP).",
     "Group aggregates (world, advanced economies, EMDEs, euro area): the actual uses current composition; graded with a note.",
-    "India: fiscal year in both forecast and actual.",
+    "India: fiscal year in both forecast and actual, for editions from the July 2013 Update; earlier India forecasts are calendar-year figures and ungradable (no calendar-year actual captured; #53 audit).",
+    "Ungradable (#53 audit), because the edition's group is a different aggregate: emerging market and developing economies before April 2004 (old 'developing countries', without the transition economies); advanced economies before May 1997 (old 'industrial countries'); world before May 1993 (market-exchange-rate weights, actual is PPP).",
   ],
   "oecd-economic-outlook": [
     "Actual: OECD Economic Outlook 119 (June 2026), the same database variable GDPV_ANNPCT.",
@@ -575,7 +622,7 @@ const MATCH_RULES: Record<string, string[]> = {
     "Actual: GEP June 2026 table for 2023 to 2025; World Development Indicators for earlier years.",
     "Ungradable: 'High income' and 'Developing countries' (pre-June-2016 groups): the WDI groups use today's income classification.",
     "Ungradable: advanced economies and EMDEs before 2023 (no actual captured).",
-    "India: graded only against the fiscal-year GEP table (2023 to 2025). The WDI India series is recorded as calendar year in realized.json, so earlier India rows are ungradable.",
+    "India: fiscal-year forecasts are graded against the GEP June 2026 table (2023 to 2025) and otherwise against WDI, which reports India on a fiscal-year basis with the GEP year labels (WDI country metadata; WDI 2023 = 7.21 = GEP FY2023/24). realized.json calls the WDI series calendar year; that label is wrong (#54). Forecasts whose table does not state the basis stay ungradable.",
     "Current-year values in November, December and some January editions are estimates; they are graded as current-year forecasts, with the capture note in the claim.",
   ],
   "fed-sep": [
@@ -592,12 +639,12 @@ const MATCH_RULES: Record<string, string[]> = {
   "cbo-projections": [
     "Annual (2000 onward): FRED actuals on CBO's definitions: real GDP annual average, CPI-U annual average, unemployment annual average, 10-year Treasury annual average.",
     "Two- and five-year averages: the actual average is computed from annual actuals (geometric for growth and CPI, arithmetic for the 10-year rate). Real GNP before 1992.",
-    "Deficits (billions of dollars, D16): actual is CBO's own actuals (eval-projections), not FRED FYFSD. The relative error of a balance is large when the actual is near zero (FY1997 to FY2001).",
+    "Deficits: actual is CBO's own actuals (eval-projections), not FRED FYFSD. Graded in percent of GDP under D18 (#54): forecast and actual, in billions of dollars, are each divided by actual fiscal-year GDP (FRED FYFSD / FYFSGDA188S), as CBO's own evaluations do. A relative error in dollars explodes when the actual is near zero (FY1997 to FY2001).",
     "Ungradable: CPI averages of 1986 to 1989 (CBO forecast the CPI-W), and Aaa bond rate averages (no actual captured).",
   ],
   "obr-forecasts": [
-    "GDP and CPI: ONS IHYP and D7G7, latest releases.",
-    "PSNB (% of GDP by D18, £ billion by D16): outturn row of the OBR database. Graded only for EFOs from March 2020; earlier PSNB forecasts used earlier definitions (student-loan reclassification and others) and are ungradable.",
+    "GDP: growth computed from ONS ABMI levels (latest release), unrounded. CPI: the OBR database outturn row (ONS CPI annual rate, 3 decimals). The one-decimal ONS series IHYP and D7G7 are not used: rounding flipped verdicts at the D18 thresholds in the #53 audit.",
+    "PSNB (% of GDP by D18, £ billion by D16): outturn row of the OBR database. Graded only for EFOs from March 2020; earlier PSNB forecasts used earlier definitions (student-loan reclassification and others) and are ungradable. Checked for #54: the Spring 2026 database restates only one earlier vintage (memo row, March 2019), so no restated series exists for the other pre-2020 EFOs.",
     "Memo rows (restated March 2019, supplementary March 2020) are not claims (skipped at normalize). year_0 values (estimates of the year before publication) are excluded.",
   ],
   "bcb-focus": [
@@ -606,10 +653,11 @@ const MATCH_RULES: Record<string, string[]> = {
   ],
   "eia-aeo": [
     "Actual: the same AEO Retrospective as the forecast (2010, 2022 or 2025), on the same definition and unit. This takes definition over vintage: older retrospectives hold older actuals.",
+    "Ungradable (#53 audit): Retrospective 2025 solar generation (the actual row is utility-scale only, the forecast all-sector) and total energy consumption (captured-energy basis in the actual, fossil-fuel-equivalence in the forecast).",
     "Ungradable: constant-dollar prices from the 2022 retrospective (each edition's own dollar year; no actual on that basis). Target years before the edition year are excluded (estimates of the past).",
   ],
   "iea-weo": [
-    "Actual: the IEA's own later-stated history (base-year rows of later editions, WEO 2025 historical values), the latest statement for each year.",
+    "Actual: the IEA's own later-stated history (base-year rows of later editions, WEO 2025 historical values), the latest statement for each year. Confirmed for #54: the IEA states capacity on its own basis (for example 2,164 GW of solar PV for 2024 against Ember's 1,880 GW), so an IEA forecast is graded against the IEA's own history, never Ember, wherever the IEA states a value.",
     "Wind generation: Ember where the IEA states no value (2015). Solar PV and wind capacity: no Ember fallback (PV plus CSP scope, capacity basis gap).",
     "Annex row 'Solar' (2002 to 2009): generation graded against Ember PV plus CSP only for WEO 2004, which states that 'Solar' includes solar thermal; other editions and all capacity rows are ungradable.",
     "Scenarios other than the main one are excluded. Edition-level quotes without a value are excluded.",
@@ -683,7 +731,7 @@ function targetYear(e: Raw | undefined, claim: Claim): number | null {
   return null;
 }
 
-function horizonYears(e: Raw | undefined, ed: string, target: number | null): number | null {
+function horizonYears(e: Raw | undefined, published: string, target: number | null): number | null {
   const h = typeof e?.horizon === "string" ? e.horizon : "";
   if (h === "current_year") return 0;
   if (h === "next_year") return 1;
@@ -691,7 +739,8 @@ function horizonYears(e: Raw | undefined, ed: string, target: number | null): nu
   if (plus) return Number(plus[1]);
   const n = /^year_(\d+)$/.exec(h);
   if (n) return Number(n[1]) - 1;
-  return target === null ? null : target - Number(ed.slice(0, 4));
+  // From the publication year, not the edition label: AEO 1982 to 1987 came out the year after their title (#53 audit).
+  return target === null ? null : target - Number(published.slice(0, 4));
 }
 
 function gradeSource(source: string, editions: Map<string, SourceEdition>): NumericGrade[] {
@@ -713,7 +762,8 @@ function gradeSource(source: string, editions: Map<string, SourceEdition>): Nume
     if (e !== undefined && forecast !== null && Math.abs(forecast - Number(e.value)) > 1e-9)
       throw new Error(`${claim.id}: claim value ${claim.value} does not match raw row value ${e.value}; the id-to-row mapping is broken`);
     const target = targetYear(e, claim);
-    const horizon = horizonYears(e, ed, target);
+    const edition0 = editions.get(claim.source_edition_id);
+    const horizon = horizonYears(e, edition0?.published ?? ed, target);
     const subject = claim.subject_ids[0] as string;
     const edition = editions.get(claim.source_edition_id);
     if (edition === undefined) throw new Error(`${claim.id}: unknown edition ${claim.source_edition_id}`);
@@ -752,8 +802,9 @@ function gradeSource(source: string, editions: Map<string, SourceEdition>): Nume
       rows.push(NumericGrade.parse({ ...base, status: m2.kind, note: m2.reason }));
       continue;
     }
-    const rule = ruleFor(claim.unit);
-    const f = base.forecast as number;
+    const rule = m2.rescaled ? "D18" : ruleFor(claim.unit);
+    const f = m2.rescaled ? m2.rescaled.forecast : (base.forecast as number);
+    if (m2.rescaled) Object.assign(base, { forecast: round(f, 6), unit: m2.rescaled.unit });
     if (rule === "D16" && m2.actual === 0) {
       rows.push(NumericGrade.parse({ ...base, status: "ungradable", note: "actual is zero: relative error undefined" }));
       continue;
@@ -850,15 +901,77 @@ function byHorizon(rows: NumericGrade[]): { horizon: NumericHorizon; stats: Nume
   return [{ horizon: "all" as NumericHorizon, stats: stats(rows) }, ...HORIZONS.filter((h) => g.has(h)).map((h) => ({ horizon: h, stats: stats(g.get(h) as NumericGrade[]) }))];
 }
 
+interface AuditRecord {
+  decision: "confirm" | "correct" | "contest";
+  corrected?: { status?: string; verdict?: string; actual?: number };
+}
+
+/** D11 matching audit (#53): data/graded/audit/<source>.json, compared with the current grades. */
+function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined {
+  const file = join(GRADED, "audit", `${source}.json`);
+  if (!existsSync(file)) return undefined;
+  const a = readJson(file) as { seed: string; sample: string[]; records: Record<string, AuditRecord> };
+  const recs = Object.entries(a.records ?? {});
+  if (recs.length === 0) return undefined;
+  const byId = new Map(rows.map((r) => [r.claim_id, r]));
+  let fixed = 0;
+  let residual = 0;
+  for (const [id, r] of recs) {
+    const row = byId.get(id);
+    if (r.decision === "confirm") continue;
+    if (row === undefined) {
+      residual++;
+      continue;
+    }
+    // A row the code no longer grades publishes no verdict, so the error the audit found is resolved.
+    if (row.status !== "graded" && (r.decision === "contest" || r.corrected?.status !== "graded")) {
+      fixed += r.decision === "correct" ? 1 : 0;
+      continue;
+    }
+    if (row.status !== "graded" && r.decision === "correct") {
+      fixed++;
+      continue;
+    }
+    if (r.decision === "contest") {
+      residual++;
+      continue;
+    }
+    const c = r.corrected ?? {};
+    const statusOk = c.status === undefined || c.status === row.status;
+    const verdictOk = row.status !== "graded" || c.verdict === undefined || c.verdict === row.verdict;
+    if (statusOk && verdictOk) fixed++;
+    else residual++;
+  }
+  const n = recs.length;
+  const count = (d: string) => recs.filter(([, r]) => r.decision === d).length;
+  return {
+    seed: a.seed,
+    sample: a.sample.length,
+    audited: n,
+    confirmed: count("confirm"),
+    corrected: count("correct"),
+    contested: count("contest"),
+    error_rate: round((count("correct") + count("contest")) / n, 4),
+    fixed_in_code: fixed,
+    residual_errors: residual,
+    residual_error_rate: round(residual / n, 4),
+  };
+}
+
 function summarize(all: Map<string, NumericGrade[]>): NumericSummary {
   const sources = [...all.keys()].sort().map((source) => {
     const rows = all.get(source) as NumericGrade[];
+    const totals = stats(rows);
+    const audit = auditOf(source, rows);
+    const ci = totals.hit_rate_ci95;
+    const e = audit?.residual_error_rate;
     const fam = groupBy(rows, (r) => r.family);
     const subj = groupBy(rows, (r) => `${r.subject_id}\u0000${r.family}`);
     const eds = groupBy(rows, (r) => r.edition);
     return {
       source_id: source,
-      totals: stats(rows),
+      totals,
+      ...(audit ? { audit, hit_rate_audit_adjusted95: ci && typeof e === "number" ? ([round(Math.max(0, ci[0] - e), 4), round(Math.min(1, ci[1] + e), 4)] as [number, number]) : null } : {}),
       by_horizon: byHorizon(rows),
       by_family: [...fam.keys()].sort().flatMap((f) => byHorizon(fam.get(f) as NumericGrade[]).map((x) => ({ family: f, ...x }))),
       by_subject: [...subj.keys()].sort().flatMap((k) => {
@@ -873,7 +986,7 @@ function summarize(all: Map<string, NumericGrade[]>): NumericSummary {
   });
   return NumericSummary.parse({
     note:
-      "Deterministic numeric grading (D16, D18, D19). hit_rate = hits / graded rows, with a Wilson 95% interval. errors: bias = mean of forecast minus actual, mae = mean absolute error, in percentage points (D18) or percent of the actual (D16). D11: below 20 graded rows, counts only. Horizon buckets use years between publication and target (0 = current year).",
+      "Deterministic numeric grading (D16, D18, D19). hit_rate = hits / graded rows, with a Wilson 95% interval. audit: the D11 matching audit (#53); hit_rate_audit_adjusted95 widens the interval by the residual audit error rate (D28). errors: bias = mean of forecast minus actual, mae = mean absolute error, in percentage points (D18) or percent of the actual (D16). D11: below 20 graded rows, counts only. Horizon buckets use years between publication and target (0 = current year).",
     min_graded_for_rate: MIN_N,
     sources,
   });
@@ -887,7 +1000,7 @@ const COMPARISON_CAVEATS: Record<string, string[]> = {
   ],
   "united-states-real-gdp-growth": ["CBO year_1 comes from January or February baselines; IMF, OECD and World Bank current-year values come from spring and autumn editions."],
   "brazil-real-gdp-growth": ["BCB Focus values are the median of market forecasts, sampled quarterly; the others are institutional forecasts."],
-  "india-real-gdp-growth": ["World Bank India rows are graded only for 2023 to 2025 (the only fiscal-year actuals captured)."],
+  "india-real-gdp-growth": ["World Bank India rows are fiscal-year forecasts graded against fiscal-year actuals (GEP June 2026 for 2023 to 2025, WDI before); rows whose table does not state the basis are ungradable."],
   "united-kingdom-real-gdp-growth": ["OBR year_1 is the calendar year of publication of each EFO (spring and autumn)."],
 };
 
@@ -967,6 +1080,25 @@ function readme(all: Map<string, NumericGrade[]>, summary: NumericSummary, compa
     const t = s.totals;
     const n = (all.get(s.source_id) as NumericGrade[]).length;
     L.push(`| ${s.source_id} | ${n} | ${t.n_graded} | ${t.hits} | ${t.partials} | ${t.misses} | ${t.ungradable} | ${t.open} | ${t.excluded} | ${rateCell(t)} |`);
+  }
+  L.push("");
+  L.push("## Matching audit (D11, D20, #53)", "");
+  L.push(
+    "An agent checked a fixed-seed sample of graded rows per source (`node scripts/numeric-audit-sample.mjs <source>`, seed `d11:<source>:numeric`, at least 50 rows or 10%, misses weighted 1.5): forecast as printed, actual series and definition, year, actual value. Records are in `data/graded/audit/<source>.json`. A matching error found in the sample is fixed in this command for every row; `residual` counts sampled rows whose grade still differs from the audit. The audit-adjusted interval widens the hit-rate interval by the residual error rate (D28). The sample is not redrawn after a fix (D24), so a sampled row may now be ungradable.",
+    "",
+    "| Source | Audited | Confirm | Correct | Contest | Error rate found | Fixed in code | Residual | Audit-adjusted interval |",
+    "|---|---|---|---|---|---|---|---|---|",
+  );
+  for (const s of summary.sources) {
+    const a = s.audit;
+    if (a === undefined) {
+      L.push(`| ${s.source_id} | audit pending | | | | | | | |`);
+      continue;
+    }
+    const adj = s.hit_rate_audit_adjusted95;
+    L.push(
+      `| ${s.source_id} | ${a.audited} of ${a.sample} | ${a.confirmed} | ${a.corrected} | ${a.contested} | ${pct(a.error_rate)} | ${a.fixed_in_code} | ${a.residual_errors} (${pct(a.residual_error_rate)}) | ${adj ? `[${pct(adj[0])}, ${pct(adj[1])}]` : "counts only"} |`,
+    );
   }
   L.push("");
   L.push("## Headline comparison: real GDP growth (D17)", "");

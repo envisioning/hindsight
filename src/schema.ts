@@ -270,6 +270,27 @@ export const NumericStats = z
   .refine((s) => s.n_graded === s.hits + s.partials + s.misses, { message: "graded = hits + partials + misses" })
   .refine((s) => (s.n_graded >= 20) === (s.hit_rate !== null && s.hit_rate_ci95 !== null), { message: "a rate is published exactly when n >= 20 (D11)" });
 
+/**
+ * D11 matching audit of one numeric source (D19, D20, issue #53): an agent checked a fixed-seed sample of
+ * graded rows (forecast value, series, definition, year, actual). A matching error found in the sample is
+ * fixed in code for every row; `residual_errors` are sampled rows where the current grade still differs
+ * from the auditor's decision. D28 widens the rate interval by `residual_error_rate`.
+ */
+export const NumericAudit = z.object({
+  seed: z.string().min(1),
+  sample: z.number().int().min(0),
+  audited: z.number().int().min(0),
+  confirmed: z.number().int().min(0),
+  corrected: z.number().int().min(0),
+  contested: z.number().int().min(0),
+  /** (corrected + contested) / audited, as the audit found it. */
+  error_rate: z.number().min(0).max(1).nullable(),
+  /** Corrected rows whose current grade now matches the auditor's correction. */
+  fixed_in_code: z.number().int().min(0),
+  residual_errors: z.number().int().min(0),
+  residual_error_rate: z.number().min(0).max(1).nullable(),
+});
+
 export const NumericSummary = z.object({
   note: z.string().min(1),
   min_graded_for_rate: z.literal(20),
@@ -277,6 +298,10 @@ export const NumericSummary = z.object({
     z.object({
       source_id: Id,
       totals: NumericStats,
+      /** D11 matching audit (#53). Absent before the audit. */
+      audit: NumericAudit.optional(),
+      /** D28: `totals.hit_rate_ci95` widened by the audit's residual error rate on both sides. */
+      hit_rate_audit_adjusted95: z.tuple([z.number(), z.number()]).nullable().optional(),
       by_horizon: z.array(z.object({ horizon: NumericHorizon, stats: NumericStats })),
       by_family: z.array(z.object({ family: z.string().min(1), horizon: NumericHorizon, stats: NumericStats })),
       by_subject: z.array(z.object({ subject_id: Id, family: z.string().min(1), horizon: NumericHorizon, stats: NumericStats })),
@@ -318,6 +343,7 @@ export type VerdictRow = z.infer<typeof VerdictRow>;
 export type Revision = z.infer<typeof Revision>;
 export type SubjectTechnologyLink = z.infer<typeof SubjectTechnologyLink>;
 export type NumericRule = z.infer<typeof NumericRule>;
+export type NumericAudit = z.infer<typeof NumericAudit>;
 export type NumericGrade = z.infer<typeof NumericGrade>;
 export type NumericHorizon = z.infer<typeof NumericHorizon>;
 export type NumericStats = z.infer<typeof NumericStats>;

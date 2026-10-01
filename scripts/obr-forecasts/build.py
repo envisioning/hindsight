@@ -152,6 +152,17 @@ for cdid, ds, path, metric in ONS:
                    'source': 'ONS: ' + d['description']['title'],
                    'source_url': f'https://www.ons.gov.uk/{path}/timeseries/{cdid}/{ds}',
                    'release_date': d['description'].get('releaseDate'), 'entries': ents})
+# Real GDP growth from ONS ABMI levels (chained volume, £m), unrounded. IHYP is the same measure printed
+# to one decimal; rounding moves errors near the D18 thresholds (#53 audit).
+d = json.load(open(os.path.join(IN, 'ons', 'abmi.json')))
+lv = {int(x['date']): float(x['value']) for x in d['years'] if x['value'] not in ('', None)}
+ents = [{'target_year': y, 'value': round((lv[y] / lv[y - 1] - 1) * 100, 3), 'unit': '%',
+         'confidence': 'medium' if y >= 2025 else 'high'}
+        for y in sorted(lv) if y >= 2009 and y - 1 in lv]
+series.append({'metric': 'real GDP growth', 'series_id': 'ONS ABMI (PN2) growth',
+               'source': 'ONS: ' + d['description']['title'] + '; annual growth computed from the levels',
+               'source_url': 'https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2',
+               'release_date': d['description'].get('releaseDate'), 'entries': ents})
 real = {
     'source': 'ONS, directly and as compiled by the OBR',
     'vintage': 'OBR database March 2026; ONS series retrieved 2026-09-28 (release dates per series)',
