@@ -18,7 +18,7 @@ Ring centre (2476.5, 1751.5) px on the 4960x3507 image. Year = 2015 + (r - 695.5
 
 ## Grading caveat
 
-On this poster "mainstream" means **R&D prototyping or VC/startup investment**, not mass adoption. It comes before "financially viable", which means products are generally available on Kickstarter. Claims read "<Label> reaches R&D prototyping or venture investment around <year>" (D37). D16's mainstream tests do not apply; the grading rule for this source is pending (D37). The poster also says "Timelines should be interpreted relatively, not literally."
+On this poster "mainstream" means **R&D prototyping or VC/startup investment**, not mass adoption. It comes before "financially viable", which means products are generally available on Kickstarter. Claims are taken from the financially viable mark, not the mainstream point: "Products and services using <Label> are generally available around <year>" (D37). The mainstream point is kept in `milestones` and the claim note. The poster also says "Timelines should be interpreted relatively, not literally."
 
 ## Counts
 

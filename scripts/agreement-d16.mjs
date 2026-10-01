@@ -87,7 +87,7 @@ const hits = consensus.filter((c) => c.verdict === "hit").length;
 const r4 = (x) => Math.round(x * 10000) / 10000;
 
 const out = {
-	rule: "D16",
+	rule: JSON.parse(readFileSync(path.join(dir, "verdicts-d16-graderA.json"), "utf8")).rule ?? "D16",
 	graders: ["A", "B"],
 	n,
 	agree: agreeing.length,

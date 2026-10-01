@@ -541,20 +541,26 @@ It applies first to NIC Global Trends projections, McKinsey Technology Trends Ou
 
 ## D37: Envisioning study posters: education 2012, health 2012, Horizons 2014
 
-*Recorded 2026-10-01. Scope approved by MZ; grading rule pending.*
+*Recorded 2026-10-01. Scope and grading rule approved by MZ.*
 
 **Decision.** Three more Envisioning posters are captured as their own sources, published and CC BY-SA at the time: `envisioning-education` (2012, 42 placements), `envisioning-health` (2012, 55) and `envisioning-horizons` (2014, 88, commissioned by Policy Horizons Canada and published in MetaScan 3, which the poster prints). Each claim says what its poster says, not the 2011 and 2012 posters' "becomes mainstream":
 
 - Education: "<Label> starts to influence learning environments around <year>". The poster organises technologies "likely to influence education in the upcoming decades". Use is tested in schools and learning, not in general.
 - Health: "<Label> starts to affect health care around <year>". Years are decade-coarse (2020, 2030, 2040 bands).
-- Horizons: "<Label> reaches R&D prototyping or venture investment around <year>", from the poster's "mainstream point", which its legend defines as "becomes avilable for prototyping in R&D labs, or when VCs and startups start investing in it". The scientifically viable and financially viable ("generally available on Kickstarter") marks are kept in the raw file and the claim note, not as claims.
+- Horizons: "Products and services using <Label> are generally available around <year>", from the poster's "financially viable" mark, which its legend defines as "The point when products and services using the technology are generally available on Kickstarter". The poster's "mainstream point" means R&D prototyping or first venture investment ("becomes avilable for prototyping in R&D labs, or when VCs and startups start investing in it"); it and the scientifically viable mark are kept in the raw file and the claim note, not as claims.
 
 Not captured: the Future of Money timeline and reports (no dated claims), the Future of Finance poster (a readiness scale with no years), and client roadmaps that were never published.
 
-**Grading.** None yet. D16's mainstream thresholds do not fit these claims. The rule for "starts to influence" and for the Horizons R&D mark is written as an amendment before grader A and B run, and needs MZ's approval like D31 to D35.
+**Grading rule (D37, approved by MZ 2026-10-01).** Placed year Y. A claim is graded when Y + 2 is not after 2026; later placements stay `open`. Two blind graders, adjudication, audit and final as D20.
+
+- Education and health ("starts to influence / affect around Y"). The test is use in the named field: schools and learning, or health care. `hit`: at least 5% of the relevant users, institutions or procedures used it by Y + 2 (earlier counts: a placement at the poster's first row means "already here"). `partial`: real use below 5% by Y + 2 (pilots, niche products in routine use somewhere), or 5% reached 3 to 5 years after Y. `miss`: no real use in the field within 5 years after Y, or abandoned; provisional while that window is open. Practices (flipped classrooms, self-paced learning) take the abstract-practice test: routine and reported as normal in some share of schools.
+- Horizons ("generally available around Y", the financially viable mark). `hit`: products or services using the technology could be bought by ordinary customers (consumers, or businesses outside pilots) by Y + 2; earlier counts, as in D16, because the mark is a threshold. `partial`: real but limited availability by Y + 2 (pre-orders, pilots, a single niche product), or general availability 3 to 5 years after Y. `miss`: not available within 5 years after Y, or abandoned; provisional while the window is open. A mark at the chart's outer edge (2027) means 2027 or later and stays open. The poster's caveat ("timelines should be interpreted relatively, not literally") is noted with the rate, not used to soften verdicts.
+
+*Amended 2026-10-01, before any verdict was kept:* a first run graded the mainstream point (R&D prototype or first venture investment, with "earlier than Y - 6" as a miss). Both blind graders gave 0 hits of 68: the poster put long-existing technologies at future years, so that rule measured whether a technology was already old in 2014, not the poster's timing. MZ chose the financially viable mark instead. The first-run verdict files were discarded unpublished.
+- `unfalsifiable` and `ungradable` as D16 and D22. A grader names the test used.
 
 **Why.** Envisioning grades its own record first, and these are the dated forecasts it published between 2012 and 2014. Grading a poster against a stronger claim than it made would misstate it.
 
-**Cost.** Three sources, three thresholds. Their rates are not comparable with the posters graded under D16, and are shown separately.
+**Cost.** Three sources, two rules. Their rates are not comparable with the posters graded under D16, and are shown separately.
 
 **Overturned by.** Evidence that a poster's own text meant mainstream adoption after all.

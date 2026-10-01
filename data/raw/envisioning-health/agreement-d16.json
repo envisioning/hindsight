@@ -1,0 +1,184 @@
+{
+ "rule": "D37",
+ "graders": [
+  "A",
+  "B"
+ ],
+ "n": 28,
+ "agree": 26,
+ "raw_agreement": 0.9286,
+ "kappa": 0.8777,
+ "passes_d11": true,
+ "graderA": {
+  "hit": 11,
+  "partial": 14,
+  "miss": 3
+ },
+ "graderB": {
+  "hit": 11,
+  "partial": 14,
+  "miss": 3
+ },
+ "agreed": {
+  "hit": 11,
+  "partial": 13,
+  "miss": 2
+ },
+ "hit_rate_agreed": {
+  "hits": 11,
+  "of_graded_hit_partial_miss": 26,
+  "wilson95": [
+   0.255,
+   0.611
+  ],
+  "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
+ },
+ "consensus": [
+  {
+   "id": "health-2012-001",
+   "label": "Synthetic blood",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-002",
+   "label": "Tissue regeneration",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-003",
+   "label": "Artificial vascular system",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-009",
+   "label": "3D-printed drugs",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-010",
+   "label": "Stem-cell treatments",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-012",
+   "label": "Personalized medicine",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-023",
+   "label": "Robotic surgery",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-024",
+   "label": "App-driven diagnostics",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-025",
+   "label": "Natural language processing",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-026",
+   "label": "AR surgery assistance",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-027",
+   "label": "Virtual triage",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-028",
+   "label": "Telemetrics",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-033",
+   "label": "Non-invasive glucose sensors",
+   "verdict": "miss"
+  },
+  {
+   "id": "health-2012-034",
+   "label": "Open health records",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-035",
+   "label": "Epidermal sensors",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-036",
+   "label": "Question answering computing systems",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-037",
+   "label": "Ingestible sensors",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-038",
+   "label": "Rapid gene sequencing",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-039",
+   "label": "At-home sensors",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-040",
+   "label": "Data-driven patient communities",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-041",
+   "label": "Tissue-embedded sensors",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-046",
+   "label": "Hybrid assisted limbs",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-048",
+   "label": "Myoelectric prosthesis",
+   "verdict": "hit"
+  },
+  {
+   "id": "health-2012-049",
+   "label": "Exoskeletons",
+   "verdict": "partial"
+  },
+  {
+   "id": "health-2012-050",
+   "label": "Augmented olfaction",
+   "verdict": "miss"
+  },
+  {
+   "id": "health-2012-051",
+   "label": "Neuroprosthetics",
+   "verdict": "hit"
+  }
+ ],
+ "unfalsifiable_agreed": [],
+ "ungradable_agreed": [],
+ "contested": [
+  {
+   "id": "health-2012-011",
+   "label": "Prenatal gene manipulation",
+   "graderA": "miss",
+   "graderB": "partial"
+  },
+  {
+   "id": "health-2012-047",
+   "label": "Auditory vision substitution",
+   "graderA": "partial",
+   "graderB": "miss"
+  }
+ ]
+}

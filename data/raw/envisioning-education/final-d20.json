@@ -1,0 +1,195 @@
+{
+ "rule": "D37",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.6329,
+ "n": 29,
+ "counts": {
+  "hit": 21,
+  "partial": 7,
+  "contested": 1
+ },
+ "hit_rate": {
+  "hits": 21,
+  "of_graded_hit_partial_miss": 28,
+  "rate": 0.75,
+  "wilson95": [
+   0.566,
+   0.873
+  ],
+  "audit_adjusted95": [
+   0.526,
+   0.913
+  ]
+ },
+ "hit_or_partial_rate": 1,
+ "adjudicated": 4,
+ "audit": {
+  "sample": 25,
+  "audited": 25,
+  "confirmed": 24,
+  "corrected": 0,
+  "contested": 1,
+  "error_rate": 0.04
+ },
+ "verdicts": [
+  {
+   "id": "edu-2012-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-006",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Apple's Volume Purchase Program for Education (US 2010) is an education-only storefront through which schools buy and distribute App Store apps, and iTunes U is an education-only content store; with 4.5M iPads in US schools by Feb 2013, well over 5% of US schools used that channel by 2014. B required a store that is education-dedicated in its catalogue and found no share figure; the VPP education store meets the label's sense. Google Play for Education closing in 2016 is after Y+2 and does not undo the hit."
+  },
+  {
+   "id": "edu-2012-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-009",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The LJ/SLJ ebook survey found 6% of school libraries circulating preloaded e-reading devices, and among those the devices were mostly e-ink (Sony Reader 64%, Kindle 47%, Nook 15%, iPad 4%). That crosses D37's 5% bar by Y+2, narrowly. B's evidence measures student interest in e-books, not the share of schools using e-readers, so it does not test the threshold."
+  },
+  {
+   "id": "edu-2012-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-011",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-013",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-014",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-015",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-016",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-017",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-019",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-020",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-021",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "No measure of school share: 3ders/Y Soft 2017 says 23% of vendor-survey respondents use 3D printing at primary level (not 23% of K-12 schools, as grader B reads it); MakerBot's 7,000 classroom printers (Voxelmatters 2019) is ~5% of US schools only if one per school. Evidence cannot separate hit from partial."
+  },
+  {
+   "id": "edu-2012-022",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-023",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-024",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-025",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "A's hit counts remote proctoring as eye tracking. Proctorio, the leading tool, states it does not track eye movements; it flags face presence and head turning away. So the 54% proctoring share measures webcam face monitoring, not eye tracking. True eye tracking in learning stayed in research and pilots, with some gaze-estimation features in proctoring. Real use below 5% = partial."
+  },
+  {
+   "id": "edu-2012-026",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "A's two cases do not meet the reading: England's CO2 monitors are single-purpose building sensors with no intelligence, and the micro:bit is a programmable board taught as a computer, not intelligence embedded in everyday objects. Both show real adjacent use; no measure puts smart classroom objects at 5% of schools. Real but limited = partial."
+  },
+  {
+   "id": "edu-2012-027",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-028",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "edu-2012-029",
+   "verdict": "hit",
+   "status": "audited"
+  }
+ ]
+}
