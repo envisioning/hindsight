@@ -1,0 +1,1440 @@
+{
+ "rule": "D16",
+ "role": "adjudicator (D20), pass 2 re-check with page access (D24)",
+ "pass": 2,
+ "method": "Three re-check agents opened every pass-1 evidence URL (Wayback Machine not reachable from the session), confirmed or revised each settled timeline, and replaced rows they could not open. Recorded 2026-10-01.",
+ "model": "agent (model not recorded in the public repo)",
+ "timelines": [
+  {
+   "subject_id": "bluetooth",
+   "decision": "confirm",
+   "reading": "Bluetooth short-range wireless as a feature of mobile phones and their accessories (the volume device class for Bluetooth in 1999-2001).",
+   "test": "Device feature: at least 50% of new mobile phones in major markets (US, Western Europe) shipping with Bluetooth; 5% of new phones for year_5pct.",
+   "year_5pct": 2003,
+   "year_mainstream": 2007,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Neither builder. A's 2006 is contradicted by Nokia's figures: 133M Bluetooth phones in 2005 against a handset market of about 780M (~17%), 220M forecast for 2006 (well under half globally). B's 2009 extrapolates global growth and ignores major-market data: NPD counted 53% of US phones sold with Bluetooth in Q4 2006 and 72% in Q4 2007. 2007 is the first full year above 50% in a major market; the US crossed on a quarterly basis at the end of 2006, so the year is bounded between late 2006 and 2007. Global (incl. low-end emerging-market phones) crossed later, but D16 asks for major markets. year_5pct 2003 only needs to be <=2004 and is not contested in effect.",
+   "recheck": "Opened NPD/RF Globalnet (2008-02-20): 53% Q4 2006, 72% Q4 2007, confirmed. Opened NBC News (2006-01-04): 133M Bluetooth phones 2005, 220M forecast 2006, market ~780M (pass 1 said ~816M; no effect). Telecompaper 284587 opened but does NOT say 30% of Western European phones in June 2005: it is an older forecast (71% of global sales by 2006, which did not happen); row dropped and the Western Europe figure removed from the reason. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.rfglobalnet.com/doc/us-mobile-phone-sales-reach-115-billion-in-20-0001",
+     "title": "U.S. Mobile Phone Sales Reach $11.5 Billion In 2007 (NPD, via RF Globalnet)",
+     "date": "2008-02-20",
+     "shows": "Page opened: share of US phones sold with Bluetooth 53% in Q4 2006, 72% in Q4 2007."
+    },
+    {
+     "url": "https://www.nbcnews.com/news/amp/wbna10706217",
+     "title": "Nokia sees surge in Bluetooth phone market - NBC News",
+     "date": "2006-01-04",
+     "shows": "Page opened: Bluetooth phones 133M in 2005, 220M forecast for 2006; handset market about 780M in 2005."
+    }
+   ]
+  },
+  {
+   "subject_id": "data-mining",
+   "decision": "confirm",
+   "reading": "Automated discovery of patterns and predictive models in large business and government databases (scoring, segmentation, fraud detection, market-basket analysis), as sold by data-mining tool vendors around 1999.",
+   "test": "Routine production use by at least 20% of the relevant organisations: large organisations holding large customer or transaction databases (banks, insurers, telecoms, retailers, large agencies); 5% for year_5pct.",
+   "year_5pct": 1997,
+   "year_mainstream": 2004,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Closer to A. year_mainstream 2004 is an upper bound (no later than 2004), which is all the 1999 claim (placed 2004, hit if mainstream by 2006) needs. GAO-04-548 (May 2004) found 52 of 128 surveyed US federal agencies using or planning data mining, with 199 efforts of which 131 were operational: well above 20% of a large-organisation population by 2004, and the commercial heavy users (credit scoring, telecom churn, retail basket analysis) were earlier than government. B's 2014 used the wrong denominator and object: TDWI/Eurostat measure predictive analytics or big-data analysis across all companies of all sizes, a later and broader technology, not data mining among organisations with large customer databases. A's evidence (Wikipedia) carries no share figure, so the year rests on the GAO count. Low-to-moderate certainty.",
+   "recheck": "Opened GAO-04-548 (PDF via WebFetch; direct curl got Akamai 'Access Denied'). Results in Brief: survey of 128 federal departments and agencies, 52 using or planning to use data mining, 199 efforts, 68 planned and 131 operational. Matches pass 1 exactly. ScienceDirect article (S0268401211001319) returned HTTP 403; dropped from evidence. year_mainstream 2004 stays an upper bound; the 1999 claim (placed 2004) needs only mainstream by 2006. No change.",
+   "evidence": [
+    {
+     "url": "https://www.gao.gov/assets/gao-04-548.pdf",
+     "title": "Data Mining: Federal Efforts Cover a Wide Range of Uses (GAO-04-548)",
+     "date": "2004-05",
+     "shows": "Page opened. Survey of 128 federal departments and agencies: 52 using or planning to use data mining; 199 efforts, 68 planned and 131 operational."
+    },
+    {
+     "url": "https://www.gao.gov/products/gao-04-548",
+     "title": "GAO-04-548 product page",
+     "date": "2004-05-04",
+     "shows": "Page opened. Report date 4 May 2004, 71-page full report."
+    }
+   ]
+  },
+  {
+   "subject_id": "internet-micropayment-systems",
+   "decision": "confirm",
+   "reading": "Dedicated payment systems that make very small online payments (cents to a few dollars) economic for buying individual content items or services across the web (Millicent, CyberCoin, BitPass, PayPal micropayments, Flattr, Blendle-style pay-per-article).",
+   "test": "At least 20% of internet users in a major market routinely paying through such a micropayment system; 5% for year_5pct.",
+   "year_5pct": null,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. The dominant reading is the dedicated micropayment system. The decisive point is Gartner's own placement: in 2010 it still placed Internet Micropayment Systems 2-5 years from the plateau (on the Slope of Enlightenment), two years after the App Store and seven after the iTunes 99-cent store. So app-store and in-game purchases were not what the label referred to; counting them, as A does, makes the 2010 placement describe something already near mainstream. A says itself that under the dedicated-system reading the answer is never mainstream. No dedicated system (Millicent, IBM Micro Payments, BitPass, Flattr, Blendle, which moved to subscriptions in 2019) reached even 5% of internet users. Not marked abandoned, because new attempts keep appearing. A Gartner definition of the 2010 entry could not be retrieved, so this rests on the placement argument.",
+   "recheck": "Opened Wikipedia 'Micropayment': it lists the dedicated systems (IBM Micro Payments, iPIN 'never widely adopted', Millicent, NetBill, Flattr, Blendle pivoting from micropayments in 2019) and attributes the term mainly to in-game virtual goods; supports the reading and null years. blog.hemartin.net/2010/08/... is dead (DNS does not resolve); the Wayback Machine was not reachable from this session (connection reset / fetch refused). Fact correction from the repo's own 2010 capture (2010.json x_time 62.5, 2010 phase boundaries 53.48/84.16): the 2010 entry sits on the Slope of Enlightenment with a 2-5 year band, not 'on the rise' as pass 1 wrote. The placement argument (still 2-5 years out in 2010, after the App Store) holds either way, so years unchanged.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Micropayment",
+     "title": "Micropayment - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened. Dedicated systems (IBM Micro Payments, iPIN, Millicent, NetBill, Flattr, Blendle) described as not widely adopted or pivoted away (Blendle 2019); the term is otherwise applied to in-game virtual-goods purchases."
+    }
+   ]
+  },
+  {
+   "subject_id": "enterprise-instant-messaging",
+   "decision": "confirm",
+   "reading": "Instant messaging and presence deployed and managed by organisations for business use (Sametime, Microsoft LCS/OCS, Jabber-based servers, managed gateways over public IM).",
+   "test": "Routine use by at least 20% of medium and large organisations of enterprise-class (managed) IM; 5% for year_5pct.",
+   "year_5pct": 2002,
+   "year_mainstream": 2005,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. B's sources are primary analyst surveys: Nemertes 2005, 76% of medium and large companies use some IM and 58% of corporate IM users are on an enterprise-class model; Osterman, about 93% of North American organisations use IM in some form. B's ~44% of companies is a derived figure (it multiplies a share of users by a share of companies), but even a cautious reading puts enterprise-class deployments above 20% of medium and large firms by 2005. Under the broader reading (any IM used in the enterprise), the crossing is earlier still (Radicati 2004: 85% of North American companies). Both readings give a hit for the 2001 claim placed at 2003, which needs mainstream by 2005. A's 2006 is from general knowledge and cites no share. year_mainstream 2005 is an upper bound.",
+   "recheck": "Opened Computer Weekly (2006-09-05): Nemertes 2005 76% of medium and large companies use IM, 58% of corporate IM users on enterprise-class; Osterman ~93% of NA organisations. Opened Messaging Pipeline (July 2004): Radicati 85% of NA companies, 42M of 362M business IM users on enterprise-only systems. Both confirm pass 1.",
+   "evidence": [
+    {
+     "url": "https://www.computerweekly.com/news/2240065952/Instant-messaging-boom-brings-security-concerns",
+     "title": "Instant messaging boom brings security concerns - Computer Weekly",
+     "date": "2006-09-05",
+     "shows": "Page opened: Nemertes 2005, 76% of medium and large companies use IM, 58% of corporate IM users on enterprise-class products; Osterman, ~93% of North American organisations use IM."
+    },
+    {
+     "url": "https://messagingpipeline.com/23901002",
+     "title": "Radicati Forecasts Huge Growth In Enterprise Instant Messaging - Messaging Pipeline",
+     "date": "2004-07",
+     "shows": "Page opened: IM reaches 85% of North American companies; 42M of 362M business IM users on enterprise-only systems."
+    }
+   ]
+  },
+  {
+   "subject_id": "natural-language-search",
+   "decision": "confirm",
+   "reading": "Web or enterprise search that accepts plain-language questions and interprets them, rather than requiring keyword queries; in 2002 the reference product was Ask Jeeves.",
+   "test": "At least 20% of web searchers in major markets using such search; 5% of searchers (or searches) for year_5pct.",
+   "year_5pct": 2001,
+   "year_mainstream": 2013,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Closer to A. Both builders define the label as 'Ask Jeeves style', so Ask Jeeves usage counts toward the 5% floor. comScore Media Metrix put Ask Jeeves sites at about 6% of US searches through July 2004 and 6.1% in July 2005 (with its acquired engines); Ask Jeeves alone was about 2-3.5% of searches. Its share of searchers (monthly reach) was higher than its share of queries, so 5% of searchers is met no later than 2004-2005; 2001 is kept as the pass-1 value inside that bound. B's 2019 (BERT) moves the test to back-end language understanding on Google and ignores the Ask Jeeves base that B's own reading names. year_mainstream: Hummingbird 2013 (A) or BERT 2019-20 (B); both are later than 2012, so the 2002 claim (placed 2007) is a partial either way. Only the 5% year decides it, and every candidate year is before 2007.",
+   "recheck": "Opened the Spokesman-Review article: confirms comScore Media Metrix ~6% of US searches for Ask Jeeves sites (incl. Teoma, Excite, iWon) through July 2004; it does NOT contain the Nielsen NetRatings 8.5% figure pass 1 cited (removed from reason). Opened comScore July 2005 rankings: Ask Jeeves 6.1% of US searches. Opened MediaPost case study: Ask Jeeves alone ~2% of searches (April 2005). Opened Wikipedia Ask.com: launched 1997 for natural-language questions, Jeeves dropped Feb 2006. Year 2001 is not fixed by any page, but every opened page bounds year_5pct at or before 2005, well before the placed year 2007, so the verdict (partial) does not depend on it. Years unchanged; reason corrected.",
+   "evidence": [
+    {
+     "url": "https://www.spokesman.com/stories/2004/sep/26/ask-jeeves-searches-for-market-share/",
+     "title": "Ask Jeeves searches for market share - Spokesman-Review",
+     "date": "2004-09-26",
+     "shows": "Page opened. comScore Media Metrix: Ask Jeeves search engines (incl. Teoma, Excite, iWon) 6% of US searches through July 2004; Google 36%, Yahoo 29%."
+    },
+    {
+     "url": "https://ir.comscore.com/news-releases/news-release-details/comscore-reports-july-2005-search-engine-rankings",
+     "title": "comScore Reports July 2005 Search Engine Rankings",
+     "date": "2005-08",
+     "shows": "Page opened. Ask Jeeves 6.1% of US searches in July 2005."
+    },
+    {
+     "url": "https://www.mediapost.com/publications/article/29688/cross-media-case-study-ask-jeeves.html",
+     "title": "OMMA Magazine: Cross-Media Case Study: Ask Jeeves",
+     "date": "2005",
+     "shows": "Page opened. Ask Jeeves alone about 2% of Internet searches (comScore, April 2005), fifth-ranked engine."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ask.com",
+     "title": "Ask.com - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. Ask Jeeves launched 1997 to take everyday-language questions; Jeeves dropped Feb 2006."
+    }
+   ]
+  },
+  {
+   "subject_id": "public-key-infrastructure",
+   "decision": "confirm",
+   "reading": "Organisation-deployed PKI as sold in 2002: certificate authorities issuing digital certificates to users, servers and devices for authentication, encryption and signing.",
+   "test": "Routine production use by at least 20% of relevant organisations (medium and large enterprises and agencies); 5% for year_5pct.",
+   "year_5pct": 2000,
+   "year_mainstream": 2017,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. A's denominator is wrong: 'websites serving HTTPS by default' measures the web-TLS end state, not organisations deploying PKI. It led A to a 5% year of 2013, although SSL server certificates for e-commerce and large government PKIs (the DoD Common Access Card from 2001) put organisational use well above 5% by 2000-2002. The mainstream year is a late bound. Enterprise PKI with user certificates was widely judged a disappointment through the 2000s, and no survey found shows 20% of organisations running it routinely by 2009 (the hit threshold for the 2002 claim placed at 2007). The 2015-2017 HTTPS shift is the first clearly evidenced mass use. Low certainty on the upper side: if an organisation holding any SSL certificate counted as 'using PKI', the crossing would be in the 2000s and the verdict a hit. Search found no 2006-2008 survey to settle it.",
+   "recheck": "Opened Wikipedia 'Public key infrastructure': says PKI vendors found a market 'not quite the market envisioned in the mid-1990s', which 'has grown both more slowly and in somewhat different ways than were anticipated', and that the largest success is government (DISA PKI for the Common Access Card). Opened arXiv 2401.05239v2: a survey of PKI problems and national eID deployments with uneven adoption; it has no organisation-share figure, so it is context only. No page found that gives a share of organisations running PKI in 2006-2009; the pass-1 years are estimates that the pages do not contradict (5% by 2000 via SSL server certificates and government PKI; mainstream 2017 is a late bound). No search spent here.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Public_key_infrastructure",
+     "title": "Public key infrastructure - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened. Enterprise PKI grew more slowly and differently than vendors expected; largest implementation is the DISA PKI for Common Access Cards; SSL created a web PKI."
+    },
+    {
+     "url": "https://arxiv.org/html/2401.05239v2",
+     "title": "Failures of public key infrastructure: 53 year survey (Dumitrescu, Pouwelse)",
+     "date": "2024-01-11",
+     "shows": "Page opened. Survey of PKI problems and national eID PKI deployments with low or uneven use; no organisation-adoption share (context only)."
+    }
+   ]
+  },
+  {
+   "subject_id": "smartphones",
+   "decision": "confirm",
+   "reading": "Mobile phones with an open operating system, third-party applications, email and web browsing (Symbian, Windows Mobile, BlackBerry, Palm, later iOS and Android).",
+   "test": "At least 20% of adults in major markets owning a smartphone; 5% ownership for year_5pct (shipment share used as a cross-check).",
+   "year_5pct": 2006,
+   "year_mainstream": 2010,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Neither builder. Mainstream follows A. Nielsen counted 28% of US mobile subscribers with a smartphone in Q3 2010 and 41% of recent buyers choosing one; Pew measured 35% of US adults in 2011. 20% was crossed in 2010. B's own Pew 35% figure contradicts its choice of 2011 as the first year. The 5% year follows B: Gartner counted smartphones at 11% of global handset sales in 2008 and 14% in 2009, lower in earlier years, and the owned base lags sales, so 5% of adults in major markets is first clear in 2006. A's 2005 is an unsupported estimate. year_5pct is moderately uncertain: Western Europe (Symbian) may have reached 5% ownership in 2005.",
+   "recheck": "Opened Pew Mobile Fact Sheet: 35% in 2011, 39-46% in 2012, confirmed. Opened TechCrunch (2010-02-23): Gartner 172M smartphones in 2009, 14% of handsets (11% in 2008), confirmed. Added Nielsen Q3 2010 (28% of US subscribers), which fixes the 2010 crossing that pass 1 put on comScore/Nielsen recalls. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/fact-sheet/mobile/",
+     "title": "Mobile Fact Sheet - Pew Research Center",
+     "date": "2025",
+     "shows": "Page opened: US adults owning a smartphone 35% in 2011, 39-46% in 2012."
+    },
+    {
+     "url": "https://www.nielsen.com/insights/2010/mobile-snapshot-smartphones-now-28-of-u-s-cellphone-market/",
+     "title": "Mobile Snapshot: Smartphones Now 28% of U.S. Cellphone Market - Nielsen",
+     "date": "2010-11",
+     "shows": "Page opened: 28% of US mobile subscribers had smartphones in Q3 2010; 41% of recent buyers chose one."
+    },
+    {
+     "url": "https://techcrunch.com/2010/02/23/smartphone-iphone-sales-2009-gartner/",
+     "title": "Smartphone Sales Up 24 Percent, iPhone's Share Nearly Doubled Last Year (Gartner) - TechCrunch",
+     "date": "2010-02-23",
+     "shows": "Page opened: Gartner, 172M smartphones in 2009, 14% of handset sales (11% in 2008)."
+    }
+   ]
+  },
+  {
+   "subject_id": "location-aware-services",
+   "decision": "confirm",
+   "reading": "Services delivered to mobile users according to their location (finders, local information, directions, check-ins), whether offered by carriers or by apps.",
+   "test": "At least 20% of adults in a major market using location-based services on a mobile device; 5% for year_5pct.",
+   "year_5pct": 2008,
+   "year_mainstream": 2011,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows A. Pew's 2011 location-based services report (May 2011 survey) found 28% of US cell owners using their phone for directions or recommendations based on location. That is about 23% of all adults, already above 20% in 2011. B used the 2013 Pew figure (74% of smartphone owners) and an ownership ramp to date the crossing at 2012, without checking the 2011 Pew measure. The crossing may have happened in 2010, so 2011 is an upper bound. That is enough for the 2004 claim placed at 2009: a hit needs mainstream by 2011.",
+   "recheck": "Opened both Pew pages. 2011 report: survey 26 Apr-22 May 2011, 28% of cell owners get directions or recommendations based on location, 23% of all adults; matches pass 1. 2013 report: 74% of smartphone owners (Apr-May 2013). year_mainstream 2011 is an upper bound; the 2004 claim (placed 2009) is a hit with mainstream by 2011. year_5pct 2008 not fixed by these pages but does not affect the verdict. No change.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2011/09/06/28-of-american-adults-use-mobile-and-social-location-based-services/",
+     "title": "28% of American adults use mobile and social location-based services - Pew Research Center",
+     "date": "2011-09-06",
+     "shows": "Page opened. Apr-May 2011: 28% of cell owners use phones for location-based directions or recommendations, 23% of all US adults."
+    },
+    {
+     "url": "https://www.pewresearch.org/internet/2013/09/12/location-based-services/",
+     "title": "Location-Based Services - Pew Research Center",
+     "date": "2013-09-12",
+     "shows": "Page opened. Apr-May 2013: 74% of adult smartphone owners use location-based directions or information."
+    }
+   ]
+  },
+  {
+   "subject_id": "model-driven-architectures",
+   "decision": "confirm",
+   "reading": "Model-driven development in the OMG MDA sense: software built from platform-independent models (UML or domain models) that tools transform into code, rather than hand-coded.",
+   "test": "Routine production use (model-driven code generation) by at least 20% of software-developing organisations; 5% for year_5pct.",
+   "year_5pct": 2006,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. A's 'no measurable 5% share' is wrong. The Torchiano et al. 2012-13 survey of 155 Italian software professionals (online questionnaire February-April 2011) reports that of 155 respondents 105 model (13% always, 55% sometimes) and 44% of those 105 modellers use code generation, 16% model interpretation; so about 30% of all respondents (46 of 155) use code generation at least sometimes. With a self-selected sample and occasional use, that is still clearly above 5% before 2015, and model-based code generation was routine in automotive and embedded work from the mid-2000s. A judged the 5% floor from the Wikipedia statement that MDA never gained 'mainstream industry acceptance', which concerns 20%, not 5%. Mainstream stays null. The same survey finds only 13% of companies model 'always' and models used mainly for documentation, and the MDE literature reports low industrial adoption, so routine model-driven generation by 20% of software organisations is not shown by 2021 (the latest hit year for the claims). year_5pct 2006 is an estimate; it is bounded at no later than 2011 by the survey date. Risk: if the ~30% of respondents using code generation is read as routine use by organisations, the verdict would rise to hit.",
+   "recheck": "ScienceDirect page returns 403 (also to WebFetch); opened the author copy (iris.polito.it, open-access PDF of Torchiano et al., JSS 86(8) 2013). Correction of the figure: 44% is the share of the 105 modellers who use code generation, not of companies; 46 of 50 MD* adopters use code generation, i.e. about 30% of all 155 respondents, survey run Feb-Apr 2011, self-selected Italian professionals, with use 'sometimes' counted. This still bounds year_5pct at no later than 2011 (pass-1 2006 inside the bound) and does not show routine use by 20% of organisations, so mainstream stays null. Opened arXiv 2511.06103: confirms 'relatively low level of adoption of MDE in industry', models mostly for documentation, and cites Torchiano 2013 (13% always, 53% sometimes). Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://iris.polito.it/retrieve/e384c42e-2761-d4b2-e053-9f05fe0a1d67/paper.pdf",
+     "title": "Relevance, benefits, and problems of software modelling and model driven techniques - A survey in the Italian industry (Torchiano et al., JSS 2013, author copy)",
+     "date": "2013",
+     "shows": "Page opened. 155 respondents (Feb-Apr 2011): 13% always model, 55% sometimes, 32% never; code generation used by 44% of the 105 modellers (46 of 155), model interpretation 16%, transformation 10%."
+    },
+    {
+     "url": "https://arxiv.org/html/2511.06103",
+     "title": "Quality in Model-Driven Engineering (arXiv 2511.06103)",
+     "date": "2025-11",
+     "shows": "Page opened. 'Relatively low level of adoption of MDE in industry'; models mostly for documentation and up-front design."
+    }
+   ]
+  },
+  {
+   "subject_id": "mesh-networks-sensor",
+   "decision": "confirm",
+   "reading": "Low-power self-organising wireless mesh networks of sensors and meters (ZigBee, WirelessHART, ISA100, RF-mesh metering) for industrial, building and utility monitoring.",
+   "test": "Routine production use by at least 20% of target organisations (process plants, utilities); cross-checked with the share of US electric meters on AMI, much of it RF mesh; 5% for year_5pct.",
+   "year_5pct": 2009,
+   "year_mainstream": 2012,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Closer to A on the decisive year. B's 2014 is only the earliest survey it found. On the utility side, EIA-861 counts 20.3M AMI meters in 2010, 37.3M in 2011 and 43.2M in 2012, against about 138M meters in total (2013, the first year EIA counts meters), so AMI, much of it RF mesh, went from about 15% of US meters in 2010 to about 27% in 2011 and 31% in 2012. On the industrial side, the ISA/ON World surveys show 62% of process-automation respondents with wireless mesh nodes deployed by 2014 (80% by 2016); the 2012 wave of the same survey already reports standard preferences among adopters, but its adoption share was not found. The evidence bounds mainstream between 2011 (utilities) and 2014 (industrial survey); 2012 sits inside that bound and is kept, with medium-low certainty (survey samples overstate population shares). A's smart-meter-only 2008 5% year is unsupported, so year_5pct follows B (2009). That matters because the 2005 claim (placed 2010) is a hit only if mainstream came by 2012.",
+   "recheck": "PMC8347440 (redirects to pmc.ncbi.nlm.nih.gov) opened: it does NOT contain the ON World figures pass 1 cited (20% of end users with >100 devices, 39% WirelessHART, 75% mesh); it only gives preferred-standard shares from the 2012 and 2014 ON World surveys (WirelessHART 27%, 25%). Those figures are dropped from the reason; one WebSearch did not find them elsewhere. EIA FAQ 108 opened: only 2021-2022 (72%); added EIA Electric Power Annual table 10.10 with AMI counts 2010-2013 (primary series), which supports a utility crossing in 2011. ISA InTech 2017 opened: 62% (2014), 80% (2016) confirmed. 2012 kept as inside the 2011-2014 bound.",
+   "evidence": [
+    {
+     "url": "https://www.eia.gov/electricity/annual/html/epa_10_10.html",
+     "title": "Electric Power Annual Table 10.10: Advanced metering count by technology type - EIA",
+     "date": "2024",
+     "shows": "Page opened: AMI installations 20.3M (2010), 37.3M (2011), 43.2M (2012), 53.3M (2013); total meters 138.1M in 2013 (totals not collected before 2013)."
+    },
+    {
+     "url": "https://www.eia.gov/tools/faqs/faq.php?id=108&t=3",
+     "title": "How many smart meters are installed in the United States? - EIA",
+     "date": "2023",
+     "shows": "Page opened: about 119M AMI installations, 72% of meters, in 2022."
+    },
+    {
+     "url": "https://www.isa.org/intech-home/2017/september-october/features/expanding-opportunities-for-industrial-iot",
+     "title": "Expanding opportunities for Industrial IoT - ISA InTech",
+     "date": "2017-09",
+     "shows": "Page opened: 62% of process-automation respondents had deployed wireless mesh nodes by 2014, 80% by 2016."
+    },
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8347440/",
+     "title": "A Survey on the Application of WirelessHART for Industrial Process Monitoring and Control (Sensors)",
+     "date": "2021",
+     "shows": "Page opened: ON World/ISA/HCF/WINA surveys of 2012 and 2014; WirelessHART preferred by 27% (2012) and 25% (2014) of respondents; no adoption share of organisations."
+    }
+   ]
+  },
+  {
+   "subject_id": "collective-intelligence",
+   "decision": "confirm",
+   "reading": "Gartner 2006: applications that gather and focus the knowledge of groups, with individuals producing content, metadata, software and decisions without a central authority (wikis, open source, ratings and tagging, prediction markets), in a Web 2.0 frame and for business use.",
+   "test": "At least 20% of the target population routinely using collectively produced resources or practices: adults using wikis such as Wikipedia, or organisations running wikis or open-source collaborative production; 5% for year_5pct.",
+   "year_5pct": 2005,
+   "year_mainstream": 2007,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. A's ambiguity flag does not meet D20: the readings do not give different verdicts for claims placed at 2016 and 2017. Gartner's 2006 description (groups working without central authority to produce content, metadata, software and services; blogs, wikis and RSS as enabling technologies) is the dominant reading. Under it, consumer use was mainstream by 2007: Pew found 25% of US adults using Wikipedia in February 2007. Business use of wikis and of open-source collaborative production was routine in more than 20% of large organisations well before 2016. Only a narrow 'enterprise prediction markets' reading would give a miss, and prediction markets were one example inside the category, not its meaning. Hit under every faithful reading.",
+   "recheck": "Opened Pew 'Wikipedia, past and present': 25% of US adults (36% of internet users) used Wikipedia in Feb 2007, 42% of adults in May 2010; matches pass 1. Opened the Formtek blog: quotes Gartner 2006 'CI refers to applications that can gather and focus the knowledge of groups ... individuals working together with no centralized authority', with blogs, wikis, RSS and AJAX as enablers and mainstream in 5 to 10 years; supports the reading. year_mainstream 2007 confirmed; placed years 2016 and 2017 are hits. No change.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2011/01/13/wikipedia-past-and-present/",
+     "title": "Wikipedia, past and present - Pew Research Center",
+     "date": "2011-01-13",
+     "shows": "Page opened. Wikipedia used by 25% of US adults (36% of internet users) in Feb 2007 and 42% of adults (53% of internet users) in May 2010."
+    },
+    {
+     "url": "https://formtek.com/blog/gartners-emerging-technology-hype-cycle-2006/",
+     "title": "Gartner's Emerging Technology Hype Cycle 2006 - Formtek blog",
+     "date": "2006",
+     "shows": "Page opened. Gartner 2006: CI is applications that gather and focus the knowledge of groups, individuals working together with no centralized authority; enabled by blogs, wikis, RSS, AJAX; mainstream in 5 to 10 years."
+    }
+   ]
+  },
+  {
+   "subject_id": "portable-personality",
+   "decision": "confirm",
+   "reading": "A user's identity, profile, preferences and settings that travel with them across websites, services and devices (federated or social login, portable profiles, account-based sync of settings), the sense Gartner also used on its 2007 Consumer and 2008 PC Technologies Hype Cycles.",
+   "test": "At least 20% of internet users in major markets using a portable identity or profile across sites or devices (social or federated login, account-synced settings); 5% for year_5pct.",
+   "year_5pct": 2009,
+   "year_mainstream": 2012,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. A treats three readings as equal, but the cross-world-avatar reading is a minority one. Gartner carried 'portable personality' on its Consumer Technologies (2007) and PC Technologies (2008) Hype Cycles, which places the label with a user's identity, profile and settings moving across services and devices, not with virtual-world avatars. Under that reading, federated or social login and account-based sync were mainstream by 2012-2014: Gigya surveys of US adults aged 18-55 found 77% had used social logins in 2014, 'a 45% increase over a 2012 survey' (so about 53% in 2012), and 65.5% used them often or whenever offered in 2014 against 35% in 2012. These are vendor surveys and likely overstate use, but the margin over 20% is large. Settings sync via Google, Apple and Microsoft accounts was in mass use by 2012-2014. The 2007 claim (placed 2012) is a hit if mainstream came by 2014, which holds even if 2012 is a year early. The avatar reading would give a miss, but it did not dominate.",
+   "recheck": "Opened the MarTech Gigya article (25 Sep 2014; 403 to curl, opened through WebFetch): 77% of 2,000 US adults 18-55 had used social logins (July 2014), 'a 45% increase over a 2012 survey', i.e. about 53% in 2012; 65.5% use them often vs 35% in 2012. Supports mainstream by 2012-2014 under the identity reading. blog.hemartin.net/2007/07/... is dead (DNS does not resolve) and the Wayback Machine was unreachable, so the claim that Gartner also carried the label on its 2007 Consumer and 2008 PC Technologies cycles is not confirmed on an opened page; the repo's 2007 capture confirms only the Emerging Technologies placement (2-5 years, just past the trigger/peak boundary). The reading rests on the label itself; years unchanged.",
+   "evidence": [
+    {
+     "url": "https://martech.org/gigya-survey-77-consumers-say-used-social-logins/",
+     "title": "Gigya Survey: 77% Of Consumers Say They Have Used Social Logins - MarTech",
+     "date": "2014-09-25",
+     "shows": "Page opened. 77% of 2,000 US adults 18-55 had used social logins in 2014, a 45% increase over Gigya's 2012 survey; 65.5% use them often or whenever offered vs 35% in 2012."
+    }
+   ]
+  },
+  {
+   "subject_id": "video-telepresence",
+   "decision": "confirm",
+   "reading": "Immersive room-based video conferencing with life-size HD video, spatial audio and matched room design (Cisco TelePresence, HP Halo, Polycom RPX, Teliris), as distinct from ordinary room video conferencing.",
+   "test": "Routine use by at least 20% of large organisations (the only buyers of six-figure immersive rooms); 5% for year_5pct.",
+   "year_5pct": 2009,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B on the verdict-relevant facts. A says no source shows 5% of organisations, but it did not consider Cisco's own deployment figures. Cisco reported in September 2009 that over 350 organisations had chosen Cisco TelePresence (2,500 systems) and that more than a quarter of the Fortune 100 used intercompany TelePresence. With HP, Polycom and Teliris customers added, that is above 5% of large organisations by 2009. B dates it to 2008; 2009 is the first evidenced year, and either year sits before every placed year (2012-2015). Mainstream stays null: immersive rooms remained confined to the largest firms, and the use case moved to cheaper HD rooms and cloud meetings (Zoom, Teams), which are a different reading. Not abandoned, since immersive rooms are still sold.",
+   "recheck": "Opened Cisco newsroom (2009-09-09): 350+ organisations, 2,500 systems, more than a quarter of the Fortune 100 using intercompany TelePresence. Confirms pass 1.",
+   "evidence": [
+    {
+     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2009/m09/cisco-fosters-intercompany-collaboration-with-global-cisco-telepresence-network.html",
+     "title": "Cisco Fosters Intercompany Collaboration With Global Cisco TelePresence Network",
+     "date": "2009-09-09",
+     "shows": "Page opened: over 350 organisations chose Cisco TelePresence, 2,500 systems; more than a quarter of the Fortune 100 using intercompany TelePresence."
+    }
+   ]
+  },
+  {
+   "subject_id": "green-it",
+   "decision": "confirm",
+   "reading": "Reducing the environmental footprint of IT as a managed programme in organisations: energy-efficient data centres and hardware, power management, virtualisation and consolidation, green procurement and e-waste policy.",
+   "test": "At least 20% of large organisations implementing green IT initiatives or a green IT plan routinely; 5% for year_5pct.",
+   "year_5pct": 2007,
+   "year_mainstream": 2008,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. A's ambiguity flag fails the D20 test, because its three readings do not give different verdicts for claims placed at 2013 and 2014 (hit if mainstream by 2015-2016). Data-centre energy efficiency and virtualisation, green procurement and e-waste policy, and IT-enabled footprint reduction were each routine in well over 20% of large organisations by 2013-2016. A CDW survey of 557 companies (May 2008) found a third had initiated a green initiative to reduce energy consumption in their department or company. Forrester (20% of major companies implementing a comprehensive green IT plan in April 2008, 28% in 2009) and Symantec's 2009 Green IT Report (45% had implemented initiatives) point the same way but their pages could not be opened. 2008 is the first year at 20% and only needs to be no later than 2015. Later absorption into ESG and sustainable IT is a change of name, not abandonment.",
+   "recheck": "Gigaom URL redirects (301) to portal.gigaom.com, which serves only a footer, no article: dead. Environment+Energy Leader page: HTTP 403. Wayback copies exist (archive.org availability API lists 2022 and 2025 snapshots), but web.archive.org resets the connection from this environment, so neither Symantec 45% nor Forrester 20-28% was confirmed on a page. Dark Reading (Symantec release) 403; Greentech Media redirects to Wood Mackenzie. Opened IT Jungle (May 2008): CDW survey of 557 companies, a third had initiated a green initiative (IT or otherwise) to reduce energy consumption. That confirms more than 20% by 2008 (the initiative scope is broader than IT, but the verdict needs 20% only by 2015-2016). Years unchanged; reason re-based on the opened source.",
+   "evidence": [
+    {
+     "url": "https://www.itjungle.com/2008/05/27/tfh052708-story08/",
+     "title": "CDW Survey Says IT Shouldn't Wear Green on Its Sleeves - IT Jungle",
+     "date": "2008-05-27",
+     "shows": "Page opened. CDW survey of 557 companies: a third had initiated a green initiative (IT or otherwise) to reduce energy consumption in their department or company."
+    }
+   ]
+  },
+  {
+   "subject_id": "extreme-transaction-processing",
+   "decision": "confirm",
+   "reading": "Gartner's XTP application style: very high-volume, low-latency transaction processing scaled out on distributed commodity servers using in-memory data grids and distributed caching instead of mainframe TP monitors.",
+   "test": "Routine production use by at least 20% of high-volume transaction organisations (banks, payment firms, telecoms, e-commerce, online gaming); 5% for year_5pct.",
+   "year_5pct": 2012,
+   "year_mainstream": 2018,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Closer to A. B made a reading error: it marked XTP abandoned in 2012 because the analyst label faded. D16 grades the technology, and the architecture it named (scale-out transaction processing on in-memory data grids and distributed caches: Coherence, GemFire, Hazelcast, GigaSpaces, Redis-backed services) did not go away; it spread under the names in-memory computing and cloud-native scaling. A 2013 Gartner release is reported to have put in-memory computing at under 10% of midsize and large organisations in 2012 (not confirmed on an opened page), so 5% is about 2012. Its 2016 market guide described the in-memory data grid market as nearing mainstream; that is analyst context, not adoption evidence. Among high-volume transaction processors, which is a narrower and earlier-adopting population, routine use by 20% by 2018 is a low-confidence estimate. The verdict needs only mainstream by 2022 for the 2010 claim placed at 2020. A's 2015 and 2008 are unsupported; its evidence rows show titles only. No independent adoption survey exists for the concept as labelled; low certainty.",
+   "recheck": "Pressebox copy of the 2013 Gartner release exists but is behind a bot check (curl and WebFetch see no article text); one search did not find another copy, so the 'under 10% in 2012' figure is unconfirmed. It bears only on year_5pct, which does not affect the verdict (2010 claim placed 2020 is a hit if mainstream by 2022). Opened the LinkedIn post of the 2016 Gartner Market Guide for In-Memory Data Grids: 'After more than a decade of maturation, the IMDG market is rapidly nearing mainstream adoption', drivers digital business, web-scale and IoT. Consistent with the 2018 estimate; years unchanged, low certainty as in pass 1.",
+   "evidence": [
+    {
+     "url": "https://www.linkedin.com/pulse/gartner-market-guide-in-memory-data-grids-2016-massimo-pezzini",
+     "title": "Gartner Market Guide for In-Memory Data Grids (2016)",
+     "date": "2016",
+     "shows": "Page opened. 'After more than a decade of maturation, the IMDG market is rapidly nearing mainstream adoption'; used for increasingly complex use cases including HTAP (analyst context)."
+    }
+   ]
+  },
+  {
+   "subject_id": "video-analytics-for-customer-service",
+   "decision": "confirm",
+   "reading": "Automated analysis of in-store or branch camera video (queue length, footfall, dwell time, customer behaviour) to improve customer service and staffing.",
+   "test": "Routine production use by at least 20% of retailers and service organisations; 5% for year_5pct.",
+   "year_5pct": 2022,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B on the verdict. A's mainstream year rests on an undated, unsourced vendor statistic ('nearly 50% of retailers', a Pelco blog citing another vendor). The primary survey contradicts it: ECR Retail Loss (May 2024, 70 retailers) found an overall deployed video-analytics utilisation of 10% (18% planned or trialling), store environment 15%, store checkout 10%, store entrance 7%, shopfloor 4%; the top deployed uses are security and loss (intruder detection, self-checkout non-scanning). Customer-service video analytics therefore sat below 20% in 2024 and near the 5% line at most. Counting the 15% store-environment figure suggests 5% around 2022, still after the placed year 2021. year_5pct is a bound (after 2021). The claim is a provisional miss: its 5-year window closes in 2026.",
+   "recheck": "ecrloss.com/research-paper/video-analytics-in-retail/ opened: it is the 2024 survey, not a 2022 one; 70 retailers (not 81), overall 10% (not 7%), store environment 15%, checkout 10%, shopfloor 4%. Figures in the reason corrected; the verdict-relevant reading (well below 20%, near 5% for customer-service uses) is unchanged. ecrloss.com/research-paper/retail-video-analytics-survey/ returns an empty page and has no Wayback copy: dead, row dropped. The pass-1 statement about a 2020 ECR report was not checked and is removed.",
+   "evidence": [
+    {
+     "url": "https://ecrloss.com/research-paper/video-analytics-in-retail/",
+     "title": "Video analytics in retail: survey of retailers (ECR Retail Loss)",
+     "date": "2024-05",
+     "shows": "Page opened: 70 retailers; deployed utilisation 10% overall, 18% planned/trialling; store environment 15%, checkout 10%, entrance 7%, shopfloor 4%; top deployed uses intruder detection and self-checkout non-scanning alerts."
+    }
+   ]
+  },
+  {
+   "subject_id": "3d-scanners",
+   "decision": "confirm",
+   "reading": "Low-cost 3D scanning devices (handheld, desktop or add-on depth cameras) that capture the shape of objects or people for modelling and 3D printing, the 2014 context of the label.",
+   "test": "At least 20% of target users (consumers, small businesses, makers) owning or routinely using a 3D scanner; for a phone feature, 50% of new units with a sensor used for 3D scanning; 5% for year_5pct.",
+   "year_5pct": null,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Follows B. A's 5% year depends on counting the iPhone X front TrueDepth camera as a 3D scanner. That sensor is a face-authentication depth camera, and its occasional use for scanning does not make phone buyers 3D-scanner users. The 2014 label sat with 3D printing and referred to scanning devices (MakerBot Digitizer, Structure Sensor, Kinect-based scanners). A also flags its own share figure as from general knowledge and the counting as a judgement call. Standalone consumer scanners stayed niche, and rear LiDAR (Pro iPhones and iPads from 2020) is a minority of shipments and arrived after the placed year 2019. No evidence of 5% of target users by 2019 or of mainstream by 2024.",
+   "recheck": "Opened Wikipedia '3D scanning': no consumer adoption figures; prices for professional terrestrial scanners from EUR 150,000; mentions smartphone LiDAR apps only as a recent cultural-heritage example. Opened Wikipedia 'Face ID': TrueDepth introduced on iPhone X, 3 Nov 2017, for unlocking, Apple Pay, Animoji and tracking, not as a scanner. Both support pass 1: no evidence of 5% of target users by 2019. Years stay null; the 2014 claim (placed 2019) is a miss. No change.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/3D_scanning",
+     "title": "3D scanning - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. No consumer adoption statistics; professional laser scanners from about EUR 150,000; smartphone LiDAR scanning mentioned only as a recent example."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Face_ID",
+     "title": "Face ID - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. TrueDepth sensor introduced on iPhone X on 3 Nov 2017 for face authentication, Apple Pay and Animoji."
+    }
+   ]
+  },
+  {
+   "subject_id": "e-tags",
+   "decision": "confirm",
+   "reading": "Electronic (RFID) product, case and pallet tags for supply-chain identification, the 'smart tag' / Auto-ID Center technology hyped in 2002.",
+   "test": "Routine use by at least 20% of the relevant industry (large retailers and their consumer-goods suppliers, logistics); 5% for year_5pct.",
+   "year_5pct": 2006,
+   "year_mainstream": 2014,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Neither builder: both flagged the label ambiguous, but one reading dominates on a 2002 Emerging Technologies chart. Vehicle toll tags were mature by 2002 (Telepass 1989, E-ZPass in the 1990s) and electronic shelf labels were 1990s technology, so neither fits a label placed 2-5 years from the plateau. Supply-chain RFID tags were the emerging-technology story of 2002 (Auto-ID Center, EPC, the Gillette order of early 2003). Under that reading, mandated case and pallet tagging by Walmart's top suppliers (2005, about 600 suppliers by 2007), Metro and the US DoD put routine use above 5% of the relevant retail and CPG supplier population around 2006. Surveys still describe adoption as early-stage in 2007, and by 2015 a GS1 US / Auburn survey found 57% of retailers and 48% of manufacturers implementing EPC RFID, with 40-47% of apparel and general-merchandise items tagged. The mainstream year is an estimate, bounded after 2009, which is all the 2002 claim (placed 2007, partial unless mainstream by 2009) needs. year_5pct 2006 is low-to-moderate certainty. If the evidence showed under 5% by 2007, the claim would be a miss.",
+   "recheck": "Katina Michael page (katinamichael.com/research/2007/9/5/...) returns 404 and the Wayback Machine was unreachable, so the 2007 'early-stage' row is dropped. Opened the GS1 US press release (PR Newswire, March 2015): 48.2% of manufacturers and 57% of retailers currently implementing RFID; 40% of items made and 47% received by apparel and general-merchandise firms carry tags. This bounds mainstream at no later than 2014-2015 (pass-1 2014 inside the bound). Opened Wikipedia 'Electronic toll collection': Italy national-scale ETC 1989, Norway 1986/1991, confirming toll tags were mature by 2002. Opened InformationWeek (14 Oct 2005): Wal-Mart's RFID pilot in 12 stores, showing supply-chain tagging was still in pilots in 2005. One search found no 2006-2007 share survey; year_5pct 2006 stays an unconfirmed estimate (low certainty; it decides partial vs miss for the 2002 claim).",
+   "evidence": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/gs1-us-survey-shows-manufacturers-and-retailers-embrace-rfid-to-enhance-inventory-visibility-300052870.html",
+     "title": "GS1 US Survey Shows Manufacturers and Retailers Embrace RFID to Enhance Inventory Visibility",
+     "date": "2015-03",
+     "shows": "Page opened. 48.2% of manufacturers and 57% of retailers currently implementing EPC RFID; 40-47% of apparel and general-merchandise items tagged."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Electronic_toll_collection",
+     "title": "Electronic toll collection - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened. Norway ETC from 1986 (full-speed 1991), Italy national-scale Telepass 1989: toll tags mature by 2002."
+    },
+    {
+     "url": "https://www.informationweek.com/it-leadership/wal-mart-rfid-trial-shows-16-reduction-in-product-stock-outs",
+     "title": "Wal-Mart RFID Trial Shows 16% Reduction In Product Stock-Outs - InformationWeek",
+     "date": "2005-10-14",
+     "shows": "Page opened. Wal-Mart RFID study over 29 weeks in 12 pilot stores vs 12 control stores: supply-chain RFID still at pilot scale in 2005."
+    }
+   ]
+  },
+  {
+   "subject_id": "enterprise-portals",
+   "decision": "confirm",
+   "reading": "Enterprise (employee/B2E, also customer/partner) portals: a single personalised web entry point integrating an organisation's applications, content and people, as sold by Plumtree, Epicentric, IBM, SAP and others in 1999-2002.",
+   "test": "Enterprise: at least 20% of large/medium organisations in major markets running an enterprise portal in production (D16, routine use by 20% of the relevant industry). 5%: same denominator.",
+   "year_5pct": 1999,
+   "year_mainstream": 2002,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A was closer. Jupiter Research (reported by InfoWorld, January 2004) found 80% of companies surveyed had already deployed portals or planned to deploy them soon; Forrester 2006 found 46% of large companies using an employee portal. Packaged portal products date from 1998. The 20% crossing among large and medium organisations is therefore no later than 2006 and most likely by 2002-2003, given the deployed-or-planned share at the end of 2003. An Answerthink survey (October 2002) reported in pass 1 as more than 50% of companies with portals could not be opened. 2002 is kept as an estimate inside the bound; the placed year 2001 needs mainstream by 2003 for a hit, so the verdict rests on that estimate with medium-low certainty. Builder B's 2004 interpolated from the 2006 figure without an earlier data point. year_5pct 1999 is a bound (packaged products from 1998).",
+   "recheck": "sdcexec.com Answerthink page: HTTP 403 to WebFetch and curl; a Wayback snapshot exists (2025-12-15) but web.archive.org is blocked here (WebFetch refused, curl 403), so the >50% figure is unconfirmed and its row dropped. Wikipedia opened: Forrester 2006 46% of large companies, first commercial portal vendor 1998, confirmed. One WebSearch found InfoWorld 2004-01-09 (opened via curl): Jupiter, 80% of companies deployed or planning portals. crmbuyer.com also 403. Years kept: 2002 is consistent with the evidence but not fixed by it; flag as least certain.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Enterprise_portal",
+     "title": "Enterprise portal - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened: first commercial portal software vendor 1998; Forrester 2006, 46% of large companies used an employee portal."
+    },
+    {
+     "url": "https://www.infoworld.com/article/2209729/the-new-enterprise-portal.html",
+     "title": "The new enterprise portal - InfoWorld",
+     "date": "2004-01-09",
+     "shows": "Page opened: Jupiter Research, 80% of companies surveyed had already deployed portals or planned to deploy them in the near future."
+    }
+   ]
+  },
+  {
+   "subject_id": "audio-mining-speech-analytics",
+   "decision": "revise",
+   "reading": "Audio mining: speech recognition plus indexing/search of recorded audio to find and analyse content; its dominant commercial form became contact-centre speech analytics (Gartner later labelled it 'Audio Mining/Speech Analytics').",
+   "test": "Industry: at least 20% of contact-centre organisations using speech analytics routinely (mainstream); 5% of the same denominator for year_5pct.",
+   "year_5pct": 2010,
+   "year_mainstream": 2015,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Revised in pass 2; follows the DMG data. Reading and test as pass 1 (contact-centre speech analytics). DMG Consulting counted 25 commercial implementations in 2004 and 1,764 at end-2008, forecast 40-45% growth a year for 2009-2011 and at least 25-30% of all contact-centre seats within five to seven years (2014-2016). DMG's 2015-2016 report counts 2,889,031 speech-analytics seats in May 2014 and 3,507,795 in March 2015. Against a world base of roughly 12-17 million contact-centre seats, that is about 17-24% in 2014 and 20-29% in 2015, so the 20% crossing is set at 2015 (bounded 2014-2016). Back-casting the seat count at 30-40% growth puts 5% of seats at about 2010, so year_5pct 2010 stays. Pass 1's 2012 rested on a ContactBabel figure (24% of contact-centre organisations in 2012) that could not be found on any opened page. The builders' 2019 has no data point. For the 2000 claim (placed 2010) both 2012 and 2015 are within reach of the rule only as: 5% by the placed year (partial) or mainstream 5 years after (partial); a hit would need 20% by 2012, which the opened sources do not show.",
+   "recheck": "Opened CustomerThink (DMG 2009-2010 report): 25 implementations 2004 to 1,764 end-2008, growth forecasts 45/40/42/32/25% for 2009-2013, 25-30% of seats within 5-7 years; matches pass 1. Fusion BPO page (the only source of the ContactBabel 24% in 2012 figure): WebFetch 503, curl 403; Wayback not reachable from this environment. Two searches found no ContactBabel 24%/59% figure; Call Centre Helper cites ContactBabel at about 10% of contact centres using speech recognition in 2012, a different technology. Opened DMG 2015-2016 report release: 2,889,031 seats May 2014, 3,507,795 March 2015. No opened page gives a world seat total; the 12-17 million base is an estimate (a search summary gave 3.3 million agent positions in North American centres of 10+ seats, not opened). Changed year_mainstream 2012 -> 2015; claim 2000-002 (placed 2010) moves from hit to partial.",
+   "evidence": [
+    {
+     "url": "https://customerthink.com/dmg_consulting_releases_2009_2010_speech_analytics_market_report/",
+     "title": "DMG Consulting Releases 2009-2010 Speech Analytics Market Report - CustomerThink",
+     "date": "2009",
+     "shows": "Page opened. 25 implementations in 2004 to 1,764 at end-2008 (CAGR 190%); growth forecast 45% (2009), 40% (2010), 42% (2011); at least 25-30% of contact-centre seats within five to seven years."
+    },
+    {
+     "url": "https://www.dmgconsult.com/dmg-consulting-releases-2015-2016-speech-and-text-analytics-product-and-market-report/",
+     "title": "DMG Consulting Releases 2015-2016 Speech and Text Analytics Product and Market Report",
+     "date": "2015",
+     "shows": "Page opened. Contact-centre speech analytics seats grew 21.4% from 2,889,031 (May 2014) to 3,507,795 (March 2015); market growth forecast 20% in 2015 falling to 16% in 2019."
+    }
+   ]
+  },
+  {
+   "subject_id": "semantic-web",
+   "decision": "confirm",
+   "reading": "Machine-readable semantics published on the web (RDF-family markup, shared vocabularies) so software can interpret content; graded on the lightweight form that actually spread (RDFa/Open Graph, microdata/schema.org, microformats), as both builders did.",
+   "test": "Web: at least 20% of HTML pages publishing semantic structured-data markup (RDFa, microdata, microformats); 5% for year_5pct.",
+   "year_5pct": 2010,
+   "year_mainstream": 2013,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Neither builder; closer to A. Web Data Commons (Meusel et al., ISWC 2014) measured the share of Common Crawl HTML pages carrying RDFa, microdata or microformats at 5.76% (2010), 12.29% (2012) and 26.33% (2013). So 5% by 2010 and 20% crossed in 2013. Builder B's 2012/2019 interpolation is wrong by six years on the mainstream year: B inferred from schema.org's 2011 launch and the 2022-2024 Almanac without the WDC series. Builder A's 2014 is one year late. Caveats: crawls differ in composition between years, and the share includes microformats; RDFa (Open Graph) plus microdata alone also grew fast after 2010-2011, so the 2013 crossing is a reasonable point estimate. The strict RDF/OWL agents vision would give null, but that reading does not dominate a label graded on web adoption. All three placed years (2011, 2013, 2014) give hit: 2013 is within 2 years after 2011 and before 2013 and 2014.",
+   "recheck": "Opened the Meusel et al. ISWC 2014 PDF (uni-mannheim.de): its crawl table gives the share of HTML pages with RDFa, microdata or microformats as 5.76% (2010), 12.29% (2012), 26.33% (2013), exactly as pass 1 cited. Opened Web Almanac 2024 Structured Data: RDFa 66%, Open Graph 64%, JSON-LD 41% (34% in 2022), microdata 26% of pages. Both confirm 5% in 2010 and 20% crossed in 2013. Reworded the last sentence of the reason (placed years 2013 and 2014 are after the crossing, 2011 is two years before it); years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.uni-mannheim.de/media/Einrichtungen/dws/Files_Research/Web-based_Systems/pub/Meusel-etal-TheWDCMicrodataRdfaMicroformatsDataSeries-ISWC2014-rbds.pdf",
+     "title": "The WebDataCommons Microdata, RDFa and Microformat Dataset Series (Meusel, Petrovski, Bizer, ISWC 2014)",
+     "date": "2014",
+     "shows": "Page opened. Share of HTML pages with structured data: 5.76% (2010 crawl), 12.29% (2012), 26.33% (2013)."
+    },
+    {
+     "url": "https://almanac.httparchive.org/en/2024/structured-data",
+     "title": "Web Almanac 2024: Structured Data",
+     "date": "2024",
+     "shows": "Page opened. RDFa on 66% of pages, Open Graph 64%, JSON-LD 41% (34% in 2022), microdata 26%."
+    }
+   ]
+  },
+  {
+   "subject_id": "wireless-lans-802-11",
+   "decision": "confirm",
+   "reading": "IEEE 802.11 (Wi-Fi) wireless local area networks connecting notebooks and other devices in offices, homes and public places. The '802.11s' variant on one chart is a label typo for 802.11, not the mesh amendment.",
+   "test": "Device feature: at least 50% of new notebook PCs shipping with built-in 802.11; cross-check: at least 20% of organisations running WLANs. 5% on the same denominators.",
+   "year_5pct": 2000,
+   "year_mainstream": 2004,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A was closer. In 2003, the year Centrino launched (March 2003, with integrated Intel PRO/Wireless), In-Stat/MDR counted about 16 million Wi-Fi-enabled notebooks sold to businesses and Strategy Analytics about 8 million worldwide, against roughly 40 million notebooks shipped (20-40%). Analysts forecast integrated WLAN in 95% (In-Stat/MDR, 2005), 90% (Strategy Analytics, 2008) and 80% (Forrester, 2008) of notebooks; by 2005 the majority of Intel Mobility Group revenue came from Centrino, which includes the Wi-Fi radio. Half of new notebooks is reached in 2004 or 2005 at the latest. Builder B used a household test without early household data and set 2006 by estimate; households are not the dominant target on an enterprise-oriented chart, and the device-feature test is the one D16 names for a built-in radio. 2004 is an estimate inside the 2004-2005 bound; only placed year 2003 matters (hit if mainstream by 2005), so the verdict holds either way.",
+   "recheck": "Opened The Register (2003-08-05): In-Stat/MDR 16M Wi-Fi notebooks to businesses in 2003 and 95% by 2005 confirmed, but the same article gives Strategy Analytics 8M worldwide and 90%/80% by 2008 forecasts, which pass 1 left out; reason updated. Opened Centrino Wikipedia: March 2003, PRO/Wireless 2100B, quick OEM acceptance, no shares. Opened Intel 2005 Annual Report PDF: majority of Mobility Group revenue from Centrino in 2005. One WebSearch found no measured 2004 share. 2004 kept inside the bound; no verdict change.",
+   "evidence": [
+    {
+     "url": "https://www.theregister.com/2003/08/05/wifi_to_be_embedded/",
+     "title": "Wi-Fi to be embedded in 95% of notebooks by 2005 (The Register)",
+     "date": "2003-08-05",
+     "shows": "Page opened: In-Stat/MDR, about 16M Wi-Fi notebooks sold to businesses in 2003, 95% by 2005; Strategy Analytics, 8M worldwide in 2003, 90% by 2008; Forrester 80% by 2008."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Centrino",
+     "title": "Centrino - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened: Centrino launched March 2003 with Intel PRO/Wireless 2100B; quick acceptance among OEMs and consumers."
+    },
+    {
+     "url": "https://www.annualreports.com/HostedData/AnnualReportArchive/i/NASDAQ_INTC_2005.pdf",
+     "title": "Intel 2005 Annual Report",
+     "date": "2006",
+     "shows": "PDF opened: in 2005 the majority of Mobility Group revenue came from Centrino mobile technology (processor, chipset and wireless network connection)."
+    }
+   ]
+  },
+  {
+   "subject_id": "grid-computing",
+   "decision": "confirm",
+   "reading": "Pooling distributed computers inside or across organisations into a shared, scheduled compute resource (Globus-style grids and enterprise compute grids such as DataSynapse, Platform LSF/Symphony, United Devices). Gartner's own split of the label in 2004 into internal and external MPP grids shows enterprise-internal compute grids were within its meaning.",
+   "test": "Industry: at least 20% of organisations in compute-intensive industries (banking, pharma/life sciences, semiconductor/EDA, energy, engineering, research) routinely running grid-scheduled distributed compute; 5% same denominator.",
+   "year_5pct": 2002,
+   "year_mainstream": 2006,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A was closer, on reading rather than on retrieved data. No survey with an organisation share was found (three searches in pass 1 and 2). The call rests on the shape of the market: Celent (February 2006) judged that grid computing in financial services had 'finally hit the tipping point', changing how firms model risk, with grid spending forecast to rise from just over US$100 million to nearly US$500 million between 2006 and 2010; grid-scheduled compute farms were also routine at pharma and chip designers, and the practice continued into HPC clusters and cloud rather than being abandoned. Builder B left mainstream null for lack of evidence, which grades the absence of a survey as the absence of adoption; that is the wrong default when the relevant industry plainly runs the technology. year_mainstream 2006 is an estimate; for the claims it only needs to be no later than 2012 (placed years 2010, 2011, 2012), which is the confident part. Low certainty on the exact year.",
+   "recheck": "Opened Wikipedia 'Grid computing': Foster and Kesselman's Grid blueprint 1999; Sun, IBM, HP in utility/grid computing; United Devices Grid MP; BEinGRID business project 2006-2009; cloud computing popular from 2007 as a similar concept. No adoption share. HPCwire 'The Real Business Case for Grid Computing' and 'Grids in Finance': HTTP 403 (not opened; dropped). WatersTechnology 'In 2006, Grids Go Mainstream': page shell only. Opened Celent report abstract (24 Feb 2006): 'tipping point', spending US$100m to nearly US$500m 2006-2010. Nothing contradicts mainstream by 2012 in compute-intensive industries; no page fixes 2006. Years unchanged; evidence re-based.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Grid_computing",
+     "title": "Grid computing - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. Grid blueprint 1999; Sun, IBM, HP grid and utility offerings; United Devices Grid MP; EU BEinGRID business-grid project 2006-2009; cloud computing from 2007 conceptually similar. No adoption share."
+    },
+    {
+     "url": "https://www.celent.com/en/insights/510855818",
+     "title": "Grid Computing: A Guide for Financial Services Firms (Celent)",
+     "date": "2006-02-24",
+     "shows": "Page opened. Grid computing in financial services 'has finally hit the tipping point'; spending forecast from just over US$100 million to nearly US$500 million, 2006-2010."
+    }
+   ]
+  },
+  {
+   "subject_id": "unified-communications",
+   "decision": "confirm",
+   "reading": "Enterprise integration of telephony, voicemail, email, instant messaging, presence and conferencing into one platform and user experience (Microsoft OCS/Lync, Cisco, IBM Sametime, later Teams).",
+   "test": "Enterprise: at least 20% of organisations in major markets running UC in production; 5% same denominator.",
+   "year_5pct": 2006,
+   "year_mainstream": 2011,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B was closer, narrowly. Forrester reported in July 2008 that the number of UC trials at firms had jumped more than 20% in a year but with little conversion into actual deployments, and did not expect full deployments within the next year; its Q1 2008 European data had 81% of enterprises 'at some stage' of UC implementation, which counts plans and pilots, and builder A's own 2009 Forrester figure is 22% of enterprises 'implemented or implementing', which includes projects still in progress. Production use by 20% therefore lands after 2009, most likely 2010-2011; Infonetics described VoIP services (with hosted UC growing) as mainstream in many developed countries by 2012. A took the implemented-or-implementing figure as production use one year later; that overcounts. 2011 is an estimate within 2010-2012; the 2003 claim (placed 2008) is a hit only if the crossing is 2010, so that call is close; the 2004 claim (placed 2009) is a hit at 2011.",
+   "recheck": "Opened the Forrester report page RES44198 (Dewing, 8 Jul 2008): summary confirms trials up more than 20% with little conversion into deployments and no full deployments expected within a year. Opened Forrester RES47637 (24 Mar 2009): Q1 2008 survey, 81% of European enterprises 'at some stage in a UC implementation' (includes planning), then a slowdown. Opened the UCStrategies Infonetics item: the 'moved well beyond the early adopter stage to mainstream status in many developed countries' quote is about the VoIP services market, with hosted UC and SIP trunking growing; pass 1 overstated it as UC. One search found no 2010-2011 production-share figure (Telecompaper 8 Nov 2010 Infonetics item is paywalled). Pass-1 2011 stays inside the 2010-2012 bound; years unchanged, reason wording corrected.",
+   "evidence": [
+    {
+     "url": "https://www.forrester.com/report/unified-communications-trials-explode/RES44198",
+     "title": "Unified Communications Trials Explode (Forrester)",
+     "date": "2008-07-08",
+     "shows": "Page opened (summary). UC trials up more than 20% in a year, little conversion into actual deployments; full deployments not expected in the next year."
+    },
+    {
+     "url": "https://www.forrester.com/report/the-2009-outlook-for-unified-communications-in-europe/RES47637",
+     "title": "The 2009 Outlook For Unified Communications In Europe (Forrester)",
+     "date": "2009-03-24",
+     "shows": "Page opened (summary). Q1 2008 survey: 81% of European enterprises at some stage of a UC implementation (including plans); spending slowdown after 2008."
+    },
+    {
+     "url": "https://ucstrategies.com/unified-communications-newsroom/survey-by-infonetics-research-shows-that-voip-and-uc-market-are-growing.aspx",
+     "title": "Survey by Infonetics Research shows that VoIP and UC market are growing",
+     "date": "2012",
+     "shows": "Page opened. VoIP services market 'moved well beyond the early adopter stage to mainstream status in many developed countries'; hosted UC and SIP trunking growing."
+    }
+   ]
+  },
+  {
+   "subject_id": "social-network-analysis",
+   "decision": "confirm",
+   "reading": "Organisational use of network analysis of relationships between people or entities (employees, customers, accounts, suspects) to find influence, collaboration patterns, churn clusters or fraud rings; enterprise-oriented as on the Emerging Technologies chart.",
+   "test": "Enterprise: at least 20% of relevant organisations (large firms in banking/insurance fraud, telecoms, marketing, HR, plus law enforcement/intelligence) using SNA routinely in production; 5% same denominator for year_5pct.",
+   "year_5pct": 2010,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B was closer. Both builders agree there is no organisation-share series and that SNA is routine in identifiable niches; they differ only on whether that niche use clears 5%. It does on the relevant denominator: link and network analysis was standard in intelligence and law enforcement (i2-style link analysis) well before 2010, network-based fraud detection shipped in mainstream bank/insurer fraud suites from about 2009, and telecoms used calling-network analysis for churn. Five per cent of relevant large organisations by 2010-2012 is the conservative reading of that. Builder A set year_5pct null 'for lack of evidence, not because it failed', which turns missing data into a miss; that is the error. Mainstream (20% of organisations using it as a distinct practice) is not evidenced through 2019, so null. year_5pct 2010 is a bound (no later than 2012, the earliest placed year). No search spent here; low-medium certainty.",
+   "recheck": "Opened Wikipedia SNA: business use for customer analysis, marketing and BI; intelligence, law enforcement, anti-money-laundering and counter-terrorism; no shares, as pass 1 said. Opened davidrgreen.com (July 2018): ONA interest and adoption rising, no figures, as pass 1 said. No new primary share found (none searched; no series exists per both builders). Years unchanged; year_5pct remains an inference with low-medium certainty.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Social_network_analysis",
+     "title": "Social network analysis - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened: businesses use SNA for customer interaction and analysis, marketing and BI; also intelligence, law enforcement, anti-money-laundering, counter-terrorism; no adoption shares."
+    },
+    {
+     "url": "https://www.davidrgreen.com/blog/2018/7/8/data-driven-hr-3-organisational-network-analysis",
+     "title": "Data Driven HR 3: Organisational Network Analysis",
+     "date": "2018-07-08",
+     "shows": "Page opened: ONA interest and adoption rising, vendor landscape expanding; no share of organisations."
+    }
+   ]
+  },
+  {
+   "subject_id": "internal-mpp-grids",
+   "decision": "confirm",
+   "reading": "Compute grids built inside an organisation from its own servers and desktops, scheduled as one massively parallel resource for risk, simulation and analytics workloads (Gartner's 2004 counterpart to External MPP Grids and Commercial Grids).",
+   "test": "Industry: at least 20% of organisations in compute-intensive industries (banking, pharma, EDA/semiconductor, energy, engineering) routinely running internal compute grids; 5% same denominator.",
+   "year_5pct": 2002,
+   "year_mainstream": 2006,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A was closer, consistent with the grid-computing call. Internal compute grids (Platform LSF/Symphony, DataSynapse, Sun Grid Engine, United Devices Grid MP) were the practical, adopted part of the grid wave: grid-scheduled compute farms were routine at large banks, chip designers and pharma by the mid-2000s, and the practice continued as HPC clusters and then cloud. Builder B agreed on the practice but set mainstream null for want of a survey; absence of a published share is not evidence of non-adoption when the relevant industry plainly ran it. No survey found (shared with grid-computing searches). 2006 is an estimate; placed year 2006 needs mainstream by 2008 for a hit, so a crossing as late as 2008 gives the same verdict. Low certainty.",
+   "recheck": "Opened Wikipedia 'Massively parallel': grids, clusters and MPP arrays as approaches; MPP second most common supercomputer architecture after clusters (Nov 2013); no enterprise share. HPCwire 2006 article: HTTP 403 (dropped). Opened Celent (Feb 2006): grids in financial services at the 'tipping point', spending to rise about fivefold 2006-2010; consistent with routine internal grids at large banks by 2006-2008. No page fixes 2006; it lies inside the bound the hit needs (by 2008 for placed year 2006). Low certainty, as in pass 1. No change.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Massively_parallel",
+     "title": "Massively parallel - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. MPP through grid computing, clusters and MPP arrays; clusters the most common supercomputer architecture, MPP second (Nov 2013)."
+    },
+    {
+     "url": "https://www.celent.com/en/insights/510855818",
+     "title": "Grid Computing: A Guide for Financial Services Firms (Celent)",
+     "date": "2006-02-24",
+     "shows": "Page opened. Grid computing in financial services 'has finally hit the tipping point'; spending forecast from just over US$100 million to nearly US$500 million, 2006-2010."
+    }
+   ]
+  },
+  {
+   "subject_id": "inkjet-manufacturing",
+   "decision": "revise",
+   "reading": "Inkjet deposition of functional materials as a production process (Gartner's 2003-2005 'inkjet-based manufacturing'), chiefly in flat-panel display and electronics manufacturing, as distinct from inkjet graphics/decoration (Gartner's separate 'Inkjet Processes').",
+   "test": "Industry: routine production use by at least 20% of the relevant industry, taken as flat-panel display manufacturers (the industry where functional inkjet reached volume); 5% same denominator.",
+   "year_5pct": 2008,
+   "year_mainstream": 2016,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Neither builder on years; the verdict follows A. Functional inkjet reached volume in display manufacturing, which is the relevant industry (builder B's printed-electronics denominator, still mostly prototyping, is the wrong one). Two uses: inkjet thin-film encapsulation for flexible OLED, which debuted in manufacturing in 2014 and by September 2016 had won 'the vast majority of available TFE orders' from the largest panel makers in three Asian regions (Kateeva, Semiconductor Digest); and inkjet coating of polyimide alignment layers in LCD fabs, which a BOE patent filed in 2016-2017 describes as 'recently applied in an inkjet manner, which gradually replaces a conventional coating manner'. Pass 1 put mainstream at 2012 on the claim that every major panel maker ran inkjet PI lines by 2010-2012; that claim rested on a search summary and the BOE text contradicts it (still 'recently' and 'gradually' in 2016). Routine inkjet use by at least 20% of the large panel makers is therefore set at 2016, when inkjet TFE had most of the market and inkjet PI was spreading at BOE and others. year_5pct 2008 is kept as an estimate (early inkjet PI and colour-filter use; no figure fixes it). The 2005 claim (placed 2015) is a hit for any mainstream year up to 2017, so the verdict is unchanged. Medium-low certainty.",
+   "recheck": "Opened the Semiconductor Digest Kateeva article (Sept 2016): inkjet TFE debuted in manufacturing in 2014 and secured the vast majority of TFE orders from the largest display makers; confirmed. ResearchGate SID P-6.1 page returns 403 to curl and WebFetch; its Crossref abstract (doi 10.1002/sdtp.14547, 2021) speaks only of PI fluidity and nozzle blockage in inkjet printing, not of inkjet being usual on G8.5 lines, so that row is dropped. One search; opened the USPTO PDF of US 10,488,710 B2 (BOE, priority Sep 2016, filed Aug 2017): 'the alignment solution is recently applied in an inkjet manner, which gradually replaces a conventional coating manner'. That contradicts pass 1's 'every major panel maker ran inkjet PI lines by about 2010-2012'. Revised year_mainstream 2012 -> 2016; year_5pct 2008 kept; verdict for the 2005 claim (placed 2015) unchanged (hit).",
+   "evidence": [
+    {
+     "url": "https://sst.semiconductor-digest.com/2016/09/kateevas-yieldjet-flex-inkjet-printing-system-takes-commanding-lead-in-oled-tfe-market/",
+     "title": "Kateeva's YIELDjet FLEX takes commanding lead in OLED TFE market - Semiconductor Digest",
+     "date": "2016-09",
+     "shows": "Page opened. Inkjet TFE debuted in manufacturing in 2014; vast majority of available TFE orders, customers include the world's largest flat-panel makers in three Asian regions."
+    },
+    {
+     "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10488710",
+     "title": "US 10,488,710 B2, Array substrate and method for manufacturing the same (BOE Technology Group)",
+     "date": "2019-11-26",
+     "shows": "Page opened (patent PDF; priority 28 Sep 2016). Background: the PI alignment solution 'is recently applied in an inkjet manner, which gradually replaces a conventional coating manner'."
+    }
+   ]
+  },
+  {
+   "subject_id": "handwriting-recognition",
+   "decision": "confirm",
+   "reading": "Recognition of pen/stylus or finger handwriting as text input on computing devices (PDAs, Tablet PCs, touchscreen phones and tablets).",
+   "test": "Consumers: at least 20% of device users in a major market routinely entering text by handwriting recognition (mainstream); 5% of the same users for year_5pct. China counts as a major market.",
+   "year_5pct": 2010,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A was closer. iiMedia Research measured the first-choice input method of Chinese mobile input-method users in the first half of 2014: pinyin 76.7% (nine-key 53.5%, full keyboard 23.2%), handwriting 10.5%, stroke 5.1%, voice 4.6% (handwriting share as cited by Qiu et al., SCUT, from the same report). China is a major market, so handwriting as the preferred method of about a tenth of mobile users clears 5% by 2014 at the latest. Before 2014, stylus and resistive-touch phones with handwriting input (Hanvon and others) were common in China, so the share was unlikely to be lower in 2010; Palm Graffiti and Pocket PC handwriting were also routine among PDA users in the early 2000s. year_5pct 2010 is kept as an estimate inside the bound (no later than 2014), with low-medium certainty. Keyboards and voice dominate, so mainstream is null.",
+   "recheck": "Wikipedia Handwriting recognition opened: covers Newton, Palm Graffiti, Tablet PC handwriting in Vista/7; it does NOT mention Chinese phone handwriting input or Apple Scribble as pass 1 said; row reworded. ResearchGate Stroke++ page: HTTP 403, row dropped. One WebSearch led to Qiu et al. (arXiv 1506.00176, opened): 10.5% of Chinese mobile users prefer handwriting input, citing iiMedia; iiMedia 2014 H1 report page opened (pinyin 53.5% + 23.2%, handwriting use 'not high'). This gives a measured share above 5% in 2014, not in 2010; 2010 is kept inside the bound. Verdict for P=2010 (partial) rests on that estimate.",
+   "evidence": [
+    {
+     "url": "https://www.iimedia.cn/c400/37802.html",
+     "title": "2014\u4e0a\u534a\u5e74\u4e2d\u56fd\u624b\u673a\u8f93\u5165\u6cd5\u5e02\u573a\u7814\u7a76\u62a5\u544a (China mobile input method market report, H1 2014) - iiMedia Research",
+     "date": "2014",
+     "shows": "Page opened: first-choice input of Chinese mobile input-method users H1 2014, nine-key pinyin 53.5%, full-keyboard pinyin 23.2%; handwriting and voice shares low but present."
+    },
+    {
+     "url": "https://arxiv.org/pdf/1506.00176",
+     "title": "An Open Source Testing Tool for Evaluating Handwriting Input Methods (Qiu et al., SCUT)",
+     "date": "2015",
+     "shows": "PDF opened: citing iiMedia, 10.5% of Chinese mobile users prefer handwriting input, second after pinyin (76.7%), above stroke (5.1%) and voice (4.6%); mainstream Chinese IMEs (Google Pinyin, Baidu, Sogou, Hanvon) ship handwriting modules."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Handwriting_recognition",
+     "title": "Handwriting recognition - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened: Newton, Palm Graffiti, Tablet PC handwriting in Windows Vista/7; keyboard input faster and more reliable; no usage shares."
+    }
+   ]
+  },
+  {
+   "subject_id": "location-aware-technology",
+   "decision": "confirm",
+   "reading": "The enabling positioning technology in mobile devices and networks (handset GPS/A-GPS, cell and Wi-Fi positioning). Gartner listed 'Location-Aware Applications' as a separate label on the same 2006 and 2007 charts, so 'Technology' is the device/network capability, not app usage.",
+   "test": "Device feature: at least 50% of new mobile phones in a major market shipping location-capable (A-GPS/handset-based positioning); 5% same denominator.",
+   "year_5pct": 2002,
+   "year_mainstream": 2006,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A was closer. The co-listed 'Location-Aware Applications' label (2-5 years, same editions) settles the reading: 'Location-Aware Technology' is the capability in handsets and networks, so the D16 device-feature test applies. In the US, FCC E911 Phase II required handset-based carriers (Verizon, Sprint) to have 95% of in-service phones location-capable by end-2005, and AT&T moved to embedded GPS in every voice device from 2006, so more than half of new US phones were location-capable by 2006. Builder B used adult use of location features (Pew), which measures the applications label, not this one, and said itself the device test fits better. 2006 is an estimate; for a hit the placed years 2008 and 2009 only need mainstream by 2010.",
+   "recheck": "Opened Wikipedia 'Enhanced 9-1-1': Phase II requires 95% of a network operator's in-service phones to be location-capable by 31 Dec 2005 (several carriers missed it and were penalised); AT&T Mobility moved to embedded GPS in every GSM/UMTS voice-capable device in 2006. Matches pass 1. Opened Pew 2013 location-based services: 74% of smartphone owners use location features (applications label, context only). 2006 stays an estimate; placed years 2008 and 2009 need mainstream by 2010. No change.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Enhanced_9-1-1",
+     "title": "Enhanced 9-1-1 - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. Phase II: 95% of a network operator's in-service phones location-capable by 31 Dec 2005; AT&T Mobility changed to embedded GPS in every GSM or UMTS voice-capable device in 2006."
+    },
+    {
+     "url": "https://www.pewresearch.org/internet/2013/09/12/location-based-services/",
+     "title": "Location-Based Services - Pew Research Center",
+     "date": "2013-09-12",
+     "shows": "Page opened. 74% of adult smartphone owners use location-based directions or information (2013): app usage, the separate applications label."
+    }
+   ]
+  },
+  {
+   "subject_id": "3d-printing",
+   "decision": "confirm",
+   "reading": "3D printing (additive fabrication) as used by enterprises: lower-cost 3D printers spreading beyond specialist prototyping bureaus into routine prototyping and some parts production in companies. Consumer/household 3D printing is a later, separate Gartner label (Consumer 3D Printing, from 2013, alongside Enterprise 3D Printing).",
+   "test": "Industry: at least 20% of manufacturers in a major market using 3D printing routinely for prototyping or production; 5% same denominator.",
+   "year_5pct": 2007,
+   "year_mainstream": 2014,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B was closer. On a chart about enterprise and consumer adoption, the 2007-2011 label 'Three-D/3D Printing' predates the consumer printer market (RepRap 2007, MakerBot 2009) and Gartner only introduced a separate 'Consumer 3D Printing' label in 2013, next to 'Enterprise 3D Printing'; the general label at first listing therefore reads as the enterprise technology. Builder A asserted a 'consumer and general-purpose framing' without a source and graded households, which is the later spin-off label. PwC and Zpryme survey of US manufacturers (February 2014, 114 respondents to the usage question; published with the Manufacturing Institute): 24.6% prototyping only, 9.6% prototyping and production, 2.6% products not otherwise makeable, 0.9% final parts only, so about 38% using 3D printing, so 20% is crossed by 2014 at the latest. That year is an upper bound; the hit for placed years 2017-2021 holds for any crossing up to 2019. year_5pct 2007 is a judgement (rapid prototyping long established). Medium certainty: the reading is the contested part, not the data.",
+   "recheck": "Opened the NIST-hosted PDF '3D Printing and the New Shape of Industrial Manufacturing' (PwC / Manufacturing Institute, June 2014): survey of 145 US manufacturers in February 2014, chart with 114 respondents: 24.6% prototyping only, 9.6% prototyping and production, 2.6% products not otherwise makeable, 0.9% final parts only, 28.9% experimenting, 33.3% not implementing; 'two-thirds of manufacturers surveyed are currently implementing 3DP in some way'. Confirms 20% crossed by 2014. The Gartner 2008 Hype Cycle document page returns 403; the On the Rise placement is in the repo's own 2007-2011 captures (band 5-10), so the row is dropped as context only. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.nist.gov/system/files/documents/mep/data/3DPrinting-theNewShapeofMFG.pdf",
+     "title": "3D Printing and the New Shape of Industrial Manufacturing (PwC / Manufacturing Institute)",
+     "date": "2014-06",
+     "shows": "Page opened. PwC/Zpryme survey Feb 2014: 24.6% prototyping only, 9.6% prototyping and production, 2.6% + 0.9% other production uses (about 38% using), 28.9% experimenting, 33.3% not implementing."
+    }
+   ]
+  },
+  {
+   "subject_id": "expertise-location-and-management",
+   "decision": "confirm",
+   "reading": "Enterprise capabilities that identify who knows what (skills profiles, expertise mined from documents and communications) so employees can find experts, whether as dedicated products or as people/expertise search inside enterprise collaboration and social suites.",
+   "test": "Enterprise: at least 20% of organisations routinely using an expertise-location capability (mainstream); 5% of organisations for year_5pct.",
+   "year_5pct": 2010,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B was closer. Gartner's label is 'Expertise Location and Management', a capability, not a product category, so expertise search delivered inside enterprise portals and social software counts. By 2010 people/expertise search with skills profiles shipped in widely deployed collaboration suites (SharePoint My Sites with 'Ask Me About' skills search, IBM Connections Profiles, Yammer-era enterprise social) and dedicated systems were standard in professional-services and law firms, so routine use by at least 5% of organisations by 2010-2012 is the conservative call. Builder A restricted the test to dedicated systems and then set null for lack of data, which is a narrower reading than the label and turns missing data into a miss. Routine use by 20% of organisations as an expertise-location practice is not evidenced, so mainstream is null. year_5pct 2010 is a bound (no later than 2012). No search spent; low-medium certainty.",
+   "recheck": "Wikipedia Expertise finding opened: names MITRE Expert Finder, Tacit Software (Oracle), Recommind, ProFinda, LinkedIn and others; no adoption figures, as pass 1 said. No primary share exists in the builders' or pass-1 evidence; no search spent. Years unchanged; year_5pct 2010 remains an inference (low-medium certainty).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Expertise_finding",
+     "title": "Expertise finding - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened: expertise-locating systems (MITRE Expert Finder, Tacit Software acquired by Oracle, Recommind, ProFinda, LinkedIn); no adoption figures."
+    }
+   ]
+  },
+  {
+   "subject_id": "service-oriented-business-applications",
+   "decision": "confirm",
+   "reading": "Gartner's own term SOBA: packaged business applications designed on SOA principles, built from and exposed as services (SAP enterprise SOA in ERP 6.0 and Business ByDesign, Oracle Fusion Applications, service-based SaaS suites).",
+   "test": "Enterprise: at least 20% of organisations running service-oriented packaged business applications in production (mainstream); 5% for year_5pct.",
+   "year_5pct": 2008,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A was closer. 'Service-oriented business applications' (SOBA) was Gartner's own coined category for packaged applications built on SOA, so the label had a dominant meaning at publication: Builder B's ambiguity flag does not meet D16, which needs no reading to dominate. Under that reading, vendor suites re-architected on services were in customer production from 2007-2008 (SAP ERP 6.0 enterprise services, Business ByDesign; SOA foundations widely adopted in large firms by 2007-2008), which clears 5% by the placed year 2013. No survey measures a distinct SOBA share reaching 20% before the term faded into SaaS-with-APIs, so mainstream is null (not evidenced, not shown to be absent). No search spent; medium-low certainty on whether a broader count of service-based suites would reach 20% by 2015.",
+   "recheck": "Opened GovTech 'Gartner: For First Time, SOA Adoption Falling' (2008): organisations planning first-time SOA adoption fell from 53% (2007) to 25% (2008); no-plan share rose from 6% to 16%; sample of 1,000+ employee companies. Opened Avasant/Computer Economics executive summary: about 19% of organisations had SOA in place (survey 2006, published Feb 2007), 11% more piloting or implementing; no figure for SOA-based packaged applications. Opened Wikipedia 'SAP ERP': ERP 6.0 released 2006 with architectural changes for an enterprise service architecture. The pages support the base for year_5pct 2008 but give no SOBA share; mainstream stays null. No change.",
+   "evidence": [
+    {
+     "url": "https://www.govtech.com/pcio/gartner-first-time-soa-adoption-falling.html",
+     "title": "Gartner: For First Time, SOA Adoption Falling",
+     "date": "2008",
+     "shows": "Page opened. Gartner survey (May-July 2008, firms with 1,000+ employees): planned first-time SOA adoption fell from 53% in 2007 to 25% in 2008; no SOA plans rose from 6% to 16%."
+    },
+    {
+     "url": "https://avasant.com/report/soa-adoption-trends-executive-summary/",
+     "title": "SOA Adoption Trends: Executive Summary (Avasant/Computer Economics)",
+     "date": "2007",
+     "shows": "Page opened. About 19% of organisations had SOA in place (2006 survey), 11% piloting or implementing; no SOA-application figure."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/SAP_ERP",
+     "title": "SAP ERP - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. SAP ERP 6.0 released 2006, with architectural changes to support an enterprise service architecture."
+    }
+   ]
+  },
+  {
+   "subject_id": "cloud-web-platforms",
+   "decision": "confirm",
+   "reading": "ambiguous: (a) cloud application platforms where organisations build and run their own software on provider infrastructure (PaaS/IaaS: App Engine, Azure, Force.com, AWS); (b) web platforms that expose functionality programmatically to developers through APIs (Facebook, Twitter, Amazon, Google, Salesforce), which is why Gartner also carried the label on its 2010 Hype Cycle for Web and User Interaction Technologies.",
+   "test": "(a) at least 20% of enterprises in major markets routinely running own software on cloud platforms; (b) at least 20% of enterprises/developers routinely building on web platform APIs.",
+   "year_5pct": null,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": true,
+   "reason": "Builder A was closer. The slash label deliberately merges two things, and Gartner carried it on both its cloud and its web/user-interaction hype cycles in 2010, so neither the cloud-hosting reading nor the web-API reading dominated at publication. They give different verdicts: under (a), builder B's Eurostat series (computing power for own software used by 23% of cloud-using EU enterprises in 2018, when 26% of enterprises used cloud: about 6% of all enterprises; about 20% hosting databases in 2021) gives miss for 2015 and partial for 2016; under (b), programmatic use of web platform APIs by developers and enterprises was mainstream before 2015, giving hit. Builder B picked (a) without arguing it dominated, and its denominator (all EU firms of 10+ employees) is also harsh against a large-enterprise chart. Years left null because they depend on the reading.",
+   "recheck": "Gartner document page (gartner.com/doc/1407814) returns 403 to curl and WebFetch; the repo's 2010 and 2011 captures confirm Cloud/Web Platforms on the Emerging Technologies chart (2-5 years), but the claim that it also appeared on the 2010 Web and User Interaction cycle is not confirmed on an opened page. Opened the Eurostat news release of 13 Dec 2018: 26% of EU enterprises bought cloud services in 2018 (19% in 2014, 21% in 2016); computing power to run own software was used by 23% of cloud-using enterprises in 2018. Note: pass 1 quoted 21% (2016) and 17% (2014) for that purpose; the release text gives 2014/2016 for overall cloud use, and the purpose shares for 2016/2014 are only in the chart, not legible in the text extract. This does not touch the reading: the slash label still merges cloud platforms and web-API platforms, which give different verdicts. Ambiguous, years null, unchanged.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/documents/portlet_file_entry/2995521/9-13122018-BP-EN.pdf/731844ac-86ad-4095-b188-e03f9f713235",
+     "title": "Cloud computing: use by enterprises, 2018 (Eurostat news release)",
+     "date": "2018-12-13",
+     "shows": "Page opened. 26% of EU enterprises (10+ employees) bought cloud services in 2018 (19% in 2014, 21% in 2016); 23% of cloud users bought computing power to run own software: evidence under reading (a)."
+    }
+   ]
+  },
+  {
+   "subject_id": "gamification",
+   "decision": "confirm",
+   "reading": "Applying game mechanics (points, badges, leaderboards, streaks, challenges) to non-game applications to drive engagement of employees and customers.",
+   "test": "Enterprise: at least 20% of organisations, or of their employees, routinely using gamified applications (training, sales, loyalty, customer apps); 5% same denominator.",
+   "year_5pct": 2012,
+   "year_mainstream": 2019,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Neither builder on years; the verdict follows A. Builder A's 2014 mainstream year rests on Gartner's own 2011 prediction (70% of Global 2000 by 2014), which is a forecast, not evidence. Builder B rightly rejected it but then left mainstream null. TalentLMS's 2019 survey (published 2019-08-19, almost 900 employees): 57% had noticed gamification elements in an app or software they use at work, and 61% of those received gamified training, i.e. about 35% of all employees surveyed (vendor survey, online sample). Game mechanics were by then standard in mass consumer apps (language learning, fitness, loyalty tiers). Routine use at 20%+ by 2019 is the best-supported year; it is an estimate with a vendor-survey basis, and the placed year 2021 only needs a crossing by 2023 for a hit. year_5pct 2012 follows the 2010-2012 vendor wave (B); Wikipedia: the term spread from 2010, when half of consumer-software start-ups seeking funding mentioned game design.",
+   "recheck": "TalentLMS opened: 61% is of the ~526 respondents who had noticed gamification (374 of ~900 disqualified), not of all employees, and the page gives no country; reason corrected to ~35% of all surveyed, still above 20%. Wikipedia Gamification opened: term 2008, popular from 2010; it does NOT mention Gartner's 70%-by-2014 forecast or its failure as pass 1 said; row reworded. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.talentlms.com/blog/gamification-survey-results/",
+     "title": "Gamification at Work: The 2019 survey results (TalentLMS)",
+     "date": "2019-08-19",
+     "shows": "Page opened: almost 900 employees asked; 374 had not noticed gamification at work and were disqualified; 61% of the remaining respondents receive gamified training."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gamification",
+     "title": "Gamification - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened: term first appeared 2008, popular from 2010, when half of consumer-software companies seeking funding mentioned game design; no adoption shares."
+    }
+   ]
+  },
+  {
+   "subject_id": "advanced-analytics-with-self-service-delivery",
+   "decision": "confirm",
+   "reading": "Predictive and advanced analytics (statistical modelling, machine learning) packaged so business users and analysts, not data scientists, build and run models themselves.",
+   "test": "Enterprise: at least 20% of organisations where business users routinely build or run predictive models through self-service tools; 5% same denominator.",
+   "year_5pct": 2014,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B was closer. BARC/Eckerson (214 companies, published April 2022) found only about 25% of employees actively use BI/analytics tools at all, with minimal growth in seven years, and the self-service drivers it reports are report and dashboard authoring, not model building. That is well short of business users routinely doing predictive analytics in 20% of organisations by 2022. Builder A dated mainstream to 2020 from a Gartner prediction about augmented analytics driving purchases, which is a forecast and a purchasing measure, not adoption. TDWI 2014: 34% of respondents actively using predictive analytics, and in 63% of that active group business analysts build models (about a fifth of a respondent base skewed to analytics adopters), which supports at least 5% by 2014. Mainstream null through 2022 is the call; later AutoML/copilot features may change it but not within the claim's window.",
+   "recheck": "Opened BARC news release (5 Apr 2022): 214 companies, 25% of employees actively using BI/analytics, minimal growth in seven years; 73% cite self-service report and dashboard authoring as a driver. It does NOT contain the pass-1 statement that for 60% of business users self-service means parameterised dashboards (removed from reason). Downloaded the TDWI 2014 report PDF (SAP-hosted): 34% of respondents actively using predictive analytics; in the active group, statisticians/data scientists build models in 76% and business analysts in 63%. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://barc.com/news/new-study-identifies-drivers-of-bi-and-analytics-adoption-in-companies-today/",
+     "title": "New Study Identifies Drivers of BI and Analytics Adoption in Companies Today (BARC)",
+     "date": "2022-04-05",
+     "shows": "Page opened. Survey of 214 companies (BARC and Eckerson Group): 25% of employees actively use BI/analytics tools on average, minimal growth in seven years; self-service report and dashboard authoring the top driver (73%)."
+    },
+    {
+     "url": "https://vods.dm.ux.sap.com/previewhub/ITAnalyticsContentHubANZ/downloadasset.2014-03-mar-17-21.predictive-analytics-for-business-advantage-pdf.pdf",
+     "title": "Predictive Analytics for Business Advantage (TDWI Best Practices Report)",
+     "date": "2014",
+     "shows": "Page opened (PDF). 34% of respondents actively using predictive analytics; within that group business analysts build models in 63% of organisations, statisticians/data scientists in 76%."
+    }
+   ]
+  },
+  {
+   "subject_id": "web-platforms",
+   "decision": "confirm",
+   "reading": "ambiguous: (a) web companies opening their services to third-party developers as programmable platforms (Facebook Platform, Salesforce AppExchange, Amazon Web Services); (b) the browser and open web standards as an application platform; (c) web-oriented architecture inside enterprises.",
+   "test": "Depends on reading: (a) at least 20% of enterprises routinely building on or running workloads on third-party web/cloud platforms; (b) web applications as a standard delivery platform for 20% of users or organisations.",
+   "year_5pct": null,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": true,
+   "reason": "Both builders agree; confirmed. The 2007 label had no dominant meaning: Gartner itself later re-labelled the area 'Cloud/Web Platforms' (2010-2011), which also mixes readings (see cloud-web-platforms). The readings give different verdicts for placed year 2012: the browser-as-platform reading was mainstream well before 2014 (hit), while the cloud-workload reading reaches 20% of enterprises in major markets only around 2018-2021 on Eurostat-type data (miss or partial). No additional search spent.",
+   "recheck": "Opened Wikipedia 'Web platform': umbrella term introduced by W3C; defined in 2011 by W3C CEO Jeff Jaffe as 'a platform for innovation, consolidation and cost efficiencies' (browser-standards reading). Opened Wikipedia 'Web 2.0': O'Reilly's 'web as platform' framing and 'the Web becomes a universal, standards-based integration platform' (third-party platform reading). Both readings exist as pass 1 says; ambiguous, years null, unchanged.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Web_platform",
+     "title": "Web platform - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened. W3C umbrella term for the browser standards stack, defined in 2011 by W3C CEO Jeff Jaffe: one meaning of the label."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Web_2.0",
+     "title": "Web 2.0 - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened. O'Reilly's 'web as platform' framing (2004-2005): another meaning of the label."
+    }
+   ]
+  },
+  {
+   "subject_id": "voip",
+   "decision": "confirm",
+   "reading": "Carrying voice calls over IP networks instead of circuit-switched lines, as business telephony (IP PBX, hosted VoIP) and as consumer phone service over broadband.",
+   "test": "20% of households in a major market with VoIP phone service (France, ARCEP), cross-checked with share of US companies using VoIP; 5% = share of US companies using VoIP.",
+   "year_5pct": 2004,
+   "year_mainstream": 2006,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A's verdicts stand but on a different test. A used IP-capable PBX line shipments (hybrid lines are not VoIP use), B used US residential voice connections only. France is a major market: ARCEP counted about 6.6M broadband-voice subscriptions at end 2006 (about a quarter of ~26M households) and 10.8M at end 2007 (27.4% of all phone subscriptions), adding about a million a quarter, so the 20% line was passed in 2006. In-Stat/MDR: US businesses using VoIP 3% (2003) to 12% (2004), so 5% in 2004. B's error: restricting the denominator to the US and missing France/Japan, which crossed 2-3 years earlier. Enterprise use alone was slower: Forrester counted IP PBXs at 14% of North American enterprises in 2006 and 23% in 2007, hosted VoIP 3% and 8%. year_mainstream is precise to about a year; 2006 vs 2007 only changes the 1999 claim (P=2004).",
+   "recheck": "Opened ARCEP Q4 2007 observatory: 10.8M broadband-voice subscriptions end 2007, 27.4% of phone subscriptions, +64% on the year (so ~6.6M end 2006), confirmed. Opened Telecompaper (2004-12-07): In-Stat/MDR 3% (2003), 12% (2004) of US businesses, confirmed. Opened No Jitter (2008-04-01): Forrester Q1 2007 survey gives IP PBX 23% of NA enterprises, up from 14% a year earlier; hosted VoIP 3% (2006) to 8% (2007); pass 1's figures confirmed and the 2007 figures added. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.arcep.fr/cartes-et-donnees/nos-publications-chiffrees/observatoire-des-marches-des-communications-electroniques-en-france/imports/stats/le-marche-des-services-de-telecommunications-en-france-au-4eme-trimestre-2007/le-marche-des-services-de-telecommunications-en-france-au-4eme-trimestre-2007.html",
+     "title": "Le marche des services de telecommunications en France au 4eme trimestre 2007 - ARCEP",
+     "date": "2008",
+     "shows": "Page opened: 10.8M broadband-voice subscriptions at end 2007, 27.4% of all phone subscriptions, up 64% on the year (about 6.6M at end 2006); about a million added per quarter."
+    },
+    {
+     "url": "https://www.telecompaper.com/news/12-of-us-business-deploys-voip--425886",
+     "title": "12% of US business deploys VoIP - Telecompaper (In-Stat/MDR)",
+     "date": "2004-12-07",
+     "shows": "Page opened: US businesses deploying VoIP 3% in 2003, 12% in 2004."
+    },
+    {
+     "url": "https://www.nojitter.com/customer-experience/the-state-of-north-american-business-customer-adoption-of-ipt-and-voip",
+     "title": "The State of North American Business Customer Adoption of IPT and VoIP - No Jitter (Forrester)",
+     "date": "2008-04-01",
+     "shows": "Page opened: Forrester Q1 2007, 23% of North American enterprises had IP PBXs, up from 14% a year earlier; hosted VoIP 3% (2006) to 8% (2007)."
+    }
+   ]
+  },
+  {
+   "subject_id": "asps",
+   "decision": "confirm",
+   "reading": "Application service providers: third parties hosting and renting business applications over the network; the model continued as SaaS (Gartner itself charted 'Software as Service/ASAP' in 2005), so it is not treated as abandoned. Same timeline as software-as-service-asap.",
+   "test": "20% of organisations in a major market using hosted/subscription (ASP/SaaS) applications in production (Forrester survey of IT decision-makers).",
+   "year_5pct": 2005,
+   "year_mainstream": 2009,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Neither builder. Pass 1 dated mainstream to 2009 from Forrester's software survey (Q4 2009, published 2010: 25% of North American companies using SaaS); that page is now dead (404) and the figure could not be re-confirmed. The opened Eurostat release bounds it: in 2014, 19% of all EU enterprises with 10+ staff bought cloud services (mostly SaaS: e-mail, files, office software), and large enterprises (250+) were at about 35% (56% in 2018 after a 21-point rise since 2014). So 20% of organisations in a major market is reached no later than 2014 for large firms; 2009 lies inside that bound and is kept. B's 2016 used the all-enterprise EU average including 10-49 staff firms. year_5pct 2005 is an estimate (no measured series before 2007); the 2000 claim (P=2002) is a miss under any year_5pct after 2002, which no source supports. Verdicts: 2000 claim miss, 2001 claim partial. Low-to-moderate certainty: a mainstream year of 2012 or later together with a 5% year after 2006 would turn the 2001 claim into a miss.",
+   "recheck": "Forrester blog (2010-06-21) returns 404 at www.forrester.com and the blogs.forrester.com variants; Wayback availability API answered 429 and web.archive.org is unreachable from this environment, so the 25% North America figure is unconfirmed. Opened the Eurostat 2018 news release PDF: 26% of EU enterprises bought cloud in 2018, 19% in 2014, 21% in 2016; large enterprises 56% in 2018, +21 pp since 2014. Pass-1 Eurostat figures confirmed. The Eurostat Statistics Explained PDF cited for the UK 24% (2014) now serves the 2026 edition, without 2014 country data. Years unchanged as inside the Eurostat bound; reason updated to say the Forrester figure is unconfirmed.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/documents/portlet_file_entry/2995521/9-13122018-BP-EN.pdf/731844ac-86ad-4095-b188-e03f9f713235",
+     "title": "Cloud computing services used by more than one out of four enterprises in the EU - Eurostat news release 193/2018",
+     "date": "2018-12-13",
+     "shows": "Page opened (PDF). EU enterprises (10+ staff) buying cloud services 19% (2014), 21% (2016), 26% (2018); large enterprises 56% in 2018, the largest rise since 2014 (+21 pp); main uses e-mail and file storage."
+    }
+   ]
+  },
+  {
+   "subject_id": "personal-digital-assistant-phones",
+   "decision": "confirm",
+   "reading": "Converged handsets combining PDA functions (organiser, email, apps) with a mobile phone (Treo, BlackBerry, Pocket PC Phone), which evolved directly into smartphones.",
+   "test": "20% of adults in a major market owning one (smartphone as successor); a handset class, not a feature, so the user-share test applies. 5% = smartphone share of handset sales.",
+   "year_5pct": 2006,
+   "year_mainstream": 2011,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B. A applied the 50%-of-new-units device-feature test globally (crossed 2013), but a PDA phone is a device class bought by users, so D16's 20%-of-target-users test fits; Pew measured 35% of US adults owning a smartphone in 2011, so 2011 is an upper bound (comScore-type subscriber data suggest 2010). Smartphones were above 5% of global phone sales by 2006 (estimate; builder B's figure of about 10% in 2007 was not re-confirmed on an opened page). Any year_mainstream from 2010 to 2011 gives partial for both claims (placed 2006 and 2007); only a crossing by 2009 would turn the 2002 claim into a hit, and Pew's first measure (35% in 2011) with US smartphone ownership rising fast from about 2009 makes 2010-2011 the likely crossing.",
+   "recheck": "Opened Pew 'Smartphone Adoption and Usage' (11 Jul 2011): first standalone measure, 35% of US adults own a smartphone (42% of the 83% with a cell phone). Gartner press release of 13 Feb 2014 returns 403 to curl and WebFetch; replaced by the TechCrunch report of it (13 Feb 2014): smartphones 53.6% of worldwide phone sales in 2013, 968M units. Note on placed years: the 2001 and 2002 entries place at 2006 and 2007; mainstream 2011 gives partial for both (pass 1 mentioned only P=2006). The 5% year is not re-confirmed but cannot change the verdict. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2011/07/11/smartphone-adoption-and-usage/",
+     "title": "Smartphone Adoption and Usage - Pew Research Center",
+     "date": "2011-07-11",
+     "shows": "Page opened. 35% of US adults owned a smartphone in May 2011 (first standalone measure)."
+    },
+    {
+     "url": "https://techcrunch.com/2014/02/13/smartphones-outsell-dumb-phones-globally/",
+     "title": "Gartner: Smartphone Sales Finally Beat Out Dumb Phone Sales Globally In 2013 - TechCrunch",
+     "date": "2014-02-13",
+     "shows": "Page opened. Gartner: smartphones 53.6% of worldwide mobile phone sales in 2013, 968M units (device-share test, not used)."
+    }
+   ]
+  },
+  {
+   "subject_id": "identity-services",
+   "decision": "confirm",
+   "reading": "Network identity services: third-party/federated identity providers that authenticate a user once and assert identity to many websites (Passport and Liberty Alliance in 2002; later OpenID/OAuth social login).",
+   "test": "20% of internet users in a major market routinely signing in to third-party sites with a shared identity provider (social/federated login).",
+   "year_5pct": 2009,
+   "year_mainstream": 2011,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B's verdict (partial), but via an earlier mainstream year, not via B's 2002 5% year. Both builders guessed 2013 without evidence. Janrain's Social Identity study by Blue Research (US consumers, reported January 2012) found that 41% of social media users chose social login to sign in to websites in 2011, up from 28% in 2010 (77% said sites should offer it). With Facebook alone at 54% of US adults in 2012 (Pew), about two-thirds of internet users, that is roughly a quarter of US internet users, so mainstream by 2011. This is a vendor-commissioned survey that measures the preferred sign-in method, so 2011 has low-medium confidence; it is within P+5 (2012) by one year. B's year_5pct 2002 counted Passport accounts used mostly on Microsoft's own services, which is not third-party sign-in: eBay and Monster cancelled their Passport agreements in 2004. year_5pct 2009 is an estimate (social login at 28% of social media users in 2010) and does not affect the verdict.",
+   "recheck": "MarketingProfs page: HTTP 403 to WebFetch and curl; Wayback not reachable here; row dropped. One WebSearch led to MediaPost (opened): Janrain/Blue Research, US, preference for social login 28% (2010) to 41% (2011), 77% want it offered; it frames 41% as preference, not measured use, so the reason now says so. Microsoft account Wikipedia opened: eBay and Monster cancelled Passport in 2004, confirmed. Pew social media fact sheet opened: earliest trend point Aug 2012, Facebook 54% of adults (pass 1's 'two-thirds of online adults in 2011' not on that page; replaced). Years unchanged; verdict-relevant and least certain.",
+   "evidence": [
+    {
+     "url": "https://www.mediapost.com/publications/article/165832/social-login-preferred-to-site-registration.html",
+     "title": "Research Brief: Social Login Preferred to Site Registration - MediaPost (Janrain/Blue Research)",
+     "date": "2012-01",
+     "shows": "Page opened: Janrain Social Identity study by Blue Research, US consumers; preference for social login rose from 28% in 2010 to 41% in 2011; 77% think sites should offer social login."
+    },
+    {
+     "url": "https://www.pewresearch.org/internet/fact-sheet/social-media/",
+     "title": "Social Media Fact Sheet - Pew Research Center",
+     "date": "2024",
+     "shows": "Page opened: Facebook used by 54% of US adults in August 2012, the earliest trend point."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Microsoft_account",
+     "title": "Microsoft account - Wikipedia",
+     "date": "2026-10-01",
+     "shows": "Page opened: eBay and Monster.com used Passport, but those agreements were cancelled in 2004; Expedia dropped it in 2009."
+    }
+   ]
+  },
+  {
+   "subject_id": "peer-to-peer-computing",
+   "decision": "confirm",
+   "reading": "Peer-to-peer architectures as an enterprise computing model (serverless P2P collaboration such as Groove, desktop resource sharing), not consumer file sharing.",
+   "test": "20% of organisations using P2P computing/collaboration in production; 5% likewise.",
+   "year_5pct": null,
+   "year_mainstream": null,
+   "abandoned": true,
+   "abandoned_year": 2013,
+   "ambiguous": false,
+   "reason": "Builder A. B's two readings are not equally faithful: consumer file sharing was already mass-market in 2002 (Kazaa), so Gartner placing 'Peer-to-peer computing' 5-10 years from the plateau only makes sense for the enterprise computing model, which is what an Emerging Technologies chart addresses. The enterprise model never showed a measured 5% share; its flagship product (Groove, Microsoft Office Groove, SharePoint Workspace 2010) was dropped from Office 2013 in favour of cloud sync. Abandoned year 2013 (A had ~2015); either gives miss for P=2012.",
+   "recheck": "Opened Wikipedia 'Microsoft SharePoint Workspace': Groove (Ray Ozzie) acquired by Microsoft March 2005, in Office 2007 Ultimate/Enterprise (Jan 2007), renamed SharePoint Workspace 2010 (July 2010), no longer included with Office 2013, replaced by OneDrive for Business. Supports abandoned 2013. No measured 5% share found. No change.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Microsoft_SharePoint_Workspace",
+     "title": "Microsoft SharePoint Workspace - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. Groove acquired by Microsoft March 2005; in Office 2007; renamed SharePoint Workspace 2010; not included with Office 2013, replaced by OneDrive for Business."
+    }
+   ]
+  },
+  {
+   "subject_id": "extensible-business-reporting-language",
+   "decision": "confirm",
+   "reading": "XBRL, the XML standard for tagging financial reports filed with regulators and exchanges.",
+   "test": "20% of listed companies in a major market filing in XBRL routinely.",
+   "year_5pct": 2008,
+   "year_mainstream": 2008,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B's verdict (hit), with an earlier year. Both builders looked only at the US SEC phase-in (2009-2011). Japan's FSA made XBRL mandatory for all EDINET filers (about 5,000 companies) for fiscal years starting on or after April 2008, so all Japanese listed companies were filing XBRL from 2008 quarterly reports. A's 2011 was a wrong-market error. Any year up to 2010 gives hit for P=2008; China's exchanges mandated XBRL even earlier (2004-2005, not retrieved).",
+   "recheck": "Opened the FSA Japan release of 17 Mar 2008: all EDINET filers 'in principle, mandated to submit in XBRL' the financial statements in annual, semiannual and quarterly reports for fiscal years starting in or after April 2008; first XBRL filings are quarterly reports for the quarter ending June 2008; about 5,000 companies and 3,000 funds. Confirms routine XBRL filing by all Japanese listed companies from 2008. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.fsa.go.jp/en/news/2008/20080317.html",
+     "title": "FSA launches new electronic corporate disclosure system (EDINET) - Financial Services Agency, Japan",
+     "date": "2008-03-17",
+     "shows": "Page opened. XBRL mandatory in principle for all EDINET filers (listed companies) for fiscal years from April 2008; first XBRL filings for the quarter ending June 2008; about 5,000 companies and 3,000 funds."
+    }
+   ]
+  },
+  {
+   "subject_id": "rfid-case-pallet",
+   "decision": "confirm",
+   "reading": "Passive EPC RFID tags on shipping cases and pallets in the retail/CPG supply chain, the Walmart/Target/Metro/DoD mandate model, as distinct from item-level tagging.",
+   "test": "20% of consumer-goods suppliers and retailers routinely tagging cases/pallets; 5% likewise.",
+   "year_5pct": 2006,
+   "year_mainstream": null,
+   "abandoned": true,
+   "abandoned_year": 2009,
+   "ambiguous": false,
+   "reason": "Builder B. Gartner's label deliberately isolates the case/pallet application. The retail mandates stalled in 2007-2009 and Walmart moved to item-level tagging (apparel, later home goods and hardlines); the later RFID growth (GS1 US 2015 survey: 47% of goods received by RFID-aware retailers tagged) is item-level source tagging, which is a different application. A kept it 'not abandoned' on the strength of DoD and niche logistics use, but gave no evidence of a sustained 5% share of the relevant suppliers after 2009; even the 5% year is generous (a few hundred mandated suppliers out of tens of thousands). Any of 'abandoned 2009' or 'never reached 5%' gives miss for all five claims (P=2014-2019); abandoned year approximate.",
+   "recheck": "Opened Supply Chain Dive (2018-08-21): Walmart 2003 case/pallet mandate for top 100 suppliers; tags gave little useful data in DCs and warehouses; from 2006 focus moved to item-level in stores; no adoption shares. Opened RFID Journal GS1 US survey: ~40% of manufacturers' items tagged, 78% of retailers receive some tagged goods (47% of goods among them), item-level only, no case/pallet figures. Both support pass 1. abandoned_year 2009 stays approximate (the pivot began 2006; mandates faded 2007-2009); any abandoned year up to 2013 (the year before the earliest placed year 2014) gives the same miss.",
+   "evidence": [
+    {
+     "url": "https://www.supplychaindive.com/news/RFID-rise-fall-and-return-retail/530608/",
+     "title": "The rise, fall and return of RFID - Supply Chain Dive",
+     "date": "2018-08-21",
+     "shows": "Page opened: Walmart 2003 mandate to tag all pallets and cases; RFID in DCs 'a solution in search of a problem'; from 2006 projects shifted to item-level tagging in stores."
+    },
+    {
+     "url": "https://www.rfidjournal.com/news/gs1-us-survey-finds-strong-rfid-adoption/73251/",
+     "title": "GS1 US Survey Finds Strong RFID Adoption - RFID Journal",
+     "date": "2015",
+     "shows": "Page opened: ~40% of RFID-aware manufacturers' items tagged; 78% of retailers receive some RFID-tagged goods, 47% of goods on average among them; item-level tagging only, no case/pallet figures."
+    }
+   ]
+  },
+  {
+   "subject_id": "networked-collective-intelligence",
+   "decision": "confirm",
+   "reading": "Gartner's own definition: applications that gather and focus the knowledge of groups, individuals working together with no centralised authority (wikis, Wikipedia, folksonomies, ratings; Web 2.0 'wisdom of crowds').",
+   "test": "20% of adults in a major market routinely using collectively produced resources (Wikipedia as the measurable case).",
+   "year_5pct": 2005,
+   "year_mainstream": 2007,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B. A called the label ambiguous, but Gartner's description of collective intelligence at the time (group knowledge produced with no central authority, enabled by wikis and Web 2.0) gives a dominant reading, and its main forms (Wikipedia, enterprise wikis, user ratings) were all mainstream well before P+2=2017; only the narrow prediction-market reading would fail, and it did not dominate. Pew: 36% of US online adults consulted Wikipedia in Feb 2007, 53% in 2010. Any year before 2017 gives hit for P=2015.",
+   "recheck": "Pew 'Wikipedia users' (2007-04-24): HTTP 403, not opened; its figure (36% of online adults, Feb 2007) is confirmed by the opened Pew 2011 report 'Wikipedia, past and present' (25% of all US adults, 36% of internet users in Feb 2007; 42% of adults in May 2010). Opened Formtek blog: Gartner 2006 definition of collective intelligence (gather and focus the knowledge of groups, no centralized authority; blogs, wikis, RSS, AJAX). No change.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2011/01/13/wikipedia-past-and-present/",
+     "title": "Wikipedia, past and present - Pew Research Center",
+     "date": "2011-01-13",
+     "shows": "Page opened. Wikipedia used by 25% of US adults (36% of internet users) in Feb 2007 and 42% of adults in May 2010."
+    },
+    {
+     "url": "https://formtek.com/blog/gartners-emerging-technology-hype-cycle-2006/",
+     "title": "Gartner's Emerging Technology Hype Cycle 2006 - Formtek",
+     "date": "2006",
+     "shows": "Page opened. Gartner: CI refers to applications that gather and focus the knowledge of groups, individuals working together with no centralized authority; enabled by blogs, wikis, RSS, AJAX."
+    }
+   ]
+  },
+  {
+   "subject_id": "corporate-blogging",
+   "decision": "confirm",
+   "reading": "Companies publishing official blogs (external and internal) by executives or staff to communicate with customers and employees.",
+   "test": "20% of large companies (Fortune 500) running a public corporate blog.",
+   "year_5pct": 2006,
+   "year_mainstream": 2009,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A. The UMass Dartmouth series (Barnes) gives 16% (2008) and 23% (2010, confirmed on a UMass page); the 2009 value of 22% comes from a summary page that is now dead, and B read 2009 as ~17%. The crossing is therefore 2009 or 2010; 2009 is kept. Mainstream 2009 is within P+2 for every placed year (2007, 2008, 2010, 2011), so hit; a 2010 crossing would turn the 2005 claim (placed 2007) into a partial. year_5pct 2006 is an estimate and does not affect the verdict.",
+   "recheck": "pr.typepad.com post is dead (redirects to a Network Solutions page; TypePad closed) and the Wayback Machine was unreachable, so the 22% (2009) figure is not confirmed. Opened MarTech (22 Aug 2014; via WebFetch): 31% of the 2014 Fortune 500 have a public corporate blog, down from 34% in 2013, the first drop since tracking began in 2008; the page does not give the 2008 16% that pass 1 attributed to it. Opened UMass Dartmouth CMR '2011 social media top charities' (23 Mar 2011): 'Our latest research shows the Fortune 500 with the least amount of blogs at 23% adoption' (2010 study). So 20% was crossed in 2009 or 2010; pass-1 2009 is inside that bound and kept. Low-to-medium certainty on the 2005 claim only.",
+   "evidence": [
+    {
+     "url": "https://www.umassd.edu/cmr/research/2011-social-media-top-charities.html",
+     "title": "UMass Dartmouth Center for Marketing Research: social media and the top charities (2011)",
+     "date": "2011-03-23",
+     "shows": "Page opened. Fortune 500 at 23% blog adoption in the latest (2010) study, Inc. 500 at 50%."
+    },
+    {
+     "url": "https://martech.org/fortune-500-blogging-3-year-first-decline-7-years-umass-survey/",
+     "title": "Fortune 500 Blogging Down 3% This Year, First Drop In 7 Years - MarTech",
+     "date": "2014-08-22",
+     "shows": "Page opened. UMass Dartmouth: 31% of Fortune 500 with a public corporate blog in 2014, down from 34% in 2013; first drop since tracking began in 2008."
+    }
+   ]
+  },
+  {
+   "subject_id": "software-as-service-asap",
+   "decision": "confirm",
+   "reading": "Business applications delivered by a provider over the internet on subscription (SaaS, successor of application service providers). Same timeline as asps.",
+   "test": "20% of organisations in a major market using SaaS applications in production (Forrester survey of IT decision-makers).",
+   "year_5pct": 2005,
+   "year_mainstream": 2009,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A's verdict (hit), with a later year. Pass 1 placed mainstream at 2009 on a Forrester Q4 2009 survey (25% of North American companies using SaaS), reported in a Forrester blog that is no longer online and could not be re-opened. The official series starts later: Eurostat's first measurement (2014) shows 24% of UK enterprises with 10 or more staff buying cloud services (mostly e-mail, office software and file storage, i.e. SaaS), 54% of UK and 35% of EU-28 large enterprises, and an EU-28 average of 19%. A crossing among UK enterprises no later than 2014, with large enterprises far above 20% already in 2014, bounds mainstream at 2014 or earlier; 2009 is kept inside that bound. The verdict for P=2010 (hit, needs 2012 or earlier) therefore rests on the unconfirmed Forrester figure; low-medium certainty. A's 2006 rested on a paraphrased Gartner survey not retrieved. B used Eurostat's all-enterprise EU average as the only denominator, which includes 10-49 staff firms. year_5pct is an estimate and does not affect this claim.",
+   "recheck": "Forrester blog (forrester.com/blogs/10-06-21-...) returns HTTP 404 to WebFetch and curl; Wayback unreachable from this environment (WebFetch refuses web.archive.org, curl tunnel closed): dead, row dropped, 25% figure unconfirmed. Eurostat SEPDF 37043 opened but is now the January 2026 edition and no longer shows 2014 figures; row replaced by the Eurostat API dataset isoc_cicce_use (opened): UK 23.97%, EU-28 18.6%, FI 50.8% of enterprises (10+) in 2014; large enterprises UK 54.2%, EU-28 34.7%. Wikipedia SaaS opened: no dated adoption survey. No WebSearch left. 2009 kept inside the bound; flagged least certain.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_cicce_use?format=JSON&lang=EN&geo=UK&geo=EU28&geo=FI&geo=DE&geo=FR&time=2014&time=2016&indic_is=E_CC&unit=PC_ENT",
+     "title": "Cloud computing services by size class of enterprise (isoc_cicce_use) - Eurostat",
+     "date": "2026",
+     "shows": "Page opened: enterprises (10+) buying cloud services in 2014: UK 23.97%, EU-28 18.6%, Finland 50.78%; large enterprises (250+) UK 54.18%, EU-28 34.71%."
+    },
+    {
+     "url": "https://ec.europa.eu/eurostat/documents/portlet_file_entry/2995521/9-13122018-BP-EN.pdf/731844ac-86ad-4095-b188-e03f9f713235",
+     "title": "ICT usage in enterprises in 2018 - Eurostat news release 193/2018",
+     "date": "2018-12-13",
+     "shows": "PDF opened: EU enterprises buying cloud services 19% (2014), 21% (2016), 26% (2018); mostly e-mail (69%) and file storage (68%)."
+    }
+   ]
+  },
+  {
+   "subject_id": "behavioral-economics",
+   "decision": "revise",
+   "reading": "Applying behavioural-economics insight (defaults, nudges, choice architecture) to the design of products, policies and decisions in organisations.",
+   "test": "Routine use by 20% of the relevant industry: share of US 401(k) plans (Vanguard record-kept) using automatic enrollment, the flagship applied nudge; cross-check national governments with behavioural-insights units.",
+   "year_5pct": 2006,
+   "year_mainstream": 2008,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B's verdict (hit), with an earlier year. A treated the label as ambiguous, but the academic-field reading is not an adoption reading on a technology chart; the applied readings (business choice architecture, public-policy nudge units) dominate and both reach mainstream well before P+2 (2019-2020). Vanguard How America Saves 2017 (Figure 15): automatic enrollment in 15% of Vanguard plans with employee-elective contributions at year-end 2007, 20% in 2008, 24% in 2009, 27% in 2010 and 45% in 2016. 20% is first reached in 2008. year_5pct 2006 is inside the bound set by 15% in 2007. Government nudge units followed: UK Behavioural Insights Team 2010, NSW 2012, Australia's BETA and Canada 2016, plus Germany, Japan, World Bank, UN and the European Commission. Any mainstream year up to 2019 gives hit for both claims (placed 2017 and 2018).",
+   "recheck": "Downloaded the Vanguard How America Saves 2017 PDF (retireready.com copy): text says 45% of plans had automatic enrollment at year-end 2016, up 4 points from 2015, +300% since 2007; Figure 15 gives 15% (2007), 20% (2008), 24% (2009), 27% (2010), 29%, 32%, 34%, 36%, 41%, 45% (2016). Pass 1 said about 24% in 2010 and set mainstream 2010; the page shows 24% in 2009 and 20% already in 2008. Changed year_mainstream 2010 -> 2008; verdicts unchanged (hit). Opened Wikipedia 'Nudge theory': UK Behavioural Insights Team 2010 (Cabinet Office), Sunstein at OIRA 2009, NSW 2012, BETA 2016, Canada 2016, units in Germany, Japan, World Bank, UN, EC.",
+   "evidence": [
+    {
+     "url": "https://retireready.com/wp-content/uploads/2021/09/Vanguard-how-america-saves-2017.pdf",
+     "title": "How America Saves 2017 - Vanguard",
+     "date": "2017",
+     "shows": "Page opened (PDF). Figure 15: share of Vanguard plans with automatic enrollment 15% (2007), 20% (2008), 24% (2009), 27% (2010), 45% (2016)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nudge_theory",
+     "title": "Nudge theory - Wikipedia",
+     "date": "2026",
+     "shows": "Page opened. UK Behavioural Insights Team 2010; Sunstein at OIRA 2009; NSW unit 2012; Australia BETA 2016; Canada 2016; units in Germany, Japan, World Bank, UN, European Commission."
+    }
+   ]
+  },
+  {
+   "subject_id": "content-analytics",
+   "decision": "confirm",
+   "reading": "Software that analyses unstructured content (text, documents, social media, later audio/video) to extract meaning, entities and sentiment for business use; text analytics is the core.",
+   "test": "20% of large enterprises in a major market using text mining/content analytics routinely (Eurostat ICT survey, large enterprises).",
+   "year_5pct": 2012,
+   "year_mainstream": 2024,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B. Eurostat (isoc_eb_ai, indicator text mining) measures 2.48% (2021), 2.90% (2023), 6.88% (2024) and 11.75% (2025) of all EU enterprises; among large enterprises (250+) 9.92% (2021), 11.93% (2023), 21.44% (2024) and 35.04% (2025), so the 20% line for the most favourable denominator is 2024. A's 2014 was an unevidenced estimate. year_5pct 2012 is an estimate for large-firm use (text analytics market ~US$1bn in 2011, social listening at big brands); it decides partial vs miss for the 2007 claim (P=2012) and is the weakest point. Verdicts: partial for both claims.",
+   "recheck": "Opened the Eurostat Statistics Explained page 'Use of artificial intelligence in enterprises' (Dec 2025): text mining used by 11.75% of EU enterprises and 35.04% of large ones in 2025. The 2024 figures are not in the page text, so pulled the series from the Eurostat API (isoc_eb_ai, E_AI_TTM, EU27): all enterprises 2.48/2.90/6.88/11.75% and large enterprises 9.92/11.93/21.44/35.04% for 2021/2023/2024/2025. Confirms 2024 crossing for large firms. Opened CMSWire (Seth Grimes, 5 Feb 2014): 'Back in 2011, I estimated the value of the global text analytics market at more than $1 billion'. year_5pct 2012 stays an estimate (large firms already at 9.9% in the first measured year 2021); not fixed by evidence. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises",
+     "title": "Use of artificial intelligence in enterprises - Eurostat Statistics Explained",
+     "date": "2025-12",
+     "shows": "Page opened. Text mining the most used AI technology: 11.75% of EU enterprises and 35.04% of large enterprises in 2025."
+    },
+    {
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_eb_ai?format=JSON&lang=EN&geo=EU27_2020&indic_is=E_AI_TTM&unit=PC_ENT",
+     "title": "Eurostat isoc_eb_ai: enterprises using AI text mining, EU27 (API)",
+     "date": "2025-12",
+     "shows": "Page opened. Text mining, % of enterprises: 10+ employees 2.48 (2021), 2.90 (2023), 6.88 (2024), 11.75 (2025); 250+ employees 9.92, 11.93, 21.44, 35.04."
+    },
+    {
+     "url": "https://www.cmswire.com/cms/big-data/what-do-you-know-about-the-1b-global-text-analytics-market-024051.php",
+     "title": "What Do You Know About the $1B Global Text Analytics Market? - CMSWire",
+     "date": "2014-02-05",
+     "shows": "Page opened. Global text analytics market estimated above US$1 billion in 2011."
+    }
+   ]
+  },
+  {
+   "subject_id": "cloud-computing",
+   "decision": "confirm",
+   "reading": "Buying IT capabilities (applications, platforms, infrastructure) as on-demand, pay-per-use services over the internet from shared provider infrastructure.",
+   "test": "20% of enterprises in a major market buying cloud computing services (Eurostat ICT survey, by country).",
+   "year_5pct": 2010,
+   "year_mainstream": 2014,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A. Eurostat's first measurement (2014) already shows the United Kingdom at 24% of enterprises with 10 or more staff buying cloud services (Finland 51%; EU-28 average 19%; UK large enterprises 54%), so a major market was above 20% in 2014; B required the EU-wide average and so moved the crossing to 2016, which ignores the 'major markets' wording of D16. 2014 is an upper bound (no earlier official series). Hit for P=2013 either way. year_5pct is an estimate.",
+   "recheck": "Eurostat SEPDF 37043 opened: now the 2026 edition, no 2014 figures, row replaced. Opened Eurostat API isoc_cicce_use: UK 23.97%, FI 50.78%, EU-28 18.6% in 2014, confirmed to the point. Opened Eurostat news release 193/2018 PDF: 19% (2014), 21% (2016), 26% (2018), large enterprises 56% (2018), confirmed. Dropped pass 1's Forrester 2009 aside (source dead, see software-as-service-asap). Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_cicce_use?format=JSON&lang=EN&geo=UK&geo=EU28&geo=FI&geo=DE&geo=FR&time=2014&time=2016&indic_is=E_CC&unit=PC_ENT",
+     "title": "Cloud computing services by size class of enterprise (isoc_cicce_use) - Eurostat",
+     "date": "2026",
+     "shows": "Page opened: enterprises (10+) buying cloud services in 2014: UK 23.97%, Finland 50.78%, EU-28 18.6%; 2016: UK 34.66%, EU-28 20.94%."
+    },
+    {
+     "url": "https://ec.europa.eu/eurostat/documents/portlet_file_entry/2995521/9-13122018-BP-EN.pdf/731844ac-86ad-4095-b188-e03f9f713235",
+     "title": "ICT usage in enterprises in 2018 - Eurostat news release 193/2018",
+     "date": "2018-12-13",
+     "shows": "PDF opened: EU 19% (2014), 21% (2016), 26% (2018); large enterprises 56% (2018)."
+    }
+   ]
+  },
+  {
+   "subject_id": "home-health-monitoring",
+   "decision": "confirm",
+   "reading": "Connected devices that measure patients' vital signs at home and transmit them to clinicians for remote monitoring of chronic conditions (telehealth / remote patient monitoring).",
+   "test": "20% of target patients (US Medicare enrollees, the largest chronic-condition population with a measured series) receiving remote patient monitoring; 5% likewise.",
+   "year_5pct": null,
+   "year_mainstream": null,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder A's verdict (miss), with a stricter 5% year. The label names a technology used in the home, so the adopters are patients, not hospitals. B's test (33% of US hospitals offering RPM in 2018) is a supply-side availability measure, a denominator error. HHS OIG: 55,000 Medicare enrollees received RPM in 2019 and 570,000 in 2022, under 1% of ~65M enrollees. A's 5% year of 2020 is not supported; no evidence of 5% of target patients by 2024, so set null. Consumer fitness wearables are a different technology. Miss for P=2019, window closes 2024.",
+   "recheck": "Opened the HHS OIG report page (OEI-02-23-00260, 19 Sep 2024): RPM use in Medicare 'increased dramatically from 2019 to 2022'; 43% of enrollees did not receive all three components; the enrollee counts are not on the summary page. Opened the AHA summary (27 Sep 2024): 55,000 enrollees in 2019 and 570,000 in 2022. Both under 1% of about 65 million enrollees. No evidence of 5% of target patients by 2024. No change.",
+   "evidence": [
+    {
+     "url": "https://oig.hhs.gov/reports/all/2024/additional-oversight-of-remote-patient-monitoring-in-medicare-is-needed",
+     "title": "Additional Oversight of Remote Patient Monitoring in Medicare Is Needed - HHS OIG (OEI-02-23-00260)",
+     "date": "2024-09-19",
+     "shows": "Page opened. RPM use in Medicare increased dramatically from 2019 to 2022; about 43% of enrollees did not receive all three components."
+    },
+    {
+     "url": "https://www.aha.org/news/headline/2024-09-27-oig-more-oversight-needed-remote-patient-monitoring-medicare",
+     "title": "OIG: More oversight needed on remote patient monitoring in Medicare - AHA",
+     "date": "2024-09-27",
+     "shows": "Page opened. Per the OIG report, 55,000 Medicare enrollees received RPM in 2019 and 570,000 in 2022."
+    }
+   ]
+  },
+  {
+   "subject_id": "interactive-tv",
+   "decision": "confirm",
+   "reading": "Television with two-way services (on-demand, apps, programme guides, voting, t-commerce) delivered through connected/smart TVs and set-top boxes.",
+   "test": "Device feature: at least 50% of new TV sets shipping as internet-connected smart TVs.",
+   "year_5pct": 2009,
+   "year_mainstream": 2016,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B. A listed several readings but they do not give different verdicts: pay-TV on-demand and programme guides were already widespread before 2010, and smart-TV apps crossed half of shipments in 2016; only broadcast-linked interactivity (ATSC 3.0, t-commerce) lags, and it was not the dominant meaning in 2010. IHS: more than half of TV sets shipped worldwide in Q1 2016 were smart TVs (North America 56%); its 2018 release (now offline) reported under 50% in 2015 and 70% in 2018. 2016 is within P+2=2017, so hit.",
+   "recheck": "technology.ihs.com is dead (DNS does not resolve; Wayback unreachable), so the 45% (2015) / 70% (2018) row is dropped. Opened the Telecompetitor article (30 Jun 2016; 403 to curl, opened via WebFetch): 'More than half of the TV sets shipped worldwide in 1Q'16 were smart TVs', North America 56%. That fixes the 50% crossing at 2016. 2010 entry (repo capture) has a 2-5 band, placed 2015; 2016 is within P+2. Years unchanged.",
+   "evidence": [
+    {
+     "url": "https://www.telecompetitor.com/ihs-smart-tv-shipments-are-more-than-half-for-all-tvs/",
+     "title": "IHS: Smart TV Shipments Are More Than Half for All TVs - Telecompetitor",
+     "date": "2016-06-30",
+     "shows": "Page opened. More than half of TV sets shipped worldwide in Q1 2016 were smart TVs; North America 56%."
+    }
+   ]
+  },
+  {
+   "subject_id": "location-intelligence",
+   "decision": "confirm",
+   "reading": "Business use of geospatial data and map-based analysis inside BI and analytics tools for decisions (site selection, logistics, customer analysis).",
+   "test": "20% of organisations using location intelligence routinely in production.",
+   "year_5pct": 2013,
+   "year_mainstream": 2016,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B, low certainty. A read Dresner's 'penetration remains modest' (share of users inside an organisation: in 2015, 70% of respondents had under 10% of staff using LI) as organisation-level adoption; that is a denominator error. The same figure implies the respondents' organisations already used LI, and 30% had at least 10% internal penetration in 2015. Map visualisation was standard in mainstream BI tools by the mid-2010s and GIS use in government and utilities was long established. No clean organisation-share series exists; 2016 is an estimate and an upper bound in spirit (2015-2016). Hit for P=2015 needs 2017 or earlier.",
+   "recheck": "Opened Sandhill (2015-05-25): Dresner 2015, 70% of respondents report under 10% penetration in their organisation; use moving downstream to line managers; confirms pass 1's denominator point. Opened GlobeNewswire (2018-01-30): two-thirds rate LI critically or very important, 90% of suppliers offer map visualisation, penetration 'modest'; confirmed. No organisation-share series; 2016 stays an estimate (low certainty).",
+   "evidence": [
+    {
+     "url": "https://sandhill.com/article/iot-and-the-growing-use-of-location-features-in-business-intelligence-software/",
+     "title": "IoT and the Growing Use of Location Features in Business Intelligence Software - Sandhill (Dresner)",
+     "date": "2015-05-25",
+     "shows": "Page opened: Dresner 2015, 70% of respondents report less than 10% internal penetration of LI; use spreading from executives to line managers."
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2018/01/30/1314354/0/en/Dresner-Advisory-Services-Publishes-2018-Location-Intelligence-Market-Study.html",
+     "title": "Dresner Advisory Services Publishes 2018 Location Intelligence Market Study",
+     "date": "2018-01-30",
+     "shows": "Page opened: two-thirds rate LI critically or very important; 90% of suppliers offer map-based visualisation; penetration remains modest."
+    }
+   ]
+  },
+  {
+   "subject_id": "software-defined-anything",
+   "decision": "confirm",
+   "reading": "Gartner's umbrella for infrastructure controlled by software abstracted from hardware: software-defined networking, WAN, storage and data centre.",
+   "test": "20% of organisations running software-defined infrastructure in production, measured on SD-WAN (the best-measured component).",
+   "year_5pct": 2016,
+   "year_mainstream": 2020,
+   "abandoned": false,
+   "abandoned_year": null,
+   "ambiguous": false,
+   "reason": "Builder B's verdict (hit), with a more conservative year. A called the umbrella ambiguous, but its components moved together and the readings do not give different verdicts. IDG Research for Masergy (May 2019, 100 private firms with 500+ employees, vendor-sponsored) found SD-WAN adoption up from 35% (2017) to 54% (2019). Frost & Sullivan for AT&T (May-June 2023, n=516 US businesses) found large shares of small, mid-size and large firms with SD-WAN deployed in at least one location, in a first deployment or expanding it, together well above 20% in each size class. Mainstream is therefore no later than 2023 on a broad business sample and no later than 2019 among large firms. 2020 is kept as the pass-1 value inside that bound; hit for P=2021 (needs mainstream by 2023) either way.",
+   "recheck": "Downloaded the AT&T / Frost & Sullivan PDF: it is a single 2023 survey (n=516, fieldwork May-June 2023) and does NOT contain the 18% (2018) / 43% (2020) / 47% (2022) installed-base series that pass 1 cited; it shows 2023 deployment status by business size (deployed in at least one location 12-14%, first deployment 16-23%, expanding 18-23%) and that 'expanding to more locations' rose from 15% (F&S 2021 survey) to 20% (2023). Opened Virtualization Review: Masergy/IDG, 500+ employee firms, SD-WAN adoption 35% (2017) to 54% (2019); matches pass 1. Year 2020 is not fixed by any page but lies inside the bound (2019 for large firms, 2023 for all sizes); verdict unchanged. Reason corrected.",
+   "evidence": [
+    {
+     "url": "https://virtualizationreview.com/articles/2019/07/17/sd-wan-survey.aspx",
+     "title": "Survey: Growing SD-WAN Adoption Slowed by Cost Concerns, Skills Gap - Virtualization Review",
+     "date": "2019-07-17",
+     "shows": "Page opened. IDG Research for Masergy, May 2019, 100 private firms with 500+ employees: SD-WAN adoption rose from 35% (2017) to 54% (2019)."
+    },
+    {
+     "url": "https://www.business.att.com/content/dam/attbusiness/ebooks/att-frost-and-sullivan-sd-wan.pdf",
+     "title": "Survey: SD-WAN and SASE Adoption Trends by Business Size - AT&T / Frost & Sullivan",
+     "date": "2023",
+     "shows": "Page opened (PDF). 2023 survey of 516 US businesses: SD-WAN deployed in at least one location, in first deployment or being expanded in each size class; firms expanding SD-WAN rose from 15% (2021 survey) to 20% (2023). No 2018-2022 installed-base series."
+    }
+   ]
+  }
+ ]
+}
