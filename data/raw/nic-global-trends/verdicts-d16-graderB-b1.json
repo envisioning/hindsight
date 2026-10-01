@@ -1,0 +1,715 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "nic-global-trends-1997-001",
+   "verdict": "hit",
+   "reading": "World population passes 7 billion by 2010, up about 1.2 billion from 1997, with about 95% of the growth in developing countries.",
+   "mainstream_test": "D16 numeric rule on the level: forecast >7.0 bn vs actual 2010 population, hit within 10%.",
+   "reason": "World Bank (UN WPP-based) series gives 7.001 bn for 2010 and 5.908 bn for 1997: level error under 1%, increase 1.09 bn vs 1.2 bn (9% off). Older vintages put 2010 at 6.9-6.96 bn; still within 2%. Growth was overwhelmingly in low and middle income countries.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json&date=1997:2010",
+     "title": "World Bank WDI SP.POP.TOTL, World",
+     "date": "2026 vintage",
+     "shows": "World population 5,908,180,322 in 1997 and 7,000,860,073 in 2010."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/World_population",
+     "title": "World population (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "About 6.9 bn in 2010; UN marked the Day of Seven Billion on 31 Oct 2011."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-002",
+   "verdict": "hit",
+   "reading": "About half of the world's population lives in cities by 2010.",
+   "mainstream_test": "D18 on a share in percent: forecast ~50% vs actual urban share in 2010, hit within 0.5 pp of 50 or reading 'about half' as 45-55%.",
+   "reason": "UN-based World Bank series: urban share 51.8% in 2010; the UN dates the 50% crossing to 2007. 'About half' holds; 1.8 pp above 50 exceeds the strict 0.5 pp D18 band, but 'about half' is a band, not a point. The 'one-third today' baseline was wrong (45% in 1997), which does not affect the 2010 level.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/SP.URB.TOTL.IN.ZS?format=json&date=1997:2010",
+     "title": "World Bank WDI SP.URB.TOTL.IN.ZS, World",
+     "date": "2026 vintage",
+     "shows": "Urban share 45.3% in 1997, 50.4% in 2007, 51.8% in 2010."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Urbanization",
+     "title": "Urbanization (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Per the UN, 2007 was the first year more than 50% of the world population lived in cities."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-003",
+   "verdict": "miss",
+   "reading": "Haiti's population doubles between 1997 and 2017.",
+   "mainstream_test": "D16 numeric rule: forecast 2x the 1997 level (about 15.7 m) vs actual 2017, hit within 10%, partial within 25%.",
+   "reason": "Haiti grew from 7.85 m (1997) to 10.82 m (2017), a factor of 1.38. Forecast level 15.7 m is 45% above the actual.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/HTI/indicator/SP.POP.TOTL?format=json&date=1997:2017",
+     "title": "World Bank WDI SP.POP.TOTL, Haiti",
+     "date": "2026 vintage",
+     "shows": "Haiti population 7,854,298 in 1997 and 10,817,754 in 2017."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-004",
+   "verdict": "hit",
+   "reading": "World real per capita income grows by more than 2% a year on average from 1997 to 2010.",
+   "mainstream_test": "D18: average annual world real GDP per capita growth 1998-2010 vs forecast 2.0%, hit within 0.5 pp.",
+   "reason": "World Bank constant-dollar GDP per capita growth averages 1.82% a year over 1998-2010 (including -2.6% in 2009), 0.18 pp below the 2% floor: within the D18 hit band. At PPP weights (IMF) the average is higher, above 2%.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.PCAP.KD.ZG?format=json&date=1998:2010",
+     "title": "World Bank WDI NY.GDP.PCAP.KD.ZG, World",
+     "date": "2026 vintage",
+     "shows": "Annual growth 1998-2010: 1.31, 2.14, 3.15, 0.67, 0.99, 1.75, 3.16, 2.74, 3.17, 3.12, 0.81, -2.56, 3.26; mean 1.82%."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-005",
+   "verdict": "partial",
+   "reading": "World food production keeps pace with overall demand through 2010.",
+   "mainstream_test": "State of affairs held by 2010: world food output grew at least as fast as population and consumption, with no sustained global shortfall.",
+   "reason": "Over the period as a whole grain availability outpaced population and undernourishment fell (SSA prevalence 25% in 2001, 18% in 2010). But in 2006-07 wheat output fell 4% below 2004-05, world stocks were drawn down, and demand (feed, biofuels) outran supply, producing the 2007-08 price crisis and a second spike in 2010. Held in part.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/SSF/indicator/SN.ITK.DEFC.ZS?format=json&date=2001:2016",
+     "title": "World Bank WDI SN.ITK.DEFC.ZS (FAO), Sub-Saharan Africa",
+     "date": "2026 vintage",
+     "shows": "Prevalence of undernourishment in SSA 25.3% in 2001, 18.4% in 2010."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/2007%E2%80%932008_world_food_price_crisis",
+     "title": "2007-2008 world food price crisis (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Lists declining stockpiles, biofuel demand and crop shortfalls among causes; 2006-07 wheat output 4% below 2004-05; grain availability historically outpaced population."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-006",
+   "verdict": "partial",
+   "reading": "By 2010 genetically engineered crops are in mainstream use in world agriculture (a 'fourth agricultural revolution').",
+   "mainstream_test": "D16 adoption: mainstream = at least 20% of world cropland under GM crops by 2010-2012; partial if at least 5% by 2010.",
+   "reason": "ISAAA: 148 Mha of biotech crops in 2010, about 10% of the world's 1.5 bn ha of cropland, 15.4 m farmers in 29 countries. Dominant in soy, maize and cotton in the Americas but below 20% of global cropland: measurable share, below mainstream.",
+   "evidence": [
+    {
+     "url": "https://www.isaaa.org/resources/publications/briefs/42/executivesummary/default.asp",
+     "title": "ISAAA Brief 42: Global Status of Commercialized Biotech/GM Crops 2010",
+     "date": "2011-02",
+     "shows": "148 m ha in 2010, about 10% of 1.5 bn ha world cropland; 15.4 m farmers; 29 countries."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Genetically_modified_crops",
+     "title": "Genetically modified crops (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "29 countries planted GM crops by 2010; GM maize about one-third of global maize by 2015."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-007",
+   "verdict": "miss",
+   "reading": "World oil production in 2010 exceeds the 1997 level by roughly OPEC's 1997 output.",
+   "mainstream_test": "D16 numeric rule on the added volume: forecast added production = OPEC 1997 output vs actual 1997-2010 increase, hit within 10%, partial within 25%.",
+   "reason": "Energy Institute data (via OWID): world oil production 40,023 TWh in 1997 and 46,226 TWh in 2010, an increase of 6,202 TWh; OPEC produced 15,480 TWh in 1997. The actual addition was about 40% of OPEC's 1997 output, so the forecast is 2.5 times the actual.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/oil-production-by-country.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Oil production by country (Energy Institute Statistical Review)",
+     "date": "2025 vintage",
+     "shows": "World 40,023 TWh (1997), 46,226 TWh (2010); OPEC (EI) 15,480 TWh (1997), 17,668 TWh (2010)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-008",
+   "verdict": "hit",
+   "reading": "By 2010 solar, batteries and other renewables are used more, but the world's reliance on fossil fuels is not significantly reduced.",
+   "mainstream_test": "State of affairs at 2010: fossil fuel share of world primary energy not materially lower than in 1997 (less than ~2 pp change), while renewable use grows.",
+   "reason": "Fossil share of world primary energy (coal+oil+gas) was 89.3% in 1997 and 89.4% in 2010; solar rose from 0.0007% to 0.025% and wind from 0.01% to 0.25%. Greater use, no reduction in reliance.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/share-energy-source-sub.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Share of primary energy by source (Energy Institute)",
+     "date": "2025 vintage",
+     "shows": "World 1997: gas 21.9, coal 26.3, oil 41.1%; 2010: gas 23.2, coal 30.8, oil 35.4%; solar and wind shares grew but stayed under 0.3%."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-009",
+   "verdict": "hit",
+   "reading": "Through 2010 no other state matches US battlefield technology.",
+   "mainstream_test": "State of affairs held through 2010: no rival with comparable precision-strike, C4ISR, stealth and network capabilities.",
+   "reason": "No credible assessment placed any state at parity with US battlefield technology by 2010; the US accounted for 43% of world military spending in 2010 (SIPRI) and fielded the only operational fifth-generation fighter fleet (F-22) and global precision-strike/ISR networks.",
+   "evidence": [
+    {
+     "url": "https://thediplomat.com/2011/06/chinas-military-spending/",
+     "title": "China's Military Spending (The Diplomat, citing SIPRI)",
+     "date": "2011-06",
+     "shows": "US share of world military expenditure rose to 43% in 2010; world total $1,630 bn."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-010",
+   "verdict": "hit",
+   "reading": "European economic growth through 2010 runs at 2-3% a year at most.",
+   "mainstream_test": "D18 on the average: EU real GDP growth 1997-2010 at or below 3%; hit if the average is no more than 0.5 pp outside the 2-3% band.",
+   "reason": "EU real GDP growth averaged 1.9% a year over 1997-2010 (range -4.3% in 2009 to 3.9% in 2000). The ceiling 'at best 3%' held; the average sits 0.1 pp below the band's floor.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/EUU/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=1997:2010",
+     "title": "World Bank WDI NY.GDP.MKTP.KD.ZG, European Union",
+     "date": "2026 vintage",
+     "shows": "Annual growth 1997-2010: 2.68, 2.98, 3.00, 3.93, 2.16, 1.10, 0.94, 2.60, 1.98, 3.57, 3.14, 0.62, -4.31, 2.18; mean 1.90%."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-011",
+   "verdict": "partial",
+   "reading": "Through 2010 an enlarged NATO is the main framework through which Western 'coalitions of the willing' are launched and sustained.",
+   "mainstream_test": "State of affairs through 2010: NATO enlarged, and the major Western multinational military operations of 1997-2010 were run through NATO.",
+   "reason": "NATO did enlarge (1999, 2004, 2009) and ran Kosovo (1999, KFOR) and Afghanistan (ISAF from Aug 2003, 42 contributors, ~130,000 troops by 2010). But the largest coalition of the period, the 2003 Iraq 'coalition of the willing', was assembled outside NATO with several allies opposed. Held in part.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Enlargement_of_NATO",
+     "title": "Enlargement of NATO (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Accessions: 1999 Poland, Hungary, Czech Republic; 2004 seven states; 2009 Albania, Croatia."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Security_Assistance_Force",
+     "title": "International Security Assistance Force (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "NATO took command of ISAF on 11 Aug 2003; 42 troop contributors; ~130,000 personnel at the 2010-12 peak."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Coalition_of_the_willing_(Iraq_War)",
+     "title": "Coalition of the willing (Iraq War) (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Iraq 2003 coalition of ~48 countries announced by the US; France and Germany not among members; not a NATO operation."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-012",
+   "verdict": "hit",
+   "reading": "Significant political change occurs in both Iran and Iraq by 2010.",
+   "mainstream_test": "Event by 2010: a change in government or ruling political direction in each of Iran and Iraq after November 1997.",
+   "reason": "Iraq: Saddam Hussein's regime overthrown in 2003, replaced by an elected government. Iran: the Islamic Republic persisted, but power shifted from reformist Khatami to hardliner Ahmadinejad (2005), followed by the disputed 2009 election and mass protests. Both changed; if 'political change' meant regime change, Iran would fail (see uncertainty).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mahmoud_Ahmadinejad",
+     "title": "Mahmoud Ahmadinejad (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Elected president Aug 2005 succeeding reformist Khatami; disputed re-election 2009."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Saddam_Hussein",
+     "title": "Saddam Hussein (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Deposed by the 2003 US-led invasion; executed December 2006."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-013",
+   "verdict": "miss",
+   "reading": "Russia's economy stays weak through 2010.",
+   "mainstream_test": "State of affairs at 2010: Russia's economy remains weak (stagnant or contracting, financially fragile) relative to its late-1990s condition and to peer large economies.",
+   "reason": "Russia grew about 7% a year in 2000-08 (World Bank: 10.0% in 2000, 8.5% in 2007), disposable incomes more than doubled, and it built some of the world's largest reserves; after a 7.8% fall in 2009 it grew 4.5% in 2010 and was rated high-income on 2012 data. Commodity dependence persisted, but 'economically weak' did not hold.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/RUS/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=1997:2010",
+     "title": "World Bank WDI NY.GDP.MKTP.KD.ZG, Russia",
+     "date": "2026 vintage",
+     "shows": "Growth 1998 -5.3%, 1999-2008 between 4.7% and 10.0% a year, 2009 -7.8%, 2010 4.5%."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Russia",
+     "title": "Economy of Russia (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "GDP grew on average 7% a year 2000-08; disposable incomes more than doubled; sharp but brief 2009 recession."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-014",
+   "verdict": "hit",
+   "reading": "Through 2010 Russia does not project military force beyond its immediate neighbours.",
+   "mainstream_test": "State of affairs through 2010: no Russian combat deployment beyond former-Soviet neighbouring states.",
+   "reason": "Russia's uses of force in 1997-2010 were in Chechnya (domestic) and Georgia (2008), a direct neighbour; the 1999 Pristina airport dash was a token peacekeeping move. Its first large expeditionary operation beyond its neighbours was Syria from Sept 2015, after the window.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Russo-Georgian_War",
+     "title": "Russo-Georgian War (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "August 2008 war against neighbouring Georgia."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Russian_intervention_in_the_Syrian_civil_war",
+     "title": "Russian intervention in the Syrian civil war (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Intervention began 30 September 2015."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-015",
+   "verdict": "hit",
+   "reading": "By 2010 China has not become the dominant military power in East Asia.",
+   "mainstream_test": "State of affairs at 2010: China does not hold military dominance in the region over the US forward presence and allied forces.",
+   "reason": "In 2010 China was the largest Asian military spender (SIPRI constant-dollar series: China $132 bn vs Japan $36 bn, India $57 bn) but US spending was eight times larger and US Pacific forces and alliances kept regional naval and air superiority; China had no carrier in service until 2012 and no blue-water reach. Dominance was not reached.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/military-spending-sipri.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Military expenditure (SIPRI), constant US$",
+     "date": "2025 vintage",
+     "shows": "2010: US 1,062 bn, China 132 bn, India 57 bn, Russia 50 bn, Japan 36 bn (constant US$)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chinese_aircraft_carrier_Liaoning",
+     "title": "Chinese aircraft carrier Liaoning (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "China's first carrier commissioned September 2012."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-016",
+   "verdict": "hit",
+   "reading": "Through 2010 there is no China-Taiwan war and the Taiwan question remains unresolved.",
+   "mainstream_test": "State of affairs through 2010: no armed conflict across the Strait and no settlement of Taiwan's status.",
+   "reason": "No cross-Strait war occurred; Taiwan's status remained unsettled. The 2008-2010 thaw under Ma Ying-jeou (direct flights, ECFA in June 2010) was economic, not a resolution.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cross-Strait_relations",
+     "title": "Cross-Strait relations (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Political status of Taiwan unresolved; ECFA signed 2010; no armed conflict since the 1950s Strait crises."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-017",
+   "verdict": "miss",
+   "reading": "By about 2012 North Korea is transformed and military tensions on the Korean peninsula are eliminated.",
+   "mainstream_test": "Event by 2012: a transformed North Korea and an end to military tension on the peninsula.",
+   "reason": "North Korea kept the same regime (Kim Jong-il, then Kim Jong-un from Dec 2011), conducted nuclear tests in 2006 and 2009, sank the Cheonan in March 2010 and shelled Yeonpyeong in Nov 2010, called by the UN Secretary-General one of the gravest incidents since the Korean War.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bombardment_of_Yeonpyeong",
+     "title": "Bombardment of Yeonpyeong (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "23 Nov 2010 artillery attack killed 2 soldiers and 2 civilians; followed the Cheonan sinking of March 2010."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/2009_North_Korean_nuclear_test",
+     "title": "2009 North Korean nuclear test (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Second North Korean nuclear test, 25 May 2009."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-018",
+   "verdict": "hit",
+   "reading": "Through 2010 territorial disputes among Southeast Asian states and China (notably the Spratlys) do not escalate into war.",
+   "mainstream_test": "Event did not happen through 2010: no interstate war arising from South China Sea or other Southeast Asian territorial disputes.",
+   "reason": "No war over the Spratlys or other South China Sea claims through 2010 (2002 ASEAN-China Declaration on Conduct). The 2008-2011 Thai-Cambodian border crisis produced armed clashes around Preah Vihear but is described as a border crisis, not a war; it is outside the Spratly context of the claim.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Spratly_Islands_dispute",
+     "title": "Spratly Islands dispute (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Last deadly naval clash 1988 (Johnson South Reef); 2002 Declaration on the Conduct of Parties; no war since."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cambodian%E2%80%93Thai_border_dispute",
+     "title": "Cambodian-Thai border dispute (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "'2008-2011 Cambodian-Thai border crisis': armed clashes on several occasions, not described as a war."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-019",
+   "verdict": "hit",
+   "reading": "By 2010 the Gulf oil producers have not diversified their economies away from oil.",
+   "mainstream_test": "State of affairs at 2010: oil still dominates exports, government revenue and GDP of the main Gulf producers.",
+   "reason": "Around 2010 petroleum supplied about 87% of Saudi budget revenue, 90% of export earnings and 42% of GDP; other GCC producers (Kuwait, Qatar, Oman) were similarly dependent. Only the UAE (Dubai) had diversified materially.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Saudi_Arabia",
+     "title": "Economy of Saudi Arabia (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Petroleum roughly 87% of budget revenue, 90% of export earnings, 42% of GDP."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-020",
+   "verdict": "hit",
+   "reading": "By 2010 Saddam Hussein is no longer in power in Iraq.",
+   "mainstream_test": "Event by 2010: Saddam Hussein out of power.",
+   "reason": "Saddam was removed by the 2003 US-led invasion, captured in December 2003 and executed in December 2006. The second half of the sentence states a challenge, not a forecast, and is not graded.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Saddam_Hussein",
+     "title": "Saddam Hussein (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Deposed April 2003; captured December 2003; executed 30 December 2006."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-021",
+   "verdict": "miss",
+   "reading": "By 2010 a Palestinian state exists at least de facto (effective sovereign control of territory, even without formal recognition).",
+   "mainstream_test": "Event by 2010 (partial if in 2011): a Palestinian entity with de facto statehood.",
+   "reason": "Through 2010 the Palestinian Authority held only Oslo-era limited self-rule (Area A 18% of the West Bank), and from 2007 the territories were split between Fatah (West Bank) and Hamas (Gaza). The UNGA upgrade to non-member observer state, described as de facto recognition, came in November 2012, two years after the target and outside the year-after window.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/State_of_Palestine",
+     "title": "State of Palestine (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Area A 18%, B 22%, C 60% of the West Bank; 2007 Hamas takeover of Gaza; UNGA resolution 67/19 on 29 Nov 2012 upgraded Palestine to non-member observer state."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-022",
+   "verdict": "hit",
+   "reading": "By 2010 India is a major economic power while remaining a regional (not global) military power.",
+   "mainstream_test": "State of affairs at 2010: India among the world's ~10 largest economies and a G20-level economic actor; military reach regional.",
+   "reason": "India was the 9th-largest economy in 2010 in World Bank constant-dollar GDP (about 3rd at PPP), a G20 member growing about 8% a year. Militarily it remained a regional power without global power projection.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/gdp-worldbank-constant-usd.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, GDP (World Bank, constant US$)",
+     "date": "2025 vintage",
+     "shows": "2010 ranking: US, China, Japan, Germany, UK, France, Italy, Brazil, India (9th, $1.54 tn), Canada."
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/military-spending-sipri.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Military expenditure (SIPRI)",
+     "date": "2025 vintage",
+     "shows": "India 2010 military spending $57 bn constant, versus US $1,062 bn and China $132 bn."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-023",
+   "verdict": "hit",
+   "reading": "Through 2010 India does not join the CTBT or an FMCT.",
+   "mainstream_test": "Event did not happen through 2010: India signs neither the CTBT nor a concluded FMCT.",
+   "reason": "India never signed the CTBT and tested nuclear weapons in May 1998; FMCT negotiations never began in substance (the CD only agreed a committee in May 2009, blocked by Pakistan).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Comprehensive_Nuclear-Test-Ban_Treaty",
+     "title": "Comprehensive Nuclear-Test-Ban Treaty (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "India, North Korea and Pakistan have not signed; India tested in May 1998 (Pokhran-II)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Fissile_Material_Cut-off_Treaty",
+     "title": "Fissile Material Cut-off Treaty (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Treaty not concluded; substantive negotiations have not taken place."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-024",
+   "verdict": "hit",
+   "reading": "Through about 2012 Nigeria's economic mismanagement, corruption and political instability are not resolved.",
+   "mainstream_test": "State of affairs at 2012: all three problems persist.",
+   "reason": "In 2012 Nigeria still ranked near the bottom of TI's index (around 139th-143rd), faced the Boko Haram insurgency (from July 2009) and Niger Delta militancy, and suffered major oil-revenue scandals (NNPC unremitted revenues, Malabu).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Corruption_in_Nigeria",
+     "title": "Corruption in Nigeria (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Nigeria around 143rd on TI's index before 2014; NNPC failed to remit oil revenues; Malabu scandal."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Boko_Haram_insurgency",
+     "title": "Boko Haram insurgency (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Armed rebellion began July 2009 and escalated through the 2010s."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-025",
+   "verdict": "partial",
+   "reading": "By 2010 South Africa is a successful regional leader that uses diplomatic, economic and military leverage to underwrite order in southern Africa.",
+   "mainstream_test": "State of affairs at 2010: South Africa acts as regional leader and its interventions secure order in southern Africa.",
+   "reason": "South Africa led: the 1998 SADC intervention in Lesotho, mediation in Burundi, DRC and the Comoros, AU leadership. But Operation Boleas was messy (Maseru burned), and Mbeki's 'quiet diplomacy' failed to check Zimbabwe's crisis (2000-08), the region's main breach of order. Leader, but only partly successful in underwriting order.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Boleas",
+     "title": "Operation Boleas (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "1998-99 SADC/South African intervention in Lesotho; Maseru's central business district burned; power-sharing deal and withdrawal May 1999."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Foreign_relations_of_South_Africa",
+     "title": "Foreign relations of South Africa (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Mediation in Burundi, DRC, Comoros and Zimbabwe; Zimbabwe quiet diplomacy criticised; effectiveness contested."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-026",
+   "verdict": "hit",
+   "reading": "By 2010 Mexico's PRI loses its dominance and a competitive multi-party system emerges.",
+   "mainstream_test": "Event by 2010: PRI loses the presidency or its legislative majority, with alternation among several parties.",
+   "reason": "The PRI, in power since 1929, lost its Chamber of Deputies majority in July 1997 and the presidency in 2000 (PAN's Fox), again in 2006 (Calderón; PRI third, carrying no state). Three-party competition (PRI, PAN, PRD) was established.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Institutional_Revolutionary_Party",
+     "title": "Institutional Revolutionary Party (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "PRI held power 1929-2000; lost 2000 presidential election to PAN; 2006 candidate Madrazo third without carrying a state."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-027",
+   "verdict": "hit",
+   "reading": "While Fidel Castro remains in power, Cuba undertakes no major political or economic reform.",
+   "mainstream_test": "State of affairs through 2010: no major reform during Fidel Castro's rule (to July 2006 provisionally, February 2008 formally).",
+   "reason": "No major reform under Fidel in 1997-2006 after the mid-1990s Special Period measures. Reforms came after he handed power to Raul (provisionally July 2006, formally Feb 2008): consumer and land-lease measures in 2008, the 300-measure plan in April 2011. The conditional held. If 'Castro' were read as including Raul, the 2008 measures were limited and the major package came in 2011.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Castro",
+     "title": "Raul Castro (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Raul assumed duties 31 July 2006, elected president 24 Feb 2008; 2008 consumer and land-lease reforms; April 2011 plan of 300 economic reforms."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cuban_economic_reforms",
+     "title": "Cuban economic reforms (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Reforms covered are 1993-1997 Special Period measures, before the window."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-1997-028",
+   "verdict": "miss",
+   "reading": "Through 2010 no country, ideology or movement emerges on a global scale to threaten US interests or build a sustained anti-Western coalition.",
+   "mainstream_test": "Event did not happen through 2010: no globally active state, ideology or movement threatening US interests.",
+   "reason": "Al-Qaeda and transnational jihadism emerged as a global-scale movement that attacked the US on 11 September 2001 and drew the US into wars in Afghanistan and Iraq; the US itself framed it as a global war on terror. No anti-Western coalition of states formed, so the second half held; the first half failed.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/September_11_attacks",
+     "title": "September 11 attacks (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Al-Qaeda attacks on the US, 11 Sep 2001, nearly 3,000 killed."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/War_on_terror",
+     "title": "War on terror (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Global US military campaign launched after 9/11 against al-Qaeda and affiliated movements."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-001",
+   "verdict": "ungradable",
+   "reading": "In 2015 more than three billion people live in water-stressed regions.",
+   "mainstream_test": "D16 numeric on a level: people in water-stressed regions in 2015 vs >3 bn; D23 median of public estimates if they agree within a factor of 2.",
+   "reason": "Public estimates of 'people under water stress' use different definitions and span far more than a factor of 2: 0.5 bn under severe scarcity year-round, 2.3 bn in countries below 1,700 m3/person/yr, about 2 bn (one quarter) in countries with extremely high baseline stress (WRI), about 4 bn under severe scarcity at least one month a year (Mekonnen & Hoekstra). Under D23 the claim is ungradable. Looked for: a single UN or WRI series of population in water-stressed basins for 2015.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Water_scarcity",
+     "title": "Water scarcity (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "0.5 bn face severe scarcity year-round; about 4 bn at least one month a year; 2.3 bn live in nations below 1,700 m3 per person."
+    },
+    {
+     "url": "https://www.wri.org/insights/17-countries-home-one-quarter-worlds-population-face-extremely-high-water-stress",
+     "title": "WRI: 25 countries face extremely high water stress",
+     "date": "2023-08-16",
+     "shows": "One quarter of world population in countries with extremely high stress; about 4 bn under high stress at least one month a year."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-002",
+   "verdict": "hit",
+   "reading": "World population is 7.2 billion in 2015 (from 6.1 billion in 2000), and life expectancy rises in most countries.",
+   "mainstream_test": "D16 numeric rule: forecast 7.2 bn vs actual 2015 population, hit within 10%.",
+   "reason": "Actual 2015 world population 7.44-7.47 bn (World Bank / UN WPP), 3.3-3.6% above the forecast. Life expectancy rose in most countries over 2000-15.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json&date=2000:2015",
+     "title": "World Bank WDI SP.POP.TOTL, World",
+     "date": "2026 vintage",
+     "shows": "6.16 bn in 2000, 7.44 bn in 2015."
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/population.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Population (UN WPP)",
+     "date": "2024 revision",
+     "shows": "World 6.17 bn in 2000, 7.47 bn in 2015."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-003",
+   "verdict": "hit",
+   "reading": "About 95% of world population growth 2000-2015 is in developing countries, nearly all of it in urban areas.",
+   "mainstream_test": "D18 on the share: forecast 95% vs actual share of 2000-15 growth in UN less developed regions, hit within 0.5 pp.",
+   "reason": "UN WPP via OWID: world +1,299 m; UN more developed regions (Europe, Northern America, Japan, Australia, NZ) +72 m, so less developed regions took 94.5% (0.5 pp off). In non-high-income countries urban population rose 1,039 m against a total rise of about 1,180 m (88%), consistent with 'nearly all in urban areas'.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/population.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Population (UN WPP 2024)",
+     "date": "2024 revision",
+     "shows": "2000->2015: World 6,171.7->7,470.5 m; Europe (UN) 728.2->744.2; Northern America (UN) 312.5->362.2; Japan 127.0->127.3; Australia 19.1->23.9; NZ 3.9->4.6 m."
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/urban-and-rural-population.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Urban and rural population (UN WUP)",
+     "date": "2025 vintage",
+     "shows": "Urban population 2000->2015: LIC 104->186 m, LMC 666->1,049 m, UMC 1,145->1,719 m."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-004",
+   "verdict": "hit",
+   "reading": "Through 2015 world food production is adequate for the growing population, but malnourishment persists in parts of Sub-Saharan Africa.",
+   "mainstream_test": "State of affairs at 2015: no global food production shortfall; undernourishment remains high in parts of SSA.",
+   "reason": "World undernourishment fell over 2000-15 while population grew; SSA remained the region with the highest prevalence (18.1% in 2015), concentrated in conflict and poor-infrastructure areas.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/SSF/indicator/SN.ITK.DEFC.ZS?format=json&date=2001:2016",
+     "title": "World Bank WDI SN.ITK.DEFC.ZS (FAO), Sub-Saharan Africa",
+     "date": "2026 vintage",
+     "shows": "Prevalence of undernourishment in SSA 25.3% (2001), 18.1% (2015)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-005",
+   "verdict": "hit",
+   "reading": "Global energy demand rises about 50% (2000-2015) and energy resources are sufficient to meet it.",
+   "mainstream_test": "D16 numeric rule on the implied 2015 level (1.5x the 2000 level) vs actual primary energy, hit within 10%; plus no supply shortfall.",
+   "reason": "Energy Institute primary energy (via OWID): 105,981 TWh in 2000, 145,500 TWh in 2015, +37.3%. Forecast level 1.5x is 9.3% above the actual (IEA TPES gives about +36%, about 10% off; median about 9.7%). Supply met demand; no physical shortage despite the 2008 price spike. Read as a percentage-point error (50 vs 37) it would be a miss; the claim is a level of demand, so the level rule is used.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/primary-energy-cons.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Primary energy consumption (Energy Institute)",
+     "date": "2025 vintage",
+     "shows": "World 105,981 TWh (2000), 145,500 TWh (2015)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-006",
+   "verdict": "hit",
+   "reading": "By 2015 tensions between states over shared water in the named regions (Middle East, Sub-Saharan/North-East Africa, South Asia, northern China) are higher than in 2000.",
+   "mainstream_test": "State of affairs at 2015: new or sharper interstate water disputes in the named regions compared with 2000.",
+   "reason": "Ethiopia began the Grand Ethiopian Renaissance Dam in April 2011; by 2013 Egypt's president said 'all options are open' and leaders discussed sabotage on live TV. Upstream dam building on the Tigris-Euphrates and Indus/Brahmaputra raised further disputes. Tensions rose as stated; no single index measures them, so this rests on documented episodes.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Grand_Ethiopian_Renaissance_Dam",
+     "title": "Grand Ethiopian Renaissance Dam (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Construction began 2 April 2011; June 2013 Egyptian leaders discussed destroying the dam; Morsi said all options are open."
+    },
+    {
+     "url": "https://www.worldwater.org/water-conflict/",
+     "title": "Pacific Institute, Water Conflict Chronology",
+     "date": "accessed 2026-10-01",
+     "shows": "Database of 2,700+ water-related conflict events; no year trend shown on the landing page."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-007",
+   "verdict": "miss",
+   "reading": "Between 2000 and 2015 world economic growth returns to the high rates of the 1960s and early 1970s.",
+   "mainstream_test": "D18: average world real GDP growth 2001-2015 vs the 1961-1973 average, hit within 0.5 pp.",
+   "reason": "World Bank: world real GDP growth averaged 5.2% a year in 1961-73 and 3.0% in 2001-15; even the 2004-07 boom peaked at about 4.5%. 2.2 pp short. The text's hedge (a crisis 'could undo' it) names the risk that occurred, but the projection itself is the stated expectation.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=1961:2015",
+     "title": "World Bank WDI NY.GDP.MKTP.KD.ZG, World",
+     "date": "2026 vintage",
+     "shows": "Mean annual growth 1961-73: 5.19%; 2001-15: 3.03%; max 2001-15 4.52% (2010)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-008",
+   "verdict": "partial",
+   "reading": "By 2015 Russia, China, North Korea (most likely), Iran (probably) and Iraq (possibly) can strike the United States with strategic (nuclear-armed missile) weapons.",
+   "mainstream_test": "Event by 2015 (partial if in part, or in full in 2016): the listed states field missiles able to reach the US; the graded likelihoods are weighed.",
+   "reason": "Russia and China held this capability throughout. North Korea, rated 'most likely', had not flight-tested an ICBM by 2015; its first Hwasong-14 test came on 4 July 2017, two years late. Iran ('probably') never fielded an ICBM, and Iraq ('possibly') lost its programmes with the 2003 regime change, which the text's 'barring significant political changes' caveat covers. Held in part: the certain cases, not the new entrants.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hwasong-14",
+     "title": "Hwasong-14 (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "First flight test 4 July 2017; North Korea's first ICBM-class test, lofted trajectory."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Iran_and_weapons_of_mass_destruction",
+     "title": "Iran and weapons of mass destruction (Wikipedia)",
+     "date": "accessed 2026-10-01",
+     "shows": "Iran has no ICBM; its ballistic missiles are medium-range."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-009",
+   "verdict": "hit",
+   "reading": "Through 2015 the risk of war among developed countries stays low.",
+   "mainstream_test": "Event did not happen through 2015: no war between developed (OECD high-income) countries.",
+   "reason": "No interstate war between developed countries occurred in 2000-2015; UCDP records at most 0-2 interstate conflicts a year in this period, none between developed states (Russia-Georgia 2008 and Russia-Ukraine 2014 did not involve two developed countries).",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/number-of-armed-conflicts.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Number of armed conflicts (UCDP)",
+     "date": "2025 vintage",
+     "shows": "Interstate conflicts: 2 (2000), 0 (2005), 0 (2010), 1 (2015)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-010",
+   "verdict": "hit",
+   "reading": "Through 2015 the number of internal conflicts stays at the 2000 level or rises.",
+   "mainstream_test": "State of affairs at 2015: count of intrastate armed conflicts at least equal to the 2000 count (UCDP).",
+   "reason": "UCDP intrastate conflicts: 38 in 2000, dipping to 31 in 2010, then 45 in 2014 and 53 in 2015, above the 2000 level.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/number-of-armed-conflicts.csv?v=1&csvType=full&useColumnShortNames=true",
+     "title": "Our World in Data, Number of armed conflicts (UCDP)",
+     "date": "2025 vintage",
+     "shows": "Intrastate conflicts: 38 (2000), 33 (2005), 31 (2010), 45 (2014), 53 (2015)."
+    }
+   ]
+  }
+ ]
+}

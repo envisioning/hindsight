@@ -1,0 +1,141 @@
+{
+ "rule": "D16",
+ "role": "adjudicator (D20)",
+ "verdicts": [
+  {
+   "id": "nic-global-trends-1997-013",
+   "graderA": "partial",
+   "graderB": "miss",
+   "verdict": "partial",
+   "reading": "Russia's economic resources stay too weak through 2010 to restore great-power status (NIC context: capabilities 'measured more in terms of economic resources'; reclaiming old status 'would take years').",
+   "reason": "D30 state of affairs over 1997-2010. The source context defines weakness as a lack of economic resources for great-power status, not as stagnation. Held in part: 1998 default and collapse (GDP $196 bn in 1999), 2009 contraction of 7.8%, and in 2010 Russia was about 2.3% of world GDP, about a tenth of the US, and still commodity-dependent. Failed in part: 1999-2008 growth of 5-10% a year, dollar GDP up from $405 bn to $1.66 tn, large reserves, debt repaid, and enough resources to fund military revival (Georgia 2008). Grader B graded a growth/stagnation reading that is narrower than the source's capability framing; B's 'high-income on 2012 data' falls outside the target. No arithmetic errors found.",
+   "evidence": [
+    {
+     "url": "https://archive.dni.gov/index.php/who-we-are/organizations/mission-integration/nic/nic-related-menus/nic-related-content/global-trends-2010",
+     "title": "NIC, Global Trends 2010 (archive), Russia section",
+     "date": "1997-11",
+     "shows": "Weakness framed as Russian capabilities measured in economic resources; reclaiming old status would take years."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/RUS/indicator/NY.GDP.MKTP.CD?format=json",
+     "title": "World Bank WDI: GDP (current US$), Russia (cited by grader A)",
+     "date": "2026-10-01",
+     "shows": "405 bn (1997), 196 bn (1999), 1,661 bn (2008), 1,525 bn (2010)."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/RUS/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=1997:2010",
+     "title": "World Bank WDI: GDP growth, Russia (cited by grader B)",
+     "date": "2026 vintage",
+     "shows": "1998 -5.3%; 1999-2008 4.7-10.0% a year; 2009 -7.8%; 2010 4.5%."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-005",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "World primary energy demand in 2015 is about 1.5 times its 2000 level, and supply is sufficient to meet it.",
+   "reason": "A percent change is a level forecast (implied level 1.5x base), graded under the D16 numeric rule, not D18 points. Energy Institute via OWID: 105,981 TWh (2000) to 145,500 TWh (2015), ratio 1.373; forecast 1.5 is 9.3% above actual (hit). IEA TES as cited by B gives about 1.36 (10.3%, partial); D23 median of the two is about 1.366, 9.8% off: hit, but close to the edge. If the NIC's unstated base were 1997 rather than 2000, actual growth is larger and the hit is firmer. Sufficiency held: no lasting physical shortage through 2015. Grader A applied D18 percentage points to a level change (rule error); A's '8.5% under' also measures error against the forecast rather than the actual (D16 measures against the actual: 9.3%), though both are inside 10%. The IEA figure is B's and was not re-fetched.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/primary-energy-cons.csv",
+     "title": "Our World in Data / Energy Institute: Primary energy consumption",
+     "date": "2025 vintage",
+     "shows": "World 105,981 TWh (2000), 145,500 TWh (2015): ratio 1.373 (both graders agree on these values)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-006",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "Real world GDP in 2020 is about 1.8 times its 2000 level and real world GDP per capita about 1.5 times (measure not stated; conditional on no catastrophic reversal of globalization, which held).",
+   "reason": "D16 numeric level rule; measure not stated, so under D23 the market-rate and PPP real series are treated as estimates of the same quantity by different methods and graded on their median. GDP: 1.711 (market) and 1.876 (PPP), median 1.79 vs 1.80: hit. Per capita: 1.342 (market) and 1.472 (PPP), median 1.407; 1.5 is 6.6% above: hit. On market rates alone per capita is 11.8% off (partial), which is why B scored partial: B's arithmetic is correct, but B used one method where D23 requires the median. A's '6% off' for per capita is computed against the forecast; against the actual median it is 6.6%, still a hit. 2020 is the COVID trough; with 2019 the forecast is closer still.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD?format=json&date=2000:2020",
+     "title": "World Bank WDI: GDP constant 2015 US$, World",
+     "date": "2000-2020",
+     "shows": "48.55 tn (2000) to 83.06 tn (2020), ratio 1.711."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.PP.KD?format=json&date=2000:2020",
+     "title": "World Bank WDI: GDP PPP constant 2021 intl $, World",
+     "date": "2000-2020",
+     "shows": "78.75 tn to 147.75 tn, ratio 1.876."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.PCAP.KD?format=json&date=2000:2020",
+     "title": "World Bank WDI: GDP per capita constant US$ (market and PPP), World",
+     "date": "2000-2020",
+     "shows": "Market 7,880 to 10,575 (1.342); PPP 12,781 to 18,812 (1.472)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-001",
+   "graderA": "unfalsifiable",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "By 2025 the state system is no longer one cohesive community of nation-states: the system is multipolar, power is dispersed to new players and nonstate actors, and traditional Western alliances weaken (the 'Likely Impact' text beside it in the 2025 Global Landscape table).",
+   "reason": "The source context settles the reading: the line is the likely impact of 'a global multipolar system is emerging' and of the rising power of nonstate actors, and it continues 'Power will be more dispersed... traditional Western alliances will weaken'. A literal institutional reading (UN membership persists) is not equally faithful, so unfalsifiable does not apply (D16, D20). Under the context reading, held in part by 2025: rival blocs (expanded BRICS), Russia-West war, sanctions regimes, US withdrawal from several international bodies and strain on Western alliances. But the state-based multilateral system still functions (193 UN members, UNSC and UNGA operating), so 'will no longer exist' did not hold in full.",
+   "evidence": [
+    {
+     "url": "https://www.files.ethz.ch/isn/94769/2008_11_global_trends_2025.pdf",
+     "title": "NIC, Global Trends 2025: A Transformed World, 'The 2025 Global Landscape' table, p. iv",
+     "date": "2008-11",
+     "shows": "The line sits beside 'A global multipolar system is emerging' and rising nonstate actors; follows with power more dispersed and Western alliances weakening."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Liberal_international_order",
+     "title": "Liberal international order (cited by grader B)",
+     "date": "2026",
+     "shows": "Order under severe strain; US withdrew from many international organizations in 2025."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
+     "title": "Member states of the United Nations (cited by grader A)",
+     "date": "2025",
+     "shows": "193 member states; the universal UN system persists."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-009",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "By 2025 many major Latin American countries are middle-income (or richer); Venezuela and Bolivia lag behind them in income level; Haiti is poorer and less governable than in 2008.",
+   "reason": "'Lag behind' is read as a level comparison with the countries that 'will have become middle income powers'; the next sentence uses 'lag behind' in the same level sense (Latin America vs Asia). Brazil, Mexico, Argentina, Colombia and Peru are upper-middle, Chile and Uruguay high income. Venezuela's real GDP per capita fell 68% (2008-2024) and it is lower-middle; Bolivia is lower-middle, at about a third of the regional real GDP per capita (3,046 vs 8,872 in 2024), and in a currency and fuel crisis by 2023-25. Haiti's real GDP per capita fell from 1,357 to 1,155, with gangs controlling most of Port-au-Prince. Grader A graded Bolivia's growth rate against the regional trend (it grew faster, +28% vs +12%), a narrower reading than the text supports. Grader B's 'Haiti low income' is wrong: the World Bank classes Haiti lower-middle income; the 'poorer' part holds on real GDP per capita, not on income group.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/BOL;HTI;LCN;VEN/indicator/NY.GDP.PCAP.KD?format=json&date=2008:2024",
+     "title": "World Bank WDI: GDP per capita constant 2015 US$ (cited by grader A)",
+     "date": "2008-2024",
+     "shows": "Bolivia 2,383 to 3,046; Haiti 1,357 to 1,155; LAC 7,946 to 8,872; Venezuela 4,656 to 1,501."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/VEN;HTI;BOL?format=json",
+     "title": "World Bank country API: income levels",
+     "date": "2026-10-01",
+     "shows": "Bolivia, Haiti and Venezuela are all classed lower-middle income."
+    },
+    {
+     "url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups",
+     "title": "World Bank country and lending groups",
+     "date": "FY2027",
+     "shows": "Brazil, Mexico, Argentina, Colombia, Peru upper-middle; Chile, Uruguay high income."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gang_war_in_Haiti",
+     "title": "Gang war in Haiti (cited by grader B)",
+     "date": "2025",
+     "shows": "Gangs control about 80-90% of Port-au-Prince; over 1 million displaced."
+    }
+   ]
+  }
+ ],
+ "model": "agent (model not recorded in the public repo)"
+}

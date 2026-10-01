@@ -1,0 +1,691 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "nic-global-trends-2000-011",
+   "verdict": "hit",
+   "reading": "Between 2000 and 2015 the risk of WMD (chemical, biological, radiological, nuclear) use against the US or its forces and interests abroad rises, read through whether such use actually occurred in the window.",
+   "mainstream_test": "D30 event: at least one WMD attack on the US or its forces/interests occurred 2001-2015.",
+   "reason": "A likelihood is not directly measurable; the observable consequence happened: the September-October 2001 anthrax letters (biological agent, 5 dead) targeted US media and senators, and insurgents in Iraq used chlorine and old chemical munitions against US forces in 2004-2007. Graded hit on the event reading; the 'likelihood' wording makes this uncertain.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2001_anthrax_attacks",
+     "title": "2001 anthrax attacks",
+     "date": "2001-09/2001-10",
+     "shows": "Anthrax letters to US senators and news outlets, 5 dead, 17 infected."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-012",
+   "verdict": "hit",
+   "reading": "In 2015 the US has the largest economic, technological, military and diplomatic weight of any state or organization.",
+   "mainstream_test": "D30 state of affairs at 2015: US first in nominal GDP and military spending by a wide margin.",
+   "reason": "2015 US GDP $18.3tn vs China $11.3tn (World Bank); US military spending about three times China's (SIPRI). No state or body matched US reach.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/USA;CHN/indicator/NY.GDP.MKTP.CD?format=json&date=2015",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2015",
+     "shows": "US 18.30tn, China 11.28tn, Japan 4.53tn."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_with_highest_military_expenditures",
+     "title": "List of countries with highest military expenditures (SIPRI)",
+     "date": "2026-04",
+     "shows": "US remains the top spender by a wide margin; US spending exceeds China and Russia combined."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-013",
+   "verdict": "ungradable",
+   "reading": "To hold 2000 old-age dependency ratios, Europe and Japan would need more than 110 million additional workers by 2015.",
+   "mainstream_test": "D23: a public series measuring the number of workers needed to keep dependency ratios constant.",
+   "reason": "This is a counterfactual requirement (the UN Replacement Migration exercise type), not a forecast of an observable quantity; no public series measures 'workers needed' in 2015. The aging premise held, but the claim's figure cannot be checked against an actual.",
+   "evidence": [
+    {
+     "url": "https://www.un.org/development/desa/pd/content/replacement-migration",
+     "title": "UN DESA, Replacement Migration",
+     "date": "2000-03",
+     "shows": "The model-based source of such 'migrants/workers needed' figures; a scenario computation, not a measured series."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-014",
+   "verdict": "partial",
+   "reading": "In 2015 Russia is internally weak and tied to the international system mainly through its UN Security Council seat.",
+   "mainstream_test": "D30 state of affairs at 2015: economic and institutional weakness plus limited institutional ties beyond the UNSC.",
+   "reason": "Economically weak in 2015 (GDP -3.7%, ruble crisis, sanctions) and suspended from the G8 in 2014, so the UNSC seat was its main great-power forum; but the Russian state was not internally weak politically (consolidated central power, Crimea annexation, Syria intervention 2015) and it remained in the WTO (2012), G20 and BRICS. Holds in part.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Russian_financial_crisis_(2014%E2%80%932016)",
+     "title": "Russian financial crisis (2014-2016)",
+     "date": "2015",
+     "shows": "GDP contracted 3.7% in 2015; oil collapse and sanctions."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/G8",
+     "title": "G8",
+     "date": "2014-03",
+     "shows": "Russia suspended from the G8 in 2014 after the annexation of Crimea."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2000-015",
+   "verdict": "hit",
+   "reading": "India's population is about 1.2 billion (more than 1.2 billion) in 2015, and India is a rising regional power.",
+   "mainstream_test": "D16 numeric rule for a level: within 10% of the actual 2015 population.",
+   "reason": "World Bank: India 2015 population 1.328 billion. 1.2bn is 9.6% below the actual: inside the 10% band (and the Discussion chapter's 'more than 1.2 billion' is literally true). India's rising regional power is not in dispute.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/IND/indicator/SP.POP.TOTL?format=json&date=2015",
+     "title": "World Bank WDI, Population total, India",
+     "date": "2015",
+     "shows": "1,328,024,498."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-001",
+   "verdict": "hit",
+   "reading": "In 2020 the US remains the single most powerful actor economically, technologically and militarily.",
+   "mainstream_test": "D30 state of affairs at 2020: US first in GDP and military spending.",
+   "reason": "2020 US GDP $21.4tn vs China $15.0tn; US military spending about three times China's. Still first on all three dimensions.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/USA;CHN/indicator/NY.GDP.MKTP.CD?format=json&date=2020",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2020",
+     "shows": "US 21.38tn, China 15.00tn."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_with_highest_military_expenditures",
+     "title": "List of countries with highest military expenditures (SIPRI)",
+     "date": "2026-04",
+     "shows": "US the top military spender, larger than China and Russia combined."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-002",
+   "verdict": "hit",
+   "reading": "By 2020 China's economy is larger than every Western economy except the US.",
+   "mainstream_test": "D30 state at 2020: China's GDP (market rates; PPP gives the same or stronger result) exceeds Germany, UK, France, Italy and every other Western economy except the US.",
+   "reason": "2020 GDP: China $15.0tn vs Germany $3.9tn, UK $2.7tn, France $2.6tn. China passed Germany in 2007.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/CHN;DEU;GBR;FRA;USA/indicator/NY.GDP.MKTP.CD?format=json&date=2020",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2020",
+     "shows": "China 15.00tn; Germany 3.94tn; UK 2.72tn; France 2.65tn; US 21.38tn."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-003",
+   "verdict": "hit",
+   "reading": "By 2020 India's economy has overtaken, or is about to overtake, the large individual European economies.",
+   "mainstream_test": "D30 state at 2020: India's GDP at market rates passes or nearly matches the large European economies (PPP reading gives a clear pass).",
+   "reason": "Market rates: India passed France in 2019 ($2.84tn vs $2.72tn) and in 2020 was $2.68tn vs UK $2.72tn and France $2.65tn, i.e. ahead of France and on the threshold of the UK; Germany still larger. At PPP India exceeded every European economy. Matches 'overtaken or on the threshold'.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/IND;GBR;FRA;DEU/indicator/NY.GDP.MKTP.CD?format=json&date=2019:2020",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2019-2020",
+     "shows": "India 2.84tn (2019), 2.68tn (2020); UK 2.88/2.72tn; France 2.72/2.65tn; Germany 3.96/3.94tn."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-004",
+   "verdict": "unfalsifiable",
+   "reading": "Brazil could surpass all but the largest European economies and Indonesia could approach individual European economies by 2020.",
+   "mainstream_test": "D27/D30 possibility-only claim; hedge word 'could'.",
+   "reason": "Possibility only ('could'), no stated expectation, so both outcomes agree. For the record, 2020 Brazil $1.48tn was below Italy $1.91tn and Indonesia $1.06tn was near Spain/Netherlands scale.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/BRA;IDN;ITA/indicator/NY.GDP.MKTP.CD?format=json&date=2020",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2020",
+     "shows": "Brazil 1.48tn, Indonesia 1.06tn, Italy 1.91tn."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-005",
+   "verdict": "hit",
+   "reading": "Between late 2004 and 2019 the North Korea crisis reaches a decisive point.",
+   "mainstream_test": "D30 event: a crisis peak (acute confrontation or decisive turn) occurs by end-2019.",
+   "reason": "North Korea tested nuclear weapons from 2006; in 2017 a sixth test (about 120 kt) and ICBM tests capable of reaching the US, with 'fire and fury' threats, brought the crisis to an acute peak, followed by the 2018 Panmunjom and Singapore summits. Graded hit on 'reach a critical point'; a reading of 'resolved' would make it a miss, hence uncertain.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2017%E2%80%932018_North_Korea_crisis",
+     "title": "2017-2018 North Korea crisis",
+     "date": "2017-2018",
+     "shows": "Sixth nuclear test Sept 2017, Hwasong-14/15 ICBMs, open war threats, then summits in 2018-2019."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-006",
+   "verdict": "hit",
+   "reading": "Real world GDP in 2020 is about 1.8 times its 2000 level and real world GDP per capita about 1.5 times.",
+   "mainstream_test": "D16 numeric rule for levels (within 10% hit, 25% partial); measure not stated, so per D23 the median of market-rate and PPP real series is used.",
+   "reason": "World Bank real GDP 2020/2000: 1.711 at constant market rates, 1.876 at constant PPP; median 1.79 vs 1.80 forecast (0.5% off). Per capita: 1.342 (market) and 1.472 (PPP); median 1.41 vs 1.50 (6% off). Both within 10%. At market rates alone the per-capita figure is 12% off (partial), so the call depends on the measure; 2020 is the COVID trough, which works against the forecast.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD?format=json&date=2000:2020",
+     "title": "World Bank WDI, GDP constant 2015 US$, World",
+     "date": "2000-2020",
+     "shows": "48.55tn (2000) to 83.06tn (2020), ratio 1.711."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.PP.KD?format=json&date=2000:2020",
+     "title": "World Bank WDI, GDP PPP constant 2021 intl $, World",
+     "date": "2000-2020",
+     "shows": "78.75tn to 147.75tn, ratio 1.876."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.PCAP.KD?format=json&date=2000:2020",
+     "title": "World Bank WDI, GDP per capita constant US$ and PPP, World",
+     "date": "2000-2020",
+     "shows": "Market 7,880 to 10,575 (1.342); PPP (NY.GDP.PCAP.PP.KD) 12,781 to 18,812 (1.472)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-007",
+   "verdict": "partial",
+   "reading": "World primary energy consumption rises about 50% from 2000 to 2020, with petroleum supplying a larger share.",
+   "mainstream_test": "D16 numeric rule for the level ratio (within 10% hit) plus the stated direction of oil's share.",
+   "reason": "Energy Institute data via OWID: world primary energy 105,981 TWh (2000) to 147,985 TWh (2020, ratio 1.40) and 154,621 TWh (2019, ratio 1.46): the size is within 10%. But oil's share of primary energy fell from 40.6% to 33.0%, the opposite of the stated greater petroleum share. Half right.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/primary-energy-cons",
+     "title": "OWID / Energy Institute, Primary energy consumption, World",
+     "date": "2000-2020",
+     "shows": "105,981 TWh in 2000; 154,621 TWh in 2019; 147,985 TWh in 2020."
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/share-energy-source-sub",
+     "title": "OWID / Energy Institute, Share of primary energy by source, World",
+     "date": "2000-2020",
+     "shows": "Oil 40.56% in 2000, 33.02% in 2020."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-008",
+   "verdict": "hit",
+   "reading": "Through 2020 political Islam has a significant global impact, rallying disparate groups, perhaps even creating a transnational authority.",
+   "mainstream_test": "D30 state of affairs by 2020: political Islam is a major global force; the 'perhaps' clause is a possibility and not required.",
+   "reason": "Islamist movements shaped the Arab Spring aftermath, and the Islamic State declared a transnational caliphate in 2014, ruling 8-12 million people across Iraq and Syria with provinces from West Africa to South Asia. Even the hedged transnational-authority clause occurred.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Islamic_State",
+     "title": "Islamic State",
+     "date": "2014-2019",
+     "shows": "Caliphate declared June 2014, 8-12 million people at peak, affiliates across Africa and Asia."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-009",
+   "verdict": "unfalsifiable",
+   "reading": "The third wave of democratization may be partly reversed by 2020, especially in the former Soviet Union and Southeast Asia.",
+   "mainstream_test": "D27/D30 possibility-only; hedge word 'may'.",
+   "reason": "Possibility only ('may'). For the record, Freedom House recorded 15 consecutive years of global freedom decline through 2020, so the possibility materialized.",
+   "evidence": [
+    {
+     "url": "https://freedomhouse.org/report/freedom-world/2021/democracy-under-siege",
+     "title": "Freedom House, Freedom in the World 2021: Democracy under Siege",
+     "date": "2021-03",
+     "shows": "2020 was the 15th consecutive year of decline in global freedom."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-010",
+   "verdict": "hit",
+   "reading": "No great-power conflict escalates into total war between 2005 and 2020.",
+   "mainstream_test": "D30 negative event: no total war among great powers by end-2020.",
+   "reason": "No war between great powers occurred 2005-2020; regional conflicts (Georgia 2008, Ukraine 2014) stayed limited.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_wars:_2003%E2%80%93present",
+     "title": "List of wars: 2003-present",
+     "date": "2005-2020",
+     "shows": "No war fought directly between great powers in the period."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_with_highest_military_expenditures",
+     "title": "List of countries with highest military expenditures (SIPRI)",
+     "date": "2026-04",
+     "shows": "US the top military spender, more than China and Russia combined."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-011",
+   "verdict": "hit",
+   "reading": "By 2020 existing nuclear powers improve the survivability of their forces and the reliability, accuracy and lethality of delivery systems, and develop means to penetrate missile defenses.",
+   "mainstream_test": "D30 state of affairs by 2020: documented modernization and missile-defense-penetration programs fielded.",
+   "reason": "Russia put the Avangard hypersonic glide vehicle on combat duty in December 2019, explicitly to defeat US missile defense; China fielded road-mobile DF-41 and the DF-17 glide vehicle (2019 parade) and SSBN patrols; the US and others ran modernization programs.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Avangard_(hypersonic_glide_vehicle)",
+     "title": "Avangard (hypersonic glide vehicle)",
+     "date": "2019-12-27",
+     "shows": "First Avangard regiment on combat duty; designed to overcome missile defense."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-012",
+   "verdict": "hit",
+   "reading": "By 2020 al-Qaeda is superseded by similarly inspired Islamist extremist groups.",
+   "mainstream_test": "D30 state by 2020: another jihadist group displaces al-Qaeda as the leading one.",
+   "reason": "The Islamic State broke with al-Qaeda in 2014 and became the dominant jihadist force by 2014-2015 in territory, money, recruits and attacks; GTI still ranks IS the deadliest group in 2024. Local merging (e.g. ISWAP, IS-Mozambique) also occurred.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Islamic_State",
+     "title": "Islamic State",
+     "date": "2014-2015",
+     "shows": "Split from al-Qaeda Feb 2014; dominant jihadist force by 2014-2015."
+    },
+    {
+     "url": "https://www.visionofhumanity.org/maps/global-terrorism-index/",
+     "title": "Global Terrorism Index 2025",
+     "date": "2025-03",
+     "shows": "Islamic State the deadliest terrorist group in 2024."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-013",
+   "verdict": "hit",
+   "reading": "Through 2020 terrorist attacks mainly use conventional weapons.",
+   "mainstream_test": "D30 state: conventional methods (bombing, armed assault) are the large majority of attacks through 2020.",
+   "reason": "GTD data via OWID: in 2020 bombings (2,727) and armed assaults (2,085) dominate; unarmed assault (which includes chemical/biological) was 37 of about 8,400 attacks. Same pattern in 2010 and 2015.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/terrorist-attacks-by-method",
+     "title": "OWID / Global Terrorism Database, Terrorist attacks by method",
+     "date": "2010-2021",
+     "shows": "World 2020: bombing 2,727, armed assault 2,085, unarmed assault 37."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-018",
+   "verdict": "partial",
+   "reading": "Up to 2020 the EU, rather than NATO, increasingly becomes Europe's primary institution.",
+   "mainstream_test": "D30 state by 2020: EU gains primacy over NATO, including in security.",
+   "reason": "The EU did widen its remit (Lisbon Treaty 2009, euro crisis tools, PESCO 2017, joint recovery borrowing 2020), so it was the primary institution for economic and political affairs; but NATO stayed the cornerstone of European defence, revived after 2014, and PESCO was framed as complementary to NATO. Holds in part.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Permanent_Structured_Cooperation",
+     "title": "Permanent Structured Cooperation",
+     "date": "2017-12",
+     "shows": "PESCO launched 2017, complementary to NATO; NATO remains central to European defence."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2004-019",
+   "verdict": "hit",
+   "reading": "By 2020 no state rivals US military power, while more states can impose heavy costs on US military action.",
+   "mainstream_test": "D30 state at 2020: US military spending/capability far ahead; anti-access capabilities spread.",
+   "reason": "US spending stayed roughly three times China's and over ten times Russia's; China and Russia fielded anti-access/area-denial and hypersonic systems that raise the cost of US intervention.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_with_highest_military_expenditures",
+     "title": "List of countries with highest military expenditures (SIPRI)",
+     "date": "2026-04",
+     "shows": "US the top military spender, more than China and Russia combined."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Avangard_(hypersonic_glide_vehicle)",
+     "title": "Avangard (hypersonic glide vehicle)",
+     "date": "2019-12",
+     "shows": "Russia fields systems designed to defeat US missile defense."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-001",
+   "verdict": "unfalsifiable",
+   "reading": "By 2025 there is no longer a single nation-state 'international community'.",
+   "mainstream_test": "D16 vague label: would need a dominant reading of 'single international community' with a measure.",
+   "reason": "Two readings give opposite verdicts: (a) the world has split into rival blocs and non-state actors share the stage (arguably true by 2025: US-China rivalry, Russia sanctioned, BRICS expansion), or (b) a universal community of states in the UN still exists (all states remain UN members, multilateral bodies function). No reading dominated in 2008 and no measure settles it.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
+     "title": "Member states of the United Nations",
+     "date": "2025",
+     "shows": "193 member states; the universal state-based UN system persists alongside visible bloc rivalry."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-002",
+   "verdict": "hit",
+   "reading": "In 2025 the US is still the single most powerful country but less dominant than in 2008.",
+   "mainstream_test": "D30 state at 2025: US first in GDP and military spending, with its lead over the next power narrowed.",
+   "reason": "US remains first (2024 GDP $29.3tn; 2025 military spending $954bn, 33% of world). Lead narrowed: China's GDP went from 32% of US GDP in 2008 to 64% in 2024, and US PPP share of world output fell. At market rates the US share of world GDP actually rose (22.9% to 26.2%), a caveat on 'less dominant'.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/USA;CHN;JPN;DEU;WLD/indicator/NY.GDP.MKTP.CD?format=json&date=2008:2024",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2008, 2024",
+     "shows": "US 14.77tn to 29.30tn; China 4.67tn to 18.73tn; Japan 5.16 to 4.19tn; Germany 3.81 to 4.69tn; world 64.4 to 111.7tn."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_with_highest_military_expenditures",
+     "title": "List of countries with highest military expenditures (SIPRI)",
+     "date": "2026-04",
+     "shows": "2025: US $954bn (33% of world), China $336bn, Russia $190bn."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-003",
+   "verdict": "partial",
+   "reading": "World population grows by about 1.2 billion between 2008 and 2025.",
+   "mainstream_test": "D16 numeric rule for a level/count: increase within 10% hit, 25% partial.",
+   "reason": "World Bank: 6.830bn (2008) to 8.141bn (2024), +1.31bn by 2024; with roughly 70m more in 2025 the 2008-2025 increase is about 1.38-1.40bn. 1.2bn is about 13-14% below: partial. (The total for 2025, about 8.0 vs 8.2bn, would be within 10%, but the claim names the increase.)",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/SP.POP.TOTL?format=json&date=2008:2024",
+     "title": "World Bank WDI, Population total, World",
+     "date": "2008-2024",
+     "shows": "6,830,080,867 (2008); 8,140,897,523 (2024)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/World_population",
+     "title": "World population (UN WPP 2024)",
+     "date": "2026",
+     "shows": "About 8.3bn in 2026; growth about 1% a year."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-004",
+   "verdict": "hit",
+   "reading": "Terrorism has not disappeared by 2025.",
+   "mainstream_test": "D30 state at 2025: terrorist attacks and deaths continue.",
+   "reason": "GTI 2025: 8,352 terrorism deaths in 2024, the highest since 2017, in 50 countries. The 'appeal could lessen' clause is a possibility and not graded.",
+   "evidence": [
+    {
+     "url": "https://www.visionofhumanity.org/maps/global-terrorism-index/",
+     "title": "Global Terrorism Index 2025",
+     "date": "2025-03",
+     "shows": "Terrorism deaths rose 22% to 8,352 in 2024; IS the deadliest group."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-005",
+   "verdict": "partial",
+   "reading": "By 2025 the post-WWII international system is almost unrecognizable, owing to emerging powers, globalization, a West-to-East wealth shift and non-state actors.",
+   "mainstream_test": "D30 state at 2025: the post-1945 institutions and order are transformed beyond recognition.",
+   "reason": "The drivers happened (China's GDP from 32% to 64% of US, G20 replaced G8 as the main economic forum, wealth shifted east), but the core post-1945 institutions (UN and Security Council P5, IMF, World Bank, NATO) persist with their original structure; 'almost unrecognizable' overstates. Holds in part.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/USA;CHN;JPN;DEU;WLD/indicator/NY.GDP.MKTP.CD?format=json&date=2008:2024",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2008, 2024",
+     "shows": "US 14.77tn to 29.30tn; China 4.67tn to 18.73tn; Japan 5.16 to 4.19tn; Germany 3.81 to 4.69tn; world 64.4 to 111.7tn."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/United_Nations_Security_Council",
+     "title": "United Nations Security Council",
+     "date": "2025",
+     "shows": "Same five permanent members with veto as in 1945; no reform."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-007",
+   "verdict": "hit",
+   "reading": "By 2025 China has the world's second largest economy.",
+   "mainstream_test": "D30 state at 2025: China ranks second by GDP (market rates; first at PPP).",
+   "reason": "China passed Japan in 2010; 2024 GDP $18.7tn vs US $29.3tn and Germany $4.7tn, so second at market rates through 2025.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/USA;CHN;JPN;DEU;WLD/indicator/NY.GDP.MKTP.CD?format=json&date=2008:2024",
+     "title": "World Bank WDI, GDP current US$",
+     "date": "2008, 2024",
+     "shows": "US 14.77tn to 29.30tn; China 4.67tn to 18.73tn; Japan 5.16 to 4.19tn; Germany 3.81 to 4.69tn; world 64.4 to 111.7tn."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-008",
+   "verdict": "hit",
+   "reading": "In 2025 sub-Saharan Africa is still the region most vulnerable to economic disruption, population stress, civil conflict and instability.",
+   "mainstream_test": "D30 state at 2025: SSA holds the largest share of the most fragile states (Fragile States Index).",
+   "reason": "Fragile States Index 2024: 9 of the 15 most fragile states are in sub-Saharan Africa (Somalia, Sudan, South Sudan, DRC, CAR, Chad, Ethiopia, Mali, Nigeria); GTI 2025 puts the Sahel at over half of terrorism deaths.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_countries_by_Fragile_States_Index",
+     "title": "List of countries by Fragile States Index",
+     "date": "2024",
+     "shows": "9 of the 15 most fragile states are in sub-Saharan Africa."
+    },
+    {
+     "url": "https://www.visionofhumanity.org/maps/global-terrorism-index/",
+     "title": "Global Terrorism Index 2025",
+     "date": "2025-03",
+     "shows": "Sahel accounts for over half of global terrorism deaths."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-009",
+   "verdict": "partial",
+   "reading": "By 2025 many major Latin American countries are middle-income powers; Venezuela and Bolivia lag behind; Haiti is poorer and less governable.",
+   "mainstream_test": "D30 state at 2025: real GDP per capita 2008-2024 for Venezuela and Bolivia below the regional trend; Haiti lower than in 2008 and less governed.",
+   "reason": "Major countries are upper-middle or high income (Brazil, Mexico, Colombia, Chile). Venezuela's real GDP per capita fell 68% (4,656 to 1,501); Haiti's fell 15% (1,357 to 1,155) amid gang control and state collapse. But Bolivia grew 28% (2,383 to 3,046), faster than the Latin America and Caribbean average (+12%), so it did not lag. Most parts held, the Bolivia part failed.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/BOL;HTI;LCN;VEN/indicator/NY.GDP.PCAP.KD?format=json&date=2008:2024",
+     "title": "World Bank WDI, GDP per capita constant 2015 US$",
+     "date": "2008-2024",
+     "shows": "Bolivia 2,383 to 3,046; Haiti 1,357 to 1,155; LAC 7,946 to 8,872; Venezuela 4,656 to 1,501."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-011",
+   "verdict": "ungradable",
+   "reading": "By 2025 the number of countries with youthful age structures in the 'arc of instability' falls by up to 40%.",
+   "mainstream_test": "D23: a public count of youthful-structure countries within a defined arc of instability, for 2008 and 2025.",
+   "reason": "The edition does not list the arc's countries or the age-structure cutoff, and no public series reports this count; UN WPP median ages exist by country but building the count would require choosing the scope and threshold ourselves. 'As much as' also makes the figure an upper bound.",
+   "evidence": [
+    {
+     "url": "https://population.un.org/wpp/",
+     "title": "UN World Population Prospects 2024",
+     "date": "2024",
+     "shows": "Country median ages are available, but no published count for an 'arc of instability' set."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-012",
+   "verdict": "miss",
+   "reading": "Through 2025 non-OPEC liquids production does not grow as fast as world oil demand.",
+   "mainstream_test": "D30 state by 2025: growth in non-OPEC liquids 2008-2025 vs growth in world liquids consumption.",
+   "reason": "EIA: world consumption about 85.9 mb/d in 2008 vs 104.3 mb/d in 2025 (+18). Non-OPEC liquids about 50 mb/d in 2008 (world supply less OPEC 35.8) vs 76.9 mb/d in 2025 (+27; about +23 after adjusting for Qatar, Ecuador and Angola leaving OPEC). US shale drove non-OPEC growth above demand growth.",
+   "evidence": [
+    {
+     "url": "https://www.eia.gov/outlooks/steo/archives/jan09.pdf",
+     "title": "EIA Short-Term Energy Outlook, January 2009",
+     "date": "2009-01",
+     "shows": "2008 world consumption about 85.9 mb/d; total OPEC supply 35.75 mb/d."
+    },
+    {
+     "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+     "title": "EIA STEO, Global oil markets",
+     "date": "2026",
+     "shows": "2025 world liquids consumption 104.3 mb/d; non-OPEC production 76.9 mb/d."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-013",
+   "verdict": "ungradable",
+   "reading": "By 2025, 36 countries with about 1.4 billion people are cropland- or freshwater-scarce.",
+   "mainstream_test": "D23: a public series counting countries below the cropland (about 0.07 ha per capita) or freshwater (1,000 m3 per capita) scarcity thresholds in 2025.",
+   "reason": "The figure is a Population Action International-style projection quoted by the NIC; no public body publishes a count of cropland-or-freshwater-scarce countries for 2025. FAO AQUASTAT has per-country water per capita but not the combined indicator, and building it would mean choosing thresholds ourselves.",
+   "evidence": [
+    {
+     "url": "https://www.fao.org/aquastat/en/",
+     "title": "FAO AQUASTAT",
+     "date": "2025",
+     "shows": "Per-country renewable water resources per capita; no combined cropland-or-water scarcity count."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-014",
+   "verdict": "miss",
+   "reading": "New energy technologies will probably not be commercially viable and widespread by 2025.",
+   "mainstream_test": "D16 mainstream test applied to the new technologies the edition names next (photovoltaic, wind, batteries): at least 20% of new units (EV sales) or a measurable widespread share of electricity.",
+   "reason": "By 2024 solar and wind were the cheapest new power in most markets and made 15% of global electricity (solar 6.9%, wind 8.1%); electric cars were over 20% of new car sales and over a quarter in 2025. These technologies became commercially viable and widespread before 2025. The first clause (no full replacement of the fossil architecture, still about 80% of primary energy) held, which makes this uncertain between miss and partial.",
+   "evidence": [
+    {
+     "url": "https://ember-energy.org/latest-insights/global-electricity-review-2025/",
+     "title": "Ember, Global Electricity Review 2025",
+     "date": "2025-04",
+     "shows": "Solar 6.9% and wind 8.1% of global electricity in 2024; clean power 40.9%."
+    },
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2025/executive-summary",
+     "title": "IEA, Global EV Outlook 2025",
+     "date": "2025-05",
+     "shows": "Electric cars above 20% of global new car sales in 2024; more than a quarter expected in 2025."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2008-016",
+   "verdict": "ungradable",
+   "reading": "By 2025 no single political identity (national, religious, ideological) dominates most societies.",
+   "mainstream_test": "D22: a public cross-national measure of the dominant political identity per society.",
+   "reason": "No public series measures which political identity is dominant in a society. Surveys such as the World Values Survey ask about national pride or religiosity, not dominance of one identity; any verdict would rest on a proxy.",
+   "evidence": [
+    {
+     "url": "https://www.worldvaluessurvey.org/WVSContents.jsp",
+     "title": "World Values Survey",
+     "date": "2017-2022 wave",
+     "shows": "Measures attitudes (religiosity, national pride), not a dominant political identity per society."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2012-008",
+   "verdict": "ungradable",
+   "reading": "Emerging markets' share of global financial assets almost doubles from about 2010-12 to 2020.",
+   "mainstream_test": "D23/D30: a public series of emerging markets' share of global financial assets for 2020, same scope as the projection.",
+   "reason": "The projection is McKinsey Global Institute's (EM share from 21% in 2010 to 30-36% in 2020), quoted by the NIC without attribution: a third-party figure (D30). MGI stopped its global financial-asset series; the FSB's monitoring covers different sectors and jurisdictions, so no same-quantity measure exists for 2020.",
+   "evidence": [
+    {
+     "url": "https://www.mckinsey.com/~/media/mckinsey/featured%20insights/global%20capital%20markets/emerging%20equity%20gap/mgi_emerging_equity_gap_full_report.pdf",
+     "title": "McKinsey Global Institute, The emerging equity gap",
+     "date": "2011-12",
+     "shows": "Origin of the projection: EM share of global financial assets 21% in 2010, projected 30-36% in 2020."
+    },
+    {
+     "url": "https://www.fsb.org/uploads/P260422.pdf",
+     "title": "FSB, US Dollar Funding and EME Vulnerabilities",
+     "date": "2022-04",
+     "shows": "FSB data cover different scope; no EM share of global financial assets on MGI's basis."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2012-013",
+   "verdict": "hit",
+   "reading": "Through about 2022 the world does not return to pre-2008 growth rates or rapid globalization.",
+   "mainstream_test": "D30 negative state: world real growth 2013-2022 stays below 2003-2007, and trade/GDP does not resume its pre-2008 rise.",
+   "reason": "World Bank: real world growth averaged 4.1% in 2003-2007 vs about 2.9% in 2012-2019 and below in 2020-2022 except the 2021 rebound; world trade/GDP peaked at 60.3% in 2008 and stayed at 52-59% through 2021 ('slowbalization').",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=2003:2022",
+     "title": "World Bank WDI, GDP growth, World",
+     "date": "2003-2022",
+     "shows": "2003-2007: 3.1-4.5%; 2012-2019: 2.7-3.4%; 2020 -2.9%, 2021 6.5%, 2022 3.4%."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NE.TRD.GNFS.ZS?format=json&date=2000:2022",
+     "title": "World Bank WDI, Trade (% of GDP), World",
+     "date": "2000-2022",
+     "shows": "60.3% in 2008; 51.9-59.3% from 2009 to 2021; 62.1% in 2022."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2012-014",
+   "verdict": "hit",
+   "reading": "China's GDP per capita at PPP passes US$15,000 by 2017.",
+   "mainstream_test": "D30 event by end-2017: World Bank GDP per capita PPP for China at or above $15,000.",
+   "reason": "World Bank: $15,022 in current international dollars in 2017 (crossed that year); in constant 2021 international dollars it was $15,773 in 2016. Either basis crosses within the window.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/CHN/indicator/NY.GDP.PCAP.PP.CD?format=json&date=2015:2018",
+     "title": "World Bank WDI, GDP per capita PPP current intl $, China",
+     "date": "2015-2018",
+     "shows": "13,463 (2015), 14,157 (2016), 15,022 (2017), 16,298 (2018)."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/CHN/indicator/NY.GDP.PCAP.PP.KD?format=json&date=2015:2018",
+     "title": "World Bank WDI, GDP per capita PPP constant 2021 intl $, China",
+     "date": "2015-2018",
+     "shows": "14,857 (2015), 15,773 (2016)."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2017-001",
+   "verdict": "hit",
+   "reading": "From 2017 to 2022 tensions within and between countries rise and global growth slows.",
+   "mainstream_test": "D30 state over 2017-2022: rising interstate and domestic tension, and average world growth lower than the prior five years.",
+   "reason": "Tensions rose (US-China trade war from 2018, Russia's 2022 invasion of Ukraine, record state-based conflict deaths in 2022). World real growth averaged about 2.7% in 2017-2022 vs about 2.9% in 2012-2016, lowered by the 2020 contraction.",
+   "evidence": [
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=2012:2022",
+     "title": "World Bank WDI, GDP growth, World",
+     "date": "2012-2022",
+     "shows": "2012-2016 avg about 2.9%; 2017-2022: 3.4, 3.3, 2.7, -2.9, 6.5, 3.4 (avg about 2.7%)."
+    },
+    {
+     "url": "https://www.prio.org/publications/13513",
+     "title": "PRIO, Conflict Trends: A Global Overview (2023)",
+     "date": "2023",
+     "shows": "55 state-based conflicts in 2022; most battle deaths since 1984."
+    }
+   ]
+  },
+  {
+   "id": "nic-global-trends-2017-003",
+   "verdict": "hit",
+   "reading": "By about 2022 the risk of interstate conflict reaches levels not seen since the Cold War.",
+   "mainstream_test": "D30 state by 2022: a major interstate war or confrontation on a scale unmatched since 1989.",
+   "reason": "Russia's full-scale invasion of Ukraine in February 2022 was the largest interstate war in Europe since 1945; PRIO/UCDP recorded more state-based battle deaths in 2022 than in any year since 1984.",
+   "evidence": [
+    {
+     "url": "https://www.prio.org/publications/13513",
+     "title": "PRIO, Conflict Trends: A Global Overview (2023)",
+     "date": "2023",
+     "shows": "Over 204,000 state-based battle deaths in 2022, the most since 1984, driven by Ukraine and Ethiopia."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,395 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.8864,
+ "n": 76,
+ "counts": {
+  "hit": 47,
+  "miss": 8,
+  "partial": 13,
+  "unfalsifiable": 2,
+  "ungradable": 6
+ },
+ "hit_rate": {
+  "hits": 47,
+  "of_graded_hit_partial_miss": 68,
+  "rate": 0.6912,
+  "wilson95": [
+   0.574,
+   0.788
+  ],
+  "audit_adjusted95": [
+   0.554,
+   0.808
+  ]
+ },
+ "hit_or_partial_rate": 0.8824,
+ "adjudicated": 5,
+ "audit": {
+  "sample": 50,
+  "audited": 50,
+  "confirmed": 49,
+  "corrected": 1,
+  "contested": 0,
+  "error_rate": 0.02
+ },
+ "verdicts": [
+  {
+   "id": "nic-global-trends-1997-001",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-002",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-005",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-006",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-007",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-011",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-012",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-013",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "D30 state of affairs over 1997-2010. The source context defines weakness as a lack of economic resources for great-power status, not as stagnation. Held in part: 1998 default and collapse (GDP $196 bn in 1999), 2009 contraction of 7.8%, and in 2010 Russia was about 2.3% of world GDP, about a tenth of the US, and still commodity-dependent. Failed in part: 1999-2008 growth of 5-10% a year, dollar GDP up from $405 bn to $1.66 tn, large reserves, debt repaid, and enough resources to fund military revival (Georgia 2008). Grader B graded a growth/stagnation reading that is narrower than the source's capability framing; B's 'high-income on 2012 data' falls outside the target. No arithmetic errors found."
+  },
+  {
+   "id": "nic-global-trends-1997-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-1997-017",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-019",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-020",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-021",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-022",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-023",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-024",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-025",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-026",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-027",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-1997-028",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2000-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2000-003",
+   "verdict": "partial",
+   "status": "corrected",
+   "was": "hit",
+   "reason": "OWID/UN WPP 2024 population CSV: world +1,298.8 m 2000-2015, UN more developed regions (Europe, Northern America, Japan, Australia, NZ) +71.6 m, so the developing share is 94.49%, 0.51 pp from 95%: outside the D18 0.5 pp hit band, inside 1.0 pp. The World Bank income-group reading (about 91%) is further off. Graders rounded to 0.5."
+  },
+  {
+   "id": "nic-global-trends-2000-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2000-005",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "A percent change is a level forecast (implied level 1.5x base), graded under the D16 numeric rule, not D18 points. Energy Institute via OWID: 105,981 TWh (2000) to 145,500 TWh (2015), ratio 1.373; forecast 1.5 is 9.3% above actual (hit). IEA TES as cited by B gives about 1.36 (10.3%, partial); D23 median of the two is about 1.366, 9.8% off: hit, but close to the edge. If the NIC's unstated base were 1997 rather than 2000, actual growth is larger and the hit is firmer. Sufficiency held: no lasting physical shortage through 2015. Grader A applied D18 percentage points to a level change (rule error); A's '8.5% under' also measures error against the forecast rather than the actual (D16 measures against the actual: 9.3%), though both are inside 10%. The IEA figure is B's and was not re-fetched."
+  },
+  {
+   "id": "nic-global-trends-2000-006",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2000-007",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2000-008",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2000-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2000-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-2000-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-2000-012",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-2000-014",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-2000-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "nic-global-trends-2004-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-006",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "D16 numeric level rule; measure not stated, so under D23 the market-rate and PPP real series are treated as estimates of the same quantity by different methods and graded on their median. GDP: 1.711 (market) and 1.876 (PPP), median 1.79 vs 1.80: hit. Per capita: 1.342 (market) and 1.472 (PPP), median 1.407; 1.5 is 6.6% above: hit. On market rates alone per capita is 11.8% off (partial), which is why B scored partial: B's arithmetic is correct, but B used one method where D23 requires the median. A's '6% off' for per capita is computed against the forecast; against the actual median it is 6.6%, still a hit. 2020 is the COVID trough; with 2019 the forecast is closer still."
+  },
+  {
+   "id": "nic-global-trends-2004-007",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-011",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-013",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-018",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2004-019",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-001",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "partial",
+   "reason": "The source context settles the reading: the line is the likely impact of 'a global multipolar system is emerging' and of the rising power of nonstate actors, and it continues 'Power will be more dispersed... traditional Western alliances will weaken'. A literal institutional reading (UN membership persists) is not equally faithful, so unfalsifiable does not apply (D16, D20). Under the context reading, held in part by 2025: rival blocs (expanded BRICS), Russia-West war, sanctions regimes, US withdrawal from several international bodies and strain on Western alliances. But the state-based multilateral system still functions (193 UN members, UNSC and UNGA operating), so 'will no longer exist' did not hold in full."
+  },
+  {
+   "id": "nic-global-trends-2008-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-003",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-005",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-009",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "'Lag behind' is read as a level comparison with the countries that 'will have become middle income powers'; the next sentence uses 'lag behind' in the same level sense (Latin America vs Asia). Brazil, Mexico, Argentina, Colombia and Peru are upper-middle, Chile and Uruguay high income. Venezuela's real GDP per capita fell 68% (2008-2024) and it is lower-middle; Bolivia is lower-middle, at about a third of the regional real GDP per capita (3,046 vs 8,872 in 2024), and in a currency and fuel crisis by 2023-25. Haiti's real GDP per capita fell from 1,357 to 1,155, with gangs controlling most of Port-au-Prince. Grader A graded Bolivia's growth rate against the regional trend (it grew faster, +28% vs +12%), a narrower reading than the text supports. Grader B's 'Haiti low income' is wrong: the World Bank classes Haiti lower-middle income; the 'poorer' part holds on real GDP per capita, not on income group."
+  },
+  {
+   "id": "nic-global-trends-2008-012",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2008-014",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2012-013",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2012-014",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2017-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "nic-global-trends-2017-003",
+   "verdict": "hit",
+   "status": "audited"
+  }
+ ]
+}

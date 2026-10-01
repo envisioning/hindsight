@@ -1,0 +1,310 @@
+{
+ "rule": "D11",
+ "auditor": "agent (D20)",
+ "seed": "d11:nic-global-trends:d16",
+ "sample": [
+  "nic-global-trends-1997-003",
+  "nic-global-trends-1997-004",
+  "nic-global-trends-1997-005",
+  "nic-global-trends-1997-006",
+  "nic-global-trends-1997-007",
+  "nic-global-trends-1997-008",
+  "nic-global-trends-1997-009",
+  "nic-global-trends-1997-017",
+  "nic-global-trends-1997-018",
+  "nic-global-trends-1997-019",
+  "nic-global-trends-1997-020",
+  "nic-global-trends-1997-021",
+  "nic-global-trends-1997-022",
+  "nic-global-trends-1997-023",
+  "nic-global-trends-1997-024",
+  "nic-global-trends-1997-025",
+  "nic-global-trends-1997-026",
+  "nic-global-trends-1997-027",
+  "nic-global-trends-1997-028",
+  "nic-global-trends-2000-002",
+  "nic-global-trends-2000-003",
+  "nic-global-trends-2000-004",
+  "nic-global-trends-2000-006",
+  "nic-global-trends-2000-007",
+  "nic-global-trends-2000-008",
+  "nic-global-trends-2000-009",
+  "nic-global-trends-2004-001",
+  "nic-global-trends-2004-002",
+  "nic-global-trends-2004-003",
+  "nic-global-trends-2004-005",
+  "nic-global-trends-2004-007",
+  "nic-global-trends-2004-008",
+  "nic-global-trends-2004-010",
+  "nic-global-trends-2004-011",
+  "nic-global-trends-2004-012",
+  "nic-global-trends-2004-013",
+  "nic-global-trends-2004-018",
+  "nic-global-trends-2004-019",
+  "nic-global-trends-2008-002",
+  "nic-global-trends-2008-003",
+  "nic-global-trends-2008-004",
+  "nic-global-trends-2008-005",
+  "nic-global-trends-2008-007",
+  "nic-global-trends-2008-008",
+  "nic-global-trends-2008-012",
+  "nic-global-trends-2008-014",
+  "nic-global-trends-2012-013",
+  "nic-global-trends-2012-014",
+  "nic-global-trends-2017-001",
+  "nic-global-trends-2017-003"
+ ],
+ "records": {
+  "nic-global-trends-1997-003": {
+   "decision": "confirm",
+   "note": "World Bank SP.POP.TOTL (api.worldbank.org) gives Haiti 7.854 m (1997) and 10.818 m (2017), x1.38; doubling (15.7 m) is 45% above actual, outside the D16 25% band: miss.",
+   "at": "2026-10-01T11:32:51Z"
+  },
+  "nic-global-trends-1997-004": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.PCAP.KD.ZG mean 1998-2010 = 1.82% (0.18 pp under 2%), NY.GDP.PCAP.PP.KD compound 1997-2010 = 2.28%; within D18 0.5 pp on either basis: hit.",
+   "at": "2026-10-01T11:32:51Z"
+  },
+  "nic-global-trends-1997-005": {
+   "decision": "confirm",
+   "note": "Wikipedia '2007-2008 world food price crisis' does state production growth above population growth, 2006-07 wheat output 4% below 2004-05, and rice/wheat/corn +217/136/125% (2006-08); World Bank SN.ITK.DEFC.ZS SSA 25.3% (2001) to 18.4% (2010). Held overall, broke in 2006-08: partial under D30 'in part'.",
+   "at": "2026-10-01T11:32:51Z"
+  },
+  "nic-global-trends-1997-006": {
+   "decision": "confirm",
+   "note": "ISAAA Brief 42 executive summary: 148 Mha in 2010, 'a significant 10% of all 1.5 billion hectares of cropland', 15.4 m farmers, 29 countries; Wikipedia GM crops confirms 185 Mha/12% in 2016. Above 5%, below 20%: D16 partial.",
+   "at": "2026-10-01T11:32:51Z"
+  },
+  "nic-global-trends-1997-007": {
+   "decision": "confirm",
+   "note": "OWID/Energy Institute oil-production CSV: World 40,023 TWh (1997) to 46,226 TWh (2010), +6,202 TWh vs OPEC (EI) 15,480 TWh in 1997; addition is 40% of the stated amount: miss.",
+   "at": "2026-10-01T11:32:51Z"
+  },
+  "nic-global-trends-1997-008": {
+   "decision": "confirm",
+   "note": "OWID/Energy Institute fossil-fuels-share-energy: World 89.35% (1997), 89.37% (2010); share-energy-source-sub: solar 0.0007% to 0.025%, wind 0.012% to 0.25%. More use, no reduction in reliance: hit.",
+   "at": "2026-10-01T11:33:43Z"
+  },
+  "nic-global-trends-1997-009": {
+   "decision": "confirm",
+   "note": "OWID/SIPRI military-spending CSV: 2010 US $1,062 bn of world $2,016 bn (constant $), China $132 bn, Russia $50 bn. Grader B's Diplomat citation returned HTTP 403 and could not be checked; grader A's source carries the verdict: hit.",
+   "at": "2026-10-01T11:33:43Z"
+  },
+  "nic-global-trends-1997-017": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Bombardment of Yeonpyeong' (23 Nov 2010, 4 killed, after the March 2010 Cheonan sinking) and '2009 North Korean nuclear test' (second test, after Oct 2006). No transformation, tensions rose: miss.",
+   "at": "2026-10-01T11:33:43Z"
+  },
+  "nic-global-trends-1997-018": {
+   "decision": "confirm",
+   "note": "OWID/UCDP number-of-armed-conflicts: 0 interstate conflicts in 2009-2010; Wikipedia South China Sea and Spratly pages show no interstate war 1997-2010; the Cambodian-Thai clashes are labelled a 'border crisis' and peaked in 2011, after the target. Negative claim held: hit.",
+   "at": "2026-10-01T11:33:43Z"
+  },
+  "nic-global-trends-1997-019": {
+   "decision": "confirm",
+   "note": "World Bank TX.VAL.FUEL.ZS.UN 2010: SAU 87.6, KWT 92.8, QAT 92.6, OMN 77.8, IRQ 99.7, IRN 70.8, ARE 50.0% of merchandise exports; Wikipedia Saudi economy confirms 87% of revenue, 90% of exports (no year given). Not weaned off oil: hit.",
+   "at": "2026-10-01T11:33:43Z"
+  },
+  "nic-global-trends-1997-020": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Execution of Saddam Hussein': captured 13 Dec 2003, executed 30 Dec 2006; gone from power before and through 2010, so the state holds in the target year (D30 early-event clause satisfied): hit.",
+   "at": "2026-10-01T11:34:41Z"
+  },
+  "nic-global-trends-1997-021": {
+   "decision": "confirm",
+   "note": "Wikipedia 'State of Palestine': PA administers Area A (18%) only, Hamas-Fatah split from 2007, UNGA 67/19 non-member observer status 29 Nov 2012, two years after target and outside the year-after window: miss.",
+   "at": "2026-10-01T11:34:41Z"
+  },
+  "nic-global-trends-1997-022": {
+   "decision": "confirm",
+   "note": "OWID GDP (World Bank constant US$) CSV: India 9th in 2010 at $1.54 tn; World Bank NY.GDP.MKTP.CD $1.68 tn; OWID/SIPRI India $57 bn vs US $1,062 bn. Major economy, regional military: hit.",
+   "at": "2026-10-01T11:34:41Z"
+  },
+  "nic-global-trends-1997-023": {
+   "decision": "confirm",
+   "note": "Wikipedia CTBT: 'India, North Korea and Pakistan have not signed it'; Wikipedia FMCT (both cited URL spellings resolve): treaty 'has not been negotiated', 2009 committee blocked by Pakistan. Efforts faltered: hit.",
+   "at": "2026-10-01T11:34:41Z"
+  },
+  "nic-global-trends-1997-024": {
+   "decision": "confirm",
+   "note": "TI CPI 2012 Nigeria page does not render the score/rank in fetched text, so grader A's figure is unverified there; Wikipedia 'Corruption in Nigeria' (143rd before 2014, NNPC $20 bn unremitted) and 'Boko Haram insurgency' (from July 2009) carry the verdict: hit.",
+   "at": "2026-10-01T11:34:41Z"
+  },
+  "nic-global-trends-1997-025": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Operation Boleas' (1998 SA/Botswana intervention, Maseru CBD burned, 'chaotic'), '2008-2009 Zimbabwean political negotiations' (Mbeki-mediated deal, 15 Sep 2008) and 'Foreign relations of South Africa' (mediation in Burundi, DRC, Comoros; silence on Zimbabwe criticised). Leader, order underwritten only in part: partial.",
+   "at": "2026-10-01T11:35:43Z"
+  },
+  "nic-global-trends-1997-026": {
+   "decision": "confirm",
+   "note": "Wikipedia '2000 Mexican general election': Fox (PAN) won, ending 71 years of PRI presidencies; PRI 211 of 500 Chamber seats. Multi-party system by 2010: hit.",
+   "at": "2026-10-01T11:35:43Z"
+  },
+  "nic-global-trends-1997-027": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Raul Castro': Fidel handed duties 31 Jul 2006, Raul president 24 Feb 2008, then 2008 consumer/land-lease measures and April 2011 300-reform plan; 'Economy of Cuba' and 'Cuban economic reforms' show no major reform 1997-2006. Dominant 1997 reading (Fidel) held: hit.",
+   "at": "2026-10-01T11:35:43Z"
+  },
+  "nic-global-trends-1997-028": {
+   "decision": "confirm",
+   "note": "Wikipedia 'September 11 attacks' (al-Qaeda, 2,977 killed) and 'War on terror' (global US campaign against al-Qaeda and allies). A movement on a global scale threatened US interests, which the 'or' makes sufficient: miss.",
+   "at": "2026-10-01T11:35:43Z"
+  },
+  "nic-global-trends-2000-002": {
+   "decision": "confirm",
+   "note": "World Bank SP.POP.TOTL: 6.16 bn (2000), 7.44 bn (2015); OWID/UN WPP 2024 7.47 bn. 7.2 bn is 3.3-3.6% below actual, inside the D16 10% band: hit.",
+   "at": "2026-10-01T11:35:43Z"
+  },
+  "nic-global-trends-2000-003": {
+   "decision": "correct",
+   "corrected_verdict": "partial",
+   "note": "OWID/UN WPP 2024 population CSV: world +1,298.8 m 2000-2015, UN more developed regions (Europe, Northern America, Japan, Australia, NZ) +71.6 m, so the developing share is 94.49%, 0.51 pp from 95%: outside the D18 0.5 pp hit band, inside 1.0 pp. The World Bank income-group reading (about 91%) is further off. Graders rounded to 0.5.",
+   "at": "2026-10-01T11:36:26Z"
+  },
+  "nic-global-trends-2000-004": {
+   "decision": "confirm",
+   "note": "World Bank SN.ITK.DEFC.ZS (FAO): world undernourishment 12.8% (2001), 11.9% (2005), 7.6% (2015); Sub-Saharan Africa 25.3% to 18.1%, highest region. Both halves held: hit.",
+   "at": "2026-10-01T11:36:26Z"
+  },
+  "nic-global-trends-2000-006": {
+   "decision": "confirm",
+   "note": "Wikipedia GERD: construction from 2 Apr 2011, Egyptian leaders discussed sabotage on 3 Jun 2013, Morsi 'all options are open' (10 Jun 2013); Wikipedia Kishanganga: first Indus Waters Court of Arbitration, awards 2013. The cited GERD page does not mention the 2015 Declaration of Principles grader A cites; Pacific Institute page shows no trend. Documented sharper disputes: hit.",
+   "at": "2026-10-01T11:36:26Z"
+  },
+  "nic-global-trends-2000-007": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.KD.ZG: world growth mean 5.19% (1961-73) vs 3.03% (2001-15), max 4.52%; 2.2 pp short under D18: miss.",
+   "at": "2026-10-01T11:36:26Z"
+  },
+  "nic-global-trends-2000-008": {
+   "decision": "confirm",
+   "note": "Stars and Stripes 7 Apr 2015: NORAD commander assessed KN-08 'operational' and able to carry a nuclear weapon to the US, though untested; Wikipedia Hwasong-14: first ICBM test 4 Jul 2017; Wikipedia Iran WMD: no nuclear weapon, JCPOA 2015. Russia/China held, Iran ('probably') failed, North Korea contested: partial.",
+   "at": "2026-10-01T11:36:26Z"
+  },
+  "nic-global-trends-2000-009": {
+   "decision": "confirm",
+   "note": "OWID/UCDP number-of-armed-conflicts: interstate conflicts 2 (2000), 0 (2004-2007, 2009-2010), 1 a year 2011-2015, none between developed states. No war among developed countries through 2015: hit.",
+   "at": "2026-10-01T11:37:54Z"
+  },
+  "nic-global-trends-2004-001": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.CD 2020: US $21.38 tn, China $15.00 tn; Wikipedia 'List of countries with highest military expenditures' (both cited URLs resolve): US $954 bn, 33% of world, above China ($336 bn) and Russia ($190 bn) combined. Still first: hit.",
+   "at": "2026-10-01T11:37:54Z"
+  },
+  "nic-global-trends-2004-002": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.CD 2020: China $15.00 tn vs Germany $3.94 tn, UK $2.72 tn, France $2.65 tn; Wikipedia nominal GDP list puts China second to the US. Hit.",
+   "at": "2026-10-01T11:37:54Z"
+  },
+  "nic-global-trends-2004-003": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.CD: India $2.84 tn (2019) and $2.68 tn (2020) vs France $2.72/$2.65 tn, UK $2.88/$2.72 tn, Italy $2.02/$1.91 tn, Germany $3.96/$3.94 tn. Passed France and Italy, at the UK threshold: hit.",
+   "at": "2026-10-01T11:37:54Z"
+  },
+  "nic-global-trends-2004-005": {
+   "decision": "confirm",
+   "note": "Wikipedia '2017-2018 North Korea crisis': sixth nuclear test 3 Sep 2017 (~120 kt), Hwasong-14/15 ICBM tests, 'fire and fury' (8 Aug 2017), then Panmunjom and Singapore summits in 2018. 'Come to a head' (dominant reading: reach a crisis point) by 2019: hit.",
+   "at": "2026-10-01T11:37:54Z"
+  },
+  "nic-global-trends-2004-007": {
+   "decision": "confirm",
+   "note": "OWID/Energy Institute primary-energy-cons: World 105,981 TWh (2000), 154,621 (2019), 147,985 (2020), +40-46%, implied level within 10%; share-energy-source-sub: oil 40.56% (2000) to 33.02% (2020), opposite of the stated greater petroleum share. Size right, mix wrong: partial.",
+   "at": "2026-10-01T11:38:34Z"
+  },
+  "nic-global-trends-2004-008": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Islamic State': split from al-Qaeda Feb 2014, caliphate declared 29 Jun 2014, about 12 m people at peak, affiliates in Africa and Asia. Significant global impact, and even the hedged transnational clause occurred: hit.",
+   "at": "2026-10-01T11:38:34Z"
+  },
+  "nic-global-trends-2004-010": {
+   "decision": "confirm",
+   "note": "Wikipedia 'List of wars: 2003-present' (resolves, titled 2003-2019 in fetched text) lists no war fought directly between great powers 2005-2020; Georgia 2008 and Crimea 2014 stayed limited. Read as 'total war between great powers unlikely' (the edition's own landscape table): hit.",
+   "at": "2026-10-01T11:38:34Z"
+  },
+  "nic-global-trends-2004-011": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Avangard (hypersonic glide vehicle)': first regiment on combat duty 27 Dec 2019, built in Putin's words in response to US missile defense. Modernisation and defense-penetration capability fielded by 2020: hit.",
+   "at": "2026-10-01T11:38:34Z"
+  },
+  "nic-global-trends-2004-012": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Islamic State' (split Feb 2014, 12 m people and $1 bn+ budgets at the 2015 peak, affiliates across Africa and Asia); GTI page now shows the 2026 edition (IS and affiliates deadliest group in 2025), not the 2025 edition grader A cites, but it supports the same fact. Hit.",
+   "at": "2026-10-01T11:38:34Z"
+  },
+  "nic-global-trends-2004-013": {
+   "decision": "confirm",
+   "note": "OWID/GTD terrorist-attacks-by-method CSV, World 2020: bombing 2,727, armed assault 2,085, unarmed assault 37 (same pattern 2010, 2015). Conventional methods dominate: hit.",
+   "at": "2026-10-01T11:38:52Z"
+  },
+  "nic-global-trends-2004-018": {
+   "decision": "confirm",
+   "note": "Wikipedia 'Permanent Structured Cooperation': activated 11 Dec 2017 with 25 states, 'complementary to NATO security rather than in competition with it'. EU remit grew but NATO stayed Europe's primary security institution: partial.",
+   "at": "2026-10-01T11:38:52Z"
+  },
+  "nic-global-trends-2004-019": {
+   "decision": "confirm",
+   "note": "Wikipedia SIPRI lists (both cited URLs resolve): US $954 bn (33%) vs China $336 bn (12%); Wikipedia Avangard confirms Russian systems built to defeat US missile defense. No rival, higher costs on US action: hit.",
+   "at": "2026-10-01T11:38:52Z"
+  },
+  "nic-global-trends-2008-002": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.CD: US $14.77 tn to $29.30 tn, China $4.67 tn to $18.73 tn (32% to 64% of US) 2008-2024; Wikipedia SIPRI list: US $954 bn, 33% of world in 2025. First but narrower lead: hit.",
+   "at": "2026-10-01T11:38:52Z"
+  },
+  "nic-global-trends-2008-003": {
+   "decision": "confirm",
+   "note": "World Bank SP.POP.TOTL: 6.830 bn (2008), 8.141 bn (2024), 8.215 bn (2025), so +1.385 bn; Wikipedia World population gives 8.23 bn for 2025. 1.2 bn is 13% below: D16 partial.",
+   "at": "2026-10-01T11:38:52Z"
+  },
+  "nic-global-trends-2008-004": {
+   "decision": "confirm",
+   "note": "GTI page (visionofhumanity.org) now shows the 2026 edition: 5,582 terrorism deaths and 2,944 incidents in 2025, matching grader B; grader A's 2025-edition figure (8,352 deaths in 2024) is no longer on that URL. Terrorism persisted: hit.",
+   "at": "2026-10-01T11:39:41Z"
+  },
+  "nic-global-trends-2008-005": {
+   "decision": "confirm",
+   "note": "Wikipedia 'United Nations Security Council': same five permanent members (only the 1971 China seat change), reform proposals unrealised; 'Liberal international order': 'severe strain' by 2026 with institutions in place; World Bank GDP shows the West-to-East shift. Drivers held, 'almost unrecognizable' did not: partial.",
+   "at": "2026-10-01T11:39:41Z"
+  },
+  "nic-global-trends-2008-007": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.CD 2024: US $29.30 tn, China $18.73 tn, Germany $4.69 tn, Japan $4.19 tn; Wikipedia nominal GDP list puts China second. Hit.",
+   "at": "2026-10-01T11:39:41Z"
+  },
+  "nic-global-trends-2008-008": {
+   "decision": "confirm",
+   "note": "Wikipedia FSI list (2024): top 15 are Somalia, Sudan, South Sudan, Syria, DRC, Yemen, Afghanistan, CAR, Haiti, Chad, Myanmar, Ethiopia, Palestine, Mali, Nigeria: 9 in SSA counting Sudan (A), 7 of top 12 (B); GTI 2026: 6 of 10 most affected in SSA. Hit.",
+   "at": "2026-10-01T11:39:41Z"
+  },
+  "nic-global-trends-2008-012": {
+   "decision": "confirm",
+   "note": "EIA STEO Jan 2009 PDF table 3a: 2008 non-OPEC 49.70, OPEC 35.75, consumption 85.91 mb/d; EIA STEO Sep 2026 global oil page: 2025 non-OPEC 76.9, consumption 104.3 mb/d. Non-OPEC +27 mb/d (about +24 after OPEC membership changes) vs demand +18: miss. IEA OMR Sep 2025 gives non-OPEC+ +1.4 vs demand +0.74 mb/d, not B's 1.7/0.68, same direction.",
+   "at": "2026-10-01T11:39:41Z"
+  },
+  "nic-global-trends-2008-014": {
+   "decision": "confirm",
+   "note": "Ember Global Electricity Review 2025: wind 8.1% + solar 6.9% = 15% of 2024 electricity, clean power over 40%; IEA Global EV Outlook 2025: over 17 m EVs, 'more than 20%' of 2024 car sales. New energy technologies became commercially viable and widespread before 2025: miss.",
+   "at": "2026-10-01T11:40:26Z"
+  },
+  "nic-global-trends-2012-013": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.KD.ZG: world growth mean 4.11% (2003-07) vs 2.84% (2013-22); NE.TRD.GNFS.ZS: 60.3% (2008), 51.9-59.3% through 2021, 62.1% in 2022 (price spike, no sustained rise). No return within the decade: hit.",
+   "at": "2026-10-01T11:40:26Z"
+  },
+  "nic-global-trends-2012-014": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.PCAP.PP.CD China: 14,157 (2016), 15,022 (2017); NY.GDP.PCAP.PP.KD: 15,773 (2016), 16,758 (2017). Passed $15,000 by 2017 on either basis: hit.",
+   "at": "2026-10-01T11:40:26Z"
+  },
+  "nic-global-trends-2017-001": {
+   "decision": "confirm",
+   "note": "World Bank NY.GDP.MKTP.KD.ZG: world mean 2.94% (2012-16) vs 2.74% (2017-22), slower mainly because of 2020; PRIO 'Conflict Trends 1946-2022': 55 state-based conflicts in 2022; Wikipedia: Russia's 2022 invasion. Both parts held: hit.",
+   "at": "2026-10-01T11:40:26Z"
+  },
+  "nic-global-trends-2017-003": {
+   "decision": "confirm",
+   "note": "PRIO 'Conflict Trends 1946-2022': more state-based battle deaths in 2022 than any year since 1984 (over 204,000, Ukraine and Ethiopia); Wikipedia: 'largest and deadliest war in Europe since World War II'; Doomsday Clock 100 s (2020-22), closest yet. Stated with 'will', graded on realised outcome: hit.",
+   "at": "2026-10-01T11:40:26Z"
+  }
+ }
+}
