@@ -1,6 +1,6 @@
-# Hindsight handoff (2026-10-01)
+# Hindsight handoff (2026-10-01, second cloud session)
 
-Read this first, then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D23). Every next step is an open issue in envisioning/hindsight.
+Read this first, then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D26). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -22,12 +22,16 @@ A public, citable record of published forecasts (publications x predictions), gr
 ## State
 
 - **Captured:** 24 sources in `data/raw/`. Not captured: #26 to #34, #36.
-- **Fully graded under D20** (two graders, adjudicator, agent audit):
-  - Envisioning posters: 45% hit (95% interval 36 to 55), audit error 8%.
-  - Kurzweil 1999 for 2009: 45% hit (38 to 54), audit error 6%.
+- **Fully graded under D20** (two blind graders, adjudicator, agent audit; rates are hits over hit + partial + miss, Wilson 95% interval):
+  - Envisioning posters: 45% hit (36 to 55), audit error 8%.
+  - Kurzweil, waves 1 and 2 (#63, D26): 38% hit (32 to 44) over 262 graded, audit error 5% over 100. Wave 1 (1999 for 2009) unchanged. 16 claims with target after 2025 are open (`grading-status.json`).
+  - Gartner Hype Cycle (#42, D21): 60% hit (55 to 64), kappa 0.66, audit error 10%. Pass 2 re-check with page access (D24): 3 of 53 timelines revised, 1 verdict changed.
+  - Gartner Strategic Predictions (#43): 30% hit (19 to 45) over 46 graded, kappa 0.88, audit error 12%. 136 of 186 ungradable (shares of organizations with no survey).
+  - MIT TR10 (#51, D25): 31% hit (19 to 48) over 35 graded, kappa 0.67, audit error 7%. Only Availability-line horizons (2017 on) are graded; 70 body-text timings are not graded.
+  - ARK Big Ideas (#49, D23 re-grade): 14% hit (7 to 28) over 42 graded, kappa 0.89 (round 1: 0.53, kept in `round1/`), audit error 2%.
+  - IDC FutureScape (#45): counts only (D11): 8 graded (4 hit, 1 partial, 3 miss), 148 ungradable, kappa 0.82.
+  - Deloitte TMT (#44): graded, kappa 0.80; adjudication and audit in progress at the time of this handoff.
 - **Numeric, graded by command (D19):** 12 publishers with a rate from IEA 10% to ECB 57% (BP and BNEF under 20 graded, counts only). No matching audit yet (#53).
-- **Hype Cycle (D21):** 409 gradable claims, kappa 0.66, 86 adjudicated from 53 settled timelines. 60% hit (95% interval 55 to 64), audit error 12% (2 corrected, 4 contested). Source checks in the adjudication and audit used search summaries only, because the cloud network policy blocked page fetches. Re-check with page access before release.
-- **ARK Big Ideas (#49):** first blind grading of 75 claims, kappa 0.53, below D11. Rubric revised (D23). Next: re-grade all 75 with two new blind graders under D23, with page access. The first-round files are kept as the record in `data/raw/ark-big-ideas/round1/`, out of the manifest, so the site does not show them. No `final-d20.json`.
 - **Subjects:** 1,746, alias review done (#55 closed).
 - **Links to research technologies:** planned, not built (#59).
 - **Site:** live but `noindex`, with a "review build" banner (#60).
@@ -42,18 +46,21 @@ A public, citable record of published forecasts (publications x predictions), gr
 - **Pushing:** commit to `main` and push after `pnpm typecheck` and `pnpm build` pass, the same as locally. The live site reads `main` through GitHub raw. Check push first: `git push --dry-run origin HEAD:main`. A 403 "Claude doesn't have GitHub access" means the Claude GitHub App is not installed on this repo; MZ fixes that in the org's GitHub App settings. Do not work around it through `gh api` writes; the proxy blocks them.
 - **Network:** check page access first: `curl -sS -o /dev/null -w "%{http_code}" https://en.wikipedia.org/wiki/Smartphone` must print 200. The "Trusted" network level blocks almost every data source (Wikipedia, IEA, BEA, Pew). Grading needs the "Full" level. Without it, agents see search snippets only and the audit cannot check sources. Do not start a grading wave without page access.
 - **Model ids:** grader files must not name a specific model. Write `"model": "agent (model not recorded in the public repo)"`.
-- **Search budget used on 2026-10-01:** about 130 of 200 (Hype Cycle adjudication and audit, ARK round 1). A new session has a new budget.
+- **Search budget used in the second session (2026-10-01):** about 180 WebSearch calls over 45 agents (caps of 3 to 5 per agent, 20 for the two ARK graders). A new session has a new budget.
+- **Wayback Machine** (web.archive.org) is not reachable from the cloud session, through WebFetch or curl. Gartner, IDC, Newzoo, Ofcom and some Pew pages return 403. Many ungradable calls in Deloitte, IDC and Gartner Strategic Predictions are fetch failures; a local session with a browser could re-check them as a new pass (D24).
+- **Grader prompts must say:** never put the user's email or any identifier in a request header (SEC EDGAR asks for one in the User-Agent; use a generic one), and never write downloads into the repo root.
+- **Agent limit:** 20 concurrent sub-agents per session.
 
 ## Order of work
 
 1. **#41** Grading pipeline: done. Commands in `AGENTS.md` (Agentic verdicts), prompts in `docs/grading/`.
 2. **#42** Hype Cycle: done (D21). `final-d20.json` written.
-3. **Re-checks from 2026-10-01** (with page access): ARK re-grade under D23 (#49): two new blind graders on all 75 claims (`docs/grading/grader.md` plus the D23 rules), then the standard pipeline. Then re-check the Hype Cycle adjudicated timelines and audit sources that cite "search summary" or "not re-fetched" (`timelines-adjudicated-d20.json`, `audit-d11.json`); record changes as a new adjudication or audit pass, never overwrite.
+3. **Re-checks from 2026-10-01:** done. ARK re-graded under D23; Hype Cycle pass 2 (D24).
 4. **#59** Links, phase 1 (both directions). No web search needed. Key is in `.env`. Model: `text-embedding-3-large`, `dimensions: 1536`. The site part goes to a new issue in envisioning/envisioning.com once the data exists.
 5. **#53** Numeric matching audit, then **#61** (audit error in rates) and **#54** (definition calls).
 6. **#62** Dispute handling.
 7. **#52** Normalize adapters for eurasia, economist, kurzweil, pew-elon. Needed before #46, #47, #50.
-8. Grading waves, bounded by the web-search budget: **#43, #44, #45, #51, #63**, then **#46, #50**. **#47 and #48** need a rule decision first.
+8. Grading waves: **#43, #44, #45, #51, #63** done (final files written). Next **#46, #50** (need #52 first). **#47 and #48** need a rule decision first. Issues #43, #44, #45, #49, #51, #63 can be closed after MZ reviews the results.
 9. **#56** (site numeric verdicts), **#64** (issue housekeeping), **#58** (yearly refresh), **#3** (release).
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
@@ -69,6 +76,13 @@ Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
 ## Blocked
 
 - **#65:** Meet sync. The Meet connector needs MZ to re-authorize it.
+
+## Grading notes from the second session
+
+- Batch inputs and prompts were generated in the session scratchpad; the template is `docs/grading/grader.md` plus the source rule (D16, D18, D22, D23, D25). Graders wrote to the scratchpad; the coordinator copied files into `data/raw/<source>/` after both graders finished, so neither grader could read the other.
+- `final-d20.mjs` now withholds the rate below 20 graded claims (`rate_withheld`), merges grading waves (D26) and audit re-check passes (D24).
+- The site's `drawSample` check (www `app/hindsight/_lib/audit.ts`) does not know waves. For Kurzweil, it must filter consensus rows by `wave` (absent = w1) and use seed `d11:kurzweil:d16:w2` with `audit-d11-w2.json` for wave 2. Open a www issue before release.
+- Kurzweil's rate now pools all editions. If the site should show the 1999-for-2009 rate separately, it must filter by edition.
 
 ## Traps
 
