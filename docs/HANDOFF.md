@@ -1,6 +1,6 @@
 # Hindsight handoff (2026-10-01, second cloud session)
 
-Read this first, then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D26). Every next step is an open issue in envisioning/hindsight.
+Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D26). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
