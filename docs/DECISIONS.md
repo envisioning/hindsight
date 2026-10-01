@@ -320,3 +320,21 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** A grader can use `ungradable` to avoid a hard claim. The adjudicator and the audit see every one-sided use, and the share per source is published.
 
 **Overturned by.** A high ungradable share that the audit finds measurable.
+
+## D23: When a numeric claim is ungradable (amends D22 for ARK Big Ideas and similar sources)
+
+*Recorded 2026-10-01.*
+
+**Decision.** The first blind grading of ARK Big Ideas (75 claims, target year 2025 or earlier) gave kappa 0.53, below the D11 floor. 15 of the 19 disagreements were `ungradable` against a verdict. Before a re-grade of all 75 claims by two new blind graders, the rubric adds:
+
+- **Same quantity.** A claim is gradable when a public series measures the quantity it names, for the scope it names (region, segment), in the target year or the year before. A different baseline, vintage or method of the same quantity is gradable; state the difference. A proxy of another quantity (for example vendor revenue divided by unit price, for a unit count) is not a measure: the claim is `ungradable`.
+- **Range of estimates.** Where several public estimates of the same quantity exist and disagree, grade against their median and name every estimate used. Where they span more than a factor of 2, the claim is `ungradable`.
+- **Conditional claims.** A claim that states a condition ("if robotaxis launch at scale, ...") is graded only if the condition held by the target year. If not, it is `ungradable`, with the condition named. The stated figure alone is never graded as a miss.
+- **Attributed value.** A value attributed to a technology ("market cap created by", "GDP added by", "opportunity") is `ungradable` unless a public source measures that attribution for the target year.
+- **Scope not stated.** Read the scope from the edition's own chart or footnote. If the edition does not settle it, grade the dominant reading and name it; use `unfalsifiable` only under D16.
+
+**Why.** The graders agreed on almost every claim they both graded. They split on whether a measure existed, which D22 left to judgment.
+
+**Cost.** More claims become `ungradable`, so the ARK sample of graded claims shrinks, possibly below the D11 minimum of 20 for a rate.
+
+**Overturned by.** A re-grade below kappa 0.6, which would call for numeric claims of this kind to be graded by command, as in D19.

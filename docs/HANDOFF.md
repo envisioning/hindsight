@@ -27,6 +27,7 @@ A public, citable record of published forecasts (publications x predictions), gr
   - Kurzweil 1999 for 2009: 45% hit (38 to 54), audit error 6%.
 - **Numeric, graded by command (D19):** 12 publishers with a rate from IEA 10% to ECB 57% (BP and BNEF under 20 graded, counts only). No matching audit yet (#53).
 - **Hype Cycle (D21):** 409 gradable claims, kappa 0.66, 86 adjudicated from 53 settled timelines. 60% hit (95% interval 55 to 64), audit error 12% (2 corrected, 4 contested). Source checks in the adjudication and audit used search summaries only, because the cloud network policy blocked page fetches. Re-check with page access before release.
+- **ARK Big Ideas (#49):** first blind grading of 75 claims, kappa 0.53, below D11. Rubric revised (D23). Next: re-grade all 75 with two new blind graders under D23, with page access. The first-round files stay as the record (`verdicts-d16-grader{A,B}.json`, `agreement-d16.json`); move them to `round1/` before the re-grade. No `final-d20.json`.
 - **Subjects:** 1,746, alias review done (#55 closed).
 - **Links to research technologies:** planned, not built (#59).
 - **Site:** live but `noindex`, with a "review build" banner (#60).
