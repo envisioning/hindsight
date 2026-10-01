@@ -1,0 +1,122 @@
+{
+ "rule": "D16",
+ "role": "adjudicator (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "source": "mit-tr-10-breakthrough",
+ "horizons": "D25 (horizons.json placed_year)",
+ "verdicts": [
+  {
+   "id": "mit-tr-10-breakthrough-2017-003",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "partial",
+   "reading": "Face recognition is accurate enough to be in wide use to authorise payments and everyday verification, led by China, mainstream around 2017 (placed year 2017, Availability 'Now').",
+   "reason": "Test: 20% of target users, measured as China's mobile-payment users who pay by face. Both graders cite about 118 million face-payment users in 2019 against more than 700 million mobile-payment users, about 17%: below 20% at placed year + 2, so not a hit. That share is well above 5% inside the window, so the verdict is partial whether the later figure (about 495 million in 2021, mainstream 4 years after) holds or not. Grader A reached hit by adding iPhone Face ID to Chinese face payment; that sums two different populations and measures, and A itself notes face payment alone was under 20%. Face ID hardware on new iPhones is not 50% of new smartphones, so the device-feature test does not rescue a hit either. The 120 million in the article are Alipay users, not face-payment users.",
+   "evidence": [
+    {"url": "https://www.technologyreview.com/technology/paying-with-your-face/", "title": "Paying with Your Face (MIT TR10 2017)", "date": "2017-02-22", "shows": "Availability 'Now'; Alipay (more than 120 million users) lets users transfer money by face; Didi, Baidu uses."},
+    {"url": "https://www.sciencedirect.com/science/article/abs/pii/S0308596121000598", "title": "Resistance to facial recognition payment in China (Telecommunications Policy)", "date": "2021", "shows": "About 118 million face-payment users in China in 2019 against more than 700 million mobile-payment users (as cited by both graders; page not reopened)."},
+    {"url": "https://apexx.global/blog/pay-with-your-face-the-new-facial-payment-technology-sweeping-china/", "title": "Pay with Your Face: The New Facial Payment Technology Sweeping China", "date": "2020", "shows": "More than 100 million Chinese registered for face payment, i.e. above 5% and below 20% of mobile-payment users around 2019-2020."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-001",
+   "graderA": "ungradable",
+   "graderB": "partial",
+   "verdict": "ungradable",
+   "reading": "Metal 3-D printing is quick and cheap enough for manufacturers to make metal parts routinely, mainstream around 2018 (Availability 'Now').",
+   "reason": "Test: routine use by 20% of the relevant industry (manufacturers of metal parts), 5% floor. Every survey found samples firms that already use additive manufacturing (Stratasys Direct 2019, AMFG 2019 '49% of companies use metal AM', Jabil 2019 '40% use 3-D printing for production'), not manufacturers at large, and none gives metal AM in routine production as a share of manufacturers. Grader B's partial asserts a share above 5% and below 20% without a measure of either bound: its cited 12% and 49% are shares of AM users, a different population. Market-size figures (AMPOWER) are a different quantity. No public measure exists for the stated quantity (D22).",
+   "evidence": [
+    {"url": "https://amfg.ai/wp-content/uploads/2019/08/The-Additive-Manufacturing-Landscape-2019_Whitepaper.pdf", "title": "The Additive Manufacturing Landscape 2019 (AMFG)", "date": "2019", "shows": "About 49% of surveyed companies used metal AM systems; population is firms already using AM (search summary)."},
+    {"url": "https://info.stratasysdirect.com/rs/626-SBR-192/images/SDM_Looking_Ahead_AM_in_2020_NF.pdf", "title": "Looking Forward: Additive Manufacturing in 2020 (Stratasys Direct)", "date": "2020", "shows": "Report from 3-D printing users; production-part shares are of AM users, not of all manufacturers (search summary)."},
+    {"url": "https://additive-manufacturing-report.com/", "title": "AMPOWER Report on Additive Manufacturing", "date": "2026", "shows": "Market size only (industrial AM EUR 11.33bn in 2025); no adoption share among manufacturers."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-002",
+   "graderA": "hit",
+   "graderB": "partial",
+   "verdict": "hit",
+   "reading": "Embryo-like structures made from stem cells alone are a working research tool for studying early development, around 2018 (Availability 'Now'). Lab method: test is use by several independent labs, mouse and human, within the window.",
+   "reason": "The claim names embryo-like structures, which existed at publication (Cambridge 2017-18). Within placed year + 2 several labs published stem-cell embryo models: mouse gastruloids (Beccari et al., Nature, Oct 2018), trunk-like structures (Veenvliet et al., Science, 2020), and human gastruloids (Moris et al., Nature, June 2020). That is routine research use, mouse and human, by 2020: hit. Grader B raised the bar to 'complete' embryo models (2022 mouse, 2023 human), which the claim does not state; that is a reading error. Grader A's hit is right but its evidence (2022, 2023) falls outside the hit window. No share-of-labs measure exists; the call rests on the shared lab-method test both graders used.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Gastruloid", "title": "Gastruloid (Wikipedia)", "date": "2026", "shows": "Beccari et al. Nature 2018 (mouse gastruloids); Veenvliet et al. Science 2020; van den Brink et al. Nature 2020; Moris et al. Nature June 2020, human gastruloid model."},
+    {"url": "https://en.wikipedia.org/wiki/Synthetic_embryo", "title": "Synthetic embryo (Wikipedia)", "date": "2026", "shows": "Complete synthetic mouse embryos Aug 2022 and complete human day-14 models Sep 2023: later milestones beyond what the claim states."},
+    {"url": "https://www.technologyreview.com/10-breakthrough-technologies/2018/", "title": "10 Breakthrough Technologies 2018", "date": "2018-02-21", "shows": "Artificial Embryos: embryo-like structures from stem cells alone; Availability 'Now'."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-006",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "verdict": "ungradable",
+   "reading": "Earbuds give easy near-real-time spoken translation to ordinary users, in common use around 2018 (Availability 'Now').",
+   "reason": "Test: 20% of earbud users using in-ear live translation (5% floor), or 50% of new earbuds shipping with it. No public figure exists for Pixel Buds sales, for use of Google's interpreter through earbuds, or for the share of earbuds supporting it. Google extended the feature to all Assistant-optimised headphones in 2018, and phone-side conversation mode works with any earbuds, so feature support cannot be bounded by vendor share either. Grader B's 'below 5% through 2023' is inferred from the absence of adoption data and from Apple (2025) and Samsung (2024) adding the feature late; that dates the arrival of the feature at two vendors, not the share of users. Ungradable (D22): looked for Pixel Buds sales, Translate conversation-mode usage, surveys of earbud translation use.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Pixel_Buds", "title": "Pixel Buds (Wikipedia)", "date": "2026", "shows": "2017 Pixel Buds translation in 40 languages, criticised in reviews; 2018 extension to all Assistant headphones; no sales or usage figures."},
+    {"url": "https://www.apple.com/newsroom/2025/09/introducing-airpods-pro-3-the-ultimate-audio-experience/", "title": "Introducing AirPods Pro 3 (Apple Newsroom)", "date": "2025-09-09", "shows": "Live Translation on AirPods arrives in 2025 (beta): a feature date, not a usage share."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-009",
+   "graderA": "partial",
+   "graderB": "miss",
+   "verdict": "miss",
+   "reading": "Polygenic scores from a person's genome are used to predict risk of common diseases for ordinary people, consumer or clinical, around 2018 (Availability 'Now').",
+   "reason": "Test: 20% of adults in major markets receiving a genome-based polygenic risk prediction; 5% floor within 2018-2023. Clinical PRS stayed in research trials (not standard of care as of 2021). The consumer channel: 23andMe first issued polygenic reports in 2019. Grader A's 'roughly 5% at most' divides 23andMe's 14 million customers (Feb 2024, outside the window, worldwide, and including ancestry-only customers) by US adults; that is an upper bound of a larger population, not the measured share. Health-report customers within the window are a smaller subset, and against adults in all major markets the share is far below 5%. Miss; window closed 2023.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Polygenic_score", "title": "Polygenic score (Wikipedia)", "date": "2026", "shows": "As of January 2021, PRS provided directly to individuals was in research trials and not standard of care."},
+    {"url": "https://en.wikipedia.org/wiki/23andMe", "title": "23andMe (Wikipedia)", "date": "2026", "shows": "More than 14 million genotyped as of Feb 2024 (all products, worldwide); Chapter 11 in March 2025."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-001",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "verdict": "miss",
+   "reading": "Robots that learn dexterous manipulation of varied objects (e.g. warehouse piece picking) are in routine use around 2024 (Availability '3-5 years').",
+   "reason": "Test: routine use by 20% of the relevant industry (warehouse and fulfilment operations using learned robotic piece picking); partial needs 5% by 2024. Interact Analysis counts just over 3,000 picking robots shipped worldwide in 2024 outside Amazon; a cumulative fleet of that order cannot reach 5% of the world's warehouses. Amazon's arms (Sparrow, Robin, Vulcan) are one operator with no disclosed share of picks. Grader A's ungradable is defensible for a precise share, but the shipment count bounds the share well below 5%, which is enough for a miss. Provisional miss, window closes 2029. Note: the Interact Analysis page was blocked (captcha) on re-fetch; the figure is taken from Grader B's search summary.",
+   "evidence": [
+    {"url": "https://interactanalysis.com/robotic-picking-market-forecast-triple-in-size/", "title": "Robotic picking market forecast to almost triple in size by 2030 (Interact Analysis)", "date": "2025", "shows": "Just over 3,000 picking robots shipped in 2024 excluding Amazon; market about USD 393 million (search summary, page not reopened)."},
+    {"url": "https://www.aboutamazon.com/news/operations/amazon-robotics-robots-fulfillment-center", "title": "Amazon robotics in fulfillment centers", "date": "2025", "shows": "Picking arms described; no deployment counts or share of picks."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-003",
+   "graderA": "partial",
+   "graderB": "miss",
+   "verdict": "miss",
+   "reading": "Digital currencies from a central bank (China's e-CNY) and big tech (Facebook's Libra) launch in 2020 and come into common use for paying (Availability 'This year').",
+   "reason": "Test: 20% of target users (consumers in launch markets) paying with the new digital currency; 5% floor within 2020-2025. Libra/Diem never launched and was sold in 2022. e-CNY counted 261 million wallets by end-2021, but wallets were opened in a trial pushed with more than RMB 150 million of giveaways, and total transactions were US$13.8 billion, about US$53 per wallet over the trial; WeChat Pay and Alipay kept more than 90% of electronic payments. A wallet opened is not use of the money. Grader A graded wallet counts as users; that measures accounts, not payment. No public figure shows 5% of consumers paying with e-CNY. Miss, window closed 2025. Least certain: on wallet counts the verdict would be partial.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Digital_renminbi", "title": "Digital renminbi (Wikipedia)", "date": "2026", "shows": "261 million users in the extended trial and US$13.8bn of transactions by end-2021; more than RMB 150 million distributed as incentives; WeChat Pay and Alipay over 90% of electronic payments (2021)."},
+    {"url": "https://www.technologyreview.com/10-breakthrough-technologies/2020/", "title": "10 Breakthrough Technologies 2020", "date": "2020-02-26", "shows": "Digital money: Libra and digital currency; 'As the use of physical cash declines...'; Availability 'This year'."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-005",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "Machine learning becomes a routine way for drug developers to find promising molecules, around 2025 (Availability '3-5 years').",
+   "reason": "The entry says scientists have already used AI to discover drug-like compounds, and its 'why it matters' names the difficulty of finding promising molecules as the cost driver. What becomes available in 3-5 years is therefore the discovery method in practice, not a share of approved drugs; Grader A's reading (b), share of clinical candidates, is less faithful to the text, so the dominant reading is graded (D16) and unfalsifiable does not apply. Test: routine use by 20% of the industry. ICON/GlobalData found 49% of pharma and biotech R&D professionals using AI/Big Data in R&D in 2024 (39% in 2019); 16 of the top 20 pharmas' executives call AI an immediate priority; AI-discovered candidates are in phase 2 and 3 trials. Mainstream by 2027: hit. Note the surveys sample professionals and executives, not firms.",
+   "evidence": [
+    {"url": "https://intuitionlabs.ai/articles/ai-adoption-pharma-biotech-benchmarks", "title": "AI Adoption in Pharma & Biotech: 2026 Industry Benchmarks", "date": "2026", "shows": "ICON/GlobalData 2024: 49% of ~101 pharma/biotech R&D professionals use AI/Big Data in R&D (39% in 2019); ZoomRx 2024: 92% say their firms use AI, drug discovery the most common use."},
+    {"url": "https://en.wikipedia.org/wiki/Insilico_Medicine", "title": "Insilico Medicine (Wikipedia)", "date": "2026", "shows": "AI-discovered rentosertib in phase 3 (2026); Eli Lilly partnership valued at USD 2.75bn."},
+    {"url": "https://www.technologyreview.com/10-breakthrough-technologies/2020/", "title": "10 Breakthrough Technologies 2020", "date": "2020-02-26", "shows": "'Scientists have used AI to discover promising drug-like compounds'; why it matters: difficulty of finding promising molecules; Availability '3-5 years'."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-006",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "partial",
+   "reading": "Low-orbit mega-constellations deliver high-speed internet to people without adequate terrestrial broadband, mainstream around 2020 (Availability 'Now').",
+   "reason": "Test: 20% of target users, i.e. households and sites lacking terrestrial broadband, with the US as the measured major market. Starlink had about 1 million subscribers worldwide in Dec 2022 and about 1.4 million in the US by Aug 2024, against about 7 to 7.5 million unserved US locations in 2024 (about 19%); 2.7 million US subscribers by mid-2026. Mainstream arrives around 2025, 5 years after the placed year, and the share passed 5% by about 2022: partial either way. Grader B measured share of the satellite-broadband market (already a small niche of users), which tests whether Starlink beat GEO providers, not adoption by target users; B itself notes the household reading gives a lower verdict. Not every Starlink subscriber sits at an unserved location, which makes this an upper bound and does not lift it to a hit.",
+   "evidence": [
+    {"url": "https://en.wikipedia.org/wiki/Starlink", "title": "Starlink (Wikipedia)", "date": "2026", "shows": "Subscribers worldwide: 10k Feb 2021, 1M Dec 2022, 3M Jun 2024, 4M Sep 2024, 12M Jun 2026."},
+    {"url": "https://www.benton.org/blog/starlink-what-it-how-it-works-and-what-we-should-do-about-it", "title": "Starlink: What It Is, How It Works, and What We Should Do About It (Benton Institute)", "date": "2026-07-08", "shows": "2.7 million US Starlink subscribers in July 2026."},
+    {"url": "https://potsandpansbyccg.com/2024/06/03/the-new-fcc-maps/", "title": "The New FCC Maps (POTs and PANs)", "date": "2024-06-03", "shows": "FCC national broadband map: about 7 million-plus unserved US locations in 2024; 1.4 million US Starlink subscribers by Aug 2024 per search summary (not reopened)."}
+   ]
+  }
+ ]
+}

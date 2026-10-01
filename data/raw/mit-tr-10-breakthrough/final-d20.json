@@ -1,0 +1,260 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.6657,
+ "n": 39,
+ "counts": {
+  "miss": 16,
+  "contested": 2,
+  "partial": 8,
+  "hit": 11,
+  "ungradable": 2
+ },
+ "hit_rate": {
+  "hits": 11,
+  "of_graded_hit_partial_miss": 35,
+  "rate": 0.3143,
+  "wilson95": [
+   0.186,
+   0.48
+  ]
+ },
+ "hit_or_partial_rate": 0.5429,
+ "adjudicated": 9,
+ "audit": {
+  "sample": 30,
+  "audited": 30,
+  "confirmed": 28,
+  "corrected": 0,
+  "contested": 2,
+  "error_rate": 0.067
+ },
+ "verdicts": [
+  {
+   "id": "mit-tr-10-breakthrough-2017-003",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Test: 20% of target users, measured as China's mobile-payment users who pay by face. Both graders cite about 118 million face-payment users in 2019 against more than 700 million mobile-payment users, about 17%: below 20% at placed year + 2, so not a hit. That share is well above 5% inside the window, so the verdict is partial whether the later figure (about 495 million in 2021, mainstream 4 years after) holds or not. Grader A reached hit by adding iPhone Face ID to Chinese face payment; that sums two different populations and measures, and A itself notes face payment alone was under 20%. Face ID hardware on new iPhones is not 50% of new smartphones, so the device-feature test does not rescue a hit either. The 120 million in the article are Alipay users, not face-payment users."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-005",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-007",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "FDA list confirms Luxturna, Zolgensma, Hemgenix, Elevidys, Casgevy (59 products listed, not 66). The hit rests on an approval event test that D16 does not provide; no grader shows 20% (or even 5%) of patients with targeted inherited disorders treated, and uptake of several (e.g. hemophilia) gene therapies is known to be low."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-008",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-010",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-001",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "partial",
+   "reason": "Test: routine use by 20% of the relevant industry (manufacturers of metal parts), 5% floor. Every survey found samples firms that already use additive manufacturing (Stratasys Direct 2019, AMFG 2019 '49% of companies use metal AM', Jabil 2019 '40% use 3-D printing for production'), not manufacturers at large, and none gives metal AM in routine production as a share of manufacturers. Grader B's partial asserts a share above 5% and below 20% without a measure of either bound: its cited 12% and 49% are shares of AM users, a different population. Market-size figures (AMPOWER) are a different quantity. No public measure exists for the stated quantity (D22)."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-002",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The claim names embryo-like structures, which existed at publication (Cambridge 2017-18). Within placed year + 2 several labs published stem-cell embryo models: mouse gastruloids (Beccari et al., Nature, Oct 2018), trunk-like structures (Veenvliet et al., Science, 2020), and human gastruloids (Moris et al., Nature, June 2020). That is routine research use, mouse and human, by 2020: hit. Grader B raised the bar to 'complete' embryo models (2022 mouse, 2023 human), which the claim does not state; that is a reading error. Grader A's hit is right but its evidence (2022, 2023) falls outside the hit window. No share-of-labs measure exists; the call rests on the shared lab-method test both graders used."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-004",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-006",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "reason": "Test: 20% of earbud users using in-ear live translation (5% floor), or 50% of new earbuds shipping with it. No public figure exists for Pixel Buds sales, for use of Google's interpreter through earbuds, or for the share of earbuds supporting it. Google extended the feature to all Assistant-optimised headphones in 2018, and phone-side conversation mode works with any earbuds, so feature support cannot be bounded by vendor share either. Grader B's 'below 5% through 2023' is inferred from the absence of adoption data and from Apple (2025) and Samsung (2024) adding the feature late; that dates the arrival of the feature at two vendors, not the share of users. Ungradable (D22): looked for Pixel Buds sales, Translate conversation-mode usage, surveys of earbud translation use."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-007",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-008",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-009",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Test: 20% of adults in major markets receiving a genome-based polygenic risk prediction; 5% floor within 2018-2023. Clinical PRS stayed in research trials (not standard of care as of 2021). The consumer channel: 23andMe first issued polygenic reports in 2019. Grader A's 'roughly 5% at most' divides 23andMe's 14 million customers (Feb 2024, outside the window, worldwide, and including ancestry-only customers) by US adults; that is an upper bound of a larger population, not the measured share. Health-report customers within the window are a smaller subset, and against adults in all major markets the share is far below 5%. Miss; window closed 2023."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-001",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "reason": "Test: routine use by 20% of the relevant industry (warehouse and fulfilment operations using learned robotic piece picking); partial needs 5% by 2024. Interact Analysis counts just over 3,000 picking robots shipped worldwide in 2024 outside Amazon; a cumulative fleet of that order cannot reach 5% of the world's warehouses. Amazon's arms (Sparrow, Robin, Vulcan) are one operator with no disclosed share of picks. Grader A's ungradable is defensible for a precise share, but the shipment count bounds the share well below 5%, which is enough for a miss. Provisional miss, window closes 2029. Note: the Interact Analysis page was blocked (captcha) on re-fetch; the figure is taken from Grader B's search summary."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-009",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-010",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-003",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Test: 20% of target users (consumers in launch markets) paying with the new digital currency; 5% floor within 2020-2025. Libra/Diem never launched and was sold in 2022. e-CNY counted 261 million wallets by end-2021, but wallets were opened in a trial pushed with more than RMB 150 million of giveaways, and total transactions were US$13.8 billion, about US$53 per wallet over the trial; WeChat Pay and Alipay kept more than 90% of electronic payments. A wallet opened is not use of the money. Grader A graded wallet counts as users; that measures accounts, not payment. No public figure shows 5% of consumers paying with e-CNY. Miss, window closed 2025. Least certain: on wallet counts the verdict would be partial."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-005",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "The entry says scientists have already used AI to discover drug-like compounds, and its 'why it matters' names the difficulty of finding promising molecules as the cost driver. What becomes available in 3-5 years is therefore the discovery method in practice, not a share of approved drugs; Grader A's reading (b), share of clinical candidates, is less faithful to the text, so the dominant reading is graded (D16) and unfalsifiable does not apply. Test: routine use by 20% of the industry. ICON/GlobalData found 49% of pharma and biotech R&D professionals using AI/Big Data in R&D in 2024 (39% in 2019); 16 of the top 20 pharmas' executives call AI an immediate priority; AI-discovered candidates are in phase 2 and 3 trials. Mainstream by 2027: hit. Note the surveys sample professionals and executives, not firms."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-006",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Test: 20% of target users, i.e. households and sites lacking terrestrial broadband, with the US as the measured major market. Starlink had about 1 million subscribers worldwide in Dec 2022 and about 1.4 million in the US by Aug 2024, against about 7 to 7.5 million unserved US locations in 2024 (about 19%); 2.7 million US subscribers by mid-2026. Mainstream arrives around 2025, 5 years after the placed year, and the share passed 5% by about 2022: partial either way. Grader B measured share of the satellite-broadband market (already a small niche of users), which tests whether Starlink beat GEO providers, not adoption by target users; B itself notes the household reading gives a lower verdict. Not every Starlink subscriber sits at an unserved location, which makes this an upper bound and does not lift it to a hit."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-008",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-002",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-005",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-006",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-007",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-009",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "Only evidence is one Wikipedia sentence that synthetic data 'has become a core component of the post-training pipeline' for LLMs, with no adoption figures; that is a practice of a few frontier labs, not a measured 20% of organisations training AI, and the claim's framing (privacy- and bias-safe data sold by vendors) is untested. Too weak for hit or any other verdict."
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-005",
+   "verdict": "miss",
+   "status": "audited"
+  }
+ ]
+}
