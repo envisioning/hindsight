@@ -2,11 +2,14 @@
 // Usage: node scripts/final-d20.mjs <source>
 // Reads data/raw/<source>/: agreement-d16.json (two blind graders),
 // adjudicated-d20.json (third agent on contested claims, optional),
-// audit-d11.json (auditor agent on a sample of agreed claims, optional).
+// audit-d11.json (auditor agent on a sample of agreed claims, optional),
+// audit-d11-pass<N>.json (re-check passes of the same sample, D24; a later pass's
+// record replaces the earlier record of the same claim; earlier passes are never edited),
+// adjudicated-d20-w<N>.json and audit-d11-w<N>.json (grading wave N of the source, D26).
 // Writes data/raw/<source>/final-d20.json.
 // Order: agreed verdict, then the audit (correct replaces it, contest removes it),
 // then the adjudicator for claims the graders disagreed on.
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const source = process.argv[2];
@@ -16,8 +19,38 @@ const read = (f) => (existsSync(path.join(dir, f)) ? JSON.parse(readFileSync(pat
 
 const agreement = read("agreement-d16.json");
 if (!agreement) throw new Error(`${source}: no agreement-d16.json`);
-const adjudicated = read("adjudicated-d20.json");
+const waveFiles = (re) =>
+	readdirSync(dir)
+		.map((f) => f.match(re))
+		.filter(Boolean)
+		.sort((a, b) => Number(a[1]) - Number(b[1]))
+		.map((m) => m[0]);
+const adjudicated = read("adjudicated-d20.json") ?? { verdicts: [] };
+for (const f of waveFiles(/^adjudicated-d20-w(\d+)\.json$/)) adjudicated.verdicts.push(...read(f).verdicts);
 const audit = read("audit-d11.json");
+const auditPasses = readdirSync(dir)
+	.map((f) => f.match(/^audit-d11-pass(\d+)\.json$/))
+	.filter(Boolean)
+	.map((m) => [Number(m[1]), m[0]])
+	.sort((a, b) => a[0] - b[0]);
+if (audit && auditPasses.length) {
+	const sample = new Set(audit.sample ?? []);
+	for (const [n, f] of auditPasses) {
+		for (const [id, rec] of Object.entries(read(f).records ?? {})) {
+			if (!sample.has(id)) throw new Error(`${f}: ${id} is not in the audit sample`);
+			audit.records[id] = { ...rec, pass: n };
+		}
+	}
+}
+const waveAudits = waveFiles(/^audit-d11-w(\d+)\.json$/);
+if (audit) {
+	for (const f of waveAudits) {
+		const w = read(f);
+		for (const id of w.sample ?? []) if (audit.sample.includes(id)) throw new Error(`${f}: ${id} is already in an earlier audit sample`);
+		audit.sample = [...audit.sample, ...(w.sample ?? [])];
+		Object.assign(audit.records, w.records ?? {});
+	}
+}
 
 const rows = [];
 for (const c of agreement.consensus ?? []) {
@@ -70,6 +103,8 @@ const auditOut = audit
 			contested: recs.filter((r) => r.decision === "contest").length,
 		}
 	: null;
+if (auditOut && auditPasses.length) auditOut.passes = [1, ...auditPasses.map(([n]) => n)];
+if (auditOut && waveAudits.length) auditOut.waves = ["w1", ...waveAudits.map((f) => f.match(/w\d+/)[0])];
 if (auditOut) auditOut.error_rate = auditOut.audited ? Math.round(((auditOut.corrected + auditOut.contested) / auditOut.audited) * 1000) / 1000 : null;
 
 const out = {

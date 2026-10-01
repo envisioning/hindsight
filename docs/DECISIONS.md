@@ -338,3 +338,49 @@ A quantitative forecast is a `hit` within 10% of the actual figure for its year,
 **Cost.** More claims become `ungradable`, so the ARK sample of graded claims shrinks, possibly below the D11 minimum of 20 for a rate.
 
 **Overturned by.** A re-grade below kappa 0.6, which would call for numeric claims of this kind to be graded by command, as in D19.
+
+## D24: Re-check passes for adjudication and audit
+
+*Recorded 2026-10-01.*
+
+**Decision.** When an adjudication or an audit was made with less access than it needed (for example without page access), a later pass checks it again. A pass never edits the earlier file. It writes a new file next to it: `timelines-adjudicated-d20-pass<N>.json` for Hype Cycle timelines, `audit-d11-pass<N>.json` for an audit. Each record in a pass is complete and names the earlier decision. The scripts read every pass in order, and a later record replaces the earlier record of the same subject or claim: `scripts/gartner-hype-cycle/adjudicate.mjs` for timelines, `scripts/final-d20.mjs` for audits. An audit pass may only cover claims in the stored fixed-seed sample; the sample is not redrawn. `final-d20.json` lists the passes it used.
+
+**Why.** The Hype Cycle adjudication and audit of 2026-10-01 checked sources through search-result summaries only, because the network blocked page fetches. Those records must be checked with the pages open before release, and the record of what was decided first must stay.
+
+**Cost.** Two files per step instead of one. A reader must read the latest pass to see the published decision; `final-d20.json` already resolves it.
+
+**Overturned by.** A history store for verdict rows (D2) that keeps every decision as its own row.
+
+## D25: MIT TR10 horizons from the Availability line only
+
+*Recorded 2026-10-01.*
+
+**Decision.** MIT Technology Review's 10 Breakthrough Technologies (#51) is graded only where the edition states an availability horizon in its own Availability (or "When") line, from 2017 on. `scripts/mit-tr-10-breakthrough/horizons.mjs` parses that text into a band of years after the edition and writes `horizons.json`.
+
+- The placed year is the edition year plus the upper bound of the band, as D21 does for the Hype Cycle. "Now" and "This year" place the claim at the edition year. An open upper bound ("5-10+ years") is placed at the stated bound. A calendar year in the text places the claim in that year. Every non-literal reading carries a parse note.
+- A claim is graded under D16 (mainstream around the placed year) when the placed year is 2025 or earlier. A later placed year is `open`.
+- Availability text with no horizon ("In human testing") is `ungradable`. An entry with no Availability line is `ungradable`.
+- A timing that appears only in the article's body text (2001 to 2016 editions) is recorded as `not graded`, not parsed. Body text often quotes a researcher or a company, so the timing is not always the edition's own placement.
+
+**Why.** The Availability line is the publication's own forecast in a fixed slot. Body text mixes the editors' view with quoted views, and telling them apart needs a reading per article that the capture did not do.
+
+**Cost.** Of 254 entries, 39 are graded now and 8 are open; 70 entries with a body-text timing are left out, so editions before 2017 are not graded. The TR10 rate rests on a small sample.
+
+**Overturned by.** A capture pass that marks, per body-text timing, whether the editors state it in their own voice. Those timings can then be parsed and graded under this rule.
+
+## D26: Grading waves within a source
+
+*Recorded 2026-10-01.*
+
+**Decision.** Claims added to a source after its first grading are graded as a new wave, not by redoing the source. Wave 1 is everything graded before; wave N (N > 1) has grader batch files named `verdicts-d16-grader<A|B>-w<N>[-<batch>].json`.
+
+- `scripts/agreement-d16.mjs` merges all waves into one `agreement-d16.json`, tags each row of a later wave with `wave`, and reports kappa per wave. Each wave must pass D11 (kappa at least 0.6) on its own.
+- The adjudicator of wave N writes `adjudicated-d20-w<N>.json`. Earlier adjudications are not reopened.
+- The audit of wave N is its own fixed-seed sample of that wave's agreed claims (`node scripts/audit-sample.mjs <source> --wave w<N>`, seed `d11:<source>:d16:w<N>`, at least 50 or all agreed claims if fewer), in `audit-d11-w<N>.json`. The wave-1 sample in `audit-d11.json` is drawn from wave-1 claims only, so it never changes.
+- `scripts/final-d20.mjs` merges every wave. The published rate and audit error rate cover all waves; `final-d20.json` lists the waves.
+
+**Why.** Kurzweil (#63) adds 124 claims to a source whose 147 claims were graded, adjudicated and audited. Redrawing the audit sample over all claims would discard a finished audit. The yearly refresh (#58) will add claims to every source in the same way.
+
+**Cost.** A source's error rate pools audits drawn at different times with different seeds. A small wave gets an audit of all its agreed claims, which costs more per claim. The site's sample check (www `drawSample`) must filter by wave before it can verify a later wave.
+
+**Overturned by.** A release process that grades every source from scratch each year.
