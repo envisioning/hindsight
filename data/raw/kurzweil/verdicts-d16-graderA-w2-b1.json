@@ -1,0 +1,1003 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "kurzweil-1990-001",
+   "verdict": "hit",
+   "reading": "A computer will beat the reigning human world chess champion (be world-champion level) by 2000.",
+   "mainstream_test": "Event test: did a computer defeat the reigning world chess champion by 2000.",
+   "reason": "Deep Blue beat reigning champion Kasparov 3.5-2.5 in a match under tournament conditions in May 1997, before 2000. It held no FIDE title, but the faithful reading (a computer stronger than the champion) held.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Deep_Blue_versus_Garry_Kasparov",
+     "title": "Deep Blue versus Garry Kasparov",
+     "date": "1997-05-11",
+     "shows": "Deep Blue won the May 3-11, 1997 rematch 3.5-2.5, the first defeat of a reigning world champion by a computer under tournament conditions."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1990-002",
+   "verdict": "hit",
+   "reading": "A personal computer with the educational-workstation attributes (portable, wireless networking, speech capable, running courseware) becomes commercially available around 2000.",
+   "mainstream_test": "Event test (availability, not adoption): a product with those attributes on sale by 2002.",
+   "reason": "Apple's iBook (July 1999) was the first mainstream portable sold with integrated wireless networking (AirPort); continuous speech dictation software was on sale by 1997. Availability, which is what the sentence claims, held around 2000.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/IBook",
+     "title": "iBook",
+     "date": "1999-07-21",
+     "shows": "First mainstream computer designed and sold with integrated wireless networking (optional AirPort card), released July 1999."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1990-003",
+   "verdict": "partial",
+   "reading": "By about 2010 the portable, wireless educational workstation (roughly one per child) reaches critical-mass, ubiquitous use in schools.",
+   "mainstream_test": "D16 mainstream: at least 20% of students with routine use of a personal portable computer in school, in major markets.",
+   "reason": "In 2009 US public school classrooms had 5.3 students per everyday classroom computer: computers were in routine classroom use (well above 5%), but not one portable wireless device per child. One-to-one programs became widespread only in the mid 2010s with Chromebooks. Partly true by the target year.",
+   "evidence": [
+    {
+     "url": "https://nces.ed.gov/pubsearch/pubsinfo.asp?pubid=2010040",
+     "title": "NCES 2010-040, Teachers' Use of Educational Technology in U.S. Public Schools: 2009",
+     "date": "2010-05",
+     "shows": "Ratio of students to computers in the classroom every day was 5.3 to 1 (2009); computers in classrooms widespread but not per child."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1990-004",
+   "verdict": "hit",
+   "reading": "Personal computers of 2010 will be able to locate knowledge for the user (know where to find information across networks).",
+   "mainstream_test": "D16 mainstream: at least 20% of households in major markets use PCs with networked search by 2010.",
+   "reason": "Web search engines were used by most internet users by 2010; Google handled billions of searches per day by 2012, and household internet use in major markets exceeded 20% long before 2010.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Search",
+     "title": "Google Search",
+     "date": "2012",
+     "shows": "Google handled more than 3.5 billion searches per day by 2012 (about 100 billion per month)."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1990-006",
+   "verdict": "hit",
+   "reading": "A translating telephone (speech in one language rendered as speech in another during a call or conversation) is available by 2010; no verbatim text is recorded, so the subject line is graded.",
+   "mainstream_test": "Event test (availability): a consumer phone product doing speech-to-speech translation by 2012.",
+   "reason": "Google Translate's Android conversation mode (January 2011, English-Spanish, 14 languages by October 2011) provided speech-to-speech translation on phones within the D16 two-year window. Uncertain because the original wording is not available.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Translate",
+     "title": "Google Translate",
+     "date": "2011-01",
+     "shows": "January 2011 Android release added Conversation Mode for spoken communication across languages; 14 languages by October 2011."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-148",
+   "verdict": "partial",
+   "reading": "By 2019 computers are mostly invisible, embedded throughout the environment: walls, furniture, clothing, jewelry and bodies.",
+   "mainstream_test": "D16 mainstream: at least 20% of households/users in major markets with computers embedded in those listed objects; graded on wearables (jewelry/body) as the measurable part.",
+   "reason": "Wrist wearables reached 21% of US adults in 2019 (the body/jewelry part is mainstream), and embedded controllers were common in appliances, but computers in walls, tables, chairs and clothing remained rare; the main computers people used (phones, laptops) were visible devices. Partly true by 2019.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2020/01/09/about-one-in-five-americans-use-a-smart-watch-or-fitness-tracker/",
+     "title": "About one-in-five Americans use a smart watch or fitness tracker (Pew Research Center)",
+     "date": "2020-01-09",
+     "shows": "21% of US adults regularly wore a smartwatch or fitness tracker (survey June 2019)."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-149",
+   "verdict": "miss",
+   "reading": "By 2019 people routinely use 3D displays built into eyeglasses or contact lenses that overlay realistic virtual environments on the real one (AR glasses).",
+   "mainstream_test": "D16 mainstream: at least 20% of users in major markets routinely using AR eyeglass/contact displays.",
+   "reason": "Consumer AR glasses stayed niche through 2024: Google Glass consumer sales ended in 2015, retinal-projection glasses (North Focals) were discontinued in 2020, HoloLens was an enterprise device at $3,500. Use far below 5% within 5 years.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smart_glasses",
+     "title": "Smart glasses (Wikipedia)",
+     "date": "2024",
+     "shows": "Google Glass discontinued for consumers in January 2015, refocused on enterprise in 2017; no mainstream adoption figures."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Microsoft_HoloLens",
+     "title": "Microsoft HoloLens (Wikipedia)",
+     "date": "2019-02-24",
+     "shows": "HoloLens 2 announced Feb 2019 at $3,500, an enterprise device."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-150",
+   "verdict": "miss",
+   "reading": "By 2019 eyeglass displays project images directly onto the retina at better-than-human-vision resolution and are widely used.",
+   "mainstream_test": "D16 mainstream: at least 20% of users in major markets using retinal-projection displays.",
+   "reason": "Retinal projection displays existed only as niche products (QD Laser RETISSA, 720p-class) and Intel Vaunt/North Focals were abandoned in 2020. Neither the resolution nor the wide use was reached by 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Virtual_retinal_display",
+     "title": "Virtual retinal display (Wikipedia)",
+     "date": "2023",
+     "shows": "QD Laser RETISSA Display (2018) and II (2019) at about 720p; North Focals discontinued 2020; adoption remained niche through 2019-2024."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-151",
+   "verdict": "partial",
+   "reading": "The (by 2019 common) direct-eye displays support distinct modes: head-locked images, world-anchored virtual-reality overlays, and further modes.",
+   "mainstream_test": "Event/capability test on the devices that exist; adoption judged by D16 (direct-eye displays not mainstream, see 149).",
+   "reason": "AR headsets such as HoloLens (2016, HoloLens 2 in 2019) do offer head/body-locked and world-anchored content, so the described modes exist; but the displays were niche enterprise devices, not the everyday direct-eye displays the passage presupposes. Partly true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Microsoft_HoloLens",
+     "title": "Microsoft HoloLens (Wikipedia)",
+     "date": "2016-03-30",
+     "shows": "Virtual elements can be pinned to locations in the environment or carried/fixed relative to the user; Development Edition shipped March 2016 at $3,000."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-152",
+   "verdict": "hit",
+   "reading": "By 2019 there exist auditory devices that place high-resolution sound at precise 3D locations, built into eyeglasses, worn as jewelry, or placed in the ear canal.",
+   "mainstream_test": "Existence test (the sentence claims the devices exist, not that they are mainstream): products on sale by 2021.",
+   "reason": "Bose Frames audio eyeglasses went on sale in 2019 and in-ear earbuds with head-tracked spatial audio (AirPods Pro, iOS 14) arrived in 2020, within the two-year window.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/AirPods_Pro",
+     "title": "AirPods Pro (Wikipedia)",
+     "date": "2020-09",
+     "shows": "With iOS 14 (2020) Apple added a spatial audio mode simulating surround sound positioned in space for in-ear AirPods Pro."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-153",
+   "verdict": "miss",
+   "reading": "By 2019 keyboards (as text-input devices) are rare.",
+   "mainstream_test": "Inverse adoption test: keyboards would need to be in decline to a small minority of computing devices/interaction.",
+   "reason": "PCs, all shipped or used with keyboards, still sold roughly 260-270 million units a year in 2019-2024, and smartphone text entry relies on on-screen keyboards. Keyboards were not rare.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Market_share_of_personal_computer_vendors",
+     "title": "Market share of personal computer vendors (Wikipedia)",
+     "date": "2025",
+     "shows": "PC shipments declined 2012-2019, surged 2020-2021 and stabilised around 270 million units a year."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-154",
+   "verdict": "partial",
+   "reading": "By 2019 most human-computer interaction is by hand/finger gestures and facial expressions plus two-way spoken natural language, rather than keyboard and mouse.",
+   "mainstream_test": "Share-of-interaction test: the stated modes (gesture and speech) would be the majority of interaction.",
+   "reason": "Finger gestures on touchscreens became the main way most people used their primary device (81% of US adults owned smartphones in 2019), and 46% used voice assistants by 2017, mostly occasionally. Facial-expression input and spoken dialogue as the main mode did not happen, and keyboards/mice remained dominant for work. Partly true.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2017/12/12/nearly-half-of-americans-use-digital-voice-assistants-mostly-on-their-smartphones/",
+     "title": "Nearly half of Americans use digital voice assistants, mostly on their smartphones (Pew)",
+     "date": "2017-12-12",
+     "shows": "46% of US adults used voice assistants; only 39% of users said they respond correctly most of the time."
+    },
+    {
+     "url": "https://www.pewresearch.org/internet/fact-sheet/mobile/",
+     "title": "Mobile Fact Sheet (Pew)",
+     "date": "2019-02",
+     "shows": "81% of US adults owned a smartphone in 2019 (touch-gesture interface)."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-155",
+   "verdict": "partial",
+   "reading": "By 2019 people talk to computers as they would to a human assistant, in speech and through visual expression.",
+   "mainstream_test": "D16 mainstream: at least 20% of users routinely using human-like spoken (and visual) dialogue with computers.",
+   "reason": "Voice assistants were used by 46% of US adults by 2017, but as command interfaces with limited accuracy, not human-assistant conversation, and visual expression was not an input. Human-like conversational assistants (LLM chatbots with voice) arrived 2022-2024. Partly true by 2019.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2017/12/12/nearly-half-of-americans-use-digital-voice-assistants-mostly-on-their-smartphones/",
+     "title": "Nearly half of Americans use digital voice assistants, mostly on their smartphones (Pew)",
+     "date": "2017-12-12",
+     "shows": "46% use voice assistants; 16% say they rarely respond correctly, 42% only some of the time."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-156",
+   "verdict": "partial",
+   "reading": "By 2019 the personality of computer personal assistants gets significant design attention, and users can choose among many personalities.",
+   "mainstream_test": "Event test on design attention and on availability of many personality choices.",
+   "reason": "Assistant personality was deliberately designed (Alexa) and paid celebrity voices appeared in 2019, but choice was limited to a few voices. Many selectable or user-defined assistant personalities arrived with Character.ai (2022) and similar products, 3 years after. Partly true by 2019.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_Alexa",
+     "title": "Amazon Alexa (Wikipedia)",
+     "date": "2019-09-25",
+     "shows": "Alexa's personality was crafted to sound smart, humble, helpful; celebrity voices (Samuel L. Jackson) announced Sept 2019 at $0.99 each."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Character.ai",
+     "title": "Character.ai (Wikipedia)",
+     "date": "2022-09-16",
+     "shows": "Public beta Sept 2022; users create characters and define their personalities."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-157",
+   "verdict": "partial",
+   "reading": "By 2019 users can model their assistant's personality on real people, including themselves, or combine traits of public figures and acquaintances.",
+   "mainstream_test": "Event test (availability of the capability to users).",
+   "reason": "Replika (2017) began from modelling a real person from text messages and trains on the user, so the capability existed in a narrow form by 2019; general creation of assistants modelled on real or public persons arrived with Character.ai in September 2022, within 3 to 5 years. Partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Replika",
+     "title": "Replika (Wikipedia)",
+     "date": "2017-11",
+     "shows": "Launched Nov 2017; origin was converting a deceased friend's text messages into a chatbot; users train a customised network."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Character.ai",
+     "title": "Character.ai (Wikipedia)",
+     "date": "2022-09-16",
+     "shows": "Users create characters, many depicting celebrities, and craft their personalities."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-158",
+   "verdict": "hit",
+   "reading": "By 2019 people typically use several computing devices rather than one personal computer, while computing stays personal.",
+   "mainstream_test": "D16 mainstream: at least 20% of adults in major markets own more than one personal computing device (smartphone plus computer/tablet).",
+   "reason": "In 2019, 81% of US adults owned a smartphone, and among smartphone owners 30% still named a computer or tablet as their main internet device, so multi-device ownership was well above 20%.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2019/06/13/mobile-technology-and-home-broadband-2019/",
+     "title": "Mobile Technology and Home Broadband 2019 (Pew)",
+     "date": "2019-06-13",
+     "shows": "81% of US adults own a smartphone; 30% of smartphone owners name a desktop, laptop or tablet as their primary internet device, implying they own both."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-159",
+   "verdict": "hit",
+   "reading": "By 2019 computing and very-high-bandwidth communication (by 1999 standards) are available essentially everywhere.",
+   "mainstream_test": "D16 mainstream: at least 20% of population with broadband-class wireless coverage and a computing device; graded on coverage.",
+   "reason": "In 2019, 93% of the world population was within reach of 3G or higher networks and 53.6% used the internet; 4G speeds are orders of magnitude above 1999 dial-up. Pervasive in the sense of availability, though not literally embedded in every object (see 148).",
+   "evidence": [
+    {
+     "url": "https://www.itu.int/en/mediacentre/Pages/2019-PR19.aspx",
+     "title": "ITU: New ITU data reveal growing Internet uptake but a widening digital gender divide",
+     "date": "2019-11-05",
+     "shows": "97% of the world population had mobile coverage and 93% could access 3G or higher; 4.1 billion (53.6%) used the internet in 2019."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-160",
+   "verdict": "partial",
+   "reading": "By 2019 cables have largely disappeared from computing and communication devices.",
+   "mainstream_test": "Share test: most device connections (data and power) wireless.",
+   "reason": "Data links largely went wireless (Wi-Fi, Bluetooth, cellular) and Qi wireless charging spread to most flagship phones after 2017, but power cables, chargers, monitor and data-centre cabling remained universal. Partly true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Qi_(standard)",
+     "title": "Qi (standard) (Wikipedia)",
+     "date": "2017-09-12",
+     "shows": "Qi in more than 200 device models by 2017; every iPhone since iPhone 8 (2017) supports it; still a pad connected by cable."
+    },
+    {
+     "url": "https://www.itu.int/en/mediacentre/Pages/2019-PR19.aspx",
+     "title": "ITU 2019 Facts and Figures press release",
+     "date": "2019-11-05",
+     "shows": "93% of world population within reach of 3G+ wireless networks in 2019."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-161",
+   "verdict": "miss",
+   "reading": "In 2019 a computing device costing $4,000 in 1999 dollars (about $6,100 in 2019) delivers about 2x10^16 calculations per second.",
+   "mainstream_test": "D16 numeric: within 10% hit, within 25% partial.",
+   "reason": "The best 2019 price-performance was Nvidia Turing GPUs: RTX 2080 Ti at $999 with 107.6 tensor FP16 TFLOPS, Titan RTX at $2,499 with 130.5. About $6,100 buys at most roughly 5-6x10^14 low-precision operations per second, about 35-40 times below 2x10^16. Even counting the most generous low-precision figures, it is far outside 25%.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/GeForce_20_series",
+     "title": "GeForce 20 series (Wikipedia)",
+     "date": "2018-12-18",
+     "shows": "RTX 2080 Ti: $999, 13.4 FP32 TFLOPS, 107.6 tensor FP16 TFLOPS; Titan RTX: $2,499, 16.3 FP32 TFLOPS, 130.5 tensor TFLOPS."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-162",
+   "verdict": "miss",
+   "reading": "In 2019 more than 10% of combined human-brain plus machine computing capacity is nonhuman, using the book's figure of about 2x10^16 cps per brain.",
+   "mainstream_test": "D16 numeric (threshold claim): machine share above 10% of the total.",
+   "reason": "With about 7.7 billion brains at the book's 2x10^16 cps, human capacity is about 1.5x10^26 cps; 10% would need about 1.7x10^25 cps of machines. Estimates of global hardware capacity are about 2x10^20 to 1.5x10^21 FLOPS (end of 2015), four to five orders of magnitude short; even rapid growth to 2021 does not close that. Even with brain estimates a thousand times lower the share stays below 10%.",
+   "evidence": [
+    {
+     "url": "https://aiimpacts.org/global-computing-capacity/",
+     "title": "Global computing capacity (AI Impacts)",
+     "date": "2016",
+     "shows": "Total global computing capacity about 2x10^20 to 1.5x10^21 FLOPS at end of 2015; equal to 200-1,500 human brains at 10^18 FLOPS, or about 1% of humanity at the lowest brain estimate of 3x10^13 FLOPS."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-163",
+   "verdict": "miss",
+   "reading": "By 2019 rotating storage (hard disks, optical drives) and other electromechanical computing devices have been fully replaced by solid-state electronics.",
+   "mainstream_test": "Replacement test: electromechanical storage no longer in use or production by 2021.",
+   "reason": "Hard disk drives were still manufactured by three makers and dominated the exabytes of server storage produced per year; full replacement did not happen by 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hard_disk_drive",
+     "title": "Hard disk drive (Wikipedia)",
+     "date": "2024",
+     "shows": "Three HDD manufacturers remain; unit shipments declining, but HDDs dominate the volume of storage produced (exabytes per year) for servers."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-164",
+   "verdict": "miss",
+   "reading": "By 2019 three-dimensional carbon-nanotube lattices are a prevalent form of computing circuitry.",
+   "mainstream_test": "D16 mainstream: at least 50% of new chips (or 20% of the industry) using nanotube circuitry.",
+   "reason": "Carbon-nanotube computers stayed laboratory prototypes: a one-bit 178-transistor computer in 2013 and a 16-bit, about 15,000-transistor RV16X-NANO in 2019; CNTFETs cannot yet be mass manufactured. Below 5% through 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Carbon_nanotube_computer",
+     "title": "Carbon nanotube computer (Wikipedia)",
+     "date": "2019",
+     "shows": "Cedric (2013) and RV16X-NANO (2019, about 15,000 transistors) were research prototypes; CNTFETs cannot (yet) be mass manufactured."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-165",
+   "verdict": "ungradable",
+   "reading": "In 2019 most of the computation actually performed by computers runs massively parallel neural nets and genetic algorithms.",
+   "mainstream_test": "Share test: more than 50% of all computation performed is neural-net or genetic-algorithm workload.",
+   "reason": "No public series measures the share of total computation (operations actually executed across all devices) spent on neural networks. Looked for global compute-by-workload estimates (AI Impacts global capacity, data-centre workload shares); found only total capacity estimates. Peak NPU throughput in phones may exceed CPU peak, but that is capacity, not use. Likely false in 2019 for general computing, but unmeasured.",
+   "evidence": [
+    {
+     "url": "https://aiimpacts.org/global-computing-capacity/",
+     "title": "Global computing capacity (AI Impacts)",
+     "date": "2016",
+     "shows": "Estimates total hardware capacity only (2x10^20 to 1.5x10^21 FLOPS, 2015); no breakdown by workload."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-166",
+   "verdict": "hit",
+   "reading": "By 2019 significant progress has been made in reverse engineering the brain by scanning it.",
+   "mainstream_test": "Event test: major scanning-based brain-mapping results by 2021.",
+   "reason": "The NIH Human Connectome Project (from 2009) mapped human brain connectivity by MRI, the Drosophila hemibrain electron-microscopy connectome was released in 2020, and mouse cortex mapping (MICrONS) followed. Significant progress by the window.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Connectome",
+     "title": "Connectome (Wikipedia)",
+     "date": "2024",
+     "shows": "Human Connectome Project launched 2009; complete fruit-fly CNS connectome 2023-2024; MICrONS mouse mapping; neural connectomes from electron microscopy."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-167",
+   "verdict": "hit",
+   "reading": "By 2019 neuroscience fully accepts that the brain consists of many specialised regions, each with its own architecture of connections.",
+   "mainstream_test": "Scientific-consensus test: an accepted mainstream result by 2021 (earlier counts).",
+   "reason": "Regional specialisation was already accepted in 1999 and was refined by the 2016 multimodal parcellation of 180 areas per hemisphere, each with distinct architecture, connectivity and function.",
+   "evidence": [
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27437579/",
+     "title": "Glasser et al., A multi-modal parcellation of human cerebral cortex, Nature 536:171-178",
+     "date": "2016-08-11",
+     "shows": "Delineated 180 areas per hemisphere distinguished by architecture, function, connectivity and topography."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-168",
+   "verdict": "hit",
+   "reading": "By 2019 the brain's massively parallel algorithms are beginning to be understood and that understanding is applied to designing machine neural nets.",
+   "mainstream_test": "Event test: documented transfer of neuroscience findings into neural-net design by 2021.",
+   "reason": "Neuroscience-inspired designs (convolutional networks from visual cortex, experience replay, attention) were mainstream in deep learning by 2017, as reviewed in Neuron. 'Beginning to be understood' is a weak claim and held.",
+   "evidence": [
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28728020/",
+     "title": "Hassabis, Kumaran, Summerfield, Botvinick, Neuroscience-Inspired Artificial Intelligence, Neuron 95(2):245-258",
+     "date": "2017-07-19",
+     "shows": "Reviews how findings about brain computation (visual cortex hierarchy, replay, attention) informed AI neural network design."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-169",
+   "verdict": "hit",
+   "reading": "By 2019 it is accepted that the genome does not specify the brain's precise wiring but sets up an activity-driven process in which connections compete and the unused are eliminated.",
+   "mainstream_test": "Scientific-consensus test by 2021 (earlier counts).",
+   "reason": "Activity-dependent synaptic pruning by competition ('use it or lose it') is textbook neuroscience, with established examples at the neuromuscular junction and cerebellar climbing fibres.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Synaptic_pruning",
+     "title": "Synaptic pruning (Wikipedia)",
+     "date": "2024",
+     "shows": "Pruning follows the 'use it or lose it' principle; terminal arbors are pruned by competition; examples at neuromuscular junction and cerebellum."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-170",
+   "verdict": "miss",
+   "reading": "By 2019 the standard way to wire (train) machine neural nets is a genetic/evolutionary algorithm.",
+   "mainstream_test": "D16 mainstream: evolutionary methods as routine practice (at least 20%) for training neural nets.",
+   "reason": "Gradient descent with backpropagation was and remains the standard; most neural networks use gradient descent rather than neuroevolution, which stayed a niche (some evolutionary architecture search).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Neuroevolution",
+     "title": "Neuroevolution (Wikipedia)",
+     "date": "2024",
+     "shows": "States that most neural networks use gradient descent rather than neuroevolution."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-171",
+   "verdict": "miss",
+   "reading": "By 2019 computer-controlled diffractive (quantum-based) optical imaging devices have replaced most lenses.",
+   "mainstream_test": "D16 device feature: at least 50% of new optical units using diffractive flat optics.",
+   "reason": "The first mass-market metasurface optics shipped only in 2022, in ST FlightSense time-of-flight sensors (over 140 million units by 2025), against billions of conventional refractive camera lenses each year. Far from replacing most lenses by 2024.",
+   "evidence": [
+    {
+     "url": "https://www.optica-opn.org/home/industry/2022/june/metasurfaces_come_to_the_market/",
+     "title": "Metasurfaces Come to the Market (Optics & Photonics News)",
+     "date": "2022-06",
+     "shows": "Metalenz metasurface optics debuted commercially in 2022 in STMicroelectronics FlightSense dToF modules; later reported over 140 million shipped."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-172",
+   "verdict": "partial",
+   "reading": "By 2019 pinhead-sized cameras (from the new optics) are everywhere.",
+   "mainstream_test": "Ubiquity test: tiny cameras present in most devices and places.",
+   "reason": "Cameras became ubiquitous (billions of smartphones, multiple cameras each, CCTV), and a commercial 0.575 mm sensor existed in 2019, but pinhead-sized cameras were confined to medical endoscopes; everyday cameras were millimetre-to-centimetre modules. Partly true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/OmniVision_Technologies",
+     "title": "OmniVision Technologies (Wikipedia)",
+     "date": "2019",
+     "shows": "OV6948, 0.575 x 0.575 mm, Guinness record 2019 for smallest commercial sensor, used in disposable endoscopes and catheters."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-173",
+   "verdict": "miss",
+   "reading": "By 2019 autonomous nanoengineered machines exist that control their own movement and carry significant onboard computation.",
+   "mainstream_test": "Event test: such machines demonstrated by 2021 (fully) or by 2024 (late).",
+   "reason": "Nanomachines remained in research and development; demonstrated devices (molecular cars, nanomotors) are externally driven, with no autonomous nanorobots carrying significant computation by 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nanorobotics",
+     "title": "Nanorobotics (Wikipedia)",
+     "date": "2024",
+     "shows": "Nanomachines are largely in the research and development phase; only primitive molecular machines and nanomotors tested; molecular car driven externally."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-174",
+   "verdict": "miss",
+   "reading": "By 2019 such autonomous microscopic machines are starting to be used commercially, especially in manufacturing and process control, though not yet mainstream.",
+   "mainstream_test": "Event test: any commercial manufacturing or process-control use of autonomous micro/nanomachines by 2024 (the claim itself asks only for a beginning).",
+   "reason": "No commercial manufacturing or process-control use of autonomous nanomachines is documented by 2024; MEMS sensors are not autonomous mobile machines. Even the modest 'beginning' did not occur.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nanorobotics",
+     "title": "Nanorobotics (Wikipedia)",
+     "date": "2024",
+     "shows": "No commercial manufacturing applications of autonomous nanorobots; medical nanorobots have a long way to go before commercialization."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-175",
+   "verdict": "hit",
+   "reading": "By 2019 hand-held displays are extremely thin, very high resolution and weigh only ounces.",
+   "mainstream_test": "D16 device feature: at least 50% of new handheld devices with such displays; graded on the mass-market smartphone.",
+   "reason": "2019 smartphones such as the iPhone 11 Pro were 8.1 mm thick, 458 ppi, 188 g (6.6 oz); high-ppi thin handhelds were the norm among new phones.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/IPhone_11_Pro",
+     "title": "iPhone 11 Pro (Wikipedia)",
+     "date": "2019-09-20",
+     "shows": "8.1 mm thick, 188 g (6.6 oz), 458 ppi display; released September 2019."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-176",
+   "verdict": "miss",
+   "reading": "By 2019 people read documents on hand-held displays or, more commonly, as text projected by ubiquitous direct-eye (eyeglass) displays.",
+   "mainstream_test": "D16 mainstream on the stated main mode: direct-eye displays as the most common reading surface.",
+   "reason": "Reading on handheld screens became common, but the sentence's main claim, that direct-eye displays are ubiquitous and the more common reading surface, failed: AR/retinal eyewear stayed niche through 2024 (see 149, 150).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Virtual_retinal_display",
+     "title": "Virtual retinal display (Wikipedia)",
+     "date": "2023",
+     "shows": "Retinal projection eyewear remained niche through 2019-2024; North Focals discontinued 2020."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Smart_glasses",
+     "title": "Smart glasses (Wikipedia)",
+     "date": "2024",
+     "shows": "Google Glass consumer product discontinued 2015; no mainstream adoption."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-177",
+   "verdict": "miss",
+   "reading": "By 2019 paper books and documents are rarely used or accessed.",
+   "mainstream_test": "Inverse adoption test: paper would need to be a small minority of reading; graded on book sales and reading surveys.",
+   "reason": "In 2019 US publishers earned $22.6 billion from print versus $2.04 billion from e-books (e-books about 8%); by 2021 only 30% of adults had read an e-book in the past year. Paper books remained the dominant format.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/E-book",
+     "title": "E-book (Wikipedia), citing AAP 2019 annual report and Pew 2021",
+     "date": "2019",
+     "shows": "AAP 2019: $22.6 billion print vs $2.04 billion e-book revenue; 30% of US adults read an e-book in the past year by 2021."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-178",
+   "verdict": "partial",
+   "reading": "By 2019 most twentieth-century paper documents of interest have been scanned and are readable over the wireless network.",
+   "mainstream_test": "Share test: a majority of notable twentieth-century print (books, periodicals) scanned and accessible.",
+   "reason": "Google had scanned more than 40 million of about 130 million known titles by 2019, and major newspaper and journal archives were digitised, but most in-copyright twentieth-century books are accessible only as snippets, not readable. Substantial but not 'most available'. Partly true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Books",
+     "title": "Google Books (Wikipedia)",
+     "date": "2019-10",
+     "shows": "More than 40 million titles scanned by October 2019 of about 130 million distinct titles (2010 estimate); copyrighted works shown only as snippets."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-179",
+   "verdict": "miss",
+   "reading": "By 2019 most learning is done with intelligent software-based simulated teachers.",
+   "mainstream_test": "Share test: a majority of learning time delivered by intelligent tutoring software.",
+   "reason": "Intelligent tutoring systems remained supplementary tools within classroom teaching (for example Cognitive Tutor in some US high-school maths courses), not the main mode of learning, through 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+     "title": "Intelligent tutoring system (Wikipedia)",
+     "date": "2024",
+     "shows": "ITSs are supplementary rather than primary; Cognitive Tutor used in a number of US high schools; ITSs not in general commercially feasible."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-180",
+   "verdict": "hit",
+   "reading": "By 2019, where human teachers teach, they are often (not mostly) remote from the student.",
+   "mainstream_test": "D16 mainstream: at least 20% of students regularly taught by a remote teacher.",
+   "reason": "In fall 2019, 36% of US undergraduates and 42% of postbaccalaureate students took at least one distance course (15% and 33% exclusively); in fall 2020 it was 75% and 71%, and most K-12 pupils were taught remotely for part of 2020-21. 'Often' is met. Uncertain because K-12 in-person teaching returned to the norm after 2021.",
+   "evidence": [
+    {
+     "url": "https://nces.ed.gov/fastfacts/display.asp?id=80",
+     "title": "NCES Fast Facts: Distance learning",
+     "date": "2023",
+     "shows": "Undergraduates in at least one distance course: 36% fall 2019, 75% fall 2020, 61% fall 2021; postbaccalaureate 42%, 71%, 56%."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-181",
+   "verdict": "ungradable",
+   "reading": "By 2019 teachers are seen mainly as mentors and counsellors rather than as sources of knowledge.",
+   "mainstream_test": "Perception test: survey evidence that teachers are primarily regarded as mentors rather than instructors.",
+   "reason": "No public survey measures whether students, parents or society see teachers mainly as mentors versus knowledge sources. Looked for OECD TALIS and US teacher-role surveys; they measure classroom practices, not this perception. Intelligent tutoring did not replace teacher instruction (see 179), so the premise is weak, but the perception itself is unmeasured.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+     "title": "Intelligent tutoring system (Wikipedia)",
+     "date": "2024",
+     "shows": "Tutoring software stayed supplementary to human instruction; no measure of how teacher roles are perceived."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-182",
+   "verdict": "hit",
+   "reading": "By 2019 students still gather to exchange ideas and socialise, but often remotely.",
+   "mainstream_test": "D16 mainstream: at least 20% of students socialising routinely through remote means.",
+   "reason": "In 2018, 95% of US teens had a smartphone and 45% were online almost constantly, with YouTube, Instagram and Snapchat as their main platforms; online socialising with peers was routine.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2018/05/31/teens-social-media-technology-2018/",
+     "title": "Teens, Social Media & Technology 2018 (Pew)",
+     "date": "2018-05-31",
+     "shows": "95% of teens have or can access a smartphone; 45% online almost constantly; Snapchat, Instagram, YouTube the leading platforms."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-183",
+   "verdict": "hit",
+   "reading": "By 2019 all students (in the developed world the book describes) use computing.",
+   "mainstream_test": "D16 mainstream: near-universal student use; graded on US teen device access as the dominant reading.",
+   "reason": "In 2018, 95% of US teens had access to a smartphone and 88% to a home computer; school computer use was routine. Not literally all, and far lower in poor countries, but the dominant reading holds.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2018/05/31/teens-social-media-technology-2018/",
+     "title": "Teens, Social Media & Technology 2018 (Pew)",
+     "date": "2018-05-31",
+     "shows": "95% of US teens have smartphone access; 88% have a desktop or laptop at home."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-184",
+   "verdict": "partial",
+   "reading": "By 2019 computing is so pervasive that a student lacking a computer is rarely a problem.",
+   "mainstream_test": "Share test: few students (well under 10%) hindered by lack of a computer.",
+   "reason": "Computing was pervasive (95% of teens with smartphones), but 17% of US teens said they were often or sometimes unable to finish homework for lack of a reliable computer or internet, and a quarter of lower-income teens had no home computer; the 2020 school closures exposed the gap. Partly true.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2018/10/26/nearly-one-in-five-teens-cant-always-finish-their-homework-because-of-the-digital-divide/",
+     "title": "Nearly one-in-five teens can't always finish their homework because of the digital divide (Pew)",
+     "date": "2018-10-26",
+     "shows": "17% of teens often or sometimes unable to complete homework for lack of computer or internet; 25% of lower-income teens lack a home computer."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-185",
+   "verdict": "miss",
+   "reading": "By 2019 most adult workers spend most of their time learning new skills and knowledge.",
+   "mainstream_test": "Time-use test: educational activity exceeding half of working adults' time.",
+   "reason": "US time-use data show educational activities at about 0.44 hours a day for the population aged 15+ (mostly students) against 3.3 hours of work; workers spend a small fraction of time on learning.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/news.release/atus.t01.htm",
+     "title": "American Time Use Survey, Table 1 (BLS)",
+     "date": "2025",
+     "shows": "Educational activities 0.44 hours/day vs working and work-related 3.32 hours/day, civilian population 15+ (annual average); pattern similar in 2019."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-186",
+   "verdict": "miss",
+   "reading": "By 2019 blind people routinely use eyeglass-mounted reading and navigation systems with high-resolution sensors.",
+   "mainstream_test": "D16 mainstream: at least 20% of blind people in major markets using such systems routinely; miss below 5%.",
+   "reason": "Eyeglass-mounted readers existed (OrCam MyEye from 2015, priced in the thousands of dollars) but were niche, without navigation, and OrCam discontinued its whole vision line in July 2024. No evidence of use by even 5% of blind people.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/OrCam",
+     "title": "OrCam (Wikipedia)",
+     "date": "2024-07",
+     "shows": "MyEye launched 2015, clips onto glasses, reads text aloud and recognises faces; no navigation; vision products discontinued July 2024."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-187",
+   "verdict": "partial",
+   "reading": "By 2019 these eyeglass systems can read real-world text, and since most print is electronic, print-to-speech reading matters less.",
+   "mainstream_test": "Capability test (systems that read real-world text exist) plus share test (most print electronic).",
+   "reason": "The capability existed: OrCam MyEye read printed text aloud from 2015. But most print was not electronic: print books still earned about ten times e-book revenue in 2019. One half true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/OrCam",
+     "title": "OrCam (Wikipedia)",
+     "date": "2017-12",
+     "shows": "Glasses-mounted camera reads printed text aloud (MyEye 2015, MyEye 2.0 Dec 2017)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/E-book",
+     "title": "E-book (Wikipedia), citing AAP 2019",
+     "date": "2019",
+     "shows": "US 2019: $22.6 billion print vs $2.04 billion e-book revenue."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-188",
+   "verdict": "miss",
+   "reading": "By 2019 the navigation function of these blind-assistance glasses has been perfected.",
+   "mainstream_test": "Event test: reliable, complete navigation guidance from such systems by 2021, late by 2024.",
+   "reason": "The leading eyeglass system (OrCam MyEye) had no navigation function; blind navigation relied on canes, guide dogs and phone GPS apps, and no wearable system offered perfected navigation by 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/OrCam",
+     "title": "OrCam (Wikipedia)",
+     "date": "2024",
+     "shows": "MyEye features are text reading, face and barcode recognition; no navigation capabilities described."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-189",
+   "verdict": "partial",
+   "reading": "These reading-navigation assistants communicate with blind users by speech and by tactile signals.",
+   "mainstream_test": "Capability test on existing systems.",
+   "reason": "Existing eyeglass systems spoke to the user (OrCam audio output), and separate haptic aids existed, but the eyeglass readers themselves did not combine speech with tactile indicators. Partly true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/OrCam",
+     "title": "OrCam (Wikipedia)",
+     "date": "2017",
+     "shows": "MyEye delivers information as spoken audio to the wearer's ear; no tactile output described."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-190",
+   "verdict": "partial",
+   "reading": "These visual-interpretation systems are also widely used by sighted people to interpret the visual world.",
+   "mainstream_test": "D16 mainstream: at least 20% of sighted users in major markets using machine visual interpretation; form factor (eyeglasses) noted.",
+   "reason": "Machine visual interpretation became widely used by sighted people via phones (Google Lens from October 2017, integrated into Android camera and Google apps), but not through eyeglass-mounted systems as described. The function is mainstream, the device is not. Partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Lens",
+     "title": "Google Lens (Wikipedia)",
+     "date": "2017-10-04",
+     "shows": "Launched Oct 2017; identifies objects, reads text and labels, translates via the phone camera; integrated into Photos, Assistant and the camera."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-191",
+   "verdict": "hit",
+   "reading": "By 2019 retinal and visual neural implants exist but are limited and used by only a small share of blind people.",
+   "mainstream_test": "Event test plus the stated low adoption (the claim predicts a small share).",
+   "reason": "Argus II retinal prosthesis was approved in the EU (2011) and US (2013), restoring limited vision at about $150,000, used by few patients; production stopped in 2020. Exactly the predicted state.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Argus_retinal_prosthesis",
+     "title": "Argus retinal prosthesis (Wikipedia)",
+     "date": "2013-02",
+     "shows": "EU approval March 2011, US February 2013 under humanitarian exemption; about $150,000; small trials; production ceased 2020."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-192",
+   "verdict": "miss",
+   "reading": "By 2019 deaf people routinely read others' speech as captions in their eyeglass/lens displays.",
+   "mainstream_test": "D16 mainstream: at least 20% of deaf people routinely using lens-display captioning.",
+   "reason": "Real-time captioning became common on phones (Google Live Transcribe, February 2019), but captioning glasses stayed niche through 2024, since direct-eye displays never spread (see 149). The stated lens-display mode did not reach 5%.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Live_Transcribe",
+     "title": "Live Transcribe (Wikipedia)",
+     "date": "2019-02-04",
+     "shows": "Phone-based real-time captioning app for deaf users launched Feb 2019 on Android, not a lens display."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Smart_glasses",
+     "title": "Smart glasses (Wikipedia)",
+     "date": "2024",
+     "shows": "No mainstream adoption of smart glasses through 2024."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-193",
+   "verdict": "hit",
+   "reading": "By 2019 there are systems that give deaf people visual and tactile renderings of sounds such as music, with debate over whether they match hearing.",
+   "mainstream_test": "Existence test (the claim states existence, not adoption).",
+   "reason": "Sound-to-touch devices for the deaf were on sale: Neosensory's VEST (2015) and Buzz wristband (2019) turn sound into vibration patterns; research notes substituted perception differs from native hearing.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/David_Eagleman",
+     "title": "David Eagleman (Wikipedia)",
+     "date": "2019",
+     "shows": "Neosensory VEST (2015) translates audio into vibrations for deaf users; Buzz wristband (2019) turns sound into vibration patterns."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sensory_substitution",
+     "title": "Sensory substitution (Wikipedia)",
+     "date": "2024",
+     "shows": "Sound-to-touch hearing devices exist; substituted perception differs by user, the subject of research debate."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-194",
+   "verdict": "hit",
+   "reading": "By 2019 cochlear and other hearing implants are very effective and widely used.",
+   "mainstream_test": "Adoption test: established standard treatment with large user numbers (several hundred thousand) in major markets.",
+   "reason": "About 736,900 cochlear implants had been registered worldwide by December 2019 (US: about 118,100 adults and 65,000 children); they are standard of care for severe-to-profound deafness. Uptake among all eligible adults is lower, but 'widely used' holds.",
+   "evidence": [
+    {
+     "url": "https://www.nidcd.nih.gov/health/cochlear-implants",
+     "title": "Cochlear Implants (NIDCD, NIH)",
+     "date": "2019-12",
+     "shows": "About 736,900 cochlear implants registered worldwide as of Dec 2019; about 118,100 in US adults and 65,000 in children."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-195",
+   "verdict": "miss",
+   "reading": "By 2019 paraplegics and some quadriplegics routinely walk and climb stairs using computer-controlled nerve stimulation and robotic exoskeletons.",
+   "mainstream_test": "D16 mainstream: at least 20% of paraplegics using such systems routinely; miss below 5%.",
+   "reason": "The first FDA-cleared personal exoskeleton (ReWalk) came in 2014; exoskeletons are costly and used by a small number of people, mostly in rehabilitation clinics. Routine walking by paraplegics did not happen by 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Powered_exoskeleton",
+     "title": "Powered exoskeleton (Wikipedia)",
+     "date": "2014",
+     "shows": "ReWalk first FDA-approved exoskeleton for paralysed users in 2014; prices up to hundreds of thousands of dollars; no evidence of routine use."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-196",
+   "verdict": "miss",
+   "reading": "By 2019 disabilities such as blindness, deafness and paraplegia are generally unnoticeable and not regarded as significant.",
+   "mainstream_test": "Outcome test: disability no longer a significant disadvantage (for example in employment).",
+   "reason": "In 2019 the US employment-population ratio was 19.3% for people with a disability against 66.3% without, a gap at every age; assistive technology had not made these disabilities insignificant.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/news.release/archives/disabl_02262020.htm",
+     "title": "Persons with a Disability: Labor Force Characteristics 2019 (BLS)",
+     "date": "2020-02-26",
+     "shows": "Employment-population ratio 19.3% for persons with a disability vs 66.3% without, 2019."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-197",
+   "verdict": "partial",
+   "reading": "By 2019 you can do virtually anything with anyone regardless of distance, using easy, ever-present technology.",
+   "mainstream_test": "D16 mainstream on remote interaction: at least 20% of people routinely using easy remote communication and collaboration.",
+   "reason": "Easy remote communication (video calls, messaging, shared documents, online games) was ubiquitous, and in 2020 Zoom went from 10 million to over 300 million daily meeting participants; but physical activities and touch could not be done remotely. 'Virtually anything' overstates. Partly true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zoom_(software)",
+     "title": "Zoom (software) (Wikipedia)",
+     "date": "2020-04",
+     "shows": "Daily meeting participants rose from 10 million (Dec 2019) to over 300 million joins (April 2020)."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-198",
+   "verdict": "miss",
+   "reading": "By 2019 phone calls routinely include high-resolution 3D images projected through direct-eye displays and auditory lenses.",
+   "mainstream_test": "D16 mainstream: at least 20% of calls with 3D eyewear imagery.",
+   "reason": "Video calls were flat 2D on phones and computers; direct-eye displays stayed niche (see 149) and 3D telepresence (for example research prototypes) was not routine by 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smart_glasses",
+     "title": "Smart glasses (Wikipedia)",
+     "date": "2024",
+     "shows": "No mainstream adoption of eyewear displays; Google Glass consumer product discontinued 2015."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-199",
+   "verdict": "hit",
+   "reading": "By 2019 three-dimensional holographic displays have emerged (exist as products), as an alternative to eyewear for 3D calls.",
+   "mainstream_test": "Existence test (the claim says 'emerged', not widespread).",
+   "reason": "Commercial glasses-free 'holographic' 3D displays existed: Looking Glass light-field display (Kickstarter July 2018, shipping December 2018, 45 views). They are light-field rather than true holograms and niche, which makes the call uncertain.",
+   "evidence": [
+    {
+     "url": "https://www.kickstarter.com/projects/lookingglass/the-looking-glass-a-holographic-display-for-3d-cre",
+     "title": "The Looking Glass: A Holographic Display for 3D Creators (Kickstarter)",
+     "date": "2018-08-23",
+     "shows": "Desktop holographic (light-field) display, 45 views, from $499, funded Aug 2018, shipping Dec 2018."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Holographic_display",
+     "title": "Holographic display (Wikipedia)",
+     "date": "2013",
+     "shows": "Holographic displays predicted to enter mass market within ten years (2013); only niche commercial uses listed."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-200",
+   "verdict": "miss",
+   "reading": "By 2019 people on such 3D calls feel as if they are physically near the other person.",
+   "mainstream_test": "Event test: routine telepresence giving a sense of physical co-presence by 2021, late by 2024.",
+   "reason": "Mainstream calls remained 2D video; the 3D eyewear and holographic call systems presupposed were not in use, and co-presence-grade telepresence stayed in research demos through 2024.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zoom_(software)",
+     "title": "Zoom (software) (Wikipedia)",
+     "date": "2020",
+     "shows": "The dominant remote-meeting tool was 2D video conferencing."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-201",
+   "verdict": "miss",
+   "reading": "By 2019 the resolution of these 3D call images equals or exceeds optimal human visual acuity.",
+   "mainstream_test": "Capability test on the 3D call imagery (direct-eye or holographic).",
+   "reason": "The 3D call displays (retinal or holographic) did not reach human-acuity resolution: retinal projection products were about 720p and light-field displays far lower per view. Flat phone screens reached high ppi, but that is not the claimed 3D imagery.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Virtual_retinal_display",
+     "title": "Virtual retinal display (Wikipedia)",
+     "date": "2019",
+     "shows": "RETISSA Display II (2019) resolution about 720p, well below human acuity across the visual field."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-202",
+   "verdict": "miss",
+   "reading": "By 2019 a person can be fooled into thinking a remotely projected person is physically present.",
+   "mainstream_test": "Event test: routinely available telepresence indistinguishable from physical presence by 2021, late by 2024.",
+   "reason": "No available communication system produced projections indistinguishable from a present person by 2024; calls used 2D screens and niche AR headsets.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holographic_display",
+     "title": "Holographic display (Wikipedia)",
+     "date": "2013",
+     "shows": "Holographic displays not in the mass market; only niche implementations."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-203",
+   "verdict": "partial",
+   "reading": "By 2019 most meetings take place without the participants being physically together.",
+   "mainstream_test": "Share test: more than 50% of meetings held remotely.",
+   "reason": "In 2019 remote meetings were a minority (Zoom had at most 10 million daily participants in December 2019); in 2020-21 the pandemic moved most office meetings online (over 300 million daily joins), but only for remote-capable work and partly reversed after 2022. No measure shows a durable majority of all meetings remote. Partly true.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zoom_(software)",
+     "title": "Zoom (software) (Wikipedia)",
+     "date": "2020-04",
+     "shows": "10 million daily meeting participants in Dec 2019, over 200 million in March 2020 and over 300 million joins in April 2020."
+    }
+   ]
+  },
+  {
+   "id": "kurzweil-1999-204",
+   "verdict": "hit",
+   "reading": "By 2019 high-quality speech-to-speech translation for most common language pairs is routinely available in communication technology.",
+   "mainstream_test": "Availability test on mass-market devices (routinely available, not routinely used).",
+   "reason": "Google Translate conversation mode on phones (from 2011) and Google Assistant interpreter mode on Android and iOS phones (December 2019, previously on Google Home) provided real-time conversation translation across dozens of languages on mass-market devices. Quality was good, not perfect.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Assistant",
+     "title": "Google Assistant (Wikipedia)",
+     "date": "2019-12-12",
+     "shows": "Interpreter mode in Assistant phone apps for Android and iOS from Dec 2019, translating conversations in real time."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Google_Translate",
+     "title": "Google Translate (Wikipedia)",
+     "date": "2011-01",
+     "shows": "Conversation mode for spoken translation since January 2011."
+    }
+   ]
+  }
+ ]
+}
