@@ -30,6 +30,7 @@ import { ARK_GENERIC_IDEAS, arkBigIdeas, deloittePredictions, gartnerPredictions
 import { cboProjections, ecbProjections, fedSep, obrForecasts, oecdOutlook, worldBankGep } from "./sources/macro.ts";
 import { bcbFocus, bnefEvo, bpEnergyOutlook, eiaAeo, ieaWeo, imfWeo } from "./sources/numeric.ts";
 import { SubjectResolver } from "./subjects.ts";
+import { economistWorldAhead, eurasiaTopRisks, kurzweil, pewElonImagining } from "./sources/tier2.ts";
 
 type ClaimRow = Claim & { edition: string };
 
@@ -55,6 +56,10 @@ const ADAPTERS: Record<string, () => Bundle> = {
   "cbo-projections": cboProjections,
   "obr-forecasts": obrForecasts,
   "bp-energy-outlook": bpEnergyOutlook,
+  "eurasia-top-risks": eurasiaTopRisks,
+  "economist-world-ahead": economistWorldAhead,
+  kurzweil,
+  "pew-elon-imagining": pewElonImagining,
 };
 
 interface Progress {
