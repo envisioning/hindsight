@@ -10,8 +10,8 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 | Thing | Location |
 |---|---|
-| Dataset, rules, scripts (public, MIT code, CC BY 4.0 data, BCB Focus ODbL) | this repo, `/Users/mz/Dev/Envisioning/hindsight` |
-| Site pages | www repo `/Users/mz/Dev/Envisioning/www`, `app/hindsight/` (envisioning.com/hindsight) |
+| Dataset, rules, scripts (public, MIT code, CC BY 4.0 data, BCB Focus ODbL) | this repo (envisioning/hindsight). Local checkout: `/Users/mz/Dev/Envisioning/hindsight` |
+| Site pages | www repo (envisioning/envisioning.com, private), `app/hindsight/`. Local checkout: `/Users/mz/Dev/Envisioning/www` |
 | Site data loader | www `app/hindsight/_lib/data.ts`: local `../hindsight` in development, GitHub raw in production (manifest.json lists git-tracked files only) |
 | Final verdicts the site reads | `data/raw/<source>/final-d20.json`, else `agreement-d16.json` |
 | Numeric grades | `data/graded/numeric/` (`pnpm grade:numeric`, D19) |
@@ -30,6 +30,15 @@ A public, citable record of published forecasts (publications x predictions), gr
 - **Subjects:** 1,746, alias review done (#55 closed).
 - **Links to research technologies:** planned, not built (#59).
 - **Site:** live but `noindex`, with a "review build" banner (#60).
+
+## Running in a cloud session
+
+- **Paths:** the cloud session starts in a clone of this repo. Use repo-relative paths. Scratch files go in `/tmp`, never in the repo.
+- **www:** the site repo is private and is not cloned. Clone it next to this repo as `../www` (`gh repo clone envisioning/envisioning.com ../www`) only for site issues (#56, #60, the site part of #59). The site loader reads `../hindsight` in development, so keep the sibling layout.
+- **Secrets:** `.env` files do not exist in the cloud. #59 needs `OPENROUTER_API_KEY` and read access to the Core CMS (`NEXT_PUBLIC_SUPABASE_URL_CMS`, `NEXT_PUBLIC_SUPABASE_ANON_KEY_CMS`). MZ sets them as environment variables of the cloud environment. Never ask for them in chat, never print them.
+- **Not available:** the Meet connector (#65) and local apps. Leave those issues for a local session.
+- **Fits the cloud best:** #41, #42, the grading waves (#43 to #51, #63), #52, #53, #54, #61, #62. These need only this repo and the web.
+- **Pushing:** commit to `main` and push after `pnpm typecheck` and `pnpm build` pass, the same as locally. The live site reads `main` through GitHub raw.
 
 ## Order of work
 
