@@ -1,6 +1,6 @@
-# Hindsight handoff (2026-10-01, second cloud session)
+# Hindsight handoff (2026-10-01, third session, local)
 
-Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D26). Every next step is an open issue in envisioning/hindsight.
+Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D30). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -21,20 +21,16 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## State
 
-- **Captured:** 24 sources in `data/raw/`. Not captured: #26 to #34, #36.
-- **Fully graded under D20** (two blind graders, adjudicator, agent audit; rates are hits over hit + partial + miss, Wilson 95% interval):
-  - Envisioning posters: 45% hit (36 to 55), audit error 8%.
-  - Kurzweil, waves 1 and 2 (#63, D26): 38% hit (32 to 44) over 262 graded, audit error 5% over 100. Wave 1 (1999 for 2009) unchanged. 16 claims with target after 2025 are open (`grading-status.json`).
-  - Gartner Hype Cycle (#42, D21): 60% hit (55 to 64), kappa 0.66, audit error 10%. Pass 2 re-check with page access (D24): 3 of 53 timelines revised, 1 verdict changed.
-  - Gartner Strategic Predictions (#43): 30% hit (19 to 45) over 46 graded, kappa 0.88, audit error 12%. 136 of 186 ungradable (shares of organizations with no survey).
-  - MIT TR10 (#51, D25): 31% hit (19 to 48) over 35 graded, kappa 0.67, audit error 7%. Only Availability-line horizons (2017 on) are graded; 70 body-text timings are not graded.
-  - ARK Big Ideas (#49, D23 re-grade): 14% hit (7 to 28) over 42 graded, kappa 0.89 (round 1: 0.53, kept in `round1/`), audit error 2%.
-  - IDC FutureScape (#45): counts only (D11): 8 graded (4 hit, 1 partial, 3 miss), 148 ungradable, kappa 0.82.
-  - Deloitte TMT (#44): 64% hit (55 to 73) over 109 graded, kappa 0.80, audit error 10%. 162 of 276 ungradable; several are fetch failures (Gartner, IDC, Newzoo, Ofcom blocked).
-- **Numeric, graded by command (D19):** 12 publishers with a rate from IEA 10% to ECB 57% (BP and BNEF under 20 graded, counts only). No matching audit yet (#53).
-- **Subjects:** 1,746, alias review done (#55 closed).
-- **Links to research technologies:** planned, not built (#59).
-- **Site:** live but `noindex`, with a "review build" banner (#60).
+- **Captured:** 33 sources in `data/raw/` (24 before, plus McKinsey, Accenture, Deloitte Tech Trends, trendwatching, a16z, FTSG, NIC, Shell, IPCC; crowd-baseline holds only its terms findings). All are normalized (26,274 claims).
+- **Judgment sources graded under D20** (two blind graders, adjudicator, agent audit; hit rate over hit + partial + miss, Wilson 95%; audit-adjusted interval D28 in brackets):
+  - Envisioning posters 45% (36-55) [28-63]. Kurzweil 38% (32-44) [27-49], waves 1 and 2. Gartner Hype Cycle 60% (55-64) [45-74]. Gartner Strategic Predictions 30% over 47 [7-57]. MIT TR10 31% over 35. ARK Big Ideas 14% over 42. IDC FutureScape counts only (8 graded).
+  - Deloitte TMT 61% (52-70) over 116, after the fetch-failure pass (D24, `adjudicated-d20-pass1.json`): 7 of 29 re-checked claims now graded. IDC 49 re-checked, all stay ungradable (paywalled, not blocked). Gartner SP 1 of 6 now graded.
+  - New this session: The Economist (#46, D27) 59% (50-67) [42-75] over 127, kappa 0.90. Pew/Elon (#50, D27) 40% (27-55) [24-57] over 45, kappa 0.64. NIC Global Trends projections (D30) 69% (57-79) [55-81] over 68, kappa 0.89. McKinsey dated forecasts (D30) counts only (7 graded: 6 hit, 1 partial; 10 ungradable, mostly third-party figures). Accenture 2017 predictions counts only (1 hit, 1 partial, 1 miss).
+- **Numeric (D19):** 12 publishers, matching audit done (#53): 1,184 sampled rows; errors fixed in code for every row (IMF India before July 2013 and old group definitions; World Bank World before 2019; OBR unrounded actuals; EIA early publication dates and two Retrospective 2025 series; CBO deficits in percent of GDP; World Bank India fiscal year). Residual: ECB 4, BCB 3, EIA 4, BNEF 1, BP 1. Open items: #66.
+- **Not graded yet, waiting on rules:** Eurasia (#47), WEF (#48), the trend claims of six trend sources and the scenario sets (NIC scenarios, Shell, IPCC). Proposed rules are in the Meet decision queue (see below).
+- **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month (6 sources due on 2026-11-01). Export runs (`pnpm export`); no release tagged.
+- **Subjects:** 5,360. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
+- **Site:** live but `noindex`, "review build" banner (#60). www issues: envisioning.com#46 (wave-aware sample check), #47 (per-edition Kurzweil rate), #48 (rate_withheld and audit-adjusted interval), #49 (per-claim numeric verdicts, D17 tables).
 
 ## Running in a cloud session
 
@@ -53,29 +49,27 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **#41** Grading pipeline: done. Commands in `AGENTS.md` (Agentic verdicts), prompts in `docs/grading/`.
-2. **#42** Hype Cycle: done (D21). `final-d20.json` written.
-3. **Re-checks from 2026-10-01:** done. ARK re-graded under D23; Hype Cycle pass 2 (D24).
-4. **#59** Links, phase 1 (both directions). No web search needed. Key is in `.env`. Model: `text-embedding-3-large`, `dimensions: 1536`. The site part goes to a new issue in envisioning/envisioning.com once the data exists.
-5. **#53** Numeric matching audit, then **#61** (audit error in rates) and **#54** (definition calls).
-6. **#62** Dispute handling.
-7. **#52** Normalize adapters for eurasia, economist, kurzweil, pew-elon. Needed before #46, #47, #50.
-8. Grading waves: **#43, #44, #45, #51, #63** done (final files written). Next **#46, #50** (need #52 first). **#47 and #48** need a rule decision first. Issues #43, #44, #45, #49, #51, #63 closed with result comments.
-9. **#56** (site numeric verdicts), **#64** (issue housekeeping), **#58** (yearly refresh), **#3** (release).
+1. **Decisions in Meet** (below). When answered: record each approved rule as a decision (the numbers D28/D29 named in the asks are now D31 and up; D28 is the audit interval, D29 disputes), then grade under it.
+2. **#47 Eurasia, #48 WEF** after their rules. **Trend sources** (#26 to #31) and **scenario sets** (#32 to #34) after the trend and scenario rules. Scenario coverage needs observed series first (Global Carbon Budget, NOAA CO2, Energy Institute).
+3. **#66** numeric open items (ECB GDP basis, AEO2009 case, BCB Selic, World Bank World, IMF India, IEA restatements, FRED vintage refresh before release).
+4. **#59** links (needs `OPENROUTER_API_KEY`). **#26** FTSG 2015-2017 transcripts. **#27** McKinsey 2026 PDF re-capture.
+5. **www** issues #46 to #49 (envisioning.com), then **#60** launch and **#3** first tagged release, as MZ decides.
+6. **#64** housekeeping: close or comment the older capture issues (#2, #4 to #25) from each PROGRESS.md.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
-## Decisions waiting for MZ
+## Decisions waiting for MZ (Meet decision queue)
 
-- **#60:** launch timing, and whether the forecasts block (#59) shows on public research pages before launch.
-- **#64:** are individual forecasters (Long Bets) in scope?
-- **#47, #48:** agents propose the risk-forecast rules; MZ approves the policy, not individual verdicts.
+- **#47** Eurasia rule, **#48** WEF surprise measure (default 2026-10-06).
+- **Trend and scenario rules** (D31/D32 proposals, default 2026-10-08).
+- **#64** Long Bets in scope (default 2026-10-08). **#60** launch timing (default 2026-10-08).
+- **#36** written permission request to Metaculus and Good Judgment (default 2026-10-15).
 
-Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
+Read answers with the Meet `ask_decision` tool (`action: list`) before acting. Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
 
 ## Blocked
 
-- **#65:** Meet sync. The Meet connector needs MZ to re-authorize it.
+- **#65:** Meet sync. The Meet connector works in a local session (the decision queue was used on 2026-10-01); the sync itself was not done.
 
 ## Grading notes from the second session
 
@@ -84,8 +78,18 @@ Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
 - The site's `drawSample` check (www `app/hindsight/_lib/audit.ts`) does not know waves. For Kurzweil, it must filter consensus rows by `wave` (absent = w1) and use seed `d11:kurzweil:d16:w2` with `audit-d11-w2.json` for wave 2. Open a www issue before release.
 - Kurzweil's rate now pools all editions. If the site should show the 1999-for-2009 rate separately, it must filter by edition.
 
+## Notes from the third session (local, 2026-10-01)
+
+- **Local access:** the Wayback Machine (web.archive.org, CDX API) is reachable locally and unlocked many blocked publisher pages; its CDX API is rate-limited at times ("Temporarily Offline", 429). Gartner, Newzoo, mckinsey.com, dni.gov and data-api.ecb.europa.eu still block scripts.
+- **Give every agent its own download folder.** Two graders shared one `dl/` folder and overwrote each other's working files; both rebuilt their output. Put `dl-<source>-<batch>-<grader>` in every prompt.
+- **Graders cite from memory.** Several graders cited Wikipedia pages without fetching them; the auditors found dead or non-supporting citations. Tell auditors to open every cited URL they rely on.
+- **Pass files:** `final-d20.mjs` reads `adjudicated-d20-pass<N>.json` (D24) and `disputes.json` (D29). Re-checked rows have status `rechecked`.
+- **Numeric audit samples** are fixed (`data/graded/audit/`); `numeric-audit-sample.mjs --check` reports a mismatch after a code fix changes which rows are graded. That is expected: the stored sample governs.
+- **Search budget used:** about 110 WebSearch calls over about 60 agents.
+
 ## Traps
 
+- **`scripts/*/*.json` is gitignored:** a parse script that needs a JSON input in its own folder must get a `!` exception in `.gitignore` (done for `scripts/a16z-big-ideas/overrides.json`).
 - **Embedding model:** the CMS stores `text-embedding-3-large` at 1536 dimensions. `3-small` gives cosine about 0. Always check two stored rows before writing vectors.
 - **OpenAI key:** the key in `research/.env` has no credits. Use `OPENROUTER_API_KEY`. It is in `hindsight/.env` and `research/.env`; to replace it, run `scripts/set-openrouter-key.sh`.
 - **Claim ids:** `<source>-<edition>-<nnn>`, where nnn is the position in the raw edition file. Poster ids: `et-2012-045` → `envisioning-technology-2012-045`. After first assignment, `ids.json` governs. Never reorder raw entries.
