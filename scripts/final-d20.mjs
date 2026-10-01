@@ -116,6 +116,9 @@ if (agreedUnfalsifiable) counts.unfalsifiable = (counts.unfalsifiable ?? 0) + ag
 const agreedUngradable = (agreement.ungradable_agreed?.length ?? 0) - (agreement.ungradable_agreed ?? []).filter((u) => recheck.has(u.id)).length;
 if (agreedUngradable) counts.ungradable = (counts.ungradable ?? 0) + agreedUngradable;
 const MIN_RATE_N = 20;
+// A source whose rule forbids a pooled rate (D31 Eurasia: top risks and red herrings never merge)
+// carries rate-policy.json {"pooled_rate": false, "see": "<file>", "reason": "..."}.
+const ratePolicy = read("rate-policy.json");
 const hits = counts.hit ?? 0;
 const graded = hits + (counts.partial ?? 0) + (counts.miss ?? 0);
 const recs = Object.values(audit?.records ?? {});
@@ -140,13 +143,13 @@ const out = {
 	kappa: agreement.kappa,
 	n: rows.length + agreedUnfalsifiable + agreedUngradable,
 	counts,
-	// D11: no rate below 20 graded claims; counts only.
-	...(graded < MIN_RATE_N ? { rate_withheld: `D11: ${graded} graded claims, fewer than ${MIN_RATE_N}; counts only.` } : {}),
+	// D11: no rate below 20 graded claims; counts only. A rate policy can withhold the pooled rate (D31).
+	...(ratePolicy?.pooled_rate === false ? { rate_withheld: `${ratePolicy.reason} See ${ratePolicy.see}.` } : graded < MIN_RATE_N ? { rate_withheld: `D11: ${graded} graded claims, fewer than ${MIN_RATE_N}; counts only.` } : {}),
 	hit_rate:
-		graded >= MIN_RATE_N
+		graded >= MIN_RATE_N && ratePolicy?.pooled_rate !== false
 			? { hits, of_graded_hit_partial_miss: graded, rate: Math.round((hits / graded) * 10000) / 10000, wilson95: wilson(hits, graded), audit_adjusted95: widen(wilson(hits, graded), auditOut?.error_rate) }
 			: null,
-	hit_or_partial_rate: graded >= MIN_RATE_N ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,
+	hit_or_partial_rate: graded >= MIN_RATE_N && ratePolicy?.pooled_rate !== false ? Math.round(((hits + (counts.partial ?? 0)) / graded) * 10000) / 10000 : null,
 	adjudicated: rows.filter((r) => r.status === "adjudicated").length,
 	...(disputes.length ? { disputes: { records: disputes.length, upheld: rows.filter((r) => r.status === "disputed").length } } : {}),
 	...(adjPassFiles.length ? { rechecked: rows.filter((r) => r.status === "rechecked").length, recheck_passes: adjPassFiles } : {}),

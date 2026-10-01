@@ -1,0 +1,46 @@
+{
+ "rule": "D31",
+ "note": "Top risks: share that materially occurred in the edition year (hit), a calibration measure, never a hit rate. Red herrings: share where the feared risk stayed calm (hit). Never merged. Partial is counted, not in the share. Audit-adjusted interval per D28 with the source's audit error rate.",
+ "top_risks": {
+  "measure": "materialised share",
+  "counts": {
+   "hit": 129,
+   "partial": 46,
+   "miss": 9,
+   "contested": 1,
+   "ungradable": 0,
+   "unfalsifiable": 0
+  },
+  "n_graded": 184,
+  "share": 0.7011,
+  "wilson95": [
+   0.631,
+   0.763
+  ],
+  "audit_adjusted95": [
+   0.571,
+   0.823
+  ]
+ },
+ "red_herrings": {
+  "measure": "red-herring hit rate",
+  "counts": {
+   "hit": 49,
+   "partial": 17,
+   "miss": 6,
+   "contested": 0,
+   "ungradable": 0,
+   "unfalsifiable": 0
+  },
+  "n_graded": 72,
+  "share": 0.6806,
+  "wilson95": [
+   0.566,
+   0.777
+  ],
+  "audit_adjusted95": [
+   0.506,
+   0.837
+  ]
+ }
+}
