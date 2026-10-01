@@ -36,6 +36,13 @@ for (const c of agreement.contested ?? []) {
 	);
 }
 
+// Claims both graders called unfalsifiable (D20: the adjudicator may take them). An
+// adjudicated one is a row; the rest are counted here, as the consensus list leaves them out.
+for (const u of agreement.unfalsifiable_agreed ?? []) {
+	const a = adj.get(u.id);
+	if (a) rows.push({ id: u.id, verdict: a.verdict, status: "adjudicated", graderA: "unfalsifiable", graderB: "unfalsifiable", reason: a.reason ?? "" });
+}
+
 function wilson(k, m, z = 1.96) {
 	if (!m) return null;
 	const p = k / m;
@@ -47,12 +54,6 @@ function wilson(k, m, z = 1.96) {
 
 const counts = {};
 for (const r of rows) counts[r.verdict] = (counts[r.verdict] ?? 0) + 1;
-// Claims both graders called unfalsifiable (D20: the adjudicator may take them). An
-// adjudicated one is a row; the rest are counted here, as the consensus list leaves them out.
-for (const u of agreement.unfalsifiable_agreed ?? []) {
-	const a = adj.get(u.id);
-	if (a) rows.push({ id: u.id, verdict: a.verdict, status: "adjudicated", graderA: "unfalsifiable", graderB: "unfalsifiable", reason: a.reason ?? "" });
-}
 const agreedUnfalsifiable = (agreement.agreed?.unfalsifiable ?? 0) - rows.filter((r) => r.status === "adjudicated" && r.graderA === "unfalsifiable" && r.graderB === "unfalsifiable").length;
 if (agreedUnfalsifiable) counts.unfalsifiable = (counts.unfalsifiable ?? 0) + agreedUnfalsifiable;
 const agreedUngradable = agreement.ungradable_agreed?.length ?? 0;

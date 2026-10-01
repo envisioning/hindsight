@@ -26,7 +26,7 @@ A public, citable record of published forecasts (publications x predictions), gr
   - Envisioning posters: 45% hit (95% interval 36 to 55), audit error 8%.
   - Kurzweil 1999 for 2009: 45% hit (38 to 54), audit error 6%.
 - **Numeric, graded by command (D19):** 12 publishers with a rate from IEA 10% to ECB 57% (BP and BNEF under 20 graded, counts only). No matching audit yet (#53).
-- **Hype Cycle:** two blind adoption timelines for 199 subjects are saved. Verdicts are not computed (#42).
+- **Hype Cycle (D21):** 409 gradable claims, kappa 0.66, 86 adjudicated from 53 settled timelines. 60% hit (95% interval 55 to 64), audit error 12% (2 corrected, 4 contested). Source checks in the adjudication and audit used search summaries only, because the cloud network policy blocked page fetches. Re-check with page access before release.
 - **Subjects:** 1,746, alias review done (#55 closed).
 - **Links to research technologies:** planned, not built (#59).
 - **Site:** live but `noindex`, with a "review build" banner (#60).
@@ -43,7 +43,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 ## Order of work
 
 1. **#41** Grading pipeline: done. Commands in `AGENTS.md` (Agentic verdicts), prompts in `docs/grading/`.
-2. **#42** Hype Cycle verdicts from the saved timelines. Record the method as D21. Needs no new web research until adjudication.
+2. **#42** Hype Cycle: done (D21). `final-d20.json` written.
 3. **#59** Links, phase 1 (both directions). No web search needed. Key is in `.env`. Model: `text-embedding-3-large`, `dimensions: 1536`. The site part goes to a new issue in envisioning/envisioning.com once the data exists.
 4. **#53** Numeric matching audit, then **#61** (audit error in rates) and **#54** (definition calls).
 5. **#62** Dispute handling.

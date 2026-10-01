@@ -1,0 +1,2349 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.6634,
+ "n": 409,
+ "counts": {
+  "miss": 90,
+  "hit": 240,
+  "partial": 72,
+  "contested": 4,
+  "unfalsifiable": 3
+ },
+ "hit_rate": {
+  "hits": 240,
+  "of_graded_hit_partial_miss": 402,
+  "rate": 0.597,
+  "wilson95": [
+   0.548,
+   0.644
+  ]
+ },
+ "hit_or_partial_rate": 0.7761,
+ "adjudicated": 86,
+ "audit": {
+  "sample": 50,
+  "audited": 50,
+  "confirmed": 44,
+  "corrected": 2,
+  "contested": 4,
+  "error_rate": 0.12
+ },
+ "verdicts": [
+  {
+   "id": "gartner-hype-cycle-1999-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-003",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-004",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-005",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-006",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-007",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2007, 3 to 5 years after the placed year 2004. Neither builder. A's 2006 is from general knowledge and is contradicted by B's own Nokia figures: 133M Bluetooth phones of ~816M handsets in 2005 (~16%), ~220M forecast in 2006 (~22% globally). B's 2009 is an extrapolation from global ~65% growth and ignores major-market data: US share of phones sold with Bluetooth was 53% in Q4 2006 and 72% in Q4 2007 (NPD, via search extract), Western Europe ~30% already in June 2005, and the attach rate was reported at about half of new phones in 2007. 2007 is the first full year above 50% in major markets; the US crossed on a quarterly basis at the end of 2006, so the year is a bound between late 2006 and 2007. Global (incl. low-end emerging-market phones) crossed later, but D16 asks for major markets. year_5pct 2003 only needs to be <=2004 and is not contested in effect. Sources could not be opened (egress blocked for WebFetch); figures come from search-result extracts."
+  },
+  {
+   "id": "gartner-hype-cycle-1999-008",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-009",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2002, placed year 2001: within 2 years after, or earlier. Builder A was closer. An Answerthink survey completed October 2002 (per search summary; page blocked to fetch) found more than 50% of surveyed companies had already created enterprise portals, mostly entry-level or content integration, with another 31% planning one; Forrester 2006 (46% of large companies using an employee portal, cited by both builders) is consistent. The 20% crossing is therefore no later than 2002; 2002 is an upper bound, which is all the placed year 2001 needs (hit if mainstream by 2003). Builder B's 2004 interpolated from the 2006 figure without a 2002 data point and placed the crossing too late. year_5pct 1999 is a bound (packaged products from 1998)."
+  },
+  {
+   "id": "gartner-hype-cycle-1999-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-011",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-013",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2004: within 2 years after, or earlier. Builder A's verdicts stand but on a different test. A used IP-capable PBX line shipments (hybrid lines are not VoIP use), B used US residential voice connections only. France is a major market: ARCEP counted 6.65M broadband-voice subscriptions at end 2006 (about a quarter of ~26M households) and 10.8M (27.4% of all phone subscriptions) at end 2007, so the 20% line was passed in 2006. In-Stat: US companies using VoIP 3% (2003) to 12% (2004), so 5% in 2004. B's error: restricting the denominator to the US and missing France/Japan, which crossed 2-3 years earlier. Enterprise use alone was slower (Forrester: 14% of NA enterprises with IP PBX in 2006). year_mainstream is precise to about a year; 2006 vs 2007 only changes the 1999 claim (P=2004)."
+  },
+  {
+   "id": "gartner-hype-cycle-1999-014",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-015",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-016",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-017",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-018",
+   "verdict": "hit",
+   "status": "corrected",
+   "was": "partial",
+   "reason": "Builders used US only (Pew 2004), but Statistics Canada (The Daily, 23 Sep 2003) reports 23.7% of all Canadian households had high-speed internet in 2001, and OECD shows Korea above 11 subs/100 people by March 2001; a G7 market was mainstream at P=2001, the same one-major-market test both builders used for Smart Cards."
+  },
+  {
+   "id": "gartner-hype-cycle-1999-019",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2004, placed year 2004: within 2 years after, or earlier. Closer to A. year_mainstream 2004 is an upper bound (no later than 2004), which is all the 1999 claim (placed 2004, hit if mainstream by 2006) needs. GAO-04-548 (May 2004) found 52 of 128 surveyed US federal agencies using or planning data mining, with 199 efforts of which 131 were operational: well above 20% of a large-organisation population by 2004, and the commercial heavy users (credit scoring, telecom churn, retail basket analysis) were earlier than government. B's 2014 used the wrong denominator and object: TDWI/Eurostat measure predictive analytics or big-data analysis across all companies of all sizes, a later and broader technology, not data mining among organisations with large customer databases. A's evidence (Wikipedia) carries no share figure, so the year rests on the GAO count. Low-to-moderate certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-1999-020",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-1999-021",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-002",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "Mainstream in 2012, placed year 2010: within 2 years after, or earlier. Neither builder; closer to B. ContactBabel (per search summary of a secondary compilation; direct fetch blocked) reported speech analytics in use in 24% of surveyed contact-centre organisations in 2012, after adoption grew 59% that year, implying roughly 15% in 2011 and comfortably above 5% by 2010 given DMG's 1,764 implementations at end-2008 growing 40-45% a year. Both builders took 2019 as the mainstream year without a data point; their own source (DMG forecast of 25-30% of seats within 5-7 years of 2009) and the ContactBabel figure point earlier. Builder A's year_5pct 2011 is too late. Denominator note: ContactBabel counts contact-centre organisations, not seats; on a seat basis the crossing could be a year or two later, which would still give at least partial for placed year 2010. year_mainstream 2012 is the first evidenced year at or above 20%."
+  },
+  {
+   "id": "gartner-hype-cycle-2000-003",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-005",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-006",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-007",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-008",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Reached 5% only in 2005; not mainstream by 2007 (placed year 2002 plus 5). Neither builder. Forrester's software survey (Q4 2009, published 2010) found 25% of North American companies using SaaS, so mainstream by 2009, not 2008 (A, an unretrieved estimate) and not 2016 (B, who used Eurostat's all-enterprise EU average including 10-49 staff firms and ignored that the UK was already at 24% in 2014). year_mainstream 2009 is an upper bound from the first retrieved crossing. year_5pct 2005 is an estimate (no measured series before 2007); the 2000 claim (P=2002) is a miss under any year_5pct after 2002, which no source supports. Verdicts: 2000 claim miss, 2001 claim partial."
+  },
+  {
+   "id": "gartner-hype-cycle-2000-009",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-010",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2007, placed year 2005: within 2 years after, or earlier. Neither builder. A's 2006 is from general knowledge and is contradicted by B's own Nokia figures: 133M Bluetooth phones of ~816M handsets in 2005 (~16%), ~220M forecast in 2006 (~22% globally). B's 2009 is an extrapolation from global ~65% growth and ignores major-market data: US share of phones sold with Bluetooth was 53% in Q4 2006 and 72% in Q4 2007 (NPD, via search extract), Western Europe ~30% already in June 2005, and the attach rate was reported at about half of new phones in 2007. 2007 is the first full year above 50% in major markets; the US crossed on a quarterly basis at the end of 2006, so the year is a bound between late 2006 and 2007. Global (incl. low-end emerging-market phones) crossed later, but D16 asks for major markets. year_5pct 2003 only needs to be <=2004 and is not contested in effect. Sources could not be opened (egress blocked for WebFetch); figures come from search-result extracts."
+  },
+  {
+   "id": "gartner-hype-cycle-2000-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-013",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-014",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Never reached 5%; not mainstream by 2015 (placed year 2010 plus 5). Follows B. The dominant reading is the dedicated micropayment system. The decisive point is Gartner's own placement: in 2010 it still put Internet Micropayment Systems on the rise, two years after the App Store and seven after the iTunes 99-cent store. So app-store and in-game purchases were not what the label referred to; counting them, as A does, makes the 2010 placement describe something already near mainstream. A says itself that under the dedicated-system reading the answer is never mainstream. No dedicated system (Millicent, IBM Micro Payments, BitPass, Flattr, Blendle, which moved to subscriptions in 2019) reached even 5% of internet users. Not marked abandoned, because new attempts keep appearing. A Gartner definition of the 2010 entry could not be retrieved, so this rests on the placement argument."
+  },
+  {
+   "id": "gartner-hype-cycle-2000-015",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Mainstream in 2006, 3 to 5 years after the placed year 2002. Builder A's verdicts stand but on a different test. A used IP-capable PBX line shipments (hybrid lines are not VoIP use), B used US residential voice connections only. France is a major market: ARCEP counted 6.65M broadband-voice subscriptions at end 2006 (about a quarter of ~26M households) and 10.8M (27.4% of all phone subscriptions) at end 2007, so the 20% line was passed in 2006. In-Stat: US companies using VoIP 3% (2003) to 12% (2004), so 5% in 2004. B's error: restricting the denominator to the US and missing France/Japan, which crossed 2-3 years earlier. Enterprise use alone was slower (Forrester: 14% of NA enterprises with IP PBX in 2006). year_mainstream is precise to about a year; 2006 vs 2007 only changes the 1999 claim (P=2004)."
+  },
+  {
+   "id": "gartner-hype-cycle-2000-016",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-017",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-018",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2000-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-003",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Mainstream in 2013, placed year 2011: within 2 years after, or earlier. Neither builder; closer to A. Web Data Commons (Meusel et al., ISWC 2014) measured the share of Common Crawl HTML pages carrying RDFa, microdata or microformats at 5.76% (2010), 12.29% (2012) and 26.33% (2013). So 5% by 2010 and 20% crossed in 2013. Builder B's 2012/2019 interpolation is wrong by six years on the mainstream year: B inferred from schema.org's 2011 launch and the 2022-2024 Almanac without the WDC series. Builder A's 2014 is one year late. Caveats: crawls differ in composition between years, and the share includes microformats; RDFa (Open Graph) plus microdata alone also grew fast after 2010-2011, so the 2013 crossing is a reasonable point estimate. The strict RDF/OWL agents vision would give null, but that reading does not dominate a label graded on web adoption. All three placed years (2011, 2013, 2014) fall within 2 years after 2013 or later."
+  },
+  {
+   "id": "gartner-hype-cycle-2001-004",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-005",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "Mainstream in 2011, 3 to 5 years after the placed year 2006. Builder B. A applied the 50%-of-new-units device-feature test globally (crossed 2013), but a PDA phone is a device class bought by users, so D16's 20%-of-target-users test fits; Pew measured 35% of US adults owning a smartphone in 2011, so 2011 is an upper bound (comScore-type subscriber data suggest 2010). Smartphones were about 10% of global phone sales in 2007 and above 5% in 2006. Any year_mainstream up to 2011 gives the same verdict (partial) for P=2006."
+  },
+  {
+   "id": "gartner-hype-cycle-2001-006",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Mainstream in 2005, placed year 2003: within 2 years after, or earlier. Follows B. B's sources are primary analyst surveys: Nemertes 2005, 76% of medium and large companies use some IM and 58% of corporate IM users are on an enterprise-class model; Osterman, about 93% of North American organisations use IM in some form. B's ~44% of companies is a derived figure (it multiplies a share of users by a share of companies), but even a cautious reading puts enterprise-class deployments above 20% of medium and large firms by 2005. Under the broader reading (any IM used in the enterprise), the crossing is earlier still (Radicati 2004: 85% of North American companies). Both readings give a hit for the 2001 claim placed at 2003, which needs mainstream by 2005. A's 2006 is from general knowledge and cites no share. year_mainstream 2005 is an upper bound."
+  },
+  {
+   "id": "gartner-hype-cycle-2001-008",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-009",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-013",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "Mainstream in 2009, 3 to 5 years after the placed year 2006. Neither builder. Forrester's software survey (Q4 2009, published 2010) found 25% of North American companies using SaaS, so mainstream by 2009, not 2008 (A, an unretrieved estimate) and not 2016 (B, who used Eurostat's all-enterprise EU average including 10-49 staff firms and ignored that the UK was already at 24% in 2014). year_mainstream 2009 is an upper bound from the first retrieved crossing. year_5pct 2005 is an estimate (no measured series before 2007); the 2000 claim (P=2002) is a miss under any year_5pct after 2002, which no source supports. Verdicts: 2000 claim miss, 2001 claim partial."
+  },
+  {
+   "id": "gartner-hype-cycle-2001-014",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2007, placed year 2006: within 2 years after, or earlier. Neither builder. A's 2006 is from general knowledge and is contradicted by B's own Nokia figures: 133M Bluetooth phones of ~816M handsets in 2005 (~16%), ~220M forecast in 2006 (~22% globally). B's 2009 is an extrapolation from global ~65% growth and ignores major-market data: US share of phones sold with Bluetooth was 53% in Q4 2006 and 72% in Q4 2007 (NPD, via search extract), Western Europe ~30% already in June 2005, and the attach rate was reported at about half of new phones in 2007. 2007 is the first full year above 50% in major markets; the US crossed on a quarterly basis at the end of 2006, so the year is a bound between late 2006 and 2007. Global (incl. low-end emerging-market phones) crossed later, but D16 asks for major markets. year_5pct 2003 only needs to be <=2004 and is not contested in effect. Sources could not be opened (egress blocked for WebFetch); figures come from search-result extracts."
+  },
+  {
+   "id": "gartner-hype-cycle-2001-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-017",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-018",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2001-019",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2004, placed year 2003: within 2 years after, or earlier. Builder A was closer. In-Stat/MDR counted about 16 million Wi-Fi-enabled notebooks sold to businesses alone in 2003 (against roughly 40 million notebooks shipped worldwide), with Centrino launched in March 2003, and analysts forecast about 95% of notebooks with integrated WLAN by 2005 (The Register, August 2003). Half of new notebooks is therefore reached by 2004 at the latest. The enterprise cross-check points the same way: Gartner's own 2002 chart (cio.de) already put 802.11b WLANs on the plateau. Builder B used a household test without early household data and set 2006 by estimate; households are not the dominant target of a label on an enterprise-oriented chart, and the device-feature test is the one D16 names for a built-in radio. 2004 is an upper bound; only placed year 2003 matters (hit if mainstream by 2005)."
+  },
+  {
+   "id": "gartner-hype-cycle-2002-001",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-002",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "unfalsifiable",
+   "reason": "At least 5% from 2006, below mainstream by the placed year 2007 (mainstream only in 2014). Neither builder: both flagged the label ambiguous, but one reading dominates on a 2002 Emerging Technologies chart. Vehicle toll tags were mature by 2002 (Telepass 1989, E-ZPass in the 1990s) and electronic shelf labels were 1990s technology, so neither fits a label placed 2-5 years from the plateau. Supply-chain RFID tags were the emerging-technology story of 2002 (Auto-ID Center, EPC, the Gillette order of early 2003). Under that reading, mandated case and pallet tagging by Walmart's top suppliers (2005, about 600 suppliers by 2007), Metro and the US DoD put routine use above 5% of the relevant retail and CPG supplier population around 2006. Surveys still describe adoption as early-stage in 2007, and item-level tagging spread mainly in apparel in the 2010s (GS1 US survey 2015). The mainstream year is an estimate, bounded after 2009, which is all the 2002 claim (placed 2007, partial unless mainstream by 2009) needs. year_5pct 2006 is low-to-moderate certainty. If the evidence showed under 5% by 2007, the claim would be a miss."
+  },
+  {
+   "id": "gartner-hype-cycle-2002-004",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "Mainstream in 2011, 3 to 5 years after the placed year 2007. Builder B's verdict (partial), but via an earlier mainstream year, not via B's 2002 5% year. Both builders guessed 2013 without evidence. Janrain/Blue Research (Oct 2011) found 41% of US social media users signing in to websites with social login; with about two-thirds of US online adults on social networks in 2011 (Pew), that is roughly a quarter of internet users, so mainstream by 2011. This is a vendor-commissioned survey, so 2011 has low-medium confidence; it is within P+5 (2012) by one year. B's year_5pct 2002 counted Passport accounts used mostly on Microsoft's own services, which is not third-party sign-in; A's 2010 5% year is closer. year_5pct 2009 is an estimate (Facebook Connect launched late 2008) and does not affect the verdict."
+  },
+  {
+   "id": "gartner-hype-cycle-2002-005",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "At least 5% from 2001, below mainstream by the placed year 2007 (mainstream only in 2013). Closer to A. Both builders define the label as 'Ask Jeeves style', so Ask Jeeves usage counts toward the 5% floor. Ask Jeeves held about 3% of US searches in comScore data (Nov 2003), about 6% with its acquired engines (Jul 2004), and 8.5% in Nielsen NetRatings (2004). Its share of searchers (monthly reach) was higher than its share of queries, so 5% of searchers is met by 2001-2004. year_5pct is a bound, no later than 2004. B's 2019 (BERT) moves the test to back-end language understanding on Google and ignores the Ask Jeeves base that B's own reading names. year_mainstream: Hummingbird 2013 (A) or BERT 2019-20 (B); both are later than 2012, so the 2002 claim (placed 2007) is a partial either way. Only the 5% year decides it."
+  },
+  {
+   "id": "gartner-hype-cycle-2002-006",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2012: within 2 years after, or earlier. Builder A was closer, on reading rather than on retrieved data. No survey with an organisation share was found (two searches; Insight Research 2005 vertical report not accessible). The call rests on the shape of the market: by the mid-2000s grid-scheduled compute farms were routine at large banks for risk, at pharma for simulation and at chip designers for EDA, and the practice continued into HPC clusters and cloud rather than being abandoned. Builder B left mainstream null for lack of evidence, which grades the absence of a survey as the absence of adoption; that is the wrong default when the relevant industry plainly runs the technology. year_mainstream 2006 is an estimate; for the claims it only needs to be no later than 2012 (placed years 2010, 2011, 2012), which is the confident part. Low certainty on the exact year."
+  },
+  {
+   "id": "gartner-hype-cycle-2002-008",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-009",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-010",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "unfalsifiable",
+   "reason": "Abandoned in 2013 without reaching mainstream within 5 years after the placed year 2012. Builder A. B's two readings are not equally faithful: consumer file sharing was already mass-market in 2002 (Kazaa), so Gartner placing 'Peer-to-peer computing' 5-10 years from the plateau only makes sense for the enterprise computing model, which is what an Emerging Technologies chart addresses. The enterprise model never showed a measured 5% share; its flagship product (Groove, Microsoft Office Groove, SharePoint Workspace 2010) was dropped from Office 2013 in favour of cloud sync. Abandoned year 2013 (A had ~2015); either gives miss for P=2012."
+  },
+  {
+   "id": "gartner-hype-cycle-2002-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-012",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-013",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-015",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2000, below mainstream by the placed year 2007 (mainstream only in 2017). Follows B. A's denominator is wrong: 'websites serving HTTPS by default' measures the web-TLS end state, not organisations deploying PKI. It led A to a 5% year of 2013, although SSL server certificates for e-commerce and large government PKIs (the DoD Common Access Card from 2001) put organisational use well above 5% by 2000-2002. The mainstream year is a late bound. Enterprise PKI with user certificates was widely judged a disappointment through the 2000s, and no survey found shows 20% of organisations running it routinely by 2009 (the hit threshold for the 2002 claim placed at 2007). The 2015-2017 HTTPS shift is the first clearly evidenced mass use. Low certainty on the upper side: if an organisation holding any SSL certificate counted as 'using PKI', the crossing would be in the 2000s and the verdict a hit. Search found no 2006-2008 survey to settle it."
+  },
+  {
+   "id": "gartner-hype-cycle-2002-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-017",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-018",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-019",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2002-021",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-001",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-003",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-005",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-006",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-007",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-008",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-009",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2011, 3 to 5 years after the placed year 2008. Builder B was closer, narrowly. Forrester reported in 2008 that UC trials and pilots were up more than 20% year on year but with little conversion into actual deployments (per search summary), and builder A's own 2009 Forrester figure is 22% of enterprises 'implemented or implementing', which includes projects still in progress. Production use by 20% therefore lands after 2009, most likely 2010-2011; Infonetics described UC as mainstream in developed markets by 2012. A took the implemented-or-implementing figure as production use one year later; that overcounts. 2011 is an estimate within 2010-2012; the claim (placed 2008) is a hit only if the crossing is 2010, so this call is close."
+  },
+  {
+   "id": "gartner-hype-cycle-2003-010",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2013, placed year 2013: within 2 years after, or earlier. Neither builder; closer to A. Web Data Commons (Meusel et al., ISWC 2014) measured the share of Common Crawl HTML pages carrying RDFa, microdata or microformats at 5.76% (2010), 12.29% (2012) and 26.33% (2013). So 5% by 2010 and 20% crossed in 2013. Builder B's 2012/2019 interpolation is wrong by six years on the mainstream year: B inferred from schema.org's 2011 launch and the 2022-2024 Almanac without the WDC series. Builder A's 2014 is one year late. Caveats: crawls differ in composition between years, and the share includes microformats; RDFa (Open Graph) plus microdata alone also grew fast after 2010-2011, so the 2013 crossing is a reasonable point estimate. The strict RDF/OWL agents vision would give null, but that reading does not dominate a label graded on web adoption. All three placed years (2011, 2013, 2014) fall within 2 years after 2013 or later."
+  },
+  {
+   "id": "gartner-hype-cycle-2003-011",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-013",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-014",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-015",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-016",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-017",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-018",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-020",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Mainstream in 2008, placed year 2008: within 2 years after, or earlier. Builder B's verdict (hit), with an earlier year. Both builders looked only at the US SEC phase-in (2009-2011). Japan's FSA made XBRL mandatory for all EDINET filers (about 5,000 companies) for fiscal years starting on or after April 2008, so all Japanese listed companies were filing XBRL from 2008 quarterly reports. A's 2011 was a wrong-market error. Any year up to 2010 gives hit for P=2008; China's exchanges mandated XBRL even earlier (2004-2005, not retrieved)."
+  },
+  {
+   "id": "gartner-hype-cycle-2003-021",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-022",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Mainstream in 2010, 3 to 5 years after the placed year 2005. Neither builder. Mainstream follows A. Pew measured 35% of US adults owning a smartphone in May 2011. comScore counted ~18% of US mobile subscribers at end-2009 and Nielsen ~23% in Q2 2010, so 20% was crossed in 2010. B's own Pew 35% figure contradicts its choice of 2011 as the first year. The 5% year follows B. Smartphones were roughly 5-8% of global handset sales in 2005 and ~10% in 2007 (B's figure), and the owned base lags sales, so 5% of adults in major markets is first clear in 2006. A's 2005 is an unsupported estimate. Both years are moderately uncertain: Western Europe (Symbian) may have reached 5% ownership in 2005."
+  },
+  {
+   "id": "gartner-hype-cycle-2003-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-024",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-027",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-028",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-029",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2005: within 2 years after, or earlier. Builder A's verdicts stand but on a different test. A used IP-capable PBX line shipments (hybrid lines are not VoIP use), B used US residential voice connections only. France is a major market: ARCEP counted 6.65M broadband-voice subscriptions at end 2006 (about a quarter of ~26M households) and 10.8M (27.4% of all phone subscriptions) at end 2007, so the 20% line was passed in 2006. In-Stat: US companies using VoIP 3% (2003) to 12% (2004), so 5% in 2004. B's error: restricting the denominator to the US and missing France/Japan, which crossed 2-3 years earlier. Enterprise use alone was slower (Forrester: 14% of NA enterprises with IP PBX in 2006). year_mainstream is precise to about a year; 2006 vs 2007 only changes the 1999 claim (P=2004)."
+  },
+  {
+   "id": "gartner-hype-cycle-2003-030",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2003-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-006",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-008",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-010",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2010, below mainstream by the placed year 2014. Builder B was closer. Both builders agree there is no organisation-share series and that SNA is routine in identifiable niches; they differ only on whether that niche use clears 5%. It does on the relevant denominator: link and network analysis was standard in intelligence and law enforcement (i2-style link analysis) well before 2010, network-based fraud detection shipped in mainstream bank/insurer fraud suites from about 2009, and telecoms used calling-network analysis for churn. Five per cent of relevant large organisations by 2010-2012 is the conservative reading of that. Builder A set year_5pct null 'for lack of evidence, not because it failed', which turns missing data into a miss; that is the error. Mainstream (20% of organisations using it as a distinct practice) is not evidenced through 2019, so null. year_5pct 2010 is a bound (no later than 2012, the earliest placed year). No search spent here; low-medium certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2004-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-013",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-015",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-016",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-017",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2013, placed year 2014: within 2 years after, or earlier. Neither builder; closer to A. Web Data Commons (Meusel et al., ISWC 2014) measured the share of Common Crawl HTML pages carrying RDFa, microdata or microformats at 5.76% (2010), 12.29% (2012) and 26.33% (2013). So 5% by 2010 and 20% crossed in 2013. Builder B's 2012/2019 interpolation is wrong by six years on the mainstream year: B inferred from schema.org's 2011 launch and the 2022-2024 Almanac without the WDC series. Builder A's 2014 is one year late. Caveats: crawls differ in composition between years, and the share includes microformats; RDFa (Open Graph) plus microdata alone also grew fast after 2010-2011, so the 2013 crossing is a reasonable point estimate. The strict RDF/OWL agents vision would give null, but that reading does not dominate a label graded on web adoption. All three placed years (2011, 2013, 2014) fall within 2 years after 2013 or later."
+  },
+  {
+   "id": "gartner-hype-cycle-2004-018",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-020",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-021",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-022",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-023",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-024",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-025",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-026",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-027",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Abandoned in 2009 without reaching mainstream within 5 years after the placed year 2014. Builder B. Gartner's label deliberately isolates the case/pallet application. The retail mandates stalled in 2007-2009 and Walmart moved to item-level tagging (apparel, later home goods and hardlines); the later RFID growth (GS1 US 2015 survey: 47% of goods received by RFID-aware retailers tagged) is item-level source tagging, which is a different application. A kept it 'not abandoned' on the strength of DoD and niche logistics use, but gave no evidence of a sustained 5% share of the relevant suppliers after 2009; even the 5% year is generous (a few hundred mandated suppliers out of tens of thousands). Any of 'abandoned 2009' or 'never reached 5%' gives miss for all five claims (P=2014-2019); abandoned year approximate."
+  },
+  {
+   "id": "gartner-hype-cycle-2004-028",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-029",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-030",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-032",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2011, placed year 2009: within 2 years after, or earlier. Follows A. Pew's 2011 location-based services report (May 2011 survey) found 28% of US cell owners using their phone for directions or recommendations based on location. That is about 23% of all adults, already above 20% in 2011. B used the 2013 Pew figure (74% of smartphone owners) and an ownership ramp to date the crossing at 2012, without checking the 2011 Pew measure. The crossing may have happened in 2010, so 2011 is an upper bound. That is enough for the 2004 claim placed at 2009: a hit needs mainstream by 2011."
+  },
+  {
+   "id": "gartner-hype-cycle-2004-033",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-034",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2006: within 2 years after, or earlier. Builder A was closer, consistent with the grid-computing call. Internal compute grids (Platform LSF/Symphony, DataSynapse, Sun Grid Engine, United Devices Grid MP) were the practical, adopted part of the grid wave: grid-scheduled compute farms were routine at large banks, chip designers and pharma by the mid-2000s, and the practice continued as HPC clusters and then cloud. Builder B agreed on the practice but set mainstream null for want of a survey; absence of a published share is not evidence of non-adoption when the relevant industry plainly ran it. No survey found (shared with grid-computing searches). 2006 is an estimate; placed year 2006 needs mainstream by 2008 for a hit, so a crossing as late as 2008 gives the same verdict. Low certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2004-035",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-036",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2004-037",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-003",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2007, placed year 2015: within 2 years after, or earlier. Builder B. A called the label ambiguous, but Gartner's description of collective intelligence at the time (group knowledge produced with no central authority, enabled by wikis and Web 2.0) gives a dominant reading, and its main forms (Wikipedia, enterprise wikis, user ratings) were all mainstream well before P+2=2017; only the narrow prediction-market reading would fail, and it did not dominate. Pew: 36% of US online adults consulted Wikipedia in Feb 2007, 53% in 2010. Any year before 2017 gives hit for P=2015."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-005",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-006",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-007",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-008",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-010",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-012",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2006, below mainstream by the placed year 2015. Follows B. A's 'no measurable 5% share' is wrong. The Torchiano et al. 2012-13 survey of 155 Italian software professionals reports that 44% of the surveyed companies generate code from models and 16% execute models directly. With a self-selected sample and occasional use, that is still clearly above 5% before 2015, and model-based code generation was routine in automotive and embedded work from the mid-2000s. A judged the 5% floor from the Wikipedia statement that MDA never gained 'mainstream industry acceptance', which concerns 20%, not 5%. Mainstream stays null. The same survey finds only 13% of companies model 'always' and models used mainly for documentation, and the MDE literature reports low industrial adoption, so routine model-driven generation by 20% of software organisations is not shown by 2021 (the latest hit year for the claims). year_5pct 2006 is an estimate; it is a bound no later than 2012. Risk: if the 44% figure is read at face value as routine use, the verdict would rise to hit."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-013",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-014",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "Mainstream in 2012, placed year 2015: within 2 years after, or earlier. Neither builder on years; the verdict follows A. Both builders missed the largest functional-inkjet use: polyimide alignment-layer coating in LCD fabs. Inkjet PI coating is the usual method on high-generation (Gen 8/8.5) LCD lines (per search summary of display-industry literature), and every major panel maker (Samsung, LG Display, BOE, CSOT, AUO, Innolux, Sharp) ran such lines by about 2010-2012; Kateeva's inkjet thin-film encapsulation then took most flexible-OLED TFE orders by 2016 (builder A's row). Builder A reached mainstream through OLED TFE only, so its 2014/2016 years are late but its verdict holds. Builder B looked at printed electronics in general (still mostly prototyping) and set null; that uses the wrong denominator, since D16 grades routine use by the relevant industry, and the industry where inkjet manufacturing went to volume is displays. No retrieved figure gives an exact share of fabs; year_mainstream 2012 is an estimate and only needs to be no later than 2017 for placed year 2015. Medium-low certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-017",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "Hit needs 20% of large organisations running a BPMS in production by 2012; both builders say no survey gives an adoption share (BPTrends gives interest only), and an audit search found only Forrester tool-mix shares and Gartner process-model use (6% of knowledge workers 2009). Year 2010 is unevidenced."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-019",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-020",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-021",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-023",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2010: within 2 years after, or earlier. Builder A was closer, on reading rather than on retrieved data. No survey with an organisation share was found (two searches; Insight Research 2005 vertical report not accessible). The call rests on the shape of the market: by the mid-2000s grid-scheduled compute farms were routine at large banks for risk, at pharma for simulation and at chip designers for EDA, and the practice continued into HPC clusters and cloud rather than being abandoned. Builder B left mainstream null for lack of evidence, which grades the absence of a survey as the absence of adoption; that is the wrong default when the relevant industry plainly runs the technology. year_mainstream 2006 is an estimate; for the claims it only needs to be no later than 2012 (placed years 2010, 2011, 2012), which is the confident part. Low certainty on the exact year."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-024",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2009, placed year 2007: within 2 years after, or earlier. Builder A. The UMass Dartmouth series (Barnes) gives 16% (2008), 22% (2009), 23% (2010); B misread 2009 as ~17% and put the crossing in 2010. Mainstream 2009 is within P+2 for P=2007, so hit. year_5pct 2006 is an estimate and does not affect the verdict."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-025",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-026",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-027",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-028",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2012, placed year 2010: within 2 years after, or earlier. Closer to A on the decisive year. B's 2014 is only 'the earliest survey it found'. An earlier ON World survey (~2012, 216 ISA/HCF/WINA end users and vendors) already reports that 20% of end users ran more than 100 wireless field devices, 39% used WirelessHART (up 13 points from the 2010 survey), and 75% of adopters used mesh. On the utility side, AMI went from about 14% of US meters (2010) to about 26-30% (2011-2012), mostly RF mesh. A's reliance on smart meters alone is a narrow proxy and its 2008 5% year is unsupported, so year_5pct follows B (2009). Mainstream 2012 is an estimate with medium-low certainty; the ISA survey samples overstate population shares. That matters because the 2005 claim (placed 2010) is a hit only if mainstream came by 2012."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-029",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-030",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-031",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-032",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "Never reached 5%; not mainstream by 2020 (placed year 2015 plus 5). Follows B. The dominant reading is the dedicated micropayment system. The decisive point is Gartner's own placement: in 2010 it still put Internet Micropayment Systems on the rise, two years after the App Store and seven after the iTunes 99-cent store. So app-store and in-game purchases were not what the label referred to; counting them, as A does, makes the 2010 placement describe something already near mainstream. A says itself that under the dedicated-system reading the answer is never mainstream. No dedicated system (Millicent, IBM Micro Payments, BitPass, Flattr, Blendle, which moved to subscriptions in 2019) reached even 5% of internet users. Not marked abandoned, because new attempts keep appearing. A Gartner definition of the 2010 entry could not be retrieved, so this rests on the placement argument."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-033",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-034",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-035",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-036",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-037",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "At least 5% from 2010, below mainstream by the placed year 2010. Builder A was closer. Both builders agree on the facts and lack a share figure (one more search found none). The difference is whether routine handwriting input clears 5% of users anywhere by 2010. In China, handwriting input was a standard, widely used method on touchscreen and stylus phones through the late 2000s and into the smartphone era, especially among users without fluent pinyin; on the order of a twentieth of Chinese phone users is a low bar for that. Palm Graffiti and Pocket PC handwriting were also routine among PDA users in the US in the early 2000s. Builder B treated the absence of a retrieved figure as below 5%; the market it describes itself (Chinese keyboards with handwriting, older users relying on it) points the other way. Keyboards and voice dominate, so mainstream is null. year_5pct 2010 is a bound (no later than 2010), resting on inference rather than a retrieved share; low certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-038",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2009, placed year 2010: within 2 years after, or earlier. Builder A's verdict (hit), with a later year. Forrester's Q4 2009 survey found 25% of North American companies using SaaS, so mainstream by 2009 (upper bound), within P+2=2012. A's 2006 rested on a paraphrased Gartner survey not retrieved. B used Eurostat's all-enterprise EU average (19% in 2014) as the only denominator; that average includes 10-49 staff firms, and even it shows the UK at 24% in 2014. year_5pct is an estimate and does not affect this claim."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-039",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-040",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "Hit needs 20% of banks/insurers running a rules engine in production by 2009; both builders cite only Wikipedia saying engines date from the early 1990s and are typical in finance/insurance, and an audit search found no adoption survey. Mainstream year 2007/2008 is unevidenced."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-041",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-042",
+   "verdict": "hit",
+   "status": "corrected",
+   "was": "miss",
+   "reason": "Builders picked a handset test, but TTS shipped built into Windows XP (Narrator/SAPI 5, Microsoft Sam) and every Mac OS X release, i.e. on well over 50% of new PCs before 2007 (Wikipedia: Microsoft text-to-speech voices, PlainTalk; builder A's own note says so). Under D16's device-feature test it was already mainstream at placed year 2007, so hit."
+  },
+  {
+   "id": "gartner-hype-cycle-2005-043",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2005-044",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-004",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-006",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-007",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-010",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2007, placed year 2016: within 2 years after, or earlier. Follows B. A's ambiguity flag does not meet D20: the readings do not give different verdicts for claims placed at 2016 and 2017. Gartner's 2006 description (groups working without central authority to produce content, metadata, software and services; blogs, wikis and RSS as enabling technologies) is the dominant reading. Under it, consumer use was mainstream by 2007: Pew found 25% of US adults using Wikipedia in February 2007. Business use of wikis and of open-source collaborative production was routine in more than 20% of large organisations well before 2016. Only a narrow 'enterprise prediction markets' reading would give a miss, and prediction markets were one example inside the category, not its meaning. Hit under every faithful reading."
+  },
+  {
+   "id": "gartner-hype-cycle-2006-011",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2006, below mainstream by the placed year 2016. Follows B. A's 'no measurable 5% share' is wrong. The Torchiano et al. 2012-13 survey of 155 Italian software professionals reports that 44% of the surveyed companies generate code from models and 16% execute models directly. With a self-selected sample and occasional use, that is still clearly above 5% before 2015, and model-based code generation was routine in automotive and embedded work from the mid-2000s. A judged the 5% floor from the Wikipedia statement that MDA never gained 'mainstream industry acceptance', which concerns 20%, not 5%. Mainstream stays null. The same survey finds only 13% of companies model 'always' and models used mainly for documentation, and the MDE literature reports low industrial adoption, so routine model-driven generation by 20% of software organisations is not shown by 2021 (the latest hit year for the claims). year_5pct 2006 is an estimate; it is a bound no later than 2012. Risk: if the 44% figure is read at face value as routine use, the verdict would rise to hit."
+  },
+  {
+   "id": "gartner-hype-cycle-2006-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-013",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-014",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-016",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-017",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-018",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-020",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-021",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-022",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2011: within 2 years after, or earlier. Builder A was closer, on reading rather than on retrieved data. No survey with an organisation share was found (two searches; Insight Research 2005 vertical report not accessible). The call rests on the shape of the market: by the mid-2000s grid-scheduled compute farms were routine at large banks for risk, at pharma for simulation and at chip designers for EDA, and the practice continued into HPC clusters and cloud rather than being abandoned. Builder B left mainstream null for lack of evidence, which grades the absence of a survey as the absence of adoption; that is the wrong default when the relevant industry plainly runs the technology. year_mainstream 2006 is an estimate; for the claims it only needs to be no later than 2012 (placed years 2010, 2011, 2012), which is the confident part. Low certainty on the exact year."
+  },
+  {
+   "id": "gartner-hype-cycle-2006-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-024",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Abandoned in 2009 without reaching mainstream within 5 years after the placed year 2016. Builder B. Gartner's label deliberately isolates the case/pallet application. The retail mandates stalled in 2007-2009 and Walmart moved to item-level tagging (apparel, later home goods and hardlines); the later RFID growth (GS1 US 2015 survey: 47% of goods received by RFID-aware retailers tagged) is item-level source tagging, which is a different application. A kept it 'not abandoned' on the strength of DoD and niche logistics use, but gave no evidence of a sustained 5% share of the relevant suppliers after 2009; even the 5% year is generous (a few hundred mandated suppliers out of tens of thousands). Any of 'abandoned 2009' or 'never reached 5%' gives miss for all five claims (P=2014-2019); abandoned year approximate."
+  },
+  {
+   "id": "gartner-hype-cycle-2006-025",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-027",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-029",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-030",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-031",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2008: within 2 years after, or earlier. Builder A was closer. The co-listed 'Location-Aware Applications' label (2-5 years, same editions) settles the reading: 'Location-Aware Technology' is the capability in handsets and networks, so the D16 device-feature test applies. In the US, FCC E911 Phase II required handset-based carriers (Verizon, Sprint) to have 95% of in-service phones location-capable by end-2005, and AT&T moved to embedded GPS in every voice device from 2006, so more than half of new US phones were location-capable by 2006. Builder B used adult use of location features (Pew), which measures the applications label, not this one, and said itself the device test fits better. 2006 is an estimate; for a hit the placed years 2008 and 2009 only need mainstream by 2010."
+  },
+  {
+   "id": "gartner-hype-cycle-2006-032",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-033",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-034",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2010, placed year 2008: within 2 years after, or earlier. Neither builder. Mainstream follows A. Pew measured 35% of US adults owning a smartphone in May 2011. comScore counted ~18% of US mobile subscribers at end-2009 and Nielsen ~23% in Q2 2010, so 20% was crossed in 2010. B's own Pew 35% figure contradicts its choice of 2011 as the first year. The 5% year follows B. Smartphones were roughly 5-8% of global handset sales in 2005 and ~10% in 2007 (B's figure), and the owned base lags sales, so 5% of adults in major markets is first clear in 2006. A's 2005 is an unsupported estimate. Both years are moderately uncertain: Western Europe (Symbian) may have reached 5% ownership in 2005."
+  },
+  {
+   "id": "gartner-hype-cycle-2006-035",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2006-036",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-002",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2010, placed year 2017: within 2 years after, or earlier. Builder B's verdict (hit). A treated the label as ambiguous, but the academic-field reading is not an adoption reading on a technology chart; the applied readings (business choice architecture, public-policy nudge units) dominate and both reach mainstream well before P+2 (2019-2020). Vanguard: automatic enrollment in ~15% of plans in 2007, ~24% in 2010, 45% in 2016; national nudge units in UK (2010), US, Australia, Canada, Germany, Japan by 2016 (B). Year 2010 is precise to a year; anything up to 2019 gives hit for both claims."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-004",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-005",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "unfalsifiable",
+   "reason": "No dominant reading of the label; the readings give different verdicts (D16). Both builders agree; confirmed. The 2007 label had no dominant meaning: Gartner itself later re-labelled the area 'Cloud/Web Platforms' (2010-2011), which also mixes readings (see cloud-web-platforms). The readings give different verdicts for placed year 2012: the browser-as-platform reading was mainstream well before 2014 (hit), while the cloud-workload reading reaches 20% of enterprises in major markets only around 2018-2021 on Eurostat-type data (miss or partial). No additional search spent."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-006",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2012, placed year 2012: within 2 years after, or earlier. Follows B. A treats three readings as equal, but the cross-world-avatar reading is a minority one. Gartner carried 'portable personality' on its Consumer Technologies (2007) and PC Technologies (2008) Hype Cycles, which places the label with a user's identity, profile and settings moving across services and devices, not with virtual-world avatars. Under that reading, federated or social login and account-based sync were mainstream by 2012-2014: Gigya surveys of US adults aged 18-55 found 53% social-login users in 2012 and 77% in 2014. These are vendor surveys and likely overstate use, but the margin over 20% is large. Settings sync via Google, Apple and Microsoft accounts was in mass use by 2012-2014. The 2007 claim (placed 2012) is a hit if mainstream came by 2014, which holds even if 2012 is a year early. The avatar reading would give a miss, but it did not dominate."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "Mainstream in 2014, placed year 2017: within 2 years after, or earlier. Builder B was closer. On a chart about enterprise and consumer adoption, the 2007-2011 label 'Three-D/3D Printing' predates the consumer printer market (RepRap 2007, MakerBot 2009) and Gartner only introduced a separate 'Consumer 3D Printing' label in 2013, next to 'Enterprise 3D Printing'; the general label at first listing therefore reads as the enterprise technology. Builder A asserted a 'consumer and general-purpose framing' without a source and graded households, which is the later spin-off label. PwC/Manufacturing Institute (early 2014, 100+ US industrial manufacturers): about 35-38% using 3D printing for prototyping and/or production, so 20% is crossed by 2014 at the latest. That year is an upper bound; the hit for placed years 2017-2021 holds for any crossing up to 2019. year_5pct 2007 is a judgement (rapid prototyping long established). Medium certainty: the reading is the contested part, not the data."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-008",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "At least 5% from 2012, below mainstream by the placed year 2012 (mainstream only in 2024). Builder B. Eurostat measures text mining at 2.9% of all EU enterprises in 2023 and 6.9% in 2024; among large enterprises 21.4% in 2024 (35% in 2025), so the 20% line for the most favourable denominator is 2024. A's 2014 was an unevidenced estimate. year_5pct 2012 is an estimate for large-firm use (text analytics market ~US$1bn in 2011, social listening at big brands); it decides partial vs miss for the 2007 claim (P=2012) and is the weakest point. Verdicts: partial for both claims."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-009",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2009, below mainstream by the placed year 2012. Follows B on the verdict-relevant facts. A says no source shows 5% of organisations, but it did not consider Cisco's own deployment figures. Cisco reported in September 2009 that over 350 organisations had chosen Cisco TelePresence (2,500 systems) and that more than a quarter of the Fortune 100 used intercompany TelePresence. With HP, Polycom and Teliris customers added, that is above 5% of large organisations by 2009. B dates it to 2008; 2009 is the first evidenced year, and either year sits before every placed year (2012-2015). Mainstream stays null: immersive rooms remained confined to the largest firms, and the use case moved to cheaper HD rooms and cloud meetings (Zoom, Teams), which are a different reading. Not abandoned, since immersive rooms are still sold."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-010",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2007, placed year 2017: within 2 years after, or earlier. Follows B. A's ambiguity flag does not meet D20: the readings do not give different verdicts for claims placed at 2016 and 2017. Gartner's 2006 description (groups working without central authority to produce content, metadata, software and services; blogs, wikis and RSS as enabling technologies) is the dominant reading. Under it, consumer use was mainstream by 2007: Pew found 25% of US adults using Wikipedia in February 2007. Business use of wikis and of open-source collaborative production was routine in more than 20% of large organisations well before 2016. Only a narrow 'enterprise prediction markets' reading would give a miss, and prediction markets were one example inside the category, not its meaning. Hit under every faithful reading."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-011",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2010, below mainstream by the placed year 2012. Builder B was closer. Gartner's label is 'Expertise Location and Management', a capability, not a product category, so expertise search delivered inside enterprise portals and social software counts. By 2010 people/expertise search with skills profiles shipped in widely deployed collaboration suites (SharePoint My Sites with 'Ask Me About' skills search, IBM Connections Profiles, Yammer-era enterprise social) and dedicated systems were standard in professional-services and law firms, so routine use by at least 5% of organisations by 2010-2012 is the conservative call. Builder A restricted the test to dedicated systems and then set null for lack of data, which is a narrower reading than the label and turns missing data into a miss. Routine use by 20% of organisations as an expertise-location practice is not evidenced, so mainstream is null. year_5pct 2010 is a bound (no later than 2012). No search spent; low-medium certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-013",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Both builders grade a 'distinct tool category' reading and both state that the other faithful 2007 reading (web apps combining third-party APIs, per Wikipedia 'Mashup (web application hybrid)') became routine web practice by about 2010, which would be a hit; no measurement supports either, so the miss rests on an unmeasured reading choice (D16 unfalsifiable test not resolved)."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-014",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-016",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-017",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-018",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-021",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2010, below mainstream by the placed year 2012. Builder B was closer. Both builders agree there is no organisation-share series and that SNA is routine in identifiable niches; they differ only on whether that niche use clears 5%. It does on the relevant denominator: link and network analysis was standard in intelligence and law enforcement (i2-style link analysis) well before 2010, network-based fraud detection shipped in mainstream bank/insurer fraud suites from about 2009, and telecoms used calling-network analysis for churn. Five per cent of relevant large organisations by 2010-2012 is the conservative reading of that. Builder A set year_5pct null 'for lack of evidence, not because it failed', which turns missing data into a miss; that is the error. Mainstream (20% of organisations using it as a distinct practice) is not evidenced through 2019, so null. year_5pct 2010 is a bound (no later than 2012, the earliest placed year). No search spent here; low-medium certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-022",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-023",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Abandoned in 2009 without reaching mainstream within 5 years after the placed year 2017. Builder B. Gartner's label deliberately isolates the case/pallet application. The retail mandates stalled in 2007-2009 and Walmart moved to item-level tagging (apparel, later home goods and hardlines); the later RFID growth (GS1 US 2015 survey: 47% of goods received by RFID-aware retailers tagged) is item-level source tagging, which is a different application. A kept it 'not abandoned' on the strength of DoD and niche logistics use, but gave no evidence of a sustained 5% share of the relevant suppliers after 2009; even the 5% year is generous (a few hundred mandated suppliers out of tens of thousands). Any of 'abandoned 2009' or 'never reached 5%' gives miss for all five claims (P=2014-2019); abandoned year approximate."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-024",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-027",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2006, placed year 2009: within 2 years after, or earlier. Builder A was closer. The co-listed 'Location-Aware Applications' label (2-5 years, same editions) settles the reading: 'Location-Aware Technology' is the capability in handsets and networks, so the D16 device-feature test applies. In the US, FCC E911 Phase II required handset-based carriers (Verizon, Sprint) to have 95% of in-service phones location-capable by end-2005, and AT&T moved to embedded GPS in every voice device from 2006, so more than half of new US phones were location-capable by 2006. Builder B used adult use of location features (Pew), which measures the applications label, not this one, and said itself the device test fits better. 2006 is an estimate; for a hit the placed years 2008 and 2009 only need mainstream by 2010."
+  },
+  {
+   "id": "gartner-hype-cycle-2007-028",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2007-029",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-003",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2010, placed year 2018: within 2 years after, or earlier. Builder B's verdict (hit). A treated the label as ambiguous, but the academic-field reading is not an adoption reading on a technology chart; the applied readings (business choice architecture, public-policy nudge units) dominate and both reach mainstream well before P+2 (2019-2020). Vanguard: automatic enrollment in ~15% of plans in 2007, ~24% in 2010, 45% in 2016; national nudge units in UK (2010), US, Australia, Canada, Germany, Japan by 2016 (B). Year 2010 is precise to a year; anything up to 2019 gives hit for both claims."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-006",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-007",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2014, placed year 2013: within 2 years after, or earlier. Builder A. Eurostat's first measurement (2014) already shows the United Kingdom at 24% (Finland 51%; EU-28 average 19%), so a major market was above 20% in 2014; B required the EU-wide average and so moved the crossing to 2016, which ignores the 'major markets' wording of D16. 2014 is an upper bound (no earlier official series; Forrester found 25% of North American companies using SaaS by 2009). Hit for P=2013 either way. year_5pct is an estimate."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "Mainstream in 2014, placed year 2018: within 2 years after, or earlier. Builder B was closer. On a chart about enterprise and consumer adoption, the 2007-2011 label 'Three-D/3D Printing' predates the consumer printer market (RepRap 2007, MakerBot 2009) and Gartner only introduced a separate 'Consumer 3D Printing' label in 2013, next to 'Enterprise 3D Printing'; the general label at first listing therefore reads as the enterprise technology. Builder A asserted a 'consumer and general-purpose framing' without a source and graded households, which is the later spin-off label. PwC/Manufacturing Institute (early 2014, 100+ US industrial manufacturers): about 35-38% using 3D printing for prototyping and/or production, so 20% is crossed by 2014 at the latest. That year is an upper bound; the hit for placed years 2017-2021 holds for any crossing up to 2019. year_5pct 2007 is a judgement (rapid prototyping long established). Medium certainty: the reading is the contested part, not the data."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-010",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2008, placed year 2013: within 2 years after, or earlier. Follows B. A's ambiguity flag fails the D20 test, because its three readings do not give different verdicts for claims placed at 2013 and 2014 (hit if mainstream by 2015-2016). Data-centre energy efficiency and virtualisation, green procurement and e-waste policy, and IT-enabled footprint reduction were each routine in well over 20% of large organisations by 2013-2016. B's survey figures settle it directly: Forrester found 20% of major companies implementing a comprehensive green IT plan in April 2008, 25% in October 2008 and 28% in 2009; Symantec's 2009 Green IT Report found 45% had implemented green IT initiatives. These figures come from search extracts (pages returned errors to B and are blocked here). 2008 is the first year at 20% and only needs to be no later than 2015. Later absorption into ESG and sustainable IT is a change of name, not abandonment."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-012",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2009, below mainstream by the placed year 2013. Follows B on the verdict-relevant facts. A says no source shows 5% of organisations, but it did not consider Cisco's own deployment figures. Cisco reported in September 2009 that over 350 organisations had chosen Cisco TelePresence (2,500 systems) and that more than a quarter of the Fortune 100 used intercompany TelePresence. With HP, Polycom and Teliris customers added, that is above 5% of large organisations by 2009. B dates it to 2008; 2009 is the first evidenced year, and either year sits before every placed year (2012-2015). Mainstream stays null: immersive rooms remained confined to the largest firms, and the use case moved to cheaper HD rooms and cloud meetings (Zoom, Teams), which are a different reading. Not abandoned, since immersive rooms are still sold."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-013",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-014",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-016",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "unfalsifiable",
+   "reason": "At least 5% from 2008, below mainstream by the placed year 2013. Builder A was closer. 'Service-oriented business applications' (SOBA) was Gartner's own coined category for packaged applications built on SOA, so the label had a dominant meaning at publication: Builder B's ambiguity flag does not meet D16, which needs no reading to dominate. Under that reading, vendor suites re-architected on services were in customer production from 2007-2008 (SAP ERP 6.0 enterprise services, Business ByDesign; SOA foundations widely adopted in large firms by 2007-2008), which clears 5% by the placed year 2013. No survey measures a distinct SOBA share reaching 20% before the term faded into SaaS-with-APIs, so mainstream is null (not evidenced, not shown to be absent). No search spent; medium-low certainty on whether a broader count of service-based suites would reach 20% by 2015."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-017",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-018",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Abandoned in 2009 without reaching mainstream within 5 years after the placed year 2018. Builder B. Gartner's label deliberately isolates the case/pallet application. The retail mandates stalled in 2007-2009 and Walmart moved to item-level tagging (apparel, later home goods and hardlines); the later RFID growth (GS1 US 2015 survey: 47% of goods received by RFID-aware retailers tagged) is item-level source tagging, which is a different application. A kept it 'not abandoned' on the strength of DoD and niche logistics use, but gave no evidence of a sustained 5% share of the relevant suppliers after 2009; even the 5% year is generous (a few hundred mandated suppliers out of tens of thousands). Any of 'abandoned 2009' or 'never reached 5%' gives miss for all five claims (P=2014-2019); abandoned year approximate."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-020",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "The partial depends entirely on an estimated year_5pct of 2010; neither builder nor my search found any survey of idea-management platform adoption (only vendor market reports and a Gartner 'nearing mainstream' blog), so neither at least 5% by 2013 nor below 5% is supported."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-021",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2010, below mainstream by the placed year 2013. Builder B was closer. Both builders agree there is no organisation-share series and that SNA is routine in identifiable niches; they differ only on whether that niche use clears 5%. It does on the relevant denominator: link and network analysis was standard in intelligence and law enforcement (i2-style link analysis) well before 2010, network-based fraud detection shipped in mainstream bank/insurer fraud suites from about 2009, and telecoms used calling-network analysis for churn. Five per cent of relevant large organisations by 2010-2012 is the conservative reading of that. Builder A set year_5pct null 'for lack of evidence, not because it failed', which turns missing data into a miss; that is the error. Mainstream (20% of organisations using it as a distinct practice) is not evidenced through 2019, so null. year_5pct 2010 is a bound (no later than 2012, the earliest placed year). No search spent here; low-medium certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2008-022",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-023",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-024",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-025",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-026",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2008-027",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-008",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-010",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "Mainstream in 2014, placed year 2019: within 2 years after, or earlier. Builder B was closer. On a chart about enterprise and consumer adoption, the 2007-2011 label 'Three-D/3D Printing' predates the consumer printer market (RepRap 2007, MakerBot 2009) and Gartner only introduced a separate 'Consumer 3D Printing' label in 2013, next to 'Enterprise 3D Printing'; the general label at first listing therefore reads as the enterprise technology. Builder A asserted a 'consumer and general-purpose framing' without a source and graded households, which is the later spin-off label. PwC/Manufacturing Institute (early 2014, 100+ US industrial manufacturers): about 35-38% using 3D printing for prototyping and/or production, so 20% is crossed by 2014 at the latest. That year is an upper bound; the hit for placed years 2017-2021 holds for any crossing up to 2019. year_5pct 2007 is a judgement (rapid prototyping long established). Medium certainty: the reading is the contested part, not the data."
+  },
+  {
+   "id": "gartner-hype-cycle-2009-011",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-012",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-013",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-017",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2008, placed year 2014: within 2 years after, or earlier. Follows B. A's ambiguity flag fails the D20 test, because its three readings do not give different verdicts for claims placed at 2013 and 2014 (hit if mainstream by 2015-2016). Data-centre energy efficiency and virtualisation, green procurement and e-waste policy, and IT-enabled footprint reduction were each routine in well over 20% of large organisations by 2013-2016. B's survey figures settle it directly: Forrester found 20% of major companies implementing a comprehensive green IT plan in April 2008, 25% in October 2008 and 28% in 2009; Symantec's 2009 Green IT Report found 45% had implemented green IT initiatives. These figures come from search extracts (pages returned errors to B and are blocked here). 2008 is the first year at 20% and only needs to be no later than 2015. Later absorption into ESG and sustainable IT is a change of name, not abandonment."
+  },
+  {
+   "id": "gartner-hype-cycle-2009-018",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2009, below mainstream by the placed year 2014. Follows B on the verdict-relevant facts. A says no source shows 5% of organisations, but it did not consider Cisco's own deployment figures. Cisco reported in September 2009 that over 350 organisations had chosen Cisco TelePresence (2,500 systems) and that more than a quarter of the Fortune 100 used intercompany TelePresence. With HP, Polycom and Teliris customers added, that is above 5% of large organisations by 2009. B dates it to 2008; 2009 is the first evidenced year, and either year sits before every placed year (2012-2015). Mainstream stays null: immersive rooms remained confined to the largest firms, and the use case moved to cheaper HD rooms and cloud meetings (Zoom, Teams), which are a different reading. Not abandoned, since immersive rooms are still sold."
+  },
+  {
+   "id": "gartner-hype-cycle-2009-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-021",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "Never reached 5%; not mainstream by 2024 (placed year 2019 plus 5). Builder A's verdict (miss), with a stricter 5% year. The label names a technology used in the home, so the adopters are patients, not hospitals. B's test (33% of US hospitals offering RPM in 2018) is a supply-side availability measure, a denominator error. HHS OIG: 55,000 Medicare enrollees received RPM in 2019 and 570,000 in 2022, under 1% of ~65M enrollees. A's 5% year of 2020 is not supported; no evidence of 5% of target patients by 2024, so set null. Consumer fitness wearables are a different technology. Miss for P=2019, window closes 2024."
+  },
+  {
+   "id": "gartner-hype-cycle-2009-022",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-023",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Abandoned in 2009 without reaching mainstream within 5 years after the placed year 2019. Builder B. Gartner's label deliberately isolates the case/pallet application. The retail mandates stalled in 2007-2009 and Walmart moved to item-level tagging (apparel, later home goods and hardlines); the later RFID growth (GS1 US 2015 survey: 47% of goods received by RFID-aware retailers tagged) is item-level source tagging, which is a different application. A kept it 'not abandoned' on the strength of DoD and niche logistics use, but gave no evidence of a sustained 5% share of the relevant suppliers after 2009; even the 5% year is generous (a few hundred mandated suppliers out of tens of thousands). Any of 'abandoned 2009' or 'never reached 5%' gives miss for all five claims (P=2014-2019); abandoned year approximate."
+  },
+  {
+   "id": "gartner-hype-cycle-2009-024",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-025",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2010, below mainstream by the placed year 2014. Builder B was closer. Both builders agree there is no organisation-share series and that SNA is routine in identifiable niches; they differ only on whether that niche use clears 5%. It does on the relevant denominator: link and network analysis was standard in intelligence and law enforcement (i2-style link analysis) well before 2010, network-based fraud detection shipped in mainstream bank/insurer fraud suites from about 2009, and telecoms used calling-network analysis for churn. Five per cent of relevant large organisations by 2010-2012 is the conservative reading of that. Builder A set year_5pct null 'for lack of evidence, not because it failed', which turns missing data into a miss; that is the error. Mainstream (20% of organisations using it as a distinct practice) is not evidenced through 2019, so null. year_5pct 2010 is a bound (no later than 2012, the earliest placed year). No search spent here; low-medium certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2009-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-027",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-028",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-029",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-030",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-032",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-033",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2009-034",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-002",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-006",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "Mainstream in 2018, placed year 2020: within 2 years after, or earlier. Closer to A. B made a reading error: it marked XTP abandoned in 2012 because the analyst label faded. D16 grades the technology, and the architecture it named (scale-out transaction processing on in-memory data grids and distributed caches: Coherence, GemFire, Hazelcast, GigaSpaces, Redis-backed services) did not go away; it spread under the names in-memory computing and cloud-native scaling. Gartner's own 2013 estimate put in-memory computing at under 10% of midsize and large organisations in 2012, so 5% is about 2012. Its 2016 market guide described the in-memory data grid market as nearing mainstream; that is analyst context, not adoption evidence. Among high-volume transaction processors, which is a narrower and earlier-adopting population, routine use by 20% by 2018 is a low-confidence estimate. The verdict needs only mainstream by 2022 for the 2010 claim placed at 2020. A's 2015 and 2008 are unsupported; its evidence rows show titles only. No independent adoption survey exists for the concept as labelled; low certainty."
+  },
+  {
+   "id": "gartner-hype-cycle-2010-008",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-011",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "Mainstream in 2014, placed year 2020: within 2 years after, or earlier. Builder B was closer. On a chart about enterprise and consumer adoption, the 2007-2011 label 'Three-D/3D Printing' predates the consumer printer market (RepRap 2007, MakerBot 2009) and Gartner only introduced a separate 'Consumer 3D Printing' label in 2013, next to 'Enterprise 3D Printing'; the general label at first listing therefore reads as the enterprise technology. Builder A asserted a 'consumer and general-purpose framing' without a source and graded households, which is the later spin-off label. PwC/Manufacturing Institute (early 2014, 100+ US industrial manufacturers): about 35-38% using 3D printing for prototyping and/or production, so 20% is crossed by 2014 at the latest. That year is an upper bound; the hit for placed years 2017-2021 holds for any crossing up to 2019. year_5pct 2007 is a judgement (rapid prototyping long established). Medium certainty: the reading is the contested part, not the data."
+  },
+  {
+   "id": "gartner-hype-cycle-2010-012",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-013",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-015",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-017",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-018",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-021",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-022",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "miss",
+   "reason": "No dominant reading of the label; the readings give different verdicts (D16). Builder A was closer. The slash label deliberately merges two things, and Gartner carried it on both its cloud and its web/user-interaction hype cycles in 2010, so neither the cloud-hosting reading nor the web-API reading dominated at publication. They give different verdicts: under (a), builder B's Eurostat series (5% of all EU enterprises running own software on cloud computing power in 2018, about 20% hosting databases in 2021) gives miss for 2015 and partial for 2016; under (b), programmatic use of web platform APIs by developers and enterprises was mainstream before 2015, giving hit. Builder B picked (a) without arguing it dominated, and its denominator (all EU firms of 10+ employees) is also harsh against a large-enterprise chart. Years left null because they depend on the reading."
+  },
+  {
+   "id": "gartner-hype-cycle-2010-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-025",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-027",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "At least 5% from 2009, below mainstream by the placed year 2015. Follows B on the verdict-relevant facts. A says no source shows 5% of organisations, but it did not consider Cisco's own deployment figures. Cisco reported in September 2009 that over 350 organisations had chosen Cisco TelePresence (2,500 systems) and that more than a quarter of the Fortune 100 used intercompany TelePresence. With HP, Polycom and Teliris customers added, that is above 5% of large organisations by 2009. B dates it to 2008; 2009 is the first evidenced year, and either year sits before every placed year (2012-2015). Mainstream stays null: immersive rooms remained confined to the largest firms, and the use case moved to cheaper HD rooms and cloud meetings (Zoom, Teams), which are a different reading. Not abandoned, since immersive rooms are still sold."
+  },
+  {
+   "id": "gartner-hype-cycle-2010-029",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-030",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-032",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-033",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-034",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-035",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "Never reached 5%; not mainstream by 2020 (placed year 2015 plus 5). Follows B. The dominant reading is the dedicated micropayment system. The decisive point is Gartner's own placement: in 2010 it still put Internet Micropayment Systems on the rise, two years after the App Store and seven after the iTunes 99-cent store. So app-store and in-game purchases were not what the label referred to; counting them, as A does, makes the 2010 placement describe something already near mainstream. A says itself that under the dedicated-system reading the answer is never mainstream. No dedicated system (Millicent, IBM Micro Payments, BitPass, Flattr, Blendle, which moved to subscriptions in 2019) reached even 5% of internet users. Not marked abandoned, because new attempts keep appearing. A Gartner definition of the 2010 entry could not be retrieved, so this rests on the placement argument."
+  },
+  {
+   "id": "gartner-hype-cycle-2010-036",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2016, placed year 2015: within 2 years after, or earlier. Builder B. A listed several readings but they do not give different verdicts: pay-TV on-demand and programme guides were already widespread before 2010, and smart-TV apps crossed half of shipments in 2016; only broadcast-linked interactivity (ATSC 3.0, t-commerce) lags, and it was not the dominant meaning in 2010. IHS: smart TVs 45% of global shipments in 2015, more than half from Q1 2016, 70% in 2018. 2016 is within P+2=2017, so hit."
+  },
+  {
+   "id": "gartner-hype-cycle-2010-037",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-038",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-039",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-040",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2010-041",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-005",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "Reached 5% only in 2022; not mainstream by 2026 (placed year 2021 plus 5). Follows B on the verdict. A's mainstream year rests on an undated, unsourced vendor statistic ('nearly 50% of retailers', a Pelco blog citing another vendor). The primary survey contradicts it: ECR Retail Loss 2024 (81 retailers in 20 countries, mostly large) found overall video-analytics utilisation of 7%, store environment 15% and shopfloor/checkout 5%, dominated by security uses. ECR's 2020 report described only a few examples in use or trial. Customer-service video analytics therefore sat below 20% in 2024 and near the 5% line at most. B's 2024 as the 5% year is a generous lower estimate. Counting the 15% store-environment figure suggests 5% around 2022, still after the placed year 2021. year_5pct is a bound (after 2021). The claim is a provisional miss: its 5-year window closes in 2026."
+  },
+  {
+   "id": "gartner-hype-cycle-2011-006",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-007",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-010",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-011",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-012",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-013",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-014",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "Mainstream in 2014, placed year 2021: within 2 years after, or earlier. Builder B was closer. On a chart about enterprise and consumer adoption, the 2007-2011 label 'Three-D/3D Printing' predates the consumer printer market (RepRap 2007, MakerBot 2009) and Gartner only introduced a separate 'Consumer 3D Printing' label in 2013, next to 'Enterprise 3D Printing'; the general label at first listing therefore reads as the enterprise technology. Builder A asserted a 'consumer and general-purpose framing' without a source and graded households, which is the later spin-off label. PwC/Manufacturing Institute (early 2014, 100+ US industrial manufacturers): about 35-38% using 3D printing for prototyping and/or production, so 20% is crossed by 2014 at the latest. That year is an upper bound; the hit for placed years 2017-2021 holds for any crossing up to 2019. year_5pct 2007 is a judgement (rapid prototyping long established). Medium certainty: the reading is the contested part, not the data."
+  },
+  {
+   "id": "gartner-hype-cycle-2011-015",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2019, placed year 2021: within 2 years after, or earlier. Neither builder on years; the verdict follows A. Builder A's 2014 mainstream year rests on Gartner's own 2011 prediction (70% of Global 2000 by 2014), which is a forecast and widely judged to have failed, so it is not evidence. Builder B rightly rejected it but then left mainstream null. TalentLMS's 2019 survey of US employees found 61% receiving gamification in workplace training (vendor survey, US office workers; per search summary), and game mechanics were by then standard in mass consumer apps (language learning, fitness, loyalty tiers). Routine use at 20%+ by 2019 is the best-supported year; it is an estimate with a vendor-survey basis, and the placed year 2021 only needs a crossing by 2023 for a hit. year_5pct 2012 follows the 2010-2012 vendor wave (B)."
+  },
+  {
+   "id": "gartner-hype-cycle-2011-016",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-017",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-018",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-019",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-021",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-022",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-024",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-025",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-027",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-028",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-029",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-031",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "partial",
+   "reason": "No dominant reading of the label; the readings give different verdicts (D16). Builder A was closer. The slash label deliberately merges two things, and Gartner carried it on both its cloud and its web/user-interaction hype cycles in 2010, so neither the cloud-hosting reading nor the web-API reading dominated at publication. They give different verdicts: under (a), builder B's Eurostat series (5% of all EU enterprises running own software on cloud computing power in 2018, about 20% hosting databases in 2021) gives miss for 2015 and partial for 2016; under (b), programmatic use of web platform APIs by developers and enterprises was mainstream before 2015, giving hit. Builder B picked (a) without arguing it dominated, and its denominator (all EU firms of 10+ employees) is also harsh against a large-enterprise chart. Years left null because they depend on the reading."
+  },
+  {
+   "id": "gartner-hype-cycle-2011-032",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-033",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-034",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-035",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-036",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-037",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-038",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-039",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-040",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-041",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2011-042",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-011",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-014",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-018",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-022",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-027",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-032",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-035",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-036",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-037",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-039",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-041",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-042",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-043",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-044",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-045",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-047",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2012-048",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-027",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-033",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-035",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-036",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-037",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-038",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-039",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-041",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Mainstream in 2016, placed year 2015: within 2 years after, or earlier. Builder B, low certainty. A read Dresner's 'penetration remains modest' (share of users inside an organisation: in 2015, 70% of respondents had under 10% of staff using LI) as organisation-level adoption; that is a denominator error. The same figure implies the respondents' organisations already used LI, and 30% had at least 10% internal penetration in 2015. Map visualisation was standard in mainstream BI tools by the mid-2010s and GIS use in government and utilities was long established. No clean organisation-share series exists; 2016 is an estimate and an upper bound in spirit (2015-2016). Hit for P=2015 needs 2017 or earlier."
+  },
+  {
+   "id": "gartner-hype-cycle-2013-042",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2013-043",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-018",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-029",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-030",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Mainstream in 2024, 3 to 5 years after the placed year 2019. Builder B. Eurostat measures text mining at 2.9% of all EU enterprises in 2023 and 6.9% in 2024; among large enterprises 21.4% in 2024 (35% in 2025), so the 20% line for the most favourable denominator is 2024. A's 2014 was an unevidenced estimate. year_5pct 2012 is an estimate for large-firm use (text analytics market ~US$1bn in 2011, social listening at big brands); it decides partial vs miss for the 2007 claim (P=2012) and is the weakest point. Verdicts: partial for both claims."
+  },
+  {
+   "id": "gartner-hype-cycle-2014-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-036",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-037",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-039",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-040",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-041",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-042",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2014-043",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "miss",
+   "reason": "Never reached 5%; not mainstream by 2024 (placed year 2019 plus 5). Follows B. A's 5% year depends on counting the iPhone X front TrueDepth camera as a 3D scanner. That sensor is a face-authentication depth camera, and its occasional use for scanning does not make phone buyers 3D-scanner users. The 2014 label sat with 3D printing and referred to scanning devices (MakerBot Digitizer, Structure Sensor, Kinect-based scanners). A also flags its own share figure as from general knowledge and the counting as a judgement call. Standalone consumer scanners stayed niche, and rear LiDAR (Pro iPhones and iPads from 2020) is a minority of shipments and arrived after the placed year 2019. No evidence of 5% of target users by 2019 or of mainstream by 2024."
+  },
+  {
+   "id": "gartner-hype-cycle-2014-045",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-016",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-022",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "At least 5% from 2014, below mainstream by the placed year 2020. Builder B was closer. BARC/Eckerson (survey of 214 data and analytics leaders, late 2021) found only about 25% of employees use BI/analytics tools at all, almost unchanged in seven years, and that for 60% of business users 'self-service' means parameterised dashboards; Dresner 2020 still finds executives and managers as the main BI users. That is well short of business users routinely doing predictive analytics in 20% of organisations by 2022. Builder A dated mainstream to 2020 from a Gartner prediction about augmented analytics driving purchases, which is a forecast and a purchasing measure, not adoption. TDWI 2014 (business analysts building models in 63% of organisations already active in predictive analytics, itself a minority) supports at least 5% by 2014. Mainstream null through 2022 is the call; later AutoML/copilot features may change it but not within the claim's window."
+  },
+  {
+   "id": "gartner-hype-cycle-2015-025",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-033",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-034",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-036",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2015-037",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "gartner-hype-cycle-2016-026",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-hype-cycle-2016-030",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "Mainstream in 2020, placed year 2021: within 2 years after, or earlier. Builder B's verdict (hit), with a more conservative year. A called the umbrella ambiguous, but its components moved together and the readings do not give different verdicts: SD-WAN installed at 18% of enterprises (2018) and 43% (2020) per Frost & Sullivan; IDG/Masergy put large-firm adoption at 54% by 2019; software-defined storage/HCI grew in the same period. Set 2020 rather than B's 2019 to avoid relying on the vendor-sponsored large-firm sample; hit for P=2021 either way."
+  },
+  {
+   "id": "gartner-hype-cycle-2016-031",
+   "verdict": "hit",
+   "status": "audited"
+  }
+ ]
+}
