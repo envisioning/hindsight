@@ -1,0 +1,688 @@
+{
+ "rule": "D16",
+ "grader": "B",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "mit-tr-10-breakthrough-2017-003",
+   "verdict": "partial",
+   "reading": "Face recognition is accurate enough to be in wide use for payments and everyday verification, led by China (Alipay, Face++), as of 2017.",
+   "mainstream_test": "20% of target users: share of China's mobile payment users who pay by face recognition.",
+   "reason": "Placed 2017; hit needs mainstream by 2019. Face payment users in China were about 118 million in 2019, roughly 17% of the 700+ million mobile payment users, so short of 20% by 2019; reported users rose to about 495 million in 2021 (well above 20%), i.e. mainstream 4 years after the placed year. Partial (mainstream 3-5 years after).",
+   "evidence": [
+    {
+     "url": "https://apexx.global/blog/pay-with-your-face-the-new-facial-payment-technology-sweeping-china/",
+     "title": "Pay with Your Face: The New Facial Payment Technology Sweeping China",
+     "date": "2020",
+     "shows": "Facial payment users in China about 118 million in 2019; iMedia projected 760 million by 2022."
+    },
+    {
+     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0736585323000151",
+     "title": "Should I scan my face? ... intention to use facial recognition payment (Telematics and Informatics)",
+     "date": "2023",
+     "shows": "Cited figure: more than 495 million Chinese people used facial recognition for payment in 2021 (from search summary; page 403 to fetch)."
+    },
+    {
+     "url": "https://www.technologyreview.com/technology/paying-with-your-face/",
+     "title": "Paying with Your Face (MIT TR10 2017)",
+     "date": "2017-02-22",
+     "shows": "Framing: China, Alipay (120M users) face payment, Face++; Availability: Now."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-004",
+   "verdict": "miss",
+   "reading": "Practical quantum computers, built from stable qubits, able to do useful work beyond classical computers, available by 2022.",
+   "mainstream_test": "Routine use by at least 20% of the relevant industry (computing users doing real workloads on quantum computers).",
+   "reason": "As of 2023 classical computers still outperformed quantum computers on all real-world applications; quantum use remains experimental and well under 5% of any industry's workloads. Placed 2022; below 5% so far. Provisional miss, window closes 2027.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Quantum_computing",
+     "title": "Quantum computing (Wikipedia)",
+     "date": "2026",
+     "shows": "'As of 2023, classical computers outperformed quantum computers for all real-world applications'; quantum computers not yet practical for real-world applications."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-005",
+   "verdict": "miss",
+   "reading": "Consumer 360-degree cameras are a mainstream way for ordinary people to capture images, as of 2017.",
+   "mainstream_test": "20% of households in major markets owning or using a 360-degree camera (or 50% of new phones with 360 capture).",
+   "reason": "360 cameras stayed a niche: the market leader Insta360 (about two thirds of the category) had revenue of about USD 780 million in 2024, a few million units a year worldwide including action cameras, far below 5% of households; no major phone ships 360 capture. Window 2017-2022 closed. Miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Insta360",
+     "title": "Insta360 (Wikipedia)",
+     "date": "2025",
+     "shows": "Insta360 revenue USD 780 million in 2024, implying low single-digit millions of units per year for the category leader."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-007",
+   "verdict": "hit",
+   "reading": "Gene therapies (AAV-based, for inherited disease) reach US approval in 2017, with more following.",
+   "mainstream_test": "Event test: first US approvals by the placed year (2017) and further approvals following (routine regulatory pathway), within 2 years.",
+   "reason": "Luxturna was approved by the FDA in December 2017 and Zolgensma in May 2019, followed by Roctavian (2022), Elevidys (2023) and others. The stated event happened in the placed year. Hit.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gene_therapy",
+     "title": "Gene therapy (Wikipedia)",
+     "date": "2026",
+     "shows": "FDA approvals: Luxturna Dec 2017, Zolgensma May 2019, Roctavian Aug 2022, Elevidys Jun 2023."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-008",
+   "verdict": "partial",
+   "reading": "A master catalog of every human cell type (the Human Cell Atlas) is produced and usable within 5 years, by 2022.",
+   "mainstream_test": "Dominant reading of being in use: a body-wide catalog of human cell types published and used as reference by researchers by 2022 (complete first draft = hit).",
+   "reason": "By 2022 Tabula Sapiens and three companion studies mapped cell types across 24 human tissues, a large part of the catalog, and HCA data were in routine research use; but in November 2024 the consortium still described its 45-study collection as a step toward a first draft atlas. Substantial but incomplete by the placed year. Partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Human_Cell_Atlas",
+     "title": "Human Cell Atlas (Wikipedia)",
+     "date": "2025",
+     "shows": "2022: Tabula Sapiens and other studies mapping cell types across human tissues; Nov 2024 collection of 45+ studies is 'a significant step towards assembling a first draft atlas'; project remains incomplete."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-009",
+   "verdict": "hit",
+   "reading": "Botnets built from hijacked consumer IoT devices (Mirai-style) are an established, recurring source of large DDoS attacks and outages from 2017.",
+   "mainstream_test": "Dominant reading of being 'in use': IoT botnets a routine, recurring attack tool across the DDoS landscape within 2 years of 2017 (not a one-off).",
+   "reason": "Mirai variants and other IoT botnets kept appearing every year after 2016 (Satori 2017, Okiru, Masuta, OMG, Wicked 2018, Miori 2019 and later), up to Aisuru (2024-26) with record DDoS attacks of 31.4 Tbps. The phenomenon became routine. Hit. Caveat: Dyn-scale outages of major sites did not recur often.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mirai_(malware)",
+     "title": "Mirai (malware) (Wikipedia)",
+     "date": "2026",
+     "shows": "Variant list: Satori (Dec 2017), Okiru, Masuta (Jan 2018), OMG (Mar 2018), Wicked (2018), Miori/Hakai (2018-19), Aisuru (2024-) with record 31.4 Tbps DDoS."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2017-010",
+   "verdict": "partial",
+   "reading": "Reinforcement learning moves from games into practical use in automation (self-driving, robots, data-centre control) within 1 to 2 years, by 2019.",
+   "mainstream_test": "Routine use by at least 20% of the relevant industry (AI developers and automation deployers).",
+   "reason": "By 2019-2021 RL stayed a niche in deployed automation (self-driving and robotics relied mainly on supervised learning). RL became routine across the AI industry only from 2022-2023, when RLHF became the standard post-training step for LLMs (InstructGPT, ChatGPT, Claude, Gemini): mainstream about 3-4 years after the placed year 2019. Partial. Uncertain whether RLHF fits the article's automation framing.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback",
+     "title": "Reinforcement learning from human feedback (Wikipedia)",
+     "date": "2026",
+     "shows": "RLHF gained popularity with InstructGPT (2022); ChatGPT, Claude, Gemini, Sparrow are RLHF-trained."
+    },
+    {
+     "url": "https://www.technologyreview.com/technology/reinforcement-learning/",
+     "title": "Reinforcement Learning (MIT TR10 2017)",
+     "date": "2017-02-22",
+     "shows": "Framing: self-driving cars, robots grasping, data-centre configuration; Availability: 1 to 2 years."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-001",
+   "verdict": "partial",
+   "reading": "Metal 3D printing is quick and cheap enough for manufacturers to make production and spare metal parts on demand, as of 2018.",
+   "mainstream_test": "Routine use by at least 20% of manufacturers for producing metal parts.",
+   "reason": "Metal AM is routine at aerospace and medical leaders, and surveys of AM users show production use growing (12% of respondents used 3D printing for production parts in 2019; about half of AM-user firms had some metal AM). Across manufacturers overall, routine production use of metal AM stays well below 20%; the low-cost entrants named (Desktop Metal, Markforged) did not make it a mass method. Measurable share above 5% within the relevant industry by the placed year, below mainstream. Partial.",
+   "evidence": [
+    {
+     "url": "https://info.stratasysdirect.com/rs/626-SBR-192/images/SDM_Looking_Ahead_AM_in_2020_NF.pdf",
+     "title": "Looking Forward: Additive Manufacturing in 2020 (Stratasys Direct)",
+     "date": "2020",
+     "shows": "In 2019, 12% of respondents (AM users) used 3D printing for production parts (from search summary)."
+    },
+    {
+     "url": "https://amfg.ai/wp-content/uploads/2019/08/The-Additive-Manufacturing-Landscape-2019_Whitepaper.pdf",
+     "title": "The Additive Manufacturing Landscape 2019 (AMFG)",
+     "date": "2019",
+     "shows": "About 49% of surveyed AM-using companies used metal AM systems in 2019 (from search summary); survey population is AM users, not all manufacturers."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-002",
+   "verdict": "partial",
+   "reading": "Embryo-like structures made from stem cells alone become a working research tool for studying early (human) development, as of 2018.",
+   "mainstream_test": "Dominant reading of being in use (research method, not a consumer technology): complete stem-cell embryo models, including human ones, available to and used by developmental biology labs; within 2 years = hit, 3-5 years = partial.",
+   "reason": "In 2018 only partial mouse structures existed. Complete synthetic mouse embryos to organogenesis came in August 2022 and complete human day-14 embryo models in September 2023 (Nature), about 5 years after the placed year. Partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Synthetic_embryo",
+     "title": "Synthetic embryo (Wikipedia)",
+     "date": "2025",
+     "shows": "Aug 2022 synthetic mouse embryos with brain and beating heart (Weizmann, Cambridge); 6 Sep 2023 first complete human day-14 post-implantation embryo models in Nature."
+    },
+    {
+     "url": "https://www.technologyreview.com/technology/artificial-embryos/",
+     "title": "Artificial Embryos (MIT TR10 2018)",
+     "date": "2018-02-21",
+     "shows": "Framing: a boon to scientists studying early development; Availability: Now."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-004",
+   "verdict": "partial",
+   "reading": "Cloud AI services make AI cheap and easy enough that ordinary businesses, not just tech giants, use it, as of 2018.",
+   "mainstream_test": "Routine use by at least 20% of businesses (official enterprise surveys: Eurostat for EU enterprises with 10+ employees; US Census ABS).",
+   "reason": "US Census ABS 2018 found advanced technology adoption rare, AI use among firms around 3%. Eurostat: about 8% of EU enterprises used AI in 2021 and 2023, 13.5% in 2024, 19.95% in 2025 (55% of large enterprises). So above 5% within 5 years of 2018 but mainstream (20%) only about 2025, 7 years after. Not a miss (above 5% within the window), not a hit. Partial as the nearest D16 outcome; low certainty.",
+   "evidence": [
+    {
+     "url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises",
+     "title": "Use of artificial intelligence in enterprises (Eurostat)",
+     "date": "2025-12",
+     "shows": "EU enterprises using AI: 13.48% in 2024, 19.95% in 2025; large enterprises 44.64% (2024), 55.03% (2025)."
+    },
+    {
+     "url": "https://www.nber.org/papers/w28290",
+     "title": "Advanced Technologies Adoption and Use by U.S. Firms: Evidence from the Annual Business Survey (NBER w28290)",
+     "date": "2020-12",
+     "shows": "Advanced technology adoption, including AI, is rare among US firms in 2016-2018 (body reports AI use around 3%)."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-005",
+   "verdict": "hit",
+   "reading": "Generative adversarial networks (two networks sparring) produce ultra-realistic images and sounds and are in practical use as of 2018.",
+   "mainstream_test": "Dominant reading of being in use (a method, not a consumer product): GANs the routine, leading method for realistic image synthesis in the relevant field (generative imaging, research and commercial) within 2 years of 2018.",
+   "reason": "StyleGAN (Dec 2018, code Feb 2019), StyleGAN2 (2020) and BigGAN made GANs the state of the art for photorealistic synthesis; public and commercial use followed within a year (This Person Does Not Exist Feb 2019, 100,000 generated stock headshots Sep 2019, fake-profile misuse removed by Facebook Dec 2019). Diffusion models overtook GANs only from 2022. Hit. Low-medium certainty: no measured industry share.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/StyleGAN",
+     "title": "StyleGAN (Wikipedia)",
+     "date": "2025",
+     "shows": "StyleGAN Dec 2018/Feb 2019, StyleGAN2 Feb 2020, StyleGAN3 2021; This Person Does Not Exist Feb 2019; Generated Photos stock headshots Sep 2019; Facebook removed fake accounts with GAN faces Dec 2019."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+     "title": "Generative adversarial network (Wikipedia)",
+     "date": "2026",
+     "shows": "StyleGAN series and BigGAN (2019) described as state-of-the-art architectures."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-006",
+   "verdict": "miss",
+   "reading": "Translation earbuds (Pixel Buds style) give easy near-real-time spoken translation to ordinary users, as of 2018.",
+   "mainstream_test": "20% of target users (earbud owners / travellers) using in-ear live translation, or 50% of new earbuds shipping with it.",
+   "reason": "Pixel Buds translation was a niche and widely criticised as needing two phones; no adoption figures. Mainstream earbuds gained live translation only with Samsung Galaxy AI (2024) and Apple AirPods Live Translation (Sept 2025, beta, 5 languages), 6-7 years after 2018. Below 5% through 2023. Miss (window closed 2023).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pixel_Buds",
+     "title": "Pixel Buds (Wikipedia)",
+     "date": "2025",
+     "shows": "Wired review called the translation feature cumbersome ('an entirely pointless accessory'); no sales or adoption data."
+    },
+    {
+     "url": "https://www.apple.com/newsroom/2025/09/introducing-airpods-pro-3-the-ultimate-audio-experience/",
+     "title": "Introducing AirPods Pro 3 (Apple Newsroom)",
+     "date": "2025-09-09",
+     "shows": "Live Translation on AirPods 4 ANC and AirPods Pro 2 and later with iOS 26, in beta, five languages at launch."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-007",
+   "verdict": "miss",
+   "reading": "Natural gas power plants that capture their carbon efficiently and cheaply (NET Power Allam cycle) are commercially available within 3 to 5 years, by 2023.",
+   "mainstream_test": "Routine use: at least 20% of new gas power capacity built with near-zero-carbon capture (5% floor for partial).",
+   "reason": "NET Power's 50 MWth demo in La Porte, Texas synchronised to the grid in Nov 2021, but no commercial Allam-cycle or other near-zero-carbon gas plant operates as of 2026; capture on gas power is far below 5% of new capacity. Provisional miss, window closes 2028.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Allam_power_cycle",
+     "title": "Allam power cycle (Wikipedia)",
+     "date": "2025",
+     "shows": "Only a 50 MWth demonstration plant (built 2016-2017, grid sync 15 Nov 2021); no commercial plant documented."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-008",
+   "verdict": "miss",
+   "reading": "Zero-knowledge proofs give ordinary online users and transactions privacy (prove facts without revealing data), in practical use as of 2018.",
+   "mainstream_test": "20% of target users (internet or online-payment users) relying on ZK-based privacy, or routine use by 20% of the relevant industry (online services, finance).",
+   "reason": "Through 2023 ZK deployments were niche: Zcash and similar privacy coins, Cloudflare attestation (2021), research trials in identity; blockchain zk-rollups grew for scaling, not user privacy. No measure shows 5% of users or firms. ZK age verification began rolling out only in 2025. Miss (window closed 2023). Moderate certainty.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Zero-knowledge_proof",
+     "title": "Zero-knowledge proof (Wikipedia)",
+     "date": "2026",
+     "shows": "Deployments: Zcash (2016), Bulletproofs (2018), Cloudflare (Aug 2021); identity uses described as experimental; no adoption figures."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2018-009",
+   "verdict": "miss",
+   "reading": "Polygenic scores from a person's genome are used to predict risk of common diseases (and traits) for ordinary people, as of 2018.",
+   "mainstream_test": "20% of target users (adults in major markets) receiving polygenic risk predictions, clinically or from consumer tests.",
+   "reason": "As of 2021 PRS were in research trials and not standard of care; most use was through consumer genetic tests (23andMe and others), whose health-report customers were a low single-digit share of US adults; 23andMe went bankrupt in 2025. Below 5% through 2023. Miss (window closed 2023).",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Polygenic_score",
+     "title": "Polygenic score (Wikipedia)",
+     "date": "2026",
+     "shows": "'As of January 2021 providing PRS directly to individuals was undergoing research trials ... not yet offered as standard of care'; most use through consumer testing."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-001",
+   "verdict": "miss",
+   "reading": "Robots that learn dexterous manipulation (grasping varied objects, e.g. warehouse picking) are in practical use within 3 to 5 years, by 2024.",
+   "mainstream_test": "Routine use by at least 20% of the relevant industry (warehouses and fulfilment operations using learned robotic piece picking); 5% floor.",
+   "reason": "Interact Analysis estimated only just over 3,000 picking robots shipped worldwide in 2024 (excluding Amazon), a market of about USD 393 million, and projected that even by 2030 only 13% of warehouses would have one fulfilment mobile robot. Learned dexterous picking is far below 5% of warehouses. Provisional miss, window closes 2029.",
+   "evidence": [
+    {
+     "url": "https://interactanalysis.com/robotic-picking-market-forecast-triple-in-size/",
+     "title": "Robotic picking market forecast to almost triple in size by 2030 (Interact Analysis)",
+     "date": "2025",
+     "shows": "Just over 3,000 picking robots shipped in 2024 excluding Amazon; market about USD 393 million in 2024 (from search summary)."
+    },
+    {
+     "url": "https://www.technologyreview.com/10-breakthrough-technologies/2019/",
+     "title": "10 Breakthrough Technologies 2019 (MIT TR)",
+     "date": "2019-02-27",
+     "shows": "Robot dexterity: learning manipulation via simulation and RL, for warehouse tasks and home help; Availability: 3-5 years."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-003",
+   "verdict": "miss",
+   "reading": "A simple cell-free RNA blood test that predicts preterm birth is offered in doctors' offices within five years, by 2024.",
+   "mainstream_test": "20% of pregnant women in major markets screened with such a test (event floor: the test commercially offered by 2024).",
+   "reason": "Mirvie, the leading cfRNA pregnancy test company, markets only a preeclampsia test (Encompass); its preterm-birth prediction remains a research finding. No cfRNA preterm test is offered in routine prenatal care; uptake is far below 5% of pregnancies. Provisional miss, window closes 2029.",
+   "evidence": [
+    {
+     "url": "https://mirvie.com/",
+     "title": "Mirvie",
+     "date": "2026",
+     "shows": "Only commercial test is Encompass for preeclampsia; preterm-birth prediction (76% of early preterm cases) presented as research, not an available test."
+    },
+    {
+     "url": "https://www.technologyreview.com/10-breakthrough-technologies/2019/",
+     "title": "10 Breakthrough Technologies 2019 (MIT TR)",
+     "date": "2019-02-27",
+     "shows": "Predicting preemies: cfRNA blood test; 'A test could be offered in doctor's offices within five years'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-004",
+   "verdict": "miss",
+   "reading": "A swallowable tethered microscope capsule is in use (in adults) to screen and study gut diseases, including environmental enteric dysfunction in children, as of 2019.",
+   "mainstream_test": "Routine use by at least 20% of the relevant clinical field (gastroenterology screening, or EED screening programmes); 5% floor.",
+   "reason": "Tethered capsule endomicroscopy remains in feasibility and pilot studies (multi-center feasibility 2022; 2024 review lists it as emerging); no regulatory route to routine use or screening programme. Below 5% through 2024. Miss (window closed 2024).",
+   "evidence": [
+    {
+     "url": "https://pubmed.ncbi.nlm.nih.gov/?term=tethered+capsule+endomicroscopy&sort=date",
+     "title": "PubMed: tethered capsule endomicroscopy (most recent)",
+     "date": "2026",
+     "shows": "Recent papers 2022-2026 are feasibility/pilot studies; a 2024 review classes TCE as an emerging technology."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-009",
+   "verdict": "miss",
+   "reading": "Self-contained toilets that treat waste on site without sewers are deployed for communities lacking sanitation within 1 to 2 years, by 2021.",
+   "mainstream_test": "20% of target users (people lacking safely managed sanitation) served by sewerless reinvented toilets; 5% floor.",
+   "reason": "In 2022, 3.5 billion people still lacked safely managed sanitation and WHO/JMP describe progress through conventional sewered and on-site systems, with no material contribution from reinvented toilets; reinvented-toilet deployments remained pilots. Below 5% by 2026. Miss (window closes 2026).",
+   "evidence": [
+    {
+     "url": "https://www.who.int/news-room/fact-sheets/detail/sanitation",
+     "title": "Sanitation (WHO fact sheet)",
+     "date": "2024",
+     "shows": "2022: 57% used safely managed sanitation, 3.5 billion lacked it; no mention of reinvented or sewerless treatment toilets as a contributing category."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2019-010",
+   "verdict": "partial",
+   "reading": "AI assistants that hold natural conversations and complete conversation-based tasks (rather than simple commands) are in common consumer use within 1 to 2 years, by 2021.",
+   "mainstream_test": "20% of target users (adults in major markets) using conversational AI assistants.",
+   "reason": "Duplex-style booking stayed limited through 2021. Conversational assistants went mainstream after ChatGPT (Nov 2022): Pew found about 17-18% of US adults had used ChatGPT in 2023, 23% in early 2024 and 34% in 2025. 20% crossed about 2024, 3 years after the placed year. Partial. Uncertain: other assistants could push 2023 over 20%.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023 (Pew Research Center)",
+     "date": "2025-06-25",
+     "shows": "34% of US adults had used ChatGPT in 2025, about double the 2023 share."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-001",
+   "verdict": "miss",
+   "reading": "A quantum internet (entanglement-based network, Delft and others) gives unhackable communication in use within 5 years, by 2025.",
+   "mainstream_test": "Routine use by at least 20% of the target users (governments and financial institutions needing secure links); 5% floor.",
+   "reason": "As of 2025 quantum networks cannot yet transmit qubits end to end or create entanglement between distant nodes; deployed QKD (China's 4,600 km network) relies on trusted relays and is used by a handful of agencies and banks; networks are not standardised. Far below 5% of target users. Provisional miss, window closes 2030.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Quantum_network",
+     "title": "Quantum network (Wikipedia)",
+     "date": "2026",
+     "shows": "Existing networks 'do not yet allow for the end to end transmission of qubits'; China's network uses 32 trusted nodes; 'Quantum networks have not yet been standardized'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-002",
+   "verdict": "miss",
+   "reading": "Custom genetic drugs designed for a single patient's mutation (milasen-style n-of-1 antisense or gene editing) become a usable route of treatment for patients with rare genetic disease, as of 2020.",
+   "mainstream_test": "20% of target users (patients with rare, individually targetable mutations) receiving individualized genetic medicines; 5% floor.",
+   "reason": "N-of-1 genetic drugs remain experimental, offered by a nonprofit (n-Lorem) for 'nano-rare' patients and a few academic centres; the first personalised base-editing treatment (infant KJ) was reported only in 2025. Patients treated number in the tens to low hundreds against millions with rare genetic disease. Below 5% through 2025. Miss (window closed 2025).",
+   "evidence": [
+    {
+     "url": "https://www.nlorem.org/",
+     "title": "n-Lorem Foundation",
+     "date": "2026",
+     "shows": "Provides experimental individualized ASO medicines to patients with nano-rare diseases; experimental programme, not routine care."
+    },
+    {
+     "url": "https://www.technologyreview.com/10-breakthrough-technologies/2020/",
+     "title": "10 Breakthrough Technologies 2020 (MIT TR)",
+     "date": "2020-02-26",
+     "shows": "Hyper-personalized medicine: custom drugs for one patient (Mila Makovec, milasen); Availability: Now."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-003",
+   "verdict": "miss",
+   "reading": "Digital currencies from central banks (China's e-CNY) and big tech (Facebook's Libra) launch in 2020 and come into common use, displacing cash.",
+   "mainstream_test": "20% of target users (consumers in the launch markets) paying with the new digital currency; measured as active payment use, not wallets opened.",
+   "reason": "Libra/Diem was abandoned in 2022. e-CNY reached 261 million trial wallets by end-2021 but only USD 13.8 billion of transactions, a tiny fraction of China's mobile payments, and saw limited use at the 2022 Olympics against Alipay and WeChat Pay. Active payment share stayed well below 5% through 2025. Miss (window closed 2025). Uncertain: wallet counts alone would exceed 5%.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Digital_renminbi",
+     "title": "Digital renminbi (Wikipedia)",
+     "date": "2026",
+     "shows": "End-2021: 261 million wallets, USD 13.8 billion transactions; limited use at the 2022 Winter Olympics due to entrenched Alipay/WeChat Pay."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-004",
+   "verdict": "miss",
+   "reading": "Senolytic anti-aging drugs that clear senescent cells reach patients with age-related diseases within 5 years, by 2025.",
+   "mainstream_test": "20% of target users (patients with age-related conditions such as osteoarthritis) treated with senolytics; event floor: any approval.",
+   "reason": "As of 2026 no senolytic drug is approved for any indication; candidates remain in early human trials (Unity's lead UBX0101 failed in osteoarthritis in 2020). Below 5%. Provisional miss, window closes 2030.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Senolytic",
+     "title": "Senolytic (Wikipedia)",
+     "date": "2026-08",
+     "shows": "'Possible senolytic agents are under preliminary research, including some which are in early-stage human trials'; no approvals."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-005",
+   "verdict": "hit",
+   "reading": "Machine learning becomes a routine way for drug developers to find promising molecules within 3 to 5 years, by 2025.",
+   "mainstream_test": "Routine use by at least 20% of the pharmaceutical industry (large drug developers using AI for molecule discovery).",
+   "reason": "By 2025-2026 AI-discovered molecules were in phase 2 and 3 trials (Insilico's rentosertib in phase 3 in 2026) and large pharma had multi-billion AI discovery deals (Eli Lilly with Insilico, USD 2.75 billion, 2026); AI use in discovery is routine across top pharma. Hit. Under a stricter reading (an approved AI-discovered drug by 2027) it would not be a hit; the article frames discovery of candidates, not approval.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Insilico_Medicine",
+     "title": "Insilico Medicine (Wikipedia)",
+     "date": "2026",
+     "shows": "Rentosertib in phase 3 (2026); Eli Lilly partnership valued at USD 2.75 billion (Mar 2026) for AI-developed therapies."
+    },
+    {
+     "url": "https://www.technologyreview.com/10-breakthrough-technologies/2020/",
+     "title": "10 Breakthrough Technologies 2020 (MIT TR)",
+     "date": "2020-02-26",
+     "shows": "AI-discovered molecules: ML identifies drug candidates for developers; Availability: 3-5 years."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-006",
+   "verdict": "hit",
+   "reading": "Low-orbit mega-constellations (SpaceX, OneWeb, Amazon) are being deployed now and deliver high-speed internet to remote users, as of 2020.",
+   "mainstream_test": "Routine use within the relevant industry: mega-constellations carry at least 20% of satellite broadband users (the market the article frames, remote users without terrestrial access) within 2 years.",
+   "reason": "Starlink went from 10,000 subscribers (Feb 2021) to 1 million (Dec 2022), 3 million (Jun 2024) and 12 million (Jun 2026), with about 10,400 satellites, service in about 160 countries, and 75% of active manoeuvrable satellites; by 2022 it was the largest satellite broadband provider. Hit. Uncertain: measured against all households in major markets the share stays under 5%, which would give a miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Starlink",
+     "title": "Starlink (Wikipedia)",
+     "date": "2026",
+     "shows": "Subscribers: 10k Feb 2021, 100k Jun 2021, 1M Dec 2022, 3M Jun 2024, 12M Jun 2026; ~10,413 satellites; ~160 countries; ~75% of active manoeuvrable satellites."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-008",
+   "verdict": "hit",
+   "reading": "AI models run on the device itself (phones, edge devices) for features like voice assistants and autocorrect, without the cloud, as of 2020.",
+   "mainstream_test": "Device feature: at least 50% of new smartphones shipping with on-device AI acceleration and on-device AI features.",
+   "reason": "Neural accelerators have shipped in every iPhone since the A11 (2017) and in Qualcomm, Samsung, Huawei and Google Tensor SoCs; on-device speech recognition (Gboard 2019), Face ID and camera AI ran locally by 2020. By 2020-2022 a majority of new smartphones had NPUs. Hit. Medium certainty: no single shipment-share figure fetched.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Neural_processing_unit",
+     "title": "Neural processing unit (Wikipedia)",
+     "date": "2026-09",
+     "shows": "NPUs added to Apple processors circa 2017 and used in Apple silicon, Qualcomm, Samsung, Huawei and Google Tensor smartphone processors."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-009",
+   "verdict": "hit",
+   "reading": "Differential privacy is used to protect the 2020 US Census data, its largest application yet.",
+   "mainstream_test": "Event test: DP applied to 2020 Census data products by the placed year (2020 Census cycle, within 2 years).",
+   "reason": "The Census Bureau applied differential privacy to the 2020 Census Redistricting Data (released Aug 2021) and later products. The stated event happened. Hit. Note: the Bureau now says this page is no longer current after a Commerce order prohibiting noise infusion, so the 'model for other countries' framing did not hold; that does not undo the stated use.",
+   "evidence": [
+    {
+     "url": "https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/process/disclosure-avoidance/differential-privacy.html",
+     "title": "Differential Privacy and the 2020 Census (US Census Bureau)",
+     "date": "2025",
+     "shows": "DP used for the 2020 Census Redistricting Data; banner says the page is no longer current due to an order prohibiting noise infusion."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2020-010",
+   "verdict": "hit",
+   "reading": "Scientists can now rapidly attribute specific extreme weather events to climate change, and this is in routine use as of 2020.",
+   "mainstream_test": "Dominant reading of being in use (a scientific method): rapid event attribution routine across climate science and for major extreme events, within 2 years of 2020.",
+   "reason": "Attribution became routine: World Weather Attribution issues rapid studies while events are in the news (e.g. France 2021, Madagascar 2021, India/Pakistan 2022, Nigeria 2022), and Carbon Brief has mapped more than 900 attribution studies covering almost 1,000 events by March 2026. Hit.",
+   "evidence": [
+    {
+     "url": "https://interactive.carbonbrief.org/attribution-studies/index.html",
+     "title": "Mapped: How climate change affects extreme weather around the world (Carbon Brief)",
+     "date": "2026-03-19",
+     "shows": "More than 900 attribution studies covering almost 1,000 extreme weather events and trends."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/World_Weather_Attribution",
+     "title": "World Weather Attribution (Wikipedia)",
+     "date": "2026",
+     "shows": "Founded 2014; produces rapid reports while news is fresh; studies on France 2021, Madagascar 2021, India/Pakistan 2022, Nigeria 2022."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-001",
+   "verdict": "hit",
+   "reading": "Passwordless authentication (passkeys/FIDO, biometrics, authenticator apps) replaces passwords for ordinary users, starting now (2022).",
+   "mainstream_test": "20% of target users (consumers with online accounts in major markets) signing in with passkeys or other passwordless methods on at least one major account, by 2024.",
+   "reason": "Google reported passkeys used more than 1 billion times across over 400 million Google Accounts by May 2024 (roughly a fifth of Google's users), alongside Apple and Microsoft passkeys; a FIDO Alliance survey in April 2025 (US, UK, China, South Korea, Japan) found 69% of consumers had enabled passkeys on at least one account. Mainstream by about 2024, within 2 years. Hit. Borderline on the 2024 date; passwords themselves are not gone.",
+   "evidence": [
+    {
+     "url": "https://blog.google/technology/safety-security/google-passkeys-update-april-2024/",
+     "title": "Google passkeys update (Google blog)",
+     "date": "2024-05-02",
+     "shows": "Passkeys used more than 1 billion times across over 400 million Google Accounts."
+    },
+    {
+     "url": "https://fidoalliance.org/fido-alliance-champions-widespread-passkey-adoption-and-a-passwordless-future-on-world-passkey-day-2025/",
+     "title": "FIDO Alliance, World Passkey Day 2025",
+     "date": "2025-05",
+     "shows": "Survey of 1,389 adults (Apr 2025): 74% aware of passkeys, 69% enabled passkeys on at least one account."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-002",
+   "verdict": "hit",
+   "reading": "Genomic surveillance lets scientists track covid and spot new variants quickly, in routine use as of 2022.",
+   "mainstream_test": "Routine use by at least 20% of the relevant field (national public health systems sequencing and sharing SARS-CoV-2 genomes).",
+   "reason": "Researchers in over 170 countries had submitted to GISAID by mid-2021; the database held 10 million sequences by April 2022 and 14.4 million by January 2023. Routine across most countries in the placed year. Hit.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/GISAID",
+     "title": "GISAID (Wikipedia)",
+     "date": "2026",
+     "shows": "Over 170 countries contributing by mid-April 2021; 10 million sequences by April 2022; 14.4 million by January 2023."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-003",
+   "verdict": "miss",
+   "reading": "Iron-based long-duration grid batteries (ESS iron flow, Form Energy iron-air) are deployed for grid storage, as of 2022.",
+   "mainstream_test": "Routine use: at least 20% of new grid storage capacity (5% floor) from iron-based long-duration batteries.",
+   "reason": "Form Energy signed its first utility contracts in 2023 (Xcel, 10 MW / 1 GWh systems) and began shipments from 2024; deployments are pilot-scale against hundreds of GWh of lithium-ion storage added annually. Far below 5% of new grid storage. Provisional miss, window closes 2027.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Form_Energy",
+     "title": "Form Energy (Wikipedia)",
+     "date": "2026",
+     "shows": "First Xcel contracts Jan 2023 (10 MW, 100 h each); Weirton factory to begin shipments 2024; Google data-centre deal 2026; no large fleet online."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-004",
+   "verdict": "hit",
+   "reading": "AI protein-structure prediction (AlphaFold2) is in routine use by biologists, as of 2022.",
+   "mainstream_test": "Routine use by at least 20% of the relevant field (structural and molecular biology research).",
+   "reason": "The AlphaFold DB covered about 200 million structures by July 2022; more than 40% of protein-structure papers in Cell, Nature and Science in 2023 cited AlphaFold2; the paper had nearly 43,000 citations by Nov 2025; Nobel Prize 2024. Hit.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/AlphaFold",
+     "title": "AlphaFold (Wikipedia)",
+     "date": "2026",
+     "shows": "~200 million structures added Jul 2022; >40% of 2023 protein-structure papers in Cell/Nature/Science cited AlphaFold2; ~43,000 citations by Nov 2025; 2024 Nobel Prize in Chemistry."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-005",
+   "verdict": "partial",
+   "reading": "The RTS,S malaria vaccine (first vaccine against a parasite) is available now, in limited use, for children in endemic Africa, as of 2022.",
+   "mainstream_test": "20% of target users: children of vaccination age in malaria-endemic African countries reached by routine malaria vaccination; 5% floor.",
+   "reason": "In 2022 the vaccine was given only in the Ghana, Kenya and Malawi pilots, a low single-digit share of the endemic birth cohort. Routine introductions began in 2024; by February 2026, 25 African countries offered RTS,S or R21 and more than 10 million children a year were targeted, about a quarter of the cohort in endemic countries, and only 5 countries nationwide. Mainstream reached about 2026-2027, 4-5 years after the placed year. Partial.",
+   "evidence": [
+    {
+     "url": "https://www.who.int/news-room/questions-and-answers/item/q-a-on-rts-s-malaria-vaccine",
+     "title": "Q&A on RTS,S malaria vaccine (WHO)",
+     "date": "2026-02-04",
+     "shows": "25 African countries offer malaria vaccines in childhood immunization; >10 million children per year targeted; 5 national, 19 subnational introductions."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-006",
+   "verdict": "hit",
+   "reading": "Proof of stake replaces energy-hungry proof of work, with Ethereum switching in 2022.",
+   "mainstream_test": "Event test: Ethereum's transition to proof of stake in 2022; also routine use by at least 20% of the relevant industry (share of crypto value secured by PoS).",
+   "reason": "Ethereum completed The Merge on 15 September 2022, cutting energy use by over 99%. With Ethereum, Solana, Cardano and others, PoS secures well over 20% of crypto market value. Hit.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ethereum",
+     "title": "Ethereum (Wikipedia)",
+     "date": "2026",
+     "shows": "On 15 September 2022 Ethereum moved from PoW to PoS (The Merge), cutting energy use by over 99%."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-007",
+   "verdict": "partial",
+   "reading": "An oral covid antiviral (Pfizer's Paxlovid) is available now and widely used to treat covid patients, as of 2022.",
+   "mainstream_test": "20% of target users: eligible (high-risk) covid outpatients in major markets receiving the pill.",
+   "reason": "Throughout 2022 only 10-12% of eligible US adult outpatients received nirmatrelvir/ritonavir; about 3 million US prescriptions in 2023 as covid waves shrank. Above 5% in the placed year, below 20%, with no evidence of reaching 20% later. Partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nirmatrelvir/ritonavir",
+     "title": "Nirmatrelvir/ritonavir (Wikipedia)",
+     "date": "2026",
+     "shows": "'Throughout 2022, only 10-12% of eligible US adult outpatients had received nirmatrelvir/ritonavir'; >3 million US prescriptions in 2023."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-009",
+   "verdict": "hit",
+   "reading": "Synthetic data is used to train AI, avoiding privacy and bias problems of real data, starting now (2022).",
+   "mainstream_test": "Routine use by at least 20% of the relevant industry (organisations training AI models).",
+   "reason": "By 2024 synthetic data had become a core component of LLM post-training pipelines across model developers (Self-Instruct, Persona Hub and similar methods), within 2 years of 2022. Hit. Low certainty: no survey of organisations measuring the share; the article's own framing (vendors selling privacy-safe datasets) is a narrower market.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Synthetic_data",
+     "title": "Synthetic data (Wikipedia)",
+     "date": "2026",
+     "shows": "Synthetic data 'has become a core component of the post-training pipeline' for LLMs; no adoption survey figures."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2022-010",
+   "verdict": "miss",
+   "reading": "Direct air capture plants (Climeworks Orca and successors) remove CO2 at a meaningful scale, starting now (2022).",
+   "mainstream_test": "Routine use: DAC as at least 20% of durable carbon removal (5% floor) or of the relevant industry's mitigation practice.",
+   "reason": "Orca's nominal capacity was 4,000 t/yr (2021) and Mammoth's 36,000 t/yr (2024), and in May 2025 reporting showed both captured only a fraction of nameplate. DAC removes a negligible share of CO2 and a small share even of durable removal. Provisional miss, window closes 2027.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Climeworks",
+     "title": "Climeworks (Wikipedia)",
+     "date": "2026",
+     "shows": "Orca 4,000 t/yr nominal (Sep 2021); Mammoth 36,000 t/yr (May 2024); May 2025 reports that the plants captured only a fraction of nameplate and did not offset their own emissions."
+    },
+    {
+     "url": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture",
+     "title": "Direct Air Capture (IEA)",
+     "date": "2026-06",
+     "shows": "IEA tracking page for DAC capacity (data in CCUS Projects Explorer; figures not in page text)."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-005",
+   "verdict": "miss",
+   "reading": "Robotaxis are now available to the public and become a mainstream way to ride, around 2025.",
+   "mainstream_test": "20% of ride-hailing trips in major markets (national, US and China) taken in driverless robotaxis; 5% floor.",
+   "reason": "Waymo gives about 500,000 paid rides per week (2026) across about a dozen US metros, under 1% of US ride-hail trips; Baidu, Pony and WeRide are of similar order against China's tens of millions of daily ride-hail trips. Local shares are high in San Francisco, but national shares are below 5%. Provisional miss, window closes 2030; a hit is still possible by 2027.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Waymo",
+     "title": "Waymo (Wikipedia)",
+     "date": "2026",
+     "shows": "500,000 paid rides per week (Mar-Jun 2026) across Phoenix, SF Bay Area, LA, Austin, Atlanta and other metros."
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/01/03/1108950/robotaxis-driverless-cars-breakthrough-technologies-2025/",
+     "title": "Robotaxis (MIT TR10 2025)",
+     "date": "2025-01-03",
+     "shows": "Framing: robotaxis now available to the public in US and Chinese cities; WHEN: Now."
+    }
+   ]
+  }
+ ]
+}
