@@ -1,0 +1,326 @@
+{
+ "rule": "D16",
+ "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
+ "kappa": 0.8843,
+ "n": 186,
+ "counts": {
+  "hit": 14,
+  "miss": 28,
+  "contested": 4,
+  "partial": 4,
+  "ungradable": 136
+ },
+ "hit_rate": {
+  "hits": 14,
+  "of_graded_hit_partial_miss": 46,
+  "rate": 0.3043,
+  "wilson95": [
+   0.191,
+   0.448
+  ]
+ },
+ "hit_or_partial_rate": 0.3913,
+ "adjudicated": 9,
+ "audit": {
+  "sample": 42,
+  "audited": 42,
+  "confirmed": 37,
+  "corrected": 1,
+  "contested": 4,
+  "error_rate": 0.119
+ },
+ "verdicts": [
+  {
+   "id": "gartner-strategic-predictions-2004-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2004-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2004-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-001",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "D16 quantitative rule on the US measure. Forecast about 12.2% (2 x 6.1%). Actual 2011: IDC full year 10.73%; Gartner quarters 9.3%, 12.9% (Q3), 11.6% (Q4), annual level about 11%. Error vs forecast 10-14% of the actual (ratio 1.76x-1.82x vs 2.0x): outside the 10% hit band, inside 25%: partial. Western Europe not verified by either grader. Grader A error: its cited MacDailyNews page (2011-10-12) gives no Western Europe share; the 7.6% vs 5.7% figure is not on the page, so A's 'both regions about doubled' is unsupported. A also rounded an about-11% annual US level to 'within 10% of 12%', which holds only at the top of the range."
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-009",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "Cited pages do not show the facts the graders rely on: FTC 2014 release gives AT&T throttling from 2011 but no date for ending unlimited sales; AT&T Mobility and Verizon Wikipedia pages give only 2016/2017 reintroduction. No opened source counts how many operators had dropped flat-rate data by 2010 or by 2013-2015, so neither partial nor miss is supported."
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-010",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "A public measure exists: Cisco VNI (May 2013) puts all machine-to-machine traffic, a superset of sensor traffic, at 0.5% of global IP traffic in 2012. Even if non-video traffic were only 40% of IP traffic, M2M would be at most about 1.25% of non-video traffic, an order of magnitude below 20%. An upper bound this far below the forecast settles the claim; it is not a proxy of another quantity (D23). Miss. Grader B's ungradable rested on Cisco VNI being unreachable; the 2013 Cisco release is reachable."
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-006",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Grader's global figure (eMarketer about $170bn digital ad spend 2015) could not be opened (404); opened pages give only US IAB $72.5bn (2016) and total all-media global ad spend $536-545bn (Magna/Zenith, Breitbart 2014-12-08). Global internet marketing spend could be about $170-200bn, which is miss or partial (within 25% of $250bn) depending on the figure, and the 'regulated' element is not evidenced either way."
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-01-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-001",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "Wikipedia Shamoon: 30,000+ Aramco Windows workstations wiped and fuel-truck loading halted, but exploration and production systems were on isolated networks and unaffected, so whether 'critical infrastructure' was damaged depends on the reading. The 2014 German steel mill case is not cited with any source; evidence too weak for hit or miss."
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-008",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-002",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Full-year 2014 all mobile phones (Gartner, via Wikipedia table): Samsung 392.5M, Apple 191.4M, Microsoft 185.7M, Lenovo/Motorola 84.0M, LG 76.1M, then Huawei 70.5M: one Chinese vendor in the top five. Full-year 2014 smartphones: Samsung, Apple, Lenovo, Huawei, LG: two. Only the Q4 2014 smartphone quarter (Apple, Samsung, Lenovo, Huawei, Xiaomi) has three. Three Chinese vendors in the full-year top five came in 2015 (smartphones: Huawei 104.1M, Lenovo 72.7M, BBK 72.4M). Not met on the dominant measure in 2014; met on the year-end quarter of a sub-measure and on full-year smartphones one year late: partial, following the late-arrival practice both graders used for event claims. Grader A graded a single-quarter smartphone ranking, a narrower reading than 'handset vendors by year-end 2014'. Grader B reading error: it listed Huawei in the 2014 all-phone top five, but its own figures put LG (76.1M) above Huawei (70.5M), so the count is one, not two."
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2012-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-004",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-007",
+   "verdict": "miss",
+   "status": "corrected",
+   "was": "partial",
+   "reason": "The claim's cause did not occur: graders themselves record mature-economy employment at record highs by 2019 and no unrest attributed to digitization job loss; the basic-income pilots (Wikipedia UBI pilots: Finland cites automation among several motives) answered anticipated, not realized, labor reduction. D16 gives no partial for half of a compound event whose driver failed, as with 2012-004: miss."
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-008",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2013-014",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "A public measure of fitment exists: in Japan, where low-priced kei cars got low-cost AEB from 2012 (Daihatsu Smart Assist, Mazda SCBS), 41% of new passenger cars sold in 2014 had collision mitigation braking, up from launches in 2012. The direction stated is met by 2014: hit. Caveat: the Japanese figure counts fitment, not only standard fitment. Grader A's ungradable rested on not finding a series; the omitted amount leaves a direction claim, which is gradable. Grader B's citation of UNECE R131 is weak: that regulation covers heavy vehicles, not economy cars; its other evidence (sensor demand, Honda/Toyota announcements) is indirect."
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-004",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-010",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "partial",
+   "reason": "Neither partial rationale is supported: A grades 'done by another agent' (wallets, autofill), which is no D16 test; B's cited Google Assistant page mentions Duplex only for phone calls, not form filling, so the claimed 2019 arrival is unconfirmed. Under the autofill reading it is a hit, under the assistant reading the evidence does not show arrival within 5 years."
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-011",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "reason": "Public measures exist. Digital Commerce 360 / eMarketer put mobile at nearly 35% (34.5%) of US e-commerce sales in 2017; comScore put mobile at 21% of total digital commerce dollars in Q4 2016 (the year before). Estimates span 21-35%, a factor under 2 (D23); median about 28%; even the high estimate is 30% below 50%. Miss. Grader A's ungradable was a retrieval gap, not an absence of measures; A itself recalled about one third."
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2014-020",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-007",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-009",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-004",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "reason": "Measured consumption of false news in a mature economy exists: Allen et al. (2020), on a representative US panel of TV, desktop and mobile use, find fake news at 0.15% of the daily media diet and news overall at most 14.2%. For false information to exceed true for most people, the share would have to exceed half; the measured share is orders of magnitude lower, and no later study reports a share near that. Miss. Grader A's Reuters DNR evidence measures concern, not consumption, as A said; but the consumption measure exists, so ungradable does not apply. Data years precede 2022; the gap is too large for the vintage to change the verdict."
+  },
+  {
+   "id": "gartner-strategic-predictions-2017-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-002",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-003",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "The claim states a value attributed to a technology (visits avoided due to AI-enhanced virtual care). Under D23 such an attributed value is ungradable unless a public source measures the attribution; none does (NHAMCS and CDC report total visits, not visits avoided by virtual care). Grader A graded total ED visits (130.0M in 2018, 155.4M in 2022), a different quantity: totals can rise while a counterfactual reduction occurs, so the rise does not establish a miss. A's figures are correct; the reading is the error."
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-007",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2018-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-001",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-005",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-007",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "Graded as an adoption claim under D16 (below 5% = miss). The news industry's provenance effort converged on C2PA (founded with BBC, Microsoft, Adobe, and the New York Times' involvement), which secures provenance with hash codes and certified digital signatures, not a blockchain. Blockchain authentication of news stayed at pilot or single-outlet scale, which bounds the share far below 5% of world news and video. No survey gives a share, but adoption at this scale is evident from what was deployed, as for other D16 adoption calls; ungradable would require that no measure of the claim's state exists. Least certain call in this set on the ungradable boundary."
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-010",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2020-010",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "miss",
+   "reason": "The claim names its own measure, a CEO survey. Gartner's 2024 CEO and senior executive survey (416 respondents) reports top business priorities with shares (growth 62%, then technology and workforce); content moderation is not among the reported priorities, so its share is well below 30%. Miss. The survey release itself returned 403 and the archive was blocked; the priority list is from search summaries cited by grader B. Grader A looked for the item and found it absent, which is evidence of a miss rather than of no measure."
+  },
+  {
+   "id": "gartner-strategic-predictions-2021-004",
+   "verdict": "miss",
+   "status": "audited"
+  }
+ ]
+}
