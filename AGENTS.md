@@ -18,6 +18,7 @@ node scripts/final-d20.mjs <source>        agreed + adjudicated + audited -> fin
 node scripts/measure-audit-sample.mjs <source>   D32/D34 measures -> fixed-seed D11 sample in audit-d32.json / audit-d34.json (--check to verify)
 node scripts/scenario-coverage-d34.mjs     D34 coverage-d34.json for Shell, IPCC (with the matching audit) and NIC; D11 applied
 scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
+node scripts/links/<step>.mjs           research links (D48): snapshot, check-model, embed-subjects, candidates, agreement, audit-sample, final; see data/links/README.md
 ```
 
 pnpm only. The build is the gate. MZ tests by hand: do not write automated tests or drive a browser unless asked.
@@ -57,13 +58,13 @@ Hindsight connects to other Envisioning systems only where the product needs it.
 
 | Neighbour | Contract |
 |---|---|
-| Research database (Core CMS `technologies`) | One link table, `SubjectTechnologyLink`. The research tables do not change. |
+| Research database (Core CMS `technologies`) | One link table, `SubjectTechnologyLink` in `data/links/research.json` (D48). Read-only, published rows, anon key. The research tables do not change. |
 | National Capability Benchmark | Nothing at runtime. `Institution.ncb_id` is an optional note. |
 | Signals | Evidence is copied (URL, date, title). `signal_ref` is an optional note, never a foreign key. |
 
 ## Traps
 
 - **Embeddings for linking.** The Core CMS column `technologies.embedding` is `vector(1536)` holding `text-embedding-3-large` requested with `dimensions: 1536`. It is not `3-small` (cosine about 0 against stored rows) and not 3072 (the Core migration file is stale). Text recipe: title, summary, description joined by blank lines. Before writing or comparing vectors, re-embed two stored rows and confirm cosine above 0.9. Subject embeddings must use the same model and dimensions.
-- **All 4,807 technologies have embeddings** (backfill 2026-09-28, research `scripts/sync-cms-embeddings.ts`). New ones depend on auto-embedding on insert (core#168); a technology without one gets no link proposal.
+- **All 4,807 technologies have embeddings** (backfill 2026-09-28, research `scripts/sync-cms-embeddings.ts`). Only the 4,018 in published research projects are linked (D48). New ones depend on auto-embedding on insert (core#168); a technology without one gets no link proposal.
 - **Web search budget.** Grading agents share a web-search limit of about 200 per session. Prefer WebFetch on known sources; cap WebSearch per agent.
 - **`.next` race in www.** A www build can fail with `ENOTEMPTY ... rmdir .next/server` when another build or dev server touches `.next`. Rerun; check the exit code before committing.

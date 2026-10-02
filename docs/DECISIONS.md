@@ -715,3 +715,31 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** 29 more rename checks. Recycled shares fall to zero until the passes are published, and the graded totals shrink by the pending rows (FTSG 2,748 to 2,722, Deloitte 143 to 140).
 
 **Overturned by.** Subject mapping good enough that a missing subject reliably means a missing trend (D13), so that checkers add nothing on these rows.
+
+## D48: Subject-technology links (#59)
+
+*Recorded 2026-10-02. Issues #57, #59. Implements D5 under D20.*
+
+**Decision.**
+
+- **Scope, phase 1.** Hindsight subjects of kind `technology` (4,960 at this commit) against the published technologies of published research projects in the Core CMS (4,018 of 4,807 on 2026-10-02; the other 789 sit in unpublished projects (12 of 59 projects are unpublished) and join when their project is published). Every technology has a stored embedding since the backfill of 2026-09-28. Origins and the other subject kinds are phase 2.
+- **Vectors.** Technologies keep their stored CMS vectors: `text-embedding-3-large` requested at 1536 dimensions, text = title, summary, description joined by blank lines. Subjects are embedded with the same model and dimensions (`openai/text-embedding-3-large` through OpenRouter). The subject text is written by `pnpm normalize` to `data/normalized/subject-text.json`: the name, the other aliases, and one claim text per source (the first published claim by id whose quote says more than a label, else its non-generated statement; 300 characters at most). Before any subject is embedded, `scripts/links/check-model.mjs` re-embeds two stored technology rows and requires cosine above 0.9 (`data/links/model-checks.json`); a failed check stops the run. Vectors stay outside git; the repo keeps the model name and a sha256 per input text (`subject-vectors.json`, `technologies-snapshot.json`).
+- **Candidates, both directions.** Each subject's 5 nearest technologies and each technology's 3 nearest subjects by cosine, their union, plus every exact or alias title match (D13 normalized key). Mutual nearest neighbours are flagged. No similarity floor: the cosine scale between a short subject text and a long technology text is not calibrated, so the verifiers decide. `data/links/runs/<run>/candidates.json`.
+- **Verification (D20).** Two blind verifier agents judge every candidate in batches of about 150 (a subject's candidates are never split): `link` (same technology), `broader` (the technology is broader than the subject), `narrower`, or `no_link`, each with a one-line reason (`docs/grading/link-verifier.md`). Agreement: Cohen's kappa over the four values, at least 0.6 (D11) or the prompt is revised. An adjudicator agent settles contested pairs; an auditor agent checks a fixed-seed sample of accepted links (at least 50 or 10%, stratified by verdict, seed `d48:<run>`) and records confirm, correct or reject. A correction replaces the verdict; a rejection removes the link. The error rate is published per run in `final.json` and `data/links/README.md`.
+- **Rows.** `link` becomes relation `same` (the primary link); `broader` and `narrower` are kept as related links shown with less weight. Rows are `SubjectTechnologyLink`, appended to `data/links/research.json` by `scripts/links/final.mjs` with similarity, method `d48:<exact|alias|semantic>`, agent, run and date. The latest row of a pair is its state; a retraction is a new row with status `retracted`. A pair whose latest row has method `curated` is never touched.
+- **Changes from the #59 plan.** Verdict names are `link | no_link | broader | narrower` (the plan's `same | unrelated`); two blind verifiers instead of one confirming agent, as for every other judgment (D20); the counts above replace the plan's 3,548 technologies and 1,451 subjects.
+
+**What crosses, in which direction.** CMS to Hindsight only, read at snapshot time with the public anon key: technology UUID, research slug, `original_id`, title, summary and description (as embedding text and verifier input), and the stored vector. Published rows only. Nothing crosses from Hindsight to the CMS; the research tables do not change and do not know Hindsight exists (D3). www reads the files in `data/links/` one way, as it reads the rest of the data.
+
+**What breaks when the other side changes.**
+- A technology deleted or unpublished, or its project unpublished: the link points at a missing page. The upkeep check (#59 step 7) appends a retraction; until then www must show nothing for a technology it cannot find.
+- A renamed `original_id` or research slug: the UUID key still holds, but the URL parts copied into the row are stale. Pages must build URLs from a fresh snapshot, not from the row.
+- Technology text edited: its sha256 in the snapshot changes. Existing links stand until a later run decides the pair again.
+- The CMS changes embedding model or dimensions: the model check fails and no run proceeds until subjects are re-embedded with the new model, recorded as a new decision.
+- Hindsight merges or relates subjects (D13): subject ids never change, so links do not dangle, but a merged subject needs a new run for its pairs.
+
+**Why.** D5 asks for embedding proposals verified by agents; D20 makes agents the only judges, with the same blind pair, adjudication and audit as verdicts. Matching from both sides keeps recall from depending on which side is denser (#59).
+
+**Cost.** At least five candidates per subject, two verifier passes over every one, and an auditor; a few cents of embeddings. Agent verifiers share blind spots, and the audit measures disagreement with the auditor, not truth. Broader and narrower links depend on judgment more than same links.
+
+**Overturned by.** An audit error rate above 10% on `same` links, or wrong links that readers notice (D5); or a canonical concept layer in the research database (D4).

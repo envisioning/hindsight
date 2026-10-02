@@ -214,20 +214,89 @@ export const RawCorrections = z.object({
   corrections: z.array(RawCorrection),
 });
 
-/** The one seam with the research database. Append-only; a wrong link is retracted, never deleted. */
+/** How a subject relates to a research technology (D48). `same` is a primary link; `broader` (the technology is broader than the subject) and `narrower` are shown as related. */
+export const LinkRelation = z.enum(["same", "broader", "narrower"]);
+
+/**
+ * The one seam with the research database (D3, D5, D48). Append-only, in `data/links/research.json`:
+ * a wrong link is retracted by a new row with `status: retracted`, never deleted or edited.
+ * The latest row of a (subject_id, technology_id) pair is its state.
+ */
 export const SubjectTechnologyLink = z.object({
+  /** `<subject_id>~<technology_id>#<n>`, n counting the rows of the pair from 1. */
   id: Id,
   subject_id: Id,
   /** A `technologies.id` in the Core CMS. */
   technology_id: z.string().uuid(),
-  similarity: z.number().min(0).max(1).optional(),
-  /** `curated` links (for example Origins) are never overwritten by agent passes. */
+  /** URL parts: envisioning.com/research/<research_slug>/<original_id>. Copied at link time. */
+  research_slug: Id,
+  original_id: Id,
+  relation: LinkRelation,
+  /** Cosine of the subject and technology vectors (D48 model), when computed. */
+  similarity: z.number().min(-1).max(1).optional(),
+  /** `curated` links (for example Origins) are never overwritten by agent passes. D48 agent links: `d48:<match>`, match = exact | alias | semantic. */
   method: z.string().min(1),
+  /** Who decided: for D48, `verifiers:<A>+<B>`, `adjudicator:<agent>` or `auditor:<agent>`. */
   agent: z.string().min(1),
   status: z.enum(["active", "retracted"]),
   reason: z.string().optional(),
+  /** The D48 run (`data/links/runs/<run>/`) that wrote the row. */
+  run: z.string().optional(),
   created_at: z.string().datetime(),
 });
+
+/** Text embedded for a subject (D48): name, other aliases, and one claim text per source. Written by `pnpm normalize`. */
+export const SubjectText = z.object({
+  subject_id: Id,
+  kind: z.enum(["technology", "quantity", "risk", "other"]),
+  text: z.string().min(1),
+});
+
+/** One proposed subject-technology pair (D48), in `data/links/runs/<run>/candidates.json`. */
+export const LinkCandidate = z.object({
+  /** `<subject_id>~<technology_id>`, stable across runs. */
+  id: Id,
+  subject_id: Id,
+  technology_id: z.string().uuid(),
+  research_slug: Id,
+  original_id: Id,
+  similarity: z.number().min(-1).max(1),
+  /** Rank of the technology among the subject's nearest technologies (1 = nearest), null outside the top 5. */
+  subject_rank: z.number().int().min(1).nullable(),
+  /** Rank of the subject among the technology's nearest subjects, null outside the top 3. */
+  technology_rank: z.number().int().min(1).nullable(),
+  /** Each is the other's nearest neighbour. */
+  mutual_nn: z.boolean(),
+  /** `exact`: subject name and technology title share the D13 normalized key; `alias`: another alias does; `semantic`: neither. */
+  match: z.enum(["exact", "alias", "semantic"]),
+  batch: z.string().min(1),
+});
+
+/** A verifier's call on one candidate (D48). `broader`: the technology is broader than the subject. */
+export const LinkVerdictValue = z.enum(["link", "no_link", "broader", "narrower"]);
+export const LinkVerdict = z.object({
+  candidate_id: Id,
+  verdict: LinkVerdictValue,
+  reason: z.string().min(1).max(300),
+});
+export const LinkVerdictFile = z.object({
+  run: z.string().min(1),
+  batch: z.string().min(1),
+  /** `A` or `B` for the blind verifiers, `adjudicator` for contested pairs. */
+  role: z.enum(["A", "B", "adjudicator"]),
+  agent: z.string().min(1),
+  verdicts: z.array(LinkVerdict),
+});
+
+/** Auditor record for one sampled accepted link (D48, D20). */
+export const LinkAuditRecord = z
+  .object({
+    decision: z.enum(["confirm", "correct", "reject"]),
+    corrected_verdict: LinkVerdictValue.optional(),
+    note: z.string().min(1),
+    at: z.string().datetime(),
+  })
+  .refine((r) => r.decision !== "correct" || r.corrected_verdict !== undefined, { message: "a correction needs corrected_verdict" });
 
 /**
  * Numeric grading (D16, D18, D19): one row per claim of a numeric source.
@@ -510,6 +579,12 @@ export type Evidence = z.infer<typeof Evidence>;
 export type VerdictRow = z.infer<typeof VerdictRow>;
 export type Revision = z.infer<typeof Revision>;
 export type SubjectTechnologyLink = z.infer<typeof SubjectTechnologyLink>;
+export type LinkRelation = z.infer<typeof LinkRelation>;
+export type SubjectText = z.infer<typeof SubjectText>;
+export type LinkCandidate = z.infer<typeof LinkCandidate>;
+export type LinkVerdict = z.infer<typeof LinkVerdict>;
+export type LinkVerdictFile = z.infer<typeof LinkVerdictFile>;
+export type LinkAuditRecord = z.infer<typeof LinkAuditRecord>;
 export type NumericRule = z.infer<typeof NumericRule>;
 export type PublishedVerdict = z.infer<typeof PublishedVerdict>;
 export type NumericAudit = z.infer<typeof NumericAudit>;

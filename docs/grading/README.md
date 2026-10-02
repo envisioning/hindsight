@@ -13,6 +13,8 @@ One file per role. The coordinating session fills the placeholders (`<source>`, 
 | later | Dispute agent, one per dispute issue (D29) | `dispute.md` | a record appended to `disputes.json` by the coordinating session |
 | later | Re-check adjudicator (D24) | `adjudicator.md` plus the pass reason | `adjudicated-d20-pass<N>.json` |
 
+Research links (D48) follow the same steps on subject-technology pairs: verifiers A and B (`link-verifier.md`, batches of about 150 candidates, blind) write `verifier-<A|B>-<batch>.json`; `node scripts/links/agreement.mjs <run>`; adjudicator (`link-adjudicator.md`); `node scripts/links/audit-sample.mjs <run>`; auditor (`link-auditor.md`); `node scripts/links/final.mjs <run>`. See `data/links/README.md`.
+
 Split large sources into batches of about 75 claims per grader agent. Both graders get the same batches. A batch writes `verdicts-d16-grader<A|B>-<batch>.json` (batch name in lowercase letters, digits and hyphens); the agreement script merges every batch file of a grader and fails on a duplicate id.
 
 Step 4a runs after step 2 and before step 4b. The sample is drawn from the agreed verdicts, so it changes when the agreement changes. The script refuses to redraw over audit records. `--check` compares the stored sample with a fresh draw.

@@ -24,6 +24,7 @@ import { IdRegistry, ID_RULE } from "./ids.ts";
 import { type Bundle, OUT, RAW, REPO, clean, editionId, writeJson, writeText } from "./lib.ts";
 import { QUANTITIES, QUANTITY_BY_ID } from "./quantities.ts";
 import { posterRevisions, serialRevisions } from "./revisions.ts";
+import { subjectTexts } from "./subject-text.ts";
 import { type PhaseCheck, hypeCycle } from "./sources/hype-cycle.ts";
 import { envisioningEducation, envisioningHealth, envisioningHorizons, envisioningPosters } from "./sources/envisioning.ts";
 import { ARK_GENERIC_IDEAS, arkBigIdeas, deloittePredictions, gartnerPredictions, idcFuturescape, mitBreakthrough, wefGlobalRisks } from "./sources/lists.ts";
@@ -337,6 +338,7 @@ function main(): void {
     writeJson(join(OUT, "source_editions.json"), editions);
     writeJson(join(OUT, "institutions.json"), [...institutions.values()].sort((a, b) => a.id.localeCompare(b.id)));
     writeJson(join(OUT, "subjects.json"), subjectRows);
+    writeJson(join(OUT, "subject-text.json"), subjectTexts(subjectRows, claimsBySource));
     writeJson(join(OUT, "revisions.json"), revisions);
     writeJson(join(OUT, "verdicts.json"), verdicts);
     writeJson(join(OUT, "evidence.json"), evidence);
@@ -423,6 +425,7 @@ function writeReadme(r: ReadmeInput): void {
     "| institutions.json | see file | Institution |",
     `| subjects.json | ${r.subjects} | Subject |`,
     `| subject-aliases.json | ${r.aliases} | SubjectAlias |`,
+    `| subject-text.json | ${r.subjects} | SubjectText (embedding input for research links, D48) |`,
     `| revisions.json | ${Object.values(r.revCount).reduce((a, b) => a + b, 0)} | Revision |`,
     `| verdicts.json | ${r.verdicts} | VerdictRow (grader 1 of 2, Envisioning posters only; D7) |`,
     `| evidence.json | ${r.evidence} | Evidence |`,
