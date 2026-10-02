@@ -1,59 +1,311 @@
 {
- "rule": "D11",
- "auditor": "agent (D20)",
- "wave": "w2",
- "seed": "d11:deloitte-tmt-predictions:d16:w2",
- "sample": [
-  "deloitte-tmt-predictions-2002-004",
-  "deloitte-tmt-predictions-2002-005",
-  "deloitte-tmt-predictions-2002-009",
-  "deloitte-tmt-predictions-2003-003",
-  "deloitte-tmt-predictions-2004-001",
-  "deloitte-tmt-predictions-2004-003",
-  "deloitte-tmt-predictions-2004-004",
-  "deloitte-tmt-predictions-2004-005",
-  "deloitte-tmt-predictions-2004-006",
-  "deloitte-tmt-predictions-2004-007",
-  "deloitte-tmt-predictions-2004-011",
-  "deloitte-tmt-predictions-2004-012",
-  "deloitte-tmt-predictions-2004-013",
-  "deloitte-tmt-predictions-2004-015",
-  "deloitte-tmt-predictions-2004-017",
-  "deloitte-tmt-predictions-2004-018",
-  "deloitte-tmt-predictions-2005-011",
-  "deloitte-tmt-predictions-2005-012",
-  "deloitte-tmt-predictions-2005-013",
-  "deloitte-tmt-predictions-2005-015",
-  "deloitte-tmt-predictions-2005-016",
-  "deloitte-tmt-predictions-2005-017",
-  "deloitte-tmt-predictions-2005-018",
-  "deloitte-tmt-predictions-2005-019",
-  "deloitte-tmt-predictions-2006-010",
-  "deloitte-tmt-predictions-2006-012",
-  "deloitte-tmt-predictions-2006-013",
-  "deloitte-tmt-predictions-2006-016",
-  "deloitte-tmt-predictions-2006-019",
-  "deloitte-tmt-predictions-2007-018",
-  "deloitte-tmt-predictions-2007-020",
-  "deloitte-tmt-predictions-2007-023",
-  "deloitte-tmt-predictions-2007-025",
-  "deloitte-tmt-predictions-2007-027",
-  "deloitte-tmt-predictions-2007-028",
-  "deloitte-tmt-predictions-2007-029",
-  "deloitte-tmt-predictions-2008-012",
-  "deloitte-tmt-predictions-2008-013",
-  "deloitte-tmt-predictions-2008-015",
-  "deloitte-tmt-predictions-2008-016",
-  "deloitte-tmt-predictions-2008-017",
-  "deloitte-tmt-predictions-2008-018",
-  "deloitte-tmt-predictions-2008-026",
-  "deloitte-tmt-predictions-2008-027",
-  "deloitte-tmt-predictions-2009-015",
-  "deloitte-tmt-predictions-2009-023",
-  "deloitte-tmt-predictions-2009-024",
-  "deloitte-tmt-predictions-2009-029",
-  "deloitte-tmt-predictions-2010-017",
-  "deloitte-tmt-predictions-2010-019"
- ],
- "records": {}
+  "rule": "D11",
+  "auditor": "agent (D20)",
+  "wave": "w2",
+  "seed": "d11:deloitte-tmt-predictions:d16:w2",
+  "sample": [
+    "deloitte-tmt-predictions-2002-004",
+    "deloitte-tmt-predictions-2002-005",
+    "deloitte-tmt-predictions-2002-009",
+    "deloitte-tmt-predictions-2003-003",
+    "deloitte-tmt-predictions-2004-001",
+    "deloitte-tmt-predictions-2004-003",
+    "deloitte-tmt-predictions-2004-004",
+    "deloitte-tmt-predictions-2004-005",
+    "deloitte-tmt-predictions-2004-006",
+    "deloitte-tmt-predictions-2004-007",
+    "deloitte-tmt-predictions-2004-011",
+    "deloitte-tmt-predictions-2004-012",
+    "deloitte-tmt-predictions-2004-013",
+    "deloitte-tmt-predictions-2004-015",
+    "deloitte-tmt-predictions-2004-017",
+    "deloitte-tmt-predictions-2004-018",
+    "deloitte-tmt-predictions-2005-011",
+    "deloitte-tmt-predictions-2005-012",
+    "deloitte-tmt-predictions-2005-013",
+    "deloitte-tmt-predictions-2005-015",
+    "deloitte-tmt-predictions-2005-016",
+    "deloitte-tmt-predictions-2005-017",
+    "deloitte-tmt-predictions-2005-018",
+    "deloitte-tmt-predictions-2005-019",
+    "deloitte-tmt-predictions-2006-010",
+    "deloitte-tmt-predictions-2006-012",
+    "deloitte-tmt-predictions-2006-013",
+    "deloitte-tmt-predictions-2006-016",
+    "deloitte-tmt-predictions-2006-019",
+    "deloitte-tmt-predictions-2007-018",
+    "deloitte-tmt-predictions-2007-020",
+    "deloitte-tmt-predictions-2007-023",
+    "deloitte-tmt-predictions-2007-025",
+    "deloitte-tmt-predictions-2007-027",
+    "deloitte-tmt-predictions-2007-028",
+    "deloitte-tmt-predictions-2007-029",
+    "deloitte-tmt-predictions-2008-012",
+    "deloitte-tmt-predictions-2008-013",
+    "deloitte-tmt-predictions-2008-015",
+    "deloitte-tmt-predictions-2008-016",
+    "deloitte-tmt-predictions-2008-017",
+    "deloitte-tmt-predictions-2008-018",
+    "deloitte-tmt-predictions-2008-026",
+    "deloitte-tmt-predictions-2008-027",
+    "deloitte-tmt-predictions-2009-015",
+    "deloitte-tmt-predictions-2009-023",
+    "deloitte-tmt-predictions-2009-024",
+    "deloitte-tmt-predictions-2009-029",
+    "deloitte-tmt-predictions-2010-017",
+    "deloitte-tmt-predictions-2010-019"
+  ],
+  "records": {
+    "deloitte-tmt-predictions-2002-004": {
+      "decision": "confirm",
+      "note": "Source PDF p3: 'a series of networks, not outright replacement'. GSA via Light Reading (27 Jan 2005): 64 WCDMA networks, 16.26m subscribers at end-2004 vs 2.2bn world mobile subscriptions in 2005 (ITU aggregates). UMTS stayed one bearer among many: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2002-005": {
+      "decision": "contest",
+      "note": "Graders' key fact (FCC 'granted many' Phase II waivers) is not on the cited Wikipedia 'Enhanced 911' page, which instead says many phones made after 2005 have built-in GPS and the 95% location-capable handset deadline was end-2005 (some carriers fined). The forecast (pressure for faster, cheaper location 'right across the world') is met in the US by about 2005 (3 years: partial) but not worldwide (miss); the evidence does not settle which, so no verdict is supported.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2002-009": {
+      "decision": "confirm",
+      "note": "Wikipedia 'AT&T Mobility' (Cingular section): Cingular agreed to buy AT&T Wireless for $41bn, completed 26 Oct 2004, 46m customers. Consolidation within the 2-year window: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2003-003": {
+      "decision": "confirm",
+      "note": "Wikipedia 'BlackBerry Limited' table: subscribers 534,000 (FY2003), 1,069,000 (FY2004), 2,510,000 (FY2005). Enterprise mobile data did not halt: miss. (The PDA page no longer has B's 'morphed into smartphones' wording; not needed.)",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-001": {
+      "decision": "confirm",
+      "note": "Ofcom CM 2005 Fig 3.32: 2004 UK mobile retail revenue GBP 12.3bn, voice 10.1bn (82%); Ofcom MSA 2008: voice 80% of revenue in 2004. Majority voice: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-003": {
+      "decision": "confirm",
+      "note": "Ofcom CM 2005: UK operators' base 53.4m to 61.2m in 2004. OWID (ITU) per-100 rate rose 2003-04 in 207 of 212 countries; small falls (Sweden, Luxembourg, Paraguay, Palau, San Marino) are rates, not subscriber counts. Dominant reading (growth continues despite saturation) holds: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-004": {
+      "decision": "confirm",
+      "note": "Light Reading/GSA (27 Jan 2005): 64 commercial WCDMA networks at end-2004 (up from 2003), 56% of 129 licence holders launched or near launch; Wikipedia '3G': 190 3G networks in Dec 2007, 3G 6.7% of subscriptions mid-2007. New launches, minority of operators: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-005": {
+      "decision": "confirm",
+      "note": "BlackBerry subscribers doubled 2003-04 (Wikipedia 'BlackBerry Limited'); Ofcom CM 2005: non-SMS data only 2% of UK mobile retail revenue in 2004. Spread but niche: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-006": {
+      "decision": "confirm",
+      "note": "Ofcom CM 2005 Fig 3.32: 2004 SMS GBP 1.9bn vs other data GBP 0.2bn; mobile internet services 'remain relatively insignificant'. Push outperformed pull: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-007": {
+      "decision": "confirm",
+      "note": "Ofcom CM 2005: only 2% of 2004 UK mobile retail revenue was non-SMS data; mobile internet 'relatively insignificant'. Not a major revenue stream: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-011": {
+      "decision": "confirm",
+      "note": "World Bank API IT.NET.BBND.P2, 2004: 22 economies above 10 per 100 (Korea 25.0 ... UK 10.2), vs Deloitte's ~12; ITIF (2006) consistent. More than 25% off under D10: miss.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-012": {
+      "decision": "confirm",
+      "note": "Source PDF p3 defines the first broadband appliances as games consoles (Xbox with Ethernet), set-top boxes, VoIP phones, media systems; bestseller status deferred to 2006. AirPort Express (July 2004) and Roku HD1000/SoundBridge (Wikipedia) were on sale with consoles in 2004: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-013": {
+      "decision": "confirm",
+      "note": "Ofcom CM 2005: VoIP-type nomadic services 'likely to remain niche' in 2005; Ofcom CM 2006: 1.8m UK residential VoIP households only by May 2006; CMR 2010: 163bn fixed minutes in 2004. Niche in 2004: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-015": {
+      "decision": "confirm",
+      "note": "Ofcom CMR 2010 Fig 5.1: 2004 UK fixed 163bn vs mobile 64bn voice minutes (72% fixed); Ofcom CM 2005 Fig 3.5 gives 164bn fixed. Majority fixed: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-017": {
+      "decision": "confirm",
+      "note": "Research and Markets via Wireless Design Online (12 Apr 2006): WLAN chipsets ~140m in 2005, >50% annual growth; Ofcom CMR 2010: two-thirds of internet households use a wireless router; hotspot usage still low in 2004 (Ofcom CM 2005). Impact where wired LAN cannot reach: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2004-018": {
+      "decision": "confirm",
+      "note": "Telecompaper (29 Oct 2004): CPS lines passed 4m and BT share of fixed call volumes fell 56.7% to 55.4%; Ofcom CMR 2010: BT share of fixed revenues 58.8% (2004) to 56.9% (2005). Incumbent share falling: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-011": {
+      "decision": "confirm",
+      "note": "IFPI Digital Music Report 2006: digital sales ~US$1.1bn in 2005, three times 2004 (US$380m); single-track downloads more than doubled to 420m. Rapid legal growth: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-012": {
+      "decision": "confirm",
+      "note": "Ofcom CM 2006 TV: 2005 launches of ITV4, CITV, More4; digital-only channels' share exceeded any one main network for the first time; Ofcom CMR 2010: five main channels' share 73.8% (2004) to 70.4% (2005). Segmentation advanced: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-013": {
+      "decision": "confirm",
+      "note": "Wikipedia 'In-game advertising': IGA revenue $34m (2004), $56m (2005), $80m (2006); 'Massive Incorporated': streamed in-game ad network, NFS Most Wanted (2005) had Cingular/Burger King ads. Embedded ads advanced in 2005: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-015": {
+      "decision": "confirm",
+      "note": "Wikipedia 'King Kong (2005 video game)': directed by Michel Ancel with Peter Jackson as producer, released 17 Nov 2005 alongside the film. Tandem development of a blockbuster happened; 'increasingly' rests on one prominent case, so weak but adequate: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-016": {
+      "decision": "confirm",
+      "note": "Pew State of the News Media 2006: newspaper web ads grew 30-60% but online is 'roughly 5% of total advertising revenue', web ads earn 20-33 cents per print dollar; MediaPost: newspaper ad revenue peaked at $49.4bn in 2005. Dominant reading (small, modest returns) holds: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-017": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Blog': by 2004 blogs became increasingly mainstream; Pew 2006: newspaper companies still had a total ad-revenue gain of under 3% in 2005; MediaPost: ad revenue peaked 2005. Competition for attention without a revenue drop: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-018": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Television in France': TNT launched 31 March 2005; Ofcom CM 2006 TV: Freeview main driver of 2005 multichannel growth. Substantial DTT expansion: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2005-019": {
+      "decision": "confirm",
+      "note": "Wikipedia 'MGM v. Grokster': Grokster quit P2P on 7 Nov 2005 and paid $50m; IFPI DMR 2006: rulings against Grokster and Kazaa, ~20,000 legal actions in 17 countries. Strongest anti-piracy campaign to date: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2006-010": {
+      "decision": "confirm",
+      "note": "OWID (ITU) internet use: high-income 52.9% to 55.7%, low-income 1.0% to 1.3% (2005-06), absolute gap widened; ITU aggregates: fixed broadband Europe 65.7m to 90.0m vs Africa 0.2m to 0.5m. Absolute-gap reading dominant: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2006-012": {
+      "decision": "confirm",
+      "note": "IFPI DMR 2007: digital (online + mobile) ~US$2bn, 'around 10 per cent' of industry sales in 2006 (5.5% in 2005), online/mobile split roughly equal. Forecast 20% is double: miss under D10.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2006-013": {
+      "decision": "confirm",
+      "note": "The Register (14 Mar 2006, DisplaySearch): Q4 2005 LCD TV revenue $10.1bn and plasma vs CRT $7.5bn, so flat-panel revenue already led CRT entering 2006 (early arrival not penalised): hit. B's unit-crossover evidence (Wikipedia 'LCD television', late 2007) is indirect.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2006-016": {
+      "decision": "confirm",
+      "note": "Ofcom CM 2006: HomeChoice ~45,000 subscribers, IPTV at 'small-scale' stage; Wikipedia 'EE TV': BT Vision 150,000 customers by Feb 2008; 'Verizon Fios': FiOS TV launched Sept 2005 to 9,000 customers. Small channel in 2006: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2006-019": {
+      "decision": "confirm",
+      "note": "Wikipedia 'History of YouTube': 100m video views/day in July 2006; 'YouTube': bought by Google for $1.65bn (Nov 2006); IFPI DMR 2007: digital music nearly doubled. Convergence services grew: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2007-018": {
+      "decision": "confirm",
+      "note": "WTO DS362 page: on 10 April 2007 the US requested consultations with China over IP enforcement including copyright piracy thresholds. Piracy remained a key issue: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2007-020": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Long tail' (Criticisms): Elberse 2008 sales data show the Web magnifies blockbusters; Page and Bud found 80% of tracks sold no copies in a year. Head most productive: hit. (HBR page is a landing page only.)",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2007-023": {
+      "decision": "confirm",
+      "note": "The Register (28 Dec 2007): Wal-Mart Video Downloads closed 21 Dec 2007 after HP discontinued the technology; Wikipedia 'Netflix': streaming launched 16 Jan 2007. Downloads struggled, streaming worked: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2007-025": {
+      "decision": "confirm",
+      "note": "Entrepreneur (28 Oct 2008, TeleGeography): international traffic +53% mid-2007 to mid-2008 while average utilisation fell 31% to 29% and peak 44% to 43%. Backbones not overwhelmed: miss.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2007-027": {
+      "decision": "confirm",
+      "note": "OWID/ITU: high-income internet use 55.7% (2006) to 61.3% (2007); UK 68.8 to 75.1, Germany 72.2 to 75.2, Japan 68.7 to 74.3. Penetration rose markedly: miss.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2007-028": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Mobile television': BT mobile TV (Sept 2006) abandoned within a year, MFD Germany ended April 2008; 'DVB-H': Finland's service (May 2007) ended March 2012 for lack of subscribers. Muted impact persisted: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2007-029": {
+      "decision": "contest",
+      "note": "Source PDF p14 ties 'primary network for voice' to mobile traffic exceeding PSTN 'in many developed countries'. Evidence: Taiwan crossed in 2007 (Telecompaper, 9 Apr 2008), but the UK was still ~60/40 fixed:mobile in 2007 (3g4g summary of Ofcom 2008) and fixed still led in 2009 (CMR 2010: 133bn vs 118bn); a US crossover could not be verified. One country is too thin for 'many': no verdict supported.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-012": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Phorm': ICO said Webwise legal only as opt-in, European Commission infringement proceeding; 'NebuAd': May 2008 Charter plan dropped after customer and congressional pressure, Embarq queried by House subcommittee. Resistance grew in 2008: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-013": {
+      "decision": "confirm",
+      "note": "Source PDF: 'XBRL may become as well known as HTML or GAAP', with governments pushing adoption. Wikipedia 'XBRL': SEC US GAAP taxonomy deployed for public companies from 2008 in phases. Mandates came, broad recognition did not: partial is a fair reading.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-015": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Desalination': capacity 27m m3/day (2003) to 97m (2020) and 99m (2023), steady expansion over the period. Use grew: hit (directional, no 2008-specific figure).",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-016": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Metropolitan Opera Live in HD': 920,000 attended 8 screenings in 2007-08; over 1.1m tickets by Feb 2009. Cinemas as event venues: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-017": {
+      "decision": "correct",
+      "corrected_verdict": "miss",
+      "note": "Graders graded side figures (tours over $100m). Source PDF pp13-14: the forecast is that recorded music is sold as a physical product again (pre-recorded MP3 players, memory cards, box sets, vinyl). That stayed niche: slotMusic microSD albums (Oct 2008, Wikipedia) did not catch on, and global vinyl trade value was $66m in 2008 and $416m in 2015 (Wikipedia 'Vinyl revival'), under 5% of recorded music, while digital share kept rising (IFPI). Miss.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-018": {
+      "decision": "confirm",
+      "note": "Wikipedia 'The Christian Science Monitor': in October 2008 it announced it would stop daily printing and publish daily online. Publishers moved online-first in 2008: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-026": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Three UK': T-Mobile and Three launched the MBNL 50:50 network-sharing JV in Dec 2007 for near-complete 3G coverage by end-2008; 'Telecom infrastructure sharing': French operators legally required to share coverage since 2008. Hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2008-027": {
+      "decision": "confirm",
+      "note": "PopulationPyramid (UN WPP) 2020: Europe 157.5m under-20 vs 296.7m 50+; Northern America 92.8m vs 134.0m; ratio 1.72 (72% more) vs 75% forecast, within 10%: hit. Holds for US+Canada; including Mexico would drop it well below.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2009-015": {
+      "decision": "confirm",
+      "note": "IAEA RDS-2/30 world table: 438 units 371,562 MW(e) end-2008, 437 units 370,705 MW(e) end-2009, a 0.2% fall vs +1.3% forecast: miss under D10.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2009-023": {
+      "decision": "confirm",
+      "note": "Wikipedia 'Myspace': June 2009 layoff of 37.5% of staff (1,600 to 1,000); 'Imeem': shut in 2009 after acquisition by MySpace. Financial scrutiny and failures: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2009-024": {
+      "decision": "confirm",
+      "note": "Wikipedia 'DVB-H': Austria's service switched off end-2010, Finland's ended March 2012 for lack of subscribers, 3 Italia went free from June 2008; 'MediaFLO': FLO TV ran 2007-2011. Investment dried up: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2009-029": {
+      "decision": "confirm",
+      "note": "Wikipedia 'National Broadband Network': proposed by the Rudd government in 2009, NBN Co set up 9 April 2009 as a single wholesale network after an RFP. Government single-network process started in 2009: hit. (The NZ UFB page dates bids to 2010, not 2009.)",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2010-017": {
+      "decision": "confirm",
+      "note": "Wikipedia 'WhatsApp': voice calls added March-April 2015, over 100m calls/day by June 2016; 'Viber': launched 2 Dec 2010. Mainstream mobile VoIP about 5 years after 2010: partial. B's '90m users by July 2012' is not on the current Viber page.",
+      "at": "2026-10-02T14:12:09Z"
+    },
+    "deloitte-tmt-predictions-2010-019": {
+      "decision": "confirm",
+      "note": "TidBITS (2 June 2010) and Wikipedia 'iPad (1st generation)': from 7 June 2010 AT&T replaced unlimited iPhone/iPad data for new customers with 200 MB and 2 GB plans. Move away from all-you-can-eat: hit.",
+      "at": "2026-10-02T14:12:09Z"
+    }
+  }
 }
