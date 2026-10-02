@@ -26,7 +26,7 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 | ecb-projections | normalized | 104 | 566 | 0 | variable + statistic + horizon + target_year | 2026-10-02T13:43:03Z |
 | cbo-projections | normalized | 112 | 1557 | 0 | metric + horizon + target_year + target_period | 2026-10-02T13:43:03Z |
 | obr-forecasts | normalized | 33 | 892 | 28 memo row (restated or supplementary forecast, not the headline forecast of this EFO) | metric + unit + horizon + target_year | 2026-10-02T13:43:03Z |
-| bp-energy-outlook | normalized | 14 | 233 | 17 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T13:43:04Z |
+| bp-energy-outlook | normalized | 14 | 239 | 18 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T14:00:21Z |
 | eurasia-top-risks | normalized | 20 | 279 | 0 | ranking + label | 2026-10-02T13:43:04Z |
 | economist-world-ahead | normalized | 40 | 154 | 0 | kind + subject + quote with case, spaces and punctuation removed | 2026-10-02T13:43:04Z |
 | kurzweil | normalized | 5 | 287 | 0 | target_year + quote (or paraphrase) with case, spaces and punctuation removed | 2026-10-02T13:43:04Z |

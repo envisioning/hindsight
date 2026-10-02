@@ -3,7 +3,8 @@
  "published": "2014-01-15",
  "status": "partial",
  "sources": [
-  "https://www.bp.com/api/files/6cqieuqhq4no/master/4h1ggwVhMywIYD98483GHZ/071f4dbd892eafc1ab9e7b3206a041af/bp-energy-outlook-2014.pdf"
+  "https://www.bp.com/api/files/6cqieuqhq4no/master/4h1ggwVhMywIYD98483GHZ/071f4dbd892eafc1ab9e7b3206a041af/bp-energy-outlook-2014.pdf",
+  "https://web.archive.org/web/20140224041754/http://www.bp.com:80/content/dam/bp/excel/Energy%20Economics/BP_Energy_Outlook_2035_Summary_Tables_2014.xls"
  ],
  "publisher": "BP p.l.c.",
  "series": "BP Energy Outlook",
@@ -53,7 +54,97 @@
    "source_url": "https://www.bp.com/api/files/6cqieuqhq4no/master/4h1ggwVhMywIYD98483GHZ/071f4dbd892eafc1ab9e7b3206a041af/bp-energy-outlook-2014.pdf",
    "confidence": "high",
    "note": "Sales share, not a fleet count."
+  },
+  {
+   "subject": "renewables",
+   "metric": "renewables share of primary energy (renewables (incl. biofuels, excl. hydro))",
+   "target_year": 2015,
+   "value": 3.0,
+   "unit": "percent",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "position": "Summary tables, sheet 'Consumption by fuel', rows 'Total Renewables Consumption' plus 'Of which Biofuels' over 'Total Energy Consumption'",
+   "source_url": "https://web.archive.org/web/20140224041754/http://www.bp.com:80/content/dam/bp/excel/Energy%20Economics/BP_Energy_Outlook_2035_Summary_Tables_2014.xls",
+   "confidence": "high",
+   "derived": true,
+   "note": "Computed as renewables / total primary energy from the table (395.5 / 13265.8). Not a figure bp prints. Renewables include the table's biofuels row (bp's 'renewables (including biofuels)')."
+  },
+  {
+   "subject": "renewables",
+   "metric": "renewables share of primary energy (renewables (incl. biofuels, excl. hydro))",
+   "target_year": 2020,
+   "value": 4.0,
+   "unit": "percent",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "position": "Summary tables, sheet 'Consumption by fuel', rows 'Total Renewables Consumption' plus 'Of which Biofuels' over 'Total Energy Consumption'",
+   "source_url": "https://web.archive.org/web/20140224041754/http://www.bp.com:80/content/dam/bp/excel/Energy%20Economics/BP_Energy_Outlook_2035_Summary_Tables_2014.xls",
+   "confidence": "high",
+   "derived": true,
+   "note": "Computed as renewables / total primary energy from the table (582.3 / 14611.3). Not a figure bp prints. Renewables include the table's biofuels row (bp's 'renewables (including biofuels)')."
+  },
+  {
+   "subject": "renewables",
+   "metric": "renewables share of primary energy (renewables (incl. biofuels, excl. hydro))",
+   "target_year": 2025,
+   "value": 5.0,
+   "unit": "percent",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "position": "Summary tables, sheet 'Consumption by fuel', rows 'Total Renewables Consumption' plus 'Of which Biofuels' over 'Total Energy Consumption'",
+   "source_url": "https://web.archive.org/web/20140224041754/http://www.bp.com:80/content/dam/bp/excel/Energy%20Economics/BP_Energy_Outlook_2035_Summary_Tables_2014.xls",
+   "confidence": "high",
+   "derived": true,
+   "note": "Computed as renewables / total primary energy from the table (792.1 / 15720.7). Not a figure bp prints. Renewables include the table's biofuels row (bp's 'renewables (including biofuels)')."
+  },
+  {
+   "subject": "renewables",
+   "metric": "renewables share of primary energy (renewables (incl. biofuels, excl. hydro))",
+   "target_year": 2030,
+   "value": 6.1,
+   "unit": "percent",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "position": "Summary tables, sheet 'Consumption by fuel', rows 'Total Renewables Consumption' plus 'Of which Biofuels' over 'Total Energy Consumption'",
+   "source_url": "https://web.archive.org/web/20140224041754/http://www.bp.com:80/content/dam/bp/excel/Energy%20Economics/BP_Energy_Outlook_2035_Summary_Tables_2014.xls",
+   "confidence": "high",
+   "derived": true,
+   "note": "Computed as renewables / total primary energy from the table (1017.4 / 16683.9). Not a figure bp prints. Renewables include the table's biofuels row (bp's 'renewables (including biofuels)')."
+  },
+  {
+   "subject": "renewables",
+   "metric": "renewables share of primary energy (renewables (incl. biofuels, excl. hydro))",
+   "target_year": 2035,
+   "value": 7.0,
+   "unit": "percent",
+   "scenario": "base case",
+   "main_scenario": true,
+   "claim_type": "forecast",
+   "position": "Summary tables, sheet 'Consumption by fuel', rows 'Total Renewables Consumption' plus 'Of which Biofuels' over 'Total Energy Consumption'",
+   "source_url": "https://web.archive.org/web/20140224041754/http://www.bp.com:80/content/dam/bp/excel/Energy%20Economics/BP_Energy_Outlook_2035_Summary_Tables_2014.xls",
+   "confidence": "high",
+   "derived": true,
+   "note": "Computed as renewables / total primary energy from the table (1236.0 / 17566.0). Not a figure bp prints. Renewables include the table's biofuels row (bp's 'renewables (including biofuels)')."
+  },
+  {
+   "subject": "renewables",
+   "metric": "renewables share of primary energy (renewables (incl. biofuels, excl. hydro))",
+   "target_year": 2012,
+   "value": 2.4,
+   "unit": "percent",
+   "scenario": "historical (base year)",
+   "main_scenario": false,
+   "claim_type": "base_year",
+   "position": "Summary tables, sheet 'Consumption by fuel', rows 'Total Renewables Consumption' plus 'Of which Biofuels' over 'Total Energy Consumption'",
+   "source_url": "https://web.archive.org/web/20140224041754/http://www.bp.com:80/content/dam/bp/excel/Energy%20Economics/BP_Energy_Outlook_2035_Summary_Tables_2014.xls",
+   "confidence": "high",
+   "derived": true,
+   "note": "Computed as renewables / total primary energy from the table (294.7 / 12476.6). Not a figure bp prints. Renewables include the table's biofuels row (bp's 'renewables (including biofuels)')."
   }
  ],
- "notes": "Summary tables exist (.xls on archive.org) but the old binary .xls format was not parsed (no xls reader available without adding a dependency). Figures from report text. No EV count."
+ "notes": "Summary tables (.xls, archive.org capture of 2014-02-24) read with scripts/bp-energy-outlook/xls_dump.py (#71): renewables share 2015 to 2035 and the 2012 base year. Liquids in the tables are in Mtoe only; liquids 2035 from the report text. No EV count."
 }
