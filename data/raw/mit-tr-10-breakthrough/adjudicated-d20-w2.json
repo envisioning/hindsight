@@ -1,0 +1,34 @@
+{
+ "rule": "D16",
+ "role": "adjudicator (D20)",
+ "wave": "w2",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "mit-tr-10-breakthrough-2021-002",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "Large language models of the GPT-3 kind (text- and code-writing LLMs) are usable now (2021) and in routine use by their main professional users, software developers, by 2023 (placed 2021 + 2).",
+   "reason": "Both graders agree on the facts: US adults who had used ChatGPT were 18% in July 2023 (Pew), below 20%, and 34% by Feb-Mar 2025. The dispute is the base. The entry's own framing is a developer platform (API, apps built on it, code generation), so routine use by the relevant industry is the dominant D16 test. Stack Overflow 2023 (survey May 2023): 44% of respondents already use AI tools in their development process (26% more plan to), and 83% of AI-search users used ChatGPT, 55% of AI-dev-tool users Copilot (both GPT-family). That is above 20% of the industry within the +2 window: hit. Grader B cited the 70% 'use or plan to use' figure; the currently-using figure (44%, Stack Overflow blog) is the right one and still clears the bar. Grader A's general-public base is a valid secondary test and is borderline rather than clearly late (Pew's next reading, Feb 2024, was 23%), so it does not dominate.",
+   "evidence": [
+    {"url": "https://stackoverflow.blog/2023/06/13/hype-or-not-developers-have-something-to-say-about-ai/", "title": "Hype or not? Developers have something to say about AI (Stack Overflow blog, 2023 Developer Survey)", "date": "2023-06-13", "shows": "44% of respondents use AI tools in their development process now; 26% plan to soon."},
+    {"url": "https://survey.stackoverflow.co/2023/#ai", "title": "Stack Overflow Developer Survey 2023: AI", "date": "2023", "shows": "70% using or planning to use AI tools; ChatGPT used by 83% and GitHub Copilot by 55% of AI-tool users."},
+    {"url": "https://www.pewresearch.org/short-reads/2023/08/28/most-americans-havent-used-chatgpt-few-think-it-will-have-a-major-impact-on-their-job/", "title": "Most Americans haven't used ChatGPT (Pew Research Center)", "date": "2023-08-28", "shows": "18% of US adults had used ChatGPT (survey July 17-23, 2023): the general-public base was just under 20% inside the window."},
+    {"url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/", "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023 (Pew Research Center)", "date": "2025-06-25", "shows": "34% of US adults by Feb-Mar 2025; under-30s 33% (2023), 43% (2024), 58% (2025)."}
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-009",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "verdict": "hit",
+   "reading": "Sequencing ancient human DNA is now (2023) a routine, production-scale method for reconstructing human population history.",
+   "reason": "Grader B is right that no survey gives the share of archaeology projects using ancient DNA (one search for a bibliometric share found none). But D22 applies when no public measure of what the claim states exists, and this claim states a capability in routine use, which is measured: the Allen Ancient DNA Resource records about 10 individuals per year with genome-wide data in 2010-2014, about 200 per year in 2015-2017 and thousands per year since 2018, passing 10,000 by end-2022; the entry itself gives 5 (2010) to 5,550 (2020) whole-genome individuals. In the relevant field, studies of ancient human population history, genome-wide aDNA is the standard method at the placed year, the same routine-use-in-its-community test the consensus applied to JWST and Rubin. Hit; least certain call, as the share of the wider archaeology field is unmeasured.",
+   "evidence": [
+    {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10858950/", "title": "The Allen Ancient DNA Resource (AADR): a curated compendium of ancient human genomes (Scientific Data 11:182)", "date": "2024-02-10", "shows": ">10,000 individuals with published genome-wide aDNA data by end-2022; ~10/yr 2010-2014, ~200/yr 2015-2017, thousands/yr since 2018."},
+    {"url": "https://www.technologyreview.com/2023/01/09/1064883/ancient-dna-analysis-10-breakthrough-technologies-2023/", "title": "Ancient DNA analysis (MIT TR10 2023)", "date": "2023-01-09", "shows": "When: Now; whole-genome individuals from 5 (2010) to 5,550 (2020); cheaper techniques and commercial sequencers."}
+   ]
+  }
+ ]
+}
