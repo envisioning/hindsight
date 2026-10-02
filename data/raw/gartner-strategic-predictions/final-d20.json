@@ -5,29 +5,30 @@
  "n": 186,
  "counts": {
   "hit": 14,
-  "miss": 29,
+  "miss": 30,
   "contested": 4,
   "partial": 4,
-  "ungradable": 135
+  "ungradable": 134
  },
  "hit_rate": {
   "hits": 14,
-  "of_graded_hit_partial_miss": 47,
-  "rate": 0.2979,
+  "of_graded_hit_partial_miss": 48,
+  "rate": 0.2917,
   "wilson95": [
-   0.187,
-   0.44
+   0.182,
+   0.432
   ],
   "audit_adjusted95": [
-   0.068,
-   0.559
+   0.063,
+   0.551
   ]
  },
- "hit_or_partial_rate": 0.383,
+ "hit_or_partial_rate": 0.375,
  "adjudicated": 9,
- "rechecked": 6,
+ "rechecked": 14,
  "recheck_passes": [
-  "adjudicated-d20-pass1.json"
+  "adjudicated-d20-pass1.json",
+  "adjudicated-d20-pass2.json"
  ],
  "audit": {
   "sample": 42,
@@ -52,6 +53,24 @@
    "id": "gartner-strategic-predictions-2004-004",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The top-10 share depends on Gartner's IT outsourcing market definition (its denominator). Looked for a public Gartner IT outsourcing market-share release or document abstract for 2008-2009 that states the top-10 share. Wayback CDX holds Gartner 'Market Share Analysis: IT Outsourcing Services, Worldwide' abstracts only from about 2013 on. The Consulting and SI 2010 abstract gives a top-10 share for another segment (32%), which is a different quantity (D23). No measure.",
+   "pass": 2
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-002",
+   "verdict": "miss",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Both readings give miss on the only public ranking found. Literal reading (Japan included): Fujitsu, Hitachi, NTT Data and NEC were all in the global top 20 throughout (Services Top 100 2009 and 2010 editions; Gartner's own 2011 market-share abstract lists Fujitsu and NTT Data among its top vendors), so the count was 4 or more, not one. Dominant reading (Japan excluded): the Services Top 100 ranking of calendar-2008 revenue has none in the top 20 (Huawei 21st, TCS 32nd); the ranking of calendar-2009 revenue has two, Huawei (16th) and Digital China (20th), with TCS 21st. At no point was the count exactly one. Method difference (D23): the Services Top 100 is not Gartner's IT services market-share ranking. It ranks IT services revenue from filings, excluding communication services, but it counts telecom-equipment vendors' IT services, which is how Huawei qualifies. Gartner's own top-20 list for 2007-2010 is not public. Confidence low: on Gartner's definition the ex-Japan count might be one (TCS).",
+   "pass": 2
   },
   {
    "id": "gartner-strategic-predictions-2006-003",
@@ -93,6 +112,24 @@
    "graderB": "ungradable",
    "reason": "Edition text now read (Sydney release, 2009-02-06): a modelled displacement of seats by telepresence. Seats displaced by telepresence is an attributed value (D23); IATA, ICAO and airline traffic statistics report passengers carried, not seats substituted by video meetings, and no travel-industry body measured the substitution for 2011-2012. Page access does not change this.",
    "pass": 1
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-002",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Still no public 2012 or 2013 value for this market. Searched for Gartner, IDC (virtual machine software market shares) and trade press figures for 2012-2014. Found only Gartner's 2016 release: $5.6bn in 2016, up 5.7% from about $5.3bn in 2015. If the market grew every year, 2013 was at most about $5.3bn, so the forecast was off by 17% or more and is not a hit. Partial needs 2013 of at least about $4.96bn; miss means less. The bound cannot settle partial against miss, and the 2016 series counts maintenance revenue, which may not match the 2009 basis. IDC's 2013 software release reports segment growth, not this market's size.",
+   "pass": 2
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-007",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Searched for a public IDC, NPD or DisplaySearch statement of the sub-$300 share of worldwide consumer notebook sales in 2011-2012; none found. Price-band splits are in paid trackers only.",
+   "pass": 2
   },
   {
    "id": "gartner-strategic-predictions-2009-009",
@@ -166,6 +203,15 @@
    "pass": 1
   },
   {
+   "id": "gartner-strategic-predictions-2010-11-007",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Looked for a 2012-2013 survey of businesses on tablet support. The surveys found measure other things. Forrester and Ovum (2012-2013) give employee shares: 12% of employees use tablets at work; 17.6% have an employer-provided tablet. Dell's IT survey combines offering tablets, supporting them under BYOD and 'thinking about deploying' into one 90% figure, which mixes in intent. Statista's US enterprise tablet series (2013) is paywalled. No measure of the share of businesses supporting a tablet-using workforce.",
+   "pass": 2
+  },
+  {
    "id": "gartner-strategic-predictions-2011-001",
    "verdict": "ungradable",
    "status": "rechecked",
@@ -178,6 +224,15 @@
    "id": "gartner-strategic-predictions-2011-002",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-006",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Public 2016 surveys measure broader populations. Vormetric/451 Research (2016) surveyed 1,100 security executives at 'large enterprises worldwide': 85% use sensitive data in 'the cloud', with public and private cloud not separated. Intel Security (2016, about 2,000 IT professionals at companies of all sizes): 62% store sensitive customer data in the public cloud. Both lean toward the claim, but neither measures the Global 1000, which is the scope the claim names (D23).",
+   "pass": 2
   },
   {
    "id": "gartner-strategic-predictions-2011-008",
@@ -303,6 +358,15 @@
    "status": "audited"
   },
   {
+   "id": "gartner-strategic-predictions-2016-001",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The only public '100 million consumers shopping with AR' figure (Snap, May 2021) cites 'Gartner Press Release' as its footnote 1. It repeats the forecast and does not measure it. The Deloitte study Snap commissioned measures AR use and attitudes, not a count of AR shoppers. Snap's later figure (250 million Snapchatters used AR shopping lenses since January 2021) covers 2021-2022, one platform, and engagement with any shopping lens; it is not a 2020 measure. No independent count for 2019-2020.",
+   "pass": 2
+  },
+  {
    "id": "gartner-strategic-predictions-2016-005",
    "verdict": "hit",
    "status": "audited"
@@ -347,6 +411,15 @@
    "id": "gartner-strategic-predictions-2019-001",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-004",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Checked the Global Findex 2025 pages (report hub, accounts/payments chapter, digital-connectivity chapter) and the Little Data Book 2025 PDF: no cryptocurrency or digital-asset measure. Findex covers accounts, mobile money, phone and smartphone ownership. No other survey measures crypto account use among unbanked smartphone owners.",
+   "pass": 2
   },
   {
    "id": "gartner-strategic-predictions-2019-005",

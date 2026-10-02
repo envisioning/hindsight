@@ -1,0 +1,177 @@
+{
+ "rule": "D16",
+ "role": "re-check pass 2 (D24): agreed-ungradable claims re-triaged locally with Wayback and page access",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "gartner-strategic-predictions-2006-002",
+   "earlier": "ungradable_agreed",
+   "verdict": "miss",
+   "reading": "Through 2010, exactly one Asia/Pacific-headquartered service provider ranks in the global top 20 of IT services providers by revenue. Dominant reading: Asia/Pacific excluding Japan (Gartner's own regional split, and the edition's context about the 'Asian juggernaut' not yet producing global leaders); the literal reading including Japan is also graded.",
+   "reason": "Both readings give miss on the only public ranking found. Literal reading (Japan included): Fujitsu, Hitachi, NTT Data and NEC were all in the global top 20 throughout (Services Top 100 2009 and 2010 editions; Gartner's own 2011 market-share abstract lists Fujitsu and NTT Data among its top vendors), so the count was 4 or more, not one. Dominant reading (Japan excluded): the Services Top 100 ranking of calendar-2008 revenue has none in the top 20 (Huawei 21st, TCS 32nd); the ranking of calendar-2009 revenue has two, Huawei (16th) and Digital China (20th), with TCS 21st. At no point was the count exactly one. Method difference (D23): the Services Top 100 is not Gartner's IT services market-share ranking. It ranks IT services revenue from filings, excluding communication services, but it counts telecom-equipment vendors' IT services, which is how Huawei qualifies. Gartner's own top-20 list for 2007-2010 is not public. Confidence low: on Gartner's definition the ex-Japan count might be one (TCS).",
+   "fetched": "Edition text (insurance-canada.ca press copy); Services Top 100 2009 and 2010 editions (servicestop100.org, live) and its methodology page; Gartner 'Market Share Analysis: IT Services, Worldwide, 2011' abstract (Wayback 2019-11-21 capture).",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner Highlights Key Predictions for IT Organizations in 2007 and Beyond (press copy)",
+     "date": "2006-12-13",
+     "shows": "Claim text, followed by the rationale that few global consulting players come from Asia, which limits 'the Asian juggernaut' from becoming global leaders."
+    },
+    {
+     "url": "http://servicestop100.org/it-services-companies-top-100.php",
+     "title": "Services Top 100: The Top Companies in the IT Services Industry (2009 edition, calendar-2008 revenue)",
+     "date": "2009",
+     "shows": "Top 20 includes Fujitsu (3), Hitachi (7), NTT Data (9), NEC (10); no Asia/Pacific firm outside Japan in the top 20 (Huawei 21, TCS 32, Infosys 33, Wipro 36)."
+    },
+    {
+     "url": "http://servicestop100.org/it-services-companies-top-100-of-2010.php",
+     "title": "Services Top 100: 2010 edition (calendar-2009 revenue)",
+     "date": "2010-11-10",
+     "shows": "Top 20 includes Fujitsu (3), Hitachi (7), NTT Data (9), NEC (10), Huawei (16), Digital China (20); TCS 21st."
+    },
+    {
+     "url": "http://servicestop100.org/methodology.php",
+     "title": "Services Top 100: Methodology",
+     "date": "2010",
+     "shows": "Ranks calendar-year IT services revenue (consultancy, SI, hosting, ITO, custom development); excludes software, hardware and communication services; data from filings and annual reports."
+    },
+    {
+     "url": "https://web.archive.org/web/20191121143847/https://www.gartner.com/en/documents/1997317/market-share-analysis-it-services-worldwide-2011",
+     "title": "Gartner, Market Share Analysis: IT Services, Worldwide, 2011 (abstract)",
+     "date": "2012-04-26",
+     "shows": "Top vendors analysed: IBM, HP, Fujitsu, Accenture, CSC, NTT Data, Capgemini, Lockheed Martin, Xerox, Oracle. Japanese firms rank near the top on Gartner's own basis."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-002",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "The server virtualisation software market reaches about $6.2bn in 2013 (28% CAGR from $1.8bn in 2009).",
+   "reason": "Still no public 2012 or 2013 value for this market. Searched for Gartner, IDC (virtual machine software market shares) and trade press figures for 2012-2014. Found only Gartner's 2016 release: $5.6bn in 2016, up 5.7% from about $5.3bn in 2015. If the market grew every year, 2013 was at most about $5.3bn, so the forecast was off by 17% or more and is not a hit. Partial needs 2013 of at least about $4.96bn; miss means less. The bound cannot settle partial against miss, and the 2016 series counts maintenance revenue, which may not match the 2009 basis. IDC's 2013 software release reports segment growth, not this market's size.",
+   "fetched": "Gartner 2016 release via InformationWeek and Cabling Installation; ServerWatch 2013 and Thomas Maurer 2013 Magic Quadrant write-ups (no market size).",
+   "evidence": [
+    {
+     "url": "https://www.informationweek.com/it-infrastructure/virtualization-market-now-mature-gartner-finds",
+     "title": "Virtualization Market Now 'Mature,' Gartner Finds",
+     "date": "2016-05",
+     "shows": "x86 server virtualization revenue $5.6bn in 2016, up 5.7% on 2015; no 2013 figure."
+    },
+    {
+     "url": "https://www.cablinginstall.com/data-center/article/16472700/worldwide-server-virtualization-market-reaching-its-peak-gartner",
+     "title": "Worldwide server virtualization market reaching its peak: Gartner",
+     "date": "2016-05",
+     "shows": "Same Gartner figures; growth driven by maintenance revenue; no 2012-2013 value."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-001",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In 2009 the top 10 IT outsourcers hold 40.0% of the IT outsourcing market (down from 43.5%).",
+   "reason": "The top-10 share depends on Gartner's IT outsourcing market definition (its denominator). Looked for a public Gartner IT outsourcing market-share release or document abstract for 2008-2009 that states the top-10 share. Wayback CDX holds Gartner 'Market Share Analysis: IT Outsourcing Services, Worldwide' abstracts only from about 2013 on. The Consulting and SI 2010 abstract gives a top-10 share for another segment (32%), which is a different quantity (D23). No measure.",
+   "fetched": "Wayback CDX listing of gartner.com/en/documents market-share abstracts; web search.",
+   "evidence": [
+    {
+     "url": "https://www.insurance-canada.ca/2006/12/13/gartner-highlights-key-predictions-for-it-organizations-in-2007-and-beyond/",
+     "title": "Gartner Highlights Key Predictions for IT Organizations in 2007 and Beyond (press copy)",
+     "date": "2006-12-13",
+     "shows": "Claim and its 43.5% baseline, taken from Gartner's own market-share data."
+    },
+    {
+     "url": "https://www.gartner.com/en/documents/1636514",
+     "title": "Gartner, Market Share Analysis: Consulting and System Integration Services, Worldwide, 2010 (abstract)",
+     "date": "2011",
+     "shows": "Top 10 hold 32% of the consulting and SI market. This is a different segment from IT outsourcing, so it is not a measure of the claim."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2010-11-007",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2013, 80% of businesses support employees using tablets.",
+   "reason": "Looked for a 2012-2013 survey of businesses on tablet support. The surveys found measure other things. Forrester and Ovum (2012-2013) give employee shares: 12% of employees use tablets at work; 17.6% have an employer-provided tablet. Dell's IT survey combines offering tablets, supporting them under BYOD and 'thinking about deploying' into one 90% figure, which mixes in intent. Statista's US enterprise tablet series (2013) is paywalled. No measure of the share of businesses supporting a tablet-using workforce.",
+   "fetched": "Web search results; Statista series page (paywalled).",
+   "evidence": [
+    {
+     "url": "https://techcrunch.com/2012/10/10/forrester-66-of-employees-use-2-or-more-devices-at-work-12-use-tablets/",
+     "title": "Forrester: 66% Of Employees Use 2 Or More Devices At Work, 12% Use Tablets",
+     "date": "2012-10-10",
+     "shows": "An employee-level share, not a share of businesses."
+    },
+    {
+     "url": "https://www.statista.com/statistics/267487/enterprise-tablet-adoption-us/",
+     "title": "Enterprise tablet adoption in the U.S. 2009-2020 (Statista)",
+     "date": "2013-07",
+     "shows": "US-only series, data behind a paywall; could not be read."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2016-001",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2020, 100 million consumers shop using augmented reality.",
+   "reason": "The only public '100 million consumers shopping with AR' figure (Snap, May 2021) cites 'Gartner Press Release' as its footnote 1. It repeats the forecast and does not measure it. The Deloitte study Snap commissioned measures AR use and attitudes, not a count of AR shoppers. Snap's later figure (250 million Snapchatters used AR shopping lenses since January 2021) covers 2021-2022, one platform, and engagement with any shopping lens; it is not a 2020 measure. No independent count for 2019-2020.",
+   "fetched": "Snap for Business blog (live), including its references list.",
+   "evidence": [
+    {
+     "url": "https://forbusiness.snapchat.com/blog/the-next-inflection-point-more-than-100-million-consumers-are-shopping-with-ar",
+     "title": "The Next Inflection Point: More Than 100 Million Consumers Are Shopping with AR (Snap)",
+     "date": "2021-05-13",
+     "shows": "States more than 100 million consumers shop with AR; reference 1 for that sentence is 'Gartner Press Release', so the figure is circular."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2019-004",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2025, half of unbanked smartphone owners use a mobile-accessible cryptocurrency account.",
+   "reason": "Checked the Global Findex 2025 pages (report hub, accounts/payments chapter, digital-connectivity chapter) and the Little Data Book 2025 PDF: no cryptocurrency or digital-asset measure. Findex covers accounts, mobile money, phone and smartphone ownership. No other survey measures crypto account use among unbanked smartphone owners.",
+   "fetched": "worldbank.org Global Findex 2025 pages; Little Data Book 2025 PDF (text search).",
+   "evidence": [
+    {
+     "url": "https://www.worldbank.org/en/publication/globalfindex",
+     "title": "The Global Findex Database 2025",
+     "date": "2025-07",
+     "shows": "79% of adults have an account; 3 billion people in LMICs have smartphones; no crypto measure anywhere in the report pages checked."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-007",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In 2012, 30% of mobile PCs sold to consumers worldwide are priced below $300.",
+   "reason": "Searched for a public IDC, NPD or DisplaySearch statement of the sub-$300 share of worldwide consumer notebook sales in 2011-2012; none found. Price-band splits are in paid trackers only.",
+   "fetched": "Web search (IDC, NPD, DisplaySearch releases).",
+   "evidence": [
+    {
+     "url": "https://www.idc.com/tracker/showproductinfo.jsp?containerId=IDC_P36344",
+     "title": "IDC Worldwide Quarterly Personal Computing Device Tracker (product page)",
+     "date": "n.d.",
+     "shows": "Price-band data is sold as a subscription tracker; no public 2012 sub-$300 share."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-006",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "At year-end 2016, more than 50% of Global 1000 companies have stored customer-sensitive data in the public cloud.",
+   "reason": "Public 2016 surveys measure broader populations. Vormetric/451 Research (2016) surveyed 1,100 security executives at 'large enterprises worldwide': 85% use sensitive data in 'the cloud', with public and private cloud not separated. Intel Security (2016, about 2,000 IT professionals at companies of all sizes): 62% store sensitive customer data in the public cloud. Both lean toward the claim, but neither measures the Global 1000, which is the scope the claim names (D23).",
+   "fetched": "Vormetric 2016 Data Threat Report release (PR Newswire); web search for the Intel Security survey.",
+   "evidence": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/85-of-enterprises-keeping-sensitive-data-in-the-cloud-70-very-or-extremely-concerned-about-it-according-to-2016-vormetric-data-threat-report--cloud-big-data-and-iot-edition-300225175.html",
+     "title": "2016 Vormetric Data Threat Report, Cloud, Big Data and IoT Edition",
+     "date": "2016-02-24",
+     "shows": "85% of 1,100 large-enterprise respondents use sensitive data in the cloud; public and private cloud not split; not the Global 1000."
+    }
+   ]
+  }
+ ]
+}
