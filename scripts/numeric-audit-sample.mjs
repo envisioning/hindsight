@@ -5,6 +5,9 @@
 // misses weighted 1.5. Same draw as scripts/audit-sample.mjs, seed d11:<source>:numeric.
 // Writes data/graded/audit/<source>.json and keeps existing records. Refuses to change a
 // sample that already has records (a regrade must not move an audited sample). --check only compares.
+// Supplementary sample (D46): --supplement <tag> --editions <e1,e2,...> draws the same way over the graded rows of
+// those editions only, seed d11:<source>:numeric:<tag>, into data/graded/audit/<source>-supplement-<tag>.json. It
+// is for rows added after the first audit; the first sample and its records are not touched.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
@@ -12,6 +15,10 @@ const NUMERIC = ["bcb-focus", "bnef-evo", "bp-energy-outlook", "cbo-projections"
 const arg = process.argv[2];
 const check = process.argv.includes("--check");
 const sources = arg === "--all" ? NUMERIC : [arg];
+const opt = (name) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : undefined);
+const supTag = opt("--supplement");
+const supEditions = opt("--editions")?.split(",");
+if (supTag !== undefined && (!/^[a-z0-9-]+$/.test(supTag) || !supEditions?.length || sources.length !== 1)) throw new Error("--supplement <tag> needs one source and --editions <e1,e2,...>");
 if (!arg || !sources.every((s) => NUMERIC.includes(s))) throw new Error(`usage: numeric-audit-sample.mjs <${NUMERIC.join("|")}|--all> [--check]`);
 const root = path.resolve(import.meta.dirname, "..", "data", "graded");
 mkdirSync(path.join(root, "audit"), { recursive: true });
@@ -54,10 +61,10 @@ function drawSample(agreed, seed) {
 let failed = false;
 for (const source of sources) {
 	const rows = JSON.parse(readFileSync(path.join(root, "numeric", `${source}.json`), "utf8"));
-	const graded = rows.filter((r) => r.status === "graded").map((r) => ({ id: r.claim_id, verdict: r.verdict }));
-	const seed = `d11:${source}:numeric`;
+	const graded = rows.filter((r) => r.status === "graded" && (!supEditions || supEditions.includes(r.edition))).map((r) => ({ id: r.claim_id, verdict: r.verdict }));
+	const seed = supTag ? `d11:${source}:numeric:${supTag}` : `d11:${source}:numeric`;
 	const sample = drawSample(graded, seed);
-	const file = path.join(root, "audit", `${source}.json`);
+	const file = path.join(root, "audit", supTag ? `${source}-supplement-${supTag}.json` : `${source}.json`);
 	const existing = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : null;
 	const same = existing && existing.seed === seed && JSON.stringify(existing.sample) === JSON.stringify(sample);
 	const strata = Object.fromEntries(["hit", "partial", "miss"].map((v) => [v, sample.filter((id) => graded.find((g) => g.id === id)?.verdict === v).length]));
@@ -68,7 +75,8 @@ for (const source of sources) {
 		console.log(source, `sample unchanged (${sample.length})`);
 	} else {
 		if (existing && Object.keys(existing.records ?? {}).length) throw new Error(`${source}: data/graded/audit/${source}.json has records for another sample; do not redraw over audit records.`);
-		writeFileSync(file, `${JSON.stringify({ rule: "D11 matching audit (D19, D20)", auditor: "agent (D20)", seed, of_graded: graded.length, sample, records: existing?.records ?? {} }, null, 1)}\n`);
+		const scope = supTag ? { supplement: supTag, editions: supEditions } : {};
+		writeFileSync(file, `${JSON.stringify({ rule: supTag ? "D11 matching audit (D19, D20), supplementary sample (D46)" : "D11 matching audit (D19, D20)", auditor: "agent (D20)", seed, ...scope, of_graded: graded.length, sample, records: existing?.records ?? {} }, null, 1)}\n`);
 		console.log(source, `sample written (${sample.length} of ${graded.length})`, JSON.stringify(strata));
 	}
 }

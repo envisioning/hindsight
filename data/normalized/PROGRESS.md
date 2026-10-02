@@ -20,7 +20,7 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 | iea-weo | normalized | 26 | 349 | 86 base-year row (historical value, not a projection) | technology + metric + target_year + scenario; edition-level quotes: quote text | 2026-10-02T14:06:47Z |
 | eia-aeo | normalized | 43 | 9390 | 0 | series + unit + target_year + dollar_year | 2026-10-02T14:06:48Z |
 | bcb-focus | normalized | 108 | 811 | 0 | indicator label + target_year + horizon | 2026-10-02T14:06:48Z |
-| oecd-economic-outlook | normalized | 24 | 420 | 0 | economy name + target_year + horizon | 2026-10-02T14:06:48Z |
+| oecd-economic-outlook | normalized | 53 | 762 | 0 | economy name + target_year + horizon | 2026-10-02T14:38:03Z |
 | world-bank-gep | normalized | 44 | 746 | 0 | economy name + target_year + horizon | 2026-10-02T14:06:48Z |
 | fed-sep | normalized | 76 | 1541 | 553 median computed by Hindsight from individual projections (not published at the time) | variable + statistic + horizon + target_year | 2026-10-02T14:06:48Z |
 | ecb-projections | normalized | 104 | 566 | 0 | variable + statistic + horizon + target_year | 2026-10-02T14:06:48Z |

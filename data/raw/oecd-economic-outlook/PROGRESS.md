@@ -2,8 +2,37 @@
 
 | Edition | Status | Entries | Written |
 |---|---|---|---|
+| 1996-12 | partial | 8 entries | 2026-10-02 16:33 |
+| 1997-12 | partial | 8 entries | 2026-10-02 16:33 |
+| 1998-06 | partial | 8 entries | 2026-10-02 16:33 |
+| 1998-12 | partial | 8 entries | 2026-10-02 16:33 |
+| 1999-06 | partial | 8 entries | 2026-10-02 16:33 |
+| 1999-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2000-06 | partial | 12 entries | 2026-10-02 16:33 |
+| 2000-11 | partial | 8 entries | 2026-10-02 16:33 |
+| 2001-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2002-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2003-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2004-06 | partial | 12 entries | 2026-10-02 16:33 |
+| 2004-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2005-06 | partial | 12 entries | 2026-10-02 16:33 |
+| 2005-11 | partial | 12 entries | 2026-10-02 16:33 |
+| 2006-06 | partial | 12 entries | 2026-10-02 16:33 |
+| 2006-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2007-05 | partial | 12 entries | 2026-10-02 16:33 |
+| 2008-06 | partial | 12 entries | 2026-10-02 16:33 |
+| 2008-11 | partial | 12 entries | 2026-10-02 16:33 |
+| 2009-06 | partial | 12 entries | 2026-10-02 16:33 |
+| 2009-11 | complete | 18 entries | 2026-10-02 16:33 |
+| 2010-05 | partial | 12 entries | 2026-10-02 16:33 |
+| 2010-11 | partial | 12 entries | 2026-10-02 16:33 |
+| 2011-05 | partial | 12 entries | 2026-10-02 16:33 |
+| 2011-11 | partial | 12 entries | 2026-10-02 16:33 |
+| 2013-05 | complete | 18 entries | 2026-10-02 16:33 |
 | 2013-11 | partial | 12 entries | 2026-09-28 08:34 |
 | 2014-05 | partial | 12 entries | 2026-09-28 08:34 |
+| 2014-11 | partial | 12 entries | 2026-10-02 16:33 |
+| 2015-06 | complete | 18 entries | 2026-10-02 16:33 |
 | 2015-11 | complete | 18 entries | 2026-09-28 08:34 |
 | 2016-06 | complete | 18 entries | 2026-09-28 08:34 |
 | 2016-11 | complete | 18 entries | 2026-09-28 08:34 |

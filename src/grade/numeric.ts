@@ -1120,6 +1120,28 @@ function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined
   const recs = Object.entries(a.records ?? {});
   if (recs.length === 0) return undefined;
   const sampled = new Set(a.sample);
+  // D46: supplementary samples (audit/<source>-supplement-<tag>.json) over rows added after the first audit. Their
+  // records count with the first sample's; a supplementary confirm stores the grade it read (grade_audited), and a
+  // row whose grade changed since then is pending_recheck.
+  const seeds = [a.seed];
+  let sampleSize = a.sample.length;
+  const supBase: Record<string, GradeSnap> = {};
+  for (const f of readdirSync(join(GRADED, "audit"))
+    .filter((n) => n.startsWith(`${source}-supplement-`) && n.endsWith(".json"))
+    .sort()) {
+    const sp = readJson(join(GRADED, "audit", f)) as { seed: string; sample: string[]; records: Record<string, AuditRecord & { grade_audited?: GradeSnap }> };
+    seeds.push(sp.seed);
+    sampleSize += sp.sample.length;
+    for (const id of sp.sample) {
+      if (sampled.has(id)) throw new Error(`${f}: ${id} is already in an audit sample of ${source} (D46)`);
+      sampled.add(id);
+    }
+    for (const [id, r] of Object.entries(sp.records ?? {})) {
+      if (!sp.sample.includes(id)) throw new Error(`${f}: record ${id} is not in its sample (D46)`);
+      recs.push([id, r]);
+      if (r.grade_audited) supBase[id] = r.grade_audited;
+    }
+  }
   const rechecks = new Map<string, RecheckRecord>();
   for (const f of readdirSync(join(GRADED, "audit"))
     .filter((n) => n.startsWith(`${source}-recheck-`) && n.endsWith(".json"))
@@ -1136,7 +1158,7 @@ function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined
   };
   // #71 (D42): the grade a confirming auditor read. 6e11858 stored the #53 records together with definition changes
   // (CBO deficits in % of GDP, OBR unrounded actuals), so for those confirms the grade seen is the one at 6b1a8a2.
-  const baseline = { ...baseOf("audited-grades-53.json"), ...baseOf("audited-grades-53-seen.json") };
+  const baseline = { ...baseOf("audited-grades-53.json"), ...baseOf("audited-grades-53-seen.json"), ...supBase };
   const byId = new Map(rows.map((r) => [r.claim_id, r]));
   let fixed = 0;
   let residual = 0;
@@ -1203,8 +1225,8 @@ function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined
   const count = (d: string) => recs.filter(([, r]) => r.decision === d).length;
   const rcs = [...rechecks.values()];
   return {
-    seed: a.seed,
-    sample: a.sample.length,
+    seed: seeds.join(" + "),
+    sample: sampleSize,
     audited: n,
     confirmed: count("confirm"),
     corrected: count("correct"),
@@ -1347,7 +1369,7 @@ function readme(all: Map<string, NumericGrade[]>, summary: NumericSummary, compa
   L.push("");
   L.push("## Matching audit (D11, D20, #53)", "");
   L.push(
-    "An agent checked a fixed-seed sample of graded rows per source (`node scripts/numeric-audit-sample.mjs <source>`, seed `d11:<source>:numeric`, at least 50 rows or 10%, misses weighted 1.5): forecast as printed, actual series and definition, year, actual value. Records are in `data/graded/audit/<source>.json`. A matching error found in the sample is fixed in this command for every row; `residual` counts sampled rows whose grade still differs from the audit. The audit-adjusted interval widens the hit-rate interval by the residual error rate (D28). The sample is not redrawn after a fix (D24), so a sampled row may now be ungradable. D24 re-check passes are in `data/graded/audit/<source>-recheck-<tag>.json`, read in name order; a later record replaces an earlier one for the same claim, and a re-check may only cover sampled claims. A finding that a later capture answered (D38, D39, #66: the AEO2009 contests, the IMF India rows before July 2013, the early Focus Selic and ECB GDP contests) counts as fixed in code only when a re-check confirms the row on its current grade. A sampled row whose current grade no audit or re-check has seen counts as `pending re-check`, neither fixed nor residual: a confirmed row whose grade changed since the audit (against `data/graded/audit/audited-grades-53.json`, the grades the audit records refer to, or, where commit 6e11858 changed a confirmed row in the same commit that stored the records, against the grade the auditor read in `data/graded/audit/audited-grades-53-seen.json`: 44 CBO deficit rows and 44 OBR rows, #71), a re-checked row that changed again, or a capture fix without a confirming re-check. A re-check correction is residual until the row carries what the re-check checked.",
+    "An agent checked a fixed-seed sample of graded rows per source (`node scripts/numeric-audit-sample.mjs <source>`, seed `d11:<source>:numeric`, at least 50 rows or 10%, misses weighted 1.5): forecast as printed, actual series and definition, year, actual value. Records are in `data/graded/audit/<source>.json`. Rows added after the first audit get a supplementary fixed-seed sample over the new rows only (D46: `--supplement <tag> --editions <list>`, seed `d11:<source>:numeric:<tag>`, same size rule and weighting) in `data/graded/audit/<source>-supplement-<tag>.json`; its records count together with the first sample's (OECD: 50 rows over the 29 editions added in issue #10, tag `vintages`). A matching error found in the sample is fixed in this command for every row; `residual` counts sampled rows whose grade still differs from the audit. The audit-adjusted interval widens the hit-rate interval by the residual error rate (D28). The sample is not redrawn after a fix (D24), so a sampled row may now be ungradable. D24 re-check passes are in `data/graded/audit/<source>-recheck-<tag>.json`, read in name order; a later record replaces an earlier one for the same claim, and a re-check may only cover sampled claims. A finding that a later capture answered (D38, D39, #66: the AEO2009 contests, the IMF India rows before July 2013, the early Focus Selic and ECB GDP contests) counts as fixed in code only when a re-check confirms the row on its current grade. A sampled row whose current grade no audit or re-check has seen counts as `pending re-check`, neither fixed nor residual: a confirmed row whose grade changed since the audit (against `data/graded/audit/audited-grades-53.json`, the grades the audit records refer to, or, where commit 6e11858 changed a confirmed row in the same commit that stored the records, against the grade the auditor read in `data/graded/audit/audited-grades-53-seen.json`: 44 CBO deficit rows and 44 OBR rows, #71), a re-checked row that changed again, or a capture fix without a confirming re-check. A re-check correction is residual until the row carries what the re-check checked.",
     "",
     "| Source | Audited | Confirm | Correct | Contest | Error rate found | Fixed in code | Residual | Re-checked (confirm / correct) | Pending re-check | Audit-adjusted interval |",
     "|---|---|---|---|---|---|---|---|---|---|---|",
