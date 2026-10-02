@@ -26,3 +26,14 @@ python3 build.py .                       # writes data/raw/mckinsey-tech-trends/
 ```
 
 `parse.py` is a reading aid. `build.py` holds the hand-chosen entries and reports quotes it cannot find verbatim in the extracted text: for 2021 and 2022 these are slide figure labels whose columns pdftotext interleaves (each word is checked to be printed), plus two 2023 quotes with a footnote marker or page header removed.
+
+## 2026 PDF (not captured)
+
+Full report path, from the article's page data (`fullReportPDF`): `https://www.mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202026/mckinsey%20technology%20trends%20outlook%202026.pdf`. Not in the Wayback Machine or archive.today as of 2026-10-02. To check again:
+
+```
+curl -s "https://web.archive.org/cdx/search/cdx?url=mckinsey.com/~/media/mckinsey/business%20functions/mckinsey%20digital/our%20insights/the%20top%20trends%20in%20tech%202026/&matchType=prefix&output=txt"
+curl -s "https://archive.ph/timemap/<pdf url>"
+```
+
+When a capture appears: fetch it with `fetch.sh` (`id_` URL), `pdftotext` it, add the 2026 entries to `build.py` after the existing 17 (append, never reorder; D15), and run `build.py`.
