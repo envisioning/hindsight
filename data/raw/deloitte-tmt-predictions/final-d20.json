@@ -1,43 +1,235 @@
 {
  "rule": "D16",
  "process": "D20: two blind graders (D7), adjudicator on disagreements, agent audit of agreed verdicts (D11)",
- "kappa": 0.7952,
- "n": 276,
+ "kappa": 0.7387,
+ "n": 438,
  "counts": {
-  "hit": 71,
-  "miss": 26,
-  "partial": 19,
-  "contested": 5,
-  "ungradable": 155
+  "hit": 165,
+  "miss": 40,
+  "partial": 27,
+  "contested": 7,
+  "ungradable": 197,
+  "unfalsifiable": 2
  },
  "hit_rate": {
-  "hits": 71,
-  "of_graded_hit_partial_miss": 116,
-  "rate": 0.6121,
+  "hits": 165,
+  "of_graded_hit_partial_miss": 232,
+  "rate": 0.7112,
   "wilson95": [
-   0.521,
-   0.696
+   0.65,
+   0.766
   ],
   "audit_adjusted95": [
-   0.421,
-   0.796
+   0.57,
+   0.846
   ]
  },
- "hit_or_partial_rate": 0.7759,
- "adjudicated": 29,
+ "hit_or_partial_rate": 0.8276,
+ "adjudicated": 68,
  "rechecked": 29,
  "recheck_passes": [
   "adjudicated-d20-pass1.json"
  ],
  "audit": {
-  "sample": 50,
-  "audited": 50,
-  "confirmed": 45,
-  "corrected": 0,
-  "contested": 5,
-  "error_rate": 0.1
+  "sample": 100,
+  "audited": 100,
+  "confirmed": 92,
+  "corrected": 1,
+  "contested": 7,
+  "waves": [
+   "w1",
+   "w2"
+  ],
+  "error_rate": 0.08
  },
  "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2002-001",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "reason": "A measure exists, so not ungradable: enterprise mobile e-mail is counted by RIM's BlackBerry subscriber series and mobile data use by Ofcom. BlackBerry subscribers doubled each year (534,000 FY2003, 1.07m FY2004, 2.51m FY2005), so business take-up did accelerate, but business mobile data stayed a small share in 2004: non-SMS data was 2% of UK mobile retail revenue. Measurable but below mainstream by the placed year; routine business use came 3 to 5 years later. Grader A's partial stands."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-003",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-005",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "miss",
+   "reason": "Graders' key fact (FCC 'granted many' Phase II waivers) is not on the cited Wikipedia 'Enhanced 911' page, which instead says many phones made after 2005 have built-in GPS and the 95% location-capable handset deadline was end-2005 (some carriers fined). The forecast (pressure for faster, cheaper location 'right across the world') is met in the US by about 2005 (3 years: partial) but not worldwide (miss); the evidence does not settle which, so no verdict is supported."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-007",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The claim is about a trend in handset size, so it needs a size or weight series by year. Grader A's single model (Nokia 7650, 154 g, June 2002) is one flagship, not the trend; slim and small models kept launching (Motorola T720 2002, RAZR 2004). The only series found (USGS citing Environmental Literacy Council and Nokia) gives a typical phone at 218 g in 2000 and 113 g in 2005, but the 2005 figure excludes the battery and the 2000 figure's basis is not stated, so it cannot show whether the curve flattened in 2002. No consistent public series reached: ungradable (D22/D23)."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The sentence is framed as what users 'must be prepared' to accept, but the chapter's headline 'Swap privacy for security' is a forecast that the swap happens, and it has a dated observable: the EU ePrivacy Directive 2002/58/EC (adopted July 2002) obliges providers to erase traffic data unless Article 15(1) conditions apply, which let member states require retention for security and crime purposes; retention was later made mandatory by the Data Retention Directive (2006), which amends 2002/58. The swap was written into law in the target year. Grader B's normative-only reading ignores the headline. Low-medium confidence: the claim is soft."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-009",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-003",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-004",
+   "verdict": "partial",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-005",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "The claim is a revival, not mainstream status. The revival happened: Vodafone live! (colour-handset portal, launched October 2002) had 1 million customers by April 2003 and 1.5 million by May 2003, and WAP 'made a stronger resurgence' in 2003-2004 with Vodafone live! and T-Mobile T-Zones. Grader A's Ofcom evidence (mobile internet 'relatively insignificant' in 2004) shows WAP stayed small, which tests a claim of significance that Deloitte did not make. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-006",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-007",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-001",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-002",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "miss",
+   "reason": "The headline is about data growth, and it slowed: Ofcom's UK mobile retail revenue shows SMS plus data at £1.4bn (2002), £1.9bn (2003), £2.1bn (2004), so growth fell from about 36% to about 11%; SMS revenue rose only from £1.8bn to £1.9bn; the average SMS sent per subscriber was unchanged in 2004; MMS and mobile internet stayed small. Grader B is right that total UK text volumes kept growing (over 28bn in 2004), but that growth came from more subscriptions; the forecast's mechanism (SMS deceleration not offset by other data) held. UK is the only market checked, so medium confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-003",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-004",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-005",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-006",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-007",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "A public assessment of exactly this exists: Ofcom's 2005 review headed its section 'WiFi hotspots are growing in number, but usage is still low', noting roaming-inflated site counts, substantial price cuts in 2004 and packages still aimed at corporate users. No hourly utilisation series exists, but the regulator's measure of usage supports the claim. Hit, medium confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-010",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "No developed-market-only figure was found, but the global series brackets it: ABI put colour screens at nearly 38% of all handsets sold in 2003, and iSuppli at 74% of handset main displays in 2005. Developed markets led the switch (IDC, January 2004: North American and Western European buyers were ditching monochrome phones), and the global figure is pulled down by low-end emerging-market sales, so the developed-market share was above 50% by end-2004 on any interpolation. Polyphony shipped on colour phones from 2002 (Nokia 3510 onward). Hit, medium confidence (inference from the global series)."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-011",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-013",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-014",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "reason": "The edition settles grader B's two readings: the chapter defines 'indirectly on usage' as speed tiers, not volume caps. Speed-tiered broadband became standard (Ofcom 2006: average price of 512K access fell from £30 to £16 in 2005 while operators sold 'up to 8Mbit/s' packages), and volume caps also arrived in the UK in 2004 (Ofcom 2005), so even the second reading points the same way in the market checked. Not unfalsifiable. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-015",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-016",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The claim is about operators' return on hotspot investment. No hotspot revenue or profitability figure for 2004 was found by either grader or the adjudicator. Ofcom's low-usage and price-cut findings make low returns likely, but usage is a proxy of a different quantity (D23), and the adjudicator's prior w1 practice treats such proxies as not a measure. Ungradable; grader A's hit rests on inference."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-017",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-020",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "A measure exists: BT reported 'new wave' turnover (ICT, broadband, mobility) up 32% to £4.47bn in 2004/05, about a quarter of group revenue, with ICT a main driver, and BT Global Services bought Radianz and Infonet in 2005. Grader B did not reach BT's results. Hit; one operator, but the largest European incumbent named in this kind of strategy."
+  },
   {
    "id": "deloitte-tmt-predictions-2005-001",
    "verdict": "hit",
@@ -95,6 +287,153 @@
    "status": "agreed"
   },
   {
+   "id": "deloitte-tmt-predictions-2005-011",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-013",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-015",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-016",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-017",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-019",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-021",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "ITU: 2,205.3 million mobile-cellular subscriptions in 2005 (checked in the ITU workbook). The captured value is ~2 billion; 2.0bn is 9.3% below the actual, inside the 10% band. Grader B's reading of 'nearly 2 billion' as strictly below 1.985bn is narrower than the captured value; the forecast is graded at its stated number. Hit, at the edge of the band."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-022",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-024",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-027",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-028",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The quoted sentence states behaviour, and the behaviour is documented: in 2005 O2 trialled DVB-H TV, BT and Virgin Mobile trialled DAB TV, UK hotspots grew, 3G operators planned HSDPA launches for 2006-2007, and WiMAX was in trials. Whether this spread bets 'too thin' (the headline's judgment) is not graded. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-029",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-030",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "hit",
+   "reason": "The edition settles the reading: the chapter says RFID 'in 2005 should make it out of the lab', with retail, defence and automotive mandates prompting 'a massive increase in RFID adoption', then 'by the end of the year, billions ... commissioned'. That is the 2005 flow. IDTechEx counted just over 600 million tags in 2005. Cumulative sales since the 1940s (2.4bn, about 1.8bn before 2005) would make the forecast trivially true and are not what the chapter describes. Grader B's cumulative reading is not equally faithful. 0.6bn against at least 2bn: miss."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-031",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-032",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-033",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The chapter defines the group (fast-growing low-cost providers, especially VoIP and carrier pre-selection entrants) and their growth is measured: by March 2006 there were 6.1 million UK CPS lines, over 40% with Carphone Warehouse (TalkTalk); nearly 34% of UK lines took calls from a provider other than BT; BT's share of all telecoms connections fell from 37% to 26% over five years to 2005, the 'other' category rising from 4% to 12%, mainly CPS and broadband entrants. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-034",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-035",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-036",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-038",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-039",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-040",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
    "id": "deloitte-tmt-predictions-2006-001",
    "verdict": "miss",
    "status": "audited"
@@ -118,6 +457,113 @@
    "id": "deloitte-tmt-predictions-2006-005",
    "verdict": "hit",
    "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-006",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-007",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-008",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "reason": "The chapter names its own test: services 'from directory inquiries to tourist information' incorporating natural-language speech recognition, and voice control in vehicles. Both happened inside the D16 two-year window: Google's GOOG-411 speech-recognition directory service launched April 2007, and Ford SYNC voice control (announced January 2007) shipped in twelve 2008-model vehicles in 2007. Grader A's Wii reading is off the chapter's subject and its speech reading asserted 'niche' without evidence; grader B's Wii evidence is also off-subject, but both readings give a hit, so not unfalsifiable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-009",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-010",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-012",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-013",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-016",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-017",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "reason": "A measure exists, so not ungradable: the US Radio Advertising Bureau tracks 'Off-Air' revenue (mainly online, then experiential marketing). It grew at about 10% a year from mid-2005 and 12.3% over the two years to mid-2008, reaching 9% of US radio revenue, while spot revenue fell. Diversification started, at a measurable share, but the streams the chapter named (paid replays, downloads, subscriptions, premium HD) did not become a significant share, and 9% is below the 20% D16 mainstream line. Grader A's two readings collapse into this one measure. Partial, low-medium confidence (US data only)."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-019",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-020",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-021",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-022",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-023",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-024",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Dolce & Gabbana released a limited-edition gold RAZR in December 2005 and another on 1 June 2006; Prada announced its LG-made phone on 12 December 2006, on sale March 2007. The Prada launch falls inside the two-year window D16 allows, so grader B's late-arrival penalty does not apply. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-027",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-029",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "Measured at a record: per the FCC, US resellers including MVNOs served 15.1 million subscribers at end-2006, up 1.6 million, about 7% of US mobile subscribers. In UK fixed, carrier pre-selection resellers reached 6.1 million lines by March 2006. Grader B's MVNO failures (Mobile ESPN under 10,000 subscribers) are single entrants; the reseller segment grew to its largest size. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-030",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-031",
+   "verdict": "hit",
+   "status": "agreed"
   },
   {
    "id": "deloitte-tmt-predictions-2007-001",
@@ -164,6 +610,119 @@
    "status": "agreed"
   },
   {
+   "id": "deloitte-tmt-predictions-2007-010",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "reason": "The chapter's subject is the cost burden of spam, spim, spit and malware; the 'suppliers start charging' reading grader A sets against it is a recommendation in the bottom line, not the forecast, so the readings are not equally faithful and unfalsifiable does not apply. Under the chapter's reading the claim needs a cost series for 2006 and 2007; none was found. Spam share of email (about 95% in 2006 per the chapter, 97% in 2008 per Microsoft) is a volume proxy, not a cost (D23). Ungradable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-011",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "reason": "The chapter expected the 25 member states to introduce country-specific anti-fraud legislation in 2007. The UK did: from 1 June 2007 a VAT reverse charge applied to mobile phones and computer chips, changing invoicing for every supplier of those goods into the UK. EU-wide reverse-charge powers for such goods came only later (quick-reaction and reverse-charge directives around 2010), three years after the placed year. One major market in the year, broader action 3 or more years later: partial. Grader B's 'no measure' ignores the legislative event the chapter names."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-013",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-014",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "The chapter scopes it: 'the technology sector may increasingly adopt a new approach to portable power ... power-scavenging solutions' recharging portable-device batteries. The absence is observable: no phone, laptop or media-player line shipped harvesting as a standard feature in 2007-2012; harvesting stayed in milliwatt niches (sensors, watches, pilot floor tiles). Below 5% within five years: miss. Grader B's lack of a market-size figure does not make it ungradable when no product category adopted it."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-015",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "An event claim with named examples, and they happened in 2007: the i-LIMB, the first commercial prosthetic hand with individually powered digits, launched in July 2007, and Oscar Pistorius raced non-disabled athletes at Rome's Golden Gala and the British Grand Prix in July 2007, starting the IAAF dispute over his prosthetics. Soft claim, but the chapter's own examples occurred. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-016",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The quality half has no measure, but the threat half does: the largest UGC platform, YouTube, had 2007 revenue Google called 'not material' in its filing, so UGC took no material revenue from media in 2007. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-017",
+   "verdict": "miss",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-019",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "reason": "A measure exists (newspaper revenue, print and online), so not ungradable. But the hedged wording ('may not always be about one versus the other') supports two readings: some publishers profitably combine print and online (true in 2007, when most newspaper groups were still profitable and online revenue grew), or the press as a whole coexists profitably across both (false from 2008, as print revenue collapsed and online did not offset it). The chapter supports both and no reading dominates. Grader A's unfalsifiable stands."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-020",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-022",
+   "verdict": "unfalsifiable",
+   "status": "adjudicated",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "reason": "Two faithful readings diverge. On the quoted sentence alone, social networking stayed popular and found a sustainable model on advertising (Facebook EBITDA-profitable early 2008, cash-flow positive September 2009): hit. On the chapter's body, the model would have to lean on subscriptions and paid privacy because 'advertising revenues may not suffice': miss, as advertising won. The quote does not name the model and the chapter does, so neither dominates. Not ungradable: under D23 a necessity claim is graded on its outcome, and the outcome is observable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-023",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-024",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-025",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-026",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-027",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-028",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-029",
+   "verdict": "contested",
+   "status": "contested",
+   "was": "hit",
+   "reason": "Source PDF p14 ties 'primary network for voice' to mobile traffic exceeding PSTN 'in many developed countries'. Evidence: Taiwan crossed in 2007 (Telecompaper, 9 Apr 2008), but the UK was still ~60/40 fixed:mobile in 2007 (3g4g summary of Ofcom 2008) and fixed still led in 2009 (CMR 2010: 133bn vs 118bn); a US crossover could not be verified. One country is too thin for 'many': no verdict supported."
+  },
+  {
    "id": "deloitte-tmt-predictions-2008-001",
    "verdict": "partial",
    "status": "adjudicated",
@@ -190,6 +749,93 @@
    "id": "deloitte-tmt-predictions-2008-008",
    "verdict": "partial",
    "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-012",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-013",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-015",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-016",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-017",
+   "verdict": "miss",
+   "status": "corrected",
+   "was": "hit",
+   "reason": "Graders graded side figures (tours over $100m). Source PDF pp13-14: the forecast is that recorded music is sold as a physical product again (pre-recorded MP3 players, memory cards, box sets, vinyl). That stayed niche: slotMusic microSD albums (Oct 2008, Wikipedia) did not catch on, and global vinyl trade value was $66m in 2008 and $416m in 2015 (Wikipedia 'Vinyl revival'), under 5% of recorded music, while digital share kept rising (IFPI). Miss."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-018",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-020",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "An event claim, and the year's launches confirm it: Apple's App Store opened 10 July 2008, Spotify launched in Sweden, Finland, France, Norway and Spain on 7 October 2008, Hulu ran as a free online TV service in 2008. Grader B's objection (no threshold) is about strength of the test, not about whether it is observable. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-021",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "reason": "The quote is one of two scenarios, but the chapter leans: 'service providers may be better able to weather the storm, at least in 2008', 'service revenue growth may hold steady', equipment manufacturers harder hit. Operators' 2008 results held: AT&T revenue $118.9bn (2007) to $124.0bn (2008), net income $11.95bn to $12.87bn; world mobile subscriptions grew by about 660 million. Grader B's stock-price reading is not the chapter's measure (it says operators' stocks 'may be seen as secure', i.e. relative), so the operating reading dominates. Hit, medium confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-023",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "Observable by who holds the paying customers. Paid VoIP went to incumbents: Comcast's VoIP service made it the third-largest US home telephone provider, while Skype (the leading pure-play) remained a low-revenue business sold to Microsoft in 2011, a trade sale as the chapter advised. Mobile broadband went to LTE run by incumbent operators, not WiMAX entrants. Grader B's 'no horizon' objection: the chapter states a present-tense pattern for 2008 onward and the record is clear. Hit, medium confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-025",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The forecast is a causal one: that communications tools differentiate sites competitively. Grader A shows sites added tools (Facebook Chat released April 2008) and that Facebook led MySpace, but no source links share changes to communications features; that is a proxy (D23). No measure of the differentiator effect was found. Ungradable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-026",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-027",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-028",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-029",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "reason": "The captured quote is the literal sentence, and it happened: at Mobile World Congress 2008 Ericsson demonstrated the first end-to-end LTE call on a handheld and Motorola demonstrated LTE equipment and HD streaming. Grader B's second reading (the chapter's doubt about demand for speed) is a different sentence of the chapter, not the captured claim, so it does not create a competing reading of this claim. Hit, near-certain but low information."
   },
   {
    "id": "deloitte-tmt-predictions-2009-001",
@@ -252,6 +898,100 @@
    "id": "deloitte-tmt-predictions-2009-011",
    "verdict": "hit",
    "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-012",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The quantity is the share of unbranded/little-known brands in technology purchases in 2009; no public series was found. Grader A's evidence is that Vizio became North America's largest LCD TV seller by volume in 2007, before the target year and by then not an unknown brand; netbooks came mostly from established brands (Asus, Acer). Neither tests a 2009 shift. Ungradable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-015",
+   "verdict": "miss",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-017",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "The chapter is global ('Overall, in 2009 ... per viewer'). Eurodata TV Worldwide (89 countries): average daily viewing 3h12 in 2009, up 3 minutes on 2008, i.e. about 21 minutes a week. 30 is 43% above 21: miss. UK BARB via Ofcom (3.74 to 3.75 hours a day, about 4 minutes a week) is also a miss. Grader B's Nielsen figure is US Q1 only and is not the stated scope."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-018",
+   "verdict": "hit",
+   "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-019",
+   "verdict": "ungradable",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "reason": "The claim names which challenge is 'fundamental'; that is a ranking of concerns, not an outcome, like the w1 adjudication of 2007-003 (a state of worry). Grader A's evidence is YouTube's 2007 'not material' revenue, two years before the target year, which does not test 2009. Ungradable."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-020",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "reason": "The chapter's own test is that megastars 'may have to play arenas, not stadiums'. In 2009 the opposite happened: U2's 360 Tour opened in stadiums, sold 650,000 tickets in seven hours, and ended as the highest-grossing tour ever ($736m, 7.27 million tickets). Grader B looked for a premium series; the chapter's stadium-versus-arena test is observable. Miss."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-022",
+   "verdict": "miss",
+   "status": "adjudicated",
+   "graderA": "miss",
+   "graderB": "partial",
+   "reason": "The edition fixes the base: global mobile ad spend 'only $1 billion' at end-2008 (0.4% of global ad revenue). Gartner reported 2010 mobile ad revenue of US$1.6bn (forecasting more than double, US$3.3bn, for 2011), so 2009 was below US$1.6bn. 2.0 against at most 1.6 is 25% or more off: miss. Grader B's Gartner figures of US$1.7bn (2007) and US$2.7bn (2008 forecast) use an older, broader definition inconsistent with Deloitte's US$1bn base and with Gartner's own later series."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-023",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-024",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-025",
+   "verdict": "partial",
+   "status": "adjudicated",
+   "graderA": "hit",
+   "graderB": "partial",
+   "reason": "The event is confirmed on reputable sites in 2009 (The New York Times' ad feed served malicious ads 11-14 September 2009; the Guardian reported Internet companies facing the threat), but no source counts 'hundreds' of reputable sites in 2009. The direction and kind are right and the scale is unshown. Partial, low confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-027",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "Under D23 a conditional is graded if the condition held. Demand stayed strong (iPhone users about 400 MB a month against 40-80 MB for typical smartphones), and the stress was severe: AT&T's network in New York, San Francisco and other iPhone-heavy areas 'quickly bogged down', with failed calls and slow 3G, and AT&T invested billions and ended unlimited data in June 2010. Grader A's 'no measure of severity' is answered by the documented congestion. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-028",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "partial",
+   "graderB": "hit",
+   "reason": "Broadcast mobile TV closed region by region: Germany's MFD ended April 2008, Albania's DVB-H ended October 2010, Austria and Switzerland switched off around 2010, the Netherlands in 2011, Finland and Italy by 2012. Closures inside the two-year window count as a hit under D16; grader A's late-timing penalty applies only from year 3. 'Temporary' turned out permanent, which does not weaken the demise. Hit."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-029",
+   "verdict": "hit",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-030",
+   "verdict": "hit",
+   "status": "agreed"
   },
   {
    "id": "deloitte-tmt-predictions-2010-001",
@@ -326,6 +1066,24 @@
    "id": "deloitte-tmt-predictions-2010-015",
    "verdict": "hit",
    "status": "agreed"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-016",
+   "verdict": "hit",
+   "status": "adjudicated",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "reason": "No source splits 2010 mobile search exactly, but two figures bracket it. Google, the dominant mobile search provider, said in October 2010 it was on track for US$1bn in mobile revenue that year (mostly search ads, some display). Gartner put all mobile advertising at US$1.6bn in 2010, with search and maps its largest category. Mobile search therefore fell roughly between US$0.8bn and US$1.6bn, within or at most about 20% below the stated range. Grader A was right that no exact split exists, but both bracket figures are of the same quantity or contain it. Hit, low-medium confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-017",
+   "verdict": "partial",
+   "status": "audited"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-019",
+   "verdict": "hit",
+   "status": "audited"
   },
   {
    "id": "deloitte-tmt-predictions-2011-001",
