@@ -66,5 +66,6 @@ Actuals: `realized.json`. Built by `scripts/bp-energy-outlook/realized.py`.
 - 2014 summary tables are old binary .xls. Parsing needs a reader that is not installed; no dependency was added.
 - 2015 liquids demand level: not stated in the report text.
 - 2024 report PDF: the text layer has no spaces, so per-scenario EV counts were not extracted.
+- Renewables share basis (#53 audit, #66): bp's own history matches the EI series excluding hydro within 0.1 point in EO2019 and EO2020 (2017: 4.2 vs 4.30; 2018: 4.7 vs 4.72), but sits 0.15 to 0.18 points below it in EO2015 to EO2017 (2012: 2.36 vs 2.54; 2014: 3.00 vs 3.15; 2015: 3.34 vs 3.51, from those editions' summary tables; not stored as base-year rows). The grader keeps the EI actual and flags rows where that gap would change the verdict.
 - Realized oil is in TWh, not Mb/d, and the EI series is the 2025 vintage (data to 2024). The EI 2026 downloads need an email-verified form or sit behind a bot check. See `realized.json` notes.
 - Source oddity: 2015 text says renewables reach 8% of primary energy by 2035, but the 2015 summary table gives about 7% when computed as (renewables + biofuels) / total.

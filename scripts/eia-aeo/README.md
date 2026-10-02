@@ -23,3 +23,5 @@ python3 build.py
 ```
 
 Writes the edition files, `realized.json` and `PROGRESS.md` to `data/raw/eia-aeo/`. Downloaded inputs are not committed. The PDF tables are read by column position; their entries carry confidence medium.
+
+AEO2009 (#66): `build.py` takes every AEO2009 series from the R2025 data file (the March 2009 Reference case of the published report), except solar and wind, whose R2022 rows already equal it. R2022's other AEO2009 rows are the April 2009 ARRA-updated Reference case. Note: `build.py` does not reproduce the hand corrections of the `published` month in `1982.json` to `1987.json` (#53 audit); restore those files after a rebuild.

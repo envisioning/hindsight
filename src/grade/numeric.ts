@@ -58,6 +58,12 @@ type Match =
       notes: string[];
       /** Forecast and actual restated on another scale (CBO deficits in % of GDP, #54); graded under D18. */
       rescaled?: { forecast: number; unit: string };
+      /**
+       * #66: a known uncertainty of the actual, as the range the error can move by (in the error's unit). When the
+       * verdict differs anywhere in [error + low, error + high], the row stays graded and its note carries a
+       * threshold flag naming the verdicts that range allows.
+       */
+      uncertainty?: { low: number; high: number; why: string };
     }
   | { kind: "ungradable" | "open" | "excluded"; reason: string };
 
@@ -102,6 +108,12 @@ interface Grader {
   statistic?(e: Raw): string | null;
   /** How the source reads its own target period, when it is not a calendar year. */
   period?(e: Raw): string | null;
+  /**
+   * The D15 natural key of a raw row, as the normalize adapter builds it. When set, claims are mapped to raw rows
+   * through data/normalized/ids.json instead of by position, so a re-captured row with a new key (a new id above
+   * the edition's first assignment) still finds its row (#66: AEO2009 rows re-taken from another retrospective).
+   */
+  rowKey?(e: Raw): string;
 }
 
 const num = (v: unknown): number | null => (typeof v === "number" && Number.isFinite(v) ? v : null);
@@ -121,13 +133,27 @@ function imf(): Grader {
     by.set(e.economy, list);
   }
   const s = new Map([...by].map(([k, v]) => [k, series(`IMF ${k}`, v)]));
+  const cal = d.india_calendar_year as Raw | undefined;
+  const indiaCalendar = cal
+    ? series(
+        "IMF WEO April 2013 India, calendar year",
+        (cal.entries as Raw[]).map((e) => [String(e.target_year), { value: e.value, vintage: "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)", note: e.confidence === "medium" ? "The actual is the vintage's latest year and may be an IMF staff estimate." : undefined } as Actual]),
+      )
+    : undefined;
   const groups = new Set(["World", "Advanced economies", "Emerging market and developing economies", "Euro area"]);
   return {
     match: ({ e, ed, target }) => {
       const eco = String(e?.economy);
       // #53 audit: before these editions the IMF published a different measure under the same subject.
-      if (eco === "India" && ed < "2013-07")
-        return ungradable("India forecasts before the July 2013 WEO Update are calendar-year figures; the captured IMF India actual is fiscal-year (April to March), and no calendar-year actual was captured");
+      if (eco === "India" && ed < "2013-07") {
+        // #66: graded against the last IMF vintage on the calendar-year basis (WEO April 2013); later vintages are fiscal-year.
+        const m = lookup(indiaCalendar, target as number, target as number, [
+          "India on a calendar-year basis in forecast and actual: the actual is the WEO April 2013 database, the last IMF vintage before India moved to fiscal years (July 2013 Update); later revisions of Indian national accounts are not in it.",
+        ]);
+        if (m.kind === "open")
+          return ungradable(`India forecasts before the July 2013 WEO Update are calendar-year figures; the last calendar-year IMF vintage (April 2013) ends in 2012, and every later IMF India actual is fiscal-year`);
+        return m;
+      }
       if (eco === "Emerging market and developing economies" && ed < "2004-04")
         return ungradable("before the April 2004 WEO this row is the old 'developing countries' group, which left out the countries in transition (about 15% of today's group); a different group, not membership drift");
       if (eco === "Advanced economies" && ed < "1997-04")
@@ -189,6 +215,8 @@ function worldBank(): Grader {
     ]);
     m.set(e.economy, list);
   }
+  const worldWeights = (d.world_weights ?? {}) as Record<string, string | null>;
+  const worldRestated = (d.world_restated ?? []) as { target_year: number; value: number; stated_in: string; column: string; estimate: boolean; weights: string | null }[];
   const g = new Map([...gep].map(([k, v]) => [k, series(`GEP June 2026 ${k}`, v)]));
   const w = new Map([...wdi].map(([k, v]) => [k, series(`WDI ${k}`, v)]));
   return {
@@ -219,8 +247,25 @@ function worldBank(): Grader {
       if (fromGep !== undefined) return lookup(g.get(eco), y, y, notes);
       // #53 audit: before 2019 the GEP weighted World at 1995, 2000 or 2005 prices; WDI World uses 2015 USD weights,
       // which give emerging economies far more weight (gaps of 0.4 to 1.0 points). From 2019 the gap is 0.1 to 0.2 points.
-      if (eco === "World" && ed < "2019-01")
-        return ungradable("GEP World growth of this edition is weighted at an older price base (1995, 2000 or 2005 prices); the WDI World actual uses 2015 USD weights, a different aggregate. The GEP's own later-stated values on the edition's base are not captured");
+      // #66: graded against the GEP's own later statement of that year on the edition's weights (the latest later
+      // edition with the same price base whose table prints the year as a past year).
+      if (eco === "World" && ed < "2019-01") {
+        const base = worldWeights[ed];
+        if (!base) return ungradable("GEP World growth of this edition is weighted at a price base the table does not state; the WDI World actual uses 2015 USD weights, and no later GEP statement on the same base can be chosen");
+        const later = worldRestated.filter((r) => r.target_year === y && r.weights === base && r.stated_in > ed).sort((a, b) => (a.stated_in < b.stated_in ? -1 : 1));
+        const st = later[later.length - 1];
+        if (st === undefined)
+          return ungradable(`no later GEP edition on this edition's weights (${base}) prints ${y} as a past year; the WDI World actual uses 2015 USD weights, a different aggregate`);
+        return {
+          kind: "actual",
+          actual: st.value,
+          vintage: `World Bank GEP ${st.stated_in}, real GDP growth table (column ${st.column})`,
+          notes: [
+            `Actual is the GEP's own later statement of World growth at the same weights (${base}, market exchange rates) as the forecast; the WDI World series uses 2015 USD weights.`,
+            ...(st.estimate ? [`The ${st.stated_in} table marks ${y} as an estimate; no later edition on the same weights restates it.`] : []),
+          ],
+        };
+      }
       if (eco === "World") notes.push("Actual from WDI (constant 2015 USD weights); GEP tables from 2019 weight at 2010 or 2010-19 average prices (gap 0.1 to 0.2 points in the #53 audit).");
       return lookup(w.get(eco), y, y, notes);
     },
@@ -441,6 +486,8 @@ function eia(): Grader {
   };
   const vintages = d.vintages as Raw;
   return {
+    // Same key as the eia-aeo normalize adapter (src/normalize/sources/numeric.ts, keyRule).
+    rowKey: (e) => `${e.series}|${e.unit}|${e.target_year}|${e.dollar_year ?? ""}`,
     match: ({ e, target }) => {
       const retro = RETRO[String(e?.retrospective)];
       if (retro === undefined) throw new Error(`eia-aeo: unknown retrospective ${e?.retrospective}`);
@@ -488,7 +535,13 @@ function iea(): Grader {
   const ember = new Map<string, number>();
   for (const e of r.entries as Raw[]) {
     if (e.publisher === "Ember") ember.set(`${e.technology}|${e.metric}|${e.year}`, Number(e.value));
-    else put(String(e.technology), String(e.metric), Number(e.year), Number(e.value), 2025.5, "IEA WEO 2025 Annex A, historical value");
+    // #66: historical columns of later annex tables (WEO 2021 to 2025 restate 2010 and recent years). A later
+    // statement overrides an earlier base-year row; within one edition the historical column follows the base year.
+    else {
+      const by = Number(e.stated_in);
+      if (!Number.isFinite(by)) throw new Error(`iea-weo realized.json: IEA entry without stated_in (${e.technology} ${e.metric} ${e.year})`);
+      put(String(e.technology), String(e.metric), Number(e.year), Number(e.value), by + 0.5, `IEA WEO ${by} Annex A, historical value`);
+    }
   }
   const EMBER_VINTAGE = "Ember Yearly Electricity Data (retrieved 2026-09-27)";
   return {
@@ -542,14 +595,23 @@ function bp(): Grader {
   const renewables = pick("renewables share of primary energy (excl. hydro, substitution method)", vintage);
   const carStock = pick("electric car stock (BEV + PHEV)", "IEA Global EV Outlook 2026 via OWID (updated 2026-06-15)");
   return {
-    match: ({ e, target }) => {
+    match: ({ e, ed, target }) => {
       const m = String(e?.metric);
       const y = target as number;
       if (m.startsWith("renewables share of primary energy")) {
         if (m.includes("incl. bioenergy"))
           return ungradable("bp's renewables definition from 2022 includes bioenergy (bp base year 2019: 11.8%); the EI series excluding hydro (5.2% in 2019) is a different measure");
+        // #53 audit, #66: bp's history in EO2019 and EO2020 matches the EI series within 0.1 point; in EO2015 to EO2017
+        // (38% efficiency accounting) bp's historical years sit 0.15 to 0.18 points below it.
+        if (ed >= "2015" && ed <= "2017") {
+          const r = lookup(renewables, y, y, [
+            "Actual: EI renewables share of primary energy minus hydro share (substitution method). bp's own history in EO2015 to EO2017 sits 0.15 to 0.18 points below this series (2012: 2.36 vs 2.54; 2014: 3.00 vs 3.15; 2015: 3.34 vs 3.51; #53 audit).",
+          ]);
+          if (r.kind !== "actual") return r;
+          return { ...r, uncertainty: { low: 0.15, high: 0.18, why: "on bp's own accounting of this edition the actual would be 0.15 to 0.18 points lower." } };
+        }
         return lookup(renewables, y, y, [
-          "Actual: EI renewables share of primary energy minus hydro share (substitution method). bp's own base years match it within 0.1 point (2017: 4.2 vs 4.30; 2018: 4.7 vs 4.72).",
+          "Actual: EI renewables share of primary energy minus hydro share (substitution method). bp's own base years in EO2019 and EO2020 match it within 0.1 point (2017: 4.2 vs 4.30; 2018: 4.7 vs 4.72).",
         ]);
       }
       if (m.includes("liquids demand") || m.startsWith("oil demand")) return ungradable("realized oil is captured in TWh and excludes biofuels; the forecast is in Mb/d; no conversion is made");
@@ -575,8 +637,13 @@ function bnef(): Grader {
       switch (subject) {
         case "global-passenger-ev-sales":
           return lookup(sales, y, y, ["Passenger EV (BEV plus PHEV) sales; the IEA counts electric cars, the same scope."]);
-        case "global-ev-share-of-new-passenger-car-sales":
-          return lookup(share, y, y, ["Plug-in share of new passenger car sales; IEA shares are rounded to 2 significant figures from 2022."]);
+        case "global-ev-share-of-new-passenger-car-sales": {
+          const m = lookup(share, y, y, ["Plug-in share of new passenger car sales; IEA shares are rounded to 2 significant figures from 2022."]);
+          // #66: from 2022 the IEA publishes the share as a whole number (15, 18, 21, 25), so the actual is known to +-0.5 points.
+          if (m.kind === "actual" && y >= 2022 && Number.isInteger(m.actual))
+            return { ...m, uncertainty: { low: -0.5, high: 0.5, why: "the IEA publishes this share rounded to a whole number, so the actual is known only to within 0.5 points." } };
+          return m;
+        }
         case "global-ev-sales":
           return ungradable("scope of 'EV sales' in EVO 2016 to 2018 is light-duty vehicles or not stated; the IEA actual counts cars only");
         case "ev-price-parity-with-ice":
@@ -610,7 +677,7 @@ const MATCH_RULES: Record<string, string[]> = {
   "imf-weo": [
     "Actual: IMF WEO April 2026 (DataMapper), the same series and weights (world at PPP).",
     "Group aggregates (world, advanced economies, EMDEs, euro area): the actual uses current composition; graded with a note.",
-    "India: fiscal year in both forecast and actual, for editions from the July 2013 Update; earlier India forecasts are calendar-year figures and ungradable (no calendar-year actual captured; #53 audit).",
+    "India: fiscal year in both forecast and actual, for editions from the July 2013 Update. Earlier India forecasts are calendar-year figures (#53 audit); they are graded against the WEO April 2013 database (#66), the last IMF vintage on the calendar-year basis (via the DBnomics mirror; imf.org blocks scripted requests). Its latest year is 2012, so 2013 and 2014 targets stay ungradable. WDI is not used: it reports India on a fiscal-year basis (#54).",
     "Ungradable (#53 audit), because the edition's group is a different aggregate: emerging market and developing economies before April 2004 (old 'developing countries', without the transition economies); advanced economies before May 1997 (old 'industrial countries'); world before May 1993 (market-exchange-rate weights, actual is PPP).",
   ],
   "oecd-economic-outlook": [
@@ -623,6 +690,7 @@ const MATCH_RULES: Record<string, string[]> = {
     "Ungradable: 'High income' and 'Developing countries' (pre-June-2016 groups): the WDI groups use today's income classification.",
     "Ungradable: advanced economies and EMDEs before 2023 (no actual captured).",
     "India: fiscal-year forecasts are graded against the GEP June 2026 table (2023 to 2025) and otherwise against WDI, which reports India on a fiscal-year basis with the GEP year labels (WDI country metadata; WDI 2023 = 7.21 = GEP FY2023/24). realized.json calls the WDI series calendar year; that label is wrong (#54). Forecasts whose table does not state the basis stay ungradable.",
+    "World before January 2019 (#66): the GEP weighted World at 1995, 2000, 2005 or 2010 prices; WDI World uses 2015 USD weights. Graded against the GEP's own later statement of the year on the same weights: the latest later edition with the same price base (from the table note) whose table prints the year as a past year (`world_restated` in realized.json). Ungradable where no such edition exists (the last forecasts before each base change) and for GEP 2000, whose table states no base. From January 2019: WDI.",
     "Current-year values in November, December and some January editions are estimates; they are graded as current-year forecasts, with the capture note in the claim.",
   ],
   "fed-sep": [
@@ -655,20 +723,23 @@ const MATCH_RULES: Record<string, string[]> = {
     "Actual: the same AEO Retrospective as the forecast (2010, 2022 or 2025), on the same definition and unit. This takes definition over vintage: older retrospectives hold older actuals.",
     "Ungradable (#53 audit): Retrospective 2025 solar generation (the actual row is utility-scale only, the forecast all-sector) and total energy consumption (captured-energy basis in the actual, fossil-fuel-equivalence in the forecast).",
     "Ungradable: constant-dollar prices from the 2022 retrospective (each edition's own dollar year; no actual on that basis). Target years before the edition year are excluded (estimates of the past).",
+    "AEO2009 (#66): every series from the March 2009 Reference case of the published AEO2009 report, which the Retrospective 2025 data file holds for all years. The Retrospective 2022 AEO2009 rows are the April 2009 ARRA-updated Reference case (SR/OIAF/2009-03) for all series but solar and wind (imported crude 2009: 39.99 vs 61.09 USD per barrel), so they are not used. AEO2009 rows up to 2021 are graded against the Retrospective 2025 actuals; total energy consumption among them is ungradable (captured-energy basis, above).",
+    "Claims are mapped to raw rows by their D15 natural key through `data/normalized/ids.json`, so re-taken AEO2009 rows with a new unit keep their row.",
   ],
   "iea-weo": [
-    "Actual: the IEA's own later-stated history (base-year rows of later editions, WEO 2025 historical values), the latest statement for each year. Confirmed for #54: the IEA states capacity on its own basis (for example 2,164 GW of solar PV for 2024 against Ember's 1,880 GW), so an IEA forecast is graded against the IEA's own history, never Ember, wherever the IEA states a value.",
+    "Actual: the IEA's own later-stated history (base-year rows of later editions and the historical columns of the WEO 2021 to 2025 annex tables), the latest statement for each year (#66: a later historical column overrides an earlier base-year row, so 2010 wind capacity is 181 GW as restated from WEO 2021, not WEO 2012's 198 GW). Confirmed for #54: the IEA states capacity on its own basis (for example 2,164 GW of solar PV for 2024 against Ember's 1,880 GW), so an IEA forecast is graded against the IEA's own history, never Ember, wherever the IEA states a value.",
     "Wind generation: Ember where the IEA states no value (2015). Solar PV and wind capacity: no Ember fallback (PV plus CSP scope, capacity basis gap).",
     "Annex row 'Solar' (2002 to 2009): generation graded against Ember PV plus CSP only for WEO 2004, which states that 'Solar' includes solar thermal; other editions and all capacity rows are ungradable.",
     "Scenarios other than the main one are excluded. Edition-level quotes without a value are excluded.",
   ],
   "bp-energy-outlook": [
-    "Renewables share of primary energy excluding hydro (2015 to 2019 editions, main case): EI series excluding hydro. bp's base years match it within 0.1 point.",
+    "Renewables share of primary energy excluding hydro (2015 to 2019 editions, main case): EI series excluding hydro. bp's base years in EO2019 and EO2020 match it within 0.1 point; in EO2015 to EO2017 bp's history sits 0.15 to 0.18 points below it (bp's 38% efficiency accounting; #53 audit). Those rows are graded against the EI series and carry a threshold flag (#66) where a 0.15 to 0.18 point shift would change the verdict.",
     "Ungradable: oil and liquids demand (realized oil captured in TWh without biofuels), the 2022+ renewables definition (includes bioenergy).",
     "From 2020 all rows are scenarios: excluded.",
   ],
   "bnef-evo": [
     "Passenger EV sales and EV share of new passenger car sales: IEA Global EV Outlook 2026 (electric cars, BEV plus PHEV).",
+    "EV share from 2022: the IEA publishes whole numbers (15, 18, 21, 25%), so the actual is known within 0.5 points. A row whose error is within 0.5 points of a D18 threshold stays graded and carries a threshold flag in its note (#66).",
     "Ungradable: 'EV sales' of EVO 2016 to 2018 (light-duty or unstated scope), shares of other denominators (light-duty, all vehicles, fleet), price-parity years.",
     "Net Zero scenario rows are excluded.",
   ],
@@ -748,10 +819,16 @@ function gradeSource(source: string, editions: Map<string, SourceEdition>): Nume
   const claims = readJson(join(NORMALIZED, "claims", `${source}.json`)) as unknown as Claim[];
   // Raw rows by claim id: on first assignment nnn is the 1-based row position (D15). Verified below.
   const raw = new Map<string, { e: Raw; ed: string }>();
+  const registry = grader.rowKey ? ((readJson(join(NORMALIZED, "ids.json")).sources as Raw)[source] as Record<string, { keys: Record<string, string> }> | undefined) : undefined;
   for (const f of editionFiles(source)) {
     const d = readJson(join(RAW, source, f));
     const ed = String(d.edition);
-    ((d.entries ?? []) as Raw[]).forEach((e, i) => raw.set(`${source}-${ed}-${String(i + 1).padStart(3, "0")}`, { e, ed }));
+    const keys = registry?.[ed]?.keys;
+    ((d.entries ?? []) as Raw[]).forEach((e, i) => {
+      const id = grader.rowKey && keys ? keys[grader.rowKey(e)] : `${source}-${ed}-${String(i + 1).padStart(3, "0")}`;
+      if (id === undefined) throw new Error(`${source} ${ed}: raw row ${i + 1} has no id in ids.json; run pnpm normalize`);
+      raw.set(id, { e, ed });
+    });
   }
   const rows: NumericGrade[] = [];
   for (const claim of claims) {
@@ -815,6 +892,19 @@ function gradeSource(source: string, editions: Map<string, SourceEdition>): Nume
     const hi = num(e?.value_high);
     if (lo !== null && hi !== null)
       notes.push(`Published ${source === "fed-sep" ? "central tendency" : "range"} ${lo} to ${hi}; the actual is ${m2.actual >= lo - EPS && m2.actual <= hi + EPS ? "inside" : "outside"} it.`);
+    if (m2.uncertainty) {
+      const { low, high, why } = m2.uncertainty;
+      const v = verdict(rule, err);
+      // The verdict rises with |error|, so the smallest and largest |error| in the range bound the possible verdicts.
+      // The stated error is one of the readings, so the range always includes it.
+      const [a, b] = [err + Math.min(0, low), err + Math.max(0, high)];
+      const ORDER = ["hit", "partial", "miss"];
+      const from = ORDER.indexOf(verdict(rule, a < 0 && b > 0 ? 0 : Math.min(Math.abs(a), Math.abs(b))));
+      const to = ORDER.indexOf(verdict(rule, Math.max(Math.abs(a), Math.abs(b))));
+      const span = ORDER.slice(from, to + 1);
+      if (span.length > 1)
+        notes.push(`Threshold flag (#66): ${why} The error lies between ${round(a, 2)} and ${round(b, 2)} points, so the verdict could be ${span.join(" or ")}; ${v} is graded on the stated values.`);
+    }
     rows.push(
       NumericGrade.parse({
         ...base,
@@ -903,8 +993,22 @@ function byHorizon(rows: NumericGrade[]): { horizon: NumericHorizon; stats: Nume
 
 interface AuditRecord {
   decision: "confirm" | "correct" | "contest";
+  error_type?: string;
   corrected?: { status?: string; verdict?: string; actual?: number };
 }
+
+/**
+ * #66 (D38): audit findings that a new capture resolved, counted as fixed in code. Each test is narrow: it names
+ * the rows the finding was about and checks that the row now uses the capture that answers it. The audit records
+ * themselves are never edited; a D24 re-check pass can confirm or overturn the new grades.
+ */
+const AUDIT_RESOLVED: Record<string, (id: string, row: NumericGrade, rec: AuditRecord) => boolean> = {
+  // The 4 contests: the Retrospective 2022 AEO2009 value was the ARRA-updated case; the row now carries the March 2009 printed value the auditor cited.
+  "eia-aeo": (id, row, rec) =>
+    /^eia-aeo-2009-/.test(id) && rec.decision === "contest" && rec.error_type === "forecast_value" && row.status === "graded" && /AEO Retrospective 2025/.test(row.actual_vintage ?? ""),
+  // India rows before July 2013, corrected to ungradable because no calendar-year actual was captured; now graded on one.
+  "imf-weo": (_id, row, rec) => rec.corrected?.status === "ungradable" && row.status === "graded" && /calendar year/.test(row.actual_vintage ?? ""),
+};
 
 /** D11 matching audit (#53): data/graded/audit/<source>.json, compared with the current grades. */
 function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined {
@@ -921,6 +1025,10 @@ function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined
     if (r.decision === "confirm") continue;
     if (row === undefined) {
       residual++;
+      continue;
+    }
+    if (AUDIT_RESOLVED[source]?.(id, row, r)) {
+      fixed++;
       continue;
     }
     // A row the code no longer grades publishes no verdict, so the error the audit found is resolved.
@@ -1068,6 +1176,7 @@ function readme(all: Map<string, NumericGrade[]>, summary: NumericSummary, compa
   L.push("- **Levels (D16):** GW, TWh, barrels, prices, vehicles, billions of dollars or pounds. Error = (forecast minus actual) / |actual|, in percent. `hit` within 10%, `partial` within 25%, else `miss`.");
   L.push("- **Status.** `graded`: forecast and actual on the same definition. `ungradable`: the definitions differ or no actual on the forecast's definition exists; the reason is in `note`. `open`: target year after 2025, or the actual series does not reach the target year yet. `excluded`: not a forecast to grade (scenario, longer-run projection with no year, estimate of a past year, value not public at the time, quote without a value).");
   L.push("- **Actual.** The latest captured value on the forecast's definition, with its vintage in `actual_vintage`. Where the latest vintage uses a different definition, definition wins (EIA, IEA).");
+  L.push("- **Threshold flag (#66).** Where the actual is known only within a range (published rounding, or a basis gap the source states), a graded row whose verdict could change inside that range stays graded on the stated values; its note starts the caveat with `Threshold flag` and names the verdicts the range allows.");
   L.push("- **Horizon.** `horizon_years` = years between publication and target (0 = current year), from the source's own label where it has one (`horizon_label`).");
   L.push("- **Statistics (D11).** Hit rate = hits / graded, with a Wilson 95% interval. Bias = mean error, MAE = mean absolute error. Below 20 graded rows: counts only.", "");
   L.push("## Files", "");
@@ -1084,7 +1193,7 @@ function readme(all: Map<string, NumericGrade[]>, summary: NumericSummary, compa
   L.push("");
   L.push("## Matching audit (D11, D20, #53)", "");
   L.push(
-    "An agent checked a fixed-seed sample of graded rows per source (`node scripts/numeric-audit-sample.mjs <source>`, seed `d11:<source>:numeric`, at least 50 rows or 10%, misses weighted 1.5): forecast as printed, actual series and definition, year, actual value. Records are in `data/graded/audit/<source>.json`. A matching error found in the sample is fixed in this command for every row; `residual` counts sampled rows whose grade still differs from the audit. The audit-adjusted interval widens the hit-rate interval by the residual error rate (D28). The sample is not redrawn after a fix (D24), so a sampled row may now be ungradable.",
+    "An agent checked a fixed-seed sample of graded rows per source (`node scripts/numeric-audit-sample.mjs <source>`, seed `d11:<source>:numeric`, at least 50 rows or 10%, misses weighted 1.5): forecast as printed, actual series and definition, year, actual value. Records are in `data/graded/audit/<source>.json`. A matching error found in the sample is fixed in this command for every row; `residual` counts sampled rows whose grade still differs from the audit. The audit-adjusted interval widens the hit-rate interval by the residual error rate (D28). The sample is not redrawn after a fix (D24), so a sampled row may now be ungradable. A finding that a later capture answered counts as fixed in code (D38, #66): the AEO2009 contests (rows now carry the March 2009 printed values) and the IMF India rows before July 2013 (corrected to ungradable for want of a calendar-year actual, now graded on one); their new grades await a D24 re-check pass.",
     "",
     "| Source | Audited | Confirm | Correct | Contest | Error rate found | Fixed in code | Residual | Audit-adjusted interval |",
     "|---|---|---|---|---|---|---|---|---|",

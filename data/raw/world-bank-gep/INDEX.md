@@ -34,6 +34,8 @@ Published months: for editions since January 2010 the month is in the title. For
 
 Two World Bank sources, kept apart by the `source` field on each row. (1) GEP June 2026 table: 2023 and 2024 outturns and the 2025 estimate for all 9 economies, including Advanced economies and EMDEs. (2) World Development Indicators, NY.GDP.MKTP.KD.ZG (last updated 2026-07-13): 1998 to 2025 for World, United States, Euro area (EMU), Japan, China, India (calendar year, unlike the GEP fiscal year), Brazil, High income and Low & middle income. 279 rows. The two sources can differ for the same year (weights, revision timing).
 
+`world_restated` and `world_weights` (#66): World real GDP growth for past years as printed in each edition's table (columns before the edition's publication year; 114 rows, `stated_in` = the printing edition, `estimate` = column marked e), and the price base of each edition's market-exchange-rate GDP weights, read from the table note: 1995 prices (GEP 2003 to 2006; GEP 2001 and 2002 print no GDP note, and their price aggregates use "1995 GDP weights"), 2000 prices (GEP 2007 to 2009), 2005 prices (January 2010 to June 2013), 2010 prices (January 2014 to January 2021), average 2010-19 prices (June 2021 on). GEP 2000 (1999-12) states no base. Used to grade World forecasts made before 2019 against the GEP's own later statement on the same weights. Script: `scripts/world-bank-gep/world_restated.py` (reads `parsed.json` from `fetch.py`, which now also records `gdp_weights`).
+
 ## Editions
 
 | Edition | Published | Title | Entries | Status | Notes |

@@ -35,8 +35,13 @@ def toyear(x):
     if 1900<=v<=2100: return int(v)
     if 30000<v<60000: return (datetime.date(1899,12,30)+datetime.timedelta(days=int(v))).year
     return None
+# #66: the R2022 AEO2009 rows are the April 2009 ARRA-updated Reference case (SR/OIAF/2009-03) for every series
+# except solar and wind, which match the March 2009 AEO2009 report. The R2025 data file holds the March case for
+# all years. Every AEO2009 series is taken from the March case, the published AEO2009 report (DOE/EIA-0383(2009)).
+R22_AEO2009_MARCH={'solar_generation','wind_generation'}
 d22=xl.read('r22all.xlsx')
 r22_avgabs={}
+r22_years_2009={}  # target years of the R2022 AEO2009 rows that the R2025 March case replaces
 for sh,(series,label,unit,dy) in T22.items():
     g=xl.grid(d22[sh])
     hi=next(i for i,r in enumerate(g) if sum(1 for x in r if toyear(x))>=5)
@@ -53,6 +58,9 @@ for sh,(series,label,unit,dy) in T22.items():
             break
         if not re.fullmatch(r'AEO\d{4}',k): continue
         ed=k[3:]
+        if ed=='2009' and series not in R22_AEO2009_MARCH:  # #66: April 2009 ARRA-updated case; taken from R2025 below
+            r22_years_2009[series]={y for j,y in cols.items() if r[j] not in ('','NA')}
+            continue
         for j,y in cols.items():
             v=r[j]
             if v in ('','NA'): continue
@@ -100,10 +108,14 @@ for r in rows:
         continue
     if r['case_name']!='REFERENCE': continue
     ed=r['edition']
-    if int(ed)<=2022 and y<=2021: continue  # covered by the 2022 retrospective tables
+    march09=ed=='2009' and y<=2021  # #66: AEO2009 March case for the series whose R2022 row is the ARRA case
+    if int(ed)<=2022 and y<=2021 and not march09: continue  # covered by the 2022 retrospective tables
     for col,(series,label,unit) in C.items():
         if r[col]=='': continue
-        add(ed,{'series':series,'label':label,'target_year':y,'value':rnd(float(r[col])),'unit':unit,'case':'Reference','retrospective':'AEO Retrospective 2025 (data file, pulled August 2025)','column':col,'source_url':R25_CSV,'confidence':'high'})
+        if march09 and (series in R22_AEO2009_MARCH or y not in r22_years_2009.get(series,set())): continue
+        e={'series':series,'label':label,'target_year':y,'value':rnd(float(r[col])),'unit':unit,'case':'Reference','retrospective':'AEO Retrospective 2025 (data file, pulled August 2025)','column':col,'source_url':R25_CSV,'confidence':'high'}
+        if march09: e['note']='AEO2009 March 2009 Reference case (the published report), from the R2025 data file. The R2022 tables give the April 2009 ARRA-updated Reference case for this series; not used (#66).'
+        add(ed,e)
 
 # ---- write editions
 ALL=['1979']+[str(y) for y in range(1982,1988)]+[str(y) for y in range(1989,2024)]+['2025','2026']
