@@ -1,0 +1,234 @@
+{
+ "rule": "D11 matching audit (D19, D20), supplementary sample (D46)",
+ "auditor": "agent (D20)",
+ "seed": "d11:world-bank-gep:numeric:1990s",
+ "supplement": "1990s",
+ "editions": [
+  "1991-05",
+  "1992-04",
+  "1995-08",
+  "1996-08",
+  "1998-12"
+ ],
+ "of_graded": 18,
+ "sample": [
+  "world-bank-gep-1995-08-001",
+  "world-bank-gep-1995-08-002",
+  "world-bank-gep-1995-08-007",
+  "world-bank-gep-1995-08-008",
+  "world-bank-gep-1995-08-009",
+  "world-bank-gep-1995-08-010",
+  "world-bank-gep-1995-08-011",
+  "world-bank-gep-1995-08-012",
+  "world-bank-gep-1995-08-015",
+  "world-bank-gep-1995-08-016",
+  "world-bank-gep-1996-08-001",
+  "world-bank-gep-1996-08-002",
+  "world-bank-gep-1996-08-007",
+  "world-bank-gep-1996-08-008",
+  "world-bank-gep-1996-08-009",
+  "world-bank-gep-1996-08-010",
+  "world-bank-gep-1996-08-011",
+  "world-bank-gep-1996-08-012"
+ ],
+ "records": {
+  "world-bank-gep-1995-08-001": {
+   "decision": "confirm",
+   "note": "Forecast 2.8 for World 1995 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 2.4 equals GEP 1996 short-term update Table A.1, column 1995 \"Estimate\", World 2.4, read from the page image (same as its Table 1, page 10); note: constant 1987 U.S. dollars, the same base as the forecast. Latest later GEP statement of 1995 on 1987 weights (D39, D41); no later edition on 1987 prices prints the year again (GEP 2000 states no base, GEP 2001 on uses 1995 prices). D18 error +0.400 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 2.4,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-002": {
+   "decision": "confirm",
+   "note": "Forecast 3.1 for World 1996 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 2.9 equals GEP 1997 Table 1-2 (documents.worldbank.org 650721468774883393, page 15), column \"Estimate 1996\", World 2.9, read from the page image; note: 1987 prices and exchange rates, the same base as the forecast. Latest later GEP statement of 1996 on 1987 weights (D39, D41); no later edition on 1987 prices prints the year again (GEP 2000 states no base, GEP 2001 on uses 1995 prices). D18 error +0.200 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 2.9,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-007": {
+   "decision": "confirm",
+   "note": "Forecast 2.8 for United States 1995 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 2.684 equals WDI NY.GDP.MKTP.KD.ZG USA 1995 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 2.684. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error +0.116 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 2.684,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-008": {
+   "decision": "confirm",
+   "note": "Forecast 2.3 for United States 1996 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 3.773 equals WDI NY.GDP.MKTP.KD.ZG USA 1996 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 3.773. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -1.473 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 3.773,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-009": {
+   "decision": "confirm",
+   "note": "Forecast 0.7 for Japan 1995 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 2.342 equals WDI NY.GDP.MKTP.KD.ZG JPN 1995 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 2.342. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -1.642 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 0.7,
+    "actual": 2.342,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-010": {
+   "decision": "confirm",
+   "note": "Forecast 1.9 for Japan 1996 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 3.075 equals WDI NY.GDP.MKTP.KD.ZG JPN 1996 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 3.075. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -1.175 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 3.075,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-011": {
+   "decision": "confirm",
+   "note": "Forecast 9.9 for China 1995 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 11.015 equals WDI NY.GDP.MKTP.KD.ZG CHN 1995 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 11.015. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -1.115 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 9.9,
+    "actual": 11.015,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-012": {
+   "decision": "confirm",
+   "note": "Forecast 9.2 for China 1996 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 9.973 equals WDI NY.GDP.MKTP.KD.ZG CHN 1996 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 9.973. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -0.773 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 9.2,
+    "actual": 9.973,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-015": {
+   "decision": "confirm",
+   "note": "Forecast 4.9 for Brazil 1995 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 4.224 equals WDI NY.GDP.MKTP.KD.ZG BRA 1995 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 4.224. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error +0.676 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 4.9,
+    "actual": 4.224,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1995-08-016": {
+   "decision": "confirm",
+   "note": "Forecast 4.5 for Brazil 1996 matches the source: 1995 short-term update, Annex C Table C.1 (documents.worldbank.org 446141492622943161, page 49; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 2.209 equals WDI NY.GDP.MKTP.KD.ZG BRA 1996 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 2.209. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error +2.291 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 4.5,
+    "actual": 2.209,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-001": {
+   "decision": "confirm",
+   "note": "Forecast 2.7 for World 1996 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 2.9 equals GEP 1997 Table 1-2 (documents.worldbank.org 650721468774883393, page 15), column \"Estimate 1996\", World 2.9, read from the page image; note: 1987 prices and exchange rates, the same base as the forecast. Latest later GEP statement of 1996 on 1987 weights (D39, D41); no later edition on 1987 prices prints the year again (GEP 2000 states no base, GEP 2001 on uses 1995 prices). D18 error -0.200 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 2.9,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-002": {
+   "decision": "confirm",
+   "note": "Forecast 3.2 for World 1997 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 3.2 equals GEP 1998/99 Table 1-2, column 1997, World total 3.2, read from the Chinese edition page image (documents.worldbank.org 739741468175437049, page 25; the English scan is illegible); note: 1987 prices and exchange rates, the same base as the forecast. Latest later GEP statement of 1997 on 1987 weights (D39, D41); no later edition on 1987 prices prints the year again (GEP 2000 states no base, GEP 2001 on uses 1995 prices). D18 error +0.000 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.2,
+    "actual": 3.2,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-007": {
+   "decision": "confirm",
+   "note": "Forecast 2.3 for United States 1996 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 3.773 equals WDI NY.GDP.MKTP.KD.ZG USA 1996 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 3.773. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -1.473 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 3.773,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-008": {
+   "decision": "confirm",
+   "note": "Forecast 2 for United States 1997 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 4.447 equals WDI NY.GDP.MKTP.KD.ZG USA 1997 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 4.447. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -2.447 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 4.447,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-009": {
+   "decision": "confirm",
+   "note": "Forecast 3.3 for Japan 1996 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 3.075 equals WDI NY.GDP.MKTP.KD.ZG JPN 1996 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 3.075. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error +0.225 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.3,
+    "actual": 3.075,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-010": {
+   "decision": "confirm",
+   "note": "Forecast 3.3 for Japan 1997 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 1.363 equals WDI NY.GDP.MKTP.KD.ZG JPN 1997 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 1.363. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error +1.937 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.3,
+    "actual": 1.363,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-011": {
+   "decision": "confirm",
+   "note": "Forecast 9.5 for China 1996 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 9.973 equals WDI NY.GDP.MKTP.KD.ZG CHN 1996 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 9.973. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error -0.473 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 9.5,
+    "actual": 9.973,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  },
+  "world-bank-gep-1996-08-012": {
+   "decision": "confirm",
+   "note": "Forecast 9.7 for China 1997 matches the source: 1996 short-term update, Annex A Table A.1 \"Current Forecasts\" columns (documents.worldbank.org 324381492624417285, page 39; constant 1987 U.S. dollars), read again from the 400 dpi page image. Actual 9.298 equals WDI NY.GDP.MKTP.KD.ZG CHN 1997 re-fetched 2026-10-02 from the single-country API (lastupdated 2026-07-13): 9.298. Same variable (real GDP growth, annual %, calendar year), right target year. The forecast was made on 1987 constant dollars before the US and others moved to chain-weighted or rebased accounts; the actual is the current WDI series, as for every pre-2016 country row of this source (D19). D18 error +0.402 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 9.7,
+    "actual": 9.298,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T15:20:00Z"
+  }
+ }
+}

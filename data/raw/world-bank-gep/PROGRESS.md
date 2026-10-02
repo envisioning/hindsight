@@ -2,6 +2,11 @@
 
 | Edition | Status | Entries | Written |
 |---|---|---|---|
+| 1991-05 | partial | 10 entries | 2026-10-02 (OCR, #11) |
+| 1992-04 | partial | 6 entries | 2026-10-02 (OCR, #11) |
+| 1995-08 | partial | 28 entries | 2026-10-02 (OCR, #11) |
+| 1996-08 | partial | 26 entries | 2026-10-02 (OCR, #11) |
+| 1998-12 | partial | 18 entries | 2026-10-02 (OCR, #11) |
 | 1999-12 | partial | 8 entries | 2026-09-28 08:46 |
 | 2000-12 | partial | 12 entries | 2026-09-28 08:46 |
 | 2002-01 | partial | 12 entries | 2026-09-28 08:46 |

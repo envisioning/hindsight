@@ -27,3 +27,12 @@ Then add the GEP's own later-stated World growth and each edition's weights base
 ```bash
 python3 world_restated.py
 ```
+
+Then add the scanned 1990s editions (#11): five edition files, their World weights and past-year World statements, and WDI 1990 to 1997 for the countries (Python 3 standard library):
+
+```bash
+curl -sL -A "Mozilla/5.0" -o /tmp/wdi90.json 'https://api.worldbank.org/v2/country/USA;JPN;CHN;IND;BRA/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=2000&date=1990:1998'
+python3 gep_1990s.py /tmp/wdi90.json
+```
+
+The values in `gep_1990s.py` were read by OCR from the scanned reports on documents.worldbank.org (URLs and pages in the script): `pdftoppm -r 400` then `tesseract --psm 6`, checked against `pdftotext -layout` on the PDF's own OCR layer, a second table of the same edition, or arithmetic. GEP 1998/99 was read from the World Bank's Chinese edition (report 18777), because the English scan is illegible.

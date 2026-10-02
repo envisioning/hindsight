@@ -6,7 +6,7 @@ Written by `pnpm grade:numeric` after each source.
 |---|---|---|---|---|---|---|---|
 | imf-weo | graded | 1560 | 1420 | 96 | 44 | 0 | 2026-10-02T14:03:13Z |
 | oecd-economic-outlook | graded | 762 | 726 | 0 | 36 | 0 | 2026-10-02T14:38:07Z |
-| world-bank-gep | graded | 746 | 525 | 167 | 54 | 0 | 2026-10-02T14:03:13Z |
+| world-bank-gep | graded | 834 | 543 | 237 | 54 | 0 | 2026-10-02T14:56:13Z |
 | fed-sep | graded | 1541 | 1100 | 14 | 140 | 287 | 2026-10-02T14:03:13Z |
 | ecb-projections | graded | 566 | 518 | 0 | 48 | 0 | 2026-10-02T14:03:13Z |
 | cbo-projections | graded | 1557 | 1441 | 12 | 104 | 0 | 2026-10-02T14:03:13Z |
