@@ -53,11 +53,10 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-2. FTSG (#26) has nothing left to capture with a known source (2008-2013, 2018 not public; 2019 titles only).
-3. **#3** first tagged dataset release: `pnpm export` is clean. Ask MZ before tagging.
-4. **#59** links (needs `OPENROUTER_API_KEY`), then the forecasts block on research pages.
-5. Missing editions with no known source: OECD EO47-59, 61, 69, 71, 73, 82, 91, 92 (#10); Deloitte TMT 2003 (#7); McKinsey 2026 PDF (#27, withdrawn at the origin).
-6. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.
+1. **#3** first tagged dataset release: `pnpm export` is clean. Ask MZ before tagging.
+2. **#59** links (needs `OPENROUTER_API_KEY`), then the forecasts block on research pages.
+3. Missing editions with no known source: OECD EO47-59, 61, 69, 71, 73, 82, 91, 92 (#10); Deloitte TMT 2003 (#7); McKinsey 2026 PDF (#27, withdrawn at the origin); FTSG 2008-2013 and 2018 (#26, not public; 2019 stays titles only).
+4. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
