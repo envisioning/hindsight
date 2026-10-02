@@ -31,9 +31,10 @@ Every entry also carries `mpd_value`, the MPD point for the same exercise and ye
 
 ## realized.json
 
-Eurostat, latest values, retrieved 2026-09-28, 1999 to 2025, 54 rows:
-- HICP inflation: `prc_hicp_aind`, geo=EA (changing composition), coicop=CP00, unit=RCH_A_AVG (dataset updated 2026-02-06).
-- real GDP growth: `nama_10_gdp`, geo=EA (changing composition), B1GQ, CLV_PCH_PRE (dataset updated 2026-09-21); `value_ea20` gives the fixed 20-country aggregate. This annual series is not calendar adjusted, while the ECB projects working-day-adjusted GDP, so small differences are expected.
+Latest values, retrieved 2026-10-02, 1999 to 2025, 54 rows:
+- HICP inflation: Eurostat `prc_hicp_aind`, geo=EA (changing composition), coicop=CP00, unit=RCH_A_AVG (dataset updated 2026-02-06).
+- real GDP growth (#66): the history rows (OBS_STATUS `A`) of the latest MPD exercise, S26 (September 2026), series `MPD.A.U2.YER.A.S26.0000`: annual growth of working-day-adjusted real GDP, euro area with changing composition, one decimal. This is the definition the ECB projects, stated by the ECB itself. Until #66 the actual was Eurostat `nama_10_gdp` (not calendar adjusted), which differs by 0.1 to 0.2 points in some years (2000: 3.9 against 4.0; 2015: 2.1 against 2.0; 2017: 2.6 against 2.8) and flipped verdicts in the #53 audit. Each row keeps it for reference: `value_eurostat_nsa` (`nama_10_gdp` CLV_PCH_PRE, geo=EA, dataset updated 2026-09-21), `value_eurostat_nsa_ea20` (fixed EA20), and `value_eurostat_sca_ea20`, the growth of the annual sum of Eurostat `namq_10_gdp` seasonally and calendar adjusted chain-linked volumes (CLV20_MEUR, SCA) for the fixed EA20 (cross-check; Eurostat's EA changing-composition quarterly levels break at each enlargement, so no SCA series on the ECB's changing composition is computed). The MPD history agrees with the EA20 SCA cross-check within 0.1 point in every year from 1999 to 2025 (largest gap 0.07, 2019), while the unadjusted Eurostat series is up to 0.2 points off.
+- The ECB Data Portal API answers `curl` with a generic user agent and `Accept: text/csv` (see `scripts/ecb-projections/fetch.sh`).
 
 ## Problems found in the sources
 

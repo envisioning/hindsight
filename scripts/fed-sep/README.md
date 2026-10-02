@@ -23,3 +23,9 @@ python3 build.py /path/to/scratch
 ```
 
 Writes the edition files, `realized.json` and `PROGRESS.md` to `data/raw/fed-sep/`, and `build_summary.json` (problems, per-edition statistics) to the input folder. `INDEX.md` is written by hand.
+
+Vintage refresh (only `realized.json`; needs only `alfred/<SERIES>_latest.csv` for GDPC1, PCEPI, PCEPILFE, UNRATE, DFEDTAR, DFEDTARU, DFEDTARL):
+
+```bash
+python3 build.py --realized-only /path/to/scratch
+```

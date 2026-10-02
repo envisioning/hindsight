@@ -26,3 +26,9 @@ python3 build.py /path/to/input-folder
 ```
 
 Writes the edition files, `realized.json` and `PROGRESS.md` to `data/raw/cbo-projections/`. `INDEX.md` is written by hand.
+
+Vintage refresh (only `realized.json`; needs only `fred/*.csv` and `actuals.csv` in the input folder):
+
+```bash
+python3 build.py --realized-only /path/to/input-folder
+```

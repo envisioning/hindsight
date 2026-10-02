@@ -10,7 +10,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from xlsx import Workbook  # noqa: E402
 
-IN = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(HERE, 'inputs')
+REALIZED_ONLY = '--realized-only' in sys.argv
+ARGS = [a for a in sys.argv[1:] if a != '--realized-only']
+IN = os.path.abspath(ARGS[0]) if ARGS else os.path.join(HERE, 'inputs')
 OUT = os.path.normpath(os.path.join(HERE, '..', '..', 'data', 'raw', 'cbo-projections'))
 
 WB = 'https://www.cbo.gov'
@@ -54,6 +56,63 @@ def add_src(e, url):
 def r3(x):
     return None if x is None else round(float(x), 3)
 
+
+# ---------------------------------------------------------------- realized values
+
+def write_realized():
+    """realized.json from inputs/fred/*.csv and inputs/actuals.csv. Run alone with --realized-only (#66 vintage refresh)."""
+    FRED = {
+        'A191RL1A225NBEA': ('real GDP growth', '%', 'BEA via FRED, Real Gross Domestic Product, percent change from preceding period, annual'),
+        'A001RL1A225NBEA': ('real GNP growth', '%', 'BEA via FRED, Real Gross National Product, percent change from preceding period, annual'),
+        'UNRATE': ('unemployment rate', '%', 'BLS via FRED, civilian unemployment rate, annual average of monthly data (fq=Annual, fam=avg)'),
+        'CPIAUCNS': ('CPI-U inflation', '%', 'BLS via FRED, CPI-U not seasonally adjusted, annual average, percent change from a year ago (fq=Annual, fam=avg, transformation=pc1)'),
+        'GS10': ('10-year Treasury note rate', '%', 'Federal Reserve via FRED, 10-year Treasury constant maturity rate, annual average (fq=Annual, fam=avg)'),
+        'FYFSD': ('federal budget deficit', 'million USD (negative = deficit), fiscal year', 'OMB/Treasury via FRED, Federal Surplus or Deficit [-], fiscal year'),
+        'FYFSGDA188S': ('federal budget deficit, % of GDP', '% of GDP', 'OMB/Treasury via FRED, Federal Surplus or Deficit [-] as Percent of GDP'),
+    }
+    series = []
+    for sid, (metric, unit, desc) in FRED.items():
+        ents = []
+        with open(os.path.join(IN, 'fred', f'{sid}.csv')) as fh:
+            for row in csv.reader(fh):
+                if row[0] == 'observation_date' or len(row) < 2 or row[1] in ('', '.'):
+                    continue
+                y = int(row[0][:4])
+                if y < 1975 or y > 2025:
+                    continue
+                ents.append({'target_year': y, 'value': r3(row[1]), 'unit': unit,
+                             'confidence': 'medium' if y == 2025 else 'high'})
+        series.append({'metric': metric, 'series_id': sid, 'source': desc,
+                       'source_url': f'https://fred.stlouisfed.org/series/{sid}', 'entries': ents})
+    cbo_act = []
+    with open(os.path.join(IN, 'actuals.csv')) as fh:
+        for row in csv.DictReader(fh):
+            if row['component'] == 'deficit' and row['category'] == 'Total':
+                cbo_act.append({'target_year': int(row['fiscal_year']), 'value': r3(row['actual_value']),
+                                'unit': 'billion USD (negative = deficit), fiscal year', 'confidence': 'high'})
+    series.append({'metric': 'federal budget deficit', 'series_id': 'eval-projections/actuals.csv',
+                   'source': 'CBO eval-projections actuals (Monthly Treasury Statement basis, as used by CBO)',
+                   'source_url': 'https://github.com/US-CBO/eval-projections/blob/main/input_data/actuals.csv',
+                   'entries': cbo_act})
+    real = {
+        'source': 'FRED (St. Louis Fed) for BEA, BLS, Federal Reserve and OMB series; CBO eval-projections for deficits',
+        'vintage': 'retrieved ' + datetime.now().strftime('%Y-%m-%d'),
+        'notes': ('Latest vintage values, not first releases. Years 1975 to 2025. 2025 values carry confidence medium '
+                  '(recent, subject to revision). Real output before 1992 is GNP in CBO forecasts: the real GNP series is '
+                  'included for that period. FRED CPIAUCNS annual averages match the CBO method (calendar-year average of '
+                  'monthly CPI-U). CBO computes two-year and five-year averages from these annual series; this file holds '
+                  'annual values only and computes no averages or errors.'),
+        'series': series,
+    }
+    with open(os.path.join(OUT, 'realized.json'), 'w') as fh:
+        json.dump(real, fh, indent=1, ensure_ascii=False)
+        fh.write('\n')
+
+
+if REALIZED_ONLY:
+    write_realized()
+    print('realized.json written')
+    sys.exit(0)
 
 # ---------------------------------------------------------------- budget baselines (deficits)
 baseline_dates = {}
@@ -285,53 +344,7 @@ with open(os.path.join(OUT, 'PROGRESS.md'), 'w') as fh:
     for eid, st, n, k, g in progress:
         fh.write(f'| {eid} | {st} | {n} entries | {k} | {now} |\n')
 
-# ---------------------------------------------------------------- realized values
-FRED = {
-    'A191RL1A225NBEA': ('real GDP growth', '%', 'BEA via FRED, Real Gross Domestic Product, percent change from preceding period, annual'),
-    'A001RL1A225NBEA': ('real GNP growth', '%', 'BEA via FRED, Real Gross National Product, percent change from preceding period, annual'),
-    'UNRATE': ('unemployment rate', '%', 'BLS via FRED, civilian unemployment rate, annual average of monthly data (fq=Annual, fam=avg)'),
-    'CPIAUCNS': ('CPI-U inflation', '%', 'BLS via FRED, CPI-U not seasonally adjusted, annual average, percent change from a year ago (fq=Annual, fam=avg, transformation=pc1)'),
-    'GS10': ('10-year Treasury note rate', '%', 'Federal Reserve via FRED, 10-year Treasury constant maturity rate, annual average (fq=Annual, fam=avg)'),
-    'FYFSD': ('federal budget deficit', 'million USD (negative = deficit), fiscal year', 'OMB/Treasury via FRED, Federal Surplus or Deficit [-], fiscal year'),
-    'FYFSGDA188S': ('federal budget deficit, % of GDP', '% of GDP', 'OMB/Treasury via FRED, Federal Surplus or Deficit [-] as Percent of GDP'),
-}
-series = []
-for sid, (metric, unit, desc) in FRED.items():
-    ents = []
-    with open(os.path.join(IN, 'fred', f'{sid}.csv')) as fh:
-        for row in csv.reader(fh):
-            if row[0] == 'observation_date' or len(row) < 2 or row[1] in ('', '.'):
-                continue
-            y = int(row[0][:4])
-            if y < 1975 or y > 2025:
-                continue
-            ents.append({'target_year': y, 'value': r3(row[1]), 'unit': unit,
-                         'confidence': 'medium' if y == 2025 else 'high'})
-    series.append({'metric': metric, 'series_id': sid, 'source': desc,
-                   'source_url': f'https://fred.stlouisfed.org/series/{sid}', 'entries': ents})
-cbo_act = []
-with open(os.path.join(IN, 'actuals.csv')) as fh:
-    for row in csv.DictReader(fh):
-        if row['component'] == 'deficit' and row['category'] == 'Total':
-            cbo_act.append({'target_year': int(row['fiscal_year']), 'value': r3(row['actual_value']),
-                            'unit': 'billion USD (negative = deficit), fiscal year', 'confidence': 'high'})
-series.append({'metric': 'federal budget deficit', 'series_id': 'eval-projections/actuals.csv',
-               'source': 'CBO eval-projections actuals (Monthly Treasury Statement basis, as used by CBO)',
-               'source_url': 'https://github.com/US-CBO/eval-projections/blob/main/input_data/actuals.csv',
-               'entries': cbo_act})
-real = {
-    'source': 'FRED (St. Louis Fed) for BEA, BLS, Federal Reserve and OMB series; CBO eval-projections for deficits',
-    'vintage': 'retrieved 2026-09-28',
-    'notes': ('Latest vintage values, not first releases. Years 1975 to 2025. 2025 values carry confidence medium '
-              '(recent, subject to revision). Real output before 1992 is GNP in CBO forecasts: the real GNP series is '
-              'included for that period. FRED CPIAUCNS annual averages match the CBO method (calendar-year average of '
-              'monthly CPI-U). CBO computes two-year and five-year averages from these annual series; this file holds '
-              'annual values only and computes no averages or errors.'),
-    'series': series,
-}
-with open(os.path.join(OUT, 'realized.json'), 'w') as fh:
-    json.dump(real, fh, indent=1, ensure_ascii=False)
-    fh.write('\n')
+write_realized()
 print(len(editions), 'editions;', sum(len(e['entries']) for e in editions.values()), 'entries')
 for eid, st, n, k, g in progress:
     if g:

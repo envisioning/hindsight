@@ -35,6 +35,11 @@ SGS_SERIES = {
     3697: ('sgs_3697.json', None),    # USD/BRL PTAX sell, period average, monthly
 }
 SELIC_WINDOWS = [('01/01/1999', '31/12/2008'), ('01/01/2009', '31/12/2018'), ('01/01/2019', '31/12/2026')]
+# #66: the Focus report labels the Selic indicator "Over-Selic" (the effective rate, SGS 1178) up to the
+# report of 2004-04-08 and "Meta Taxa Selic" (the Copom target, SGS 432) from the report of 2004-04-16.
+# SGS 1178 is captured for the years those early surveys forecast (one daily window, at most 10 years).
+OVER_SELIC_WINDOW = ('01/01/1999', '31/12/2008')
+OVER_SELIC_LAST_YEAR = 2008
 
 
 def get(url, path):
@@ -65,6 +70,8 @@ def fetch(cache):
     for i, (a, b) in enumerate(SELIC_WINDOWS):
         get(SGS.format(code=432) + '?formato=json&dataInicial=%s&dataFinal=%s' % (a, b),
             os.path.join(cache, 'sgs_432_%d.json' % i))
+    get(SGS.format(code=1178) + '?formato=json&dataInicial=%s&dataFinal=%s' % OVER_SELIC_WINDOW,
+        os.path.join(cache, 'sgs_1178.json'))
 
 
 def num(v):
@@ -208,6 +215,15 @@ def write_realized(cache, today):
         if y <= REALIZED_LAST_YEAR:
             date, v = last[y]
             add('brazil-selic-rate', 'Selic', 'Selic target rate at year end', '% p.a.', y, v, date, 432)
+    over = {}
+    for date, v in sgs(cache, 'sgs_1178.json'):
+        over[int(date[:4])] = (date, v)  # the last business day of the year with a value
+    for y in sorted(over):
+        if y <= min(REALIZED_LAST_YEAR, OVER_SELIC_LAST_YEAR):
+            date, v = over[y]
+            add('brazil-selic-rate', 'Selic', 'Over-Selic (effective Selic rate) at year end', '% p.a.', y, v, date, 1178,
+                'Effective Selic rate, annualised, on the last business day of the year. Matches the Focus '
+                '"Over-Selic, fim de período" indicator of surveys up to the report of 2004-04-08.')
     for date, v in sgs(cache, 'sgs_3696.json'):
         y = int(date[:4])
         if date[5:7] == '12' and y <= REALIZED_LAST_YEAR:
@@ -226,8 +242,9 @@ def write_realized(cache, today):
            'notes': ('Realized values for %d to %d. 2026 and later are excluded (not yet realized). '
                      'SGS 13522: IPCA accumulated over 12 months, December value. SGS 7326: real GDP growth, annual, '
                      'latest IBGE vintage. SGS 432: Copom Selic target, value in force on the last date of the year. '
+                     'SGS 1178 (%d to %d): effective Selic rate (Over-Selic) on the last business day of the year, the Focus Selic definition until April 2004. '
                      'SGS 3696 and 3697: USD/BRL PTAX sell rate, December end of period and December average. '
-                     'No errors or grades are computed.') % (FIRST_YEAR, REALIZED_LAST_YEAR),
+                     'No errors or grades are computed.') % (FIRST_YEAR, REALIZED_LAST_YEAR, FIRST_YEAR, min(REALIZED_LAST_YEAR, OVER_SELIC_LAST_YEAR)),
            'entries': entries}
     with open(os.path.join(OUT, 'realized.json'), 'w') as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)
