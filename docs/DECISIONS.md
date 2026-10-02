@@ -660,3 +660,22 @@ AEO2026 (issue #13) is captured from its own tables: AEO2026 renamed the Referen
 **Cost.** One more file per source to read; the displayed values of a claim can differ from its raw entry and its natural key. A correction whose stored value drifts after a re-capture stops normalize until it is re-checked.
 
 **Overturned by.** A history store for raw entries (D2) that keeps every captured value as its own row.
+
+## D44: Validation figures in the release export (D11, D28, issues #40 and #3)
+
+*Recorded 2026-10-02.*
+
+**Decision.** The export writes a `validation` table (JSON, CSV, JSON Schema from `ValidationRow` in `src/schema.ts`, listed in `datapackage.json`), validated fail closed like every other table. One row per source and scope, sources in alphabetical order, no total and no rank (D6, D17):
+
+- **Judgment sources** (`final-d20.json`): scope `all` carries the published hit rate, its Wilson and audit-adjusted intervals, `rate_withheld`, outcome counts (unfalsifiable and ungradable included), kappa, raw agreement, adjudications, re-checks and the pooled audit. A source with grading waves (D26) also gets one row per wave from `agreement-d16.json` and its own audit file: kappa, `passes_d11`, audit counts, and whether the published rate includes the wave (`in_published_rate`). Wave rows carry no rate.
+- **Trend sources** (`final-d33.json`): one row per published share (persisted, renamed, faded, recycled), with the audit and pass files. The audit-adjusted interval is the share's Wilson interval widened by the residual error rate (D28 with D36: contests resolved by the gap rule are not errors). A pass-2 audit, once in `final-d33.json`, is pooled with pass 1 as D26 pools waves.
+- **Measures:** D31 top risks and red herrings (two rows, with the source's D20 audit), D32 WEF method blocks (no audit exists; matcher agreement only), D34 pathway coverage. D34 files publish a share without an interval: the export adds the Wilson interval and applies D11, so a set with fewer than 20 graded values publishes counts only.
+- **Numeric sources** (`data/graded/numeric/summary.json`): the hit rate, both intervals and the full #53 audit block (fixed in code, residual, re-checked, pending re-check).
+
+Every other figure is copied from the file named in the row's `inputs`, not recomputed. Where files disagree (a final file older than its waves or passes, a share below 20), the export prints a warning and publishes what the final file says.
+
+**Why.** D11 and #40 require sample size, agreement, audit error rate and intervals beside every published rate. Keeping them in one table of the release lets a reader check each figure without the repo.
+
+**Cost.** One wide table with many empty columns, because the four kinds carry different figures. The D34 interval and the D33 adjusted interval are computed in the export rather than by the scripts that own those files.
+
+**Overturned by.** Pipelines that write every interval themselves, after which the export only copies.

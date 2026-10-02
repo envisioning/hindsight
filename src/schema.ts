@@ -364,6 +364,120 @@ export const PublishedVerdict = z.object({
   reason: z.string().optional(),
 });
 
+const Interval = z.tuple([z.number().min(0).max(1), z.number().min(0).max(1)]);
+const Count = z.number().int().min(0);
+
+/**
+ * Per-source validation figures of a release (D11, D28, D44, issues #40 and #3): sample sizes, agreement,
+ * audit and intervals behind every published rate or share. One row per source and scope; sources in
+ * alphabetical order. No total score and no rank across rows (D6, D17): each row stands on its own and
+ * `measure` rows of different names are never comparable.
+ *
+ * - `judgment`: a D20 source (final-d20.json). Scope `all` is the published hit rate over every wave;
+ *   scope `w<N>` is one grading wave (D26): its kappa and its own audit, no rate.
+ * - `trend`: a D33 source (final-d33.json), one row per published share. Never a hit rate.
+ * - `measure`: D31 (Eurasia top risks, red herrings), D32 (WEF method blocks) and D34 (pathway coverage) shares.
+ * - `numeric`: a D19 source (data/graded/numeric/summary.json) with its matching audit (#53, D24).
+ */
+export const ValidationKind = z.enum(["judgment", "trend", "measure", "numeric"]);
+export const ValidationMeasure = z.enum([
+  "hit_rate",
+  "persisted_share",
+  "renamed_share",
+  "faded_share",
+  "recycled_share",
+  "materialised_share",
+  "red_herring_hit_rate",
+  "ranked_high_share",
+  "coverage_share",
+]);
+export const ValidationRow = z
+  .object({
+    source_id: Id,
+    kind: ValidationKind,
+    /** `all`, a grading wave (`w1`, `w2`), a D31 part (`top_risks`, `red_herrings`) or a D32 method block (`2007-2020`). */
+    scope: z.string().min(1),
+    /** The grading rule, for example "D16", "D33", "D19". */
+    rule: z.string().min(1),
+    /** What `share` measures. Null on a wave row, which carries agreement and audit only. */
+    measure: ValidationMeasure.nullable(),
+    /** Every row in scope: claims, trends, events or numeric rows, including open, ungradable and contested ones. */
+    n: Count.nullable(),
+    /** Rows the share is computed over (the D11 sample size). */
+    n_graded: Count.nullable(),
+    /** Rows counted in the share's numerator (hits, faded trends, events ranked high, covered values). */
+    k: Count.nullable(),
+    /** k / n_graded. Null below 20 graded rows (D11) or where a rule withholds it (`rate_withheld`). */
+    share: z.number().min(0).max(1).nullable(),
+    /** Wilson 95% interval of `share` (D11). */
+    ci95: Interval.nullable(),
+    /** D28: `ci95` widened by the audit error rate (residual rate where the rule defines one). Null without an audit. */
+    ci95_audit_adjusted: Interval.nullable(),
+    /** Why no share is published (D11 below 20 graded, or the source's rule, D31). */
+    rate_withheld: z.string().nullable(),
+    /** Outcome counts in scope, unfalsifiable, ungradable, contested, open and gap included (the unfalsifiable share, #40). */
+    counts: z.record(z.string(), Count),
+    /** Cohen's kappa of the two blind graders or checkers (D7, D11). */
+    kappa: z.number().min(-1).max(1).nullable(),
+    /** Pairs both agents graded, pairs they agreed on, and agree / pairs. */
+    agreement_n: Count.nullable(),
+    agreement_agreed: Count.nullable(),
+    raw_agreement: z.number().min(0).max(1).nullable(),
+    /** Kappa at least 0.6 (D11). */
+    passes_d11: z.boolean().nullable(),
+    /** Contested claims a third agent settled (D20). */
+    adjudicated: Count.nullable(),
+    /** Fixed seed of the audit sample (D11). */
+    audit_seed: z.string().nullable(),
+    audit_sample: Count.nullable(),
+    audited: Count.nullable(),
+    audit_confirmed: Count.nullable(),
+    audit_corrected: Count.nullable(),
+    audit_contested: Count.nullable(),
+    /** (corrected + contested) / audited, as the audit found it. */
+    audit_error_rate: z.number().min(0).max(1).nullable(),
+    /** Trend (D36: contests resolved by the gap rule) and numeric (#53: findings fixed in code) audits: the errors that still stand. */
+    audit_residual_error_rate: z.number().min(0).max(1).nullable(),
+    /** Trend audits: contests resolved by the partial-edition gap rule (D36). */
+    audit_resolved_by_gap_rule: Count.nullable(),
+    /** Numeric audits: findings fixed in code for every row (#53). */
+    audit_fixed_in_code: Count.nullable(),
+    audit_residual_errors: Count.nullable(),
+    /** D24 re-checks. Judgment: claims re-decided by an adjudication re-check pass. Numeric: sampled rows re-checked. */
+    rechecked: Count.nullable(),
+    recheck_confirmed: Count.nullable(),
+    recheck_corrected: Count.nullable(),
+    /** Numeric: sampled rows whose current grade no audit or re-check has seen (D41). Trend: rows waiting for both pass-2 checkers. */
+    pending_recheck: Count.nullable(),
+    /** Grading waves in the published figure (D26). On a wave row: whether the source's final file includes that wave. */
+    waves: z.array(z.string().min(1)),
+    in_published_rate: z.boolean().nullable(),
+    /** Re-check and audit pass files that the figures include (D24). */
+    passes: z.array(z.string().min(1)),
+    /** Files the figures are read from, relative to the repository. */
+    inputs: z.array(z.string().min(1)).min(1),
+  })
+  .refine((r) => r.n_graded === null || r.n_graded >= 20 || r.share === null, { message: "no share below 20 graded rows (D11)" })
+  .refine((r) => (r.share === null) === (r.ci95 === null), { message: "a share has a Wilson interval and an interval has a share (D11)" })
+  .refine((r) => r.share !== null || r.ci95_audit_adjusted === null, { message: "an adjusted interval needs a share" })
+  .refine((r) => r.share === null || r.rate_withheld === null, { message: "a share is either published or withheld" })
+  .refine((r) => r.k === null || r.n_graded === null || r.k <= r.n_graded, { message: "k <= n_graded" })
+  .refine((r) => r.share === null || (r.k !== null && r.n_graded !== null && Math.abs(r.k / r.n_graded - r.share) < 0.0005), { message: "share = k / n_graded" })
+  .refine((r) => r.share === null || r.ci95 === null || (r.ci95[0] <= r.share + 0.0005 && r.share - 0.0005 <= r.ci95[1]), { message: "share lies in its interval" })
+  .refine((r) => r.ci95 === null || r.ci95_audit_adjusted === null || (r.ci95_audit_adjusted[0] <= r.ci95[0] + 0.0005 && r.ci95[1] - 0.0005 <= r.ci95_audit_adjusted[1]), {
+    message: "the adjusted interval contains the count interval (D28)",
+  })
+  .refine((r) => r.audited === null || r.audit_confirmed === null || r.audited === r.audit_confirmed + (r.audit_corrected ?? 0) + (r.audit_contested ?? 0), {
+    message: "audited = confirmed + corrected + contested",
+  })
+  .refine((r) => r.audited === null || r.audit_sample === null || r.audited <= r.audit_sample, { message: "audited <= sample" })
+  .refine(
+    (r) => r.audit_error_rate === null || (r.audited !== null && r.audited > 0 && Math.abs(((r.audit_corrected ?? 0) + (r.audit_contested ?? 0)) / r.audited - r.audit_error_rate) < 0.0005),
+    { message: "audit error rate = (corrected + contested) / audited" },
+  )
+  .refine((r) => r.kappa === null || r.passes_d11 === null || r.passes_d11 === r.kappa >= 0.6, { message: "passes_d11 iff kappa >= 0.6" })
+  .refine((r) => r.n === null || r.n_graded === null || r.n_graded <= r.n, { message: "n_graded <= n" });
+
 /** D17 side-by-side view: same subject, same horizon, sources in alphabetical order. No rank, no total. */
 export const NumericComparison = z.object({
   note: z.string().min(1),
@@ -405,3 +519,4 @@ export type NumericStats = z.infer<typeof NumericStats>;
 export type NumericSummary = z.infer<typeof NumericSummary>;
 export type NumericComparison = z.infer<typeof NumericComparison>;
 export type RawCorrection = z.infer<typeof RawCorrection>;
+export type ValidationRow = z.infer<typeof ValidationRow>;

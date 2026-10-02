@@ -2,15 +2,17 @@
  * export (#3): write the published dataset to data/out, one file per table in JSON and CSV,
  * a JSON Schema per table generated from src/schema.ts, and a Frictionless datapackage.json.
  * Reads published rows only. Every row is validated with Zod first; one invalid row stops the
- * export and nothing is written (fail closed). Run with `pnpm export`. Tagging the release is a
+ * export and nothing is written (fail closed). The `validation` table (D44) carries the agreement,
+ * audit and interval figures per source. Run with `pnpm export`. Tagging the release is a
  * separate, deliberate step (AGENTS.md).
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { ZodTypeAny } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
-import { Claim, Institution, NumericGrade, PublishedVerdict, Revision, Source, SourceEdition, Subject, SubjectAlias } from "../schema.ts";
+import { Claim, Institution, NumericGrade, PublishedVerdict, Revision, Source, SourceEdition, Subject, SubjectAlias, ValidationRow } from "../schema.ts";
 import { OUT as NORMALIZED, RAW, REPO } from "../normalize/lib.ts";
+import { validationTable } from "./validation.ts";
 
 const OUT = join(REPO, "data", "out");
 const GRADED = join(REPO, "data", "graded", "numeric");
@@ -39,8 +41,9 @@ function verdictsTable(): Record<string, unknown>[] {
     if (!existsSync(f)) continue;
     const fin = read(f) as { rule: string; verdicts: { id: string; verdict: string; status: string; was?: string; reason?: string }[] };
     for (const v of fin.verdicts) {
-      // D15: the posters keep their raw ids (et-2012-045 is envisioning-technology-2012-045).
-      const claimId = v.id.replace(/^et-/, "envisioning-technology-");
+      // D15, D37: the Envisioning posters keep their raw id numbers (et-2012-045 is envisioning-technology-2012-045,
+      // edu-2012-007 envisioning-education-2012-007, health-, hz- likewise; src/normalize/sources/envisioning.ts).
+      const claimId = source.startsWith("envisioning-") ? v.id.replace(/^[a-z]+-(?=\d{4}-\d+$)/, `${source}-`) : v.id;
       const row: Record<string, unknown> = { claim_id: claimId, source_id: source, verdict: v.verdict, status: v.status, rule: fin.rule };
       if (v.was) row.was = v.was;
       if (v.reason) row.reason = v.reason;
@@ -69,6 +72,7 @@ function toCsv(rows: Record<string, unknown>[]): string {
 }
 
 function main(): void {
+  const validation = validationTable();
   const tables: Table[] = [
     { name: "sources", title: "Publication series", schema: Source, rows: read(join(NORMALIZED, "sources.json")) as Record<string, unknown>[] },
     { name: "institutions", title: "Publishers", schema: Institution, rows: read(join(NORMALIZED, "institutions.json")) as Record<string, unknown>[] },
@@ -79,6 +83,7 @@ function main(): void {
     { name: "revisions", title: "Revisions between editions", schema: Revision, rows: read(join(NORMALIZED, "revisions.json")) as Record<string, unknown>[] },
     { name: "verdicts", title: "Published verdicts of judgment sources (D20)", schema: PublishedVerdict, rows: verdictsTable() },
     { name: "numeric_grades", title: "Numeric grades (D19)", schema: NumericGrade, rows: numericTable() },
+    { name: "validation", title: "Validation figures per source: agreement, audit and intervals (D11, D28, D44); alphabetical, never ranked", schema: ValidationRow, rows: validation.rows },
   ];
 
   const errors: string[] = [];
@@ -120,6 +125,7 @@ function main(): void {
   };
   writeFileSync(join(OUT, "datapackage.json"), `${JSON.stringify(pkg, null, 1)}\n`);
   for (const t of tables) console.log(`${t.name}: ${t.rows.length} rows`);
+  for (const w of validation.warnings) console.error(`validation warning: ${w}`);
 }
 
 main();
