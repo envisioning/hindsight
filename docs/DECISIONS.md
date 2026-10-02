@@ -691,3 +691,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** The audits changed published figures: WEF 2007 to 2020 is 12 of 51 ranked high (was 14 of 53); IPCC graded values went from 18 to 10 (counts only); Shell gets a rate (14 of 51 covered).
 
 **Overturned by.** Measures whose inputs need no judgment at all.
+
+## D46: Supplementary matching audit for rows added after the first audit (D11, D24; issue #10)
+
+*Recorded 2026-10-02.*
+
+**Decision.** When a numeric source gains rows after its D11 matching audit (#53), the first sample stays as stored (D24) and the new rows get their own fixed-seed sample: `node scripts/numeric-audit-sample.mjs <source> --supplement <tag> --editions <e1,...>` draws over the graded rows of the added editions only, with the same size rule (at least 50 rows or 10%) and the same miss weighting (1.5), seed `d11:<source>:numeric:<tag>`, into `data/graded/audit/<source>-supplement-<tag>.json`. `auditOf` in `src/grade/numeric.ts` reads every supplement file next to the first sample: a claim may be in only one sample, records count together (audited, error rate, residual, D28 interval), and the published seed lists both seeds. A supplementary record stores the grade the auditor read (`grade_audited`); a confirmed row whose grade later changes counts as pending re-check, as in D42. First use: OECD Economic Outlook, 29 editions added from archived OECD files (EO60 to EO97), tag `vintages`, 50 of 342 new graded rows, 50 confirmed.
+
+**Why.** The first sample was drawn from 384 rows; redrawing it over 726 would move an audited sample (D24), and leaving the new rows unaudited would publish 342 grades whose matching no one checked. A sample over the new rows only checks exactly the new matching (older vintages, other source files, older aggregates).
+
+**Cost.** The pooled error rate weights the new rows more than their share of all rows (50 of 100 audited, 342 of 726 graded). A source with several supplements carries several seeds.
+
+**Overturned by.** A full redraw policy for audits after large additions, or a weighting of pooled audit rates by stratum size.
