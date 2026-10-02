@@ -1,6 +1,6 @@
-# Hindsight handoff (2026-10-01, third session, local)
+# Hindsight handoff (2026-10-02, fourth session, local)
 
-Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D37). Every next step is an open issue in envisioning/hindsight.
+Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D46). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -17,32 +17,31 @@ A public, citable record of published forecasts (publications x predictions), gr
 | Numeric grades | `data/graded/numeric/` (`pnpm grade:numeric`, D19) |
 | Research database technologies | Core CMS `technologies` (4,807 rows, all embedded) |
 | Embedding script | research repo `scripts/sync-cms-embeddings.ts` |
-| Strategy spec | Meet docs `/strategy/expectations-ledger-pilot-spec-2026-09-27` and `/strategy/hindsight-pages-spec-2026-09-27` (out of date, #65) |
+| Strategy spec | Meet docs `/strategy/expectations-ledger-pilot-spec-2026-09-27` and `/strategy/hindsight-pages-spec-2026-09-27` (dated; current state at the top of each) |
 
 ## State
 
-- **Captured:** 33 sources in `data/raw/` (24 before, plus McKinsey, Accenture, Deloitte Tech Trends, trendwatching, a16z, FTSG, NIC, Shell, IPCC; crowd-baseline holds only its terms findings). All are normalized (26,274 claims).
-- **Judgment sources graded under D20** (two blind graders, adjudicator, agent audit; hit rate over hit + partial + miss, Wilson 95%; audit-adjusted interval D28 in brackets):
-  - Envisioning posters 45% (36-55) [28-63]. Kurzweil 38% (32-44) [27-49], waves 1 and 2. Gartner Hype Cycle 60% (55-64) [45-74]. Gartner Strategic Predictions 30% over 47 [7-57]. MIT TR10 31% over 35. ARK Big Ideas 14% over 42. IDC FutureScape counts only (8 graded).
-  - Deloitte TMT 61% (52-70) over 116, after the fetch-failure pass (D24, `adjudicated-d20-pass1.json`): 7 of 29 re-checked claims now graded. IDC 49 re-checked, all stay ungradable (paywalled, not blocked). Gartner SP 1 of 6 now graded.
-  - New this session: The Economist (#46, D27) 59% (50-67) [42-75] over 127, kappa 0.90. Pew/Elon (#50, D27) 40% (27-55) [24-57] over 45, kappa 0.64. NIC Global Trends projections (D30) 69% (57-79) [55-81] over 68, kappa 0.89. McKinsey dated forecasts (D30) counts only (7 graded: 6 hit, 1 partial; 10 ungradable, mostly third-party figures). Accenture 2017 predictions counts only (1 hit, 1 partial, 1 miss).
-- **Numeric (D19):** 12 publishers, matching audit done (#53): 1,184 sampled rows; errors fixed in code for every row (IMF India before July 2013 and old group definitions; World Bank World before 2019; OBR unrounded actuals; EIA early publication dates and two Retrospective 2025 series; CBO deficits in percent of GDP; World Bank India fiscal year). Residual: ECB 4, BCB 3, EIA 4, BNEF 1, BP 1. Open items: #66.
-- **Envisioning study posters (D37, 2026-10-01, #67):** education 2012 75% (57-87) [53-91] over 28, kappa 0.63, audit 1/25; health 2012 43% (27-61) [23-65] over 28, kappa 0.88, audit 1/26; Horizons 2014 (financially viable mark) 75% (62-84) [60-86] over 55, kappa 0.92, audit 1/50. 72 later placements stay open (#69). Not comparable with the D16 posters: weaker claims (D37).
-- **Graded under D31 to D36 (2026-10-01, after MZ approved the rules):**
-  - Eurasia (D31): top risks materialised in 70% of 184 graded (63-76%, audit-adjusted 57-82%); red herrings stayed calm in 68% of 72 (57-78%). Never merged (`summary-d31.json`, `rate-policy.json`).
-  - WEF (D32): of 53 major events 2007-2020 (fixed criteria, UCDP-first death tallies), WEF ranked 14 high the January before (26%, 16-40%); 2021-2022 and 2023-2025 counts only (4 of 15, 9 of 18). `summary-d32.json`.
-  - Trends (D33, D36): faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 8% (424 FTSG trends in `gap` because 2019, 2020 and 2023 are partial captures). `final-d33.json`.
-  - Scenarios (D34): IPCC 11 covered, 7 partly, 0 not covered; Shell 14, 32, 11 (`coverage-d34.json`); CH4 has no observed series on the scenarios' definition. NIC: 2000 and 2004 sets covered, 2008 set not covered.
-- **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month (6 sources due on 2026-11-01). Export runs (`pnpm export`) and writes the per-source `validation` table (D44, #40); no release tagged.
-- **Subjects:** 5,360. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
-- **Site:** launched 2026-10-01 (envisioning.com dd9e9ceb): indexable, per-source validation status instead of the review banner, read-only audit pages, `/sitemap-hindsight.xml` (claims with a published verdict), listed in llms.txt. www #46 to #50 done (audit-adjusted intervals, wave-aware audit check, per-edition rates, numeric claim verdicts, /hindsight/comparisons, D31 to D34 measures). Another session added the score visualisations (34765a48, `_components/viz.tsx`).
+- **Captured:** 37 sources in `data/raw/` (crowd-baseline holds Long Bets as baseline data only, D35, not normalized). Normalized: 28,012 claims.
+- **Judgment sources under D20** (two blind graders, adjudicator, agent audit; hit rate over hit + partial + miss, Wilson 95%; audit-adjusted interval D28 in brackets):
+  - Envisioning posters: technology 2011-2012 45% (36-55) [28-63] over 108; education 2012 75% over 28; health 2012 43% over 28; Horizons 2014 75% over 55 (D37, not comparable with D16). 72 later placements open (#69).
+  - Gartner Hype Cycle 60% (55-64) [45-74] over 403. Kurzweil 38% (32-44) [27-49] over 262. Gartner Strategic Predictions 30% over 47 [7-56]. ARK 14% over 42. IDC counts only.
+  - Deloitte TMT 71% (65-76) [57-84] over 234: waves w1 and w2 (2002-2010 recovered from the Internet Archive), D24 passes 1 and 2.
+  - MIT TR10 48% (36-60) [31-65] over 65: waves w1 and w2 (availability lines for 2021-2026).
+  - The Economist 59% over 127. Pew/Elon 40% over 45. NIC projections 69% over 68. McKinsey and Accenture dated forecasts counts only.
+- **Numeric (D19):** 12 publishers. Matching audit (#53) plus D24 re-checks (#66, #70, #71, bp 2015) and a supplementary audit for rows added later (D46, OECD). Residual errors: bnef-evo 1, all other sources 0; pending re-checks 0. Hit rates: ECB 58%, Fed SEP 51%, EIA 46%, OECD 44% (726 graded, 29 vintages added), World Bank 41%, IMF 41%, BCB 38%, OBR 34%, CBO 31%, IEA 10%; bp and BNEF counts only. Actuals on the forecast's own definition (D38, D39, D41, D42), one-decimal threshold flags.
+- **Trends (D33, D36, D40, D43):** faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 25% (23.7-27.1) over 2,497 after passes 2 and 3 (2020 and 2023 now complete, umbrella pages as trends, 88 capture corrections; 13 rows in `gap`, 2 contested).
+- **Rankings and scenarios (D31, D32, D34, D45):** Eurasia top risks materialised in 70% of 184, red herrings calm in 68% of 72. WEF 2007-2020 ranked 12 of 51 major events high (23.5%, 14-37) [10-41] after its first audit (48/50). Shell 14 of 51 values covered (27.5%, 17-41); IPCC counts only (10 graded after the matching audit); NIC sets 2 covered, 1 not covered, 3 open (audit 9/9).
+- **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month. `pnpm export` writes the `validation` table (D44, #40) and prints no warnings; no release tagged.
+- **Subjects:** about 5,400. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
+- **Site:** launched 2026-10-01 (envisioning.com dd9e9ceb). Reads `main` through GitHub raw; new files show after `git add` and `pnpm manifest`.
+- **Meet:** project "Hindsight" (2026-10-02). Spec docs marked dated with a current-state section (#65 closed).
 
 ## Running in a cloud session
 
 - **Paths:** the cloud session starts in a clone of this repo. Use repo-relative paths. Scratch files go in `/tmp`, never in the repo.
-- **www:** the site repo is private and is not cloned. Clone it next to this repo as `../www` (`gh repo clone envisioning/envisioning.com ../www`) only for site issues (#56, #60, the site part of #59). The site loader reads `../hindsight` in development, so keep the sibling layout.
+- **www:** the site repo is private and is not cloned. Clone it next to this repo as `../www` (`gh repo clone envisioning/envisioning.com ../www`) only for site issues (the site part of #59). The site loader reads `../hindsight` in development, so keep the sibling layout.
 - **Secrets:** `.env` files do not exist in the cloud. #59 needs `OPENROUTER_API_KEY` and read access to the Core CMS (`NEXT_PUBLIC_SUPABASE_URL_CMS`, `NEXT_PUBLIC_SUPABASE_ANON_KEY_CMS`). MZ sets them as environment variables of the cloud environment. Never ask for them in chat, never print them.
-- **Not available:** the Meet connector (#65) and local apps. Leave those issues for a local session.
+- **Not available:** the Meet connector and local apps. Leave work that needs them for a local session.
 - **Fits the cloud best:** #41, #42, the grading waves (#43 to #51, #63), #52, #53, #54, #61, #62. These need only this repo and the web.
 - **Pushing:** commit to `main` and push after `pnpm typecheck` and `pnpm build` pass, the same as locally. The live site reads `main` through GitHub raw. Check push first: `git push --dry-run origin HEAD:main`. A 403 "Claude doesn't have GitHub access" means the Claude GitHub App is not installed on this repo; MZ fixes that in the org's GitHub App settings. Do not work around it through `gh api` writes; the proxy blocks them.
 - **Network:** check page access first: `curl -sS -o /dev/null -w "%{http_code}" https://en.wikipedia.org/wiki/Smartphone` must print 200. The "Trusted" network level blocks almost every data source (Wikipedia, IEA, BEA, Pew). Grading needs the "Full" level. Without it, agents see search snippets only and the audit cannot check sources. Do not start a grading wave without page access.
@@ -54,24 +53,33 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **#26** FTSG: full capture of 2019, 2020 and 2023 (then re-grade the `gap` rows as a new pass), fix misaligned 2023-2024 quotes. **#36** Long Bets capture as baseline only (D35).
-3. **#66** numeric open items (ECB GDP basis, AEO2009 case, BCB Selic, World Bank World, IMF India, IEA restatements, FRED vintage refresh before release).
-4. **#59** links (needs `OPENROUTER_API_KEY`). **#26** FTSG 2015-2017 transcripts. **#27** McKinsey 2026 PDF re-capture.
-5. **#3** first tagged dataset release (export is built; ask MZ before tagging). The forecasts block on research pages (#59) after links exist.
-6. **#69** Envisioning study posters: grade open placements each January as their windows close (D37, D26 waves).
-7. **#64** housekeeping: close or comment the older capture issues (#2, #4 to #25) from each PROGRESS.md.
+1. **#26 / #72** FTSG: 2015-2017 from the SlideShare transcripts, remaining quote corrections, then a D33 pass 4 for rows whose window changed (checkers A/B, adjudicator, audit, `trend-final-d33.mjs`).
+2. **#11** World Bank GEP 1991-1999 from the scanned reports (OCR, every digit verified twice), supplementary audit (D46).
+3. **#3** first tagged dataset release: `pnpm export` is clean. Ask MZ before tagging.
+4. **#59** links (needs `OPENROUTER_API_KEY`), then the forecasts block on research pages.
+5. Missing editions with no known source: OECD EO47-59, 61, 69, 71, 73, 82, 91, 92 (#10); Deloitte TMT 2003 (#7); McKinsey 2026 PDF (#27, withdrawn at the origin).
+6. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
+
+## Decisions taken by MZ (2026-10-02, in chat)
+
+FTSG umbrella pages with the publisher's year tag and key insight count as trends in every edition (D40). Build the append-only capture-corrections file once a real misaligned quote appears (D43; real cases appeared the same day). The OpenRouter key and the release approval wait.
+
+## Notes from the fourth session (local, 2026-10-02)
+
+- **Coordinator pattern that worked:** one agent per lane, numeric lanes in their own worktrees (merge, renumber decisions, re-run `pnpm grade:numeric`), capture agents in the main checkout with disjoint write scopes. Only one agent runs `pnpm normalize` at a time.
+- **Agents pick the same decision number.** Tell parallel agents to write `## D<N> (lane X)` and renumber at merge.
+- **A capture marked complete can still miss a contents page.** FTSG 2023 Climate lost its second contents page (53 trends). `scripts/ftsg-tech-trends/check_contents.py` and `check_2023_contents.py` compare contents pages with the capture.
+- **Archive copies at a stable URL can be a different edition.** bp's archived 2015 .xlsx was the 2014 workbook. Check the file's own edition label.
+- **Trend passes:** a later pass supersedes earlier ones for its scope rows (`renames-d33-pass<N>-scope.json`); give the adjudicator the published sibling verdicts, since checkers cannot see earlier passes.
+- **Search budget used:** about 110 WebSearch calls over about 60 agents.
 
 ## Decisions taken by MZ (2026-10-01, in chat)
 
 D31 Eurasia (#47), D32 WEF (#48), D33 trends, D34 scenarios, D35 individual forecasters (#64): all approved as proposed. #60: launch after www #46, #48, #49; the forecasts block on research pages ships later. #36: keep the crowd baseline in scope for meta-analysis; no outreach to Metaculus or Good Judgment for now. MZ prefers to answer Hindsight questions in chat, not in the Meet queue.
 
 Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
-
-## Blocked
-
-- **#65:** Meet sync. The Meet connector works in a local session (the decision queue was used on 2026-10-01); the sync itself was not done.
 
 ## Grading notes from the second session
 
