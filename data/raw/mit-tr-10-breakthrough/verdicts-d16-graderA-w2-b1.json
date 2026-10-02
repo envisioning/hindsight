@@ -1,0 +1,745 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "mit-tr-10-breakthrough-2021-001",
+   "verdict": "hit",
+   "reading": "Messenger RNA vaccines are in mainstream use, as the leading COVID-19 vaccines, at the 2021 edition year.",
+   "mainstream_test": "At least 20% of the target population (adults in major markets, here the US) received an mRNA vaccine by 2023 (placed year 2021 + 2).",
+   "reason": "By Aug 2022 79% of the US population had at least one COVID-19 dose, and 97% of US doses administered through Sept 2023 were Pfizer-BioNTech (59.4%) or Moderna (37.5%), both mRNA. Mainstream at the placed year already.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/COVID-19_vaccination_in_the_United_States",
+     "title": "COVID-19 vaccination in the United States - Wikipedia",
+     "date": "2026",
+     "shows": "262 million people (79%) with at least one dose by 2022-08-17; cumulative doses by vaccine to 2023-09-07: Pfizer 59.4%, Moderna 37.5%, J&J 2.9%."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/05/1017366/messenger-rna-vaccines-covid-hiv/",
+     "title": "Messenger RNA vaccines (MIT TR10 2021)",
+     "date": "2021-02-05",
+     "shows": "Framing: the two most effective COVID vaccines are mRNA; Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-002",
+   "verdict": "partial",
+   "reading": "Large natural-language models of the GPT-3 kind are in mainstream use around 2021.",
+   "mainstream_test": "At least 20% of US adults have used an LLM product (ChatGPT as the dominant one) by 2023 (placed year + 2); partial if mainstream in 2024-2026.",
+   "reason": "GPT-3 itself was API-only in 2021. LLM use went mass-market with ChatGPT (Nov 2022). Pew: 34% of US adults had used ChatGPT by early 2025, roughly double the summer-2023 share (~17%, below 20%); under-30s 33% (2023) and 43% (2024). The 20% line for all adults was crossed between mid-2023 and early 2025, i.e. 3-4 years after the placed year: partial. Borderline: a knowledge-worker or under-30 base would give hit.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "title": "34% of U.S. adults have used ChatGPT, about double the share in 2023 (Pew Research Center)",
+     "date": "2025-06-25",
+     "shows": "34% of US adults have used ChatGPT in 2025, roughly double the summer-2023 share; under-30s 33% (2023), 43% (2024), 58% (2025). Update of a post first published 2024-03-26."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1017797/gpt3-best-worst-ai-openai-natural-language/",
+     "title": "GPT-3 (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Framing: large natural-language models; Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-003",
+   "verdict": "hit",
+   "reading": "TikTok's recommendation-algorithm-driven feed is a mainstream social platform in 2021.",
+   "mainstream_test": "At least 20% of US adults use TikTok by 2023.",
+   "reason": "Pew's Jan-Feb 2021 survey found 21% of US adults used TikTok, already above the 20% threshold at the placed year.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2021/04/07/social-media-use-in-2021/",
+     "title": "Social Media Use in 2021 (Pew Research Center)",
+     "date": "2021-04-07",
+     "shows": "21% of US adults use TikTok (survey Jan 25 - Feb 8, 2021)."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-004",
+   "verdict": "miss",
+   "reading": "Lithium-metal (solid-state, anode-free) batteries are in production electric cars by 2025.",
+   "mainstream_test": "At least 5% of new EVs shipping with lithium-metal cells by 2030 (placed 2025 + 5); mainstream would be 20% of new EVs by 2027.",
+   "reason": "Provisional miss, window closes 2030. QuantumScape, the article's lead player, had only shipped B1 samples by Oct 2025 and demonstrated a Ducati motorcycle prototype; no production vehicle uses lithium-metal cells as of mid-2026. VW's 2025 on-road target was not met. Share of new EVs ~0%.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/QuantumScape",
+     "title": "QuantumScape - Wikipedia",
+     "date": "2026-06",
+     "shows": "QSE-5 B1 samples shipped Oct 2025; Ducati prototype demo; PowerCo volume deal (Jul 2024) not yet in production; no vehicles in production."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1018102/lithium-metal-batteries-electric-vehicle-car/",
+     "title": "Lithium-metal batteries (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Availability '2025'; VW said batteries would be in its cars on the road by 2025."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-005",
+   "verdict": "miss",
+   "reading": "Data trusts (legal trusts holding personal data on behalf of beneficiaries) are in mainstream use within 2-3 years, i.e. by 2024.",
+   "mainstream_test": "At least 5% of people/data subjects in major markets have data managed by a data trust by 2029 (placed 2024 + 5); mainstream would be 20%.",
+   "reason": "Provisional miss, window closes 2029. Data trusts remain a handful of pilots (UK GP data trust pilot 2022, Silicon Valley Regional Data Trust, planned SITA BagTrust); OECD.AI (2022) describes a field still far from operational and the Sidewalk Toronto trust in the article was abandoned. No measurable population share.",
+   "evidence": [
+    {
+     "url": "https://oecd.ai/en/wonk/creating-real-world-data-trusts-progress",
+     "title": "Creating real-world data trusts: progress so far and the path ahead (OECD.AI)",
+     "date": "2022-02-14",
+     "shows": "Field emerging; 'distance still to travel to operationalise' data trusts; delivering functions in practice is challenging."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1017801/data-trust-cybersecurity-big-tech-privacy/",
+     "title": "Data trusts (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Availability '2 to 3 years'; examples are proposals (Facebook users' trust, Sidewalk Toronto civic data trust)."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-006",
+   "verdict": "miss",
+   "reading": "Green hydrogen (electrolytic hydrogen from renewable power) is a mainstream energy carrier at the 2021 edition year.",
+   "mainstream_test": "Low-emissions hydrogen at least 20% of global hydrogen production by 2023; miss if below 5% by 2026 (placed 2021 + 5).",
+   "reason": "Provisional miss, window closes end of 2026. IEA Global Hydrogen Review 2025: low-emissions hydrogen still under 1% of global production in 2024, on track for ~1 Mt in 2025, and only ~4% by 2030 even counting FID projects. Below 5% through 2026 is near certain.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-hydrogen-review-2025/executive-summary",
+     "title": "Global Hydrogen Review 2025 - Executive summary (IEA)",
+     "date": "2025-09",
+     "shows": "Low-emissions hydrogen <1% of global production in 2024; ~4% projected 2030."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1017822/green-hydrogen-clean-energy/",
+     "title": "Green hydrogen (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Framing and Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-007",
+   "verdict": "hit",
+   "reading": "Smartphone exposure-notification (digital contact tracing) apps are in mainstream use at the 2021 edition year.",
+   "mainstream_test": "At least 20% of the population (smartphone users) in major markets running a national contact-tracing app in 2021-2023.",
+   "reason": "In England and Wales the NHS COVID-19 app had ~18 million active users in July 2021 and ~40% of adults with compatible phones in late 2020; Germany's Corona-Warn-App had 26.2 million downloads by March 2021 (~31% of population). Mainstream by adoption at the placed year in major European markets, though the article itself says the apps barely dented the pandemic and both were shut down in 2023. Graded on adoption, the D16 reading; effectiveness reading would differ.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/NHS_COVID-19",
+     "title": "NHS COVID-19 - Wikipedia",
+     "date": "2026",
+     "shows": "Peak of almost 18 million active users July 2021; ~40% of adults with compatible smartphone by Oct 2020; shut down 2023-04-27."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Corona-Warn-App",
+     "title": "Corona-Warn-App - Wikipedia",
+     "date": "2026",
+     "shows": "26.2 million downloads by 2021-03-18; tracing stopped 2023-04-30."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1017803/digital-contact-tracing-app-covid/",
+     "title": "Digital contact tracing (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Availability 'Now'; 77 exposure-notification apps; says it 'barely made a dent'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-008",
+   "verdict": "hit",
+   "reading": "Hyper-accurate (meter to centimeter-level) satellite positioning, via BeiDou/GPS III plus RTK/PPP augmentation, is in routine use by industries that depend on location at the 2021 edition year.",
+   "mainstream_test": "Routine use by at least 20% of a relevant industry (precision agriculture: share of US acreage with GPS/RTK auto-guidance) by 2023.",
+   "reason": "USDA ERS reports automated guidance systems (GPS with RTK-class correction) on well over 50% of planted acreage of corn, cotton, rice, sorghum, soybeans and winter wheat by 2019, already above the threshold at the placed year. BeiDou global service (2020) gives meter-level open service worldwide.",
+   "evidence": [
+    {
+     "url": "https://www.ers.usda.gov/publications/pub-details?pubid=105893",
+     "title": "Precision Agriculture in the Digital Era: Recent Adoption on U.S. Farms (USDA ERS)",
+     "date": "2023-03",
+     "shows": "Automated guidance used on well over 50% of acreage of six major crops."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1017805/hyper-accurate-global-positioning-available-worldwide/",
+     "title": "Hyper-accurate positioning (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Availability 'Now'; BeiDou 1.5-2 m, GPS III 1-3 m, RTK <3 cm for agriculture, drones, logistics."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-009",
+   "verdict": "hit",
+   "reading": "Remote services (telehealth and online learning) are in mainstream use at the 2021 edition year and persist.",
+   "mainstream_test": "At least 20% of US adults used telemedicine in a 12-month period by 2023.",
+   "reason": "NCHS/NHIS: 37.0% of US adults used telemedicine in the past 12 months in 2021, well above 20% at the placed year.",
+   "evidence": [
+    {
+     "url": "https://www.cdc.gov/nchs/products/databriefs/db445.htm",
+     "title": "Telemedicine Use Among Adults: United States, 2021 (NCHS Data Brief 445)",
+     "date": "2022-10",
+     "shows": "37.0% of US adults used telemedicine in the past 12 months in 2021."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1018081/remote-work-school-telehealth-digital-divide/",
+     "title": "Remote everything (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Covers remote school and telehealth; US telemedicine use 11% (2019) to 46% (2020); Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-010",
+   "verdict": "partial",
+   "reading": "Multimodal ('multi-skilled') AI that combines vision and language is in mainstream use around 2021.",
+   "mainstream_test": "At least 20% of US adults using a multimodal AI assistant by 2023 (placed + 2); partial if reached 2024-2026.",
+   "reason": "In 2021 vision-language models (CLIP, DALL-E) were research releases. Image input reached ChatGPT Plus only in Sept 2023, and the first multimodal model for free users (GPT-4o) shipped May 2024; ChatGPT use passed 20% of US adults in 2024 and 34% by 2025. Mainstream multimodal use thus arrived 3-4 years after the placed year: partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/GPT-4",
+     "title": "GPT-4 - Wikipedia",
+     "date": "2026",
+     "shows": "Image upload for ChatGPT Plus Sept 2023; GPT-4o (text, audio, image) to free users May 2024."
+    },
+    {
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "title": "34% of U.S. adults have used ChatGPT (Pew)",
+     "date": "2025-06-25",
+     "shows": "34% of US adults used ChatGPT by 2025, double the 2023 share."
+    },
+    {
+     "url": "https://www.technologyreview.com/2021/02/24/1018085/multimodal-ai-vision-language/",
+     "title": "Multi-skilled AI (MIT TR10 2021)",
+     "date": "2021-02-24",
+     "shows": "Availability 'Now'; cites early-2021 OpenAI visual-language models."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-002",
+   "verdict": "hit",
+   "reading": "Text-to-image generative AI is in mainstream use, including in professional creative software, at the 2023 edition year.",
+   "mainstream_test": "At least 20% of target users (creative professionals in major markets) using generative AI image tools by 2025.",
+   "reason": "Adobe's 2024 survey of 2,541 creative professionals in eight countries found 83% use generative AI at work (US 87%), with image and photo creation the main use. Far above 20% within the window; Firefly in Photoshop shipped 2023. Source is a vendor survey, but the margin is large.",
+   "evidence": [
+    {
+     "url": "https://blog.adobe.com/en/publish/2024/02/02/creative-pros-generative-ai-usage",
+     "title": "Creative pros are leveraging Generative AI to do more and better work (Adobe)",
+     "date": "2024-02-02",
+     "shows": "83% of 2,541 creative pros in 8 countries use generative AI in work; image/photo creation the leading use."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064864/image-making-ai-10-breakthrough-technologies-2023/",
+     "title": "AI that makes images (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "Availability 'Now'; millions of users, built into Photoshop."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-003",
+   "verdict": "partial",
+   "reading": "The open RISC-V instruction set is in mainstream use in chip design at the 2023 edition year ('the chips will be everywhere').",
+   "mainstream_test": "RISC-V in at least 20% of SoC unit shipments by 2025; partial if at least 5% in 2023 or 20% by 2028.",
+   "reason": "SHD Group (Apr 2026) puts RISC-V SoC unit penetration at 7.4% in 2023, 10.8% in 2024 and 13.0% in 2025, forecast to cross 20% only around 2029 (22.1%). At least 5% at the placed year, below mainstream by 2025, and 20% not forecast within 2028: partial. A 2025 RISC-V International '25% penetration' headline was flagged as ambiguous about the market base.",
+   "evidence": [
+    {
+     "url": "https://theshdgroup.com/wp-content/uploads/2026/04/RISC-V-Market-Analysis-2026-Final-abridged.pdf",
+     "title": "RISC-V Market Report: Market Adoption Accelerates (SHD Group, abridged)",
+     "date": "2026-04",
+     "shows": "Table 18: RISC-V SoC penetration by units 4.4% (2022), 7.4% (2023), 10.8% (2024), 13.0% (2025), 18.6% (2028f), 22.1% (2029f)."
+    },
+    {
+     "url": "https://riscv.org/ecosystem-news/2025/10/risc-v-set-to-announce-25-market-penetration-open-standard-isa-is-ahead-of-schedule-securing-fast-growing-silicon-footprint/",
+     "title": "RISC-V set to announce 25% market penetration (RISC-V International ecosystem news)",
+     "date": "2025-11",
+     "shows": "25% figure; uncertain whether it covers all microprocessors or only MCU/IoT/auto markets RISC-V has entered."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064876/riscv-computer-chips-10-breakthough-technologies-2023/",
+     "title": "A chip design that changes everything (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "10 billion cores shipped; proponents predict chips everywhere within a few years."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-004",
+   "verdict": "hit",
+   "reading": "Cheap, mass-produced armed drones (TB2 class) are in routine military use around the world at the 2023 edition year.",
+   "mainstream_test": "Routine use by at least 20% of the relevant industry: share of national militaries operating armed drones, by 2025.",
+   "reason": "New America counted over three dozen countries with armed drones by 2020 (~20% of ~190 states); the TB2 alone was exported to at least 34 militaries with >800 built and 1 million flight hours by Dec 2024; Ukraine's war made cheap drones a mass weapon from 2022. At or above threshold at the placed year.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Baykar_Bayraktar_TB2",
+     "title": "Baykar Bayraktar TB2 - Wikipedia",
+     "date": "2026",
+     "shows": "Exported to at least 34 militaries; >800 built; 1 million flight hours by Dec 2024; ~$5M unit cost."
+    },
+    {
+     "url": "https://www.newamerica.org/future-security/reports/world-drones/",
+     "title": "World of Drones (New America)",
+     "date": "2020-07-30",
+     "shows": "Over three dozen countries have armed drones; more than ten have conducted strikes."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064892/mass-market-military-drones-tb2-10-breakthrough-technologies-2023/",
+     "title": "Mass-market military drones (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "Availability 'Now'; consumer componentry lowering prices."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-005",
+   "verdict": "hit",
+   "reading": "Abortion pills prescribed via telemedicine are a mainstream route to abortion in the US at the 2023 edition year.",
+   "mainstream_test": "At least 20% of US abortions provided via telehealth by 2025.",
+   "reason": "#WeCount: telehealth rose from 5% of abortions (Apr-Jun 2022) to 20% in Q1 2024 and 25% by Dec 2024, within two years of the placed year.",
+   "evidence": [
+    {
+     "url": "https://societyfp.org/research/wecount/wecount-december-2024-data/",
+     "title": "#WeCount report, April 2022 to December 2024 (Society of Family Planning)",
+     "date": "2025-06",
+     "shows": "Telehealth share of abortions 5% (Apr-Jun 2022) to 25% (Dec 2024); about half of 2024 telehealth abortions under shield laws."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064871/abortion-pills-telemedicine-10-breakthrough-technologies-2023/",
+     "title": "Abortion pills via telemedicine (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-007",
+   "verdict": "hit",
+   "reading": "Electric vehicles become the mainstream choice for new cars from the 2023 edition year.",
+   "mainstream_test": "At least 20% of global new car sales electric by 2025.",
+   "reason": "IEA Global EV Outlook 2025: electric car sales exceeded 17 million in 2024, more than 20% of global sales (nearly 50% in China), expected over one quarter in 2025.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2025/executive-summary",
+     "title": "Global EV Outlook 2025 - Executive summary (IEA)",
+     "date": "2025-05",
+     "shows": "EV sales share >20% of global car sales in 2024; >25% expected 2025."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064889/the-inevitable-ev-10-breakthrough-technologies-2023/",
+     "title": "The inevitable EV (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-008",
+   "verdict": "hit",
+   "reading": "The James Webb Space Telescope is operating and in routine use by the astronomy community at the 2023 edition year.",
+   "mainstream_test": "For a single facility: in routine science operation with broad community demand by 2025 (D16 'routine use by at least 20% of the relevant field' read as heavy community uptake: proposals, oversubscription).",
+   "reason": "Science operations began July 2022. Cycle 4 (call 2024) drew a record 2,377 proposals requesting ~78,000 hours, 9:1 oversubscription, with 600+ community reviewers; Cycle 3 had 1,931. Routine, heavily used facility at the placed year.",
+   "evidence": [
+    {
+     "url": "https://www.stsci.edu/contents/news/jwst/2024/jwst-observers-break-their-own-record-for-astronomical-proposal-submissions",
+     "title": "JWST Observers Break Their Own Record for Astronomical Proposal Submissions (STScI)",
+     "date": "2024-10-29",
+     "shows": "Cycle 4: 2,377 proposals, ~78,000 hours requested, 9:1 oversubscription; Cycle 3: 1,931."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+     "title": "James Webb Space Telescope - Wikipedia",
+     "date": "2026",
+     "shows": "First image released 2022-07-11; General Observer program."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064854/james-webb-space-telescope-10-breakthrough-technologies-2023/",
+     "title": "James Webb Space Telescope (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-009",
+   "verdict": "hit",
+   "reading": "Ancient DNA analysis has become a cheap, routine, high-throughput method in archaeology and human-evolution research at the 2023 edition year.",
+   "mainstream_test": "Routine use in its field: genome-wide data published at scale (thousands of ancient individuals per year) by 2025; no survey measures the share of archaeology projects using aDNA.",
+   "reason": "The Allen Ancient DNA Resource crossed 10,000 individuals with published genome-wide data by end-2022, up from ~10 per year in 2010-2014 and ~200 per year in 2015-2017 to thousands per year since 2018. That is routine production-scale use at the placed year. The 20%-of-field share is not directly measured; graded on scale of routine output.",
+   "evidence": [
+    {
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10858950/",
+     "title": "The Allen Ancient DNA Resource (AADR): a curated compendium of ancient human genomes (Scientific Data 11:182)",
+     "date": "2024-02-10",
+     "shows": ">10,000 ancient individuals with genome-wide data by end-2022; thousands published per year since 2018."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064883/ancient-dna-analysis-10-breakthrough-technologies-2023/",
+     "title": "Ancient DNA analysis (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "Availability 'Now'; whole-genome individuals from 5 (2010) to 5,550 (2020)."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-010",
+   "verdict": "hit",
+   "reading": "Commercial-scale lithium-ion battery recycling that recovers lithium, nickel and cobalt for new batteries is routine industry practice at the 2023 edition year.",
+   "mainstream_test": "Routine use by at least 20% of the relevant industry: recycled output as a share of available end-of-life and scrap feedstock by 2025.",
+   "reason": "IEA (2024): global recycling capacity >300 GWh/yr in 2023 (80% in China); production of recycled battery metals reached over 40% (nickel, cobalt) and 20% (lithium) of theoretically available feedstock in 2023. Recycled share of total mineral supply stays small for a decade (feedstock-limited), which the article itself concedes; that reading would give partial/miss, but it is not what the entry claims.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/recycling-of-critical-minerals/executive-summary",
+     "title": "Recycling of Critical Minerals - Executive summary (IEA)",
+     "date": "2024",
+     "shows": "Recycled battery metal production >40% for nickel and cobalt, 20% for lithium of available feedstock in 2023."
+    },
+    {
+     "url": "https://www.iea.org/reports/global-ev-outlook-2025/electric-vehicle-batteries",
+     "title": "Global EV Outlook 2025 - Electric vehicle batteries (IEA)",
+     "date": "2025-05",
+     "shows": "Recycling feedstock limited; about a decade before recycling significantly reduces primary demand."
+    },
+    {
+     "url": "https://www.technologyreview.com/2023/01/09/1064886/battery-recycling-10-breakthrough-technologies-2023/",
+     "title": "Battery recycling (MIT TR10 2023)",
+     "date": "2023-01-09",
+     "shows": "Availability 'Now'; China leads; recycling alone won't meet demand."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-001",
+   "verdict": "hit",
+   "reading": "Generative AI tools are in mainstream everyday use at the 2024 edition year.",
+   "mainstream_test": "At least 20% of US adults using a generative AI chatbot (ChatGPT) by 2026.",
+   "reason": "Pew: 34% of US adults had used ChatGPT by early 2025 (58% of under-30s), 28% of employed adults for work. Mainstream within the window.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+     "title": "34% of U.S. adults have used ChatGPT (Pew Research Center)",
+     "date": "2025-06-25",
+     "shows": "34% of US adults have used ChatGPT; 28% of employed adults use it for work."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085096/artificial-intelligence-generative-ai-chatgpt-open-ai-breakthrough-technologies/",
+     "title": "AI for everything (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Now'; assistants built into office software for billions."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-003",
+   "verdict": "miss",
+   "reading": "Apple Vision Pro, with micro-OLED mixed-reality displays, becomes a mainstream device from its 2024 launch.",
+   "mainstream_test": "At least 20% of target users (US households / consumer electronics buyers) owning one by 2026; miss if below 5% by 2029.",
+   "reason": "Provisional miss, window closes 2029. IDC: ~390,000 units shipped in 2024 and ~45,000 in 2025, with production halted at one supplier and no shipments in Q1-Q3 2025 before the M5 refresh. Cumulative units are far below 1% of US households; even within XR headsets Apple had ~5% share in 2024.",
+   "evidence": [
+    {
+     "url": "https://www.theregister.com/2026/01/02/apple_vision_pro_meta_quest_sales_drop/",
+     "title": "Headset hype meets harsh reality as Apple and Meta VR shipments fizzle in 2025 (The Register, citing IDC)",
+     "date": "2026-01-02",
+     "shows": "Vision Pro shipments 390,000 (2024), 45,000 (2025); production halted at one supplier."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro",
+     "title": "Apple Vision Pro - Wikipedia",
+     "date": "2026",
+     "shows": "Launched Feb 2024 at $3,499; M5 refresh Oct 2025; price raised to $3,699 June 2026."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085133/apple-vision-pro-micro-oled-mixed-reality-spatial-computer-virtual-reality-breakthrough-technologies/",
+     "title": "Apple Vision Pro (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Later this year'; commercial success an open question."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-004",
+   "verdict": "hit",
+   "reading": "GLP-1 weight-loss drugs (Wegovy, Mounjaro/Zepbound) are in mainstream use for obesity at the 2024 edition year.",
+   "mainstream_test": "At least 20% of target users (US adults told they are overweight or obese) have taken a GLP-1 drug by 2026.",
+   "reason": "KFF poll (Apr-May 2024): 12% of all US adults had ever taken a GLP-1 (6% currently); 22% of adults told they are overweight or obese and 43% of those with diabetes had. Mainstream among the target group at the placed year.",
+   "evidence": [
+    {
+     "url": "https://www.kff.org/health-costs/poll-finding/kff-health-tracking-poll-may-2024-the-publics-use-and-views-of-glp-1-drugs/",
+     "title": "KFF Health Tracking Poll May 2024: The Public's Use and Views of GLP-1 Drugs",
+     "date": "2024-05-10",
+     "shows": "12% of US adults ever used GLP-1; 22% of those told overweight/obese; 43% of those with diabetes."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085116/weight-loss-drugs-ozempic-wegovy-mounjaro-eli-lilly-novo-nordisk-breakthrough-technologies/",
+     "title": "Weight-loss drugs (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-006",
+   "verdict": "hit",
+   "reading": "Chiplet-based processor designs are mainstream in high-performance chips at the 2024 edition year.",
+   "mainstream_test": "Routine use by at least 20% of the relevant industry (leading high-performance CPU/GPU vendors shipping chiplet products) by 2026.",
+   "reason": "AMD has used chiplets across Ryzen/EPYC since Zen 2 (2019); Intel moved its server (Sapphire Rapids) and client (Meteor Lake, Arrow Lake) lines to tiles; Nvidia data-centre GPUs use multi-die packaging. The major x86 and AI-accelerator vendors all ship chiplet designs, so routine industry use at the placed year.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chiplet",
+     "title": "Chiplet - Wikipedia",
+     "date": "2026",
+     "shows": "Chiplet products: AMD Ryzen Zen 2 and later, Intel Sapphire Rapids/Meteor Lake/Arrow Lake, Nvidia H100 and later."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085120/chiplets-moores-law-avanced-micro-devices-intel-chips-breakthrough-technologies/",
+     "title": "Chiplets (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-007",
+   "verdict": "miss",
+   "reading": "CRISPR gene-editing treatment (Casgevy) is in mainstream use for sickle-cell disease and beta-thalassaemia from the 2024 edition year.",
+   "mainstream_test": "At least 20% of eligible patients treated by 2026; miss if below 5% by 2029.",
+   "reason": "Provisional miss, window closes 2029. Vertex: 64 patients infused in 2025 (cumulative ~65-70 since launch) and 147 first cell collections in 2025, against more than 60,000 eligible patients in its markets: about 0.1% treated. Reaching 5% (3,000 patients) by 2029 would need a ~40x ramp.",
+   "evidence": [
+    {
+     "url": "https://www.biospace.com/press-releases/vertex-reports-fourth-quarter-and-full-year-2025-financial-results",
+     "title": "Vertex Reports Fourth Quarter and Full Year 2025 Financial Results",
+     "date": "2026-02",
+     "shows": "64 Casgevy infusions in 2025; 147 first cell collections; >60,000 eligible patients (37,000 N. America/Europe, 23,000 Middle East)."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Exagamglogene_autotemcel",
+     "title": "Exagamglogene autotemcel - Wikipedia",
+     "date": "2026",
+     "shows": "US list price $2.2 million."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085101/crispr-gene-editing-sickle-cell-disease-breakthrough-technologies/",
+     "title": "The first gene-editing treatment (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Now'; first approval UK and US."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-008",
+   "verdict": "hit",
+   "reading": "Exascale supercomputers are the operating frontier of scientific computing at the 2024 edition year, with several more coming online.",
+   "mainstream_test": "For a frontier-class capability: exascale machines lead the field (top of TOP500, multiple national labs in routine use) by 2026. Share of all TOP500 systems is not the right base for a frontier tier.",
+   "reason": "June 2025 TOP500: three exascale systems (El Capitan 1.742 EF, Frontier 1.353 EF, Aurora 1.012 EF) hold the top three places, JUPITER at 0.79 EF; the article named exactly these machines. Routine operation at US national labs at the placed year. Under a share-of-all-supercomputers reading it would be a miss; that reading does not fit an 'exascale arrives' claim.",
+   "evidence": [
+    {
+     "url": "https://top500.org/lists/top500/2025/06/",
+     "title": "TOP500 June 2025",
+     "date": "2025-06",
+     "shows": "3 exascale systems lead the list: El Capitan, Frontier, Aurora; JUPITER Booster 793 PF."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085128/exascale-computing-breakthrough-technologies/",
+     "title": "Exascale computers (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Now'; Frontier first, El Capitan, Aurora, Jupiter to follow."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-009",
+   "verdict": "hit",
+   "reading": "Heat pumps are a mainstream way to heat (and cool) buildings at the 2024 edition year.",
+   "mainstream_test": "At least 20% of households in major markets heated by heat pumps, or 50% of new units (new homes) by 2026.",
+   "reason": "IEA: heat pumps in ~60% of Norwegian buildings and over 40% in Sweden and Finland; the US has the most heat-pump homes; Census 2025: 63% of new single-family homes in the US South use a heat pump as primary heating. Mainstream in several major markets at the placed year, though ~10% of global heating needs.",
+   "evidence": [
+    {
+     "url": "https://www.iea.org/reports/the-future-of-heat-pumps/executive-summary",
+     "title": "The Future of Heat Pumps - Executive summary (IEA)",
+     "date": "2022-11",
+     "shows": "Heat pumps meet ~10% of global building heating; Norway 60%, Sweden and Finland >40% of buildings."
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/highlights.html",
+     "title": "Characteristics of New Housing - Highlights (US Census Bureau)",
+     "date": "2026",
+     "shows": "63% of new single-family homes in the South have a heat pump as primary heating."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085105/heat-pumps-decarbonizing-homes-manufacturing-breakthrough-technologies/",
+     "title": "Heat pumps (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-010",
+   "verdict": "partial",
+   "reading": "Decentralized/alternative Twitter replacements (Bluesky, Threads, Mastodon, Nostr) become a mainstream home for public conversation from the 2024 edition year.",
+   "mainstream_test": "At least 20% of US adults using a Twitter alternative (Threads, Bluesky, Mastodon) by 2026; partial if at least 5% by 2024.",
+   "reason": "Pew (survey Feb-Mar 2025): Threads used by about 8-9% of US adults and Bluesky by about 3-4%, versus X at about 21%; only 3% and 2% regularly get news there (Sept 2025). Measurable share above 5% but far below 20%, with no trend to mainstream by 2026: partial.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/fact-sheet/social-media/",
+     "title": "Social Media Fact Sheet (Pew Research Center)",
+     "date": "2025-11",
+     "shows": "Platform use by subgroup, 2025: Threads 8% (men) / 9% (women), Bluesky 4% / 3%, X 25% / 16%; no pre-2025 data for Threads or Bluesky."
+    },
+    {
+     "url": "https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/",
+     "title": "Social Media and News Fact Sheet (Pew Research Center)",
+     "date": "2025-09-25",
+     "shows": "Regularly get news on Threads 3%, Bluesky 2%, X 12% of US adults."
+    },
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085109/decentralized-social-media-elon-musk-twitter-bluesky-mastodon-discord-breakthrough-technologies/",
+     "title": "Twitter killers (MIT TR10 2024)",
+     "date": "2024-01-08",
+     "shows": "Availability 'Now'; Bluesky, Discord, Mastodon, Nostr, Threads."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-001",
+   "verdict": "hit",
+   "reading": "The Vera C. Rubin Observatory comes online within about six months of the 2025 edition and begins its decade-long survey.",
+   "mainstream_test": "For a single facility: operational (first light and survey operations) by 2027 (placed 2025 + 2).",
+   "reason": "First photons April 2025, first-light images released 23 June 2025 (within the six-month horizon), full LSST survey operations began 30 June 2026. Operational within the window.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vera_C._Rubin_Observatory",
+     "title": "Vera C. Rubin Observatory - Wikipedia",
+     "date": "2026",
+     "shows": "First photons 2025-04-15; first-light images 2025-06-23; full survey operations from 2026-06-30."
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/01/03/1108810/vera-c-rubin-observatory-telescope-space-digital-camera-breakthrough-technologies-2025/",
+     "title": "Vera C. Rubin Observatory (MIT TR10 2025)",
+     "date": "2025-01-03",
+     "shows": "Availability '6 months'; will come online this year."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-002",
+   "verdict": "hit",
+   "reading": "Generative AI answers built into web search (AI Overviews, Bing/Copilot, Perplexity) are in mainstream use at the 2025 edition year.",
+   "mainstream_test": "At least 20% of search users in major markets exposed to/using generative AI search answers by 2027.",
+   "reason": "Alphabet Q2 2025: AI Overviews has over 2 billion monthly users in 200+ countries and 40 languages, i.e. a large majority of Google Search users; AI Mode >100 million MAU in the US and India. Mainstream at the placed year.",
+   "evidence": [
+    {
+     "url": "https://blog.google/inside-google/message-ceo/alphabet-earnings-q2-2025/",
+     "title": "Alphabet Q2 2025 earnings: CEO remarks (Google blog)",
+     "date": "2025-07-23",
+     "shows": "AI Overviews over 2 billion monthly users; AI Mode over 100 million MAU in US and India."
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/01/03/1108820/generative-ai-search-apple-google-microsoft-breakthrough-technologies-2025/",
+     "title": "Generative AI search (MIT TR10 2025)",
+     "date": "2025-01-03",
+     "shows": "Availability 'Now'."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-003",
+   "verdict": "partial",
+   "reading": "Small, efficient language models (GPT-4o mini, Gemini Nano, Claude Haiku, Phi) are in mainstream use, including on-device, at the 2025 edition year.",
+   "mainstream_test": "Device-feature test: at least 50% of new smartphones shipping with on-device generative (small) language models by 2027; partial if at least 5% by 2025.",
+   "reason": "Counterpoint: GenAI-capable phones (on-device small models) about one in five shipments in 2024 and one in three (400M+) in 2025, forecast ~45% in 2026. Measurable share well above 5% at the placed year, below the 50% bar so far; the window for a hit runs to 2027 and may be met. Enterprise use of small hosted models is widespread but no survey measures its share.",
+   "evidence": [
+    {
+     "url": "https://counterpointresearch.com/en/insights/genai-smartphone-shipments-to-exceed-400-million-in-2025-capturing-onethird-of-global-market",
+     "title": "GenAI Smartphone Shipments to Exceed 400 Million in 2025, Capturing One-third of Global Market (Counterpoint)",
+     "date": "2025-03",
+     "shows": "GenAI-capable smartphones ~one-third of 2025 global shipments (one in five in 2024)."
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/01/03/1108800/small-language-models-ai-breakthrough-technologies-2025/",
+     "title": "Small language models (MIT TR10 2025)",
+     "date": "2025-01-03",
+     "shows": "Availability 'Now'; GPT-4o mini, Gemini Nano, Claude Haiku, Phi."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-004",
+   "verdict": "miss",
+   "reading": "Methane-cutting feed additives for cattle (Bovaer, red-seaweed products) are in mainstream use at the 2025 edition year.",
+   "mainstream_test": "At least 20% of cattle (or dairy cows) in major markets fed a methane-reducing additive by 2027; miss if below 5% by 2030.",
+   "reason": "Provisional miss, window closes 2030. dsm-firmenich: Bovaer in the daily feed of just over 500,000 cows in 25+ countries (authorized in 70), roughly 0.2% of the world's ~270 million dairy cows; US ~150,000 lactating cows through 2025. Denmark's 2025 mandate is the one national-scale use and allowed opt-outs after illness reports; UK Arla trial (~30 farms) drew a boycott.",
+   "evidence": [
+    {
+     "url": "https://www.dsm-firmenich.com/anh/products-and-services/products/methane-inhibitors/bovaer.html",
+     "title": "Methane Inhibitors - Bovaer (dsm-firmenich)",
+     "date": "2026",
+     "shows": "Bovaer in daily feed of more than 500,000 cows across 25+ countries; authorized in 70 countries."
+    },
+    {
+     "url": "https://undark.org/2026/01/05/denmark-cows-bovaer/",
+     "title": "In Denmark, Sick Cows and a Lot of Questions (Undark)",
+     "date": "2026-01-05",
+     "shows": "Danish mandate from 2025 for conventional dairy; opt-out allowed Nov 2025; ~150,000 US lactating cows through 2025."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/3-Nitrooxypropanol",
+     "title": "3-Nitrooxypropanol - Wikipedia",
+     "date": "2026",
+     "shows": "Approvals 2021-2024; UK Arla trial on ~30 farms and consumer boycott."
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/01/03/1108827/cow-cattle-burping-methane-cutting-supplements-additives-carbon-emissions-breakthrough-technologies-2025/",
+     "title": "Cattle burping remedies (MIT TR10 2025)",
+     "date": "2025-01-03",
+     "shows": "Availability 'Now'; Bovaer available in 55+ countries."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-006",
+   "verdict": "miss",
+   "reading": "Sustainable (non-fossil) jet fuel is in mainstream use in aviation at the 2025 edition year.",
+   "mainstream_test": "At least 20% of global jet fuel consumption by 2027; miss if below 5% by 2030.",
+   "reason": "Provisional miss, window closes 2030. IATA: SAF ~1 Mt in 2024 and ~2 Mt (0.7% of fuel) expected in 2025; the article itself puts 2024 at ~0.5%. EU/UK mandates are 2% in 2025 and 6% (EU) in 2030, so a global 5% by 2030 is very unlikely.",
+   "evidence": [
+    {
+     "url": "https://www.iata.org/en/pressroom/2025-releases/2025-06-01-02/",
+     "title": "Policy Shortcomings Puts SAF Production at Risk (IATA)",
+     "date": "2025-06-01",
+     "shows": "SAF production expected at 2 Mt in 2025, 0.7% of airline fuel consumption."
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/01/03/1108929/cleaner-jet-fuel-sustainable-alternative-carbon-emissions-aviation-planes-breakthrough-technologies-2025/",
+     "title": "Cleaner jet fuel (MIT TR10 2025)",
+     "date": "2025-01-03",
+     "shows": "Availability 'Now'; ~0.5% of 2024 jet fuel non-fossil; EU/UK 2% mandate from 2025."
+    }
+   ]
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-007",
+   "verdict": "ungradable",
+   "reading": "Robots that learn new tasks quickly via generative-AI (foundation-model) training are in routine use at the 2025 edition year.",
+   "mainstream_test": "Would be: at least 20% of newly deployed industrial/service robots trained with generative/foundation-model policies by 2027 (routine-use test).",
+   "reason": "No public measure of the share of deployed robots using learned foundation-model policies. Looked for: IFR World Robotics (542,000 industrial robots installed in 2024, 4.66 million operational) does not break out AI-trained or generative-policy robots; no survey or vendor-neutral count of foundation-model robot deployments (Covariant, Agility, TRI) was found. Deployments named in the article are pilots, which suggests a small share, but no figure supports a verdict.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "Global robot demand in factories doubles over 10 years (IFR)",
+     "date": "2025-09",
+     "shows": "542,000 installations in 2024, 4,664,000 in operation; no AI-training breakdown."
+    },
+    {
+     "url": "https://www.technologyreview.com/2025/01/03/1108937/fast-learning-robots-generative-ai-breakthrough-technologies-2025/",
+     "title": "Fast-learning robots (MIT TR10 2025)",
+     "date": "2025-01-03",
+     "shows": "Availability 'Now'; Agility, Amazon, Covariant, Robust, TRI."
+    }
+   ]
+  }
+ ]
+}

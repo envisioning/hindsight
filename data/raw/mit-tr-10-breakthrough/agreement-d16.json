@@ -4,34 +4,50 @@
   "A",
   "B"
  ],
- "n": 39,
- "agree": 30,
- "raw_agreement": 0.7692,
- "kappa": 0.6657,
+ "n": 71,
+ "agree": 60,
+ "raw_agreement": 0.8451,
+ "kappa": 0.7667,
  "passes_d11": true,
+ "waves": {
+  "w1": {
+   "n": 39,
+   "agree": 30,
+   "kappa": 0.6657,
+   "passes_d11": true
+  },
+  "w2": {
+   "n": 32,
+   "agree": 30,
+   "kappa": 0.8919,
+   "passes_d11": true
+  }
+ },
  "graderA": {
-  "hit": 13,
-  "partial": 9,
-  "miss": 13,
+  "hit": 32,
+  "partial": 14,
+  "miss": 20,
   "unfalsifiable": 1,
-  "ungradable": 3
+  "ungradable": 4
  },
  "graderB": {
-  "hit": 13,
-  "partial": 9,
-  "miss": 17
+  "hit": 32,
+  "partial": 13,
+  "miss": 24,
+  "ungradable": 2
  },
  "agreed": {
-  "hit": 11,
-  "partial": 6,
-  "miss": 13
+  "hit": 29,
+  "partial": 10,
+  "miss": 20,
+  "ungradable": 1
  },
  "hit_rate_agreed": {
-  "hits": 11,
-  "of_graded_hit_partial_miss": 30,
+  "hits": 29,
+  "of_graded_hit_partial_miss": 59,
   "wilson95": [
-   0.219,
-   0.545
+   0.368,
+   0.616
   ],
   "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
  },
@@ -39,210 +55,443 @@
   {
    "id": "mit-tr-10-breakthrough-2017-004",
    "label": "Practical Quantum Computers",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2017-005",
    "label": "The 360-Degree Selfie",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2017-007",
    "label": "Gene Therapy 2.0",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2017-008",
    "label": "The Cell Atlas",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2017-009",
    "label": "Botnets of Things",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2017-010",
    "label": "Reinforcement Learning",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-004",
    "label": "AI for Everybody",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-005",
    "label": "Dueling Neural Networks",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-007",
    "label": "Zero-Carbon Natural Gas",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-008",
    "label": "Perfect Online Privacy",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2019-003",
    "label": "Predicting preemies",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2019-004",
    "label": "Gut probe in a pill",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2019-009",
    "label": "Sanitation without sewers",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2019-010",
    "label": "Smooth-talking AI assistants",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-001",
    "label": "Unhackable internet",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-002",
    "label": "Hyper-personalized medicine",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-004",
    "label": "Anti-aging drugs",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-008",
    "label": "Tiny AI",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-009",
    "label": "Differential privacy",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-010",
    "label": "Climate change attribution",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-001",
    "label": "The end of passwords",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-002",
    "label": "Covid variant tracking",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-003",
    "label": "A long-lasting grid battery",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-004",
    "label": "AI for protein folding",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-005",
    "label": "Malaria vaccine",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-006",
    "label": "Proof of stake",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-007",
    "label": "A pill for covid",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-009",
    "label": "Synthetic data for AI",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2022-010",
    "label": "A carbon removal factory",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2025-005",
    "label": "Robotaxis",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-001",
+   "label": "Messenger RNA vaccines",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-003",
+   "label": "TikTok recommendation algorithms",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-004",
+   "label": "Lithium-metal batteries",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-005",
+   "label": "Data trusts",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-006",
+   "label": "Green hydrogen",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-007",
+   "label": "Digital contact tracing",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-008",
+   "label": "Hyper-accurate positioning",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-009",
+   "label": "Remote everything",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-010",
+   "label": "Multi-skilled AI",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-002",
+   "label": "AI that makes images",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-003",
+   "label": "A chip design that changes everything",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-004",
+   "label": "Mass-market military drones",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-005",
+   "label": "Abortion pills via telemedicine",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-007",
+   "label": "The inevitable EV",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-008",
+   "label": "James Webb Space Telescope",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-010",
+   "label": "Battery recycling",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-001",
+   "label": "AI for everything",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-003",
+   "label": "Apple Vision Pro",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-004",
+   "label": "Weight-loss drugs",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-006",
+   "label": "Chiplets",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-007",
+   "label": "The first gene-editing treatment",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-008",
+   "label": "Exascale computers",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-009",
+   "label": "Heat pumps",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2024-010",
+   "label": "Twitter killers",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-001",
+   "label": "Vera C. Rubin Observatory",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-002",
+   "label": "Generative AI search",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-003",
+   "label": "Small language models",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-004",
+   "label": "Cattle burping remedies",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2025-006",
+   "label": "Cleaner jet fuel",
+   "verdict": "miss",
+   "wave": "w2"
   }
  ],
  "unfalsifiable_agreed": [],
- "ungradable_agreed": [],
+ "ungradable_agreed": [
+  {
+   "id": "mit-tr-10-breakthrough-2025-007",
+   "label": "Fast-learning robots",
+   "wave": "w2"
+  }
+ ],
  "contested": [
   {
    "id": "mit-tr-10-breakthrough-2017-003",
    "label": "Paying with Your Face",
    "graderA": "hit",
-   "graderB": "partial"
+   "graderB": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-001",
    "label": "3-D Metal Printing",
    "graderA": "ungradable",
-   "graderB": "partial"
+   "graderB": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-002",
    "label": "Artificial Embryos",
    "graderA": "hit",
-   "graderB": "partial"
+   "graderB": "partial",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-006",
    "label": "Babel-Fish Earbuds",
    "graderA": "ungradable",
-   "graderB": "miss"
+   "graderB": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2018-009",
    "label": "Genetic Fortune-Telling",
    "graderA": "partial",
-   "graderB": "miss"
+   "graderB": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2019-001",
    "label": "Robot dexterity",
    "graderA": "ungradable",
-   "graderB": "miss"
+   "graderB": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-003",
    "label": "Digital money",
    "graderA": "partial",
-   "graderB": "miss"
+   "graderB": "miss",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-005",
    "label": "AI-discovered molecules",
    "graderA": "unfalsifiable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "mit-tr-10-breakthrough-2020-006",
    "label": "Satellite mega-constellations",
    "graderA": "partial",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2021-002",
+   "label": "GPT-3",
+   "graderA": "partial",
+   "graderB": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "mit-tr-10-breakthrough-2023-009",
+   "label": "Ancient DNA analysis",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
   }
  ]
 }
