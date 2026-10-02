@@ -18,7 +18,7 @@ node scripts/final-d20.mjs <source>        agreed + adjudicated + audited -> fin
 node scripts/measure-audit-sample.mjs <source>   D32/D34 measures -> fixed-seed D11 sample in audit-d32.json / audit-d34.json (--check to verify)
 node scripts/scenario-coverage-d34.mjs     D34 coverage-d34.json for Shell, IPCC (with the matching audit) and NIC; D11 applied
 scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
-node scripts/links/<step>.mjs           research links (D48): snapshot, check-model, embed-subjects, candidates, agreement, audit-sample, final; see data/links/README.md
+node scripts/links/<step>.mjs           research links (D48): snapshot, check-model, embed-subjects, candidates, agreement, audit-sample, final, apply-recheck (D56); see data/links/README.md
 pnpm links        data/links/research.json + claims + final verdicts -> data/links/by-technology.json, by-subject.json (read by www); --check to verify
 ```
 

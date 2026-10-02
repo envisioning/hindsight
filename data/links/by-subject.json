@@ -1,6 +1,6 @@
 {
 	"rule": "D48",
-	"links_as_of": "2026-10-02T19:42:52.499Z",
+	"links_as_of": "2026-10-02T21:00:00.000Z",
 	"subjects": {
 		"3-d-metal-printing": {
 			"name": "3-D Metal Printing",
@@ -1197,13 +1197,6 @@
 					"original_id": "canada__photonics-integrated-circuits",
 					"title": "Silicon Photonics Integrated Circuits",
 					"relation": "narrower"
-				},
-				{
-					"technology_id": "94f76f8a-701d-40c5-9be2-9f6c2cacb17d",
-					"research_slug": "substrate",
-					"original_id": "europe__all-optical-general-purpose-processors",
-					"title": "All-Optical General-Purpose Processors",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -1542,13 +1535,6 @@
 					"research_slug": "spore",
 					"original_id": "brazil__autonomous-agricultural-robots",
 					"title": "Autonomous Agricultural Robots",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "54f0ffed-2319-4b12-9ad8-42d8930031ff",
-					"research_slug": "spore",
-					"original_id": "europe__precision-agricultural-spraying-robots",
-					"title": "Precision Agricultural Spraying Robots",
 					"relation": "narrower"
 				},
 				{
@@ -1915,36 +1901,6 @@
 				}
 			]
 		},
-		"ai-chips": {
-			"name": "AI chips",
-			"technologies": [
-				{
-					"technology_id": "d06fa6e5-b70f-4bb7-82e6-c4be56cf08fe",
-					"research_slug": "substrate",
-					"original_id": "usa__ai-inference-chips",
-					"title": "Custom AI Inference Accelerators",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-436",
-					"subject_id": "ai-chips",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
-				},
-				{
-					"id": "deloitte-tmt-predictions-2024-002",
-					"subject_id": "ai-chips",
-					"source_id": "deloitte-tmt-predictions",
-					"publisher": "Deloitte Touche Tohmatsu Limited",
-					"year": 2023,
-					"verdict": "hit"
-				}
-			]
-		},
 		"ai-companions": {
 			"name": "AI companions",
 			"technologies": [
@@ -2071,7 +2027,7 @@
 					"research_slug": "substrate",
 					"original_id": "usa__ai-data-center-infrastructure",
 					"title": "Hyperscale AI Data Center Infrastructure",
-					"relation": "narrower"
+					"relation": "broader"
 				}
 			],
 			"claims": [
@@ -2101,13 +2057,6 @@
 					"original_id": "ai-protein-cell-engineering",
 					"title": "AI-Accelerated Protein & Cell Engineering",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "825b4225-55b5-4fb4-acd8-1dcf366629c3",
-					"research_slug": "helix",
-					"original_id": "usa__protein-structure-prediction",
-					"title": "AI Protein Structure Prediction & Design",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -2202,13 +2151,6 @@
 					"research_slug": "helix",
 					"original_id": "protein-structure-prediction-ai",
 					"title": "Protein Structure Prediction AI",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "825b4225-55b5-4fb4-acd8-1dcf366629c3",
-					"research_slug": "helix",
-					"original_id": "usa__protein-structure-prediction",
-					"title": "AI Protein Structure Prediction & Design",
 					"relation": "narrower"
 				}
 			],
@@ -2517,13 +2459,6 @@
 					"original_id": "protein-structure-prediction-ai",
 					"title": "Protein Structure Prediction AI",
 					"relation": "same"
-				},
-				{
-					"technology_id": "825b4225-55b5-4fb4-acd8-1dcf366629c3",
-					"research_slug": "helix",
-					"original_id": "usa__protein-structure-prediction",
-					"title": "AI Protein Structure Prediction & Design",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -2597,13 +2532,6 @@
 					"original_id": "ai-protein-cell-engineering",
 					"title": "AI-Accelerated Protein & Cell Engineering",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "825b4225-55b5-4fb4-acd8-1dcf366629c3",
-					"research_slug": "helix",
-					"original_id": "usa__protein-structure-prediction",
-					"title": "AI Protein Structure Prediction & Design",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -2706,35 +2634,6 @@
 				}
 			]
 		},
-		"ai-infrastructure-and-inference-compute": {
-			"name": "AI infrastructure and inference compute",
-			"technologies": [
-				{
-					"technology_id": "d06fa6e5-b70f-4bb7-82e6-c4be56cf08fe",
-					"research_slug": "substrate",
-					"original_id": "usa__ai-inference-chips",
-					"title": "Custom AI Inference Accelerators",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "d778f152-1010-4cd6-9400-5f557da711bb",
-					"research_slug": "substrate",
-					"original_id": "usa__edge-ai-inference",
-					"title": "On-Device AI & Edge Inference",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "deloitte-tech-trends-2026-003",
-					"subject_id": "ai-infrastructure-and-inference-compute",
-					"source_id": "deloitte-tech-trends",
-					"publisher": "Deloitte Touche Tohmatsu Limited",
-					"year": 2025,
-					"verdict": null
-				}
-			]
-		},
 		"ai-interpretability": {
 			"name": "AI interpretability",
 			"technologies": [
@@ -2776,52 +2675,6 @@
 					"publisher": "Deloitte Touche Tohmatsu Limited",
 					"year": 2024,
 					"verdict": null
-				}
-			]
-		},
-		"ai-nationalism": {
-			"name": "AI Nationalism",
-			"technologies": [
-				{
-					"technology_id": "f5557606-d03b-40f6-a68d-df1f6d4e3eac",
-					"research_slug": "substrate",
-					"original_id": "usa__ai-chip-export-controls",
-					"title": "AI Chip Export Control Regime",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-040",
-					"subject_id": "ai-nationalism",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
-				},
-				{
-					"id": "ftsg-tech-trends-2024-029",
-					"subject_id": "ai-nationalism",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2024,
-					"verdict": null
-				},
-				{
-					"id": "ftsg-tech-trends-2022-047",
-					"subject_id": "ai-nationalism",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2022,
-					"verdict": "persisted"
-				},
-				{
-					"id": "ftsg-tech-trends-2021-070",
-					"subject_id": "ai-nationalism",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2021,
-					"verdict": "persisted"
 				}
 			]
 		},
@@ -2922,28 +2775,6 @@
 					"subject_id": "ai-native-technology-organization",
 					"source_id": "deloitte-tech-trends",
 					"publisher": "Deloitte Touche Tohmatsu Limited",
-					"year": 2025,
-					"verdict": null
-				}
-			]
-		},
-		"ai-powered-fire-prevention": {
-			"name": "AI Powered Fire Prevention",
-			"technologies": [
-				{
-					"technology_id": "2e115920-6554-4341-83ed-d73fa6630277",
-					"research_slug": "apogee",
-					"original_id": "australia-nz__satellite-bushfire-detection",
-					"title": "Satellite-Based AI Bushfire Detection",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-110",
-					"subject_id": "ai-powered-fire-prevention",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2025,
 					"verdict": null
 				}
@@ -3355,13 +3186,6 @@
 					"original_id": "rare-earth-alternatives",
 					"title": "Rare Earth Alternatives",
 					"relation": "same"
-				},
-				{
-					"technology_id": "a284753f-559e-47c9-bce2-1f5da0e66f99",
-					"research_slug": "stratum",
-					"original_id": "japan__rare-earth-recycling",
-					"title": "Rare Earth Recycling and Alternatives",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -4361,28 +4185,6 @@
 				}
 			]
 		},
-		"automated-target-recognition-and-ai-guided-strikes": {
-			"name": "Automated Target Recognition and AI-Guided Strikes",
-			"technologies": [
-				{
-					"technology_id": "657a923e-fc00-4b6d-8a38-436b7dbc5456",
-					"research_slug": "wintermute",
-					"original_id": "turkey__defense-ai-autonomy",
-					"title": "Defense AI & Autonomous Systems",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-045",
-					"subject_id": "automated-target-recognition-and-ai-guided-strikes",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
-				}
-			]
-		},
 		"automating-the-supply-chain": {
 			"name": "Automating the Supply Chain",
 			"technologies": [
@@ -4807,13 +4609,6 @@
 			"name": "Autonomous Underwater Vehicles",
 			"technologies": [
 				{
-					"technology_id": "cea4ecaf-e799-4405-a561-d7aa2c382847",
-					"research_slug": "aegis",
-					"original_id": "europe__autonomous-underwater-surveillance-drones",
-					"title": "Autonomous Underwater Surveillance Drones",
-					"relation": "narrower"
-				},
-				{
 					"technology_id": "e7e6f6f3-5c62-4dea-a18a-5e3a1e3c0c4e",
 					"research_slug": "aegis",
 					"original_id": "usa__autonomous-underwater-vehicles",
@@ -5069,28 +4864,6 @@
 				}
 			]
 		},
-		"base-editing-surpasses-traditional-crispr": {
-			"name": "Base Editing Surpasses Traditional CRISPR",
-			"technologies": [
-				{
-					"technology_id": "db5f0026-d2a8-49cf-b27a-74aedd298054",
-					"research_slug": "helix",
-					"original_id": "usa__base-editing-prime-editing",
-					"title": "Precision Gene Editing (Base & Prime Editing)",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-201",
-					"subject_id": "base-editing-surpasses-traditional-crispr",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
-				}
-			]
-		},
 		"battery-recycling": {
 			"name": "Battery recycling",
 			"technologies": [
@@ -5107,13 +4880,6 @@
 					"original_id": "circular-battery",
 					"title": "Circular Battery",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "80b176e1-108a-4741-995f-ac1fcdf9c97a",
-					"research_slug": "grid",
-					"original_id": "europe__battery-recycling-hydrometallurgy",
-					"title": "Battery Recycling Hydrometallurgy",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -5255,44 +5021,6 @@
 				}
 			]
 		},
-		"bioacoustic-sensing": {
-			"name": "Bioacoustic Sensing",
-			"technologies": [
-				{
-					"technology_id": "540f96fc-e280-4b06-a158-8c541089f230",
-					"research_slug": "grid",
-					"original_id": "africa__bioacoustic-ecosystem-monitoring",
-					"title": "AI-Powered Bioacoustic Ecosystem Monitoring",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "gartner-hype-cycle-2015-005",
-					"subject_id": "bioacoustic-sensing",
-					"source_id": "gartner-hype-cycle",
-					"publisher": "Gartner, Inc.",
-					"year": 2015,
-					"verdict": null
-				},
-				{
-					"id": "gartner-hype-cycle-2014-001",
-					"subject_id": "bioacoustic-sensing",
-					"source_id": "gartner-hype-cycle",
-					"publisher": "Gartner, Inc.",
-					"year": 2014,
-					"verdict": null
-				},
-				{
-					"id": "gartner-hype-cycle-2013-001",
-					"subject_id": "bioacoustic-sensing",
-					"source_id": "gartner-hype-cycle",
-					"publisher": "Gartner, Inc.",
-					"year": 2013,
-					"verdict": null
-				}
-			]
-		},
 		"biodegradable-and-edible-packaging": {
 			"name": "Biodegradable and Edible Packaging",
 			"technologies": [
@@ -5419,13 +5147,6 @@
 					"original_id": "in-orbit-manufacturing",
 					"title": "In-Orbit Manufacturing",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "0e6dfe0e-9278-4858-aea0-119d82088e45",
-					"research_slug": "apogee",
-					"original_id": "usa__in-space-pharmaceutical-manufacturing",
-					"title": "In-Space Pharmaceutical Manufacturing",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -5979,13 +5700,6 @@
 					"original_id": "organ-on-a-chip",
 					"title": "Organ on a Chip",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "95ff515f-9f75-438f-b7bd-e74415eadf64",
-					"research_slug": "helix",
-					"original_id": "usa__organ-on-chip-platforms",
-					"title": "Organ-on-a-Chip Microphysiological Systems",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -6257,13 +5971,6 @@
 					"research_slug": "forge",
 					"original_id": "industrial-bci",
 					"title": "Industrial Brain-Computer Interfaces (BCI)",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "6c6ad85a-414b-413e-8867-690252dfebd8",
-					"research_slug": "helix",
-					"original_id": "usa__brain-computer-interfaces",
-					"title": "Invasive Brain-Computer Interfaces",
 					"relation": "narrower"
 				},
 				{
@@ -6747,36 +6454,6 @@
 				}
 			]
 		},
-		"cell-therapy-2-0": {
-			"name": "Cell Therapy 2.0",
-			"technologies": [
-				{
-					"technology_id": "2acd08d9-8cfc-4d02-b5c0-5cbf4ac2aac2",
-					"research_slug": "helix",
-					"original_id": "japan__ips-cell-therapy",
-					"title": "iPS Cell Therapy (Induced Pluripotent Stem Cells)",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2024-182",
-					"subject_id": "cell-therapy-2-0",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2024,
-					"verdict": null
-				},
-				{
-					"id": "ftsg-tech-trends-2023-007",
-					"subject_id": "cell-therapy-2-0",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2023,
-					"verdict": "persisted"
-				}
-			]
-		},
 		"cellular-agriculture": {
 			"name": "Cellular Agriculture",
 			"technologies": [
@@ -6919,18 +6596,18 @@
 			"name": "China’s A.I. Rules",
 			"technologies": [
 				{
-					"technology_id": "c7236c48-d10c-49c8-a09a-b4d55eb801bb",
-					"research_slug": "substrate",
-					"original_id": "china__ai-powered-urban-surveillance-and-smart-city-export",
-					"title": "AI-Powered Urban Surveillance and Smart City Export",
-					"relation": "same"
-				},
-				{
 					"technology_id": "fdc8f206-00cb-441f-b0ec-1229caba1193",
 					"research_slug": "wintermute",
 					"original_id": "chinese-ai-surveillance-systems",
 					"title": "Chinese AI Surveillance Systems",
 					"relation": "same"
+				},
+				{
+					"technology_id": "c7236c48-d10c-49c8-a09a-b4d55eb801bb",
+					"research_slug": "substrate",
+					"original_id": "china__ai-powered-urban-surveillance-and-smart-city-export",
+					"title": "AI-Powered Urban Surveillance and Smart City Export",
+					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -7094,28 +6771,6 @@
 				}
 			]
 		},
-		"chip-talent-shortage": {
-			"name": "Chip Talent Shortage",
-			"technologies": [
-				{
-					"technology_id": "66da3534-747d-426a-9538-d63cac3d9d8c",
-					"research_slug": "substrate",
-					"original_id": "southeast-asia__vietnam-ic-design-education",
-					"title": "IC Design Talent Development",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2024-440",
-					"subject_id": "chip-talent-shortage",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2024,
-					"verdict": null
-				}
-			]
-		},
 		"chiplets": {
 			"name": "Chiplets",
 			"technologies": [
@@ -7155,20 +6810,6 @@
 					"original_id": "usa__ai-inference-chips",
 					"title": "Custom AI Inference Accelerators",
 					"relation": "narrower"
-				},
-				{
-					"technology_id": "d778f152-1010-4cd6-9400-5f557da711bb",
-					"research_slug": "substrate",
-					"original_id": "usa__edge-ai-inference",
-					"title": "On-Device AI & Edge Inference",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "56350398-15ae-43f3-bece-ebb9a358d8ac",
-					"research_slug": "wintermute",
-					"original_id": "china__inference-optimized-ai-ecosystem",
-					"title": "Inference-Optimized AI Ecosystem",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -7185,13 +6826,6 @@
 		"chips-to-optimize-ai-workload": {
 			"name": "Chips to Optimize AI Workload",
 			"technologies": [
-				{
-					"technology_id": "d06fa6e5-b70f-4bb7-82e6-c4be56cf08fe",
-					"research_slug": "substrate",
-					"original_id": "usa__ai-inference-chips",
-					"title": "Custom AI Inference Accelerators",
-					"relation": "narrower"
-				},
 				{
 					"technology_id": "308685d0-4add-44a6-9d0a-d8adcea6be18",
 					"research_slug": "wintermute",
@@ -8792,13 +8426,6 @@
 					"original_id": "south-korea__ai-semiconductor-design",
 					"title": "AI Chip Design",
 					"relation": "narrower"
-				},
-				{
-					"technology_id": "d06fa6e5-b70f-4bb7-82e6-c4be56cf08fe",
-					"research_slug": "substrate",
-					"original_id": "usa__ai-inference-chips",
-					"title": "Custom AI Inference Accelerators",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -9053,36 +8680,6 @@
 					"publisher": "MIT Technology Review",
 					"year": 2021,
 					"verdict": "miss"
-				}
-			]
-		},
-		"decarbonizing-flight": {
-			"name": "Decarbonizing Flight",
-			"technologies": [
-				{
-					"technology_id": "8586e599-0de0-40af-bc15-74f0c0840b7b",
-					"research_slug": "vector",
-					"original_id": "europe__hydrogen-powered-aircraft",
-					"title": "Hydrogen-Powered Aircraft",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2022-385",
-					"subject_id": "decarbonizing-flight",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2022,
-					"verdict": "renamed"
-				},
-				{
-					"id": "ftsg-tech-trends-2021-390",
-					"subject_id": "decarbonizing-flight",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2021,
-					"verdict": "persisted"
 				}
 			]
 		},
@@ -9515,13 +9112,6 @@
 					"research_slug": "grid",
 					"original_id": "gulf-states__gcc-desalination-innovation",
 					"title": "Advanced Desalination Technologies",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "f796aea4-f5e3-4e9c-bfaf-84b424509145",
-					"research_slug": "grid",
-					"original_id": "israel__seawater-reverse-osmosis-desalination",
-					"title": "Large-Scale Seawater Reverse Osmosis Desalination",
 					"relation": "narrower"
 				}
 			],
@@ -10017,13 +9607,6 @@
 					"relation": "narrower"
 				},
 				{
-					"technology_id": "bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
-					"research_slug": "forge",
-					"original_id": "usa__digital-twins-industrial",
-					"title": "Industrial Digital Twins",
-					"relation": "narrower"
-				},
-				{
 					"technology_id": "32f363e7-6078-4c77-bacb-aa34112f5d7e",
 					"research_slug": "habitat",
 					"original_id": "urban-digital-twins",
@@ -10220,13 +9803,6 @@
 		"digital-twins-and-cognitive-twins-in-the-enterprise": {
 			"name": "Digital Twins and Cognitive Twins in the Enterprise",
 			"technologies": [
-				{
-					"technology_id": "bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
-					"research_slug": "forge",
-					"original_id": "usa__digital-twins-industrial",
-					"title": "Industrial Digital Twins",
-					"relation": "narrower"
-				},
 				{
 					"technology_id": "2aa7f2cd-5344-453d-b793-6be94e683303",
 					"research_slug": "horizons",
@@ -10669,28 +10245,6 @@
 					"source_id": "mit-tr-10-breakthrough",
 					"publisher": "MIT Technology Review",
 					"year": 2004,
-					"verdict": null
-				}
-			]
-		},
-		"diversified-ai-inferencing": {
-			"name": "Diversified AI inferencing",
-			"technologies": [
-				{
-					"technology_id": "d778f152-1010-4cd6-9400-5f557da711bb",
-					"research_slug": "substrate",
-					"original_id": "usa__edge-ai-inference",
-					"title": "On-Device AI & Edge Inference",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "idc-futurescape-2024-007",
-					"subject_id": "diversified-ai-inferencing",
-					"source_id": "idc-futurescape",
-					"publisher": "International Data Corporation (IDC)",
-					"year": 2024,
 					"verdict": null
 				}
 			]
@@ -11475,13 +11029,6 @@
 					"original_id": "edge-ai",
 					"title": "Edge AI",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "d778f152-1010-4cd6-9400-5f557da711bb",
-					"research_slug": "substrate",
-					"original_id": "usa__edge-ai-inference",
-					"title": "On-Device AI & Edge Inference",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -12026,28 +11573,6 @@
 				}
 			]
 		},
-		"enterprise-stablecoin-payments": {
-			"name": "Enterprise stablecoin payments",
-			"technologies": [
-				{
-					"technology_id": "c9c9d282-c0b4-4c0f-bb08-c49a847661a2",
-					"research_slug": "vault",
-					"original_id": "usa__stablecoin-payment-rails",
-					"title": "Stablecoin Payment Infrastructure",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "a16z-big-ideas-2025-022",
-					"subject_id": "enterprise-stablecoin-payments",
-					"source_id": "a16z-big-ideas",
-					"publisher": "Andreessen Horowitz (a16z)",
-					"year": 2024,
-					"verdict": null
-				}
-			]
-		},
 		"ethical-employee-insight-technology": {
 			"name": "Ethical employee insight technology",
 			"technologies": [
@@ -12213,13 +11738,6 @@
 		"everywhere-order-and-delivery": {
 			"name": "Everywhere Order and Delivery",
 			"technologies": [
-				{
-					"technology_id": "600c6569-2e88-4c5b-90b5-b4ac0cb35f0e",
-					"research_slug": "forge",
-					"original_id": "china__autonomous-delivery-robots",
-					"title": "Autonomous Delivery Robots",
-					"relation": "narrower"
-				},
 				{
 					"technology_id": "a158d245-0739-493a-a43f-81dd7c27905f",
 					"research_slug": "harvest",
@@ -12536,28 +12054,6 @@
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2025,
 					"verdict": null
-				}
-			]
-		},
-		"extremely-fast-ev-chargers": {
-			"name": "Extremely Fast EV Chargers",
-			"technologies": [
-				{
-					"technology_id": "c7bc89a0-ce40-4b3d-8b45-3c5f0445e65d",
-					"research_slug": "grid",
-					"original_id": "israel__extreme-fast-charging-batteries",
-					"title": "Silicon-Dominant Extreme Fast Charging Battery Cells",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2023-643",
-					"subject_id": "extremely-fast-ev-chargers",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2023,
-					"verdict": "faded"
 				}
 			]
 		},
@@ -13042,13 +12538,6 @@
 					"original_id": "generative-ai-supply-chain-planning",
 					"title": "Generative AI for Supply Chain Planning",
 					"relation": "narrower"
-				},
-				{
-					"technology_id": "bdb442f4-9cba-4b53-bec7-5389d9a33693",
-					"research_slug": "wintermute",
-					"original_id": "usa__multimodal-foundation-models",
-					"title": "Multimodal Foundation Models",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -13147,60 +12636,6 @@
 					"source_id": "a16z-big-ideas",
 					"publisher": "Andreessen Horowitz (a16z)",
 					"year": 2024,
-					"verdict": null
-				}
-			]
-		},
-		"fuel-cells": {
-			"name": "Fuel cells",
-			"technologies": [
-				{
-					"technology_id": "aa82aa19-2076-4e79-a878-63563d84e837",
-					"research_slug": "grid",
-					"original_id": "japan__residential-fuel-cell-cogeneration",
-					"title": "Residential Fuel Cell Cogeneration (ENE-FARM)",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "envisioning-horizons-2014-060",
-					"subject_id": "fuel-cells",
-					"source_id": "envisioning-horizons",
-					"publisher": "Envisioning",
-					"year": 2014,
-					"verdict": "hit"
-				},
-				{
-					"id": "envisioning-technology-2012-029",
-					"subject_id": "fuel-cells",
-					"source_id": "envisioning-technology",
-					"publisher": "Envisioning",
-					"year": 2012,
-					"verdict": "miss"
-				},
-				{
-					"id": "envisioning-technology-2011-010",
-					"subject_id": "fuel-cells",
-					"source_id": "envisioning-technology",
-					"publisher": "Envisioning",
-					"year": 2011,
-					"verdict": null
-				},
-				{
-					"id": "shell-scenarios-2001-009",
-					"subject_id": "fuel-cells",
-					"source_id": "shell-scenarios",
-					"publisher": "Shell plc",
-					"year": 2001,
-					"verdict": null
-				},
-				{
-					"id": "shell-scenarios-2001-010",
-					"subject_id": "fuel-cells",
-					"source_id": "shell-scenarios",
-					"publisher": "Shell plc",
-					"year": 2001,
 					"verdict": null
 				}
 			]
@@ -13639,13 +13074,6 @@
 					"original_id": "agentic-ai",
 					"title": "Agentic AI",
 					"relation": "narrower"
-				},
-				{
-					"technology_id": "55c6d2f3-eb7a-4513-af4c-de92a43f07c4",
-					"research_slug": "wintermute",
-					"original_id": "usa__agentic-ai-frameworks",
-					"title": "Agentic AI & Tool-Using Systems",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -13872,36 +13300,6 @@
 				}
 			]
 		},
-		"genomic-editing": {
-			"name": "Genomic Editing",
-			"technologies": [
-				{
-					"technology_id": "db5f0026-d2a8-49cf-b27a-74aedd298054",
-					"research_slug": "helix",
-					"original_id": "usa__base-editing-prime-editing",
-					"title": "Precision Gene Editing (Base & Prime Editing)",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2020-260",
-					"subject_id": "genomic-editing",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2020,
-					"verdict": "renamed"
-				},
-				{
-					"id": "ftsg-tech-trends-2016-075",
-					"subject_id": "genomic-editing",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2015,
-					"verdict": "renamed"
-				}
-			]
-		},
 		"geoengineering-policy": {
 			"name": "Geoengineering Policy",
 			"technologies": [
@@ -14111,31 +13509,10 @@
 					"relation": "broader"
 				},
 				{
-					"technology_id": "dc433958-2ebf-4774-8a43-5675235cd86d",
-					"research_slug": "grid",
-					"original_id": "australia-nz__green-iron-reduction",
-					"title": "Hydrogen-Based Green Iron Reduction",
-					"relation": "narrower"
-				},
-				{
 					"technology_id": "ddf81b5a-823b-43ac-aad4-5b47aed709af",
 					"research_slug": "grid",
 					"original_id": "india__green-steel-technology",
 					"title": "Green Steel and HIsarna Technology",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "3945665f-dfab-4dfc-b3ef-703b8117faa5",
-					"research_slug": "grid",
-					"original_id": "south-korea__hydrogen-reduced-steelmaking-hyrex",
-					"title": "Hydrogen-Reduced Steelmaking (HyREX)",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "4de12db9-9eb7-4ca8-82e6-2dfb49bd9eac",
-					"research_slug": "stratum",
-					"original_id": "brazil__iron-ore-briquette-technology-green-steel",
-					"title": "Iron Ore Briquette Technology (Green Steel)",
 					"relation": "narrower"
 				}
 			],
@@ -14183,28 +13560,6 @@
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2025,
 					"verdict": null
-				}
-			]
-		},
-		"grid-scale-energy-storage": {
-			"name": "Grid-Scale Energy Storage",
-			"technologies": [
-				{
-					"technology_id": "259d4bcc-b524-4e17-b395-84464c73d4c0",
-					"research_slug": "grid",
-					"original_id": "australia-nz__grid-scale-battery-storage",
-					"title": "Grid-Scale Battery Energy Storage Systems",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2023-116",
-					"subject_id": "grid-scale-energy-storage",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2023,
-					"verdict": "faded"
 				}
 			]
 		},
@@ -14990,50 +14345,6 @@
 				}
 			]
 		},
-		"hydrogen-energy-storage-and-transport": {
-			"name": "Hydrogen energy storage & transport",
-			"technologies": [
-				{
-					"technology_id": "e088ef14-1006-447f-966e-426b8608f74a",
-					"research_slug": "grid",
-					"original_id": "australia-nz__metal-hydride-hydrogen-storage",
-					"title": "Metal Hydride Hydrogen Storage",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "envisioning-horizons-2014-061",
-					"subject_id": "hydrogen-energy-storage-and-transport",
-					"source_id": "envisioning-horizons",
-					"publisher": "Envisioning",
-					"year": 2014,
-					"verdict": "partial"
-				}
-			]
-		},
-		"hydrogen-fuel-cells": {
-			"name": "Hydrogen fuel cells",
-			"technologies": [
-				{
-					"technology_id": "ded53e30-cf11-4e2f-96b1-f7dea55b8d7e",
-					"research_slug": "vector",
-					"original_id": "japan__hydrogen-fuel-cell-vehicles",
-					"title": "Hydrogen Fuel Cell Vehicles and Infrastructure",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "deloitte-tmt-predictions-2011-007",
-					"subject_id": "hydrogen-fuel-cells",
-					"source_id": "deloitte-tmt-predictions",
-					"publisher": "Deloitte Touche Tohmatsu Limited",
-					"year": 2011,
-					"verdict": "miss"
-				}
-			]
-		},
 		"hydrogen-planes": {
 			"name": "Hydrogen planes",
 			"technologies": [
@@ -15283,13 +14594,6 @@
 					"research_slug": "helix",
 					"original_id": "usa__brain-computer-interfaces",
 					"title": "Invasive Brain-Computer Interfaces",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "37913324-f66e-4a06-a432-84692bba79ff",
-					"research_slug": "helix",
-					"original_id": "usa__minimally-invasive-bci",
-					"title": "Minimally Invasive Brain-Computer Interfaces",
 					"relation": "narrower"
 				}
 			],
@@ -15710,13 +15014,6 @@
 					"relation": "narrower"
 				},
 				{
-					"technology_id": "429aefbd-75e3-46b7-9418-eedf6f9d3650",
-					"research_slug": "spore",
-					"original_id": "china__vertical-farming",
-					"title": "Vertical Farming",
-					"relation": "narrower"
-				},
-				{
 					"technology_id": "5ca7bf84-92b9-47e4-954e-cbc5ea5fb8e5",
 					"research_slug": "spore",
 					"original_id": "insect-farming-bioreactors",
@@ -15728,13 +15025,6 @@
 					"research_slug": "spore",
 					"original_id": "next-gen-indoor-farming-rigs",
 					"title": "Next-Gen Indoor Farming Rigs",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "d4a51240-7630-427d-ace2-77a1367255ab",
-					"research_slug": "spore",
-					"original_id": "usa__vertical-farming-automation",
-					"title": "AI-Optimized Vertical Farming",
 					"relation": "narrower"
 				}
 			],
@@ -16622,28 +15912,6 @@
 				}
 			]
 		},
-		"kelp-farming": {
-			"name": "Kelp Farming",
-			"technologies": [
-				{
-					"technology_id": "bc27eb37-b57a-49ef-9346-9a8796f1a37a",
-					"research_slug": "helix",
-					"original_id": "southeast-asia__indonesia-seaweed-cultivation",
-					"title": "Industrial-Scale Seaweed Cultivation & Processing",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2022-513",
-					"subject_id": "kelp-farming",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2022,
-					"verdict": "faded"
-				}
-			]
-		},
 		"kinetic-power": {
 			"name": "Kinetic Power",
 			"technologies": [
@@ -16910,13 +16178,6 @@
 					"original_id": "autonomous-delivery",
 					"title": "Autonomous Last-Mile Delivery",
 					"relation": "same"
-				},
-				{
-					"technology_id": "600c6569-2e88-4c5b-90b5-b4ac0cb35f0e",
-					"research_slug": "forge",
-					"original_id": "china__autonomous-delivery-robots",
-					"title": "Autonomous Delivery Robots",
-					"relation": "narrower"
 				},
 				{
 					"technology_id": "c4fd7bd0-552e-420d-8a28-9d6617bcf886",
@@ -17623,13 +16884,6 @@
 					"original_id": "israel__seawater-reverse-osmosis-desalination",
 					"title": "Large-Scale Seawater Reverse Osmosis Desalination",
 					"relation": "same"
-				},
-				{
-					"technology_id": "188be61b-ba7e-43a4-b314-acf6542ae0e7",
-					"research_slug": "grid",
-					"original_id": "gulf-states__gcc-desalination-innovation",
-					"title": "Advanced Desalination Technologies",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -17921,13 +17175,6 @@
 					"original_id": "small-modular-reactors",
 					"title": "Small Modular Reactors (SMRs)",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "119d2416-7bcc-48a5-9b20-fc9465fb7b9c",
-					"research_slug": "grid",
-					"original_id": "europe__molten-salt-microreactors",
-					"title": "Molten Salt Fast Microreactors",
-					"relation": "narrower"
 				},
 				{
 					"technology_id": "4a02b6f1-d13c-480d-9aac-b087aca58ed3",
@@ -19517,13 +18764,6 @@
 					"original_id": "usa__domestic-rare-earth-magnets",
 					"title": "Domestic Rare Earth Magnet Supply Chain",
 					"relation": "same"
-				},
-				{
-					"technology_id": "13158ef0-ed5f-4e56-918a-18b1ee5c4910",
-					"research_slug": "stratum",
-					"original_id": "australia-nz__rare-earth-refining",
-					"title": "Non-Chinese Rare Earth Refining",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -19759,13 +18999,6 @@
 					"original_id": "autonomous-marine-vessels",
 					"title": "Autonomous Marine Vessels",
 					"relation": "same"
-				},
-				{
-					"technology_id": "93380115-5f0b-4354-821e-85f89a84a515",
-					"research_slug": "aegis",
-					"original_id": "china__zhu-hai-yun-autonomous-drone-carrier",
-					"title": "Zhu Hai Yun Autonomous Drone Carrier",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -20240,28 +19473,6 @@
 				}
 			]
 		},
-		"open-source-ai": {
-			"name": "Open-Source AI",
-			"technologies": [
-				{
-					"technology_id": "6630bd35-3e5a-4311-bf17-082e1e4c0f43",
-					"research_slug": "wintermute",
-					"original_id": "china__deepseek-and-cost-efficient-llms",
-					"title": "DeepSeek and Cost-Efficient LLMs",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-013",
-					"subject_id": "open-source-ai",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
-				}
-			]
-		},
 		"optical-computing": {
 			"name": "Optical Computing",
 			"technologies": [
@@ -20415,36 +19626,6 @@
 				}
 			]
 		},
-		"organic-light-emitting-diodes": {
-			"name": "Organic Light-Emitting Diodes",
-			"technologies": [
-				{
-					"technology_id": "f533fea6-1710-4465-a81a-fb7d8853bdd0",
-					"research_slug": "substrate",
-					"original_id": "south-korea__qd-oled-displays",
-					"title": "QD-OLED Hybrid Displays",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "gartner-hype-cycle-2005-027",
-					"subject_id": "organic-light-emitting-diodes",
-					"source_id": "gartner-hype-cycle",
-					"publisher": "Gartner, Inc.",
-					"year": 2005,
-					"verdict": "partial"
-				},
-				{
-					"id": "gartner-hype-cycle-2003-015",
-					"subject_id": "organic-light-emitting-diodes",
-					"source_id": "gartner-hype-cycle",
-					"publisher": "Gartner, Inc.",
-					"year": 2003,
-					"verdict": "miss"
-				}
-			]
-		},
 		"organoid-intelligence": {
 			"name": "Organoid Intelligence",
 			"technologies": [
@@ -20487,28 +19668,6 @@
 					"source_id": "ftsg-tech-trends",
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2024,
-					"verdict": null
-				}
-			]
-		},
-		"organs-on-demand": {
-			"name": "Organs on demand",
-			"technologies": [
-				{
-					"technology_id": "0cfa5f61-d9fc-4690-b595-7ab6ad82530c",
-					"research_slug": "helix",
-					"original_id": "usa__xenotransplantation",
-					"title": "Xenotransplantation (Gene-Edited Pig Organs)",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "mit-tr-10-breakthrough-2023-006",
-					"subject_id": "organs-on-demand",
-					"source_id": "mit-tr-10-breakthrough",
-					"publisher": "MIT Technology Review",
-					"year": 2023,
 					"verdict": null
 				}
 			]
@@ -20787,27 +19946,6 @@
 					"research_slug": "link",
 					"original_id": "canada__photonics-integrated-circuits",
 					"title": "Silicon Photonics Integrated Circuits",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "839ae339-1632-4b63-ac9a-fd0af208338e",
-					"research_slug": "substrate",
-					"original_id": "china__lightgen-photonic-ai-chip",
-					"title": "LightGen Photonic AI Chip",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "94f76f8a-701d-40c5-9be2-9f6c2cacb17d",
-					"research_slug": "substrate",
-					"original_id": "europe__all-optical-general-purpose-processors",
-					"title": "All-Optical General-Purpose Processors",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "803fa66d-0ab4-4da2-ba17-a762c968caaf",
-					"research_slug": "substrate",
-					"original_id": "usa__photonic-interconnects-ai",
-					"title": "Photonic Interconnects for AI Supercomputers",
 					"relation": "narrower"
 				}
 			],
@@ -21225,13 +20363,6 @@
 					"relation": "same"
 				},
 				{
-					"technology_id": "d1dc1976-55c0-46c3-8e32-23daa9e65133",
-					"research_slug": "grid",
-					"original_id": "usa__fusion-energy-frc",
-					"title": "Compact Fusion Energy (Field-Reversed Configuration)",
-					"relation": "narrower"
-				},
-				{
 					"technology_id": "1ca7cbe4-c8a5-4d29-8f12-bb901c5803d1",
 					"research_slug": "grid",
 					"original_id": "usa__hts-tokamak-fusion",
@@ -21400,28 +20531,6 @@
 				}
 			]
 		},
-		"precision-pollination": {
-			"name": "Precision Pollination",
-			"technologies": [
-				{
-					"technology_id": "f5a7b18d-cf0e-42fe-90d6-dd3501456d88",
-					"research_slug": "spore",
-					"original_id": "israel__drone-based-precision-pollination",
-					"title": "Drone-Based Precision Pollination Technology",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2022-511",
-					"subject_id": "precision-pollination",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2022,
-					"verdict": "faded"
-				}
-			]
-		},
 		"predicting-preemies": {
 			"name": "Predicting preemies",
 			"technologies": [
@@ -21587,13 +20696,6 @@
 					"original_id": "crispr-cas9",
 					"title": "CRISPR-Cas9",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "db5f0026-d2a8-49cf-b27a-74aedd298054",
-					"research_slug": "helix",
-					"original_id": "usa__base-editing-prime-editing",
-					"title": "Precision Gene Editing (Base & Prime Editing)",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -21628,28 +20730,6 @@
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2020,
 					"verdict": "persisted"
-				}
-			]
-		},
-		"prime-editing-improves-accuracy": {
-			"name": "Prime Editing Improves Accuracy",
-			"technologies": [
-				{
-					"technology_id": "db5f0026-d2a8-49cf-b27a-74aedd298054",
-					"research_slug": "helix",
-					"original_id": "usa__base-editing-prime-editing",
-					"title": "Precision Gene Editing (Base & Prime Editing)",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-202",
-					"subject_id": "prime-editing-improves-accuracy",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
 				}
 			]
 		},
@@ -21754,35 +20834,6 @@
 					"publisher": "Deloitte Touche Tohmatsu Limited",
 					"year": 2019,
 					"verdict": null
-				}
-			]
-		},
-		"private-led-fusion-projects": {
-			"name": "Private Led Fusion Projects",
-			"technologies": [
-				{
-					"technology_id": "2a947a7e-53f1-4a5c-9ed0-7f8f60c04848",
-					"research_slug": "grid",
-					"original_id": "japan__laser-inertial-fusion-energy",
-					"title": "Laser Inertial Fusion Energy",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "d1dc1976-55c0-46c3-8e32-23daa9e65133",
-					"research_slug": "grid",
-					"original_id": "usa__fusion-energy-frc",
-					"title": "Compact Fusion Energy (Field-Reversed Configuration)",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2023-102",
-					"subject_id": "private-led-fusion-projects",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2023,
-					"verdict": "persisted"
 				}
 			]
 		},
@@ -22061,13 +21112,6 @@
 					"original_id": "protein-structure-prediction-ai",
 					"title": "Protein Structure Prediction AI",
 					"relation": "same"
-				},
-				{
-					"technology_id": "825b4225-55b5-4fb4-acd8-1dcf366629c3",
-					"research_slug": "helix",
-					"original_id": "usa__protein-structure-prediction",
-					"title": "AI Protein Structure Prediction & Design",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -22142,28 +21186,6 @@
 				}
 			]
 		},
-		"psychedelics": {
-			"name": "Psychedelics",
-			"technologies": [
-				{
-					"technology_id": "9d0e78c5-ce4f-4bce-8c89-01dc07766370",
-					"research_slug": "helix",
-					"original_id": "canada__psychedelic-medicine",
-					"title": "Next-Generation Psychedelic-Derived Therapeutics",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2022-209",
-					"subject_id": "psychedelics",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2022,
-					"verdict": "faded"
-				}
-			]
-		},
 		"public-safety-technology": {
 			"name": "Public safety technology",
 			"technologies": [
@@ -22194,13 +21216,6 @@
 					"research_slug": "forge",
 					"original_id": "china__quadruped-robots-robot-dogs",
 					"title": "Quadruped Robots (Robot Dogs)",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "f350a52d-acb4-43f1-b5d0-ab035339f429",
-					"research_slug": "forge",
-					"original_id": "europe__quadruped-industrial-inspection-robots",
-					"title": "Quadruped Industrial Inspection Robots",
 					"relation": "narrower"
 				}
 			],
@@ -22758,36 +21773,6 @@
 				}
 			]
 		},
-		"quantum-noise-reduction": {
-			"name": "Quantum Noise Reduction",
-			"technologies": [
-				{
-					"technology_id": "ad578138-3c3c-4b6a-858c-43dc80c7592a",
-					"research_slug": "substrate",
-					"original_id": "usa__quantum-error-correction",
-					"title": "Quantum Error Correction",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-480",
-					"subject_id": "quantum-noise-reduction",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
-				},
-				{
-					"id": "ftsg-tech-trends-2024-476",
-					"subject_id": "quantum-noise-reduction",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2024,
-					"verdict": null
-				}
-			]
-		},
 		"quantum-optical-chip": {
 			"name": "Quantum-Optical Chip",
 			"technologies": [
@@ -22979,13 +21964,6 @@
 					"original_id": "rare-earth-alternatives",
 					"title": "Rare Earth Alternatives",
 					"relation": "same"
-				},
-				{
-					"technology_id": "a284753f-559e-47c9-bce2-1f5da0e66f99",
-					"research_slug": "stratum",
-					"original_id": "japan__rare-earth-recycling",
-					"title": "Rare Earth Recycling and Alternatives",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -23218,28 +22196,6 @@
 				{
 					"id": "ftsg-tech-trends-2025-358",
 					"subject_id": "recycling-material-waste",
-					"source_id": "ftsg-tech-trends",
-					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
-					"year": 2025,
-					"verdict": null
-				}
-			]
-		},
-		"reducing-digital-carbon-emissions": {
-			"name": "Reducing Digital Carbon Emissions",
-			"technologies": [
-				{
-					"technology_id": "1432cd13-d38e-4b2d-96d2-346bc341628c",
-					"research_slug": "substrate",
-					"original_id": "southeast-asia__tropical-data-center-cooling",
-					"title": "Tropical-Climate Data Center Cooling",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "ftsg-tech-trends-2025-354",
-					"subject_id": "reducing-digital-carbon-emissions",
 					"source_id": "ftsg-tech-trends",
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2025,
@@ -23496,13 +22452,6 @@
 					"research_slug": "spore",
 					"original_id": "europe__new-genomic-techniques-for-crops",
 					"title": "New Genomic Techniques for Crops",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "2a86a922-a6cd-4372-b335-af079dd0a306",
-					"research_slug": "spore",
-					"original_id": "latam-ex-brazil__ar-agricultural-biotech-gene-editing",
-					"title": "Agricultural Gene Editing & Crop Biotechnology",
 					"relation": "narrower"
 				}
 			],
@@ -24044,13 +22993,6 @@
 					"original_id": "swarm-robotics-platforms",
 					"title": "Swarm Robotics Platforms",
 					"relation": "same"
-				},
-				{
-					"technology_id": "ebf61ab6-f624-46b5-83f7-d3eb1e0dc04b",
-					"research_slug": "aegis",
-					"original_id": "israel__autonomous-swarm-technology",
-					"title": "Autonomous Multi-UAV Swarm Operations",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -24609,7 +23551,7 @@
 					"research_slug": "link",
 					"original_id": "usa__satellite-direct-to-cell",
 					"title": "Satellite Direct-to-Cell Connectivity",
-					"relation": "narrower"
+					"relation": "same"
 				}
 			],
 			"claims": [
@@ -24694,28 +23636,6 @@
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2024,
 					"verdict": null
-				}
-			]
-		},
-		"second-generation-biofuels": {
-			"name": "Second-generation biofuels",
-			"technologies": [
-				{
-					"technology_id": "7d3b0118-cba9-4f5f-b144-96066b069248",
-					"research_slug": "grid",
-					"original_id": "brazil__second-generation-cellulosic-ethanol",
-					"title": "Second-Generation Cellulosic Ethanol",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "envisioning-horizons-2014-073",
-					"subject_id": "second-generation-biofuels",
-					"source_id": "envisioning-horizons",
-					"publisher": "Envisioning",
-					"year": 2014,
-					"verdict": "hit"
 				}
 			]
 		},
@@ -25689,28 +24609,6 @@
 					"source_id": "ftsg-tech-trends",
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2024,
-					"verdict": null
-				}
-			]
-		},
-		"smart-robots-vs-frontline-workers": {
-			"name": "Smart robots vs frontline workers",
-			"technologies": [
-				{
-					"technology_id": "90057730-05ed-4fe5-aab3-3f1c299e71b8",
-					"research_slug": "forge",
-					"original_id": "japan__service-robots-logistics",
-					"title": "Service and Logistics Robots",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "gartner-strategic-predictions-2023-009",
-					"subject_id": "smart-robots-vs-frontline-workers",
-					"source_id": "gartner-strategic-predictions",
-					"publisher": "Gartner, Inc.",
-					"year": 2023,
 					"verdict": null
 				}
 			]
@@ -26967,13 +25865,6 @@
 					"original_id": "spintronics",
 					"title": "Spintronics",
 					"relation": "same"
-				},
-				{
-					"technology_id": "cbf9be64-78fd-423d-aebc-f97d565046c0",
-					"research_slug": "substrate",
-					"original_id": "israel__spintronics-data-storage",
-					"title": "Spintronic Memory and Data Storage",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -27247,36 +26138,6 @@
 				}
 			]
 		},
-		"superapps": {
-			"name": "Superapps",
-			"technologies": [
-				{
-					"technology_id": "d0c0a233-c0db-4c63-ae4e-b95d0d3c9032",
-					"research_slug": "vault",
-					"original_id": "china__super-apps-and-instant-retail",
-					"title": "Super-Apps and Instant Retail",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "gartner-hype-cycle-2024-022",
-					"subject_id": "superapps",
-					"source_id": "gartner-hype-cycle",
-					"publisher": "Gartner, Inc.",
-					"year": 2024,
-					"verdict": null
-				},
-				{
-					"id": "gartner-hype-cycle-2022-019",
-					"subject_id": "superapps",
-					"source_id": "gartner-hype-cycle",
-					"publisher": "Gartner, Inc.",
-					"year": 2022,
-					"verdict": null
-				}
-			]
-		},
 		"supercharged-photosynthesis": {
 			"name": "Supercharged Photosynthesis",
 			"technologies": [
@@ -27529,7 +26390,7 @@
 					"research_slug": "substrate",
 					"original_id": "china__ai-powered-urban-surveillance-and-smart-city-export",
 					"title": "AI-Powered Urban Surveillance and Smart City Export",
-					"relation": "narrower"
+					"relation": "broader"
 				},
 				{
 					"technology_id": "fdc8f206-00cb-441f-b0ec-1229caba1193",
@@ -28308,13 +27169,6 @@
 					"research_slug": "substrate",
 					"original_id": "usa__ai-chip-export-controls",
 					"title": "AI Chip Export Control Regime",
-					"relation": "narrower"
-				},
-				{
-					"technology_id": "56350398-15ae-43f3-bece-ebb9a358d8ac",
-					"research_slug": "wintermute",
-					"original_id": "china__inference-optimized-ai-ecosystem",
-					"title": "Inference-Optimized AI Ecosystem",
 					"relation": "narrower"
 				}
 			],
@@ -29137,6 +27991,13 @@
 					"relation": "same"
 				},
 				{
+					"technology_id": "c6bf1abd-a50d-4f13-aaad-2e47aab22129",
+					"research_slug": "grid",
+					"original_id": "china__ultra-high-voltage-power-grid",
+					"title": "Ultra-High Voltage Power Grid",
+					"relation": "same"
+				},
+				{
 					"technology_id": "1526a850-6572-4a20-ab46-01ecc0e2df8a",
 					"research_slug": "grid",
 					"original_id": "hvdc-supergrids",
@@ -29149,13 +28010,6 @@
 					"original_id": "hvdc-supergrids",
 					"title": "HVDC Supergrids",
 					"relation": "same"
-				},
-				{
-					"technology_id": "c6bf1abd-a50d-4f13-aaad-2e47aab22129",
-					"research_slug": "grid",
-					"original_id": "china__ultra-high-voltage-power-grid",
-					"title": "Ultra-High Voltage Power Grid",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -29204,6 +28058,13 @@
 					"relation": "same"
 				},
 				{
+					"technology_id": "c6bf1abd-a50d-4f13-aaad-2e47aab22129",
+					"research_slug": "grid",
+					"original_id": "china__ultra-high-voltage-power-grid",
+					"title": "Ultra-High Voltage Power Grid",
+					"relation": "same"
+				},
+				{
 					"technology_id": "64b08dad-ffe8-4793-a388-1d09bb0afb3d",
 					"research_slug": "atmos",
 					"original_id": "long-distance-hvdc-corridors",
@@ -29223,13 +28084,6 @@
 					"original_id": "hvdc-supergrids",
 					"title": "HVDC Supergrids",
 					"relation": "broader"
-				},
-				{
-					"technology_id": "c6bf1abd-a50d-4f13-aaad-2e47aab22129",
-					"research_slug": "grid",
-					"original_id": "china__ultra-high-voltage-power-grid",
-					"title": "Ultra-High Voltage Power Grid",
-					"relation": "narrower"
 				}
 			],
 			"claims": [
@@ -29337,13 +28191,6 @@
 			"name": "Updating Post-Quantum Cryptography Standards",
 			"technologies": [
 				{
-					"technology_id": "3ab8a98e-f98b-4b28-bef6-793daf41105f",
-					"research_slug": "substrate",
-					"original_id": "usa__post-quantum-cryptography",
-					"title": "Post-Quantum Cryptography",
-					"relation": "same"
-				},
-				{
 					"technology_id": "193173e2-0ea8-4e47-854e-5ee631a4514f",
 					"research_slug": "continuum",
 					"original_id": "post-quantum-cryptography",
@@ -29389,6 +28236,13 @@
 					"technology_id": "10c25a00-8bb2-49a1-ac27-309df187432f",
 					"research_slug": "sentinel",
 					"original_id": "post-quantum-cryptography",
+					"title": "Post-Quantum Cryptography",
+					"relation": "broader"
+				},
+				{
+					"technology_id": "3ab8a98e-f98b-4b28-bef6-793daf41105f",
+					"research_slug": "substrate",
+					"original_id": "usa__post-quantum-cryptography",
 					"title": "Post-Quantum Cryptography",
 					"relation": "broader"
 				},
@@ -30479,28 +29333,6 @@
 					"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 					"year": 2025,
 					"verdict": null
-				}
-			]
-		},
-		"weight-loss-drugs": {
-			"name": "Weight-loss drugs",
-			"technologies": [
-				{
-					"technology_id": "9a4722b7-1ed3-48c4-a285-62147741f0c5",
-					"research_slug": "helix",
-					"original_id": "usa__glp1-next-generation",
-					"title": "Next-Generation GLP-1 & Multi-Agonist Therapeutics",
-					"relation": "narrower"
-				}
-			],
-			"claims": [
-				{
-					"id": "mit-tr-10-breakthrough-2024-004",
-					"subject_id": "weight-loss-drugs",
-					"source_id": "mit-tr-10-breakthrough",
-					"publisher": "MIT Technology Review",
-					"year": 2024,
-					"verdict": "hit"
 				}
 			]
 		},

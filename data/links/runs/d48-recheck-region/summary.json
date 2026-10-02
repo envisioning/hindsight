@@ -1,0 +1,68 @@
+{
+	"rule": "D56",
+	"run": "d48-recheck-region",
+	"checked": 336,
+	"confirm": 249,
+	"correct": 87,
+	"by_earlier_relation": {
+		"same": {
+			"checked": 18,
+			"confirm": 16,
+			"corrections": {
+				"broader": 1,
+				"narrower": 1
+			}
+		},
+		"broader": {
+			"checked": 4,
+			"confirm": 4,
+			"corrections": {}
+		},
+		"narrower": {
+			"checked": 314,
+			"confirm": 229,
+			"corrections": {
+				"same": 3,
+				"broader": 2,
+				"no_link": 80
+			}
+		}
+	},
+	"transitions": {
+		"narrower>confirm": 229,
+		"narrower>no_link": 80,
+		"narrower>broader": 2,
+		"same>narrower": 1,
+		"same>confirm": 16,
+		"broader>confirm": 4,
+		"narrower>same": 3,
+		"same>broader": 1
+	},
+	"rows_written": 87,
+	"curated_kept": 0,
+	"audit": {
+		"run": "d48-r1",
+		"sampled": 153,
+		"errors": 15,
+		"error_rate": 0.098,
+		"sampled_in_scope": 40,
+		"fixed_by_recheck": [
+			"clean-energy-technologies~d1563097-9a31-4720-b2d9-bfe43d87a2d8",
+			"dna-sequencing~f8c1f4bf-85dd-490d-8dc6-a24792481c59",
+			"new-domestic-supply-chain~d68db623-c1c3-4f49-a2ab-634f37e9a69e",
+			"postquantum-cryptography~813ee6ce-6eea-4c73-b110-8c853196c9ea",
+			"reducing-digital-carbon-emissions~7520c266-795f-4ae5-95a9-cc8ede19fce1",
+			"regulating-ai~edd18d46-1431-4ed1-9018-3e16b2c0a15f",
+			"robotaxi-growth~b22d4d10-7060-49cb-9a54-20d5c21d986a",
+			"technological-sovereignty~e2593f98-685b-4690-903a-97880ed91b42"
+		],
+		"residual_errors": 7,
+		"residual_error_rate": 0.0458,
+		"confirmed_by_audit_corrected_by_recheck": [
+			"digital-twin~bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
+			"green-steel-and-iron~dc433958-2ebf-4774-8a43-5675235cd86d",
+			"private-led-fusion-projects~2a947a7e-53f1-4a5c-9ed0-7f8f60c04848",
+			"the-ai-driven-chip-war~56350398-15ae-43f3-bece-ebb9a358d8ac"
+		]
+	}
+}

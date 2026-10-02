@@ -831,3 +831,17 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** Pages in Subspace that discuss a real precursor technology are not linked. Excluded candidates are not in `final.json` `decisions`, so if the exclusion is lifted a later run proposes them again.
 
 **Overturned by.** A per-technology filter for fictional framing, or a change in the project's framing, recorded as a new decision.
+
+## D56: Re-check of region-page links (D24 for links)
+
+*Recorded 2026-10-02. Amends D48; applies D24 to links.*
+
+**Decision.** The verifiers of `d48-r0` and `d48-r1` judged region-prefixed technology pages (`original_id` like `usa__…`, `china__…`, `gulf-states__…`) before readings (a) and (c) were settled in the `d48-r1` adjudication (`data/links/README.md`, Reading of the verdicts). The `d48-r1` audit found the resulting error systematically: 7 of its 9 rejections were region pages broader by topic, two levels from the subject, or of another country. As for a systematic audit finding on verdicts (#53), the fix covers every row, not only the sampled ones: every active link to a region-prefixed page (336: 314 `narrower`, 18 `same`, 4 `broader`) was judged again by one agent under readings (a) and (c) and the D48 relation definitions, on the subject text and claims and the cached CMS title, summary and description. The re-check is an append-only record, `data/links/runs/d48-recheck-region/recheck.json` (`LinkRecheckFile` in `src/schema.ts`): per pair the row checked, the earlier relation and run, confirm or correct, the corrected relation (or `no_link`) and a one-line reason. `scripts/links/apply-recheck.mjs` applies every `recheck.json` to `research.json`: a correction becomes a new row, `retracted` for `no_link` or `active` with the new relation, agent `rechecker:<agent>`, run `d48-recheck-region`, its reason naming the re-check; no row is edited. The script stops when a checked pair changed after the re-check, and re-running it adds nothing. `final.mjs` never overrides a re-check row when an earlier run's final is re-run. The audit file is not changed: audit records in the re-check scope count as fixed, and the residual audit error of `d48-r1` is the rest (`runs/d48-recheck-region/summary.json`).
+
+Result: 249 confirmed, 87 corrected (80 `narrower` to `no_link`; 3 `narrower` to `same` and 2 to `broader`, country-scoped subjects under reading c; 1 `same` to `narrower`, 1 `same` to `broader`). Active links 1,609 to 1,529 (658 `same`, 159 `broader`, 712 `narrower`). `d48-r1` audit residual 4.6% (7 of 153: the 8 region-page findings are fixed for all rows); 4 sampled region pairs that the auditor had confirmed were corrected by the re-check.
+
+**Why.** Readings settled during adjudication changed the meaning of `narrower` for one family of pages after most of them had been decided. The audit sample showed the error was not random; fixing only the sampled rows would leave the same error in every unsampled region link.
+
+**Cost.** One agent, not two blind verifiers with adjudication: the re-check is itself a judgment and can err, as the audit can. Reading (a) is strict: a regional page on one approach or one use of the subject (hydrometallurgy for battery recycling, vertical farms for indoor farming) is no longer linked, though a reader might find it useful.
+
+**Overturned by.** A later re-check or audit of the re-checked rows that finds the readings misapplied, or a revision of readings (a) and (c), recorded as a new decision.

@@ -371,6 +371,44 @@ export const LinkAuditRecord = z
   .refine((r) => r.decision !== "correct" || r.corrected_verdict !== undefined, { message: "a correction needs corrected_verdict" });
 
 /**
+ * A re-check of an active link row (D56, D24 for links): `data/links/runs/<recheck>/recheck.json`.
+ * Append-only record; `scripts/links/apply-recheck.mjs` turns each correction into a new row of
+ * `research.json` (`retracted` for `no_link`, else `active` with the new relation).
+ */
+export const LinkRecheckRecord = z
+  .object({
+    /** `<subject_id>~<technology_id>`. */
+    pair_id: z.string().min(1),
+    /** The `research.json` row that was checked (latest row of the pair at re-check time). */
+    row_id: z.string().min(1),
+    /** `<research_slug>/<original_id>`, for reading only. */
+    technology: z.string().min(1),
+    earlier_relation: LinkRelation,
+    earlier_run: z.string().min(1),
+    decision: z.enum(["confirm", "correct"]),
+    corrected_relation: z.union([LinkRelation, z.literal("no_link")]).optional(),
+    reason: z.string().min(1),
+    at: z.string().datetime(),
+  })
+  .refine((r) => (r.decision === "correct") === (r.corrected_relation !== undefined), {
+    message: "a correction needs corrected_relation, a confirmation has none",
+  })
+  .refine((r) => r.corrected_relation !== r.earlier_relation, { message: "corrected_relation equals earlier_relation" });
+
+export const LinkRecheckFile = z.object({
+  rule: z.string().min(1),
+  run: z.string().regex(/^[a-z0-9-]+$/),
+  agent: z.string().min(1),
+  scope: z.string().min(1),
+  /** Regex on `original_id` that defines the rows in scope (every active row matching it was checked). */
+  scope_original_id: z.string().min(1),
+  /** The audited run whose residual error the re-check updates (audit records in scope count as fixed). */
+  audit_run: z.string().optional(),
+  drawn_at: z.string().datetime(),
+  records: z.array(LinkRecheckRecord),
+});
+
+/**
  * Numeric grading (D16, D18, D19): one row per claim of a numeric source.
  * Arithmetic, not judgment: no agent, model or prompt version. `status`
  * is `graded` only when a forecast and an actual on the same definition exist.
@@ -661,6 +699,8 @@ export type LinkCandidate = z.infer<typeof LinkCandidate>;
 export type LinkVerdict = z.infer<typeof LinkVerdict>;
 export type LinkVerdictFile = z.infer<typeof LinkVerdictFile>;
 export type LinkAuditRecord = z.infer<typeof LinkAuditRecord>;
+export type LinkRecheckRecord = z.infer<typeof LinkRecheckRecord>;
+export type LinkRecheckFile = z.infer<typeof LinkRecheckFile>;
 export type LinkedClaim = z.infer<typeof LinkedClaim>;
 export type LinksByTechnology = z.infer<typeof LinksByTechnology>;
 export type LinksBySubject = z.infer<typeof LinksBySubject>;

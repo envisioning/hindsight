@@ -6,7 +6,8 @@
 // Refuses to run before every contested pair is adjudicated and every sampled link is audited.
 // Append-only: a pair whose latest row already says the same thing gets no new row; a changed
 // relation or a newly rejected active link gets a new row (the old one is retracted by it).
-// A pair whose latest row has method `curated` is never touched.
+// A pair whose latest row has method `curated` is never touched, nor one whose latest row is a
+// re-check (agent `rechecker:`, D56): a re-run of an earlier run's final must not undo it.
 // Excluded projects (data/links/excluded-projects.json, D52): their candidates are left out (no row, not in
 // `decisions`, no adjudication or audit needed), and every active row to one gets a `retracted` row.
 // Writes data/links/runs/<run>/final.json (counts, audit error rate, every decided pair) and appends to data/links/research.json.
@@ -76,11 +77,16 @@ for (const r of rows) {
 const added = [];
 let unchanged = 0;
 let curatedKept = 0;
+let recheckKept = 0;
 for (const { c, verdict, agent, reason } of decisions) {
 	const k = c.id;
 	const prev = latest.get(k);
 	if (prev?.method === "curated") {
 		curatedKept++;
+		continue;
+	}
+	if (prev?.agent?.startsWith("rechecker:")) {
+		recheckKept++;
 		continue;
 	}
 	const relation = RELATION[verdict];
@@ -158,6 +164,7 @@ const summary = {
 	rows_appended: added.length,
 	rows_unchanged: unchanged,
 	curated_kept: curatedKept,
+	recheck_kept: recheckKept,
 	/** Every decided pair of the run, link or not. A later run skips these ids (D49). */
 	decisions: decisions.map((d) => ({ id: d.c.id, verdict: d.verdict })),
 };
