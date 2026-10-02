@@ -19,30 +19,30 @@
  ],
  "n": 4183,
  "counts": {
-  "renamed": 532,
-  "persisted": 1554,
+  "renamed": 539,
+  "persisted": 1563,
   "gap": 54,
-  "recycled": 26,
+  "recycled": 10,
   "faded": 636,
   "open": 1381
  },
  "shares": {
   "persisted": {
-   "k": 1554,
+   "k": 1563,
    "n": 2748,
-   "share": 0.5655,
+   "share": 0.5688,
    "wilson95": [
-    0.547,
-    0.584
+    0.55,
+    0.587
    ]
   },
   "renamed": {
-   "k": 532,
+   "k": 539,
    "n": 2748,
-   "share": 0.1936,
+   "share": 0.1961,
    "wilson95": [
-    0.179,
-    0.209
+    0.182,
+    0.211
    ]
   },
   "faded": {
@@ -55,12 +55,12 @@
    ]
   },
   "recycled": {
-   "k": 26,
+   "k": 10,
    "n": 2748,
-   "share": 0.0095,
+   "share": 0.0036,
    "wilson95": [
-    0.006,
-    0.014
+    0.002,
+    0.007
    ]
   }
  },
@@ -127,6 +127,21 @@
    "residual_error_rate": 0.02
   }
  },
+ "pass5": {
+  "scope": 26,
+  "superseded": 0,
+  "audit": {
+   "seed": "d11:ftsg-tech-trends:d33:pass5",
+   "sample": 20,
+   "audited": 20,
+   "confirmed": 20,
+   "corrected": 0,
+   "contested": 0,
+   "error_rate": 0,
+   "resolved_by_gap_rule": 0,
+   "residual_error_rate": 0
+  }
+ },
  "passes": [
   "renames-d33-checkerA.json",
   "renames-d33-checkerB.json",
@@ -146,7 +161,12 @@
   "renames-d33-checkerA-pass4.json",
   "renames-d33-checkerB-pass4.json",
   "renames-adjudicated-d33-pass4.json",
-  "renames-audit-d33-pass4.json"
+  "renames-audit-d33-pass4.json",
+  "renames-d33-pass5-scope.json",
+  "renames-d33-checkerA-pass5.json",
+  "renames-d33-checkerB-pass5.json",
+  "renames-adjudicated-d33-pass5.json",
+  "renames-audit-d33-pass5.json"
  ],
  "verdicts": [
   {
@@ -281,7 +301,9 @@
    "id": "ftsg-tech-trends-2014-012",
    "edition": "2014",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2017"
   },
   {
@@ -573,9 +595,10 @@
   {
    "id": "ftsg-tech-trends-2015-021",
    "edition": "2015",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2019"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2016-033",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2015-022",
@@ -590,7 +613,9 @@
    "id": "ftsg-tech-trends-2015-023",
    "edition": "2015",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2022"
   },
   {
@@ -1058,15 +1083,18 @@
    "id": "ftsg-tech-trends-2016-025",
    "edition": "2016",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2020"
   },
   {
    "id": "ftsg-tech-trends-2016-026",
    "edition": "2016",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2021"
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2017-070",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2016-027",
@@ -1121,7 +1149,9 @@
    "id": "ftsg-tech-trends-2016-034",
    "edition": "2016",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2021"
   },
   {
@@ -1286,9 +1316,10 @@
   {
    "id": "ftsg-tech-trends-2016-057",
    "edition": "2016",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2020"
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2017-097",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2016-058",
@@ -1301,7 +1332,9 @@
    "id": "ftsg-tech-trends-2016-059",
    "edition": "2016",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2020"
   },
   {
@@ -1338,7 +1371,9 @@
    "id": "ftsg-tech-trends-2016-064",
    "edition": "2016",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2020"
   },
   {
@@ -1374,9 +1409,10 @@
   {
    "id": "ftsg-tech-trends-2016-069",
    "edition": "2016",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2020"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2017-151",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2016-070",
@@ -1421,9 +1457,10 @@
   {
    "id": "ftsg-tech-trends-2016-075",
    "edition": "2016",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2020"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-241",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2017-001",
@@ -1491,9 +1528,10 @@
   {
    "id": "ftsg-tech-trends-2017-009",
    "edition": "2017",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2024"
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-078",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2017-010",
@@ -1570,9 +1608,10 @@
   {
    "id": "ftsg-tech-trends-2017-019",
    "edition": "2017",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2022"
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-003",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2017-020",
@@ -2374,9 +2413,10 @@
   {
    "id": "ftsg-tech-trends-2017-123",
    "edition": "2017",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2024"
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-239",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2017-124",
@@ -2627,9 +2667,10 @@
   {
    "id": "ftsg-tech-trends-2017-156",
    "edition": "2017",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2021"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-160",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2019-001",
@@ -4761,9 +4802,11 @@
   {
    "id": "ftsg-tech-trends-2019-224",
    "edition": "2019",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2022"
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2020-251",
+   "reason": "The 2019 page (SlideShare part 2, trend 223) opens with the key insight Terraforming, literally Earth shaping, is a concept from science fiction (Mars, Musk, NASA); 2020 Off-Planet Terraforming opens with the same sentence. Same text, qualifier added to the label: same (precedent 2021-251, 2019-232, qualifier change with same text). Checker B read the 2019 row as title-only.",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2019-225",
@@ -5450,9 +5493,11 @@
   {
    "id": "ftsg-tech-trends-2019-294",
    "edition": "2019",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2022"
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2020-376",
+   "reason": "2020 Regulating Open Banking is the open-banking trend itself (standardized, interoperable bank APIs for third parties under PSD2; 3rd year on the list, so the publisher continues the 2019 2nd-year item), and no other 2020 trend covers open banking. Only a modifier is added: same (precedent 2017-013, 2019-074). Medium certainty: 2019 row is title-only.",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2019-295",
@@ -6175,7 +6220,9 @@
    "id": "ftsg-tech-trends-2020-049",
    "edition": "2020",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2024"
   },
   {
@@ -7720,9 +7767,11 @@
   {
    "id": "ftsg-tech-trends-2020-216",
    "edition": "2020",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2023"
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2022-552",
+   "reason": "2020 Better Batteries (2nd year; building a better battery, longer-lasting device and EV batteries) continues as 2022 Building Better Batteries (3rd year; the race for a lighter, more efficient battery), a wording variant inside the window. 2021 Million-Mile Batteries carries the same race text under a narrower EV label (the link checker B gave, renamed); a same match in the window is the closer reading, and the publisher's year count runs Better Batteries 2nd (2020) to Building Better Batteries 3rd (2022).",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2020-217",
@@ -7810,9 +7859,10 @@
   {
    "id": "ftsg-tech-trends-2020-226",
    "edition": "2020",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2024"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2022-314",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2020-227",
@@ -8496,9 +8546,11 @@
   {
    "id": "ftsg-tech-trends-2020-298",
    "edition": "2020",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2024"
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2021-259",
+   "reason": "Merger exception, not same. 2021 Interoperability Initiatives (2nd year) continues the 2020 sibling of the same label (2020-358, Geopolitics: ACCESS Act, Zigbee), so it is not a wording variant of this Home Automation item; but its 2021 key insight absorbs this item's subject (tech platforms connecting the cloud, our smart homes ... aren't interoperable) and its label names it. One step broader (platforms and policy). The 2020 text also reappears in the 2021 GAA Homes page, which continues the Home Automation umbrella (2020-412), so it is not a separate match. Medium-low certainty.",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2020-299",
@@ -11503,7 +11555,9 @@
    "id": "ftsg-tech-trends-2021-218",
    "edition": "2021",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2024"
   },
   {
@@ -11571,7 +11625,9 @@
    "id": "ftsg-tech-trends-2021-226",
    "edition": "2021",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2024"
   },
   {
@@ -18216,9 +18272,10 @@
   {
    "id": "ftsg-tech-trends-2022-419",
    "edition": "2022",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2025"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2024-490",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2022-420",
@@ -19608,7 +19665,10 @@
    "id": "ftsg-tech-trends-2022-555",
    "edition": "2022",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "adjudicated",
+   "reason": "2022 Grid Management (3rd year; key insight: national power grids need an overhaul against demand, extreme weather and attacks) has no successor in the window. 2023 (The Grid sub-section: Microgrids, Next-Generation Cyber Tools, Human/Machine Coordination, Securing EV Charging) and 2024 (The Grid: Dynamic Line Rating, Balancing the Flow of Power Within the Grid) list narrow grid tools; Balancing (real-time supply-demand matching) is one sub-item, not the overhaul claim, and DLR fits the grids-under-pressure framing equally, so neither is the same phenomenon. The label returns only in 2025. Checker B matched one sub-item.",
+   "pass": 5,
+   "was": "faded",
    "matched_in": "2025"
   },
   {
@@ -19743,9 +19803,11 @@
   {
    "id": "ftsg-tech-trends-2022-567",
    "edition": "2022",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2025"
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2023-556",
+   "reason": "2022 Space Tourism (private civilian flights, self-funded ISS tourism, first space hotel Voyager Station by 2027) and 2023 Off-Planet Tourism (space travel and tourism market, civilians travel to and stay in space, Voyager Station 2027, Starlab) are one trend under a synonym label (space and off-planet; precedent 2019-235, 2020-124). The 1st-year tag is weak evidence (the 2022 item sat under Commercializing Space). Sibling Private Space Stations (2022-566) was agreed faded in pass 3, so no sibling conflict.",
+   "pass": 5
   },
   {
    "id": "ftsg-tech-trends-2022-568",

@@ -24,8 +24,8 @@
  "counts": {
   "faded": 76,
   "persisted": 23,
-  "renamed": 41,
-  "recycled": 3,
+  "renamed": 42,
+  "recycled": 2,
   "open": 19
  },
  "shares": {
@@ -39,12 +39,12 @@
    ]
   },
   "renamed": {
-   "k": 41,
+   "k": 42,
    "n": 143,
-   "share": 0.2867,
+   "share": 0.2937,
    "wilson95": [
-    0.219,
-    0.366
+    0.225,
+    0.373
    ]
   },
   "faded": {
@@ -57,12 +57,12 @@
    ]
   },
   "recycled": {
-   "k": 3,
+   "k": 2,
    "n": 143,
-   "share": 0.021,
+   "share": 0.014,
    "wilson95": [
-    0.007,
-    0.06
+    0.004,
+    0.05
    ]
   }
  },
@@ -75,8 +75,34 @@
   "contested": 0,
   "error_rate": 0.02,
   "resolved_by_gap_rule": 0,
-  "residual_error_rate": 0.02
+  "residual_error_rate": 0.02,
+  "superseded_by_pass2": 0
  },
+ "pass2": {
+  "scope": 3,
+  "superseded": 0,
+  "audit": {
+   "seed": "d11:deloitte-tech-trends:d33:pass2",
+   "sample": 3,
+   "audited": 3,
+   "confirmed": 3,
+   "corrected": 0,
+   "contested": 0,
+   "error_rate": 0,
+   "resolved_by_gap_rule": 0,
+   "residual_error_rate": 0
+  }
+ },
+ "passes": [
+  "renames-d33-checkerA.json",
+  "renames-d33-checkerB.json",
+  "renames-adjudicated-d33.json",
+  "renames-audit-d33.json",
+  "renames-d33-pass2-scope.json",
+  "renames-d33-checkerA-pass2.json",
+  "renames-d33-checkerB-pass2.json",
+  "renames-audit-d33-pass2.json"
+ ],
  "verdicts": [
   {
    "id": "deloitte-tech-trends-2010-001",
@@ -468,7 +494,9 @@
    "id": "deloitte-tech-trends-2015-002",
    "edition": "2015",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 2,
+   "was": "faded",
    "matched_in": "2018"
   },
   {
@@ -509,7 +537,9 @@
    "id": "deloitte-tech-trends-2015-008",
    "edition": "2015",
    "verdict": "recycled",
-   "status": "computed",
+   "status": "audited",
+   "pass": 2,
+   "was": "faded",
    "matched_in": "2023"
   },
   {
@@ -534,9 +564,10 @@
   {
    "id": "deloitte-tech-trends-2015-012",
    "edition": "2015",
-   "verdict": "recycled",
-   "status": "computed",
-   "matched_in": "2020"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "deloitte-tech-trends-2017-011",
+   "pass": 2
   },
   {
    "id": "deloitte-tech-trends-2015-013",
