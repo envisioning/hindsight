@@ -59,7 +59,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 2. Small follow-ups: Deloitte Tech Trends 2014-001 is persisted through the `cio-role` merge although the pass-1 audit had corrected it to faded (re-check the merge); `trend-final-d33.mjs` keeps pass 2+ audit records of rows that are no longer candidates in the pass audit summaries; FTSG 2020-234 match id (INDEX Known issues).
 3. Missing editions with no known source: McKinsey 2026 PDF (#27, withdrawn at the origin); FTSG 2008-2013 and 2018 (#26, not public; 2019 stays titles only).
 4. Next release (`hindsight-2026.2`) when enough has changed; ask MZ.
-4. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.
+5. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
