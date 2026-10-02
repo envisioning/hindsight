@@ -11,6 +11,7 @@ Builds `data/raw/oecd-economic-outlook/` (OECD Economic Outlook real GDP growth 
 | `fetch_wayback.py` | Internet Archive captures of http://www.oecd.org/eco/outlook/Demand-and-Output.xls (timestamps in the script); read with `xls.py` | EO94, EO95, EO98 |
 | `build.py` (`TRANSCRIBED`) | Internet Archive copies of the statistical annex PDFs (URLs in the script), values read from the page image | EO99, EO100, EO101 |
 | `vintages.py` | Internet Archive captures of the annex workbook "Demand and output" (http://www.oecd.org/dataoecd/6/27/2483806.xls, http://www.oecd.org/eco/outlook/Demand%20and%20Output.xls) and the flash file (http://www.oecd.org/dataoecd/18/26/2713584.xls, http://www.oecd.org/eco/outlook/flash_eo93_nolinked.xls), timestamps in the script; plus printed tables (`TRANSCRIBED`): EO web page summary tables and EO PDFs (https://webdoc.sub.gwdg.de/edoc/lm/ingenta/sourceoecd/, oecd.org) | EO60, EO62 to EO68, EO70, EO72, EO74 to EO81, EO83 to EO90, EO93, EO96, EO97 |
+| `pdfs.py` (`EDITIONS`) | OECD Economic Outlook PDFs on oecd.org (`/content/dam/oecd/en/publications/reports/...`, URLs in the script; path hashes from Internet Archive captures of the OECD publication pages, the CDX index of `content/dam`, or probing neighbouring hashes), values read from the printed tables (scans: text layer and page image) | EO47 to EO59, EO61, EO69, EO71, EO73, EO82, EO91, EO92 |
 
 `fetch.py` downloads about 26 files of 35 MB from the DBnomics mirror and keeps only the nine series in scope. The Internet Archive can refuse connections; pass a folder that holds the captures as `<timestamp>.xls` to `fetch_wayback.py` to skip the download.
 
@@ -27,6 +28,12 @@ python3 fetch_wayback.py
 ```bash
 python3 build.py
 ```
+
+```bash
+python3 pdfs.py
+```
+
+`pdfs.py` downloads nothing: the values are transcribed in the script with the table and page they come from. Run it after `build.py` and `vintages.py`; it merges its rows into `PROGRESS.md`.
 
 ```bash
 pip install xlrd==2.0.1

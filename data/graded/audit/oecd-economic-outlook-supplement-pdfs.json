@@ -1,0 +1,633 @@
+{
+ "rule": "D11 matching audit (D19, D20), supplementary sample (D46)",
+ "auditor": "agent (D20)",
+ "seed": "d11:oecd-economic-outlook:numeric:pdfs",
+ "supplement": "pdfs",
+ "editions": [
+  "1990-06",
+  "1990-12",
+  "1991-07",
+  "1991-12",
+  "1992-06",
+  "1992-12",
+  "1993-06",
+  "1993-12",
+  "1994-06",
+  "1994-12",
+  "1995-06",
+  "1995-12",
+  "1996-06",
+  "1997-06",
+  "2001-06",
+  "2002-06",
+  "2003-06",
+  "2007-12",
+  "2012-05",
+  "2012-11"
+ ],
+ "of_graded": 192,
+ "sample": [
+  "oecd-economic-outlook-1990-06-002",
+  "oecd-economic-outlook-1991-12-001",
+  "oecd-economic-outlook-1991-12-002",
+  "oecd-economic-outlook-1992-12-001",
+  "oecd-economic-outlook-1992-12-002",
+  "oecd-economic-outlook-1992-12-003",
+  "oecd-economic-outlook-1992-12-004",
+  "oecd-economic-outlook-1992-12-005",
+  "oecd-economic-outlook-1992-12-006",
+  "oecd-economic-outlook-1992-12-007",
+  "oecd-economic-outlook-1992-12-008",
+  "oecd-economic-outlook-1992-12-009",
+  "oecd-economic-outlook-1992-12-010",
+  "oecd-economic-outlook-1993-06-006",
+  "oecd-economic-outlook-1993-06-008",
+  "oecd-economic-outlook-1994-06-001",
+  "oecd-economic-outlook-1994-06-002",
+  "oecd-economic-outlook-1994-06-003",
+  "oecd-economic-outlook-1994-06-004",
+  "oecd-economic-outlook-1994-06-005",
+  "oecd-economic-outlook-1994-06-006",
+  "oecd-economic-outlook-1994-06-007",
+  "oecd-economic-outlook-1994-06-008",
+  "oecd-economic-outlook-1994-06-009",
+  "oecd-economic-outlook-1994-06-010",
+  "oecd-economic-outlook-1995-06-001",
+  "oecd-economic-outlook-1995-06-002",
+  "oecd-economic-outlook-1995-06-003",
+  "oecd-economic-outlook-1995-06-004",
+  "oecd-economic-outlook-1995-06-005",
+  "oecd-economic-outlook-1995-06-006",
+  "oecd-economic-outlook-1995-06-007",
+  "oecd-economic-outlook-1995-06-008",
+  "oecd-economic-outlook-1995-06-009",
+  "oecd-economic-outlook-1995-06-010",
+  "oecd-economic-outlook-2001-06-002",
+  "oecd-economic-outlook-2001-06-004",
+  "oecd-economic-outlook-2001-06-006",
+  "oecd-economic-outlook-2001-06-008",
+  "oecd-economic-outlook-2001-06-010",
+  "oecd-economic-outlook-2002-06-005",
+  "oecd-economic-outlook-2002-06-006",
+  "oecd-economic-outlook-2002-06-008",
+  "oecd-economic-outlook-2003-06-001",
+  "oecd-economic-outlook-2003-06-002",
+  "oecd-economic-outlook-2003-06-003",
+  "oecd-economic-outlook-2003-06-004",
+  "oecd-economic-outlook-2003-06-005",
+  "oecd-economic-outlook-2003-06-008",
+  "oecd-economic-outlook-2003-06-010"
+ ],
+ "records": {
+  "oecd-economic-outlook-1990-06-002": {
+   "decision": "confirm",
+   "note": "Forecast 1.9 for United Kingdom 1991 (next year) matches the source: EO47 PDF (oecd.org content/dam, scan), Table 22 \"Growth of real GNP/GDP in the OECD area\", page 113; the United Kingdom row carries footnote b) GDP; read again from the rendered page image. Actual -1.406 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1991 re-fetched 2026-10-02 (-1.406). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +3.306 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": -1.406,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1991-12-001": {
+   "decision": "confirm",
+   "note": "Forecast -1.9 for United Kingdom 1991 (current year) matches the source: EO50 PDF (oecd.org content/dam, scan), Table 26 \"Growth of real GNP/GDP in major OECD countries and country groups\", page 123; the United Kingdom row carries footnote c) GDP; read again from the rendered page image. Actual -1.406 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1991 re-fetched 2026-10-02 (-1.406). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.494 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1.9,
+    "actual": -1.406,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1991-12-002": {
+   "decision": "confirm",
+   "note": "Forecast 2.2 for United Kingdom 1992 (next year) matches the source: EO50 PDF (oecd.org content/dam, scan), Table 26 \"Growth of real GNP/GDP in major OECD countries and country groups\", page 123; the United Kingdom row carries footnote c) GDP; read again from the rendered page image. Actual 0.276 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1992 re-fetched 2026-10-02 (0.276). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.924 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 0.276,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-001": {
+   "decision": "confirm",
+   "note": "Forecast 1.5 for OECD total 1992 (current year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 2.151 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1992 re-fetched 2026-10-02 (2.151). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.651 pp -> partial, as graded. Group aggregate: forecast on the membership and weights of the time, actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.151,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-002": {
+   "decision": "confirm",
+   "note": "Forecast 1.9 for OECD total 1993 (next year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 1.538 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1993 re-fetched 2026-10-02 (1.538). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.362 pp -> hit, as graded. Group aggregate: forecast on the membership and weights of the time, actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 1.538,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-003": {
+   "decision": "confirm",
+   "note": "Forecast 1.8 for United States 1992 (current year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 3.523 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1992 re-fetched 2026-10-02 (3.523). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -1.723 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 3.523,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-004": {
+   "decision": "confirm",
+   "note": "Forecast 2.4 for United States 1993 (next year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 2.752 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1993 re-fetched 2026-10-02 (2.752). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.352 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 2.752,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-005": {
+   "decision": "confirm",
+   "note": "Forecast 1.8 for Japan 1992 (current year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 0.819 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1992 re-fetched 2026-10-02 (0.819). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.981 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 0.819,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-006": {
+   "decision": "confirm",
+   "note": "Forecast 2.3 for Japan 1993 (next year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 0.171 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1993 re-fetched 2026-10-02 (0.171). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +2.129 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.171,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-007": {
+   "decision": "confirm",
+   "note": "Forecast 1.4 for Germany 1992 (current year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 1.594 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1992 re-fetched 2026-10-02 (1.594). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.194 pp -> hit, as graded. Germany: the whole of Germany for growth rates from 1992 (EO box, page iii), as is the EO119 actual.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.4,
+    "actual": 1.594,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-008": {
+   "decision": "confirm",
+   "note": "Forecast 1.2 for Germany 1993 (next year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual -0.991 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1993 re-fetched 2026-10-02 (-0.991). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +2.191 pp -> miss, as graded. Germany: the whole of Germany for growth rates from 1992 (EO box, page iii), as is the EO119 actual.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": -0.991,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-009": {
+   "decision": "confirm",
+   "note": "Forecast -1.0 for United Kingdom 1992 (current year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 0.276 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1992 re-fetched 2026-10-02 (0.276). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -1.276 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1,
+    "actual": 0.276,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1992-12-010": {
+   "decision": "confirm",
+   "note": "Forecast 1.3 for United Kingdom 1993 (next year) matches the source: EO52 PDF (oecd.org content/dam, scan), Table 28 \"Growth of real GDP in major OECD countries and country groups\"; no GNP marker on any major-country row (checked on the page image); read again from the rendered page image. Actual 2.274 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1993 re-fetched 2026-10-02 (2.274). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.974 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.3,
+    "actual": 2.274,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1993-06-006": {
+   "decision": "confirm",
+   "note": "Forecast 3.3 for Japan 1994 (next year) matches the source: EO53 PDF (oecd.org content/dam, scan), Table 32 \"Growth of real GDP in major OECD countries and country groups\", page 133; no GNP marker on any major-country row; read again from the rendered page image. Actual 0.864 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1994 re-fetched 2026-10-02 (0.864). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +2.436 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.3,
+    "actual": 0.864,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1993-06-008": {
+   "decision": "confirm",
+   "note": "Forecast 1.4 for Germany 1994 (next year) matches the source: EO53 PDF (oecd.org content/dam, scan), Table 32 \"Growth of real GDP in major OECD countries and country groups\", page 133; no GNP marker on any major-country row; read again from the rendered page image. Actual 2.659 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1994 re-fetched 2026-10-02 (2.659). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -1.259 pp -> miss, as graded. Germany: the whole of Germany for growth rates from 1992 (EO box, page iii), as is the EO119 actual.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.4,
+    "actual": 2.659,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-001": {
+   "decision": "confirm",
+   "note": "Forecast 2.6 for OECD total 1994 (current year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 3.067 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1994 re-fetched 2026-10-02 (3.067). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.467 pp -> hit, as graded. Group aggregate: forecast on the membership and weights of the time (this issue excludes Mexico), actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 3.067,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-002": {
+   "decision": "confirm",
+   "note": "Forecast 2.9 for OECD total 1995 (next year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 2.648 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.648). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.252 pp -> hit, as graded. Group aggregate: forecast on the membership and weights of the time (this issue excludes Mexico), actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 2.648,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-003": {
+   "decision": "confirm",
+   "note": "Forecast 4.0 for United States 1994 (current year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 4.029 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1994 re-fetched 2026-10-02 (4.029). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.029 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 4.029,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-004": {
+   "decision": "confirm",
+   "note": "Forecast 3.0 for United States 1995 (next year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 2.684 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.684). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.316 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 2.684,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-005": {
+   "decision": "confirm",
+   "note": "Forecast 0.8 for Japan 1994 (current year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 0.864 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1994 re-fetched 2026-10-02 (0.864). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.064 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 0.8,
+    "actual": 0.864,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-006": {
+   "decision": "confirm",
+   "note": "Forecast 2.7 for Japan 1995 (next year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 2.342 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.342). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.358 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 2.342,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-007": {
+   "decision": "confirm",
+   "note": "Forecast 1.8 for Germany 1994 (current year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 2.659 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1994 re-fetched 2026-10-02 (2.659). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.859 pp -> partial, as graded. Germany: the whole of Germany for growth rates from 1992 (EO box, page iii), as is the EO119 actual.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.659,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-008": {
+   "decision": "confirm",
+   "note": "Forecast 2.6 for Germany 1995 (next year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 1.581 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (1.581). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.019 pp -> miss, as graded. Germany: the whole of Germany for growth rates from 1992 (EO box, page iii), as is the EO119 actual.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 1.581,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-009": {
+   "decision": "confirm",
+   "note": "Forecast 2.8 for United Kingdom 1994 (current year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 3.419 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1994 re-fetched 2026-10-02 (3.419). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.619 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 3.419,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1994-06-010": {
+   "decision": "confirm",
+   "note": "Forecast 3.2 for United Kingdom 1995 (next year) matches the source: EO55 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4 (only Turkey is marked GNP); read again from the rendered page image. Actual 2.406 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.406). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.794 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.2,
+    "actual": 2.406,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-001": {
+   "decision": "confirm",
+   "note": "Forecast 2.7 for OECD total 1995 (current year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 2.648 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.648). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.052 pp -> hit, as graded. Group aggregate: forecast on the membership and weights of the time, actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 2.648,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-002": {
+   "decision": "confirm",
+   "note": "Forecast 2.7 for OECD total 1996 (next year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 3.226 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1996 re-fetched 2026-10-02 (3.226). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.526 pp -> partial, as graded. Group aggregate: forecast on the membership and weights of the time, actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 3.226,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-003": {
+   "decision": "confirm",
+   "note": "Forecast 3.2 for United States 1995 (current year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 2.684 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.684). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.516 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.2,
+    "actual": 2.684,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-004": {
+   "decision": "confirm",
+   "note": "Forecast 2.3 for United States 1996 (next year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 3.773 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1996 re-fetched 2026-10-02 (3.773). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -1.473 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 3.773,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-005": {
+   "decision": "confirm",
+   "note": "Forecast 1.3 for Japan 1995 (current year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 2.342 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.342). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -1.042 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.3,
+    "actual": 2.342,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-006": {
+   "decision": "confirm",
+   "note": "Forecast 2.3 for Japan 1996 (next year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 3.075 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1996 re-fetched 2026-10-02 (3.075). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.775 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 3.075,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-007": {
+   "decision": "confirm",
+   "note": "Forecast 2.9 for Germany 1995 (current year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 1.581 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (1.581). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.319 pp -> miss, as graded. Germany: the whole of Germany for growth rates from 1992 (EO box, page iii), as is the EO119 actual.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.581,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-008": {
+   "decision": "confirm",
+   "note": "Forecast 2.7 for Germany 1996 (next year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 1.065 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1996 re-fetched 2026-10-02 (1.065). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.635 pp -> miss, as graded. Germany: the whole of Germany for growth rates from 1992 (EO box, page iii), as is the EO119 actual.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 1.065,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-009": {
+   "decision": "confirm",
+   "note": "Forecast 3.4 for United Kingdom 1995 (current year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 2.406 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1995 re-fetched 2026-10-02 (2.406). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.994 pp -> partial, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.4,
+    "actual": 2.406,
+    "verdict": "partial"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-1995-06-010": {
+   "decision": "confirm",
+   "note": "Forecast 3.0 for United Kingdom 1996 (next year) matches the source: EO57 PDF (oecd.org content/dam, scan), Annex Table 1 \"Real GDP\", page A4; read again from a zoomed rendering of the projection columns. Actual 2.615 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 1996 re-fetched 2026-10-02 (2.615). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.385 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 2.615,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2001-06-002": {
+   "decision": "confirm",
+   "note": "Forecast 2.8 for OECD total 2002 (next year) matches the source: EO69 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 1.617 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2002 re-fetched 2026-10-02 (1.617). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.183 pp -> miss, as graded. Group aggregate: forecast on the membership and weights of the time, actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 1.617,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2001-06-004": {
+   "decision": "confirm",
+   "note": "Forecast 3.1 for United States 2002 (next year) matches the source: EO69 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 1.7 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2002 re-fetched 2026-10-02 (1.7). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.400 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 1.7,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2001-06-006": {
+   "decision": "confirm",
+   "note": "Forecast 2.7 for Euro area 2002 (next year) matches the source: EO69 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 0.914 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2002 re-fetched 2026-10-02 (0.914). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.786 pp -> miss, as graded. Euro area: euro area members of the OECD at the time, actual EA17; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 0.914,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2001-06-008": {
+   "decision": "confirm",
+   "note": "Forecast 1.1 for Japan 2002 (next year) matches the source: EO69 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 0.085 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2002 re-fetched 2026-10-02 (0.085). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.015 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.1,
+    "actual": 0.085,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2001-06-010": {
+   "decision": "confirm",
+   "note": "Forecast 2.4 for Germany 2002 (next year) matches the source: EO69 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual -0.201 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2002 re-fetched 2026-10-02 (-0.201). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +2.601 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": -0.201,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2002-06-005": {
+   "decision": "confirm",
+   "note": "Forecast 1.3 for Euro area 2002 (current year) matches the source: EO71 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 0.914 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2002 re-fetched 2026-10-02 (0.914). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.386 pp -> hit, as graded. Euro area: euro area members of the OECD at the time, actual EA17; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.3,
+    "actual": 0.914,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2002-06-006": {
+   "decision": "confirm",
+   "note": "Forecast 2.9 for Euro area 2003 (next year) matches the source: EO71 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 0.709 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2003 re-fetched 2026-10-02 (0.709). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +2.191 pp -> miss, as graded. Euro area: euro area members of the OECD at the time, actual EA17; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 0.709,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2002-06-008": {
+   "decision": "confirm",
+   "note": "Forecast 0.3 for Japan 2003 (next year) matches the source: EO71 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 1.38 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2003 re-fetched 2026-10-02 (1.38). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -1.080 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 0.3,
+    "actual": 1.38,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2003-06-001": {
+   "decision": "confirm",
+   "note": "Forecast 1.9 for OECD total 2003 (current year) matches the source: EO73 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 2.074 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2003 re-fetched 2026-10-02 (2.074). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.174 pp -> hit, as graded. Group aggregate: forecast on the membership and weights of the time, actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.074,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2003-06-002": {
+   "decision": "confirm",
+   "note": "Forecast 3.0 for OECD total 2004 (next year) matches the source: EO73 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 3.258 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2004 re-fetched 2026-10-02 (3.258). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.258 pp -> hit, as graded. Group aggregate: forecast on the membership and weights of the time, actual on the EO119 composition; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 3.258,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2003-06-003": {
+   "decision": "confirm",
+   "note": "Forecast 2.5 for United States 2003 (current year) matches the source: EO73 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 2.796 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2003 re-fetched 2026-10-02 (2.796). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -0.296 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.796,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2003-06-004": {
+   "decision": "confirm",
+   "note": "Forecast 4.0 for United States 2004 (next year) matches the source: EO73 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 3.848 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2004 re-fetched 2026-10-02 (3.848). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.152 pp -> hit, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 3.848,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2003-06-005": {
+   "decision": "confirm",
+   "note": "Forecast 1.0 for Euro area 2003 (current year) matches the source: EO73 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 0.709 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2003 re-fetched 2026-10-02 (0.709). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +0.291 pp -> hit, as graded. Euro area: euro area members of the OECD at the time, actual EA17; graded with a note per D19.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1,
+    "actual": 0.709,
+    "verdict": "hit"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2003-06-008": {
+   "decision": "confirm",
+   "note": "Forecast 1.1 for Japan 2004 (next year) matches the source: EO73 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 2.113 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2004 re-fetched 2026-10-02 (2.113). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error -1.013 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.1,
+    "actual": 2.113,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  },
+  "oecd-economic-outlook-2003-06-010": {
+   "decision": "confirm",
+   "note": "Forecast 1.7 for Germany 2004 (next year) matches the source: EO73 PDF (oecd.org content/dam, native text), Annex Table 1 \"Real GDP\", projection columns; row re-mapped to the header years by script. Actual 0.698 equals EO119 SDMX DSD_EO@DF_EO GDPV_ANNPCT.A 2004 re-fetched 2026-10-02 (0.698). Same variable (real GDP growth, annual %, calendar year), right target year; D18 error +1.002 pp -> miss, as graded.",
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 0.698,
+    "verdict": "miss"
+   },
+   "at": "2026-10-02T16:57:55Z"
+  }
+ }
+}

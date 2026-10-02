@@ -42,6 +42,10 @@ curl -sL -A "Mozilla/5.0" "https://web.archive.org/cdx/search/cdx?url=dc.com&mat
 
 Download a capture byte-for-byte with the `id_` suffix: `https://web.archive.org/web/<timestamp>id_/<original>`. The capture URLs used (timestamp and original) are the `source_url` values in the 2002 to 2010 edition files, without `#page=`. Wayback answers 429 or 504 under load: wait and retry.
 
+## report2003.py
+
+`python3 report2003.py` appends the twelve predictions of the 2003 report (Deloitte Research, "Mobile Outlook for 2003", Internet Archive capture 20031204215942 of http://www.deloitte.com/dtt/cda/doc/content/dtt_research_mobileoutlookeurope_070103.pdf) to `2003.json`, after the press-release rows. It refuses to run twice. The quotes are transcribed in the script.
+
 ## findpage.py
 
 `python3 findpage.py <file.pdf> "<quote>"` prints the PDF page holding a quote (for the `#page=` anchor), ignoring case, spacing and punctuation; "..." splits a quote into parts that must share a page. `python3 findpage.py <file.pdf> --check <edition.json> <source_url prefix>` re-checks the anchors of an edition's entries from that PDF. It writes nothing.
