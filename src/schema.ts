@@ -285,10 +285,20 @@ export const NumericAudit = z.object({
   contested: z.number().int().min(0),
   /** (corrected + contested) / audited, as the audit found it. */
   error_rate: z.number().min(0).max(1).nullable(),
-  /** Corrected rows whose current grade now matches the auditor's correction. */
+  /** Findings whose current grade matches the auditor's correction, or that a D24 re-check confirmed on the current grade. */
   fixed_in_code: z.number().int().min(0),
   residual_errors: z.number().int().min(0),
   residual_error_rate: z.number().min(0).max(1).nullable(),
+  /** D24 re-check passes (audit/<source>-recheck-*.json): sampled rows re-checked, by the latest record per row. */
+  rechecked: z.number().int().min(0),
+  recheck_confirmed: z.number().int().min(0),
+  recheck_corrected: z.number().int().min(0),
+  /**
+   * Sampled rows whose current grade no audit or re-check has seen: a confirmed row whose grade changed since the
+   * audit, a re-checked row that changed again, or a finding fixed by a new capture that no re-check has confirmed.
+   * Counted neither as fixed nor as residual.
+   */
+  pending_recheck: z.number().int().min(0),
 });
 
 export const NumericSummary = z.object({

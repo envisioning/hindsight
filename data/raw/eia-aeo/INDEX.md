@@ -1,13 +1,13 @@
 # US EIA Annual Energy Outlook (AEO): collected Reference case projections
 
-Facts only: series, target year, projected value, unit, source. Values come from EIA's own AEO Retrospective publications, which tabulate past AEO Reference case projections next to realized values. Nothing here is graded. Realized values are in `realized.json`.
+Facts only: series, target year, projected value, unit, source. Values come from EIA's own AEO Retrospective publications, which tabulate past AEO Reference case projections next to realized values, and, for AEO2026, which no retrospective covers yet, from the AEO2026 tables. Nothing here is graded. Realized values are in `realized.json`.
 
 ## Verify first (issue #13)
 
 - **First edition.** The EIA AEO archive (https://www.eia.gov/outlooks/aeo/archive.php) lists 1979, 1982 to 1987, 1989 to 2023. AEO2025 and AEO2026 are on the current AEO pages. The 1979 item is outside every retrospective. The first edition with numbers here is AEO1982 (from the 2010 retrospective, which covers "AEO1982 through AEO2010").
 - **No AEO1988.** The 2010 retrospective footnote: "There is no report titled Annual Energy Outlook 1988 due to a change in the naming convention". The edition after AEO1987 is AEO1989.
 - **No AEO2024.** The archive has no 2024 entry, and the 2025 retrospective data file goes from edition 2023 to 2025. Not listed as missing, because it was not published.
-- **Reference case labelling.** Not consistent. The 2010 retrospective cites "Mid-Price or Reference Case Projections, Various Editions" as its source, so early editions called the central case "Mid-Price" (the entries from that source say so in `case`). The 2022 and 2025 retrospectives use "Reference case" (data file `case_name` REFERENCE) for every edition they cover. The 2025 retrospective states that the Reference case assumes current laws and regulations stay unchanged and that expiring policies expire.
+- **Reference case labelling.** Not consistent. AEO2026 renamed the Reference case "Counterfactual Baseline" (case cb2026): "The Reference case was renamed the Counterfactual Baseline case in AEO2026", with no change to how it is built (AEO2026 narrative, https://www.eia.gov/outlooks/aeo/narrative/). Its rows carry that case name. The 2010 retrospective cites "Mid-Price or Reference Case Projections, Various Editions" as its source, so early editions called the central case "Mid-Price" (the entries from that source say so in `case`). The 2022 and 2025 retrospectives use "Reference case" (data file `case_name` REFERENCE) for every edition they cover. The 2025 retrospective states that the Reference case assumes current laws and regulations stay unchanged and that expiring policies expire.
 - **Edition = AEO year.** The `published` field holds the edition year. Exact release dates were not verified, except AEO2026 (2026-04-08, from the AEO home page).
 
 ## Sources
@@ -17,6 +17,7 @@ Facts only: series, target year, projected value, unit, source. Values come from
 | R2010 | AEO Retrospective Review 2010 | AEO1982 to AEO2010 Reference (Mid-Price) projections for target years 1985 to 2009, PDF tables | https://www.eia.gov/outlooks/aeo/retrospective/archive/2010/ |
 | R2022 | AEO Retrospective 2022 | AEO1994 to AEO2022 projections for target years 1993 to 2021 (solar and wind: AEO2007 on, from 2006), one XLSX with all tables | https://www.eia.gov/outlooks/aeo/retrospective/archive/2022/ |
 | R2025 | AEO Retrospective 2025 (released March 2026, report dated February 2026) | Data file with AEO2005 to AEO2025, all cases, full projection horizon (to 2025 through 2050), plus actuals 1970 to 2024 pulled August 2025 | https://www.eia.gov/outlooks/aeo/retrospective/ (CSV: https://www.eia.gov/outlooks/aeo/retrospective/csv/dashappdata_allcases.csv) |
+| T2026 | AEO2026 tables (released 2026-04-08), Counterfactual Baseline case, datekey d021826b | Tables 2, 8, 11, 12, 13, 16 and 18, 2025 to 2050 (#13) | https://www.eia.gov/outlooks/aeo/tables_ref.php (XLSX: https://www.eia.gov/outlooks/aeo/excel/aeotab<N>.xlsx) |
 
 Rules applied to avoid duplicate rows:
 - AEO1994 and later: R2022 for target years up to 2021. R2010 is used for these editions only for the natural gas wellhead price, which R2022 does not have.
@@ -24,6 +25,9 @@ Rules applied to avoid duplicate rows:
 - AEO2005 to AEO2022: R2025 only for target years 2022 and later. AEO2023 and AEO2025: R2025 for all years. Only the REFERENCE case is taken from R2025.
 - Spot check: R2022 and R2025 give the same numbers for overlapping cells (for example AEO2015 wind 2020: 231.53 billion kWh in both).
 - **AEO2009 exception (#66).** All AEO2009 rows come from R2025 (the March 2009 Reference case of the published AEO2009 report, DOE/EIA-0383(2009)), for every target year. R2022's AEO2009 rows are the April 2009 updated Reference case reflecting the American Recovery and Reinvestment Act (SR/OIAF/2009-03) for every series but solar and wind: imported crude 2009 is 39.99 USD per barrel in R2022 against 61.09 in R2025, and R2025 equals the printed AEO2009 tables (Table 2 transportation energy 2018: 28.959; Table 16 wind). R2022 solar and wind equal R2025, so those two series keep R2022 for target years to 2021. The R2022 rows for petroleum (million barrels per year), natural gas (USD per million Btu) and real prices (2007 dollars) are replaced by R2025 rows in R2025 units (million barrels per day, USD per thousand cubic feet, 2012 USD), so those AEO2009 claims got new ids (D15).
+
+- **AEO2015 and AEO2016 exception (#70).** R2022's rows for AEO2015 and AEO2016 imported crude price (nominal) and AEO2016 transportation energy match no case of the edition: they differ from the printed Reference case tables even in the base year (AEO2016 crude 2015: 52.865 in R2022, 46.421 in AEO2016 Table 12 and in R2025; AEO2015 crude 2014: 102.51 against 89.09; AEO2016 transportation 2015: 27.279 against 28.129 in AEO2016 Table 2 and R2025). Every other R2022 series of these editions equals the printed Reference case, including electricity sales and CO2, so R2022 tabulates the Reference case with the Clean Power Plan, not the No-CPP case, and the odd rows match no side case in R2025 either. These three series are taken from R2025 for every target year (same units, so the claim ids do not change).
+- **AEO2026 (#13).** From the edition's own tables (T2026), not a retrospective. The row codes (for example `QUA000:fa_DeliveredEner` for transportation, `PPP000:nom_Imported_Rea` for imported crude) reproduce R2025's AEO2025 Reference rows exactly when applied to the AEO2025 tables (every series, every year 2024 to 2050), so the series keep R2025's definitions. Real prices are in 2025 dollars (`dollar_year` 2025).
 
 Confidence: `high` for values read from the XLSX and CSV cells. `medium` for R2010 values, which are read from PDF text by column position (spot-checked against the printed layout, including the sparse AEO1990 row).
 
@@ -98,7 +102,7 @@ Key to series: solar, wind, elec_sales, total_energy, transport, co2, petroleum,
 | 2022 | partial | 330 | 2021 to 2050 | R2022, R2025 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, petroleum, solar, total_energy, transport, wind | |
 | 2023 | partial | 319 | 2022 to 2050 | R2025 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, petroleum, solar, total_energy, transport, wind | |
 | 2025 | partial | 297 | 2024 to 2050 | R2025 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, petroleum, solar, total_energy, transport, wind | |
-| 2026 | missing | 0 | - | - | - | Released 2026-04-08. No retrospective covers it yet. |
+| 2026 | partial | 286 | 2025 to 2050 | T2026 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, petroleum, solar, total_energy, transport, wind | Released 2026-04-08. Counterfactual Baseline (the renamed Reference case), from the AEO2026 tables (#13). No retrospective covers it yet. |
 
 Every edition with data is `partial`: only the series that the retrospectives carry are captured, not the full AEO tables.
 
@@ -109,13 +113,15 @@ Every edition with data is `partial`: only the series that the retrospectives ca
 - **Total electricity generation.** Not in any retrospective. Nearest series captured: electricity sales. R2022 and R2025 also carry coal, natural gas, nuclear and hydro generation, not captured here (out of scope).
 - **Solar and wind capacity.** Not in any retrospective. Only generation.
 - **Solar and wind before AEO2007.** R2022 starts these series at AEO2007. R2025 starts at AEO2005 but only for target years 2022 and later are used here.
-- **1979 and AEO2026.** No retrospective covers them. AEO2026 values would have to come from the AEO2026 tables directly.
+- **1979.** No retrospective covers it.
 - **Retrospectives 2011 to 2020.** Not read. They cover the same editions as R2010 and R2022 with older actual data.
 - **R2010 XLS files.** Not parsed (legacy binary Excel, no parser without a new package). The PDF versions were read instead.
 
 ## Things that look wrong or odd in the sources
 
-- **R2022 mixes cases for AEO2009 (#66).** See the AEO2009 exception under Sources. The same comparison shows R2022's AEO2016 row differs from R2025's AEO2016 Reference case by up to 16% (nominal crude) and 8.5% (transportation energy), possibly another case choice (AEO2016 published a Reference case with and without the Clean Power Plan); not investigated. R2022 transportation energy runs 1.4 to 2% below R2025 for every edition, a definitional difference between the two retrospectives.
+- **R2022 mixes cases for AEO2009 (#66).** See the AEO2009 exception under Sources.
+- **R2022 rows that match no case (#70).** AEO2015 and AEO2016 crude price and AEO2016 transportation energy; see the exception under Sources. Not the No-CPP case: the CPP-sensitive series of AEO2016 in R2022 equal the printed Reference case.
+- **R2022 restates AEO2005 to AEO2014 transportation energy (#70).** R2022's transportation projections for these editions are below the printed values (and R2025) by 0.365 quadrillion Btu a year from 2013 (0.05 to 0.54 in earlier years), and R2022's total energy projections for the same editions are below by exactly the same amounts, so R2022 restated one transportation component, not a different case (AEO2014 Table 2 prints 26.705 for 2015, R2022 26.340). AEO2015 differs by 0.2% at most and AEO2017 onward not at all; AEO2016 is the case above. The earlier note that the offset applies to every edition was wrong. Graded within R2022 as before; R2025 rows of AEO2005 to AEO2014 (and AEO2009) carry a threshold flag for the restatement.
 
 - R2022 Tables 17 and 18 (solar, wind) store the year header as Excel date serials (38718 = 2006), not years. Converted.
 - R2025 data file column `ECI_INDX_NA_NA_GDP_NA_NA_Y09EQ1D3Z` says "2009 = 1" in its name, but its value is 1.0 in 2012. The report states all monetary values are in 2012 dollars. The real-price columns are recorded as 2012 USD.
