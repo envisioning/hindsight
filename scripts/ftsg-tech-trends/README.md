@@ -8,10 +8,10 @@ Standard-library Python 3. PDF text comes from poppler (`pdftohtml -xml -i`, `pd
 |---|---|---|
 | 2014 | wmg2014.pdf | https://web.archive.org/web/20140124011002id_/http://webbmediagroup.com:80/upload/2014-Trend-Report.pdf |
 | 2019 | ss2019a.txt, ss2019b.txt | https://web.archive.org/web/20200830004208id_/https://www.slideshare.net/webbmedia/2019-emerging-tech-trends-report-part-1-of-2-136450918 and https://web.archive.org/web/20190603232304id_/https://www.slideshare.net/AmyWebb33/2019-emerging-tech-trends-report-part-2-of-2 |
-| 2020 | ss2020a.txt | https://web.archive.org/web/20200818165913id_/https://www.slideshare.net/AmyWebb33/future-today-institute-2020-tech-trends-report-231311623 |
+| 2020 | ss2020a.txt; ss2020a_2025.html, ss2020b_2025.html (gunzip) | https://web.archive.org/web/20200818165913id_/https://www.slideshare.net/AmyWebb33/future-today-institute-2020-tech-trends-report-231311623 ; full transcripts: https://web.archive.org/web/20250829074411id_/https://www.slideshare.net/slideshow/future-today-institute-2020-tech-trends-report-231311623/231311623 and https://web.archive.org/web/20260830162850id_/https://www.slideshare.net/slideshow/future-today-institute-2020-tech-trends-report-section-2-of-2/231311737 |
 | 2021 | fti2021.pdf | https://www.dropbox.com/s/fm5c9mlmnwy9kgd/FTI_2021_Tech_Trends_Volume_All.pdf?dl=1 (target of https://2021techtrends.com/Full-Report) |
 | 2022 | fti2022.pdf | https://web.archive.org/web/20220316173530id_/https://futuretodayinstitute.com/mu_uploads/2022/03/FTI_Tech_Trends_2022_All.pdf |
-| 2023 | fti2023_{bio,climate,health,metaverse,news,web3}.pdf | https://web.archive.org/web/<ts>id_/https://futuretodayinstitute.com/wp-content/uploads/2023/02/{Bioengineering,Climate_Energy,Health_Care_Medicine-,Metaverse,News_Information,Web3}.pdf (timestamps in `editions.py`) |
+| 2023 | fti2023_{bio,climate,health,metaverse,news,web3}.pdf | https://web.archive.org/web/<ts>id_/https://futuretodayinstitute.com/wp-content/uploads/2023/02/{Bioengineering,Climate_Energy,Health_Care_Medicine-,Metaverse,News_Information,Web3}.pdf (timestamps in `editions.py`); appended: fti2023_ai.pdf https://web.archive.org/web/20231026215250id_/https://futuretodayinstitute.com/wp-content/uploads/2023/02/Artificial_Intelligence-1.pdf and scribd2023.html (gunzip) https://web.archive.org/web/20260923115621id_/https://www.scribd.com/document/648865649/FTI-2023-Trend-Report |
 | 2024 | fti2024.pdf | https://web.archive.org/web/20240309173748id_/https://futuretodayinstitute.com/wp-content/uploads/2024/03/TR2024_Full-Report_FINAL_LINKED.pdf |
 | 2025 | ftsg2025.pdf | https://web.archive.org/web/20250310153559id_/https://ftsg.com/wp-content/uploads/2025/03/FTSG_2025_TR_FINAL_LINKED.pdf |
 
@@ -29,6 +29,13 @@ python3 parse_2014.py $S/wmg2014.raw.txt
 python3 parse_2019_slideshare.py $S/ss2019b.txt $S/ss2019a.txt
 python3 parse_2020_slideshare.py $S/ss2020a.txt
 python3 verify_quotes.py 2022 $S/fti2022.raw.txt        # per PDF edition; 2023 takes the six raw files
+# 2026-10-02 additions (append only; never re-run build.py 2023 after ids exist):
+python3 scribd_2023.py pages $S/scribd2023.html $S/scribd2023.pages.json
+python3 scribd_2023.py check $S/scribd2023.pages.json     # compare with the six PDF volumes
+python3 append_2023.py $S                               # AI volume PDF + seven Scribd volumes, appended
+python3 parse_2020_full.py extract $S/ss2020a_2025.html $S/ss2020b_2025.html $S/ss2020_full.json
+python3 parse_2020_full.py apply $S/ss2020_full.json --write   # adds quotes to entries without one
+python3 check_quotes.py 2021 2022 2023 2024 2025         # flags suspicious quotes (no writes)
 ```
 
 ## Files
@@ -40,5 +47,9 @@ python3 verify_quotes.py 2022 $S/fti2022.raw.txt        # per PDF edition; 2023 
 - `parse_2014.py`, `parse_2019_slideshare.py`, `parse_2020_slideshare.py`: editions without a usable PDF layout.
 - `verify_quotes.py`: downgrades quotes not found verbatim in the PDF text to `medium`.
 - `fontstats.py`, `dump_toc.py`: diagnostics used to set up `editions.py`.
+- `scribd_2023.py`: 2023 volumes from the Scribd text layer (layout text, no fonts); `append_2023.py` appends the missing 2023 volumes after the existing entries (D15). `build.py` has `carry_sections` for a contents list continued on a second page (used only by the appended AI volume).
+- `parse_2020_full.py`: 2020 quotes from the full SlideShare transcripts.
+- `check_quotes.py`: boilerplate, shared and neighbour-matching quote flags.
+- An entry that is not a trend is marked `not_a_trend: true` (with a note) in place; the normalize adapter skips it.
 
 Re-running a build rewrites the edition file in the same printed order. Do not re-run after claim ids are assigned unless the order is unchanged (D15).

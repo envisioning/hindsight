@@ -47,6 +47,12 @@ function build(spec: Spec): Bundle {
     b.editions.push(edRow(id, d));
     const rows = [...((d.entries ?? []) as Raw[]), ...(spec.extra ? spec.extra(d) : [])];
     rows.forEach((e, i) => {
+      // An entry captured from a contents list that turned out not to be a trend (a section
+      // divider) stays in the raw file so later positions keep their ids (D15); it is not a claim.
+      if (e.not_a_trend === true) {
+        b.skipped["contents entry that is not a trend (section heading or divider)"] = (b.skipped["contents entry that is not a trend (section heading or divider)"] ?? 0) + 1;
+        return;
+      }
       b.drafts.push({ key: spec.key(e), index: i + 1, edition: ed, labels: spec.labels(e), quantityIds: [], claim: spec.claim(e, d, ed) });
     });
   }

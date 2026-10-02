@@ -40,14 +40,19 @@ def main(edition, xml):
 
     entries = []
     skipped = []
+    sections, skip_sec, prev_volume = [], False, None
     for vol in cfg['volumes']:
         if len(vol) == 2:
             (toc_page, volume), stem, url = vol, None, cfg['source_url']
         else:
             stem, toc_page, volume, url = vol
         by_no = pages_of(xml if stem is None else os.path.join(xml, stem + '.xml'))
-        sections = []
-        skip_sec = False
+        # carry_sections: a contents list continued on the next page keeps its open section
+        # (used only for the 2023 AI volume appended later; other editions unchanged)
+        if not (cfg.get('carry_sections') and volume == prev_volume):
+            sections = []
+            skip_sec = False
+        prev_volume = volume
         for e in toc_entries(by_no[toc_page], **cfg.get('toc_kwargs', {})):
             if re.match(r'^scenario', e['label'], re.I):
                 skipped.append(f"{volume}: {e['label']}")
