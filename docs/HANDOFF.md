@@ -28,8 +28,8 @@ A public, citable record of published forecasts (publications x predictions), gr
   - Deloitte TMT 71% (65-76) [57-84] over 234: waves w1 and w2 (2002-2010 recovered from the Internet Archive), D24 passes 1 and 2.
   - MIT TR10 48% (36-60) [31-65] over 65: waves w1 and w2 (availability lines for 2021-2026).
   - The Economist 59% over 127. Pew/Elon 40% over 45. NIC projections 69% over 68. McKinsey and Accenture dated forecasts counts only.
-- **Numeric (D19):** 12 publishers. Matching audit (#53) plus D24 re-checks (#66, #70, #71, bp 2015) and a supplementary audit for rows added later (D46, OECD). Residual errors: bnef-evo 1, all other sources 0; pending re-checks 0. Hit rates: ECB 58%, Fed SEP 51%, EIA 46%, OECD 44% (726 graded, 29 vintages added), World Bank 41%, IMF 41%, BCB 38%, OBR 34%, CBO 31%, IEA 10%; bp and BNEF counts only. Actuals on the forecast's own definition (D38, D39, D41, D42), one-decimal threshold flags.
-- **Trends (D33, D36, D40, D43):** faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 25% (23.7-27.1) over 2,497 after passes 2 and 3 (2020 and 2023 now complete, umbrella pages as trends, 88 capture corrections; 13 rows in `gap`, 2 contested).
+- **Numeric (D19):** 12 publishers. Matching audit (#53) plus D24 re-checks (#66, #70, #71, bp 2015) and a supplementary audit for rows added later (D46, OECD). Residual errors: bnef-evo 1, all other sources 0; pending re-checks 0. Hit rates: ECB 58%, Fed SEP 51%, EIA 46%, OECD 44% (726 graded, 29 vintages added), World Bank 41% (GEP 1991-1998 added from scans, #11), IMF 41%, BCB 38%, OBR 34%, CBO 31%, IEA 10%; bp and BNEF counts only. Actuals on the forecast's own definition (D38, D39, D41, D42), one-decimal threshold flags.
+- **Trends (D33, D36, D40, D43):** faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 23% (21.6-24.8) over 2,748 after passes 2 to 4 (2015, 2020, 2023 complete; 2016, 2017, 2019 partial; umbrella pages as trends, D40; 98 capture corrections, D43; 54 rows in `gap`).
 - **Rankings and scenarios (D31, D32, D34, D45):** Eurasia top risks materialised in 70% of 184, red herrings calm in 68% of 72. WEF 2007-2020 ranked 12 of 51 major events high (23.5%, 14-37) [10-41] after its first audit (48/50). Shell 14 of 51 values covered (27.5%, 17-41); IPCC counts only (10 graded after the matching audit); NIC sets 2 covered, 1 not covered, 3 open (audit 9/9).
 - **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month. `pnpm export` writes the `validation` table (D44, #40) and prints no warnings; no release tagged.
 - **Subjects:** about 5,400. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
@@ -53,8 +53,8 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **#26 / #72** FTSG: 2015-2017 from the SlideShare transcripts, remaining quote corrections, then a D33 pass 4 for rows whose window changed (checkers A/B, adjudicator, audit, `trend-final-d33.mjs`).
-2. **#11** World Bank GEP 1991-1999 from the scanned reports (OCR, every digit verified twice), supplementary audit (D46).
+1. **#73** D33 pipeline: recycled rows skip the rename check (all six trend sources); year tags are weak evidence; sub-item subject mapping.
+2. FTSG (#26) has nothing left to capture with a known source (2008-2013, 2018 not public; 2019 titles only).
 3. **#3** first tagged dataset release: `pnpm export` is clean. Ask MZ before tagging.
 4. **#59** links (needs `OPENROUTER_API_KEY`), then the forecasts block on research pages.
 5. Missing editions with no known source: OECD EO47-59, 61, 69, 71, 73, 82, 91, 92 (#10); Deloitte TMT 2003 (#7); McKinsey 2026 PDF (#27, withdrawn at the origin).
@@ -73,7 +73,8 @@ FTSG umbrella pages with the publisher's year tag and key insight count as trend
 - **A capture marked complete can still miss a contents page.** FTSG 2023 Climate lost its second contents page (53 trends). `scripts/ftsg-tech-trends/check_contents.py` and `check_2023_contents.py` compare contents pages with the capture.
 - **Archive copies at a stable URL can be a different edition.** bp's archived 2015 .xlsx was the 2014 workbook. Check the file's own edition label.
 - **Trend passes:** a later pass supersedes earlier ones for its scope rows (`renames-d33-pass<N>-scope.json`); give the adjudicator the published sibling verdicts, since checkers cannot see earlier passes.
-- **Search budget used:** about 110 WebSearch calls over about 60 agents.
+- **Year tags count labels, not phenomena** (FTSG): a "1st year on the list" tag is weak evidence against a rename.
+- **Search budget used:** about 150 WebSearch calls over about 90 agents.
 
 ## Decisions taken by MZ (2026-10-01, in chat)
 
@@ -95,7 +96,8 @@ Never ask MZ to settle a verdict, a reading, or an audit decision (D20).
 - **Graders cite from memory.** Several graders cited Wikipedia pages without fetching them; the auditors found dead or non-supporting citations. Tell auditors to open every cited URL they rely on.
 - **Pass files:** `final-d20.mjs` reads `adjudicated-d20-pass<N>.json` (D24) and `disputes.json` (D29). Re-checked rows have status `rechecked`.
 - **Numeric audit samples** are fixed (`data/graded/audit/`); `numeric-audit-sample.mjs --check` reports a mismatch after a code fix changes which rows are graded. That is expected: the stored sample governs.
-- **Search budget used:** about 110 WebSearch calls over about 60 agents.
+- **Year tags count labels, not phenomena** (FTSG): a "1st year on the list" tag is weak evidence against a rename.
+- **Search budget used:** about 150 WebSearch calls over about 90 agents.
 
 ## Traps
 
