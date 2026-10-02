@@ -15,7 +15,7 @@
 - 2020: complete, 415 entries, 394 with quote (quotes added 2026-10-02 from the full SlideShare transcripts of both publisher sections; 15 umbrella pages appended 2026-10-02, D40)
 - 2021: complete, 504 entries, 476 with quote (2026-10-01; 10 umbrella pages appended 2026-10-02, D40)
 - 2022: complete, 587 entries, 556 with quote (2026-10-01)
-- 2023: complete, 621 entries (257 first capture + 363 appended 2026-10-02: AI volume PDF 104, seven volumes from the archived Scribd text layer of the full report 259; + 1 umbrella page, D40), 598 with quote (2026-10-02)
+- 2023: complete, 674 entries (257 first capture + 363 appended 2026-10-02: AI volume PDF 104, seven volumes from the archived Scribd text layer of the full report 259; + 1 umbrella page, D40; + 53 from the contents audit of all 14 volumes 2026-10-02: 49 Climate & Energy trends from its unread second contents page, 4 others), 651 with quote; cut labels and suspect headings listed in INDEX.md Known issues, not edited (2026-10-02)
 - 2024: complete, 706 entries, 699 with quote (2026-10-01)
 - 2025: complete, 676 entries, 670 with quote (2026-10-01)
 - 2026: missing (no Tech Trends Report: series retired, replaced by Convergence Outlook 2026) (2026-10-01)
