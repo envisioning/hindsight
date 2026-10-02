@@ -4,31 +4,32 @@
  "kappa": 0.7387,
  "n": 438,
  "counts": {
-  "hit": 165,
-  "miss": 40,
+  "hit": 166,
+  "miss": 41,
   "partial": 27,
   "contested": 7,
-  "ungradable": 197,
-  "unfalsifiable": 2
+  "ungradable": 194,
+  "unfalsifiable": 3
  },
  "hit_rate": {
-  "hits": 165,
-  "of_graded_hit_partial_miss": 232,
-  "rate": 0.7112,
+  "hits": 166,
+  "of_graded_hit_partial_miss": 234,
+  "rate": 0.7094,
   "wilson95": [
-   0.65,
-   0.766
+   0.648,
+   0.764
   ],
   "audit_adjusted95": [
-   0.57,
-   0.846
+   0.568,
+   0.844
   ]
  },
- "hit_or_partial_rate": 0.8276,
+ "hit_or_partial_rate": 0.8248,
  "adjudicated": 68,
- "rechecked": 29,
+ "rechecked": 35,
  "recheck_passes": [
-  "adjudicated-d20-pass1.json"
+  "adjudicated-d20-pass1.json",
+  "adjudicated-d20-pass2.json"
  ],
  "audit": {
   "sample": 100,
@@ -497,6 +498,15 @@
    "status": "audited"
   },
   {
+   "id": "deloitte-tmt-predictions-2006-015",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The definitional gap both graders named is narrower than they thought: the chapter's Figure 3 is titled 'Global console game sales' and sourced to Screen Digest, 'Games Software Publishing - Strategies for Success' (November 2005), so the $23bn is Screen Digest's console game (software) series. No public 2006 actual on that definition was found: Screen Digest figures sit in paid reports; US-only NPD figures and all-platform retail totals (hardware plus software, PC, online) are different quantities (D23). Looked for: Screen Digest 2006/2007 console software press figures, DFC Intelligence, ESA/NPD, PwC outlook. One web search, plus the Deloitte PDF opened. Stays ungradable.",
+   "pass": 2
+  },
+  {
    "id": "deloitte-tmt-predictions-2006-016",
    "verdict": "hit",
    "status": "audited"
@@ -799,12 +809,30 @@
    "reason": "The quote is one of two scenarios, but the chapter leans: 'service providers may be better able to weather the storm, at least in 2008', 'service revenue growth may hold steady', equipment manufacturers harder hit. Operators' 2008 results held: AT&T revenue $118.9bn (2007) to $124.0bn (2008), net income $11.95bn to $12.87bn; world mobile subscriptions grew by about 660 million. Grader B's stock-price reading is not the chapter's measure (it says operators' stocks 'may be seen as secure', i.e. relative), so the operating reading dominates. Hit, medium confidence."
   },
   {
+   "id": "deloitte-tmt-predictions-2008-022",
+   "verdict": "unfalsifiable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "A measure exists, so not ungradable: Berg Insight counts cellular M2M connections (81.4 million at end-2010, up 46% year on year, so about 56 million at end-2009), against 662 million net new mobile subscriptions worldwide in 2008 (ITU, cited by grader B). Machines were at most a few percent of 2008 subscription growth, so read as a forecast it would be a miss. But the sentence is a conditional possibility: hedge word 'could', conditioned on 'sufficient collaboration and focus', and the chapter's bottom line frames machines as 'the major opportunity', not an expected outcome. Under D30 (and D27) a possibility-only claim is unfalsifiable: both outcomes agree with it. This differs from the 'may' claims graded elsewhere in this source (for example 2009-006), which state an expected outcome without a condition.",
+   "pass": 2
+  },
+  {
    "id": "deloitte-tmt-predictions-2008-023",
    "verdict": "hit",
    "status": "adjudicated",
    "graderA": "hit",
    "graderB": "ungradable",
    "reason": "Observable by who holds the paying customers. Paid VoIP went to incumbents: Comcast's VoIP service made it the third-largest US home telephone provider, while Skype (the leading pure-play) remained a low-revenue business sold to Microsoft in 2011, a trade sale as the chapter advised. Mobile broadband went to LTE run by incumbent operators, not WiMAX entrants. Grader B's 'no horizon' objection: the chapter states a present-tense pattern for 2008 onward and the record is clear. Hit, medium confidence."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-024",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The graded part is usage frequency among GPS-phone owners. The nearest public measure is comScore M:Metrics (July 2008): 8% of US and 3% of European mobile subscribers accessed maps on the phone in the three months to May 2008, US up 82% and Europe up 49% year on year, mostly via the browser and for driving directions. Its base is all subscribers, not GPS-phone owners, the leading US device (the original iPhone) had no GPS, and it gives reach, not frequency; using it would grade a different quantity (D23). Looked for 2008 comScore, Nielsen Mobile, Berg Insight and J.D. Power usage figures among GPS-handset owners; none found in public. Stays ungradable.",
+   "pass": 2
   },
   {
    "id": "deloitte-tmt-predictions-2008-025",
@@ -908,6 +936,24 @@
    "reason": "The quantity is the share of unbranded/little-known brands in technology purchases in 2009; no public series was found. Grader A's evidence is that Vizio became North America's largest LCD TV seller by volume in 2007, before the target year and by then not an unknown brand; netbooks came mostly from established brands (Asus, Acer). Neither tests a 2009 shift. Ungradable."
   },
   {
+   "id": "deloitte-tmt-predictions-2009-013",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Both graders read the claim as e-discovery revenue. The chapter is about the volume of lawsuits over digital matters (privacy, product claims, RSI, IP and copyright class actions), not about electronic discovery services, so e-discovery revenue is a different quantity (D23). For the record, on the graders' reading the Socha-Gelbmann surveys give 2007 commercial e-discovery revenue of $2.794bn (with a pre-recession projection of $4.051bn for 2009) and 2009 revenue of about $2.8bn: flat rather than falling, which a 'recession-proof' reading would call a hit and a 'kept growing' reading a stall; that reading is not graded. No public series counts digital-related litigation across these case types for 2008 and 2009. Looked for: Socha-Gelbmann public results 2008 to 2010, litigation trend surveys, patent and copyright filing counts (each covers only one slice). Stays ungradable.",
+   "pass": 2
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-014",
+   "verdict": "hit",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Grader A named the right measure (McKinsey's 2009 Web 2.0 survey) but could not open it. Opened via the Internet Archive: the survey (fielded June 2009, about 1,700 executives) shows, in Exhibit 2, internal use of social networking by 42% of respondents at companies reporting benefits and 30% at companies reporting none, among only the 1,032 respondents whose companies use Web 2.0 internally; across all respondents that is well under half. McKinsey's 2010 survey reports 'significant increases' in the share of companies using social networking, to 40% (internal and external use), so 2009 was below 40% and rising. Growth in 2009 and adoption by a minority both held as stated. Hit. Grader B's Inc. 500 figure measured external social media, not internal networks.",
+   "pass": 2
+  },
+  {
    "id": "deloitte-tmt-predictions-2009-015",
    "verdict": "miss",
    "status": "audited"
@@ -940,6 +986,15 @@
    "graderA": "miss",
    "graderB": "ungradable",
    "reason": "The chapter's own test is that megastars 'may have to play arenas, not stadiums'. In 2009 the opposite happened: U2's 360 Tour opened in stadiums, sold 650,000 tickets in seven hours, and ended as the highest-grossing tour ever ($736m, 7.27 million tickets). Grader B looked for a premium series; the chapter's stadium-versus-arena test is observable. Miss."
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-021",
+   "verdict": "miss",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Two public measures, in the two largest markets for the chapter's argument. UK: Ofcom's Communications Market Report 2010 (Figure 1.2) puts WiFi radio take-up at 2% of individuals in Q1 2010, while 15% listened to radio via the internet monthly, so sets were a small share of the audience. US: the Arbitron/Edison Infinite Dial 2010 has weekly online radio at 17% in both the early-2009 and early-2010 surveys (no growth over 2009), listening going to Internet-only services (Pandora) and computers, and a radio-like Internet radio device appearing only as an interest item (18% 'very interested'). WiFi sets were neither the biggest impetus nor a visible one in 2009. Miss. 'May' is Deloitte's usual pre-2010 voice for an expected outcome in this source and is graded as such (as in 2009-006).",
+   "pass": 2
   },
   {
    "id": "deloitte-tmt-predictions-2009-022",

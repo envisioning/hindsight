@@ -1,0 +1,157 @@
+{
+ "rule": "D16",
+ "role": "re-check pass 2 (D24): wave-2 ungradable calls made when a page was blocked or the search budget ran out",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2006-015",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "Quantitative (D16/D10 rule): global console game sales reach US$23 billion in 2006, on the definition of the report's own Figure 3 (Screen Digest, global console game sales).",
+   "reason": "The definitional gap both graders named is narrower than they thought: the chapter's Figure 3 is titled 'Global console game sales' and sourced to Screen Digest, 'Games Software Publishing - Strategies for Success' (November 2005), so the $23bn is Screen Digest's console game (software) series. No public 2006 actual on that definition was found: Screen Digest figures sit in paid reports; US-only NPD figures and all-platform retail totals (hardware plus software, PC, online) are different quantities (D23). Looked for: Screen Digest 2006/2007 console software press figures, DFC Intelligence, ESA/NPD, PwC outlook. One web search, plus the Deloitte PDF opened. Stays ungradable.",
+   "fetched": "Deloitte Media Predictions 2006 PDF (Internet Archive), page 8, Figure 3 caption and source.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20060226070224/http://www.deloitte.com:80/dtt/cda/doc/content/TMT%20Media%20Predictions%202006_FINAL_FA_LOW%20RES.pdf#page=8",
+     "title": "Deloitte TMT Trends: Predictions 2006, Media, 'Video game sector enters next generation'",
+     "date": "2006-01",
+     "shows": "The $23bn sits beside Figure 3 'Global console game sales' ($m, USA/Japan/Europe/ROW, 2000-2006), source Screen Digest, Games Software Publishing, November 2005: the forecast is Screen Digest's console software series."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-022",
+   "earlier": "ungradable_agreed",
+   "verdict": "unfalsifiable",
+   "reading": "Possibility claim: 'With sufficient collaboration and focus, the mobile industry could make 2008 the year in which machines finally become a driver of growth.'",
+   "reason": "A measure exists, so not ungradable: Berg Insight counts cellular M2M connections (81.4 million at end-2010, up 46% year on year, so about 56 million at end-2009), against 662 million net new mobile subscriptions worldwide in 2008 (ITU, cited by grader B). Machines were at most a few percent of 2008 subscription growth, so read as a forecast it would be a miss. But the sentence is a conditional possibility: hedge word 'could', conditioned on 'sufficient collaboration and focus', and the chapter's bottom line frames machines as 'the major opportunity', not an expected outcome. Under D30 (and D27) a possibility-only claim is unfalsifiable: both outcomes agree with it. This differs from the 'may' claims graded elsewhere in this source (for example 2009-006), which state an expected outcome without a condition.",
+   "fetched": "Deloitte Telecommunications Predictions 2008 PDF chapter (Internet Archive); Telecompaper report of Berg Insight's M2M count.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20081209003407/http://www.deloitte.com/dtt/cda/doc/content/Telecommunicationspredictions.pdf#page=10",
+     "title": "Deloitte TMT Trends: Telecommunications Predictions 2008, 'How to capitalize on the $10 mobile phone'",
+     "date": "2008-01",
+     "shows": "Claim is conditional ('With sufficient collaboration and focus ... could'); bottom line: the major opportunity for the $10 phone 'may be the market for machines'."
+    },
+    {
+     "url": "https://www.telecompaper.com/news/mobile-network-connections-for-m2m-communication-up-46--782114",
+     "title": "Mobile network connections for M2M communication up 46% (Telecompaper, Berg Insight)",
+     "date": "2011-01-31",
+     "shows": "81.4 million mobile M2M connections worldwide at end-2010, up 46% year on year (about 56 million at end-2009)."
+    },
+    {
+     "url": "https://www.itu.int/en/ITU-D/Statistics/Documents/facts/ITU_regional_global_Key_ICT_indicator_aggregates_Nov_2025.xlsx",
+     "title": "ITU regional and global key ICT indicator aggregates (Nov 2025), as cited by grader B",
+     "date": "2025-11",
+     "shows": "Mobile subscriptions grew by 662 million in 2008."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-024",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In 2008 more GPS-enabled phones ship, but beyond the initial novelty their owners rarely use GPS.",
+   "reason": "The graded part is usage frequency among GPS-phone owners. The nearest public measure is comScore M:Metrics (July 2008): 8% of US and 3% of European mobile subscribers accessed maps on the phone in the three months to May 2008, US up 82% and Europe up 49% year on year, mostly via the browser and for driving directions. Its base is all subscribers, not GPS-phone owners, the leading US device (the original iPhone) had no GPS, and it gives reach, not frequency; using it would grade a different quantity (D23). Looked for 2008 comScore, Nielsen Mobile, Berg Insight and J.D. Power usage figures among GPS-handset owners; none found in public. Stays ungradable.",
+   "fetched": "Deloitte Telecommunications Predictions 2008 chapter (Internet Archive); comScore press release July 2008.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20081209003407/http://www.deloitte.com/dtt/cda/doc/content/Telecommunicationspredictions.pdf#page=13",
+     "title": "Deloitte TMT Trends: Telecommunications Predictions 2008, 'Giving mobile GPS direction'",
+     "date": "2008-01",
+     "shows": "GPS phones may ship in growing numbers in 2008 but, aside from the initial novelty, may not be used very often."
+    },
+    {
+     "url": "https://www.comscore.com/Insights/Press-Releases/2008/07/US-and-UK-Mobile-Map-Use",
+     "title": "Are We There Yet? comScore M:Metrics Reports Mobile Map Use Grows 82 Percent in United States, 49 Percent in Europe",
+     "date": "2008-07",
+     "shows": "8% of US and 3% of European mobile subscribers accessed maps on the phone (3 months to May 2008); base is all subscribers, not GPS-phone owners; no usage frequency."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-013",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "In 2009 digital litigation (lawsuits over digital products, personal data, digital rights and IP infringement) proves recession-proof or counter-cyclical.",
+   "reason": "Both graders read the claim as e-discovery revenue. The chapter is about the volume of lawsuits over digital matters (privacy, product claims, RSI, IP and copyright class actions), not about electronic discovery services, so e-discovery revenue is a different quantity (D23). For the record, on the graders' reading the Socha-Gelbmann surveys give 2007 commercial e-discovery revenue of $2.794bn (with a pre-recession projection of $4.051bn for 2009) and 2009 revenue of about $2.8bn: flat rather than falling, which a 'recession-proof' reading would call a hit and a 'kept growing' reading a stall; that reading is not graded. No public series counts digital-related litigation across these case types for 2008 and 2009. Looked for: Socha-Gelbmann public results 2008 to 2010, litigation trend surveys, patent and copyright filing counts (each covers only one slice). Stays ungradable.",
+   "fetched": "Deloitte Technology Predictions 2009 chapter (Internet Archive); Socha-Gelbmann 2008 survey public results and 2009 survey table of contents (Internet Archive); Comstock's article citing the 2010 Socha-Gelbmann survey.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20110403235528/http://www.deloitte.com/assets/Dcom-Global/Local%20Assets/Documents/dtt_2009predictions_technology.pdf#page=18",
+     "title": "Deloitte TMT Trends: Technology Predictions 2009, 'The digital ambulance chaser gets supercharged'",
+     "date": "2009-01",
+     "shows": "Chapter is about lawsuits over digital products, personal data and IP (possibly hundreds of copyright class actions), not e-discovery services."
+    },
+    {
+     "url": "https://web.archive.org/web/20090422045622/http://www.sochaconsulting.com:80/2008survey/results.php",
+     "title": "2008 Socha-Gelbmann Electronic Discovery Survey, public results",
+     "date": "2008",
+     "shows": "2007 commercial e-discovery revenue $2.794bn, up 43%; projected $3.381bn (2008), $4.051bn (2009)."
+    },
+    {
+     "url": "https://www.comstocksmag.com/longread/computing-litigation",
+     "title": "Computing Litigation (Comstock's)",
+     "date": "2011-05-01",
+     "shows": "Socha-Gelbmann: e-discovery firms' market value reached $2.8bn in 2009 (a 'best guess', collection only)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-014",
+   "earlier": "ungradable_agreed",
+   "verdict": "hit",
+   "reading": "State of affairs (D30): in 2009 enterprise social networking grows, but its adoption stays within a minority of (leading-edge) firms.",
+   "reason": "Grader A named the right measure (McKinsey's 2009 Web 2.0 survey) but could not open it. Opened via the Internet Archive: the survey (fielded June 2009, about 1,700 executives) shows, in Exhibit 2, internal use of social networking by 42% of respondents at companies reporting benefits and 30% at companies reporting none, among only the 1,032 respondents whose companies use Web 2.0 internally; across all respondents that is well under half. McKinsey's 2010 survey reports 'significant increases' in the share of companies using social networking, to 40% (internal and external use), so 2009 was below 40% and rising. Growth in 2009 and adoption by a minority both held as stated. Hit. Grader B's Inc. 500 figure measured external social media, not internal networks.",
+   "fetched": "McKinsey 2009 survey page and Exhibit 2 image (mckinsey.com via Internet Archive, 2023 capture); McKinsey Quarterly 2009 original page (Internet Archive); McKinsey 2010 survey page (Internet Archive).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20230105084449/https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/how-companies-are-benefiting-from-web-20-mckinsey-global-survey-results",
+     "title": "How companies are benefiting from Web 2.0: McKinsey Global Survey results (Exhibit 2 'A mix of technologies')",
+     "date": "2009-09",
+     "shows": "Internal use of social networking: 42% (companies reporting a benefit) and 30% (no benefit) of the 1,032 respondents using Web 2.0 internally, out of nearly 1,700 surveyed."
+    },
+    {
+     "url": "https://web.archive.org/web/20130316084444/http://www.mckinseyquarterly.com/How_companies_are_benefiting_from_Web_20_McKinsey_Global_Survey_Results_2432",
+     "title": "How companies are benefiting from Web 2.0 (McKinsey Quarterly, original page)",
+     "date": "2009-09",
+     "shows": "Nearly 1,700 executives surveyed; 69% report measurable benefits from Web 2.0."
+    },
+    {
+     "url": "https://web.archive.org/web/2022/https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-rise-of-the-networked-enterprise-web-20-finds-its-payday",
+     "title": "The rise of the networked enterprise: Web 2.0 finds its payday (McKinsey, 2010 survey)",
+     "date": "2010-12",
+     "shows": "'Significant increases' in the share of companies using social networking, to 40% in 2010: below half, and up from 2009."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-021",
+   "earlier": "ungradable_agreed",
+   "verdict": "miss",
+   "reading": "State of affairs (D30): in 2009 the biggest driver of Internet radio listening is the portable, easy-to-use WiFi radio set.",
+   "reason": "Two public measures, in the two largest markets for the chapter's argument. UK: Ofcom's Communications Market Report 2010 (Figure 1.2) puts WiFi radio take-up at 2% of individuals in Q1 2010, while 15% listened to radio via the internet monthly, so sets were a small share of the audience. US: the Arbitron/Edison Infinite Dial 2010 has weekly online radio at 17% in both the early-2009 and early-2010 surveys (no growth over 2009), listening going to Internet-only services (Pandora) and computers, and a radio-like Internet radio device appearing only as an interest item (18% 'very interested'). WiFi sets were neither the biggest impetus nor a visible one in 2009. Miss. 'May' is Deloitte's usual pre-2010 voice for an expected outcome in this source and is graded as such (as in 2009-006).",
+   "fetched": "Deloitte Media Predictions 2009 chapter (Internet Archive); Infinite Dial 2010 slides (Edison Research PDF via Internet Archive); Ofcom CMR 2010 PDF.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20110129003927/http://www.deloitte.com/assets/Dcom-Shared%20Assets/Documents/dtt_2009predictions_media.pdf#page=16",
+     "title": "Deloitte TMT Trends: Media Predictions 2009, 'The dawn of WiFi radio'",
+     "date": "2009-01",
+     "shows": "The biggest impetus for Internet radio in 2009 may be a portable, easy-to-use WiFi radio set."
+    },
+    {
+     "url": "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/cmr/cmr10/cmr_2010_final.pdf#page=19",
+     "title": "Ofcom, The Communications Market Report 2010, Figure 1.2 Digital technology adoption Q1 2009 and Q1 2010",
+     "date": "2010-08-19",
+     "shows": "WiFi radio take-up 2% in Q1 2010; elsewhere 15% of respondents listen to radio via the internet monthly, 9% weekly."
+    },
+    {
+     "url": "https://web.archive.org/web/20220529075729/http://www.edisonresearch.com/wp-content/uploads/2015/08/infinite_dial_presentation_2010_final.pdf",
+     "title": "Arbitron/Edison Research, The Infinite Dial 2010 (survey of 1,753, February 2010)",
+     "date": "2010-04-08",
+     "shows": "US weekly online radio 17% in 2009 and 2010 (13% in 2008); a radio-like Internet radio device only an interest item (18% very interested); at-work online listening mostly on computers."
+    }
+   ]
+  }
+ ]
+}
