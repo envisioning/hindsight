@@ -4,43 +4,43 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 
 | Source | Status | Editions | Claims | Skipped rows | Natural key (ids.json) | Time |
 |---|---|---|---|---|---|---|
-| envisioning-technology | normalized | 2 | 229 | 0 | raw placement id (et-<edition>-<nnn>); the id number is kept | 2026-10-02T14:57:30Z |
-| envisioning-education | normalized | 1 | 42 | 0 | raw placement id (edu-<edition>-<nnn>); the id number is kept | 2026-10-02T14:57:30Z |
-| envisioning-health | normalized | 1 | 55 | 0 | raw placement id (health-<edition>-<nnn>); the id number is kept | 2026-10-02T14:57:30Z |
-| envisioning-horizons | normalized | 1 | 88 | 0 | raw placement id (hz-<edition>-<nnn>); the id number is kept | 2026-10-02T14:57:30Z |
-| gartner-hype-cycle | normalized | 31 | 941 | 0 | label (exact, as captured); unique within an edition | 2026-10-02T14:57:30Z |
-| mit-tr-10-breakthrough | normalized | 25 | 254 | 0 | label (exact, as captured); unique within an edition | 2026-10-02T14:57:30Z |
-| gartner-strategic-predictions | normalized | 21 | 224 | 0 | kind + quote with case, spaces and punctuation removed | 2026-10-02T14:57:30Z |
-| deloitte-tmt-predictions | normalized | 25 | 454 | 0 | section + quote with case, spaces and punctuation removed | 2026-10-02T14:57:30Z |
-| idc-futurescape | normalized | 12 | 204 | 0 | futurescape + quote with case, spaces and punctuation removed | 2026-10-02T14:57:30Z |
-| ark-big-ideas | normalized | 10 | 262 | 0 | metric + target_year + horizon + value + unit | 2026-10-02T14:57:30Z |
-| bnef-evo | normalized | 11 | 58 | 8 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T14:57:30Z |
-| wef-global-risks | normalized | 21 | 355 | 0 | ranking + rank + label | 2026-10-02T14:57:31Z |
-| imf-weo | normalized | 73 | 1560 | 0 | economy name + target_year + horizon | 2026-10-02T14:57:31Z |
-| iea-weo | normalized | 26 | 349 | 86 base-year row (historical value, not a projection) | technology + metric + target_year + scenario; edition-level quotes: quote text | 2026-10-02T14:57:31Z |
-| eia-aeo | normalized | 43 | 9390 | 0 | series + unit + target_year + dollar_year | 2026-10-02T14:57:31Z |
-| bcb-focus | normalized | 108 | 811 | 0 | indicator label + target_year + horizon | 2026-10-02T14:57:31Z |
-| oecd-economic-outlook | normalized | 53 | 762 | 0 | economy name + target_year + horizon | 2026-10-02T14:57:31Z |
-| world-bank-gep | normalized | 49 | 834 | 0 | economy name + target_year + horizon | 2026-10-02T14:57:31Z |
-| fed-sep | normalized | 76 | 1541 | 553 median computed by Hindsight from individual projections (not published at the time) | variable + statistic + horizon + target_year | 2026-10-02T14:57:31Z |
-| ecb-projections | normalized | 104 | 566 | 0 | variable + statistic + horizon + target_year | 2026-10-02T14:57:31Z |
-| cbo-projections | normalized | 112 | 1557 | 0 | metric + horizon + target_year + target_period | 2026-10-02T14:57:31Z |
-| obr-forecasts | normalized | 33 | 892 | 28 memo row (restated or supplementary forecast, not the headline forecast of this EFO) | metric + unit + horizon + target_year | 2026-10-02T14:57:31Z |
-| bp-energy-outlook | normalized | 14 | 239 | 19 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T14:57:31Z |
-| eurasia-top-risks | normalized | 20 | 279 | 0 | ranking + label | 2026-10-02T14:57:31Z |
-| economist-world-ahead | normalized | 40 | 154 | 0 | kind + subject + quote with case, spaces and punctuation removed | 2026-10-02T14:57:31Z |
-| kurzweil | normalized | 5 | 287 | 0 | target_year + quote (or paraphrase) with case, spaces and punctuation removed | 2026-10-02T14:57:32Z |
-| pew-elon-imagining | normalized | 34 | 67 | 0 | label | 2026-10-02T14:57:32Z |
-| mckinsey-tech-trends | normalized | 6 | 148 | 0 | kind + label + quote with case and punctuation removed | 2026-10-02T14:57:32Z |
-| accenture-tech-vision | normalized | 15 | 96 | 0 | entries: label; 2017 predictions box: prediction + quote with case and punctuation removed | 2026-10-02T14:57:32Z |
-| deloitte-tech-trends | normalized | 17 | 162 | 0 | section + label | 2026-10-02T14:57:32Z |
-| trendwatching | normalized | 19 | 186 | 0 | section + label | 2026-10-02T14:57:32Z |
-| a16z-big-ideas | normalized | 4 | 189 | 0 | label + author | 2026-10-02T14:57:32Z |
-| ftsg-tech-trends | normalized | 11 | 4183 | 15 contents entry that is not a trend (section heading or divider) | section + subsection + label + rank | 2026-10-02T14:57:32Z |
-| nic-global-trends | normalized | 7 | 137 | 0 | kind + label + quote with case and punctuation removed | 2026-10-02T14:57:32Z |
-| shell-scenarios | normalized | 17 | 340 | 0 | kind + scenario or label + metric + target_year | 2026-10-02T14:57:32Z |
-| ipcc-pathways | normalized | 5 | 205 | 0 | kind + scenario + metric + target_year | 2026-10-02T14:57:32Z |
-| crowd-baseline | captured, no normalize adapter yet |  |  |  |  | 2026-10-02T14:57:36Z |
+| envisioning-technology | normalized | 2 | 229 | 0 | raw placement id (et-<edition>-<nnn>); the id number is kept | 2026-10-02T15:30:35Z |
+| envisioning-education | normalized | 1 | 42 | 0 | raw placement id (edu-<edition>-<nnn>); the id number is kept | 2026-10-02T15:30:35Z |
+| envisioning-health | normalized | 1 | 55 | 0 | raw placement id (health-<edition>-<nnn>); the id number is kept | 2026-10-02T15:30:35Z |
+| envisioning-horizons | normalized | 1 | 88 | 0 | raw placement id (hz-<edition>-<nnn>); the id number is kept | 2026-10-02T15:30:35Z |
+| gartner-hype-cycle | normalized | 31 | 941 | 0 | label (exact, as captured); unique within an edition | 2026-10-02T15:30:35Z |
+| mit-tr-10-breakthrough | normalized | 25 | 254 | 0 | label (exact, as captured); unique within an edition | 2026-10-02T15:30:35Z |
+| gartner-strategic-predictions | normalized | 21 | 224 | 0 | kind + quote with case, spaces and punctuation removed | 2026-10-02T15:30:35Z |
+| deloitte-tmt-predictions | normalized | 25 | 454 | 0 | section + quote with case, spaces and punctuation removed | 2026-10-02T15:30:35Z |
+| idc-futurescape | normalized | 12 | 204 | 0 | futurescape + quote with case, spaces and punctuation removed | 2026-10-02T15:30:35Z |
+| ark-big-ideas | normalized | 10 | 262 | 0 | metric + target_year + horizon + value + unit | 2026-10-02T15:30:35Z |
+| bnef-evo | normalized | 11 | 58 | 8 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T15:30:35Z |
+| wef-global-risks | normalized | 21 | 355 | 0 | ranking + rank + label | 2026-10-02T15:30:35Z |
+| imf-weo | normalized | 73 | 1560 | 0 | economy name + target_year + horizon | 2026-10-02T15:30:35Z |
+| iea-weo | normalized | 26 | 349 | 86 base-year row (historical value, not a projection) | technology + metric + target_year + scenario; edition-level quotes: quote text | 2026-10-02T15:30:35Z |
+| eia-aeo | normalized | 43 | 9390 | 0 | series + unit + target_year + dollar_year | 2026-10-02T15:30:35Z |
+| bcb-focus | normalized | 108 | 811 | 0 | indicator label + target_year + horizon | 2026-10-02T15:30:35Z |
+| oecd-economic-outlook | normalized | 53 | 762 | 0 | economy name + target_year + horizon | 2026-10-02T15:30:35Z |
+| world-bank-gep | normalized | 49 | 834 | 0 | economy name + target_year + horizon | 2026-10-02T15:30:35Z |
+| fed-sep | normalized | 76 | 1541 | 553 median computed by Hindsight from individual projections (not published at the time) | variable + statistic + horizon + target_year | 2026-10-02T15:30:35Z |
+| ecb-projections | normalized | 104 | 566 | 0 | variable + statistic + horizon + target_year | 2026-10-02T15:30:35Z |
+| cbo-projections | normalized | 112 | 1557 | 0 | metric + horizon + target_year + target_period | 2026-10-02T15:30:35Z |
+| obr-forecasts | normalized | 33 | 892 | 28 memo row (restated or supplementary forecast, not the headline forecast of this EFO) | metric + unit + horizon + target_year | 2026-10-02T15:30:36Z |
+| bp-energy-outlook | normalized | 14 | 239 | 19 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T15:30:36Z |
+| eurasia-top-risks | normalized | 20 | 279 | 0 | ranking + label | 2026-10-02T15:30:36Z |
+| economist-world-ahead | normalized | 40 | 154 | 0 | kind + subject + quote with case, spaces and punctuation removed | 2026-10-02T15:30:36Z |
+| kurzweil | normalized | 5 | 287 | 0 | target_year + quote (or paraphrase) with case, spaces and punctuation removed | 2026-10-02T15:30:36Z |
+| pew-elon-imagining | normalized | 34 | 67 | 0 | label | 2026-10-02T15:30:36Z |
+| mckinsey-tech-trends | normalized | 6 | 148 | 0 | kind + label + quote with case and punctuation removed | 2026-10-02T15:30:36Z |
+| accenture-tech-vision | normalized | 15 | 96 | 0 | entries: label; 2017 predictions box: prediction + quote with case and punctuation removed | 2026-10-02T15:30:36Z |
+| deloitte-tech-trends | normalized | 17 | 162 | 0 | section + label | 2026-10-02T15:30:36Z |
+| trendwatching | normalized | 19 | 186 | 0 | section + label | 2026-10-02T15:30:36Z |
+| a16z-big-ideas | normalized | 4 | 189 | 0 | label + author | 2026-10-02T15:30:36Z |
+| ftsg-tech-trends | normalized | 11 | 4180 | 18 contents entry that is not a trend (section heading or divider) | section + subsection + label + rank | 2026-10-02T15:30:36Z |
+| nic-global-trends | normalized | 7 | 137 | 0 | kind + label + quote with case and punctuation removed | 2026-10-02T15:30:36Z |
+| shell-scenarios | normalized | 17 | 340 | 0 | kind + scenario or label + metric + target_year | 2026-10-02T15:30:36Z |
+| ipcc-pathways | normalized | 5 | 205 | 0 | kind + scenario + metric + target_year | 2026-10-02T15:30:36Z |
+| crowd-baseline | captured, no normalize adapter yet |  |  |  |  | 2026-10-02T15:30:39Z |
 
 ## Hype Cycle phase cross-check
 
