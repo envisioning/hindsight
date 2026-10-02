@@ -17,46 +17,46 @@
  "capture_gaps_before": [
   2019
  ],
- "n": 4180,
+ "n": 4185,
  "counts": {
-  "renamed": 540,
-  "persisted": 1562,
+  "renamed": 558,
+  "persisted": 1565,
   "gap": 54,
   "recycled": 8,
-  "faded": 635,
+  "faded": 619,
   "open": 1381
  },
  "shares": {
   "persisted": {
-   "k": 1562,
-   "n": 2745,
-   "share": 0.569,
+   "k": 1565,
+   "n": 2750,
+   "share": 0.5691,
    "wilson95": [
     0.55,
     0.587
    ]
   },
   "renamed": {
-   "k": 540,
-   "n": 2745,
-   "share": 0.1967,
+   "k": 558,
+   "n": 2750,
+   "share": 0.2029,
    "wilson95": [
-    0.182,
-    0.212
+    0.188,
+    0.218
    ]
   },
   "faded": {
-   "k": 635,
-   "n": 2745,
-   "share": 0.2313,
+   "k": 619,
+   "n": 2750,
+   "share": 0.2251,
    "wilson95": [
-    0.216,
-    0.247
+    0.21,
+    0.241
    ]
   },
   "recycled": {
    "k": 8,
-   "n": 2745,
+   "n": 2750,
    "share": 0.0029,
    "wilson95": [
     0.001,
@@ -81,50 +81,53 @@
  },
  "pass2": {
   "scope": 1191,
-  "superseded": 300,
+  "superseded": 246,
   "audit": {
    "seed": "d11:ftsg-tech-trends:d33:pass2",
    "sample": 50,
-   "audited": 12,
-   "confirmed": 11,
+   "audited": 11,
+   "confirmed": 10,
    "corrected": 1,
    "contested": 0,
-   "error_rate": 0.083,
+   "error_rate": 0.091,
    "resolved_by_gap_rule": 0,
-   "residual_error_rate": 0.083,
-   "superseded_by_pass3": 34,
-   "superseded_by_pass4": 4
+   "residual_error_rate": 0.091,
+   "superseded_by_pass3": 29,
+   "superseded_by_pass4": 3,
+   "superseded_by_pass7": 7
   }
  },
  "pass3": {
   "scope": 628,
-  "superseded": 567,
+  "superseded": 494,
   "audit": {
    "seed": "d11:ftsg-tech-trends:d33:pass3",
    "sample": 50,
-   "audited": 47,
-   "confirmed": 46,
+   "audited": 41,
+   "confirmed": 40,
    "corrected": 1,
    "contested": 0,
-   "error_rate": 0.021,
+   "error_rate": 0.024,
    "resolved_by_gap_rule": 0,
-   "residual_error_rate": 0.021,
-   "superseded_by_pass4": 3
+   "residual_error_rate": 0.024,
+   "superseded_by_pass4": 3,
+   "superseded_by_pass7": 6
   }
  },
  "pass4": {
   "scope": 166,
-  "superseded": 42,
+  "superseded": 39,
   "audit": {
    "seed": "d11:ftsg-tech-trends:d33:pass4",
    "sample": 50,
-   "audited": 50,
-   "confirmed": 48,
+   "audited": 48,
+   "confirmed": 46,
    "corrected": 1,
    "contested": 1,
-   "error_rate": 0.04,
+   "error_rate": 0.042,
    "resolved_by_gap_rule": 1,
-   "residual_error_rate": 0.02
+   "residual_error_rate": 0.021,
+   "superseded_by_pass7": 2
   }
  },
  "pass5": {
@@ -133,13 +136,14 @@
   "audit": {
    "seed": "d11:ftsg-tech-trends:d33:pass5",
    "sample": 20,
-   "audited": 20,
-   "confirmed": 20,
+   "audited": 19,
+   "confirmed": 19,
    "corrected": 0,
    "contested": 0,
    "error_rate": 0,
    "resolved_by_gap_rule": 0,
-   "residual_error_rate": 0
+   "residual_error_rate": 0,
+   "superseded_by_pass7": 1
   }
  },
  "pass6": {
@@ -150,6 +154,21 @@
    "sample": 1,
    "audited": 1,
    "confirmed": 1,
+   "corrected": 0,
+   "contested": 0,
+   "error_rate": 0,
+   "resolved_by_gap_rule": 0,
+   "residual_error_rate": 0
+  }
+ },
+ "pass7": {
+  "scope": 136,
+  "superseded": 131,
+  "audit": {
+   "seed": "d11:ftsg-tech-trends:d33:pass7",
+   "sample": 50,
+   "audited": 50,
+   "confirmed": 50,
    "corrected": 0,
    "contested": 0,
    "error_rate": 0,
@@ -185,7 +204,12 @@
   "renames-d33-pass6-scope.json",
   "renames-d33-checkerA-pass6.json",
   "renames-d33-checkerB-pass6.json",
-  "renames-audit-d33-pass6.json"
+  "renames-audit-d33-pass6.json",
+  "renames-d33-pass7-scope.json",
+  "renames-d33-checkerA-pass7.json",
+  "renames-d33-checkerB-pass7.json",
+  "renames-adjudicated-d33-pass7.json",
+  "renames-audit-d33-pass7.json"
  ],
  "verdicts": [
   {
@@ -5824,8 +5848,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -5876,8 +5900,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -5887,8 +5911,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -5972,12 +5996,11 @@
    "id": "ftsg-tech-trends-2020-023",
    "edition": "2020",
    "verdict": "faded",
-   "status": "adjudicated",
-   "reason": "NLU systems in use (Transcribe Medical); NLP Benchmarks is a different claim (benchmark saturation).",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "adjudicated"
    }
   },
   {
@@ -6009,12 +6032,11 @@
    "id": "ftsg-tech-trends-2020-026",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2021-051"
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -6087,10 +6109,10 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
@@ -6098,10 +6120,10 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
@@ -6109,8 +6131,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -6240,7 +6262,11 @@
    "edition": "2020",
    "verdict": "recycled",
    "status": "audited",
-   "pass": 5,
+   "pass": 7,
+   "pass5": {
+    "verdict": "faded",
+    "status": "audited"
+   },
    "was": "faded",
    "matched_in": "2024"
   },
@@ -6248,20 +6274,20 @@
    "id": "ftsg-tech-trends-2020-050",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2020-051",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -6497,9 +6523,9 @@
    "id": "ftsg-tech-trends-2020-074",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -6746,24 +6772,22 @@
    "id": "ftsg-tech-trends-2020-103",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2021-131"
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2020-104",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2021-131"
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -6936,8 +6960,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -6960,10 +6984,10 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "audited"
+    "status": "agreed"
    }
   },
   {
@@ -6971,8 +6995,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -6982,8 +7006,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -6992,9 +7016,9 @@
    "id": "ftsg-tech-trends-2020-130",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7003,9 +7027,9 @@
    "id": "ftsg-tech-trends-2020-131",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7014,9 +7038,9 @@
    "id": "ftsg-tech-trends-2020-132",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7163,8 +7187,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7240,11 +7264,11 @@
    "id": "ftsg-tech-trends-2020-157",
    "edition": "2020",
    "verdict": "faded",
-   "status": "audited",
-   "pass": 2,
-   "pass1": {
+   "status": "agreed",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    }
   },
   {
@@ -7285,8 +7309,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7296,8 +7320,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7468,20 +7492,20 @@
    "id": "ftsg-tech-trends-2020-183",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2020-184",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7490,20 +7514,20 @@
    "id": "ftsg-tech-trends-2020-185",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2020-186",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7524,9 +7548,9 @@
    "id": "ftsg-tech-trends-2020-188",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7548,9 +7572,9 @@
    "id": "ftsg-tech-trends-2020-190",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7810,8 +7834,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7841,8 +7865,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8000,9 +8024,9 @@
    "id": "ftsg-tech-trends-2020-236",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8024,9 +8048,9 @@
    "id": "ftsg-tech-trends-2020-238",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8034,10 +8058,12 @@
   {
    "id": "ftsg-tech-trends-2020-239",
    "edition": "2020",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2021-417",
+   "reason": "Reused verbatim text: the 2021 Plastic-Eating Enzymes page is this item's enzyme paragraph (Portsmouth plastic-eating enzyme aiding recycling, Carbios enzymes triggering biodegradation, Recycling Technologies 'plaxx'), one step narrower than corporate plastic reduction. Sibling 2020-234 Enzymes to Eat Ocean Trash (published same to 2021-417, pass 2, label only) has no enzyme text: its Pacific Trash Vortex and Ocean Cleanup text is reprinted as 2021 Smart Ocean Filters (2021-418). Merger exception: the 2021 label names the sibling's subject and its text is this item's, so both can continue there. Checker B applied the sibling rule to a label-only sibling match. The pass-2 match of 2020-234 to 2021-417 rather than 2021-418 looks wrong on the text and is left for a later pass (not in pass-7 scope).",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8046,11 +8072,11 @@
    "id": "ftsg-tech-trends-2020-240",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
@@ -8295,10 +8321,12 @@
   {
    "id": "ftsg-tech-trends-2020-271",
    "edition": "2020",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2021-469",
+   "reason": "Merger exception on the text: 2021 Synthetic Age Reversal reprints the 2020 Biological DVRs page verbatim (source code for humanity is stored in our DNA; Columbia CRISPR-Cas cell recorder, 'a sort of biological DVR'; quantify aging to reverse it) followed by the 2020 Synthetic Age Reversal text (Church, Wyss, three gene therapies in mice; sibling 2020-259, computed persisted). The later text clearly covers both siblings (precedent pass 5, 2020-298). Checker B missed the reprinted text.",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8547,12 +8575,11 @@
    "id": "ftsg-tech-trends-2020-296",
    "edition": "2020",
    "verdict": "faded",
-   "status": "adjudicated",
-   "reason": "Hospitals as innovators is not AI Improves Patient Outcomes (diagnostic algorithms); no match.",
-   "pass": 2,
-   "pass1": {
+   "status": "agreed",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "adjudicated"
    }
   },
   {
@@ -8602,8 +8629,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8613,8 +8640,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8624,8 +8651,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8662,8 +8689,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8673,8 +8700,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8704,8 +8731,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8801,34 +8828,33 @@
    "id": "ftsg-tech-trends-2020-320",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2021-119"
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2020-321",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2020-322",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
@@ -8850,8 +8876,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -8867,12 +8893,11 @@
    "id": "ftsg-tech-trends-2020-327",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2021-291"
+   "status": "audited",
+   "pass": 7,
+   "pass2": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -9009,8 +9034,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9103,8 +9128,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9134,8 +9159,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9192,8 +9217,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9203,8 +9228,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9212,10 +9237,11 @@
   {
    "id": "ftsg-tech-trends-2020-365",
    "edition": "2020",
-   "verdict": "faded",
+   "verdict": "renamed",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "match_id": "ftsg-tech-trends-2022-290",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9272,11 +9298,10 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2021-331"
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -9298,8 +9323,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9309,8 +9334,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9320,8 +9345,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9371,8 +9396,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9382,8 +9407,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9465,8 +9490,8 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "pass": 7,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9501,11 +9526,11 @@
    "id": "ftsg-tech-trends-2020-391",
    "edition": "2020",
    "verdict": "faded",
-   "status": "audited",
-   "pass": 4,
-   "pass2": {
+   "status": "agreed",
+   "pass": 7,
+   "pass4": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    }
   },
   {
@@ -9615,11 +9640,10 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "adjudicated",
-    "match_id": "ftsg-tech-trends-2021-131"
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -9649,7 +9673,11 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2
+   "pass": 7,
+   "pass2": {
+    "verdict": "faded",
+    "status": "agreed"
+   }
   },
   {
    "id": "ftsg-tech-trends-2020-409",
@@ -9695,7 +9723,11 @@
    "edition": "2020",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 2
+   "pass": 7,
+   "pass2": {
+    "verdict": "faded",
+    "status": "agreed"
+   }
   },
   {
    "id": "ftsg-tech-trends-2020-415",
@@ -9741,13 +9773,13 @@
   {
    "id": "ftsg-tech-trends-2021-005",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-020"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2022-021",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -9803,9 +9835,9 @@
    "id": "ftsg-tech-trends-2021-012",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9815,10 +9847,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "audited",
-   "pass": 4,
-   "pass3": {
+   "pass": 7,
+   "pass4": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    }
   },
   {
@@ -9838,9 +9870,9 @@
    "id": "ftsg-tech-trends-2021-015",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9870,9 +9902,9 @@
    "id": "ftsg-tech-trends-2021-019",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -9937,8 +9969,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10055,9 +10087,9 @@
    "id": "ftsg-tech-trends-2021-040",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10094,9 +10126,9 @@
    "id": "ftsg-tech-trends-2021-045",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10173,8 +10205,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10212,8 +10244,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10229,9 +10261,9 @@
    "id": "ftsg-tech-trends-2021-060",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10417,9 +10449,9 @@
    "id": "ftsg-tech-trends-2021-082",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10442,9 +10474,9 @@
    "id": "ftsg-tech-trends-2021-085",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10648,9 +10680,9 @@
    "id": "ftsg-tech-trends-2021-112",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10764,8 +10796,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10843,8 +10875,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -10901,10 +10933,9 @@
    "id": "ftsg-tech-trends-2021-145",
    "edition": "2021",
    "verdict": "faded",
-   "status": "adjudicated",
-   "reason": "As adjudicated in pass 2: predicting what people will do next from video is not Activity Vision (recognising activities); no other match.",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "adjudicated"
    }
@@ -10913,11 +10944,11 @@
    "id": "ftsg-tech-trends-2021-146",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
@@ -10964,9 +10995,9 @@
    "id": "ftsg-tech-trends-2021-152",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11069,9 +11100,9 @@
    "id": "ftsg-tech-trends-2021-163",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11225,10 +11256,11 @@
   {
    "id": "ftsg-tech-trends-2021-178",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2022-588",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11265,80 +11297,80 @@
    "id": "ftsg-tech-trends-2021-183",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-184",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-185",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-208"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2022-208",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-186",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "adjudicated",
-   "reason": "Cannabusiness Tech (2022) is printed 1st year on the list and is a broad market page; consistent with pass 2 (CBD siblings faded) and pass 3 (siblings 2021-185, -187, -188 agreed faded), no 2021 cannabis business item is carried by it.",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-208"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2022-208",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "adjudicated"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-187",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-208"
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2022-208",
+   "reason": "2022 Cannabusiness Tech (key insight: cannabis businesses struggle under federal rules; technology is emerging to support retailers and consumers; examples in-app ordering, delivery inventory, identity verification, payments) absorbs the 2021 cannabis business-software group: siblings Supply Chains (2021-185), Compliance Systems (2021-186) and Banking (2021-188) were agreed renamed to it in this pass. This item (Baker: dispensary e-commerce, inventory, loyalty automation) is retail software for dispensaries, covered one step broader. Merger exception, consistent with the three siblings. Medium certainty: no CRM or loyalty example is named on the 2022 page; 1st-year tag is weak evidence.",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-188",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-208"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2022-208",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-189",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11346,10 +11378,11 @@
   {
    "id": "ftsg-tech-trends-2021-190",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2022-589",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11442,8 +11475,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11494,8 +11527,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11532,9 +11565,10 @@
    "id": "ftsg-tech-trends-2021-213",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "adjudicated",
+   "reason": "2021 Metabolic Monitoring is breath-based metabolic rate measurement (RER; Lumen, Pnoe, Cosmed K5, Breezing). 2022 DIY Health and Wellness has a different key insight (at-home genetic, microbiome and blood testing) and mentions PNOE in one example sentence; one example is not the same phenomenon (precedent pass 5, 2022-555: matching one sub-item). Nothing on metabolic or breath monitoring in 2023. Checker B matched an example sentence.",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11563,13 +11597,9 @@
   {
    "id": "ftsg-tech-trends-2021-217",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "faded",
-    "status": "agreed"
-   }
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2022"
   },
   {
    "id": "ftsg-tech-trends-2021-219",
@@ -11820,8 +11850,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -11856,13 +11886,13 @@
   {
    "id": "ftsg-tech-trends-2021-252",
    "edition": "2021",
-   "verdict": "faded",
+   "verdict": "renamed",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-283"
+   "match_id": "ftsg-tech-trends-2022-283",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -11883,11 +11913,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "audited",
-    "match_id": "ftsg-tech-trends-2022-303"
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -11900,13 +11929,14 @@
   {
    "id": "ftsg-tech-trends-2021-256",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-310"
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2022-238",
+   "reason": "Merger exception on the text. Digital Border Clashes (2nd year; key insight: varying regulation and broadband access give users different rights in different places; examples: pandemic rural broadband divide, California GDPR-style rights) and sibling Geography Reshapes the Virtual World (2021-160, patchwork state privacy laws; computed persisted to 2022-238) share the closing paragraph (new entrants struggle to serve and monetize audiences in multiple jurisdictions). The 2022 page (3rd year) moves its key insight to this item's subject (physical location governs how much users can participate) and carries its pandemic rural broadband example alongside the regulatory patchwork, so it clearly covers both. Checker A's reading. Medium certainty: the 2022 label and year count are the sibling's.",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -12002,10 +12032,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
@@ -12068,8 +12098,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -12079,8 +12109,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -12110,8 +12140,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -12121,8 +12151,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -12145,34 +12175,35 @@
    "id": "ftsg-tech-trends-2021-282",
    "edition": "2021",
    "verdict": "faded",
-   "status": "audited",
-   "pass": 3,
-   "pass2": {
+   "status": "agreed",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-283",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "audited",
-   "pass": 3,
-   "pass2": {
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2022-152",
+   "reason": "Data Privacy Enforcement Returns (return to strict enforcement and renewed calls for national-level privacy regulation) continues one step broader as 2022 Privacy Regulation (proposed federal Data Protection Act and data protection agency, FTC rulemaking on privacy, Australian order against Clearview AI, state laws). Checker A's sibling objection does not hold: sibling State Governments Tackle Digital Privacy (2021-257) is computed persisted to its own 2022 page (2022-300), so 2022-152 continues no 2021 sibling. Medium certainty: the 2022 page leads with state laws.",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    }
   },
   {
    "id": "ftsg-tech-trends-2021-284",
    "edition": "2021",
    "verdict": "faded",
-   "status": "audited",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-304"
+   "status": "agreed",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "audited"
    }
   },
   {
@@ -12262,11 +12293,11 @@
    "id": "ftsg-tech-trends-2021-295",
    "edition": "2021",
    "verdict": "faded",
-   "status": "audited",
-   "pass": 3,
-   "pass2": {
+   "status": "agreed",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    }
   },
   {
@@ -12431,9 +12462,9 @@
    "id": "ftsg-tech-trends-2021-316",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -12457,10 +12488,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "audited"
+    "status": "agreed"
    }
   },
   {
@@ -12468,10 +12499,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "audited",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "audited"
    }
   },
   {
@@ -12500,10 +12531,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "audited",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    }
   },
   {
@@ -12819,8 +12850,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -12989,8 +13020,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -13026,12 +13057,11 @@
    "id": "ftsg-tech-trends-2021-387",
    "edition": "2021",
    "verdict": "faded",
-   "status": "adjudicated",
-   "reason": "Sibling rule: New Cityscape Designs (2022-384, 2nd year on the list) continues its own 2021 sibling New Cityscape Designs (2021-389, 1st year), not this trend; Multi-Use Spaces (2023, 1st year) is buildings, not roads. Checker B missed the 2021 sibling; consistent with pass 3 (agreed faded).",
-   "pass": 4,
-   "pass3": {
+   "status": "agreed",
+   "pass": 7,
+   "pass4": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "adjudicated"
    }
   },
   {
@@ -13066,8 +13096,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -13185,8 +13215,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -13264,13 +13294,9 @@
   {
    "id": "ftsg-tech-trends-2021-414",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "faded",
-    "status": "agreed"
-   }
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2022"
   },
   {
    "id": "ftsg-tech-trends-2021-415",
@@ -13369,14 +13395,13 @@
   {
    "id": "ftsg-tech-trends-2021-425",
    "edition": "2021",
-   "verdict": "faded",
-   "status": "adjudicated",
-   "reason": "Scatter and sibling rules: the general ESG trend (3rd year) breaks into narrower items; Strategic Sustainability Plans, Supply Chain Sustainability and Shipping Industry ESGs continue 2021 siblings, and ESG Requirements (2023, 1st year, supply chains) continues the Sustainability in Supply Chain line (2021-366, 2022-358). No single successor.",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2023-579"
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2022-592",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "adjudicated"
    }
   },
   {
@@ -13577,11 +13602,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "audited",
-    "match_id": "ftsg-tech-trends-2022-456"
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -13628,11 +13652,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "audited",
-    "match_id": "ftsg-tech-trends-2022-036"
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -13647,8 +13670,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -13773,8 +13796,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -13862,13 +13885,13 @@
   {
    "id": "ftsg-tech-trends-2021-479",
    "edition": "2021",
-   "verdict": "faded",
+   "verdict": "renamed",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-494"
+   "match_id": "ftsg-tech-trends-2022-494",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -13876,10 +13899,10 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
-    "status": "adjudicated"
+    "status": "agreed"
    }
   },
   {
@@ -13913,13 +13936,13 @@
   {
    "id": "ftsg-tech-trends-2021-485",
    "edition": "2021",
-   "verdict": "faded",
+   "verdict": "renamed",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-514"
+   "match_id": "ftsg-tech-trends-2022-514",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -13986,13 +14009,13 @@
   {
    "id": "ftsg-tech-trends-2021-493",
    "edition": "2021",
-   "verdict": "faded",
+   "verdict": "renamed",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2022-476"
+   "match_id": "ftsg-tech-trends-2022-476",
+   "pass": 7,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -14054,8 +14077,8 @@
    "edition": "2021",
    "verdict": "faded",
    "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "pass": 7,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -20048,6 +20071,43 @@
     "verdict": "faded",
     "status": "agreed"
    }
+  },
+  {
+   "id": "ftsg-tech-trends-2022-588",
+   "edition": "2022",
+   "verdict": "faded",
+   "status": "agreed",
+   "pass": 7
+  },
+  {
+   "id": "ftsg-tech-trends-2022-589",
+   "edition": "2022",
+   "verdict": "faded",
+   "status": "agreed",
+   "pass": 7
+  },
+  {
+   "id": "ftsg-tech-trends-2022-590",
+   "edition": "2022",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2024-570",
+   "pass": 7
+  },
+  {
+   "id": "ftsg-tech-trends-2022-591",
+   "edition": "2022",
+   "verdict": "faded",
+   "status": "agreed",
+   "pass": 7
+  },
+  {
+   "id": "ftsg-tech-trends-2022-592",
+   "edition": "2022",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2023-477",
+   "pass": 7
   },
   {
    "id": "ftsg-tech-trends-2023-001",

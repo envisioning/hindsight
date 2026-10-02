@@ -29,7 +29,7 @@ A public, citable record of published forecasts (publications x predictions), gr
   - MIT TR10 48% (36-60) [31-65] over 65: waves w1 and w2 (availability lines for 2021-2026).
   - The Economist 59% over 127. Pew/Elon 40% over 45. NIC projections 69% over 68. McKinsey and Accenture dated forecasts counts only.
 - **Numeric (D19):** 12 publishers. Matching audit (#53) plus D24 re-checks (#66, #70, #71, bp 2015) and a supplementary audit for rows added later (D46, OECD). Residual errors: bnef-evo 1, all other sources 0; pending re-checks 0. Hit rates: ECB 58%, Fed SEP 51%, EIA 46%, OECD 44% (726 graded, 29 vintages added), World Bank 41% (GEP 1991-1998 added from scans, #11), IMF 41%, BCB 38%, OBR 34%, CBO 31%, IEA 10%; bp and BNEF counts only. Actuals on the forecast's own definition (D38, D39, D41, D42), one-decimal threshold flags.
-- **Trends (D33, D36, D40, D43):** faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 23% (21.6-24.8) over 2,748 after passes 2 to 4 (2015, 2020, 2023 complete; 2016, 2017, 2019 partial; umbrella pages as trends, D40; 98 capture corrections, D43; 54 rows in `gap`).
+- **Trends (D33, D36, D40, D43):** faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 22.5% over 2,750 after passes 2 to 7 (2015, 2020, 2022, 2023 complete; 2016, 2017, 2019 partial; umbrella pages as trends, D40, swept for every year tag; 101 capture corrections, D43; recycled only after a rename check, D47; 54 rows in `gap`).
 - **Rankings and scenarios (D31, D32, D34, D45):** Eurasia top risks materialised in 70% of 184, red herrings calm in 68% of 72. WEF 2007-2020 ranked 12 of 51 major events high (23.5%, 14-37) [10-41] after its first audit (48/50). Shell 14 of 51 values covered (27.5%, 17-41); IPCC counts only (10 graded after the matching audit); NIC sets 2 covered, 1 not covered, 3 open (audit 9/9).
 - **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month. `pnpm export` writes the `validation` table (D44, #40) and prints no warnings; no release tagged.
 - **Subjects:** about 5,400. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
@@ -53,7 +53,6 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **#73** D33 pipeline: recycled rows skip the rename check (all six trend sources); year tags are weak evidence; sub-item subject mapping.
 2. FTSG (#26) has nothing left to capture with a known source (2008-2013, 2018 not public; 2019 titles only).
 3. **#3** first tagged dataset release: `pnpm export` is clean. Ask MZ before tagging.
 4. **#59** links (needs `OPENROUTER_API_KEY`), then the forecasts block on research pages.

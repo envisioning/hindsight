@@ -105,3 +105,5 @@ PDF editions (2021-2025): the contents page of each volume, read with font infor
 - **2024 and 2025 contents entries under section questions** (for example "How is AI being used in HR?") are trends; the question is kept in `subsection`.
 - **Quotes.** First sentences are verbatim but some are context sentences rather than a statement of the trend (for example an example company), because the body often opens with an example. Confidence stays `high` when verbatim.
 - **2026 Convergence Outlook** (10 convergences in five sections) is a different product. If Hindsight wants it, it should be a separate source, not edition 2026 of this one.
+
+- **2020-234 Enzymes to Eat Ocean Trash (pass 2, published `same` to 2021-417 from the label alone):** on the text it continues as 2021-418 Smart Ocean Filters (the 2021 page reprints its Pacific Trash Vortex / Ocean Cleanup text); 2021-417 reprints sibling 2020-239's enzyme text (pass-7 adjudication). The verdict class (continued) is unaffected; only the match id is off. Re-check in the next pass that touches 2020.
