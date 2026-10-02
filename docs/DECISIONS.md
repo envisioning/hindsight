@@ -771,3 +771,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** A small wave with a rubric problem of its own can pass on the strength of the previous wave. The published per-wave kappa keeps that visible.
 
 **Overturned by.** A small wave whose adjudications show a systematic reading problem.
+
+## D51: Subject merges move link rows (amends D48)
+
+*Recorded 2026-10-02.*
+
+**Decision.** When a subject is merged into another (D13, by alias), its active link rows in `data/links/research.json` are moved by appending two rows per link: a `retracted` row on the retired subject's pair and an `active` row on the survivor's pair with the same relation, method, run and verifier, whose reason names the row it replaces. Nothing is edited. The same applies to D33 persistence: a subject merge can change which trends share a subject, so `trend-persistence.mjs` is re-run and rows whose status changes go to a new rename-check pass.
+
+**Why.** D48 said subject ids never change, so links cannot dangle. A merged-away id does leave `subjects.json`, so its links would point at nothing. The first case was the SBSP merge (data/reviews/subject-dupes-d48.json).
+
+**Cost.** Two rows per moved link; trend passes may need re-running after a curation review.
+
+**Overturned by.** Subject ids that resolve through the alias registry at read time.
