@@ -22,20 +22,20 @@
  ],
  "n": 162,
  "counts": {
-  "faded": 75,
-  "persisted": 24,
+  "faded": 76,
+  "persisted": 23,
   "renamed": 42,
   "recycled": 2,
   "open": 19
  },
  "shares": {
   "persisted": {
-   "k": 24,
+   "k": 23,
    "n": 143,
-   "share": 0.1678,
+   "share": 0.1608,
    "wilson95": [
-    0.115,
-    0.238
+    0.11,
+    0.23
    ]
   },
   "renamed": {
@@ -48,12 +48,12 @@
    ]
   },
   "faded": {
-   "k": 75,
+   "k": 76,
    "n": 143,
-   "share": 0.5245,
+   "share": 0.5315,
    "wilson95": [
-    0.443,
-    0.605
+    0.45,
+    0.611
    ]
   },
   "recycled": {
@@ -69,15 +69,15 @@
  "audit": {
   "seed": "d11:deloitte-tech-trends:d33",
   "sample": 50,
-  "audited": 48,
+  "audited": 49,
   "confirmed": 48,
-  "corrected": 0,
+  "corrected": 1,
   "contested": 0,
-  "error_rate": 0,
+  "error_rate": 0.02,
   "resolved_by_gap_rule": 0,
-  "residual_error_rate": 0,
+  "residual_error_rate": 0.02,
   "superseded_by_pass2": 0,
-  "no_longer_candidate": 2
+  "no_longer_candidate": 1
  },
  "pass2": {
   "scope": 3,
@@ -323,7 +323,7 @@
    "edition": "2013",
    "verdict": "persisted",
    "status": "computed",
-   "matched_in": "2014"
+   "matched_in": "2015"
   },
   {
    "id": "deloitte-tech-trends-2013-002",
@@ -385,9 +385,11 @@
   {
    "id": "deloitte-tech-trends-2014-001",
    "edition": "2014",
-   "verdict": "persisted",
-   "status": "computed",
-   "matched_in": "2015"
+   "verdict": "faded",
+   "status": "corrected",
+   "was": "renamed",
+   "match_id": null,
+   "reason": "CIO as VC (IT portfolio managed for value/risk) vs CIO as chief integration officer (integration as CIO mission): only the recurring CIO-role field is shared, different phenomenon; no 2015-16 trend on IT portfolio management"
   },
   {
    "id": "deloitte-tech-trends-2014-002",

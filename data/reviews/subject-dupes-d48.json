@@ -994,5 +994,32 @@
    "decision": "keep",
    "reason": "Different economies sharing the metric 'real GDP growth'; deterministic quantities (D13)."
   }
+ ],
+ "rechecks": [
+  {
+   "at": "2026-10-02",
+   "group": 14,
+   "subjects": [
+    "cio-role",
+    "cio-role-it-portfolio-management"
+   ],
+   "trigger": "The D33 rename audit of Deloitte Tech Trends (renames-audit-d33.json) corrected deloitte-tech-trends-2014-001 'CIO as venture capitalist' from renamed to faded: only the recurring CIO-role field is shared with 2015 'CIO as chief integration officer'. The group 14 merge put both on cio-role, so trend-persistence.mjs (bd4862d) made 2014-001 mechanically persisted and overrode the audit.",
+   "claims_read": {
+    "deloitte-tech-trends-2011-004": "CIOs as Revolutionaries: CIOs shift from stewards of, to catalysts for, business revolution.",
+    "deloitte-tech-trends-2013-001": "CIO as the Postdigital Catalyst: CIOs harness the five postdigital forces to move the conversation from systems to capabilities.",
+    "deloitte-tech-trends-2014-001": "CIO as venture capitalist: CIOs manage the IT portfolio like venture capitalists, judged on value, risk and time horizon to reward.",
+    "deloitte-tech-trends-2015-001": "CIO as chief integration officer: the CIO role evolves with integration at the core of its mission."
+   },
+   "decision": "split (reverses the group 14 merge)",
+   "reason": "D13 merges only when the claims are about the same thing. The 2014 claim is about a practice, managing the IT portfolio for value, risk and horizon, which no other CIO-role chapter claims; the capture already marked the difference with its own subject label. The shared ground is the CIO as a recurring chapter, which is a field, not a trend. The audit's reading holds.",
+   "effect": "Curation alias 'CIO role (IT portfolio management)' now maps to cio-role-it-portfolio-management (the original id, restored), related to cio-role both ways. No link rows on either subject. After pnpm normalize, trend-persistence.mjs and trend-final-d33.mjs: 2014-001 is again faded (status corrected, was renamed) and 2013-001 persisted with matched_in 2015, as before the merge; no row became a candidate without a published verdict.",
+   "open": "2011-004, 2013-001 and 2015-001 share cio-role through the capture's own subject 'CIO role', so 2011-004 and 2013-001 are mechanically persisted and were never rename-checked. By the audit's reading (a CIO-role field, different phenomena each year) they may not be the same trend either. Not changed here."
+  },
+  {
+   "at": "2026-10-02",
+   "scope": "all merge groups",
+   "check": "Every D33 final row whose verdict or status changed in the post-merge persistence re-run (bd4862d, four trend sources), compared with the audit and adjudication files.",
+   "result": "26 rows changed. 23 went from a checker or audit verdict of persisted to mechanically persisted: no conflict. 1 was the CIO row above (audit faded, now persisted): reversed. 2 went from renamed to persisted: trendwatching-2007-001 (audit confirmed renamed to 2008-001 'STATUS SPHERES') and ftsg-tech-trends-2019-282 (adjudicated renamed to the 2020 Blockchain umbrella, 'one step broader'). Renamed means the same phenomenon under a new label, so these merges agree with the audit and adjudication; the FTSG adjudicator's 'one step broader' is the only scope caveat. Kept."
+  }
  ]
 }
