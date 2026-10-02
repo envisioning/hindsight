@@ -18,7 +18,7 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 | wef-global-risks | normalized | 21 | 355 | 0 | ranking + rank + label | 2026-10-02T13:07:13Z |
 | imf-weo | normalized | 73 | 1560 | 0 | economy name + target_year + horizon | 2026-10-02T13:07:13Z |
 | iea-weo | normalized | 26 | 349 | 86 base-year row (historical value, not a projection) | technology + metric + target_year + scenario; edition-level quotes: quote text | 2026-10-02T13:07:13Z |
-| eia-aeo | normalized | 42 | 9104 | 0 | series + unit + target_year + dollar_year | 2026-10-02T13:07:14Z |
+| eia-aeo | normalized | 43 | 9390 | 0 | series + unit + target_year + dollar_year | 2026-10-02T13:41:58Z |
 | bcb-focus | normalized | 108 | 811 | 0 | indicator label + target_year + horizon | 2026-10-02T13:07:14Z |
 | oecd-economic-outlook | normalized | 24 | 420 | 0 | economy name + target_year + horizon | 2026-10-02T13:07:14Z |
 | world-bank-gep | normalized | 44 | 746 | 0 | economy name + target_year + horizon | 2026-10-02T13:07:14Z |
@@ -26,7 +26,7 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 | ecb-projections | normalized | 104 | 566 | 0 | variable + statistic + horizon + target_year | 2026-10-02T13:07:14Z |
 | cbo-projections | normalized | 112 | 1557 | 0 | metric + horizon + target_year + target_period | 2026-10-02T13:07:14Z |
 | obr-forecasts | normalized | 33 | 892 | 28 memo row (restated or supplementary forecast, not the headline forecast of this EFO) | metric + unit + horizon + target_year | 2026-10-02T13:07:14Z |
-| bp-energy-outlook | normalized | 14 | 193 | 15 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T13:07:14Z |
+| bp-energy-outlook | normalized | 14 | 233 | 17 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T13:41:58Z |
 | eurasia-top-risks | normalized | 20 | 279 | 0 | ranking + label | 2026-10-02T13:07:14Z |
 | economist-world-ahead | normalized | 40 | 154 | 0 | kind + subject + quote with case, spaces and punctuation removed | 2026-10-02T13:07:14Z |
 | kurzweil | normalized | 5 | 287 | 0 | target_year + quote (or paraphrase) with case, spaces and punctuation removed | 2026-10-02T13:07:14Z |

@@ -44,9 +44,12 @@ SHEETS = {
     "2015": [("Base case", None, "Consumption by fuel", "Consumption by fuel", "Total Energy Consumption", "Total Renewables Consumptionw")],
     "2016": [("Base case", None, "Consumption by fuel", "Consumption by fuel", "Total Energy Consumption", "Total Renewables Consumptionw")],
     "2017": [("Base case", None, "Consumption by fuel", "Consumption by fuel", "Total Energy Consumption", "Total Renewables Consumptionw")],
+    # #15: 2018 summary tables from the NRGI GitHub mirror (archive.org holds no capture); Evolving Transition only.
+    "2018": [("Evolving Transition", "Oil - Mbd", "Primary", "Renewables - Mtoe", "World", "World")],
     "2019": [("Evolving transition", "Oil - Mbd", "Primary", "Renewables - Mtoe", "World", "World"),
              ("Rapid transition", "Oil - Mbd ", "Primary ", "Renewables - Mtoe ", "World", "World")],
     "2020": [(None, "Oil - Mbd", "Primary", "Renewables - EJ", "World", "World")],
+    "2022": [(None, "Oil - Mbd", "Primary energy", "Renewables - EJ", "World", "World")],
     "2023": [(None, "Oil - Mbd", "Primary energy", "Renewables - EJ", "World", "World")],
     "2024": [(None, "Oil - Mbd", "Primary energy", "Renewables - EJ", "World", "World")],
     "2025": [(None, "Oil - Mbd", "Primary energy", "Renewables - EJ", "World", "World")],

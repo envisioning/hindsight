@@ -44,7 +44,11 @@
     "error_rate": 0.0385,
     "fixed_in_code": 3,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 3,
+    "recheck_confirmed": 3,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
     0.3491,
@@ -4232,7 +4236,11 @@
     "error_rate": 0.1111,
     "fixed_in_code": 0,
     "residual_errors": 1,
-    "residual_error_rate": 0.1111
+    "residual_error_rate": 0.1111,
+    "rechecked": 0,
+    "recheck_confirmed": 0,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": null,
    "by_horizon": [
@@ -5693,20 +5701,20 @@
   {
    "source_id": "bp-energy-outlook",
    "totals": {
-    "n_graded": 5,
-    "hits": 1,
+    "n_graded": 6,
+    "hits": 2,
     "partials": 2,
     "misses": 2,
-    "ungradable": 2,
-    "open": 38,
-    "excluded": 148,
+    "ungradable": 4,
+    "open": 45,
+    "excluded": 178,
     "hit_rate": null,
     "hit_rate_ci95": null,
     "errors": [
      {
       "rule": "D18",
       "unit": "pp",
-      "n": 5,
+      "n": 6,
       "bias": null,
       "mae": null
      }
@@ -5722,27 +5730,31 @@
     "error_rate": 0.2,
     "fixed_in_code": 0,
     "residual_errors": 1,
-    "residual_error_rate": 0.2
+    "residual_error_rate": 0.2,
+    "rechecked": 0,
+    "recheck_confirmed": 0,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": null,
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 5,
-      "hits": 1,
+      "n_graded": 6,
+      "hits": 2,
       "partials": 2,
       "misses": 2,
-      "ungradable": 2,
-      "open": 38,
-      "excluded": 148,
+      "ungradable": 4,
+      "open": 45,
+      "excluded": 178,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 5,
+        "n": 6,
         "bias": null,
         "mae": null
        }
@@ -5798,16 +5810,24 @@
     {
      "horizon": "2_years",
      "stats": {
-      "n_graded": 0,
-      "hits": 0,
+      "n_graded": 1,
+      "hits": 1,
       "partials": 0,
       "misses": 0,
-      "ungradable": 0,
+      "ungradable": 1,
       "open": 0,
       "excluded": 6,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 1,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -5819,7 +5839,7 @@
       "misses": 2,
       "ungradable": 0,
       "open": 0,
-      "excluded": 10,
+      "excluded": 16,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": [
@@ -5840,9 +5860,9 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 1,
-      "open": 4,
-      "excluded": 25,
+      "ungradable": 2,
+      "open": 5,
+      "excluded": 31,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -5856,8 +5876,8 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 34,
-      "excluded": 97,
+      "open": 40,
+      "excluded": 115,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6001,9 +6021,9 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 2,
-      "open": 11,
-      "excluded": 68,
+      "ungradable": 4,
+      "open": 14,
+      "excluded": 83,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6049,7 +6069,7 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 0,
+      "ungradable": 1,
       "open": 0,
       "excluded": 3,
       "hit_rate": null,
@@ -6067,7 +6087,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 5,
+      "excluded": 8,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6081,9 +6101,9 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 1,
+      "ungradable": 2,
       "open": 0,
-      "excluded": 11,
+      "excluded": 14,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6098,8 +6118,8 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 11,
-      "excluded": 44,
+      "open": 14,
+      "excluded": 53,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6109,20 +6129,20 @@
      "family": "renewables share",
      "horizon": "all",
      "stats": {
-      "n_graded": 5,
-      "hits": 1,
+      "n_graded": 6,
+      "hits": 2,
       "partials": 2,
       "misses": 2,
       "ungradable": 0,
-      "open": 20,
-      "excluded": 70,
+      "open": 24,
+      "excluded": 85,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 5,
+        "n": 6,
         "bias": null,
         "mae": null
        }
@@ -6181,8 +6201,8 @@
      "family": "renewables share",
      "horizon": "2_years",
      "stats": {
-      "n_graded": 0,
-      "hits": 0,
+      "n_graded": 1,
+      "hits": 1,
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
@@ -6190,7 +6210,15 @@
       "excluded": 3,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 1,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -6203,7 +6231,7 @@
       "misses": 2,
       "ungradable": 0,
       "open": 0,
-      "excluded": 5,
+      "excluded": 8,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": [
@@ -6226,8 +6254,8 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 4,
-      "excluded": 11,
+      "open": 5,
+      "excluded": 14,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6242,8 +6270,8 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 16,
-      "excluded": 46,
+      "open": 19,
+      "excluded": 55,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6464,9 +6492,9 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 2,
-      "open": 4,
-      "excluded": 68,
+      "ungradable": 4,
+      "open": 7,
+      "excluded": 83,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6515,7 +6543,7 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 0,
+      "ungradable": 1,
       "open": 0,
       "excluded": 3,
       "hit_rate": null,
@@ -6534,7 +6562,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 5,
+      "excluded": 8,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6549,9 +6577,9 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 1,
+      "ungradable": 2,
       "open": 0,
-      "excluded": 11,
+      "excluded": 14,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6567,8 +6595,8 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 4,
-      "excluded": 44,
+      "open": 7,
+      "excluded": 53,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6613,20 +6641,20 @@
      "family": "renewables share",
      "horizon": "all",
      "stats": {
-      "n_graded": 5,
-      "hits": 1,
+      "n_graded": 6,
+      "hits": 2,
       "partials": 2,
       "misses": 2,
       "ungradable": 0,
-      "open": 18,
-      "excluded": 70,
+      "open": 22,
+      "excluded": 85,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 5,
+        "n": 6,
         "bias": null,
         "mae": null
        }
@@ -6688,8 +6716,8 @@
      "family": "renewables share",
      "horizon": "2_years",
      "stats": {
-      "n_graded": 0,
-      "hits": 0,
+      "n_graded": 1,
+      "hits": 1,
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
@@ -6697,7 +6725,15 @@
       "excluded": 3,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 1,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -6711,7 +6747,7 @@
       "misses": 2,
       "ungradable": 0,
       "open": 0,
-      "excluded": 5,
+      "excluded": 8,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": [
@@ -6735,8 +6771,8 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 4,
-      "excluded": 11,
+      "open": 5,
+      "excluded": 14,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6752,8 +6788,8 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 14,
-      "excluded": 46,
+      "open": 17,
+      "excluded": 55,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -6901,16 +6937,24 @@
      "edition": "2018",
      "published": "2018-02-20",
      "stats": {
-      "n_graded": 0,
-      "hits": 0,
+      "n_graded": 1,
+      "hits": 1,
       "partials": 0,
       "misses": 0,
-      "ungradable": 0,
-      "open": 3,
+      "ungradable": 2,
+      "open": 10,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 1,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -6963,7 +7007,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 8,
+      "excluded": 38,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -7054,7 +7098,11 @@
     "error_rate": 0,
     "fixed_in_code": 0,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 5,
+    "recheck_confirmed": 5,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
     0.2821,
@@ -12225,7 +12273,11 @@
     "error_rate": 0.0962,
     "fixed_in_code": 5,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 20,
+    "recheck_confirmed": 20,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
     0.5343,
@@ -15381,24 +15433,24 @@
    "source_id": "eia-aeo",
    "totals": {
     "n_graded": 4205,
-    "hits": 1942,
-    "partials": 882,
-    "misses": 1381,
+    "hits": 1939,
+    "partials": 888,
+    "misses": 1378,
     "ungradable": 873,
-    "open": 3645,
-    "excluded": 381,
-    "hit_rate": 0.4618,
+    "open": 3920,
+    "excluded": 392,
+    "hit_rate": 0.4611,
     "hit_rate_ci95": [
-     0.4468,
-     0.4769
+     0.4461,
+     0.4762
     ],
     "errors": [
      {
       "rule": "D16",
       "unit": "percent of actual",
       "n": 4205,
-      "bias": 11.381,
-      "mae": 27.932
+      "bias": 11.331,
+      "mae": 27.884
      }
     ]
    },
@@ -15412,35 +15464,39 @@
     "error_rate": 0.037,
     "fixed_in_code": 16,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 4,
+    "recheck_confirmed": 4,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
-    0.4468,
-    0.4769
+    0.4461,
+    0.4762
    ],
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
       "n_graded": 4205,
-      "hits": 1942,
-      "partials": 882,
-      "misses": 1381,
+      "hits": 1939,
+      "partials": 888,
+      "misses": 1378,
       "ungradable": 873,
-      "open": 3645,
-      "excluded": 381,
-      "hit_rate": 0.4618,
+      "open": 3920,
+      "excluded": 392,
+      "hit_rate": 0.4611,
       "hit_rate_ci95": [
-       0.4468,
-       0.4769
+       0.4461,
+       0.4762
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 4205,
-        "bias": 11.381,
-        "mae": 27.932
+        "bias": 11.331,
+        "mae": 27.884
        }
       ]
      }
@@ -15449,24 +15505,24 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 316,
-      "hits": 233,
-      "partials": 52,
-      "misses": 31,
+      "hits": 232,
+      "partials": 54,
+      "misses": 30,
       "ungradable": 61,
-      "open": 9,
+      "open": 20,
       "excluded": 0,
-      "hit_rate": 0.7373,
+      "hit_rate": 0.7342,
       "hit_rate_ci95": [
-       0.6862,
-       0.7828
+       0.6829,
+       0.7799
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 316,
-        "bias": 0.789,
-        "mae": 8.256
+        "bias": 0.725,
+        "mae": 8.222
        }
       ]
      }
@@ -15479,7 +15535,7 @@
       "partials": 47,
       "misses": 49,
       "ungradable": 59,
-      "open": 11,
+      "open": 22,
       "excluded": 0,
       "hit_rate": 0.6952,
       "hit_rate_ci95": [
@@ -15491,8 +15547,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 315,
-        "bias": 2.047,
-        "mae": 12.059
+        "bias": 1.959,
+        "mae": 11.977
        }
       ]
      }
@@ -15501,24 +15557,24 @@
      "horizon": "2_years",
      "stats": {
       "n_graded": 311,
-      "hits": 202,
-      "partials": 40,
+      "hits": 201,
+      "partials": 41,
       "misses": 69,
       "ungradable": 59,
-      "open": 20,
+      "open": 31,
       "excluded": 0,
-      "hit_rate": 0.6495,
+      "hit_rate": 0.6463,
       "hit_rate_ci95": [
-       0.595,
-       0.7004
+       0.5917,
+       0.6974
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 311,
-        "bias": 2.396,
-        "mae": 15.228
+        "bias": 2.303,
+        "mae": 15.169
        }
       ]
      }
@@ -15527,24 +15583,24 @@
      "horizon": "3_to_5_years",
      "stats": {
       "n_graded": 876,
-      "hits": 491,
-      "partials": 131,
-      "misses": 254,
+      "hits": 490,
+      "partials": 134,
+      "misses": 252,
       "ungradable": 165,
-      "open": 126,
+      "open": 159,
       "excluded": 0,
-      "hit_rate": 0.5605,
+      "hit_rate": 0.5594,
       "hit_rate_ci95": [
-       0.5274,
-       0.593
+       0.5263,
+       0.5919
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 876,
-        "bias": 6.018,
-        "mae": 23.25
+        "bias": 5.889,
+        "mae": 23.104
        }
       ]
      }
@@ -15557,7 +15613,7 @@
       "partials": 265,
       "misses": 413,
       "ungradable": 235,
-      "open": 430,
+      "open": 485,
       "excluded": 0,
       "hit_rate": 0.4175,
       "hit_rate_ci95": [
@@ -15569,8 +15625,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 1164,
-        "bias": 12.526,
-        "mae": 34.534
+        "bias": 12.509,
+        "mae": 34.518
        }
       ]
      }
@@ -15583,7 +15639,7 @@
       "partials": 347,
       "misses": 565,
       "ungradable": 294,
-      "open": 3049,
+      "open": 3203,
       "excluded": 0,
       "hit_rate": 0.2543,
       "hit_rate_ci95": [
@@ -15610,7 +15666,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 381,
+      "excluded": 392,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -15627,8 +15683,8 @@
       "partials": 110,
       "misses": 111,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 32,
+      "open": 360,
+      "excluded": 33,
       "hit_rate": 0.4977,
       "hit_rate_ci95": [
        0.4512,
@@ -15654,7 +15710,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -15681,7 +15737,7 @@
       "partials": 2,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9355,
       "hit_rate_ci95": [
@@ -15708,7 +15764,7 @@
       "partials": 2,
       "misses": 0,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 0.9333,
       "hit_rate_ci95": [
@@ -15735,7 +15791,7 @@
       "partials": 18,
       "misses": 0,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.7857,
       "hit_rate_ci95": [
@@ -15762,7 +15818,7 @@
       "partials": 55,
       "misses": 19,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.3833,
       "hit_rate_ci95": [
@@ -15789,7 +15845,7 @@
       "partials": 33,
       "misses": 92,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.1319,
       "hit_rate_ci95": [
@@ -15817,7 +15873,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 32,
+      "excluded": 33,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -15832,8 +15888,8 @@
       "partials": 101,
       "misses": 19,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 39,
+      "open": 360,
+      "excluded": 40,
       "hit_rate": 0.7802,
       "hit_rate_ci95": [
        0.7436,
@@ -15859,7 +15915,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -15886,7 +15942,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -15913,7 +15969,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -15940,7 +15996,7 @@
       "partials": 3,
       "misses": 0,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.9732,
       "hit_rate_ci95": [
@@ -15967,7 +16023,7 @@
       "partials": 32,
       "misses": 0,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.7881,
       "hit_rate_ci95": [
@@ -15994,7 +16050,7 @@
       "partials": 66,
       "misses": 19,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.488,
       "hit_rate_ci95": [
@@ -16022,7 +16078,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 39,
+      "excluded": 40,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -16033,24 +16089,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 1011,
-      "hits": 677,
-      "partials": 231,
+      "hits": 676,
+      "partials": 232,
       "misses": 103,
       "ungradable": 89,
-      "open": 650,
-      "excluded": 78,
-      "hit_rate": 0.6696,
+      "open": 700,
+      "excluded": 80,
+      "hit_rate": 0.6686,
       "hit_rate_ci95": [
-       0.64,
-       0.6979
+       0.639,
+       0.697
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 1011,
-        "bias": 7.062,
-        "mae": 9.582
+        "bias": 7.098,
+        "mae": 9.573
        }
       ]
      }
@@ -16064,7 +16120,7 @@
       "partials": 1,
       "misses": 0,
       "ungradable": 4,
-      "open": 1,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 0.9867,
       "hit_rate_ci95": [
@@ -16076,8 +16132,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 75,
-        "bias": 0.365,
-        "mae": 2.062
+        "bias": 0.463,
+        "mae": 2.03
        }
       ]
      }
@@ -16091,7 +16147,7 @@
       "partials": 1,
       "misses": 0,
       "ungradable": 4,
-      "open": 2,
+      "open": 4,
       "excluded": 0,
       "hit_rate": 0.9865,
       "hit_rate_ci95": [
@@ -16103,8 +16159,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 74,
-        "bias": 0.896,
-        "mae": 2.863
+        "bias": 0.982,
+        "mae": 2.834
        }
       ]
      }
@@ -16118,7 +16174,7 @@
       "partials": 4,
       "misses": 0,
       "ungradable": 5,
-      "open": 3,
+      "open": 5,
       "excluded": 0,
       "hit_rate": 0.9459,
       "hit_rate_ci95": [
@@ -16130,8 +16186,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 74,
-        "bias": 1.158,
-        "mae": 3.693
+        "bias": 1.251,
+        "mae": 3.611
        }
       ]
      }
@@ -16141,24 +16197,24 @@
      "horizon": "3_to_5_years",
      "stats": {
       "n_graded": 209,
-      "hits": 177,
-      "partials": 32,
+      "hits": 176,
+      "partials": 33,
       "misses": 0,
       "ungradable": 15,
-      "open": 21,
+      "open": 27,
       "excluded": 0,
-      "hit_rate": 0.8469,
+      "hit_rate": 0.8421,
       "hit_rate_ci95": [
-       0.7918,
-       0.8894
+       0.7866,
+       0.8853
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 209,
-        "bias": 1.854,
-        "mae": 5.24
+        "bias": 1.929,
+        "mae": 5.243
        }
       ]
      }
@@ -16172,7 +16228,7 @@
       "partials": 84,
       "misses": 10,
       "ungradable": 25,
-      "open": 75,
+      "open": 85,
       "excluded": 0,
       "hit_rate": 0.6582,
       "hit_rate_ci95": [
@@ -16199,7 +16255,7 @@
       "partials": 109,
       "misses": 93,
       "ungradable": 36,
-      "open": 548,
+      "open": 576,
       "excluded": 0,
       "hit_rate": 0.3355,
       "hit_rate_ci95": [
@@ -16227,7 +16283,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 78,
+      "excluded": 80,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -16242,8 +16298,8 @@
       "partials": 149,
       "misses": 515,
       "ungradable": 354,
-      "open": 670,
-      "excluded": 87,
+      "open": 720,
+      "excluded": 89,
       "hit_rate": 0.1158,
       "hit_rate_ci95": [
        0.0949,
@@ -16269,7 +16325,7 @@
       "partials": 24,
       "misses": 20,
       "ungradable": 27,
-      "open": 2,
+      "open": 4,
       "excluded": 0,
       "hit_rate": 0.2414,
       "hit_rate_ci95": [
@@ -16296,7 +16352,7 @@
       "partials": 17,
       "misses": 30,
       "ungradable": 26,
-      "open": 2,
+      "open": 4,
       "excluded": 0,
       "hit_rate": 0.1897,
       "hit_rate_ci95": [
@@ -16323,7 +16379,7 @@
       "partials": 10,
       "misses": 40,
       "ungradable": 25,
-      "open": 4,
+      "open": 6,
       "excluded": 0,
       "hit_rate": 0.1228,
       "hit_rate_ci95": [
@@ -16350,7 +16406,7 @@
       "partials": 20,
       "misses": 127,
       "ungradable": 69,
-      "open": 24,
+      "open": 30,
       "excluded": 0,
       "hit_rate": 0.0813,
       "hit_rate_ci95": [
@@ -16377,7 +16433,7 @@
       "partials": 35,
       "misses": 155,
       "ungradable": 95,
-      "open": 80,
+      "open": 90,
       "excluded": 0,
       "hit_rate": 0.0995,
       "hit_rate_ci95": [
@@ -16404,7 +16460,7 @@
       "partials": 43,
       "misses": 143,
       "ungradable": 112,
-      "open": 558,
+      "open": 586,
       "excluded": 0,
       "hit_rate": 0.1014,
       "hit_rate_ci95": [
@@ -16432,7 +16488,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 87,
+      "excluded": 89,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -16447,8 +16503,8 @@
       "partials": 123,
       "misses": 57,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 39,
+      "open": 360,
+      "excluded": 40,
       "hit_rate": 0.6703,
       "hit_rate_ci95": [
        0.6298,
@@ -16474,7 +16530,7 @@
       "partials": 1,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9744,
       "hit_rate_ci95": [
@@ -16501,7 +16557,7 @@
       "partials": 2,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9487,
       "hit_rate_ci95": [
@@ -16528,7 +16584,7 @@
       "partials": 3,
       "misses": 0,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 0.9231,
       "hit_rate_ci95": [
@@ -16555,7 +16611,7 @@
       "partials": 17,
       "misses": 0,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.8482,
       "hit_rate_ci95": [
@@ -16582,7 +16638,7 @@
       "partials": 36,
       "misses": 11,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.6887,
       "hit_rate_ci95": [
@@ -16609,7 +16665,7 @@
       "partials": 64,
       "misses": 46,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.3373,
       "hit_rate_ci95": [
@@ -16637,7 +16693,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 39,
+      "excluded": 40,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -16648,24 +16704,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 615,
-      "hits": 100,
-      "partials": 118,
-      "misses": 397,
+      "hits": 98,
+      "partials": 123,
+      "misses": 394,
       "ungradable": 354,
-      "open": 670,
-      "excluded": 70,
-      "hit_rate": 0.1626,
+      "open": 720,
+      "excluded": 72,
+      "hit_rate": 0.1593,
       "hit_rate_ci95": [
-       0.1355,
-       0.1938
+       0.1326,
+       0.1904
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 615,
-        "bias": 18.305,
-        "mae": 52.631
+        "bias": 17.905,
+        "mae": 52.317
        }
       ]
      }
@@ -16675,24 +16731,24 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 42,
-      "hits": 14,
-      "partials": 18,
-      "misses": 10,
+      "hits": 13,
+      "partials": 20,
+      "misses": 9,
       "ungradable": 27,
-      "open": 2,
+      "open": 4,
       "excluded": 0,
-      "hit_rate": 0.3333,
+      "hit_rate": 0.3095,
       "hit_rate_ci95": [
-       0.2101,
-       0.4845
+       0.1907,
+       0.4603
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 42,
-        "bias": 0.986,
-        "mae": 17.753
+        "bias": 0.328,
+        "mae": 17.557
        }
       ]
      }
@@ -16706,7 +16762,7 @@
       "partials": 13,
       "misses": 19,
       "ungradable": 26,
-      "open": 2,
+      "open": 4,
       "excluded": 0,
       "hit_rate": 0.2558,
       "hit_rate_ci95": [
@@ -16718,8 +16774,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 43,
-        "bias": 7.061,
-        "mae": 29.213
+        "bias": 6.269,
+        "mae": 28.657
        }
       ]
      }
@@ -16729,24 +16785,24 @@
      "horizon": "2_years",
      "stats": {
       "n_graded": 43,
-      "hits": 12,
-      "partials": 10,
+      "hits": 11,
+      "partials": 11,
       "misses": 21,
       "ungradable": 25,
-      "open": 4,
+      "open": 6,
       "excluded": 0,
-      "hit_rate": 0.2791,
+      "hit_rate": 0.2558,
       "hit_rate_ci95": [
-       0.1675,
-       0.4269
+       0.1493,
+       0.4024
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 43,
-        "bias": 10.529,
-        "mae": 34.134
+        "bias": 9.691,
+        "mae": 33.846
        }
       ]
      }
@@ -16757,10 +16813,10 @@
      "stats": {
       "n_graded": 124,
       "hits": 20,
-      "partials": 26,
-      "misses": 78,
+      "partials": 28,
+      "misses": 76,
       "ungradable": 69,
-      "open": 24,
+      "open": 30,
       "excluded": 0,
       "hit_rate": 0.1613,
       "hit_rate_ci95": [
@@ -16772,8 +16828,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 124,
-        "bias": 25.055,
-        "mae": 50.975
+        "bias": 24.017,
+        "mae": 49.938
        }
       ]
      }
@@ -16787,7 +16843,7 @@
       "partials": 19,
       "misses": 141,
       "ungradable": 95,
-      "open": 80,
+      "open": 90,
       "excluded": 0,
       "hit_rate": 0.0643,
       "hit_rate_ci95": [
@@ -16799,8 +16855,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 171,
-        "bias": 38.777,
-        "mae": 75.489
+        "bias": 38.663,
+        "mae": 75.375
        }
       ]
      }
@@ -16814,7 +16870,7 @@
       "partials": 32,
       "misses": 128,
       "ungradable": 112,
-      "open": 558,
+      "open": 586,
       "excluded": 0,
       "hit_rate": 0.1667,
       "hit_rate_ci95": [
@@ -16842,7 +16898,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 70,
+      "excluded": 72,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -16857,8 +16913,8 @@
       "partials": 19,
       "misses": 81,
       "ungradable": 76,
-      "open": 315,
-      "excluded": 18,
+      "open": 340,
+      "excluded": 19,
       "hit_rate": 0.1667,
       "hit_rate_ci95": [
        0.1106,
@@ -16884,7 +16940,7 @@
       "partials": 6,
       "misses": 0,
       "ungradable": 3,
-      "open": 0,
+      "open": 1,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -16908,7 +16964,7 @@
       "partials": 7,
       "misses": 0,
       "ungradable": 3,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -16932,7 +16988,7 @@
       "partials": 5,
       "misses": 5,
       "ungradable": 4,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -16956,7 +17012,7 @@
       "partials": 1,
       "misses": 31,
       "ungradable": 12,
-      "open": 9,
+      "open": 12,
       "excluded": 0,
       "hit_rate": 0.0303,
       "hit_rate_ci95": [
@@ -16983,7 +17039,7 @@
       "partials": 0,
       "misses": 35,
       "ungradable": 20,
-      "open": 35,
+      "open": 40,
       "excluded": 0,
       "hit_rate": 0,
       "hit_rate_ci95": [
@@ -17010,7 +17066,7 @@
       "partials": 0,
       "misses": 10,
       "ungradable": 34,
-      "open": 269,
+      "open": 283,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -17035,7 +17091,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 18,
+      "excluded": 19,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -17050,8 +17106,8 @@
       "partials": 31,
       "misses": 98,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 18,
+      "open": 360,
+      "excluded": 19,
       "hit_rate": 0.267,
       "hit_rate_ci95": [
        0.2072,
@@ -17077,7 +17133,7 @@
       "partials": 2,
       "misses": 1,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -17101,7 +17157,7 @@
       "partials": 5,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -17125,7 +17181,7 @@
       "partials": 6,
       "misses": 3,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -17149,7 +17205,7 @@
       "partials": 14,
       "misses": 18,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.2381,
       "hit_rate_ci95": [
@@ -17176,7 +17232,7 @@
       "partials": 4,
       "misses": 42,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.08,
       "hit_rate_ci95": [
@@ -17203,7 +17259,7 @@
       "partials": 0,
       "misses": 34,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0,
       "hit_rate_ci95": [
@@ -17231,7 +17287,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 18,
+      "excluded": 19,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -17249,8 +17305,8 @@
       "partials": 101,
       "misses": 19,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 39,
+      "open": 360,
+      "excluded": 40,
       "hit_rate": 0.7802,
       "hit_rate_ci95": [
        0.7436,
@@ -17277,7 +17333,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -17305,7 +17361,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -17333,7 +17389,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -17361,7 +17417,7 @@
       "partials": 3,
       "misses": 0,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.9732,
       "hit_rate_ci95": [
@@ -17389,7 +17445,7 @@
       "partials": 32,
       "misses": 0,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.7881,
       "hit_rate_ci95": [
@@ -17417,7 +17473,7 @@
       "partials": 66,
       "misses": 19,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.488,
       "hit_rate_ci95": [
@@ -17446,7 +17502,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 39,
+      "excluded": 40,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -17462,8 +17518,8 @@
       "partials": 110,
       "misses": 111,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 32,
+      "open": 360,
+      "excluded": 33,
       "hit_rate": 0.4977,
       "hit_rate_ci95": [
        0.4512,
@@ -17490,7 +17546,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -17518,7 +17574,7 @@
       "partials": 2,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9355,
       "hit_rate_ci95": [
@@ -17546,7 +17602,7 @@
       "partials": 2,
       "misses": 0,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 0.9333,
       "hit_rate_ci95": [
@@ -17574,7 +17630,7 @@
       "partials": 18,
       "misses": 0,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.7857,
       "hit_rate_ci95": [
@@ -17602,7 +17658,7 @@
       "partials": 55,
       "misses": 19,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.3833,
       "hit_rate_ci95": [
@@ -17630,7 +17686,7 @@
       "partials": 33,
       "misses": 92,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.1319,
       "hit_rate_ci95": [
@@ -17659,7 +17715,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 32,
+      "excluded": 33,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -17671,24 +17727,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 546,
-      "hits": 84,
-      "partials": 101,
-      "misses": 361,
+      "hits": 82,
+      "partials": 106,
+      "misses": 358,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 39,
-      "hit_rate": 0.1538,
+      "open": 360,
+      "excluded": 40,
+      "hit_rate": 0.1502,
       "hit_rate_ci95": [
-       0.126,
-       0.1865
+       0.1227,
+       0.1826
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 546,
-        "bias": 15.727,
-        "mae": 52.974
+        "bias": 15.276,
+        "mae": 52.621
        }
       ]
      }
@@ -17699,24 +17755,24 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 39,
-      "hits": 13,
-      "partials": 16,
-      "misses": 10,
+      "hits": 12,
+      "partials": 18,
+      "misses": 9,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
-      "hit_rate": 0.3333,
+      "hit_rate": 0.3077,
       "hit_rate_ci95": [
-       0.2063,
-       0.4902
+       0.1857,
+       0.4642
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 1.248,
-        "mae": 18.03
+        "bias": 0.539,
+        "mae": 17.818
        }
       ]
      }
@@ -17731,7 +17787,7 @@
       "partials": 12,
       "misses": 17,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.2564,
       "hit_rate_ci95": [
@@ -17743,8 +17799,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 8.312,
-        "mae": 29.944
+        "bias": 7.439,
+        "mae": 29.33
        }
       ]
      }
@@ -17755,24 +17811,24 @@
      "horizon": "2_years",
      "stats": {
       "n_graded": 39,
-      "hits": 11,
-      "partials": 8,
+      "hits": 10,
+      "partials": 9,
       "misses": 20,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
-      "hit_rate": 0.2821,
+      "hit_rate": 0.2564,
       "hit_rate_ci95": [
-       0.1654,
-       0.4378
+       0.1457,
+       0.4108
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 13.078,
-        "mae": 36.165
+        "bias": 12.154,
+        "mae": 35.848
        }
       ]
      }
@@ -17784,10 +17840,10 @@
      "stats": {
       "n_graded": 112,
       "hits": 14,
-      "partials": 21,
-      "misses": 77,
+      "partials": 23,
+      "misses": 75,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.125,
       "hit_rate_ci95": [
@@ -17799,8 +17855,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 112,
-        "bias": 27.343,
-        "mae": 55.163
+        "bias": 26.195,
+        "mae": 54.015
        }
       ]
      }
@@ -17815,7 +17871,7 @@
       "partials": 16,
       "misses": 126,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.0596,
       "hit_rate_ci95": [
@@ -17827,8 +17883,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 151,
-        "bias": 34.827,
-        "mae": 76.313
+        "bias": 34.699,
+        "mae": 76.184
        }
       ]
      }
@@ -17843,7 +17899,7 @@
       "partials": 28,
       "misses": 111,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.1627,
       "hit_rate_ci95": [
@@ -17872,7 +17928,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 39,
+      "excluded": 40,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -17888,8 +17944,8 @@
       "partials": 17,
       "misses": 36,
       "ungradable": 354,
-      "open": 335,
-      "excluded": 31,
+      "open": 360,
+      "excluded": 32,
       "hit_rate": 0.2319,
       "hit_rate_ci95": [
        0.1481,
@@ -17916,7 +17972,7 @@
       "partials": 2,
       "misses": 0,
       "ungradable": 27,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -17941,7 +17997,7 @@
       "partials": 1,
       "misses": 2,
       "ungradable": 26,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -17966,7 +18022,7 @@
       "partials": 2,
       "misses": 1,
       "ungradable": 25,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -17991,7 +18047,7 @@
       "partials": 5,
       "misses": 1,
       "ungradable": 69,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -18016,7 +18072,7 @@
       "partials": 3,
       "misses": 15,
       "ungradable": 95,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.1,
       "hit_rate_ci95": [
@@ -18044,7 +18100,7 @@
       "partials": 4,
       "misses": 17,
       "ungradable": 112,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.1923,
       "hit_rate_ci95": [
@@ -18073,7 +18129,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 31,
+      "excluded": 32,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -18089,8 +18145,8 @@
       "partials": 83,
       "misses": 293,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 31,
+      "open": 360,
+      "excluded": 32,
       "hit_rate": 0.1111,
       "hit_rate_ci95": [
        0.0846,
@@ -18117,7 +18173,7 @@
       "partials": 10,
       "misses": 11,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.3,
       "hit_rate_ci95": [
@@ -18145,7 +18201,7 @@
       "partials": 7,
       "misses": 17,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.2,
       "hit_rate_ci95": [
@@ -18173,7 +18229,7 @@
       "partials": 3,
       "misses": 21,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 0.1724,
       "hit_rate_ci95": [
@@ -18201,7 +18257,7 @@
       "partials": 10,
       "misses": 63,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.0988,
       "hit_rate_ci95": [
@@ -18229,7 +18285,7 @@
       "partials": 27,
       "misses": 81,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.0609,
       "hit_rate_ci95": [
@@ -18257,7 +18313,7 @@
       "partials": 26,
       "misses": 100,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.087,
       "hit_rate_ci95": [
@@ -18286,7 +18342,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 31,
+      "excluded": 32,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -18302,8 +18358,8 @@
       "partials": 8,
       "misses": 55,
       "ungradable": 354,
-      "open": 335,
-      "excluded": 31,
+      "open": 360,
+      "excluded": 32,
       "hit_rate": 0.087,
       "hit_rate_ci95": [
        0.0405,
@@ -18330,7 +18386,7 @@
       "partials": 0,
       "misses": 3,
       "ungradable": 27,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -18355,7 +18411,7 @@
       "partials": 1,
       "misses": 3,
       "ungradable": 26,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -18380,7 +18436,7 @@
       "partials": 1,
       "misses": 3,
       "ungradable": 25,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -18405,7 +18461,7 @@
       "partials": 1,
       "misses": 10,
       "ungradable": 69,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -18430,7 +18486,7 @@
       "partials": 0,
       "misses": 16,
       "ungradable": 95,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.2,
       "hit_rate_ci95": [
@@ -18458,7 +18514,7 @@
       "partials": 5,
       "misses": 20,
       "ungradable": 112,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.0385,
       "hit_rate_ci95": [
@@ -18487,7 +18543,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 31,
+      "excluded": 32,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -18716,8 +18772,8 @@
       "partials": 123,
       "misses": 57,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 39,
+      "open": 360,
+      "excluded": 40,
       "hit_rate": 0.6703,
       "hit_rate_ci95": [
        0.6298,
@@ -18744,7 +18800,7 @@
       "partials": 1,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9744,
       "hit_rate_ci95": [
@@ -18772,7 +18828,7 @@
       "partials": 2,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9487,
       "hit_rate_ci95": [
@@ -18800,7 +18856,7 @@
       "partials": 3,
       "misses": 0,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 0.9231,
       "hit_rate_ci95": [
@@ -18828,7 +18884,7 @@
       "partials": 17,
       "misses": 0,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.8482,
       "hit_rate_ci95": [
@@ -18856,7 +18912,7 @@
       "partials": 36,
       "misses": 11,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.6887,
       "hit_rate_ci95": [
@@ -18884,7 +18940,7 @@
       "partials": 64,
       "misses": 46,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.3373,
       "hit_rate_ci95": [
@@ -18913,7 +18969,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 39,
+      "excluded": 40,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -18929,8 +18985,8 @@
       "partials": 19,
       "misses": 81,
       "ungradable": 76,
-      "open": 315,
-      "excluded": 18,
+      "open": 340,
+      "excluded": 19,
       "hit_rate": 0.1667,
       "hit_rate_ci95": [
        0.1106,
@@ -18957,7 +19013,7 @@
       "partials": 6,
       "misses": 0,
       "ungradable": 3,
-      "open": 0,
+      "open": 1,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -18982,7 +19038,7 @@
       "partials": 7,
       "misses": 0,
       "ungradable": 3,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -19007,7 +19063,7 @@
       "partials": 5,
       "misses": 5,
       "ungradable": 4,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -19032,7 +19088,7 @@
       "partials": 1,
       "misses": 31,
       "ungradable": 12,
-      "open": 9,
+      "open": 12,
       "excluded": 0,
       "hit_rate": 0.0303,
       "hit_rate_ci95": [
@@ -19060,7 +19116,7 @@
       "partials": 0,
       "misses": 35,
       "ungradable": 20,
-      "open": 35,
+      "open": 40,
       "excluded": 0,
       "hit_rate": 0,
       "hit_rate_ci95": [
@@ -19088,7 +19144,7 @@
       "partials": 0,
       "misses": 10,
       "ungradable": 34,
-      "open": 269,
+      "open": 283,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -19114,7 +19170,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 18,
+      "excluded": 19,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -19130,8 +19186,8 @@
       "partials": 124,
       "misses": 25,
       "ungradable": 89,
-      "open": 315,
-      "excluded": 39,
+      "open": 340,
+      "excluded": 40,
       "hit_rate": 0.6876,
       "hit_rate_ci95": [
        0.6447,
@@ -19158,7 +19214,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 4,
-      "open": 0,
+      "open": 1,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -19186,7 +19242,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 4,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -19214,7 +19270,7 @@
       "partials": 1,
       "misses": 0,
       "ungradable": 5,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9714,
       "hit_rate_ci95": [
@@ -19242,7 +19298,7 @@
       "partials": 10,
       "misses": 0,
       "ungradable": 15,
-      "open": 9,
+      "open": 12,
       "excluded": 0,
       "hit_rate": 0.9,
       "hit_rate_ci95": [
@@ -19270,7 +19326,7 @@
       "partials": 42,
       "misses": 1,
       "ungradable": 25,
-      "open": 35,
+      "open": 40,
       "excluded": 0,
       "hit_rate": 0.6718,
       "hit_rate_ci95": [
@@ -19298,7 +19354,7 @@
       "partials": 71,
       "misses": 24,
       "ungradable": 36,
-      "open": 269,
+      "open": 283,
       "excluded": 0,
       "hit_rate": 0.3214,
       "hit_rate_ci95": [
@@ -19327,7 +19383,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 39,
+      "excluded": 40,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -19339,24 +19395,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 534,
-      "hits": 349,
-      "partials": 107,
+      "hits": 348,
+      "partials": 108,
       "misses": 78,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 39,
-      "hit_rate": 0.6536,
+      "open": 360,
+      "excluded": 40,
+      "hit_rate": 0.6517,
       "hit_rate_ci95": [
-       0.6122,
-       0.6927
+       0.6103,
+       0.6909
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 534,
-        "bias": 7.121,
-        "mae": 10.848
+        "bias": 7.189,
+        "mae": 10.83
        }
       ]
      }
@@ -19371,7 +19427,7 @@
       "partials": 1,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9744,
       "hit_rate_ci95": [
@@ -19383,8 +19439,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.237,
-        "mae": 2.432
+        "bias": 0.426,
+        "mae": 2.37
        }
       ]
      }
@@ -19399,7 +19455,7 @@
       "partials": 1,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": 0.9744,
       "hit_rate_ci95": [
@@ -19411,8 +19467,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.53,
-        "mae": 3.246
+        "bias": 0.695,
+        "mae": 3.191
        }
       ]
      }
@@ -19427,7 +19483,7 @@
       "partials": 3,
       "misses": 0,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": 0.9231,
       "hit_rate_ci95": [
@@ -19439,8 +19495,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.493,
-        "mae": 4.213
+        "bias": 0.67,
+        "mae": 4.057
        }
       ]
      }
@@ -19451,24 +19507,24 @@
      "horizon": "3_to_5_years",
      "stats": {
       "n_graded": 109,
-      "hits": 87,
-      "partials": 22,
+      "hits": 86,
+      "partials": 23,
       "misses": 0,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
-      "hit_rate": 0.7982,
+      "hit_rate": 0.789,
       "hit_rate_ci95": [
-       0.7133,
-       0.8628
+       0.7032,
+       0.8551
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 109,
-        "bias": 0.974,
-        "mae": 6.23
+        "bias": 1.118,
+        "mae": 6.237
        }
       ]
      }
@@ -19483,7 +19539,7 @@
       "partials": 42,
       "misses": 9,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.6458,
       "hit_rate_ci95": [
@@ -19511,7 +19567,7 @@
       "partials": 38,
       "misses": 69,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0.3476,
       "hit_rate_ci95": [
@@ -19540,7 +19596,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 39,
+      "excluded": 40,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -19556,8 +19612,8 @@
       "partials": 31,
       "misses": 98,
       "ungradable": 0,
-      "open": 335,
-      "excluded": 18,
+      "open": 360,
+      "excluded": 19,
       "hit_rate": 0.267,
       "hit_rate_ci95": [
        0.2072,
@@ -19584,7 +19640,7 @@
       "partials": 2,
       "misses": 1,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -19609,7 +19665,7 @@
       "partials": 5,
       "misses": 0,
       "ungradable": 0,
-      "open": 1,
+      "open": 2,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -19634,7 +19690,7 @@
       "partials": 6,
       "misses": 3,
       "ungradable": 0,
-      "open": 2,
+      "open": 3,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -19659,7 +19715,7 @@
       "partials": 14,
       "misses": 18,
       "ungradable": 0,
-      "open": 12,
+      "open": 15,
       "excluded": 0,
       "hit_rate": 0.2381,
       "hit_rate_ci95": [
@@ -19687,7 +19743,7 @@
       "partials": 4,
       "misses": 42,
       "ungradable": 0,
-      "open": 40,
+      "open": 45,
       "excluded": 0,
       "hit_rate": 0.08,
       "hit_rate_ci95": [
@@ -19715,7 +19771,7 @@
       "partials": 0,
       "misses": 34,
       "ungradable": 0,
-      "open": 279,
+      "open": 293,
       "excluded": 0,
       "hit_rate": 0,
       "hit_rate_ci95": [
@@ -19744,7 +19800,7 @@
       "misses": 0,
       "ungradable": 0,
       "open": 0,
-      "excluded": 18,
+      "excluded": 19,
       "hit_rate": null,
       "hit_rate_ci95": null,
       "errors": []
@@ -20622,8 +20678,8 @@
      "stats": {
       "n_graded": 90,
       "hits": 48,
-      "partials": 11,
-      "misses": 31,
+      "partials": 13,
+      "misses": 29,
       "ungradable": 22,
       "open": 174,
       "excluded": 11,
@@ -20637,8 +20693,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 90,
-        "bias": 14.546,
-        "mae": 28.446
+        "bias": 12.794,
+        "mae": 26.694
        }
       ]
      }
@@ -20648,24 +20704,24 @@
      "published": "2016",
      "stats": {
       "n_graded": 81,
-      "hits": 55,
-      "partials": 9,
-      "misses": 17,
+      "hits": 52,
+      "partials": 13,
+      "misses": 16,
       "ungradable": 20,
       "open": 174,
       "excluded": 11,
-      "hit_rate": 0.679,
+      "hit_rate": 0.642,
       "hit_rate_ci95": [
-       0.5712,
-       0.7706
+       0.5333,
+       0.7378
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 81,
-        "bias": 11.446,
-        "mae": 17.036
+        "bias": 10.807,
+        "mae": 16.481
        }
       ]
      }
@@ -20871,6 +20927,22 @@
       "hit_rate_ci95": null,
       "errors": []
      }
+    },
+    {
+     "edition": "2026",
+     "published": "2026-04-08",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 0,
+      "open": 275,
+      "excluded": 11,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
     }
    ]
   },
@@ -20909,7 +20981,11 @@
     "error_rate": 0,
     "fixed_in_code": 0,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 26,
+    "recheck_confirmed": 26,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
     0.4823,
@@ -24471,7 +24547,11 @@
     "error_rate": 0,
     "fixed_in_code": 0,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 0,
+    "recheck_confirmed": 0,
+    "recheck_corrected": 0,
+    "pending_recheck": 28
    },
    "hit_rate_audit_adjusted95": [
     0.0435,
@@ -26055,7 +26135,11 @@
     "error_rate": 0.1053,
     "fixed_in_code": 16,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 11,
+    "recheck_confirmed": 11,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
     0.3804,
@@ -29086,7 +29170,11 @@
     "error_rate": 0.04,
     "fixed_in_code": 2,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 0,
+    "recheck_confirmed": 0,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
     0.2893,
@@ -31162,7 +31250,11 @@
     "error_rate": 0,
     "fixed_in_code": 0,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 0,
+    "recheck_confirmed": 0,
+    "recheck_corrected": 0,
+    "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
     0.4297,
@@ -32654,25 +32746,25 @@
   {
    "source_id": "world-bank-gep",
    "totals": {
-    "n_graded": 529,
-    "hits": 218,
-    "partials": 125,
-    "misses": 186,
-    "ungradable": 163,
+    "n_graded": 525,
+    "hits": 217,
+    "partials": 126,
+    "misses": 182,
+    "ungradable": 167,
     "open": 54,
     "excluded": 0,
-    "hit_rate": 0.4121,
+    "hit_rate": 0.4133,
     "hit_rate_ci95": [
-     0.3709,
-     0.4545
+     0.372,
+     0.4559
     ],
     "errors": [
      {
       "rule": "D18",
       "unit": "pp",
-      "n": 529,
-      "bias": 0.275,
-      "mae": 1.21
+      "n": 525,
+      "bias": 0.307,
+      "mae": 1.209
      }
     ]
    },
@@ -32686,35 +32778,39 @@
     "error_rate": 0.12,
     "fixed_in_code": 6,
     "residual_errors": 0,
-    "residual_error_rate": 0
+    "residual_error_rate": 0,
+    "rechecked": 0,
+    "recheck_confirmed": 0,
+    "recheck_corrected": 0,
+    "pending_recheck": 3
    },
    "hit_rate_audit_adjusted95": [
-    0.3709,
-    0.4545
+    0.372,
+    0.4559
    ],
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 529,
-      "hits": 218,
-      "partials": 125,
-      "misses": 186,
-      "ungradable": 163,
+      "n_graded": 525,
+      "hits": 217,
+      "partials": 126,
+      "misses": 182,
+      "ungradable": 167,
       "open": 54,
       "excluded": 0,
-      "hit_rate": 0.4121,
+      "hit_rate": 0.4133,
       "hit_rate_ci95": [
-       0.3709,
-       0.4545
+       0.372,
+       0.4559
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 529,
-        "bias": 0.275,
-        "mae": 1.21
+        "n": 525,
+        "bias": 0.307,
+        "mae": 1.209
        }
       ]
      }
@@ -32722,25 +32818,25 @@
     {
      "horizon": "current_year",
      "stats": {
-      "n_graded": 273,
+      "n_graded": 272,
       "hits": 126,
-      "partials": 64,
-      "misses": 83,
-      "ungradable": 82,
+      "partials": 65,
+      "misses": 81,
+      "ungradable": 83,
       "open": 18,
       "excluded": 0,
-      "hit_rate": 0.4615,
+      "hit_rate": 0.4632,
       "hit_rate_ci95": [
-       0.4033,
-       0.5208
+       0.4049,
+       0.5226
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 273,
-        "bias": -0.036,
-        "mae": 0.957
+        "n": 272,
+        "bias": -0.012,
+        "mae": 0.953
        }
       ]
      }
@@ -32748,25 +32844,25 @@
     {
      "horizon": "next_year",
      "stats": {
-      "n_graded": 256,
-      "hits": 92,
+      "n_graded": 253,
+      "hits": 91,
       "partials": 61,
-      "misses": 103,
-      "ungradable": 81,
+      "misses": 101,
+      "ungradable": 84,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.3594,
+      "hit_rate": 0.3597,
       "hit_rate_ci95": [
        0.3031,
-       0.4198
+       0.4205
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 256,
-        "bias": 0.607,
-        "mae": 1.48
+        "n": 253,
+        "bias": 0.649,
+        "mae": 1.484
        }
       ]
      }
@@ -32777,25 +32873,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 529,
-      "hits": 218,
-      "partials": 125,
-      "misses": 186,
-      "ungradable": 163,
+      "n_graded": 525,
+      "hits": 217,
+      "partials": 126,
+      "misses": 182,
+      "ungradable": 167,
       "open": 54,
       "excluded": 0,
-      "hit_rate": 0.4121,
+      "hit_rate": 0.4133,
       "hit_rate_ci95": [
-       0.3709,
-       0.4545
+       0.372,
+       0.4559
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 529,
-        "bias": 0.275,
-        "mae": 1.21
+        "n": 525,
+        "bias": 0.307,
+        "mae": 1.209
        }
       ]
      }
@@ -32804,25 +32900,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 273,
+      "n_graded": 272,
       "hits": 126,
-      "partials": 64,
-      "misses": 83,
-      "ungradable": 82,
+      "partials": 65,
+      "misses": 81,
+      "ungradable": 83,
       "open": 18,
       "excluded": 0,
-      "hit_rate": 0.4615,
+      "hit_rate": 0.4632,
       "hit_rate_ci95": [
-       0.4033,
-       0.5208
+       0.4049,
+       0.5226
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 273,
-        "bias": -0.036,
-        "mae": 0.957
+        "n": 272,
+        "bias": -0.012,
+        "mae": 0.953
        }
       ]
      }
@@ -32831,25 +32927,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 256,
-      "hits": 92,
+      "n_graded": 253,
+      "hits": 91,
       "partials": 61,
-      "misses": 103,
-      "ungradable": 81,
+      "misses": 101,
+      "ungradable": 84,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.3594,
+      "hit_rate": 0.3597,
       "hit_rate_ci95": [
        0.3031,
-       0.4198
+       0.4205
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 256,
-        "bias": 0.607,
-        "mae": 1.48
+        "n": 253,
+        "bias": 0.649,
+        "mae": 1.484
        }
       ]
      }
@@ -33617,25 +33713,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 67,
-      "hits": 37,
-      "partials": 17,
-      "misses": 13,
-      "ungradable": 15,
+      "n_graded": 63,
+      "hits": 36,
+      "partials": 18,
+      "misses": 9,
+      "ungradable": 19,
       "open": 6,
       "excluded": 0,
-      "hit_rate": 0.5522,
+      "hit_rate": 0.5714,
       "hit_rate_ci95": [
-       0.4336,
-       0.6652
+       0.4486,
+       0.686
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 67,
-        "bias": 0.136,
-        "mae": 0.857
+        "n": 63,
+        "bias": 0.387,
+        "mae": 0.822
        }
       ]
      }
@@ -33645,25 +33741,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 36,
+      "n_graded": 35,
       "hits": 23,
-      "partials": 8,
-      "misses": 5,
-      "ungradable": 6,
+      "partials": 9,
+      "misses": 3,
+      "ungradable": 7,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.6389,
+      "hit_rate": 0.6571,
       "hit_rate_ci95": [
-       0.4758,
-       0.7752
+       0.4915,
+       0.7917
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 36,
-        "bias": -0.134,
-        "mae": 0.644
+        "n": 35,
+        "bias": 0.049,
+        "mae": 0.603
        }
       ]
      }
@@ -33673,25 +33769,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 31,
-      "hits": 14,
+      "n_graded": 28,
+      "hits": 13,
       "partials": 9,
-      "misses": 8,
-      "ungradable": 9,
+      "misses": 6,
+      "ungradable": 12,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.4516,
+      "hit_rate": 0.4643,
       "hit_rate_ci95": [
-       0.2916,
-       0.6223
+       0.2953,
+       0.6419
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 31,
-        "bias": 0.449,
-        "mae": 1.105
+        "n": 28,
+        "bias": 0.811,
+        "mae": 1.096
        }
       ]
      }
@@ -34375,8 +34471,8 @@
      "published": "2019-01",
      "stats": {
       "n_graded": 14,
-      "hits": 4,
-      "partials": 1,
+      "hits": 3,
+      "partials": 2,
       "misses": 9,
       "ungradable": 4,
       "open": 0,
@@ -34422,11 +34518,11 @@
      "edition": "2020-01",
      "published": "2020-01",
      "stats": {
-      "n_graded": 14,
+      "n_graded": 13,
       "hits": 0,
       "partials": 0,
-      "misses": 14,
-      "ungradable": 4,
+      "misses": 13,
+      "ungradable": 5,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34435,7 +34531,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 14,
+        "n": 13,
         "bias": null,
         "mae": null
        }
@@ -34446,11 +34542,11 @@
      "edition": "2020-06",
      "published": "2020-06",
      "stats": {
-      "n_graded": 14,
+      "n_graded": 13,
       "hits": 0,
-      "partials": 0,
-      "misses": 14,
-      "ungradable": 4,
+      "partials": 1,
+      "misses": 12,
+      "ungradable": 5,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34459,7 +34555,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 14,
+        "n": 13,
         "bias": null,
         "mae": null
        }
@@ -34470,11 +34566,11 @@
      "edition": "2021-01",
      "published": "2021-01",
      "stats": {
-      "n_graded": 14,
-      "hits": 2,
+      "n_graded": 12,
+      "hits": 1,
       "partials": 4,
-      "misses": 8,
-      "ungradable": 4,
+      "misses": 7,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34483,7 +34579,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 14,
+        "n": 12,
         "bias": null,
         "mae": null
        }
@@ -34543,8 +34639,8 @@
      "published": "2022-06",
      "stats": {
       "n_graded": 16,
-      "hits": 8,
-      "partials": 3,
+      "hits": 9,
+      "partials": 2,
       "misses": 5,
       "ungradable": 2,
       "open": 0,

@@ -1,0 +1,7135 @@
+{
+ "rule": "D11 matching audit (#53), D24 re-checks (#66, #70)",
+ "of": "data/graded/numeric/<source>.json at commit 6e11858, the commit that stored the #53 audit records together with the fixes they caused (the same state as 1f8c794, the pre-#66 baseline of the -recheck-66 files)",
+ "how": "One row per sampled claim id with an audit record: status, forecast, actual and verdict as graded at 6e11858. src/grade/numeric.ts (auditOf) compares the current grade of each confirmed row with this row: a confirmed row whose grade changed since, and that no D24 re-check confirms on its current grade, counts as pending_recheck. Generated once from git history; never edited.",
+ "sources": {
+  "bcb-focus": {
+   "bcb-focus-2000-06-008": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.3204,
+    "verdict": "partial"
+   },
+   "bcb-focus-2000-12-006": {
+    "status": "graded",
+    "forecast": 14,
+    "actual": 19,
+    "verdict": "miss"
+   },
+   "bcb-focus-2001-06-001": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 7.67,
+    "verdict": "miss"
+   },
+   "bcb-focus-2002-06-001": {
+    "status": "graded",
+    "forecast": 5.53,
+    "actual": 12.53,
+    "verdict": "miss"
+   },
+   "bcb-focus-2002-06-002": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 9.3,
+    "verdict": "miss"
+   },
+   "bcb-focus-2002-06-003": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 3.05,
+    "verdict": "partial"
+   },
+   "bcb-focus-2002-06-004": {
+    "status": "graded",
+    "forecast": 3.5,
+    "actual": 1.14,
+    "verdict": "miss"
+   },
+   "bcb-focus-2002-06-005": {
+    "status": "graded",
+    "forecast": 17,
+    "actual": 25,
+    "verdict": "miss"
+   },
+   "bcb-focus-2002-06-006": {
+    "status": "graded",
+    "forecast": 15,
+    "actual": 16.5,
+    "verdict": "miss"
+   },
+   "bcb-focus-2002-06-007": {
+    "status": "graded",
+    "forecast": 2.55,
+    "actual": 3.5333,
+    "verdict": "miss"
+   },
+   "bcb-focus-2002-06-008": {
+    "status": "graded",
+    "forecast": 2.65,
+    "actual": 2.8892,
+    "verdict": "hit"
+   },
+   "bcb-focus-2010-06-001": {
+    "status": "graded",
+    "forecast": 5.55,
+    "actual": 5.91,
+    "verdict": "hit"
+   },
+   "bcb-focus-2010-06-002": {
+    "status": "graded",
+    "forecast": 4.8,
+    "actual": 6.5,
+    "verdict": "miss"
+   },
+   "bcb-focus-2010-06-003": {
+    "status": "graded",
+    "forecast": 7.18,
+    "actual": 7.53,
+    "verdict": "hit"
+   },
+   "bcb-focus-2010-06-004": {
+    "status": "graded",
+    "forecast": 4.5,
+    "actual": 3.97,
+    "verdict": "partial"
+   },
+   "bcb-focus-2010-06-005": {
+    "status": "graded",
+    "forecast": 12,
+    "actual": 10.75,
+    "verdict": "miss"
+   },
+   "bcb-focus-2010-06-006": {
+    "status": "graded",
+    "forecast": 11.75,
+    "actual": 11,
+    "verdict": "partial"
+   },
+   "bcb-focus-2010-06-007": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 1.6662,
+    "verdict": "hit"
+   },
+   "bcb-focus-2010-06-008": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 1.8758,
+    "verdict": "hit"
+   },
+   "bcb-focus-2012-03-001": {
+    "status": "graded",
+    "forecast": 5.27,
+    "actual": 5.84,
+    "verdict": "partial"
+   },
+   "bcb-focus-2012-03-002": {
+    "status": "graded",
+    "forecast": 5.5,
+    "actual": 5.91,
+    "verdict": "hit"
+   },
+   "bcb-focus-2012-03-003": {
+    "status": "graded",
+    "forecast": 3.2,
+    "actual": 1.92,
+    "verdict": "miss"
+   },
+   "bcb-focus-2012-03-004": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 3,
+    "verdict": "miss"
+   },
+   "bcb-focus-2012-03-005": {
+    "status": "graded",
+    "forecast": 9,
+    "actual": 7.25,
+    "verdict": "miss"
+   },
+   "bcb-focus-2012-03-006": {
+    "status": "graded",
+    "forecast": 10,
+    "actual": 10,
+    "verdict": "hit"
+   },
+   "bcb-focus-2012-03-007": {
+    "status": "graded",
+    "forecast": 1.77,
+    "actual": 2.0435,
+    "verdict": "partial"
+   },
+   "bcb-focus-2014-06-001": {
+    "status": "graded",
+    "forecast": 6.45,
+    "actual": 6.41,
+    "verdict": "hit"
+   },
+   "bcb-focus-2014-06-002": {
+    "status": "graded",
+    "forecast": 6.1,
+    "actual": 10.67,
+    "verdict": "miss"
+   },
+   "bcb-focus-2014-06-004": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": -3.55,
+    "verdict": "miss"
+   },
+   "bcb-focus-2014-06-006": {
+    "status": "graded",
+    "forecast": 12,
+    "actual": 14.25,
+    "verdict": "miss"
+   },
+   "bcb-focus-2014-06-008": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 3.9048,
+    "verdict": "miss"
+   },
+   "bcb-focus-2014-12-002": {
+    "status": "graded",
+    "forecast": 6.56,
+    "actual": 10.67,
+    "verdict": "miss"
+   },
+   "bcb-focus-2014-12-003": {
+    "status": "graded",
+    "forecast": 0.15,
+    "actual": 0.5,
+    "verdict": "hit"
+   },
+   "bcb-focus-2015-06-004": {
+    "status": "graded",
+    "forecast": 0.5,
+    "actual": -3.28,
+    "verdict": "miss"
+   },
+   "bcb-focus-2015-06-005": {
+    "status": "graded",
+    "forecast": 14.5,
+    "actual": 14.25,
+    "verdict": "hit"
+   },
+   "bcb-focus-2015-06-006": {
+    "status": "graded",
+    "forecast": 12,
+    "actual": 13.75,
+    "verdict": "miss"
+   },
+   "bcb-focus-2015-06-007": {
+    "status": "graded",
+    "forecast": 3.22,
+    "actual": 3.9048,
+    "verdict": "partial"
+   },
+   "bcb-focus-2015-06-008": {
+    "status": "graded",
+    "forecast": 3.4,
+    "actual": 3.2591,
+    "verdict": "hit"
+   },
+   "bcb-focus-2016-03-002": {
+    "status": "graded",
+    "forecast": 6,
+    "actual": 2.95,
+    "verdict": "miss"
+   },
+   "bcb-focus-2016-03-003": {
+    "status": "graded",
+    "forecast": -3.71,
+    "actual": -3.28,
+    "verdict": "hit"
+   },
+   "bcb-focus-2016-03-004": {
+    "status": "graded",
+    "forecast": 0.3,
+    "actual": 1.32,
+    "verdict": "miss"
+   },
+   "bcb-focus-2016-03-006": {
+    "status": "graded",
+    "forecast": 12.38,
+    "actual": 7,
+    "verdict": "miss"
+   },
+   "bcb-focus-2017-12-001": {
+    "status": "graded",
+    "forecast": 2.78,
+    "actual": 2.95,
+    "verdict": "hit"
+   },
+   "bcb-focus-2017-12-004": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 1.78,
+    "verdict": "partial"
+   },
+   "bcb-focus-2017-12-005": {
+    "status": "graded",
+    "forecast": 6.75,
+    "actual": 6.5,
+    "verdict": "hit"
+   },
+   "bcb-focus-2017-12-006": {
+    "status": "graded",
+    "forecast": 3.34,
+    "actual": 3.8748,
+    "verdict": "partial"
+   },
+   "bcb-focus-2018-03-004": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 1.22,
+    "verdict": "miss"
+   },
+   "bcb-focus-2018-03-005": {
+    "status": "graded",
+    "forecast": 6.25,
+    "actual": 6.5,
+    "verdict": "hit"
+   },
+   "bcb-focus-2018-03-006": {
+    "status": "graded",
+    "forecast": 8,
+    "actual": 4.5,
+    "verdict": "miss"
+   },
+   "bcb-focus-2019-06-003": {
+    "status": "graded",
+    "forecast": 0.85,
+    "actual": 1.22,
+    "verdict": "hit"
+   },
+   "bcb-focus-2019-06-004": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": -3.28,
+    "verdict": "miss"
+   },
+   "bcb-focus-2019-06-005": {
+    "status": "graded",
+    "forecast": 5.5,
+    "actual": 4.5,
+    "verdict": "partial"
+   },
+   "bcb-focus-2019-06-006": {
+    "status": "graded",
+    "forecast": 6,
+    "actual": 2,
+    "verdict": "miss"
+   },
+   "bcb-focus-2019-06-007": {
+    "status": "graded",
+    "forecast": 3.8,
+    "actual": 4.0307,
+    "verdict": "hit"
+   },
+   "bcb-focus-2019-06-008": {
+    "status": "graded",
+    "forecast": 3.8,
+    "actual": 5.1967,
+    "verdict": "miss"
+   },
+   "bcb-focus-2020-06-008": {
+    "status": "graded",
+    "forecast": 5,
+    "actual": 5.5805,
+    "verdict": "partial"
+   },
+   "bcb-focus-2021-03-001": {
+    "status": "graded",
+    "forecast": 4.8147,
+    "actual": 10.06,
+    "verdict": "miss"
+   },
+   "bcb-focus-2021-03-002": {
+    "status": "graded",
+    "forecast": 3.5245,
+    "actual": 5.79,
+    "verdict": "miss"
+   },
+   "bcb-focus-2021-03-003": {
+    "status": "graded",
+    "forecast": 3.1737,
+    "actual": 4.76,
+    "verdict": "miss"
+   },
+   "bcb-focus-2021-03-004": {
+    "status": "graded",
+    "forecast": 2.3315,
+    "actual": 3.02,
+    "verdict": "partial"
+   },
+   "bcb-focus-2021-03-005": {
+    "status": "graded",
+    "forecast": 5,
+    "actual": 9.25,
+    "verdict": "miss"
+   },
+   "bcb-focus-2021-03-006": {
+    "status": "graded",
+    "forecast": 6,
+    "actual": 13.75,
+    "verdict": "miss"
+   },
+   "bcb-focus-2021-03-007": {
+    "status": "graded",
+    "forecast": 5.35,
+    "actual": 5.6506,
+    "verdict": "hit"
+   },
+   "bcb-focus-2021-03-008": {
+    "status": "graded",
+    "forecast": 5.25,
+    "actual": 5.2418,
+    "verdict": "hit"
+   },
+   "bcb-focus-2021-12-003": {
+    "status": "graded",
+    "forecast": 4.5031,
+    "actual": 4.76,
+    "verdict": "hit"
+   },
+   "bcb-focus-2021-12-004": {
+    "status": "graded",
+    "forecast": 0.3607,
+    "actual": 3.02,
+    "verdict": "miss"
+   },
+   "bcb-focus-2021-12-005": {
+    "status": "graded",
+    "forecast": 11.5,
+    "actual": 13.75,
+    "verdict": "miss"
+   },
+   "bcb-focus-2021-12-006": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 5.2418,
+    "verdict": "hit"
+   },
+   "bcb-focus-2022-03-001": {
+    "status": "graded",
+    "forecast": 6.9168,
+    "actual": 5.79,
+    "verdict": "miss"
+   },
+   "bcb-focus-2022-03-003": {
+    "status": "graded",
+    "forecast": 0.5058,
+    "actual": 3.02,
+    "verdict": "miss"
+   },
+   "bcb-focus-2022-03-004": {
+    "status": "graded",
+    "forecast": 1.2984,
+    "actual": 3.24,
+    "verdict": "miss"
+   },
+   "bcb-focus-2022-03-008": {
+    "status": "graded",
+    "forecast": 5.2,
+    "actual": 4.8966,
+    "verdict": "hit"
+   },
+   "bcb-focus-2023-12-001": {
+    "status": "graded",
+    "forecast": 4.4569,
+    "actual": 4.62,
+    "verdict": "hit"
+   },
+   "bcb-focus-2023-12-002": {
+    "status": "graded",
+    "forecast": 3.9,
+    "actual": 4.83,
+    "verdict": "partial"
+   },
+   "bcb-focus-2023-12-003": {
+    "status": "graded",
+    "forecast": 2.9221,
+    "actual": 3.24,
+    "verdict": "hit"
+   },
+   "bcb-focus-2023-12-004": {
+    "status": "graded",
+    "forecast": 1.5198,
+    "actual": 3.42,
+    "verdict": "miss"
+   },
+   "bcb-focus-2023-12-005": {
+    "status": "graded",
+    "forecast": 9,
+    "actual": 12.25,
+    "verdict": "miss"
+   },
+   "bcb-focus-2023-12-006": {
+    "status": "graded",
+    "forecast": 5,
+    "actual": 6.0964,
+    "verdict": "partial"
+   }
+  },
+  "bnef-evo": {
+   "bnef-evo-2019-002": {
+    "status": "graded",
+    "forecast": 10000000,
+    "actual": 21200000,
+    "verdict": "miss"
+   },
+   "bnef-evo-2020-001": {
+    "status": "graded",
+    "forecast": 1700000,
+    "actual": 2980000,
+    "verdict": "miss"
+   },
+   "bnef-evo-2020-002": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 4.4,
+    "verdict": "miss"
+   },
+   "bnef-evo-2020-003": {
+    "status": "graded",
+    "forecast": 5400000,
+    "actual": 13700000,
+    "verdict": "miss"
+   },
+   "bnef-evo-2020-004": {
+    "status": "graded",
+    "forecast": 7,
+    "actual": 18,
+    "verdict": "miss"
+   },
+   "bnef-evo-2022-002": {
+    "status": "graded",
+    "forecast": 21000000,
+    "actual": 21200000,
+    "verdict": "hit"
+   },
+   "bnef-evo-2023-002": {
+    "status": "graded",
+    "forecast": 22000000,
+    "actual": 21200000,
+    "verdict": "hit"
+   },
+   "bnef-evo-2023-003": {
+    "status": "graded",
+    "forecast": 26,
+    "actual": 25,
+    "verdict": "partial"
+   },
+   "bnef-evo-2025-001": {
+    "status": "graded",
+    "forecast": 22000000,
+    "actual": 21200000,
+    "verdict": "hit"
+   }
+  },
+  "bp-energy-outlook": {
+   "bp-energy-outlook-2015-002": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 3.51,
+    "verdict": "partial"
+   },
+   "bp-energy-outlook-2015-003": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 5.92,
+    "verdict": "miss"
+   },
+   "bp-energy-outlook-2016-003": {
+    "status": "graded",
+    "forecast": 4.6,
+    "actual": 5.92,
+    "verdict": "miss"
+   },
+   "bp-energy-outlook-2017-008": {
+    "status": "graded",
+    "forecast": 5.1,
+    "actual": 5.92,
+    "verdict": "partial"
+   },
+   "bp-energy-outlook-2019-010": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 5.92,
+    "verdict": "hit"
+   }
+  },
+  "cbo-projections": {
+   "cbo-projections-1985-02-003": {
+    "status": "graded",
+    "forecast": 4.099,
+    "actual": 2.718695,
+    "verdict": "miss"
+   },
+   "cbo-projections-1985-02-007": {
+    "status": "graded",
+    "forecast": -4.943504,
+    "actual": -3.084,
+    "verdict": "miss"
+   },
+   "cbo-projections-1985-02-008": {
+    "status": "graded",
+    "forecast": -4.908145,
+    "actual": -2.963,
+    "verdict": "miss"
+   },
+   "cbo-projections-1985-02-009": {
+    "status": "graded",
+    "forecast": -4.956264,
+    "actual": -2.706,
+    "verdict": "miss"
+   },
+   "cbo-projections-1988-03-001": {
+    "status": "graded",
+    "forecast": 9.4,
+    "actual": 8.675,
+    "verdict": "partial"
+   },
+   "cbo-projections-1988-03-002": {
+    "status": "graded",
+    "forecast": 8.798,
+    "actual": 8.154,
+    "verdict": "partial"
+   },
+   "cbo-projections-1988-03-005": {
+    "status": "graded",
+    "forecast": -3.071054,
+    "actual": -2.963,
+    "verdict": "hit"
+   },
+   "cbo-projections-1988-03-006": {
+    "status": "graded",
+    "forecast": -3.138956,
+    "actual": -2.706,
+    "verdict": "hit"
+   },
+   "cbo-projections-1988-03-007": {
+    "status": "graded",
+    "forecast": -2.845506,
+    "actual": -3.706983,
+    "verdict": "partial"
+   },
+   "cbo-projections-1988-03-009": {
+    "status": "graded",
+    "forecast": -2.360947,
+    "actual": -4.453,
+    "verdict": "miss"
+   },
+   "cbo-projections-1988-03-010": {
+    "status": "graded",
+    "forecast": 2.45,
+    "actual": 3.949699,
+    "verdict": "miss"
+   },
+   "cbo-projections-1988-03-011": {
+    "status": "graded",
+    "forecast": 2.56,
+    "actual": 2.627443,
+    "verdict": "hit"
+   },
+   "cbo-projections-1989-02-010": {
+    "status": "graded",
+    "forecast": 2.499,
+    "actual": 2.846488,
+    "verdict": "hit"
+   },
+   "cbo-projections-1989-02-011": {
+    "status": "graded",
+    "forecast": 2.34,
+    "actual": 2.330254,
+    "verdict": "hit"
+   },
+   "cbo-projections-1990-03-010": {
+    "status": "graded",
+    "forecast": 2.049,
+    "actual": 0.894004,
+    "verdict": "miss"
+   },
+   "cbo-projections-1990-03-011": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 2.369695,
+    "verdict": "hit"
+   },
+   "cbo-projections-1993-03-001": {
+    "status": "graded",
+    "forecast": -4.397225,
+    "actual": -3.719015,
+    "verdict": "partial"
+   },
+   "cbo-projections-1993-03-002": {
+    "status": "graded",
+    "forecast": -3.933752,
+    "actual": -2.788,
+    "verdict": "miss"
+   },
+   "cbo-projections-1993-03-003": {
+    "status": "graded",
+    "forecast": -3.722227,
+    "actual": -2.146,
+    "verdict": "miss"
+   },
+   "cbo-projections-1993-03-004": {
+    "status": "graded",
+    "forecast": -3.593518,
+    "actual": -1.331,
+    "verdict": "miss"
+   },
+   "cbo-projections-1993-03-005": {
+    "status": "graded",
+    "forecast": -3.748316,
+    "actual": -0.255,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-002": {
+    "status": "graded",
+    "forecast": 6.35,
+    "actual": 5.02,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-003": {
+    "status": "graded",
+    "forecast": 6.125,
+    "actual": 4.61,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-004": {
+    "status": "graded",
+    "forecast": 5.813,
+    "actual": 4.02,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-005": {
+    "status": "graded",
+    "forecast": 5.65,
+    "actual": 4.27,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-007": {
+    "status": "graded",
+    "forecast": 6.06,
+    "actual": 4.79,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-018": {
+    "status": "graded",
+    "forecast": 2.801266,
+    "actual": -3.296,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-019": {
+    "status": "graded",
+    "forecast": 2.824067,
+    "actual": -3.378,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-030": {
+    "status": "graded",
+    "forecast": 4.66,
+    "actual": 6,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-04-005": {
+    "status": "graded",
+    "forecast": 2.846534,
+    "actual": -3.378,
+    "verdict": "miss"
+   },
+   "cbo-projections-2003-01-021": {
+    "status": "graded",
+    "forecast": 3.571,
+    "actual": 3.8,
+    "verdict": "hit"
+   },
+   "cbo-projections-2003-01-024": {
+    "status": "graded",
+    "forecast": 3.184,
+    "actual": 2,
+    "verdict": "miss"
+   },
+   "cbo-projections-2004-03-004": {
+    "status": "graded",
+    "forecast": -1.894524,
+    "actual": -1.11,
+    "verdict": "partial"
+   },
+   "cbo-projections-2004-03-005": {
+    "status": "graded",
+    "forecast": -1.935806,
+    "actual": -3.105,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-001": {
+    "status": "graded",
+    "forecast": 4.279,
+    "actual": 4.29,
+    "verdict": "hit"
+   },
+   "cbo-projections-2005-08-002": {
+    "status": "graded",
+    "forecast": 4.738,
+    "actual": 4.79,
+    "verdict": "hit"
+   },
+   "cbo-projections-2005-08-003": {
+    "status": "graded",
+    "forecast": 5.3,
+    "actual": 4.63,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-004": {
+    "status": "graded",
+    "forecast": 5.4,
+    "actual": 3.67,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-005": {
+    "status": "graded",
+    "forecast": 5.4,
+    "actual": 3.26,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-006": {
+    "status": "graded",
+    "forecast": 3.116,
+    "actual": 3.393,
+    "verdict": "hit"
+   },
+   "cbo-projections-2005-08-007": {
+    "status": "graded",
+    "forecast": 2.493,
+    "actual": 3.226,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-008": {
+    "status": "graded",
+    "forecast": 2.162,
+    "actual": 2.853,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-009": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 3.839,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-010": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": -0.356,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-011": {
+    "status": "graded",
+    "forecast": -2.540152,
+    "actual": -2.441,
+    "verdict": "hit"
+   },
+   "cbo-projections-2005-08-012": {
+    "status": "graded",
+    "forecast": -2.275703,
+    "actual": -1.796,
+    "verdict": "hit"
+   },
+   "cbo-projections-2005-08-013": {
+    "status": "graded",
+    "forecast": -2.241219,
+    "actual": -1.11,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-014": {
+    "status": "graded",
+    "forecast": -2.265501,
+    "actual": -3.105,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-015": {
+    "status": "graded",
+    "forecast": -2.220308,
+    "actual": -9.126668,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-016": {
+    "status": "graded",
+    "forecast": 3.675,
+    "actual": 3.5,
+    "verdict": "hit"
+   },
+   "cbo-projections-2005-08-017": {
+    "status": "graded",
+    "forecast": 3.449,
+    "actual": 2.8,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-018": {
+    "status": "graded",
+    "forecast": 3.44,
+    "actual": 2,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-019": {
+    "status": "graded",
+    "forecast": 3.396,
+    "actual": 0.1,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-020": {
+    "status": "graded",
+    "forecast": 3.181,
+    "actual": -2.6,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-022": {
+    "status": "graded",
+    "forecast": 5.2,
+    "actual": 4.6,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-023": {
+    "status": "graded",
+    "forecast": 5.2,
+    "actual": 4.6,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-024": {
+    "status": "graded",
+    "forecast": 5.2,
+    "actual": 5.8,
+    "verdict": "partial"
+   },
+   "cbo-projections-2005-08-025": {
+    "status": "graded",
+    "forecast": 5.2,
+    "actual": 9.3,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-01-020": {
+    "status": "graded",
+    "forecast": 2.333,
+    "actual": 2,
+    "verdict": "hit"
+   },
+   "cbo-projections-2007-01-021": {
+    "status": "graded",
+    "forecast": 2.963,
+    "actual": 0.1,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-01-022": {
+    "status": "graded",
+    "forecast": 3.15,
+    "actual": -2.6,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-01-023": {
+    "status": "graded",
+    "forecast": 2.964,
+    "actual": 2.7,
+    "verdict": "hit"
+   },
+   "cbo-projections-2007-01-024": {
+    "status": "graded",
+    "forecast": 2.738,
+    "actual": 1.6,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-01-025": {
+    "status": "graded",
+    "forecast": 2.647,
+    "actual": 1.045534,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-01-026": {
+    "status": "graded",
+    "forecast": 2.829,
+    "actual": 0.742209,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-01-027": {
+    "status": "graded",
+    "forecast": 4.708,
+    "actual": 4.6,
+    "verdict": "hit"
+   },
+   "cbo-projections-2007-01-028": {
+    "status": "graded",
+    "forecast": 4.94,
+    "actual": 5.8,
+    "verdict": "partial"
+   },
+   "cbo-projections-2007-01-029": {
+    "status": "graded",
+    "forecast": 5.044,
+    "actual": 9.3,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-001": {
+    "status": "graded",
+    "forecast": -1.221586,
+    "actual": -1.11,
+    "verdict": "hit"
+   },
+   "cbo-projections-2007-03-002": {
+    "status": "graded",
+    "forecast": -0.767493,
+    "actual": -3.105,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-003": {
+    "status": "graded",
+    "forecast": -0.923991,
+    "actual": -9.126668,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-004": {
+    "status": "graded",
+    "forecast": -1.040488,
+    "actual": -8.33216,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-005": {
+    "status": "graded",
+    "forecast": -0.221686,
+    "actual": -8.297807,
+    "verdict": "miss"
+   },
+   "cbo-projections-2009-01-001": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 3.26,
+    "verdict": "hit"
+   },
+   "cbo-projections-2009-01-002": {
+    "status": "graded",
+    "forecast": 3.15,
+    "actual": 3.21,
+    "verdict": "hit"
+   },
+   "cbo-projections-2009-01-003": {
+    "status": "graded",
+    "forecast": 3.6,
+    "actual": 2.79,
+    "verdict": "partial"
+   },
+   "cbo-projections-2009-01-004": {
+    "status": "graded",
+    "forecast": 4.65,
+    "actual": 1.8,
+    "verdict": "miss"
+   },
+   "cbo-projections-2009-01-005": {
+    "status": "graded",
+    "forecast": 5.4,
+    "actual": 2.35,
+    "verdict": "miss"
+   },
+   "cbo-projections-2009-01-007": {
+    "status": "graded",
+    "forecast": 3.956,
+    "actual": 2.682,
+    "verdict": "miss"
+   },
+   "cbo-projections-2010-03-001": {
+    "status": "graded",
+    "forecast": -8.957141,
+    "actual": -8.33216,
+    "verdict": "partial"
+   },
+   "cbo-projections-2010-03-002": {
+    "status": "graded",
+    "forecast": -6.297628,
+    "actual": -8.297807,
+    "verdict": "miss"
+   },
+   "cbo-projections-2010-03-003": {
+    "status": "graded",
+    "forecast": -3.883663,
+    "actual": -6.622354,
+    "verdict": "miss"
+   },
+   "cbo-projections-2010-08-022": {
+    "status": "graded",
+    "forecast": 8.972,
+    "actual": 8.9,
+    "verdict": "hit"
+   },
+   "cbo-projections-2010-08-023": {
+    "status": "graded",
+    "forecast": 8.087,
+    "actual": 8.1,
+    "verdict": "hit"
+   },
+   "cbo-projections-2010-08-024": {
+    "status": "graded",
+    "forecast": 6.585,
+    "actual": 7.4,
+    "verdict": "partial"
+   },
+   "cbo-projections-2010-08-025": {
+    "status": "graded",
+    "forecast": 5.345,
+    "actual": 6.2,
+    "verdict": "partial"
+   },
+   "cbo-projections-2011-01-002": {
+    "status": "graded",
+    "forecast": 3.75,
+    "actual": 1.8,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-01-003": {
+    "status": "graded",
+    "forecast": 4.15,
+    "actual": 2.35,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-01-004": {
+    "status": "graded",
+    "forecast": 4.55,
+    "actual": 2.54,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-01-005": {
+    "status": "graded",
+    "forecast": 4.95,
+    "actual": 2.14,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-01-006": {
+    "status": "graded",
+    "forecast": 3.55,
+    "actual": 2.295,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-01-010": {
+    "status": "graded",
+    "forecast": 1.568,
+    "actual": 3.157,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-03-001": {
+    "status": "graded",
+    "forecast": -8.898907,
+    "actual": -8.297807,
+    "verdict": "partial"
+   },
+   "cbo-projections-2011-03-002": {
+    "status": "graded",
+    "forecast": -6.60276,
+    "actual": -6.622354,
+    "verdict": "hit"
+   },
+   "cbo-projections-2011-03-003": {
+    "status": "graded",
+    "forecast": -4.066418,
+    "actual": -4.599693,
+    "verdict": "partial"
+   },
+   "cbo-projections-2011-03-004": {
+    "status": "graded",
+    "forecast": -2.898029,
+    "actual": -3.175456,
+    "verdict": "hit"
+   },
+   "cbo-projections-2011-03-005": {
+    "status": "graded",
+    "forecast": -2.923914,
+    "actual": -2.540271,
+    "verdict": "hit"
+   },
+   "cbo-projections-2011-08-002": {
+    "status": "graded",
+    "forecast": 3.238,
+    "actual": 1.8,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-08-008": {
+    "status": "graded",
+    "forecast": 1.275,
+    "actual": 1.465,
+    "verdict": "hit"
+   },
+   "cbo-projections-2011-08-009": {
+    "status": "graded",
+    "forecast": 1.343,
+    "actual": 1.622,
+    "verdict": "hit"
+   },
+   "cbo-projections-2012-01-001": {
+    "status": "graded",
+    "forecast": 2.325,
+    "actual": 1.8,
+    "verdict": "partial"
+   },
+   "cbo-projections-2012-01-002": {
+    "status": "graded",
+    "forecast": 2.475,
+    "actual": 2.35,
+    "verdict": "hit"
+   },
+   "cbo-projections-2012-01-003": {
+    "status": "graded",
+    "forecast": 2.938,
+    "actual": 2.54,
+    "verdict": "hit"
+   },
+   "cbo-projections-2012-01-004": {
+    "status": "graded",
+    "forecast": 3.525,
+    "actual": 2.14,
+    "verdict": "miss"
+   },
+   "cbo-projections-2012-01-005": {
+    "status": "graded",
+    "forecast": 4.063,
+    "actual": 1.84,
+    "verdict": "miss"
+   },
+   "cbo-projections-2012-01-006": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 2.075,
+    "verdict": "hit"
+   },
+   "cbo-projections-2012-01-007": {
+    "status": "graded",
+    "forecast": 1.601,
+    "actual": 1.766552,
+    "verdict": "hit"
+   },
+   "cbo-projections-2014-02-001": {
+    "status": "graded",
+    "forecast": 3.437,
+    "actual": 2.34,
+    "verdict": "miss"
+   },
+   "cbo-projections-2017-06-002": {
+    "status": "graded",
+    "forecast": -2.716623,
+    "actual": -3.817962,
+    "verdict": "miss"
+   },
+   "cbo-projections-2017-06-003": {
+    "status": "graded",
+    "forecast": -3.193468,
+    "actual": -4.655046,
+    "verdict": "miss"
+   },
+   "cbo-projections-2018-04-024": {
+    "status": "graded",
+    "forecast": 4.144,
+    "actual": 5.4,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-001": {
+    "status": "graded",
+    "forecast": 1.917,
+    "actual": 0.89,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-002": {
+    "status": "graded",
+    "forecast": 2.212,
+    "actual": 1.44,
+    "verdict": "partial"
+   },
+   "cbo-projections-2020-01-003": {
+    "status": "graded",
+    "forecast": 2.57,
+    "actual": 2.95,
+    "verdict": "hit"
+   },
+   "cbo-projections-2020-01-004": {
+    "status": "graded",
+    "forecast": 2.719,
+    "actual": 3.96,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-005": {
+    "status": "graded",
+    "forecast": 2.771,
+    "actual": 4.21,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-006": {
+    "status": "graded",
+    "forecast": 2.411,
+    "actual": 1.234,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-007": {
+    "status": "graded",
+    "forecast": 2.533,
+    "actual": 4.698,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-008": {
+    "status": "graded",
+    "forecast": 2.572,
+    "actual": 8.003,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-009": {
+    "status": "graded",
+    "forecast": 2.479,
+    "actual": 4.116,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-011": {
+    "status": "graded",
+    "forecast": -4.768855,
+    "actual": -14.673997,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-012": {
+    "status": "graded",
+    "forecast": -4.211886,
+    "actual": -11.71818,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-013": {
+    "status": "graded",
+    "forecast": -4.268676,
+    "actual": -3.849836,
+    "verdict": "hit"
+   },
+   "cbo-projections-2020-01-014": {
+    "status": "graded",
+    "forecast": -4.012722,
+    "actual": -7.310416,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-015": {
+    "status": "graded",
+    "forecast": -3.920011,
+    "actual": -6.270828,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-016": {
+    "status": "graded",
+    "forecast": 2.199,
+    "actual": -2.1,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-017": {
+    "status": "graded",
+    "forecast": 1.947,
+    "actual": 6.2,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-018": {
+    "status": "graded",
+    "forecast": 1.655,
+    "actual": 2.5,
+    "verdict": "partial"
+   },
+   "cbo-projections-2020-01-019": {
+    "status": "graded",
+    "forecast": 1.583,
+    "actual": 2.9,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-020": {
+    "status": "graded",
+    "forecast": 1.556,
+    "actual": 2.8,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-021": {
+    "status": "graded",
+    "forecast": 3.482,
+    "actual": 8.1,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-022": {
+    "status": "graded",
+    "forecast": 3.548,
+    "actual": 5.4,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-002": {
+    "status": "graded",
+    "forecast": 2.861,
+    "actual": 3.96,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-003": {
+    "status": "graded",
+    "forecast": 3.052,
+    "actual": 4.21,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-004": {
+    "status": "graded",
+    "forecast": 3.188,
+    "actual": 4.29,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-006": {
+    "status": "graded",
+    "forecast": 6.102,
+    "actual": 8.003,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-007": {
+    "status": "graded",
+    "forecast": 3.096,
+    "actual": 4.116,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-013": {
+    "status": "graded",
+    "forecast": -3.581899,
+    "actual": -6.270828,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-014": {
+    "status": "graded",
+    "forecast": -4.261258,
+    "actual": -5.792035,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-016": {
+    "status": "graded",
+    "forecast": 3.79,
+    "actual": 2.5,
+    "verdict": "miss"
+   },
+   "cbo-projections-2023-02-018": {
+    "status": "graded",
+    "forecast": 2.726,
+    "actual": 2.1,
+    "verdict": "partial"
+   },
+   "cbo-projections-2024-02-001": {
+    "status": "graded",
+    "forecast": 4.608,
+    "actual": 4.21,
+    "verdict": "hit"
+   },
+   "cbo-projections-2024-02-002": {
+    "status": "graded",
+    "forecast": 4.575,
+    "actual": 4.29,
+    "verdict": "hit"
+   },
+   "cbo-projections-2024-02-021": {
+    "status": "graded",
+    "forecast": 4.175,
+    "actual": 4,
+    "verdict": "hit"
+   },
+   "cbo-projections-2024-02-022": {
+    "status": "graded",
+    "forecast": 4.385,
+    "actual": 4.3,
+    "verdict": "hit"
+   }
+  },
+  "ecb-projections": {
+   "ecb-projections-2000-12-001": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 2.1,
+    "verdict": "hit"
+   },
+   "ecb-projections-2000-12-002": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 2.3,
+    "verdict": "hit"
+   },
+   "ecb-projections-2000-12-003": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.3,
+    "verdict": "hit"
+   },
+   "ecb-projections-2000-12-004": {
+    "status": "graded",
+    "forecast": 3.4,
+    "actual": 3.9,
+    "verdict": "hit"
+   },
+   "ecb-projections-2000-12-005": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 2.1,
+    "verdict": "partial"
+   },
+   "ecb-projections-2000-12-006": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 0.8,
+    "verdict": "miss"
+   },
+   "ecb-projections-2003-09-001": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.1,
+    "verdict": "hit"
+   },
+   "ecb-projections-2003-09-002": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.1,
+    "verdict": "partial"
+   },
+   "ecb-projections-2003-09-003": {
+    "status": "graded",
+    "forecast": 0.4,
+    "actual": 0.6,
+    "verdict": "hit"
+   },
+   "ecb-projections-2003-09-004": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.2,
+    "verdict": "partial"
+   },
+   "ecb-projections-2006-12-003": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 3.3,
+    "verdict": "miss"
+   },
+   "ecb-projections-2006-12-006": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.4,
+    "verdict": "miss"
+   },
+   "ecb-projections-2007-09-004": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.4,
+    "verdict": "miss"
+   },
+   "ecb-projections-2008-03-002": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0.3,
+    "verdict": "miss"
+   },
+   "ecb-projections-2008-03-004": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": -4.4,
+    "verdict": "miss"
+   },
+   "ecb-projections-2009-06-002": {
+    "status": "graded",
+    "forecast": 1,
+    "actual": 1.6,
+    "verdict": "partial"
+   },
+   "ecb-projections-2009-06-003": {
+    "status": "graded",
+    "forecast": -4.6,
+    "actual": -4.4,
+    "verdict": "hit"
+   },
+   "ecb-projections-2009-06-004": {
+    "status": "graded",
+    "forecast": -0.3,
+    "actual": 2.1,
+    "verdict": "miss"
+   },
+   "ecb-projections-2009-09-004": {
+    "status": "graded",
+    "forecast": 0.2,
+    "actual": 2.1,
+    "verdict": "miss"
+   },
+   "ecb-projections-2010-03-002": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.7,
+    "verdict": "miss"
+   },
+   "ecb-projections-2010-03-003": {
+    "status": "graded",
+    "forecast": 0.8,
+    "actual": 2.1,
+    "verdict": "miss"
+   },
+   "ecb-projections-2010-03-004": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.7,
+    "verdict": "hit"
+   },
+   "ecb-projections-2011-03-004": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": -1,
+    "verdict": "miss"
+   },
+   "ecb-projections-2015-12-004": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.1,
+    "verdict": "partial"
+   },
+   "ecb-projections-2016-12-002": {
+    "status": "graded",
+    "forecast": 1.3,
+    "actual": 1.5,
+    "verdict": "hit"
+   },
+   "ecb-projections-2016-12-003": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "ecb-projections-2016-12-004": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 1.2,
+    "verdict": "hit"
+   },
+   "ecb-projections-2016-12-005": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "ecb-projections-2016-12-006": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 2.6,
+    "verdict": "partial"
+   },
+   "ecb-projections-2016-12-007": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "ecb-projections-2016-12-008": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.6,
+    "verdict": "hit"
+   },
+   "ecb-projections-2017-03-001": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 1.5,
+    "verdict": "hit"
+   },
+   "ecb-projections-2017-03-002": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "ecb-projections-2017-03-003": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 1.2,
+    "verdict": "hit"
+   },
+   "ecb-projections-2017-03-004": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.6,
+    "verdict": "partial"
+   },
+   "ecb-projections-2017-03-005": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "ecb-projections-2017-03-006": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.6,
+    "verdict": "hit"
+   },
+   "ecb-projections-2018-12-002": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.2,
+    "verdict": "hit"
+   },
+   "ecb-projections-2018-12-003": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 0.3,
+    "verdict": "miss"
+   },
+   "ecb-projections-2018-12-007": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": -6,
+    "verdict": "miss"
+   },
+   "ecb-projections-2018-12-008": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 6.4,
+    "verdict": "miss"
+   },
+   "ecb-projections-2021-12-001": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 2.6,
+    "verdict": "hit"
+   },
+   "ecb-projections-2021-12-002": {
+    "status": "graded",
+    "forecast": 3.2,
+    "actual": 8.4,
+    "verdict": "miss"
+   },
+   "ecb-projections-2021-12-004": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.4,
+    "verdict": "partial"
+   },
+   "ecb-projections-2021-12-005": {
+    "status": "graded",
+    "forecast": 5.1,
+    "actual": 6.4,
+    "verdict": "miss"
+   },
+   "ecb-projections-2021-12-006": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 3.7,
+    "verdict": "hit"
+   },
+   "ecb-projections-2021-12-007": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 0.4,
+    "verdict": "miss"
+   },
+   "ecb-projections-2023-06-001": {
+    "status": "graded",
+    "forecast": 5.4,
+    "actual": 5.4,
+    "verdict": "hit"
+   },
+   "ecb-projections-2023-06-003": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 2.1,
+    "verdict": "hit"
+   },
+   "ecb-projections-2023-06-004": {
+    "status": "graded",
+    "forecast": 0.9,
+    "actual": 0.4,
+    "verdict": "hit"
+   },
+   "ecb-projections-2023-06-005": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.2,
+    "verdict": "hit"
+   },
+   "ecb-projections-2023-06-006": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.2,
+    "verdict": "hit"
+   }
+  },
+  "eia-aeo": {
+   "eia-aeo-1983-020": {
+    "status": "graded",
+    "forecast": 5.26,
+    "actual": 1.71,
+    "verdict": "miss"
+   },
+   "eia-aeo-1983-021": {
+    "status": "graded",
+    "forecast": 12.74,
+    "actual": 1.55,
+    "verdict": "miss"
+   },
+   "eia-aeo-1983-022": {
+    "status": "graded",
+    "forecast": 15.82,
+    "actual": 15.73,
+    "verdict": "hit"
+   },
+   "eia-aeo-1983-023": {
+    "status": "graded",
+    "forecast": 16.13,
+    "actual": 16.28,
+    "verdict": "hit"
+   },
+   "eia-aeo-1983-024": {
+    "status": "graded",
+    "forecast": 16.37,
+    "actual": 16.67,
+    "verdict": "hit"
+   },
+   "eia-aeo-1983-025": {
+    "status": "graded",
+    "forecast": 16.5,
+    "actual": 17.33,
+    "verdict": "hit"
+   },
+   "eia-aeo-1983-027": {
+    "status": "graded",
+    "forecast": 16.63,
+    "actual": 16.99,
+    "verdict": "hit"
+   },
+   "eia-aeo-1983-028": {
+    "status": "graded",
+    "forecast": 17.37,
+    "actual": 17.72,
+    "verdict": "hit"
+   },
+   "eia-aeo-1983-029": {
+    "status": "graded",
+    "forecast": 78,
+    "actual": 76.5,
+    "verdict": "hit"
+   },
+   "eia-aeo-1985-001": {
+    "status": "excluded",
+    "forecast": 27,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-1985-002": {
+    "status": "graded",
+    "forecast": 25.86,
+    "actual": 14,
+    "verdict": "miss"
+   },
+   "eia-aeo-1985-003": {
+    "status": "graded",
+    "forecast": 24.83,
+    "actual": 18.13,
+    "verdict": "miss"
+   },
+   "eia-aeo-1985-004": {
+    "status": "graded",
+    "forecast": 26.05,
+    "actual": 14.56,
+    "verdict": "miss"
+   },
+   "eia-aeo-1985-005": {
+    "status": "graded",
+    "forecast": 29.69,
+    "actual": 18.08,
+    "verdict": "miss"
+   },
+   "eia-aeo-1985-006": {
+    "status": "graded",
+    "forecast": 33.75,
+    "actual": 21.76,
+    "verdict": "miss"
+   },
+   "eia-aeo-1985-007": {
+    "status": "graded",
+    "forecast": 36.96,
+    "actual": 18.7,
+    "verdict": "miss"
+   },
+   "eia-aeo-1985-009": {
+    "status": "graded",
+    "forecast": 42.89,
+    "actual": 16.14,
+    "verdict": "miss"
+   },
+   "eia-aeo-1990-020": {
+    "status": "graded",
+    "forecast": 19.5,
+    "actual": 20.8,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-022": {
+    "status": "graded",
+    "forecast": 85.4,
+    "actual": 84.7,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-023": {
+    "status": "graded",
+    "forecast": 91.9,
+    "actual": 91.2,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-024": {
+    "status": "graded",
+    "forecast": 97.4,
+    "actual": 99,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-025": {
+    "status": "graded",
+    "forecast": 102.8,
+    "actual": 100.4,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-027": {
+    "status": "graded",
+    "forecast": 22.4,
+    "actual": 22.4,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-028": {
+    "status": "graded",
+    "forecast": 23.2,
+    "actual": 23.8,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-029": {
+    "status": "graded",
+    "forecast": 24.3,
+    "actual": 26.5,
+    "verdict": "hit"
+   },
+   "eia-aeo-1990-030": {
+    "status": "graded",
+    "forecast": 25.5,
+    "actual": 28.3,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-050": {
+    "status": "graded",
+    "forecast": 4.74,
+    "actual": 2.95,
+    "verdict": "miss"
+   },
+   "eia-aeo-1992-051": {
+    "status": "graded",
+    "forecast": 5.25,
+    "actual": 4.88,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-053": {
+    "status": "graded",
+    "forecast": 6.37,
+    "actual": 7.33,
+    "verdict": "partial"
+   },
+   "eia-aeo-1992-100": {
+    "status": "graded",
+    "forecast": 23.2,
+    "actual": 23.8,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-101": {
+    "status": "graded",
+    "forecast": 23.4,
+    "actual": 24.4,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-102": {
+    "status": "graded",
+    "forecast": 23.6,
+    "actual": 24.7,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-103": {
+    "status": "graded",
+    "forecast": 23.9,
+    "actual": 25.2,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-107": {
+    "status": "graded",
+    "forecast": 25.1,
+    "actual": 26.8,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-108": {
+    "status": "graded",
+    "forecast": 25.4,
+    "actual": 26.9,
+    "verdict": "hit"
+   },
+   "eia-aeo-1992-109": {
+    "status": "graded",
+    "forecast": 25.7,
+    "actual": 27.8,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-040": {
+    "status": "graded",
+    "forecast": 2946,
+    "actual": 3013,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-041": {
+    "status": "graded",
+    "forecast": 2998,
+    "actual": 3101,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-042": {
+    "status": "graded",
+    "forecast": 3052,
+    "actual": 3146,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-043": {
+    "status": "graded",
+    "forecast": 3104,
+    "actual": 3264,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-045": {
+    "status": "graded",
+    "forecast": 3214,
+    "actual": 3421,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-046": {
+    "status": "graded",
+    "forecast": 3271,
+    "actual": 3394,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-047": {
+    "status": "graded",
+    "forecast": 3327,
+    "actual": 3465,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-050": {
+    "status": "graded",
+    "forecast": 3491,
+    "actual": 3661,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-051": {
+    "status": "graded",
+    "forecast": 3542,
+    "actual": 3670,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-052": {
+    "status": "graded",
+    "forecast": 3592,
+    "actual": 3765,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-053": {
+    "status": "graded",
+    "forecast": 3639,
+    "actual": 3733,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-054": {
+    "status": "graded",
+    "forecast": 3686,
+    "actual": 3575,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-056": {
+    "status": "graded",
+    "forecast": 1.94,
+    "actual": 2.04,
+    "verdict": "hit"
+   },
+   "eia-aeo-1993-057": {
+    "status": "graded",
+    "forecast": 2.09,
+    "actual": 1.85,
+    "verdict": "partial"
+   },
+   "eia-aeo-1993-058": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 1.55,
+    "verdict": "miss"
+   },
+   "eia-aeo-1993-059": {
+    "status": "graded",
+    "forecast": 2.44,
+    "actual": 2.17,
+    "verdict": "partial"
+   },
+   "eia-aeo-1995-109": {
+    "status": "graded",
+    "forecast": 2.57,
+    "actual": 3.68,
+    "verdict": "miss"
+   },
+   "eia-aeo-1995-110": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 4,
+    "verdict": "miss"
+   },
+   "eia-aeo-1995-112": {
+    "status": "graded",
+    "forecast": 3.6,
+    "actual": 4.88,
+    "verdict": "miss"
+   },
+   "eia-aeo-1995-118": {
+    "status": "graded",
+    "forecast": 5.4,
+    "actual": 3.71,
+    "verdict": "miss"
+   },
+   "eia-aeo-1995-142": {
+    "status": "graded",
+    "forecast": 94.61,
+    "actual": 98.8187,
+    "verdict": "hit"
+   },
+   "eia-aeo-1995-143": {
+    "status": "graded",
+    "forecast": 95.3,
+    "actual": 96.1723,
+    "verdict": "hit"
+   },
+   "eia-aeo-1995-144": {
+    "status": "graded",
+    "forecast": 96.1939,
+    "actual": 97.6466,
+    "verdict": "hit"
+   },
+   "eia-aeo-1995-145": {
+    "status": "graded",
+    "forecast": 97.1615,
+    "actual": 97.9211,
+    "verdict": "hit"
+   },
+   "eia-aeo-1995-146": {
+    "status": "graded",
+    "forecast": 98.3273,
+    "actual": 100.094,
+    "verdict": "hit"
+   },
+   "eia-aeo-1995-147": {
+    "status": "graded",
+    "forecast": 99.2974,
+    "actual": 100.193,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-017": {
+    "status": "graded",
+    "forecast": 6142.12,
+    "actual": 5439.48,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-018": {
+    "status": "graded",
+    "forecast": 6203.35,
+    "actual": 5226.9,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-019": {
+    "status": "graded",
+    "forecast": 6257.99,
+    "actual": 5355.46,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-020": {
+    "status": "graded",
+    "forecast": 6321.84,
+    "actual": 5405.56,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-021": {
+    "status": "graded",
+    "forecast": 6362.06,
+    "actual": 5257.34,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-023": {
+    "status": "graded",
+    "forecast": 17.7401,
+    "actual": 20.64,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-025": {
+    "status": "graded",
+    "forecast": 19.7197,
+    "actual": 12.04,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-027": {
+    "status": "graded",
+    "forecast": 22.3435,
+    "actual": 27.7,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-028": {
+    "status": "graded",
+    "forecast": 23.8131,
+    "actual": 22,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-029": {
+    "status": "graded",
+    "forecast": 25.2551,
+    "actual": 23.71,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-030": {
+    "status": "graded",
+    "forecast": 26.717,
+    "actual": 27.71,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-031": {
+    "status": "graded",
+    "forecast": 28.2246,
+    "actual": 35.9,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-032": {
+    "status": "graded",
+    "forecast": 29.8749,
+    "actual": 48.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-033": {
+    "status": "graded",
+    "forecast": 31.5056,
+    "actual": 59.02,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-034": {
+    "status": "graded",
+    "forecast": 33.1299,
+    "actual": 67.04,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-035": {
+    "status": "graded",
+    "forecast": 34.8203,
+    "actual": 92.77,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-036": {
+    "status": "graded",
+    "forecast": 36.6084,
+    "actual": 59.17,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-037": {
+    "status": "graded",
+    "forecast": 38.4773,
+    "actual": 75.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-038": {
+    "status": "graded",
+    "forecast": 40.4794,
+    "actual": 102.63,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-039": {
+    "status": "graded",
+    "forecast": 42.5475,
+    "actual": 101.09,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-041": {
+    "status": "graded",
+    "forecast": 46.8063,
+    "actual": 89.56,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-080": {
+    "status": "graded",
+    "forecast": 3660,
+    "actual": 3749.85,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-081": {
+    "status": "graded",
+    "forecast": 3722,
+    "actual": 3694.65,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-082": {
+    "status": "graded",
+    "forecast": 3775,
+    "actual": 3724.87,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-083": {
+    "status": "graded",
+    "forecast": 3833,
+    "actual": 3723.68,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-087": {
+    "status": "graded",
+    "forecast": 2.1971,
+    "actual": 2.70691,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-088": {
+    "status": "graded",
+    "forecast": 2.3933,
+    "actual": 2.32333,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-089": {
+    "status": "graded",
+    "forecast": 2.46528,
+    "actual": 2.54864,
+    "verdict": "hit"
+   },
+   "eia-aeo-1996-090": {
+    "status": "graded",
+    "forecast": 2.53884,
+    "actual": 4.26901,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-091": {
+    "status": "graded",
+    "forecast": 2.63965,
+    "actual": 4.48008,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-092": {
+    "status": "graded",
+    "forecast": 2.73857,
+    "actual": 3.59024,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-093": {
+    "status": "graded",
+    "forecast": 2.83633,
+    "actual": 5.41302,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-094": {
+    "status": "graded",
+    "forecast": 2.95332,
+    "actual": 5.95517,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-095": {
+    "status": "graded",
+    "forecast": 3.08679,
+    "actual": 8.2393,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-096": {
+    "status": "graded",
+    "forecast": 3.2054,
+    "actual": 6.91634,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-097": {
+    "status": "graded",
+    "forecast": 3.3706,
+    "actual": 7.11782,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-098": {
+    "status": "graded",
+    "forecast": 3.53662,
+    "actual": 9.01655,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-099": {
+    "status": "graded",
+    "forecast": 3.75713,
+    "actual": 4.80976,
+    "verdict": "partial"
+   },
+   "eia-aeo-1996-132": {
+    "status": "graded",
+    "forecast": 2.19,
+    "actual": 3.68,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-133": {
+    "status": "graded",
+    "forecast": 2.29,
+    "actual": 4,
+    "verdict": "miss"
+   },
+   "eia-aeo-1996-135": {
+    "status": "graded",
+    "forecast": 2.48,
+    "actual": 4.88,
+    "verdict": "miss"
+   },
+   "eia-aeo-1997-002": {
+    "status": "graded",
+    "forecast": 5380.56,
+    "actual": 5584.05,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-003": {
+    "status": "graded",
+    "forecast": 5490.53,
+    "actual": 5635.45,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-004": {
+    "status": "graded",
+    "forecast": 5586.49,
+    "actual": 5687.76,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-005": {
+    "status": "graded",
+    "forecast": 5658.01,
+    "actual": 5867.88,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-006": {
+    "status": "graded",
+    "forecast": 5715.08,
+    "actual": 5761.3,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-007": {
+    "status": "graded",
+    "forecast": 5780.95,
+    "actual": 5804.41,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-011": {
+    "status": "graded",
+    "forecast": 6106.3,
+    "actual": 5909.99,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-012": {
+    "status": "graded",
+    "forecast": 6183.71,
+    "actual": 6000.58,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-013": {
+    "status": "graded",
+    "forecast": 6235.81,
+    "actual": 5808.95,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-014": {
+    "status": "graded",
+    "forecast": 6267.86,
+    "actual": 5385.6,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-015": {
+    "status": "graded",
+    "forecast": 6315.58,
+    "actual": 5576.33,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-016": {
+    "status": "graded",
+    "forecast": 6364.77,
+    "actual": 5439.48,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-017": {
+    "status": "graded",
+    "forecast": 6416.89,
+    "actual": 5226.9,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-023": {
+    "status": "graded",
+    "forecast": 19.5521,
+    "actual": 12.04,
+    "verdict": "miss"
+   },
+   "eia-aeo-1997-028": {
+    "status": "graded",
+    "forecast": 23.7503,
+    "actual": 27.71,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-029": {
+    "status": "graded",
+    "forecast": 24.7805,
+    "actual": 35.9,
+    "verdict": "miss"
+   },
+   "eia-aeo-1997-038": {
+    "status": "graded",
+    "forecast": 35.7207,
+    "actual": 98.11,
+    "verdict": "miss"
+   },
+   "eia-aeo-1997-039": {
+    "status": "graded",
+    "forecast": 37.1742,
+    "actual": 89.56,
+    "verdict": "miss"
+   },
+   "eia-aeo-1997-040": {
+    "status": "graded",
+    "forecast": 38.7311,
+    "actual": 46.4,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-122": {
+    "status": "graded",
+    "forecast": 1.82,
+    "actual": 2.32,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-128": {
+    "status": "graded",
+    "forecast": 2.32,
+    "actual": 4.88,
+    "verdict": "miss"
+   },
+   "eia-aeo-1997-129": {
+    "status": "graded",
+    "forecast": 2.43,
+    "actual": 5.46,
+    "verdict": "miss"
+   },
+   "eia-aeo-1997-138": {
+    "status": "graded",
+    "forecast": 6953.25,
+    "actual": 7124.56,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-139": {
+    "status": "graded",
+    "forecast": 7073.7,
+    "actual": 7210.59,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-182": {
+    "status": "graded",
+    "forecast": 28.4363,
+    "actual": 26.8493,
+    "verdict": "hit"
+   },
+   "eia-aeo-1997-188": {
+    "status": "graded",
+    "forecast": 30.4351,
+    "actual": 26.6314,
+    "verdict": "partial"
+   },
+   "eia-aeo-1997-189": {
+    "status": "graded",
+    "forecast": 30.6097,
+    "actual": 27.004,
+    "verdict": "partial"
+   },
+   "eia-aeo-1998-022": {
+    "status": "graded",
+    "forecast": 7093.5,
+    "actual": 5280.98,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-024": {
+    "status": "graded",
+    "forecast": 7172.7,
+    "actual": 4576.3,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-026": {
+    "status": "graded",
+    "forecast": 18.7898,
+    "actual": 12.04,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-027": {
+    "status": "graded",
+    "forecast": 19.8665,
+    "actual": 17.26,
+    "verdict": "partial"
+   },
+   "eia-aeo-1998-028": {
+    "status": "graded",
+    "forecast": 20.9501,
+    "actual": 27.7,
+    "verdict": "partial"
+   },
+   "eia-aeo-1998-029": {
+    "status": "graded",
+    "forecast": 21.7873,
+    "actual": 22,
+    "verdict": "hit"
+   },
+   "eia-aeo-1998-032": {
+    "status": "graded",
+    "forecast": 24.3407,
+    "actual": 35.9,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-033": {
+    "status": "graded",
+    "forecast": 25.2694,
+    "actual": 48.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-034": {
+    "status": "graded",
+    "forecast": 26.0422,
+    "actual": 59.02,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-035": {
+    "status": "graded",
+    "forecast": 27.0017,
+    "actual": 67.04,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-036": {
+    "status": "graded",
+    "forecast": 28.0195,
+    "actual": 92.77,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-037": {
+    "status": "graded",
+    "forecast": 29.0921,
+    "actual": 59.17,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-038": {
+    "status": "graded",
+    "forecast": 30.2215,
+    "actual": 75.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-039": {
+    "status": "graded",
+    "forecast": 31.4348,
+    "actual": 102.63,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-100": {
+    "status": "graded",
+    "forecast": 2.72245,
+    "actual": 4.26901,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-101": {
+    "status": "graded",
+    "forecast": 2.84912,
+    "actual": 4.48008,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-102": {
+    "status": "graded",
+    "forecast": 2.94957,
+    "actual": 3.59024,
+    "verdict": "partial"
+   },
+   "eia-aeo-1998-103": {
+    "status": "graded",
+    "forecast": 3.02864,
+    "actual": 5.41302,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-104": {
+    "status": "graded",
+    "forecast": 3.16268,
+    "actual": 5.95517,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-105": {
+    "status": "graded",
+    "forecast": 3.28872,
+    "actual": 8.2393,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-106": {
+    "status": "graded",
+    "forecast": 3.44505,
+    "actual": 6.91634,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-107": {
+    "status": "graded",
+    "forecast": 3.61781,
+    "actual": 7.11782,
+    "verdict": "miss"
+   },
+   "eia-aeo-1998-108": {
+    "status": "graded",
+    "forecast": 3.78748,
+    "actual": 9.01655,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-002": {
+    "status": "graded",
+    "forecast": 5692.04,
+    "actual": 5867.88,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-003": {
+    "status": "graded",
+    "forecast": 5777.31,
+    "actual": 5761.3,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-004": {
+    "status": "graded",
+    "forecast": 5864.99,
+    "actual": 5804.41,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-005": {
+    "status": "graded",
+    "forecast": 5971.1,
+    "actual": 5853.48,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-006": {
+    "status": "graded",
+    "forecast": 6077.54,
+    "actual": 5970.19,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-007": {
+    "status": "graded",
+    "forecast": 6172.45,
+    "actual": 5993.32,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-008": {
+    "status": "graded",
+    "forecast": 6261.84,
+    "actual": 5909.99,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-010": {
+    "status": "graded",
+    "forecast": 6419.84,
+    "actual": 5808.95,
+    "verdict": "partial"
+   },
+   "eia-aeo-2000-011": {
+    "status": "graded",
+    "forecast": 6479.51,
+    "actual": 5385.6,
+    "verdict": "partial"
+   },
+   "eia-aeo-2000-012": {
+    "status": "graded",
+    "forecast": 6550.76,
+    "actual": 5576.33,
+    "verdict": "partial"
+   },
+   "eia-aeo-2000-013": {
+    "status": "graded",
+    "forecast": 6609.66,
+    "actual": 5439.48,
+    "verdict": "partial"
+   },
+   "eia-aeo-2000-014": {
+    "status": "graded",
+    "forecast": 6677.93,
+    "actual": 5226.9,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-015": {
+    "status": "graded",
+    "forecast": 6755.05,
+    "actual": 5355.46,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-016": {
+    "status": "graded",
+    "forecast": 6841.23,
+    "actual": 5405.56,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-017": {
+    "status": "graded",
+    "forecast": 6942.3,
+    "actual": 5257.34,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-019": {
+    "status": "graded",
+    "forecast": 7068.46,
+    "actual": 5140.37,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-020": {
+    "status": "graded",
+    "forecast": 7130.57,
+    "actual": 5280.98,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-021": {
+    "status": "graded",
+    "forecast": 7192.59,
+    "actual": 5141.68,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-022": {
+    "status": "graded",
+    "forecast": 7256.99,
+    "actual": 4576.3,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-028": {
+    "status": "graded",
+    "forecast": 22.6226,
+    "actual": 35.9,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-029": {
+    "status": "graded",
+    "forecast": 23.2273,
+    "actual": 48.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-070": {
+    "status": "graded",
+    "forecast": 3461.48,
+    "actual": 3465.47,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-071": {
+    "status": "graded",
+    "forecast": 3523.32,
+    "actual": 3493.73,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-072": {
+    "status": "graded",
+    "forecast": 3585.12,
+    "actual": 3547.48,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-073": {
+    "status": "graded",
+    "forecast": 3646.93,
+    "actual": 3660.97,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-074": {
+    "status": "graded",
+    "forecast": 3699.02,
+    "actual": 3669.92,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-075": {
+    "status": "graded",
+    "forecast": 3753.34,
+    "actual": 3764.56,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-076": {
+    "status": "graded",
+    "forecast": 3811.57,
+    "actual": 3733.96,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-077": {
+    "status": "graded",
+    "forecast": 3861.05,
+    "actual": 3596.8,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-078": {
+    "status": "graded",
+    "forecast": 3909.47,
+    "actual": 3754.84,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-079": {
+    "status": "graded",
+    "forecast": 3957.71,
+    "actual": 3749.85,
+    "verdict": "hit"
+   },
+   "eia-aeo-2000-138": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 5.46,
+    "verdict": "miss"
+   },
+   "eia-aeo-2000-139": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 7.33,
+    "verdict": "miss"
+   },
+   "eia-aeo-2001-002": {
+    "status": "graded",
+    "forecast": 5780.55,
+    "actual": 5761.3,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-003": {
+    "status": "graded",
+    "forecast": 5908.57,
+    "actual": 5804.41,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-004": {
+    "status": "graded",
+    "forecast": 6023.49,
+    "actual": 5853.48,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-005": {
+    "status": "graded",
+    "forecast": 6114.43,
+    "actual": 5970.19,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-006": {
+    "status": "graded",
+    "forecast": 6197.43,
+    "actual": 5993.32,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-007": {
+    "status": "graded",
+    "forecast": 6280.9,
+    "actual": 5909.99,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-008": {
+    "status": "graded",
+    "forecast": 6387.39,
+    "actual": 6000.58,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-009": {
+    "status": "graded",
+    "forecast": 6470.06,
+    "actual": 5808.95,
+    "verdict": "partial"
+   },
+   "eia-aeo-2001-065": {
+    "status": "graded",
+    "forecast": 3439.67,
+    "actual": 3394.46,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-066": {
+    "status": "graded",
+    "forecast": 3530.22,
+    "actual": 3465.47,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-067": {
+    "status": "graded",
+    "forecast": 3607.59,
+    "actual": 3493.73,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-070": {
+    "status": "graded",
+    "forecast": 3838.02,
+    "actual": 3669.92,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-071": {
+    "status": "graded",
+    "forecast": 3918.48,
+    "actual": 3764.56,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-072": {
+    "status": "graded",
+    "forecast": 3998.33,
+    "actual": 3733.96,
+    "verdict": "hit"
+   },
+   "eia-aeo-2001-073": {
+    "status": "graded",
+    "forecast": 4068.15,
+    "actual": 3596.8,
+    "verdict": "partial"
+   },
+   "eia-aeo-2001-074": {
+    "status": "graded",
+    "forecast": 4147.45,
+    "actual": 3754.84,
+    "verdict": "partial"
+   },
+   "eia-aeo-2001-075": {
+    "status": "graded",
+    "forecast": 4211.89,
+    "actual": 3749.85,
+    "verdict": "partial"
+   },
+   "eia-aeo-2001-076": {
+    "status": "graded",
+    "forecast": 4285.78,
+    "actual": 3694.65,
+    "verdict": "partial"
+   },
+   "eia-aeo-2001-077": {
+    "status": "graded",
+    "forecast": 4351.63,
+    "actual": 3724.87,
+    "verdict": "partial"
+   },
+   "eia-aeo-2002-145": {
+    "status": "graded",
+    "forecast": 9263.57,
+    "actual": 7205.53,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-146": {
+    "status": "graded",
+    "forecast": 9369.75,
+    "actual": 7255.12,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-147": {
+    "status": "graded",
+    "forecast": 9489.76,
+    "actual": 7486.73,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-180": {
+    "status": "graded",
+    "forecast": 33.734,
+    "actual": 26.6579,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-181": {
+    "status": "graded",
+    "forecast": 34.3824,
+    "actual": 26.1687,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-182": {
+    "status": "graded",
+    "forecast": 35.1947,
+    "actual": 26.6963,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-183": {
+    "status": "graded",
+    "forecast": 35.7677,
+    "actual": 27.0535,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-185": {
+    "status": "graded",
+    "forecast": 36.9026,
+    "actual": 27.9396,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-186": {
+    "status": "graded",
+    "forecast": 37.4743,
+    "actual": 28.1295,
+    "verdict": "miss"
+   },
+   "eia-aeo-2002-187": {
+    "status": "graded",
+    "forecast": 38.0274,
+    "actual": 28.4013,
+    "verdict": "miss"
+   },
+   "eia-aeo-2003-028": {
+    "status": "graded",
+    "forecast": 28.069,
+    "actual": 59.17,
+    "verdict": "miss"
+   },
+   "eia-aeo-2003-029": {
+    "status": "graded",
+    "forecast": 28.7927,
+    "actual": 75.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-2003-078": {
+    "status": "graded",
+    "forecast": 4772.08,
+    "actual": 3749.54,
+    "verdict": "miss"
+   },
+   "eia-aeo-2003-094": {
+    "status": "graded",
+    "forecast": 5.61814,
+    "actual": 3.2655,
+    "verdict": "miss"
+   },
+   "eia-aeo-2003-098": {
+    "status": "graded",
+    "forecast": 6.34044,
+    "actual": 2.87777,
+    "verdict": "miss"
+   },
+   "eia-aeo-2003-099": {
+    "status": "graded",
+    "forecast": 6.70651,
+    "actual": 2.39654,
+    "verdict": "miss"
+   },
+   "eia-aeo-2004-034": {
+    "status": "graded",
+    "forecast": 36.7916,
+    "actual": 49.12,
+    "verdict": "miss"
+   },
+   "eia-aeo-2004-035": {
+    "status": "graded",
+    "forecast": 38.3175,
+    "actual": 60.95,
+    "verdict": "miss"
+   },
+   "eia-aeo-2004-036": {
+    "status": "graded",
+    "forecast": 39.9742,
+    "actual": 57.94,
+    "verdict": "miss"
+   },
+   "eia-aeo-2004-037": {
+    "status": "graded",
+    "forecast": 41.6992,
+    "actual": 37.41,
+    "verdict": "partial"
+   },
+   "eia-aeo-2004-059": {
+    "status": "graded",
+    "forecast": 3582.34,
+    "actual": 3547.48,
+    "verdict": "hit"
+   },
+   "eia-aeo-2005-103": {
+    "status": "graded",
+    "forecast": 6.88157,
+    "actual": 3.54528,
+    "verdict": "miss"
+   },
+   "eia-aeo-2005-108": {
+    "status": "graded",
+    "forecast": 8.73625,
+    "actual": 3.5,
+    "verdict": "miss"
+   },
+   "eia-aeo-2005-109": {
+    "status": "graded",
+    "forecast": 9.11527,
+    "actual": 2.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-2005-129": {
+    "status": "graded",
+    "forecast": 6.55858,
+    "actual": 5.92937,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-130": {
+    "status": "graded",
+    "forecast": 6.54647,
+    "actual": 2.66737,
+    "verdict": "miss"
+   },
+   "eia-aeo-2005-131": {
+    "status": "graded",
+    "forecast": 6.62738,
+    "actual": 2.12809,
+    "verdict": "miss"
+   },
+   "eia-aeo-2005-134": {
+    "status": "graded",
+    "forecast": 5.5,
+    "actual": 7.33,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-135": {
+    "status": "graded",
+    "forecast": 4.9,
+    "actual": 6.39,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-136": {
+    "status": "graded",
+    "forecast": 4.6,
+    "actual": 6.25,
+    "verdict": "miss"
+   },
+   "eia-aeo-2005-137": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 7.96,
+    "verdict": "miss"
+   },
+   "eia-aeo-2005-138": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 3.71,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-140": {
+    "status": "graded",
+    "forecast": 7630.37,
+    "actual": 7592.79,
+    "verdict": "hit"
+   },
+   "eia-aeo-2005-141": {
+    "status": "graded",
+    "forecast": 7774.67,
+    "actual": 7550.91,
+    "verdict": "hit"
+   },
+   "eia-aeo-2005-142": {
+    "status": "graded",
+    "forecast": 7928.44,
+    "actual": 7548.34,
+    "verdict": "hit"
+   },
+   "eia-aeo-2005-143": {
+    "status": "graded",
+    "forecast": 8096.71,
+    "actual": 7136.25,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-144": {
+    "status": "graded",
+    "forecast": 8268.09,
+    "actual": 6851.56,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-145": {
+    "status": "graded",
+    "forecast": 8389.42,
+    "actual": 7000.75,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-146": {
+    "status": "graded",
+    "forecast": 8509.7,
+    "actual": 6891.96,
+    "verdict": "partial"
+   },
+   "eia-aeo-2005-147": {
+    "status": "graded",
+    "forecast": 8625.48,
+    "actual": 6767.42,
+    "verdict": "miss"
+   },
+   "eia-aeo-2006-114": {
+    "status": "graded",
+    "forecast": 6.59839,
+    "actual": 5.02907,
+    "verdict": "miss"
+   },
+   "eia-aeo-2006-115": {
+    "status": "graded",
+    "forecast": 6.50682,
+    "actual": 3.2655,
+    "verdict": "miss"
+   },
+   "eia-aeo-2006-116": {
+    "status": "graded",
+    "forecast": 6.64631,
+    "actual": 2.88332,
+    "verdict": "miss"
+   },
+   "eia-aeo-2006-117": {
+    "status": "graded",
+    "forecast": 6.88386,
+    "actual": 3.39441,
+    "verdict": "miss"
+   },
+   "eia-aeo-2006-160": {
+    "status": "graded",
+    "forecast": 6.27,
+    "actual": 7.96,
+    "verdict": "partial"
+   },
+   "eia-aeo-2006-161": {
+    "status": "graded",
+    "forecast": 5.92,
+    "actual": 3.71,
+    "verdict": "miss"
+   },
+   "eia-aeo-2006-163": {
+    "status": "graded",
+    "forecast": 7723.02,
+    "actual": 7550.91,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-040": {
+    "status": "graded",
+    "forecast": 61.6018,
+    "actual": 37.41,
+    "verdict": "miss"
+   },
+   "eia-aeo-2007-041": {
+    "status": "graded",
+    "forecast": 63.6041,
+    "actual": 65.78,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-042": {
+    "status": "graded",
+    "forecast": 65.7333,
+    "actual": 91.83,
+    "verdict": "miss"
+   },
+   "eia-aeo-2007-043": {
+    "status": "graded",
+    "forecast": 67.8991,
+    "actual": 74.53,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-044": {
+    "status": "graded",
+    "forecast": 70.138,
+    "actual": 74.24,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-068": {
+    "status": "graded",
+    "forecast": 55.6683,
+    "actual": 56.7998,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-069": {
+    "status": "graded",
+    "forecast": 56.373,
+    "actual": 55.241,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-078": {
+    "status": "graded",
+    "forecast": 3836.23,
+    "actual": 3733.96,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-079": {
+    "status": "graded",
+    "forecast": 3891.28,
+    "actual": 3596.8,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-152": {
+    "status": "graded",
+    "forecast": 7,
+    "actual": 6.25,
+    "verdict": "partial"
+   },
+   "eia-aeo-2007-153": {
+    "status": "graded",
+    "forecast": 7.07,
+    "actual": 7.96,
+    "verdict": "partial"
+   },
+   "eia-aeo-2007-154": {
+    "status": "graded",
+    "forecast": 6.61,
+    "actual": 3.71,
+    "verdict": "miss"
+   },
+   "eia-aeo-2007-156": {
+    "status": "graded",
+    "forecast": 7643.82,
+    "actual": 7548.34,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-157": {
+    "status": "graded",
+    "forecast": 7721.17,
+    "actual": 7136.25,
+    "verdict": "hit"
+   },
+   "eia-aeo-2007-158": {
+    "status": "graded",
+    "forecast": 7804.54,
+    "actual": 6851.56,
+    "verdict": "partial"
+   },
+   "eia-aeo-2007-159": {
+    "status": "graded",
+    "forecast": 7880.04,
+    "actual": 7000.75,
+    "verdict": "partial"
+   },
+   "eia-aeo-2009-220": {
+    "status": "graded",
+    "forecast": 28.2775,
+    "actual": 28.4013,
+    "verdict": "hit"
+   },
+   "eia-aeo-2009-221": {
+    "status": "graded",
+    "forecast": 28.4153,
+    "actual": 28.3262,
+    "verdict": "hit"
+   },
+   "eia-aeo-2009-222": {
+    "status": "graded",
+    "forecast": 28.557,
+    "actual": 24.3064,
+    "verdict": "partial"
+   },
+   "eia-aeo-2009-223": {
+    "status": "graded",
+    "forecast": 28.6771,
+    "actual": 26.8952,
+    "verdict": "hit"
+   },
+   "eia-aeo-2009-224": {
+    "status": "graded",
+    "forecast": 29.4762,
+    "actual": 27.6433,
+    "verdict": "hit"
+   },
+   "eia-aeo-2009-225": {
+    "status": "graded",
+    "forecast": 29.6962,
+    "actual": 28.0298,
+    "verdict": "hit"
+   },
+   "eia-aeo-2009-226": {
+    "status": "graded",
+    "forecast": 29.9604,
+    "actual": 28.1168,
+    "verdict": "hit"
+   },
+   "eia-aeo-2009-240": {
+    "status": "graded",
+    "forecast": 85.2903,
+    "actual": 190.719,
+    "verdict": "miss"
+   },
+   "eia-aeo-2009-241": {
+    "status": "graded",
+    "forecast": 89.4421,
+    "actual": 226.993,
+    "verdict": "miss"
+   },
+   "eia-aeo-2009-242": {
+    "status": "graded",
+    "forecast": 89.4527,
+    "actual": 254.303,
+    "verdict": "miss"
+   },
+   "eia-aeo-2009-243": {
+    "status": "graded",
+    "forecast": 89.467,
+    "actual": 272.667,
+    "verdict": "miss"
+   },
+   "eia-aeo-2009-244": {
+    "status": "graded",
+    "forecast": 89.5692,
+    "actual": 295.882,
+    "verdict": "miss"
+   },
+   "eia-aeo-2009-245": {
+    "status": "graded",
+    "forecast": 93.3249,
+    "actual": 337.938,
+    "verdict": "miss"
+   },
+   "eia-aeo-2009-246": {
+    "status": "graded",
+    "forecast": 98.0766,
+    "actual": 379.767,
+    "verdict": "miss"
+   },
+   "eia-aeo-2009-247": {
+    "status": "graded",
+    "forecast": 100.998,
+    "actual": 434.297,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-029": {
+    "status": "graded",
+    "forecast": 69.4278,
+    "actual": 75.86,
+    "verdict": "hit"
+   },
+   "eia-aeo-2010-030": {
+    "status": "graded",
+    "forecast": 69.5356,
+    "actual": 102.63,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-031": {
+    "status": "graded",
+    "forecast": 77.2098,
+    "actual": 101.09,
+    "verdict": "partial"
+   },
+   "eia-aeo-2010-032": {
+    "status": "graded",
+    "forecast": 85.1913,
+    "actual": 98.11,
+    "verdict": "partial"
+   },
+   "eia-aeo-2010-033": {
+    "status": "graded",
+    "forecast": 91.8689,
+    "actual": 89.56,
+    "verdict": "hit"
+   },
+   "eia-aeo-2010-034": {
+    "status": "graded",
+    "forecast": 96.8182,
+    "actual": 46.4,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-035": {
+    "status": "graded",
+    "forecast": 102.203,
+    "actual": 38.75,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-036": {
+    "status": "graded",
+    "forecast": 107.119,
+    "actual": 49.12,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-037": {
+    "status": "graded",
+    "forecast": 112.485,
+    "actual": 60.95,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-038": {
+    "status": "graded",
+    "forecast": 116.125,
+    "actual": 57.94,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-039": {
+    "status": "graded",
+    "forecast": 119.936,
+    "actual": 37.41,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-040": {
+    "status": "graded",
+    "forecast": 123.963,
+    "actual": 65.78,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-041": {
+    "status": "graded",
+    "forecast": 128.224,
+    "actual": 91.83,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-042": {
+    "status": "graded",
+    "forecast": 132.812,
+    "actual": 74.53,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-043": {
+    "status": "graded",
+    "forecast": 137.153,
+    "actual": 74.24,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-070": {
+    "status": "graded",
+    "forecast": 109.157,
+    "actual": 55.241,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-120": {
+    "status": "graded",
+    "forecast": 7.84543,
+    "actual": 2.39654,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-121": {
+    "status": "graded",
+    "forecast": 8.13152,
+    "actual": 4.97594,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-198": {
+    "status": "graded",
+    "forecast": 18.0237,
+    "actual": 54.8665,
+    "verdict": "miss"
+   },
+   "eia-aeo-2010-199": {
+    "status": "graded",
+    "forecast": 18.1347,
+    "actual": 77.2771,
+    "verdict": "miss"
+   },
+   "eia-aeo-2011-002": {
+    "status": "graded",
+    "forecast": 5600.74,
+    "actual": 5439.48,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-003": {
+    "status": "graded",
+    "forecast": 5621.82,
+    "actual": 5226.9,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-004": {
+    "status": "graded",
+    "forecast": 5659.05,
+    "actual": 5355.46,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-005": {
+    "status": "graded",
+    "forecast": 5651.29,
+    "actual": 5405.56,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-006": {
+    "status": "graded",
+    "forecast": 5679.87,
+    "actual": 5257.34,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-007": {
+    "status": "graded",
+    "forecast": 5700.33,
+    "actual": 5187.57,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-008": {
+    "status": "graded",
+    "forecast": 5707.07,
+    "actual": 5140.37,
+    "verdict": "partial"
+   },
+   "eia-aeo-2011-010": {
+    "status": "graded",
+    "forecast": 5741.96,
+    "actual": 5141.68,
+    "verdict": "partial"
+   },
+   "eia-aeo-2011-011": {
+    "status": "graded",
+    "forecast": 5776.69,
+    "actual": 4576.3,
+    "verdict": "miss"
+   },
+   "eia-aeo-2011-012": {
+    "status": "graded",
+    "forecast": 5824.61,
+    "actual": 4869.97,
+    "verdict": "partial"
+   },
+   "eia-aeo-2011-013": {
+    "status": "graded",
+    "forecast": 5844.73,
+    "actual": 4940.77,
+    "verdict": "partial"
+   },
+   "eia-aeo-2011-014": {
+    "status": "graded",
+    "forecast": 5879.36,
+    "actual": 4794.53,
+    "verdict": "partial"
+   },
+   "eia-aeo-2011-015": {
+    "status": "graded",
+    "forecast": 5914.21,
+    "actual": 4777.63,
+    "verdict": "partial"
+   },
+   "eia-aeo-2011-065": {
+    "status": "graded",
+    "forecast": 105.941,
+    "actual": 72.5025,
+    "verdict": "miss"
+   },
+   "eia-aeo-2011-066": {
+    "status": "graded",
+    "forecast": 107.763,
+    "actual": 56.7998,
+    "verdict": "miss"
+   },
+   "eia-aeo-2011-067": {
+    "status": "graded",
+    "forecast": 109.448,
+    "actual": 55.241,
+    "verdict": "miss"
+   },
+   "eia-aeo-2011-143": {
+    "status": "graded",
+    "forecast": 5.59716,
+    "actual": 5.92937,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-144": {
+    "status": "graded",
+    "forecast": 5.7601,
+    "actual": 2.66737,
+    "verdict": "miss"
+   },
+   "eia-aeo-2011-158": {
+    "status": "graded",
+    "forecast": 6972.82,
+    "actual": 6891.96,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-159": {
+    "status": "graded",
+    "forecast": 7292.66,
+    "actual": 6767.42,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-170": {
+    "status": "graded",
+    "forecast": 20.8561,
+    "actual": 20.275,
+    "verdict": "hit"
+   },
+   "eia-aeo-2011-171": {
+    "status": "graded",
+    "forecast": 20.9221,
+    "actual": 20.3071,
+    "verdict": "hit"
+   },
+   "eia-aeo-2012-006": {
+    "status": "graded",
+    "forecast": 5407.96,
+    "actual": 5187.57,
+    "verdict": "hit"
+   },
+   "eia-aeo-2012-007": {
+    "status": "graded",
+    "forecast": 5401.82,
+    "actual": 5140.37,
+    "verdict": "hit"
+   },
+   "eia-aeo-2012-008": {
+    "status": "graded",
+    "forecast": 5402.25,
+    "actual": 5280.98,
+    "verdict": "hit"
+   },
+   "eia-aeo-2012-009": {
+    "status": "graded",
+    "forecast": 5420.76,
+    "actual": 5141.68,
+    "verdict": "hit"
+   },
+   "eia-aeo-2012-010": {
+    "status": "graded",
+    "forecast": 5434.37,
+    "actual": 4576.3,
+    "verdict": "partial"
+   },
+   "eia-aeo-2012-011": {
+    "status": "graded",
+    "forecast": 5449.79,
+    "actual": 4869.97,
+    "verdict": "partial"
+   },
+   "eia-aeo-2012-012": {
+    "status": "graded",
+    "forecast": 5492.02,
+    "actual": 4940.77,
+    "verdict": "partial"
+   },
+   "eia-aeo-2012-013": {
+    "status": "graded",
+    "forecast": 5519.07,
+    "actual": 4794.53,
+    "verdict": "partial"
+   },
+   "eia-aeo-2012-014": {
+    "status": "graded",
+    "forecast": 5533.86,
+    "actual": 4777.63,
+    "verdict": "partial"
+   },
+   "eia-aeo-2012-072": {
+    "status": "graded",
+    "forecast": 122.337,
+    "actual": 72.5025,
+    "verdict": "miss"
+   },
+   "eia-aeo-2012-073": {
+    "status": "graded",
+    "forecast": 123.392,
+    "actual": 56.7998,
+    "verdict": "miss"
+   },
+   "eia-aeo-2012-130": {
+    "status": "graded",
+    "forecast": 5.54871,
+    "actual": 2.39654,
+    "verdict": "miss"
+   },
+   "eia-aeo-2012-131": {
+    "status": "graded",
+    "forecast": 5.88875,
+    "actual": 4.97594,
+    "verdict": "partial"
+   },
+   "eia-aeo-2012-132": {
+    "status": "graded",
+    "forecast": 6.42141,
+    "actual": 7.51,
+    "verdict": "partial"
+   },
+   "eia-aeo-2012-133": {
+    "status": "graded",
+    "forecast": 6.76207,
+    "actual": 3.5,
+    "verdict": "miss"
+   },
+   "eia-aeo-2012-134": {
+    "status": "graded",
+    "forecast": 7.03221,
+    "actual": 2.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-2013-003": {
+    "status": "graded",
+    "forecast": 5361.48,
+    "actual": 5405.56,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-008": {
+    "status": "graded",
+    "forecast": 5440.98,
+    "actual": 5141.68,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-009": {
+    "status": "graded",
+    "forecast": 5454.56,
+    "actual": 4576.3,
+    "verdict": "partial"
+   },
+   "eia-aeo-2013-010": {
+    "status": "graded",
+    "forecast": 5455.64,
+    "actual": 4869.97,
+    "verdict": "partial"
+   },
+   "eia-aeo-2013-011": {
+    "status": "graded",
+    "forecast": 5481.61,
+    "actual": 4940.77,
+    "verdict": "partial"
+   },
+   "eia-aeo-2013-012": {
+    "status": "graded",
+    "forecast": 5496.61,
+    "actual": 4794.53,
+    "verdict": "partial"
+   },
+   "eia-aeo-2013-013": {
+    "status": "graded",
+    "forecast": 5500.75,
+    "actual": 4777.63,
+    "verdict": "partial"
+   },
+   "eia-aeo-2013-089": {
+    "status": "graded",
+    "forecast": 3664.75,
+    "actual": 3724.87,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-090": {
+    "status": "graded",
+    "forecast": 3704.22,
+    "actual": 3723.68,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-091": {
+    "status": "graded",
+    "forecast": 3756.6,
+    "actual": 3724.52,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-092": {
+    "status": "graded",
+    "forecast": 3797.2,
+    "actual": 3762.46,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-093": {
+    "status": "graded",
+    "forecast": 3845.58,
+    "actual": 3681.99,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-094": {
+    "status": "graded",
+    "forecast": 3888.44,
+    "actual": 3859.19,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-095": {
+    "status": "graded",
+    "forecast": 3939.79,
+    "actual": 3749.54,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-096": {
+    "status": "graded",
+    "forecast": 3969.37,
+    "actual": 3717.67,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-097": {
+    "status": "graded",
+    "forecast": 4002.96,
+    "actual": 3794.54,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-098": {
+    "status": "graded",
+    "forecast": 4041.93,
+    "actual": 3927.17,
+    "verdict": "hit"
+   },
+   "eia-aeo-2013-099": {
+    "status": "graded",
+    "forecast": 4075.26,
+    "actual": 3874.25,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-170": {
+    "status": "graded",
+    "forecast": 6825.53,
+    "actual": 6973.55,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-171": {
+    "status": "graded",
+    "forecast": 6996.01,
+    "actual": 7079.33,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-172": {
+    "status": "graded",
+    "forecast": 7069.36,
+    "actual": 7205.53,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-173": {
+    "status": "graded",
+    "forecast": 7112.63,
+    "actual": 7255.12,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-174": {
+    "status": "graded",
+    "forecast": 7131.01,
+    "actual": 7486.73,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-175": {
+    "status": "graded",
+    "forecast": 7133.89,
+    "actual": 7498.14,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-176": {
+    "status": "graded",
+    "forecast": 7128.33,
+    "actual": 6656.04,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-177": {
+    "status": "graded",
+    "forecast": 7112.72,
+    "actual": 7220.44,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-200": {
+    "status": "graded",
+    "forecast": 35.865,
+    "actual": 54.8665,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-201": {
+    "status": "graded",
+    "forecast": 36.8102,
+    "actual": 77.2771,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-202": {
+    "status": "graded",
+    "forecast": 37.0537,
+    "actual": 93.3646,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-203": {
+    "status": "graded",
+    "forecast": 37.4247,
+    "actual": 106.894,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-204": {
+    "status": "graded",
+    "forecast": 37.9756,
+    "actual": 130.721,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-205": {
+    "status": "graded",
+    "forecast": 38.6471,
+    "actual": 163.703,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-206": {
+    "status": "ungradable",
+    "forecast": 39.3595,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2014-207": {
+    "status": "ungradable",
+    "forecast": 40.137,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2014-208": {
+    "status": "ungradable",
+    "forecast": 41.0495,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2014-282": {
+    "status": "graded",
+    "forecast": 167.513,
+    "actual": 181.655,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-283": {
+    "status": "graded",
+    "forecast": 199.073,
+    "actual": 190.719,
+    "verdict": "hit"
+   },
+   "eia-aeo-2014-285": {
+    "status": "graded",
+    "forecast": 218.474,
+    "actual": 254.303,
+    "verdict": "partial"
+   },
+   "eia-aeo-2014-287": {
+    "status": "graded",
+    "forecast": 218.48,
+    "actual": 295.882,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-288": {
+    "status": "graded",
+    "forecast": 218.489,
+    "actual": 337.938,
+    "verdict": "miss"
+   },
+   "eia-aeo-2014-289": {
+    "status": "graded",
+    "forecast": 218.49,
+    "actual": 379.767,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-010": {
+    "status": "graded",
+    "forecast": 5508.19,
+    "actual": 4794.53,
+    "verdict": "partial"
+   },
+   "eia-aeo-2015-011": {
+    "status": "graded",
+    "forecast": 5517.33,
+    "actual": 4777.63,
+    "verdict": "partial"
+   },
+   "eia-aeo-2015-064": {
+    "status": "graded",
+    "forecast": 72.6517,
+    "actual": 56.7998,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-065": {
+    "status": "graded",
+    "forecast": 74.9397,
+    "actual": 55.241,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-110": {
+    "status": "graded",
+    "forecast": 4.81532,
+    "actual": 3.2655,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-111": {
+    "status": "graded",
+    "forecast": 5.04712,
+    "actual": 2.88332,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-112": {
+    "status": "graded",
+    "forecast": 5.2037,
+    "actual": 3.39441,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-113": {
+    "status": "graded",
+    "forecast": 5.55706,
+    "actual": 3.54528,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-114": {
+    "status": "graded",
+    "forecast": 6.30779,
+    "actual": 2.87777,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-115": {
+    "status": "graded",
+    "forecast": 7.10207,
+    "actual": 2.39654,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-116": {
+    "status": "graded",
+    "forecast": 7.7072,
+    "actual": 4.97594,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-117": {
+    "status": "graded",
+    "forecast": 6.96855,
+    "actual": 7.51,
+    "verdict": "hit"
+   },
+   "eia-aeo-2015-118": {
+    "status": "graded",
+    "forecast": 7.29674,
+    "actual": 3.5,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-119": {
+    "status": "graded",
+    "forecast": 7.57695,
+    "actual": 2.86,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-164": {
+    "status": "graded",
+    "forecast": 7031.19,
+    "actual": 7079.33,
+    "verdict": "hit"
+   },
+   "eia-aeo-2015-165": {
+    "status": "graded",
+    "forecast": 7067.79,
+    "actual": 7205.53,
+    "verdict": "hit"
+   },
+   "eia-aeo-2015-166": {
+    "status": "graded",
+    "forecast": 7049.66,
+    "actual": 7255.12,
+    "verdict": "hit"
+   },
+   "eia-aeo-2015-167": {
+    "status": "graded",
+    "forecast": 7113.9,
+    "actual": 7486.73,
+    "verdict": "hit"
+   },
+   "eia-aeo-2015-168": {
+    "status": "graded",
+    "forecast": 7147.63,
+    "actual": 7498.14,
+    "verdict": "hit"
+   },
+   "eia-aeo-2015-169": {
+    "status": "graded",
+    "forecast": 7170.81,
+    "actual": 6656.04,
+    "verdict": "hit"
+   },
+   "eia-aeo-2015-194": {
+    "status": "graded",
+    "forecast": 49.7637,
+    "actual": 93.3646,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-195": {
+    "status": "graded",
+    "forecast": 50.3609,
+    "actual": 106.894,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-196": {
+    "status": "graded",
+    "forecast": 51.2576,
+    "actual": 130.721,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-197": {
+    "status": "graded",
+    "forecast": 52.3725,
+    "actual": 163.703,
+    "verdict": "miss"
+   },
+   "eia-aeo-2015-198": {
+    "status": "ungradable",
+    "forecast": 53.6276,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2015-199": {
+    "status": "ungradable",
+    "forecast": 55.0624,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2016-109": {
+    "status": "graded",
+    "forecast": 4.93271,
+    "actual": 2.87777,
+    "verdict": "miss"
+   },
+   "eia-aeo-2016-190": {
+    "status": "ungradable",
+    "forecast": 142.716,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2016-191": {
+    "status": "ungradable",
+    "forecast": 159.075,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2016-192": {
+    "status": "ungradable",
+    "forecast": 164.618,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2020-102": {
+    "status": "graded",
+    "forecast": 3884.17,
+    "actual": 3961.89,
+    "verdict": "hit"
+   },
+   "eia-aeo-2020-132": {
+    "status": "graded",
+    "forecast": 3.12482,
+    "actual": 7.51,
+    "verdict": "miss"
+   },
+   "eia-aeo-2021-033": {
+    "status": "graded",
+    "forecast": 42.072,
+    "actual": 65.78,
+    "verdict": "miss"
+   },
+   "eia-aeo-2021-034": {
+    "status": "graded",
+    "forecast": 49.6816,
+    "actual": 91.83,
+    "verdict": "miss"
+   },
+   "eia-aeo-2021-035": {
+    "status": "graded",
+    "forecast": 55.262,
+    "actual": 74.53,
+    "verdict": "miss"
+   },
+   "eia-aeo-2021-036": {
+    "status": "graded",
+    "forecast": 60.1353,
+    "actual": 74.24,
+    "verdict": "partial"
+   },
+   "eia-aeo-2021-095": {
+    "status": "graded",
+    "forecast": 3680.42,
+    "actual": 3794.54,
+    "verdict": "hit"
+   },
+   "eia-aeo-2021-096": {
+    "status": "graded",
+    "forecast": 3747.36,
+    "actual": 3927.17,
+    "verdict": "hit"
+   },
+   "eia-aeo-2021-097": {
+    "status": "graded",
+    "forecast": 3793.13,
+    "actual": 3874.25,
+    "verdict": "hit"
+   },
+   "eia-aeo-2021-098": {
+    "status": "graded",
+    "forecast": 3837.92,
+    "actual": 3961.89,
+    "verdict": "hit"
+   },
+   "eia-aeo-2021-126": {
+    "status": "graded",
+    "forecast": 3.58642,
+    "actual": 4.97594,
+    "verdict": "miss"
+   },
+   "eia-aeo-2021-127": {
+    "status": "graded",
+    "forecast": 3.81036,
+    "actual": 7.51,
+    "verdict": "miss"
+   },
+   "eia-aeo-2022-152": {
+    "status": "graded",
+    "forecast": 3.5394,
+    "actual": 5.92937,
+    "verdict": "miss"
+   },
+   "eia-aeo-2022-153": {
+    "status": "graded",
+    "forecast": 3.3138,
+    "actual": 2.66737,
+    "verdict": "partial"
+   },
+   "eia-aeo-2022-154": {
+    "status": "graded",
+    "forecast": 3.05174,
+    "actual": 2.12809,
+    "verdict": "miss"
+   },
+   "eia-aeo-2022-242": {
+    "status": "ungradable",
+    "forecast": 98.8223,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2022-243": {
+    "status": "ungradable",
+    "forecast": 99.7389,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2022-244": {
+    "status": "ungradable",
+    "forecast": 99.6372,
+    "actual": null,
+    "verdict": null
+   },
+   "eia-aeo-2023-090": {
+    "status": "graded",
+    "forecast": 3866.86,
+    "actual": 3961.89,
+    "verdict": "hit"
+   },
+   "eia-aeo-2023-147": {
+    "status": "graded",
+    "forecast": 4.58005,
+    "actual": 2.66737,
+    "verdict": "miss"
+   },
+   "eia-aeo-2023-148": {
+    "status": "graded",
+    "forecast": 3.65184,
+    "actual": 2.12809,
+    "verdict": "miss"
+   }
+  },
+  "fed-sep": {
+   "fed-sep-2009-06-001": {
+    "status": "graded",
+    "forecast": -1.25,
+    "actual": 0.11,
+    "verdict": "miss"
+   },
+   "fed-sep-2009-06-003": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 1.54,
+    "verdict": "miss"
+   },
+   "fed-sep-2010-04-001": {
+    "status": "graded",
+    "forecast": 3.45,
+    "actual": 2.78,
+    "verdict": "partial"
+   },
+   "fed-sep-2010-04-002": {
+    "status": "graded",
+    "forecast": 3.95,
+    "actual": 1.54,
+    "verdict": "miss"
+   },
+   "fed-sep-2010-04-003": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 1.55,
+    "verdict": "miss"
+   },
+   "fed-sep-2010-04-005": {
+    "status": "graded",
+    "forecast": 9.3,
+    "actual": 9.5,
+    "verdict": "hit"
+   },
+   "fed-sep-2010-04-006": {
+    "status": "graded",
+    "forecast": 8.3,
+    "actual": 8.63,
+    "verdict": "hit"
+   },
+   "fed-sep-2010-04-007": {
+    "status": "graded",
+    "forecast": 7.05,
+    "actual": 7.8,
+    "verdict": "partial"
+   },
+   "fed-sep-2010-04-009": {
+    "status": "graded",
+    "forecast": 1.35,
+    "actual": 1.38,
+    "verdict": "hit"
+   },
+   "fed-sep-2010-04-010": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.64,
+    "verdict": "miss"
+   },
+   "fed-sep-2010-04-011": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.77,
+    "verdict": "hit"
+   },
+   "fed-sep-2010-04-013": {
+    "status": "graded",
+    "forecast": 1.05,
+    "actual": 1.09,
+    "verdict": "hit"
+   },
+   "fed-sep-2010-04-014": {
+    "status": "graded",
+    "forecast": 1.25,
+    "actual": 1.85,
+    "verdict": "partial"
+   },
+   "fed-sep-2010-04-015": {
+    "status": "graded",
+    "forecast": 1.4,
+    "actual": 1.79,
+    "verdict": "hit"
+   },
+   "fed-sep-2011-06-001": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 1.54,
+    "verdict": "miss"
+   },
+   "fed-sep-2011-06-002": {
+    "status": "graded",
+    "forecast": 3.5,
+    "actual": 1.55,
+    "verdict": "miss"
+   },
+   "fed-sep-2012-09-004": {
+    "status": "graded",
+    "forecast": 3.4,
+    "actual": 2.12,
+    "verdict": "miss"
+   },
+   "fed-sep-2012-09-008": {
+    "status": "graded",
+    "forecast": 7,
+    "actual": 5.7,
+    "verdict": "miss"
+   },
+   "fed-sep-2012-09-009": {
+    "status": "graded",
+    "forecast": 6.4,
+    "actual": 5.03,
+    "verdict": "miss"
+   },
+   "fed-sep-2013-12-002": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 2.69,
+    "verdict": "hit"
+   },
+   "fed-sep-2013-12-003": {
+    "status": "graded",
+    "forecast": 3.2,
+    "actual": 2.12,
+    "verdict": "miss"
+   },
+   "fed-sep-2013-12-004": {
+    "status": "graded",
+    "forecast": 2.85,
+    "actual": 2.18,
+    "verdict": "partial"
+   },
+   "fed-sep-2013-12-006": {
+    "status": "graded",
+    "forecast": 7.05,
+    "actual": 6.93,
+    "verdict": "hit"
+   },
+   "fed-sep-2013-12-007": {
+    "status": "graded",
+    "forecast": 6.45,
+    "actual": 5.7,
+    "verdict": "partial"
+   },
+   "fed-sep-2013-12-020": {
+    "status": "graded",
+    "forecast": 0.25,
+    "actual": 0.125,
+    "verdict": "hit"
+   },
+   "fed-sep-2013-12-021": {
+    "status": "graded",
+    "forecast": 0.25,
+    "actual": 0.125,
+    "verdict": "hit"
+   },
+   "fed-sep-2013-12-022": {
+    "status": "graded",
+    "forecast": 0.75,
+    "actual": 0.375,
+    "verdict": "hit"
+   },
+   "fed-sep-2013-12-023": {
+    "status": "graded",
+    "forecast": 1.75,
+    "actual": 0.625,
+    "verdict": "miss"
+   },
+   "fed-sep-2014-09-020": {
+    "status": "graded",
+    "forecast": 0.125,
+    "actual": 0.125,
+    "verdict": "hit"
+   },
+   "fed-sep-2014-09-022": {
+    "status": "graded",
+    "forecast": 2.875,
+    "actual": 0.625,
+    "verdict": "miss"
+   },
+   "fed-sep-2014-09-023": {
+    "status": "graded",
+    "forecast": 3.75,
+    "actual": 1.375,
+    "verdict": "miss"
+   },
+   "fed-sep-2015-03-017": {
+    "status": "graded",
+    "forecast": 1.875,
+    "actual": 0.625,
+    "verdict": "miss"
+   },
+   "fed-sep-2015-03-018": {
+    "status": "graded",
+    "forecast": 3.125,
+    "actual": 1.375,
+    "verdict": "miss"
+   },
+   "fed-sep-2015-12-001": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.12,
+    "verdict": "hit"
+   },
+   "fed-sep-2015-12-002": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 2.18,
+    "verdict": "hit"
+   },
+   "fed-sep-2015-12-003": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 2.99,
+    "verdict": "partial"
+   },
+   "fed-sep-2015-12-004": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.13,
+    "verdict": "hit"
+   },
+   "fed-sep-2015-12-006": {
+    "status": "graded",
+    "forecast": 5,
+    "actual": 5.03,
+    "verdict": "hit"
+   },
+   "fed-sep-2015-12-007": {
+    "status": "graded",
+    "forecast": 4.7,
+    "actual": 4.77,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-03-009": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 1.49,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-03-018": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 2.375,
+    "verdict": "partial"
+   },
+   "fed-sep-2016-12-001": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.18,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-002": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.99,
+    "verdict": "partial"
+   },
+   "fed-sep-2016-12-003": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.13,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-004": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 3.35,
+    "verdict": "miss"
+   },
+   "fed-sep-2016-12-006": {
+    "status": "graded",
+    "forecast": 4.7,
+    "actual": 4.77,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-007": {
+    "status": "graded",
+    "forecast": 4.5,
+    "actual": 4.17,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-009": {
+    "status": "graded",
+    "forecast": 4.5,
+    "actual": 3.6,
+    "verdict": "partial"
+   },
+   "fed-sep-2016-12-011": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.49,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-012": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 1.75,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-013": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.95,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-014": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.4,
+    "verdict": "partial"
+   },
+   "fed-sep-2016-12-016": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 1.76,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-017": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 1.55,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-018": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.97,
+    "verdict": "hit"
+   },
+   "fed-sep-2016-12-019": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.56,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-09-009": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 6.77,
+    "verdict": "miss"
+   },
+   "fed-sep-2017-12-001": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.99,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-004": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": -0.92,
+    "verdict": "miss"
+   },
+   "fed-sep-2017-12-006": {
+    "status": "graded",
+    "forecast": 4.1,
+    "actual": 4.17,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-007": {
+    "status": "graded",
+    "forecast": 3.9,
+    "actual": 3.83,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-008": {
+    "status": "graded",
+    "forecast": 3.9,
+    "actual": 3.6,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-009": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 6.77,
+    "verdict": "miss"
+   },
+   "fed-sep-2017-12-011": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 1.75,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-012": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 1.95,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-013": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.4,
+    "verdict": "partial"
+   },
+   "fed-sep-2017-12-014": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.24,
+    "verdict": "partial"
+   },
+   "fed-sep-2017-12-016": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.55,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-017": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 1.97,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-018": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.56,
+    "verdict": "hit"
+   },
+   "fed-sep-2017-12-019": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.46,
+    "verdict": "partial"
+   },
+   "fed-sep-2019-03-001": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 3.35,
+    "verdict": "miss"
+   },
+   "fed-sep-2019-03-009": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 1.4,
+    "verdict": "hit"
+   },
+   "fed-sep-2019-03-010": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.24,
+    "verdict": "partial"
+   },
+   "fed-sep-2019-03-011": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 5.8,
+    "verdict": "miss"
+   },
+   "fed-sep-2019-03-013": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.56,
+    "verdict": "hit"
+   },
+   "fed-sep-2019-03-014": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.46,
+    "verdict": "partial"
+   },
+   "fed-sep-2019-03-015": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 4.85,
+    "verdict": "miss"
+   },
+   "fed-sep-2019-03-016": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 1.625,
+    "verdict": "partial"
+   },
+   "fed-sep-2019-03-017": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 0.125,
+    "verdict": "miss"
+   },
+   "fed-sep-2020-09-001": {
+    "status": "graded",
+    "forecast": -3.7,
+    "actual": -0.92,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-002": {
+    "status": "graded",
+    "forecast": 3.3,
+    "actual": 1.32,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-003": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 3.39,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-009": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 5.8,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-010": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 6,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-013": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 4.85,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-014": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 5.21,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-015": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 3.29,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-017": {
+    "status": "graded",
+    "forecast": 0.1,
+    "actual": 4.375,
+    "verdict": "miss"
+   },
+   "fed-sep-2021-03-018": {
+    "status": "graded",
+    "forecast": 0.1,
+    "actual": 5.375,
+    "verdict": "miss"
+   },
+   "fed-sep-2022-09-001": {
+    "status": "graded",
+    "forecast": 0.2,
+    "actual": 1.32,
+    "verdict": "miss"
+   },
+   "fed-sep-2022-09-002": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 3.39,
+    "verdict": "miss"
+   },
+   "fed-sep-2022-09-004": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 1.99,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-09-006": {
+    "status": "graded",
+    "forecast": 3.8,
+    "actual": 3.57,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-09-007": {
+    "status": "graded",
+    "forecast": 4.4,
+    "actual": 3.8,
+    "verdict": "partial"
+   },
+   "fed-sep-2022-09-019": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.85,
+    "verdict": "partial"
+   },
+   "fed-sep-2022-12-002": {
+    "status": "graded",
+    "forecast": 0.5,
+    "actual": 3.39,
+    "verdict": "miss"
+   },
+   "fed-sep-2022-12-011": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 6,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-12-012": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 2.85,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-12-013": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.6,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-12-014": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.8,
+    "verdict": "partial"
+   },
+   "fed-sep-2022-12-016": {
+    "status": "graded",
+    "forecast": 4.8,
+    "actual": 5.21,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-12-017": {
+    "status": "graded",
+    "forecast": 3.5,
+    "actual": 3.29,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-12-018": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.99,
+    "verdict": "hit"
+   },
+   "fed-sep-2022-12-019": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.85,
+    "verdict": "partial"
+   },
+   "fed-sep-2024-09-011": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 2.6,
+    "verdict": "hit"
+   },
+   "fed-sep-2024-09-012": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.8,
+    "verdict": "partial"
+   },
+   "fed-sep-2024-09-016": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 2.99,
+    "verdict": "hit"
+   },
+   "fed-sep-2024-09-017": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 2.85,
+    "verdict": "partial"
+   },
+   "fed-sep-2025-03-016": {
+    "status": "graded",
+    "forecast": 3.9,
+    "actual": 3.625,
+    "verdict": "hit"
+   }
+  },
+  "iea-weo": {
+   "iea-weo-2000-001": {
+    "status": "graded",
+    "forecast": 178,
+    "actual": 1596,
+    "verdict": "miss"
+   },
+   "iea-weo-2002-006": {
+    "status": "graded",
+    "forecast": 147,
+    "actual": 342,
+    "verdict": "miss"
+   },
+   "iea-weo-2002-007": {
+    "status": "graded",
+    "forecast": 307,
+    "actual": 1596,
+    "verdict": "miss"
+   },
+   "iea-weo-2002-014": {
+    "status": "graded",
+    "forecast": 55,
+    "actual": 198,
+    "verdict": "miss"
+   },
+   "iea-weo-2002-015": {
+    "status": "graded",
+    "forecast": 112,
+    "actual": 737,
+    "verdict": "miss"
+   },
+   "iea-weo-2004-002": {
+    "status": "graded",
+    "forecast": 12,
+    "actual": 32.21,
+    "verdict": "miss"
+   },
+   "iea-weo-2004-003": {
+    "status": "graded",
+    "forecast": 43,
+    "actual": 853.39,
+    "verdict": "miss"
+   },
+   "iea-weo-2004-006": {
+    "status": "graded",
+    "forecast": 251,
+    "actual": 342,
+    "verdict": "miss"
+   },
+   "iea-weo-2004-007": {
+    "status": "graded",
+    "forecast": 559,
+    "actual": 1596,
+    "verdict": "miss"
+   },
+   "iea-weo-2004-014": {
+    "status": "graded",
+    "forecast": 97,
+    "actual": 198,
+    "verdict": "miss"
+   },
+   "iea-weo-2004-015": {
+    "status": "graded",
+    "forecast": 206,
+    "actual": 737,
+    "verdict": "miss"
+   },
+   "iea-weo-2006-005": {
+    "status": "graded",
+    "forecast": 433,
+    "actual": 829.63,
+    "verdict": "miss"
+   },
+   "iea-weo-2007-005": {
+    "status": "graded",
+    "forecast": 549,
+    "actual": 829.63,
+    "verdict": "miss"
+   },
+   "iea-weo-2008-007": {
+    "status": "graded",
+    "forecast": 664,
+    "actual": 829.63,
+    "verdict": "partial"
+   },
+   "iea-weo-2008-008": {
+    "status": "graded",
+    "forecast": 970,
+    "actual": 1596,
+    "verdict": "miss"
+   },
+   "iea-weo-2008-018": {
+    "status": "graded",
+    "forecast": 383,
+    "actual": 737,
+    "verdict": "miss"
+   },
+   "iea-weo-2009-007": {
+    "status": "graded",
+    "forecast": 678,
+    "actual": 829.63,
+    "verdict": "partial"
+   },
+   "iea-weo-2009-008": {
+    "status": "graded",
+    "forecast": 1010,
+    "actual": 1596,
+    "verdict": "miss"
+   },
+   "iea-weo-2009-018": {
+    "status": "graded",
+    "forecast": 422,
+    "actual": 737,
+    "verdict": "miss"
+   },
+   "iea-weo-2010-003": {
+    "status": "graded",
+    "forecast": 130,
+    "actual": 833,
+    "verdict": "miss"
+   },
+   "iea-weo-2010-008": {
+    "status": "graded",
+    "forecast": 756,
+    "actual": 829.63,
+    "verdict": "hit"
+   },
+   "iea-weo-2010-009": {
+    "status": "graded",
+    "forecast": 1229,
+    "actual": 1596,
+    "verdict": "partial"
+   },
+   "iea-weo-2010-015": {
+    "status": "graded",
+    "forecast": 110,
+    "actual": 739,
+    "verdict": "miss"
+   },
+   "iea-weo-2010-021": {
+    "status": "graded",
+    "forecast": 535,
+    "actual": 737,
+    "verdict": "miss"
+   },
+   "iea-weo-2011-003": {
+    "status": "graded",
+    "forecast": 230,
+    "actual": 833,
+    "verdict": "miss"
+   },
+   "iea-weo-2011-008": {
+    "status": "graded",
+    "forecast": 835,
+    "actual": 829.63,
+    "verdict": "hit"
+   },
+   "iea-weo-2011-009": {
+    "status": "graded",
+    "forecast": 1282,
+    "actual": 1596,
+    "verdict": "partial"
+   },
+   "iea-weo-2011-015": {
+    "status": "graded",
+    "forecast": 184,
+    "actual": 739,
+    "verdict": "miss"
+   },
+   "iea-weo-2011-021": {
+    "status": "graded",
+    "forecast": 582,
+    "actual": 737,
+    "verdict": "partial"
+   },
+   "iea-weo-2012-003": {
+    "status": "graded",
+    "forecast": 332,
+    "actual": 833,
+    "verdict": "miss"
+   },
+   "iea-weo-2012-008": {
+    "status": "graded",
+    "forecast": 808,
+    "actual": 829.63,
+    "verdict": "hit"
+   },
+   "iea-weo-2012-009": {
+    "status": "graded",
+    "forecast": 1272,
+    "actual": 1596,
+    "verdict": "partial"
+   },
+   "iea-weo-2012-015": {
+    "status": "graded",
+    "forecast": 266,
+    "actual": 739,
+    "verdict": "miss"
+   },
+   "iea-weo-2012-021": {
+    "status": "graded",
+    "forecast": 586,
+    "actual": 737,
+    "verdict": "partial"
+   },
+   "iea-weo-2013-002": {
+    "status": "graded",
+    "forecast": 379,
+    "actual": 833,
+    "verdict": "miss"
+   },
+   "iea-weo-2013-007": {
+    "status": "graded",
+    "forecast": 1326,
+    "actual": 1596,
+    "verdict": "partial"
+   },
+   "iea-weo-2013-012": {
+    "status": "graded",
+    "forecast": 312,
+    "actual": 739,
+    "verdict": "miss"
+   },
+   "iea-weo-2013-017": {
+    "status": "graded",
+    "forecast": 612,
+    "actual": 737,
+    "verdict": "partial"
+   },
+   "iea-weo-2014-002": {
+    "status": "graded",
+    "forecast": 449,
+    "actual": 833,
+    "verdict": "miss"
+   },
+   "iea-weo-2014-008": {
+    "status": "graded",
+    "forecast": 1333,
+    "actual": 1596,
+    "verdict": "partial"
+   },
+   "iea-weo-2014-014": {
+    "status": "graded",
+    "forecast": 364,
+    "actual": 739,
+    "verdict": "miss"
+   },
+   "iea-weo-2014-020": {
+    "status": "graded",
+    "forecast": 598,
+    "actual": 737,
+    "verdict": "partial"
+   },
+   "iea-weo-2015-002": {
+    "status": "graded",
+    "forecast": 494,
+    "actual": 833,
+    "verdict": "miss"
+   },
+   "iea-weo-2015-008": {
+    "status": "graded",
+    "forecast": 1407,
+    "actual": 1596,
+    "verdict": "partial"
+   },
+   "iea-weo-2015-014": {
+    "status": "graded",
+    "forecast": 397,
+    "actual": 739,
+    "verdict": "miss"
+   },
+   "iea-weo-2015-020": {
+    "status": "graded",
+    "forecast": 617,
+    "actual": 737,
+    "verdict": "partial"
+   },
+   "iea-weo-2016-002": {
+    "status": "graded",
+    "forecast": 599,
+    "actual": 833,
+    "verdict": "miss"
+   },
+   "iea-weo-2016-008": {
+    "status": "graded",
+    "forecast": 1508,
+    "actual": 1596,
+    "verdict": "hit"
+   },
+   "iea-weo-2016-014": {
+    "status": "graded",
+    "forecast": 481,
+    "actual": 739,
+    "verdict": "miss"
+   },
+   "iea-weo-2016-020": {
+    "status": "graded",
+    "forecast": 670,
+    "actual": 737,
+    "verdict": "hit"
+   }
+  },
+  "imf-weo": {
+   "imf-weo-1991-10-010": {
+    "status": "graded",
+    "forecast": 5.746,
+    "actual": 14.3,
+    "verdict": "miss"
+   },
+   "imf-weo-1991-10-013": {
+    "status": "graded",
+    "forecast": -2.1,
+    "actual": 1,
+    "verdict": "miss"
+   },
+   "imf-weo-1993-10-010": {
+    "status": "graded",
+    "forecast": 8.811,
+    "actual": 13.1,
+    "verdict": "miss"
+   },
+   "imf-weo-1993-10-011": {
+    "status": "ungradable",
+    "forecast": 4.804,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-1994-04-010": {
+    "status": "graded",
+    "forecast": 9.036,
+    "actual": 11,
+    "verdict": "miss"
+   },
+   "imf-weo-1994-04-011": {
+    "status": "ungradable",
+    "forecast": 4.757,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-1994-04-012": {
+    "status": "ungradable",
+    "forecast": 6.139,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-1994-04-013": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 5.3,
+    "verdict": "miss"
+   },
+   "imf-weo-1994-04-014": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 4.4,
+    "verdict": "miss"
+   },
+   "imf-weo-1994-04-015": {
+    "status": "graded",
+    "forecast": 0.723,
+    "actual": 0.9,
+    "verdict": "hit"
+   },
+   "imf-weo-1994-04-016": {
+    "status": "graded",
+    "forecast": 2.261,
+    "actual": 2.3,
+    "verdict": "hit"
+   },
+   "imf-weo-1994-04-017": {
+    "status": "graded",
+    "forecast": 0.949,
+    "actual": 2.6,
+    "verdict": "miss"
+   },
+   "imf-weo-1994-04-018": {
+    "status": "graded",
+    "forecast": 2.149,
+    "actual": 1.5,
+    "verdict": "partial"
+   },
+   "imf-weo-1994-04-019": {
+    "status": "graded",
+    "forecast": 2.501,
+    "actual": 3.4,
+    "verdict": "partial"
+   },
+   "imf-weo-1996-04-014": {
+    "status": "graded",
+    "forecast": 4.5,
+    "actual": 3.4,
+    "verdict": "miss"
+   },
+   "imf-weo-1996-04-015": {
+    "status": "graded",
+    "forecast": 2.705,
+    "actual": 3.1,
+    "verdict": "hit"
+   },
+   "imf-weo-1996-04-016": {
+    "status": "graded",
+    "forecast": 3.054,
+    "actual": 1.4,
+    "verdict": "miss"
+   },
+   "imf-weo-1996-04-017": {
+    "status": "graded",
+    "forecast": 0.958,
+    "actual": 1,
+    "verdict": "hit"
+   },
+   "imf-weo-1996-04-018": {
+    "status": "graded",
+    "forecast": 2.937,
+    "actual": 1.9,
+    "verdict": "miss"
+   },
+   "imf-weo-1996-04-019": {
+    "status": "graded",
+    "forecast": 2.223,
+    "actual": 2.6,
+    "verdict": "hit"
+   },
+   "imf-weo-1996-04-020": {
+    "status": "graded",
+    "forecast": 2.705,
+    "actual": 4.9,
+    "verdict": "miss"
+   },
+   "imf-weo-1997-10-010": {
+    "status": "graded",
+    "forecast": 9,
+    "actual": 7.9,
+    "verdict": "miss"
+   },
+   "imf-weo-1997-10-011": {
+    "status": "ungradable",
+    "forecast": 6.571,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-1997-10-014": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 0.3,
+    "verdict": "miss"
+   },
+   "imf-weo-1997-10-016": {
+    "status": "graded",
+    "forecast": 2.052,
+    "actual": -1.8,
+    "verdict": "miss"
+   },
+   "imf-weo-1997-10-019": {
+    "status": "graded",
+    "forecast": 3.305,
+    "actual": 4.9,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-04-008": {
+    "status": "graded",
+    "forecast": 2.166,
+    "actual": 4.8,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-04-011": {
+    "status": "ungradable",
+    "forecast": 5.184,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-1998-04-012": {
+    "status": "ungradable",
+    "forecast": 5.663,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-1998-04-013": {
+    "status": "graded",
+    "forecast": 1,
+    "actual": 0.3,
+    "verdict": "partial"
+   },
+   "imf-weo-1998-04-014": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 0.5,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-04-015": {
+    "status": "graded",
+    "forecast": -0.015,
+    "actual": -1.8,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-04-016": {
+    "status": "graded",
+    "forecast": 1.33,
+    "actual": -0.3,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-10-001": {
+    "status": "graded",
+    "forecast": 1.993,
+    "actual": 2.6,
+    "verdict": "partial"
+   },
+   "imf-weo-1998-10-002": {
+    "status": "graded",
+    "forecast": 2.505,
+    "actual": 3.6,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-10-004": {
+    "status": "graded",
+    "forecast": 1.936,
+    "actual": 3.6,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-10-005": {
+    "status": "ungradable",
+    "forecast": 2.254,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-1998-10-007": {
+    "status": "graded",
+    "forecast": 3.536,
+    "actual": 4.5,
+    "verdict": "partial"
+   },
+   "imf-weo-1998-10-008": {
+    "status": "graded",
+    "forecast": 2.031,
+    "actual": 4.8,
+    "verdict": "miss"
+   },
+   "imf-weo-1998-10-009": {
+    "status": "graded",
+    "forecast": 5.5,
+    "actual": 7.9,
+    "verdict": "miss"
+   },
+   "imf-weo-2001-10-001": {
+    "status": "graded",
+    "forecast": 2.604,
+    "actual": 2.5,
+    "verdict": "hit"
+   },
+   "imf-weo-2001-10-002": {
+    "status": "graded",
+    "forecast": 3.455,
+    "actual": 2.8,
+    "verdict": "partial"
+   },
+   "imf-weo-2001-10-003": {
+    "status": "graded",
+    "forecast": 1.296,
+    "actual": 1.6,
+    "verdict": "hit"
+   },
+   "imf-weo-2001-10-004": {
+    "status": "graded",
+    "forecast": 2.125,
+    "actual": 1.7,
+    "verdict": "hit"
+   },
+   "imf-weo-2001-10-005": {
+    "status": "ungradable",
+    "forecast": 4.348,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2001-10-006": {
+    "status": "ungradable",
+    "forecast": 5.309,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2001-10-007": {
+    "status": "graded",
+    "forecast": 1.343,
+    "actual": 1,
+    "verdict": "hit"
+   },
+   "imf-weo-2002-04-020": {
+    "status": "graded",
+    "forecast": 2.739,
+    "actual": -0.5,
+    "verdict": "miss"
+   },
+   "imf-weo-2002-04-021": {
+    "status": "graded",
+    "forecast": 1.971,
+    "actual": 1.7,
+    "verdict": "hit"
+   },
+   "imf-weo-2002-04-022": {
+    "status": "graded",
+    "forecast": 2.788,
+    "actual": 3.2,
+    "verdict": "hit"
+   },
+   "imf-weo-2002-10-010": {
+    "status": "graded",
+    "forecast": 2.283,
+    "actual": 0.7,
+    "verdict": "miss"
+   },
+   "imf-weo-2002-10-011": {
+    "status": "graded",
+    "forecast": 7.5,
+    "actual": 9.2,
+    "verdict": "miss"
+   },
+   "imf-weo-2002-10-012": {
+    "status": "graded",
+    "forecast": 7.2,
+    "actual": 10.1,
+    "verdict": "miss"
+   },
+   "imf-weo-2002-10-013": {
+    "status": "ungradable",
+    "forecast": 4.995,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2002-10-014": {
+    "status": "ungradable",
+    "forecast": 5.731,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2002-10-015": {
+    "status": "graded",
+    "forecast": 1.496,
+    "actual": 3.1,
+    "verdict": "miss"
+   },
+   "imf-weo-2002-10-016": {
+    "status": "graded",
+    "forecast": 2.979,
+    "actual": 1.1,
+    "verdict": "miss"
+   },
+   "imf-weo-2002-10-017": {
+    "status": "graded",
+    "forecast": -0.546,
+    "actual": 0.1,
+    "verdict": "partial"
+   },
+   "imf-weo-2003-04-020": {
+    "status": "graded",
+    "forecast": 1.902,
+    "actual": 1.2,
+    "verdict": "partial"
+   },
+   "imf-weo-2003-04-021": {
+    "status": "graded",
+    "forecast": 1.956,
+    "actual": 3.2,
+    "verdict": "miss"
+   },
+   "imf-weo-2003-04-022": {
+    "status": "graded",
+    "forecast": 2.464,
+    "actual": 2.3,
+    "verdict": "hit"
+   },
+   "imf-weo-2005-10-020": {
+    "status": "graded",
+    "forecast": 1.239,
+    "actual": 3.9,
+    "verdict": "miss"
+   },
+   "imf-weo-2005-10-021": {
+    "status": "graded",
+    "forecast": 1.95,
+    "actual": 2.8,
+    "verdict": "partial"
+   },
+   "imf-weo-2005-10-022": {
+    "status": "graded",
+    "forecast": 2.219,
+    "actual": 2.2,
+    "verdict": "hit"
+   },
+   "imf-weo-2008-04-020": {
+    "status": "graded",
+    "forecast": 1.037,
+    "actual": -5.6,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-04-021": {
+    "status": "graded",
+    "forecast": 1.63,
+    "actual": 0,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-04-022": {
+    "status": "graded",
+    "forecast": 1.61,
+    "actual": -4.6,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-001": {
+    "status": "graded",
+    "forecast": 3.91,
+    "actual": 2.9,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-002": {
+    "status": "graded",
+    "forecast": 3.028,
+    "actual": -0.4,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-003": {
+    "status": "graded",
+    "forecast": 1.511,
+    "actual": 0.3,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-004": {
+    "status": "graded",
+    "forecast": 0.473,
+    "actual": -3.4,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-005": {
+    "status": "graded",
+    "forecast": 6.866,
+    "actual": 5.6,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-006": {
+    "status": "graded",
+    "forecast": 6.05,
+    "actual": 2.6,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-007": {
+    "status": "graded",
+    "forecast": 1.572,
+    "actual": 0.1,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-008": {
+    "status": "graded",
+    "forecast": 0.055,
+    "actual": -2.6,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-009": {
+    "status": "graded",
+    "forecast": 1.3,
+    "actual": 0.4,
+    "verdict": "partial"
+   },
+   "imf-weo-2008-10-010": {
+    "status": "graded",
+    "forecast": 0.183,
+    "actual": -4.5,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-013": {
+    "status": "ungradable",
+    "forecast": 7.925,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2008-10-016": {
+    "status": "graded",
+    "forecast": 3.5,
+    "actual": -0.1,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-017": {
+    "status": "graded",
+    "forecast": 0.691,
+    "actual": -1.2,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-018": {
+    "status": "graded",
+    "forecast": 0.465,
+    "actual": -5.9,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-019": {
+    "status": "graded",
+    "forecast": 1.85,
+    "actual": 0.9,
+    "verdict": "partial"
+   },
+   "imf-weo-2008-10-020": {
+    "status": "graded",
+    "forecast": -0.002,
+    "actual": -5.6,
+    "verdict": "miss"
+   },
+   "imf-weo-2008-10-022": {
+    "status": "graded",
+    "forecast": -0.128,
+    "actual": -4.6,
+    "verdict": "miss"
+   },
+   "imf-weo-2011-10-022": {
+    "status": "graded",
+    "forecast": 1.576,
+    "actual": 1.5,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-001": {
+    "status": "graded",
+    "forecast": 3.533,
+    "actual": 3.4,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-002": {
+    "status": "graded",
+    "forecast": 4.073,
+    "actual": 3.4,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-04-003": {
+    "status": "graded",
+    "forecast": 1.412,
+    "actual": 1.2,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-004": {
+    "status": "graded",
+    "forecast": 2.03,
+    "actual": 1.5,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-04-005": {
+    "status": "graded",
+    "forecast": 5.662,
+    "actual": 5.3,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-006": {
+    "status": "graded",
+    "forecast": 6.046,
+    "actual": 5,
+    "verdict": "miss"
+   },
+   "imf-weo-2012-04-007": {
+    "status": "graded",
+    "forecast": 2.108,
+    "actual": 2.3,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-008": {
+    "status": "graded",
+    "forecast": 2.372,
+    "actual": 2.1,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-009": {
+    "status": "graded",
+    "forecast": -0.317,
+    "actual": -0.9,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-04-010": {
+    "status": "graded",
+    "forecast": 0.895,
+    "actual": -0.2,
+    "verdict": "miss"
+   },
+   "imf-weo-2012-04-011": {
+    "status": "graded",
+    "forecast": 8.233,
+    "actual": 7.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-012": {
+    "status": "graded",
+    "forecast": 8.792,
+    "actual": 7.8,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-04-013": {
+    "status": "ungradable",
+    "forecast": 6.858,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2012-04-014": {
+    "status": "ungradable",
+    "forecast": 7.292,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2012-04-015": {
+    "status": "graded",
+    "forecast": 3.026,
+    "actual": 1.9,
+    "verdict": "miss"
+   },
+   "imf-weo-2012-04-016": {
+    "status": "graded",
+    "forecast": 4.15,
+    "actual": 3,
+    "verdict": "miss"
+   },
+   "imf-weo-2012-04-017": {
+    "status": "graded",
+    "forecast": 2.039,
+    "actual": 1.6,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-018": {
+    "status": "graded",
+    "forecast": 1.707,
+    "actual": 2,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-019": {
+    "status": "graded",
+    "forecast": 0.615,
+    "actual": 0.5,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-04-020": {
+    "status": "graded",
+    "forecast": 1.473,
+    "actual": 0.4,
+    "verdict": "miss"
+   },
+   "imf-weo-2012-04-021": {
+    "status": "graded",
+    "forecast": 0.818,
+    "actual": 1.5,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-04-022": {
+    "status": "graded",
+    "forecast": 2.034,
+    "actual": 1.7,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-001": {
+    "status": "graded",
+    "forecast": 3.278,
+    "actual": 3.4,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-002": {
+    "status": "graded",
+    "forecast": 3.62,
+    "actual": 3.4,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-003": {
+    "status": "graded",
+    "forecast": 1.291,
+    "actual": 1.2,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-004": {
+    "status": "graded",
+    "forecast": 1.538,
+    "actual": 1.5,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-005": {
+    "status": "graded",
+    "forecast": 5.279,
+    "actual": 5.3,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-006": {
+    "status": "graded",
+    "forecast": 5.635,
+    "actual": 5,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-10-007": {
+    "status": "graded",
+    "forecast": 2.17,
+    "actual": 2.3,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-010": {
+    "status": "graded",
+    "forecast": 0.157,
+    "actual": -0.2,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-011": {
+    "status": "graded",
+    "forecast": 7.828,
+    "actual": 7.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-012": {
+    "status": "graded",
+    "forecast": 8.231,
+    "actual": 7.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-013": {
+    "status": "ungradable",
+    "forecast": 4.86,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2012-10-014": {
+    "status": "ungradable",
+    "forecast": 5.971,
+    "actual": null,
+    "verdict": null
+   },
+   "imf-weo-2012-10-015": {
+    "status": "graded",
+    "forecast": 1.474,
+    "actual": 1.9,
+    "verdict": "hit"
+   },
+   "imf-weo-2012-10-016": {
+    "status": "graded",
+    "forecast": 3.952,
+    "actual": 3,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-10-017": {
+    "status": "graded",
+    "forecast": 2.224,
+    "actual": 1.6,
+    "verdict": "partial"
+   },
+   "imf-weo-2012-10-018": {
+    "status": "graded",
+    "forecast": 1.234,
+    "actual": 2,
+    "verdict": "partial"
+   },
+   "imf-weo-2017-04-014": {
+    "status": "graded",
+    "forecast": 7.685,
+    "actual": 6.5,
+    "verdict": "miss"
+   },
+   "imf-weo-2017-04-019": {
+    "status": "graded",
+    "forecast": 1.634,
+    "actual": 2.8,
+    "verdict": "miss"
+   },
+   "imf-weo-2017-10-001": {
+    "status": "graded",
+    "forecast": 3.618,
+    "actual": 3.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2017-10-002": {
+    "status": "graded",
+    "forecast": 3.705,
+    "actual": 3.6,
+    "verdict": "hit"
+   },
+   "imf-weo-2017-10-003": {
+    "status": "graded",
+    "forecast": 2.168,
+    "actual": 2.6,
+    "verdict": "hit"
+   },
+   "imf-weo-2017-10-005": {
+    "status": "graded",
+    "forecast": 4.638,
+    "actual": 4.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2017-10-006": {
+    "status": "graded",
+    "forecast": 4.851,
+    "actual": 4.6,
+    "verdict": "hit"
+   },
+   "imf-weo-2017-10-007": {
+    "status": "graded",
+    "forecast": 2.181,
+    "actual": 2.5,
+    "verdict": "hit"
+   },
+   "imf-weo-2018-04-010": {
+    "status": "graded",
+    "forecast": 2.001,
+    "actual": 1.6,
+    "verdict": "hit"
+   },
+   "imf-weo-2018-04-011": {
+    "status": "graded",
+    "forecast": 6.558,
+    "actual": 6.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2018-04-012": {
+    "status": "graded",
+    "forecast": 6.408,
+    "actual": 6.1,
+    "verdict": "hit"
+   },
+   "imf-weo-2018-04-013": {
+    "status": "graded",
+    "forecast": 7.355,
+    "actual": 6.5,
+    "verdict": "partial"
+   },
+   "imf-weo-2018-04-014": {
+    "status": "graded",
+    "forecast": 7.785,
+    "actual": 3.9,
+    "verdict": "miss"
+   },
+   "imf-weo-2018-04-015": {
+    "status": "graded",
+    "forecast": 2.264,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2018-04-016": {
+    "status": "graded",
+    "forecast": 2.537,
+    "actual": 1.2,
+    "verdict": "miss"
+   },
+   "imf-weo-2018-04-017": {
+    "status": "graded",
+    "forecast": 1.213,
+    "actual": 0.8,
+    "verdict": "hit"
+   },
+   "imf-weo-2018-04-018": {
+    "status": "graded",
+    "forecast": 0.924,
+    "actual": -0.3,
+    "verdict": "miss"
+   },
+   "imf-weo-2018-04-019": {
+    "status": "graded",
+    "forecast": 2.541,
+    "actual": 1.1,
+    "verdict": "miss"
+   },
+   "imf-weo-2020-04-014": {
+    "status": "graded",
+    "forecast": 7.425,
+    "actual": 9.7,
+    "verdict": "miss"
+   },
+   "imf-weo-2020-04-016": {
+    "status": "graded",
+    "forecast": 2.89,
+    "actual": 4.8,
+    "verdict": "miss"
+   },
+   "imf-weo-2020-04-019": {
+    "status": "graded",
+    "forecast": -6.952,
+    "actual": -4.1,
+    "verdict": "miss"
+   },
+   "imf-weo-2020-04-020": {
+    "status": "graded",
+    "forecast": 5.151,
+    "actual": 3.9,
+    "verdict": "miss"
+   },
+   "imf-weo-2020-04-021": {
+    "status": "graded",
+    "forecast": -6.502,
+    "actual": -10,
+    "verdict": "miss"
+   },
+   "imf-weo-2020-04-022": {
+    "status": "graded",
+    "forecast": 4.035,
+    "actual": 8.5,
+    "verdict": "miss"
+   },
+   "imf-weo-2021-10-020": {
+    "status": "graded",
+    "forecast": 4.56,
+    "actual": 1.8,
+    "verdict": "miss"
+   },
+   "imf-weo-2021-10-021": {
+    "status": "graded",
+    "forecast": 6.763,
+    "actual": 8.5,
+    "verdict": "miss"
+   },
+   "imf-weo-2023-10-020": {
+    "status": "graded",
+    "forecast": 0.915,
+    "actual": -0.5,
+    "verdict": "miss"
+   },
+   "imf-weo-2023-10-021": {
+    "status": "graded",
+    "forecast": 0.48,
+    "actual": 0.3,
+    "verdict": "hit"
+   },
+   "imf-weo-2025-04-001": {
+    "status": "graded",
+    "forecast": 2.785,
+    "actual": 3.4,
+    "verdict": "partial"
+   }
+  },
+  "obr-forecasts": {
+   "obr-forecasts-2010-06-002": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 3.298,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2010-06-003": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 4.464,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-004": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.828,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2010-06-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.565,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2010-06-006": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 1.461,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2010-06-007": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.04,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-023": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 2.261,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-024": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.851,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-025": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 1.528,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-026": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.718,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-023": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.261,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2010-11-024": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0.851,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-025": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 1.528,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-026": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.718,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-027": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 3.16,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2010-11-028": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 2.14,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2012-12-002": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 2.828,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2012-12-003": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.565,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2012-12-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.04,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2012-12-006": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.66,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2013-03-004": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0.04,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2013-03-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.66,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2015-11-028": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": -10.048,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2016-03-003": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 2.683,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2017-03-002": {
+    "status": "graded",
+    "forecast": 2.424,
+    "actual": 2.683,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2017-03-003": {
+    "status": "graded",
+    "forecast": 2.337,
+    "actual": 2.478,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2017-03-004": {
+    "status": "graded",
+    "forecast": 1.999,
+    "actual": 1.791,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2017-03-005": {
+    "status": "graded",
+    "forecast": 1.993,
+    "actual": 0.851,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2017-03-006": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.588,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2019-03-002": {
+    "status": "graded",
+    "forecast": 2.054,
+    "actual": 1.791,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2019-03-003": {
+    "status": "graded",
+    "forecast": 1.864,
+    "actual": 0.851,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-004": {
+    "status": "graded",
+    "forecast": 1.985,
+    "actual": 2.588,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2019-03-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 9.067,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-006": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 7.303,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-036": {
+    "status": "graded",
+    "forecast": 1.229,
+    "actual": 1.256,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2019-03-037": {
+    "status": "graded",
+    "forecast": 1.447,
+    "actual": -10.048,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-038": {
+    "status": "graded",
+    "forecast": 1.596,
+    "actual": 8.543,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-039": {
+    "status": "graded",
+    "forecast": 1.601,
+    "actual": 5.15,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-040": {
+    "status": "graded",
+    "forecast": 1.595,
+    "actual": 0.272,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2020-03-002": {
+    "status": "graded",
+    "forecast": 1.408,
+    "actual": 0.851,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2020-03-003": {
+    "status": "graded",
+    "forecast": 1.803,
+    "actual": 2.588,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2020-03-005": {
+    "status": "graded",
+    "forecast": 2.051,
+    "actual": 7.303,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2023-11-002": {
+    "status": "graded",
+    "forecast": 7.455,
+    "actual": 7.303,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2023-11-003": {
+    "status": "graded",
+    "forecast": 3.611,
+    "actual": 2.53,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2023-11-004": {
+    "status": "graded",
+    "forecast": 1.776,
+    "actual": 3.373,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2023-11-009": {
+    "status": "graded",
+    "forecast": 4.545,
+    "actual": 4.829,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2023-11-010": {
+    "status": "graded",
+    "forecast": 3.023,
+    "actual": 5.206,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2023-11-016": {
+    "status": "graded",
+    "forecast": 123.91,
+    "actual": 134.739,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2023-11-017": {
+    "status": "graded",
+    "forecast": 84.57,
+    "actual": 152.742,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2025-03-022": {
+    "status": "graded",
+    "forecast": 0.972,
+    "actual": 1.315,
+    "verdict": "hit"
+   }
+  },
+  "oecd-economic-outlook": {
+   "oecd-economic-outlook-2014-05-003": {
+    "status": "graded",
+    "forecast": 2.56,
+    "actual": 2.524,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2014-05-005": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 1.45,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2014-05-006": {
+    "status": "graded",
+    "forecast": 1.658,
+    "actual": 2.018,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2014-05-007": {
+    "status": "graded",
+    "forecast": 1.165,
+    "actual": 0.906,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2014-05-008": {
+    "status": "graded",
+    "forecast": 1.245,
+    "actual": 1.8,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2014-05-009": {
+    "status": "graded",
+    "forecast": 1.942,
+    "actual": 2.169,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2014-05-010": {
+    "status": "graded",
+    "forecast": 2.06,
+    "actual": 1.418,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2014-05-011": {
+    "status": "graded",
+    "forecast": 3.157,
+    "actual": 3.16,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2015-11-002": {
+    "status": "graded",
+    "forecast": 2.225,
+    "actual": 1.865,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2015-11-005": {
+    "status": "graded",
+    "forecast": 1.501,
+    "actual": 2.018,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2015-11-006": {
+    "status": "graded",
+    "forecast": 1.754,
+    "actual": 1.714,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2015-11-007": {
+    "status": "graded",
+    "forecast": 0.587,
+    "actual": 1.8,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2015-11-008": {
+    "status": "graded",
+    "forecast": 0.964,
+    "actual": 0.705,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2015-11-009": {
+    "status": "graded",
+    "forecast": 1.522,
+    "actual": 1.418,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2016-06-006": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 2.737,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2016-06-008": {
+    "status": "graded",
+    "forecast": 0.4,
+    "actual": 1.623,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2016-06-010": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 3.1,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2016-06-012": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 3.023,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2016-06-017": {
+    "status": "graded",
+    "forecast": -4.3,
+    "actual": -3.276,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2016-06-018": {
+    "status": "graded",
+    "forecast": -1.7,
+    "actual": 1.323,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2017-06-008": {
+    "status": "graded",
+    "forecast": 1,
+    "actual": 0.834,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2017-06-009": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 3.1,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2021-05-010": {
+    "status": "graded",
+    "forecast": 4.408,
+    "actual": 1.886,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2021-05-011": {
+    "status": "graded",
+    "forecast": 7.225,
+    "actual": 8.543,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2021-05-012": {
+    "status": "graded",
+    "forecast": 5.522,
+    "actual": 5.15,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2021-05-013": {
+    "status": "graded",
+    "forecast": 8.531,
+    "actual": 8.57,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2021-05-014": {
+    "status": "graded",
+    "forecast": 5.803,
+    "actual": 3.134,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2021-05-015": {
+    "status": "graded",
+    "forecast": 9.95,
+    "actual": 9.69,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2021-05-016": {
+    "status": "graded",
+    "forecast": 8.189,
+    "actual": 7.609,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2021-05-017": {
+    "status": "graded",
+    "forecast": 3.71,
+    "actual": 4.763,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2021-05-018": {
+    "status": "graded",
+    "forecast": 2.508,
+    "actual": 3.017,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2021-12-010": {
+    "status": "graded",
+    "forecast": 4.052,
+    "actual": 1.886,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2021-12-011": {
+    "status": "graded",
+    "forecast": 6.921,
+    "actual": 8.543,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2021-12-014": {
+    "status": "graded",
+    "forecast": 5.061,
+    "actual": 3.134,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2022-11-004": {
+    "status": "graded",
+    "forecast": 0.544,
+    "actual": 2.934,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2022-11-008": {
+    "status": "graded",
+    "forecast": 1.82,
+    "actual": 0.721,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2022-11-009": {
+    "status": "graded",
+    "forecast": 1.766,
+    "actual": 1.886,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2022-11-010": {
+    "status": "graded",
+    "forecast": -0.296,
+    "actual": -0.675,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2022-11-011": {
+    "status": "graded",
+    "forecast": 4.426,
+    "actual": 5.15,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2022-11-012": {
+    "status": "graded",
+    "forecast": -0.413,
+    "actual": 0.272,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2022-11-013": {
+    "status": "graded",
+    "forecast": 3.322,
+    "actual": 3.134,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2022-11-014": {
+    "status": "graded",
+    "forecast": 4.622,
+    "actual": 5.416,
+    "verdict": "partial"
+   },
+   "oecd-economic-outlook-2022-11-015": {
+    "status": "graded",
+    "forecast": 6.593,
+    "actual": 7.609,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2022-11-016": {
+    "status": "graded",
+    "forecast": 5.676,
+    "actual": 7.21,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2022-11-017": {
+    "status": "graded",
+    "forecast": 2.785,
+    "actual": 3.017,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2022-11-018": {
+    "status": "graded",
+    "forecast": 1.196,
+    "actual": 3.242,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2025-06-005": {
+    "status": "graded",
+    "forecast": 0.977,
+    "actual": 1.423,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2025-06-007": {
+    "status": "graded",
+    "forecast": 0.737,
+    "actual": 1.054,
+    "verdict": "hit"
+   },
+   "oecd-economic-outlook-2025-06-015": {
+    "status": "graded",
+    "forecast": 6.28,
+    "actual": 7.611,
+    "verdict": "miss"
+   },
+   "oecd-economic-outlook-2025-06-017": {
+    "status": "graded",
+    "forecast": 2.05,
+    "actual": 2.286,
+    "verdict": "hit"
+   }
+  },
+  "world-bank-gep": {
+   "world-bank-gep-1999-12-001": {
+    "status": "ungradable",
+    "forecast": 2.6,
+    "actual": null,
+    "verdict": null
+   },
+   "world-bank-gep-1999-12-002": {
+    "status": "ungradable",
+    "forecast": 2.9,
+    "actual": null,
+    "verdict": null
+   },
+   "world-bank-gep-1999-12-007": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.972,
+    "verdict": "partial"
+   },
+   "world-bank-gep-1999-12-008": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 3.903,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2003-09-001": {
+    "status": "ungradable",
+    "forecast": 2,
+    "actual": null,
+    "verdict": null
+   },
+   "world-bank-gep-2003-09-002": {
+    "status": "ungradable",
+    "forecast": 3,
+    "actual": null,
+    "verdict": null
+   },
+   "world-bank-gep-2003-09-007": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 2.796,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2003-09-009": {
+    "status": "graded",
+    "forecast": 0.7,
+    "actual": 0.768,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2003-09-010": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 2.326,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2003-09-011": {
+    "status": "graded",
+    "forecast": 0.8,
+    "actual": 1.38,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2003-09-012": {
+    "status": "graded",
+    "forecast": 1.3,
+    "actual": 2.113,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2010-01-001": {
+    "status": "ungradable",
+    "forecast": 2.7,
+    "actual": null,
+    "verdict": null
+   },
+   "world-bank-gep-2010-01-002": {
+    "status": "ungradable",
+    "forecast": 3.2,
+    "actual": null,
+    "verdict": null
+   },
+   "world-bank-gep-2010-01-007": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.695,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2010-01-008": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 1.564,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2010-01-009": {
+    "status": "graded",
+    "forecast": 1,
+    "actual": 2.116,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2019-01-002": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": -2.886,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2019-01-007": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.584,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2019-01-008": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": -2.081,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2019-01-010": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": -6.044,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2019-01-011": {
+    "status": "graded",
+    "forecast": 0.9,
+    "actual": -0.308,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2019-01-012": {
+    "status": "graded",
+    "forecast": 0.7,
+    "actual": -4.283,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2019-01-018": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": -3.277,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2021-06-001": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 6.485,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2021-06-002": {
+    "status": "graded",
+    "forecast": 4.3,
+    "actual": 3.44,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2021-06-008": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 2.524,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2021-06-009": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 6.443,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2021-06-012": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 1.332,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2021-06-013": {
+    "status": "graded",
+    "forecast": 8.5,
+    "actual": 8.57,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2021-06-014": {
+    "status": "graded",
+    "forecast": 5.4,
+    "actual": 3.134,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2021-06-017": {
+    "status": "graded",
+    "forecast": 4.5,
+    "actual": 4.763,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2021-06-018": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 3.017,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2024-01-004": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-01-005": {
+    "status": "graded",
+    "forecast": 3.9,
+    "actual": 4.4,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-01-006": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 4.4,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-01-007": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 2.8,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2024-01-011": {
+    "status": "graded",
+    "forecast": 0.9,
+    "actual": -0.2,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2024-06-008": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.1,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-06-009": {
+    "status": "graded",
+    "forecast": 0.7,
+    "actual": 1,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-06-010": {
+    "status": "graded",
+    "forecast": 1.4,
+    "actual": 1.4,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-06-012": {
+    "status": "graded",
+    "forecast": 1,
+    "actual": 1.1,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-06-013": {
+    "status": "graded",
+    "forecast": 4.8,
+    "actual": 5,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-06-015": {
+    "status": "graded",
+    "forecast": 6.6,
+    "actual": 7.1,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2024-06-016": {
+    "status": "graded",
+    "forecast": 6.7,
+    "actual": 7.7,
+    "verdict": "partial"
+   },
+   "world-bank-gep-2024-06-017": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 3.4,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2025-01-007": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 2.1,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2025-06-011": {
+    "status": "graded",
+    "forecast": 0.7,
+    "actual": 1.1,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2025-06-013": {
+    "status": "graded",
+    "forecast": 4.5,
+    "actual": 5,
+    "verdict": "hit"
+   },
+   "world-bank-gep-2025-06-015": {
+    "status": "graded",
+    "forecast": 6.3,
+    "actual": 7.7,
+    "verdict": "miss"
+   },
+   "world-bank-gep-2025-06-017": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 2.3,
+    "verdict": "hit"
+   }
+  }
+ }
+}
