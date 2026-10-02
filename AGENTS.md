@@ -11,7 +11,7 @@ pnpm build        compile src to dist
 pnpm normalize    data/raw -> data/normalized (Node 24 type stripping)
 pnpm grade:numeric    grade numeric forecasts -> data/graded (deterministic, D19)
 pnpm manifest     list git-tracked raw files for the live site (run after git add)
-pnpm export       data/normalized + final verdicts + numeric grades -> data/out (JSON, CSV, JSON Schemas, datapackage.json); fails closed
+pnpm export       data/normalized + final verdicts + numeric grades + validation figures (D43) -> data/out (JSON, CSV, JSON Schemas, datapackage.json); fails closed
 node scripts/agreement-d16.mjs <source>    grader A + grader B -> agreement-d16.json (kappa, consensus, contested)
 node scripts/audit-sample.mjs <source>     agreement -> fixed-seed D11 sample in audit-d11.json (--check to verify)
 node scripts/final-d20.mjs <source>        agreed + adjudicated + audited -> final-d20.json (D20)
