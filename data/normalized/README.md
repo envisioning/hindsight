@@ -44,7 +44,7 @@ Claims per source:
 | ecb-projections | 566 | 0 |
 | cbo-projections | 1557 | 0 |
 | obr-forecasts | 892 | 28 memo row (restated or supplementary forecast, not the headline forecast of this EFO) |
-| bp-energy-outlook | 239 | 18 base-year row (historical value, not a projection) |
+| bp-energy-outlook | 239 | 19 base-year row (historical value, not a projection) |
 | eurasia-top-risks | 279 | 0 |
 | economist-world-ahead | 154 | 0 |
 | kurzweil | 287 | 0 |
