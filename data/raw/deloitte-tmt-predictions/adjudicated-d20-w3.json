@@ -1,0 +1,108 @@
+{
+ "rule": "D16",
+ "role": "adjudicator (D20)",
+ "wave": "w3",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2003-010",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "verdict": "miss",
+   "reading": "D30 quantity: by end-2003 close to two thirds (~67%) of European businesses have mobile data deployed at least at trial level; trials then disappoint. The numeric share is the forecast; 'disappoints' is its framing.",
+   "reason": "Gradable under D23 (same quantity, stricter definition): the EU e-Business W@tch survey, reporting period November 2003 (DE, ES, FR, IT, UK, nine sectors), measures firms whose staff can reach the company system remotely via wireless devices such as mobile phones or PDAs: 4% of enterprises (10% by employment); even firms of 250+ employees in business services only 18%; any remote access 16% of enterprises. Trials not counted as deployment cannot plausibly close a gap from 4-10% to ~67%, so the D16 numeric rule (within 25%) fails by a wide margin. Grader B's ungradable is rejected: the measure differs only in excluding trials, which D23 allows with the difference stated. The 'disappoints' framing held, but it presupposes the two-thirds trial base, which did not occur.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20031204215942/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_research_mobileoutlookeurope_070103.pdf",
+     "title": "Deloitte Research, Mobile Outlook for 2003: Predictions for the Mobile Sector in Europe (Internet Archive copy)",
+     "date": "2003-01 (captured 2003-12-04)",
+     "shows": "Prediction 2 (p2): 'Close to two thirds of businesses in Europe will have deployed mobile data at least at trial level by the end of 2003'; disappointing trials halt further deployment."
+    },
+    {
+     "url": "https://web.archive.org/web/20071006002532/http://www.ebusiness-watch.org/key_reports/documents/EBR04.pdf",
+     "title": "European Commission e-Business W@tch, The European e-Business Report 2004 edition (survey 2003/04)",
+     "date": "2004-09",
+     "shows": "Exhibit 2.9-4, reporting period Nov 2003, EU-5: wireless remote access to company network 4% of enterprises / 10% of employment across nine sectors; business services 5% of enterprises, 18% of firms with 250+ employees; remote access of any kind 16% of enterprises."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-012",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "verdict": "partial",
+   "reading": "D30 state of affairs in 2003: the European mobile industry fails to develop the fledgling M2M market, specifically operators offer no QoS guarantees and no tariffs for machines, and device vendors neglect embedded modules for OEMs.",
+   "reason": "Gradable as events (D30): the claim names concrete operator and vendor actions that either happened or not, so no market-size series is needed and Grader B's ungradable is rejected. One named sub-prediction failed within weeks: on 27 January 2003 Orange Business Solutions launched M2M Connect in the UK, a dedicated M2M platform priced on airtime rather than per SIM, i.e. a machine tariff. The broader state held: the same report calls M2M 'only in the early stages of widespread adoption' with small initial volumes, and no Europe-wide M2M take-off is recorded for 2003. Held in part.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20031204215942/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_research_mobileoutlookeurope_070103.pdf",
+     "title": "Deloitte Research, Mobile Outlook for 2003: Predictions for the Mobile Sector in Europe (Internet Archive copy)",
+     "date": "2003-01 (captured 2003-12-04)",
+     "shows": "Prediction 4 (p3): operators will not develop tariffs for machines nor give QoS guarantees; device vendors will not work enough with OEMs on embedded modules."
+    },
+    {
+     "url": "https://www.theregister.com/2003/01/27/orange_pitches_standardsbased_m2m/",
+     "title": "The Register (ComputerWire), Orange pitches standards-based M2M",
+     "date": "2003-01-27",
+     "shows": "Orange Business Solutions launched M2M Connect for UK wireless telemetry (alarms, parking meters, vending), charging for airtime rather than by SIMs deployed; M2M 'only in the early stages of widespread adoption'; Strategy Analytics put UK telemetry at GBP 56m by 2005."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-015",
+   "graderA": "partial",
+   "graderB": "hit",
+   "verdict": "hit",
+   "reading": "D30 state of affairs in 2003: colour-screen, GPRS and Java phones propel a European mobile games market of real commercial weight, initially dominated by arcade ports, with multiplayer neglected.",
+   "reason": "The mechanism held: Frost & Sullivan (October 2003) dates the advance of mobile games to the mass-market arrival of colour, download-enabled devices in 2003, with about half of 2003 handsets download-enabled and Java gaming driving over-the-air games, on a European base of about USD 800m in 2002; UK mobile games alone were expected above GBP 50m in 2003 (OECD). Arcade ports dominated and multiplayer stayed marginal. 'Serious money' is a size word with no threshold; under the D27/D30 practice the size word is not graded once the stated direction holds. Grader A's partial measured games against total operator revenue (UK non-SMS data GBP 0.1bn), a benchmark the claim does not set.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20031204215942/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_research_mobileoutlookeurope_070103.pdf",
+     "title": "Deloitte Research, Mobile Outlook for 2003: Predictions for the Mobile Sector in Europe (Internet Archive copy)",
+     "date": "2003-01 (captured 2003-12-04)",
+     "shows": "Prediction 7 (p3): colour, GPRS and Java phones will propel the market for mobile games; arcade favourites dominate initially; multiplayer overlooked."
+    },
+    {
+     "url": "https://www.telecompaper.com/news/mobile-gaming-grows-to-eur-6-billion-in-2006--361644",
+     "title": "Telecompaper (Frost & Sullivan), Mobile gaming grows to EUR 6 billion in 2006",
+     "date": "2003-10-14",
+     "shows": "European mobile gaming revenue just under USD 800.79m in 2002; 2003 marked the mass-market arrival of colour, download-enabled devices (~50% of devices sold in 2003); Java gaming to make OTA dominant (88.3% by 2006)."
+    },
+    {
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2004/09/development-of-third-generation-mobile-services-in-the-oecd_g17a1bd2/232562017400.pdf",
+     "title": "OECD, Development of Third-Generation Mobile Services in the OECD, Digital Economy Papers No. 85",
+     "date": "2004-09-14",
+     "shows": "UK mobile games market expected to be worth over GBP 50m (USD 79m) in 2003 and GBP 211m by 2006."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-020",
+   "graderA": "miss",
+   "graderB": "partial",
+   "verdict": "miss",
+   "reading": "D30 state of affairs in 2003: European mobile voice revenues stay roughly stable, so data (business SMS, MMS, premium SMS, file transfer) is the main driver of mobile revenue growth.",
+   "reason": "Both stated conditions failed. UK retail voice revenue rose from GBP 7.7bn to 8.7bn in 2003 (+13%) while SMS rose 1.4bn to 1.8bn and other data was 0.1bn, so voice supplied about two thirds of growth; Ofcom attributes growth mainly to customer numbers. Vodafone (year to March 2004) shows the same: voice +GBP 2.4bn (+11%) against data +0.9bn (+25%), voice minutes +11%. Data grew faster in percent but was not the main driver, voice was not stable, and MMS was negligible. Grader B's own figures show voice supplying about three quarters of growth; 'fastest-growing line' is not the claim, so partial overstates it.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20031204215942/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_research_mobileoutlookeurope_070103.pdf",
+     "title": "Deloitte Research, Mobile Outlook for 2003: Predictions for the Mobile Sector in Europe (Internet Archive copy)",
+     "date": "2003-01 (captured 2003-12-04)",
+     "shows": "Prediction 12 (p4): voice revenues will remain stable; data needs to be the main driver for growth, via business SMS, MMS, premium SMS and file transfer."
+    },
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "Figure 3.32: UK mobile retail revenue voice GBP 7.7bn (2002), 8.7bn (2003), 10.1bn (2004); SMS 1.4bn, 1.8bn, 1.9bn; other data 0.1bn (2003), 0.2bn (2004); revenue growth attributed largely to subscriber growth; MMS use and revenue 'remain small'."
+    },
+    {
+     "url": "https://web.archive.org/web/20040717094910/http://www.vodafone.com:80/assets/files/en/VOD_Annual_Report_2004.pdf",
+     "title": "Vodafone Group Plc Annual Report 2004 (Internet Archive copy)",
+     "date": "2004 (captured 2004-07-17)",
+     "shows": "Year to 31 March 2004: service revenue voice GBP 23,618m vs 21,201m (+11%), data GBP 4,540m vs 3,622m (+25%), data 16.1% of service revenue; non-messaging data 4.2%."
+    }
+   ]
+  }
+ ]
+}
