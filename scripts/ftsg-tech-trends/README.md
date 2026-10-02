@@ -55,7 +55,14 @@ python3 parse_2015_2017_slideshare.py $S/ss2015.txt $S/ss2016.txt $S/ss2017.txt 
 # contents check of the other PDF editions (no writes):
 pdftohtml -xml -i -q $S/fti2022.pdf $S/fti2022             # likewise fti2024, ftsg2025 (fti2021 above)
 python3 check_contents.py $S
+# year-tag sweep of the PDF editions (no writes) and the 2022 umbrella pages it found (append only; refuses a second run):
+pdftohtml -xml -i -q $S/fti2023_bio.pdf $S/fti2023_bio       # likewise metaverse, news, web3 (optional cross-check of 2023)
+python3 sweep_year_tags.py $S [--json out.json]
+python3 append_umbrella_2022.py $S                      # dry run: prints the rows
+python3 append_umbrella_2022.py $S --write              # appends 2022 entries 588-592
 ```
+
+**Year-tag pitfall.** The text layers do not agree on the spacing of the "Nth YEAR ON THE LIST" tag: the pdftohtml XML runs print "10TH YEAR ON THE LIST", `pdftotext -raw` of 2022 prints every tag as "10THYEAR ONTHE LIST", one 2024 page prints "1STYEAR ON THE LIST", the Scribd text of 2023 keeps the spaces. Match the tag with whitespace removed (`(\d+)(ST|ND|RD|TH)YEARONTHELIST`), but only inside one XML run or one layout-text column fragment: removing whitespace over a whole page joins the page number or a neighbouring column to the digits ("7" + "5TH" reads as 75TH). `toc.full_page_trend` and `append_umbrella_d40.py` require a space before YEAR, which is fine on XML runs and wrong on the raw text. The first D40 pass also never listed 2022, which is how the five 2022 umbrella pages were missed.
 
 ## Files
 
@@ -72,6 +79,8 @@ python3 check_contents.py $S
 - `check_quotes.py`: boilerplate, shared and neighbour-matching quote flags.
 - `append_umbrella_d40.py`: appends umbrella section pages with a year tag and a KEY INSIGHT / WHAT IT IS block (D40) to 2020 (transcripts), 2021 (PDF XML) and 2023 (Scribd text layer), after the existing entries. The page list is fixed in the script; it was found by listing every year tag in the full text of each edition and keeping tagged pages that match no entry.
 - `check_2023_contents.py`: compares the contents pages of all 14 volumes of 2023 (Scribd text layer, which also carries the seven PDF volumes) with `2023.json`. Reports contents items that match no entry, skipped item or stored sub-section (front/back matter, scenarios, expert perspectives, divider pages and a short hand-checked list are left out); loose title lines that belong to no stored text (titles whose page number the text layer detached); stored labels cut at a contents line wrap (body heading = label + loose contents line); stored entries whose page prints only a title (a section divider stored as a trend); and entries without quote or matching heading. No writes. First run 2026-10-02 found the Climate & Energy contents page 2 unread, plus four other missing trends; `append_2023_missing.py` appended them (entries 622-674). Labels it reports as cut are listed in INDEX.md "Known issues" and not edited (D15).
+- `sweep_year_tags.py`: lists every page with a year tag in 2021, 2022, 2024, 2025 (XML) and 2023 (Scribd text layer of the full report, with the volume PDF XML files present as a page-for-page cross-check; volume PDF pages are mapped to full-report pages by the offset measured from the stored quotes), and classifies it: a (an entry on the page; reports entries without the tag or with a different one), b (no entry, a KEY INSIGHT or WHAT IT IS block: a D40 candidate), c (neither). No writes. Run 2026-10-02: 937 tagged pages, 5 b (2022), 2 c, 5 entries without their tag; see INDEX.md.
+- `append_umbrella_2022.py`: appends the five 2022 umbrella pages found by the sweep (Altered States, eSports and Gaming, Wearables and Biointerfaces, Green Tech, Environmental, Social and Corporate Governance (ESG) Programs) as entries 588-592: label as printed on the page, the contents path of the trends under it as `subsection`, first sentence of the KEY INSIGHT block, the tag, the highlighted page-header label as `horizon`.
 - `check_contents.py`: the contents check of `check_2023_contents.py` for the PDF editions 2021, 2022, 2024 and 2025 (unlisted or continued contents pages, contents items that match nothing stored). No writes. Run 2026-10-02: nothing missing.
 - An entry that is not a trend was marked `not_a_trend: true` in place (2024 position 39 only). Since D43, every capture fix (quote, label, section, sub-section, not a trend) is an append-only record in `data/raw/ftsg-tech-trends/corrections.json`, written by hand after reading the source page; raw entries are not edited.
 
