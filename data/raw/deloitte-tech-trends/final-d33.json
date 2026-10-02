@@ -22,20 +22,20 @@
  ],
  "n": 162,
  "counts": {
-  "faded": 76,
-  "persisted": 23,
+  "faded": 75,
+  "persisted": 24,
   "renamed": 42,
   "recycled": 2,
   "open": 19
  },
  "shares": {
   "persisted": {
-   "k": 23,
+   "k": 24,
    "n": 143,
-   "share": 0.1608,
+   "share": 0.1678,
    "wilson95": [
-    0.11,
-    0.23
+    0.115,
+    0.238
    ]
   },
   "renamed": {
@@ -48,12 +48,12 @@
    ]
   },
   "faded": {
-   "k": 76,
+   "k": 75,
    "n": 143,
-   "share": 0.5315,
+   "share": 0.5245,
    "wilson95": [
-    0.45,
-    0.611
+    0.443,
+    0.605
    ]
   },
   "recycled": {
@@ -69,14 +69,15 @@
  "audit": {
   "seed": "d11:deloitte-tech-trends:d33",
   "sample": 50,
-  "audited": 50,
-  "confirmed": 49,
-  "corrected": 1,
+  "audited": 48,
+  "confirmed": 48,
+  "corrected": 0,
   "contested": 0,
-  "error_rate": 0.02,
+  "error_rate": 0,
   "resolved_by_gap_rule": 0,
-  "residual_error_rate": 0.02,
-  "superseded_by_pass2": 0
+  "residual_error_rate": 0,
+  "superseded_by_pass2": 0,
+  "no_longer_candidate": 2
  },
  "pass2": {
   "scope": 3,
@@ -322,7 +323,7 @@
    "edition": "2013",
    "verdict": "persisted",
    "status": "computed",
-   "matched_in": "2015"
+   "matched_in": "2014"
   },
   {
    "id": "deloitte-tech-trends-2013-002",
@@ -384,11 +385,9 @@
   {
    "id": "deloitte-tech-trends-2014-001",
    "edition": "2014",
-   "verdict": "faded",
-   "status": "corrected",
-   "was": "renamed",
-   "match_id": null,
-   "reason": "CIO as VC (IT portfolio managed for value/risk) vs CIO as chief integration officer (integration as CIO mission): only the recurring CIO-role field is shared, different phenomenon; no 2015-16 trend on IT portfolio management"
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2015"
   },
   {
    "id": "deloitte-tech-trends-2014-002",
@@ -467,8 +466,8 @@
    "id": "deloitte-tech-trends-2014-013",
    "edition": "2014",
    "verdict": "persisted",
-   "status": "agreed",
-   "match_id": "deloitte-tech-trends-2015-014"
+   "status": "computed",
+   "matched_in": "2015"
   },
   {
    "id": "deloitte-tech-trends-2014-014",
@@ -837,8 +836,8 @@
    "id": "deloitte-tech-trends-2020-006",
    "edition": "2020",
    "verdict": "persisted",
-   "status": "audited",
-   "match_id": "deloitte-tech-trends-2022-009"
+   "status": "computed",
+   "matched_in": "2022"
   },
   {
    "id": "deloitte-tech-trends-2020-007",

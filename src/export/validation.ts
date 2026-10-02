@@ -51,7 +51,7 @@ const errorRate = (a: { audited: number; corrected: number; contested: number })
 function blank(source_id: string, kind: ValidationRow["kind"], scope: string, rule: string): Row {
   return {
     source_id, kind, scope, rule, measure: null, n: null, n_graded: null, k: null, share: null, ci95: null, ci95_audit_adjusted: null, rate_withheld: null, counts: {},
-    kappa: null, agreement_n: null, agreement_agreed: null, raw_agreement: null, passes_d11: null, adjudicated: null,
+    kappa: null, kappa_pooled: null, agreement_n: null, agreement_agreed: null, raw_agreement: null, passes_d11: null, adjudicated: null,
     audit_seed: null, audit_sample: null, audited: null, audit_confirmed: null, audit_corrected: null, audit_contested: null, audit_error_rate: null,
     audit_residual_error_rate: null, audit_resolved_by_gap_rule: null, audit_fixed_in_code: null, audit_residual_errors: null,
     rechecked: null, recheck_confirmed: null, recheck_corrected: null, pending_recheck: null, waves: [], in_published_rate: null, passes: [], inputs: [],
@@ -121,6 +121,7 @@ function judgmentRows(source: string, warnings: string[]): Row[] {
     Object.assign(row, {
       n: wa.n,
       kappa: wa.kappa,
+      kappa_pooled: wa.kappa_pooled ?? null,
       agreement_n: wa.n,
       agreement_agreed: wa.agree,
       raw_agreement: round(wa.agree / wa.n, 4),

@@ -24,30 +24,30 @@
  ],
  "n": 186,
  "counts": {
-  "renamed": 48,
+  "persisted": 7,
+  "renamed": 47,
   "faded": 97,
-  "persisted": 6,
   "contested": 1,
   "gap": 15,
   "open": 19
  },
  "shares": {
   "persisted": {
-   "k": 6,
+   "k": 7,
    "n": 151,
-   "share": 0.0397,
+   "share": 0.0464,
    "wilson95": [
-    0.018,
-    0.084
+    0.023,
+    0.093
    ]
   },
   "renamed": {
-   "k": 48,
+   "k": 47,
    "n": 151,
-   "share": 0.3179,
+   "share": 0.3113,
    "wilson95": [
-    0.249,
-    0.396
+    0.243,
+    0.389
    ]
   },
   "faded": {
@@ -72,21 +72,22 @@
  "audit": {
   "seed": "d11:trendwatching:d33",
   "sample": 50,
-  "audited": 50,
-  "confirmed": 49,
+  "audited": 49,
+  "confirmed": 48,
   "corrected": 0,
   "contested": 1,
   "error_rate": 0.02,
   "resolved_by_gap_rule": 0,
-  "residual_error_rate": 0.02
+  "residual_error_rate": 0.02,
+  "no_longer_candidate": 1
  },
  "verdicts": [
   {
    "id": "trendwatching-2007-001",
    "edition": "2007",
-   "verdict": "renamed",
-   "status": "audited",
-   "match_id": "trendwatching-2008-001"
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2008"
   },
   {
    "id": "trendwatching-2007-002",

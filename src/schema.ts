@@ -560,6 +560,8 @@ export const ValidationRow = z
     counts: z.record(z.string(), Count),
     /** Cohen's kappa of the two blind graders or checkers (D7, D11). */
     kappa: z.number().min(-1).max(1).nullable(),
+    /** D50: a wave under 30 claims is gated on kappa pooled with the previous wave. */
+    kappa_pooled: z.number().min(-1).max(1).nullable(),
     /** Pairs both agents graded, pairs they agreed on, and agree / pairs. */
     agreement_n: Count.nullable(),
     agreement_agreed: Count.nullable(),
@@ -616,7 +618,9 @@ export const ValidationRow = z
     (r) => r.audit_error_rate === null || (r.audited !== null && r.audited > 0 && Math.abs(((r.audit_corrected ?? 0) + (r.audit_contested ?? 0)) / r.audited - r.audit_error_rate) < 0.0005),
     { message: "audit error rate = (corrected + contested) / audited" },
   )
-  .refine((r) => r.kappa === null || r.passes_d11 === null || r.passes_d11 === r.kappa >= 0.6, { message: "passes_d11 iff kappa >= 0.6" })
+  .refine((r) => r.kappa === null || r.passes_d11 === null || r.passes_d11 === (r.kappa_pooled ?? r.kappa) >= 0.6, {
+    message: "passes_d11 iff kappa >= 0.6 (pooled kappa for a small wave, D50)",
+  })
   .refine((r) => r.n === null || r.n_graded === null || r.n_graded <= r.n, { message: "n_graded <= n" });
 
 /** D17 side-by-side view: same subject, same horizon, sources in alphabetical order. No rank, no total. */
