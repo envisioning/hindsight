@@ -36,6 +36,10 @@ python3 append_2023.py $S                               # AI volume PDF + seven 
 python3 parse_2020_full.py extract $S/ss2020a_2025.html $S/ss2020b_2025.html $S/ss2020_full.json
 python3 parse_2020_full.py apply $S/ss2020_full.json --write   # adds quotes to entries without one
 python3 check_quotes.py 2021 2022 2023 2024 2025         # flags suspicious quotes (no writes)
+# D40 umbrella pages (append only; refuses a second run):
+pdftohtml -xml -i -q $S/fti2021.pdf $S/fti2021
+python3 append_umbrella_d40.py $S                       # dry run: prints the rows
+python3 append_umbrella_d40.py $S --write               # appends to 2020, 2021, 2023
 ```
 
 ## Files
@@ -50,6 +54,7 @@ python3 check_quotes.py 2021 2022 2023 2024 2025         # flags suspicious quot
 - `scribd_2023.py`: 2023 volumes from the Scribd text layer (layout text, no fonts); `append_2023.py` appends the missing 2023 volumes after the existing entries (D15). `build.py` has `carry_sections` for a contents list continued on a second page (used only by the appended AI volume).
 - `parse_2020_full.py`: 2020 quotes from the full SlideShare transcripts.
 - `check_quotes.py`: boilerplate, shared and neighbour-matching quote flags.
+- `append_umbrella_d40.py`: appends umbrella section pages with a year tag and a KEY INSIGHT / WHAT IT IS block (D40) to 2020 (transcripts), 2021 (PDF XML) and 2023 (Scribd text layer), after the existing entries. The page list is fixed in the script; it was found by listing every year tag in the full text of each edition and keeping tagged pages that match no entry.
 - An entry that is not a trend is marked `not_a_trend: true` (with a note) in place; the normalize adapter skips it.
 
 Re-running a build rewrites the edition file in the same printed order. Do not re-run after claim ids are assigned unless the order is unchanged (D15).

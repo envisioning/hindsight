@@ -600,3 +600,17 @@ Implementation note: re-taking AEO2009 rows in other units gave 56 of them new i
 **Cost.** Some actuals are older vintages (IMF India as of April 2013; GEP statements one to three years after the forecast), so they miss later revisions. Flagged rows still count in hit rates.
 
 **Overturned by.** A calendar-year India series or a re-weighted GEP World history from the publishers themselves; unrounded IEA shares; evidence that the ARRA-updated case is what EIA treats as AEO2009 of record.
+
+## D40: FTSG umbrella pages are trends
+
+*Recorded 2026-10-02. Approved by MZ.*
+
+**Decision.** In every FTSG Tech Trends edition, an umbrella section page that carries the publisher's "Nth YEAR ON THE LIST" tag and a key insight (KEY INSIGHT or WHAT IT IS block) is a trend, as 2022 already has them (Recognition, Scoring, Privacy). Pages missing from a capture are appended after the existing entries (D15): 15 in 2020 (Artificial Intelligence 13th, Scoring, Recognition, Emerging Digital Interfaces, Synthetic Media and Content, Vices, Quantum and Edge, Transportation Trends, Corporate Environmental Responsibility, Biointerfaces, Wearables 8th, Home Automation 5th, Security, Blockchain, Space), 10 in 2021, and 1 in 2023 (Invisible Banking); 2024 and 2025 have none. A tagged page without a key insight block is not a trend (2020 "Geopolitics, Geoeconomics and Warfare", a narrative page; 2023 "Wearables and Biointerfaces", an intro paragraph). The D33 rename checks get a second pass (D24) for every candidate whose next-two-edition window changed, every new candidate and every former `gap` row; the scope is stored in `renames-d33-pass2-scope.json`.
+
+No quote-corrections file for now: stored quotes stay as captured (never overwritten in place), and a corrections mechanism is deferred until a real misaligned quote is found.
+
+**Why.** The publisher counts these pages on its own list and carries their year count from edition to edition (Recognition 4th in 2020, 5th in 2021, 6th in 2022). Treating them as trends in one edition and not in the next made umbrella trends look faded or renamed when the publisher kept them.
+
+**Cost.** Umbrella trends are broader than the trends under them, so a narrow trend can now be matched to its umbrella (a rename, one step broader). 26 new claims; 1191 rename checks to run again.
+
+**Overturned by.** Evidence that the publisher's year tag on section pages counts the section, not a trend on its list.
