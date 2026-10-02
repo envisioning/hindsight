@@ -1,0 +1,45 @@
+{
+ "$ref": "#/definitions/subject_aliases",
+ "definitions": {
+  "subject_aliases": {
+   "type": "object",
+   "properties": {
+    "label": {
+     "type": "string",
+     "minLength": 1
+    },
+    "subject_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "method": {
+     "type": "string",
+     "enum": [
+      "exact",
+      "normalized",
+      "judgment"
+     ]
+    },
+    "reason": {
+     "type": "string"
+    },
+    "sources": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "label",
+    "subject_id",
+    "method",
+    "sources"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,200 @@
+{
+ "name": "envisioning-hindsight",
+ "title": "Envisioning Hindsight: published forecasts, graded against what happened",
+ "homepage": "https://github.com/envisioning/hindsight",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0"
+  },
+  {
+   "name": "ODbL-1.0",
+   "path": "https://opendatacommons.org/licenses/odbl/1-0/",
+   "title": "Open Database License 1.0 (rows of bcb-focus only, see NOTICE.md)"
+  }
+ ],
+ "created": "2026-10-02T16:24:58.005Z",
+ "resources": [
+  {
+   "name": "sources-json",
+   "title": "Publication series",
+   "path": "sources.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/sources.schema.json",
+   "rows": 36
+  },
+  {
+   "name": "sources-csv",
+   "title": "Publication series",
+   "path": "sources.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/sources.schema.json",
+   "rows": 36
+  },
+  {
+   "name": "institutions-json",
+   "title": "Publishers",
+   "path": "institutions.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/institutions.schema.json",
+   "rows": 31
+  },
+  {
+   "name": "institutions-csv",
+   "title": "Publishers",
+   "path": "institutions.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/institutions.schema.json",
+   "rows": 31
+  },
+  {
+   "name": "source_editions-json",
+   "title": "Editions",
+   "path": "source_editions.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/source_editions.schema.json",
+   "rows": 1052
+  },
+  {
+   "name": "source_editions-csv",
+   "title": "Editions",
+   "path": "source_editions.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/source_editions.schema.json",
+   "rows": 1052
+  },
+  {
+   "name": "subjects-json",
+   "title": "Subjects",
+   "path": "subjects.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/subjects.schema.json",
+   "rows": 5938
+  },
+  {
+   "name": "subjects-csv",
+   "title": "Subjects",
+   "path": "subjects.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/subjects.schema.json",
+   "rows": 5938
+  },
+  {
+   "name": "subject_aliases-json",
+   "title": "Publisher labels mapped to subjects (D13)",
+   "path": "subject_aliases.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/subject_aliases.schema.json",
+   "rows": 6290
+  },
+  {
+   "name": "subject_aliases-csv",
+   "title": "Publisher labels mapped to subjects (D13)",
+   "path": "subject_aliases.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/subject_aliases.schema.json",
+   "rows": 6290
+  },
+  {
+   "name": "claims-json",
+   "title": "Claims (published)",
+   "path": "claims.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/claims.schema.json",
+   "rows": 28102
+  },
+  {
+   "name": "claims-csv",
+   "title": "Claims (published)",
+   "path": "claims.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/claims.schema.json",
+   "rows": 28102
+  },
+  {
+   "name": "revisions-json",
+   "title": "Revisions between editions",
+   "path": "revisions.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/revisions.schema.json",
+   "rows": 682
+  },
+  {
+   "name": "revisions-csv",
+   "title": "Revisions between editions",
+   "path": "revisions.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/revisions.schema.json",
+   "rows": 682
+  },
+  {
+   "name": "verdicts-json",
+   "title": "Published verdicts of judgment sources (D20)",
+   "path": "verdicts.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/verdicts.schema.json",
+   "rows": 1927
+  },
+  {
+   "name": "verdicts-csv",
+   "title": "Published verdicts of judgment sources (D20)",
+   "path": "verdicts.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/verdicts.schema.json",
+   "rows": 1927
+  },
+  {
+   "name": "numeric_grades-json",
+   "title": "Numeric grades (D19)",
+   "path": "numeric_grades.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/numeric_grades.schema.json",
+   "rows": 18559
+  },
+  {
+   "name": "numeric_grades-csv",
+   "title": "Numeric grades (D19)",
+   "path": "numeric_grades.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/numeric_grades.schema.json",
+   "rows": 18559
+  },
+  {
+   "name": "validation-json",
+   "title": "Validation figures per source: agreement, audit and intervals (D11, D28, D44); alphabetical, never ranked",
+   "path": "validation.json",
+   "format": "json",
+   "mediatype": "application/json",
+   "jsonSchema": "schemas/validation.schema.json",
+   "rows": 67
+  },
+  {
+   "name": "validation-csv",
+   "title": "Validation figures per source: agreement, audit and intervals (D11, D28, D44); alphabetical, never ranked",
+   "path": "validation.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "jsonSchema": "schemas/validation.schema.json",
+   "rows": 67
+  }
+ ]
+}

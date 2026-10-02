@@ -1,0 +1,73 @@
+{
+ "$ref": "#/definitions/verdicts",
+ "definitions": {
+  "verdicts": {
+   "type": "object",
+   "properties": {
+    "claim_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "source_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "verdict": {
+     "type": "string",
+     "enum": [
+      "hit",
+      "partial",
+      "miss",
+      "unfalsifiable",
+      "persisted",
+      "faded",
+      "renamed",
+      "recycled",
+      "covered",
+      "partly_covered",
+      "not_covered",
+      "ranked_high",
+      "ranked_low",
+      "absent",
+      "appeared",
+      "partly_appeared",
+      "not_yet",
+      "contested",
+      "ungradable"
+     ]
+    },
+    "status": {
+     "type": "string",
+     "enum": [
+      "agreed",
+      "audited",
+      "corrected",
+      "contested",
+      "adjudicated",
+      "rechecked",
+      "disputed"
+     ]
+    },
+    "rule": {
+     "type": "string",
+     "minLength": 1
+    },
+    "was": {
+     "type": "string"
+    },
+    "reason": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "claim_id",
+    "source_id",
+    "verdict",
+    "status",
+    "rule"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

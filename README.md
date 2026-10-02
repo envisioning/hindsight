@@ -8,7 +8,7 @@ Hindsight is made by [Envisioning](https://www.envisioning.com).
 
 ## Status
 
-Pre-release. Envisioning has published nothing from Hindsight yet. The first release will be "30 years of the Hype Cycle, graded": every entry of the Gartner Hype Cycle for Emerging Technologies, checked against what happened, with the full dataset. Envisioning grades its own old forecasts first.
+First dataset release: `hindsight-2026.1` (2 October 2026). It holds 28,102 dated claims from 36 sources (consultancies, analysts, central banks, international bodies, trend reports, scenario sets, and Envisioning's own posters from 2011 to 2014), with every published verdict, every numeric grade, and a validation table that gives the sample sizes, grader agreement, audit results and intervals behind each rate. The files are in `data/out` (JSON, CSV, JSON Schemas, `datapackage.json`). The site is at [envisioning.com/hindsight](https://www.envisioning.com/hindsight).
 
 ## How claims are graded
 
@@ -26,7 +26,7 @@ Scenarios and fiction are never graded right or wrong. A forecast too vague to t
 
 Hindsight has no total score and does not rank forecasters.
 
-Two AI agents grade each claim separately. A verdict is published only when they agree and it cites at least one source. Before each release, a person reads a random sample of verdicts, and we publish what that check found.
+Two AI agents grade each claim separately. When they disagree, a third agent settles it. Every verdict cites at least one source. An audit agent then re-checks a fixed random sample of the agreed verdicts, and every published interval is widened by the error rate that audit found.
 
 ## Dispute a verdict
 

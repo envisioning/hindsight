@@ -1,0 +1,182 @@
+{
+ "$ref": "#/definitions/numeric_grades",
+ "definitions": {
+  "numeric_grades": {
+   "type": "object",
+   "properties": {
+    "claim_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "source_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "subject_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "family": {
+     "type": "string",
+     "minLength": 1
+    },
+    "edition": {
+     "type": "string",
+     "minLength": 1
+    },
+    "published": {
+     "type": "string",
+     "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+    },
+    "target_year": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "target_period": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "horizon_years": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "horizon_label": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "statistic": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "forecast": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "actual": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "actual_vintage": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "unit": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "rule": {
+     "anyOf": [
+      {
+       "type": "string",
+       "enum": [
+        "D18",
+        "D16"
+       ]
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "error": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "error_unit": {
+     "anyOf": [
+      {
+       "type": "string",
+       "enum": [
+        "pp",
+        "percent of actual"
+       ]
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "status": {
+     "type": "string",
+     "enum": [
+      "graded",
+      "ungradable",
+      "open",
+      "excluded"
+     ]
+    },
+    "verdict": {
+     "anyOf": [
+      {
+       "type": "string",
+       "enum": [
+        "hit",
+        "partial",
+        "miss"
+       ]
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "note": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "claim_id",
+    "source_id",
+    "subject_id",
+    "family",
+    "edition",
+    "published",
+    "target_year",
+    "target_period",
+    "horizon_years",
+    "horizon_label",
+    "statistic",
+    "forecast",
+    "actual",
+    "actual_vintage",
+    "unit",
+    "rule",
+    "error",
+    "error_unit",
+    "status",
+    "verdict",
+    "note"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

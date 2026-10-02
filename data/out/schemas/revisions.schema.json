@@ -1,0 +1,46 @@
+{
+ "$ref": "#/definitions/revisions",
+ "definitions": {
+  "revisions": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "prior_claim_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "new_claim_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "change": {
+     "type": "string",
+     "enum": [
+      "delayed",
+      "advanced",
+      "dropped",
+      "renamed",
+      "reversed"
+     ]
+    },
+    "subject_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "note": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "prior_claim_id",
+    "change"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

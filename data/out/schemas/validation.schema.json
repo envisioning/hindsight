@@ -1,0 +1,453 @@
+{
+ "$ref": "#/definitions/validation",
+ "definitions": {
+  "validation": {
+   "type": "object",
+   "properties": {
+    "source_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "kind": {
+     "type": "string",
+     "enum": [
+      "judgment",
+      "trend",
+      "measure",
+      "numeric"
+     ]
+    },
+    "scope": {
+     "type": "string",
+     "minLength": 1
+    },
+    "rule": {
+     "type": "string",
+     "minLength": 1
+    },
+    "measure": {
+     "anyOf": [
+      {
+       "type": "string",
+       "enum": [
+        "hit_rate",
+        "persisted_share",
+        "renamed_share",
+        "faded_share",
+        "recycled_share",
+        "materialised_share",
+        "red_herring_hit_rate",
+        "ranked_high_share",
+        "coverage_share"
+       ]
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "n": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "n_graded": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "k": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "share": {
+     "anyOf": [
+      {
+       "type": "number",
+       "minimum": 0,
+       "maximum": 1
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "ci95": {
+     "anyOf": [
+      {
+       "type": "array",
+       "minItems": 2,
+       "maxItems": 2,
+       "items": [
+        {
+         "type": "number",
+         "minimum": 0,
+         "maximum": 1
+        },
+        {
+         "type": "number",
+         "minimum": 0,
+         "maximum": 1
+        }
+       ]
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "ci95_audit_adjusted": {
+     "anyOf": [
+      {
+       "type": "array",
+       "minItems": 2,
+       "maxItems": 2,
+       "items": [
+        {
+         "type": "number",
+         "minimum": 0,
+         "maximum": 1
+        },
+        {
+         "type": "number",
+         "minimum": 0,
+         "maximum": 1
+        }
+       ]
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "rate_withheld": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "counts": {
+     "type": "object",
+     "additionalProperties": {
+      "type": "integer",
+      "minimum": 0
+     }
+    },
+    "kappa": {
+     "anyOf": [
+      {
+       "type": "number",
+       "minimum": -1,
+       "maximum": 1
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "agreement_n": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "agreement_agreed": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "raw_agreement": {
+     "anyOf": [
+      {
+       "type": "number",
+       "minimum": 0,
+       "maximum": 1
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "passes_d11": {
+     "type": [
+      "boolean",
+      "null"
+     ]
+    },
+    "adjudicated": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_seed": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "audit_sample": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audited": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_confirmed": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_corrected": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_contested": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_error_rate": {
+     "anyOf": [
+      {
+       "type": "number",
+       "minimum": 0,
+       "maximum": 1
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_residual_error_rate": {
+     "anyOf": [
+      {
+       "type": "number",
+       "minimum": 0,
+       "maximum": 1
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_resolved_by_gap_rule": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_fixed_in_code": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "audit_residual_errors": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "rechecked": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "recheck_confirmed": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "recheck_corrected": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "pending_recheck": {
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "waves": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    },
+    "in_published_rate": {
+     "type": [
+      "boolean",
+      "null"
+     ]
+    },
+    "passes": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    },
+    "inputs": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     },
+     "minItems": 1
+    }
+   },
+   "required": [
+    "source_id",
+    "kind",
+    "scope",
+    "rule",
+    "measure",
+    "n",
+    "n_graded",
+    "k",
+    "share",
+    "ci95",
+    "ci95_audit_adjusted",
+    "rate_withheld",
+    "counts",
+    "kappa",
+    "agreement_n",
+    "agreement_agreed",
+    "raw_agreement",
+    "passes_d11",
+    "adjudicated",
+    "audit_seed",
+    "audit_sample",
+    "audited",
+    "audit_confirmed",
+    "audit_corrected",
+    "audit_contested",
+    "audit_error_rate",
+    "audit_residual_error_rate",
+    "audit_resolved_by_gap_rule",
+    "audit_fixed_in_code",
+    "audit_residual_errors",
+    "rechecked",
+    "recheck_confirmed",
+    "recheck_corrected",
+    "pending_recheck",
+    "waves",
+    "in_published_rate",
+    "passes",
+    "inputs"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

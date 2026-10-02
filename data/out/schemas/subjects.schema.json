@@ -1,0 +1,52 @@
+{
+ "$ref": "#/definitions/subjects",
+ "definitions": {
+  "subjects": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "name": {
+     "type": "string",
+     "minLength": 1
+    },
+    "kind": {
+     "type": "string",
+     "enum": [
+      "technology",
+      "quantity",
+      "risk",
+      "other"
+     ]
+    },
+    "aliases": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    },
+    "related": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    },
+    "notes": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "name",
+    "kind",
+    "aliases"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

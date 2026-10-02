@@ -1,0 +1,44 @@
+{
+ "$ref": "#/definitions/institutions",
+ "definitions": {
+  "institutions": {
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "name": {
+     "type": "string",
+     "minLength": 1
+    },
+    "kind": {
+     "type": "string",
+     "enum": [
+      "company",
+      "igo",
+      "government",
+      "central_bank",
+      "research_firm",
+      "author"
+     ]
+    },
+    "country": {
+     "type": "string",
+     "minLength": 3,
+     "maxLength": 3
+    },
+    "ncb_id": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "name",
+    "kind"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}
