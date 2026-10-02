@@ -2,7 +2,21 @@
 
 | Edition | Status | Entries | Written |
 |---|---|---|---|
+| 1990-06 | partial | 2 entries | 2026-10-02 18:45 |
+| 1990-12 | partial | 2 entries | 2026-10-02 18:45 |
+| 1991-07 | partial | 2 entries | 2026-10-02 18:45 |
+| 1991-12 | partial | 2 entries | 2026-10-02 18:45 |
+| 1992-06 | partial | 6 entries | 2026-10-02 18:45 |
+| 1992-12 | partial | 10 entries | 2026-10-02 18:45 |
+| 1993-06 | partial | 10 entries | 2026-10-02 18:45 |
+| 1993-12 | partial | 10 entries | 2026-10-02 18:45 |
+| 1994-06 | partial | 10 entries | 2026-10-02 18:45 |
+| 1994-12 | partial | 10 entries | 2026-10-02 18:45 |
+| 1995-06 | partial | 10 entries | 2026-10-02 18:45 |
+| 1995-12 | partial | 10 entries | 2026-10-02 18:45 |
+| 1996-06 | partial | 10 entries | 2026-10-02 18:45 |
 | 1996-12 | partial | 8 entries | 2026-10-02 16:33 |
+| 1997-06 | partial | 8 entries | 2026-10-02 18:45 |
 | 1997-12 | partial | 8 entries | 2026-10-02 16:33 |
 | 1998-06 | partial | 8 entries | 2026-10-02 16:33 |
 | 1998-12 | partial | 8 entries | 2026-10-02 16:33 |
@@ -10,8 +24,11 @@
 | 1999-12 | partial | 12 entries | 2026-10-02 16:33 |
 | 2000-06 | partial | 12 entries | 2026-10-02 16:33 |
 | 2000-11 | partial | 8 entries | 2026-10-02 16:33 |
+| 2001-06 | partial | 12 entries | 2026-10-02 18:45 |
 | 2001-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2002-06 | partial | 12 entries | 2026-10-02 18:45 |
 | 2002-12 | partial | 12 entries | 2026-10-02 16:33 |
+| 2003-06 | partial | 12 entries | 2026-10-02 18:45 |
 | 2003-12 | partial | 12 entries | 2026-10-02 16:33 |
 | 2004-06 | partial | 12 entries | 2026-10-02 16:33 |
 | 2004-12 | partial | 12 entries | 2026-10-02 16:33 |
@@ -20,6 +37,7 @@
 | 2006-06 | partial | 12 entries | 2026-10-02 16:33 |
 | 2006-12 | partial | 12 entries | 2026-10-02 16:33 |
 | 2007-05 | partial | 12 entries | 2026-10-02 16:33 |
+| 2007-12 | complete | 18 entries | 2026-10-02 18:45 |
 | 2008-06 | partial | 12 entries | 2026-10-02 16:33 |
 | 2008-11 | partial | 12 entries | 2026-10-02 16:33 |
 | 2009-06 | partial | 12 entries | 2026-10-02 16:33 |
@@ -28,6 +46,8 @@
 | 2010-11 | partial | 12 entries | 2026-10-02 16:33 |
 | 2011-05 | partial | 12 entries | 2026-10-02 16:33 |
 | 2011-11 | partial | 12 entries | 2026-10-02 16:33 |
+| 2012-05 | complete | 18 entries | 2026-10-02 18:45 |
+| 2012-11 | complete | 18 entries | 2026-10-02 18:45 |
 | 2013-05 | complete | 18 entries | 2026-10-02 16:33 |
 | 2013-11 | partial | 12 entries | 2026-09-28 08:34 |
 | 2014-05 | partial | 12 entries | 2026-09-28 08:34 |

@@ -11,7 +11,7 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 | gartner-hype-cycle | normalized | 31 | 941 | 0 | label (exact, as captured); unique within an edition | 2026-10-02T15:40:09Z |
 | mit-tr-10-breakthrough | normalized | 25 | 254 | 0 | label (exact, as captured); unique within an edition | 2026-10-02T15:40:09Z |
 | gartner-strategic-predictions | normalized | 21 | 224 | 0 | kind + quote with case, spaces and punctuation removed | 2026-10-02T15:40:09Z |
-| deloitte-tmt-predictions | normalized | 25 | 454 | 0 | section + quote with case, spaces and punctuation removed | 2026-10-02T15:40:09Z |
+| deloitte-tmt-predictions | normalized | 25 | 466 | 0 | section + quote with case, spaces and punctuation removed | 2026-10-02T17:00:39Z |
 | idc-futurescape | normalized | 12 | 204 | 0 | futurescape + quote with case, spaces and punctuation removed | 2026-10-02T15:40:09Z |
 | ark-big-ideas | normalized | 10 | 262 | 0 | metric + target_year + horizon + value + unit | 2026-10-02T15:40:09Z |
 | bnef-evo | normalized | 11 | 58 | 8 base-year row (historical value, not a projection) | metric + target_year + scenario | 2026-10-02T15:40:09Z |
@@ -20,7 +20,7 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 | iea-weo | normalized | 26 | 349 | 86 base-year row (historical value, not a projection) | technology + metric + target_year + scenario; edition-level quotes: quote text | 2026-10-02T15:40:09Z |
 | eia-aeo | normalized | 43 | 9390 | 0 | series + unit + target_year + dollar_year | 2026-10-02T15:40:09Z |
 | bcb-focus | normalized | 108 | 811 | 0 | indicator label + target_year + horizon | 2026-10-02T15:40:09Z |
-| oecd-economic-outlook | normalized | 53 | 762 | 0 | economy name + target_year + horizon | 2026-10-02T15:40:09Z |
+| oecd-economic-outlook | normalized | 73 | 954 | 0 | economy name + target_year + horizon | 2026-10-02T17:00:39Z |
 | world-bank-gep | normalized | 49 | 834 | 0 | economy name + target_year + horizon | 2026-10-02T15:40:09Z |
 | fed-sep | normalized | 76 | 1541 | 553 median computed by Hindsight from individual projections (not published at the time) | variable + statistic + horizon + target_year | 2026-10-02T15:40:09Z |
 | ecb-projections | normalized | 104 | 566 | 0 | variable + statistic + horizon + target_year | 2026-10-02T15:40:10Z |

@@ -31250,33 +31250,33 @@
   {
    "source_id": "oecd-economic-outlook",
    "totals": {
-    "n_graded": 726,
-    "hits": 319,
-    "partials": 165,
-    "misses": 242,
+    "n_graded": 918,
+    "hits": 399,
+    "partials": 212,
+    "misses": 307,
     "ungradable": 0,
     "open": 36,
     "excluded": 0,
-    "hit_rate": 0.4394,
+    "hit_rate": 0.4346,
     "hit_rate_ci95": [
-     0.4037,
-     0.4757
+     0.4029,
+     0.4669
     ],
     "errors": [
      {
       "rule": "D18",
       "unit": "pp",
-      "n": 726,
-      "bias": 0.027,
-      "mae": 1.065
+      "n": 918,
+      "bias": 0.065,
+      "mae": 1.025
      }
     ]
    },
    "audit": {
-    "seed": "d11:oecd-economic-outlook:numeric + d11:oecd-economic-outlook:numeric:vintages",
-    "sample": 100,
-    "audited": 100,
-    "confirmed": 100,
+    "seed": "d11:oecd-economic-outlook:numeric + d11:oecd-economic-outlook:numeric:pdfs + d11:oecd-economic-outlook:numeric:vintages",
+    "sample": 150,
+    "audited": 150,
+    "confirmed": 150,
     "corrected": 0,
     "contested": 0,
     "error_rate": 0,
@@ -31289,32 +31289,32 @@
     "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
-    0.4037,
-    0.4757
+    0.4029,
+    0.4669
    ],
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 726,
-      "hits": 319,
-      "partials": 165,
-      "misses": 242,
+      "n_graded": 918,
+      "hits": 399,
+      "partials": 212,
+      "misses": 307,
       "ungradable": 0,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.4394,
+      "hit_rate": 0.4346,
       "hit_rate_ci95": [
-       0.4037,
-       0.4757
+       0.4029,
+       0.4669
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 726,
-        "bias": 0.027,
-        "mae": 1.065
+        "n": 918,
+        "bias": 0.065,
+        "mae": 1.025
        }
       ]
      }
@@ -31322,25 +31322,25 @@
     {
      "horizon": "current_year",
      "stats": {
-      "n_graded": 372,
-      "hits": 195,
-      "partials": 96,
-      "misses": 81,
+      "n_graded": 468,
+      "hits": 247,
+      "partials": 122,
+      "misses": 99,
       "ungradable": 0,
       "open": 9,
       "excluded": 0,
-      "hit_rate": 0.5242,
+      "hit_rate": 0.5278,
       "hit_rate_ci95": [
-       0.4735,
-       0.5744
+       0.4825,
+       0.5726
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 372,
-        "bias": -0.308,
-        "mae": 0.696
+        "n": 468,
+        "bias": -0.268,
+        "mae": 0.677
        }
       ]
      }
@@ -31348,25 +31348,25 @@
     {
      "horizon": "next_year",
      "stats": {
-      "n_graded": 354,
-      "hits": 124,
-      "partials": 69,
-      "misses": 161,
+      "n_graded": 450,
+      "hits": 152,
+      "partials": 90,
+      "misses": 208,
       "ungradable": 0,
       "open": 27,
       "excluded": 0,
-      "hit_rate": 0.3503,
+      "hit_rate": 0.3378,
       "hit_rate_ci95": [
-       0.3024,
-       0.4013
+       0.2956,
+       0.3827
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 354,
-        "bias": 0.38,
-        "mae": 1.454
+        "n": 450,
+        "bias": 0.411,
+        "mae": 1.386
        }
       ]
      }
@@ -31377,25 +31377,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 726,
-      "hits": 319,
-      "partials": 165,
-      "misses": 242,
+      "n_graded": 918,
+      "hits": 399,
+      "partials": 212,
+      "misses": 307,
       "ungradable": 0,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.4394,
+      "hit_rate": 0.4346,
       "hit_rate_ci95": [
-       0.4037,
-       0.4757
+       0.4029,
+       0.4669
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 726,
-        "bias": 0.027,
-        "mae": 1.065
+        "n": 918,
+        "bias": 0.065,
+        "mae": 1.025
        }
       ]
      }
@@ -31404,25 +31404,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 372,
-      "hits": 195,
-      "partials": 96,
-      "misses": 81,
+      "n_graded": 468,
+      "hits": 247,
+      "partials": 122,
+      "misses": 99,
       "ungradable": 0,
       "open": 9,
       "excluded": 0,
-      "hit_rate": 0.5242,
+      "hit_rate": 0.5278,
       "hit_rate_ci95": [
-       0.4735,
-       0.5744
+       0.4825,
+       0.5726
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 372,
-        "bias": -0.308,
-        "mae": 0.696
+        "n": 468,
+        "bias": -0.268,
+        "mae": 0.677
        }
       ]
      }
@@ -31431,25 +31431,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 354,
-      "hits": 124,
-      "partials": 69,
-      "misses": 161,
+      "n_graded": 450,
+      "hits": 152,
+      "partials": 90,
+      "misses": 208,
       "ungradable": 0,
       "open": 27,
       "excluded": 0,
-      "hit_rate": 0.3503,
+      "hit_rate": 0.3378,
       "hit_rate_ci95": [
-       0.3024,
-       0.4013
+       0.2956,
+       0.3827
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 354,
-        "bias": 0.38,
-        "mae": 1.454
+        "n": 450,
+        "bias": 0.411,
+        "mae": 1.386
        }
       ]
      }
@@ -31461,759 +31461,1071 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 46,
-      "hits": 17,
-      "partials": 5,
-      "misses": 24,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.3696,
-      "hit_rate_ci95": [
-       0.2452,
-       0.514
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 46,
-        "bias": -0.32,
-        "mae": 1.477
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "brazil-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
-      "n_graded": 24,
-      "hits": 13,
-      "partials": 3,
-      "misses": 8,
-      "ungradable": 0,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.5417,
-      "hit_rate_ci95": [
-       0.3507,
-       0.7211
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 24,
-        "bias": -0.643,
-        "mae": 0.977
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "brazil-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 22,
-      "hits": 4,
-      "partials": 2,
-      "misses": 16,
-      "ungradable": 0,
-      "open": 3,
-      "excluded": 0,
-      "hit_rate": 0.1818,
-      "hit_rate_ci95": [
-       0.0731,
-       0.3852
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 22,
-        "bias": 0.032,
-        "mae": 2.023
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "china-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "all",
-     "stats": {
-      "n_graded": 46,
-      "hits": 33,
-      "partials": 5,
-      "misses": 8,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.7174,
-      "hit_rate_ci95": [
-       0.5745,
-       0.8268
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 46,
-        "bias": -0.102,
-        "mae": 0.757
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "china-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
-      "n_graded": 24,
-      "hits": 20,
-      "partials": 1,
-      "misses": 3,
-      "ungradable": 0,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.8333,
-      "hit_rate_ci95": [
-       0.6415,
-       0.9332
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 24,
-        "bias": -0.36,
-        "mae": 0.504
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "china-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 22,
-      "hits": 13,
-      "partials": 4,
-      "misses": 5,
-      "ungradable": 0,
-      "open": 3,
-      "excluded": 0,
-      "hit_rate": 0.5909,
-      "hit_rate_ci95": [
-       0.3873,
-       0.7674
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 22,
-        "bias": 0.179,
-        "mae": 1.033
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "euro-area-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "all",
-     "stats": {
-      "n_graded": 92,
-      "hits": 47,
-      "partials": 19,
-      "misses": 26,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.5109,
-      "hit_rate_ci95": [
-       0.4104,
-       0.6105
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 92,
-        "bias": -0.014,
-        "mae": 0.954
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "euro-area-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
-      "n_graded": 47,
-      "hits": 29,
-      "partials": 11,
-      "misses": 7,
-      "ungradable": 0,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.617,
-      "hit_rate_ci95": [
-       0.4743,
-       0.7421
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 47,
-        "bias": -0.459,
-        "mae": 0.627
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "euro-area-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 45,
-      "hits": 18,
-      "partials": 8,
-      "misses": 19,
-      "ungradable": 0,
-      "open": 3,
-      "excluded": 0,
-      "hit_rate": 0.4,
-      "hit_rate_ci95": [
-       0.2702,
-       0.5455
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 45,
-        "bias": 0.451,
-        "mae": 1.296
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "germany-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "all",
-     "stats": {
-      "n_graded": 100,
-      "hits": 34,
-      "partials": 28,
-      "misses": 38,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.34,
-      "hit_rate_ci95": [
-       0.2546,
-       0.4372
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 100,
-        "bias": 0.138,
-        "mae": 1.09
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "germany-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
-      "n_graded": 51,
-      "hits": 24,
-      "partials": 19,
-      "misses": 8,
-      "ungradable": 0,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.4706,
-      "hit_rate_ci95": [
-       0.3405,
-       0.6048
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 51,
-        "bias": -0.216,
-        "mae": 0.644
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "germany-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 49,
-      "hits": 10,
-      "partials": 9,
-      "misses": 30,
-      "ungradable": 0,
-      "open": 3,
-      "excluded": 0,
-      "hit_rate": 0.2041,
-      "hit_rate_ci95": [
-       0.1148,
-       0.3364
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 49,
-        "bias": 0.506,
-        "mae": 1.555
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "india-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "all",
-     "stats": {
-      "n_graded": 46,
-      "hits": 6,
-      "partials": 19,
-      "misses": 21,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.1304,
-      "hit_rate_ci95": [
-       0.0612,
-       0.2567
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 46,
-        "bias": 0.289,
-        "mae": 1.647
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "india-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
-      "n_graded": 24,
-      "hits": 4,
-      "partials": 10,
-      "misses": 10,
-      "ungradable": 0,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.1667,
-      "hit_rate_ci95": [
-       0.0668,
-       0.3585
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 24,
-        "bias": -0.456,
-        "mae": 1.118
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "india-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 22,
-      "hits": 2,
-      "partials": 9,
-      "misses": 11,
-      "ungradable": 0,
-      "open": 3,
-      "excluded": 0,
-      "hit_rate": 0.0909,
-      "hit_rate_ci95": [
-       0.0253,
-       0.2781
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 22,
-        "bias": 1.101,
-        "mae": 2.224
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "japan-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "all",
-     "stats": {
-      "n_graded": 102,
-      "hits": 30,
-      "partials": 29,
-      "misses": 43,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.2941,
-      "hit_rate_ci95": [
-       0.2145,
-       0.3887
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 102,
-        "bias": 0.369,
-        "mae": 1.19
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "japan-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
       "n_graded": 52,
-      "hits": 17,
-      "partials": 18,
-      "misses": 17,
+      "hits": 18,
+      "partials": 7,
+      "misses": 27,
       "ungradable": 0,
-      "open": 1,
+      "open": 4,
       "excluded": 0,
-      "hit_rate": 0.3269,
+      "hit_rate": 0.3462,
       "hit_rate_ci95": [
-       0.2152,
-       0.4624
+       0.2315,
+       0.482
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
         "n": 52,
-        "bias": 0.037,
-        "mae": 0.837
+        "bias": -0.26,
+        "mae": 1.417
        }
       ]
      }
     },
     {
-     "subject_id": "japan-real-gdp-growth",
+     "subject_id": "brazil-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 27,
+      "hits": 14,
+      "partials": 3,
+      "misses": 10,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5185,
+      "hit_rate_ci95": [
+       0.3399,
+       0.6926
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 27,
+        "bias": -0.586,
+        "mae": 0.978
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "brazil-real-gdp-growth",
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 50,
-      "hits": 13,
-      "partials": 11,
-      "misses": 26,
+      "n_graded": 25,
+      "hits": 4,
+      "partials": 4,
+      "misses": 17,
       "ungradable": 0,
       "open": 3,
       "excluded": 0,
-      "hit_rate": 0.26,
+      "hit_rate": 0.16,
       "hit_rate_ci95": [
-       0.1587,
-       0.3955
+       0.064,
+       0.3465
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 50,
-        "bias": 0.714,
-        "mae": 1.558
+        "n": 25,
+        "bias": 0.092,
+        "mae": 1.892
        }
       ]
      }
     },
     {
-     "subject_id": "oecd-total-real-gdp-growth",
+     "subject_id": "china-real-gdp-growth",
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 102,
-      "hits": 62,
-      "partials": 18,
-      "misses": 22,
+      "n_graded": 52,
+      "hits": 35,
+      "partials": 6,
+      "misses": 11,
       "ungradable": 0,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.6078,
+      "hit_rate": 0.6731,
       "hit_rate_ci95": [
-       0.5108,
-       0.697
+       0.5376,
+       0.7848
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 102,
-        "bias": -0.101,
+        "n": 52,
+        "bias": -0.081,
         "mae": 0.799
        }
       ]
      }
     },
     {
-     "subject_id": "oecd-total-real-gdp-growth",
+     "subject_id": "china-real-gdp-growth",
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 52,
-      "hits": 37,
-      "partials": 9,
-      "misses": 6,
-      "ungradable": 0,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.7115,
-      "hit_rate_ci95": [
-       0.5773,
-       0.8167
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 52,
-        "bias": -0.366,
-        "mae": 0.489
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "oecd-total-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 50,
-      "hits": 25,
-      "partials": 9,
-      "misses": 16,
-      "ungradable": 0,
-      "open": 3,
-      "excluded": 0,
-      "hit_rate": 0.5,
-      "hit_rate_ci95": [
-       0.3664,
-       0.6336
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 50,
-        "bias": 0.174,
-        "mae": 1.122
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "united-kingdom-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "all",
-     "stats": {
-      "n_graded": 90,
-      "hits": 47,
-      "partials": 16,
-      "misses": 27,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.5222,
-      "hit_rate_ci95": [
-       0.4202,
-       0.6224
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 90,
-        "bias": -0.02,
-        "mae": 1.055
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "united-kingdom-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
-      "n_graded": 46,
-      "hits": 25,
-      "partials": 9,
-      "misses": 12,
-      "ungradable": 0,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.5435,
-      "hit_rate_ci95": [
-       0.4018,
-       0.6785
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 46,
-        "bias": -0.383,
-        "mae": 0.671
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "united-kingdom-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 44,
+      "n_graded": 27,
       "hits": 22,
-      "partials": 7,
-      "misses": 15,
-      "ungradable": 0,
-      "open": 3,
-      "excluded": 0,
-      "hit_rate": 0.5,
-      "hit_rate_ci95": [
-       0.3583,
-       0.6417
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 44,
-        "bias": 0.359,
-        "mae": 1.456
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "united-states-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "all",
-     "stats": {
-      "n_graded": 102,
-      "hits": 43,
-      "partials": 26,
-      "misses": 33,
-      "ungradable": 0,
-      "open": 4,
-      "excluded": 0,
-      "hit_rate": 0.4216,
-      "hit_rate_ci95": [
-       0.3303,
-       0.5185
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 102,
-        "bias": -0.12,
-        "mae": 0.981
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "united-states-real-gdp-growth",
-     "family": "real GDP growth",
-     "horizon": "current_year",
-     "stats": {
-      "n_graded": 52,
-      "hits": 26,
-      "partials": 16,
-      "misses": 10,
+      "partials": 1,
+      "misses": 4,
       "ungradable": 0,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.5,
+      "hit_rate": 0.8148,
       "hit_rate_ci95": [
-       0.3689,
-       0.6311
+       0.633,
+       0.9182
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 52,
-        "bias": -0.239,
-        "mae": 0.659
+        "n": 27,
+        "bias": -0.423,
+        "mae": 0.575
        }
       ]
      }
     },
     {
-     "subject_id": "united-states-real-gdp-growth",
+     "subject_id": "china-real-gdp-growth",
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 50,
-      "hits": 17,
-      "partials": 10,
+      "n_graded": 25,
+      "hits": 13,
+      "partials": 5,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.52,
+      "hit_rate_ci95": [
+       0.335,
+       0.6997
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 25,
+        "bias": 0.289,
+        "mae": 1.04
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "euro-area-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 104,
+      "hits": 54,
+      "partials": 20,
+      "misses": 30,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.5192,
+      "hit_rate_ci95": [
+       0.4242,
+       0.6128
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 104,
+        "bias": 0.073,
+        "mae": 0.937
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "euro-area-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 53,
+      "hits": 34,
+      "partials": 12,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.6415,
+      "hit_rate_ci95": [
+       0.5069,
+       0.757
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 53,
+        "bias": -0.37,
+        "mae": 0.608
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "euro-area-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 51,
+      "hits": 20,
+      "partials": 8,
       "misses": 23,
       "ungradable": 0,
       "open": 3,
       "excluded": 0,
-      "hit_rate": 0.34,
+      "hit_rate": 0.3922,
       "hit_rate_ci95": [
-       0.2244,
-       0.4785
+       0.2703,
+       0.5291
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 50,
-        "bias": 0.004,
-        "mae": 1.316
+        "n": 51,
+        "bias": 0.533,
+        "mae": 1.279
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "germany-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 130,
+      "hits": 42,
+      "partials": 37,
+      "misses": 51,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.3231,
+      "hit_rate_ci95": [
+       0.2488,
+       0.4075
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 130,
+        "bias": 0.236,
+        "mae": 1.069
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "germany-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 66,
+      "hits": 30,
+      "partials": 27,
+      "misses": 9,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.4545,
+      "hit_rate_ci95": [
+       0.3402,
+       0.5738
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 66,
+        "bias": -0.139,
+        "mae": 0.629
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "germany-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 64,
+      "hits": 12,
+      "partials": 10,
+      "misses": 42,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.1875,
+      "hit_rate_ci95": [
+       0.1106,
+       0.2997
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 64,
+        "bias": 0.623,
+        "mae": 1.523
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "india-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 52,
+      "hits": 7,
+      "partials": 19,
+      "misses": 26,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.1346,
+      "hit_rate_ci95": [
+       0.0668,
+       0.2527
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 52,
+        "bias": 0.428,
+        "mae": 1.67
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "india-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 27,
+      "hits": 4,
+      "partials": 10,
+      "misses": 13,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.1481,
+      "hit_rate_ci95": [
+       0.0592,
+       0.3248
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 27,
+        "bias": -0.334,
+        "mae": 1.144
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "india-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 25,
+      "hits": 3,
+      "partials": 9,
+      "misses": 13,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.12,
+      "hit_rate_ci95": [
+       0.0417,
+       0.2996
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 25,
+        "bias": 1.251,
+        "mae": 2.239
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "japan-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 132,
+      "hits": 40,
+      "partials": 37,
+      "misses": 55,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.303,
+      "hit_rate_ci95": [
+       0.2311,
+       0.3861
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 132,
+        "bias": 0.336,
+        "mae": 1.152
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "japan-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 67,
+      "hits": 23,
+      "partials": 25,
+      "misses": 19,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.3433,
+      "hit_rate_ci95": [
+       0.2409,
+       0.4627
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 67,
+        "bias": 0.002,
+        "mae": 0.8
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "japan-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 65,
+      "hits": 17,
+      "partials": 12,
+      "misses": 36,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.2615,
+      "hit_rate_ci95": [
+       0.1702,
+       0.3795
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 65,
+        "bias": 0.68,
+        "mae": 1.516
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "oecd-total-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 134,
+      "hits": 81,
+      "partials": 26,
+      "misses": 27,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.6045,
+      "hit_rate_ci95": [
+       0.5199,
+       0.6832
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 134,
+        "bias": -0.088,
+        "mae": 0.738
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "oecd-total-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 68,
+      "hits": 49,
+      "partials": 12,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.7206,
+      "hit_rate_ci95": [
+       0.6044,
+       0.8132
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 68,
+        "bias": -0.338,
+        "mae": 0.462
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "oecd-total-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 66,
+      "hits": 32,
+      "partials": 14,
+      "misses": 20,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.4848,
+      "hit_rate_ci95": [
+       0.3685,
+       0.6029
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 66,
+        "bias": 0.17,
+        "mae": 1.022
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "united-kingdom-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 128,
+      "hits": 65,
+      "partials": 25,
+      "misses": 38,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.5078,
+      "hit_rate_ci95": [
+       0.4222,
+       0.5929
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 128,
+        "bias": 0.024,
+        "mae": 0.983
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "united-kingdom-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 65,
+      "hits": 37,
+      "partials": 11,
+      "misses": 17,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5692,
+      "hit_rate_ci95": [
+       0.4483,
+       0.6824
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 65,
+        "bias": -0.338,
+        "mae": 0.645
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "united-kingdom-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 63,
+      "hits": 28,
+      "partials": 14,
+      "misses": 21,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.4444,
+      "hit_rate_ci95": [
+       0.3285,
+       0.5668
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 63,
+        "bias": 0.397,
+        "mae": 1.333
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "united-states-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 134,
+      "hits": 57,
+      "partials": 35,
+      "misses": 42,
+      "ungradable": 0,
+      "open": 4,
+      "excluded": 0,
+      "hit_rate": 0.4254,
+      "hit_rate_ci95": [
+       0.3449,
+       0.51
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 134,
+        "bias": -0.141,
+        "mae": 0.935
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "united-states-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 68,
+      "hits": 34,
+      "partials": 21,
+      "misses": 13,
+      "ungradable": 0,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 0.5,
+      "hit_rate_ci95": [
+       0.3844,
+       0.6156
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 68,
+        "bias": -0.229,
+        "mae": 0.639
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "united-states-real-gdp-growth",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 66,
+      "hits": 23,
+      "partials": 14,
+      "misses": 29,
+      "ungradable": 0,
+      "open": 3,
+      "excluded": 0,
+      "hit_rate": 0.3485,
+      "hit_rate_ci95": [
+       0.2448,
+       0.4689
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 66,
+        "bias": -0.052,
+        "mae": 1.24
        }
       ]
      }
     }
    ],
    "by_edition": [
+    {
+     "edition": "1990-06",
+     "published": "1990-06",
+     "stats": {
+      "n_graded": 2,
+      "hits": 1,
+      "partials": 0,
+      "misses": 1,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 2,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1990-12",
+     "published": "1990-12",
+     "stats": {
+      "n_graded": 2,
+      "hits": 0,
+      "partials": 0,
+      "misses": 2,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 2,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1991-07",
+     "published": "1991-07",
+     "stats": {
+      "n_graded": 2,
+      "hits": 1,
+      "partials": 0,
+      "misses": 1,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 2,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1991-12",
+     "published": "1991-12",
+     "stats": {
+      "n_graded": 2,
+      "hits": 1,
+      "partials": 0,
+      "misses": 1,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 2,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1992-06",
+     "published": "1992-06",
+     "stats": {
+      "n_graded": 6,
+      "hits": 3,
+      "partials": 1,
+      "misses": 2,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 6,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1992-12",
+     "published": "1992-12",
+     "stats": {
+      "n_graded": 10,
+      "hits": 3,
+      "partials": 3,
+      "misses": 4,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1993-06",
+     "published": "1993-06",
+     "stats": {
+      "n_graded": 10,
+      "hits": 4,
+      "partials": 4,
+      "misses": 2,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1993-12",
+     "published": "1993-12",
+     "stats": {
+      "n_graded": 10,
+      "hits": 4,
+      "partials": 5,
+      "misses": 1,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1994-06",
+     "published": "1994-06",
+     "stats": {
+      "n_graded": 10,
+      "hits": 6,
+      "partials": 3,
+      "misses": 1,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1994-12",
+     "published": "1994-12",
+     "stats": {
+      "n_graded": 10,
+      "hits": 8,
+      "partials": 1,
+      "misses": 1,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1995-06",
+     "published": "1995-06",
+     "stats": {
+      "n_graded": 10,
+      "hits": 2,
+      "partials": 4,
+      "misses": 4,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1995-12",
+     "published": "1995-12",
+     "stats": {
+      "n_graded": 10,
+      "hits": 3,
+      "partials": 3,
+      "misses": 4,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1996-06",
+     "published": "1996-06",
+     "stats": {
+      "n_graded": 10,
+      "hits": 2,
+      "partials": 2,
+      "misses": 6,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
     {
      "edition": "1996-12",
      "published": "1996-12",
@@ -32222,6 +32534,30 @@
       "hits": 3,
       "partials": 2,
       "misses": 3,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 8,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1997-06",
+     "published": "1997-06",
+     "stats": {
+      "n_graded": 8,
+      "hits": 2,
+      "partials": 4,
+      "misses": 2,
       "ungradable": 0,
       "open": 0,
       "excluded": 0,
@@ -32407,12 +32743,60 @@
      }
     },
     {
+     "edition": "2001-06",
+     "published": "2001-06",
+     "stats": {
+      "n_graded": 12,
+      "hits": 3,
+      "partials": 4,
+      "misses": 5,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 12,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
      "edition": "2001-12",
      "published": "2001-12",
      "stats": {
       "n_graded": 12,
       "hits": 5,
       "partials": 4,
+      "misses": 3,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 12,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2002-06",
+     "published": "2002-06",
+     "stats": {
+      "n_graded": 12,
+      "hits": 4,
+      "partials": 5,
       "misses": 3,
       "ungradable": 0,
       "open": 0,
@@ -32438,6 +32822,30 @@
       "hits": 5,
       "partials": 5,
       "misses": 2,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 12,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2003-06",
+     "published": "2003-06",
+     "stats": {
+      "n_graded": 12,
+      "hits": 8,
+      "partials": 1,
+      "misses": 3,
       "ungradable": 0,
       "open": 0,
       "excluded": 0,
@@ -32647,6 +33055,30 @@
      }
     },
     {
+     "edition": "2007-12",
+     "published": "2007-12",
+     "stats": {
+      "n_graded": 18,
+      "hits": 6,
+      "partials": 1,
+      "misses": 11,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 18,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
      "edition": "2008-06",
      "published": "2008-06",
      "stats": {
@@ -32832,6 +33264,54 @@
         "rule": "D18",
         "unit": "pp",
         "n": 12,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2012-05",
+     "published": "2012-05",
+     "stats": {
+      "n_graded": 18,
+      "hits": 7,
+      "partials": 3,
+      "misses": 8,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 18,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2012-11",
+     "published": "2012-11",
+     "stats": {
+      "n_graded": 18,
+      "hits": 12,
+      "partials": 3,
+      "misses": 3,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 18,
         "bias": null,
         "mae": null
        }
