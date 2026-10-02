@@ -41,6 +41,9 @@ def series(tsv, sheet, label=("World",)):
 
 SHEETS = {
     # edition: list of (scenario name override, oil sheet, primary sheet, renewables sheet, primary label, renewables label)
+    # 2014 and 2015: legacy .xls files, dumped with xls_dump.py (#71). The archive.org .xlsx at the 2015 path holds the
+    # January 2014 workbook (base year 2012), not the 2015 tables; the 2015 .xls (February 2015, base year 2013) is used.
+    "2014": [("Base case", None, "Consumption by fuel", "Consumption by fuel", "Total Energy Consumption", "Total Renewables Consumptionw")],
     "2015": [("Base case", None, "Consumption by fuel", "Consumption by fuel", "Total Energy Consumption", "Total Renewables Consumptionw")],
     "2016": [("Base case", None, "Consumption by fuel", "Consumption by fuel", "Total Energy Consumption", "Total Renewables Consumptionw")],
     "2017": [("Base case", None, "Consumption by fuel", "Consumption by fuel", "Total Energy Consumption", "Total Renewables Consumptionw")],
@@ -67,7 +70,7 @@ def main(d):
             p = series(tsv, prim, (plab,))
             r = series(tsv, ren, (rlab,))
             o = series(tsv, oil) if oil else {}
-            if ed in ("2015", "2016", "2017"):
+            if ed in ("2014", "2015", "2016", "2017"):
                 # bp's headline 'renewables (including biofuels)': add the biofuels row from liquids.
                 b = series(tsv, prim, ("Of which Biofuels",))
                 r = {k: r[k] + b.get(k, 0.0) for k in r}

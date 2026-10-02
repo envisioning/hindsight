@@ -646,14 +646,14 @@ function bp(): Grader {
       if (m.startsWith("renewables share of primary energy")) {
         if (m.includes("incl. bioenergy"))
           return ungradable("bp's renewables definition from 2022 includes bioenergy (bp base year 2019: 11.8%); the EI series excluding hydro (5.2% in 2019) is a different measure");
-        // #53 audit, #66: bp's history in EO2018 to EO2020 matches the EI series within 0.1 point; in EO2015 to EO2017
-        // (38% efficiency accounting) bp's historical years sit 0.15 to 0.18 points below it.
-        if (ed >= "2015" && ed <= "2017") {
+        // #53 audit, #66, #71: bp's history in EO2018 to EO2020 matches the EI series within 0.1 point; in EO2014 to
+        // EO2017 (38% efficiency accounting) each edition's base year sits 0.14 to 0.18 points below it.
+        if (ed >= "2014" && ed <= "2017") {
           const r = lookup(renewables, y, y, [
-            "Actual: EI renewables share of primary energy minus hydro share (substitution method). bp's own history in EO2015 to EO2017 sits 0.15 to 0.18 points below this series (2012: 2.36 vs 2.54; 2014: 3.00 vs 3.15; 2015: 3.34 vs 3.51; #53 audit).",
+            "Actual: EI renewables share of primary energy minus hydro share (substitution method). bp's own base year in EO2014 to EO2017 sits 0.14 to 0.18 points below this series (EO2014, 2012: 2.36 vs 2.54; EO2015, 2013: 2.71 vs 2.85; EO2016, 2014: 3.00 vs 3.15; EO2017, 2015: 3.34 vs 3.51; #53 audit, #71).",
           ]);
           if (r.kind !== "actual") return r;
-          return { ...r, uncertainty: { low: 0.15, high: 0.18, why: "on bp's own accounting of this edition the actual would be 0.15 to 0.18 points lower." } };
+          return { ...r, uncertainty: { low: 0.14, high: 0.18, why: "on bp's own accounting of this edition the actual would be 0.14 to 0.18 points lower." } };
         }
         return lookup(renewables, y, y, [
           "Actual: EI renewables share of primary energy minus hydro share (substitution method). bp's own base years in EO2018 to EO2020 match it within 0.1 point (2016: 3.78 vs 3.84; 2017: 4.2 vs 4.30; 2018: 4.7 vs 4.72).",
@@ -786,7 +786,7 @@ const MATCH_RULES: Record<string, string[]> = {
     "Scenarios other than the main one are excluded. Edition-level quotes without a value are excluded.",
   ],
   "bp-energy-outlook": [
-    "Renewables share of primary energy excluding hydro (2015 to 2019 editions, main case; EO2018 from its summary tables, #15): EI series excluding hydro. bp's base years in EO2018 (2016: 3.78 vs 3.84), EO2019 and EO2020 match it within 0.1 point; in EO2015 to EO2017 bp's history sits 0.15 to 0.18 points below it (bp's 38% efficiency accounting; #53 audit). Those rows are graded against the EI series and carry a threshold flag (#66) where a 0.15 to 0.18 point shift would change the verdict.",
+    "Renewables share of primary energy excluding hydro (2014 to 2019 editions, main case; EO2018 from its summary tables, #15; EO2014 from its .xls summary tables, #71): EI series excluding hydro. bp's base years in EO2018 (2016: 3.78 vs 3.84), EO2019 and EO2020 match it within 0.1 point; in EO2014 to EO2017 each edition's base year sits 0.14 to 0.18 points below it (EO2014, 2012: 2.36 vs 2.54; EO2015, 2013: 2.71 vs 2.85; EO2016, 2014: 3.00 vs 3.15; EO2017, 2015: 3.34 vs 3.51; bp's 38% efficiency accounting; #53 audit). Those rows are graded against the EI series and carry a threshold flag (#66) where a shift of up to 0.18 points would change the verdict.",
     "Ungradable: oil and liquids demand (realized oil captured in TWh without biofuels), the 2022+ renewables definition (includes bioenergy).",
     "From 2020 all rows are scenarios: excluded.",
   ],

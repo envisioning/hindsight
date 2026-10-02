@@ -5701,12 +5701,12 @@
   {
    "source_id": "bp-energy-outlook",
    "totals": {
-    "n_graded": 6,
-    "hits": 2,
+    "n_graded": 8,
+    "hits": 3,
     "partials": 2,
-    "misses": 2,
+    "misses": 3,
     "ungradable": 4,
-    "open": 45,
+    "open": 49,
     "excluded": 178,
     "hit_rate": null,
     "hit_rate_ci95": null,
@@ -5714,7 +5714,7 @@
      {
       "rule": "D18",
       "unit": "pp",
-      "n": 6,
+      "n": 8,
       "bias": null,
       "mae": null
      }
@@ -5734,19 +5734,19 @@
     "rechecked": 0,
     "recheck_confirmed": 0,
     "recheck_corrected": 0,
-    "pending_recheck": 0
+    "pending_recheck": 1
    },
    "hit_rate_audit_adjusted95": null,
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 6,
-      "hits": 2,
+      "n_graded": 8,
+      "hits": 3,
       "partials": 2,
-      "misses": 2,
+      "misses": 3,
       "ungradable": 4,
-      "open": 45,
+      "open": 49,
       "excluded": 178,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -5754,7 +5754,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 8,
         "bias": null,
         "mae": null
        }
@@ -5765,8 +5765,8 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 1,
-      "hits": 0,
-      "partials": 1,
+      "hits": 1,
+      "partials": 0,
       "misses": 0,
       "ungradable": 0,
       "open": 0,
@@ -5787,9 +5787,9 @@
     {
      "horizon": "next_year",
      "stats": {
-      "n_graded": 1,
+      "n_graded": 2,
       "hits": 1,
-      "partials": 0,
+      "partials": 1,
       "misses": 0,
       "ungradable": 1,
       "open": 0,
@@ -5800,7 +5800,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 1,
+        "n": 2,
         "bias": null,
         "mae": null
        }
@@ -5856,16 +5856,24 @@
     {
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 0,
+      "n_graded": 1,
       "hits": 0,
       "partials": 0,
-      "misses": 0,
+      "misses": 1,
       "ungradable": 2,
       "open": 5,
       "excluded": 31,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 1,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -5876,7 +5884,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 40,
+      "open": 44,
       "excluded": 115,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6022,7 +6030,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 4,
-      "open": 14,
+      "open": 15,
       "excluded": 83,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6118,7 +6126,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 14,
+      "open": 15,
       "excluded": 53,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6129,12 +6137,12 @@
      "family": "renewables share",
      "horizon": "all",
      "stats": {
-      "n_graded": 6,
-      "hits": 2,
+      "n_graded": 8,
+      "hits": 3,
       "partials": 2,
-      "misses": 2,
+      "misses": 3,
       "ungradable": 0,
-      "open": 24,
+      "open": 27,
       "excluded": 85,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6142,7 +6150,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 8,
         "bias": null,
         "mae": null
        }
@@ -6154,8 +6162,8 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 1,
-      "hits": 0,
-      "partials": 1,
+      "hits": 1,
+      "partials": 0,
       "misses": 0,
       "ungradable": 0,
       "open": 0,
@@ -6177,9 +6185,9 @@
      "family": "renewables share",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 1,
+      "n_graded": 2,
       "hits": 1,
-      "partials": 0,
+      "partials": 1,
       "misses": 0,
       "ungradable": 0,
       "open": 0,
@@ -6190,7 +6198,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 1,
+        "n": 2,
         "bias": null,
         "mae": null
        }
@@ -6249,16 +6257,24 @@
      "family": "renewables share",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 0,
+      "n_graded": 1,
       "hits": 0,
       "partials": 0,
-      "misses": 0,
+      "misses": 1,
       "ungradable": 0,
       "open": 5,
       "excluded": 14,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 1,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -6270,7 +6286,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 19,
+      "open": 22,
       "excluded": 55,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6459,7 +6475,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 7,
+      "open": 8,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6476,7 +6492,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 7,
+      "open": 8,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6641,12 +6657,12 @@
      "family": "renewables share",
      "horizon": "all",
      "stats": {
-      "n_graded": 6,
-      "hits": 2,
+      "n_graded": 8,
+      "hits": 3,
       "partials": 2,
-      "misses": 2,
+      "misses": 3,
       "ungradable": 0,
-      "open": 22,
+      "open": 25,
       "excluded": 85,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6654,7 +6670,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 8,
         "bias": null,
         "mae": null
        }
@@ -6667,8 +6683,8 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 1,
-      "hits": 0,
-      "partials": 1,
+      "hits": 1,
+      "partials": 0,
       "misses": 0,
       "ungradable": 0,
       "open": 0,
@@ -6691,9 +6707,9 @@
      "family": "renewables share",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 1,
+      "n_graded": 2,
       "hits": 1,
-      "partials": 0,
+      "partials": 1,
       "misses": 0,
       "ungradable": 0,
       "open": 0,
@@ -6704,7 +6720,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 1,
+        "n": 2,
         "bias": null,
         "mae": null
        }
@@ -6766,16 +6782,24 @@
      "family": "renewables share",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 0,
+      "n_graded": 1,
       "hits": 0,
       "partials": 0,
-      "misses": 0,
+      "misses": 1,
       "ungradable": 0,
       "open": 5,
       "excluded": 14,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 1,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -6788,7 +6812,7 @@
       "partials": 0,
       "misses": 0,
       "ungradable": 0,
-      "open": 17,
+      "open": 20,
       "excluded": 55,
       "hit_rate": null,
       "hit_rate_ci95": null,
@@ -6849,16 +6873,24 @@
      "edition": "2014",
      "published": "2014-01-15",
      "stats": {
-      "n_graded": 0,
+      "n_graded": 2,
       "hits": 0,
-      "partials": 0,
-      "misses": 0,
+      "partials": 1,
+      "misses": 1,
       "ungradable": 0,
-      "open": 3,
+      "open": 6,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
-      "errors": []
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 2,
+        "bias": null,
+        "mae": null
+       }
+      ]
      }
     },
     {
@@ -6866,11 +6898,11 @@
      "published": "2015-02-17",
      "stats": {
       "n_graded": 2,
-      "hits": 0,
-      "partials": 1,
+      "hits": 1,
+      "partials": 0,
       "misses": 1,
       "ungradable": 0,
-      "open": 4,
+      "open": 5,
       "excluded": 0,
       "hit_rate": null,
       "hit_rate_ci95": null,
