@@ -22,38 +22,38 @@
  ],
  "n": 162,
  "counts": {
-  "faded": 76,
-  "persisted": 23,
-  "renamed": 42,
+  "faded": 80,
+  "persisted": 18,
+  "renamed": 43,
   "recycled": 2,
   "open": 19
  },
  "shares": {
   "persisted": {
-   "k": 23,
+   "k": 18,
    "n": 143,
-   "share": 0.1608,
+   "share": 0.1259,
    "wilson95": [
-    0.11,
-    0.23
+    0.081,
+    0.19
    ]
   },
   "renamed": {
-   "k": 42,
+   "k": 43,
    "n": 143,
-   "share": 0.2937,
+   "share": 0.3007,
    "wilson95": [
-    0.225,
-    0.373
+    0.232,
+    0.38
    ]
   },
   "faded": {
-   "k": 76,
+   "k": 80,
    "n": 143,
-   "share": 0.5315,
+   "share": 0.5594,
    "wilson95": [
-    0.45,
-    0.611
+    0.478,
+    0.638
    ]
   },
   "recycled": {
@@ -94,6 +94,21 @@
    "residual_error_rate": 0
   }
  },
+ "pass3": {
+  "scope": 5,
+  "superseded": 0,
+  "audit": {
+   "seed": "d11:deloitte-tech-trends:d33:pass3",
+   "sample": 5,
+   "audited": 5,
+   "confirmed": 5,
+   "corrected": 0,
+   "contested": 0,
+   "error_rate": 0,
+   "resolved_by_gap_rule": 0,
+   "residual_error_rate": 0
+  }
+ },
  "passes": [
   "renames-d33-checkerA.json",
   "renames-d33-checkerB.json",
@@ -102,7 +117,11 @@
   "renames-d33-pass2-scope.json",
   "renames-d33-checkerA-pass2.json",
   "renames-d33-checkerB-pass2.json",
-  "renames-audit-d33-pass2.json"
+  "renames-audit-d33-pass2.json",
+  "renames-d33-pass3-scope.json",
+  "renames-d33-checkerA-pass3.json",
+  "renames-d33-checkerB-pass3.json",
+  "renames-audit-d33-pass3.json"
  ],
  "verdicts": [
   {
@@ -120,9 +139,9 @@
   {
    "id": "deloitte-tech-trends-2010-003",
    "edition": "2010",
-   "verdict": "persisted",
-   "status": "computed",
-   "matched_in": "2011"
+   "verdict": "faded",
+   "status": "audited",
+   "pass": 3
   },
   {
    "id": "deloitte-tech-trends-2010-004",
@@ -200,16 +219,17 @@
   {
    "id": "deloitte-tech-trends-2011-003",
    "edition": "2011",
-   "verdict": "persisted",
-   "status": "computed",
-   "matched_in": "2013"
+   "verdict": "faded",
+   "status": "audited",
+   "pass": 3
   },
   {
    "id": "deloitte-tech-trends-2011-004",
    "edition": "2011",
-   "verdict": "persisted",
-   "status": "computed",
-   "matched_in": "2013"
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "deloitte-tech-trends-2013-001",
+   "pass": 3
   },
   {
    "id": "deloitte-tech-trends-2011-005",
@@ -321,9 +341,9 @@
   {
    "id": "deloitte-tech-trends-2013-001",
    "edition": "2013",
-   "verdict": "persisted",
-   "status": "computed",
-   "matched_in": "2015"
+   "verdict": "faded",
+   "status": "audited",
+   "pass": 3
   },
   {
    "id": "deloitte-tech-trends-2013-002",
@@ -372,9 +392,9 @@
   {
    "id": "deloitte-tech-trends-2013-009",
    "edition": "2013",
-   "verdict": "persisted",
-   "status": "computed",
-   "matched_in": "2014"
+   "verdict": "faded",
+   "status": "audited",
+   "pass": 3
   },
   {
    "id": "deloitte-tech-trends-2013-010",

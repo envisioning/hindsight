@@ -1,0 +1,41 @@
+{
+ "rule": "D11 audit of D33 rename checks",
+ "pass": 3,
+ "auditor": "agent (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "seed": "d11:deloitte-tech-trends:d33:pass3",
+ "sample": [
+  "deloitte-tech-trends-2010-003",
+  "deloitte-tech-trends-2011-003",
+  "deloitte-tech-trends-2011-004",
+  "deloitte-tech-trends-2013-001",
+  "deloitte-tech-trends-2013-009"
+ ],
+ "records": {
+  "deloitte-tech-trends-2010-003": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2010 claims cyber-security moves from background technology to a priority business discipline; 2011-003 argues a full-spectrum (intelligence-led) protection approach, a method thesis rather than the elevation thesis, and 2012-008 Digital Identities is identity management. Same field, new claims (D53); borderline only for 2011-003.",
+   "at": "2026-10-02T18:52:29+00:00"
+  },
+  "deloitte-tech-trends-2011-003": {
+   "decision": "confirm",
+   "note": "faded confirmed: full-spectrum cyber approach to protecting information assets; 2012-008 is identity management and 2013-009 claims breach is inevitable (you have been or will be breached), a different thesis under the recurring cyber topic (D53).",
+   "at": "2026-10-02T18:52:29+00:00"
+  },
+  "deloitte-tech-trends-2011-004": {
+   "decision": "confirm",
+   "note": "renamed to 2013-001 confirmed, same claim not only same topic: 2011 'CIOs shift from stewards of, to catalysts for, business revolution'; 2013 'CIO as the Postdigital Catalyst' says CIOs harnessing the postdigital forces move the conversation from systems to capabilities and from technical issues to business impact, the steward-to-catalyst thesis carried on, one step narrower. No 2012 CIO chapter and no 2011 sibling continues to 2013-001.",
+   "at": "2026-10-02T18:52:29+00:00"
+  },
+  "deloitte-tech-trends-2013-001": {
+   "decision": "confirm",
+   "note": "faded confirmed: the postdigital-catalyst thesis is not carried on; 2014-001 CIO as venture capitalist is IT portfolio management by value, risk and horizon, and 2015-001 CIO as chief integration officer is integration as the IT charter. New theses in the yearly CIO chapter (D53), consistent with the earlier audit reading of 2014-001 vs 2015-001.",
+   "at": "2026-10-02T18:52:29+00:00"
+  },
+  "deloitte-tech-trends-2013-009": {
+   "decision": "confirm",
+   "note": "faded confirmed: breach-is-inevitable thesis; 2014-013 Cyber security Exponential has only the field label and the shared chapter sentence (no own claim to match, per the Exponentials rule), and 2015-014 claims cybercrime goes 3D (physical-digital threats), a different claim.",
+   "at": "2026-10-02T18:52:29+00:00"
+  }
+ }
+}
