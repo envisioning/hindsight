@@ -25,10 +25,11 @@
  },
  "hit_or_partial_rate": 0.375,
  "adjudicated": 9,
- "rechecked": 14,
+ "rechecked": 20,
  "recheck_passes": [
   "adjudicated-d20-pass1.json",
-  "adjudicated-d20-pass2.json"
+  "adjudicated-d20-pass2.json",
+  "adjudicated-d20-pass3.json"
  ],
  "audit": {
   "sample": 42,
@@ -78,6 +79,15 @@
    "status": "audited"
   },
   {
+   "id": "gartner-strategic-predictions-2006-010",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Looked for a 2007-2008 survey measuring the share of data centers that currently lack power or cooling capacity for high-density equipment. Found other quantities. Gartner's December 2007 Data Center Conference poll asked attendees for their top concern: 47% named power availability and 27% insufficient cooling. Emerson's 2009 user-group survey asked when capacity would run out and what limits it (34% power). Both measure concerns or expected limits, not current insufficiency, and neither is a worldwide sample of data centers.",
+   "pass": 3
+  },
+  {
    "id": "gartner-strategic-predictions-2008-001",
    "verdict": "partial",
    "status": "adjudicated",
@@ -93,6 +103,15 @@
    "graderB": "ungradable",
    "reason": "Edition text now read: the claim is about traveling workers leaving the notebook behind in favour of pocketable devices and web apps. Looked for a 2011-2012 survey of business travelers or mobile workers measuring the share who travel without a notebook. The iPass Mobile Workforce Reports (quarterly, 1,100+ enterprises, 2011-2012) are the closest series; they report devices carried (3.5 devices for work in Q1 2012, 'at least one laptop'), tablet adoption (64%) and desktop abandonment (38%), but never the share leaving the notebook at home on trips. Tablet ownership is a different quantity (D23). No public measure of the stated quantity at 2011-2012.",
    "pass": 1
+  },
+  {
+   "id": "gartner-strategic-predictions-2008-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Looked for a 2011-2012 measure of the share of commercial products containing any open-source component. Found other quantities. Black Duck (November 2009) studied 175+ customers already using open source and found 22% of the average product's code was open source. That is a share of code, from a sample selected for open-source use. Gartner's 2011 survey (cited by HBR) found open source made up 29% of respondents' software portfolios, a share of portfolios. The first codebase-audit figure for the stated quantity (96% of 1,071 audited applications, Black Duck/Synopsys OSSRA) covers 2016, four years after the target, outside the D23 window.",
+   "pass": 3
   },
   {
    "id": "gartner-strategic-predictions-2008-004",
@@ -123,6 +142,15 @@
    "pass": 2
   },
   {
+   "id": "gartner-strategic-predictions-2009-004",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "The base set is Gartner's 2008 BPO market-share top 20. Looked for it in public form: Gartner's BPO market-share abstracts found start with 2013, and search turned up no public 2008 list. Wayback was offline during this pass, so older Gartner abstracts could not be checked. Known exits in the window: Perot Systems to Dell (2009), ACS to Xerox (2010), Hewitt to Aon (2010), Patni to iGate (2011). With no base list they cannot be counted against the top 20.",
+   "pass": 3
+  },
+  {
    "id": "gartner-strategic-predictions-2009-007",
    "verdict": "ungradable",
    "status": "rechecked",
@@ -130,6 +158,15 @@
    "graderB": "ungradable",
    "reason": "Searched for a public IDC, NPD or DisplaySearch statement of the sub-$300 share of worldwide consumer notebook sales in 2011-2012; none found. Price-band splits are in paid trackers only.",
    "pass": 2
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-008",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "No 2012-2013 survey of enterprise knowledge workers on desk phones found. The nearest measure is a RingCentral-commissioned survey of 505 US knowledge workers in May 2015: 83% still had a desk phone, so at most 17% had none. If removals only accumulate, that puts 2013 well under 40%, which would be a miss. But the survey is 18 months after the target, outside the D23 window (target year or the year before), US-only, and vendor-commissioned. Under D23 the claim stays ungradable. The bound is recorded for a dispute or a rule change.",
+   "pass": 3
   },
   {
    "id": "gartner-strategic-predictions-2009-009",
@@ -224,6 +261,15 @@
    "id": "gartner-strategic-predictions-2011-002",
    "verdict": "miss",
    "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-003",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Looked for a 2015-2016 survey of enterprise or business email users by primary client. Radicati's Email Statistics Report 2016-2020 executive summary counts business and mobile email users, not users' primary client; radicati.com did not resolve from this session (DNS failure), so the PDF could not be checked. Email-open trackers (Litmus) measure opens of mostly marketing mail across all users, a different population (D23). No measure found.",
+   "pass": 3
   },
   {
    "id": "gartner-strategic-predictions-2011-006",
@@ -351,6 +397,15 @@
    "id": "gartner-strategic-predictions-2015-007",
    "verdict": "partial",
    "status": "audited"
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-008",
+   "verdict": "ungradable",
+   "status": "rechecked",
+   "graderA": "ungradable",
+   "graderB": "ungradable",
+   "reason": "Looked for a count of employees in mandatory tracker programmes in 2017-2018. Every source found describes voluntary or incentive-based wellness programmes. BP America has offered Fitbits since 2013, with about 24,500 users by 2015. In 2018 only 8% of employer wellness plans offered trackers. The West Virginia teachers' plan penalised opting out but did not require trackers. The Christian Science Monitor (March 2018) gives no count of mandatory users. Search results repeat Gartner's own forecast as the only 'two million' figure. No measure.",
+   "pass": 3
   },
   {
    "id": "gartner-strategic-predictions-2015-009",

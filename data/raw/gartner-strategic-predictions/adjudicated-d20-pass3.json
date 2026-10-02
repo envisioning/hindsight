@@ -1,0 +1,127 @@
+{
+ "rule": "D16",
+ "role": "re-check pass 3 (D24): remaining class (b) agreed-ungradable claims from pass 2 triage",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "gartner-strategic-predictions-2008-003",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2012, 80% of commercial software products contain some open-source code.",
+   "reason": "Looked for a 2011-2012 measure of the share of commercial products containing any open-source component. Found other quantities. Black Duck (November 2009) studied 175+ customers already using open source and found 22% of the average product's code was open source. That is a share of code, from a sample selected for open-source use. Gartner's 2011 survey (cited by HBR) found open source made up 29% of respondents' software portfolios, a share of portfolios. The first codebase-audit figure for the stated quantity (96% of 1,071 audited applications, Black Duck/Synopsys OSSRA) covers 2016, four years after the target, outside the D23 window.",
+   "fetched": "DBTA report of the 2009 Black Duck analysis; web search results (HBR 2011, LinuxInsider on the OSSRA).",
+   "evidence": [
+    {
+     "url": "https://www.dbta.com/Editorial/Linux-News/Black-Duck-Analysis-Shows-Average-Software-Product-or-Application-Contains-22-percent-Open-Source-Software-58034.aspx",
+     "title": "Black Duck Analysis Shows Average Software Product or Application Contains 22% Open Source Software",
+     "date": "2009-11-18",
+     "shows": "22% of the code in the average product was open source, in a sample of 175+ Black Duck customers. A share of code, not a share of products."
+    },
+    {
+     "url": "https://hbr.org/2011/03/open-source-software-hits-a-st",
+     "title": "Open Source Software Hits a Strategic Tipping Point (HBR)",
+     "date": "2011-03",
+     "shows": "Gartner survey: open source is 29% of respondents' software portfolios. A different quantity."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2006-010",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2008, nearly 50% of data centers worldwide lack the power and cooling capacity needed for high-density equipment.",
+   "reason": "Looked for a 2007-2008 survey measuring the share of data centers that currently lack power or cooling capacity for high-density equipment. Found other quantities. Gartner's December 2007 Data Center Conference poll asked attendees for their top concern: 47% named power availability and 27% insufficient cooling. Emerson's 2009 user-group survey asked when capacity would run out and what limits it (34% power). Both measure concerns or expected limits, not current insufficiency, and neither is a worldwide sample of data centers.",
+   "fetched": "Data Center Knowledge reports (December 2007; November 2009).",
+   "evidence": [
+    {
+     "url": "https://www.datacenterknowledge.com/cooling/power-surpasses-cooling-as-top-concern",
+     "title": "Power Surpasses Cooling as Top Concern",
+     "date": "2007-12",
+     "shows": "Gartner conference poll: 47% name power availability as top concern, 27% insufficient cooling. Gartner repeats its forecast; no measured share of data centers lacking capacity."
+    },
+    {
+     "url": "https://www.datacenterknowledge.com/energy-power-supply/power-densities-likely-to-drive-expansions",
+     "title": "Power Densities Likely to Drive Expansions",
+     "date": "2009-11-19",
+     "shows": "Emerson DCUG: 34% cite power as the main capacity limit; a majority expect to run out of capacity within two years. Expected limits, not current insufficiency."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2011-003",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2016, at least 50% of enterprise email users rely primarily on a browser, tablet or mobile client instead of a desktop client.",
+   "reason": "Looked for a 2015-2016 survey of enterprise or business email users by primary client. Radicati's Email Statistics Report 2016-2020 executive summary counts business and mobile email users, not users' primary client; radicati.com did not resolve from this session (DNS failure), so the PDF could not be checked. Email-open trackers (Litmus) measure opens of mostly marketing mail across all users, a different population (D23). No measure found.",
+   "fetched": "Web search; radicati.com unreachable (DNS).",
+   "evidence": [
+    {
+     "url": "https://www.radicati.com/wp/wp-content/uploads/2016/01/Email_Statistics_Report_2016-2020_Executive_Summary.pdf",
+     "title": "Radicati, Email Statistics Report 2016-2020 (executive summary)",
+     "date": "2016-01",
+     "shows": "Listed in search results as counting email users and traffic; could not be opened (host did not resolve). No primary-client split reported in the search snippets."
+    },
+    {
+     "url": "https://www.litmus.com/email-client-market-share",
+     "title": "Litmus email client market share",
+     "date": "2016",
+     "shows": "Opens of tracked (mostly marketing) email across all users. Not the enterprise user population."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-008",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By year-end 2013, 40% of enterprise knowledge workers have abandoned or removed their desk phone.",
+   "reason": "No 2012-2013 survey of enterprise knowledge workers on desk phones found. The nearest measure is a RingCentral-commissioned survey of 505 US knowledge workers in May 2015: 83% still had a desk phone, so at most 17% had none. If removals only accumulate, that puts 2013 well under 40%, which would be a miss. But the survey is 18 months after the target, outside the D23 window (target year or the year before), US-only, and vendor-commissioned. Under D23 the claim stays ungradable. The bound is recorded for a dispute or a rule change.",
+   "fetched": "RingCentral survey blog (live); web search.",
+   "evidence": [
+    {
+     "url": "https://www.ringcentral.com/us/en/blog/infographic-survey-shows-desk-phone-is-headed-for-retirement-but-isnt-dead-yet/",
+     "title": "Infographic: Survey Shows Desk Phone is Headed for Retirement, but Isn’t Dead Yet (RingCentral)",
+     "date": "2015-05",
+     "shows": "Survey of 505 US knowledge workers, May 2015: 83% still have a desk phone; 65% prefer it for calls."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2009-004",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2012, 5 of the top 20 BPO providers (25%) no longer exist as separate entities.",
+   "reason": "The base set is Gartner's 2008 BPO market-share top 20. Looked for it in public form: Gartner's BPO market-share abstracts found start with 2013, and search turned up no public 2008 list. Wayback was offline during this pass, so older Gartner abstracts could not be checked. Known exits in the window: Perot Systems to Dell (2009), ACS to Xerox (2010), Hewitt to Aon (2010), Patni to iGate (2011). With no base list they cannot be counted against the top 20.",
+   "fetched": "Web search (Gartner BPO market-share documents, SEC filings); Wayback CDX attempted, service offline.",
+   "evidence": [
+    {
+     "url": "https://www.gartner.com/doc/2721221/market-share-analysis-business-process",
+     "title": "Gartner, Market Share Analysis: Business Process Outsourcing, Worldwide, 2013",
+     "date": "2014",
+     "shows": "Earliest Gartner BPO market-share abstract found in search; no public 2008 top-20 list."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Affiliated_Computer_Services",
+     "title": "Affiliated Computer Services (Wikipedia)",
+     "date": "2010-02",
+     "shows": "ACS acquired by Xerox in February 2010; one exit that cannot be counted without the base list."
+    }
+   ]
+  },
+  {
+   "id": "gartner-strategic-predictions-2015-008",
+   "earlier": "ungradable_agreed",
+   "verdict": "ungradable",
+   "reading": "By 2018, two million employees are required to wear health and fitness trackers as a condition of employment.",
+   "reason": "Looked for a count of employees in mandatory tracker programmes in 2017-2018. Every source found describes voluntary or incentive-based wellness programmes. BP America has offered Fitbits since 2013, with about 24,500 users by 2015. In 2018 only 8% of employer wellness plans offered trackers. The West Virginia teachers' plan penalised opting out but did not require trackers. The Christian Science Monitor (March 2018) gives no count of mandatory users. Search results repeat Gartner's own forecast as the only 'two million' figure. No measure.",
+   "fetched": "Christian Science Monitor (via WebFetch); web search.",
+   "evidence": [
+    {
+     "url": "https://www.csmonitor.com/Technology/2018/0315/Can-your-boss-make-you-wear-a-Fitbit",
+     "title": "Can your boss make you wear a Fitbit? (Christian Science Monitor)",
+     "date": "2018-03-15",
+     "shows": "8% of employer wellness plans offer trackers; programmes are nominally voluntary with penalties; no count of employees required to wear them."
+    }
+   ]
+  }
+ ]
+}
