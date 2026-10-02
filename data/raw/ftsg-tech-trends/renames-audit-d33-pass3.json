@@ -1,0 +1,314 @@
+{
+ "rule": "D11 audit of D33 rename checks",
+ "pass": 3,
+ "auditor": "agent (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "seed": "d11:ftsg-tech-trends:d33:pass3",
+ "draw": "node scripts/renames-audit-sample-d33.mjs ftsg-tech-trends --pass 3: pass-3 scope rows where checkers A and B agree (same verdict; same match_id for same/renamed), 576 rows; first 50 by fnv1a(seed:id), no weights (the pass-1/pass-2 method). Strata: 4 same, 21 renamed, 25 faded.",
+ "sample": [
+  "ftsg-tech-trends-2014-007",
+  "ftsg-tech-trends-2021-224",
+  "ftsg-tech-trends-2021-282",
+  "ftsg-tech-trends-2021-283",
+  "ftsg-tech-trends-2021-284",
+  "ftsg-tech-trends-2021-291",
+  "ftsg-tech-trends-2021-295",
+  "ftsg-tech-trends-2021-320",
+  "ftsg-tech-trends-2021-324",
+  "ftsg-tech-trends-2021-328",
+  "ftsg-tech-trends-2021-330",
+  "ftsg-tech-trends-2021-331",
+  "ftsg-tech-trends-2021-332",
+  "ftsg-tech-trends-2021-333",
+  "ftsg-tech-trends-2021-336",
+  "ftsg-tech-trends-2021-347",
+  "ftsg-tech-trends-2022-229",
+  "ftsg-tech-trends-2022-280",
+  "ftsg-tech-trends-2022-288",
+  "ftsg-tech-trends-2022-306",
+  "ftsg-tech-trends-2022-344",
+  "ftsg-tech-trends-2022-345",
+  "ftsg-tech-trends-2022-347",
+  "ftsg-tech-trends-2022-350",
+  "ftsg-tech-trends-2022-351",
+  "ftsg-tech-trends-2022-354",
+  "ftsg-tech-trends-2022-355",
+  "ftsg-tech-trends-2022-356",
+  "ftsg-tech-trends-2022-357",
+  "ftsg-tech-trends-2022-460",
+  "ftsg-tech-trends-2022-462",
+  "ftsg-tech-trends-2022-509",
+  "ftsg-tech-trends-2022-518",
+  "ftsg-tech-trends-2022-519",
+  "ftsg-tech-trends-2022-565",
+  "ftsg-tech-trends-2022-568",
+  "ftsg-tech-trends-2022-569",
+  "ftsg-tech-trends-2022-570",
+  "ftsg-tech-trends-2022-571",
+  "ftsg-tech-trends-2022-572",
+  "ftsg-tech-trends-2022-573",
+  "ftsg-tech-trends-2022-579",
+  "ftsg-tech-trends-2022-580",
+  "ftsg-tech-trends-2022-581",
+  "ftsg-tech-trends-2022-582",
+  "ftsg-tech-trends-2022-583",
+  "ftsg-tech-trends-2022-584",
+  "ftsg-tech-trends-2022-585",
+  "ftsg-tech-trends-2022-586",
+  "ftsg-tech-trends-2022-587"
+ ],
+ "records": {
+  "ftsg-tech-trends-2014-007": {
+   "decision": "confirm",
+   "note": "renamed to 2020 Proximity Recognition confirmed: Microlocation (precise indoor location broadcast) and Proximity Recognition (Bluetooth beacons/access points tracking people indoors) are the same technology; nothing closer in 2019 or 2020, and no 2014 sibling claims 2020-089.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-224": {
+   "decision": "confirm",
+   "note": "same confirmed: 2022 Connected Fabrics and Apparel is the same smart-clothing sensing trend (clothing as sensory interface / smart threads capturing physiological data).",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-282": {
+   "decision": "confirm",
+   "note": "faded confirmed: no contact-tracing trend in 2022 or 2023; 2022 Mobile Tracking is about 5G/4G network tracking and Vaccine Passports is a different claim.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-283": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2021 text (local PDF text layer) predicts a return to strict GDPR-style enforcement; 2022 Privacy Regulation (US states legislating) fits the sibling GDPR Copycats (CCPA, other countries copying GDPR, US standardising) better, and 2022 State Governments Tackle Digital Privacy continues 2021-257 by subject.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-284": {
+   "decision": "confirm",
+   "note": "faded confirmed: the trend is about who owns our data; 2022 Data Ownership (3rd year on the list) continues the sibling Regulating Data Ownership (2021-258, 2nd year), so the sibling rule excludes it; nothing else on fragmented privacy approaches in 2022 or 2023.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-291": {
+   "decision": "confirm",
+   "note": "renamed to 2022 Privacy Regulation confirmed: GDPR Copycats (text: CCPA, other countries developing GDPR versions, US standardising privacy regulation) continues as more US states passing privacy laws; one step broader. No closer 2021 sibling (2021-283 is enforcement).",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-295": {
+   "decision": "confirm",
+   "note": "faded confirmed: no online-harassment definition trend in 2022 or 2023; Synthetic Media and Sexual Harassment continues 2021-153 and Cancel Culture continues 2021-158 by subject.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-320": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2022 Supply Chain Attacks continues 2021-302 by subject and Regulating Messy Code continues 2021-303; no open-source vulnerability trend in 2022 or 2023.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-324": {
+   "decision": "confirm",
+   "note": "faded confirmed: no magnetic tape or storage-media shortage trend in 2022 or 2023 (Holographic Data Storage and DNA storage are different technologies).",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-328": {
+   "decision": "confirm",
+   "note": "same confirmed: CBDCs is the abbreviation of Central Bank-Backed Digital Currencies.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-330": {
+   "decision": "confirm",
+   "note": "renamed to Social and Digital Payments confirmed: identical first sentence in 2021 and 2022; label widened one step. (same would also be defensible; both count as continued.)",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-331": {
+   "decision": "confirm",
+   "note": "renamed to Provenance and Authentication confirmed: 2022 quote is blockchain tracking of content origins and permanent storage of assets, the 2021 claim.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-332": {
+   "decision": "confirm",
+   "note": "renamed to Alternative Credit Scoring confirmed: 2022 opens with the same claim (banks and insurers using AI to automate credit risk modeling).",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-333": {
+   "decision": "confirm",
+   "note": "same confirmed: DEXes and AMMs abbreviates Decentralized Exchanges and Automated Market Makers; same opening sentence.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-336": {
+   "decision": "confirm",
+   "note": "renamed to Distributed Computing Earning Models confirmed: identical first sentence.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2021-347": {
+   "decision": "correct",
+   "note": "2021 text (local PDF text layer, p.370; quote is correctly aligned) says streaming needs lots of hyper-local data centers closer to consumers for latency (AWS local zones). 2022 Serverless Edge (2022-433, unclaimed) says edge data sit in localized data centers closer to the user, with code run there to cut latency (Lambda@Edge): the same phenomenon, renamed, and the same slot in the Edge sub-section. The 2022 umbrella Edge Computing continues 2021-502, so it is not the match.",
+   "at": "2026-10-02T17:30:00+00:00",
+   "corrected_verdict": "renamed",
+   "corrected_match_id": "ftsg-tech-trends-2022-433"
+  },
+  "ftsg-tech-trends-2022-229": {
+   "decision": "confirm",
+   "note": "faded confirmed: no First Amendment or speech-law trend in the 2023 or 2024 News & Information lists or elsewhere.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-280": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2024 Robots in the Home (robot vacuums, companions; local 2024 text) continues the sibling Service Bots (2022-279); no cleaning/disinfecting robot trend in 2023.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-288": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2023 Consumer IoT Vulnerabilities continues the 2022 trend of the same label (2022-334); no separate HoT-security trend in 2023 or 2024.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-306": {
+   "decision": "confirm",
+   "note": "renamed to Open-Source Interoperability confirmed: identical first sentence, same Government vs. Big Tech sub-section.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-344": {
+   "decision": "confirm",
+   "note": "same confirmed: Darknets and Dark Web are a wording variant; near-identical first sentence.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-345": {
+   "decision": "confirm",
+   "note": "faded confirmed: RaaS key insight (2022 text layer) is cloud robotics platforms for testing, simulation and code sharing; the nearest later trend, 2024 Robot Compiling and Training (simulation training), continues the sibling Robot Compilers via 2023 Robot Compiling, so the sibling rule excludes it.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-347": {
+   "decision": "confirm",
+   "note": "renamed to Swarm Efficiency confirmed: both open on autonomous robot swarms working together.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-350": {
+   "decision": "confirm",
+   "note": "renamed to Getting a Grip confirmed: 2023 quote is about soft robotics grasping; 2024 Soft Robotics/Getting a Grip confirms the lineage.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-351": {
+   "decision": "confirm",
+   "note": "faded confirmed: no smart dust/MEMS trend in 2023 or 2024; Shrinking Down Robots trends are small robots.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-354": {
+   "decision": "contest",
+   "note": "2022 text: pandemic robots became essential workers (hospital sanitising, deliveries) and firms hired 37% more robots to fill repetitive jobs. 2023 Elevating Human Contributions (2023-394; robots across warehouses and hospital cleaning) and Accelerated Adoption (2023-391; cobots replacing scarce workers) are both close. The faded verdict rests on Cobots taking 394, but pass-3 checkers split on Cobots (A 394, B 391) and pass 2 adjudicated this row renamed to 394. Without the 2023 Mobility text, no verdict is supported.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-355": {
+   "decision": "confirm",
+   "note": "faded confirmed: no robot rights or robot treatment trend in 2023 or 2024.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-356": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2022 key insight is the fragility itself; in 2023 \"Global Supply Chain Disruptions\" is a sub-heading and the trends under it and under Resiliency Through Diversification are specific responses (viral demand, smart ports, nearshoring), not the same claim.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-357": {
+   "decision": "confirm",
+   "note": "renamed to Technology-Assisted Supply Chain Transparency confirmed: 2022 text is provenance tracking driven by consumer demand for transparency; 2023 trend is consumer-driven supply chain transparency via technology. 2023 Digital Passports is a weaker alternative.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-460": {
+   "decision": "confirm",
+   "note": "renamed to Minimal Viable Lifeforms confirmed: both are the minimal synthetic cell (Venter) line of research.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-462": {
+   "decision": "confirm",
+   "note": "faded confirmed: no virus synthesis trend in 2023 or 2024; 2024 Reviving Ancient Viruses (permafrost) and Using Viruses to Deliver DNA are different claims.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-509": {
+   "decision": "confirm",
+   "note": "faded confirmed: no agricultural big-data trend in 2023 or 2024 (2024 Crops is AI yield prediction under climate monitoring, a different claim).",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-518": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2023 Acellular Meat Production (precision-fermented, non-cellular) is a different technology from hybrid cultured-plus-plant meat; Cultured Proteins continues the sibling Cultured Meat.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-519": {
+   "decision": "confirm",
+   "note": "faded confirmed: no insect-protein trend in 2023 or 2024; 2023 Indoor Farms mentions insects but continues 2022 Indoor Farms by subject.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-565": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2022 text is FAA licensing of commercial astronauts; no certification trend in 2023 or 2024.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-568": {
+   "decision": "confirm",
+   "note": "renamed to Easier Transportation to Space confirmed: rideshare launches (2022 text: buying Falcon 9 payload space, orbital transfer vehicles) are a cheaper way to get cargo to space, the 2023 claim. 2023 Space Opens Up to Smaller Private Companies is a weaker alternative; 2023 Space text not available locally.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-569": {
+   "decision": "confirm",
+   "note": "renamed to Off-Planet Resource Production confirmed: 2022 Space Mining argues mining is needed for colonisation; 2023/2024 Off-Planet Resource Production is in-situ resource use for colonies (2024 text). Note: 2024 also lists Mining (2024-626, \"space mining is the process of extracting...\"), unclaimed, a closer label; either match counts as continued.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-570": {
+   "decision": "confirm",
+   "note": "renamed to New Countries Develop Space Mission Capabilities confirmed: 72 space agencies, UAE and China missions vs new countries gaining mission capability.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-571": {
+   "decision": "confirm",
+   "note": "renamed to Geopolitical Tensions in Space confirmed: Earth tensions following nations to space; 2023 opens on space blocs.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-572": {
+   "decision": "confirm",
+   "note": "renamed to Space-Based Defense confirmed: national space forces vs national defence of space interests.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-573": {
+   "decision": "confirm",
+   "note": "faded confirmed: no China space trend in 2023 or 2024; Geopolitical Tensions in Space continues the sibling Geopolitics.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-579": {
+   "decision": "confirm",
+   "note": "renamed to James Webb Space Telescope Discoveries confirmed: 2022 Space Imaging is about JWST.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-580": {
+   "decision": "confirm",
+   "note": "renamed to The Satellite Boom confirmed: rising satellite counts from megaconstellations (Starlink, Kuiper) vs sevenfold growth in satellites (2024 text).",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-581": {
+   "decision": "confirm",
+   "note": "renamed to Deorbiting Debris confirmed: steering decommissioned satellites back to Earth (2022 text) is deorbiting. Sibling Space Sustainability Initiatives now resolves to 2024-632 in pass 3, so 2024-633 is free.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-582": {
+   "decision": "confirm",
+   "note": "renamed to Maintenance Missions: Satellite Servicing confirmed: orbital refuelling (Orbit Fab RAFTI) is on-orbit servicing, one step broader.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-583": {
+   "decision": "confirm",
+   "note": "renamed to Developing Space Habitats confirmed: 2022 text covers colonisation and NASA deep-space habitat prototypes.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-584": {
+   "decision": "contest",
+   "note": "Checkers judged by label only (no quote captured). The 2022 text layer (p.642) shows the trend: humanity needs a plan B, so a 1,000-year mission to Proxima b. 2023 Space Arks (2023-565, unclaimed) opens with 'Humanity doesn't have a backup', the same premise. Whether Space Arks means generation ships (renamed) or a lunar gene bank (faded) needs the 2023 Space page, which is not available locally.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-585": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2022 text is new exploration modes (Ingenuity, Dragonfly rotorcraft, ocean micro-swimmers). 2024 The Search for Nearby Life (Europa Clipper, JUICE, EELS) is about the search for life, not aerial/oceanic exploration; same broad field only.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-586": {
+   "decision": "confirm",
+   "note": "faded confirmed: 2022 text is food for Mars missions (Deep Space Food Challenge, Budweiser, Heinz); 2023 Space-Based Farming continues the sibling 2022-520 by subject; nothing else on space food.",
+   "at": "2026-10-02T17:30:00+00:00"
+  },
+  "ftsg-tech-trends-2022-587": {
+   "decision": "confirm",
+   "note": "faded confirmed: no Overview Effect trend in 2023 or 2024.",
+   "at": "2026-10-02T17:30:00+00:00"
+  }
+ }
+}
