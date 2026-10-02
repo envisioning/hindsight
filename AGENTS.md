@@ -15,6 +15,8 @@ pnpm export       data/normalized + final verdicts + numeric grades + validation
 node scripts/agreement-d16.mjs <source>    grader A + grader B -> agreement-d16.json (kappa, consensus, contested)
 node scripts/audit-sample.mjs <source>     agreement -> fixed-seed D11 sample in audit-d11.json (--check to verify)
 node scripts/final-d20.mjs <source>        agreed + adjudicated + audited -> final-d20.json (D20)
+node scripts/measure-audit-sample.mjs <source>   D32/D34 measures -> fixed-seed D11 sample in audit-d32.json / audit-d34.json (--check to verify)
+node scripts/scenario-coverage-d34.mjs     D34 coverage-d34.json for Shell, IPCC (with the matching audit) and NIC; D11 applied
 scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
 ```
 

@@ -1,22 +1,36 @@
 {
  "rule": "D34",
- "note": "Pathway coverage: is the observed value inside the edition's scenario range for that metric and year? Covered share is a property of the set, never a hit rate. Arithmetic, as D19.",
+ "note": "Pathway coverage: is the observed value inside the edition's scenario range for that metric and year? Covered share is a property of the set, never a hit rate. The comparison is arithmetic (as D19); the matching (observed series, definition, edition) is a judgment made once in code, so it has a D11 matching audit like the numeric sources (D19, #53). D11: a share only from 20 graded values, with its Wilson 95% interval; the audit-adjusted interval widens it by the residual audit error rate (D28).",
  "counts": {
-  "covered": 11,
-  "partly_covered": 7,
+  "covered": 9,
+  "partly_covered": 1,
   "not_covered": 0,
-  "no_observed": 7,
+  "no_observed": 6,
+  "excluded": 9,
   "unmapped_claims": 4
  },
- "coverage_share": 0.6111,
+ "coverage_share": null,
+ "wilson95": null,
+ "audit_adjusted95": null,
+ "rate_withheld": "D11: 10 graded values, fewer than 20; counts only.",
+ "audit": {
+  "rule": "D11 matching audit (D19, D20), as data/graded/audit (#53)",
+  "seed": "d11:ipcc-pathways:d34",
+  "sample": 18,
+  "of_graded": 18,
+  "audited": 18,
+  "confirmed": 10,
+  "corrected": 8,
+  "contested": 0,
+  "error_rate": 0.444,
+  "fixed_in_code": 8,
+  "residual_errors": 0,
+  "residual_error_rate": 0,
+  "pending_recheck": 0
+ },
  "by_edition": {
-  "1992": {
-   "covered": 0,
-   "partly_covered": 6,
-   "not_covered": 0
-  },
   "2000": {
-   "covered": 6,
+   "covered": 4,
    "partly_covered": 0,
    "not_covered": 0
   },
@@ -44,19 +58,15 @@
      "value": 372
     }
    ],
-   "range": [
-    372,
-    372
-   ],
-   "scenarios": 1,
-   "observed": 368.96,
-   "observed_series": "noaa",
-   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0082,
-   "closest_scenario": "IS92a",
-   "closest_id": "ipcc-pathways-1992-017"
+   "verdict": null,
+   "status": "excluded",
+   "note": "every scenario value here was first printed after the edition (IPCC restatement); not the edition's scenario (D19: not public at the time)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 368.96,
+    "observed_series": "noaa"
+   }
   },
   {
    "edition": "1992",
@@ -70,19 +80,15 @@
      "value": 393
     }
    ],
-   "range": [
-    393,
-    393
-   ],
-   "scenarios": 1,
-   "observed": 388.75,
-   "observed_series": "noaa",
-   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0108,
-   "closest_scenario": "IS92a",
-   "closest_id": "ipcc-pathways-1992-018"
+   "verdict": null,
+   "status": "excluded",
+   "note": "every scenario value here was first printed after the edition (IPCC restatement); not the edition's scenario (D19: not public at the time)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 388.75,
+    "observed_series": "noaa"
+   }
   },
   {
    "edition": "1992",
@@ -96,19 +102,15 @@
      "value": 418
     }
    ],
-   "range": [
-    418,
-    418
-   ],
-   "scenarios": 1,
-   "observed": 412.44,
-   "observed_series": "noaa",
-   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0133,
-   "closest_scenario": "IS92a",
-   "closest_id": "ipcc-pathways-1992-019"
+   "verdict": null,
+   "status": "excluded",
+   "note": "every scenario value here was first printed after the edition (IPCC restatement); not the edition's scenario (D19: not public at the time)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 412.44,
+    "observed_series": "noaa"
+   }
   },
   {
    "edition": "1992",
@@ -122,19 +124,15 @@
      "value": 8.68
     }
    ],
-   "range": [
-    8.68,
-    8.68
-   ],
-   "scenarios": 1,
-   "observed": 9.0933,
-   "observed_series": "gcb",
-   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0476,
-   "closest_scenario": "IS92a",
-   "closest_id": "ipcc-pathways-1992-015"
+   "verdict": null,
+   "status": "excluded",
+   "note": "every scenario value here was first printed after the edition (IPCC restatement); not the edition's scenario (D19: not public at the time)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 9.0933,
+    "observed_series": "gcb"
+   }
   },
   {
    "edition": "1992",
@@ -148,19 +146,15 @@
      "value": 10.26
     }
    ],
-   "range": [
-    10.26,
-    10.26
-   ],
-   "scenarios": 1,
-   "observed": 9.5956,
-   "observed_series": "gcb",
-   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0648,
-   "closest_scenario": "IS92a",
-   "closest_id": "ipcc-pathways-1992-016"
+   "verdict": null,
+   "status": "excluded",
+   "note": "every scenario value here was first printed after the edition (IPCC restatement); not the edition's scenario (D19: not public at the time)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 9.5956,
+    "observed_series": "gcb"
+   }
   },
   {
    "edition": "1992",
@@ -174,19 +168,15 @@
      "value": 8.4
     }
    ],
-   "range": [
-    8.4,
-    8.4
-   ],
-   "scenarios": 1,
-   "observed": 8.6401,
-   "observed_series": "gcb",
-   "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0286,
-   "closest_scenario": "IS92a",
-   "closest_id": "ipcc-pathways-1992-009"
+   "verdict": null,
+   "status": "excluded",
+   "note": "one scenario value: not the set's range (the other scenarios of the set are not printed for this year)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 8.6401,
+    "observed_series": "gcb"
+   }
   },
   {
    "edition": "1992",
@@ -201,8 +191,8 @@
     }
    ],
    "verdict": null,
-   "status": "no_observed",
-   "note": "no observed value on this definition for this year"
+   "status": "excluded",
+   "note": "one scenario value: not the set's range (the other scenarios of the set are not printed for this year)"
   },
   {
    "edition": "2000",
@@ -323,19 +313,15 @@
      "value": 388
     }
    ],
-   "range": [
-    388,
-    391
-   ],
-   "scenarios": 6,
-   "observed": 388.75,
-   "observed_series": "noaa",
-   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
-   "verdict": "covered",
-   "status": "graded",
-   "gap_outside_range": 0,
-   "closest_scenario": "A1FI",
-   "closest_id": "ipcc-pathways-2000-025"
+   "verdict": null,
+   "status": "excluded",
+   "note": "every scenario value here was first printed after the edition (IPCC restatement); not the edition's scenario (D19: not public at the time)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "covered",
+    "observed": 388.75,
+    "observed_series": "noaa"
+   }
   },
   {
    "edition": "2000",
@@ -374,19 +360,15 @@
      "value": 408
     }
    ],
-   "range": [
-    408,
-    420
-   ],
-   "scenarios": 6,
-   "observed": 412.44,
-   "observed_series": "noaa",
-   "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
-   "verdict": "covered",
-   "status": "graded",
-   "gap_outside_range": 0,
-   "closest_scenario": "A1T",
-   "closest_id": "ipcc-pathways-2000-039"
+   "verdict": null,
+   "status": "excluded",
+   "note": "every scenario value here was first printed after the edition (IPCC restatement); not the edition's scenario (D19: not public at the time)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "covered",
+    "observed": 412.44,
+    "observed_series": "noaa"
+   }
   },
   {
    "edition": "2000",
@@ -434,10 +416,10 @@
    "observed_series": "gcb",
    "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "A1FI",
    "closest_id": "ipcc-pathways-2000-016",
+   "status": "graded",
    "note": "SRES fossil CO2 includes cement; GCB fossil and industrial, gross of the carbonation sink."
   },
   {
@@ -486,10 +468,10 @@
    "observed_series": "gcb",
    "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "A1T",
    "closest_id": "ipcc-pathways-2000-030",
+   "status": "graded",
    "note": "SRES fossil CO2 includes cement; GCB fossil and industrial, gross of the carbonation sink."
   },
   {
@@ -538,10 +520,10 @@
    "observed_series": "gcb",
    "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "A1B",
    "closest_id": "ipcc-pathways-2000-006",
+   "status": "graded",
    "note": "Land-use CO2 in the scenarios comes from integrated assessment models, in GCB from bookkeeping models."
   },
   {
@@ -590,10 +572,10 @@
    "observed_series": "gcb",
    "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "B1",
    "closest_id": "ipcc-pathways-2000-059",
+   "status": "graded",
    "note": "Land-use CO2 in the scenarios comes from integrated assessment models, in GCB from bookkeeping models."
   },
   {
@@ -725,10 +707,10 @@
    "observed_series": "noaa",
    "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "RCP6.0",
-   "closest_id": "ipcc-pathways-2013-046"
+   "closest_id": "ipcc-pathways-2013-046",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -766,10 +748,10 @@
    "observed_series": "noaa",
    "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "RCP2.6",
-   "closest_id": "ipcc-pathways-2013-015"
+   "closest_id": "ipcc-pathways-2013-015",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -807,10 +789,10 @@
    "observed_series": "noaa",
    "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "RCP4.5",
-   "closest_id": "ipcc-pathways-2013-032"
+   "closest_id": "ipcc-pathways-2013-032",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -848,10 +830,10 @@
    "observed_series": "gcb",
    "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "RCP4.5",
-   "closest_id": "ipcc-pathways-2013-020"
+   "closest_id": "ipcc-pathways-2013-020",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -889,10 +871,10 @@
    "observed_series": "gcb",
    "observed_vintage": "Global Carbon Budget 2025 (Friedlingstein et al. 2025), Global_Carbon_Budget_2025 workbook as served by globalcarbonbudget.org (file modified 2025-11-05), data to 2024",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "RCP4.5",
-   "closest_id": "ipcc-pathways-2013-021"
+   "closest_id": "ipcc-pathways-2013-021",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -966,10 +948,10 @@
    "observed_series": "noaa",
    "observed_vintage": "NOAA GML co2_annmean_gl.txt, file creation Sat Sep  5 03:55:32 2026",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0021,
    "closest_scenario": "SSP1-1.9",
-   "closest_id": "ipcc-pathways-2021-008"
+   "closest_id": "ipcc-pathways-2021-008",
+   "status": "graded"
   }
  ]
 }

@@ -1,0 +1,1097 @@
+{
+ "rule": "D11 audit of D32 event matches (D20)",
+ "checks": "event meets a D32 criterion (UCDP-first death tally, GDP effect, or IMF/World Bank review); match to the WEF risk; that risk's rank in the January edition of the event year; the verdict under D32.",
+ "auditor": "agent (D20)",
+ "seed": "d11:wef-global-risks:d32",
+ "of": 85,
+ "sample": [
+  "2007|Food and energy price surge (oil, grains)",
+  "2007|US subprime mortgage crisis and global financial turmoil (from August 2007)",
+  "2008|Global financial crisis (Lehman collapse, banking panic)",
+  "2008|Oil and food price spike to mid-2008, then collapse",
+  "2009|Great Recession: global output contraction and collapse in world trade",
+  "2009|H1N1 influenza pandemic",
+  "2009|Sri Lankan civil war, final offensive against the LTTE",
+  "2010|Food and commodity price surge (2010-11)",
+  "2011|Tohoku earthquake and tsunami and Fukushima nuclear accident (Japan)",
+  "2012|Syrian civil war",
+  "2012|US fiscal cliff standoff",
+  "2013|Fed taper tantrum and emerging market capital outflows",
+  "2014|Islamic State offensive and war in Iraq",
+  "2014|Syrian civil war",
+  "2015|China slowdown, stock market crash and renminbi devaluation",
+  "2015|War against Islamic State in Iraq",
+  "2015|War in Afghanistan",
+  "2016|Syrian civil war",
+  "2016|UK Brexit referendum and policy uncertainty",
+  "2016|War in Afghanistan",
+  "2017|Syrian civil war",
+  "2017|War in Iraq against ISIS (Mosul)",
+  "2018|US-China trade war (tariff escalation)",
+  "2018|War in Afghanistan",
+  "2019|Syrian civil war",
+  "2019|US-China trade war and global manufacturing and trade slowdown",
+  "2019|War in Afghanistan",
+  "2020|COVID-19 pandemic and global recession",
+  "2020|Mexican drug war (cartel conflicts)",
+  "2020|Tigray war, Ethiopia (from November 2020)",
+  "2020|War in Afghanistan",
+  "2021|Mexican drug war (cartel conflicts)",
+  "2021|Post-pandemic supply-chain disruptions, energy price surge and inflation spike",
+  "2021|Tigray war (Ethiopia, Eritrea)",
+  "2021|Yemeni civil war and Saudi-led intervention",
+  "2022|COVID-19 pandemic",
+  "2022|Energy and food price shock (European gas crisis, grain disruption)",
+  "2022|Ethiopian civil war (Tigray war, final offensive)",
+  "2022|Global inflation surge and synchronized monetary tightening",
+  "2022|Mexican drug war (cartel conflicts)",
+  "2022|Somalia drought (Horn of Africa drought)",
+  "2023|COVID-19 pandemic (late phase)",
+  "2023|Mexican drug war (cartel conflicts)",
+  "2023|Russia-Ukraine war",
+  "2023|Sudan civil war (SAF vs RSF, from April 2023)",
+  "2024|European summer heatwaves 2024",
+  "2024|Russia-Ukraine war (incl. Kursk incursion)",
+  "2025|Middle East wars (Gaza, Israel-Iran war of June 2025, Lebanon)",
+  "2025|Sudan civil war and famine (incl. fall of El Fasher)",
+  "2025|US tariff escalation and global trade tensions"
+ ],
+ "method": "Population: the 85 events both blind matchers agreed on (summary-d32.json, status agreed). Draw: scripts/measure-audit-sample.mjs (the drawSample of scripts/audit-sample.mjs without the miss weight), seed d11:wef-global-risks:d32, 50 of 85, stratified by verdict (16 ranked_high, 32 ranked_low, 2 absent). Per event: the D32 criterion and tally (conflict deaths re-read from the UCDP GED series on Our World in Data; other tallies from the cited study or review), the match to the WEF risk, and that risk's rank in the edition PDF (Wayback copies). In summary-d32.json a correct replaces the verdict and a contest removes it, as scripts/final-d20.mjs does for D20 sources.",
+ "records": {
+  "2007|Food and energy price surge (oil, grains)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Oil price shock"
+   },
+   "note": "Review criterion met: WEO Apr 2008: headline inflation 'boosted by the continuing buoyancy of food and energy prices'; 'Commodity markets have continued to boom'. Match Oil price shock (likelihood #3; impact #5) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2007",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Oil price shock: likelihood #3; impact #5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2007|US subprime mortgage crisis and global financial turmoil (from August 2007)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Asset price collapse (\"Blow up in asset prices/excessive indebtedness\")"
+   },
+   "note": "Review criterion met: WEO Apr 2008 exec summary: 'The financial shock that erupted in August 2007, as the U.S. subprime mortgage market was derailed by the reversal of the housing boom, has sp .... Match Asset price collapse (\"Blow up in asset prices/excessive indebtedness\") (likelihood #5; impact #1) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2007",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Asset price collapse (\"Blow up in asset prices/excessive indebtedness\"): likelihood #5; impact #1"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2008|Global financial crisis (Lehman collapse, banking panic)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Asset price collapse"
+   },
+   "note": "Review criterion met: WEO Apr 2009: global economy 'in a severe recession inflicted by a massive financial crisis'; advanced economies' real GDP fell an annualized 7.5% in 2008Q4; world output .... Match Asset price collapse (likelihood #1; impact #1) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2008",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Asset price collapse: likelihood #1; impact #1"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2008|Oil and food price spike to mid-2008, then collapse": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Oil and gas price spike"
+   },
+   "note": "Review criterion met: WEO Apr 2009: 'Commodity prices fell sharply from midyear highs, causing an especially large loss of income' for commodity exporters. Match Oil and gas price spike (likelihood #4; impact #4) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2008",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Oil and gas price spike: likelihood #4; impact #4"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2009|Great Recession: global output contraction and collapse in world trade": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Asset price collapse"
+   },
+   "note": "Review criterion met: WEO Apr 2010: world output rose 'about 4¼ percent [in 2010], following a ½ percent contraction in 2009'; WEO Apr 2009: 'The global economy is in a severe recession inflic .... Match Asset price collapse (likelihood #1; impact #1) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2009",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Asset price collapse: likelihood #1; impact #1"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2009|H1N1 influenza pandemic": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Pandemic"
+   },
+   "note": "Death criterion met from the non-conflict tally D32 allows: 18,449 lab-confirmed deaths. Match Pandemic (risk #29 in the 36-risk landscape; not in top 5) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2009",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Pandemic: risk #29 in the 36-risk landscape; not in top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2009|Sri Lankan civil war, final offensive against the LTTE": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "absent",
+    "wef_label": "none"
+   },
+   "note": "UCDP best estimate 10,413 in 2009 (OWID UCDP GED, geolocated, re-read) >= 10,000. GRR 2009 Figure 1 key lists 36 risks; the geopolitical ones (11-19) are international terrorism, collapse of the NPT, US/Iran, US/DPRK, Afghanistan instability, transnational crime, Israel-Palestine, violence in Iraq, global governance gaps. No civil-war or failed-state risk, so absent.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2009",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: none: -"
+    },
+    {
+     "url": "https://web.archive.org/web/2020id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2009.pdf",
+     "title": "Global Risks 2009",
+     "date": "2009-01",
+     "shows": "Figure 1 key: 36 risks; geopolitical 11-19 are named theatres, terrorism, NPT, crime and governance gaps; no civil war or failed states"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "Sri Lanka 2009: 10,413"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2010|Food and commodity price surge (2010-11)": {
+   "decision": "contest",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Oil price spikes"
+   },
+   "error_type": "match",
+   "note": "Two faithful readings give different verdicts. The event is a food and commodity surge, and its review evidence (WEO April 2011) leads with food prices. Read as food, it matches Food price volatility, on the 2010 landscape but not top 5 (ranked_low). Read with its oil leg, it matches Oil price spikes, 2010 impact #3 (ranked_high); oil's main rise came in early 2011. The matchers took the oil leg without showing it dominates. No verdict publishes for this event (D20).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2010",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Oil price spikes: impact #3"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2011|Tohoku earthquake and tsunami and Fukushima nuclear accident (Japan)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Earthquakes and volcanic eruptions"
+   },
+   "note": "Death criterion met from the non-conflict tally D32 allows: about 15,900 confirmed dead plus about 2,500 missing. Match Earthquakes and volcanic eruptions (in the 37-risk landscape, not in top 5) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2011",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Earthquakes and volcanic eruptions: in the 37-risk landscape, not in top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2012|Syrian civil war": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Critical fragile states"
+   },
+   "note": "UCDP best estimate 53,690 in 2012 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Critical fragile states (in the 50-risk landscape, not in top 5) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2012",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Critical fragile states: in the 50-risk landscape, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2012: 53,690"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2012|US fiscal cliff standoff": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Chronic fiscal imbalances"
+   },
+   "error_type": "event_criterion",
+   "corrected": {
+    "verdict": "not_a_major_event"
+   },
+   "note": "Ranking confirmed (Chronic fiscal imbalances, 2012 likelihood #2, impact #4), but the event fails D32. It has no death or GDP criterion, and the review criterion needs a shock or main downside development. WEO April 2013 ch.1 says policymakers 'successfully defused' the threat and 'U.S. policymakers avoided the fiscal cliff': a threat that did not happen, not a shock of 2012. One builder only. The event drops out.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2012",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Chronic fiscal imbalances: likelihood #2; impact #4"
+    },
+    {
+     "url": "https://web.archive.org/web/2014id_/http://www.imf.org/external/pubs/ft/weo/2013/01/pdf/text.pdf",
+     "title": "IMF World Economic Outlook, April 2013, chapter 1",
+     "date": "2013-04",
+     "shows": "Policymakers 'successfully defused' the threat of a plunge off the fiscal cliff; 'U.S. policymakers avoided the fiscal cliff'"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2013|Fed taper tantrum and emerging market capital outflows": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Recurring liquidity crises"
+   },
+   "note": "Review criterion met: WEO Apr 2014: 'Activity in many emerging market economies has disappointed in a less favorable external financial environment'; longer-term rates rose 'since May 2013, wh .... Match Recurring liquidity crises (in the 50-risk landscape, not in top 5) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2013",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Recurring liquidity crises: in the 50-risk landscape, not in top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2014|Islamic State offensive and war in Iraq": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Political collapse of a nation of geopolitical importance"
+   },
+   "note": "UCDP best estimate 16,437 in 2014 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Political collapse of a nation of geopolitical importance (in the 31-risk set, not in top 5) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2014",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Political collapse of a nation of geopolitical importance: in the 31-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2014: 16,437"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2014|Syrian civil war": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Political collapse of a nation of geopolitical importance"
+   },
+   "note": "UCDP best estimate 78,627 in 2014 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Political collapse of a nation of geopolitical importance (in the 31-risk set, not in top 5) confirmed in GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_GlobalRisks_Report_2014.pdf",
+     "title": "Global Risks 2014",
+     "date": "2014",
+     "shows": "GRR 2014 Table 1.3 (p17) and GRR 2020 Figure I, top 5 by likelihood and impact: Political collapse of a nation of geopolitical importance: in the 31-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2014: 78,627"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2015|China slowdown, stock market crash and renminbi devaluation": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Asset bubble in a major economy"
+   },
+   "note": "Review criterion met: WEO Apr 2016: 'concerns about the global impact of the unwinding of prior excesses in China's economy'; major realignments include 'the slowdown and rebalancing in China'. Match Asset bubble in a major economy (in the 28-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2015",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): Asset bubble in a major economy: in the 28-risk set, not in top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2015|War against Islamic State in Iraq": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.)"
+   },
+   "note": "UCDP best estimate 11,300 in 2015 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.) (likelihood #4) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2015",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.): likelihood #4"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2015: 11,300"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2015|War in Afghanistan": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.)"
+   },
+   "note": "UCDP best estimate 18,016 in 2015 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.) (likelihood #4) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2015",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.): likelihood #4"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2015: 18,016"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2016|Syrian civil war": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.)"
+   },
+   "note": "UCDP best estimate 53,851 in 2016 (OWID UCDP GED, re-read) >= 10,000. Matched to State collapse or crisis (civil conflict), not in the 2016 top 5 (GRR 2020 Figure I). Interstate conflict, 2016 likelihood #4, is a dispute between states; the war was internationalised but remains a civil war in UCDP and in the event's own description. ranked_low holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2016",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.): in the 29-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "Syria 2016: 53,851"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2016|UK Brexit referendum and policy uncertainty": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "absent",
+    "wef_label": "none"
+   },
+   "note": "Review criterion met, narrowly: the GEP January 2017 executive summary names heightened policy uncertainty as a defining feature of 2016, and its chapter 1 names the Brexit decision as a source of it (WEO April 2017 calls UK spending resilient, so the GEP carries the criterion). Absent confirmed: none of the 29 risks of 2016 covers a member leaving a regional bloc; Failure of regional or global governance is a loose link only.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2016",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): none: -"
+    },
+    {
+     "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/83336e68-2b7f-569a-bf4d-23d83aa04966/content",
+     "title": "World Bank, Global Economic Prospects, January 2017",
+     "date": "2017-01",
+     "shows": "Ch.1: the 2016 advanced-economy slowdown 'reflected renewed policy uncertainties'; uncertainty associated with the UK's decision to leave the EU (Brexit)"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2016|War in Afghanistan": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.)"
+   },
+   "note": "UCDP best estimate 18,991 in 2016 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.) (in the 29-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2016",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis (e.g. civil conflict, military coup, failed states, etc.): in the 29-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2016: 18,991"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2017|Syrian civil war": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis"
+   },
+   "note": "UCDP best estimate 38,472 in 2017 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2017",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis: in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2017: 38,472"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2017|War in Iraq against ISIS (Mosul)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis"
+   },
+   "note": "UCDP best estimate 11,437 in 2017 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2017",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis: in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2017: 11,437"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2018|US-China trade war (tariff escalation)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Interstate conflict with regional consequences"
+   },
+   "note": "Review criterion met: WEO Apr 2019 ch.1: expansion decelerated in H2 2018 'amid an increase in trade tensions and tariff hikes between the United States and China'. Match Interstate conflict with regional consequences (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2018",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): Interstate conflict with regional consequences: in the 30-risk set, not in top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2018|War in Afghanistan": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis"
+   },
+   "note": "UCDP best estimate 26,849 in 2018 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2018",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis: in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2018: 26,849"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2019|Syrian civil war": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis"
+   },
+   "note": "UCDP best estimate 11,168 in 2019 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2019",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis: in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2019: 11,168"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2019|US-China trade war and global manufacturing and trade slowdown": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Interstate conflict with regional consequences"
+   },
+   "note": "Review criterion met: IMF WEO Oct 2019: US-China trade tensions to cumulatively reduce the level of global GDP by 0.8% by 2020. GEP Jan 2020: 'Global growth decelerated markedly in 2019 ... a  .... Match Interstate conflict with regional consequences (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2019",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): Interstate conflict with regional consequences: in the 30-risk set, not in top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2019|War in Afghanistan": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis"
+   },
+   "note": "UCDP best estimate 30,434 in 2019 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2019",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis: in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2019: 30,434"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2020|COVID-19 pandemic and global recession": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Infectious diseases (Rapid and massive spread of infectious diseases)"
+   },
+   "note": "Death criterion met from the non-conflict tally D32 allows: 1,897,533 deaths reported to WHO in 2020. Match Infectious diseases (Rapid and massive spread of infectious diseases) (in the 30-risk landscape, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2020",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): Infectious diseases (Rapid and massive spread of infectious diseases): in the 30-risk landscape, not in top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2020|Mexican drug war (cartel conflicts)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Illicit trade (incl. organized crime)"
+   },
+   "note": "UCDP best estimate 13,326 in 2020 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Illicit trade (incl. organized crime) (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2020",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): Illicit trade (incl. organized crime): in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2020: 13,326"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2020|Tigray war, Ethiopia (from November 2020)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis"
+   },
+   "note": "UCDP best estimate 24,419 in 2020 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2020",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis: in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2020: 24,419"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2020|War in Afghanistan": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or crisis"
+   },
+   "note": "UCDP best estimate 20,836 in 2020 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or crisis (in the 30-risk set, not in top 5) confirmed in GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_Global_Risk_Report_2020.pdf",
+     "title": "Global Risks Report 2020",
+     "date": "2020",
+     "shows": "GRR 2020 Figure I (2007-2020 top 5 by likelihood and impact; GRR 2021 Figure IV identical): State collapse or crisis: in the 30-risk set, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2020: 20,836"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2021|Mexican drug war (cartel conflicts)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Illicit economic activity"
+   },
+   "note": "UCDP best estimate 15,022 in 2021 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Illicit economic activity (in the 35-risk landscape, not in top 5) confirmed in GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2021.pdf",
+     "title": "Global Risks Report 2021",
+     "date": "2021",
+     "shows": "GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): Illicit economic activity: in the 35-risk landscape, not in top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2021: 15,022"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2021|Post-pandemic supply-chain disruptions, energy price surge and inflation spike": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Price instability; Commodity shocks"
+   },
+   "note": "Review criterion met: WEO Jan 2022: 'Rising energy prices and supply disruptions have resulted in higher and more broad-based inflation than anticipated'. Match Price instability; Commodity shocks (horizon 3-5 years #3 and #4; not in likelihood/impact top 5) confirmed in GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2021.pdf",
+     "title": "Global Risks Report 2021",
+     "date": "2021",
+     "shows": "GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): Price instability; Commodity shocks: horizon 3-5 years #3 and #4; not in likelihood/impact top 5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2021|Tigray war (Ethiopia, Eritrea)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse"
+   },
+   "note": "UCDP best estimate 129,481 in 2021 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse (horizon 5-10 years #2; not in likelihood/impact top 5) confirmed in GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2021.pdf",
+     "title": "Global Risks Report 2021",
+     "date": "2021",
+     "shows": "GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): State collapse: horizon 5-10 years #2; not in likelihood/impact top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2021: 129,481"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2021|Yemeni civil war and Saudi-led intervention": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse"
+   },
+   "note": "UCDP best estimate 23,444 in 2021 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse (horizon 5-10 years #2; not in likelihood/impact top 5) confirmed in GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2021.pdf",
+     "title": "Global Risks Report 2021",
+     "date": "2021",
+     "shows": "GRR 2021 Figure IV (top 7 by likelihood and impact, top 5 used) and Figure I (horizon lists): State collapse: horizon 5-10 years #2; not in likelihood/impact top 5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2021: 23,444"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2022|COVID-19 pandemic": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Infectious diseases"
+   },
+   "note": "Death criterion met from the non-conflict tally D32 allows: 1,248,805 deaths reported to WHO in 2022. Match Infectious diseases (0-2 year #5) confirmed in GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2022.pdf",
+     "title": "Global Risks Report 2022",
+     "date": "2022",
+     "shows": "GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): Infectious diseases: 0-2 year #5"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2022|Energy and food price shock (European gas crisis, grain disruption)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Commodity shocks"
+   },
+   "note": "Review criterion met: WEO Apr 2022: costs of war spread 'through commodity markets'; 'Fuel and food price rises are already having a global impact'; WEO Apr 2023 notes food and energy prices ' .... Match Commodity shocks (#27 of 37 in Figure I; not in 0-2 year top 10) confirmed in GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2022.pdf",
+     "title": "Global Risks Report 2022",
+     "date": "2022",
+     "shows": "GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): Commodity shocks: #27 of 37 in Figure I; not in 0-2 year top 10"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2022|Ethiopian civil war (Tigray war, final offensive)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse"
+   },
+   "note": "UCDP best estimate 164,991 in 2022 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse (#30 of 37 in Figure I; not in 0-2 year top 10) confirmed in GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2022.pdf",
+     "title": "Global Risks Report 2022",
+     "date": "2022",
+     "shows": "GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): State collapse: #30 of 37 in Figure I; not in 0-2 year top 10"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2022: 164,991"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2022|Global inflation surge and synchronized monetary tightening": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Price instability"
+   },
+   "note": "Review criterion met: WEO Apr 2023 exec summary: inflation 'stubbornly high'; 'fast rise in policy rates'; WEO Apr 2024: 'global inflation descended from its mid-2022 peak'. Match Price instability (#26 of 37 in Figure I; not in 0-2 year top 10) confirmed in GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2022.pdf",
+     "title": "Global Risks Report 2022",
+     "date": "2022",
+     "shows": "GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): Price instability: #26 of 37 in Figure I; not in 0-2 year top 10"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2022|Mexican drug war (cartel conflicts)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Illicit economic activity"
+   },
+   "note": "UCDP best estimate 12,507 in 2022 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Illicit economic activity (#33 of 37 in Figure I; not in 0-2 year top 10) confirmed in GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2022.pdf",
+     "title": "Global Risks Report 2022",
+     "date": "2022",
+     "shows": "GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): Illicit economic activity: #33 of 37 in Figure I; not in 0-2 year top 10"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2022: 12,507"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2022|Somalia drought (Horn of Africa drought)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Extreme weather"
+   },
+   "note": "About 43,000 excess deaths in 2022 (study for WHO, UNICEF and the Somali health ministry): death criterion met. GRR 2022 Figure II, 0-2 years #1 Extreme weather. Drought read as extreme weather (the 2022 definition lists events with 'etc.'); Natural resource crises is defined by overexploitation or mismanagement, which a rainfall failure is not. The least certain match in the sample; the verdict holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2022.pdf",
+     "title": "Global Risks Report 2022",
+     "date": "2022",
+     "shows": "GRR 2022 Figure II, 0-2 years top 10 (2022 has no likelihood or impact ranking): Extreme weather: 0-2 year #1"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2023|COVID-19 pandemic (late phase)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Infectious diseases"
+   },
+   "note": "Death criterion met from the non-conflict tally D32 allows: 318,570 deaths reported to WHO in 2023. Match Infectious diseases (2-year #20) confirmed in GRR 2023 Figure E, 2-year ranking by severity (32 risks): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2023.pdf",
+     "title": "Global Risks Report 2023",
+     "date": "2023",
+     "shows": "GRR 2023 Figure E, 2-year ranking by severity (32 risks): Infectious diseases: 2-year #20"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2023|Mexican drug war (cartel conflicts)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Proliferation of illicit economic activity"
+   },
+   "note": "UCDP best estimate 10,830 in 2023 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Proliferation of illicit economic activity (2-year #28) confirmed in GRR 2023 Figure E, 2-year ranking by severity (32 risks): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2023.pdf",
+     "title": "Global Risks Report 2023",
+     "date": "2023",
+     "shows": "GRR 2023 Figure E, 2-year ranking by severity (32 risks): Proliferation of illicit economic activity: 2-year #28"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2023: 10,830"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2023|Russia-Ukraine war": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "Interstate conflict"
+   },
+   "note": "UCDP best estimate 76,664 in 2023 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Interstate conflict (2-year #14) confirmed in GRR 2023 Figure E, 2-year ranking by severity (32 risks): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2023.pdf",
+     "title": "Global Risks Report 2023",
+     "date": "2023",
+     "shows": "GRR 2023 Figure E, 2-year ranking by severity (32 risks): Interstate conflict: 2-year #14"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2023: 76,664"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2023|Sudan civil war (SAF vs RSF, from April 2023)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_low",
+    "wef_label": "State collapse or severe instability"
+   },
+   "note": "UCDP best estimate 14,687 in 2023 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State collapse or severe instability (2-year #25) confirmed in GRR 2023 Figure E, 2-year ranking by severity (32 risks): listed, outside the ranking D32 counts as high, so ranked_low.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2023id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2023.pdf",
+     "title": "Global Risks Report 2023",
+     "date": "2023",
+     "shows": "GRR 2023 Figure E, 2-year ranking by severity (32 risks): State collapse or severe instability: 2-year #25"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2023: 14,687"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2024|European summer heatwaves 2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Extreme weather events"
+   },
+   "note": "Death criterion met from the non-conflict tally D32 allows: 62,775 heat-related deaths in Europe, summer 2024 (ISGlobal, Nature Medicine). Match Extreme weather events (2-year #2) confirmed in GRR 2024 Figure C, 2-year top 10 by severity: in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2024.pdf",
+     "title": "Global Risks Report 2024",
+     "date": "2024",
+     "shows": "GRR 2024 Figure C, 2-year top 10 by severity: Extreme weather events: 2-year #2"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2024|Russia-Ukraine war (incl. Kursk incursion)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Interstate armed conflict"
+   },
+   "note": "UCDP best estimate 102,364 in 2024 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match Interstate armed conflict (2-year #5) confirmed in GRR 2024 Figure C, 2-year top 10 by severity: in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2025id_/https://www3.weforum.org/docs/WEF_The_Global_Risks_Report_2024.pdf",
+     "title": "Global Risks Report 2024",
+     "date": "2024",
+     "shows": "GRR 2024 Figure C, 2-year top 10 by severity: Interstate armed conflict: 2-year #5"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2024: 102,364"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2025|Middle East wars (Gaza, Israel-Iran war of June 2025, Lebanon)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "State-based armed conflict"
+   },
+   "note": "UCDP best estimate 16,131 in 2025 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State-based armed conflict (2-year #3; current-year #1) confirmed in GRR 2025 Figure C (2-year top 10) and Figure B (current year): in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20251027152450id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2025.pdf",
+     "title": "Global Risks Report 2025",
+     "date": "2025",
+     "shows": "GRR 2025 Figure C (2-year top 10) and Figure B (current year): State-based armed conflict: 2-year #3; current-year #1"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2025: 16,131"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2025|Sudan civil war and famine (incl. fall of El Fasher)": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "State-based armed conflict"
+   },
+   "note": "UCDP best estimate 75,164 in 2025 (OWID UCDP GED, geolocated, re-read) >= 10,000. Match State-based armed conflict (2-year #3) confirmed in GRR 2025 Figure C (2-year top 10) and Figure B (current year): in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20251027152450id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2025.pdf",
+     "title": "Global Risks Report 2025",
+     "date": "2025",
+     "shows": "GRR 2025 Figure C (2-year top 10) and Figure B (current year): State-based armed conflict: 2-year #3"
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+     "title": "Our World in Data: deaths in armed conflicts by country (UCDP)",
+     "date": "accessed 2026-10-02",
+     "shows": "2025: 75,164"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  },
+  "2025|US tariff escalation and global trade tensions": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "ranked_high",
+    "wef_label": "Geoeconomic confrontation"
+   },
+   "note": "Review criterion met: WEO Apr 2025: forecasts 'revised markedly down' (2025 world growth 3.3% Jan to 2.8%, -0.5 pp) 'reflecting effective tariff rates at levels not seen in a century'; WEO Apr .... Match Geoeconomic confrontation (2-year #9; current-year #3) confirmed in GRR 2025 Figure C (2-year top 10) and Figure B (current year): in the ranking D32 counts as high, so ranked_high.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20251027152450id_/https://www3.weforum.org/docs/WEF_Global_Risks_Report_2025.pdf",
+     "title": "Global Risks Report 2025",
+     "date": "2025",
+     "shows": "GRR 2025 Figure C (2-year top 10) and Figure B (current year): Geoeconomic confrontation: 2-year #9; current-year #3"
+    }
+   ],
+   "at": "2026-10-02T15:00:00Z"
+  }
+ }
+}
