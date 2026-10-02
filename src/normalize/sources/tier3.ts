@@ -209,7 +209,10 @@ export function ftsgTechTrends(): Bundle {
     labels: techLabel,
     claim: (e, d, ed) => {
       const c = trendClaim(e, d, ed, "FTSG Tech Trends");
-      return e.years_on_list ? { ...c, note: joinNotes(c.note, `Printed: ${e.years_on_list} year on the list.`) } : c;
+      if (!e.years_on_list) return c;
+      // The tag goes first so the 400-character note limit never cuts it; some captures store the whole printed tag.
+      const tag = /year/i.test(String(e.years_on_list)) ? String(e.years_on_list).toLowerCase() : `${e.years_on_list} year on the list`;
+      return { ...c, note: joinNotes(`Printed: ${tag}.`, c.note) };
     },
   });
 }
