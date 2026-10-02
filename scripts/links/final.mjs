@@ -7,7 +7,7 @@
 // Append-only: a pair whose latest row already says the same thing gets no new row; a changed
 // relation or a newly rejected active link gets a new row (the old one is retracted by it).
 // A pair whose latest row has method `curated` is never touched.
-// Writes data/links/runs/<run>/final.json (counts, audit error rate) and appends to data/links/research.json.
+// Writes data/links/runs/<run>/final.json (counts, audit error rate, every decided pair) and appends to data/links/research.json.
 import path from "node:path";
 import { LinkAuditRecord, LinkVerdictFile, SubjectTechnologyLink } from "../../src/schema.ts";
 import { LINKS, exists, readJson, writeJson } from "./lib.mjs";
@@ -18,7 +18,7 @@ if (!run || !/^[a-z0-9-]+$/.test(run)) throw new Error("usage: final.mjs <run> [
 const dir = path.join(LINKS, "runs", run);
 const { candidates } = readJson(path.join(dir, "candidates.json"));
 const agreement = readJson(path.join(dir, "agreement.json"));
-if (!agreement.kappa_passes_d11) throw new Error(`${run}: kappa ${agreement.kappa} < 0.6`);
+if (!agreement.passes) throw new Error(`${run}: agreement gate failed (${agreement.gate})`);
 if (agreement.missing.length) throw new Error(`${run}: ${agreement.missing.length} candidates not judged by both verifiers`);
 const adjFile = path.join(dir, "adjudicated.json");
 const adj = exists(adjFile) ? LinkVerdictFile.parse(readJson(adjFile)) : null;
@@ -96,7 +96,8 @@ for (const { c, verdict, agent, reason } of decisions) {
 		research_slug: c.research_slug,
 		original_id: c.original_id,
 		relation: relation ?? prev.relation,
-		similarity: c.similarity,
+		// A titles-only run (D49) has no similarity; the row then omits it.
+		...(c.similarity === null || c.similarity === undefined ? {} : { similarity: c.similarity }),
 		method: `d48:${c.match}`,
 		agent,
 		status: wantActive ? "active" : "retracted",
@@ -128,8 +129,11 @@ const summary = {
 	rows_appended: added.length,
 	rows_unchanged: unchanged,
 	curated_kept: curatedKept,
+	/** Every decided pair of the run, link or not. A later run skips these ids (D49). */
+	decisions: decisions.map((d) => ({ id: d.c.id, verdict: d.verdict })),
 };
-console.log(JSON.stringify(summary, null, 1));
+const { decisions: _list, ...printed } = summary;
+console.log(JSON.stringify(printed, null, 1));
 if (!dry) {
 	writeJson(path.join(dir, "final.json"), summary);
 	writeJson(file, [...rows, ...added]);

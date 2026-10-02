@@ -15,7 +15,7 @@ const out = process.argv.includes("--out") ? process.argv[process.argv.indexOf("
 const check = process.argv.includes("--check");
 const dir = path.join(LINKS, "runs", run);
 const agreement = readJson(path.join(dir, "agreement.json"));
-if (!agreement.kappa_passes_d11) throw new Error(`${run}: kappa ${agreement.kappa} < 0.6; revise the verifier prompt (D11) before the audit`);
+if (!agreement.passes) throw new Error(`${run}: agreement gate failed (${agreement.gate}; kappa ${agreement.kappa}, agreement ${agreement.agreement}); revise the verifier prompt before the audit`);
 if (agreement.missing.length) throw new Error(`${run}: ${agreement.missing.length} candidates not judged by both verifiers`);
 const adjFile = path.join(dir, "adjudicated.json");
 const adjudicated = exists(adjFile) ? new Map(LinkVerdictFile.parse(readJson(adjFile)).verdicts.map((v) => [v.candidate_id, v])) : new Map();

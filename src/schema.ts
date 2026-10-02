@@ -260,7 +260,8 @@ export const LinkCandidate = z.object({
   technology_id: z.string().uuid(),
   research_slug: Id,
   original_id: Id,
-  similarity: z.number().min(-1).max(1),
+  /** Cosine of the two vectors; null in a titles-only run (D49), which uses no vectors. */
+  similarity: z.number().min(-1).max(1).nullable(),
   /** Rank of the technology among the subject's nearest technologies (1 = nearest), null outside the top 5. */
   subject_rank: z.number().int().min(1).nullable(),
   /** Rank of the subject among the technology's nearest subjects, null outside the top 3. */
