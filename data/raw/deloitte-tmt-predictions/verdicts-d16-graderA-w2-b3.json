@@ -1,0 +1,706 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2006-020",
+   "verdict": "hit",
+   "reading": "The 2006 FIFA World Cup would be the first major global sporting event produced and offered in high definition.",
+   "mainstream_test": "Event test: was the 2006 World Cup produced and broadcast in HD?",
+   "reason": "The 2006 World Cup was the first entirely filmed in HD, and HD channels (BBC HD, ITV HD, Premiere HD, SporTV) carried it.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup",
+     "title": "2006 FIFA World Cup - Wikipedia (Broadcasting)",
+     "date": "accessed 2026-10-02",
+     "shows": "'This was the first FIFA World Cup to be entirely filmed in high-definition'; broadcaster table lists HD carriers such as BBC HD, ITV HD and Premiere HD."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-021",
+   "verdict": "hit",
+   "reading": "The number of blogs worldwide would exceed about 60 million during 2006.",
+   "mainstream_test": "Quantitative (D10): blogs tracked worldwide by end-2006 vs 60 million; hit within 10%.",
+   "reason": "Technorati went from 35 million to 70 million blogs in about 320 days ending April 2007, putting the count near or above 60 million at end-2006 (within 10%). Its April 2007 report also gives about 120,000 new blogs a day, above the 100,000 sub-forecast.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2007/http://www.sifry.com/alerts/archives/000493.html",
+     "title": "Sifry's Alerts: The State of the Live Web, April 2007 (Technorati)",
+     "date": "2007-04-05",
+     "shows": "Technorati tracking over 70 million weblogs; about 120,000 new weblogs a day; growing from 35 to 70 million took about 320 days."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-022",
+   "verdict": "hit",
+   "reading": "Paid telecom connections worldwide (mobile, fixed lines, broadband) would exceed four billion in 2006, with mobile adding about half a billion.",
+   "mainstream_test": "Quantitative (D10): sum of ITU mobile, fixed telephone and fixed broadband subscriptions at end-2006 vs >4 billion.",
+   "reason": "ITU data via OWID: 41.7 mobile, 19.2 fixed and 4.3 broadband per 100 people in 2006; with world population about 6.6 billion that is about 2.75 + 1.27 + 0.28 = 4.3 billion. Mobile rose from 33.9 to 41.7 per 100, about +0.5 billion.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/mobile-cellular-subscriptions-per-100-people",
+     "title": "Mobile cellular subscriptions per 100 people (ITU via Our World in Data)",
+     "date": "accessed 2026-10-02",
+     "shows": "World: 33.9 (2005), 41.7 (2006)."
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/fixed-telephone-subscriptions-per-100-people",
+     "title": "Fixed telephone subscriptions per 100 people (ITU via OWID)",
+     "date": "accessed 2026-10-02",
+     "shows": "World: 19.2 (2006)."
+    },
+    {
+     "url": "https://ourworldindata.org/grapher/fixed-broadband-subscriptions-per-100-people",
+     "title": "Fixed broadband subscriptions per 100 people (ITU via OWID)",
+     "date": "accessed 2026-10-02",
+     "shows": "World: 4.3 (2006)."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-023",
+   "verdict": "hit",
+   "reading": "In 2006 3G subscribers would grow by tens of millions but 2G/2.5G would remain the majority of the mobile base and revenue.",
+   "mainstream_test": "Event/share test: 3G growth in tens of millions while 3G stays a small minority of subscriptions.",
+   "reason": "3G reached 200 million subscribers by June 2007, only 6.7% of 3 billion mobile subscriptions; growth through 2006 was tens of millions while 2G remained the overwhelming majority.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/3G",
+     "title": "3G - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "By June 2007 the 200 millionth 3G subscriber was connected, 6.7% of 3 billion mobile subscriptions worldwide."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-024",
+   "verdict": "hit",
+   "reading": "In 2006 premium brands from outside telecoms would launch their own branded phones.",
+   "mainstream_test": "Event test: premium fashion/luxury-branded phones launched or announced in 2006.",
+   "reason": "Dolce & Gabbana released a branded RAZR edition on 1 June 2006 and Prada announced its LG-made Prada phone on 12 December 2006 (on sale early 2007). Both are co-branded with a handset maker, so the event happened in the softer sense the chapter describes.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Motorola_Razr_V3",
+     "title": "Motorola Razr V3 - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "On June 1, 2006, Motorola and Dolce & Gabbana released another limited-edition gold phone, sold at D&G boutiques."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/LG_Prada",
+     "title": "LG Prada - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Prada phone by LG first announced 12 December 2006, available March 2007."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-025",
+   "verdict": "ungradable",
+   "reading": "In 2006 the telecom industry would largely neglect machine-to-machine connections as a source of new connections, even as their enablers matured.",
+   "mainstream_test": "Would need a public measure of operator attention to M2M in 2006 (dedicated M2M units, M2M connection counts or revenue reported by operators).",
+   "reason": "'Overlook' describes operator attention, not an outcome. No 2006 public series of operator M2M connections or strategy exists; the record shows only scattered M2M activity (e.g. specialist M2M MVNOs such as Wyless, Digi's 2006 MaxStream purchase). Looked for ITU/GSMA M2M connection counts for 2006 and operator M2M unit launches; found none that measure 'overlooking'.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Machine_to_machine",
+     "title": "Machine to machine - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "History lists niche M2M players in 2004-2008 (Wyless MVNO, Digi/MaxStream 2006) but no industry-wide 2006 measure of operator M2M activity."
+    },
+    {
+     "url": "https://web.archive.org/web/20060226070303/http://www.deloitte.com:80/dtt/cda/doc/content/TMT%20Telecoms%20Predictions%202006_FINAL_FA_LOW%20RES%285%29.pdf#page=10",
+     "title": "Deloitte TMT Trends: Telecommunications Predictions 2006, 'Connecting machines for revenue growth'",
+     "date": "2006-01",
+     "shows": "Chapter argues enablers of machine communications mature in 2006 while the industry may overlook them; gives no measurable endpoint."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-026",
+   "verdict": "ungradable",
+   "reading": "In 2006 operators' race to raise broadband speeds would often fail to produce profit growth.",
+   "mainstream_test": "Would need operator broadband margins or profit growth set against speed upgrades for 2006.",
+   "reason": "The claim ties profit (not revenue) to speed upgrades and is hedged 'may not always'. No public dataset separates broadband profit by speed tier or links 2006 speed upgrades to profit. Looked for OECD/Ofcom broadband margin or ARPU-vs-speed series for 2006; found only price data that does not settle profit.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20060226070303/http://www.deloitte.com:80/dtt/cda/doc/content/TMT%20Telecoms%20Predictions%202006_FINAL_FA_LOW%20RES%285%29.pdf#page=12",
+     "title": "Deloitte TMT Trends: Telecommunications Predictions 2006, 'Addicted to speed, not margin'",
+     "date": "2006-01",
+     "shows": "Chapter states that in the frenzied quest for speed, real market needs and profitable business models may be overlooked; no measurable endpoint."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-027",
+   "verdict": "hit",
+   "reading": "Telecoms would see a period of intense M&A activity in 2006.",
+   "mainstream_test": "Event test: large telecom deals announced or closed in 2006.",
+   "reason": "2006 saw the largest US telecom deal of the era: AT&T's US$86 billion purchase of BellSouth, announced March 2006 and closed December 2006, alongside Telefonica's purchase of O2 (closed early 2006) and other large deals.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/BellSouth",
+     "title": "BellSouth - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Merger announced 5 March 2006 and executed 29 December 2006: AT&T acquired BellSouth for about $86 billion."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-028",
+   "verdict": "ungradable",
+   "reading": "In 2006 operators, especially fixed operators, would capture less than their 'full share' of revenues from convergent services.",
+   "mainstream_test": "Would need a public split of convergence revenue between operators and other players, and a definition of a 'full share'.",
+   "reason": "'Full share' and 'convergence revenues' have no public measure. Looked for operator vs. content/OTT revenue splits for convergent services in 2006 (Ofcom, OECD); none defines the benchmark the claim needs.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20060226070303/http://www.deloitte.com:80/dtt/cda/doc/content/TMT%20Telecoms%20Predictions%202006_FINAL_FA_LOW%20RES%285%29.pdf#page=4",
+     "title": "Deloitte TMT Trends: Telecommunications Predictions 2006, executive summary",
+     "date": "2006-01",
+     "shows": "Operators invest tens of billions in next-generation networks but are 'arguably not extracting their due share of the proceeds'; no measurable endpoint."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-029",
+   "verdict": "hit",
+   "reading": "Resellers (including MVNOs) would grow stronger in fixed and mobile markets in 2006.",
+   "mainstream_test": "Event/quantity test: reseller subscriber numbers grow in 2006 to a new high.",
+   "reason": "FCC data: US resellers including MVNOs served 15.1 million subscribers at end-2006, up 1.6 million on the year (about 7% of US mobile subscribers), a new high, despite some high-profile MVNO failures.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_virtual_network_operator",
+     "title": "Mobile virtual network operator - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Per the FCC, about 7% of US mobile subscribers were served by resellers; 15.1 million at end-2006, up 1.6 million on the previous year."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-030",
+   "verdict": "hit",
+   "reading": "In 2006 fixed operators would expand into managed IT services/systems integration and broadband TV (IPTV).",
+   "mainstream_test": "Event test: major fixed incumbents launching IPTV or managed IT services in 2006.",
+   "reason": "AT&T launched U-verse IPTV on 26 June 2006 and BT launched BT Vision on 5 December 2006; incumbents' moves into IPTV happened in the year as predicted. (Managed IT expansion is not separately evidenced here.)",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/U-verse_TV",
+     "title": "U-verse TV - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "AT&T U-verse IPTV commercially launched 26 June 2006 in San Antonio."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/EE_TV",
+     "title": "EE TV (formerly BT Vision) - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "BT Vision launched 5 December 2006."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-031",
+   "verdict": "hit",
+   "reading": "In 2006 open-Internet ('ad-hoc') VoIP such as Skype would struggle to build a mass-market base that generates revenue, while managed VoIP gained share.",
+   "mainstream_test": "Revenue test: ad-hoc VoIP revenue in 2006 relative to its user base and to telephony.",
+   "reason": "Skype had 171 million registered accounts by Q4 2006 but only about US$195 million revenue in all of 2006 (quarterly 35, 44, 50, 66 million), negligible against fixed and mobile telephony. A mass following existed, a revenue-generating one did not. The reading turns on 'revenue-generating'; a reading about users alone would be a miss.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Skype",
+     "title": "Skype - Wikipedia (user and revenue table from eBay filings)",
+     "date": "accessed 2026-10-02",
+     "shows": "Q4 2006: 171.2 million user accounts; 2006 quarterly revenue US$35m, 44m, 50m, 66m."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-010",
+   "verdict": "unfalsifiable",
+   "reading": "Reading A: the hidden costs of free services (spam, spit, malware) would keep rising in 2007. Reading B: suppliers would start charging for formerly free services and consumers would move to paid alternatives.",
+   "mainstream_test": "A: spam/malware volume trend in 2007. B: shift from free to paid consumer services (e.g. webmail) in 2007.",
+   "reason": "The chapter carries both readings. Under A it is a hit (spam kept growing, image spam surged). Under B it is a miss: free services became more generous, e.g. Yahoo Mail moved to unlimited free storage on 27 March 2007. Neither reading dominates the text.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Yahoo_Mail",
+     "title": "Yahoo Mail - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Yahoo Mail allowed unlimited free storage from 27 March 2007."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Email_spam",
+     "title": "Email spam - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Spam grew strongly from the 1990s, with image spam rising around 2006-2007."
+    },
+    {
+     "url": "https://web.archive.org/web/20070208053311/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_%20TechPredictions011107%281%29.pdf#page=13",
+     "title": "Deloitte TMT Trends: Technology Predictions 2007, 'The rising cost of free technology'",
+     "date": "2007-01",
+     "shows": "Free offers may become costly (spam, spit); some companies may start charging for formerly free services; consumers may seek paid alternatives."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-011",
+   "verdict": "partial",
+   "reading": "In 2007 EU anti-carousel-fraud measures would force technology companies selling into Europe to change supply chains, giving the fraud global ramifications.",
+   "mainstream_test": "Event test: new 2007 legislation against carousel (MTIC) fraud affecting technology goods supply chains.",
+   "reason": "The UK introduced the VAT reverse-charge mechanism for mobile phones and computer chips from 1 June 2007, which changed how tech goods were invoiced; but there is no evidence of broad 'global' ramifications in 2007 and EU-wide action came later.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Missing_trader_fraud",
+     "title": "Missing trader fraud - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "From 1 June 2007 the UK introduced the reverse charge mechanism for VAT on mobile phones and computer chips to combat the fraud."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-012",
+   "verdict": "ungradable",
+   "reading": "The technologies that would make headlines next would be new combinations of technologies that already existed in 2007.",
+   "mainstream_test": "Would need a defined set of 'tomorrow's headline technologies' and a horizon.",
+   "reason": "Framing with no year, no named technology and no metric. Looked for a measurable endpoint in the chapter; there is none, so no public measure can test it.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20070208053311/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_%20TechPredictions011107%281%29.pdf#page=15",
+     "title": "Deloitte TMT Trends: Technology Predictions 2007, 'History predicts technology's future'",
+     "date": "2007-01",
+     "shows": "States that tomorrow's headline technologies may already exist and success will come from innovative combinations; no dated or measurable endpoint."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-013",
+   "verdict": "hit",
+   "reading": "In 2007 the value of social networking to the technology sector would become measurable in billions of dollars.",
+   "mainstream_test": "Event/quantity test: social networking valued or transacting in the billions of dollars in 2007.",
+   "reason": "In October 2007 Microsoft paid US$240 million for 1.6% of Facebook, an implied valuation of about US$15 billion; social networking was explicitly being priced in billions that year.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/History_of_Facebook",
+     "title": "History of Facebook - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "On 24 October 2007 Microsoft bought a 1.6% share of Facebook for $240 million, giving an implied total valuation of about $15 billion."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-014",
+   "verdict": "miss",
+   "reading": "In 2007 the technology sector would increasingly adopt power-scavenging (energy harvesting from heat, light, motion) to supplement batteries in portable devices.",
+   "mainstream_test": "Adoption test: energy harvesting used in a measurable share (>=5%) of portable consumer devices around 2007.",
+   "reason": "Energy harvesting stayed confined to niche uses (self-winding watches, sensors, pilot floor tiles and ticket gates); no portable-device category adopted it at any measurable share in 2007 or the following five years.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Energy_harvesting",
+     "title": "Energy harvesting - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Piezoelectric sources produce milliwatts, enough only for devices such as self-winding watches; applications listed are sensors, pilot walkways and ticket gates, not mainstream portable electronics."
+    },
+    {
+     "url": "https://web.archive.org/web/20070208053311/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_%20TechPredictions011107%281%29.pdf#page=18",
+     "title": "Deloitte TMT Trends: Technology Predictions 2007, 'Parasitic power to the people'",
+     "date": "2007-01",
+     "shows": "Predicts the sector may turn to power-scavenging from body heat, light and vibration to recharge portable device batteries."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-015",
+   "verdict": "hit",
+   "reading": "In 2007 human-technology combinations (prosthetics, exoskeletons and similar) would reach new levels and applications.",
+   "mainstream_test": "Event test: notable new bionic products or uses in 2007.",
+   "reason": "The i-LIMB, the first commercial prosthetic hand with individually powered digits, launched in July 2007, and the prosthetics debate around sprinter Oscar Pistorius peaked that year. The claim is soft and qualitative; the event occurred.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/I-LIMB_Hand",
+     "title": "i-LIMB Hand - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Prosthetic hand with individually powered digits and thumb, launched in Vancouver in July 2007."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-016",
+   "verdict": "hit",
+   "reading": "In 2007 user-generated content would stay mostly low-value and would not pose a major commercial threat to established media.",
+   "mainstream_test": "Revenue test: commercial scale of the leading UGC platform in 2007-2008 vs established media.",
+   "reason": "YouTube, the largest UGC platform, reported 2007 revenue as 'not material' in Google's filings, and Forbes projected only about US$200 million for 2008; UGC took no significant revenue from media in 2007.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/YouTube",
+     "title": "YouTube - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "YouTube's 2007 revenues were noted as 'not material' in a regulatory filing; Forbes projected 2008 revenue at $200 million."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-017",
+   "verdict": "miss",
+   "reading": "In 2007 viewer participation formats (premium-rate voting, phone-ins, quiz TV) would generate increasing revenues for broadcasters.",
+   "mainstream_test": "Event/revenue test: did participation-TV revenue grow in 2007 in its leading markets?",
+   "reason": "In the UK, the leading participation-TV market, the 2007 premium-rate phone-in scandal led ITV to suspend all premium-rate services on 6 March 2007, ITV Play closed, Gamecast's licence was revoked and Ofcom later fined broadcasters over GBP 11 million; regulators reported a loss of viewer trust. US quiz-channel formats were also cancelled in 2007. No global revenue series exists, so this rests on the UK case.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2007_British_premium-rate_phone-in_scandal",
+     "title": "2007 British premium-rate phone-in scandal - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "ITV suspended all premium-rate telephone services on 6 March 2007; Channel 5 suspended PRS; over GBP 11 million in fines 2007-2009; ICSTIS warned of loss of viewer trust in participation TV."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_quiz_channels",
+     "title": "List of quiz channels - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "US call-in quiz shows (PlayMania, Play2Win, quiznation, Take the Cake) were cancelled during 2007."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-018",
+   "verdict": "hit",
+   "reading": "Piracy would remain a key issue for media in China in 2007.",
+   "mainstream_test": "Event test: did piracy in China remain a leading media/trade issue in 2007?",
+   "reason": "On 10 April 2007 the United States opened WTO dispute DS362 against China over copyright piracy thresholds and enforcement; the panel ruled in 2009. Piracy stayed a top-level issue throughout 2007.",
+   "evidence": [
+    {
+     "url": "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds362_e.htm",
+     "title": "WTO DS362: China - Measures Affecting the Protection and Enforcement of Intellectual Property Rights",
+     "date": "accessed 2026-10-02",
+     "shows": "US requested consultations on 10 April 2007 over criminal thresholds for copyright piracy and enforcement; panel report circulated 26 January 2009."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-019",
+   "verdict": "unfalsifiable",
+   "reading": "Reading A: some publishers would find print and online editions complementary and profitable together in 2007. Reading B: across the press, online would complement print so that the two coexist profitably rather than online cannibalising print.",
+   "mainstream_test": "A: examples of profitable print-plus-online publishers in 2007. B: industry print vs online revenue trend in 2007.",
+   "reason": "Under A it is a hit (many publishers remained profitable with growing online units in 2007). Under B it is a miss: in 2007 US newspaper print revenue began a steep fall that online growth did not offset, and Craigslist alone had cost newspapers US$5.4 billion by 2007. The hedge 'may not always be' leaves both readings equally faithful.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Decline_of_newspapers",
+     "title": "Decline of newspapers - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Research found Craigslist cost the newspaper industry $5.4 billion from 2000 to 2007; 2007-2008 commentary documents print decline and online aggregation of newspaper content."
+    },
+    {
+     "url": "https://web.archive.org/web/20070208053148/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_MediaPredictions011107.pdf#page=12",
+     "title": "Deloitte TMT Trends: Media Predictions 2007, 'Paper, pixels and profits'",
+     "date": "2007-01",
+     "shows": "Argues the paper-pixel relationship may be symbiotic, profitable coexistence; no metric."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-020",
+   "verdict": "hit",
+   "reading": "In 2007 digital media revenue would remain concentrated in the head (popular titles) rather than the long tail.",
+   "mainstream_test": "Sales-distribution test: did digital sales data around 2007 show the head dominating?",
+   "reason": "Anita Elberse's 2008 HBR study of digital music and video sales data found the Web magnified the importance of blockbuster hits, with tail titles selling rarely, matching the claim.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Long_tail",
+     "title": "Long tail - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "A 2008 study by Anita Elberse (HBS), using sales data, found the Web magnifies the importance of blockbuster hits, calling long-tail theory into question."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-021",
+   "verdict": "ungradable",
+   "reading": "In 2007 and beyond, media companies' challenge would be anticipating how the public's sense of value changes.",
+   "mainstream_test": "None possible: the sentence names a challenge, not an outcome.",
+   "reason": "Framing with no predicted state, metric or event. Looked for a measurable endpoint in the chapter; none is given.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20070208053148/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_MediaPredictions011107.pdf#page=16",
+     "title": "Deloitte TMT Trends: Media Predictions 2007, 'Media's never-ending quest for value'",
+     "date": "2007-01",
+     "shows": "States the challenge for media companies is to second-guess changes in perceived value; no measurable claim."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-022",
+   "verdict": "unfalsifiable",
+   "reading": "Reading A: social networking would keep its popularity only if it found a sustainable business model (a conditional that later held, via advertising). Reading B (chapter body): social networks would need subscription and premium privacy revenue because advertising would struggle.",
+   "mainstream_test": "A: did leading social networks stay popular and become profitable? B: did subscriptions become an important part of social networking revenue?",
+   "reason": "Under A it is a hit: Facebook became EBITDA-profitable in early 2008 and cash-flow positive in September 2009 on advertising. Under B it is a miss: subscriptions never became material; the ad model won. The quoted sentence is a conditional, and both readings are faithful to the chapter.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/History_of_Facebook",
+     "title": "History of Facebook - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Facebook launched Beacon ad system November 2007; EBITDA profitable early 2008; cash-flow positive September 2009."
+    },
+    {
+     "url": "https://web.archive.org/web/20070208053148/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_MediaPredictions011107.pdf#page=17",
+     "title": "Deloitte TMT Trends: Media Predictions 2007, '15 megabytes of fame; one gigabyte of privacy'",
+     "date": "2007-01",
+     "shows": "Says advertisers may avoid unmoderated social sites and subscription revenues may well have to become increasingly important."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-023",
+   "verdict": "hit",
+   "reading": "In 2007 streaming video would work well while paid video downloads, especially to PCs, would struggle.",
+   "mainstream_test": "Event test: fate of PC video-download stores vs launch of streaming services in 2007.",
+   "reason": "Wal-Mart closed its video download store on 21 December 2007, less than a year after launch, after HP withdrew the platform because the market had not performed as expected; Netflix launched streaming on 16 January 2007.",
+   "evidence": [
+    {
+     "url": "https://www.theregister.com/2007/12/28/wal_mart_video_downloads/",
+     "title": "Wal-Mart video downloads closure - The Register",
+     "date": "2007-12-28",
+     "shows": "Wal-Mart shut its video download service on 21 December 2007; HP said the market had not performed as expected."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Netflix",
+     "title": "Netflix - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Netflix launched its streaming service on 16 January 2007."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-024",
+   "verdict": "hit",
+   "reading": "The real-world value of transactions in virtual worlds would keep growing through 2007.",
+   "mainstream_test": "Directional test: virtual-world economy size in 2007-2008 vs 2006.",
+   "reason": "Second Life's reported GDP was about US$64 million in September 2006; its total economy was about US$340 million in 2008 (US$567 million in 2009 after 65% growth), so transaction value grew through 2007. The side figure of ~US$700 million GDP in 2007 ('could', 'if trends continue') was not reached, but the headline claim is directional.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Second_Life",
+     "title": "Economy of Second Life - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "September 2006 GDP reported at US$64 million; 2009 economy US$567 million, 65% growth over 2008."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-025",
+   "verdict": "miss",
+   "reading": "Internet traffic growth in 2007 would overwhelm some of the Internet's intercontinental backbones.",
+   "mainstream_test": "Capacity test: did backbone utilization rise toward saturation in 2007-2008?",
+   "reason": "TeleGeography found capacity deployment outpaced traffic growth for a second year: international traffic grew 53% mid-2007 to mid-2008 while average utilization fell from 31% to 29% and peak utilization from 44% to 43%. Backbones were not overwhelmed.",
+   "evidence": [
+    {
+     "url": "https://www.entrepreneur.com/business-news/where-did-internet-bandwidth-growth-go/198778",
+     "title": "Where Did Internet Bandwidth Growth Go? (TeleGeography data)",
+     "date": "2008-10-28",
+     "shows": "International traffic +53% mid-2007 to mid-2008; average utilization 31% to 29%, peak 44% to 43%."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-026",
+   "verdict": "hit",
+   "reading": "The net neutrality debate would become more aggressive and more international in 2007.",
+   "mainstream_test": "Event test: escalation of net neutrality disputes in 2007.",
+   "reason": "In 2007 Comcast was found interfering with BitTorrent traffic, leading to FCC complaints and the 2008 FCC order and Comcast v. FCC case; the debate escalated sharply.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Comcast_Corp._v._FCC",
+     "title": "Comcast Corp. v. FCC - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "In 2007 Comcast subscribers discovered it was interfering with peer-to-peer (BitTorrent) traffic, starting the FCC dispute."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-027",
+   "verdict": "miss",
+   "reading": "In 2007 overall Internet penetration in developed economies would hardly rise.",
+   "mainstream_test": "Share test: change in ITU internet-user share in major developed economies 2006-2007.",
+   "reason": "ITU data show clear rises in 2007: UK 68.8% to 75.1%, Germany 72.2% to 75.2%, Japan 68.7% to 74.3%, France 46.9% to 66.1%. Penetration rose by 3 to 19 points, not 'hardly'.",
+   "evidence": [
+    {
+     "url": "https://ourworldindata.org/grapher/share-of-individuals-using-the-internet",
+     "title": "Share of the population using the Internet (ITU via Our World in Data)",
+     "date": "accessed 2026-10-02",
+     "shows": "2006 to 2007: UK 68.82 to 75.09; Germany 72.16 to 75.16; Japan 68.69 to 74.3; France 46.87 to 66.09."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-028",
+   "verdict": "hit",
+   "reading": "Broadcast mobile TV would keep having a muted commercial impact in most markets through 2007.",
+   "mainstream_test": "Adoption test: broadcast mobile TV subscriber take-up in launch markets in 2007 and after.",
+   "reason": "DVB-H services launched in 2006-2007 (Italy, Finland) drew few subscribers; Finland's Mobiili-TV, launched May 2007, closed in 2012 for lack of subscribers, 3 Italia made channels free from June 2008, and all Italian services had ceased by 2012. Mobile TV stayed commercially marginal.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/DVB-H",
+     "title": "DVB-H - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Finland's Mobiili-TV started 10 May 2007 and ended in March 2012 'due to lack of subscribers'; 3 Italia made channels free from June 2008; all Italian DVB-H services ceased by 2012."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-029",
+   "verdict": "hit",
+   "reading": "In 2007 mobile would strengthen its position as the main network for voice calls, with mobile minutes rising while fixed minutes fall.",
+   "mainstream_test": "Traffic-share test: mobile vs fixed voice minutes trend in 2007 in developed markets.",
+   "reason": "Ofcom 2008: UK fixed voice fell to 148 billion minutes in 2007 out of 247 billion total, with mobile minutes up 38 billion over six years while fixed fell 17 billion; 37% of Italian households were mobile-only. Mobile's share kept growing; the side note that mobile exceeds PSTN traffic was true in some countries (Italy) but not yet in the UK.",
+   "evidence": [
+    {
+     "url": "https://blog.3g4g.co.uk/2008/08/ofcoms-2008-comms-market-report.html",
+     "title": "The 3G4G Blog: Ofcom's 2008 Comms Market report",
+     "date": "2008-08",
+     "shows": "UK fixed minutes 148bn in 2007 of about 247bn total; fixed down 17bn over six years, mobile up 38bn; mobile-only households UK 11%, Italy 37%."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-030",
+   "verdict": "ungradable",
+   "reading": "In 2007 operators would need to launch IPTV as a reinvention of TV, otherwise it would remain a low-margin service.",
+   "mainstream_test": "Would need public IPTV margin data by service design, and a test of what counts as 'reinvention'.",
+   "reason": "Prescriptive ('will need to'); the conditional outcome (low margins) is not reported by operators separately for IPTV. Looked for operator IPTV margin disclosures for 2007; none separate it.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20070208083056/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_TelecomPredictions011107.pdf#page=6",
+     "title": "Deloitte TMT Trends: Telecommunications Predictions 2007, 'The case for innovation, not imitation, in IPTV'",
+     "date": "2007-01",
+     "shows": "Advises operators to launch IPTV as a reinvention of television, else it 'may be destined to remain a low-margin service'."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-010",
+   "verdict": "ungradable",
+   "reading": "In 2008 calls from regulators, users and traders for compulsory authenticated identity on every online transaction would grow.",
+   "mainstream_test": "Would need a measure of demand ('clamor') for mandatory online identity in 2008, e.g. legislation, consultations or surveys.",
+   "reason": "'Increasing clamor' has no public measure. Looked for 2008 laws or regulator proposals requiring authenticated identity for all web transactions in major markets; none were enacted, but calls for it are not tracked, so neither direction can be shown.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20110404003416/http://www.deloitte.com/assets/Dcom-Kazakhstan/Local%20Assets/Documents/dtt_tmt_technologypredictions2008(2)(1).pdf#page=13",
+     "title": "Deloitte TMT Trends: Technology Predictions 2008, 'From anonymity to authenticity'",
+     "date": "2008-01",
+     "shows": "Predicts increasing clamor for authenticated identity on every transaction, while noting full authenticity is unlikely."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-011",
+   "verdict": "ungradable",
+   "reading": "In 2008 some PC owners would spend more over the PC's life on antivirus, online backup and insurance than on the PC itself.",
+   "mainstream_test": "Would need consumer data on lifetime security/backup/insurance spend per PC vs purchase price.",
+   "reason": "'Some owners' is an existence claim with no survey or market series behind it. Looked for consumer spending data on PC security and backup relative to PC prices for 2008; found only list prices (e.g. low-cost netbooks, Norton 360 subscriptions), which show plausibility but not actual owner spend.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Asus_Eee_PC",
+     "title": "Asus Eee PC - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Low-cost netbooks sold in 2007-2008 (Eee 900 at GBP 329 in May 2008), so cheap PCs existed; no data on owners' service spend."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Norton_360",
+     "title": "Norton 360 - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Subscription security suite with online backup released February 2007; no data on aggregate consumer spend."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-012",
+   "verdict": "hit",
+   "reading": "In 2008 resistance to websites' and ISPs' collection of consumers' online behaviour data would grow.",
+   "mainstream_test": "Event test: regulatory, political and consumer pushback against behavioural tracking in 2008.",
+   "reason": "In 2008 Phorm's ISP-based profiling drew UK Information Commissioner objections and a European Commission infringement case; in the US, members of Congress asked Charter to freeze NebuAd profiling (May 2008) and investigation was urged (June 2008). Resistance grew markedly.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Phorm",
+     "title": "Phorm - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "ICO said Webwise would be legal only as opt-in; the European Commission opened infringement proceedings against the UK over ISPs' use of Phorm."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/NebuAd",
+     "title": "NebuAd - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "May 2008: congressmen ask Charter to freeze web profiling plan; June 2008: congressional investigation urged."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-013",
+   "verdict": "partial",
+   "reading": "In 2008 XBRL would become a widely known, mainstream financial-reporting standard as mandatory XBRL filing spread across large economies.",
+   "mainstream_test": "Adoption test: mandatory XBRL filing adopted by major regulators in 2008.",
+   "reason": "Mandates did arrive around 2008: the SEC's US GAAP taxonomy was accepted in 2008 and XBRL filing phased in with the largest filers first (rule adopted December 2008, effective 2009), and Japan's FSA required it from 2008. But XBRL stayed a specialist reporting format; 'as well known as HTML or GAAP' did not happen.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/XBRL",
+     "title": "XBRL - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "From the late 2000s the SEC, HMRC and ACRA adopted XBRL; the SEC's US GAAP taxonomy was accepted and deployed for public companies in 2008 in phases, largest filers first."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-014",
+   "verdict": "ungradable",
+   "reading": "In 2008 the divide between people holding digital data and their ability to read it (obsolete storage formats and drivers) would deepen.",
+   "mainstream_test": "Would need a measure of inaccessible digital data or format obsolescence over time.",
+   "reason": "No public series measures how much stored data became unreadable in 2008. Looked for digital-preservation surveys quantifying format obsolescence for that year; none gives a trend.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20110404003416/http://www.deloitte.com/assets/Dcom-Kazakhstan/Local%20Assets/Documents/dtt_tmt_technologypredictions2008(2)(1).pdf#page=17",
+     "title": "Deloitte TMT Trends: Technology Predictions 2008, 'A digital divide for the digerati'",
+     "date": "2008-01",
+     "shows": "Chapter is about data stored on obsolete formats (5.25-inch floppies, zip drives) becoming inaccessible; no metric."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-015",
+   "verdict": "hit",
+   "reading": "Use of desalination would grow in 2008.",
+   "mainstream_test": "Directional test: global desalination capacity in and after 2008.",
+   "reason": "Desalination capacity kept growing: large plants came online around then (Tampa Bay reached full output in December 2007), and global capacity reached about 97 million m3/day from over 16,800 plants by 2020. No year of decline is recorded.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Desalination",
+     "title": "Desalination - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Tampa Bay plant output reported December 2007; as of 2020 global capacity about 97 million m3/day from over 16,800 plants, with more contracted."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-016",
+   "verdict": "hit",
+   "reading": "Digital cinemas would increasingly show non-film events such as opera and sport.",
+   "mainstream_test": "Event test: growth of live event cinema around 2008.",
+   "reason": "The Met's Live in HD, begun December 2006, drew 920,000 people to eight screenings in 2007-08 (US$18.3 million gross), expanded to many more countries in 2008, and passed 1.1 million tickets by February 2009.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Metropolitan_Opera_Live_in_HD",
+     "title": "Metropolitan Opera Live in HD - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Started 30 December 2006; 2007-08 attendance 920,000 with $13.3m North America and $5m overseas gross; network expanded to more countries in 2008; over 1.1 million tickets by February 2009."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-017",
+   "verdict": "hit",
+   "reading": "In 2008 music revenue would shift toward tangible experiences (live concerts with premium tickets), with several tours grossing over US$100 million.",
+   "mainstream_test": "Event test: tours grossing >US$100m and premium ticket prices in 2008.",
+   "reason": "Madonna's Sticky & Sweet Tour, which began in August 2008, grossed about US$408-411 million, and several other 2008 tours passed US$100 million; live music was the growth area while recorded sales fell.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sticky_%26_Sweet_Tour",
+     "title": "Sticky & Sweet Tour - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "Gross: Billboard US$408 million, Pollstar US$411 million (2008-2009)."
+    }
+   ]
+  }
+ ]
+}

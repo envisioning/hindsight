@@ -4,36 +4,51 @@
   "A",
   "B"
  ],
- "n": 276,
- "agree": 245,
- "raw_agreement": 0.8877,
- "kappa": 0.7952,
+ "n": 438,
+ "agree": 368,
+ "raw_agreement": 0.8402,
+ "kappa": 0.7387,
  "passes_d11": true,
+ "waves": {
+  "w1": {
+   "n": 276,
+   "agree": 245,
+   "kappa": 0.7952,
+   "passes_d11": true
+  },
+  "w2": {
+   "n": 162,
+   "agree": 123,
+   "kappa": 0.6053,
+   "passes_d11": true
+  }
+ },
  "graderA": {
-  "hit": 66,
-  "partial": 13,
-  "miss": 26,
-  "unfalsifiable": 1,
-  "ungradable": 170
+  "hit": 163,
+  "partial": 21,
+  "miss": 40,
+  "unfalsifiable": 6,
+  "ungradable": 208
  },
  "graderB": {
-  "hit": 76,
-  "partial": 12,
-  "miss": 19,
-  "ungradable": 169
+  "hit": 156,
+  "partial": 22,
+  "miss": 29,
+  "unfalsifiable": 3,
+  "ungradable": 228
  },
  "agreed": {
-  "hit": 61,
-  "partial": 8,
-  "miss": 18,
-  "ungradable": 158
+  "hit": 135,
+  "partial": 12,
+  "miss": 27,
+  "ungradable": 194
  },
  "hit_rate_agreed": {
-  "hits": 61,
-  "of_graded_hit_partial_miss": 87,
+  "hits": 135,
+  "of_graded_hit_partial_miss": 174,
   "wilson95": [
-   0.598,
-   0.787
+   0.708,
+   0.831
   ],
   "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
  },
@@ -41,1072 +56,2019 @@
   {
    "id": "deloitte-tmt-predictions-2005-001",
    "label": "2005 will see much activity around the web browser. There will be more competition, more choice and more functionality.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-002",
    "label": "2005 will see the first commercial launch of ethanol-based fuel cells, both as standalone products and as the integrated power source for leading-edge consumer products.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-004",
    "label": "Massive growth in the number of connected devices – from PCs and mobile phones to digital music players and gaming consoles – will cause a corresponding leap in electronic viruses and other malicious attacks.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-006",
    "label": "By the end of 2005, wireless mesh networks will have appeared in several major urban centers throughout Northern Europe, the United States and Asia.",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-007",
    "label": "In 2005, consumers will spend billions of dollars on liquid crystal displays (LCDs) and plasma flat panel screens, fueling strong market growth – particularly for large format devices such as televisions and computer monitors.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-008",
    "label": "2005 will see a rapid increase in electronic forms of identification, as governments around the world move to replace paper-based IDs with digital products. ... yet identify theft and other digital crimes will continue to wreak havoc.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-009",
    "label": "First, there is likely to be an acceleration of the shift from the public to private sector, with public space agencies under increasing pressure to open up the market for launch vehicles and services.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-010",
    "label": "Quantum computers, which are expected to be many orders of magnitude faster than today's fastest supercomputers, will take a few important steps closer to commercial reality.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2006-001",
    "label": "Consumers may well change their use of the Internet, with search potentially displacing email as the most used digital application.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2006-002",
    "label": "it is forecast that approximately 20 exabytes (billion gigabytes) of new digital data will be created in 2006.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2006-003",
    "label": "With global R&D spending expected to top $1 trillion in 2006, companies will be increasingly likely to seek to share their R&D burden with others.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2006-004",
    "label": "Some governments may move to tax Voice over Internet Protocol (VoIP) services in the same manner as traditional Public Switched telephone Network (PSTN)",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2006-005",
    "label": "The software world will likely see its dynamics continue to change, as open source becomes a growing threat to the established software business model",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-001",
    "label": "2007 may well see an escalation in the search for both genuine causes and scapegoats for climate change",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-002",
    "label": "In 2007, companies that manage to minimize product complexity may achieve greater success than competitors with superior, but relatively inaccessible, technology.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-007",
    "label": "2007 is likely to see a raft of new triple and quadruple-play offerings taken to market, each backed by a very large marketing budget.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-009",
    "label": "PC-to-PC VoIP remains a marginal element of the world's voice traffic, and is likely to remain a small fragment of all traffic in 2007.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-002",
    "label": "While the e-Book may fail to thrive in 2008, e-Reference may gain traction. ... By the end of 2008, the book is likely to remain predominantly paper-based.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-003",
    "label": "The proliferation of technology in the living room is creating its own distinctive carbon footprint, and this is expected to grow in 2008 and beyond.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-004",
    "label": "The imminent demise of television is forecast perennially and it is highly likely that this call will again be made in 2008. The global traditional television sector, despite the occasional shock, should remain in good health throughout the year.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-008",
    "label": "The conventional, highly inefficient, incandescent light bulb may finally start to be superseded by the white LED in 2008. ... In 2008, the LED should become commercially viable",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-003",
    "label": "The netbook, also known as the mini-notebook, is likely to be the fastest growing PC segment in 2009. It may represent in excess of 15 percent of all portable PC sales, or roughly 25 million units.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-005",
    "label": "In 2009, the aggregate volume of the world's data centers is likely to continue to grow, albeit possibly at a slower pace than in previous years. ... The latest, purpose-built data-centers should attain a power-unit effectiveness (PUE) rating of 1.2 or better.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-010",
    "label": "In 2009, mobile phone users are expected to download over 10 billion applications to their mobile phones.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-011",
    "label": "But 2009 is likely to see a new range of mobile phones, which overcome the convergence compromise. ... Camera phones boasting high-quality lenses and 12 mega-pixel sensors are expected to offer image quality that rivals the best point-and-shoot cameras.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-001",
    "label": "DTT TMT predicts that in 2010–2011, tens of millions of connected portable devices will likely be purchased by consumers with sore eyes and sore arms. Net tablets, or netTabs, will be based on a new form factor",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-002",
    "label": "DTT TMT predicts that in 2010 Moore's Law will probably continue to work just fine.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-003",
    "label": "DTT TMT predicts that in 2010 cloud computing is likely to grow much faster than most other technology verticals but will still fail to reach the heights its more enthusiastic supporters have suggested.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-008",
    "label": "DTT TMT predicts that in 2010 most video and audio content will continue to be consumed linearly ... Our estimate is that over 90 percent of all television watched and over 80 percent of all audio content consumed will be via traditional broadcast.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-010",
    "label": "DTT TMT predicts that in 2010 stand-alone eReader devices will likely sell five million units globally. Meanwhile, electronic versions of books (eBooks) could sell as many as 100 million copies.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-011",
    "label": "DTT TMT predicts that in 2010 the newspaper and magazine industry will continue to make noises about charging readers for the online portion of their business. But that talk is unlikely to be matched by actions or results.",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-014",
    "label": "Our expectation is that the volume and value of DVDs distributed via vending machine will double in 2010 ... By the end of 2010, an estimated 30,000 DVD vending machines will be deployed in the US alone",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-015",
    "label": "Following a bumper year for 3D at the movies, DTT TMT anticipates that expectations will be high for an equivalent 3D-fueled boost to the television sector in 2010.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-001",
    "label": "Deloitte predicts that in 2011 more than 50 percent of computing devices sold globally will not be PCs.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-005",
    "label": "Deloitte predicts that during the course of 2011 online privacy will provoke more irate headlines and exasperated calls for action than ever before.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-006",
    "label": "Deloitte predicts that battery technology will make progress in 2011 and 2012.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-007",
    "label": "Deloitte predicts that hydrogen will enjoy tremendous success in 2011.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-008",
    "label": "Deloitte predicts that in 2011 television will solidify its status as the current super media, defying some commentators' prophecies of imminent obsolescence.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-010",
    "label": "Deloitte predicts that In 2011 despite the sale of tens of millions of television sets that offer a form of built-in search capability for television programming, the vast majority of viewing will be delivered on a traditional \"pushed\" basis",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-011",
    "label": "Deloitte predicts that in 2011 social networks are likely to surpass the breathtaking milestone of one billion unique members.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-014",
    "label": "Deloitte predicts that 2011 revenues for digitally distributed music will exceed physical music sales in at least one major market, most likely the United States.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-015",
    "label": "Deloitte expects that fewer than 30 LTE carriers in six countries will offer commercial service by the end of 2011.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-001",
    "label": "Deloitte predicts that overall global demand for consumer technology will likely grow in 2012. Record numbers of smartphones and tablet computers are likely to be purchased",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-004",
    "label": "By the end of 2012, storage for small mobile devices – such as MP3 players, smartphones and tablets – is likely to be over 90 percent SSDs, versus just 20 percent in 2006.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-005",
    "label": "Deloitte predicts that in 2012 ambient Radio Frequency (RF) power harvesting products will likely remain a niche market with only moderate growth potential",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-018",
    "label": "In 2012, Deloitte expects the number of apps available from all application stores to exceed two million.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-001",
    "label": "Deloitte predicts that in 2013, more than 80 percent of Internet traffic measured in bits will continue to come from traditional desktop and laptop personal computers.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-007",
    "label": "Deloitte predicts that in 2013 the television industry will commence the roll-out of the next generation of high definition (HD) TV, known as 4K",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-011",
    "label": "Deloitte predicts that in 2013 almost all North American households that pay for TV through multichannel video programming distributors (MVPD) will continue to subscribe.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-012",
    "label": "More than 200 operators in 75 countries will have launched a Long Term Evolution (LTE) network by the end of 2013, Deloitte predicts.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-013",
    "label": "In 2013, Deloitte predicts that global shipments of smartphones ... will likely exceed one billion units for the first time.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-002",
    "label": "Deloitte predicts that smart glasses, fitness bands and watches, should sell about 10 million units in 2014, generating $3 billion.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-004",
    "label": "Deloitte predicts that by 2014, student registrations in Massive Open Online Courses (MOOCs) will be up 100 percent compared to 2012 to over 10 million courses, but ... less than 0.2 percent of all tertiary education-equivalent courses completed in 2014 will be MOOCs.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-005",
    "label": "Deloitte predicts that the rechargeable, lithium ion (Li-Ion) battery technology used in all smartphones will improve only modestly in 2015.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-010",
    "label": "Deloitte predicts that in 2015 print will represent more than 80 percent of all book sales in dollars worldwide.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-001",
    "label": "Deloitte Global predicts that by end-2016 fewer than 25 percent of information technology (IT) jobs in developed countries will be held by women",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-007",
    "label": "Deloitte Global predicts that in 2016 mobile devices (smartphone and tablet) will become the leading games platform by software revenue, generating $35 billion in revenue, up 20 percent from 2015.",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-009",
    "label": "Deloitte Global predicts that the value of movie theater admissions in the US and Canada will fall by about three percent in 2016, to about $10.6 billion, with about 1.3 billion tickets sold.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-011",
    "label": "Deloitte Global predicts that the European football market may generate $30 billion (€27 billion) in revenues in 2016/2017",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-012",
    "label": "Deloitte Global predicts that eSports will generate global revenues of $500 million in 2016, up 25 percent from about $400 million in 2015",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-016",
    "label": "Deloitte Global predicts about 100 carriers worldwide will be offering at least one packet-based voice service by the end of 2016",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-002",
    "label": "Deloitte Global expects there will be on average a Tbit/s (terabit per second) attack per month, over 10 million attacks in total, and an average attack size of between 1.25 and 1.5 Gbit/s",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-003",
    "label": "Deloitte Global predicts that by 2022, annual US motor vehicle fatalities could fall by 6,000, a 16 percent decline on the likely death toll in 2017.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-004",
    "label": "by end-2017, over 200 carriers are likely to be offering LTE-A across some of their network, and over 20 should have LTE-A Pro networks.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-002",
    "label": "Deloitte Global predicts that by the end of 2023, penetration of smartphones among adults in developed countries will surpass 90 percent, a five-percentage-point increase over 2018.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-001",
    "label": "DELOITTE GLOBAL PREDICTS that 2019 will be the year in which fifth-generation (5G) wide-area wireless networks arrive in scale. ... by the end of 2019, we expect 25 operators to have launched 5G service in at least part of their territory",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-002",
    "label": "we predict that just over half of them will be professional service robots, generating more than US$16 billion in revenue—30 percent more than in 2019.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-003",
    "label": "We expect that more than 100 companies worldwide will have begun testing private 5G deployments by the end of 2020, collectively investing a few hundred million dollars in labor and equipment.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-004",
    "label": "By the end of 2020, there would be over 700 satellites in low-earth orbit (LEO) seeking to offer global broadband internet, up from roughly 200 at the end of 2019.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-002",
    "label": "we predict that revenue growth will remain at or above 2019 levels (that is, greater than 30%) for 2021 through 2025 as companies move to cloud to save money, become more agile, and drive innovation.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-003",
    "label": "We predict that in 2021, it is very unlikely that the radiation from 5G mobile networks and 5G phones will affect the health of any single individual",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-005",
    "label": "Deloitte Global predicts that many types of chips will still be in short supply throughout 2022 ... By the end of 2022, we predict those lead times will be closer to 10–20 weeks and that the industry will be in balance by early 2023.",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-013",
    "label": "Deloitte Global predicts that the aggregate installed capacity of floating photovoltaics (FPVs) ... will reach 5.2 gigawatts peak (GWp) globally by the end of 2022, representing US$4–5 billion in spending.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-014",
    "label": "Deloitte Global predicts that boys and men in almost every country will continue to spend less time reading books, and read them less frequently, than girls and women.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-018",
    "label": "Deloitte Global predicts that the multiple companies making quantum computers (QCs) will double their QCs' quantum volume ... from what it was in 2021.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-019",
    "label": "Deloitte Global predicts that 2022 will see a great deal of discussion about regulating AI more systematically, with several proposals being made— although enacting them into actual enforced regulations will likely happen in 2023 or beyond.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-001",
    "label": "Deloitte Global predicts that more than 5,000 broadband satellites will be in LEO by the end of 2023, making up two working constellations providing high-speed internet to nearly a million subscribers",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-002",
    "label": "Deloitte Global predicts that 2023 will see the launch of the first 5G smartphones retailing at US$99 or its equivalent in other currencies.",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-003",
    "label": "Deloitte Global expects the number of MNOs investing in 5G SA networks—with trials, planned deployments, or actual rollouts—to double from more than 100 operators in 2022 to at least 200 by the end of 2023.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-002",
    "label": "Deloitte predicts that the market for specialized chips optimized for generative AI will be valued at over US$50 billion in 2024, up from close to nothing in 2022.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-003",
    "label": "In 2024, Deloitte predicts that enterprise spending on generative AI will grow by 30%.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-004",
    "label": "The European Union is expected to set the stage for global regulation of generative AI in 2024, influencing its own markets and serving as a template for other regions.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-012",
    "label": "Hollywood is looking to games for new IP that they can expand and monetize, and game companies are eyeing TV and film collaborations to help make their IP work harder and offset soaring game development costs.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-014",
    "label": "Deloitte predicts that these platforms will pay out almost US$1.5 billion to their content developers in 2024, and the number of paid independent developers on 3D UGC gaming platforms will exceed 10 million.",
-   "verdict": "partial"
+   "verdict": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-002",
    "label": "AI-driven data center power consumption will continue to surge, with Deloitte predicting data centers will only make up about 2% of global electricity consumption by 2025.",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-010",
    "label": "Deloitte predicts that although it is expected to be a slow process, and regulators will have their conditions, there will be an increased pace of consolidation, beginning in 2025",
-   "verdict": "hit"
+   "verdict": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-014",
    "label": "In 2025, Deloitte predicts that fewer than 20 additional networks will be upgraded to standalone, keeping 5G SA at around 12% of all 5G deployments.",
-   "verdict": "miss"
+   "verdict": "miss",
+   "wave": "w1"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-003",
+   "label": "The next generation of mobile applications is ready to take off.",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-004",
+   "label": "3G or UMTS won't be the universal transport.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-005",
+   "label": "The introduction of e911 legislation in the US will put new pressure on mobile operators and handset manufacturers to provide cheaper location services fast - right across the world.",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-009",
+   "label": "The costs of deploying 3G and the lifting of the US spectrum cap will encourage more mergers and acquisitions among wireless operators. Smaller operators will fail or be swallowed up whole.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-003",
+   "label": "But companies will make the mistake of adding to lap-tops, instead of choosing PDAs and disappointing trials will halt further deployment of mobile data.",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-004",
+   "label": "SMS will continue to flourish in the coming months, driven more by business rather than just consumer use.",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-006",
+   "label": "Mobile gaming too will make serious money as phones with colour screens, GPRS and Java propel the market.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-007",
+   "label": "But it will be slowly, slowly for mobile payments. Operators will launch a mobile payment facility as pre-pay top-up from phones and they will also make it easier to transfer credit between phones.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-001",
+   "label": "Throughout 2004, all operators will continue to earn the majority of their revenues from voice services.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-003",
+   "label": "Despite the perennial cries that most mobile markets in developed countries are saturated, in 2004 the number of mobile subscribers will continue in all countries.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-004",
+   "label": "A further round of 3G networks will be launched commercially in 2004, although collectively these will only represent a minority of all operators.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-005",
+   "label": "A second round of enterprises and government departments will start to mobile enable their workers in 2004, focusing on field force workers.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-006",
+   "label": "The most successful applications will be push applications, such as SMS, MMS (where this works) and push e-mail. Data applications such as WAP and mobile browsing will continue to under-perform both in term of usage and revenues.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-007",
+   "label": "Mobile phones will increasingly support Internet browsing, although this will remain a frustrating and expensive experience",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-009",
+   "label": "The major growth for Wireless LAN, in terms of both number of deployments and volume of data carried, will be for private deployment in businesses and homes.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-011",
+   "label": "By the end of the year broadband penetration rates will have exceeded 10% of population in only a dozen countries around the world.",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-012",
+   "label": "A range of broadband appliances will hit the shelves of major domestic electronics retailers for the 2004 holiday season.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-013",
+   "label": "Voice over IP will remain a niche application for both business and residential customers in most countries.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-015",
+   "label": "In developed countries, the majority of minutes will still be carried over the fixed network in 2004.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-017",
+   "label": "Wireless LAN will cause most disruption where it allows a broadband network to reach where the wired LAN currently cannot reach",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-018",
+   "label": "The emergence of carrier pre-selection will lead to continuing reductions in incumbents' market share of the residential market.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-011",
+   "label": "2005 will see rapid growth in legal music downloads over the internet. Illegal downloading will most likely still dominate, but legal sites will significantly increase their share.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-012",
+   "label": "In 2005, the long-standing business model for broadcast television – the network model – is likely to be increasingly replaced by a more segmented, customer-centric approach.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-013",
+   "label": "During the course of the year, more advanced forms of embedded advertisement will appear in video games, software (particularly freeware), web browsers and even active desktops on mobile phones.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-015",
+   "label": "Blockbuster movies will increasingly be developed in tandem with best-selling games, using the same characters, the same narrative threads, the same look and feel",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-016",
+   "label": "Many newspaper publishers will probably generate only modestly rising returns from their on-line activities.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-017",
+   "label": "Although such activities are unlikely to cause a noticeable drop in revenue for traditional media companies, they will increasingly compete for the public's time and attention",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-018",
+   "label": "Digital terrestrial television (DTTV) is currently being launched in a number of countries, and 2005 will see a substantial increase in the number and size of deployments.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-019",
+   "label": "In 2005, the media industry will launch its most sustained and successful attack so far on piracy and copyright theft.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-020",
+   "label": "By the end of 2005, there will likely be two billion mobile subscriptions.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-022",
+   "label": "2005 will see dozens of 3G networks go live. Initial consumer interest and adoption may well be low, but by year-end the situation should improve markedly in many countries.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-023",
+   "label": "Mobile penetration in excess of 100 percent, will become reality in a growing number of markets in 2005.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-024",
+   "label": "The most compelling and lucrative mobile content will continue to revolve around phone personalization.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-026",
+   "label": "Mobile e-mail will grow very rapidly in both the personal and enterprise markets, and text messaging will continue to account for up to 20 percent of operator revenue.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-027",
+   "label": "Experiments with TV and radio on mobile phones will tend to generate little value, as quality, cost and relevance hinder adoption.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-029",
+   "label": "The market for private WiFi installations will continue to skyrocket.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-031",
+   "label": "In 2005, the vast majority of voice calls will still originate and terminate on the PSTN (Public Switched Telephony Network).",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-032",
+   "label": "VoIP will remain a niche product in 2005, but its importance to the global voice market will grow substantially.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-034",
+   "label": "Although broadband penetration will continue to grow, profitability will generally decline. In many countries, broadband providers will celebrate the fact that broadband connections finally outnumber dial-up",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-035",
+   "label": "Overall demand for fixed-line bandwidth will grow steadily throughout 2005, and there are strong indications this growth will continue until at least 2010.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-036",
+   "label": "WiMAX – a wireless data standard also known as 802.16, and apparent heir to WiFi (802.11) – is likely to remain on trial in 2005.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-038",
+   "label": "In 2005, several operators will launch converged telephone services that feature fixed line pricing within buildings and mobile pricing when outdoors",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-039",
+   "label": "Although fee-based hotspots will struggle, global use of WiFi will continue to grow",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-040",
+   "label": "Fiber to the home (FTTH) – a revolutionary technology long regarded by fixed operators as their most potent weapon – is expected to take a huge leap forward in 2005.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-006",
+   "label": "Offshoring as a means of minimizing corporate costs and optimizing efficiency will continue to gain in popularity throughout 2006. In some sectors, offshoring may well evolve from an exceptional practice into a prerequisite for survival.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-007",
+   "label": "During the year, a growing number of schools in developed countries are likely to install digital whiteboards, such that by 2010 every classroom in developed countries is expected to have one",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-009",
+   "label": "2006 will see the launch of a widening range of devices, from cameras to cars, that have the ability and necessary connectivity to be remotely upgraded, updated, maintained and even generate additional revenue.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-010",
+   "label": "The digital divide – that is the gap between those who have digital technology and those who do not – is likely to deepen in a number of directions during 2006.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-012",
+   "label": "By the end of the year, music distributed in purely digital form is likely to account for roughly 20 percent of total music revenues, with eight percent expected to come from legal downloads and 12 percent from ring tones",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-013",
+   "label": "the higher average selling price of the latter may allow flat panel television revenues to exceed CRT for the first time",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-016",
+   "label": "For content providers, in 2006 IPTV will probably be just another distribution channel and a relatively small one at that.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-019",
+   "label": "IPTV, video-on-demand over the Internet, podcasting and other services will likely grow throughout the year and should serve to demonstrate that convergence is both real and valuable.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-020",
+   "label": "2006 will see the first major global sporting event offered in high definition format – the soccer World Cup",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-021",
+   "label": "2006 will likely see the number of personal weblogs (blogs) rise to over 60 million worldwide.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-022",
+   "label": "Aggregate paid-for connections will likely exceed four billion worldwide",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-023",
+   "label": "While 3G's subscriber base should expand by tens of millions, 2G (and its 2.5G variant) will likely continue to represent the majority of revenues, profits and growth for the mobile sector",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-027",
+   "label": "After a prolonged period of restraint, the telecommunications industry is likely to undergo a period of intense M&A activity in 2006.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-030",
+   "label": "Fixed operators will most likely expand into managed IT services and systems integration, as well as broadband-based television services.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-031",
+   "label": "By contrast, ad-hoc VoIP, which uses the open Internet as the service platform, may struggle to gain a mass market, revenue-generating following.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-013",
+   "label": "In 2007, its value may be measurable in billions of dollars.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-017",
+   "label": "In 2007, the key forms of participation, all of which are based around a call to action from the television show to its audience, are likely to generate increasing revenues.",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-018",
+   "label": "Piracy is another big challenge for all types of media and is likely to remain a key issue in 2007.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-020",
+   "label": "Thus in 2007, while the potential of the long tail may grow longer still, it may be the thick, short start of the tail that is most productive.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-023",
+   "label": "Whereas streaming video appears to be working well, video downloads may encounter some challenges in 2007, particularly when downloaded to PCs.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-024",
+   "label": "The real-world value of transactions taking place in virtual worlds is rising steadily, and is likely to continue growing through 2007.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-025",
+   "label": "The unrelenting growth in Internet traffic during 2007 may overwhelm some of the Internet's backbones: the terabit-capable pipes connecting continents.",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-026",
+   "label": "The debate around net neutrality is likely to become increasingly aggressive and global during the course of 2007",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-027",
+   "label": "In 2007, based on present trends, overall Internet penetration in developed economies, where the majority of people online already have broadband access, may hardly rise.",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-028",
+   "label": "Despite all the discussion and the obsession, mobile television has had muted commercial impact in most markets (see Figure 2). Its disappointing performance is likely to endure through 2007.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-029",
+   "label": "Partly because of its ubiquity, mobile is likely to consolidate its position as the primary network for voice calls during 2007",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-012",
+   "label": "In 2008, resistance may grow to the volume and depth of information that websites are capturing about consumers' online behavior.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-013",
+   "label": "But in 2008, a further acronym, XBRL may become as well known as HTML or GAAP.",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-015",
+   "label": "Use of desalination, which already provides much of the drinking water in a number of countries, is likely to grow in 2008.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-016",
+   "label": "Digital movie theaters could become supplementary venues for events ranging from the Olympics to the opera",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-017",
+   "label": "2008 could be the year, however, in which music becomes tangible again.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-018",
+   "label": "During the year, traditional media companies are likely to move towards a more active and dynamic online presence, as they begin to phase out the historical, now seemingly arbitrary barriers between analog and digital versions",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-026",
+   "label": "The move to network sharing would recognize the growing belief that in 2008 the business model for cellular mobile that has prevailed until now may no longer be",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-027",
+   "label": "And by 2020, there will be 75 percent more over-50s in North America and Europe than those under 20",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-028",
+   "label": "While the credit crunch may dampen the pace of mergers and acquisitions (M&A) activity in 2008",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-015",
+   "label": "The volatility in the price and supply of oil, gas and coal may be a key reason for the growing supply of nuclear power, whose global generating capacity is forecast to grow by 1.3 percent in 2009 and could double by 2030",
+   "verdict": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-018",
+   "label": "In 2009, the 3D movie may have its first billion dollar year at the box office.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-023",
+   "label": "Social networks are therefore likely to be under increased financial scrutiny in 2009, particularly for sites offering video hosting and streaming",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-024",
+   "label": "During 2009, lower liquidity and a focus on cash generation may make investment in broadcast systems such as DVB-H, and even systems based on existing 3G intrastructure, less likely",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-029",
+   "label": "Following a model already used in Asia Pacific ... governments may start issuing tender requests or licenses for single fiber network deployment.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-030",
+   "label": "That differential of $0.09 is likely to become the subject of heated debate in 2009 and winners and losers may be defined by the rate at which it declines.",
+   "verdict": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-017",
+   "label": "DTT TMT predicts that in 2010, users and usage of mobile Voice over Internet Protocol (VoIP) should start to evolve from niche to mainstream",
+   "verdict": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-019",
+   "label": "DTT TMT predicts that in 2010 North American network operators – both wireless and wireline – will likely move away from “all you can eat” data pricing plans.",
+   "verdict": "hit",
+   "wave": "w2"
   }
  ],
  "unfalsifiable_agreed": [],
  "ungradable_agreed": [
   {
    "id": "deloitte-tmt-predictions-2007-005",
-   "label": "Headlines about new media's near vertical rise abound. Analyses of the travails of old media are similarly plentiful. Yet terms of reference often differ and context is sadly lacking. This causes misunderstandings that are likely to linger throughout 2007."
+   "label": "Headlines about new media's near vertical rise abound. Analyses of the travails of old media are similarly plentiful. Yet terms of reference often differ and context is sadly lacking. This causes misunderstandings that are likely to linger throughout 2007.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-006",
-   "label": "Yet in 2007, much of the telecommunications industry focus is likely to remain towards high bandwidth applications based around large files ... and as a result, many operators may overlook a larger opportunity sitting right under their noses."
+   "label": "Yet in 2007, much of the telecommunications industry focus is likely to remain towards high bandwidth applications based around large files ... and as a result, many operators may overlook a larger opportunity sitting right under their noses.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-005",
-   "label": "Overcoming online piracy may not mean the end of counterfeit content"
+   "label": "Overcoming online piracy may not mean the end of counterfeit content",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-006",
-   "label": "In 2008, enterprises may ask more probing questions about the limits, as well as the potential, of virtualization, possibly leading to a more measured deployment of the technology."
+   "label": "In 2008, enterprises may ask more probing questions about the limits, as well as the potential, of virtualization, possibly leading to a more measured deployment of the technology.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-007",
-   "label": "Every day in 2008, mainframes are expected to process more than 30 billion transactions, representing 70 percent of the world's business data. ... the number of staff skilled in their maintenance and development may fall."
+   "label": "Every day in 2008, mainframes are expected to process more than 30 billion transactions, representing 70 percent of the world's business data. ... the number of staff skilled in their maintenance and development may fall.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-009",
-   "label": "The public image of nanotechnology has recently become tainted, despite mass market use of nanotechnology-enabled products."
+   "label": "The public image of nanotechnology has recently become tainted, despite mass market use of nanotechnology-enabled products.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-004",
-   "label": "However, these trends may have caused a corresponding growth in the risk associated with information leakage and data theft."
+   "label": "However, these trends may have caused a corresponding growth in the risk associated with information leakage and data theft.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-006",
-   "label": "In 2009, companies may halve what they spend on physical storage. Spending on new servers may increase by just 4 percent to $58 billion."
+   "label": "In 2009, companies may halve what they spend on physical storage. Spending on new servers may increase by just 4 percent to $58 billion.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-008",
-   "label": "In 2009 however, several factors are expected to raise the profile of information, catalyzing its ascension to the boardroom."
+   "label": "In 2009 however, several factors are expected to raise the profile of information, catalyzing its ascension to the boardroom.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-009",
-   "label": "During 2009, on average office workers are expected to check their inboxes more than 50 times and send more than 160 messages daily, in all dedicating up to two hours each day to email."
+   "label": "During 2009, on average office workers are expected to check their inboxes more than 50 times and send more than 160 messages daily, in all dedicating up to two hours each day to email.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-004",
-   "label": "DTT TMT predicts that in 2010, Virtual Desktop Infrastructure ... will be taken far more seriously than in previous years ... In 2010, over one million seats may go thin client"
+   "label": "DTT TMT predicts that in 2010, Virtual Desktop Infrastructure ... will be taken far more seriously than in previous years ... In 2010, over one million seats may go thin client",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-005",
-   "label": "DTT TMT predicts that 2010 will likely see many enterprise technology and telecommunications purchasing decisions based on the preferences of individual employees, rather than traditional IT department criteria."
+   "label": "DTT TMT predicts that 2010 will likely see many enterprise technology and telecommunications purchasing decisions based on the preferences of individual employees, rather than traditional IT department criteria.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-012",
-   "label": "By year-end, more than 30 percent of broadband-enabled households are likely to interact occasionally or regularly with what they are watching on television through some form of computing device."
+   "label": "By year-end, more than 30 percent of broadband-enabled households are likely to interact occasionally or regularly with what they are watching on television through some form of computing device.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-013",
-   "label": "In 2010, the number of paying subscribers ... should exceed 10 million for the first time."
+   "label": "In 2010, the number of paying subscribers ... should exceed 10 million for the first time.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-003",
-   "label": "Deloitte predicts that in 2011 more than 25 percent of all tablet computers will be bought by enterprises, and that figure is likely to rise in 2012 and beyond."
+   "label": "Deloitte predicts that in 2011 more than 25 percent of all tablet computers will be bought by enterprises, and that figure is likely to rise in 2012 and beyond.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-004",
-   "label": "In 2011 Deloitte predicts e-government (eGov) usage will reach an inflection point. Across developed countries, the proportion of businesses that use eGov services for at least one process is expected to average over 90 percent, up from 75 percent in 2010."
+   "label": "In 2011 Deloitte predicts e-government (eGov) usage will reach an inflection point. Across developed countries, the proportion of businesses that use eGov services for at least one process is expected to average over 90 percent, up from 75 percent in 2010.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-012",
-   "label": "Deloitte forecasts that the total revenue from these relatively new sources could be as high as $10 billion, or 16 percent of total game revenues, by the end of 2012"
+   "label": "Deloitte forecasts that the total revenue from these relatively new sources could be as high as $10 billion, or 16 percent of total game revenues, by the end of 2012",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-013",
-   "label": "Deloitte predicts that in 2011, the live music sector, with festival organizers at the forefront, will start expanding its talent creation and nurturing role"
+   "label": "Deloitte predicts that in 2011, the live music sector, with festival organizers at the forefront, will start expanding its talent creation and nurturing role",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-016",
-   "label": "Deloitte predicts that in 2011 the volume of data uploaded or downloaded from portable devices via public Wi-Fi networks will grow at a much faster rate (25-50 percent) than the volume carried over cellular broadband networks."
+   "label": "Deloitte predicts that in 2011 the volume of data uploaded or downloaded from portable devices via public Wi-Fi networks will grow at a much faster rate (25-50 percent) than the volume carried over cellular broadband networks.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-017",
-   "label": "Deloitte predicts that in 2011, 25 percent of North American big box and anchor tenant retailers will begin offering free in-store Wi-Fi access to shoppers."
+   "label": "Deloitte predicts that in 2011, 25 percent of North American big box and anchor tenant retailers will begin offering free in-store Wi-Fi access to shoppers.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-018",
-   "label": "Deloitte believes that in 2011 video calling will be cheaper, better and more widely available than ever; yet a boom in demand is unlikely."
+   "label": "Deloitte believes that in 2011 video calling will be cheaper, better and more widely available than ever; yet a boom in demand is unlikely.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-002",
-   "label": "Deloitte predicts that in 2012 almost five percent of tablets sold will likely be to individuals or households that already own a tablet, which equates to five million tablets worth between $1.5 and $2 billion in revenue."
+   "label": "Deloitte predicts that in 2012 almost five percent of tablets sold will likely be to individuals or households that already own a tablet, which equates to five million tablets worth between $1.5 and $2 billion in revenue.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-003",
-   "label": "Deloitte predicts that in 2012, \"big data\" will likely experience accelerating growth and market penetration."
+   "label": "Deloitte predicts that in 2012, \"big data\" will likely experience accelerating growth and market penetration.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-006",
-   "label": "In 2012, Deloitte predicts that 3D printers will likely become a viable segment in several markets including the $22 billion global power tools market, and the industrial manufacturing market with growth rates of greater than 100 percent versus 2011."
+   "label": "In 2012, Deloitte predicts that 3D printers will likely become a viable segment in several markets including the $22 billion global power tools market, and the industrial manufacturing market with growth rates of greater than 100 percent versus 2011.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-007",
-   "label": "In 2012, Deloitte estimates that targeted TV advertising will likely represent less than one tenth of a percent of global television advertising revenues, which is less than $200 million out of a total market of $227 billion."
+   "label": "In 2012, Deloitte estimates that targeted TV advertising will likely represent less than one tenth of a percent of global television advertising revenues, which is less than $200 million out of a total market of $227 billion.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-008",
-   "label": "In 2012, Deloitte predicts that 95 percent of television programs watched will likely be viewed live or \"near live\", that is within 24 hours of broadcast."
+   "label": "In 2012, Deloitte predicts that 95 percent of television programs watched will likely be viewed live or \"near live\", that is within 24 hours of broadcast.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-009",
-   "label": "In 2012, Deloitte predicts that full-screen smartphone owners and tablet owners will likely use their devices as portable digital video recorders (DVRs) to catch up on five billion hours of TV while commuting on public transportation."
+   "label": "In 2012, Deloitte predicts that full-screen smartphone owners and tablet owners will likely use their devices as portable digital video recorders (DVRs) to catch up on five billion hours of TV while commuting on public transportation.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-010",
-   "label": "Deloitte predicts that in 2012 global spending on brand advertising online will likely grow faster than either traditional advertising or direct-response online advertising ... which we expect to rise 50 percent year-over-year to $20 billion"
+   "label": "Deloitte predicts that in 2012 global spending on brand advertising online will likely grow faster than either traditional advertising or direct-response online advertising ... which we expect to rise 50 percent year-over-year to $20 billion",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-011",
-   "label": "In 2012 an increasing proportion of all MRI machines and MRI hours will likely be spent fine-tuning products, services and marketing messages."
+   "label": "In 2012 an increasing proportion of all MRI machines and MRI hours will likely be spent fine-tuning products, services and marketing messages.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-012",
-   "label": "Deloitte predicts that in 2012 revenue growth for the social games industry may slow to less than 20 percent."
+   "label": "Deloitte predicts that in 2012 revenue growth for the social games industry may slow to less than 20 percent.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-013",
-   "label": "Deloitte predicts that in 2012 the number of people signed up to receive online coupon newsletters may decline moderately, as may the number of online coupon intermediaries"
+   "label": "Deloitte predicts that in 2012 the number of people signed up to receive online coupon newsletters may decline moderately, as may the number of online coupon intermediaries",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-014",
-   "label": "In 2012, Deloitte predicts that by year-end over 500 million smartphones with a retail price of $100 or less will likely be in use worldwide."
+   "label": "In 2012, Deloitte predicts that by year-end over 500 million smartphones with a retail price of $100 or less will likely be in use worldwide.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-015",
-   "label": "Deloitte predicts that in 2012 shipments of devices equipped with near field communications (NFC) capabilities will likely grow about 100 percent to almost 200 million."
+   "label": "Deloitte predicts that in 2012 shipments of devices equipped with near field communications (NFC) capabilities will likely grow about 100 percent to almost 200 million.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-016",
-   "label": "Deloitte predicts that by year-end 2012 over 80 percent of all wireless traffic going over short-range (under 10 meters) connections will likely be data"
+   "label": "Deloitte predicts that by year-end 2012 over 80 percent of all wireless traffic going over short-range (under 10 meters) connections will likely be data",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2012-017",
-   "label": "Deloitte predicts that in 2012 a further one hundred million Internet users will likely need to start watching the meter on their wired broadband connection."
+   "label": "Deloitte predicts that in 2012 a further one hundred million Internet users will likely need to start watching the meter on their wired broadband connection.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-002",
-   "label": "Deloitte predicts that in 2013, very few additional companies will adopt a bring-your-own-computer (BYOC) policy, and some of those that already have one will abandon them."
+   "label": "Deloitte predicts that in 2013, very few additional companies will adopt a bring-your-own-computer (BYOC) policy, and some of those that already have one will abandon them.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-003",
-   "label": "Deloitte predicts that in 2013 more than 90 percent of user-generated passwords, even those considered strong by IT departments, will be vulnerable to hacking."
+   "label": "Deloitte predicts that in 2013 more than 90 percent of user-generated passwords, even those considered strong by IT departments, will be vulnerable to hacking.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-004",
-   "label": "Deloitte predicts that by the end of 2013 more than 90 percent of Fortune 500 companies will have partially or fully implemented an Enterprise Social Network (ESN), a 70 percent increase over 2011."
+   "label": "Deloitte predicts that by the end of 2013 more than 90 percent of Fortune 500 companies will have partially or fully implemented an Enterprise Social Network (ESN), a 70 percent increase over 2011.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-006",
-   "label": "A growing range (tens rather than hundreds) of high-end TV sets are likely to incorporate gesture or voice based controls in 2013, Deloitte predicts."
+   "label": "A growing range (tens rather than hundreds) of high-end TV sets are likely to incorporate gesture or voice based controls in 2013, Deloitte predicts.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-008",
-   "label": "Deloitte predicts that in 2013, about ten percent of households in developed countries, and about three percent of households in developing countries, will dual video screen their television consumption on a monthly basis."
+   "label": "Deloitte predicts that in 2013, about ten percent of households in developed countries, and about three percent of households in developing countries, will dual video screen their television consumption on a monthly basis.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-010",
-   "label": "Deloitte predicts that in 2013, in markets where services are available, two of the top three over-the-top (OTT) TV program and movie services are likely to be provided by existing broadcasters and distributors."
+   "label": "Deloitte predicts that in 2013, in markets where services are available, two of the top three over-the-top (OTT) TV program and movie services are likely to be provided by existing broadcasters and distributors.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-014",
-   "label": "Deloitte predicts that in 2013, what is currently described as \"mobile\" advertising will get split into two categories representing two similar but distinct devices – tablets and smartphones."
+   "label": "Deloitte predicts that in 2013, what is currently described as \"mobile\" advertising will get split into two categories representing two similar but distinct devices – tablets and smartphones.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-015",
-   "label": "Deloitte predicts that in 2013 between 50 and 100 mobile operators will offer all-you-can-eat services with unlimited access to specific applications."
+   "label": "Deloitte predicts that in 2013 between 50 and 100 mobile operators will offer all-you-can-eat services with unlimited access to specific applications.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-016",
-   "label": "Deloitte predicts that although additional spectrum will continue to be made available in 2013 in many global markets, spectrum exhaustion will continue to exacerbate in many countries, especially in dense urban areas."
+   "label": "Deloitte predicts that although additional spectrum will continue to be made available in 2013 in many global markets, spectrum exhaustion will continue to exacerbate in many countries, especially in dense urban areas.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-001",
-   "label": "Deloitte predicts that global sales of smartphones, tablets, PCs, TV sets and video game consoles will exceed $750 billion in 2014, up $50 billion from 2013"
+   "label": "Deloitte predicts that global sales of smartphones, tablets, PCs, TV sets and video game consoles will exceed $750 billion in 2014, up $50 billion from 2013",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-003",
-   "label": "Deloitte predicts that in the first quarter of 2014, the installed base of compact tablets (with screens smaller than 8.5 inches) will surpass the base of classic tablets (8.5 inches and larger) for the first time."
+   "label": "Deloitte predicts that in the first quarter of 2014, the installed base of compact tablets (with screens smaller than 8.5 inches) will surpass the base of classic tablets (8.5 inches and larger) for the first time.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-005",
-   "label": "Deloitte predicts that in 2014, there will be 100 million eVisits globally, potentially saving over $5 billion when compared to the cost of in-person doctor visits"
+   "label": "Deloitte predicts that in 2014, there will be 100 million eVisits globally, potentially saving over $5 billion when compared to the cost of in-person doctor visits",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-006",
-   "label": "Deloitte predicts that by the end of 2014 up to 50 million homes around the world will have two or more separate pay-television subscriptions, with the additional subscriptions generating about $5 billion in revenues."
+   "label": "Deloitte predicts that by the end of 2014 up to 50 million homes around the world will have two or more separate pay-television subscriptions, with the additional subscriptions generating about $5 billion in revenues.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-008",
-   "label": "Deloitte predicts that in 2014 the value of premium sports broadcast rights worldwide will increase to $24.2 billion, a 14 percent rise, or $2.9 billion over 2013."
+   "label": "Deloitte predicts that in 2014 the value of premium sports broadcast rights worldwide will increase to $24.2 billion, a 14 percent rise, or $2.9 billion over 2013.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-009",
-   "label": "In 2014 Deloitte predicts that revenues from performance rights, a license payable for the right to play music to the public, should exceed one billion dollars for the first time."
+   "label": "In 2014 Deloitte predicts that revenues from performance rights, a license payable for the right to play music to the public, should exceed one billion dollars for the first time.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-010",
-   "label": "Deloitte predicts that in 2014 the number of video-on-demand (VOD) users in Sub-Saharan Africa (SSA) will grow by about one million – despite the lack of broadband infrastructure in the region."
+   "label": "Deloitte predicts that in 2014 the number of video-on-demand (VOD) users in Sub-Saharan Africa (SSA) will grow by about one million – despite the lack of broadband infrastructure in the region.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-012",
-   "label": "Deloitte predicts that in 2014 shipments of phablets, smartphones with 5.0-6.9 inch screens will represent a quarter of smartphones sold, or 300 million units."
+   "label": "Deloitte predicts that in 2014 shipments of phablets, smartphones with 5.0-6.9 inch screens will represent a quarter of smartphones sold, or 300 million units.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-013",
-   "label": "Deloitte predicts that in 2014, the over-55s will be the age group experiencing the fastest year-on-year rises in smartphone penetration across developed markets."
+   "label": "Deloitte predicts that in 2014, the over-55s will be the age group experiencing the fastest year-on-year rises in smartphone penetration across developed markets.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-014",
-   "label": "Deloitte predicts that in 2014 the entry price for a ruggedized, connected data device ... will fall to $250."
+   "label": "Deloitte predicts that in 2014 the entry price for a ruggedized, connected data device ... will fall to $250.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-001",
-   "label": "Deloitte predicts that in 2015 one billion wireless Internet of Things (IoT) devices will be shipped, up 60 percent from 2014, and leading to an installed base of 2.8 billion devices."
+   "label": "Deloitte predicts that in 2015 one billion wireless Internet of Things (IoT) devices will be shipped, up 60 percent from 2014, and leading to an installed base of 2.8 billion devices.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-002",
-   "label": "Deloitte predicts that in 2015, the active base of non-military drones costing $200 or more should exceed one million units for the first time."
+   "label": "Deloitte predicts that in 2015, the active base of non-military drones costing $200 or more should exceed one million units for the first time.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-004",
-   "label": "Deloitte predicts that the number of click and collect locations in Europe will reach half a million in 2015, a twenty percent increase on the previous year."
+   "label": "Deloitte predicts that the number of click and collect locations in Europe will reach half a million in 2015, a twenty percent increase on the previous year.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-006",
-   "label": "Deloitte predicts that by the end of 2015 over 500 nanosatellites (nanosats) will be in orbit."
+   "label": "Deloitte predicts that by the end of 2015 over 500 nanosatellites (nanosats) will be in orbit.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-007",
-   "label": "Deloitte predicts that in 2015 the impetus for IT adoption will swing back to the enterprise market following a decade of consumer-led technological change."
+   "label": "Deloitte predicts that in 2015 the impetus for IT adoption will swing back to the enterprise market following a decade of consumer-led technological change.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-008",
-   "label": "Deloitte predicts that in 2015 total time spent watching short-form (under 20 minutes' duration) video online will represent under three percent of all video watched on all screens."
+   "label": "Deloitte predicts that in 2015 total time spent watching short-form (under 20 minutes' duration) video online will represent under three percent of all video watched on all screens.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-009",
-   "label": "Deloitte predicts that US and Canadian millennials will spend over $62 billion on media content in 2015."
+   "label": "Deloitte predicts that US and Canadian millennials will spend over $62 billion on media content in 2015.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-011",
-   "label": "Deloitte predicts that one billion smartphones will be purchased as upgrades for the first time in 2015, generating over $300 billion in sales."
+   "label": "Deloitte predicts that one billion smartphones will be purchased as upgrades for the first time in 2015, generating over $300 billion in sales.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-013",
-   "label": "Deloitte predicts that by end-2015, five percent of the base of 600-650 million near-field communication (NFC) equipped phones will be used at least once a month to make contactless in-store payments at retail outlets."
+   "label": "Deloitte predicts that by end-2015, five percent of the base of 600-650 million near-field communication (NFC) equipped phones will be used at least once a month to make contactless in-store payments at retail outlets.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-002",
-   "label": "Deloitte Global predicts that trailing millennials (18-24 years old) are likely to be the most pro-PC of all age groups in 2016."
+   "label": "Deloitte Global predicts that trailing millennials (18-24 years old) are likely to be the most pro-PC of all age groups in 2016.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-003",
-   "label": "Deloitte Global predicts that in 2016, the number of individuals who use a third party touch-based payment service to make a purchase on their mobile devices ... should increase by 150 percent, to reach 50 million regular users."
+   "label": "Deloitte Global predicts that in 2016, the number of individuals who use a third party touch-based payment service to make a purchase on their mobile devices ... should increase by 150 percent, to reach 50 million regular users.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-004",
-   "label": "Deloitte Global predicts the total value of the graphene materials market in 2016 is likely to be in the low tens of millions of dollars"
+   "label": "Deloitte Global predicts the total value of the graphene materials market in 2016 is likely to be in the low tens of millions of dollars",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-005",
-   "label": "Deloitte Global predicts that by end-2016 more than 80 of the world's 100 largest enterprise software companies by revenues will have integrated cognitive technologies into their products"
+   "label": "Deloitte Global predicts that by end-2016 more than 80 of the world's 100 largest enterprise software companies by revenues will have integrated cognitive technologies into their products",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-013",
-   "label": "Deloitte Global predicts that the number of Gigabit per second (Gbit/s) Internet connections will surge to 10 million by year-end, a tenfold increase, of which about 70 percent will be residential connections."
+   "label": "Deloitte Global predicts that the number of Gigabit per second (Gbit/s) Internet connections will surge to 10 million by year-end, a tenfold increase, of which about 70 percent will be residential connections.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-014",
-   "label": "Deloitte Global predicts that in 2016 consumers will sell outright or trade in approximately 120 million used smartphones generating more than $17 billion for their owners"
+   "label": "Deloitte Global predicts that in 2016 consumers will sell outright or trade in approximately 120 million used smartphones generating more than $17 billion for their owners",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-015",
-   "label": "Deloitte Global predicts that in 2016, 26 percent of smartphone users in developed markets will not make any traditional phone calls in a given week."
+   "label": "Deloitte Global predicts that in 2016, 26 percent of smartphone users in developed markets will not make any traditional phone calls in a given week.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-017",
-   "label": "Deloitte Global predicts that in 2016, 2.5 trillion photos will be shared or stored online, a 15 percent increase on the prior year."
+   "label": "Deloitte Global predicts that in 2016, 2.5 trillion photos will be shared or stored online, a 15 percent increase on the prior year.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-001",
-   "label": "Deloitte Global predicts that the active base of fingerprint reader-equipped devices will top one billion for the first time in early 2017."
+   "label": "Deloitte Global predicts that the active base of fingerprint reader-equipped devices will top one billion for the first time in early 2017.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-005",
-   "label": "Deloitte Global predicts that over 300 million smartphones, or more than a fifth of units sold in 2017, will have on-board neural network machine learning capability."
+   "label": "Deloitte Global predicts that over 300 million smartphones, or more than a fifth of units sold in 2017, will have on-board neural network machine learning capability.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-006",
-   "label": "Deloitte Global predicts that as of 2022 at least a quarter of all human and machine uses of precision digital navigation will include an indoor leg or be for an entirely indoor journey."
+   "label": "Deloitte Global predicts that as of 2022 at least a quarter of all human and machine uses of precision digital navigation will include an indoor leg or be for an entirely indoor journey.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-007",
-   "label": "Deloitte Global predicts that US TV advertising revenue in 2017 will be flat with 2016."
+   "label": "Deloitte Global predicts that US TV advertising revenue in 2017 will be flat with 2016.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-009",
-   "label": "Deloitte Global predicts that vinyl will continue its remarkable resurgence ... [and] may generate approaching $1 billion globally in revenues for the first time this millennium."
+   "label": "Deloitte Global predicts that vinyl will continue its remarkable resurgence ... [and] may generate approaching $1 billion globally in revenues for the first time this millennium.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-010",
-   "label": "Deloitte Global predicts that by the end of 2018, spending on IT-as-a-Service ... for data centers, software and services will be just under $550 billion worldwide."
+   "label": "Deloitte Global predicts that by the end of 2018, spending on IT-as-a-Service ... for data centers, software and services will be just under $550 billion worldwide.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-001",
-   "label": "Deloitte Global predicts that over a billion smartphone users will create augmented reality (AR) content at least once in 2018, with three hundred million being monthly creators and tens of millions making and sharing content weekly."
+   "label": "Deloitte Global predicts that over a billion smartphone users will create augmented reality (AR) content at least once in 2018, with three hundred million being monthly creators and tens of millions making and sharing content weekly.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-003",
-   "label": "Deloitte Global predicts that 45 percent of global adult smartphone users in 2018 will worry they are using their phones too much for certain activities, and 45 percent of all adult smartphone users will try to limit their phone usage"
+   "label": "Deloitte Global predicts that 45 percent of global adult smartphone users in 2018 will worry they are using their phones too much for certain activities, and 45 percent of all adult smartphone users will try to limit their phone usage",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-004",
-   "label": "Deloitte Global predicts that by the end of 2018, over 25 percent of all chips used to accelerate machine learning in the data center will be FPGAs (field programmable gate arrays) and ASICs (application-specific integrated circuits)."
+   "label": "Deloitte Global predicts that by the end of 2018, over 25 percent of all chips used to accelerate machine learning in the data center will be FPGAs (field programmable gate arrays) and ASICs (application-specific integrated circuits).",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-005",
-   "label": "Deloitte Global predicts that in 2018, large and medium-sized enterprises will intensify their use of machine learning. The number of implementations and pilot projects using the technology will double compared with 2017, and they will have doubled again by 2020."
+   "label": "Deloitte Global predicts that in 2018, large and medium-sized enterprises will intensify their use of machine learning. The number of implementations and pilot projects using the technology will double compared with 2017, and they will have doubled again by 2020.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-006",
-   "label": "Deloitte Global predicts that live broadcast and events will generate $545 billion in direct revenue in 2018, a one percent increase over the previous year."
+   "label": "Deloitte Global predicts that live broadcast and events will generate $545 billion in direct revenue in 2018, a one percent increase over the previous year.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-007",
-   "label": "Deloitte Global predicts that by the end of 2018, 50 percent of adults in developed countries will have at least two online-only media subscriptions, and by the end of 2020, that average will have doubled to four."
+   "label": "Deloitte Global predicts that by the end of 2018, 50 percent of adults in developed countries will have at least two online-only media subscriptions, and by the end of 2020, that average will have doubled to four.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-008",
-   "label": "Deloitte Global predicts that 10 percent of North Americans over age 18 will be engaged in four or more multiple, simultaneous advertisement-blocking behaviors in 2018"
+   "label": "Deloitte Global predicts that 10 percent of North Americans over age 18 will be engaged in four or more multiple, simultaneous advertisement-blocking behaviors in 2018",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-009",
-   "label": "Deloitte Global predicts that traditional TV viewing ... among 18-24 year olds will decline by 5 to 15 percent per year in the US, Canada and the UK in both 2018 and 2019."
+   "label": "Deloitte Global predicts that traditional TV viewing ... among 18-24 year olds will decline by 5 to 15 percent per year in the US, Canada and the UK in both 2018 and 2019.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-011",
-   "label": "Deloitte Global predicts that in 2018, one billion passenger journeys on planes (about a quarter of the total) will be on aircraft equipped with in-flight connectivity (IFC)."
+   "label": "Deloitte Global predicts that in 2018, one billion passenger journeys on planes (about a quarter of the total) will be on aircraft equipped with in-flight connectivity (IFC).",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-002",
-   "label": "Deloitte Global predicts that by 2020, penetration rates of enterprise software with integrated AI and cloud based AI platforms will reach an estimated 87 percent and 83 percent, respectively, among companies that use AI software."
+   "label": "Deloitte Global predicts that by 2020, penetration rates of enterprise software with integrated AI and cloud based AI platforms will reach an estimated 87 percent and 83 percent, respectively, among companies that use AI software.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-003",
-   "label": "DELOITTE GLOBAL PREDICTS that the industry for smart speakers ... will be worth US$7 billion in 2019, selling 164 million units at an average selling price of US$43."
+   "label": "DELOITTE GLOBAL PREDICTS that the industry for smart speakers ... will be worth US$7 billion in 2019, selling 164 million units at an average selling price of US$43.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-004",
-   "label": "DELOITTE GLOBAL PREDICTS that in 2019, 60 percent of North American men aged 18–34 who watch sports on TV will also bet on sports—and the more often they bet, the more TV sports they'll watch."
+   "label": "DELOITTE GLOBAL PREDICTS that in 2019, 60 percent of North American men aged 18–34 who watch sports on TV will also bet on sports—and the more often they bet, the more TV sports they'll watch.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-005",
-   "label": "DELOITTE GLOBAL PREDICTS that in 2019, the North American market for eSports will expand by 35 percent, driven by advertising, broadcast licensing, and franchise sales."
+   "label": "DELOITTE GLOBAL PREDICTS that in 2019, the North American market for eSports will expand by 35 percent, driven by advertising, broadcast licensing, and franchise sales.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-006",
-   "label": "DELOITTE GLOBAL PREDICTS that global radio revenue will reach US$40 billion in 2019, a 1 percent increase over 2018."
+   "label": "DELOITTE GLOBAL PREDICTS that global radio revenue will reach US$40 billion in 2019, a 1 percent increase over 2018.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-007",
-   "label": "DELOITTE GLOBAL PREDICTS that sales related to 3D printing ... by large public companies—including enterprise 3D printers, materials, and services—will surpass US$2.7 billion in 2019 and top US$3 billion in 2020."
+   "label": "DELOITTE GLOBAL PREDICTS that sales related to 3D printing ... by large public companies—including enterprise 3D printers, materials, and services—will surpass US$2.7 billion in 2019 and top US$3 billion in 2020.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-009",
-   "label": "DELOITTE GLOBAL PREDICTS that revenues for semiconductors manufactured in China will grow by 25 percent to approximately US$110 billion in 2019 from an estimated US$85 billion in 2018"
+   "label": "DELOITTE GLOBAL PREDICTS that revenues for semiconductors manufactured in China will grow by 25 percent to approximately US$110 billion in 2019 from an estimated US$85 billion in 2018",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-001",
-   "label": "We predict that in 2020, more than 750 million edge AI chips—chips or parts of chips that perform or accelerate machine learning tasks on-device, rather than in a remote data center—will be sold."
+   "label": "We predict that in 2020, more than 750 million edge AI chips—chips or parts of chips that perform or accelerate machine learning tasks on-device, rather than in a remote data center—will be sold.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-005",
-   "label": "We predict that the smartphone multiplier will drive US$459 billion of revenue in 2020 alone."
+   "label": "We predict that the smartphone multiplier will drive US$459 billion of revenue in 2020 alone.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-006",
-   "label": "We predict that in 2020, at least 1.6 billion people worldwide, representing 450 million households, will get at least some of their TV from an antenna."
+   "label": "We predict that in 2020, at least 1.6 billion people worldwide, representing 450 million households, will get at least some of their TV from an antenna.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-007",
-   "label": "We predict that the global CDN market will reach US$14 billion in 2020, up more than 25 percent from 2019's estimated US$11 billion."
+   "label": "We predict that the global CDN market will reach US$14 billion in 2020, up more than 25 percent from 2019's estimated US$11 billion.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-008",
-   "label": "Deloitte Global predicts that revenue from ad-supported video services will reach an estimated US$32 billion in 2020."
+   "label": "Deloitte Global predicts that revenue from ad-supported video services will reach an estimated US$32 billion in 2020.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-009",
-   "label": "In 2020, Deloitte predicts, the global audiobook market will grow by 25 percent to US$3.5 billion. We also predict that the global podcasting market will increase by 30 percent to reach US$1.1 billion in 2020"
+   "label": "In 2020, Deloitte predicts, the global audiobook market will grow by 25 percent to US$3.5 billion. We also predict that the global podcasting market will increase by 30 percent to reach US$1.1 billion in 2020",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2020-010",
-   "label": "We predict that tens of billions of additional bicycle trips per year will take place in 2022 over 2019 levels."
+   "label": "We predict that tens of billions of additional bicycle trips per year will take place in 2022 over 2019 levels.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-001",
-   "label": "Deloitte predicts that in 2021, the global market for the intelligent edge will expand to US$12 billion, continuing a compound annual growth rate (CAGR) of around 35%."
+   "label": "Deloitte predicts that in 2021, the global market for the intelligent edge will expand to US$12 billion, continuing a compound annual growth rate (CAGR) of around 35%.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-004",
-   "label": "Although deployments are starting slowly, they could easily double in 2021."
+   "label": "Although deployments are starting slowly, they could easily double in 2021.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-005",
-   "label": "In 2021, we predict women's sports revenues will be well under a billion dollars ... we predict that women's sports will grow to be worth a great deal more than a billion dollars in the years ahead."
+   "label": "In 2021, we predict women's sports revenues will be well under a billion dollars ... we predict that women's sports will grow to be worth a great deal more than a billion dollars in the years ahead.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-006",
-   "label": "we predict that by the end of 2021, multiple professional sports leagues will establish new formal policies around the collection, use, and commercialization of player data."
+   "label": "we predict that by the end of 2021, multiple professional sports leagues will establish new formal policies around the collection, use, and commercialization of player data.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-007",
-   "label": "We predict that 8K—an upgrade and complement to 4K resolution—will generate US$3.3 billion in global revenue in 2021"
+   "label": "We predict that 8K—an upgrade and complement to 4K resolution—will generate US$3.3 billion in global revenue in 2021",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-008",
-   "label": "We predict that, led by purchases by corporations and educational institutions, sales for enterprise and educational use of wearable headsets for VR, AR, and MR ... will grow by 100% in 2021 over 2019 levels."
+   "label": "We predict that, led by purchases by corporations and educational institutions, sales for enterprise and educational use of wearable headsets for VR, AR, and MR ... will grow by 100% in 2021 over 2019 levels.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2021-009",
-   "label": "We predict that the percentage of total visits to doctors that are done virtually via video will rise to 5% globally in 2021, up from an estimated 1% in 2019."
+   "label": "We predict that the percentage of total visits to doctors that are done virtually via video will rise to 5% globally in 2021, up from an estimated 1% in 2019.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-001",
-   "label": "Deloitte Global predicts that in 2022, at least 150 million paid subscriptions to streaming video on-demand (SVOD) services will be cancelled worldwide, with churn rates of up to 30% per market."
+   "label": "Deloitte Global predicts that in 2022, at least 150 million paid subscriptions to streaming video on-demand (SVOD) services will be cancelled worldwide, with churn rates of up to 30% per market.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-002",
-   "label": "Deloitte Global predicts that the console market will generate US$81 billion in 2022, up 10% from 2021."
+   "label": "Deloitte Global predicts that the console market will generate US$81 billion in 2022, up 10% from 2021.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-003",
-   "label": "Deloitte Global predicts that addressable TV advertising, which allows different ads to be shown to different households watching the same program, will generate about US$7.5 billion globally in 2022."
+   "label": "Deloitte Global predicts that addressable TV advertising, which allows different ads to be shown to different households watching the same program, will generate about US$7.5 billion globally in 2022.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-004",
-   "label": "Deloitte Global predicts that, in the United Kingdom, 2022 will be the final year that traditional television from broadcasters ... collectively makes up more than 50% of video viewing on all screens."
+   "label": "Deloitte Global predicts that, in the United Kingdom, 2022 will be the final year that traditional television from broadcasters ... collectively makes up more than 50% of video viewing on all screens.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-007",
-   "label": "Deloitte Global predicts that the market for RISC-V processing cores will double in 2022 from what it was in 2021—and that it will double again in 2023"
+   "label": "Deloitte Global predicts that the market for RISC-V processing cores will double in 2022 from what it was in 2021—and that it will double again in 2023",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-009",
-   "label": "Deloitte Global predicts that more Wi-Fi 6 devices will ship in 2022 than 5G devices, to the tune of at least 2.5 billion Wi-Fi 6 devices versus roughly 1.5 billion 5G devices."
+   "label": "Deloitte Global predicts that more Wi-Fi 6 devices will ship in 2022 than 5G devices, to the tune of at least 2.5 billion Wi-Fi 6 devices versus roughly 1.5 billion 5G devices.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-010",
-   "label": "Deloitte Global predicts that 320 million consumer health and wellness wearable devices will ship worldwide in 2022"
+   "label": "Deloitte Global predicts that 320 million consumer health and wellness wearable devices will ship worldwide in 2022",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-011",
-   "label": "Deloitte Global predicts that global spending on mobile mental health applications will reach close to US$500 million in 2022."
+   "label": "Deloitte Global predicts that global spending on mobile mental health applications will reach close to US$500 million in 2022.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-012",
-   "label": "Deloitte Global predicts that smartphones ... will generate 146 million tons of CO2 or equivalent emissions (CO2e) in 2022."
+   "label": "Deloitte Global predicts that smartphones ... will generate 146 million tons of CO2 or equivalent emissions (CO2e) in 2022.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-015",
-   "label": "Deloitte Global predicts that large global technology firms, on average, will reach nearly 33% overall female representation in their workforces in 2022, up slightly more than 2 percentage points from 2019"
+   "label": "Deloitte Global predicts that large global technology firms, on average, will reach nearly 33% overall female representation in their workforces in 2022, up slightly more than 2 percentage points from 2019",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-016",
-   "label": "Deloitte Global predicts that NFTs for sports media will generate more than US$2 billion in transactions in 2022, about double the figure for 2021."
+   "label": "Deloitte Global predicts that NFTs for sports media will generate more than US$2 billion in transactions in 2022, about double the figure for 2021.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-017",
-   "label": "Deloitte Global predicts that ... the combined market for HE and FL will grow at double-digit rates in 2022 to more than US$250 million."
+   "label": "Deloitte Global predicts that ... the combined market for HE and FL will grow at double-digit rates in 2022 to more than US$250 million.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-004",
-   "label": "Deloitte Global predicts that the world's leading semiconductor companies will spend US$300 million on internal and third-party AI tools for designing chips in 2023"
+   "label": "Deloitte Global predicts that the world's leading semiconductor companies will spend US$300 million on internal and third-party AI tools for designing chips in 2023",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-005",
-   "label": "Deloitte Global predicts that chips made of high-power semiconducting materials, primarily gallium nitride (GaN) and silicon carbide (SiC), will sell a combined US$3.3 billion in 2023, up almost 40% from 2022."
+   "label": "Deloitte Global predicts that chips made of high-power semiconducting materials, primarily gallium nitride (GaN) and silicon carbide (SiC), will sell a combined US$3.3 billion in 2023, up almost 40% from 2022.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-006",
-   "label": "Deloitte Global predicts that the radiation-hardened (rad hard) electronics market will top US$1.5 billion in sales globally in 2023."
+   "label": "Deloitte Global predicts that the radiation-hardened (rad hard) electronics market will top US$1.5 billion in sales globally in 2023.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-007",
-   "label": "Deloitte Global predicts that, by the end of 2023, approaching two-thirds of consumers in developed countries will use at least one advertising video-on demand (AVOD) service monthly"
+   "label": "Deloitte Global predicts that, by the end of 2023, approaching two-thirds of consumers in developed countries will use at least one advertising video-on demand (AVOD) service monthly",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-008",
-   "label": "Deloitte Global predicts that in 2023, streamers will spend over US$6 billion on exclusive major sports rights in the largest global markets."
+   "label": "Deloitte Global predicts that in 2023, streamers will spend over US$6 billion on exclusive major sports rights in the largest global markets.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-009",
-   "label": "Deloitte Global predicts that the market for virtual production tools will grow to US$2.2 billion in 2023—up 20% from an estimated US$1.8 billion in 2022."
+   "label": "Deloitte Global predicts that the market for virtual production tools will grow to US$2.2 billion in 2023—up 20% from an estimated US$1.8 billion in 2022.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-010",
-   "label": "Deloitte Global predicts that the market for social commerce will surpass US$1 trillion globally in 2023"
+   "label": "Deloitte Global predicts that the market for social commerce will surpass US$1 trillion globally in 2023",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-011",
-   "label": "Deloitte Global predicts that the virtual reality (VR) market will generate US$7 billion in revenue globally in 2023, an impressive 50% increase over 2022's US$4.7 billion."
+   "label": "Deloitte Global predicts that the virtual reality (VR) market will generate US$7 billion in revenue globally in 2023, an impressive 50% increase over 2022's US$4.7 billion.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-012",
-   "label": "Deloitte Global predicts that the enterprise market for edge computing will grow at 22% in 2023"
+   "label": "Deloitte Global predicts that the enterprise market for edge computing will grow at 22% in 2023",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-013",
-   "label": "Deloitte Global predicts that in 2023, the tech industry will move faster on climate action than nontech industries."
+   "label": "Deloitte Global predicts that in 2023, the tech industry will move faster on climate action than nontech industries.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-014",
-   "label": "Deloitte Global predicts that, in 2023, the number of game company mergers and acquisitions (M&A) will increase by around 25%"
+   "label": "Deloitte Global predicts that, in 2023, the number of game company mergers and acquisitions (M&A) will increase by around 25%",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2023-015",
-   "label": "Deloitte Global predicts that the total value of TMT divestitures in 2023 could expand by 25–50% year over year to range from US$250–300 billion"
+   "label": "Deloitte Global predicts that the total value of TMT divestitures in 2023 could expand by 25–50% year over year to range from US$250–300 billion",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-001",
-   "label": "we predict that the revenue uplift for enterprise software companies (in addition to the cloud providers of gen AI processing capacity) will be approaching a US$10 billion run rate by the end of 2024."
+   "label": "we predict that the revenue uplift for enterprise software companies (in addition to the cloud providers of gen AI processing capacity) will be approaching a US$10 billion run rate by the end of 2024.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-006",
-   "label": "Deloitte predicts year-over-year declines in average water intensity and energy intensity, as well as continued shift in renewable energy mix, across all leading chipmakers."
+   "label": "Deloitte predicts year-over-year declines in average water intensity and energy intensity, as well as continued shift in renewable energy mix, across all leading chipmakers.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-007",
-   "label": "Deloitte predicts that telcos worldwide will be able to reduce their carbon footprint by 2%, or 12 million tons of carbon dioxide equivalent (CO2e) in 2024 and do the same again in 2025."
+   "label": "Deloitte predicts that telcos worldwide will be able to reduce their carbon footprint by 2%, or 12 million tons of carbon dioxide equivalent (CO2e) in 2024 and do the same again in 2025.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-008",
-   "label": "Deloitte predicts the tipping point will be reached in 2024, with growth accelerating to over 30% and revenues climbing from under an estimated US$800 million in 2023 to just over US$1 billion in 2024."
+   "label": "Deloitte predicts the tipping point will be reached in 2024, with growth accelerating to over 30% and revenues climbing from under an estimated US$800 million in 2023 to just over US$1 billion in 2024.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-009",
-   "label": "Deloitte predicts the agricultural technology revenue opportunity ... will be US$18 billion globally in 2024, with a 19% CAGR between 2020 and 2024."
+   "label": "Deloitte predicts the agricultural technology revenue opportunity ... will be US$18 billion globally in 2024, with a 19% CAGR between 2020 and 2024.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-010",
-   "label": "Deloitte predicts that in 2024, revenue generated by women's elite sports will surpass US$1 billion for the first time, with US$1.28 billion in total forecast revenues"
+   "label": "Deloitte predicts that in 2024, revenue generated by women's elite sports will surpass US$1 billion for the first time, with US$1.28 billion in total forecast revenues",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-011",
-   "label": "In 2024, Deloitte predicts that the combined number of subscription video on demand tiers offered by the top US providers will more than double between 2022 and 2024: from an average of four options to eight."
+   "label": "In 2024, Deloitte predicts that the combined number of subscription video on demand tiers offered by the top US providers will more than double between 2022 and 2024: from an average of four options to eight.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-013",
-   "label": "We also predict that the global audio entertainment market will surpass US$75 billion in revenue in 2024, up 7% across these four formats."
+   "label": "We also predict that the global audio entertainment market will surpass US$75 billion in revenue in 2024, up 7% across these four formats.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-015",
-   "label": "Smartphones may be used trillions of times in 2024 to authenticate across an ever-widening range of actions"
+   "label": "Smartphones may be used trillions of times in 2024 to authenticate across an ever-widening range of actions",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-017",
-   "label": "Deloitte predicts that, in 2024, over 90% of the most used online applications on fixed broadband networks in developed markets will have the same vendor-recommended bitrate as in 2023."
+   "label": "Deloitte predicts that, in 2024, over 90% of the most used online applications on fixed broadband networks in developed markets will have the same vendor-recommended bitrate as in 2023.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-018",
-   "label": "government cloud ... is forecast to surpass US$41 billion in 2024, up 16% over 2023."
+   "label": "government cloud ... is forecast to surpass US$41 billion in 2024, up 16% over 2023.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-019",
-   "label": "In 2024, US tech venture debt could rise to US$14–16 billion, up 25% from 2023 levels."
+   "label": "In 2024, US tech venture debt could rise to US$14–16 billion, up 25% from 2023 levels.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-001",
-   "label": "Deloitte predicts that women's use of generative AI will equal or exceed that of men in the United States by the end of 2025."
+   "label": "Deloitte predicts that women's use of generative AI will equal or exceed that of men in the United States by the end of 2025.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-003",
-   "label": "In 2025, we expect to see new stadium developments continue at pace, with almost half of these new projects expected to take place across North America and Europe."
+   "label": "In 2025, we expect to see new stadium developments continue at pace, with almost half of these new projects expected to take place across North America and Europe.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-004",
-   "label": "Deloitte predicts that in 2025, 25% of companies that use gen AI will launch agentic AI pilots or proofs of concept, and this figure will grow to 50% in 2027."
+   "label": "Deloitte predicts that in 2025, 25% of companies that use gen AI will launch agentic AI pilots or proofs of concept, and this figure will grow to 50% in 2027.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-006",
-   "label": "in 2025 Deloitte predicts more companies than ever will turn to \"FinOps\", a set of tools and strategies to measure and optimize cloud spend, to save an estimated US$21 billion."
+   "label": "in 2025 Deloitte predicts more companies than ever will turn to \"FinOps\", a set of tools and strategies to measure and optimize cloud spend, to save an estimated US$21 billion.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-008",
-   "label": "In 2025, Deloitte predicts that the biggest TV and film studios ... will be cautious in adopting generative AI into their creative workflows, with less than 3% of their production budgets going to these tools."
+   "label": "In 2025, Deloitte predicts that the biggest TV and film studios ... will be cautious in adopting generative AI into their creative workflows, with less than 3% of their production budgets going to these tools.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-009",
-   "label": "Deloitte predicts that the stack is about to get shorter ... the number of standalone services will slowly decline in most markets."
+   "label": "Deloitte predicts that the stack is about to get shorter ... the number of standalone services will slowly decline in most markets.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-011",
-   "label": "Deloitte predicts that although gen AI via cloud will continue to be the dominant option in 2025, about half of the enterprises worldwide will add AI data center infrastructure on premises"
+   "label": "Deloitte predicts that although gen AI via cloud will continue to be the dominant option in 2025, about half of the enterprises worldwide will add AI data center infrastructure on premises",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-012",
-   "label": "In 2024, we predicted the women's elite sports market would generate over $1 billion in revenue."
+   "label": "In 2024, we predicted the women's elite sports market would generate over $1 billion in revenue.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-015",
-   "label": "Deloitte predicts that no additional multivendor Open RAN networks will be deployed or announced in 2025."
+   "label": "Deloitte predicts that no additional multivendor Open RAN networks will be deployed or announced in 2025.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-016",
-   "label": "Deloitte predicts that the number of companies, and the dollars spent, working on implementing post quantum cryptography standards will quadruple in 2025 compared with 2023."
+   "label": "Deloitte predicts that the number of companies, and the dollars spent, working on implementing post quantum cryptography standards will quadruple in 2025 compared with 2023.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-017",
-   "label": "As predicted in Deloitte's 2022 Global TMT Predictions report, open-source RISC-V ... CPU chips revenues are expected to be close to US$1 billion by 2024."
+   "label": "As predicted in Deloitte's 2022 Global TMT Predictions report, open-source RISC-V ... CPU chips revenues are expected to be close to US$1 billion by 2024.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-018",
-   "label": "Gen AI-based cyberattacks look like they will have doubled or tripled in 2024, and Deloitte predicts they will grow again in 2025"
+   "label": "Gen AI-based cyberattacks look like they will have doubled or tripled in 2024, and Deloitte predicts they will grow again in 2025",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-019",
-   "label": "Deloitte predicts worldwide advanced packaging revenue based on chiplets will more than double from an estimated US$7 billion in 2021 to reach US$16 billion in 2025."
+   "label": "Deloitte predicts worldwide advanced packaging revenue based on chiplets will more than double from an estimated US$7 billion in 2021 to reach US$16 billion in 2025.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-020",
-   "label": "Deloitte predicts that the global B/OSS market will reach $70 billion by 2025, growing at 5% annually."
+   "label": "Deloitte predicts that the global B/OSS market will reach $70 billion by 2025, growing at 5% annually.",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-021",
-   "label": "Deloitte predicts that sales of silicon photonics chips used as optical transceivers will grow at a compounded annual growth rate of 25% from 2023 to 2025 to reach US$1.25 billion in 2025."
+   "label": "Deloitte predicts that sales of silicon photonics chips used as optical transceivers will grow at a compounded annual growth rate of 25% from 2023 to 2025 to reach US$1.25 billion in 2025.",
+   "wave": "w1"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-002",
+   "label": "The good news is that companies can demonstrate valuable business improvements through m projects. Mobility cuts costs and builds efficiency.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-006",
+   "label": "Local and central government agencies will increasingly use m to reach out to citizens and reduce the cost of providing services.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-010",
+   "label": "Great content will drive consumers to different operators' services.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-001",
+   "label": "Those companies that rise to the 'mobile challenge' and use it to improve their everyday business processes will earn high returns on investment, with payback periods within two years or less",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-002",
+   "label": "Over the coming year close to two thirds of businesses in Europe will have deployed mobile data at least at trial level.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-008",
+   "label": "in the coming year the mobile industry will unfortunately fail to develop the fledgling market for mobile embedded into machines",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-019",
+   "label": "Deloitte Research estimates that some 2 million jobs in the financial sector alone will move off shore in the medium term.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-014",
+   "label": "Convergence will certainly remain a hotly debated topic; however, it is only likely to deliver strong returns for a handful of media companies.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-025",
+   "label": "In 2005, operators will likely take a more scientific approach to segmentation and marketing.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-037",
+   "label": "In 2005, fixed-line operators can expect to see an increasing number of new opportunities to generate revenue from convergence",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-011",
+   "label": "However the technology-based products and services with the greatest impact on the bottom line will likely be those that permanently change common human behaviors.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-014",
+   "label": "2006 should see even more digitization of the production process in all media sectors.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-015",
+   "label": "The new consoles have unprecedented processing power for their size and price, and are expected to drive global game sales to $23 billion in 2006",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-018",
+   "label": "During 2006, the media industry is likely to regard fragmentation increasingly as a benefit, rather than a drawback.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-025",
+   "label": "the telecommunications industry is likely to overlook a significant source of new connections – machines.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-026",
+   "label": "Despite these efforts, the race for speed may not always translate into profit growth.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-028",
+   "label": "However operators, particularly fixed operators, may continue to struggle to get their full share of convergence revenues.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-012",
+   "label": "The reality, however, is that the technologies that are likely to grab tomorrow's headlines may well already exist today.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-021",
+   "label": "The challenge for media companies, in 2007 and beyond, is to second guess how the public's perception of value may change",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-030",
+   "label": "As a result, during 2007 network operators will need to ensure that IPTV is launched as a reinvention of television, rather than a pale imitation of current services",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-010",
+   "label": "In 2008, there is likely to be an increasing clamor, from regulators, users and online traders, for the Internet to require people to provide authenticated identity every time they make any transaction via the Web.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-011",
+   "label": "In 2008, some owners may spend more on virus protection, online backup and insurance over the lifetime of the computer, than they did on the initial outlay for the PC",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-014",
+   "label": "However, the digital divide that afflicts users of technology may become deeper than ever in 2008.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-019",
+   "label": "However, 2008 could see growth in the use of offshored staff to undertake creative tasks, as well as functional roles.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-022",
+   "label": "With sufficient collaboration and focus, the mobile industry could make 2008 the year in which machines finally become a driver of growth",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-024",
+   "label": "Therefore, while a growing number of GPS-enabled mobile phones may be shipped and sold in 2008, aside from the initial novelty, they may not be used very often.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-030",
+   "label": "On that particular day, the 21st anniversary of the launch of GSM, more than 700 GSM networks in more than 200 countries are expected to carry more than 16 billion minutes of calls and six billion text messages",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-013",
+   "label": "Digital litigation may prove recession proof, or even counter-cyclical, in 2009.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-014",
+   "label": "While 2009 should see a growth in ESN, it will probably only be in a minority of leading-edge firms.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-016",
+   "label": "Given this context, up to one out of every ten print publications could be obliged either to reduce print frequency, cease physical printing or, in some cases, shut down entirely in 2009",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-021",
+   "label": "The biggest impetus for Internet radio in 2009 may be the combination of all three dimensions in a portable, easy-to-use unit that resembles a typical household radio set, but which offers far more choice.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-026",
+   "label": "In 2009, the cost of chipsets providing multiple wireless technologies is likely to drop below $2, and may even approach just $1.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-018",
+   "label": "Leading pure-play companies in this area are likely to see year-over-year growth approaching 100 percent, and even an average company is expected to grow by 30-40 percent.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-020",
+   "label": "In 2010, we expect enterprises to become increasingly pragmatic about their need for quality of service in the telecommunications services they acquire. Enterprises are less likely to default to 99.999 percent or “five nines” reliability for all services contracted.",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-021",
+   "label": "In 2010, we expect enterprise demand for telecommunications solutions to rise ... but contract terms to shorten from about 5 – 10 years to a minimum of about three years",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-022",
+   "label": "On a per-line basis, emissions could fall by an average 10 percent – albeit against a background of increasing numbers of lines",
+   "wave": "w2"
   }
  ],
  "contested": [
@@ -1114,187 +2076,491 @@
    "id": "deloitte-tmt-predictions-2005-003",
    "label": "Nanotechnology – one of the most talked about but least understood technologies of the 21st century – will become increasingly mainstream in 2005.",
    "graderA": "unfalsifiable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2005-005",
    "label": "After decades in science fiction, in 2005 robots will increasingly become an accepted part of our daily lives.",
    "graderA": "miss",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-003",
    "label": "However in 2007, consumers and businesses may start to worry about some of the various indirect costs of digital storage, rather than just celebrating its seemingly endless price deflation.",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-004",
    "label": "But 2007 could see a major uptake in the adoption of biometrics for a large range of applications, driven by falling prices, the rising performance of key technologies",
    "graderA": "partial",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2007-008",
    "label": "In 2007, the gulf between these two groups is likely to deepen.",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2008-001",
    "label": "In 2008, it is expected to generate $41.6 billion in revenue, a 23 percent increase on 2007 and more than the commercial radio sector. ... However, 2008 could see online advertising face a barrage of obstacles.",
    "graderA": "partial",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-001",
    "label": "In 2009, SmartGrid companies may generate $25 billion in revenues, and represent the biggest and fastest growing sector in the GreenTech – possibly even the entire – technology market.",
    "graderA": "ungradable",
-   "graderB": "miss"
+   "graderB": "miss",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-002",
    "label": "The combination of these two trends sets the scene for a significant expansion of the device subsidy model in 2009. ... In 2009, this approach is likely to be pervasive.",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2009-007",
    "label": "While sales growth for all mobile phones may decline to around 4 percent, smart phone growth could fall by more than 15 percentage points, to under 20 percent.",
    "graderA": "miss",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-006",
    "label": "DTT TMT predicts mixed performance for the CleanTech sector in 2010. ... The solar technology subsector will likely be outperformed by the broader CleanTech industry.",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2010-009",
    "label": "DTT TMT predicts that in 2010, online advertising spending will not only grow in absolute dollars but is also likely to grow substantially faster than the total advertising market ... from roughly 10 percent at the end of 2009 to 15 percent by the end of 2011.",
    "graderA": "partial",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-002",
    "label": "Deloitte predicts that by the end of 2011 no operating system on these devices will have a dominant market share.",
    "graderA": "miss",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2011-009",
    "label": "Deloitte predicts that digital video recorder (DVR) penetration in two large markets will exceed 50 percent of TV households by year-end 2011; but also predicts that TV advertising will be almost entirely unaffected despite that level of penetration.",
    "graderA": "miss",
-   "graderB": "partial"
+   "graderB": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-005",
    "label": "Deloitte predicts that crowdfunding portals will raise $3 billion in 2013, double the $1.5 billion raised in 2011.",
    "graderA": "miss",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2013-009",
    "label": "In 2013, Deloitte predicts that tens of millions of connected TV sets will sell globally, and the installed base of TV sets with integrated connectivity should exceed 100 million.",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-007",
    "label": "Deloitte predicts that in 2014 the measurement of domestic television program viewing should become more accurate in a number of countries, including Germany and the UK, because of the introduction of hybrid measurement.",
    "graderA": "partial",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2014-011",
    "label": "Deloitte predicts that in 2014 instant messaging services on mobile phones (MIM) will carry more than twice the volume (50 billion versus 21 billion per day) of messages sent via a short messaging service (SMS).",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-003",
    "label": "Deloitte predicts, in line with the industry consensus, that in 2015 nearly 220,000 3D printers will be sold worldwide, with a dollar value of $1.6 billion",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2015-012",
    "label": "We expect the global number of broadband homes to have grown by about two percent to 715 million by the end of 2015. Average broadband speed obtained in most markets should increase by between 15 and 25 percent.",
    "graderA": "hit",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-006",
    "label": "Deloitte Global predicts that virtual reality (VR) will have its first billion dollar year in 2016, with about $700 million in hardware sales, and the remainder from content.",
    "graderA": "miss",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-008",
    "label": "Deloitte Global predicts a mere 0.3 percent of all mobile device owners (comprising smartphones and tablets) will use an ad-blocker by end-2016.",
    "graderA": "miss",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2016-010",
    "label": "Deloitte Global predicts that pay-TV penetration (or reach) will fall more than two percentage points to 81 percent in 2016, to under 79 percent in 2017, and around 70 percent by 2020.",
    "graderA": "ungradable",
-   "graderB": "partial"
+   "graderB": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2017-008",
    "label": "Deloitte Global predicts that 2017 sales of tablet computers ('tablets') will be fewer than 165 million units, down by about 10 percent from the 182 million units sold in 2016.",
    "graderA": "hit",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2018-010",
    "label": "Deloitte Global predicts that 20 percent of North Americans with internet access will get all of their home data access via cellular mobile networks (mobile-only) in 2018.",
    "graderA": "hit",
-   "graderB": "partial"
+   "graderB": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2019-008",
    "label": "DELOITTE GLOBAL PREDICTS that China will have world-leading telecommunications networks in 2019 and most likely in the medium term. ... In China, 600 million people will use their phones to make mobile payments as of the start of 2019",
    "graderA": "hit",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-006",
    "label": "Deloitte Global predicts that venture capital (VC) firms globally will invest more than US$6 billion in semiconductor companies in 2022.",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2022-008",
    "label": "Deloitte Global predicts that the number of FWA connections will grow from about 60 million in 2020 to roughly 88 million in 2022, with 5G FWA representing almost 7% of the total",
    "graderA": "ungradable",
-   "graderB": "partial"
+   "graderB": "partial",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-005",
    "label": "Deloitte predicts that multiple regions will run short of gallium and possibly germanium in 2024 and may start seeing shortages of rare earth elements (REEs) by 2025.",
    "graderA": "partial",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2024-016",
    "label": "Deloitte predicts that over 200 million smartphones that can connect with satellite services will be sold in 2024.",
    "graderA": "hit",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-005",
    "label": "Deloitte predicts that this market will follow a similar pattern as that of cybersecurity, with bad actors finding ways to thwart detection tools and industries collaborating to confirm the credibility of at least some online content.",
    "graderA": "ungradable",
-   "graderB": "hit"
+   "graderB": "hit",
+   "wave": "w1"
   },
   {
    "id": "deloitte-tmt-predictions-2025-007",
    "label": "Deloitte predicts that in 2025, global smartphone shipments will see a modest lift to around 7%, up from about 5% annual growth in 2024.",
    "graderA": "miss",
-   "graderB": "ungradable"
+   "graderB": "ungradable",
+   "wave": "w1"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-001",
+   "label": "The last perceived barrier to adoption of mobile applications has disappeared. And organisations across the globe now see mobile as a reliable and viable platform for business processes.",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-007",
+   "label": "But this year the development curve for smaller phones will flatten.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2002-008",
+   "label": "We all want a more secure environment - but must be prepared to allow mobile operators access to more knowledge about us in return.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-005",
+   "label": "WAP will rise from the ashes thanks to increased demand for colour and higher powered, new generation phones with compelling content.",
+   "graderA": "partial",
+   "graderB": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-002",
+   "label": "However SMS volumes will start to plateau in many countries, and based upon current projections, whilst WAP, internet browsing and MMS will all grow in 2004, their higher usage will not compensate for the anticipated deceleration in SMS growth.",
+   "graderA": "hit",
+   "graderB": "miss",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-008",
+   "label": "Throughout 2004, the majority of WiFi hot spots will remain unused for the majority of the day.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-010",
+   "label": "By the end of 2004, the majority of handsets being shipped into developed countries will feature colour screens and polyphonic ring-tones.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-014",
+   "label": "Data is migrating from a pure all you-can eat-model to one based indirectly on usage",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-016",
+   "label": "It is unlikely that operators (wire-line or cellular mobile) who have invested in WiFi hot spots will see much return on their investment in 2004.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2004-020",
+   "label": "Faced with growing competition and falling margin for core products, operators will increasingly develop new revenues streams based upon the provision of IT and networks solutions.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-021",
+   "label": "By the end of 2005, there will be nearly 2 billion cellular mobile subscriptions worldwide.",
+   "graderA": "hit",
+   "graderB": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-028",
+   "label": "Many mobile and fixed operators will continue to adopt new wireless technologies in rapid succession.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-030",
+   "label": "By the end of the year, billions of RFID tags are expected to have been commissioned.",
+   "graderA": "miss",
+   "graderB": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2005-033",
+   "label": "In 2005, the performance of low-cost telecom operators will most likely become increasingly impressive and threatening.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-008",
+   "label": "In 2006, advances in key technology areas – processing and storage – will likely enable significant improvements to the interface between people and machines",
+   "graderA": "unfalsifiable",
+   "graderB": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-017",
+   "label": "The business model for radio will likely be on the cusp of significant change in 2006.",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-024",
+   "label": "At the same time, a number of premium brands from outside the telecommunications sector will likely launch their own branded communications devices.",
+   "graderA": "hit",
+   "graderB": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2006-029",
+   "label": "The reseller should become stronger than ever in 2006, in both fixed and mobile markets.",
+   "graderA": "hit",
+   "graderB": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-010",
+   "label": "But free offers may become increasingly costly, both to suppliers and consumers, during the course of 2007.",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-011",
+   "label": "But Europe's tax losses from carousel fraud are so vast (as much as $66.6 billion a year), that its ramifications in 2007 are likely to be global",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-014",
+   "label": "One of the most interesting techniques likely to find favor in 2007 is power-scavenging.",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-015",
+   "label": "In 2007, combinations of humans and technology are likely to be taken to new levels, addressing a widening range of applications, tasks and challenges.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-016",
+   "label": "Yet the majority of user-generated content is likely to remain mediocre, and thus of little interest or value to most. Essentially it is not likely to pose a major threat to the media industry.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-019",
+   "label": "The relationship between paper and pixels, it seems, may not always be about one versus the other, but more about a symbiotic, profitable coexistence.",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2007-022",
+   "label": "If it is to stay there, it will need to show a sustainable business model that can appeal to consumers and advertisers with limited budgets",
+   "graderA": "unfalsifiable",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-020",
+   "label": "In 2008 the convergence of media and technology is likely to spawn a wide range of new products, services and even companies.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-021",
+   "label": "An optimistic outlook for the telecommunications sector in 2008 would be that most companies should not suffer significantly",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-023",
+   "label": "Small companies may be essential for creating disruptive technologies. However, it will be the incumbents who will more than likely monetize them.",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-025",
+   "label": "In 2008, the range and quality of communications tools offered on a new media site could become a significant differentiator in an increasingly competitive market",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2008-029",
+   "label": "In 2008, it is likely that many a trade fair and conference will have stands and sessions devoted to the wireline and wireless sectors' quests for speed.",
+   "graderA": "hit",
+   "graderB": "unfalsifiable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-012",
+   "label": "In 2009, companies and consumers may actively seek out unbranded or relatively unknown technology brands on the basis that they are good enough and, more importantly, significantly cheaper",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-017",
+   "label": "Overall, in 2009, viewing is likely to rise by 30 minutes per week per viewer.",
+   "graderA": "miss",
+   "graderB": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-019",
+   "label": "The major challenge – probably the fundamental one in 2009 – is likely to be how to generate advertising from UGC",
+   "graderA": "hit",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-020",
+   "label": "As consumers focus on value, the 'premium' paid for the biggest stars, seen in the best locations, may well erode",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-022",
+   "label": "Its market share may more than double, albeit from a small base, and there are likely to be thousands of large advertising campaigns, costing over $2 billion",
+   "graderA": "miss",
+   "graderB": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-025",
+   "label": "During 2009, malvertising may infect hundreds of reputable sites and be seen by millions of users, many of whose computers are likely to end up infected.",
+   "graderA": "hit",
+   "graderB": "partial",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-027",
+   "label": "If demand for mobile broadband remains strong, the resultant stress on networks, particularly backhaul connections, could be severe",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2009-028",
+   "label": "Continued economic strife in 2009 may accelerate the temporary demise, in some regions, of the mobile industry's most talked about service this decade, mobile television.",
+   "graderA": "partial",
+   "graderB": "hit",
+   "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2010-016",
+   "label": "We believe that the most important battle to be waged in 2010 – leadership in mobile search – may fall outside of the radar screens of both analysts and the press, possibly because revenues from mobile search are expected to come in at a modest $1 to $2 billion",
+   "graderA": "ungradable",
+   "graderB": "hit",
+   "wave": "w2"
   }
  ]
 }
