@@ -31,6 +31,8 @@ Publication months (`published`) come from the WEO database release labels (May 
 
 Latest values for 1990 to 2025 for the 11 economies, from the April 2026 WEO (DataMapper API, last-modified 2026-04-08). 394 rows. 2026 onward excluded (projections). 2025 values carry confidence `medium` because they can be staff estimates. Group aggregates use the April 2026 composition. The historical file also holds first-outturn values (for example the F(t+1) value for year t), which a later grading step can use instead of latest values; they are not extracted here.
 
+`india_calendar_year` (#66): India real GDP growth on a calendar-year basis, 1980 to 2012, from the WEO database of April 2013, the last vintage before the IMF moved India to fiscal years (April to March) with the July 2013 WEO Update. It grades the India forecasts of editions before July 2013, which are calendar-year figures; the April 2026 India actuals above are fiscal-year. Read from the DBnomics mirror of the IMF file (dataset `IMF/WEO:2013-04`, series `IND.NGDP_RPCH`), because imf.org answered HTTP 403 on 2026-10-02 even with the Range header. Check: the vintage's 2013 and 2014 values (5.676, 6.23) equal the April 2013 India forecasts in `2013-04.json`, and its 2008 value (6.187) differs from the fiscal-year 2008 value of the October 2013 vintage (3.891). 2012 is the vintage's latest year (confidence medium, may be a staff estimate); 2013 and 2014 targets have no calendar-year actual and stay ungradable. World Bank WDI was not used: it reports India on a fiscal-year basis (#54). Script: `scripts/imf-weo/india_calendar.py`.
+
 ## Editions
 
 | Edition | Published | Vintage | Source | Entries | Status | Gaps |

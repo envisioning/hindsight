@@ -30,7 +30,7 @@ Facts only: edition, scenario, metric, target year, value, unit, source, short q
 
 Every edition file also has `base_year` rows where the release states a historical value (for example 2015 sales of 462,000 in EVO 2016). These are not projections and must not be graded.
 
-Actuals: `realized.json` (IEA Global EV Outlook 2026 vintage, via Our World in Data, electric car sales and sales share, World, 2010 to 2025). Built by `scripts/bnef-evo/realized.py`.
+Actuals: `realized.json` (IEA Global EV Outlook 2026 vintage, via Our World in Data, electric car sales and sales share, World, 2010 to 2025). Built by `scripts/bnef-evo/realized.py`. From 2022 the IEA share of electric cars in new car sales is published as a whole number (15, 18, 21, 25%), so the actual is known only to within 0.5 points; graded rows within 0.5 points of a D18 threshold carry a threshold flag (#66).
 
 ## Subjects and label changes (Revisions)
 

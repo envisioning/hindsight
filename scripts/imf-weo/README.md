@@ -32,3 +32,9 @@ python3 build.py
 ```
 
 Writes the edition files, `realized.json` and `PROGRESS.md` to `data/raw/imf-weo/`. Downloaded inputs are not committed (see `.gitignore`).
+
+India on a calendar-year basis (#66): `india_calendar.py` reads India `NGDP_RPCH` of the WEO April 2013 database from the DBnomics mirror (https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH) and writes `india_calendar_year` into `realized.json`, leaving `entries` unchanged. Run it after `build.py`:
+
+```bash
+python3 india_calendar.py
+```

@@ -580,3 +580,23 @@ Not captured: the Future of Money timeline and reports (no dated claims), the Fu
 **Cost.** The ECB actual now depends on the ECB's own statement of history, which a later exercise can restate, and is rounded to one decimal. The Selic switch date rests on the report labels (the API has no label); a survey made between 2004-04-08 and 2004-04-16 would be ambiguous, but no edition falls there.
 
 **Overturned by.** An ECB statement that its published history is on another basis than its projections; a BCB methodology note giving a different switch date for the Focus Selic indicator.
+
+## D39: Actuals from a publisher's own later statement, one case per edition, and threshold flags (issue #66)
+
+*Recorded 2026-10-02.*
+
+**Decision.** Five matching rules for numeric grading (D19), each written in `data/graded/README.md`:
+
+- **Later statement on the forecast's own basis.** Where the only actual on the forecast's definition is the publisher's own later statement, the latest later statement wins. IEA: the historical columns of later WEO annex tables override earlier base-year rows (2010 wind capacity is 181 GW as restated in WEO 2021 to 2025, not WEO 2012's 198 GW). World Bank: GEP World growth before January 2019 is graded against the latest later GEP table on the same weights base (1995, 2000, 2005 or 2010 prices, from the table note) that prints the target year as a past year. Rows with no such later table (the last forecasts before each base change, and GEP 2000, whose table states no base) stay ungradable.
+- **One case per edition.** AEO2009 is graded on the March 2009 Reference case of the published report (DOE/EIA-0383(2009)) for every series and year. The AEO Retrospective 2022 tabulates the April 2009 ARRA-updated Reference case (SR/OIAF/2009-03) for all AEO2009 series but solar and wind, while the 2025 data file and the printed report use the March case. The March case is the publication of record and the only one available for every series and year.
+- **Last vintage on the forecast's definition.** IMF India forecasts before the July 2013 WEO Update are calendar-year figures; every later IMF vintage is fiscal-year. They are graded against the WEO April 2013 database, the last calendar-year vintage (read from the DBnomics mirror because imf.org blocks scripted requests). Definition wins over vintage (D19); later revisions of Indian national accounts are not in that vintage. WDI is not used because it reports India on a fiscal-year basis (#54).
+- **Threshold flag.** Where the actual is known only within a range (IEA EV shares published as whole numbers from 2022: plus or minus 0.5 points; bp EO2015 to EO2017 history 0.15 to 0.18 points below the EI series), the row stays graded on the stated values and its note carries a "Threshold flag" naming the verdicts the range allows. No schema change.
+- **Audit findings resolved by a capture.** An audit record whose finding a new capture answers (the AEO2009 contests; the IMF India rows corrected to ungradable for want of a calendar-year actual) counts as fixed in code, by a narrow test per source in `src/grade/numeric.ts`. The audit files are not edited; the new grades of those sampled rows should get a D24 re-check pass.
+
+Implementation note: re-taking AEO2009 rows in other units gave 56 of them new ids (D15), so the grader now maps eia-aeo claims to raw rows by natural key through `data/normalized/ids.json`, not by position.
+
+**Why.** Each rule grades a forecast against a number on its own definition where one exists, instead of leaving it ungradable or grading it against a different measure. A flag keeps a verdict that rounding could flip visible without inventing precision.
+
+**Cost.** Some actuals are older vintages (IMF India as of April 2013; GEP statements one to three years after the forecast), so they miss later revisions. Flagged rows still count in hit rates.
+
+**Overturned by.** A calendar-year India series or a re-weighted GEP World history from the publishers themselves; unrounded IEA shares; evidence that the ARRA-updated case is what EIA treats as AEO2009 of record.

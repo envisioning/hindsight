@@ -53,7 +53,8 @@ def main():
             years, vals, labels, flags, shifted = parse.parse(txt)
             name = os.path.basename(pdf)
             parsed[name[:-4]] = {'source': src[name], 'years': years, 'values': vals, 'labels': labels,
-                                 'flags': flags, 'shifted_font': shifted, 'fiscal_note': 'fiscal year' in txt.lower()}
+                                 'flags': flags, 'shifted_font': shifted, 'fiscal_note': 'fiscal year' in txt.lower(),
+                                 'gdp_weights': parse.gdp_weights(txt)}
             print(name, years and (years[0], years[-1]), sorted(vals), flush=True)
     json.dump(parsed, open(os.path.join(HERE, 'parsed.json'), 'w'), indent=1)
     wdi = json.loads(get(WDI))

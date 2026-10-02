@@ -23,6 +23,7 @@ Rules applied to avoid duplicate rows:
 - AEO1982 to AEO1993: R2010 only.
 - AEO2005 to AEO2022: R2025 only for target years 2022 and later. AEO2023 and AEO2025: R2025 for all years. Only the REFERENCE case is taken from R2025.
 - Spot check: R2022 and R2025 give the same numbers for overlapping cells (for example AEO2015 wind 2020: 231.53 billion kWh in both).
+- **AEO2009 exception (#66).** All AEO2009 rows come from R2025 (the March 2009 Reference case of the published AEO2009 report, DOE/EIA-0383(2009)), for every target year. R2022's AEO2009 rows are the April 2009 updated Reference case reflecting the American Recovery and Reinvestment Act (SR/OIAF/2009-03) for every series but solar and wind: imported crude 2009 is 39.99 USD per barrel in R2022 against 61.09 in R2025, and R2025 equals the printed AEO2009 tables (Table 2 transportation energy 2018: 28.959; Table 16 wind). R2022 solar and wind equal R2025, so those two series keep R2022 for target years to 2021. The R2022 rows for petroleum (million barrels per year), natural gas (USD per million Btu) and real prices (2007 dollars) are replaced by R2025 rows in R2025 units (million barrels per day, USD per thousand cubic feet, 2012 USD), so those AEO2009 claims got new ids (D15).
 
 Confidence: `high` for values read from the XLSX and CSV cells. `medium` for R2010 values, which are read from PDF text by column position (spot-checked against the printed layout, including the sparse AEO1990 row).
 
@@ -81,7 +82,7 @@ Key to series: solar, wind, elec_sales, total_energy, transport, co2, petroleum,
 | 2006 | partial | 257 | 2005 to 2030 | R2022, R2025, R2010 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, ng_wellhead, petroleum, solar, total_energy, transport, wind | |
 | 2007 | partial | 279 | 2006 to 2030 | R2022, R2025, R2010 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, ng_wellhead, petroleum, solar, total_energy, transport, wind | |
 | 2008 | partial | 267 | 2007 to 2030 | R2022, R2025, R2010 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, ng_wellhead, petroleum, solar, total_energy, transport, wind | |
-| 2009 | partial | 255 | 2008 to 2030 | R2022, R2025, R2010 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, ng_wellhead, petroleum, solar, total_energy, transport, wind | |
+| 2009 | partial | 255 | 2008 to 2030 | R2025, R2022 (solar, wind), R2010 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, ng_wellhead, petroleum, solar, total_energy, transport, wind | |
 | 2010 | partial | 298 | 2009 to 2035 | R2022, R2025, R2010 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, ng_wellhead, petroleum, solar, total_energy, transport, wind | |
 | 2011 | partial | 286 | 2010 to 2035 | R2022, R2025 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, petroleum, solar, total_energy, transport, wind | |
 | 2012 | partial | 330 | 2011 to 2040 | R2022, R2025 | co2, oil_nom, oil_real, elec_sales, ng_elec_nom, ng_elec_real, petroleum, solar, total_energy, transport, wind | |
@@ -113,6 +114,8 @@ Every edition with data is `partial`: only the series that the retrospectives ca
 - **R2010 XLS files.** Not parsed (legacy binary Excel, no parser without a new package). The PDF versions were read instead.
 
 ## Things that look wrong or odd in the sources
+
+- **R2022 mixes cases for AEO2009 (#66).** See the AEO2009 exception under Sources. The same comparison shows R2022's AEO2016 row differs from R2025's AEO2016 Reference case by up to 16% (nominal crude) and 8.5% (transportation energy), possibly another case choice (AEO2016 published a Reference case with and without the Clean Power Plan); not investigated. R2022 transportation energy runs 1.4 to 2% below R2025 for every edition, a definitional difference between the two retrospectives.
 
 - R2022 Tables 17 and 18 (solar, wind) store the year header as Excel date serials (38718 = 2006), not years. Converted.
 - R2025 data file column `ECI_INDX_NA_NA_GDP_NA_NA_Y09EQ1D3Z` says "2009 = 1" in its name, but its value is 1.0 in 2012. The report states all monetary values are in 2012 dollars. The real-price columns are recorded as 2012 USD.

@@ -50,7 +50,7 @@ Other scenarios (Alternative Policy, 450, Current Policies before 2025, Sustaina
 
 Every edition file also has `base_year` rows: the historical value the edition states for its base year. These are not projections and must not be graded.
 
-Actuals: `realized.json` (Ember Yearly Electricity Data, World, 2000 to 2025, plus IEA-stated 2023 and 2024 values from WEO 2025).
+Actuals: `realized.json` (Ember Yearly Electricity Data, World, 2000 to 2025, plus IEA-stated historical values). IEA rows carry `stated_in`, the edition whose Annex A table prints them. WEO 2025: 2023 and 2024. Added for #66: the historical columns of WEO 2021 to 2025 Table A.3a (World electricity sector) other than each edition's base year: 2010 in every one of them, plus 2019 (WEO 2021), 2020 (WEO 2022), 2021 (WEO 2023) and 2022 (WEO 2024). These restate earlier base-year rows: 2010 wind capacity is 181 GW (WEO 2021 to 2025) against 198 GW in WEO 2012; 2010 solar PV capacity 39 to 40 GW against 38; 2020 solar PV generation 824 TWh in WEO 2022 against 833 in WEO 2021. Read with `pdftotext -layout` from the PDFs listed in each edition file; no script.
 
 ## Subjects and label changes (Revisions)
 

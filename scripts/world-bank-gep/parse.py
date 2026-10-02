@@ -36,6 +36,31 @@ def decode_shifted(text):
     return '\n'.join(''.join(c if c == ' ' else chr(ord(c) + 29) for c in l) for l in text.split('\n'))
 
 
+WEIGHTS = [  # table note on the market-exchange-rate GDP weights of the aggregates (#66)
+    re.compile(r'GDP weights at (average )?(\d{4})(-(\d{2}))? prices', re.I),
+    re.compile(r'constant (\d{4}) (U\.S\. )?dollars? GDP weights', re.I),
+    re.compile(r'GDP in (\d{4}) constant (U\.S\. )?dollars', re.I),
+    re.compile(r'GDP in constant dollars at (\d{4}) prices', re.I),
+    # GEP 2001 and 2002 state no GDP note; their price aggregates use "1995 GDP weights", the edition's GDP weights.
+    re.compile(r'aggregated using (\d{4}) GDP weights', re.I),
+]
+
+
+def gdp_weights(text):
+    """The price base of the edition's market-exchange-rate GDP weights, as its table note states it, or None.
+    For example '1995 prices', '2010 prices', 'average 2010-19 prices'."""
+    # January 2018: the table body uses the shifted font, the notes do not, so search both readings.
+    flat = re.sub(r'\s+', ' ', text + ('\n' + decode_shifted(text) if ':RUOG' in text else ''))
+    for i, pat in enumerate(WEIGHTS):
+        m = pat.search(flat)
+        if m is None:
+            continue
+        if i == 0:
+            return ('average %s-%s prices' % (m.group(2), m.group(4))) if m.group(3) else '%s prices' % m.group(2)
+        return '%s prices' % m.group(1)
+    return None
+
+
 def header(lines):
     for i, l in enumerate(lines):
         toks = [(m.group(0), m.start(), m.end()) for m in re.finditer(r'\S+', l)]

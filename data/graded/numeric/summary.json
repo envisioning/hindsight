@@ -15380,25 +15380,25 @@
   {
    "source_id": "eia-aeo",
    "totals": {
-    "n_graded": 4192,
-    "hits": 1954,
-    "partials": 880,
-    "misses": 1358,
-    "ungradable": 886,
+    "n_graded": 4205,
+    "hits": 1942,
+    "partials": 882,
+    "misses": 1381,
+    "ungradable": 873,
     "open": 3645,
     "excluded": 381,
-    "hit_rate": 0.4661,
+    "hit_rate": 0.4618,
     "hit_rate_ci95": [
-     0.4511,
-     0.4813
+     0.4468,
+     0.4769
     ],
     "errors": [
      {
       "rule": "D16",
       "unit": "percent of actual",
-      "n": 4192,
-      "bias": 10.634,
-      "mae": 27.294
+      "n": 4205,
+      "bias": 11.381,
+      "mae": 27.932
      }
     ]
    },
@@ -15410,37 +15410,37 @@
     "corrected": 12,
     "contested": 4,
     "error_rate": 0.037,
-    "fixed_in_code": 12,
-    "residual_errors": 4,
-    "residual_error_rate": 0.0092
+    "fixed_in_code": 16,
+    "residual_errors": 0,
+    "residual_error_rate": 0
    },
    "hit_rate_audit_adjusted95": [
-    0.4419,
-    0.4905
+    0.4468,
+    0.4769
    ],
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 4192,
-      "hits": 1954,
-      "partials": 880,
-      "misses": 1358,
-      "ungradable": 886,
+      "n_graded": 4205,
+      "hits": 1942,
+      "partials": 882,
+      "misses": 1381,
+      "ungradable": 873,
       "open": 3645,
       "excluded": 381,
-      "hit_rate": 0.4661,
+      "hit_rate": 0.4618,
       "hit_rate_ci95": [
-       0.4511,
-       0.4813
+       0.4468,
+       0.4769
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 4192,
-        "bias": 10.634,
-        "mae": 27.294
+        "n": 4205,
+        "bias": 11.381,
+        "mae": 27.932
        }
       ]
      }
@@ -15448,25 +15448,25 @@
     {
      "horizon": "current_year",
      "stats": {
-      "n_graded": 315,
+      "n_graded": 316,
       "hits": 233,
       "partials": 52,
-      "misses": 30,
-      "ungradable": 62,
+      "misses": 31,
+      "ungradable": 61,
       "open": 9,
       "excluded": 0,
-      "hit_rate": 0.7397,
+      "hit_rate": 0.7373,
       "hit_rate_ci95": [
-       0.6885,
-       0.785
+       0.6862,
+       0.7828
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 315,
-        "bias": 0.417,
-        "mae": 8.127
+        "n": 316,
+        "bias": 0.789,
+        "mae": 8.256
        }
       ]
      }
@@ -15474,25 +15474,25 @@
     {
      "horizon": "next_year",
      "stats": {
-      "n_graded": 314,
+      "n_graded": 315,
       "hits": 219,
       "partials": 47,
-      "misses": 48,
-      "ungradable": 60,
+      "misses": 49,
+      "ungradable": 59,
       "open": 11,
       "excluded": 0,
-      "hit_rate": 0.6975,
+      "hit_rate": 0.6952,
       "hit_rate_ci95": [
-       0.6445,
-       0.7456
+       0.6423,
+       0.7435
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 314,
-        "bias": 1.686,
-        "mae": 11.943
+        "n": 315,
+        "bias": 2.047,
+        "mae": 12.059
        }
       ]
      }
@@ -15500,25 +15500,25 @@
     {
      "horizon": "2_years",
      "stats": {
-      "n_graded": 310,
-      "hits": 203,
-      "partials": 39,
-      "misses": 68,
-      "ungradable": 60,
+      "n_graded": 311,
+      "hits": 202,
+      "partials": 40,
+      "misses": 69,
+      "ungradable": 59,
       "open": 20,
       "excluded": 0,
-      "hit_rate": 0.6548,
+      "hit_rate": 0.6495,
       "hit_rate_ci95": [
-       0.6003,
-       0.7056
+       0.595,
+       0.7004
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 310,
-        "bias": 2.119,
-        "mae": 15.086
+        "n": 311,
+        "bias": 2.396,
+        "mae": 15.228
        }
       ]
      }
@@ -15526,25 +15526,25 @@
     {
      "horizon": "3_to_5_years",
      "stats": {
-      "n_graded": 873,
-      "hits": 494,
+      "n_graded": 876,
+      "hits": 491,
       "partials": 131,
-      "misses": 248,
-      "ungradable": 168,
+      "misses": 254,
+      "ungradable": 165,
       "open": 126,
       "excluded": 0,
-      "hit_rate": 0.5659,
+      "hit_rate": 0.5605,
       "hit_rate_ci95": [
-       0.5328,
-       0.5984
+       0.5274,
+       0.593
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 873,
-        "bias": 5.541,
-        "mae": 22.912
+        "n": 876,
+        "bias": 6.018,
+        "mae": 23.25
        }
       ]
      }
@@ -15552,25 +15552,25 @@
     {
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 1159,
-      "hits": 491,
+      "n_graded": 1164,
+      "hits": 486,
       "partials": 265,
-      "misses": 403,
-      "ungradable": 240,
+      "misses": 413,
+      "ungradable": 235,
       "open": 430,
       "excluded": 0,
-      "hit_rate": 0.4236,
+      "hit_rate": 0.4175,
       "hit_rate_ci95": [
-       0.3955,
-       0.4523
+       0.3895,
+       0.4461
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 1159,
-        "bias": 10.999,
-        "mae": 33.109
+        "n": 1164,
+        "bias": 12.526,
+        "mae": 34.534
        }
       ]
      }
@@ -15578,25 +15578,25 @@
     {
      "horizon": "over_10_years",
      "stats": {
-      "n_graded": 1221,
-      "hits": 314,
-      "partials": 346,
-      "misses": 561,
-      "ungradable": 296,
+      "n_graded": 1223,
+      "hits": 311,
+      "partials": 347,
+      "misses": 565,
+      "ungradable": 294,
       "open": 3049,
       "excluded": 0,
-      "hit_rate": 0.2572,
+      "hit_rate": 0.2543,
       "hit_rate_ci95": [
-       0.2334,
-       0.2824
+       0.2307,
+       0.2794
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 1221,
-        "bias": 21.027,
-        "mae": 36.899
+        "n": 1223,
+        "bias": 21.559,
+        "mae": 37.405
        }
       ]
      }
@@ -15623,24 +15623,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 440,
-      "hits": 220,
-      "partials": 109,
+      "hits": 219,
+      "partials": 110,
       "misses": 111,
       "ungradable": 0,
       "open": 335,
       "excluded": 32,
-      "hit_rate": 0.5,
+      "hit_rate": 0.4977,
       "hit_rate_ci95": [
-       0.4535,
-       0.5465
+       0.4512,
+       0.5443
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 440,
-        "bias": 14.62,
-        "mae": 15.844
+        "bias": 14.657,
+        "mae": 15.882
        }
       ]
      }
@@ -15666,8 +15666,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 31,
-        "bias": 0.209,
-        "mae": 2.219
+        "bias": 0.267,
+        "mae": 2.277
        }
       ]
      }
@@ -15693,8 +15693,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 31,
-        "bias": 1.35,
-        "mae": 3.14
+        "bias": 1.372,
+        "mae": 3.161
        }
       ]
      }
@@ -15720,8 +15720,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 30,
-        "bias": 2.511,
-        "mae": 4.065
+        "bias": 2.541,
+        "mae": 4.094
        }
       ]
      }
@@ -15731,24 +15731,24 @@
      "horizon": "3_to_5_years",
      "stats": {
       "n_graded": 84,
-      "hits": 67,
-      "partials": 17,
+      "hits": 66,
+      "partials": 18,
       "misses": 0,
       "ungradable": 0,
       "open": 12,
       "excluded": 0,
-      "hit_rate": 0.7976,
+      "hit_rate": 0.7857,
       "hit_rate_ci95": [
-       0.6996,
-       0.8696
+       0.6865,
+       0.8599
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 84,
-        "bias": 5.312,
-        "mae": 6.974
+        "bias": 5.345,
+        "mae": 7.007
        }
       ]
      }
@@ -15774,8 +15774,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 120,
-        "bias": 12.426,
-        "mae": 13.884
+        "bias": 12.496,
+        "mae": 13.954
        }
       ]
      }
@@ -15801,8 +15801,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 144,
-        "bias": 30.358,
-        "mae": 30.774
+        "bias": 30.373,
+        "mae": 30.789
        }
       ]
      }
@@ -15828,24 +15828,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 546,
-      "hits": 427,
-      "partials": 100,
+      "hits": 426,
+      "partials": 101,
       "misses": 19,
       "ungradable": 0,
       "open": 335,
       "excluded": 39,
-      "hit_rate": 0.7821,
+      "hit_rate": 0.7802,
       "hit_rate_ci95": [
-       0.7455,
-       0.8146
+       0.7436,
+       0.8129
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 546,
-        "bias": 4.347,
-        "mae": 6.468
+        "bias": 4.364,
+        "mae": 6.483
        }
       ]
      }
@@ -15871,8 +15871,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": -0.632,
-        "mae": 1.375
+        "bias": -0.584,
+        "mae": 1.423
        }
       ]
      }
@@ -15898,8 +15898,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": -0.236,
-        "mae": 1.798
+        "bias": -0.204,
+        "mae": 1.807
        }
       ]
      }
@@ -15925,8 +15925,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.17,
-        "mae": 2.281
+        "bias": 0.189,
+        "mae": 2.301
        }
       ]
      }
@@ -15952,8 +15952,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 112,
-        "bias": 1.021,
-        "mae": 3.245
+        "bias": 1.034,
+        "mae": 3.258
        }
       ]
      }
@@ -15979,8 +15979,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 151,
-        "bias": 3.498,
-        "mae": 6.087
+        "bias": 3.512,
+        "mae": 6.101
        }
       ]
      }
@@ -15990,24 +15990,24 @@
      "horizon": "over_10_years",
      "stats": {
       "n_graded": 166,
-      "hits": 82,
-      "partials": 65,
+      "hits": 81,
+      "partials": 66,
       "misses": 19,
       "ungradable": 0,
       "open": 279,
       "excluded": 0,
-      "hit_rate": 0.494,
+      "hit_rate": 0.488,
       "hit_rate_ci95": [
-       0.4189,
-       0.5693
+       0.413,
+       0.5634
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 166,
-        "bias": 10.592,
-        "mae": 12.268
+        "bias": 10.602,
+        "mae": 12.278
        }
       ]
      }
@@ -16032,25 +16032,25 @@
      "family": "energy consumption",
      "horizon": "all",
      "stats": {
-      "n_graded": 1024,
-      "hits": 689,
-      "partials": 232,
+      "n_graded": 1011,
+      "hits": 677,
+      "partials": 231,
       "misses": 103,
-      "ungradable": 76,
+      "ungradable": 89,
       "open": 650,
       "excluded": 78,
-      "hit_rate": 0.6729,
+      "hit_rate": 0.6696,
       "hit_rate_ci95": [
-       0.6435,
-       0.7009
+       0.64,
+       0.6979
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 1024,
-        "bias": 7.008,
-        "mae": 9.497
+        "n": 1011,
+        "bias": 7.062,
+        "mae": 9.582
        }
       ]
      }
@@ -16059,39 +16059,12 @@
      "family": "energy consumption",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 76,
-      "hits": 75,
-      "partials": 1,
-      "misses": 0,
-      "ungradable": 3,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": 0.9868,
-      "hit_rate_ci95": [
-       0.9292,
-       0.9977
-      ],
-      "errors": [
-       {
-        "rule": "D16",
-        "unit": "percent of actual",
-        "n": 76,
-        "bias": 0.383,
-        "mae": 2.058
-       }
-      ]
-     }
-    },
-    {
-     "family": "energy consumption",
-     "horizon": "next_year",
-     "stats": {
       "n_graded": 75,
       "hits": 74,
       "partials": 1,
       "misses": 0,
-      "ungradable": 3,
-      "open": 2,
+      "ungradable": 4,
+      "open": 1,
       "excluded": 0,
       "hit_rate": 0.9867,
       "hit_rate_ci95": [
@@ -16103,8 +16076,35 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 75,
-        "bias": 0.878,
-        "mae": 2.82
+        "bias": 0.365,
+        "mae": 2.062
+       }
+      ]
+     }
+    },
+    {
+     "family": "energy consumption",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 74,
+      "hits": 73,
+      "partials": 1,
+      "misses": 0,
+      "ungradable": 4,
+      "open": 2,
+      "excluded": 0,
+      "hit_rate": 0.9865,
+      "hit_rate_ci95": [
+       0.9273,
+       0.9976
+      ],
+      "errors": [
+       {
+        "rule": "D16",
+        "unit": "percent of actual",
+        "n": 74,
+        "bias": 0.896,
+        "mae": 2.863
        }
       ]
      }
@@ -16113,25 +16113,25 @@
      "family": "energy consumption",
      "horizon": "2_years",
      "stats": {
-      "n_graded": 75,
-      "hits": 71,
+      "n_graded": 74,
+      "hits": 70,
       "partials": 4,
       "misses": 0,
-      "ungradable": 4,
+      "ungradable": 5,
       "open": 3,
       "excluded": 0,
-      "hit_rate": 0.9467,
+      "hit_rate": 0.9459,
       "hit_rate_ci95": [
-       0.8707,
-       0.9791
+       0.8691,
+       0.9788
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 75,
-        "bias": 1.161,
-        "mae": 3.662
+        "n": 74,
+        "bias": 1.158,
+        "mae": 3.693
        }
       ]
      }
@@ -16140,25 +16140,25 @@
      "family": "energy consumption",
      "horizon": "3_to_5_years",
      "stats": {
-      "n_graded": 212,
-      "hits": 180,
+      "n_graded": 209,
+      "hits": 177,
       "partials": 32,
       "misses": 0,
-      "ungradable": 12,
+      "ungradable": 15,
       "open": 21,
       "excluded": 0,
-      "hit_rate": 0.8491,
+      "hit_rate": 0.8469,
       "hit_rate_ci95": [
-       0.7947,
-       0.891
+       0.7918,
+       0.8894
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 212,
-        "bias": 1.874,
-        "mae": 5.212
+        "n": 209,
+        "bias": 1.854,
+        "mae": 5.24
        }
       ]
      }
@@ -16167,25 +16167,25 @@
      "family": "energy consumption",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 280,
-      "hits": 186,
+      "n_graded": 275,
+      "hits": 181,
       "partials": 84,
       "misses": 10,
-      "ungradable": 20,
+      "ungradable": 25,
       "open": 75,
       "excluded": 0,
-      "hit_rate": 0.6643,
+      "hit_rate": 0.6582,
       "hit_rate_ci95": [
-       0.6071,
-       0.717
+       0.6003,
+       0.7117
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 280,
-        "bias": 5.452,
-        "mae": 8.638
+        "n": 275,
+        "bias": 5.525,
+        "mae": 8.765
        }
       ]
      }
@@ -16194,25 +16194,25 @@
      "family": "energy consumption",
      "horizon": "over_10_years",
      "stats": {
-      "n_graded": 306,
-      "hits": 103,
-      "partials": 110,
+      "n_graded": 304,
+      "hits": 102,
+      "partials": 109,
       "misses": 93,
-      "ungradable": 34,
+      "ungradable": 36,
       "open": 548,
       "excluded": 0,
-      "hit_rate": 0.3366,
+      "hit_rate": 0.3355,
       "hit_rate_ci95": [
-       0.286,
-       0.3913
+       0.2848,
+       0.3904
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 306,
-        "bias": 16.568,
-        "mae": 18.166
+        "n": 304,
+        "bias": 16.623,
+        "mae": 18.232
        }
       ]
      }
@@ -16237,25 +16237,25 @@
      "family": "natural gas price",
      "horizon": "all",
      "stats": {
-      "n_graded": 738,
-      "hits": 89,
-      "partials": 151,
-      "misses": 498,
-      "ungradable": 367,
+      "n_graded": 751,
+      "hits": 87,
+      "partials": 149,
+      "misses": 515,
+      "ungradable": 354,
       "open": 670,
       "excluded": 87,
-      "hit_rate": 0.1206,
+      "hit_rate": 0.1158,
       "hit_rate_ci95": [
-       0.099,
-       0.1461
+       0.0949,
+       0.1407
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 738,
-        "bias": 36.11,
-        "mae": 61.692
+        "n": 751,
+        "bias": 37.86,
+        "mae": 62.993
        }
       ]
      }
@@ -16264,25 +16264,25 @@
      "family": "natural gas price",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 57,
-      "hits": 15,
+      "n_graded": 58,
+      "hits": 14,
       "partials": 24,
-      "misses": 18,
-      "ungradable": 28,
+      "misses": 20,
+      "ungradable": 27,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.2632,
+      "hit_rate": 0.2414,
       "hit_rate_ci95": [
-       0.1665,
-       0.3898
+       0.1496,
+       0.3653
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 57,
-        "bias": 0.033,
-        "mae": 20.014
+        "n": 58,
+        "bias": 1.339,
+        "mae": 20.898
        }
       ]
      }
@@ -16291,25 +16291,25 @@
      "family": "natural gas price",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 57,
-      "hits": 12,
+      "n_graded": 58,
+      "hits": 11,
       "partials": 17,
-      "misses": 28,
-      "ungradable": 27,
+      "misses": 30,
+      "ungradable": 26,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.2105,
+      "hit_rate": 0.1897,
       "hit_rate_ci95": [
-       0.1247,
-       0.3329
+       0.1093,
+       0.3085
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 57,
-        "bias": 4.935,
-        "mae": 29.89
+        "n": 58,
+        "bias": 5.991,
+        "mae": 30.516
        }
       ]
      }
@@ -16318,25 +16318,25 @@
      "family": "natural gas price",
      "horizon": "2_years",
      "stats": {
-      "n_graded": 56,
+      "n_graded": 57,
       "hits": 7,
-      "partials": 11,
-      "misses": 38,
-      "ungradable": 26,
+      "partials": 10,
+      "misses": 40,
+      "ungradable": 25,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.125,
+      "hit_rate": 0.1228,
       "hit_rate_ci95": [
-       0.0619,
-       0.2363
+       0.0608,
+       0.2325
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 56,
-        "bias": 6.654,
-        "mae": 36.586
+        "n": 57,
+        "bias": 7.836,
+        "mae": 37.244
        }
       ]
      }
@@ -16345,25 +16345,25 @@
      "family": "natural gas price",
      "horizon": "3_to_5_years",
      "stats": {
-      "n_graded": 157,
+      "n_graded": 160,
       "hits": 13,
-      "partials": 21,
-      "misses": 123,
-      "ungradable": 72,
+      "partials": 20,
+      "misses": 127,
+      "ungradable": 69,
       "open": 24,
       "excluded": 0,
-      "hit_rate": 0.0828,
+      "hit_rate": 0.0813,
       "hit_rate_ci95": [
-       0.049,
-       0.1365
+       0.0481,
+       0.134
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 157,
-        "bias": 19.732,
-        "mae": 53.555
+        "n": 160,
+        "bias": 21.368,
+        "mae": 54.557
        }
       ]
      }
@@ -16372,25 +16372,25 @@
      "family": "natural gas price",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 206,
+      "n_graded": 211,
       "hits": 21,
       "partials": 35,
-      "misses": 150,
-      "ungradable": 100,
+      "misses": 155,
+      "ungradable": 95,
       "open": 80,
       "excluded": 0,
-      "hit_rate": 0.1019,
+      "hit_rate": 0.0995,
       "hit_rate_ci95": [
-       0.0676,
-       0.1508
+       0.066,
+       0.1474
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 206,
-        "bias": 38.253,
-        "mae": 72.145
+        "n": 211,
+        "bias": 41.72,
+        "mae": 74.809
        }
       ]
      }
@@ -16399,25 +16399,25 @@
      "family": "natural gas price",
      "horizon": "over_10_years",
      "stats": {
-      "n_graded": 205,
+      "n_graded": 207,
       "hits": 21,
       "partials": 43,
-      "misses": 141,
-      "ungradable": 114,
+      "misses": 143,
+      "ungradable": 112,
       "open": 558,
       "excluded": 0,
-      "hit_rate": 0.1024,
+      "hit_rate": 0.1014,
       "hit_rate_ci95": [
-       0.068,
-       0.1515
+       0.0673,
+       0.1501
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 205,
-        "bias": 73.246,
-        "mae": 84.708
+        "n": 207,
+        "bias": 74.103,
+        "mae": 85.455
        }
       ]
      }
@@ -16443,24 +16443,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 546,
-      "hits": 367,
-      "partials": 122,
+      "hits": 366,
+      "partials": 123,
       "misses": 57,
       "ungradable": 0,
       "open": 335,
       "excluded": 39,
-      "hit_rate": 0.6722,
+      "hit_rate": 0.6703,
       "hit_rate_ci95": [
-       0.6317,
-       0.7102
+       0.6298,
+       0.7085
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 546,
-        "bias": 6.846,
-        "mae": 9.218
+        "bias": 6.862,
+        "mae": 9.224
        }
       ]
      }
@@ -16486,8 +16486,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.265,
-        "mae": 1.751
+        "bias": 0.33,
+        "mae": 1.815
        }
       ]
      }
@@ -16513,8 +16513,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.856,
-        "mae": 2.813
+        "bias": 0.84,
+        "mae": 2.798
        }
       ]
      }
@@ -16540,8 +16540,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 1.777,
-        "mae": 3.942
+        "bias": 1.766,
+        "mae": 3.931
        }
       ]
      }
@@ -16567,8 +16567,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 112,
-        "bias": 2.397,
-        "mae": 4.889
+        "bias": 2.401,
+        "mae": 4.893
        }
       ]
      }
@@ -16594,8 +16594,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 151,
-        "bias": 5.006,
-        "mae": 8.379
+        "bias": 5.041,
+        "mae": 8.376
        }
       ]
      }
@@ -16605,24 +16605,24 @@
      "horizon": "over_10_years",
      "stats": {
       "n_graded": 166,
-      "hits": 57,
-      "partials": 63,
+      "hits": 56,
+      "partials": 64,
       "misses": 46,
       "ungradable": 0,
       "open": 279,
       "excluded": 0,
-      "hit_rate": 0.3434,
+      "hit_rate": 0.3373,
       "hit_rate_ci95": [
-       0.2754,
-       0.4184
+       0.2698,
+       0.4122
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 166,
-        "bias": 15.666,
-        "mae": 17.401
+        "bias": 15.674,
+        "mae": 17.41
        }
       ]
      }
@@ -16647,25 +16647,25 @@
      "family": "oil price",
      "horizon": "all",
      "stats": {
-      "n_graded": 602,
-      "hits": 95,
-      "partials": 116,
-      "misses": 391,
-      "ungradable": 367,
+      "n_graded": 615,
+      "hits": 100,
+      "partials": 118,
+      "misses": 397,
+      "ungradable": 354,
       "open": 670,
       "excluded": 70,
-      "hit_rate": 0.1578,
+      "hit_rate": 0.1626,
       "hit_rate_ci95": [
-       0.1309,
-       0.1891
+       0.1355,
+       0.1938
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 602,
-        "bias": 16.21,
-        "mae": 51.658
+        "n": 615,
+        "bias": 18.305,
+        "mae": 52.631
        }
       ]
      }
@@ -16674,25 +16674,25 @@
      "family": "oil price",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 41,
-      "hits": 12,
+      "n_graded": 42,
+      "hits": 14,
       "partials": 18,
-      "misses": 11,
-      "ungradable": 28,
+      "misses": 10,
+      "ungradable": 27,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.2927,
+      "hit_rate": 0.3333,
       "hit_rate_ci95": [
-       0.1761,
-       0.4448
+       0.2101,
+       0.4845
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 41,
-        "bias": 0.086,
-        "mae": 18.843
+        "n": 42,
+        "bias": 0.986,
+        "mae": 17.753
        }
       ]
      }
@@ -16701,25 +16701,25 @@
      "family": "oil price",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 42,
-      "hits": 9,
+      "n_graded": 43,
+      "hits": 11,
       "partials": 13,
-      "misses": 20,
-      "ungradable": 27,
+      "misses": 19,
+      "ungradable": 26,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.2143,
+      "hit_rate": 0.2558,
       "hit_rate_ci95": [
-       0.1171,
-       0.3594
+       0.1493,
+       0.4024
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 42,
-        "bias": 6.099,
-        "mae": 30.349
+        "n": 43,
+        "bias": 7.061,
+        "mae": 29.213
        }
       ]
      }
@@ -16728,25 +16728,25 @@
      "family": "oil price",
      "horizon": "2_years",
      "stats": {
-      "n_graded": 42,
+      "n_graded": 43,
       "hits": 12,
-      "partials": 8,
-      "misses": 22,
-      "ungradable": 26,
+      "partials": 10,
+      "misses": 21,
+      "ungradable": 25,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.2857,
+      "hit_rate": 0.2791,
       "hit_rate_ci95": [
-       0.1717,
-       0.4357
+       0.1675,
+       0.4269
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 42,
-        "bias": 10.434,
-        "mae": 35.292
+        "n": 43,
+        "bias": 10.529,
+        "mae": 34.134
        }
       ]
      }
@@ -16755,25 +16755,25 @@
      "family": "oil price",
      "horizon": "3_to_5_years",
      "stats": {
-      "n_graded": 121,
-      "hits": 19,
+      "n_graded": 124,
+      "hits": 20,
       "partials": 26,
-      "misses": 76,
-      "ungradable": 72,
+      "misses": 78,
+      "ungradable": 69,
       "open": 24,
       "excluded": 0,
-      "hit_rate": 0.157,
+      "hit_rate": 0.1613,
       "hit_rate_ci95": [
-       0.1029,
-       0.2323
+       0.1069,
+       0.236
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 121,
-        "bias": 24.696,
-        "mae": 51.834
+        "n": 124,
+        "bias": 25.055,
+        "mae": 50.975
        }
       ]
      }
@@ -16782,25 +16782,25 @@
      "family": "oil price",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 166,
+      "n_graded": 171,
       "hits": 11,
       "partials": 19,
-      "misses": 136,
-      "ungradable": 100,
+      "misses": 141,
+      "ungradable": 95,
       "open": 80,
       "excluded": 0,
-      "hit_rate": 0.0663,
+      "hit_rate": 0.0643,
       "hit_rate_ci95": [
-       0.0374,
-       0.1147
+       0.0363,
+       0.1115
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 166,
-        "bias": 34.518,
-        "mae": 72.336
+        "n": 171,
+        "bias": 38.777,
+        "mae": 75.489
        }
       ]
      }
@@ -16809,25 +16809,25 @@
      "family": "oil price",
      "horizon": "over_10_years",
      "stats": {
-      "n_graded": 190,
+      "n_graded": 192,
       "hits": 32,
       "partials": 32,
-      "misses": 126,
-      "ungradable": 114,
+      "misses": 128,
+      "ungradable": 112,
       "open": 558,
       "excluded": 0,
-      "hit_rate": 0.1684,
+      "hit_rate": 0.1667,
       "hit_rate_ci95": [
-       0.1219,
-       0.2281
+       0.1206,
+       0.2258
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 190,
-        "bias": 1.8,
-        "mae": 48.888
+        "n": 192,
+        "bias": 3.761,
+        "mae": 50.358
        }
       ]
      }
@@ -17245,24 +17245,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 546,
-      "hits": 427,
-      "partials": 100,
+      "hits": 426,
+      "partials": 101,
       "misses": 19,
       "ungradable": 0,
       "open": 335,
       "excluded": 39,
-      "hit_rate": 0.7821,
+      "hit_rate": 0.7802,
       "hit_rate_ci95": [
-       0.7455,
-       0.8146
+       0.7436,
+       0.8129
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 546,
-        "bias": 4.347,
-        "mae": 6.468
+        "bias": 4.364,
+        "mae": 6.483
        }
       ]
      }
@@ -17289,8 +17289,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": -0.632,
-        "mae": 1.375
+        "bias": -0.584,
+        "mae": 1.423
        }
       ]
      }
@@ -17317,8 +17317,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": -0.236,
-        "mae": 1.798
+        "bias": -0.204,
+        "mae": 1.807
        }
       ]
      }
@@ -17345,8 +17345,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.17,
-        "mae": 2.281
+        "bias": 0.189,
+        "mae": 2.301
        }
       ]
      }
@@ -17373,8 +17373,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 112,
-        "bias": 1.021,
-        "mae": 3.245
+        "bias": 1.034,
+        "mae": 3.258
        }
       ]
      }
@@ -17401,8 +17401,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 151,
-        "bias": 3.498,
-        "mae": 6.087
+        "bias": 3.512,
+        "mae": 6.101
        }
       ]
      }
@@ -17413,24 +17413,24 @@
      "horizon": "over_10_years",
      "stats": {
       "n_graded": 166,
-      "hits": 82,
-      "partials": 65,
+      "hits": 81,
+      "partials": 66,
       "misses": 19,
       "ungradable": 0,
       "open": 279,
       "excluded": 0,
-      "hit_rate": 0.494,
+      "hit_rate": 0.488,
       "hit_rate_ci95": [
-       0.4189,
-       0.5693
+       0.413,
+       0.5634
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 166,
-        "bias": 10.592,
-        "mae": 12.268
+        "bias": 10.602,
+        "mae": 12.278
        }
       ]
      }
@@ -17458,24 +17458,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 440,
-      "hits": 220,
-      "partials": 109,
+      "hits": 219,
+      "partials": 110,
       "misses": 111,
       "ungradable": 0,
       "open": 335,
       "excluded": 32,
-      "hit_rate": 0.5,
+      "hit_rate": 0.4977,
       "hit_rate_ci95": [
-       0.4535,
-       0.5465
+       0.4512,
+       0.5443
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 440,
-        "bias": 14.62,
-        "mae": 15.844
+        "bias": 14.657,
+        "mae": 15.882
        }
       ]
      }
@@ -17502,8 +17502,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 31,
-        "bias": 0.209,
-        "mae": 2.219
+        "bias": 0.267,
+        "mae": 2.277
        }
       ]
      }
@@ -17530,8 +17530,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 31,
-        "bias": 1.35,
-        "mae": 3.14
+        "bias": 1.372,
+        "mae": 3.161
        }
       ]
      }
@@ -17558,8 +17558,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 30,
-        "bias": 2.511,
-        "mae": 4.065
+        "bias": 2.541,
+        "mae": 4.094
        }
       ]
      }
@@ -17570,24 +17570,24 @@
      "horizon": "3_to_5_years",
      "stats": {
       "n_graded": 84,
-      "hits": 67,
-      "partials": 17,
+      "hits": 66,
+      "partials": 18,
       "misses": 0,
       "ungradable": 0,
       "open": 12,
       "excluded": 0,
-      "hit_rate": 0.7976,
+      "hit_rate": 0.7857,
       "hit_rate_ci95": [
-       0.6996,
-       0.8696
+       0.6865,
+       0.8599
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 84,
-        "bias": 5.312,
-        "mae": 6.974
+        "bias": 5.345,
+        "mae": 7.007
        }
       ]
      }
@@ -17614,8 +17614,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 120,
-        "bias": 12.426,
-        "mae": 13.884
+        "bias": 12.496,
+        "mae": 13.954
        }
       ]
      }
@@ -17642,8 +17642,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 144,
-        "bias": 30.358,
-        "mae": 30.774
+        "bias": 30.373,
+        "mae": 30.789
        }
       ]
      }
@@ -17671,24 +17671,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 546,
-      "hits": 82,
+      "hits": 84,
       "partials": 101,
-      "misses": 363,
+      "misses": 361,
       "ungradable": 0,
       "open": 335,
       "excluded": 39,
-      "hit_rate": 0.1502,
+      "hit_rate": 0.1538,
       "hit_rate_ci95": [
-       0.1227,
-       0.1826
+       0.126,
+       0.1865
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 546,
-        "bias": 15.246,
-        "mae": 52.954
+        "bias": 15.727,
+        "mae": 52.974
        }
       ]
      }
@@ -17699,24 +17699,24 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 39,
-      "hits": 12,
+      "hits": 13,
       "partials": 16,
-      "misses": 11,
+      "misses": 10,
       "ungradable": 0,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.3077,
+      "hit_rate": 0.3333,
       "hit_rate_ci95": [
-       0.1857,
-       0.4642
+       0.2063,
+       0.4902
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.334,
-        "mae": 18.778
+        "bias": 1.248,
+        "mae": 18.03
        }
       ]
      }
@@ -17727,24 +17727,24 @@
      "horizon": "next_year",
      "stats": {
       "n_graded": 39,
-      "hits": 9,
+      "hits": 10,
       "partials": 12,
-      "misses": 18,
+      "misses": 17,
       "ungradable": 0,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.2308,
+      "hit_rate": 0.2564,
       "hit_rate_ci95": [
-       0.1265,
-       0.3834
+       0.1457,
+       0.4108
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 7.269,
-        "mae": 30.592
+        "bias": 8.312,
+        "mae": 29.944
        }
       ]
      }
@@ -17756,8 +17756,8 @@
      "stats": {
       "n_graded": 39,
       "hits": 11,
-      "partials": 7,
-      "misses": 21,
+      "partials": 8,
+      "misses": 20,
       "ungradable": 0,
       "open": 2,
       "excluded": 0,
@@ -17771,8 +17771,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 12.422,
-        "mae": 36.822
+        "bias": 13.078,
+        "mae": 36.165
        }
       ]
      }
@@ -17784,8 +17784,8 @@
      "stats": {
       "n_graded": 112,
       "hits": 14,
-      "partials": 22,
-      "misses": 76,
+      "partials": 21,
+      "misses": 77,
       "ungradable": 0,
       "open": 12,
       "excluded": 0,
@@ -17799,8 +17799,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 112,
-        "bias": 26.694,
-        "mae": 55.136
+        "bias": 27.343,
+        "mae": 55.163
        }
       ]
      }
@@ -17827,8 +17827,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 151,
-        "bias": 34.2,
-        "mae": 75.685
+        "bias": 34.827,
+        "mae": 76.313
        }
       ]
      }
@@ -17855,8 +17855,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 166,
-        "bias": -3.68,
-        "mae": 47.876
+        "bias": -3.72,
+        "mae": 47.835
        }
       ]
      }
@@ -17883,25 +17883,25 @@
      "family": "oil price",
      "horizon": "all",
      "stats": {
-      "n_graded": 56,
-      "hits": 13,
-      "partials": 15,
-      "misses": 28,
-      "ungradable": 367,
+      "n_graded": 69,
+      "hits": 16,
+      "partials": 17,
+      "misses": 36,
+      "ungradable": 354,
       "open": 335,
       "excluded": 31,
-      "hit_rate": 0.2321,
+      "hit_rate": 0.2319,
       "hit_rate_ci95": [
-       0.141,
-       0.3577
+       0.1481,
+       0.344
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 56,
-        "bias": 25.61,
-        "mae": 39.026
+        "n": 69,
+        "bias": 38.706,
+        "mae": 49.916
        }
       ]
      }
@@ -17911,35 +17911,10 @@
      "family": "oil price",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 2,
-      "hits": 0,
+      "n_graded": 3,
+      "hits": 1,
       "partials": 2,
       "misses": 0,
-      "ungradable": 28,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D16",
-        "unit": "percent of actual",
-        "n": 2,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "us-imported-crude-oil-price-real",
-     "family": "oil price",
-     "horizon": "next_year",
-     "stats": {
-      "n_graded": 3,
-      "hits": 0,
-      "partials": 1,
-      "misses": 2,
       "ungradable": 27,
       "open": 1,
       "excluded": 0,
@@ -17959,13 +17934,38 @@
     {
      "subject_id": "us-imported-crude-oil-price-real",
      "family": "oil price",
-     "horizon": "2_years",
+     "horizon": "next_year",
      "stats": {
-      "n_graded": 3,
+      "n_graded": 4,
       "hits": 1,
       "partials": 1,
-      "misses": 1,
+      "misses": 2,
       "ungradable": 26,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D16",
+        "unit": "percent of actual",
+        "n": 4,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "us-imported-crude-oil-price-real",
+     "family": "oil price",
+     "horizon": "2_years",
+     "stats": {
+      "n_graded": 4,
+      "hits": 1,
+      "partials": 2,
+      "misses": 1,
+      "ungradable": 25,
       "open": 2,
       "excluded": 0,
       "hit_rate": null,
@@ -17974,7 +17974,7 @@
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 3,
+        "n": 4,
         "bias": null,
         "mae": null
        }
@@ -17986,11 +17986,11 @@
      "family": "oil price",
      "horizon": "3_to_5_years",
      "stats": {
-      "n_graded": 9,
-      "hits": 5,
-      "partials": 4,
-      "misses": 0,
-      "ungradable": 72,
+      "n_graded": 12,
+      "hits": 6,
+      "partials": 5,
+      "misses": 1,
+      "ungradable": 69,
       "open": 12,
       "excluded": 0,
       "hit_rate": null,
@@ -17999,7 +17999,7 @@
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 9,
+        "n": 12,
         "bias": null,
         "mae": null
        }
@@ -18011,22 +18011,25 @@
      "family": "oil price",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 15,
+      "n_graded": 20,
       "hits": 2,
       "partials": 3,
-      "misses": 10,
-      "ungradable": 100,
+      "misses": 15,
+      "ungradable": 95,
       "open": 40,
       "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
+      "hit_rate": 0.1,
+      "hit_rate_ci95": [
+       0.0279,
+       0.301
+      ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 15,
-        "bias": null,
-        "mae": null
+        "n": 20,
+        "bias": 68.593,
+        "mae": 69.264
        }
       ]
      }
@@ -18036,25 +18039,25 @@
      "family": "oil price",
      "horizon": "over_10_years",
      "stats": {
-      "n_graded": 24,
+      "n_graded": 26,
       "hits": 5,
       "partials": 4,
-      "misses": 15,
-      "ungradable": 114,
+      "misses": 17,
+      "ungradable": 112,
       "open": 279,
       "excluded": 0,
-      "hit_rate": 0.2083,
+      "hit_rate": 0.1923,
       "hit_rate_ci95": [
-       0.0924,
-       0.4047
+       0.0851,
+       0.3788
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 24,
-        "bias": 39.702,
-        "mae": 55.89
+        "n": 26,
+        "bias": 51.524,
+        "mae": 66.467
        }
       ]
      }
@@ -18082,24 +18085,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 423,
-      "hits": 49,
-      "partials": 85,
-      "misses": 289,
+      "hits": 47,
+      "partials": 83,
+      "misses": 293,
       "ungradable": 0,
       "open": 335,
       "excluded": 31,
-      "hit_rate": 0.1158,
+      "hit_rate": 0.1111,
       "hit_rate_ci95": [
-       0.0887,
-       0.1499
+       0.0846,
+       0.1446
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 423,
-        "bias": 34.693,
-        "mae": 57.651
+        "bias": 35.478,
+        "mae": 58.425
        }
       ]
      }
@@ -18110,24 +18113,24 @@
      "horizon": "current_year",
      "stats": {
       "n_graded": 30,
-      "hits": 10,
+      "hits": 9,
       "partials": 10,
-      "misses": 10,
+      "misses": 11,
       "ungradable": 0,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.3333,
+      "hit_rate": 0.3,
       "hit_rate_ci95": [
-       0.1923,
-       0.5122
+       0.1666,
+       0.4788
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 30,
-        "bias": -0.052,
-        "mae": 19.94
+        "bias": 1.27,
+        "mae": 21.113
        }
       ]
      }
@@ -18138,24 +18141,24 @@
      "horizon": "next_year",
      "stats": {
       "n_graded": 30,
-      "hits": 7,
+      "hits": 6,
       "partials": 7,
-      "misses": 16,
+      "misses": 17,
       "ungradable": 0,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.2333,
+      "hit_rate": 0.2,
       "hit_rate_ci95": [
-       0.1179,
-       0.4093
+       0.0951,
+       0.3731
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 30,
-        "bias": 4.698,
-        "mae": 29.757
+        "bias": 5.765,
+        "mae": 30.823
        }
       ]
      }
@@ -18167,8 +18170,8 @@
      "stats": {
       "n_graded": 29,
       "hits": 5,
-      "partials": 4,
-      "misses": 20,
+      "partials": 3,
+      "misses": 21,
       "ungradable": 0,
       "open": 2,
       "excluded": 0,
@@ -18182,8 +18185,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 29,
-        "bias": 5.632,
-        "mae": 34.736
+        "bias": 6.574,
+        "mae": 35.678
        }
       ]
      }
@@ -18195,8 +18198,8 @@
      "stats": {
       "n_graded": 81,
       "hits": 8,
-      "partials": 11,
-      "misses": 62,
+      "partials": 10,
+      "misses": 63,
       "ungradable": 0,
       "open": 12,
       "excluded": 0,
@@ -18210,8 +18213,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 81,
-        "bias": 13.923,
-        "mae": 46.093
+        "bias": 15.099,
+        "mae": 47.27
        }
       ]
      }
@@ -18238,8 +18241,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 115,
-        "bias": 31.377,
-        "mae": 62.292
+        "bias": 32.641,
+        "mae": 63.555
        }
       ]
      }
@@ -18266,8 +18269,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 138,
-        "bias": 69.828,
-        "mae": 79.644
+        "bias": 69.772,
+        "mae": 79.588
        }
       ]
      }
@@ -18294,25 +18297,25 @@
      "family": "natural gas price",
      "horizon": "all",
      "stats": {
-      "n_graded": 56,
+      "n_graded": 69,
       "hits": 6,
       "partials": 8,
-      "misses": 42,
-      "ungradable": 367,
+      "misses": 55,
+      "ungradable": 354,
       "open": 335,
       "excluded": 31,
-      "hit_rate": 0.1071,
+      "hit_rate": 0.087,
       "hit_rate_ci95": [
-       0.05,
-       0.2147
+       0.0405,
+       0.177
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 56,
-        "bias": 80.977,
-        "mae": 92.343
+        "n": 69,
+        "bias": 86.76,
+        "mae": 95.984
        }
       ]
      }
@@ -18322,35 +18325,10 @@
      "family": "natural gas price",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 2,
-      "hits": 0,
-      "partials": 0,
-      "misses": 2,
-      "ungradable": 28,
-      "open": 1,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D16",
-        "unit": "percent of actual",
-        "n": 2,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "us-natural-gas-price-electric-power-real",
-     "family": "natural gas price",
-     "horizon": "next_year",
-     "stats": {
       "n_graded": 3,
       "hits": 0,
-      "partials": 1,
-      "misses": 2,
+      "partials": 0,
+      "misses": 3,
       "ungradable": 27,
       "open": 1,
       "excluded": 0,
@@ -18370,13 +18348,38 @@
     {
      "subject_id": "us-natural-gas-price-electric-power-real",
      "family": "natural gas price",
-     "horizon": "2_years",
+     "horizon": "next_year",
      "stats": {
-      "n_graded": 3,
+      "n_graded": 4,
       "hits": 0,
       "partials": 1,
-      "misses": 2,
+      "misses": 3,
       "ungradable": 26,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D16",
+        "unit": "percent of actual",
+        "n": 4,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "us-natural-gas-price-electric-power-real",
+     "family": "natural gas price",
+     "horizon": "2_years",
+     "stats": {
+      "n_graded": 4,
+      "hits": 0,
+      "partials": 1,
+      "misses": 3,
+      "ungradable": 25,
       "open": 2,
       "excluded": 0,
       "hit_rate": null,
@@ -18385,7 +18388,7 @@
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 3,
+        "n": 4,
         "bias": null,
         "mae": null
        }
@@ -18397,11 +18400,11 @@
      "family": "natural gas price",
      "horizon": "3_to_5_years",
      "stats": {
-      "n_graded": 9,
+      "n_graded": 12,
       "hits": 1,
       "partials": 1,
-      "misses": 7,
-      "ungradable": 72,
+      "misses": 10,
+      "ungradable": 69,
       "open": 12,
       "excluded": 0,
       "hit_rate": null,
@@ -18410,7 +18413,7 @@
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 9,
+        "n": 12,
         "bias": null,
         "mae": null
        }
@@ -18422,22 +18425,25 @@
      "family": "natural gas price",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 15,
+      "n_graded": 20,
       "hits": 4,
       "partials": 0,
-      "misses": 11,
-      "ungradable": 100,
+      "misses": 16,
+      "ungradable": 95,
       "open": 40,
       "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
+      "hit_rate": 0.2,
+      "hit_rate_ci95": [
+       0.0807,
+       0.416
+      ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 15,
-        "bias": null,
-        "mae": null
+        "n": 20,
+        "bias": 92.699,
+        "mae": 98.369
        }
       ]
      }
@@ -18447,25 +18453,25 @@
      "family": "natural gas price",
      "horizon": "over_10_years",
      "stats": {
-      "n_graded": 24,
+      "n_graded": 26,
       "hits": 1,
       "partials": 5,
-      "misses": 18,
-      "ungradable": 114,
+      "misses": 20,
+      "ungradable": 112,
       "open": 279,
       "excluded": 0,
-      "hit_rate": 0.0417,
+      "hit_rate": 0.0385,
       "hit_rate_ci95": [
-       0.0074,
-       0.2024
+       0.0068,
+       0.1889
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 24,
-        "bias": 137.374,
-        "mae": 137.841
+        "n": 26,
+        "bias": 139.561,
+        "mae": 139.992
        }
       ]
      }
@@ -18706,24 +18712,24 @@
      "horizon": "all",
      "stats": {
       "n_graded": 546,
-      "hits": 367,
-      "partials": 122,
+      "hits": 366,
+      "partials": 123,
       "misses": 57,
       "ungradable": 0,
       "open": 335,
       "excluded": 39,
-      "hit_rate": 0.6722,
+      "hit_rate": 0.6703,
       "hit_rate_ci95": [
-       0.6317,
-       0.7102
+       0.6298,
+       0.7085
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 546,
-        "bias": 6.846,
-        "mae": 9.218
+        "bias": 6.862,
+        "mae": 9.224
        }
       ]
      }
@@ -18750,8 +18756,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.265,
-        "mae": 1.751
+        "bias": 0.33,
+        "mae": 1.815
        }
       ]
      }
@@ -18778,8 +18784,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.856,
-        "mae": 2.813
+        "bias": 0.84,
+        "mae": 2.798
        }
       ]
      }
@@ -18806,8 +18812,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 1.777,
-        "mae": 3.942
+        "bias": 1.766,
+        "mae": 3.931
        }
       ]
      }
@@ -18834,8 +18840,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 112,
-        "bias": 2.397,
-        "mae": 4.889
+        "bias": 2.401,
+        "mae": 4.893
        }
       ]
      }
@@ -18862,8 +18868,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 151,
-        "bias": 5.006,
-        "mae": 8.379
+        "bias": 5.041,
+        "mae": 8.376
        }
       ]
      }
@@ -18874,24 +18880,24 @@
      "horizon": "over_10_years",
      "stats": {
       "n_graded": 166,
-      "hits": 57,
-      "partials": 63,
+      "hits": 56,
+      "partials": 64,
       "misses": 46,
       "ungradable": 0,
       "open": 279,
       "excluded": 0,
-      "hit_rate": 0.3434,
+      "hit_rate": 0.3373,
       "hit_rate_ci95": [
-       0.2754,
-       0.4184
+       0.2698,
+       0.4122
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
         "n": 166,
-        "bias": 15.666,
-        "mae": 17.401
+        "bias": 15.674,
+        "mae": 17.41
        }
       ]
      }
@@ -19119,25 +19125,25 @@
      "family": "energy consumption",
      "horizon": "all",
      "stats": {
-      "n_graded": 490,
-      "hits": 340,
-      "partials": 125,
+      "n_graded": 477,
+      "hits": 328,
+      "partials": 124,
       "misses": 25,
-      "ungradable": 76,
+      "ungradable": 89,
       "open": 315,
       "excluded": 39,
-      "hit_rate": 0.6939,
+      "hit_rate": 0.6876,
       "hit_rate_ci95": [
-       0.6517,
-       0.733
+       0.6447,
+       0.7276
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 490,
-        "bias": 6.936,
-        "mae": 8.075
+        "n": 477,
+        "bias": 6.996,
+        "mae": 8.166
        }
       ]
      }
@@ -19147,40 +19153,12 @@
      "family": "energy consumption",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 37,
-      "hits": 37,
-      "partials": 0,
-      "misses": 0,
-      "ungradable": 3,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": 1,
-      "hit_rate_ci95": [
-       0.9059,
-       1
-      ],
-      "errors": [
-       {
-        "rule": "D16",
-        "unit": "percent of actual",
-        "n": 37,
-        "bias": 0.59,
-        "mae": 1.716
-       }
-      ]
-     }
-    },
-    {
-     "subject_id": "us-total-energy-consumption",
-     "family": "energy consumption",
-     "horizon": "next_year",
-     "stats": {
       "n_graded": 36,
       "hits": 36,
       "partials": 0,
       "misses": 0,
-      "ungradable": 3,
-      "open": 1,
+      "ungradable": 4,
+      "open": 0,
       "excluded": 0,
       "hit_rate": 1,
       "hit_rate_ci95": [
@@ -19192,8 +19170,36 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 36,
-        "bias": 1.298,
-        "mae": 2.4
+        "bias": 0.504,
+        "mae": 1.661
+       }
+      ]
+     }
+    },
+    {
+     "subject_id": "us-total-energy-consumption",
+     "family": "energy consumption",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 35,
+      "hits": 35,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 4,
+      "open": 1,
+      "excluded": 0,
+      "hit_rate": 1,
+      "hit_rate_ci95": [
+       0.9011,
+       1
+      ],
+      "errors": [
+       {
+        "rule": "D16",
+        "unit": "percent of actual",
+        "n": 35,
+        "bias": 1.303,
+        "mae": 2.437
        }
       ]
      }
@@ -19203,25 +19209,25 @@
      "family": "energy consumption",
      "horizon": "2_years",
      "stats": {
-      "n_graded": 36,
-      "hits": 35,
+      "n_graded": 35,
+      "hits": 34,
       "partials": 1,
       "misses": 0,
-      "ungradable": 4,
+      "ungradable": 5,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.9722,
+      "hit_rate": 0.9714,
       "hit_rate_ci95": [
-       0.8583,
-       0.9951
+       0.8547,
+       0.9949
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 36,
-        "bias": 1.935,
-        "mae": 3.117
+        "n": 35,
+        "bias": 1.898,
+        "mae": 3.113
        }
       ]
      }
@@ -19231,25 +19237,25 @@
      "family": "energy consumption",
      "horizon": "3_to_5_years",
      "stats": {
-      "n_graded": 103,
-      "hits": 93,
+      "n_graded": 100,
+      "hits": 90,
       "partials": 10,
       "misses": 0,
-      "ungradable": 12,
+      "ungradable": 15,
       "open": 9,
       "excluded": 0,
-      "hit_rate": 0.9029,
+      "hit_rate": 0.9,
       "hit_rate_ci95": [
-       0.8304,
-       0.9464
+       0.8256,
+       0.9448
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 103,
-        "bias": 2.878,
-        "mae": 4.186
+        "n": 100,
+        "bias": 2.814,
+        "mae": 4.161
        }
       ]
      }
@@ -19259,25 +19265,25 @@
      "family": "energy consumption",
      "horizon": "6_to_10_years",
      "stats": {
-      "n_graded": 136,
-      "hits": 93,
+      "n_graded": 131,
+      "hits": 88,
       "partials": 42,
       "misses": 1,
-      "ungradable": 20,
+      "ungradable": 25,
       "open": 35,
       "excluded": 0,
-      "hit_rate": 0.6838,
+      "hit_rate": 0.6718,
       "hit_rate_ci95": [
-       0.6015,
-       0.756
+       0.5875,
+       0.7463
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 136,
-        "bias": 6.042,
-        "mae": 7.676
+        "n": 131,
+        "bias": 6.13,
+        "mae": 7.826
        }
       ]
      }
@@ -19287,25 +19293,25 @@
      "family": "energy consumption",
      "horizon": "over_10_years",
      "stats": {
-      "n_graded": 142,
-      "hits": 46,
-      "partials": 72,
+      "n_graded": 140,
+      "hits": 45,
+      "partials": 71,
       "misses": 24,
-      "ungradable": 34,
+      "ungradable": 36,
       "open": 269,
       "excluded": 0,
-      "hit_rate": 0.3239,
+      "hit_rate": 0.3214,
       "hit_rate_ci95": [
-       0.2525,
-       0.4047
+       0.2497,
+       0.4027
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 142,
-        "bias": 15.086,
-        "mae": 15.631
+        "n": 140,
+        "bias": 15.159,
+        "mae": 15.712
        }
       ]
      }
@@ -19349,8 +19355,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 534,
-        "bias": 7.073,
-        "mae": 10.802
+        "bias": 7.121,
+        "mae": 10.848
        }
       ]
      }
@@ -19377,8 +19383,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.187,
-        "mae": 2.381
+        "bias": 0.237,
+        "mae": 2.432
        }
       ]
      }
@@ -19405,8 +19411,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.491,
-        "mae": 3.207
+        "bias": 0.53,
+        "mae": 3.246
        }
       ]
      }
@@ -19433,8 +19439,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 39,
-        "bias": 0.446,
-        "mae": 4.165
+        "bias": 0.493,
+        "mae": 4.213
        }
       ]
      }
@@ -19461,8 +19467,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 109,
-        "bias": 0.925,
-        "mae": 6.181
+        "bias": 0.974,
+        "mae": 6.23
        }
       ]
      }
@@ -19489,8 +19495,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 144,
-        "bias": 4.896,
-        "mae": 9.547
+        "bias": 4.974,
+        "mae": 9.62
        }
       ]
      }
@@ -19517,8 +19523,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 164,
-        "bias": 17.851,
-        "mae": 20.361
+        "bias": 17.873,
+        "mae": 20.383
        }
       ]
      }
@@ -20452,25 +20458,25 @@
      "edition": "2009",
      "published": "2009",
      "stats": {
-      "n_graded": 145,
-      "hits": 67,
-      "partials": 20,
-      "misses": 58,
-      "ungradable": 34,
+      "n_graded": 158,
+      "hits": 55,
+      "partials": 22,
+      "misses": 81,
+      "ungradable": 21,
       "open": 64,
       "excluded": 12,
-      "hit_rate": 0.4621,
+      "hit_rate": 0.3481,
       "hit_rate_ci95": [
-       0.3829,
-       0.5431
+       0.2782,
+       0.4252
       ],
       "errors": [
        {
         "rule": "D16",
         "unit": "percent of actual",
-        "n": 145,
-        "bias": 19.124,
-        "mae": 43.296
+        "n": 158,
+        "bias": 38.315,
+        "mae": 58.971
        }
       ]
      }
@@ -24450,8 +24456,8 @@
       "rule": "D16",
       "unit": "percent of actual",
       "n": 50,
-      "bias": -41.95,
-      "mae": 41.976
+      "bias": -41.763,
+      "mae": 41.789
      }
     ]
    },
@@ -24492,8 +24498,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 50,
-        "bias": -41.95,
-        "mae": 41.976
+        "bias": -41.763,
+        "mae": 41.789
        }
       ]
      }
@@ -24541,8 +24547,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 29,
-        "bias": -42.789,
-        "mae": 42.789
+        "bias": -42.495,
+        "mae": 42.495
        }
       ]
      }
@@ -24904,8 +24910,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 21,
-        "bias": -30.409,
-        "mae": 30.47
+        "bias": -30.432,
+        "mae": 30.494
        }
       ]
      }
@@ -25333,8 +25339,8 @@
         "rule": "D16",
         "unit": "percent of actual",
         "n": 21,
-        "bias": -30.409,
-        "mae": 30.47
+        "bias": -30.432,
+        "mae": 30.494
        }
       ]
      }
@@ -26017,25 +26023,25 @@
   {
    "source_id": "imf-weo",
    "totals": {
-    "n_graded": 1330,
-    "hits": 565,
-    "partials": 276,
-    "misses": 489,
-    "ungradable": 186,
+    "n_graded": 1420,
+    "hits": 576,
+    "partials": 293,
+    "misses": 551,
+    "ungradable": 96,
     "open": 44,
     "excluded": 0,
-    "hit_rate": 0.4248,
+    "hit_rate": 0.4056,
     "hit_rate_ci95": [
-     0.3985,
-     0.4516
+     0.3804,
+     0.4314
     ],
     "errors": [
      {
       "rule": "D18",
       "unit": "pp",
-      "n": 1330,
-      "bias": -0.026,
-      "mae": 1.142
+      "n": 1420,
+      "bias": -0.047,
+      "mae": 1.169
      }
     ]
    },
@@ -26052,32 +26058,32 @@
     "residual_error_rate": 0
    },
    "hit_rate_audit_adjusted95": [
-    0.3985,
-    0.4516
+    0.3804,
+    0.4314
    ],
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 1330,
-      "hits": 565,
-      "partials": 276,
-      "misses": 489,
-      "ungradable": 186,
+      "n_graded": 1420,
+      "hits": 576,
+      "partials": 293,
+      "misses": 551,
+      "ungradable": 96,
       "open": 44,
       "excluded": 0,
-      "hit_rate": 0.4248,
+      "hit_rate": 0.4056,
       "hit_rate_ci95": [
-       0.3985,
-       0.4516
+       0.3804,
+       0.4314
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 1330,
-        "bias": -0.026,
-        "mae": 1.142
+        "n": 1420,
+        "bias": -0.047,
+        "mae": 1.169
        }
       ]
      }
@@ -26085,25 +26091,25 @@
     {
      "horizon": "current_year",
      "stats": {
-      "n_graded": 676,
-      "hits": 350,
-      "partials": 152,
-      "misses": 174,
-      "ungradable": 93,
+      "n_graded": 722,
+      "hits": 357,
+      "partials": 162,
+      "misses": 203,
+      "ungradable": 47,
       "open": 11,
       "excluded": 0,
-      "hit_rate": 0.5178,
+      "hit_rate": 0.4945,
       "hit_rate_ci95": [
-       0.4801,
-       0.5552
+       0.4581,
+       0.5309
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 676,
-        "bias": -0.32,
-        "mae": 0.783
+        "n": 722,
+        "bias": -0.326,
+        "mae": 0.813
        }
       ]
      }
@@ -26111,25 +26117,25 @@
     {
      "horizon": "next_year",
      "stats": {
-      "n_graded": 654,
-      "hits": 215,
-      "partials": 124,
-      "misses": 315,
-      "ungradable": 93,
+      "n_graded": 698,
+      "hits": 219,
+      "partials": 131,
+      "misses": 348,
+      "ungradable": 49,
       "open": 33,
       "excluded": 0,
-      "hit_rate": 0.3287,
+      "hit_rate": 0.3138,
       "hit_rate_ci95": [
-       0.2938,
-       0.3657
+       0.2804,
+       0.3491
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 654,
-        "bias": 0.278,
-        "mae": 1.513
+        "n": 698,
+        "bias": 0.241,
+        "mae": 1.537
        }
       ]
      }
@@ -26140,25 +26146,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 1330,
-      "hits": 565,
-      "partials": 276,
-      "misses": 489,
-      "ungradable": 186,
+      "n_graded": 1420,
+      "hits": 576,
+      "partials": 293,
+      "misses": 551,
+      "ungradable": 96,
       "open": 44,
       "excluded": 0,
-      "hit_rate": 0.4248,
+      "hit_rate": 0.4056,
       "hit_rate_ci95": [
-       0.3985,
-       0.4516
+       0.3804,
+       0.4314
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 1330,
-        "bias": -0.026,
-        "mae": 1.142
+        "n": 1420,
+        "bias": -0.047,
+        "mae": 1.169
        }
       ]
      }
@@ -26167,25 +26173,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 676,
-      "hits": 350,
-      "partials": 152,
-      "misses": 174,
-      "ungradable": 93,
+      "n_graded": 722,
+      "hits": 357,
+      "partials": 162,
+      "misses": 203,
+      "ungradable": 47,
       "open": 11,
       "excluded": 0,
-      "hit_rate": 0.5178,
+      "hit_rate": 0.4945,
       "hit_rate_ci95": [
-       0.4801,
-       0.5552
+       0.4581,
+       0.5309
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 676,
-        "bias": -0.32,
-        "mae": 0.783
+        "n": 722,
+        "bias": -0.326,
+        "mae": 0.813
        }
       ]
      }
@@ -26194,25 +26200,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 654,
-      "hits": 215,
-      "partials": 124,
-      "misses": 315,
-      "ungradable": 93,
+      "n_graded": 698,
+      "hits": 219,
+      "partials": 131,
+      "misses": 348,
+      "ungradable": 49,
       "open": 33,
       "excluded": 0,
-      "hit_rate": 0.3287,
+      "hit_rate": 0.3138,
       "hit_rate_ci95": [
-       0.2938,
-       0.3657
+       0.2804,
+       0.3491
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 654,
-        "bias": 0.278,
-        "mae": 1.513
+        "n": 698,
+        "bias": 0.241,
+        "mae": 1.537
        }
       ]
      }
@@ -26728,25 +26734,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 48,
-      "hits": 6,
-      "partials": 20,
-      "misses": 22,
-      "ungradable": 94,
+      "n_graded": 138,
+      "hits": 17,
+      "partials": 37,
+      "misses": 84,
+      "ungradable": 4,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.125,
+      "hit_rate": 0.1232,
       "hit_rate_ci95": [
-       0.0586,
-       0.247
+       0.0784,
+       0.1884
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 48,
-        "bias": 0.432,
-        "mae": 1.931
+        "n": 138,
+        "bias": -0.087,
+        "mae": 1.693
        }
       ]
      }
@@ -26756,25 +26762,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 25,
-      "hits": 5,
-      "partials": 10,
-      "misses": 10,
-      "ungradable": 47,
+      "n_graded": 71,
+      "hits": 12,
+      "partials": 20,
+      "misses": 39,
+      "ungradable": 1,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.2,
+      "hit_rate": 0.169,
       "hit_rate_ci95": [
-       0.0886,
-       0.3913
+       0.0994,
+       0.2726
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 25,
-        "bias": -0.037,
-        "mae": 1.532
+        "n": 71,
+        "bias": -0.283,
+        "mae": 1.354
        }
       ]
      }
@@ -26784,25 +26790,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 23,
-      "hits": 1,
-      "partials": 10,
-      "misses": 12,
-      "ungradable": 47,
+      "n_graded": 67,
+      "hits": 5,
+      "partials": 17,
+      "misses": 45,
+      "ungradable": 3,
       "open": 3,
       "excluded": 0,
-      "hit_rate": 0.0435,
+      "hit_rate": 0.0746,
       "hit_rate_ci95": [
-       0.0077,
-       0.2099
+       0.0323,
+       0.1631
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 23,
-        "bias": 0.941,
-        "mae": 2.365
+        "n": 67,
+        "bias": 0.121,
+        "mae": 2.052
        }
       ]
      }
@@ -27149,11 +27155,11 @@
      "edition": "1990-04",
      "published": "1990-05",
      "stats": {
-      "n_graded": 12,
+      "n_graded": 14,
       "hits": 2,
-      "partials": 2,
-      "misses": 8,
-      "ungradable": 4,
+      "partials": 3,
+      "misses": 9,
+      "ungradable": 2,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27162,7 +27168,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -27173,11 +27179,11 @@
      "edition": "1990-10",
      "published": "1990-10",
      "stats": {
-      "n_graded": 12,
+      "n_graded": 14,
       "hits": 3,
       "partials": 3,
-      "misses": 6,
-      "ungradable": 8,
+      "misses": 8,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27186,7 +27192,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -27197,11 +27203,11 @@
      "edition": "1991-04",
      "published": "1991-05",
      "stats": {
-      "n_graded": 12,
+      "n_graded": 14,
       "hits": 3,
-      "partials": 3,
-      "misses": 6,
-      "ungradable": 8,
+      "partials": 4,
+      "misses": 7,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27210,7 +27216,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -27221,11 +27227,11 @@
      "edition": "1991-10",
      "published": "1991-10",
      "stats": {
-      "n_graded": 12,
+      "n_graded": 14,
       "hits": 4,
       "partials": 1,
-      "misses": 7,
-      "ungradable": 8,
+      "misses": 9,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27234,7 +27240,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -27245,11 +27251,11 @@
      "edition": "1992-04",
      "published": "1992-05",
      "stats": {
-      "n_graded": 12,
+      "n_graded": 14,
       "hits": 3,
-      "partials": 2,
+      "partials": 4,
       "misses": 7,
-      "ungradable": 8,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27258,7 +27264,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -27269,11 +27275,11 @@
      "edition": "1992-10",
      "published": "1992-10",
      "stats": {
-      "n_graded": 12,
-      "hits": 3,
+      "n_graded": 14,
+      "hits": 5,
       "partials": 0,
       "misses": 9,
-      "ungradable": 8,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27282,7 +27288,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -27293,11 +27299,11 @@
      "edition": "1993-04",
      "published": "1993-05",
      "stats": {
-      "n_graded": 14,
-      "hits": 5,
-      "partials": 3,
+      "n_graded": 16,
+      "hits": 6,
+      "partials": 4,
       "misses": 6,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27306,7 +27312,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 14,
+        "n": 16,
         "bias": null,
         "mae": null
        }
@@ -27317,11 +27323,11 @@
      "edition": "1993-10",
      "published": "1993-10",
      "stats": {
-      "n_graded": 14,
-      "hits": 5,
-      "partials": 4,
+      "n_graded": 16,
+      "hits": 6,
+      "partials": 5,
       "misses": 5,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27330,7 +27336,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 14,
+        "n": 16,
         "bias": null,
         "mae": null
        }
@@ -27341,441 +27347,9 @@
      "edition": "1994-04",
      "published": "1994-05",
      "stats": {
-      "n_graded": 14,
-      "hits": 7,
-      "partials": 2,
-      "misses": 5,
-      "ungradable": 6,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 14,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1994-10",
-     "published": "1994-10",
-     "stats": {
-      "n_graded": 14,
-      "hits": 8,
-      "partials": 1,
-      "misses": 5,
-      "ungradable": 6,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 14,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1995-04",
-     "published": "1995-05",
-     "stats": {
-      "n_graded": 14,
-      "hits": 5,
-      "partials": 3,
-      "misses": 6,
-      "ungradable": 6,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 14,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1995-10",
-     "published": "1995-10",
-     "stats": {
-      "n_graded": 14,
-      "hits": 6,
-      "partials": 3,
-      "misses": 5,
-      "ungradable": 6,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 14,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1996-04",
-     "published": "1996-05",
-     "stats": {
-      "n_graded": 14,
-      "hits": 7,
-      "partials": 1,
-      "misses": 6,
-      "ungradable": 6,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 14,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1996-10",
-     "published": "1996-10",
-     "stats": {
-      "n_graded": 14,
-      "hits": 8,
-      "partials": 2,
-      "misses": 4,
-      "ungradable": 6,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 14,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1997-04",
-     "published": "1997-05",
-     "stats": {
-      "n_graded": 16,
-      "hits": 5,
-      "partials": 3,
-      "misses": 8,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 16,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1997-10",
-     "published": "1997-10",
-     "stats": {
       "n_graded": 16,
       "hits": 7,
-      "partials": 3,
-      "misses": 6,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 16,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1998-04",
-     "published": "1998-05",
-     "stats": {
-      "n_graded": 16,
-      "hits": 5,
-      "partials": 5,
-      "misses": 6,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 16,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1998-10",
-     "published": "1998-10",
-     "stats": {
-      "n_graded": 16,
-      "hits": 1,
-      "partials": 7,
-      "misses": 8,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 16,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1999-04",
-     "published": "1999-05",
-     "stats": {
-      "n_graded": 16,
-      "hits": 1,
       "partials": 2,
-      "misses": 13,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 16,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "1999-10",
-     "published": "1999-10",
-     "stats": {
-      "n_graded": 16,
-      "hits": 2,
-      "partials": 3,
-      "misses": 11,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 16,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2000-04",
-     "published": "2000-05",
-     "stats": {
-      "n_graded": 18,
-      "hits": 4,
-      "partials": 3,
-      "misses": 11,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 18,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2000-10",
-     "published": "2000-10",
-     "stats": {
-      "n_graded": 18,
-      "hits": 5,
-      "partials": 2,
-      "misses": 11,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 18,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2001-04",
-     "published": "2001-05",
-     "stats": {
-      "n_graded": 18,
-      "hits": 5,
-      "partials": 3,
-      "misses": 10,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 18,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2001-10",
-     "published": "2001-10",
-     "stats": {
-      "n_graded": 16,
-      "hits": 8,
-      "partials": 6,
-      "misses": 2,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 16,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2002-04",
-     "published": "2002-04",
-     "stats": {
-      "n_graded": 18,
-      "hits": 6,
-      "partials": 4,
-      "misses": 8,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 18,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2002-10",
-     "published": "2002-10",
-     "stats": {
-      "n_graded": 18,
-      "hits": 8,
-      "partials": 4,
-      "misses": 6,
-      "ungradable": 4,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 18,
-        "bias": null,
-        "mae": null
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2003-04",
-     "published": "2003-04",
-     "stats": {
-      "n_graded": 18,
-      "hits": 6,
-      "partials": 5,
       "misses": 7,
       "ungradable": 4,
       "open": 0,
@@ -27786,7 +27360,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 18,
+        "n": 16,
         "bias": null,
         "mae": null
        }
@@ -27794,14 +27368,134 @@
      }
     },
     {
-     "edition": "2003-10",
-     "published": "2003-09",
+     "edition": "1994-10",
+     "published": "1994-10",
+     "stats": {
+      "n_graded": 16,
+      "hits": 8,
+      "partials": 1,
+      "misses": 7,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 16,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1995-04",
+     "published": "1995-05",
+     "stats": {
+      "n_graded": 16,
+      "hits": 5,
+      "partials": 3,
+      "misses": 8,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 16,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1995-10",
+     "published": "1995-10",
+     "stats": {
+      "n_graded": 16,
+      "hits": 6,
+      "partials": 3,
+      "misses": 7,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 16,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1996-04",
+     "published": "1996-05",
+     "stats": {
+      "n_graded": 16,
+      "hits": 7,
+      "partials": 1,
+      "misses": 8,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 16,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1996-10",
+     "published": "1996-10",
+     "stats": {
+      "n_graded": 16,
+      "hits": 8,
+      "partials": 2,
+      "misses": 6,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 16,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1997-04",
+     "published": "1997-05",
      "stats": {
       "n_graded": 18,
-      "hits": 10,
+      "hits": 6,
       "partials": 3,
-      "misses": 5,
-      "ungradable": 4,
+      "misses": 9,
+      "ungradable": 2,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -27818,229 +27512,133 @@
      }
     },
     {
-     "edition": "2004-04",
-     "published": "2004-04",
+     "edition": "1997-10",
+     "published": "1997-10",
      "stats": {
-      "n_graded": 20,
+      "n_graded": 18,
       "hits": 8,
-      "partials": 4,
-      "misses": 8,
-      "ungradable": 2,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": 0.4,
-      "hit_rate_ci95": [
-       0.2188,
-       0.6134
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 20,
-        "bias": -0.28,
-        "mae": 0.914
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2004-10",
-     "published": "2004-09",
-     "stats": {
-      "n_graded": 20,
-      "hits": 9,
-      "partials": 5,
-      "misses": 6,
-      "ungradable": 2,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": 0.45,
-      "hit_rate_ci95": [
-       0.2582,
-       0.6579
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 20,
-        "bias": -0.144,
-        "mae": 0.882
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2005-04",
-     "published": "2005-04",
-     "stats": {
-      "n_graded": 20,
-      "hits": 11,
-      "partials": 4,
-      "misses": 5,
-      "ungradable": 2,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": 0.55,
-      "hit_rate_ci95": [
-       0.3421,
-       0.7418
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 20,
-        "bias": -0.72,
-        "mae": 0.945
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2005-10",
-     "published": "2005-09",
-     "stats": {
-      "n_graded": 20,
-      "hits": 11,
-      "partials": 4,
-      "misses": 5,
-      "ungradable": 2,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": 0.55,
-      "hit_rate_ci95": [
-       0.3421,
-       0.7418
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 20,
-        "bias": -0.813,
-        "mae": 0.929
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2006-04",
-     "published": "2006-04",
-     "stats": {
-      "n_graded": 20,
-      "hits": 7,
       "partials": 3,
-      "misses": 10,
+      "misses": 7,
       "ungradable": 2,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.35,
-      "hit_rate_ci95": [
-       0.1812,
-       0.5671
-      ],
+      "hit_rate": null,
+      "hit_rate_ci95": null,
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": -0.914,
-        "mae": 1.309
+        "n": 18,
+        "bias": null,
+        "mae": null
        }
       ]
      }
     },
     {
-     "edition": "2006-10",
-     "published": "2006-09",
+     "edition": "1998-04",
+     "published": "1998-05",
      "stats": {
-      "n_graded": 20,
-      "hits": 8,
-      "partials": 6,
-      "misses": 6,
-      "ungradable": 2,
-      "open": 0,
-      "excluded": 0,
-      "hit_rate": 0.4,
-      "hit_rate_ci95": [
-       0.2188,
-       0.6134
-      ],
-      "errors": [
-       {
-        "rule": "D18",
-        "unit": "pp",
-        "n": 20,
-        "bias": -0.669,
-        "mae": 1.039
-       }
-      ]
-     }
-    },
-    {
-     "edition": "2007-04",
-     "published": "2007-04",
-     "stats": {
-      "n_graded": 20,
+      "n_graded": 18,
       "hits": 5,
-      "partials": 5,
+      "partials": 6,
+      "misses": 7,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 18,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1998-10",
+     "published": "1998-10",
+     "stats": {
+      "n_graded": 18,
+      "hits": 1,
+      "partials": 7,
       "misses": 10,
       "ungradable": 2,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.25,
-      "hit_rate_ci95": [
-       0.1119,
-       0.4687
-      ],
+      "hit_rate": null,
+      "hit_rate_ci95": null,
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": 0.397,
-        "mae": 1.399
+        "n": 18,
+        "bias": null,
+        "mae": null
        }
       ]
      }
     },
     {
-     "edition": "2007-10",
-     "published": "2007-10",
+     "edition": "1999-04",
+     "published": "1999-05",
      "stats": {
-      "n_graded": 20,
-      "hits": 9,
-      "partials": 0,
-      "misses": 11,
+      "n_graded": 18,
+      "hits": 1,
+      "partials": 3,
+      "misses": 14,
       "ungradable": 2,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.45,
-      "hit_rate_ci95": [
-       0.2582,
-       0.6579
-      ],
+      "hit_rate": null,
+      "hit_rate_ci95": null,
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": 0.461,
-        "mae": 1.166
+        "n": 18,
+        "bias": null,
+        "mae": null
        }
       ]
      }
     },
     {
-     "edition": "2008-04",
-     "published": "2008-04",
+     "edition": "1999-10",
+     "published": "1999-10",
+     "stats": {
+      "n_graded": 18,
+      "hits": 3,
+      "partials": 3,
+      "misses": 12,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 18,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2000-04",
+     "published": "2000-05",
      "stats": {
       "n_graded": 20,
       "hits": 4,
-      "partials": 2,
-      "misses": 14,
+      "partials": 4,
+      "misses": 12,
       "ungradable": 2,
       "open": 0,
       "excluded": 0,
@@ -28054,8 +27652,437 @@
         "rule": "D18",
         "unit": "pp",
         "n": 20,
-        "bias": 2.719,
-        "mae": 2.787
+        "bias": 0.264,
+        "mae": 1.247
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2000-10",
+     "published": "2000-10",
+     "stats": {
+      "n_graded": 20,
+      "hits": 5,
+      "partials": 3,
+      "misses": 12,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.25,
+      "hit_rate_ci95": [
+       0.1119,
+       0.4687
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 20,
+        "bias": 0.577,
+        "mae": 1.207
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2001-04",
+     "published": "2001-05",
+     "stats": {
+      "n_graded": 20,
+      "hits": 5,
+      "partials": 3,
+      "misses": 12,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.25,
+      "hit_rate_ci95": [
+       0.1119,
+       0.4687
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 20,
+        "bias": 0.884,
+        "mae": 1.224
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2001-10",
+     "published": "2001-10",
+     "stats": {
+      "n_graded": 18,
+      "hits": 8,
+      "partials": 7,
+      "misses": 3,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 18,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2002-04",
+     "published": "2002-04",
+     "stats": {
+      "n_graded": 20,
+      "hits": 6,
+      "partials": 5,
+      "misses": 9,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.3,
+      "hit_rate_ci95": [
+       0.1455,
+       0.519
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 20,
+        "bias": 0.223,
+        "mae": 1.09
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2002-10",
+     "published": "2002-10",
+     "stats": {
+      "n_graded": 20,
+      "hits": 9,
+      "partials": 4,
+      "misses": 7,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.45,
+      "hit_rate_ci95": [
+       0.2582,
+       0.6579
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 20,
+        "bias": -0.069,
+        "mae": 0.882
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2003-04",
+     "published": "2003-04",
+     "stats": {
+      "n_graded": 20,
+      "hits": 6,
+      "partials": 5,
+      "misses": 9,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.3,
+      "hit_rate_ci95": [
+       0.1455,
+       0.519
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 20,
+        "bias": -0.649,
+        "mae": 1.045
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2003-10",
+     "published": "2003-09",
+     "stats": {
+      "n_graded": 20,
+      "hits": 10,
+      "partials": 3,
+      "misses": 7,
+      "ungradable": 2,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.5,
+      "hit_rate_ci95": [
+       0.2993,
+       0.7007
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 20,
+        "bias": -0.725,
+        "mae": 0.926
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2004-04",
+     "published": "2004-04",
+     "stats": {
+      "n_graded": 22,
+      "hits": 8,
+      "partials": 5,
+      "misses": 9,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.3636,
+      "hit_rate_ci95": [
+       0.1973,
+       0.5705
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": -0.433,
+        "mae": 1.01
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2004-10",
+     "published": "2004-09",
+     "stats": {
+      "n_graded": 22,
+      "hits": 9,
+      "partials": 5,
+      "misses": 8,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.4091,
+      "hit_rate_ci95": [
+       0.2326,
+       0.6127
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": -0.298,
+        "mae": 0.969
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2005-04",
+     "published": "2005-04",
+     "stats": {
+      "n_graded": 22,
+      "hits": 11,
+      "partials": 4,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.5,
+      "hit_rate_ci95": [
+       0.3072,
+       0.6928
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": -0.899,
+        "mae": 1.104
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2005-10",
+     "published": "2005-09",
+     "stats": {
+      "n_graded": 22,
+      "hits": 11,
+      "partials": 4,
+      "misses": 7,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.5,
+      "hit_rate_ci95": [
+       0.3072,
+       0.6928
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": -0.966,
+        "mae": 1.07
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2006-04",
+     "published": "2006-04",
+     "stats": {
+      "n_graded": 22,
+      "hits": 7,
+      "partials": 3,
+      "misses": 12,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.3182,
+      "hit_rate_ci95": [
+       0.1636,
+       0.5268
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": -1.062,
+        "mae": 1.421
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2006-10",
+     "published": "2006-09",
+     "stats": {
+      "n_graded": 22,
+      "hits": 8,
+      "partials": 6,
+      "misses": 8,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.3636,
+      "hit_rate_ci95": [
+       0.1973,
+       0.5705
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": -0.781,
+        "mae": 1.117
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2007-04",
+     "published": "2007-04",
+     "stats": {
+      "n_graded": 22,
+      "hits": 5,
+      "partials": 5,
+      "misses": 12,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.2273,
+      "hit_rate_ci95": [
+       0.1012,
+       0.4344
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": 0.358,
+        "mae": 1.419
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2007-10",
+     "published": "2007-10",
+     "stats": {
+      "n_graded": 22,
+      "hits": 9,
+      "partials": 0,
+      "misses": 13,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.4091,
+      "hit_rate_ci95": [
+       0.2326,
+       0.6127
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": 0.464,
+        "mae": 1.213
+       }
+      ]
+     }
+    },
+    {
+     "edition": "2008-04",
+     "published": "2008-04",
+     "stats": {
+      "n_graded": 22,
+      "hits": 4,
+      "partials": 2,
+      "misses": 16,
+      "ungradable": 0,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": 0.1818,
+      "hit_rate_ci95": [
+       0.0731,
+       0.3852
+      ],
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 22,
+        "bias": 2.684,
+        "mae": 2.746
        }
       ]
      }
@@ -28064,25 +28091,25 @@
      "edition": "2008-10",
      "published": "2008-10",
      "stats": {
-      "n_graded": 20,
+      "n_graded": 22,
       "hits": 3,
       "partials": 3,
-      "misses": 14,
-      "ungradable": 2,
+      "misses": 16,
+      "ungradable": 0,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.15,
+      "hit_rate": 0.1364,
       "hit_rate_ci95": [
-       0.0524,
-       0.3604
+       0.0475,
+       0.3333
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": 2.397,
-        "mae": 2.412
+        "n": 22,
+        "bias": 2.344,
+        "mae": 2.358
        }
       ]
      }
@@ -28091,25 +28118,25 @@
      "edition": "2009-04",
      "published": "2009-04",
      "stats": {
-      "n_graded": 20,
+      "n_graded": 22,
       "hits": 5,
-      "partials": 2,
-      "misses": 13,
-      "ungradable": 2,
+      "partials": 3,
+      "misses": 14,
+      "ungradable": 0,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.25,
+      "hit_rate": 0.2273,
       "hit_rate_ci95": [
-       0.1119,
-       0.4687
+       0.1012,
+       0.4344
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": -2.05,
-        "mae": 2.128
+        "n": 22,
+        "bias": -2.142,
+        "mae": 2.214
        }
       ]
      }
@@ -28118,25 +28145,25 @@
      "edition": "2009-10",
      "published": "2009-10",
      "stats": {
-      "n_graded": 20,
-      "hits": 5,
+      "n_graded": 22,
+      "hits": 6,
       "partials": 5,
-      "misses": 10,
-      "ungradable": 2,
+      "misses": 11,
+      "ungradable": 0,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.25,
+      "hit_rate": 0.2727,
       "hit_rate_ci95": [
-       0.1119,
-       0.4687
+       0.1315,
+       0.4815
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": -1.208,
-        "mae": 1.344
+        "n": 22,
+        "bias": -1.302,
+        "mae": 1.455
        }
       ]
      }
@@ -28145,25 +28172,25 @@
      "edition": "2010-04",
      "published": "2010-04",
      "stats": {
-      "n_graded": 20,
+      "n_graded": 22,
       "hits": 6,
-      "partials": 6,
-      "misses": 8,
-      "ungradable": 2,
+      "partials": 7,
+      "misses": 9,
+      "ungradable": 0,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.3,
+      "hit_rate": 0.2727,
       "hit_rate_ci95": [
-       0.1455,
-       0.519
+       0.1315,
+       0.4815
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": -0.401,
-        "mae": 1.082
+        "n": 22,
+        "bias": -0.444,
+        "mae": 1.127
        }
       ]
      }
@@ -28172,25 +28199,25 @@
      "edition": "2010-10",
      "published": "2010-10",
      "stats": {
-      "n_graded": 20,
+      "n_graded": 22,
       "hits": 12,
-      "partials": 4,
-      "misses": 4,
-      "ungradable": 2,
+      "partials": 5,
+      "misses": 5,
+      "ungradable": 0,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.6,
+      "hit_rate": 0.5455,
       "hit_rate_ci95": [
-       0.3866,
-       0.7812
+       0.3466,
+       0.7308
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": -0.09,
-        "mae": 0.551
+        "n": 22,
+        "bias": -0.124,
+        "mae": 0.601
        }
       ]
      }
@@ -28199,25 +28226,25 @@
      "edition": "2011-04",
      "published": "2011-04",
      "stats": {
-      "n_graded": 20,
-      "hits": 6,
+      "n_graded": 22,
+      "hits": 7,
       "partials": 4,
-      "misses": 10,
-      "ungradable": 2,
+      "misses": 11,
+      "ungradable": 0,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.3,
+      "hit_rate": 0.3182,
       "hit_rate_ci95": [
-       0.1455,
-       0.519
+       0.1636,
+       0.5268
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": 0.891,
-        "mae": 1.024
+        "n": 22,
+        "bias": 1.007,
+        "mae": 1.128
        }
       ]
      }
@@ -28226,25 +28253,25 @@
      "edition": "2011-10",
      "published": "2011-09",
      "stats": {
-      "n_graded": 20,
-      "hits": 10,
+      "n_graded": 22,
+      "hits": 11,
       "partials": 6,
-      "misses": 4,
-      "ungradable": 2,
+      "misses": 5,
+      "ungradable": 0,
       "open": 0,
       "excluded": 0,
       "hit_rate": 0.5,
       "hit_rate_ci95": [
-       0.2993,
-       0.7007
+       0.3072,
+       0.6928
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": 0.326,
-        "mae": 0.577
+        "n": 22,
+        "bias": 0.462,
+        "mae": 0.69
        }
       ]
      }
@@ -28253,25 +28280,25 @@
      "edition": "2012-04",
      "published": "2012-04",
      "stats": {
-      "n_graded": 20,
+      "n_graded": 21,
       "hits": 10,
       "partials": 5,
-      "misses": 5,
-      "ungradable": 2,
+      "misses": 6,
+      "ungradable": 1,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.5,
+      "hit_rate": 0.4762,
       "hit_rate_ci95": [
-       0.2993,
-       0.7007
+       0.2834,
+       0.6763
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": 0.47,
-        "mae": 0.587
+        "n": 21,
+        "bias": 0.584,
+        "mae": 0.696
        }
       ]
      }
@@ -28280,25 +28307,25 @@
      "edition": "2012-10",
      "published": "2012-10",
      "stats": {
-      "n_graded": 20,
+      "n_graded": 21,
       "hits": 14,
-      "partials": 5,
+      "partials": 6,
       "misses": 1,
-      "ungradable": 2,
+      "ungradable": 1,
       "open": 0,
       "excluded": 0,
-      "hit_rate": 0.7,
+      "hit_rate": 0.6667,
       "hit_rate_ci95": [
-       0.481,
-       0.8545
+       0.4537,
+       0.8281
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 20,
-        "bias": 0.042,
-        "mae": 0.435
+        "n": 21,
+        "bias": 0.081,
+        "mae": 0.456
        }
       ]
      }
@@ -32627,25 +32654,25 @@
   {
    "source_id": "world-bank-gep",
    "totals": {
-    "n_graded": 488,
-    "hits": 193,
-    "partials": 114,
-    "misses": 181,
-    "ungradable": 204,
+    "n_graded": 529,
+    "hits": 218,
+    "partials": 125,
+    "misses": 186,
+    "ungradable": 163,
     "open": 54,
     "excluded": 0,
-    "hit_rate": 0.3955,
+    "hit_rate": 0.4121,
     "hit_rate_ci95": [
-     0.3531,
-     0.4395
+     0.3709,
+     0.4545
     ],
     "errors": [
      {
       "rule": "D18",
       "unit": "pp",
-      "n": 488,
-      "bias": 0.285,
-      "mae": 1.269
+      "n": 529,
+      "bias": 0.275,
+      "mae": 1.21
      }
     ]
    },
@@ -32662,32 +32689,32 @@
     "residual_error_rate": 0
    },
    "hit_rate_audit_adjusted95": [
-    0.3531,
-    0.4395
+    0.3709,
+    0.4545
    ],
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 488,
-      "hits": 193,
-      "partials": 114,
-      "misses": 181,
-      "ungradable": 204,
+      "n_graded": 529,
+      "hits": 218,
+      "partials": 125,
+      "misses": 186,
+      "ungradable": 163,
       "open": 54,
       "excluded": 0,
-      "hit_rate": 0.3955,
+      "hit_rate": 0.4121,
       "hit_rate_ci95": [
-       0.3531,
-       0.4395
+       0.3709,
+       0.4545
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 488,
-        "bias": 0.285,
-        "mae": 1.269
+        "n": 529,
+        "bias": 0.275,
+        "mae": 1.21
        }
       ]
      }
@@ -32695,25 +32722,25 @@
     {
      "horizon": "current_year",
      "stats": {
-      "n_graded": 251,
-      "hits": 108,
-      "partials": 61,
-      "misses": 82,
-      "ungradable": 104,
+      "n_graded": 273,
+      "hits": 126,
+      "partials": 64,
+      "misses": 83,
+      "ungradable": 82,
       "open": 18,
       "excluded": 0,
-      "hit_rate": 0.4303,
+      "hit_rate": 0.4615,
       "hit_rate_ci95": [
-       0.3705,
-       0.4921
+       0.4033,
+       0.5208
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 251,
-        "bias": -0.033,
-        "mae": 1.012
+        "n": 273,
+        "bias": -0.036,
+        "mae": 0.957
        }
       ]
      }
@@ -32721,25 +32748,25 @@
     {
      "horizon": "next_year",
      "stats": {
-      "n_graded": 237,
-      "hits": 85,
-      "partials": 53,
-      "misses": 99,
-      "ungradable": 100,
+      "n_graded": 256,
+      "hits": 92,
+      "partials": 61,
+      "misses": 103,
+      "ungradable": 81,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.3586,
+      "hit_rate": 0.3594,
       "hit_rate_ci95": [
-       0.3003,
-       0.4215
+       0.3031,
+       0.4198
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 237,
-        "bias": 0.621,
-        "mae": 1.541
+        "n": 256,
+        "bias": 0.607,
+        "mae": 1.48
        }
       ]
      }
@@ -32750,25 +32777,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 488,
-      "hits": 193,
-      "partials": 114,
-      "misses": 181,
-      "ungradable": 204,
+      "n_graded": 529,
+      "hits": 218,
+      "partials": 125,
+      "misses": 186,
+      "ungradable": 163,
       "open": 54,
       "excluded": 0,
-      "hit_rate": 0.3955,
+      "hit_rate": 0.4121,
       "hit_rate_ci95": [
-       0.3531,
-       0.4395
+       0.3709,
+       0.4545
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 488,
-        "bias": 0.285,
-        "mae": 1.269
+        "n": 529,
+        "bias": 0.275,
+        "mae": 1.21
        }
       ]
      }
@@ -32777,25 +32804,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 251,
-      "hits": 108,
-      "partials": 61,
-      "misses": 82,
-      "ungradable": 104,
+      "n_graded": 273,
+      "hits": 126,
+      "partials": 64,
+      "misses": 83,
+      "ungradable": 82,
       "open": 18,
       "excluded": 0,
-      "hit_rate": 0.4303,
+      "hit_rate": 0.4615,
       "hit_rate_ci95": [
-       0.3705,
-       0.4921
+       0.4033,
+       0.5208
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 251,
-        "bias": -0.033,
-        "mae": 1.012
+        "n": 273,
+        "bias": -0.036,
+        "mae": 0.957
        }
       ]
      }
@@ -32804,25 +32831,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 237,
-      "hits": 85,
-      "partials": 53,
-      "misses": 99,
-      "ungradable": 100,
+      "n_graded": 256,
+      "hits": 92,
+      "partials": 61,
+      "misses": 103,
+      "ungradable": 81,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.3586,
+      "hit_rate": 0.3594,
       "hit_rate_ci95": [
-       0.3003,
-       0.4215
+       0.3031,
+       0.4198
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 237,
-        "bias": 0.621,
-        "mae": 1.541
+        "n": 256,
+        "bias": 0.607,
+        "mae": 1.48
        }
       ]
      }
@@ -33590,25 +33617,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 26,
-      "hits": 12,
-      "partials": 6,
-      "misses": 8,
-      "ungradable": 56,
+      "n_graded": 67,
+      "hits": 37,
+      "partials": 17,
+      "misses": 13,
+      "ungradable": 15,
       "open": 6,
       "excluded": 0,
-      "hit_rate": 0.4615,
+      "hit_rate": 0.5522,
       "hit_rate_ci95": [
-       0.2876,
-       0.6454
+       0.4336,
+       0.6652
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 26,
-        "bias": 0.092,
-        "mae": 1.397
+        "n": 67,
+        "bias": 0.136,
+        "mae": 0.857
        }
       ]
      }
@@ -33618,22 +33645,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 14,
-      "hits": 5,
-      "partials": 5,
-      "misses": 4,
-      "ungradable": 28,
+      "n_graded": 36,
+      "hits": 23,
+      "partials": 8,
+      "misses": 5,
+      "ungradable": 6,
       "open": 2,
       "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
+      "hit_rate": 0.6389,
+      "hit_rate_ci95": [
+       0.4758,
+       0.7752
+      ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 14,
-        "bias": null,
-        "mae": null
+        "n": 36,
+        "bias": -0.134,
+        "mae": 0.644
        }
       ]
      }
@@ -33643,22 +33673,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 12,
-      "hits": 7,
-      "partials": 1,
-      "misses": 4,
-      "ungradable": 28,
+      "n_graded": 31,
+      "hits": 14,
+      "partials": 9,
+      "misses": 8,
+      "ungradable": 9,
       "open": 4,
       "excluded": 0,
-      "hit_rate": null,
-      "hit_rate_ci95": null,
+      "hit_rate": 0.4516,
+      "hit_rate_ci95": [
+       0.2916,
+       0.6223
+      ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
-        "bias": null,
-        "mae": null
+        "n": 31,
+        "bias": 0.449,
+        "mae": 1.105
        }
       ]
      }
@@ -33693,11 +33726,11 @@
      "edition": "2000-12",
      "published": "2000-12",
      "stats": {
-      "n_graded": 6,
-      "hits": 0,
+      "n_graded": 8,
+      "hits": 1,
       "partials": 2,
-      "misses": 4,
-      "ungradable": 6,
+      "misses": 5,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33706,7 +33739,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 8,
         "bias": null,
         "mae": null
        }
@@ -33717,11 +33750,11 @@
      "edition": "2002-01",
      "published": "2002-01",
      "stats": {
-      "n_graded": 6,
-      "hits": 2,
+      "n_graded": 8,
+      "hits": 3,
       "partials": 1,
-      "misses": 3,
-      "ungradable": 6,
+      "misses": 4,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33730,7 +33763,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 8,
         "bias": null,
         "mae": null
        }
@@ -33741,11 +33774,11 @@
      "edition": "2003-01",
      "published": "2003-01",
      "stats": {
-      "n_graded": 6,
-      "hits": 2,
-      "partials": 3,
+      "n_graded": 8,
+      "hits": 3,
+      "partials": 4,
       "misses": 1,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33754,7 +33787,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 8,
         "bias": null,
         "mae": null
        }
@@ -33765,11 +33798,11 @@
      "edition": "2003-09",
      "published": "2003-09",
      "stats": {
-      "n_graded": 6,
-      "hits": 2,
-      "partials": 4,
+      "n_graded": 8,
+      "hits": 3,
+      "partials": 5,
       "misses": 0,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33778,7 +33811,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 8,
         "bias": null,
         "mae": null
        }
@@ -33789,11 +33822,11 @@
      "edition": "2004-11",
      "published": "2004-11",
      "stats": {
-      "n_graded": 6,
-      "hits": 4,
+      "n_graded": 7,
+      "hits": 5,
       "partials": 1,
       "misses": 1,
-      "ungradable": 6,
+      "ungradable": 5,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33802,7 +33835,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 6,
+        "n": 7,
         "bias": null,
         "mae": null
        }
@@ -33837,11 +33870,11 @@
      "edition": "2006-12",
      "published": "2006-12",
      "stats": {
-      "n_graded": 10,
-      "hits": 3,
+      "n_graded": 12,
+      "hits": 5,
       "partials": 2,
       "misses": 5,
-      "ungradable": 8,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33850,7 +33883,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 10,
+        "n": 12,
         "bias": null,
         "mae": null
        }
@@ -33909,11 +33942,11 @@
      "edition": "2010-01",
      "published": "2010-01",
      "stats": {
-      "n_graded": 12,
-      "hits": 4,
+      "n_graded": 14,
+      "hits": 5,
       "partials": 1,
-      "misses": 7,
-      "ungradable": 6,
+      "misses": 8,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33922,7 +33955,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -33933,11 +33966,11 @@
      "edition": "2010-06",
      "published": "2010-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 2,
-      "partials": 3,
+      "n_graded": 14,
+      "hits": 3,
+      "partials": 4,
       "misses": 7,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33946,7 +33979,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -33957,11 +33990,11 @@
      "edition": "2011-01",
      "published": "2011-01",
      "stats": {
-      "n_graded": 10,
-      "hits": 3,
+      "n_graded": 12,
+      "hits": 4,
       "partials": 3,
-      "misses": 4,
-      "ungradable": 8,
+      "misses": 5,
+      "ungradable": 6,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33970,7 +34003,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 10,
+        "n": 12,
         "bias": null,
         "mae": null
        }
@@ -33981,11 +34014,11 @@
      "edition": "2011-06",
      "published": "2011-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 4,
+      "n_graded": 14,
+      "hits": 5,
       "partials": 3,
-      "misses": 5,
-      "ungradable": 6,
+      "misses": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33994,7 +34027,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34005,11 +34038,11 @@
      "edition": "2012-01",
      "published": "2012-01",
      "stats": {
-      "n_graded": 12,
-      "hits": 4,
+      "n_graded": 13,
+      "hits": 5,
       "partials": 3,
       "misses": 5,
-      "ungradable": 6,
+      "ungradable": 5,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34018,7 +34051,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 13,
         "bias": null,
         "mae": null
        }
@@ -34029,11 +34062,11 @@
      "edition": "2012-06",
      "published": "2012-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 4,
+      "n_graded": 13,
+      "hits": 5,
       "partials": 6,
       "misses": 2,
-      "ungradable": 6,
+      "ungradable": 5,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34042,7 +34075,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 13,
         "bias": null,
         "mae": null
        }
@@ -34101,11 +34134,11 @@
      "edition": "2014-01",
      "published": "2014-01",
      "stats": {
-      "n_graded": 12,
-      "hits": 5,
-      "partials": 3,
+      "n_graded": 14,
+      "hits": 6,
+      "partials": 4,
       "misses": 4,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34114,7 +34147,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34125,11 +34158,11 @@
      "edition": "2014-06",
      "published": "2014-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 7,
-      "partials": 2,
+      "n_graded": 14,
+      "hits": 8,
+      "partials": 3,
       "misses": 3,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34138,7 +34171,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34149,11 +34182,11 @@
      "edition": "2015-01",
      "published": "2015-01",
      "stats": {
-      "n_graded": 12,
-      "hits": 4,
-      "partials": 2,
+      "n_graded": 14,
+      "hits": 5,
+      "partials": 3,
       "misses": 6,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34162,7 +34195,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34173,11 +34206,11 @@
      "edition": "2015-06",
      "published": "2015-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 6,
-      "partials": 4,
+      "n_graded": 14,
+      "hits": 7,
+      "partials": 5,
       "misses": 2,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34186,7 +34219,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34197,11 +34230,11 @@
      "edition": "2016-01",
      "published": "2016-01",
      "stats": {
-      "n_graded": 12,
-      "hits": 6,
+      "n_graded": 14,
+      "hits": 8,
       "partials": 5,
       "misses": 1,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34210,7 +34243,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34221,11 +34254,11 @@
      "edition": "2016-06",
      "published": "2016-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 6,
+      "n_graded": 14,
+      "hits": 8,
       "partials": 3,
       "misses": 3,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34234,7 +34267,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34245,11 +34278,11 @@
      "edition": "2017-01",
      "published": "2017-01",
      "stats": {
-      "n_graded": 12,
-      "hits": 6,
-      "partials": 4,
+      "n_graded": 14,
+      "hits": 7,
+      "partials": 5,
       "misses": 2,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34258,7 +34291,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34269,11 +34302,11 @@
      "edition": "2017-06",
      "published": "2017-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 8,
-      "partials": 2,
+      "n_graded": 14,
+      "hits": 9,
+      "partials": 3,
       "misses": 2,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34282,7 +34315,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34293,11 +34326,11 @@
      "edition": "2018-01",
      "published": "2018-01",
      "stats": {
-      "n_graded": 12,
-      "hits": 8,
-      "partials": 1,
+      "n_graded": 14,
+      "hits": 9,
+      "partials": 2,
       "misses": 3,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34306,7 +34339,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
@@ -34317,11 +34350,11 @@
      "edition": "2018-06",
      "published": "2018-06",
      "stats": {
-      "n_graded": 12,
-      "hits": 7,
-      "partials": 2,
+      "n_graded": 14,
+      "hits": 8,
+      "partials": 3,
       "misses": 3,
-      "ungradable": 6,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34330,7 +34363,7 @@
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 12,
+        "n": 14,
         "bias": null,
         "mae": null
        }
