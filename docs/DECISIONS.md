@@ -807,3 +807,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** One more curation mechanism, keyed by claim id rather than label. Five Deloitte rows are pending until pass 3 runs, and the published `final-d33.json` keeps their earlier computed verdicts until then. The line between a field and a trend continued under a broad name is a judgment; borderline subjects kept (Deloitte enterprise mobility 2010 to 2013) are listed in the review file.
 
 **Overturned by.** Subjects defined per claim rather than per publisher label (a canonical concept layer, D4), or rename checks run on every consecutive pair regardless of subject.
+
+## D54: Link verification scope for embedding runs (amends D48)
+
+*Recorded 2026-10-02. Approved by MZ.*
+
+**Decision.** An embedding run verifies only candidates with cosine similarity of 0.65 or more, mutual nearest neighbours, and title matches (`candidates.mjs --floor 0.65`). The other candidates stay in `candidates.json` as unverified: they are not rejected, publish nothing, and a later run can verify them (pairs already decided are skipped, D49). First run d48-r1: 31,153 candidates, 1,981 verified (792 mutual nearest neighbours), 29,172 left unverified.
+
+**Why.** D48 set no floor so recall would not depend on a threshold. On real vectors, samples below about 0.6 are mostly related but different technologies (an AI-ethics page against an EU AI regulation claim); verifying all of them would take some 430 agent runs for few links.
+
+**Cost.** Links whose texts are worded differently enough to fall under 0.65 and are not mutual nearest neighbours are missed until a later run lowers the floor.
+
+**Overturned by.** An audit of a random sample below the floor that finds a meaningful share of real links.

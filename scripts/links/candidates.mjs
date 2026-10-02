@@ -1,5 +1,5 @@
 // Candidate subject-technology pairs, both directions (D48, #59; titles-only mode and skipping, D49).
-// Usage: LINKS_CACHE=<dir> node scripts/links/candidates.mjs --run <run> --out <verifier dir outside the repo> [--batch-size 150] [--titles-only]
+// Usage: LINKS_CACHE=<dir> node scripts/links/candidates.mjs --run <run> --out <verifier dir outside the repo> [--batch-size 150] [--titles-only] [--floor 0.65]
 // Needs the snapshot (snapshot.mjs) in the cache, and subject vectors (embed-subjects.mjs) unless --titles-only.
 // Candidates: each subject's top 5 technologies by cosine, each technology's top 3 subjects, their union,
 // plus every exact or alias title match (D13 normalized key). Mutual nearest neighbours are flagged.
@@ -19,6 +19,8 @@ const run = arg("--run");
 const out = arg("--out");
 const batchSize = Number(arg("--batch-size", "150"));
 const titlesOnly = process.argv.includes("--titles-only");
+// D54: verify only pairs at or above the similarity floor, or mutual nearest neighbours, or title matches; the rest stay unverified (not rejected).
+const floor = process.argv.includes("--floor") ? Number(arg("--floor")) : null;
 if (!run || !/^[a-z0-9-]+$/.test(run) || !out) throw new Error("usage: candidates.mjs --run <run> --out <dir> [--titles-only]");
 const SUBJECT_TOP = 5;
 const TECH_TOP = 3;
@@ -134,6 +136,9 @@ for (const l of exists(researchFile) ? readJson(researchFile) : []) curated.set(
 const skippedDecided = rows.filter((r) => decidedIn.has(r.id)).length;
 const skippedCurated = rows.filter((r) => !decidedIn.has(r.id) && curated.get(r.id)).length;
 rows = rows.filter((r) => !decidedIn.has(r.id) && !curated.get(r.id));
+const beforeFloor = rows.length;
+if (floor !== null) rows = rows.filter((r) => r.match !== "semantic" || r.mutual_nn || (r.similarity ?? 0) >= floor);
+const belowFloor = beforeFloor - rows.length;
 
 // Batches that never split a subject.
 const bySubject = new Map();
@@ -158,6 +163,8 @@ for (const r of rows) LinkCandidate.parse(r);
 const count = (f) => rows.filter(f).length;
 const summary = {
 	run,
+	floor,
+	below_floor_unverified: belowFloor,
 	model: titlesOnly ? null : EMBEDDING_MODEL,
 	created_at: new Date().toISOString(),
 	rule: titlesOnly
