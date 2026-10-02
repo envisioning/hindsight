@@ -1,12 +1,16 @@
 {
 	"taken_at": "2026-10-02T16:28:30.027Z",
-	"note": "Published technologies in published research projects, with the stored Core CMS embedding (text-embedding-3-large at 1536 dimensions). Vectors are not committed.",
+	"note": "Published technologies in published research projects, with the stored Core CMS embedding (text-embedding-3-large at 1536 dimensions). Vectors are not committed. Technologies of excluded projects (data/links/excluded-projects.json, D52) are left out.",
+	"excluded_projects": [
+		"xenotech"
+	],
 	"counts": {
 		"published_projects": 47,
 		"published_technologies": 4807,
 		"in_unpublished_project": 789,
 		"without_embedding": 0,
-		"snapshot": 4018
+		"excluded_project": 177,
+		"snapshot": 3841
 	},
 	"technologies": [
 		{
@@ -171,13 +175,6 @@
 			"text_sha256": "eb75e4856435540d3e65b0b1678322255318d7d89da7cb8684a0365803833f78"
 		},
 		{
-			"id": "014b93ca-b47f-47ff-931c-116a6318f849",
-			"research_slug": "xenotech",
-			"original_id": "uap-metallic-skin",
-			"title": "Adaptive Metallic Hull Systems",
-			"text_sha256": "d4e541e69a2916cc14ab7fa7b69532aa57c82c229d98b56ae4077959f2886f8c"
-		},
-		{
 			"id": "0156c6c4-f8bb-4a7c-a52d-b01d8f5cd383",
 			"research_slug": "subspace",
 			"original_id": "holodeck",
@@ -190,13 +187,6 @@
 			"original_id": "cislunar-nav-comms",
 			"title": "Cislunar Navigation & Communications Backbone",
 			"text_sha256": "4fb114f33e50da96a55a76efdae0ccad4a691d430bb9044a1c74d22c90b81c54"
-		},
-		{
-			"id": "018e7ffa-4de9-4d94-9d84-07d6a22b230a",
-			"research_slug": "xenotech",
-			"original_id": "uap-structured-lighting",
-			"title": "Structured Emission Lighting",
-			"text_sha256": "b9e229ec74e894a5ff785e906a2614ba43aba0dd93898442ed2355482ba1feea"
 		},
 		{
 			"id": "019334c3-ec15-4d1d-a6e5-3bfe82e3406d",
@@ -269,13 +259,6 @@
 			"text_sha256": "c81a56b9254c6f7f3ce26d6ae3ec9f48587b6c4c63d3ade15ead2f301cfbfcb2"
 		},
 		{
-			"id": "022dbc38-62e8-4eb0-866a-fc05b169ec40",
-			"research_slug": "xenotech",
-			"original_id": "oneirogen-smart-stacks",
-			"title": "Oneirogen Pharmacology",
-			"text_sha256": "df7199570156152ab485e00902a429c365c8bce6d00da9045706d5ce103a042e"
-		},
-		{
 			"id": "024a5849-e17c-4f1e-9b6f-58499f84d60e",
 			"research_slug": "superposition",
 			"original_id": "uk-national-quantum-sensing-program",
@@ -318,13 +301,6 @@
 			"text_sha256": "f22ea624076186af9bcb329aef6d5bd2d76850cbfc306433dcfbdaec7c7f1ece"
 		},
 		{
-			"id": "027ef7ea-65d5-4639-bf16-05be35c772b2",
-			"research_slug": "xenotech",
-			"original_id": "nuclear-weapons-interference",
-			"title": "Nuclear Weapons Systems Interference",
-			"text_sha256": "45ab4fc38eea3ba9304c535989365109f8d45974971693f09064caed616607ab"
-		},
-		{
 			"id": "029dd87e-3240-4a8b-80b4-374d46cf51b8",
 			"research_slug": "haul",
 			"original_id": "trade-finance-digitalization",
@@ -358,13 +334,6 @@
 			"original_id": "adaptacoes-climaticas-domesticas-sombreamento",
 			"title": "Adaptações Climáticas Domésticas: Sombreamento e Pinturas Refletivas",
 			"text_sha256": "b2883a9b857e5ae3eab5d7312258b8cd97dad6ce7d57b23ce59f280541001bc4"
-		},
-		{
-			"id": "02f734b5-909c-402c-82b9-338c393541e6",
-			"research_slug": "xenotech",
-			"original_id": "mach-effect-woodward-thruster",
-			"title": "Woodward Thruster",
-			"text_sha256": "b49029eb44a399bc87653a5f8daa0a30ec694564519a7da388e0f93cc078802e"
 		},
 		{
 			"id": "02fb437b-9548-4723-84e4-ff278ed1e369",
@@ -414,13 +383,6 @@
 			"original_id": "closed-loop-life-support",
 			"title": "Closed-Loop Life Support (ECLSS)",
 			"text_sha256": "edda8a293096f2fe0a6186c87792ab81fbff737aade76903459f3113896c782b"
-		},
-		{
-			"id": "033d249f-f829-4919-935c-4c5869cfe61f",
-			"research_slug": "xenotech",
-			"original_id": "shared-dream-protocols",
-			"title": "Shared Dream Protocols",
-			"text_sha256": "b5f3c30842a1fe198ceecbbb1ac53a4886d8acc495535962eada422f6aded1da"
 		},
 		{
 			"id": "0358cc0e-da5b-4b1c-b9c6-3e0078b6de0d",
@@ -633,13 +595,6 @@
 			"text_sha256": "006a44a93a0578feb73d55cd9a4880c70d5aeb0352227de22d961b3b3fb1f0d8"
 		},
 		{
-			"id": "04d663a5-50d8-4836-a8ea-e1d4b2145373",
-			"research_slug": "xenotech",
-			"original_id": "russian-biocommunication-research",
-			"title": "Biocommunication Research",
-			"text_sha256": "321ce8b2ec2e2a392a84f40dd9092642b4b7c7a80d3ebc7f3f3c75c472c33c32"
-		},
-		{
 			"id": "04f2a6f1-b46f-4b51-a3d1-a10b3ff34b35",
 			"research_slug": "cradle",
 			"original_id": "reproductive-data-trusts",
@@ -703,13 +658,6 @@
 			"text_sha256": "c938a94dd84c47305dc7c1510c0f4e240df1aac1ac6839a83cf03e757afde6de"
 		},
 		{
-			"id": "055bebe3-4ea4-4fe0-9110-08d855024578",
-			"research_slug": "xenotech",
-			"original_id": "metric-engineering-spacetime-control",
-			"title": "Metric Control",
-			"text_sha256": "27cb10fadb3e379e51a65427ba9a761b78f11d0dad9a3be6f7819e091213bc85"
-		},
-		{
 			"id": "056cb229-eebe-466f-82a1-a38c6a9a8ca7",
 			"research_slug": "axiom",
 			"original_id": "simulation-based-medical-training",
@@ -750,13 +698,6 @@
 			"original_id": "eye-tracking-game-controllers",
 			"title": "Eye-Tracking Game Controllers",
 			"text_sha256": "b5443915b4718b6289d1cd7e3ca76efca544900c83e5f8921fbaba7764a5f6f7"
-		},
-		{
-			"id": "05d97983-d266-4a9f-af8f-ad54dff7933f",
-			"research_slug": "xenotech",
-			"original_id": "microwave-engine-suppression",
-			"title": "Microwave Engine Suppression",
-			"text_sha256": "ea546de735c015e90bd0329c3df6cd091642628f7cc7f3f0b2f72f8828ab80cc"
 		},
 		{
 			"id": "060425a5-ba85-4e0d-9b9b-c30aad857fce",
@@ -820,13 +761,6 @@
 			"original_id": "southeast-asia__offshore-ai-development",
 			"title": "Offshore AI Software Development",
 			"text_sha256": "c369072cf7a644d7c7b80329ef1b91ed4fc3773b9bd0c2dbe8936e7c67cd690a"
-		},
-		{
-			"id": "067125b4-5b35-47cf-b282-16e145366d3b",
-			"research_slug": "xenotech",
-			"original_id": "non-euclidean-space-navigation",
-			"title": "Non-Euclidean Space Navigation",
-			"text_sha256": "841b5a2771358e4a34eb50380c3ab03a5370c51bb474b3ff17f18709bc391b92"
 		},
 		{
 			"id": "067bec56-ef90-479b-a2f9-00cd2ac4e771",
@@ -997,13 +931,6 @@
 			"text_sha256": "ec706b029583f6546b52dc77aeae02026cff3fef34aad655073148586b91da00"
 		},
 		{
-			"id": "07dee095-324f-4c58-9fcf-2b16c853d23d",
-			"research_slug": "xenotech",
-			"original_id": "electro-aerodynamic-gravity-amplifiers",
-			"title": "Electro-aerodynamic Gravity Amplifiers",
-			"text_sha256": "3319ad4f563f9c21e0bc3ce8ccdec87137549edc6435b7c2cc2375ba1a226f7d"
-		},
-		{
 			"id": "07e73ee1-7d72-4716-a367-cf740650a120",
 			"research_slug": "moradia",
 			"original_id": "financeirizacao-habitacao-industrializada",
@@ -1030,13 +957,6 @@
 			"original_id": "aquifer-storage-recovery",
 			"title": "Aquifer Storage & Recovery (ASR)",
 			"text_sha256": "a6230063d9aae56b75917c3c8762ea3576a9516df580b3643ddadea554fcb769"
-		},
-		{
-			"id": "0808891c-2827-47ca-939f-ddb69770f93c",
-			"research_slug": "xenotech",
-			"original_id": "resonant-information-matrices",
-			"title": "Resonant Information Matrices",
-			"text_sha256": "ea0478a04047b72dcc11eaabcc7cc9e268bbec1a1bfecf6ebfdd4dab17affa2b"
 		},
 		{
 			"id": "080fdcf4-418c-4e28-b701-65e80ba33c2b",
@@ -1529,13 +1449,6 @@
 			"text_sha256": "b62cfa95cb3e3b994f680b9aebbeb5cf69ae4f0c2f0c2bb55fbd79c24b438d96"
 		},
 		{
-			"id": "0cdcee1e-e5ee-46e2-b7e8-d3f53c512399",
-			"research_slug": "xenotech",
-			"original_id": "neural-implant-technology",
-			"title": "Neural Implants",
-			"text_sha256": "5e8bafe838228fbed80452e01fd00b4ac4a652a9166f53eccb7f0dd72222a1b4"
-		},
-		{
 			"id": "0ce67b3b-f000-4189-9515-8b17c370bf0f",
 			"research_slug": "substrate",
 			"original_id": "atmospheric-water-harvesting",
@@ -1618,13 +1531,6 @@
 			"original_id": "high-altitude-pseudo-satellites",
 			"title": "High-Altitude Pseudo-Satellites (HAPS)",
 			"text_sha256": "52e27dbf1bb7e6b62358ccaa6a5a5b4bf844f213000671dfc7aabd2d32af5751"
-		},
-		{
-			"id": "0dd0daf4-c9e6-4d2c-b574-b5d18ae357a9",
-			"research_slug": "xenotech",
-			"original_id": "gravity-manipulation-propulsion",
-			"title": "Gravity Manipulation Propulsion",
-			"text_sha256": "1adb80753c931587078041544361121da9c76f499dd3025153e820a8b26b5a61"
 		},
 		{
 			"id": "0de8c4f7-c245-4f27-a32f-103f7d79e139",
@@ -1968,13 +1874,6 @@
 			"original_id": "india__bharatiya-antariksh-station",
 			"title": "Bharatiya Antariksh Station (Indian Space Station)",
 			"text_sha256": "1f7706ef51f42d2674510749ba5dc98c2ddbf339af24e1c1f40fd2666df01732"
-		},
-		{
-			"id": "10f4b80b-d524-4ddc-8c9a-bd63ccef0536",
-			"research_slug": "xenotech",
-			"original_id": "consciousness-frequency-modulation-devices",
-			"title": "Consciousness Modulation",
-			"text_sha256": "48baa0ff14d637ee3f3c4762d1bbab2b0ebf2820aca6425548008bc11361f540"
 		},
 		{
 			"id": "10f81e50-b08a-487f-bb77-7f9844f25217",
@@ -2488,13 +2387,6 @@
 			"text_sha256": "60ee42e4fe42c00fc20e12016e006a147335b8b0287ea4c0db08db5785629b5a"
 		},
 		{
-			"id": "153b9b00-9ee9-4733-90ae-8bf088ce0fda",
-			"research_slug": "xenotech",
-			"original_id": "holographic-immersive-displays",
-			"title": "Holographic Display",
-			"text_sha256": "89403623d10d822b4890e505d0198f5577a1780d01d1b0db62d2f829a72af160"
-		},
-		{
 			"id": "154bebbe-4357-4677-bf92-93fada65ae66",
 			"research_slug": "vault",
 			"original_id": "latam-ex-brazil__mx-digital-lending-platforms",
@@ -2570,13 +2462,6 @@
 			"original_id": "armazenamento-agua-urbano-domestico",
 			"title": "Armazenamento de Água Urbano Doméstico",
 			"text_sha256": "9a09d96eb3ca0709cb619a3317ef2e665167e2189fc0844ee4e7268f8ee8d988"
-		},
-		{
-			"id": "15bd82de-5bbe-44e5-b94e-483f8ad46daf",
-			"research_slug": "xenotech",
-			"original_id": "retrocausal-plasma-detection-system",
-			"title": "Plasma Detection",
-			"text_sha256": "f490da318acf94acb0f23a4cb09a499d0e560705d8e6ecde8d58cc4e68fdde81"
 		},
 		{
 			"id": "15be86fc-71a6-4e02-9c0e-82b2c4e335e4",
@@ -2892,13 +2777,6 @@
 			"original_id": "ai-auditing-infrastructure",
 			"title": "AI Auditing Infrastructure",
 			"text_sha256": "091a1758281ee9c8c6adb597c934aadeb03e6ffc05bd97368065833fec69a43c"
-		},
-		{
-			"id": "17a1ac9a-93ff-4d17-8c1c-a162e5c037fa",
-			"research_slug": "xenotech",
-			"original_id": "uap-environmental-interactions",
-			"title": "Environmental Interaction Effects",
-			"text_sha256": "d2547784c0622e8808f3139f8f75b157f6c7ae51035a36a620612946fb5e3086"
 		},
 		{
 			"id": "17b50487-77fd-4751-956d-d80fdbf973db",
@@ -3258,13 +3136,6 @@
 			"text_sha256": "6d8b95de659f7d2f9a1428102c8372be49233b20d2ec12a762bfc85996b557fd"
 		},
 		{
-			"id": "1affcfc0-1bb7-4e00-aadc-eea5d76acaa6",
-			"research_slug": "xenotech",
-			"original_id": "water-fueled-uap-craft",
-			"title": "Water-Fueled Craft",
-			"text_sha256": "cb71e788307b2c97f61f8c678d620a09d104a50c144df46b8db9847b9c5aa362"
-		},
-		{
 			"id": "1b2c22d8-1b33-46fe-a9a5-1ed1e40cfad6",
 			"research_slug": "eros",
 			"original_id": "affective-ai",
@@ -3389,13 +3260,6 @@
 			"original_id": "africa__gerd-mega-hydroelectric",
 			"title": "Grand Ethiopian Renaissance Dam Hydroelectric System",
 			"text_sha256": "7146522a815d7acf6df22891e586ed1e3f6146969ed6be3d6799c21b194b212a"
-		},
-		{
-			"id": "1c3fa761-4986-4d7a-85e0-a0844314b08f",
-			"research_slug": "xenotech",
-			"original_id": "sensory-modulation-and-monitoring-systems",
-			"title": "Sensory Modulation",
-			"text_sha256": "0560e5c840894a284b7a51b0f8b37481a8184eb3fda045d56a4a270f2488ecbc"
 		},
 		{
 			"id": "1c4328e9-f52b-4cf7-aaa1-bfcb0f547521",
@@ -3755,13 +3619,6 @@
 			"text_sha256": "53d5cd84a819c8ff7c86cfaeeb356cd1d31496ecb458bc975dfbbebe7f6160e0"
 		},
 		{
-			"id": "1f8a8905-4b6b-46eb-95bc-dd1342e7d15d",
-			"research_slug": "xenotech",
-			"original_id": "scalar-wave-technologies",
-			"title": "Scalar Waves",
-			"text_sha256": "bf497000fa4c74388a9d2633c45a7703a9498c827648d150869c4c2a29bea484"
-		},
-		{
 			"id": "1f928af4-a7ca-49eb-9b55-6471f91bb501",
 			"research_slug": "moradia",
 			"original_id": "sensores-estruturais-embutidos",
@@ -3916,13 +3773,6 @@
 			"text_sha256": "ca5389440f3e9e9d60d82790a6eec92a13e04122ea8958902d766b4f87a0f472"
 		},
 		{
-			"id": "20a2bb55-a2cc-4bf4-a036-ab81f766ba6a",
-			"research_slug": "xenotech",
-			"original_id": "cognitive-data-recording-interfaces",
-			"title": "Cognitive Recording",
-			"text_sha256": "d1d4286f94f27ca33b4ccfa706533a97520f07cc65b2c5318b4d1f46fd943bba"
-		},
-		{
 			"id": "20a4b7ad-00d4-4967-842c-dcda14379583",
 			"research_slug": "cortex",
 			"original_id": "microneedle-implants",
@@ -4068,13 +3918,6 @@
 			"original_id": "reality-capture-bim",
 			"title": "Reality Capture & 4D/5D BIM",
 			"text_sha256": "3392fc89ea41fde251c0fdebbf79d0a76cd31265edf40c5eafee8bc4edcd3666"
-		},
-		{
-			"id": "221c0758-1ece-460c-9e55-2196421c614f",
-			"research_slug": "xenotech",
-			"original_id": "hybrid-consciousness-transfer-tech",
-			"title": "Consciousness Transfer",
-			"text_sha256": "c2719cb50d05300702b2f542eb22a3548c8caacd35294e8331e2bdfb5f3516a2"
 		},
 		{
 			"id": "2242e100-71cd-409b-a228-fccba1ba41ec",
@@ -4315,13 +4158,6 @@
 			"text_sha256": "7da9f0acffa528e7a4efdb6e093052d92a711a6e1f0184e46eb2bf05fdf36460"
 		},
 		{
-			"id": "24644338-6b48-4e90-9284-2078c569ee1d",
-			"research_slug": "xenotech",
-			"original_id": "cavity-resonance-thrusters",
-			"title": "Cavity Resonance Thrusters",
-			"text_sha256": "1a9aac8a53faecf42260c665c257096813580c1b2628aa1ca0cc5766a848e352"
-		},
-		{
 			"id": "249441a4-497f-4969-96ab-fd8dfa880cd6",
 			"research_slug": "helix",
 			"original_id": "china__chinese-glp-1-ozempic-alternatives",
@@ -4336,32 +4172,11 @@
 			"text_sha256": "6712299fc6887a19679d4ee3180f5d12151564395d2a44b96475980d5ff0368d"
 		},
 		{
-			"id": "24acd92c-41bb-4cc7-b008-eaf2717e3e8b",
-			"research_slug": "xenotech",
-			"original_id": "quantum-consciousness-computer",
-			"title": "Noetic Computing",
-			"text_sha256": "72c424b3c1ad3ee121597dc78e0b84819198cd0c570a0c176602aee408f1101a"
-		},
-		{
 			"id": "24afd8b6-eaf3-4629-9f98-e0474bf27a09",
 			"research_slug": "subspace",
 			"original_id": "vulcan-learning-matrix",
 			"title": "Learning Matrices",
 			"text_sha256": "b2091caf16688ace3f4d0f0bcb634bd8fb8393e745d0263b8dddb082442ef9cb"
-		},
-		{
-			"id": "24b8cb20-cfb9-4aff-a2ee-773eb830e7b2",
-			"research_slug": "xenotech",
-			"original_id": "magnetic-roller-generators",
-			"title": "Magnetic Rollers",
-			"text_sha256": "9ab7932b881fc08f0a9d250e751ef5c19587cfe89794e22838fb3e7574d4c302"
-		},
-		{
-			"id": "24c49f56-10c3-4195-8b85-5b01731ce37f",
-			"research_slug": "xenotech",
-			"original_id": "entity-shapeshifting-phenomena",
-			"title": "Entity Shapeshifting Phenomena",
-			"text_sha256": "b12dfaa9a848ab60cf5aa93f2333a8084ef2ee9df4b44ed2ea4758016c91fea9"
 		},
 		{
 			"id": "24eaf60d-5756-40ef-838d-bd5cb532b6c8",
@@ -4397,13 +4212,6 @@
 			"original_id": "distributed-manufacturing-networks",
 			"title": "Distributed Manufacturing Networks",
 			"text_sha256": "41ba7e9967e7faea8875cb37de3a88099ebebfb386fc0d68b179f4fe322b47a5"
-		},
-		{
-			"id": "2546d39e-adef-4b44-9835-f33bdb8ea3dd",
-			"research_slug": "xenotech",
-			"original_id": "thought-form-vehicle-generation",
-			"title": "Thought-Form Vehicles",
-			"text_sha256": "1940e111f452b3d1d4a0b4cd9695791fd4cdaab8d53fc64786b77f4e20f43248"
 		},
 		{
 			"id": "254aab0e-9e31-465e-b663-bd04d2576b43",
@@ -4532,13 +4340,6 @@
 			"text_sha256": "f13a1c29e766b4e47162c0659571e36cadd7d64f904bbc7ae688b7ac6fe25aab"
 		},
 		{
-			"id": "268e79bf-137e-4193-bac7-5509890105a7",
-			"research_slug": "xenotech",
-			"original_id": "project-looking-glass",
-			"title": "Project Looking Glass",
-			"text_sha256": "a5d7031de930245087ead1984feace6034b20b250930b8fa1c17d256a78457e1"
-		},
-		{
 			"id": "26a5f3cd-cc98-4aa0-8893-c726c7526357",
 			"research_slug": "helix",
 			"original_id": "south-korea__korean-beauty-tech-rd",
@@ -4651,13 +4452,6 @@
 			"text_sha256": "f5fea9e6dc198f56530b928ee0bb091f7103ccd8e93bdaa9046449c05fe3607b"
 		},
 		{
-			"id": "27c75e61-6a17-44c6-a4e9-284c907ca335",
-			"research_slug": "xenotech",
-			"original_id": "photonic-gesture-control-interfaces",
-			"title": "Photonic Gesture-Control Interfaces",
-			"text_sha256": "f6e7e3d3af69b0b8aa57af1937d805a3bf9d0ae10b3c1fd871c0b5ed3a35f2fe"
-		},
-		{
 			"id": "27fe5075-a583-4b96-9f70-4262778c2983",
 			"research_slug": "meridian",
 			"original_id": "orbital-logistics-platforms",
@@ -4705,13 +4499,6 @@
 			"original_id": "resilient-mesh-networks",
 			"title": "Resilient Mesh Networks",
 			"text_sha256": "d2003ba638f562c301df0a70f1d71d56bbedc60c2a3554534075a3bcead63ba2"
-		},
-		{
-			"id": "288182bf-8fce-4ee1-b4d3-bae273d3eb9f",
-			"research_slug": "xenotech",
-			"original_id": "reactionless-instantaneous-transmedium-propulsion",
-			"title": "Transmedium Propulsion",
-			"text_sha256": "9e6d355aa4ecbc5c2c56fe1ee7ccc81313239fc83d47a9a18738b672f5c97e6e"
 		},
 		{
 			"id": "2883b8de-e14c-4b7e-a268-bab51ddf6941",
@@ -5022,13 +4809,6 @@
 			"text_sha256": "2f2cf29f144a053f7735c2717f3890c5ea88580be065bbddbbd03f0f2b7a44fe"
 		},
 		{
-			"id": "2ac4400d-3830-4d73-84bb-a8ebe3a663c8",
-			"research_slug": "xenotech",
-			"original_id": "arts-parts-metamaterials",
-			"title": "Metamaterials",
-			"text_sha256": "4fb5679a165940d01d173dbb4926738b4cdfcfd8b87a3be118af59ba2f56b40c"
-		},
-		{
 			"id": "2acd08d9-8cfc-4d02-b5c0-5cbf4ac2aac2",
 			"research_slug": "helix",
 			"original_id": "japan__ips-cell-therapy",
@@ -5246,13 +5026,6 @@
 			"text_sha256": "1ed3d43206f0826ec4b6bf400f9ae84e3d00c64523f325ca253830a10e352e46"
 		},
 		{
-			"id": "2ce02556-1461-4cf9-b11a-401c0f632ff7",
-			"research_slug": "xenotech",
-			"original_id": "matter-phase-shifting",
-			"title": "Matter Phase Shifting",
-			"text_sha256": "e2411dfc29434cc85cc4eb8669e3648cc61de9fbaf1af8012f5629ff549d16ff"
-		},
-		{
 			"id": "2ceb34e0-be0b-42ca-ae3d-5138aa107bc2",
 			"research_slug": "moradia",
 			"original_id": "operacao-remota-distribuida-utilities",
@@ -5321,13 +5094,6 @@
 			"original_id": "canada__norcat-underground-mining-testbed",
 			"title": "NORCAT Underground Mining Innovation Testbed",
 			"text_sha256": "08a3e271478105eb1897c848489c8be50d56e32804f0b80b5f26ce9d139fa65e"
-		},
-		{
-			"id": "2df54339-f713-408b-8815-480b66b6be6e",
-			"research_slug": "xenotech",
-			"original_id": "child-chrononaut-programs",
-			"title": "Temporal Explorer",
-			"text_sha256": "738b096f64161a7a79ace3176fc6a87d169250852bd31077079f1d2a68b92e3f"
 		},
 		{
 			"id": "2df8d421-4e67-42df-92fa-5173d3f951bb",
@@ -5813,13 +5579,6 @@
 			"text_sha256": "206b5717f3e68cebb6600cc9ccdd111a27394d93610dd1836e5f51c670c9330e"
 		},
 		{
-			"id": "322e99a8-00b2-4289-b42f-2c61cdf8e471",
-			"research_slug": "xenotech",
-			"original_id": "nolan-honeycomb-materials",
-			"title": "Metamaterial Honeycomb Structures",
-			"text_sha256": "e32b799764945793074410347597affe6f0a83e8e5bd34af9149da13f3f99e78"
-		},
-		{
 			"id": "3241eb87-aaf5-4d7b-8500-1ed5fe85693a",
 			"research_slug": "beacon",
 			"original_id": "haptic-authenticity-standards",
@@ -6142,20 +5901,6 @@
 			"text_sha256": "2ec5e18ff5e44ab89a37305e55cd13c440a7d4bb89ecd59d1adbf44b7aab958b"
 		},
 		{
-			"id": "350b9d65-d447-49b3-9896-f0b8e63682d4",
-			"research_slug": "xenotech",
-			"original_id": "biophoton-consciousness-systems",
-			"title": "Biophoton Communication",
-			"text_sha256": "8885775692389f7bf9519f9d49e3676032294f34bbd7505308dba5e0ce34947a"
-		},
-		{
-			"id": "3517df08-b890-4e8f-a603-ddf7438636fe",
-			"research_slug": "xenotech",
-			"original_id": "quantum-vacuum-plasma-thrusters",
-			"title": "Quantum Vacuum Plasma Thrusters",
-			"text_sha256": "f6f6134ce2c4201ea24b6484dda8aee4b4770e71c0c5bfeb03c76b29c21d07ff"
-		},
-		{
 			"id": "354e6361-2c89-40d9-81ba-5e6d2e942148",
 			"research_slug": "habitat",
 			"original_id": "self-healing-materials",
@@ -6357,13 +6102,6 @@
 			"original_id": "alternative-battery-chemistries",
 			"title": "Alternative Battery Chemistries",
 			"text_sha256": "00b38ca8ad6f5f3191f74294135afbd50513462fa1d49cb2cd1a87b38d55ec40"
-		},
-		{
-			"id": "36faf737-9087-4d66-bbe3-29bcd7c2a773",
-			"research_slug": "xenotech",
-			"original_id": "ball-lightning-containment",
-			"title": "Ball Lightning",
-			"text_sha256": "a1e280c0734f1ee0ea6828a24cd81286693e1dc6076946a002fec6a0334668da"
 		},
 		{
 			"id": "37014c4c-8194-4457-8225-0873bee11775",
@@ -6653,13 +6391,6 @@
 			"text_sha256": "9c214e53b400a2de29967580635545c80b1abd757fe0b99c8c5124cec1c59393"
 		},
 		{
-			"id": "394f48dd-9de0-4afb-bf52-68e3b0a9fc5d",
-			"research_slug": "xenotech",
-			"original_id": "quantum-integer-flow-ethics",
-			"title": "Integer Flow",
-			"text_sha256": "2a7bac7a9a31884b66d28e56dfb9be35e46fe60d904b2b0e07949ba6ba7972b3"
-		},
-		{
 			"id": "3955a5b4-536d-4bd0-a728-49d994c59a76",
 			"research_slug": "forge",
 			"original_id": "4d-printing",
@@ -6672,13 +6403,6 @@
 			"original_id": "normatizacao-novos-materiais",
 			"title": "Normatização de Novos Materiais",
 			"text_sha256": "c45e57249d90a33443737bb5ac3bd3f9f7a3a784255e2c28fd777632818ca061"
-		},
-		{
-			"id": "39666f14-0c2e-4781-a3e4-e8ea63f18039",
-			"research_slug": "xenotech",
-			"original_id": "semiotic-adaptive-interfaces",
-			"title": "Semiotic-Adaptive Interfaces",
-			"text_sha256": "79cee9d187e8e9794645e6aa7804c1bea2e44c820d23178f014ad4b25338b732"
 		},
 		{
 			"id": "397fcfa9-1fb1-4015-8b0b-cc07a351c14c",
@@ -7031,13 +6755,6 @@
 			"text_sha256": "329788a6be6a4fa5c12b5718ff9fcac0685cd5ec2ce2852f8fb38dea11412eb7"
 		},
 		{
-			"id": "3cf62a22-695e-4f2a-b25c-b9c6240d3161",
-			"research_slug": "xenotech",
-			"original_id": "anatomical-compiler-morphological-programming",
-			"title": "Anatomical Compiler",
-			"text_sha256": "1d118bf12759ba34a1ac7c3dec185c541faace8e94c8b5d2085e6a43b0c9c30d"
-		},
-		{
 			"id": "3cff6993-310e-4884-9ae5-03dfa6bd7579",
 			"research_slug": "vector",
 			"original_id": "southeast-asia__singapore-autonomous-vessels",
@@ -7085,13 +6802,6 @@
 			"original_id": "metamaterial-cloaking-device",
 			"title": "Metamaterial Cloaking Device",
 			"text_sha256": "94ec32c01d099e9607368a185d8c739a979e201697986044b2e70b8cba035169"
-		},
-		{
-			"id": "3de85673-3f56-45d3-98df-4c53fb8f864a",
-			"research_slug": "xenotech",
-			"original_id": "bioenergetic-technology",
-			"title": "Bioenergetic Technology",
-			"text_sha256": "835a7d8e54de65c0b5fa3983643a7f693c92a068f6b8a3468df695e685c8a291"
 		},
 		{
 			"id": "3e26d318-7a52-4521-b04b-deb51ee8435b",
@@ -7183,13 +6893,6 @@
 			"original_id": "india__akash-air-defense-system",
 			"title": "Akash Air Defense Missile System",
 			"text_sha256": "a2999e199c10cd4ef3d53e9860585d57ae12331cf5ca55ec2c3028d5bb74a84b"
-		},
-		{
-			"id": "3f66b9eb-d084-40b0-9b0d-609925122946",
-			"research_slug": "xenotech",
-			"original_id": "multi-spectrum-sensor-arrays",
-			"title": "Sensor Arrays",
-			"text_sha256": "caf7b8486f199f719fac009c70d3916c5d5367a208fe35879490daf27367395d"
 		},
 		{
 			"id": "3f759796-0ed3-4694-aa58-029c38f22077",
@@ -7514,13 +7217,6 @@
 			"text_sha256": "970cd267071a18c3e04a1cc6b557ab4b5fd23563e3c96cc8ef79d6020965f97d"
 		},
 		{
-			"id": "425fe7b7-e547-47a6-a2d5-599f2d1fa66e",
-			"research_slug": "xenotech",
-			"original_id": "elf-mind-modulation-claims",
-			"title": "ELF Modulation",
-			"text_sha256": "777ae32ffc45fd99f962248966e62131cac5821503d9f11625f06164273abac5"
-		},
-		{
 			"id": "42653443-41b5-48f6-a992-3c8cdfabe9ff",
 			"research_slug": "superposition",
 			"original_id": "quantum-compilers",
@@ -7533,13 +7229,6 @@
 			"original_id": "bio-luminescent-night-tourism",
 			"title": "Bio-luminescent Night Tourism",
 			"text_sha256": "fcdfb4dbea3c00faeac57fc150e18b2c4d8de695f7b64c79ccf5756a4352f64d"
-		},
-		{
-			"id": "4272b4d6-e3e1-45f3-8f5c-ff53ff475271",
-			"research_slug": "xenotech",
-			"original_id": "military-timetravel-narratives",
-			"title": "Time-Travel Narratives",
-			"text_sha256": "ca851dc394afbe5ace0e5a129b91403dd0fce3bde162466f8c43e81a35bb6128"
 		},
 		{
 			"id": "4278a4c4-1211-447b-823c-c06c149d0dbd",
@@ -7624,13 +7313,6 @@
 			"original_id": "gulf-states__g42-ai-cloud-computing",
 			"title": "G42 AI & Cloud Platform",
 			"text_sha256": "ae1bd4c94f4f872f495be5ebb189180e86181cb6c245536c8ca2d7c78951fbec"
-		},
-		{
-			"id": "431a5e22-c36f-44ff-a313-ca01df6e1cad",
-			"research_slug": "xenotech",
-			"original_id": "surface-encoded-control",
-			"title": "Surface-Encoded Control Systems",
-			"text_sha256": "bb63ea185a182bcf2dc78d721ed3e17614a28af546698b76764dc84373f97866"
 		},
 		{
 			"id": "431e320b-78d0-4221-8005-04250452eca2",
@@ -7785,13 +7467,6 @@
 			"original_id": "canada__gps-denied-autonomous-mining-systems",
 			"title": "GPS-Denied Autonomous Underground Mining Systems",
 			"text_sha256": "55d7e8f950b994a9230f04015fba8a6f166f935c2110e3cd57f8879c18a81757"
-		},
-		{
-			"id": "44fe26f2-68bf-4613-aa72-9ce27dee9da1",
-			"research_slug": "xenotech",
-			"original_id": "mkultra-anomalous-consciousness-research",
-			"title": "Anomalous Consciousness Research",
-			"text_sha256": "fa0436bd4c2304e0f1fd73c66f4120d5cc1bff3cb9c882951c2e2eae90db96b9"
 		},
 		{
 			"id": "44ff8f14-a7dc-4d31-9bdb-90bc4cc20c52",
@@ -8065,13 +7740,6 @@
 			"original_id": "gulf-states__allam-arabic-llm",
 			"title": "ALLaM Arabic Language Model",
 			"text_sha256": "3a8792ec5a04f0ca22182837e2cfe1d5d6251e6b15e7c720eae8401409741c61"
-		},
-		{
-			"id": "47eefb4c-786c-42a6-ab70-b593dacd8502",
-			"research_slug": "xenotech",
-			"original_id": "positron-aerospace-propulsion",
-			"title": "Antimatter Propulsion",
-			"text_sha256": "b3fa497c4cda34e564285fd6b4299f9549be6af9dda3bf61c9ce3997c9226a03"
 		},
 		{
 			"id": "47f2cef9-8823-4524-a0c0-2d6f830b5a8f",
@@ -8403,13 +8071,6 @@
 			"text_sha256": "3171d113e6c5d2914ec5235ce05ac3757e67893f67357e27899097f5713b4e39"
 		},
 		{
-			"id": "4afc5abd-9062-4117-9924-1bb7002ffd00",
-			"research_slug": "xenotech",
-			"original_id": "quantum-inertial-navigation",
-			"title": "Quantum Navigation",
-			"text_sha256": "69eaaa7fe3dd28f0e88c70705849cb3d5a45f8de8471dbb78e2659928413fe28"
-		},
-		{
 			"id": "4afe8bdb-9849-4bf7-becb-58d2f83caf73",
 			"research_slug": "horizons",
 			"original_id": "four-d-printing",
@@ -8422,13 +8083,6 @@
 			"original_id": "norms-autonomous-cyber-operations",
 			"title": "Norms for Autonomous Cyber Operations",
 			"text_sha256": "8388bbf0b97db402170a7d383f1b4606decb7d307b5de19010b95bc4bd40f3be"
-		},
-		{
-			"id": "4b1f06aa-93f7-4252-8386-23be682d6148",
-			"research_slug": "xenotech",
-			"original_id": "crop-circle-resonant-interfaces",
-			"title": "Agroglyph Resonant Interfaces",
-			"text_sha256": "06509a750cb383b5663dadb63360687811f62a8054e78f7ed338aea4bb3170f5"
 		},
 		{
 			"id": "4b2f5c26-4237-4fb5-aaf6-30edec7c89d2",
@@ -8506,13 +8160,6 @@
 			"original_id": "usa__chips-act-domestic-fab",
 			"title": "Domestic Semiconductor Fabrication (CHIPS Act)",
 			"text_sha256": "0333f8dd8138d1a98be0c1805117f560cdd5dd670e2412ad2f9d2c220b43adc6"
-		},
-		{
-			"id": "4bf85af4-cc71-40d0-aa80-a15b514fa13f",
-			"research_slug": "xenotech",
-			"original_id": "localized-gravitational-field-manipulation",
-			"title": "Mass Anomaly",
-			"text_sha256": "88dbcf83e990f0d98f467bf7262174af292db8143bc9663e9931cf37f32eca20"
 		},
 		{
 			"id": "4c044ea2-5dc7-4187-a748-345a8196d356",
@@ -8830,13 +8477,6 @@
 			"text_sha256": "5a008d5c61f4c022a7914c0c8c316a53607e586ac9a26b9d288f182e93db6230"
 		},
 		{
-			"id": "4e938aa4-1317-42d3-86f2-0151b7ca429f",
-			"research_slug": "xenotech",
-			"original_id": "neural-visual-projection-systems",
-			"title": "Visual Projection",
-			"text_sha256": "a2bb914977de652fea70e7e50038fb36bc050f9021170d9215ae9fe2c9fc6eb4"
-		},
-		{
 			"id": "4e96c703-5576-4972-a530-e4f7f33be7b0",
 			"research_slug": "moradia",
 			"original_id": "amenidades-cobertura-inacessiveis-andares-inferiores",
@@ -8863,13 +8503,6 @@
 			"original_id": "passivas-tropicais-resfriamento-passivo-baixo-custo",
 			"title": "Passivas Tropicais e Resfriamento Passivo de Baixo Custo",
 			"text_sha256": "5e85000d4d8e60486fa8c4ba6bb5dcb902f0201917c6ef503582ec0b0d9a6dc2"
-		},
-		{
-			"id": "4edeb8cc-b337-44ff-8418-9b0bfdea9461",
-			"research_slug": "xenotech",
-			"original_id": "ra-material-travel-mechanics",
-			"title": "Density Travel",
-			"text_sha256": "e5b2545e01a3b7b54ff1032cb64da271f9f5ea7f3dc2cbaab719efd1c3c48503"
 		},
 		{
 			"id": "4ee2954f-a381-4e5c-8101-d4c8b41e6d1b",
@@ -9194,13 +8827,6 @@
 			"text_sha256": "57cf6c0382c695409a1f96f565ca7d10c9eee1379f505a5c60a1996e273114e9"
 		},
 		{
-			"id": "51adaf31-2753-4ec4-a17e-b48804a4c2f2",
-			"research_slug": "xenotech",
-			"original_id": "mhd-propulsion",
-			"title": "MHD Propulsion",
-			"text_sha256": "bd5f2ee537d463d7dbac9060305c456550d5c8c29cf405c9cde8b49c74205e91"
-		},
-		{
 			"id": "51bf3b59-bb79-4728-927c-e4014effcd42",
 			"research_slug": "forge",
 			"original_id": "japan__ai-enhanced-cobots",
@@ -9376,13 +9002,6 @@
 			"text_sha256": "9523786e5e25d844b7ccfcc896e9766ba2702b139a50814384a8f541f8519e1a"
 		},
 		{
-			"id": "53041d75-540a-4686-9d91-416731df3f15",
-			"research_slug": "xenotech",
-			"original_id": "nuclear-pulse-propulsion",
-			"title": "Nuclear Pulse Propulsion",
-			"text_sha256": "e1ef134e206fbea1854de3f9662a4bdeddc8e1b672e75e452123af86553d1a10"
-		},
-		{
 			"id": "53236bde-05f9-4199-83c2-d8663d181ad3",
 			"research_slug": "helix",
 			"original_id": "precision-longevity-interventions",
@@ -9521,13 +9140,6 @@
 			"original_id": "virtual-asset-tax-and-compliance",
 			"title": "Virtual Asset Tax & Compliance",
 			"text_sha256": "0d7ef5cb01c99cba2ca3e1037a30a5251f010f0f418eda5e70e26a50f84a985f"
-		},
-		{
-			"id": "544a37e7-58f5-4c05-83a1-1ad27b2e08a8",
-			"research_slug": "xenotech",
-			"original_id": "bearden-meg-scalar-weapons",
-			"title": "Electromagnetic Generator",
-			"text_sha256": "4b4c7e00527b5b4b54dad7f28352f8bed52c1a9a1345630e73c5c1a8fe5b5ac2"
 		},
 		{
 			"id": "54572a84-8314-442c-b007-4b115912addf",
@@ -9689,13 +9301,6 @@
 			"original_id": "lifi-optical-wireless",
 			"title": "Li-Fi & Optical Wireless Communication",
 			"text_sha256": "3c9b8e05e5d11ad476244d8d4e68b515a44365f3286d93bdaeae329f74b59e5e"
-		},
-		{
-			"id": "5599abcd-d12f-4547-8465-cb8188f9e272",
-			"research_slug": "xenotech",
-			"original_id": "gravitational-wave-communications",
-			"title": "Gravitational Waves",
-			"text_sha256": "4071e54e5d86ca1b256af6b42b315be7e362ca019f495665b2d3c11efac8e002"
 		},
 		{
 			"id": "55ab7d72-0669-4a77-a2f3-1ae33677b47d",
@@ -9936,13 +9541,6 @@
 			"text_sha256": "1dcbbedd219fac6baf226f2a6a03695cd18644c7aa8ce2a4e33b69b637cd8792"
 		},
 		{
-			"id": "57494e4a-5adb-48e3-83ea-7922dc962adb",
-			"research_slug": "xenotech",
-			"original_id": "affective-field-modulation-arrays",
-			"title": "Emotion Modulation",
-			"text_sha256": "5e4424a5bde1618d77811e9a5409ce1ce633198b968045c954f175929e7e3826"
-		},
-		{
 			"id": "574e4b0f-ee6a-49ba-88bc-9c006d4aad87",
 			"research_slug": "forge",
 			"original_id": "southeast-asia__rare-earth-processing",
@@ -10118,13 +9716,6 @@
 			"text_sha256": "4367bad95088b30fce7bcea65ebf94c7654834eb0a268fbf745e6ac249faab4d"
 		},
 		{
-			"id": "59735ae2-688c-4765-a718-b7cdec5e7b2a",
-			"research_slug": "xenotech",
-			"original_id": "nasa-eagleworks-warp-studies",
-			"title": "Eagleworks Warp",
-			"text_sha256": "2e5d3d5965a0113a76ae8826b1ff2ab27dc38495837ef7d7410ddadb3885c969"
-		},
-		{
 			"id": "5976a3bd-e1c2-46da-bd6b-e3d055065f5f",
 			"research_slug": "aegis",
 			"original_id": "israel__trophy-active-protection",
@@ -10137,13 +9728,6 @@
 			"original_id": "brazil__mapbiomas-land-use-mapping-platform",
 			"title": "MapBiomas Land Use Mapping Platform",
 			"text_sha256": "05076cc49c3c20ef0ae87dbed6f2557ef1c924b66654a3a216a96ee5eff3c61c"
-		},
-		{
-			"id": "5979dc3d-014c-41d5-8eba-c1d536d76c5e",
-			"research_slug": "xenotech",
-			"original_id": "uap-swarm-behavior",
-			"title": "Swarm Deployment & Orchestrated Behavior",
-			"text_sha256": "05273f8b926afc935b0d9144c9cfb354b562663cc70c59aa12e8c73bc561c54e"
 		},
 		{
 			"id": "5986f631-a627-4e1d-9399-7415fc3d4c8d",
@@ -10377,13 +9961,6 @@
 			"text_sha256": "0a23e235b98d2ca703d74918b2af2aab8a1a9c4331e412afcb237ce31ea7028f"
 		},
 		{
-			"id": "5b41ee76-56da-4104-aecd-f814d961e497",
-			"research_slug": "xenotech",
-			"original_id": "morphogenetic-fields",
-			"title": "Morphogenetic Fields",
-			"text_sha256": "445ffb66244bdf7ed52c53b39c0d89d5fdc789c38c687076eeec65f51d1f9d1f"
-		},
-		{
 			"id": "5b5095b4-7ca0-4df2-bc8c-25cdd4fc0b47",
 			"research_slug": "superposition",
 			"original_id": "pulse-level-control",
@@ -10580,13 +10157,6 @@
 			"text_sha256": "1b178d8f56b78b4160c9f2b6941b68789057c7bfb456897719df60afbd847943"
 		},
 		{
-			"id": "5cccbac1-6638-457c-b687-a0ef39767483",
-			"research_slug": "xenotech",
-			"original_id": "luminous-surgical-instruments",
-			"title": "Luminous Surgical Instruments",
-			"text_sha256": "907b56ee8d507945ddc4280a644d0a49ca13db2b5f9f6de79f174d5c9e69e727"
-		},
-		{
 			"id": "5ceb29e7-2692-4bc6-b735-b32d740ee9a0",
 			"research_slug": "vault",
 			"original_id": "biometric-wearables",
@@ -10699,13 +10269,6 @@
 			"text_sha256": "6986b161fea90a88d039624e358338e2a4d94420460334af111b3656000d93c1"
 		},
 		{
-			"id": "5dd61822-dd4d-4efc-82ca-4c72787263eb",
-			"research_slug": "xenotech",
-			"original_id": "mechanical-probe-motif",
-			"title": "Mechanical Probe",
-			"text_sha256": "2f708e9da9399d4d83e5d86c87d6e20564831b65f8743371769f0d0fbcec6948"
-		},
-		{
 			"id": "5df8d45a-3764-478b-8327-5b870038bbec",
 			"research_slug": "helix",
 			"original_id": "iran__nano-drug-delivery-systems",
@@ -10725,13 +10288,6 @@
 			"original_id": "smart-bio-makeup",
 			"title": "Smart Bio-Makeup",
 			"text_sha256": "9e4d5701bade66836d6d8b8dbaef29a7191c293889964f12a8da48fc76e698c9"
-		},
-		{
-			"id": "5e3b1672-cbc3-4a4f-b28e-0d4c5608b826",
-			"research_slug": "xenotech",
-			"original_id": "hessdalen-plasma-constructs",
-			"title": "Self-Assembling Plasma",
-			"text_sha256": "0b0fb2740a8a1424bed1238a20dc7447c17b8b7538c29e71bef116a04359e621"
 		},
 		{
 			"id": "5e436d76-57aa-466c-a556-cbeb35d2064b",
@@ -10972,13 +10528,6 @@
 			"text_sha256": "263232bbe6e612a602aea630922e2865ae667c54f19b73bc816b7a948272f7ef"
 		},
 		{
-			"id": "608f48b4-ab25-4bc4-a0b9-243c7e61c232",
-			"research_slug": "xenotech",
-			"original_id": "kozyrev-mirrors",
-			"title": "Kozyrev Mirrors",
-			"text_sha256": "9bce90224843013b5c2843608bd052e70d5dff1498c7fef0083a8425fc30d7a5"
-		},
-		{
 			"id": "60a2bf46-1bad-4663-8341-4a708e3bfd8a",
 			"research_slug": "solace",
 			"original_id": "virtual-nature-therapy",
@@ -11110,13 +10659,6 @@
 			"original_id": "redes-lpwan-iot-urbanas",
 			"title": "Redes LPWAN para IoT Urbano",
 			"text_sha256": "e2f36be2ca18e894b9a002e73e7c838be63c8a4fefd32025c70870ac624ff7f1"
-		},
-		{
-			"id": "61d9942c-1a62-49a7-8435-a66b9fae2277",
-			"research_slug": "xenotech",
-			"original_id": "quantum-entanglement-communications",
-			"title": "Quantum Entanglement",
-			"text_sha256": "675b60e441adab15f6ccc20861c0678a003fd6b245d519c0f92be68746db7b46"
 		},
 		{
 			"id": "61e5295e-7345-4076-8c06-9ebae91b1001",
@@ -11511,13 +11053,6 @@
 			"text_sha256": "050ddd0c738e47a7524204a1229d13b878d411e17759b503d33b7b0ea12f0c5f"
 		},
 		{
-			"id": "665d6555-36c9-4dd9-aa02-6edcdb4ccf84",
-			"research_slug": "xenotech",
-			"original_id": "dna-phantom-effect",
-			"title": "DNA Phantom Effect",
-			"text_sha256": "f3c3fdf2e821e3ec12c3e8d99e90cd5b52bfb7dee1eebdadcf046d463384e20e"
-		},
-		{
 			"id": "6664e8b6-32fa-45c7-8b23-a866c9f0352a",
 			"research_slug": "axiom",
 			"original_id": "cognitive-privacy",
@@ -11861,13 +11396,6 @@
 			"text_sha256": "cfbf890da2ce71c7777a836e2d71a51fce376efbb152f50b2c883c69e2598d54"
 		},
 		{
-			"id": "69ee444e-10cb-43b6-b465-f57dc8573d53",
-			"research_slug": "xenotech",
-			"original_id": "universal-spiritual-laws",
-			"title": "Universal Spiritual Laws",
-			"text_sha256": "f951e753133c3d95b7ae8a4db6e8fccee79da386c6d7b99342407fcdcf5df2be"
-		},
-		{
 			"id": "69f1b693-fd10-458b-8f19-aede7c1758ba",
 			"research_slug": "vault",
 			"original_id": "gulf-states__bahrain-open-banking",
@@ -11880,13 +11408,6 @@
 			"original_id": "automated-milking-systems",
 			"title": "Automated Milking Systems",
 			"text_sha256": "13a063734cbabec44402a7f47b3718505b5aad15ecf9476de02a3dabfb6d4ada"
-		},
-		{
-			"id": "6a04cd35-2f61-4339-a8ab-31b421d52a05",
-			"research_slug": "xenotech",
-			"original_id": "dyson-sphere-megastructure",
-			"title": "Dyson Sphere Megastructure",
-			"text_sha256": "8ce6361430afcf5b7c13d7a4c458dafd51efabf732392243515db6426ca9cc62"
 		},
 		{
 			"id": "6a068743-887c-4dff-af67-b0381afeed44",
@@ -11966,13 +11487,6 @@
 			"text_sha256": "35b555f5218e86b76be282935146856ac90b3426fd0e7f4e6c55b7da05f30724"
 		},
 		{
-			"id": "6ad60c37-ddb4-4e8d-bad4-024a69b2d371",
-			"research_slug": "xenotech",
-			"original_id": "geometric-energy-amplification-structures",
-			"title": "Energy Amplification",
-			"text_sha256": "85f42a5d71e8754bad1af73e569eee93ba0a0e167f0c733604c71aae7986a047"
-		},
-		{
 			"id": "6b01f014-fdc9-4bf1-935d-dce99ad605a4",
 			"research_slug": "cities",
 			"original_id": "gender-mainstreaming",
@@ -12041,13 +11555,6 @@
 			"original_id": "australia-nz__remote-operations-center",
 			"title": "Remote Operations Centre Technology",
 			"text_sha256": "e0d51accf68a992d4c340bc80aa23f8387866e1c3d91b0ce9ace7f251c02c44e"
-		},
-		{
-			"id": "6b637ee4-7bc2-4103-9029-b66686ce4fa5",
-			"research_slug": "xenotech",
-			"original_id": "exotic-isotope-power-cells-stable-isotope-reactors",
-			"title": "Isotope Power",
-			"text_sha256": "a33337b807b00942a2a7c8906f2b5a32135c482a288d948293d4e52c4254874d"
 		},
 		{
 			"id": "6b7e19d5-5d58-4f76-bfbc-69c1f5f34827",
@@ -12526,13 +12033,6 @@
 			"text_sha256": "5a733e7dd6e52bcdcf908494dacf09880f7568a2009e66b9d102fc8e044ab6a0"
 		},
 		{
-			"id": "71aa3b59-62fe-43bb-82b6-4f9b20fe5d6c",
-			"research_slug": "xenotech",
-			"original_id": "adaptive-nanofabric-skinsuit",
-			"title": "Adaptive Xenobiomimetic Skinsuit",
-			"text_sha256": "ecee045b718984e2d8434bf4d5d360268e84bef0a2a8f39a9fe8bb0e5185cbef"
-		},
-		{
 			"id": "71ab4f0f-04db-410d-8669-b16d86ba983a",
 			"research_slug": "moradia",
 			"original_id": "negocios-domiciliares-apartamentos",
@@ -12580,13 +12080,6 @@
 			"original_id": "blockchain-death-registry",
 			"title": "Blockchain Death Registry",
 			"text_sha256": "b0659ad5e3669784089da39d9c62dc87744c4e60357c9c02502914cdcd35dc62"
-		},
-		{
-			"id": "71dbff01-4478-4a3e-9aea-02aab659a3ae",
-			"research_slug": "xenotech",
-			"original_id": "sourceless-illumination-field-emission",
-			"title": "Sourceless Lighting",
-			"text_sha256": "f160f548ed20f6d77d9d866b3159a9fdbc45a70cbcca798db0c21cc79b137089"
 		},
 		{
 			"id": "71df11c9-2160-4c4d-a639-f92514678e57",
@@ -12671,13 +12164,6 @@
 			"original_id": "fair-labor-ugc-economies",
 			"title": "Fair Labor in UGC Economies",
 			"text_sha256": "deb6d6d05e1112ac8bede4e817e3aa7e8f5b978de00b832b4be9cf8f8d401689"
-		},
-		{
-			"id": "729475d1-ef60-4d3f-93dd-e9367c27acf0",
-			"research_slug": "xenotech",
-			"original_id": "medical-scanners",
-			"title": "Medical Scanners",
-			"text_sha256": "dcb910b65b70e937475ba2d8d4ac5e80a247f902bd4669e8fe9881b3a2618892"
 		},
 		{
 			"id": "72a86f3d-0f31-4946-9c3a-d8f30aa11e19",
@@ -13037,13 +12523,6 @@
 			"text_sha256": "0c30ad033b57aa874918013630daa0c8cd3da35dd9bef54cd5a9a1407427ff37"
 		},
 		{
-			"id": "758e3278-9448-4f88-a495-20683741dfab",
-			"research_slug": "xenotech",
-			"original_id": "constant-acceleration-interstellar",
-			"title": "Constant-Acceleration Drive",
-			"text_sha256": "deeed89d792cca49bff5111cc0c2c2980bda872b99bceccb4ffa1b76f61b033c"
-		},
-		{
 			"id": "75995a27-38fa-47ff-8c9a-3c28086087c1",
 			"research_slug": "wintermute",
 			"original_id": "artificial-intelligence",
@@ -13091,13 +12570,6 @@
 			"original_id": "latam-ex-brazil__mx-automotive-wiring-harness-hv",
 			"title": "High-Voltage Automotive Wiring Systems",
 			"text_sha256": "892825fdf868be3a47fbe1fa8a040fcdaddc548841fe4a2b3f28151f7bed79df"
-		},
-		{
-			"id": "75f1cd9b-26bb-45d6-9f2f-16f743e871b9",
-			"research_slug": "xenotech",
-			"original_id": "vallee-control-system",
-			"title": "Adaptive Consciousness Control System",
-			"text_sha256": "388c78689bd57c64c73b2568c98f6cc8ebd17398d347bf0cbd038d62239e173a"
 		},
 		{
 			"id": "75fdb3eb-827e-4bd9-8c51-282c1f975c85",
@@ -13366,25 +12838,11 @@
 			"text_sha256": "b2319f2f354aec0840c1da6e67fefead4e45e9c8ff289de8ef0f08e18d098d0c"
 		},
 		{
-			"id": "785c90a8-38d2-40a0-9a2a-80c7fb1eb43a",
-			"research_slug": "xenotech",
-			"original_id": "plasma-orb-propulsion",
-			"title": "Plasma Orb Propulsion",
-			"text_sha256": "e391bbadfe02e8a602352fe4151a8b969eaae913441ebbc136850ca6a6b2cb73"
-		},
-		{
 			"id": "785cd492-2143-44ad-8da9-b45c4b85b214",
 			"research_slug": "spore",
 			"original_id": "rna-interference-pesticides",
 			"title": "RNA Interference Pesticides",
 			"text_sha256": "7b9ca4b356fb68b946d4b9492ad782595a7a707b61d9db924f0b914a113c9fb1"
-		},
-		{
-			"id": "78725fd5-2069-4f5a-aa2d-597369896c12",
-			"research_slug": "xenotech",
-			"original_id": "atmospheric-cloud-generation",
-			"title": "Atmospheric Cloud Generation",
-			"text_sha256": "7a808d95229298beaff0230ed547d8d5dae6c14689924accc9c9bb19415ba241"
 		},
 		{
 			"id": "78730c2f-ac3c-4d36-b09f-da6c464ecbb5",
@@ -13413,13 +12871,6 @@
 			"original_id": "japan__jasm-tsmc-kumamoto",
 			"title": "JASM (TSMC Kumamoto Fabs)",
 			"text_sha256": "05004d1a55c2f5c48d1945c04875afed96452d8993f5c1b5c4359e1db2627032"
-		},
-		{
-			"id": "78c967a9-6d98-4dad-963c-b864f9ff073b",
-			"research_slug": "xenotech",
-			"original_id": "theoretical-time-travel",
-			"title": "Time Travel",
-			"text_sha256": "7e9272135a2003b757c5b8e8ab71771bbab047459f122e3a31356729a697b530"
 		},
 		{
 			"id": "78e985c8-56f0-44b0-930f-da980e1387aa",
@@ -13639,13 +13090,6 @@
 			"text_sha256": "d0afbf72f34c757baa1f8a29bc746a825446dce91e798d73eb830d142ba08695"
 		},
 		{
-			"id": "7af13489-53c6-4b21-a92b-152c10adc7f1",
-			"research_slug": "xenotech",
-			"original_id": "autonomous-plasmoid-interceptors",
-			"title": "Plasmoid Interceptors",
-			"text_sha256": "7c9db798aa093dcb156c09f69df46f589bd0449dafa7e7eae86a256c9d9fb9ce"
-		},
-		{
 			"id": "7af22ae7-95f9-4afc-9c69-6ead404fd540",
 			"research_slug": "substrate",
 			"original_id": "japan__underground-flood-infrastructure",
@@ -13693,13 +13137,6 @@
 			"original_id": "voice-biomarker-diagnostics",
 			"title": "Voice Biomarker Diagnostics",
 			"text_sha256": "f813fb19b55d90ac9175b8540b248a99d49d3f5073d453d7a21315d161b91371"
-		},
-		{
-			"id": "7bafb91d-e2bc-4163-b31e-d952b0adff43",
-			"research_slug": "xenotech",
-			"original_id": "thought-image-reconstruction",
-			"title": "Thought-Image Reconstruction",
-			"text_sha256": "aa73ac80d7d99d4fe202d263ed0ef22f82429c1e5f721935f6fe35e4b82e89c0"
 		},
 		{
 			"id": "7bca548d-6b29-49a8-88d6-2b9f09c5e855",
@@ -13870,13 +13307,6 @@
 			"text_sha256": "1ff7b5f2fc176cfde46fd0c61eeff324814d523102832dfef230187e1c779deb"
 		},
 		{
-			"id": "7e1c1bed-cbf2-47eb-833f-8bc14c27f2b2",
-			"research_slug": "xenotech",
-			"original_id": "xenobots-synthetic-living-constructs",
-			"title": "Xenobots",
-			"text_sha256": "d287ea714c50c93a61496257ea5bf8d4a92f86407fe685e25b6965cafeb9e492"
-		},
-		{
 			"id": "7e216986-a75c-4670-af81-c96b8ae9172d",
 			"research_slug": "vortex",
 			"original_id": "adaptive-personalization-engines",
@@ -13896,13 +13326,6 @@
 			"original_id": "latam-ex-brazil__co-coffee-precision-processing",
 			"title": "Precision Coffee Processing Technology",
 			"text_sha256": "06774540a169a068edd0adf1304e5f63cb025da58b04736e7afc0c36354c42a6"
-		},
-		{
-			"id": "7e4df2ef-8184-42dc-afa9-01798cef2740",
-			"research_slug": "xenotech",
-			"original_id": "closed-loop-dream-cueing",
-			"title": "Dream Cueing Systems",
-			"text_sha256": "241164e7091740b96b9f66a25846284eba1aede82125bd0572ce2d32a8020400"
 		},
 		{
 			"id": "7e64b3bb-ec60-49f0-9e33-7b25a3259a50",
@@ -14001,13 +13424,6 @@
 			"original_id": "usa__autonomous-ride-hailing",
 			"title": "Autonomous Ride-Hailing at Scale",
 			"text_sha256": "3d0e76fc6bc989f5ed86832ef44513443649e8d69ead63fdd36579324eadc8e9"
-		},
-		{
-			"id": "7f4cfc64-dffa-4645-b390-e65f4b37afa7",
-			"research_slug": "xenotech",
-			"original_id": "counter-rotating-plasma-devices",
-			"title": "Counter-Rotating Plasma",
-			"text_sha256": "1c183d0da91927b755cca244d16d743fffae9c45768c136da35db46fa4b32246"
 		},
 		{
 			"id": "7f5584d4-864a-4b0e-ba6e-1fe6dc14ce46",
@@ -14290,13 +13706,6 @@
 			"text_sha256": "2dfbb0f86e84a2598767c023b3fd97fc264e33ab7b0c4b61238e6fa8bf132ae9"
 		},
 		{
-			"id": "81c9632c-ea11-4b32-ac91-aae22600b42d",
-			"research_slug": "xenotech",
-			"original_id": "remote-weapons-disabling",
-			"title": "Remote Weapons System Disabling",
-			"text_sha256": "ef1edcd559483ff18d3a65ca045e3ed718dab07755e025f0318f35c9daca2bfb"
-		},
-		{
 			"id": "81dc86e2-b363-40e4-b215-a430a1e5cc12",
 			"research_slug": "subspace",
 			"original_id": "temporal-shielding",
@@ -14421,13 +13830,6 @@
 			"original_id": "india__account-aggregator-framework",
 			"title": "Account Aggregator Open Financial Data Framework",
 			"text_sha256": "7b61962fd726334e6161dbff5ac9ec0faa1fdea6e668f808648d262179a766b1"
-		},
-		{
-			"id": "82ec488a-4131-4b88-ba59-c0eec6c1a397",
-			"research_slug": "xenotech",
-			"original_id": "mining-beam-extraction",
-			"title": "Mining Beam Extraction",
-			"text_sha256": "758271dc362c06472083c20f11532db915ca17019eb3372714399a03837dc09b"
 		},
 		{
 			"id": "82eccc04-4f1d-49fa-b813-b5b4049d3ee1",
@@ -14605,13 +14007,6 @@
 			"text_sha256": "6323efd63ea3f3b89af33906a028cce6719b63244a68af58fc816a464d276d4d"
 		},
 		{
-			"id": "845446f9-108e-46cf-bad4-a195730a5ea4",
-			"research_slug": "xenotech",
-			"original_id": "bioelectric-signaling-tools",
-			"title": "Bioelectric Signaling Tools",
-			"text_sha256": "1652367476cfabffe55afcf9690abe966a06f57eb6a4335d9c0d41f9347ed67d"
-		},
-		{
 			"id": "846e2a8a-a6bd-4294-9c54-13b1b5433dac",
 			"research_slug": "link",
 			"original_id": "india__bharatnet-rural-fiber-network",
@@ -14759,13 +14154,6 @@
 			"text_sha256": "c540ccf229d4f142e90ea2ca18049bc426e674a2d74ee25699e8c3df13d7a779"
 		},
 		{
-			"id": "85e45afb-355d-41ae-baa9-71f704aba8a5",
-			"research_slug": "xenotech",
-			"original_id": "dmt-x-extended-state-program",
-			"title": "Extended-State DMT",
-			"text_sha256": "2446f515c1de72d1d38622939fbe1054214cc1726e493f77dd0f78020169a18a"
-		},
-		{
 			"id": "85fde1db-8ded-4679-9d3c-fd3318a79055",
 			"research_slug": "eclipse",
 			"original_id": "alkaline-hydrolysis",
@@ -14813,13 +14201,6 @@
 			"original_id": "volumetric-capture-studios",
 			"title": "Volumetric Capture Studios",
 			"text_sha256": "b06de218b21cd78e364fd7288d2cd0ac4cb61779daa758bd244c39b6237e35b7"
-		},
-		{
-			"id": "86596a7b-2ac4-48f9-9529-5099e06a04b6",
-			"research_slug": "xenotech",
-			"original_id": "vacuum-energy-systems",
-			"title": "Vacuum Energy Systems",
-			"text_sha256": "48f66bcb65303ad282db48a1618fd27e75a915c9ae5be2ecdd5dd58c2e54b0d4"
 		},
 		{
 			"id": "8672f623-e022-4325-b3f1-3f60b493b201",
@@ -15025,13 +14406,6 @@
 			"text_sha256": "66b069aa3386c80417a03598c0c43530095e6ec12a2561b49e828ff827b9101e"
 		},
 		{
-			"id": "88680d51-e51a-4c3e-a9fb-841277328b8c",
-			"research_slug": "xenotech",
-			"original_id": "bioenergetic-radionic-instruments",
-			"title": "Radionic Instruments",
-			"text_sha256": "90d713a3e2bcb716355687ead3b7a4ef5b7af1fb481efc5e6b76beafd1a20ffc"
-		},
-		{
 			"id": "8881d7f0-0482-42d8-8e40-c9c932d44ff8",
 			"research_slug": "liminal",
 			"original_id": "disaster-response-coordination",
@@ -15065,13 +14439,6 @@
 			"original_id": "india__digital-rupee-cbdc",
 			"title": "Digital Rupee (e₹) CBDC",
 			"text_sha256": "f70412c6a919d7c8e779c51ef92eaf4c2ca406bda8e187b7dc6e6388dbb69a21"
-		},
-		{
-			"id": "88d135fa-ce54-4ed2-9516-decea4229c35",
-			"research_slug": "xenotech",
-			"original_id": "vacuum-fluctuation-propulsion",
-			"title": "Vacuum Fluctuation Propulsion",
-			"text_sha256": "6f3d3647d468c20ea56babc83e7386e81385dfef1253de396b6642228d84af27"
 		},
 		{
 			"id": "88db7bd7-ba6e-4da2-80c7-f2a754887dd5",
@@ -15121,13 +14488,6 @@
 			"original_id": "southeast-asia__philippines-mini-grid-solar",
 			"title": "Solar Mini-Grid Island Electrification",
 			"text_sha256": "bd4b3b1e53912d92d5e67764f8ac9dbb3601d681364df453027832990e1887b9"
-		},
-		{
-			"id": "8966599a-d9e3-4038-85d2-b9bdab181db2",
-			"research_slug": "xenotech",
-			"original_id": "electroceuticals-bioelectric-therapies",
-			"title": "Electroceuticals",
-			"text_sha256": "5c133fde402f3e6db0ea8cdcae06c7393685d41db9cf09a8257215748d5efc70"
 		},
 		{
 			"id": "89683ec7-4ac1-4bf6-b9c2-229f9678443b",
@@ -15254,13 +14614,6 @@
 			"original_id": "autonomous-organizations-services",
 			"title": "Autonomous Organizations & Services",
 			"text_sha256": "82ffa7e3baa8ad4a36716aa13d070cbc75cc91dde24b39fc6a8182a887289560"
-		},
-		{
-			"id": "8aee088d-f01c-4371-86f7-e8165c00b883",
-			"research_slug": "xenotech",
-			"original_id": "dimensional-bubble-chambers",
-			"title": "Dimensional Chambers",
-			"text_sha256": "5b2e2a43a2f887c145b4900331c5010973b1b8b2ef655b230bdce46002bcae93"
 		},
 		{
 			"id": "8b0100a2-8a06-40ff-8b09-9d53990cebe8",
@@ -15466,13 +14819,6 @@
 			"text_sha256": "3e866b7888d1a1c0f2d09af55c2ecc47877e7b10f2672d564dc38691c58391ec"
 		},
 		{
-			"id": "8cab770b-1cbd-4b6e-ae3f-32287e1182d4",
-			"research_slug": "xenotech",
-			"original_id": "biomechanical-craft-technology",
-			"title": "Living Craft",
-			"text_sha256": "119e38e2028b762cc056aaf00871abdad484a4821244cd09aaf9ff29a02b71b3"
-		},
-		{
 			"id": "8cbe3cf5-8270-4d2c-a4c0-328a63833574",
 			"research_slug": "substrate",
 			"original_id": "south-korea__oled-deposition-equipment",
@@ -15655,13 +15001,6 @@
 			"text_sha256": "0901a655703b08cdef3c31a32482b945dd6edfc9ab61f62749273fcc2a1a3f9b"
 		},
 		{
-			"id": "8e1ab28d-c8eb-46a3-8443-0c077f1f65c7",
-			"research_slug": "xenotech",
-			"original_id": "liquid-breathing-systems",
-			"title": "Liquid Breathing",
-			"text_sha256": "81e7050d5d53fdc95d9aba40a7b3019a657d09dd2396a9767ec7356f09a9600e"
-		},
-		{
 			"id": "8e21cc93-f4f5-4f49-8c7a-a83cb7dc5bb8",
 			"research_slug": "continuum",
 			"original_id": "pandemic-early-warning-ai",
@@ -15765,13 +15104,6 @@
 			"original_id": "planetary-data-trusts",
 			"title": "Planetary Data Trusts",
 			"text_sha256": "1dfd0e1db98a6db8bf12da581b8f70d578c1f0e0e9d9bbac4d649204922aba67"
-		},
-		{
-			"id": "8ee653f0-da87-422e-be02-102fc0a2f0c6",
-			"research_slug": "xenotech",
-			"original_id": "self-healing-smart-materials",
-			"title": "Self-Healing Smart Materials",
-			"text_sha256": "5c9bddcd3f724fe9d100938ee43479e8532ba6c2e0ed3e9bf06aee40c9e3e8d8"
 		},
 		{
 			"id": "8ee8382d-3c80-488c-86ac-eec52c73b1c0",
@@ -16066,13 +15398,6 @@
 			"original_id": "australia-nz__coral-ivf",
 			"title": "Coral IVF and Heat-Tolerant Breeding",
 			"text_sha256": "09678916b485d19d0fd1b2a38c34246d0ed0ea6719d389b64b9d159ee8c3e8fd"
-		},
-		{
-			"id": "91f43998-3fa0-4a94-8084-3905fb60ff8a",
-			"research_slug": "xenotech",
-			"original_id": "jellyfish-uap-malfunction-drones",
-			"title": "Jellyfish UAP",
-			"text_sha256": "feb8fa89d92fa41acfc7137a1c096000960cc2c84a260379c5503a3690c658a1"
 		},
 		{
 			"id": "920ec5da-de9a-4a82-af71-d4f60e4b760e",
@@ -16516,25 +15841,11 @@
 			"text_sha256": "3d68019c5dc8b0d409c08fa27e4e1bc889a882eabd672c57b8c0392a0f599db1"
 		},
 		{
-			"id": "9603efd6-18e3-4dca-9868-b1753045bf41",
-			"research_slug": "xenotech",
-			"original_id": "angular-cloaking",
-			"title": "Angular Cloaking & Directional Stealth",
-			"text_sha256": "16ce6acf10caf452eb05657db1f78d639c7cb8f8f88a27479c301695601c1f81"
-		},
-		{
 			"id": "96055bb4-d6b1-4a94-9bda-849073d92ef5",
 			"research_slug": "substrate",
 			"original_id": "usa__neuromorphic-computing",
 			"title": "Neuromorphic Computing",
 			"text_sha256": "09adfab65c58707424556cacd9f1e1d464d3c992303df35d0562c76e13de2dfb"
-		},
-		{
-			"id": "96113c4d-c33d-4121-89fa-6d86df191f93",
-			"research_slug": "xenotech",
-			"original_id": "metric-waveguide-device-spacetime-corrugator",
-			"title": "Metric Waveguide",
-			"text_sha256": "f7642a00de9b43e71f7aa54690411a032fa09cfd3167da88af1804b3040fc3ec"
 		},
 		{
 			"id": "965a9523-709c-499d-bb92-1b4aae740228",
@@ -16626,13 +15937,6 @@
 			"original_id": "quantum-optimization-logistics",
 			"title": "Quantum Optimization for Logistics",
 			"text_sha256": "beafdbfd295a2b01afd44bd60b4b150b8de25a582604b937164a03082eeea500"
-		},
-		{
-			"id": "9755ef64-533a-4199-aaed-6e472c48d4af",
-			"research_slug": "xenotech",
-			"original_id": "casimir-techniques",
-			"title": "Casimir Techniques",
-			"text_sha256": "490d7812fb49bf39a04fb981b18b85fc54b1f891a2fafd072bff2c4a714f35f3"
 		},
 		{
 			"id": "9756e7bf-b543-4abe-85b4-90d4a6e421d3",
@@ -16740,32 +16044,11 @@
 			"text_sha256": "29243ea5f4963575269dcb493306cd7b7e7be06cba4d2eee84d616efd68178df"
 		},
 		{
-			"id": "9812eb54-d6d7-4a62-9960-24a1af4855f1",
-			"research_slug": "xenotech",
-			"original_id": "crystalline-resonance-transducers",
-			"title": "Crystalline Resonance Transducers",
-			"text_sha256": "156eee01bdda8c38954c832f2cab4657ff72ac1c5fa945866d72a6a80eae54f1"
-		},
-		{
 			"id": "9838f686-a38a-46cc-8d8a-90453e62e21a",
 			"research_slug": "aegis",
 			"original_id": "algorithmic-targeting-transparency",
 			"title": "Algorithmic Targeting Transparency & Auditability",
 			"text_sha256": "a112d4e2ece25634559aabea3f8bf4e5736fa790ff53776e581d0be566290b20"
-		},
-		{
-			"id": "98485618-f232-4ade-9d6f-df8fddc6c9df",
-			"research_slug": "xenotech",
-			"original_id": "lenr-cold-fusion",
-			"title": "Cold Fusion",
-			"text_sha256": "8c4fa616ebafbc50a5d2dc582814202281cfdb46bd94ef43054939e901ccf557"
-		},
-		{
-			"id": "984dde8f-ecff-4425-9fe9-cbc1bbd0996c",
-			"research_slug": "xenotech",
-			"original_id": "hybrid-breeding-program-tech",
-			"title": "Hybrid Breeding",
-			"text_sha256": "f1678cb5d4092cdc11a13b25f6be94ba64362b1530b1b8422fb9d8fd9dcffee6"
 		},
 		{
 			"id": "986718bb-cfa1-45c8-8b9a-ed0b9ce50438",
@@ -16913,13 +16196,6 @@
 			"original_id": "digital-twin-identity",
 			"title": "Digital Twin Identity Frameworks",
 			"text_sha256": "9a2fc35a19ab764cc255ef77580962fea419130e3a4b01203e2e64127bbcd4bc"
-		},
-		{
-			"id": "99cb3810-c8cf-43b8-b71b-4968c1ce6eec",
-			"research_slug": "xenotech",
-			"original_id": "toroidal-soliton-dna-antenna",
-			"title": "DNA Coupling",
-			"text_sha256": "92d9a53cd574714b907f37b6671aca50e71358cf2869d2bc539b8aea3ad23723"
 		},
 		{
 			"id": "99e20d99-113e-423d-889d-b79dab483ac3",
@@ -17130,13 +16406,6 @@
 			"original_id": "neural-biometric-authentication",
 			"title": "Neural Biometric Authentication",
 			"text_sha256": "b01a48e683669c1e6f684059c5508ca092a93d08ebf4b4655be281d35b3769b2"
-		},
-		{
-			"id": "9b767ebb-db76-4f46-8427-a57bda87ecbc",
-			"research_slug": "xenotech",
-			"original_id": "steiner-etheric-technology",
-			"title": "Steiner's Etheric Force Technology",
-			"text_sha256": "8ea94720e081bf87c1d7c64ad420a29080256738275c49ff8da8a09bbe271539"
 		},
 		{
 			"id": "9b9239e6-fab6-4d17-ae7d-b088eb819792",
@@ -17419,13 +16688,6 @@
 			"text_sha256": "07faa1db754a9d059479a2b88215f4bb5dc34dcce2fc99cfcd7c6624c1773928"
 		},
 		{
-			"id": "9dd07323-f0f9-4287-b027-14e766212b86",
-			"research_slug": "xenotech",
-			"original_id": "bio-synthetic-probes-organic-instruments",
-			"title": "Bio-Synthetic Probes",
-			"text_sha256": "cd5ba4ef266b82ed2ffeafc68ea233df2ac8cb51dfb39ee22d05f60e38cce71d"
-		},
-		{
 			"id": "9dd41d1c-f7f8-4c44-a46d-0715b6505583",
 			"research_slug": "moradia",
 			"original_id": "gestao-subempreiteiros-mao-obra-temporaria",
@@ -17445,13 +16707,6 @@
 			"original_id": "building-information-modelling",
 			"title": "Building Information Modelling ",
 			"text_sha256": "c26a20125f4514cdf3c39bab2a0a6a288504a702182399aa057ded37b1b0c85c"
-		},
-		{
-			"id": "9e0c66ac-3991-45c5-b08d-9000fb4e7e3d",
-			"research_slug": "xenotech",
-			"original_id": "element-115-power-system",
-			"title": "Element 115 Power Source",
-			"text_sha256": "cb96783c7cbf3c12171899c022907bb4592e9c86c916fb74bccb8479b826db13"
 		},
 		{
 			"id": "9e27e69b-0d31-470c-a615-07819c31f869",
@@ -17587,25 +16842,11 @@
 			"text_sha256": "613ce9d8e4acf5f6992d62d99b83c1d30313aaf3ee9a47610f28f349dfa7dc35"
 		},
 		{
-			"id": "9f17e057-fa79-40d0-857f-9c968398f7b3",
-			"research_slug": "xenotech",
-			"original_id": "telepathic-communication-systems",
-			"title": "Telepathic Communication",
-			"text_sha256": "e125a0080fe2d3d984a141b0f0a54be7f2b6b470b6a0658ff14dc83c3881e95a"
-		},
-		{
 			"id": "9f23007f-2cba-4df1-9d0a-19589db732d7",
 			"research_slug": "haul",
 			"original_id": "agentic-ai-supply-chain",
 			"title": "Agentic AI for Autonomous Supply Chain Operations",
 			"text_sha256": "f34eeff44ea6719e06abc589c2e9c1c33c7fbc678c24f28af4a2bd1a83093092"
-		},
-		{
-			"id": "9f252cda-4b63-4967-beaa-0d5a0ad73bf4",
-			"research_slug": "xenotech",
-			"original_id": "dream-decoding-generative-models",
-			"title": "Dream Decoding",
-			"text_sha256": "8e2efd30621e8ce89ab9e1c01327f2452b0e3e466bbfebd13d956166b2733777"
 		},
 		{
 			"id": "9f288680-9da1-4094-b5c2-3648e5fa3b89",
@@ -17860,13 +17101,6 @@
 			"text_sha256": "bea6433254a8f07a772e2ed50f214156b86186a0092b5729682d3953b30d6835"
 		},
 		{
-			"id": "a1fb93be-fd1d-4bfa-988e-c6684cf469a0",
-			"research_slug": "xenotech",
-			"original_id": "entity-appearance-modulation-systems",
-			"title": "Appearance Modulation",
-			"text_sha256": "b92b214bcafc96ba81f538ec3061a042ff168fe60dc3a547d71ce7c452f27ece"
-		},
-		{
 			"id": "a213ecab-bd75-432e-a116-ca5934d8b4df",
 			"research_slug": "grid",
 			"original_id": "africa__pebble-bed-modular-reactor",
@@ -18119,13 +17353,6 @@
 			"text_sha256": "25e296058259d2ae4dc0a381ae45e6f1c4e412ec390c43e0cc173133dc6d05cb"
 		},
 		{
-			"id": "a43ebc80-0079-45c9-82e2-adcc3aa25897",
-			"research_slug": "xenotech",
-			"original_id": "alpha-wave-radio-interface",
-			"title": "Alpha-Wave Radio",
-			"text_sha256": "e7f97ecd5c19d61ce3cad7e27114d8d2fa10e271f6174b122117d129b4ae56c1"
-		},
-		{
 			"id": "a4423a87-32b8-4d36-9a22-7f21844f69dd",
 			"research_slug": "vector",
 			"original_id": "demand-responsive-transit",
@@ -18250,13 +17477,6 @@
 			"original_id": "turkey__indigenous-corvette-platform",
 			"title": "Indigenous Anti-Submarine Corvette Platform",
 			"text_sha256": "a61bedf8fb6364d0cfe9446d0af3038424b413c8a4bcd83ec15c3c08b62c821c"
-		},
-		{
-			"id": "a586246a-4ef3-4f7f-aa3c-9716aa285bab",
-			"research_slug": "xenotech",
-			"original_id": "uap-acoustic-profile",
-			"title": "Acoustic Profile Management",
-			"text_sha256": "b5c5a5c1afa2c3a4e5a4cbfed96dc174ba1786589571ca62e1c5582e44983e5d"
 		},
 		{
 			"id": "a5a09f1d-942b-40ab-a88d-cfca1a070d39",
@@ -18434,13 +17654,6 @@
 			"text_sha256": "9c22cba239cdca4259ae88ca600660e7a488025d9d89c000611c60663e15db2b"
 		},
 		{
-			"id": "a6b45ab6-10a8-4434-b34a-9a5cc0d47d1d",
-			"research_slug": "xenotech",
-			"original_id": "consciousness-field-technologies",
-			"title": "Consciousness Fields",
-			"text_sha256": "4b5d5c59355446129735d872e52e80ae3920abad6311a1f56464e35345211a61"
-		},
-		{
 			"id": "a6bb32cc-b89b-41bc-9ad6-65337b1ce4cc",
 			"research_slug": "grid",
 			"original_id": "gulf-states__gigawatt-green-hydrogen-electrolysis",
@@ -18481,13 +17694,6 @@
 			"original_id": "south-korea__k-beauty-innovation",
 			"title": "K-Beauty Technology Pipeline",
 			"text_sha256": "f4418972e5e6228354419f41876c1bcca4e3d34af0aac1a1274cae5726a220a8"
-		},
-		{
-			"id": "a6ed4f10-455c-40bc-9e80-7605de50345e",
-			"research_slug": "xenotech",
-			"original_id": "anomalous-electromagnetic-effects",
-			"title": "Electromagnetic Effects",
-			"text_sha256": "5f5e131153617a1a1334b7bc98eed2651877f6a8f15c62449ab093e97fd4c77e"
 		},
 		{
 			"id": "a6ed737c-8deb-4e74-9714-9162377ec6f3",
@@ -18658,13 +17864,6 @@
 			"text_sha256": "9cc2d2006cdeea0ac15fa1d2bd9392ef78aad2648a5312b00ede0df366b530ff"
 		},
 		{
-			"id": "a8756ad1-d037-4c4d-a0c8-b5197c76a913",
-			"research_slug": "xenotech",
-			"original_id": "spacetime-topology-sensors-field-cameras",
-			"title": "Field Cameras",
-			"text_sha256": "4b02ce107412e4f57156995aa96ed240382ba49cb3434d5fe5c82725d3366429"
-		},
-		{
 			"id": "a8761d6f-d662-4d61-892f-a3005810bb10",
 			"research_slug": "moradia",
 			"original_id": "layouts-otimizados-entrega-domiciliar",
@@ -18824,20 +18023,6 @@
 			"original_id": "swarm-infrastructure-repair",
 			"title": "Swarm Infrastructure Repair",
 			"text_sha256": "24403edb899ac93c50c95f3974d020a66b6c038ee88cc413e4a1ebfbdf987c69"
-		},
-		{
-			"id": "aa0a6a06-f1b7-47ca-bd7f-cf9585229927",
-			"research_slug": "xenotech",
-			"original_id": "memory-editing-screen-memory-systems",
-			"title": "Memory Modulation",
-			"text_sha256": "3d7d049578809fe85e9ec58ebb861910fe4adf59dfa22cb78a338f4f00a7c23e"
-		},
-		{
-			"id": "aa17e4a6-306e-42e4-9f62-32f7633e4bb9",
-			"research_slug": "xenotech",
-			"original_id": "biological-cavity-structure-effects",
-			"title": "Biological Cavity Effects",
-			"text_sha256": "3e0ec5839948d708e6767f8e860cbc9f2a4a38d51076d067955cd64d5392d00d"
 		},
 		{
 			"id": "aa326234-c6c0-4c6c-84ff-48d27f7fb726",
@@ -19092,13 +18277,6 @@
 			"text_sha256": "578cdca20834916be191dc26f168c45ee31689c1ea1466345a94ea1ceb0b7db5"
 		},
 		{
-			"id": "ac13330c-8a27-4b3d-8b6b-e775c2dad70d",
-			"research_slug": "xenotech",
-			"original_id": "metallic-glasses-aerospace",
-			"title": "Amorphous Metal Alloys",
-			"text_sha256": "4ec3875de0d3ea8ba1dc743595be45bb0506a76e4f0be0149810c87e93c17217"
-		},
-		{
 			"id": "ac14744a-ebf3-4e93-a5ab-ec0b8a368e5c",
 			"research_slug": "link",
 			"original_id": "community-networks-mesh-connectivity",
@@ -19295,13 +18473,6 @@
 			"text_sha256": "404ff1f398d07168e0175317c844b012893665cdc9784f72503d2ac045c80d6b"
 		},
 		{
-			"id": "ae4a7608-002a-44bb-95a6-95071d0ad48d",
-			"research_slug": "xenotech",
-			"original_id": "consciousness-coupled-propulsion",
-			"title": "Consciousness-Coupled Propulsion",
-			"text_sha256": "7df1d63b9e9bbea61b9bcc0b2078a25ea5ffdcceb545ff9ca094ad361e4067c2"
-		},
-		{
 			"id": "ae6aca18-6445-469e-9ae5-9481effe49b7",
 			"research_slug": "moradia",
 			"original_id": "captura-realidade-obra-drones-lidar-360",
@@ -19314,13 +18485,6 @@
 			"original_id": "israel__electronic-warfare-systems",
 			"title": "Advanced Electronic Warfare and Counter-EW Systems",
 			"text_sha256": "f22bd0751e2e233e9bd10529166aa2e97faf40149aeb39c142a91eaa43ce82e5"
-		},
-		{
-			"id": "ae8c57e3-488c-41da-8944-766376dab2b1",
-			"research_slug": "xenotech",
-			"original_id": "schauberger-implosion-technology",
-			"title": "Vortex Implosion",
-			"text_sha256": "426fc85db06a63ce4644702719e9435f66a3a7c2f514daba7ff77e929b7cf686"
 		},
 		{
 			"id": "aea7702c-cb75-4f1a-977f-659534f99c65",
@@ -19349,20 +18513,6 @@
 			"original_id": "seguranca-cibernetica-infraestrutura",
 			"title": "Segurança Cibernética de Infraestrutura Crítica",
 			"text_sha256": "e73c4ba92a7e1efc64b2549a9e36410fda1de7bcb3b6ee8671aaeb36f1289165"
-		},
-		{
-			"id": "aeca7384-727d-4864-bd2a-f630eef817b6",
-			"research_slug": "xenotech",
-			"original_id": "electromagnetic-mind-interfaces",
-			"title": "Mind Interfaces",
-			"text_sha256": "099c89bed9d3005230a1ea72cf6e03ceaa898e29b0fbddd13d093d8bdf1db67a"
-		},
-		{
-			"id": "aecbec5c-f68b-4d15-b110-cd3b1a081f92",
-			"research_slug": "xenotech",
-			"original_id": "photonic-containment-fields",
-			"title": "Photonic Containment Fields",
-			"text_sha256": "804965ad86ead63a761233e3ddbe8d49e3b21e1f16d82944242a97ce36398d2a"
 		},
 		{
 			"id": "aed036f5-6cbc-4cb7-aa48-ad55020d5f54",
@@ -19505,13 +18655,6 @@
 			"text_sha256": "9184f986522a8ff3d7a0354cd9c674a3268912c4cbd8805c2e4922933dc3c386"
 		},
 		{
-			"id": "afeafaa7-fae2-45eb-99f3-29b76904fee5",
-			"research_slug": "xenotech",
-			"original_id": "intent-based-control-interfaces",
-			"title": "Intent-Based Control Interfaces",
-			"text_sha256": "d0818c7a7e2ef8f631cc6f3d68f224d596069407bd6c05f83701754fde4d8431"
-		},
-		{
 			"id": "b002f079-3900-4506-801b-65feccad4753",
 			"research_slug": "grid",
 			"original_id": "israel__desalination-brine-mining",
@@ -19559,13 +18702,6 @@
 			"original_id": "rl-process-control",
 			"title": "Reinforcement Learning Process Control",
 			"text_sha256": "c0596138071de2132f6cf96c1b492b32707664010fa81e71e47b672fd587badb"
-		},
-		{
-			"id": "b098b686-a186-4d85-9858-15f78f73e995",
-			"research_slug": "xenotech",
-			"original_id": "scalar-energy-technologies",
-			"title": "Scalar Energy Technologies",
-			"text_sha256": "9514ecb6e9d059ac5bbab0bb77e6e9c02850c8000d667d61f224f9400d6e8c8a"
 		},
 		{
 			"id": "b0b19a65-aea9-4e1b-87d7-ea9473c91593",
@@ -19785,13 +18921,6 @@
 			"text_sha256": "94d99c812503e375e4ad077d68f8938bc0b273d9bda8d2c48dbf101f88a8b023"
 		},
 		{
-			"id": "b33e3bbf-21ef-4d0d-9105-034aded492d1",
-			"research_slug": "xenotech",
-			"original_id": "informational-field-modulation-device",
-			"title": "Field Modulation",
-			"text_sha256": "1f80cc764b14fab8ff7637326f2a36b71ac5134f043d3888c7c1abf39850da48"
-		},
-		{
 			"id": "b34c2ab0-cfc6-4fe9-aad9-958f492dac25",
 			"research_slug": "subspace",
 			"original_id": "tricorder",
@@ -19867,13 +18996,6 @@
 			"original_id": "provenance-tracking",
 			"title": "Supply Chain & Document Provenance Tracking",
 			"text_sha256": "bde513d395b7c12df0c9310f3e2aeff4ad877f32ee91839cf982900bce6eb8eb"
-		},
-		{
-			"id": "b3e5696b-d0a5-4513-aeb6-aed792be4429",
-			"research_slug": "xenotech",
-			"original_id": "magnetic-field-disruptor",
-			"title": "Magnetic Field Disruptor",
-			"text_sha256": "e038c85eb074934982dc4f85a2a9d9cc8b2677250bac2d4b19be407caf42632c"
 		},
 		{
 			"id": "b3f44840-91a3-4304-8a3a-867c59beb4dd",
@@ -20168,13 +19290,6 @@
 			"original_id": "simulated-synthetic-life",
 			"title": "Simulated Worlds With Synthetic Life",
 			"text_sha256": "1ffdfd5b84f5119deb9a652adf8992b352693087d6f26b8553137758d3715fb9"
-		},
-		{
-			"id": "b7046a84-6000-4237-841c-32273abbe542",
-			"research_slug": "xenotech",
-			"original_id": "schumann-resonance-isolation-chamber",
-			"title": "Schumann Isolation",
-			"text_sha256": "7c53c8501e0241553dd81fe1e1c15d41b48b2e8b931dfba3b2e3be0e2ea66e82"
 		},
 		{
 			"id": "b709d9d8-a478-457e-8948-782dc4af2799",
@@ -20506,13 +19621,6 @@
 			"text_sha256": "2487a2d07cd3a2ee3ad2bb2353fba73f43c54ee2898b0c582fd38a5d03aa6e12"
 		},
 		{
-			"id": "b9f9f001-c5c8-4867-a21b-651bccb53f95",
-			"research_slug": "xenotech",
-			"original_id": "shapeshifting-technology",
-			"title": "Programmable Matter",
-			"text_sha256": "201816167c987e241dceaa7d7081aaca44439ec805a5299c23b23c7b41efe3d2"
-		},
-		{
 			"id": "ba1ce377-8877-4ac2-ab5d-a1b555330d38",
 			"research_slug": "helix",
 			"original_id": "south-korea__antibody-drug-conjugate-platforms",
@@ -20842,13 +19950,6 @@
 			"text_sha256": "fa32cc54a3f76c65c106bb6b22092d021a14315339dc851e45271d1fdfd84444"
 		},
 		{
-			"id": "bcc75346-abd9-4835-b360-a06ad84845ba",
-			"research_slug": "xenotech",
-			"original_id": "breathwork-consciousness-technology",
-			"title": "Breathwork Consciousness Manipulation",
-			"text_sha256": "799eecc664ad313090308ca47edbbdcd6e2809b6e46ee128cf29451641837500"
-		},
-		{
 			"id": "bcc97d2f-6dcc-4e91-9775-3485c4ac4934",
 			"research_slug": "pixels",
 			"original_id": "cloud-edge-hybrid-consoles",
@@ -20903,13 +20004,6 @@
 			"original_id": "climate-risk-analytics",
 			"title": "Climate & Catastrophe Risk Modeling",
 			"text_sha256": "eac808079a12ac8c7baa867bca8f5eeb88b9fc5a6261f814274b232298ac42ed"
-		},
-		{
-			"id": "bd46c872-d905-426a-9fa7-e33611c01103",
-			"research_slug": "xenotech",
-			"original_id": "directed-energy-paralysis",
-			"title": "Directed-Energy Paralysis Arrays",
-			"text_sha256": "174bc68edde6a0f27f0527e59889df1f48c4b4564d89e15822f461017ccf6f59"
 		},
 		{
 			"id": "bd4b79f1-04dd-4890-aabf-4b22ed9a338c",
@@ -21029,13 +20123,6 @@
 			"original_id": "latam-ex-brazil__cl-copper-electrorefining-technology",
 			"title": "Advanced Copper Electrorefining & Smelting",
 			"text_sha256": "2d62c53189cefbcc8e3adfb3dc868e81f2bf2bbeab115c5805f343c0acace9f8"
-		},
-		{
-			"id": "be72c10c-8076-467b-bd40-86d6d63383a4",
-			"research_slug": "xenotech",
-			"original_id": "gravitational-waveguides-lens-communications",
-			"title": "Gravitational Lensing",
-			"text_sha256": "cb01c65cfb195df44a75cb86f6c53b2530e28cad07b6f64d421d0bd7f601b722"
 		},
 		{
 			"id": "be763ccc-3396-433b-ad85-ee44a8b30151",
@@ -21199,13 +20286,6 @@
 			"text_sha256": "fdee8b4f500b40022993ac9a1ed3bbf2f2e53382afecad8b621ee62cb4680d3b"
 		},
 		{
-			"id": "c03533f9-fb25-4a2c-8ae3-7c038110d0a2",
-			"research_slug": "xenotech",
-			"original_id": "multipurpose-light-laser-systems",
-			"title": "Multi-purpose Light Systems",
-			"text_sha256": "02df21b6b97e11956c17bd3bb97b46571103bd9d5f645b41a7d691e1bee4bcf6"
-		},
-		{
 			"id": "c0498781-52a4-400a-98d6-d5231b728ced",
 			"research_slug": "meridian",
 			"original_id": "africa__ska-mid-radio-telescope",
@@ -21267,13 +20347,6 @@
 			"original_id": "warp-drive",
 			"title": "Warp Drive",
 			"text_sha256": "d878264009a83900086fe88c4224c3893c4bf130a0438317a598d54135f185cd"
-		},
-		{
-			"id": "c0ffcfd3-9d72-4a7c-a60e-be08a5a5be44",
-			"research_slug": "xenotech",
-			"original_id": "non-euclidean-craft-interior",
-			"title": "Non-Euclidean Interior",
-			"text_sha256": "60b390f06ca3d819f69d0e473b7f8275f36b9b1c2a65e5a38d0d1494fea6312e"
 		},
 		{
 			"id": "c0ffed5b-f9fa-4dc4-9cc5-0a399dbebcc5",
@@ -21470,13 +20543,6 @@
 			"original_id": "autonomous-marine-vessels",
 			"title": "Autonomous Marine Vessels",
 			"text_sha256": "1b4f594af4692a5ebac3d4ca04b69d75586d17e2e8dec6b0d4512f139f3aca3c"
-		},
-		{
-			"id": "c3c4d529-c0c7-4ffb-aa4d-4ba78991f9c9",
-			"research_slug": "xenotech",
-			"original_id": "atmospheric-georesonant-engineering",
-			"title": "Atmospheric Control",
-			"text_sha256": "b799fb31b8145c0e52e3cfe2ba209a97d58d2737c556a76702f6d569a54ff30d"
 		},
 		{
 			"id": "c3c60889-c98c-403c-940c-8579c4071fea",
@@ -21983,13 +21049,6 @@
 			"text_sha256": "05c3b96c83da41e07f86c62cd7d4e28ea9b0e88976f4a8a217a5006be2100efb"
 		},
 		{
-			"id": "c80327e8-45b8-4408-bb3a-a82acaa36e02",
-			"research_slug": "xenotech",
-			"original_id": "tectonic-piezo-earth-lights",
-			"title": "Fault-Line Plasma",
-			"text_sha256": "318ba88b96ccb0612ac5445ed376fe080995103d19836a363c75bd3ff001ecdb"
-		},
-		{
 			"id": "c808d0b0-d348-441a-9618-f8f7c1f8c99a",
 			"research_slug": "moradia",
 			"original_id": "privacidade-dados-espacos-publicos",
@@ -22002,13 +21061,6 @@
 			"original_id": "ambient-iot-sensors",
 			"title": "Ambient IoT and Smart Dust Sensors",
 			"text_sha256": "7b4be7d504f0ab45bfcba830c351777cdc10d62d634a3f072965d010170a236f"
-		},
-		{
-			"id": "c80ed1c5-37db-4536-b8c9-24363a9a7d69",
-			"research_slug": "xenotech",
-			"original_id": "ra-material-consciousness-evolution",
-			"title": "Consciousness Evolution",
-			"text_sha256": "389f9d2924952edbf010cd4584dce1fc386a2659d23f721dc09300dcafea39ac"
 		},
 		{
 			"id": "c8166695-84e1-4648-b758-2cd9027b0d9d",
@@ -22156,13 +21208,6 @@
 			"original_id": "mobility-as-a-service-superapps",
 			"title": "Mobility-as-a-Service Superapps",
 			"text_sha256": "313ebb742ca81ea4a33c0d746fa8623f16c6826dc920ad198588dabe2543153a"
-		},
-		{
-			"id": "c95fb3ef-9c1b-4c2b-a1bf-677a9d85b585",
-			"research_slug": "xenotech",
-			"original_id": "inertial-mass-reduction-device",
-			"title": "Mass Reduction",
-			"text_sha256": "a0de56a726fde70d8b506c496f7abb19dec05919044583958e48506a4dcb71d1"
 		},
 		{
 			"id": "c97b5efd-0b24-42e0-8606-e5208fd2868d",
@@ -22317,13 +21362,6 @@
 			"original_id": "ot-cybersecurity",
 			"title": "OT Cybersecurity Defense",
 			"text_sha256": "efd3b8e1fa4067cf8bb679ea004e862b92a6fa899f2f5ed3ed1c4edd5b794fc1"
-		},
-		{
-			"id": "cad25359-0601-439e-9468-017e39880417",
-			"research_slug": "xenotech",
-			"original_id": "particle-beam-propulsion",
-			"title": "Particle Beam Propulsion",
-			"text_sha256": "86ba175609ec60b094de5ba8cda141d9b774f4dc7093f1b6cb552f9c8e004d10"
 		},
 		{
 			"id": "cad2d1de-869d-42e3-a7cc-c757dc3383ac",
@@ -22802,13 +21840,6 @@
 			"text_sha256": "365783f08e4f25cfebd6d63ba753b6df917b0151b76ae6c4ed5932d4766a279c"
 		},
 		{
-			"id": "ceaa2578-d1eb-4e34-8828-c97ff50e4c8a",
-			"research_slug": "xenotech",
-			"original_id": "chronovisor-temporal-viewing",
-			"title": "Temporal Viewing Device",
-			"text_sha256": "43ef702d4081301bba993c48b86c7b82e481a7992c87f632b366e2645d0ee9e8"
-		},
-		{
 			"id": "ceac1f0f-628c-43dc-a0e9-8a5059113508",
 			"research_slug": "wintermute",
 			"original_id": "turkey__indigenous-cybersecurity-stack",
@@ -22975,13 +22006,6 @@
 			"original_id": "ai-relational-intelligence",
 			"title": "AI Relational Intelligence Systems",
 			"text_sha256": "057503f9fdee697d163aa24abdb711d52f90c6d201d59c53077bdcbef446b941"
-		},
-		{
-			"id": "d04cac69-77bd-4489-98c6-fccc62367089",
-			"research_slug": "xenotech",
-			"original_id": "nazca-metal-plaques",
-			"title": "Nazca Mummies Metal Plaques",
-			"text_sha256": "278ab77e7f06d94542d3d36b6493e3ec9d058cfba86022ae97eee5d33880f006"
 		},
 		{
 			"id": "d054ee41-ad88-4d87-86b6-d33a9e98e4cd",
@@ -23544,13 +22568,6 @@
 			"text_sha256": "72dc922232fe1507126e0201090a160bb8b20033ed3d721f9dca957af1fc27e0"
 		},
 		{
-			"id": "d5caccad-0cc2-4ab9-8127-56e4076a7057",
-			"research_slug": "xenotech",
-			"original_id": "morphogenetic-field-communication",
-			"title": "Morphic Fields",
-			"text_sha256": "da111f8851dc0772a1c1fefcd1a1beb118ecc80b08ab4899fee13fd104c51ea1"
-		},
-		{
 			"id": "d5d0fcef-439b-4775-b135-fa8ff03766c6",
 			"research_slug": "moradia",
 			"original_id": "passivos-ambientais-infraestrutura-legada",
@@ -23577,13 +22594,6 @@
 			"original_id": "turkey__carrier-based-ucav-operations",
 			"title": "Carrier-Based UCAV Operations",
 			"text_sha256": "f224c94a09d60e8157f72c126c4439f8afb11a1fe0f24ccef8b9d3df8f0fd0d8"
-		},
-		{
-			"id": "d5ecac04-c323-451b-9054-c6e56ab401dc",
-			"research_slug": "xenotech",
-			"original_id": "breakthrough-flight-cockpits",
-			"title": "Human Factors",
-			"text_sha256": "af1d373b42f1e75c51470e5fa78e0a2cf9139a2f6c1fc13a866ac2a0441a7a52"
 		},
 		{
 			"id": "d5f825e3-8f6f-44ea-9a56-f736b1a263a0",
@@ -23698,25 +22708,11 @@
 			"text_sha256": "b05b0327c0a13c700bda29c32ddf5e0da2395dd2e99f9f8f0b9433bdf632be67"
 		},
 		{
-			"id": "d6d7f26d-deb1-4166-a29c-d0d7fceeff16",
-			"research_slug": "xenotech",
-			"original_id": "rem-pgo-wave-modulation",
-			"title": "PGO-Wave Modulation",
-			"text_sha256": "7a625a60e095093924b026dc999dcf9e78c4c7b7172c6ebf380f3de8d5b1c154"
-		},
-		{
 			"id": "d6e84b97-cd1e-4cf7-9a83-98b280124ea2",
 			"research_slug": "spore",
 			"original_id": "india__agritech-platforms",
 			"title": "Digital Agriculture Platforms",
 			"text_sha256": "5587bb106253351116e1583eecfc6ac7fd9fe9213fe5b6f5587261271f1db754"
-		},
-		{
-			"id": "d6f62828-e075-4d44-81f1-14269d1b98eb",
-			"research_slug": "xenotech",
-			"original_id": "skipping-light-wave-field-propulsion",
-			"title": "Skipping Light-Wave Propulsion",
-			"text_sha256": "21b795f2d08292c0ba27bac1579825417efa7eb321d097527ed2909b70c152f7"
 		},
 		{
 			"id": "d6fe5afe-2cd2-4569-b6cf-22b26c2b7421",
@@ -23971,13 +22967,6 @@
 			"text_sha256": "23d7f4832752c0ebbf0d4bd446bdcdbe2b7704b5d413ef66129de3ea947e91f6"
 		},
 		{
-			"id": "d917033d-aaca-45ab-a39c-6f6cc6c4c231",
-			"research_slug": "xenotech",
-			"original_id": "byte-latent-transformer-xenolinguistics",
-			"title": "Symbol Decoding",
-			"text_sha256": "4c4c93ef09808204037514771b950ebffaca08de792acea4eede83ba3f077494"
-		},
-		{
 			"id": "d9205893-a514-448c-b140-2fef6c901b04",
 			"research_slug": "horizons",
 			"original_id": "hydrogen-infrastructure-for-heavy-transport",
@@ -23990,13 +22979,6 @@
 			"original_id": "australia-nz__methane-reduction-bolus",
 			"title": "Sustained-Release Livestock Methane Reduction Bolus",
 			"text_sha256": "783f85f1c51071e721a6a0bb35ea4df2ab492139ea5271c106e07823be21e79c"
-		},
-		{
-			"id": "d929eef5-0ae4-44e2-9ced-d990a3ecb638",
-			"research_slug": "xenotech",
-			"original_id": "variable-geometry-craft",
-			"title": "Variable Geometry Craft",
-			"text_sha256": "82cf609c271d34738c2b76b60fb223ab399534ec9168d27aa3f47c76e1d968ae"
 		},
 		{
 			"id": "d94e94f9-4364-400c-916f-db23e2a16b5b",
@@ -24398,13 +23380,6 @@
 			"text_sha256": "897a55594c48e5c23102e6dcad9f41dc567b211d12765f1cafaa3291e3de03a4"
 		},
 		{
-			"id": "dd1e2ba2-61ce-4352-8190-7c4b5041ebd4",
-			"research_slug": "xenotech",
-			"original_id": "temporal-manipulation-systems",
-			"title": "Temporal Manipulation",
-			"text_sha256": "829a01361f83210739cdefa4eafec9ae4ea8c7c566242f86e54bcef7f76a6e2b"
-		},
-		{
 			"id": "dd494136-4530-4b69-9acf-7ba1d4c09f03",
 			"research_slug": "axiom",
 			"original_id": "language-learning-apps",
@@ -24629,13 +23604,6 @@
 			"text_sha256": "42e95ed929ae630df2c00d742095e56f3a719d62438aaf4dfcd65b63bb0d3ee2"
 		},
 		{
-			"id": "dff3d776-747a-4e66-a83f-396d13b54388",
-			"research_slug": "xenotech",
-			"original_id": "anomalous-field-persistence",
-			"title": "Anomalous Field Persistence",
-			"text_sha256": "8803518f108eda89bc081127c3ef6f5f0318fc7679c82e1cbc3ac2b97480518a"
-		},
-		{
 			"id": "dff6a85f-0743-46a0-bbd5-feb4ab36cce3",
 			"research_slug": "stratum",
 			"original_id": "realtime-ore-tracking",
@@ -24816,13 +23784,6 @@
 			"original_id": "longevity-risk-modeling",
 			"title": "Longevity & Mortality Risk Platforms",
 			"text_sha256": "29f61f71d9c55a9f30c265299c1d7a88aab1ff78c988089a468950389f54d477"
-		},
-		{
-			"id": "e10fe324-f5b9-46a8-8d54-f026fe074bb3",
-			"research_slug": "xenotech",
-			"original_id": "spacetime-density-propulsion-systems",
-			"title": "Density Propulsion",
-			"text_sha256": "c061c2670ac3ab762b6314bcede88987f41c8654aacd274ee935832fb2531b96"
 		},
 		{
 			"id": "e113f92b-4529-4c53-9d89-38f6da88ce3b",
@@ -25049,25 +24010,11 @@
 			"text_sha256": "5dc83bde419826d10e54a828d2a34e6ab7e8858d94fcd608d7d6d7ba014431ef"
 		},
 		{
-			"id": "e2cb3b89-3fcb-49da-97f6-fd18835e9983",
-			"research_slug": "xenotech",
-			"original_id": "electromagnetic-signature-management",
-			"title": "Cloaking",
-			"text_sha256": "f7e793a8988459e0561118132c9c3259c81f5f6a0eb37f4a2fa816182be2e6ab"
-		},
-		{
 			"id": "e2d0f67d-351e-48fa-be67-d44effc2e7d4",
 			"research_slug": "beacon",
 			"original_id": "algorithmic-auditors",
 			"title": "Algorithmic Impact Auditors",
 			"text_sha256": "766b44aae60b0af47de7a354a1dfa81b5ecf3fcd081fe18abddfaf2c2322453a"
-		},
-		{
-			"id": "e2d2147a-908e-41fd-8528-f6197233193c",
-			"research_slug": "xenotech",
-			"original_id": "aneutronic-fusion",
-			"title": "Aneutronic Fusion",
-			"text_sha256": "c96acc99e6ee7905124e6fbb517aa5c68a141d9780423e834d016fee922e4ec6"
 		},
 		{
 			"id": "e2dd0093-19a8-4cbc-b0ce-116ba864f3e2",
@@ -25476,13 +24423,6 @@
 			"text_sha256": "08acf5a6d795fe04e32738274eddad9c4ae9777fe52cd6688df54af5998ca19e"
 		},
 		{
-			"id": "e78c9d93-dadf-4ddb-a838-992941ba7626",
-			"research_slug": "xenotech",
-			"original_id": "negative-mass-propulsion",
-			"title": "Negative-Mass Propulsion",
-			"text_sha256": "ce92b22dfa2b5ec7d3383f95b72311721564d245c9423955653e4b4ba96f67a7"
-		},
-		{
 			"id": "e798a81f-2d4c-449a-9628-9670294cbe97",
 			"research_slug": "moradia",
 			"original_id": "infraestrutura-recarga-veiculos-eletricos-inteligente",
@@ -25516,13 +24456,6 @@
 			"original_id": "canada__snolab-underground-physics",
 			"title": "SNOLAB Underground Physics Laboratory",
 			"text_sha256": "1c84a394f17ef1b01c8cfbd5500fc094eefddf161ab0f8758dd9d832e8fb0e7c"
-		},
-		{
-			"id": "e7bf45f0-3a64-4a18-b5b5-b597ac9d6cf8",
-			"research_slug": "xenotech",
-			"original_id": "akashic-field-tech",
-			"title": "Akashic Fields",
-			"text_sha256": "293daa0def2006ddc5499bdb0e91731243bd0b445cada73f3518e93b7c4d6616"
 		},
 		{
 			"id": "e7d0abea-c1c9-4ed0-8be6-8173b1964bfa",
@@ -25651,13 +24584,6 @@
 			"text_sha256": "dc14f44fbd2838e929bf479c5cc56862e7aeed30765bbcc67281fa7d7ee48016"
 		},
 		{
-			"id": "e89ca890-fb5d-476d-be1a-6e3314396490",
-			"research_slug": "xenotech",
-			"original_id": "phonon-gravity-acoustic-coupling",
-			"title": "Phonon Coupling",
-			"text_sha256": "c82fbbf9d0a77af498488325f5f9f9f51ce5f30572f12d00570a9dd8518c2b37"
-		},
-		{
 			"id": "e8ab4237-f321-4378-8666-2e8ed17ff2df",
 			"research_slug": "fabric",
 			"original_id": "digital-knitting-material-modulation",
@@ -25728,13 +24654,6 @@
 			"text_sha256": "c09eae5f19236011cb52e1fe3dee192d2253c1852f13366d54c96cf8320a4d30"
 		},
 		{
-			"id": "e9876c77-08d4-4aab-b5cb-c8ad2a7e536a",
-			"research_slug": "xenotech",
-			"original_id": "bio-energetic-harvest-systems",
-			"title": "Bio-Energetic Harvest",
-			"text_sha256": "c021d9b53acf1d8b8a95f322c0e787b150817ac336878ee77458420b78eb79b3"
-		},
-		{
 			"id": "e9afbe3c-43bf-4e11-b69a-87070f2cb7cb",
 			"research_slug": "prism",
 			"original_id": "selective-transparency-layers-synthetic-media",
@@ -25747,13 +24666,6 @@
 			"original_id": "real-time-language-translation",
 			"title": "Real-Time Language Translation Layers",
 			"text_sha256": "fcda96628e5ecb14584ad22f0e57c70beb3bb8c8cbd16911672a267bad80a264"
-		},
-		{
-			"id": "e9c75210-e93c-43fe-8a83-15ca835a832b",
-			"research_slug": "xenotech",
-			"original_id": "nhe-neural-quantum-entrainment",
-			"title": "Quantum Entrainment",
-			"text_sha256": "5005380c8f3fc73e12aae48cd86d2acf6eefea8473305e7fcd430a0d1f61cd34"
 		},
 		{
 			"id": "e9e99309-1208-4ce9-97c2-70b82b0c93fe",
@@ -25868,13 +24780,6 @@
 			"text_sha256": "a67dd17592244c4b753bb2b422d7d0cc7f25267e7d8d2333eb5f424329101242"
 		},
 		{
-			"id": "ebc7cda4-784d-448e-a560-a25a63eeaa86",
-			"research_slug": "xenotech",
-			"original_id": "yellow-cube-temporal-artifact",
-			"title": "Yellow Cube Temporal Artifact",
-			"text_sha256": "fbbefaa67ae2bfc358e0e647316d48727dfe46162fc156acca1ff4b1df19af9c"
-		},
-		{
 			"id": "ebf61ab6-f624-46b5-83f7-d3eb1e0dc04b",
 			"research_slug": "aegis",
 			"original_id": "israel__autonomous-swarm-technology",
@@ -25903,13 +24808,6 @@
 			"text_sha256": "bdbb7545596b3fb165157858a49ef10bb1217f7c494e476db83e064e9628182e"
 		},
 		{
-			"id": "ec2e588c-50f9-4b91-b12d-263c81d2a726",
-			"research_slug": "xenotech",
-			"original_id": "high-frequency-gravitational-wave-generator",
-			"title": "Wave Generators",
-			"text_sha256": "3563db33098c0dcd381c7611c33924c83d8e07185322d975aeef7b5a8ddf6303"
-		},
-		{
 			"id": "ec2f6c99-8b7b-4aac-9957-93a036524993",
 			"research_slug": "substrate",
 			"original_id": "vehicle-to-grid",
@@ -25924,25 +24822,11 @@
 			"text_sha256": "da2ba8b1363116ebd8cebd677f6fb1a154fa54662fa1a956de07c4c87b84339e"
 		},
 		{
-			"id": "ec41bcae-ca60-484a-8976-2ae936b086d0",
-			"research_slug": "xenotech",
-			"original_id": "telemetry-visualization-spherical-consoles",
-			"title": "Observation Consoles",
-			"text_sha256": "e42c69bdbfef6b2c6547afdbab43776e1aec4b6b6ebc1bf38ebb88a73c31fb87"
-		},
-		{
 			"id": "ec67af9e-30ad-4250-bb30-1b6ff16aaeee",
 			"research_slug": "harvest",
 			"original_id": "agro-data-sovereignty",
 			"title": "Agro-Data Sovereignty",
 			"text_sha256": "a763039b733a97818aa363944719a91a379ca7dfbdb5088e9993620e755c2e28"
-		},
-		{
-			"id": "ec6a96cb-ed70-4efa-a96a-f3dc0642faf1",
-			"research_slug": "xenotech",
-			"original_id": "autonomous-planetary-facility",
-			"title": "Planetary Facility",
-			"text_sha256": "9d0e87b001f2139b18c39f9f1af57e0913439020ea028e70f37b829d96a53546"
 		},
 		{
 			"id": "ec971610-8d14-4b25-b332-5d790d71802a",
@@ -25964,13 +24848,6 @@
 			"original_id": "south-korea__spatial-ai-autonomous-systems",
 			"title": "Spatial AI for Autonomous Systems",
 			"text_sha256": "058c5c7041f85b3cbe72da9e632051497ef8524b21a7820696e833c594cc815b"
-		},
-		{
-			"id": "ece64c50-5fd7-4dfd-ae73-786be355e940",
-			"research_slug": "xenotech",
-			"original_id": "neurological-immobilization-sonic-induction",
-			"title": "Sonic Immobilization",
-			"text_sha256": "dcb82bb47fb4dc8782f0665ac05e3e076ea342f86cd76d48de45a12704597b82"
 		},
 		{
 			"id": "ececceb0-cd04-4bb5-b86d-606c00a5670b",
@@ -26034,13 +24911,6 @@
 			"original_id": "germline-editing-governance",
 			"title": "Germline Editing Governance",
 			"text_sha256": "ff9e5b717767a06e9aea10342cc2006bf3cbc319a7cb29ad48ca5f1c03efb4e6"
-		},
-		{
-			"id": "edc735b8-21a6-4732-bcf8-8e28d5d0e4b3",
-			"research_slug": "xenotech",
-			"original_id": "dimensional-resonance-matrices",
-			"title": "Resonance Matrices",
-			"text_sha256": "4a30cd29505718ee4b4dfa0982369883be66eade0cbfcc50bc38eba3701ed440"
 		},
 		{
 			"id": "edc7ea35-285f-4f99-8a29-16bec0d1fbe2",
@@ -26274,13 +25144,6 @@
 			"text_sha256": "aa937d7fa67994626472c6b309b735df4104862194bd9f9786f19188ad1765da"
 		},
 		{
-			"id": "f00cec76-1c70-4850-b098-912d87864d52",
-			"research_slug": "xenotech",
-			"original_id": "psi-research-infrastructure",
-			"title": "Remote Viewing",
-			"text_sha256": "aac93020788415edc9147b6b4e00449229f1220e33856b3d08deaf0167da7c0e"
-		},
-		{
 			"id": "f0111c71-4fad-4bde-a77a-4dc74f480229",
 			"research_slug": "liminal",
 			"original_id": "spatial-design-collaboration",
@@ -26384,13 +25247,6 @@
 			"original_id": "peer-assessment-platforms",
 			"title": "Peer Assessment Platforms",
 			"text_sha256": "8b308e9b77426f16bbb13478319b8aedd37359a006c6447451c6d45c5e6df012"
-		},
-		{
-			"id": "f12bd2e5-9fea-4fb6-91b9-44603134c05f",
-			"research_slug": "xenotech",
-			"original_id": "usap-reverse-engineering",
-			"title": "Reverse Engineering",
-			"text_sha256": "9b624ab46261070fd0ff8da3c06cc72dff9577db23060b9b626caa448034a4d2"
 		},
 		{
 			"id": "f12bfb81-41b4-456f-9e9a-99b2c49d69b0",
@@ -26631,13 +25487,6 @@
 			"text_sha256": "c5e6e91514e39bd712b138692b13d3a1209fc1fa61fa52e4cc0ad25e31aab348"
 		},
 		{
-			"id": "f2fea4b3-cec7-4485-8173-8a9caf5bf42b",
-			"research_slug": "xenotech",
-			"original_id": "bio-resonant-healing-regenerative-chambers",
-			"title": "Bio-Resonant Healing",
-			"text_sha256": "c3e12c9db6cc22e9e8b9a0c60403d4c4c68477fc5cecbfa34c0c566200ea512e"
-		},
-		{
 			"id": "f305a934-146c-4103-bee1-6a5741889e3f",
 			"research_slug": "helix",
 			"original_id": "brazil__single-dose-dengue-vaccine-butantan-dv",
@@ -26736,13 +25585,6 @@
 			"text_sha256": "782b10b4391830f6a9401e5dc3455349aa22804538e5fc9206ac5ed073e23d2d"
 		},
 		{
-			"id": "f39f9686-01f5-48a5-a0c7-65d17ed63fe3",
-			"research_slug": "xenotech",
-			"original_id": "matter-disintegration-weapon",
-			"title": "Matter Disintegration Weapon",
-			"text_sha256": "f9954e2b02ae47d43040c668c633287c3ca31b999e3156e3390ed5cc4677b9a3"
-		},
-		{
 			"id": "f3a242b1-b436-4aa8-b359-7631ee93a176",
 			"research_slug": "stratum",
 			"original_id": "direct-air-electrowinning",
@@ -26762,13 +25604,6 @@
 			"original_id": "simulation-based-work-training-platforms",
 			"title": "Simulation-Based Work Training Platforms",
 			"text_sha256": "2495d5a24b8a82c7a3c0cb93edff780961db133e2d9aa2108964eab746ce0a9e"
-		},
-		{
-			"id": "f3d70c83-f01e-4008-bb8d-6d13e13af93b",
-			"research_slug": "xenotech",
-			"original_id": "radio-controlled-neural-stimulation",
-			"title": "Radio-Controlled Neural Stimulation",
-			"text_sha256": "74aa15fcc89a421d2ad9cdd9732196c370926731454d97d880383cfbcefb2bdc"
 		},
 		{
 			"id": "f3d73c0b-5d27-4f53-b2fa-ef0138638ce1",
@@ -26811,13 +25646,6 @@
 			"original_id": "europe__european-chips-act-and-fab-sovereignty",
 			"title": "European Chips Act and Fab Sovereignty",
 			"text_sha256": "e66cef80de152ef260e9b09956a3a46f2f96c8d39953d1ac016081e341d7d9bb"
-		},
-		{
-			"id": "f42e950d-cc75-4b8c-8622-17e2eab39ee6",
-			"research_slug": "xenotech",
-			"original_id": "consciousness-induced-vacuum-energy-extraction",
-			"title": "Consciousness Energy",
-			"text_sha256": "7e84b298f01ec3b9fcca38e499308ce59644e18124b8b2353c0d0c3e943e19c3"
 		},
 		{
 			"id": "f44ab1a1-c2c0-42ba-93d4-e3bbd4570bf4",
@@ -27030,13 +25858,6 @@
 			"text_sha256": "4703409df928630f0699064435e767fef6a360b908a879cd75a2b9ad9c9e822e"
 		},
 		{
-			"id": "f5e0366c-f9f6-4b76-9c97-e9be74a60a1f",
-			"research_slug": "xenotech",
-			"original_id": "inertial-field-coupling",
-			"title": "Inertial Field Coupling",
-			"text_sha256": "6531e237d414b141d694126cbeabd7084664e29087348fb4b7f53347bc53a0af"
-		},
-		{
 			"id": "f5ee1034-8a05-45d2-b60f-9c0648d3a6ae",
 			"research_slug": "apogee",
 			"original_id": "planetary-surface-habitats",
@@ -27091,13 +25912,6 @@
 			"original_id": "space-tether-systems",
 			"title": "Space Tether Systems",
 			"text_sha256": "94e3ba1600fc34bf57ad8da08091c1bdb6fb8109b18442341a1e048391781e54"
-		},
-		{
-			"id": "f638d5e4-e169-4bbf-a8f8-32980cfaef6d",
-			"research_slug": "xenotech",
-			"original_id": "gray-entity-biotech",
-			"title": "Gray Biotech",
-			"text_sha256": "aaa559e1d1508230b62ff1beb0f0b52d80305d732f189499e666a497b89d0515"
 		},
 		{
 			"id": "f6689387-bfb7-4fb4-86a3-2fdf32ae19b6",
@@ -27198,13 +26012,6 @@
 			"text_sha256": "7d261877bdaf50c6d3d0ad711506ee17c80918389842481a84889166648c0eb0"
 		},
 		{
-			"id": "f71e1e09-248b-4c9b-94a7-417f31456af5",
-			"research_slug": "xenotech",
-			"original_id": "examination-tables",
-			"title": "Examination Tables",
-			"text_sha256": "25f528f37434924c1952a0e3c96b9d9ba6fd889278b495f9b00323aa80d2c48b"
-		},
-		{
 			"id": "f73081f3-2219-4a81-ad90-66c5892deb88",
 			"research_slug": "horizons",
 			"original_id": "self-sovereign-identity-ssi",
@@ -27247,13 +26054,6 @@
 			"text_sha256": "04bf1e5f14403fcf7bb9343da574822672da38f7e49ad5fb6778ac47cf0afa3e"
 		},
 		{
-			"id": "f7709c79-0f5b-4e3d-bc1e-c5acd69ef4a8",
-			"research_slug": "xenotech",
-			"original_id": "aatip-aawsap-dia-studies",
-			"title": "Aerospace Studies",
-			"text_sha256": "3d3c8eaf71a88b5427bbe1b05e2ef70c067dbcdb8c80cbbc19427de241950b53"
-		},
-		{
 			"id": "f77432ad-f0b6-44bb-8dbf-cce9407c0e39",
 			"research_slug": "spore",
 			"original_id": "plant-based-meat-alternatives",
@@ -27289,13 +26089,6 @@
 			"text_sha256": "942c256ee06ad7c09beb8d6ddddc49079b3e4585b5c176ccda821c7ab7c2d852"
 		},
 		{
-			"id": "f7aaf2dd-b6d5-4f61-8d8b-fc64300ba602",
-			"research_slug": "xenotech",
-			"original_id": "onboard-living-biomes",
-			"title": "Bioregenerative Habitats",
-			"text_sha256": "ed070f6c10a49f5f3c8386c843852d2c9aee286276fe950e255406585947aec3"
-		},
-		{
 			"id": "f7b151e1-5885-42a5-a395-19aeb1559b69",
 			"research_slug": "lattice",
 			"original_id": "secure-iot-machine-wallets",
@@ -27308,13 +26101,6 @@
 			"original_id": "autonomous-haulage",
 			"title": "Autonomous Haulage Systems",
 			"text_sha256": "53e9c4dbe90155d46f939ad4a436c00a59efb603430e197405fa1fc7d4164f7c"
-		},
-		{
-			"id": "f7cc756d-1ad2-48b6-92ab-9954ced85582",
-			"research_slug": "xenotech",
-			"original_id": "military-landing-craft-technology",
-			"title": "Military Landing Craft",
-			"text_sha256": "1c7d91cf98952f36dcb0e6f2692fc0a2774b112236790f4600427e2f2b8f92e1"
 		},
 		{
 			"id": "f7d036e0-72f3-4403-8ebb-edc4e3094e3c",
@@ -27343,13 +26129,6 @@
 			"original_id": "europe__x-road-decentralized-data-exchange",
 			"title": "X-Road Decentralized Data Exchange",
 			"text_sha256": "057397bbffc69747f6bc6018d5503f787575ad348882b4b424cc65af8c05b93c"
-		},
-		{
-			"id": "f7f59b88-3a48-48df-b4d8-f2e2bc5a6b5b",
-			"research_slug": "xenotech",
-			"original_id": "ultracapacitor-energy-storage",
-			"title": "Ultracapacitors",
-			"text_sha256": "029dcebd7d5bd747bafb01c6245051df9cbd729d7144c2fea55b8ced0e801e96"
 		},
 		{
 			"id": "f813c3c0-381c-4b38-8875-159f8556d818",
@@ -27434,13 +26213,6 @@
 			"original_id": "india__bharat-biotech-vaccines",
 			"title": "Bharat Biotech Indigenous Vaccine Platform",
 			"text_sha256": "0a27478a46962f1e5ace92ca392872c75d50b1832068a4fd7af7f835841b7532"
-		},
-		{
-			"id": "f8994318-ae01-4416-9d27-fb6d2658a26f",
-			"research_slug": "xenotech",
-			"original_id": "torsion-field-theory",
-			"title": "Torsion Field Theory",
-			"text_sha256": "ce1413cc3fe1e1cbd38dd0755dc184afce6c51dd6bad523ae45f7a2c28c359f8"
 		},
 		{
 			"id": "f8aae0db-53a1-435c-9b2e-6bafe52f3a20",
@@ -27546,13 +26318,6 @@
 			"original_id": "diamond-nv-centers",
 			"title": "Diamond NV Centers",
 			"text_sha256": "50b276b91111cef4f6834342f2256bbe3c8f03c7f298b66ff6c10ea9c90c5028"
-		},
-		{
-			"id": "f9999180-2dc1-4ad7-be5b-e2b924bb3790",
-			"research_slug": "xenotech",
-			"original_id": "transdimensional-interface-technology",
-			"title": "Dimensional Interface",
-			"text_sha256": "32df6243c5922a5a893905ea3fea50e8e5f1e9210ca7c67b3f2807c8cded88fb"
 		},
 		{
 			"id": "f9b823dc-81ce-4259-a022-7083f17ef2a2",

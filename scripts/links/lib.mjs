@@ -35,6 +35,13 @@ export const exists = existsSync;
 
 export const sha256 = (s) => createHash("sha256").update(s, "utf8").digest("hex");
 
+/** Research projects never linked (D52): Map research_slug -> { decision, excluded_at, reason }. */
+export function excludedProjects() {
+	const f = path.join(LINKS, "excluded-projects.json");
+	if (!existsSync(f)) return new Map();
+	return new Map(readJson(f).projects.map((p) => [p.research_slug, p]));
+}
+
 /** Same recipe as research `scripts/sync-cms-embeddings.ts`. */
 export const technologyText = (t) => [t.title, t.summary, t.description].filter(Boolean).join("\n\n");
 

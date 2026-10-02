@@ -66,6 +66,6 @@ Hindsight connects to other Envisioning systems only where the product needs it.
 ## Traps
 
 - **Embeddings for linking.** The Core CMS column `technologies.embedding` is `vector(1536)` holding `text-embedding-3-large` requested with `dimensions: 1536`. It is not `3-small` (cosine about 0 against stored rows) and not 3072 (the Core migration file is stale). Text recipe: title, summary, description joined by blank lines. Before writing or comparing vectors, re-embed two stored rows and confirm cosine above 0.9. Subject embeddings must use the same model and dimensions.
-- **All 4,807 technologies have embeddings** (backfill 2026-09-28, research `scripts/sync-cms-embeddings.ts`). Only the 4,018 in published research projects are linked (D48). New ones depend on auto-embedding on insert (core#168); a technology without one gets no link proposal.
+- **All 4,807 technologies have embeddings** (backfill 2026-09-28, research `scripts/sync-cms-embeddings.ts`). Only the 4,018 in published research projects are linked (D48), less the projects in `data/links/excluded-projects.json` (D52: `xenotech`, 177), so 3,841. New ones depend on auto-embedding on insert (core#168); a technology without one gets no link proposal.
 - **Web search budget.** Grading agents share a web-search limit of about 200 per session. Prefer WebFetch on known sources; cap WebSearch per agent.
 - **`.next` race in www.** A www build can fail with `ENOTEMPTY ... rmdir .next/server` when another build or dev server touches `.next`. Rerun; check the exit code before committing.

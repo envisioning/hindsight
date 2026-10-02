@@ -5,13 +5,14 @@
 // plus every exact or alias title match (D13 normalized key). Mutual nearest neighbours are flagged.
 // --titles-only (D49): only the exact and alias title matches; no vectors, similarity null.
 // Pairs decided in an earlier run (data/links/runs/<other run>/final.json `decisions`) or whose latest
-// link row is `curated` are skipped (D49).
+// link row is `curated` are skipped (D49). Technologies of excluded projects
+// (data/links/excluded-projects.json, D52) are never proposed.
 // Writes, in the repo: data/links/runs/<run>/candidates.json (LinkCandidate rows) and summary counts.
 // Writes, outside the repo: <out>/batches/<batch>.json, the verifier input.
 import { readdirSync } from "node:fs";
 import path from "node:path";
 import { LinkCandidate } from "../../src/schema.ts";
-import { EMBEDDING_MODEL, LINKS, NORMALIZED, cacheDir, dot, exists, loadVectors, readJson, titleKey, writeJson } from "./lib.mjs";
+import { EMBEDDING_MODEL, LINKS, NORMALIZED, cacheDir, dot, excludedProjects, exists, loadVectors, readJson, titleKey, writeJson } from "./lib.mjs";
 
 const arg = (name, dflt) => (process.argv.includes(name) ? process.argv[process.argv.indexOf(name) + 1] : dflt);
 const run = arg("--run");
@@ -23,7 +24,9 @@ const SUBJECT_TOP = 5;
 const TECH_TOP = 3;
 
 const dir = cacheDir();
-const techRows = readJson(path.join(dir, "technologies.json"));
+const excluded = excludedProjects();
+const allTechRows = readJson(path.join(dir, "technologies.json"));
+const techRows = allTechRows.filter((t) => !excluded.has(t.research_slug));
 const techById = new Map(techRows.map((t) => [t.id, t]));
 const subjects = new Map(readJson(path.join(NORMALIZED, "subjects.json")).map((s) => [s.id, s]));
 const subjectText = readJson(path.join(NORMALIZED, "subject-text.json"));
@@ -34,7 +37,9 @@ if (titlesOnly) {
 	T = { ids: techRows.map((t) => t.id), vecs: null };
 	S = { ids: subjectText.filter((s) => s.kind === "technology").map((s) => s.subject_id), vecs: null };
 } else {
-	T = loadVectors("technologies");
+	const all = loadVectors("technologies");
+	const keep = all.ids.map((id) => techById.has(id));
+	T = { ids: all.ids.filter((_, i) => keep[i]), vecs: all.vecs.filter((_, i) => keep[i]) };
 	S = loadVectors("subjects");
 	const vectors = readJson(path.join(LINKS, "subject-vectors.json"));
 	if (vectors.model !== EMBEDDING_MODEL) throw new Error(`subject vectors are ${vectors.model}`);
@@ -160,6 +165,8 @@ const summary = {
 		: `subject top ${SUBJECT_TOP} + technology top ${TECH_TOP}, union, plus exact and alias title matches (D48)`,
 	subjects: nS,
 	technologies: nT,
+	excluded_projects: [...excluded.keys()].sort(),
+	technologies_in_excluded_projects: allTechRows.length - techRows.length,
 	skipped_decided_in_earlier_run: skippedDecided,
 	skipped_curated: skippedCurated,
 	candidates: rows.length,

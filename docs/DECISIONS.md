@@ -783,3 +783,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** Two rows per moved link; trend passes may need re-running after a curation review.
 
 **Overturned by.** Subject ids that resolve through the alias registry at read time.
+
+## D52: Projects excluded from linking (amends D48)
+
+*Recorded 2026-10-02. Approved by MZ.*
+
+**Decision.** A research project can be excluded from subject-technology linking. The list is `data/links/excluded-projects.json`, one entry per project with decision, date and reason. `scripts/links/snapshot.mjs` leaves the technologies of excluded projects out of `technologies-snapshot.json` (`--from-cache` rebuilds it without a CMS call) and `scripts/links/candidates.mjs` never proposes them. An active link row to an excluded project gets a `retracted` row with reason `project excluded (D52)`. The first entry is `xenotech`: its pages present alleged UAP and exotic technology under plain technology titles (`xenotech/arts-parts-metamaterials`, titled "Metamaterials", is about alleged Roswell samples), so title and embedding matches against real technologies mislead. 177 technologies leave the snapshot (4,018 to 3,841); two `d48-r0` links are retracted (`programmable-matter` to `xenotech/shapeshifting-technology`, `ultra-capacitors` to `xenotech/ultracapacitor-energy-storage`).
+
+**Why.** D48 scoped linking by publication status only. A project that describes a contested or speculative object under the name of a real technology produces links that verifiers confirm on the title and opening definition: the r0 verifiers accepted `xenotech/ultracapacitor-energy-storage`, framed by a UAP-programme study (the auditor confirmed it), and `xenotech/shapeshifting-technology`, titled "Programmable Matter" but largely about encounter testimony. Checking every page of such a project one by one is not worth the risk of a misleading link.
+
+**Cost.** Any genuine overlap with an excluded project is lost. The exclusion is a judgment about whole projects, made by hand.
+
+**Overturned by.** A per-technology filter that can tell exotic claims from real technology pages, or a change in the project's framing, recorded as a new decision.

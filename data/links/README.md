@@ -6,7 +6,8 @@ Hindsight subjects (kind `technology`) linked to technologies in Envisioning's r
 
 | File | What | Written by |
 |---|---|---|
-| `technologies-snapshot.json` | The technologies the run saw: id, URL parts, title, sha256 of the embedding text. No vectors. | `snapshot.mjs` |
+| `excluded-projects.json` | Research projects never linked (D52), each with decision, date and reason. | by hand, by decision |
+| `technologies-snapshot.json` | The technologies the run saw: id, URL parts, title, sha256 of the embedding text. No vectors. Excluded projects left out. | `snapshot.mjs` |
 | `model-checks.json` | Embedding trap check: stored rows re-embedded, cosine must be above 0.9. Append-only log. | `check-model.mjs` |
 | `subject-vectors.json` | Model, dimensions and the sha256 of each embedded subject text. No vectors. | `embed-subjects.mjs` |
 | `runs/<run>/candidates.json` | Candidate pairs with similarity, ranks from each side, mutual nearest neighbour flag, match type, batch. | `candidates.mjs` |
@@ -46,6 +47,12 @@ Reading of the verdicts (D48, applied from `d48-r0`): a technology whose `origin
 
 Amendment (D49): run `d48-r0` is titles only (`candidates.mjs --titles-only`): exact and alias title matches, no vectors, similarity null. Every later run skips pairs decided in an earlier run (`final.json` `decisions`) and pairs held by a curated link. When one verdict dominates (expected agreement 0.8 or more), the agreement gate is observed agreement 0.9 or more instead of kappa 0.6.
 
+## Excluded projects (D52)
+
+`excluded-projects.json` lists research projects whose technologies are never linked. `snapshot.mjs` leaves them out of `technologies-snapshot.json` (the cache keeps every row the CMS returned) and `candidates.mjs` never proposes them. `snapshot.mjs --from-cache` rebuilds the snapshot from the cache after a change to the list, without a CMS call. An active link to an excluded project gets a `retracted` row (agent `project-exclusion:D52`, reason `project excluded (D52)`).
+
+- 2026-10-02, `xenotech`: alleged UAP and exotic technology under plain technology titles. 177 technologies left out (snapshot 4,018 to 3,841). Retracted: `programmable-matter` to `xenotech/shapeshifting-technology` and `ultra-capacitors` to `xenotech/ultracapacitor-energy-storage` (both `same`, `d48-r0`).
+
 ## Subject merges
 
 A judgment merge (D13, `subject-curation.json`) moves every label of the retired subject to the surviving one, so the retired id leaves `subjects.json` (ids are never reused). Link rows do not follow by themselves: `final.mjs` keys pairs by subject id. For each active row of a retired subject, two rows are appended to `research.json`: a `retracted` row on the old pair (agent `subject-merge:<review>`), and an `active` row on the surviving subject's pair with the same relation, method, run and verifier agent, its reason naming the row it moves. A pair the survivor already holds active gets only the retraction. The moved pair is not in any run's `decisions`, so a later run may decide it again (D48: a merged subject needs a new run for its pairs).
@@ -54,7 +61,7 @@ A judgment merge (D13, `subject-curation.json`) moves every label of the retired
 
 ## State
 
-- `d48-r0` (titles only): 100 candidates (97 exact, 3 alias), 79 subjects, 1 batch. Verifiers agree on 99 of 100 (kappa 0.97); 1 adjudicated (`synthetic-data` to `cities/synthetic-data`: `link`). Verdicts: 83 link, 15 narrower (14 region-prefixed pages, plus `cities/generative-ai`), 0 broader, 2 no_link. 98 rows appended to `research.json` (83 `same`, 15 `narrower`).
+- `d48-r0` (titles only): 100 candidates (97 exact, 3 alias), 79 subjects, 1 batch. Verifiers agree on 99 of 100 (kappa 0.97); 1 adjudicated (`synthetic-data` to `cities/synthetic-data`: `link`). Verdicts: 83 link, 15 narrower (14 region-prefixed pages, plus `cities/generative-ai`), 0 broader, 2 no_link. 98 rows appended to `research.json` (83 `same`, 15 `narrower`). 2 of the `same` links (to `xenotech`) retracted on 2026-10-02 (D52).
 - `d48-r1` (embeddings): blocked on a working embedding key.
 
-Audit error rate: `d48-r0` 0% (50 sampled of 98 accepted links: 43 link, 7 narrower; 50 confirm, 0 correct, 0 reject). Audited on the CMS title, summary and description, because the research pages answered 429 behind a bot checkpoint.
+Audit error rate: `d48-r0` 0% (50 sampled of 98 accepted links: 43 link, 7 narrower; 50 confirm, 0 correct, 0 reject). One confirmed sample, `ultra-capacitors` to `xenotech/ultracapacitor-energy-storage`, was later retracted by project exclusion (D52), not by the audit. Audited on the CMS title, summary and description, because the research pages answered 429 behind a bot checkpoint.
