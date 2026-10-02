@@ -565,7 +565,7 @@ Not captured: the Future of Money timeline and reports (no dated claims), the Fu
 
 **Overturned by.** Evidence that a poster's own text meant mainstream adoption after all.
 
-## D38 (lane A): Numeric actuals on the forecast's own definition: ECB GDP and early Focus Selic (issue #66)
+## D38: Numeric actuals on the forecast's own definition: ECB GDP and early Focus Selic (issue #66)
 
 *Recorded 2026-10-02.*
 
