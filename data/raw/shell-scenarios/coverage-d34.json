@@ -1,14 +1,38 @@
 {
  "rule": "D34",
- "note": "Pathway coverage: is the observed value inside the edition's scenario range for that metric and year? Covered share is a property of the set, never a hit rate. Arithmetic, as D19.",
+ "note": "Pathway coverage: is the observed value inside the edition's scenario range for that metric and year? Covered share is a property of the set, never a hit rate. The comparison is arithmetic (as D19); the matching (observed series, definition, edition) is a judgment made once in code, so it has a D11 matching audit like the numeric sources (D19, #53). D11: a share only from 20 graded values, with its Wilson 95% interval; the audit-adjusted interval widens it by the residual audit error rate (D28).",
  "counts": {
   "covered": 14,
-  "partly_covered": 32,
-  "not_covered": 11,
-  "no_observed": 0,
+  "partly_covered": 29,
+  "not_covered": 8,
+  "no_observed": 6,
+  "excluded": 0,
   "unmapped_claims": 54
  },
- "coverage_share": 0.2456,
+ "coverage_share": 0.2745,
+ "wilson95": [
+  0.171,
+  0.409
+ ],
+ "audit_adjusted95": [
+  0.171,
+  0.409
+ ],
+ "audit": {
+  "rule": "D11 matching audit (D19, D20), as data/graded/audit (#53)",
+  "seed": "d11:shell-scenarios:d34",
+  "sample": 50,
+  "of_graded": 57,
+  "audited": 50,
+  "confirmed": 44,
+  "corrected": 6,
+  "contested": 0,
+  "error_rate": 0.12,
+  "fixed_in_code": 6,
+  "residual_errors": 0,
+  "residual_error_rate": 0,
+  "pending_recheck": 0
+ },
  "by_edition": {
   "2013": {
    "covered": 0,
@@ -17,12 +41,12 @@
   },
   "2021": {
    "covered": 9,
-   "partly_covered": 17,
-   "not_covered": 6
+   "partly_covered": 15,
+   "not_covered": 3
   },
   "2023": {
    "covered": 5,
-   "partly_covered": 11,
+   "partly_covered": 10,
    "not_covered": 2
   }
  },
@@ -53,10 +77,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "not_covered",
-   "status": "graded",
    "gap_outside_range": 0.1482,
    "closest_scenario": "Mountains",
-   "closest_id": "shell-scenarios-2013-008"
+   "closest_id": "shell-scenarios-2013-008",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -84,10 +108,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0589,
    "closest_scenario": "Oceans",
-   "closest_id": "shell-scenarios-2013-021"
+   "closest_id": "shell-scenarios-2013-021",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -115,10 +139,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "not_covered",
-   "status": "graded",
    "gap_outside_range": 0.1223,
    "closest_scenario": "Oceans",
-   "closest_id": "shell-scenarios-2013-026"
+   "closest_id": "shell-scenarios-2013-026",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -146,10 +170,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0911,
    "closest_scenario": "Mountains",
-   "closest_id": "shell-scenarios-2013-004"
+   "closest_id": "shell-scenarios-2013-004",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -177,10 +201,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0509,
    "closest_scenario": "Oceans",
-   "closest_id": "shell-scenarios-2013-029"
+   "closest_id": "shell-scenarios-2013-029",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -208,10 +232,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "not_covered",
-   "status": "graded",
    "gap_outside_range": 0.2263,
    "closest_scenario": "Oceans",
-   "closest_id": "shell-scenarios-2013-030"
+   "closest_id": "shell-scenarios-2013-030",
+   "status": "graded"
   },
   {
    "edition": "2013",
@@ -239,10 +263,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0979,
    "closest_scenario": "Mountains",
-   "closest_id": "shell-scenarios-2013-017"
+   "closest_id": "shell-scenarios-2013-017",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -275,10 +299,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.009,
    "closest_scenario": "Waves",
    "closest_id": "shell-scenarios-2021-050",
+   "status": "graded",
    "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
   },
   {
@@ -312,10 +336,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0039,
    "closest_scenario": "Waves",
    "closest_id": "shell-scenarios-2021-051",
+   "status": "graded",
    "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
   },
   {
@@ -349,10 +373,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Waves",
    "closest_id": "shell-scenarios-2021-052",
+   "status": "graded",
    "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
   },
   {
@@ -386,10 +410,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Sky 1.5",
    "closest_id": "shell-scenarios-2021-149",
+   "status": "graded",
    "note": "Compared with Shell's later net energy CO2 (which nets out CCS and includes bioenergy CO2); differs by 1 to 4% from EI combustion CO2."
   },
   {
@@ -423,10 +447,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0567,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-020"
+   "closest_id": "shell-scenarios-2021-020",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -459,10 +483,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0466,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-021"
+   "closest_id": "shell-scenarios-2021-021",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -495,10 +519,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0452,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-022"
+   "closest_id": "shell-scenarios-2021-022",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -531,10 +555,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0027,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-023"
+   "closest_id": "shell-scenarios-2021-023",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -567,10 +591,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.007,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-014"
+   "closest_id": "shell-scenarios-2021-014",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -603,10 +627,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-111"
+   "closest_id": "shell-scenarios-2021-111",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -639,10 +663,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-112"
+   "closest_id": "shell-scenarios-2021-112",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -675,10 +699,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0051,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-017"
+   "closest_id": "shell-scenarios-2021-017",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -711,10 +735,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-074"
+   "closest_id": "shell-scenarios-2021-074",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -747,10 +771,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-075"
+   "closest_id": "shell-scenarios-2021-075",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -783,10 +807,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-076"
+   "closest_id": "shell-scenarios-2021-076",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -819,10 +843,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0012,
    "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-077"
+   "closest_id": "shell-scenarios-2021-077",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -855,10 +879,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0207,
    "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-056"
+   "closest_id": "shell-scenarios-2021-056",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -891,10 +915,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0071,
    "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-057"
+   "closest_id": "shell-scenarios-2021-057",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -927,10 +951,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-058"
+   "closest_id": "shell-scenarios-2021-058",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -963,10 +987,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-011"
+   "closest_id": "shell-scenarios-2021-011",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -990,19 +1014,15 @@
      "value": 6.101
     }
    ],
-   "range": [
-    4.727,
-    6.101
-   ],
-   "scenarios": 3,
-   "observed": 9.5199,
-   "observed_series": "shell_history",
-   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
-   "verdict": "not_covered",
-   "status": "graded",
-   "gap_outside_range": 0.5604,
-   "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-128"
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed solar series on the edition's definition after 2020 (Shell PV history changes basis in 2021; EI excludes solar heat)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "not_covered",
+    "observed": 9.5199,
+    "observed_series": "shell_history"
+   }
   },
   {
    "edition": "2021",
@@ -1026,19 +1046,15 @@
      "value": 7.122
     }
    ],
-   "range": [
-    5.141,
-    7.122
-   ],
-   "scenarios": 3,
-   "observed": 11.712,
-   "observed_series": "shell_history",
-   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
-   "verdict": "not_covered",
-   "status": "graded",
-   "gap_outside_range": 0.6445,
-   "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-129"
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed solar series on the edition's definition after 2020 (Shell PV history changes basis in 2021; EI excludes solar heat)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "not_covered",
+    "observed": 11.712,
+    "observed_series": "shell_history"
+   }
   },
   {
    "edition": "2021",
@@ -1062,19 +1078,15 @@
      "value": 8.383
     }
    ],
-   "range": [
-    5.622,
-    8.383
-   ],
-   "scenarios": 3,
-   "observed": 13.884,
-   "observed_series": "shell_history",
-   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
-   "verdict": "not_covered",
-   "status": "graded",
-   "gap_outside_range": 0.6562,
-   "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-130"
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed solar series on the edition's definition after 2020 (Shell PV history changes basis in 2021; EI excludes solar heat)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "not_covered",
+    "observed": 13.884,
+    "observed_series": "shell_history"
+   }
   },
   {
    "edition": "2021",
@@ -1098,19 +1110,15 @@
      "value": 9.914
     }
    ],
-   "range": [
-    6.224,
-    9.914
-   ],
-   "scenarios": 3,
-   "observed": 10.1198,
-   "observed_series": "ei_fallback",
-   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0208,
-   "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-131"
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed solar series on the edition's definition after 2020 (Shell PV history changes basis in 2021; EI excludes solar heat)",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 10.1198,
+    "observed_series": "ei_fallback"
+   }
   },
   {
    "edition": "2021",
@@ -1143,10 +1151,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "not_covered",
-   "status": "graded",
    "gap_outside_range": 0.1277,
    "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-134"
+   "closest_id": "shell-scenarios-2021-134",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -1179,10 +1187,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "not_covered",
-   "status": "graded",
    "gap_outside_range": 0.142,
    "closest_scenario": "Sky 1.5",
-   "closest_id": "shell-scenarios-2021-135"
+   "closest_id": "shell-scenarios-2021-135",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -1215,10 +1223,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "not_covered",
-   "status": "graded",
    "gap_outside_range": 0.1544,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-040"
+   "closest_id": "shell-scenarios-2021-040",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -1251,10 +1259,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0718,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-041"
+   "closest_id": "shell-scenarios-2021-041",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -1287,10 +1295,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0111,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-044"
+   "closest_id": "shell-scenarios-2021-044",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -1323,10 +1331,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0105,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-045"
+   "closest_id": "shell-scenarios-2021-045",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -1359,10 +1367,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0097,
    "closest_scenario": "Waves",
-   "closest_id": "shell-scenarios-2021-046"
+   "closest_id": "shell-scenarios-2021-046",
+   "status": "graded"
   },
   {
    "edition": "2021",
@@ -1386,20 +1394,15 @@
      "value": 637.896
     }
    ],
-   "range": [
-    621.714,
-    652.464
-   ],
-   "scenarios": 3,
-   "observed": 600.3129,
-   "observed_series": "ei_fallback",
-   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0344,
-   "closest_scenario": "Islands",
-   "closest_id": "shell-scenarios-2021-095",
-   "note": "Observed value confidence low (ei_fallback)."
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 600.3129,
+    "observed_series": "ei_fallback"
+   }
   },
   {
    "edition": "2023",
@@ -1427,10 +1430,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0355,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-025"
+   "closest_id": "shell-scenarios-2023-025",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1458,10 +1461,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0071,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-026"
+   "closest_id": "shell-scenarios-2023-026",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1489,10 +1492,10 @@
    "observed_series": "iea_gevo",
    "observed_vintage": "IEA Global EV Outlook 2026 data (Global EV Data Explorer, historical, data to 2025)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-055"
+   "closest_id": "shell-scenarios-2023-055",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1520,10 +1523,10 @@
    "observed_series": "iea_gevo",
    "observed_vintage": "IEA Global EV Outlook 2026 data (Global EV Data Explorer, historical, data to 2025)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-056"
+   "closest_id": "shell-scenarios-2023-056",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1551,10 +1554,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0669,
    "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-037"
+   "closest_id": "shell-scenarios-2023-037",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1582,10 +1585,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0213,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-011"
+   "closest_id": "shell-scenarios-2023-011",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1613,10 +1616,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0385,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-007"
+   "closest_id": "shell-scenarios-2023-007",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1644,10 +1647,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.069,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-008"
+   "closest_id": "shell-scenarios-2023-008",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1675,10 +1678,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-040"
+   "closest_id": "shell-scenarios-2023-040",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1706,10 +1709,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0013,
    "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-041"
+   "closest_id": "shell-scenarios-2023-041",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1737,10 +1740,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-004"
+   "closest_id": "shell-scenarios-2023-004",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1768,10 +1771,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0258,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-005"
+   "closest_id": "shell-scenarios-2023-005",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1795,14 +1798,15 @@
     5.957
    ],
    "scenarios": 2,
-   "observed": 11.9223,
-   "observed_series": "shell_history",
-   "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
+   "observed": 7.801,
+   "observed_series": "ei_fallback",
+   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "not_covered",
-   "status": "graded",
-   "gap_outside_range": 1.0014,
+   "gap_outside_range": 0.3096,
    "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-043"
+   "closest_id": "shell-scenarios-2023-043",
+   "status": "graded",
+   "note": "From 2021 compared with EI solar power: Shell's own PV history changes basis in 2021 (1.5-1.7x EI)."
   },
   {
    "edition": "2023",
@@ -1830,10 +1834,11 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "not_covered",
-   "status": "graded",
    "gap_outside_range": 0.3056,
    "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-044"
+   "closest_id": "shell-scenarios-2023-044",
+   "status": "graded",
+   "note": "From 2021 compared with EI solar power: Shell's own PV history changes basis in 2021 (1.5-1.7x EI)."
   },
   {
    "edition": "2023",
@@ -1861,10 +1866,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "covered",
-   "status": "graded",
    "gap_outside_range": 0,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-019"
+   "closest_id": "shell-scenarios-2023-019",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1892,10 +1897,10 @@
    "observed_series": "ei_fallback",
    "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0535,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-020"
+   "closest_id": "shell-scenarios-2023-020",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1923,10 +1928,10 @@
    "observed_series": "shell_history",
    "observed_vintage": "Shell 2025 Energy Security Scenarios data workbook (scenarios-2025-compendium-summary.xlsb)",
    "verdict": "partly_covered",
-   "status": "graded",
    "gap_outside_range": 0.0439,
    "closest_scenario": "Archipelagos",
-   "closest_id": "shell-scenarios-2023-022"
+   "closest_id": "shell-scenarios-2023-022",
+   "status": "graded"
   },
   {
    "edition": "2023",
@@ -1945,20 +1950,15 @@
      "value": 622.597
     }
    ],
-   "range": [
-    622.597,
-    630.493
-   ],
-   "scenarios": 2,
-   "observed": 600.3129,
-   "observed_series": "ei_fallback",
-   "observed_vintage": "Energy Institute Statistical Review of World Energy 2026 (75th edition, data to 2025)",
-   "verdict": "partly_covered",
-   "status": "graded",
-   "gap_outside_range": 0.0358,
-   "closest_scenario": "Sky 2050",
-   "closest_id": "shell-scenarios-2023-050",
-   "note": "Observed value confidence low (ei_fallback)."
+   "verdict": null,
+   "status": "no_observed",
+   "note": "no observed value on this definition for this year",
+   "pre_fix": {
+    "status": "graded",
+    "verdict": "partly_covered",
+    "observed": 600.3129,
+    "observed_series": "ei_fallback"
+   }
   }
  ]
 }

@@ -1,7 +1,7 @@
 /**
  * The `validation` table of the release export (#3, #40, D44): per-source agreement, audit and interval
  * figures, read from the files the pipelines write. Figures are copied, not recomputed, except where D44
- * says so (Wilson intervals of D34 coverage shares, D28 widening of D33 shares). Rows are checked against
+ * says so (D28 widening of D33 shares and of D34 coverage shares; D34 Wilson intervals are checked against the counts). Rows are checked against
  * `ValidationRow` by the export, which fails closed. `warnings` lists files that disagree with each other;
  * they are reported, not repaired.
  */
@@ -240,50 +240,70 @@ function d31Rows(source: string): Row[] {
   });
 }
 
-/** D32: WEF share of major events ranked high, per method block. No audit file exists for D32. */
+/** D32: WEF share of major events ranked high, per method block, with the D11/D20 audit of the event matches (audit-d32.json). */
 function d32Rows(source: string, warnings: string[]): Row[] {
   const sum = read(join(RAW, source, "summary-d32.json"));
-  warnings.push(`${source}: D32 has no audit; matcher agreement ${sum.matcher_agreement.agreed}/${sum.matcher_agreement.events}, no kappa`);
+  const a = sum.audit as Obj | null | undefined;
+  if (!a) warnings.push(`${source}: D32 has no audit; matcher agreement ${sum.matcher_agreement.agreed}/${sum.matcher_agreement.events}, no kappa`);
   return (sum.blocks as Obj[]).map((b) => {
     const row = blank(source, "measure", b.block, sum.rule);
     Object.assign(row, {
       measure: "ranked_high_share",
-      n: b.events,
+      n: b.events + (b.contested ?? 0) + (b.dropped_by_audit ?? 0),
       n_graded: b.events,
       k: b.ranked_high,
       share: b.share_ranked_high,
       ci95: b.wilson95,
+      ci95_audit_adjusted: b.audit_adjusted95 ?? null,
       rate_withheld: b.rate_withheld ?? null,
-      counts: { ranked_high: b.ranked_high, ranked_low: b.ranked_low, absent: b.absent },
+      counts: { ranked_high: b.ranked_high, ranked_low: b.ranked_low, absent: b.absent, contested: b.contested ?? 0, dropped_by_audit: b.dropped_by_audit ?? 0 },
       agreement_n: sum.matcher_agreement.events,
       agreement_agreed: sum.matcher_agreement.agreed,
       raw_agreement: round(sum.matcher_agreement.agreed / sum.matcher_agreement.events, 4),
-      inputs: [rel(source, "summary-d32.json")],
+      inputs: [rel(source, "summary-d32.json"), ...(a ? [rel(source, "audit-d32.json")] : [])],
     });
+    if (a)
+      Object.assign(row, { audit_seed: a.seed, audit_sample: a.sample, audited: a.audited, audit_confirmed: a.confirmed, audit_corrected: a.corrected, audit_contested: a.contested, audit_error_rate: a.error_rate });
     return row;
   });
 }
 
-/** D34 pathway sets: coverage share, arithmetic (as D19). D44: the export adds the Wilson interval and applies D11. */
+/**
+ * D34 coverage: pathway sets (arithmetic, as D19, with a matching audit like #53) and narrative sets
+ * (two blind graders and an adjudicator). The scripts apply D11 and write the Wilson interval; the export
+ * checks it against the counts and copies it.
+ */
 function d34Rows(source: string, warnings: string[]): Row[] {
   const cov = read(join(RAW, source, "coverage-d34.json"));
   const counts = cov.counts as Record<string, number>;
   const graded = (counts.covered ?? 0) + (counts.partly_covered ?? 0) + (counts.not_covered ?? 0);
   const k = counts.covered ?? 0;
-  if (graded < MIN_N && cov.coverage_share !== null) warnings.push(`${source}: coverage-d34.json publishes a share (${cov.coverage_share}) over ${graded} graded values, fewer than ${MIN_N}; withheld here (D11)`);
-  if (graded && cov.coverage_share !== round(k / graded, 4)) warnings.push(`${source}: coverage_share ${cov.coverage_share} is not covered / graded (${k}/${graded})`);
+  const published = graded >= MIN_N;
+  if (!published && cov.coverage_share !== null) warnings.push(`${source}: coverage-d34.json publishes a share (${cov.coverage_share}) over ${graded} graded values, fewer than ${MIN_N}; withheld here (D11)`);
+  if (published && cov.coverage_share !== round(k / graded, 4)) warnings.push(`${source}: coverage_share ${cov.coverage_share} is not covered / graded (${k}/${graded})`);
+  const ci = published ? wilson(k, graded) : null;
+  if (published && JSON.stringify(cov.wilson95 ?? null) !== JSON.stringify(ci)) warnings.push(`${source}: coverage-d34.json wilson95 ${JSON.stringify(cov.wilson95 ?? null)} differs from the counts (${JSON.stringify(ci)})`);
+  const a = cov.audit as Obj | null | undefined;
+  const agr = cov.agreement as Obj | undefined;
   const row = blank(source, "measure", "all", cov.rule);
   Object.assign(row, {
     measure: "coverage_share",
     n: (cov.rows as unknown[]).length,
     n_graded: graded,
     k,
-    share: graded >= MIN_N ? round(k / graded, 4) : null,
-    ci95: graded >= MIN_N ? wilson(k, graded) : null,
-    rate_withheld: graded >= MIN_N ? null : withheld(graded, "graded values"),
+    share: published ? round(k / graded, 4) : null,
+    ci95: ci,
+    ci95_audit_adjusted: published && a ? widen(ci, a.residual_error_rate ?? a.error_rate) : null,
+    rate_withheld: published ? null : withheld(graded, agr ? "graded sets" : "graded values"),
     counts,
-    inputs: [rel(source, "coverage-d34.json")],
+    inputs: [rel(source, "coverage-d34.json"), ...(a ? [rel(source, "audit-d34.json")] : []), ...(agr ? [rel(source, "scenarios-d34-graderA.json"), rel(source, "scenarios-d34-graderB.json"), rel(source, "scenarios-adjudicated-d34.json")] : [])],
   });
+  if (agr) Object.assign(row, { agreement_n: agr.scenarios, agreement_agreed: agr.scenarios_agreed, raw_agreement: agr.scenarios ? round(agr.scenarios_agreed / agr.scenarios, 4) : null, adjudicated: agr.adjudicated });
+  if (a)
+    Object.assign(row, {
+      audit_seed: a.seed, audit_sample: a.sample, audited: a.audited, audit_confirmed: a.confirmed, audit_corrected: a.corrected, audit_contested: a.contested,
+      audit_error_rate: a.error_rate, audit_residual_error_rate: a.residual_error_rate ?? null, audit_fixed_in_code: a.fixed_in_code ?? null, audit_residual_errors: a.residual_errors ?? null, pending_recheck: a.pending_recheck ?? null,
+    });
   return [row];
 }
 

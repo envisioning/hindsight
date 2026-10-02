@@ -1,0 +1,514 @@
+{
+ "rule": "D11 matching audit of D34 pathway coverage (D19, D20)",
+ "checks": "scenario values as printed in the edition; observed series, definition, unit and year; observed value; the verdict.",
+ "auditor": "agent (D20)",
+ "seed": "d11:ipcc-pathways:d34",
+ "of": 18,
+ "sample": [
+  "1992|CO2 concentration, as reported in the SAR|2000",
+  "1992|CO2 concentration, as reported in the SAR|2010",
+  "1992|CO2 concentration, as reported in the SAR|2020",
+  "1992|CO2 emissions from fossil fuel and industrial processes|2010",
+  "1992|CO2 emissions from fossil fuel and industrial processes|2020",
+  "1992|CO2 emissions, total (energy, deforestation, cement)|2000",
+  "2000|CO2 abundance, ISAM model (reference)|2010",
+  "2000|CO2 abundance, ISAM model (reference)|2020",
+  "2000|Fossil Fuel CO2|2010",
+  "2000|Fossil Fuel CO2|2020",
+  "2000|Total CO2 (fossil fuel and other)|2010",
+  "2000|Total CO2 (fossil fuel and other)|2020",
+  "2013|CO2 concentration, annual global mean|2015",
+  "2013|CO2 concentration, annual global mean|2020",
+  "2013|CO2 concentration, annual global mean|2025",
+  "2013|Fossil & Industrial CO2 (fossil, cement, gas flaring and bunker fuels)|2015",
+  "2013|Fossil & Industrial CO2 (fossil, cement, gas flaring and bunker fuels)|2020",
+  "2021|CO2 concentration, annual global mean|2025"
+ ],
+ "method": "Population: the 18 graded rows of coverage-d34.json (all drawn: fewer than 50). Draw: scripts/measure-audit-sample.mjs, seed d11:ipcc-pathways:d34. Per row: scenario values against the edition (and where each value was first printed), set completeness, observed series and definition, observed value re-read from the NOAA file and the GCB 2025 workbook, year, verdict. Findings are fixed for every row in scripts/scenario-coverage-d34.mjs (values first printed after the edition are excluded; a group of one scenario is not a set range); coverage-d34.json counts fixed and residual findings as data/graded/audit does (#53).",
+ "records": {
+  "1992|CO2 concentration, as reported in the SAR|2000": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 368.96,
+    "observed_series": "noaa",
+    "range": [
+     372,
+     372
+    ]
+   },
+   "error_type": "edition",
+   "corrected": {
+    "status": "excluded",
+    "reason": "value not in the edition"
+   },
+   "note": "The value (372, IS92a only) is not in the 1992 Supplementary Report: it was first printed in the SAR (1995), restated in TAR WG I Appendix II (2001), as the claim's own note says. A value published years after the edition is not the edition's scenario (D19: not public at the time), and one of six IS92 scenarios is not the set's range. Exclude; observed value itself is right (368.96).",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/03/TAR-APPENDICES.pdf",
+     "title": "IPCC TAR WG I Appendix II",
+     "date": "2001",
+     "shows": "IS92a CO2 concentration, as reported in the SAR 2000: 372"
+    },
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2000: 368.96"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "1992|CO2 concentration, as reported in the SAR|2010": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 388.75,
+    "observed_series": "noaa",
+    "range": [
+     393,
+     393
+    ]
+   },
+   "error_type": "edition",
+   "corrected": {
+    "status": "excluded",
+    "reason": "value not in the edition"
+   },
+   "note": "The value (393, IS92a only) is not in the 1992 Supplementary Report: it was first printed in the SAR (1995), restated in TAR WG I Appendix II (2001), as the claim's own note says. A value published years after the edition is not the edition's scenario (D19: not public at the time), and one of six IS92 scenarios is not the set's range. Exclude; observed value itself is right (388.75).",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/03/TAR-APPENDICES.pdf",
+     "title": "IPCC TAR WG I Appendix II",
+     "date": "2001",
+     "shows": "IS92a CO2 concentration, as reported in the SAR 2010: 393"
+    },
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2010: 388.75"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "1992|CO2 concentration, as reported in the SAR|2020": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 412.44,
+    "observed_series": "noaa",
+    "range": [
+     418,
+     418
+    ]
+   },
+   "error_type": "edition",
+   "corrected": {
+    "status": "excluded",
+    "reason": "value not in the edition"
+   },
+   "note": "The value (418, IS92a only) is not in the 1992 Supplementary Report: it was first printed in the SAR (1995), restated in TAR WG I Appendix II (2001), as the claim's own note says. A value published years after the edition is not the edition's scenario (D19: not public at the time), and one of six IS92 scenarios is not the set's range. Exclude; observed value itself is right (412.44).",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/03/TAR-APPENDICES.pdf",
+     "title": "IPCC TAR WG I Appendix II",
+     "date": "2001",
+     "shows": "IS92a CO2 concentration, as reported in the SAR 2020: 418"
+    },
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2020: 412.44"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "1992|CO2 emissions from fossil fuel and industrial processes|2010": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 9.0933,
+    "observed_series": "gcb",
+    "range": [
+     8.68,
+     8.68
+    ]
+   },
+   "error_type": "edition",
+   "corrected": {
+    "status": "excluded",
+    "reason": "value not in the edition"
+   },
+   "note": "The value (8.68, IS92a only) is not in the 1992 Supplementary Report: it was first printed in TAR WG I Appendix II (2001), as the claim's own note says. A value published years after the edition is not the edition's scenario (D19: not public at the time), and one of six IS92 scenarios is not the set's range. Exclude; observed value itself is right (9.0933).",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/03/TAR-APPENDICES.pdf",
+     "title": "IPCC TAR WG I Appendix II",
+     "date": "2001",
+     "shows": "IS92a CO2 emissions from fossil fuel and industrial processes 2010: 8.68"
+    },
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2010: 9.0933"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "1992|CO2 emissions from fossil fuel and industrial processes|2020": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 9.5956,
+    "observed_series": "gcb",
+    "range": [
+     10.26,
+     10.26
+    ]
+   },
+   "error_type": "edition",
+   "corrected": {
+    "status": "excluded",
+    "reason": "value not in the edition"
+   },
+   "note": "The value (10.26, IS92a only) is not in the 1992 Supplementary Report: it was first printed in TAR WG I Appendix II (2001), as the claim's own note says. A value published years after the edition is not the edition's scenario (D19: not public at the time), and one of six IS92 scenarios is not the set's range. Exclude; observed value itself is right (9.5956).",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/03/TAR-APPENDICES.pdf",
+     "title": "IPCC TAR WG I Appendix II",
+     "date": "2001",
+     "shows": "IS92a CO2 emissions from fossil fuel and industrial processes 2020: 10.26"
+    },
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2020: 9.5956"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "1992|CO2 emissions, total (energy, deforestation, cement)|2000": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 8.6401,
+    "observed_series": "gcb",
+    "range": [
+     8.4,
+     8.4
+    ]
+   },
+   "error_type": "set",
+   "corrected": {
+    "status": "excluded",
+    "reason": "one scenario of a six-scenario set"
+   },
+   "note": "Table A3.11 of the 1992 report prints 2000 values for IS92a only; IS92b-f are in figures, which are not captured. A range of one scenario is not the set's range, so D34 coverage cannot be read. Observed GCB total 8.6401 GtC (fossil excl. carbonation 6.963 + ELUC 1.677) re-read and right. Exclude.",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/05/ipcc_wg_I_1992_suppl_report_full_report.pdf",
+     "title": "IPCC 1992 Supplementary Report, Table A3.11",
+     "date": "1992",
+     "shows": "IS92a only has a table of global emissions"
+    },
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2000: total 8.6401 GtC"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2000|CO2 abundance, ISAM model (reference)|2010": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "covered",
+    "observed": 388.75,
+    "observed_series": "noaa",
+    "range": [
+     388,
+     391
+    ]
+   },
+   "error_type": "edition",
+   "corrected": {
+    "status": "excluded",
+    "reason": "value not in the edition"
+   },
+   "note": "SRES (March 2000) prints emissions only; the ISAM CO2 concentrations for the SRES markers were first printed in TAR WG I Appendix II (2001), as the edition file says (published_in). Not the edition's value; exclude. NOAA 2010 = 388.75 ppm re-read and right.",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/03/TAR-APPENDICES.pdf",
+     "title": "IPCC TAR WG I Appendix II, Table II.2.1",
+     "date": "2001",
+     "shows": "SRES ISAM reference CO2 2010: range 388 to 391 over 6 scenario(s)"
+    },
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2010: 388.75 ppm"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2000|CO2 abundance, ISAM model (reference)|2020": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "covered",
+    "observed": 412.44,
+    "observed_series": "noaa",
+    "range": [
+     408,
+     420
+    ]
+   },
+   "error_type": "edition",
+   "corrected": {
+    "status": "excluded",
+    "reason": "value not in the edition"
+   },
+   "note": "SRES (March 2000) prints emissions only; the ISAM CO2 concentrations for the SRES markers were first printed in TAR WG I Appendix II (2001), as the edition file says (published_in). Not the edition's value; exclude. NOAA 2020 = 412.44 ppm re-read and right.",
+   "evidence": [
+    {
+     "url": "https://www.ipcc.ch/site/assets/uploads/2018/03/TAR-APPENDICES.pdf",
+     "title": "IPCC TAR WG I Appendix II, Table II.2.1",
+     "date": "2001",
+     "shows": "SRES ISAM reference CO2 2020: range 408 to 420 over 6 scenario(s)"
+    },
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2020: 412.44 ppm"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2000|Fossil Fuel CO2|2010": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 9.0933,
+    "observed_series": "gcb",
+    "range": [
+     7.99,
+     9.68
+    ]
+   },
+   "note": "Scenario values as captured (range 7.99 to 9.68 over 6 scenario(s)). Observed GCB 2025 fossil and industrial (excluding carbonation, gross; includes cement, flaring) 2010 = 9.0933 GtC, re-read from the workbook; same definition as the scenarios' fossil and industrial CO2. covered holds.",
+   "evidence": [
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2010: 9.0933 GtC"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2000|Fossil Fuel CO2|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 9.5956,
+    "observed_series": "gcb",
+    "range": [
+     9.02,
+     12.12
+    ]
+   },
+   "note": "Scenario values as captured (range 9.02 to 12.12 over 6 scenario(s)). Observed GCB 2025 fossil and industrial (excluding carbonation, gross; includes cement, flaring) 2020 = 9.5956 GtC, re-read from the workbook; same definition as the scenarios' fossil and industrial CO2. covered holds.",
+   "evidence": [
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2020: 9.5956 GtC"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2000|Total CO2 (fossil fuel and other)|2010": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 10.8721,
+    "observed_series": "gcb",
+    "range": [
+     8.78,
+     10.88
+    ]
+   },
+   "note": "Scenario values as captured (range 8.78 to 10.88 over 6 scenario(s)). Observed GCB 2025 fossil and industrial (excluding carbonation, gross; includes cement, flaring) 2010 = 10.8721 GtC, re-read from the workbook; same definition as the scenarios' fossil and industrial CO2. covered holds. Land-use CO2 in SRES comes from IAMs, in GCB from bookkeeping models (ELUC uncertainty about 0.7 GtC); the observed value sits 0.008 GtC inside the upper edge. Threshold flag: a different land-use accounting could move the 2010 row out of the range.",
+   "evidence": [
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2010: 10.8721 GtC"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2000|Total CO2 (fossil fuel and other)|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 10.8283,
+    "observed_series": "gcb",
+    "range": [
+     9.05,
+     12.73
+    ]
+   },
+   "note": "Scenario values as captured (range 9.05 to 12.73 over 6 scenario(s)). Observed GCB 2025 fossil and industrial (excluding carbonation, gross; includes cement, flaring) 2020 = 10.8283 GtC, re-read from the workbook; same definition as the scenarios' fossil and industrial CO2. covered holds. Land-use CO2 in SRES comes from IAMs, in GCB from bookkeeping models; inside the range by more than the ELUC uncertainty.",
+   "evidence": [
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2020: 10.8283 GtC"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|CO2 concentration, annual global mean|2015": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 399.65,
+    "observed_series": "noaa",
+    "range": [
+     399.39,
+     401.63
+    ]
+   },
+   "note": "Scenario values as captured from the edition's data (range 399.39 to 401.63 over 4 scenario(s)); observed NOAA global marine-surface annual mean 2015 = 399.65 ppm, re-read from the file; same quantity (global mean surface CO2) and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2015: 399.65 ppm"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|CO2 concentration, annual global mean|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 412.44,
+    "observed_series": "noaa",
+    "range": [
+     409.36,
+     415.78
+    ]
+   },
+   "note": "Scenario values as captured from the edition's data (range 409.36 to 415.78 over 4 scenario(s)); observed NOAA global marine-surface annual mean 2020 = 412.44 ppm, re-read from the file; same quantity (global mean surface CO2) and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2020: 412.44 ppm"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|CO2 concentration, annual global mean|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 425.62,
+    "observed_series": "noaa",
+    "range": [
+     419.04,
+     431.47
+    ]
+   },
+   "note": "Scenario values as captured from the edition's data (range 419.04 to 431.47 over 4 scenario(s)); observed NOAA global marine-surface annual mean 2025 = 425.62 ppm, re-read from the file; same quantity (global mean surface CO2) and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2025: 425.62 ppm"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|Fossil & Industrial CO2 (fossil, cement, gas flaring and bunker fuels)|2015": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 9.6625,
+    "observed_series": "gcb",
+    "range": [
+     8.731,
+     10.2316
+    ]
+   },
+   "note": "Scenario values as captured (range 8.731 to 10.2316 over 4 scenario(s)). Observed GCB 2025 fossil and industrial (excluding carbonation, gross; includes cement, flaring) 2015 = 9.6625 GtC, re-read from the workbook; same definition as the scenarios' fossil and industrial CO2. covered holds.",
+   "evidence": [
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2015: 9.6625 GtC"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|Fossil & Industrial CO2 (fossil, cement, gas flaring and bunker fuels)|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 9.5956,
+    "observed_series": "gcb",
+    "range": [
+     8.9504,
+     11.5375
+    ]
+   },
+   "note": "Scenario values as captured (range 8.9504 to 11.5375 over 4 scenario(s)). Observed GCB 2025 fossil and industrial (excluding carbonation, gross; includes cement, flaring) 2020 = 9.5956 GtC, re-read from the workbook; same definition as the scenarios' fossil and industrial CO2. covered holds.",
+   "evidence": [
+    {
+     "url": "https://globalcarbonbudget.org/download/2341/",
+     "title": "Global Carbon Budget 2025, Global Carbon Budget sheet",
+     "date": "2025-11",
+     "shows": "2020: 9.5956 GtC"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|CO2 concentration, annual global mean|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 425.62,
+    "observed_series": "noaa",
+    "range": [
+     426.52,
+     432.35
+    ]
+   },
+   "note": "Scenario values as captured from the edition's data (range 426.52 to 432.35 over 5 scenario(s)); observed NOAA global marine-surface annual mean 2025 = 425.62 ppm, re-read from the file; same quantity (global mean surface CO2) and year. partly_covered holds. Gap 0.2% below the lowest SSP. The SSP history is harmonised to NOAA and AGAGE within about 0.5 ppm; adding that offset does not reach the range, so partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_gl.txt",
+     "title": "NOAA GML global annual mean CO2 (marine surface sites)",
+     "date": "file of 2026-09",
+     "shows": "2025: 425.62 ppm"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  }
+ }
+}

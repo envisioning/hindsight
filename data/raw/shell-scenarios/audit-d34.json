@@ -1,0 +1,1192 @@
+{
+ "rule": "D11 matching audit of D34 pathway coverage (D19, D20)",
+ "checks": "scenario values as printed in the edition; observed series, definition, unit and year; observed value; the verdict.",
+ "auditor": "agent (D20)",
+ "seed": "d11:shell-scenarios:d34",
+ "of": 57,
+ "sample": [
+  "2013|total primary energy: Natural Gas|2020",
+  "2013|total primary energy: Nuclear|2020",
+  "2013|total primary energy: Oil|2020",
+  "2013|total primary energy: Solar|2020",
+  "2013|total primary energy: Wind|2020",
+  "2013|total primary energy|2020",
+  "2021|CO2 emissions from energy|2024",
+  "2021|CO2 emissions from energy|2025",
+  "2021|total primary energy: Coal|2022",
+  "2021|total primary energy: Coal|2023",
+  "2021|total primary energy: Coal|2024",
+  "2021|total primary energy: Coal|2025",
+  "2021|total primary energy: Natural gas|2022",
+  "2021|total primary energy: Natural gas|2023",
+  "2021|total primary energy: Natural gas|2024",
+  "2021|total primary energy: Natural gas|2025",
+  "2021|total primary energy: Nuclear|2022",
+  "2021|total primary energy: Nuclear|2023",
+  "2021|total primary energy: Nuclear|2024",
+  "2021|total primary energy: Nuclear|2025",
+  "2021|total primary energy: Oil|2023",
+  "2021|total primary energy: Solar|2022",
+  "2021|total primary energy: Solar|2023",
+  "2021|total primary energy: Solar|2024",
+  "2021|total primary energy: Solar|2025",
+  "2021|total primary energy: Wind|2022",
+  "2021|total primary energy: Wind|2023",
+  "2021|total primary energy: Wind|2024",
+  "2021|total primary energy: Wind|2025",
+  "2021|total primary energy|2022",
+  "2021|total primary energy|2023",
+  "2021|total primary energy|2024",
+  "2021|total primary energy|2025",
+  "2023|net energy-related CO2 emissions|2024",
+  "2023|net energy-related CO2 emissions|2025",
+  "2023|stock of electric passenger vehicles (BEV and PHEV)|2024",
+  "2023|stock of electric passenger vehicles (BEV and PHEV)|2025",
+  "2023|total primary energy: Coal|2024",
+  "2023|total primary energy: Coal|2025",
+  "2023|total primary energy: Natural gas|2024",
+  "2023|total primary energy: Natural gas|2025",
+  "2023|total primary energy: Nuclear|2024",
+  "2023|total primary energy: Nuclear|2025",
+  "2023|total primary energy: Oil|2024",
+  "2023|total primary energy: Oil|2025",
+  "2023|total primary energy: Solar - photovoltaic|2025",
+  "2023|total primary energy: Wind|2024",
+  "2023|total primary energy: Wind|2025",
+  "2023|total primary energy|2024",
+  "2023|total primary energy|2025"
+ ],
+ "method": "Population: the 57 graded rows of coverage-d34.json. Draw: scripts/measure-audit-sample.mjs, seed d11:shell-scenarios:d34, 50 of 57, stratified by verdict (29 partly_covered, 12 covered, 9 not_covered). Per row: scenario values, observed series and definition against the edition's own base-year values and the realized.json notes, EI 2026 values re-read from the workbook (Shell .xlsb values not re-read), year, verdict. Basis gaps that could move a verdict are recorded as threshold flags (#66), not errors. Findings are fixed for every row in scripts/scenario-coverage-d34.mjs; coverage-d34.json counts fixed and residual findings as data/graded/audit does (#53).",
+ "records": {
+  "2013|total primary energy: Natural Gas|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 139.1931,
+    "observed_series": "shell_history",
+    "range": [
+     147.9,
+     149.7
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 147.9 to 149.7 over 2 scenarios). Observed 139.1931 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2013 New Lens tables use physical energy content (nuclear 33-37 EJ and wind 3-5 EJ in 2020 match that convention, not substitution), the same as Shell's later history. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Natural Gas 2020: 139.1931"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|total primary energy: Nuclear|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 29.2262,
+    "observed_series": "shell_history",
+    "range": [
+     33.3,
+     37.5
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 33.3 to 37.5 over 2 scenarios). Observed 29.2262 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2013 New Lens tables use physical energy content (nuclear 33-37 EJ and wind 3-5 EJ in 2020 match that convention, not substitution), the same as Shell's later history. Same metric, unit and year. not_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Nuclear 2020: 29.2262"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|total primary energy: Oil|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 172.8649,
+    "observed_series": "shell_history",
+    "range": [
+     190.2,
+     196.4
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 190.2 to 196.4 over 2 scenarios). Observed 172.8649 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2013 New Lens tables use physical energy content (nuclear 33-37 EJ and wind 3-5 EJ in 2020 match that convention, not substitution), the same as Shell's later history. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Oil 2020: 172.8649"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|total primary energy: Solar|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 4.6238,
+    "observed_series": "shell_history",
+    "range": [
+     3.6,
+     4.4
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 3.6 to 4.4 over 2 scenarios). Observed 4.6238 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2013 New Lens tables use physical energy content (nuclear 33-37 EJ and wind 3-5 EJ in 2020 match that convention, not substitution), the same as Shell's later history. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Solar 2020: 4.6238"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|total primary energy: Wind|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 5.7638,
+    "observed_series": "shell_history",
+    "range": [
+     3,
+     4.7
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 3 to 4.7 over 2 scenarios). Observed 5.7638 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2013 New Lens tables use physical energy content (nuclear 33-37 EJ and wind 3-5 EJ in 2020 match that convention, not substitution), the same as Shell's later history. Same metric, unit and year. not_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Wind 2020: 5.7638"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2013|total primary energy|2020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 583.6611,
+    "observed_series": "shell_history",
+    "range": [
+     647,
+     668
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 647 to 668 over 2 scenarios). Observed 583.6611 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2013 New Lens tables use physical energy content (nuclear 33-37 EJ and wind 3-5 EJ in 2020 match that convention, not substitution), the same as Shell's later history. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy 2020: 583.6611"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|CO2 emissions from energy|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 36.4591,
+    "observed_series": "shell_history",
+    "range": [
+     35.228,
+     36.474
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 35.228 to 36.474 over 3 scenarios). Observed 36.4591 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Threshold flag: 0.015 Gt inside the upper edge, and the 2021 'CO2 emissions from energy' scope differs from the 2025 workbook's net energy CO2 by about 2.7% in the base year (2020: 32.53 vs 33.44). Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "CO2 emissions from energy 2024: 36.4591"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|CO2 emissions from energy|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 35.8062,
+    "observed_series": "ei_fallback",
+    "range": [
+     35.411,
+     36.863
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 35.411 to 36.863 over 3 scenarios). Observed 35.8062 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. EI combustion CO2 ran 2.7% below Shell's net energy CO2 in 2024; on Shell's basis 2025 would be about 36.8, still inside the range. Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "CO2 emissions from energy 2025: 35.8062"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Coal|2022": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 169.3846,
+    "observed_series": "shell_history",
+    "range": [
+     157.51,
+     160.29
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 157.51 to 160.29 over 3 scenarios). Observed 169.3846 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Coal 2022: 169.3846"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Coal|2023": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 169.6301,
+    "observed_series": "shell_history",
+    "range": [
+     158.164,
+     162.074
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 158.164 to 162.074 over 3 scenarios). Observed 169.6301 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Coal 2023: 169.6301"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Coal|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 171.7203,
+    "observed_series": "shell_history",
+    "range": [
+     158.996,
+     164.297
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 158.996 to 164.297 over 3 scenarios). Observed 171.7203 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Coal 2024: 171.7203"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Coal|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 166.0302,
+    "observed_series": "ei_fallback",
+    "range": [
+     159.494,
+     165.578
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 159.494 to 165.578 over 3 scenarios). Observed 166.0302 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. EI coal ran 3.7% below Shell's in 2024; on Shell's basis the gap grows to about 4%, still partly_covered. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Coal 2025: 166.0302"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Natural gas|2022": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 143.043,
+    "observed_series": "shell_history",
+    "range": [
+     139.993,
+     142.049
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 139.993 to 142.049 over 3 scenarios). Observed 143.043 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Natural gas 2022: 143.043"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Natural gas|2023": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 143.1071,
+    "observed_series": "shell_history",
+    "range": [
+     141.3,
+     144.578
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 141.3 to 144.578 over 3 scenarios). Observed 143.1071 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Natural gas 2023: 143.1071"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Natural gas|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 145.3235,
+    "observed_series": "shell_history",
+    "range": [
+     142.826,
+     147.714
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 142.826 to 147.714 over 3 scenarios). Observed 145.3235 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Natural gas 2024: 145.3235"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Natural gas|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 150.6973,
+    "observed_series": "ei_fallback",
+    "range": [
+     144.416,
+     149.926
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 144.416 to 149.926 over 3 scenarios). Observed 150.6973 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Threshold flag: EI gas ran 2.3% above Shell's in 2024; on Shell's basis 2025 would be about 147.2 EJ, inside the range (covered). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Natural gas 2025: 150.6973"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Nuclear|2022": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 29.4787,
+    "observed_series": "shell_history",
+    "range": [
+     29.143,
+     31.698
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 29.143 to 31.698 over 3 scenarios). Observed 29.4787 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Nuclear 2022: 29.4787"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Nuclear|2023": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 29.8656,
+    "observed_series": "shell_history",
+    "range": [
+     29.618,
+     32.617
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 29.618 to 32.617 over 3 scenarios). Observed 29.8656 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Nuclear 2023: 29.8656"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Nuclear|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 30.5849,
+    "observed_series": "shell_history",
+    "range": [
+     30.562,
+     33.916
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 30.562 to 33.916 over 3 scenarios). Observed 30.5849 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Nuclear 2024: 30.5849"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Nuclear|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 31.0406,
+    "observed_series": "ei_fallback",
+    "range": [
+     31.077,
+     34.864
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 31.077 to 34.864 over 3 scenarios). Observed 31.0406 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Threshold flag: 0.1% below the range edge; a basis shift of 0.4% (2024 gap) keeps it partly_covered. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Nuclear 2025: 31.0406"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Oil|2023": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 190.6783,
+    "observed_series": "shell_history",
+    "range": [
+     192.042,
+     196.603
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 192.042 to 196.603 over 3 scenarios). Observed 190.6783 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Oil 2023: 190.6783"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Solar|2022": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 9.5199,
+    "observed_series": "shell_history",
+    "range": [
+     4.727,
+     6.101
+    ]
+   },
+   "error_type": "definition",
+   "corrected": {
+    "status": "no_observed",
+    "reason": "no observed solar series on the 2021 edition basis after 2020"
+   },
+   "note": "Observed 9.5199 EJ is Shell's 2025-workbook PV plus solar thermal. Shell's PV history breaks basis in 2021 (1.5-1.7x EI solar power from 2021; the 2023 workbook gave 3.38 EJ for 2021 PV), and the 2021 edition's own 2020 value (3.70 EJ) sits 25% below this series' 2020 (4.62 EJ). Not the edition's definition. No observed value on the definition: no verdict.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "Solar 2022: 9.5199 EJ"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Solar|2023": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 11.712,
+    "observed_series": "shell_history",
+    "range": [
+     5.141,
+     7.122
+    ]
+   },
+   "error_type": "definition",
+   "corrected": {
+    "status": "no_observed",
+    "reason": "no observed solar series on the 2021 edition basis after 2020"
+   },
+   "note": "Observed 11.712 EJ is Shell's 2025-workbook PV plus solar thermal. Shell's PV history breaks basis in 2021 (1.5-1.7x EI solar power from 2021; the 2023 workbook gave 3.38 EJ for 2021 PV), and the 2021 edition's own 2020 value (3.70 EJ) sits 25% below this series' 2020 (4.62 EJ). Not the edition's definition. No observed value on the definition: no verdict.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "Solar 2023: 11.712 EJ"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Solar|2024": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 13.884,
+    "observed_series": "shell_history",
+    "range": [
+     5.622,
+     8.383
+    ]
+   },
+   "error_type": "definition",
+   "corrected": {
+    "status": "no_observed",
+    "reason": "no observed solar series on the 2021 edition basis after 2020"
+   },
+   "note": "Observed 13.884 EJ is Shell's 2025-workbook PV plus solar thermal. Shell's PV history breaks basis in 2021 (1.5-1.7x EI solar power from 2021; the 2023 workbook gave 3.38 EJ for 2021 PV), and the 2021 edition's own 2020 value (3.70 EJ) sits 25% below this series' 2020 (4.62 EJ). Not the edition's definition. No observed value on the definition: no verdict.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "Solar 2024: 13.884 EJ"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Solar|2025": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 10.1198,
+    "observed_series": "ei_fallback",
+    "range": [
+     6.224,
+     9.914
+    ]
+   },
+   "error_type": "definition",
+   "corrected": {
+    "status": "no_observed",
+    "reason": "no observed solar series on the 2021 edition basis after 2020"
+   },
+   "note": "Observed 10.1198 EJ is EI solar power only (no solar heat), while the 2021 'Solar' metric is all solar; Shell's thermal share was about 1.6 EJ in 2020. Not the edition's definition. No observed value on the definition: no verdict.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "Solar 2025: 10.1198 EJ"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Wind|2022": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 7.4609,
+    "observed_series": "shell_history",
+    "range": [
+     6.065,
+     6.616
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 6.065 to 6.616 over 3 scenarios). Observed 7.4609 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. not_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Wind 2022: 7.4609"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Wind|2023": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 8.3557,
+    "observed_series": "shell_history",
+    "range": [
+     6.443,
+     7.317
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 6.443 to 7.317 over 3 scenarios). Observed 8.3557 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. not_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Wind 2023: 8.3557"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Wind|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 9.4195,
+    "observed_series": "shell_history",
+    "range": [
+     6.844,
+     8.16
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 6.844 to 8.16 over 3 scenarios). Observed 9.4195 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. not_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Wind 2024: 9.4195"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy: Wind|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 9.7706,
+    "observed_series": "ei_fallback",
+    "range": [
+     7.282,
+     9.116
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 7.282 to 9.116 over 3 scenarios). Observed 9.7706 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Threshold flag: EI wind ran 3.9% below Shell's in 2024; on Shell's basis 2025 would be about 10.2 EJ, 11.5% above the range (not_covered). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Wind 2025: 9.7706"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy|2022": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 623.567,
+    "observed_series": "shell_history",
+    "range": [
+     603.87,
+     616.721
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 603.87 to 616.721 over 3 scenarios). Observed 623.567 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy 2022: 623.567"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy|2023": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 634.7344,
+    "observed_series": "shell_history",
+    "range": [
+     609.983,
+     628.15
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 609.983 to 628.15 over 3 scenarios). Observed 634.7344 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. Shell history revised up after the edition (2021 edition's own 2020 values are 1-5% below the later history for fossil fuels); that is the outcome D34 measures, not a matching error. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy 2023: 634.7344"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 647.9218,
+    "observed_series": "shell_history",
+    "range": [
+     615.866,
+     641.717
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 615.866 to 641.717 over 3 scenarios). Observed 647.9218 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy 2024: 647.9218"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2021|total primary energy|2025": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 600.3129,
+    "observed_series": "ei_fallback",
+    "range": [
+     621.714,
+     652.464
+    ]
+   },
+   "error_type": "definition",
+   "corrected": {
+    "status": "no_observed",
+    "reason": "no observed total on Shell basis for 2025"
+   },
+   "note": "Observed 600.3129 EJ is EI total energy supply 2025, which leaves out traditional biomass and non-traded bioenergy and runs 50-60 EJ below Shell's total (realized.json flags it low confidence, 'Not on Shell's basis'). Shell's own 2025 total does not exist yet. No observed value on the definition: no verdict.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "TES 2025: 600.3129 EJ; 2024: 592.2 EJ vs Shell 647.9 EJ"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|net energy-related CO2 emissions|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 36.4591,
+    "observed_series": "shell_history",
+    "range": [
+     34.79,
+     35.208
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 34.79 to 35.208 over 2 scenarios). Observed 36.4591 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "net energy-related CO2 emissions 2024: 36.4591"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|net energy-related CO2 emissions|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 35.8062,
+    "observed_series": "ei_fallback",
+    "range": [
+     34.599,
+     35.553
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 34.599 to 35.553 over 2 scenarios). Observed 35.8062 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "net energy-related CO2 emissions 2025: 35.8062"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|stock of electric passenger vehicles (BEV and PHEV)|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 56,
+    "observed_series": "iea_gevo",
+    "range": [
+     51.902,
+     59.403
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 51.902 to 59.403 over 2 scenarios). Observed 56 million from IEA GEVO (cars, BEV+PHEV). Threshold flag: Shell's own EV history ran up to 10% above IEA (2020: 10.98 vs 10.0 million); a 6% shift would put 2024 above the range. Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://api.iea.org/evs?parameters=EV%20stock&category=Historical&mode=Cars&region=World",
+     "title": "IEA Global EV Outlook data, EV stock, cars, world",
+     "date": "2026",
+     "shows": "EV stock 2024: 56 million"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|stock of electric passenger vehicles (BEV and PHEV)|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 75,
+    "observed_series": "iea_gevo",
+    "range": [
+     66.604,
+     80.885
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 66.604 to 80.885 over 2 scenarios). Observed 75 million from IEA GEVO (cars, BEV+PHEV). Threshold flag: Shell's own EV history ran up to 10% above IEA (2020); an 8% shift would put 2025 above the range. Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://api.iea.org/evs?parameters=EV%20stock&category=Historical&mode=Cars&region=World",
+     "title": "IEA Global EV Outlook data, EV stock, cars, world",
+     "date": "2026",
+     "shows": "EV stock 2025: 75 million"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Coal|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 171.7203,
+    "observed_series": "shell_history",
+    "range": [
+     160.876,
+     160.955
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 160.876 to 160.955 over 2 scenarios). Observed 171.7203 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Coal 2024: 171.7203"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Coal|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 166.0302,
+    "observed_series": "ei_fallback",
+    "range": [
+     159.322,
+     162.567
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 159.322 to 162.567 over 2 scenarios). Observed 166.0302 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Coal 2025: 166.0302"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Natural gas|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 145.3235,
+    "observed_series": "shell_history",
+    "range": [
+     136.365,
+     139.932
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 136.365 to 139.932 over 2 scenarios). Observed 145.3235 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Natural gas 2024: 145.3235"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Natural gas|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 150.6973,
+    "observed_series": "ei_fallback",
+    "range": [
+     136.456,
+     140.97
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 136.456 to 140.97 over 2 scenarios). Observed 150.6973 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Natural gas 2025: 150.6973"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Nuclear|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 30.5849,
+    "observed_series": "shell_history",
+    "range": [
+     30.384,
+     30.635
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 30.384 to 30.635 over 2 scenarios). Observed 30.5849 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Nuclear 2024: 30.5849"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Nuclear|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 31.0406,
+    "observed_series": "ei_fallback",
+    "range": [
+     30.705,
+     31
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 30.705 to 31 over 2 scenarios). Observed 31.0406 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Threshold flag: 0.1% above the range; EI nuclear ran 0.4% above Shell's in 2024, which would put it inside (covered). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Nuclear 2025: 31.0406"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Oil|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 193.2651,
+    "observed_series": "shell_history",
+    "range": [
+     191.318,
+     193.298
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 191.318 to 193.298 over 2 scenarios). Observed 193.2651 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Oil 2024: 193.2651"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Oil|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 200.973,
+    "observed_series": "ei_fallback",
+    "range": [
+     192.292,
+     195.917
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 192.292 to 195.917 over 2 scenarios). Observed 200.973 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Threshold flag: EI oil ran 3.0% above Shell's in 2024; on Shell's basis 2025 would be about 195.2 EJ, inside the range (covered). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Oil 2025: 200.973"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Solar - photovoltaic|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered",
+    "observed": 10.1198,
+    "observed_series": "ei_fallback",
+    "range": [
+     6.723,
+     7.751
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 6.723 to 7.751 over 2 scenarios). Observed 10.1198 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. EI solar power includes CSP and runs about 10% above Shell's pre-break PV basis (2021: EI 3.82 vs Shell 2023 workbook 3.38); the gap of 30% is far beyond that, so not_covered holds. Same metric, unit and year. not_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Solar - photovoltaic 2025: 10.1198"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Wind|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered",
+    "observed": 9.4195,
+    "observed_series": "shell_history",
+    "range": [
+     9.197,
+     9.695
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 9.197 to 9.695 over 2 scenarios). Observed 9.4195 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy: Wind 2024: 9.4195"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy: Wind|2025": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 9.7706,
+    "observed_series": "ei_fallback",
+    "range": [
+     10.323,
+     11.915
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 10.323 to 11.915 over 2 scenarios). Observed 9.7706 from EI 2026 for 2025 (Shell has no 2025 history yet), re-read from the workbook. Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "total primary energy: Wind 2025: 9.7706"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy|2024": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 647.9218,
+    "observed_series": "shell_history",
+    "range": [
+     616.61,
+     620.654
+    ]
+   },
+   "note": "Scenario values as captured from the edition (range 616.61 to 620.654 over 2 scenarios). Observed 647.9218 from Shell's own later history (2025 workbook), the D19 rule for Shell (realized.json); not re-read from the .xlsb, checked against EI for the same year. 2024 is a pre-year-end Shell estimate (medium confidence). Same metric, unit and year. partly_covered holds.",
+   "evidence": [
+    {
+     "url": "https://www.shell.com/news-and-insights/scenarios/what-are-the-previous-shell-scenarios/the-2025-energy-security-scenarios/_jcr_content/root/main/section_1902297548/promo_1610292284/links/item0.stream/1738231997237/b64df0471395a93655f85a80b9afa3e9216e83d9/scenarios-2025-compendium-summary.xlsb",
+     "title": "Shell 2025 Energy Security Scenarios workbook",
+     "date": "2025-01",
+     "shows": "total primary energy 2024: 647.9218"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  },
+  "2023|total primary energy|2025": {
+   "decision": "correct",
+   "seen": {
+    "verdict": "partly_covered",
+    "observed": 600.3129,
+    "observed_series": "ei_fallback",
+    "range": [
+     622.597,
+     630.493
+    ]
+   },
+   "error_type": "definition",
+   "corrected": {
+    "status": "no_observed",
+    "reason": "no observed total on Shell basis for 2025"
+   },
+   "note": "Observed 600.3129 EJ is EI total energy supply 2025, which leaves out traditional biomass and non-traded bioenergy and runs 50-60 EJ below Shell's total (realized.json flags it low confidence, 'Not on Shell's basis'). Shell's own 2025 total does not exist yet. No observed value on the definition: no verdict.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260705072155id_/https://www.energyinst.org/__data/assets/file/0008/1827620/EI-Stats-Review-ALL-data.xlsx",
+     "title": "Energy Institute Statistical Review 2026, all data",
+     "date": "2026-06",
+     "shows": "TES 2025: 600.3129 EJ; 2024: 592.2 EJ vs Shell 647.9 EJ"
+    }
+   ],
+   "at": "2026-10-02T16:00:00Z"
+  }
+ }
+}

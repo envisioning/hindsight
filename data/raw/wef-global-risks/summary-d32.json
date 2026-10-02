@@ -5,17 +5,37 @@
   "events": 86,
   "agreed": 85
  },
+ "audit": {
+  "seed": "d11:wef-global-risks:d32",
+  "sample": 50,
+  "of_agreed": 85,
+  "audited": 50,
+  "confirmed": 48,
+  "corrected": 1,
+  "contested": 1,
+  "error_rate": 0.04
+ },
+ "excluded_by_audit": {
+  "corrected_out": 1,
+  "contested": 1
+ },
  "blocks": [
   {
    "block": "2007-2020",
-   "events": 53,
-   "ranked_high": 14,
+   "events": 51,
+   "ranked_high": 12,
    "ranked_low": 35,
    "absent": 4,
-   "share_ranked_high": 0.2642,
+   "contested": 1,
+   "dropped_by_audit": 1,
+   "share_ranked_high": 0.2353,
    "wilson95": [
-    0.164,
-    0.396
+    0.14,
+    0.368
+   ],
+   "audit_adjusted95": [
+    0.1,
+    0.408
    ]
   },
   {
@@ -24,8 +44,11 @@
    "ranked_high": 4,
    "ranked_low": 11,
    "absent": 0,
+   "contested": 0,
+   "dropped_by_audit": 0,
    "share_ranked_high": null,
    "wilson95": null,
+   "audit_adjusted95": null,
    "rate_withheld": "D11: 15 events, fewer than 20; counts only."
   },
   {
@@ -34,8 +57,11 @@
    "ranked_high": 9,
    "ranked_low": 9,
    "absent": 0,
+   "contested": 0,
+   "dropped_by_audit": 0,
    "share_ranked_high": null,
    "wilson95": null,
+   "audit_adjusted95": null,
    "rate_withheld": "D11: 18 events, fewer than 20; counts only."
   }
  ],
@@ -127,9 +153,11 @@
   {
    "year": 2010,
    "event": "Food and commodity price surge (2010-11)",
-   "verdict": "ranked_high",
+   "verdict": "contested",
    "wef_label": "Oil price spikes",
-   "status": "agreed"
+   "status": "contested",
+   "was": "ranked_high",
+   "reason": "Two faithful readings give different verdicts. The event is a food and commodity surge, and its review evidence (WEO April 2011) leads with food prices. Read as food, it matches Food price volatility, on the 2010 landscape but not top 5 (ranked_low). Read with its oil leg, it matches Oil price spikes, 2010 impact #3 (ranked_high); oil's main rise came in early 2011. The matchers took the oil leg without showing it dominates. No verdict publishes for this event (D20)."
   },
   {
    "year": 2011,
@@ -169,9 +197,11 @@
   {
    "year": 2012,
    "event": "US fiscal cliff standoff",
-   "verdict": "ranked_high",
+   "verdict": "not_a_major_event",
    "wef_label": "Chronic fiscal imbalances",
-   "status": "agreed"
+   "status": "corrected",
+   "was": "ranked_high",
+   "reason": "Ranking confirmed (Chronic fiscal imbalances, 2012 likelihood #2, impact #4), but the event fails D32. It has no death or GDP criterion, and the review criterion needs a shock or main downside development. WEO April 2013 ch.1 says policymakers 'successfully defused' the threat and 'U.S. policymakers avoided the fiscal cliff': a threat that did not happen, not a shock of 2012. One builder only. The event drops out."
   },
   {
    "year": 2012,
