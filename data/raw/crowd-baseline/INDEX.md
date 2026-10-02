@@ -1,8 +1,56 @@
-# Crowd forecasting baseline (Metaculus, Good Judgment Open): collected editions
+# Crowd forecasting baseline (Metaculus, Good Judgment Open, Long Bets): collected editions
 
-Claim type: `forecast`. Not graded by Hindsight: a calibration baseline (issue #36). Long Bets is out of scope pending #64 and was not captured.
+Claim type: `forecast`. Not graded by Hindsight: a calibration baseline (issue #36). No `src/normalize` adapter: nothing here becomes a claim, a verdict, an institution or a publisher page. Long Bets enters only as comparison data (D35); no predictor or challenger is named or rated.
 
-**Result of this pass: nothing extracted.** Both platforms' terms of use forbid what the capture needs (automated collection, and copying or redistributing site content into a CC BY 4.0 dataset) unless the platform gives written permission. Metaculus's API now requires an account token, and agents may not create accounts. Every edition is recorded as missing below. No `<edition>.json` file was written.
+| File | Platform | Entries | Checked |
+|---|---|---|---|
+| `long-bets.json` | Long Bets (longbets.org, The Long Now Foundation) | 439 (58 bets, 381 predictions) | 2026-10-02 |
+
+Metaculus and Good Judgment Open: nothing stored (below). No capture and no outreach (D35).
+
+## Long Bets (longbets.org)
+
+Captured 2026-10-02 by `scripts/crowd-baseline/` (README there).
+
+### Terms of reuse, verified before extraction
+
+- **No visitor terms of use, no licence, no robots.txt.** longbets.org links no terms or privacy page; `/terms/` and `/robots.txt` return 404. longnow.org shows no terms page either (`/terms`, `/terms-of-use/`, `/legal/`, `/privacy/`, `/policies` all 404, 2026-10-02). One web search found none.
+- **Rules** (https://longbets.org/rules/): "Any visitor to the site may view anything on the site". Each bet is "On the Record"; the outcome "will be announced and discussed publicly".
+- **Bettor's Agreement** (https://longbets.org/agreement/, sample text), between each bettor and the Foundation, not binding on visitors:
+  - §6: bettors consent that "the Foundation and others will widely publicize and may summarize or characterize the Long Bet, the written arguments ... and the decision on the outcome".
+  - §8: copyright in the bet and each written argument is assigned to The Long Now Foundation.
+- **What this means.** No contract bars collection or republication by a visitor (unlike Metaculus and GJ Open). The bet and argument texts are the Foundation's copyright, so only facts and short quotes are stored: the claim as printed, cut to 400 characters (11 of 439 are cut), plus number, years, status and winner side. Arguments, detailed terms, stakes, charities and comments are not stored.
+- **Names.** Long Bets publishes bettors' names with their consent (§6), but D35 and AGENT-RULES keep them out: no predictor or challenger name or user slug is stored. Two claims name their own predictor; the name is replaced by `[The predictor]` or `[The predictor's fund]` (734, 911). Claims that mention third parties (for example a company or a public figure as the subject) are kept as printed.
+
+### Fields
+
+`platform` (`long-bets`), `longbets_no`, `kind` (`bet` or `prediction`), `title` (first 100 characters of the claim), `claim` (as printed, max 400 characters), `claim_truncated`, `start_year` and `target_year` (from the page's duration line, five-digit years read as numbers), `duration_as_stated`, `status`, `resolution`, `source_url`, `checked`, `confidence`, `note`.
+
+`status`: `resolved` (a "Winner!" badge on the page), `open_passed` (no winner, end year before 2026), `open` (end year 2026 or later), `open_undated` (the page shows `???` as end year).
+
+`resolution`: `winner_side` (`predictor` or `challenger`, from which column carries the badge, cross-checked against the listing's `winner` class: all 29 agree), `claim_held` (true when the predictor won: the claim text is the predictor's position), `resolution_date` (always null: Long Bets publishes no resolution date or ruling text on the page), `stated_as`.
+
+### Counts
+
+| Kind | resolved | open_passed | open | open_undated | Total |
+|---|---|---|---|---|---|
+| Bet | 29 | 0 | 26 | 3 | 58 |
+| Prediction | 0 | 140 | 213 | 28 | 381 |
+| **Total** | **29** | **140** | **239** | **31** | **439** |
+
+Of the 29 resolved bets, the predictor's claim held in 11 and failed in 18. Two resolved before their end year (848, 858); two resolved bets show `???` as end year (8, 126). Bet 751 (end year 2026) is already marked resolved.
+
+### Limits
+
+- **Predictions are never resolved on the site.** A prediction that never became a bet has no outcome from Long Bets. The 140 `open_passed` predictions would need outcomes from somewhere else before they could serve as a baseline; Hindsight does not grade them (D35).
+- **No resolution dates.** Only the winner badge. Dates would have to come from Long Now announcements or press, record by record.
+- **Outcome as stated by Long Bets only.** The Foundation is the arbiter (Agreement §5); a disputed outcome is not re-judged here.
+- **No probabilities.** Bets are at even odds (Rules: "Long Bets odds are always even"), and the site shows no vote tallies. A record says a claim was made and whether it held, not how confident anyone was.
+- **Self-selected.** Bets are chosen by bettors willing to stake money against each other; predictions are paid submissions ($50). Not a sample of forecasts in general.
+
+## Metaculus and Good Judgment Open
+
+**Result of the 2026-10-01 pass: nothing extracted.** Both platforms' terms of use forbid what the capture needs (automated collection, and copying or redistributing site content into a CC BY 4.0 dataset) unless the platform gives written permission. Metaculus's API now requires an account token, and agents may not create accounts. Every edition is recorded as missing below. No `<edition>.json` file was written.
 
 ## Verified before extraction (data access and terms of reuse)
 
@@ -70,4 +118,4 @@ Checked 2026-10-01.
 1. **Permission or API access.** Either (a) Envisioning creates a Metaculus account and token and the API terms are checked for storage and republication, or (b) Envisioning asks Metaculus (api-requests@metaculus.com) and Good Judgment in writing for permission to store question title, URL, dates, resolution and crowd forecast in a CC BY 4.0 dataset with attribution. Until then this source stays empty. This is a decision for a person at Envisioning, not an agent.
 2. **Facts versus contract.** Resolution values and crowd probabilities are facts, but both sites bind users by contract, not only copyright. Storing them through a browser read by a person would still be "collection, aggregation" under the GJ Open terms.
 3. **Alternative baselines with open terms (not checked in depth).** The Good Judgment Project tournament data (IARPA ACE, 2011-2015) is published as a research dataset; check its licence. Survey-based expectations already in Hindsight (BCB Focus) serve the same calibration purpose for Brazil.
-4. **Long Bets** out of scope until #64 is decided.
+4. **Long Bets** captured 2026-10-02 as comparison data only (D35, section above).
