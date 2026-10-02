@@ -37,6 +37,12 @@ for (const source of sources) {
 		if (!existsSync(f)) continue;
 		JSON.parse(readFileSync(f, "utf8")).entries.forEach((x, i) => rawLabel.set(`${ed}-${String(i + 1).padStart(3, "0")}`, x.label));
 	}
+	// Label corrections (D43, data/raw/<source>/corrections.json): the corrected label is shown; a
+	// later record for the same entry replaces an earlier one.
+	const corrFile = path.join(root, "data/raw", source, "corrections.json");
+	if (existsSync(corrFile))
+		for (const x of JSON.parse(readFileSync(corrFile, "utf8")).corrections)
+			if (x.field === "label") rawLabel.set(`${source}-${x.edition}-${String(x.position).padStart(3, "0")}`, x.corrected);
 	const label = (c) => String(rawLabel.get(c.id) ?? c.quote ?? c.statement ?? "").slice(0, 160);
 	const rows = [];
 	const counts = {};

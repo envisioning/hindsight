@@ -187,6 +187,33 @@ export const HypePhaseBoundaries = z.object({
   note: z.string().min(1),
 });
 
+/**
+ * A capture correction over one raw entry (D43), kept in `data/raw/<source>/corrections.json`.
+ * Append-only: the raw entry is never edited, and a later record for the same entry and field
+ * replaces an earlier one. `stored` is the raw value the correction was made against (null when the
+ * field is absent); normalize stops when it no longer matches. The claim id never changes: a
+ * correction to a field of the natural key (D15) changes only what the claim displays.
+ */
+export const RawCorrection = z.object({
+  edition: z.string().min(1),
+  /** 1-based position of the entry in the edition file's `entries` (D15). */
+  position: z.number().int().min(1),
+  field: z.enum(["quote", "label", "section", "subsection", "not_a_trend"]),
+  stored: z.union([z.string(), z.boolean(), z.null()]),
+  /** The corrected value: a string for text fields (null removes a quote), true for not_a_trend. */
+  corrected: z.union([z.string().min(1).max(400), z.boolean(), z.null()]),
+  reason: z.string().min(1),
+  /** Where the corrected value was read: page and source. */
+  evidence: z.string().min(1),
+  at: IsoDate,
+});
+
+export const RawCorrections = z.object({
+  rule: z.string().min(1),
+  note: z.string().min(1),
+  corrections: z.array(RawCorrection),
+});
+
 /** The one seam with the research database. Append-only; a wrong link is retracted, never deleted. */
 export const SubjectTechnologyLink = z.object({
   id: Id,
@@ -377,3 +404,4 @@ export type NumericHorizon = z.infer<typeof NumericHorizon>;
 export type NumericStats = z.infer<typeof NumericStats>;
 export type NumericSummary = z.infer<typeof NumericSummary>;
 export type NumericComparison = z.infer<typeof NumericComparison>;
+export type RawCorrection = z.infer<typeof RawCorrection>;

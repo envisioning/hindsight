@@ -1,0 +1,886 @@
+{
+ "rule": "D43",
+ "note": "Append-only capture corrections over the raw edition files (D43). A raw entry is never edited; normalize applies these over it. A later record for the same edition, position and field replaces an earlier one. stored is the raw value at the time (null when absent); corrected is the new value (a quote of null removes the quote; not_a_trend true drops the entry from claims while its id stays in ids.json). Claim ids never change: label, section and sub-section are part of the natural key (D15), so a correction of them changes only what the claim shows.",
+ "corrections": [
+  {
+   "edition": "2020",
+   "position": 126,
+   "field": "quote",
+   "stored": "INFORMS STRATEGY REVISIT LATER ACT NOW KEEP VIGILANT WATCH HIGH DEGREE OF CERTAINTY LOW DEGREE OF CERTAINTY IMMEDIATEIMPACT LONGER-TERMIMPACT canceled over her views on immigration— plus many, many other individuals who are seen to have acted immorally or unjustly.",
+   "corrected": "Shame isn’t a new political tactic, but social media has created a supercharged cycle of outrage, boycott and backlash with its own name: “cancel culture.”",
+   "reason": "Stored quote opens with the Action Meter graphic labels and a mid-sentence fragment of the body; the KEY INSIGHT block gives the clean first sentence.",
+   "evidence": "Report page 107, KEY INSIGHT block; SlideShare transcript, 2020 section 1 (Wayback 2025-08-29), slide 108",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2020",
+   "position": 135,
+   "field": "quote",
+   "stored": "INFORMS STRATEGY REVISIT LATER ACT NOW KEEP VIGILANT WATCH HIGH DEGREE OF CERTAINTY LOW DEGREE OF CERTAINTY IMMEDIATEIMPACT LONGER-TERMIMPACT this has significance beyond concussions in the NFL.",
+   "corrected": "Elite athletes are using more and more sophisticated tech tools to improve training and performance.",
+   "reason": "Stored quote opens with the Action Meter graphic labels and a mid-sentence fragment of the body; the KEY INSIGHT block gives the clean first sentence. Found by the same check as 2020-126.",
+   "evidence": "Report page 123, KEY INSIGHT block; SlideShare transcript, 2020 section 1 (Wayback 2025-08-29), slide 124",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2020",
+   "position": 159,
+   "field": "quote",
+   "stored": "INFORMS STRATEGY REVISIT LATER ACT NOW KEEP VIGILANT WATCH HIGH DEGREE OF CERTAINTY LOW DEGREE OF CERTAINTY IMMEDIATEIMPACT LONGER-TERMIMPACT social media platforms—but other states only prevent the government from regulating speech, allowing private entities to do as they please.",
+   "corrected": "The First Amendment shapes how Silicon Valley thinks about the design, development and implications of technology.",
+   "reason": "Stored quote opens with the Action Meter graphic labels and a mid-sentence fragment of the body; the KEY INSIGHT block gives the clean first sentence. Found by the same check as 2020-126.",
+   "evidence": "Report page 149, KEY INSIGHT block; SlideShare transcript, 2020 section 1 (Wayback 2025-08-29), slide 150",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2020",
+   "position": 89,
+   "field": "quote",
+   "stored": null,
+   "corrected": "Instead of GPS coordinates, some offices and schools have deployed Bluetooth beacons and wireless access points to track people as they move around.",
+   "reason": "No quote was captured; the first sentence under the heading \"Proximity Recognition\" exists in the transcript (the heading follows an earlier mention of the term on the same page).",
+   "evidence": "Report page 72; SlideShare transcript, 2020 section 1 (Wayback 2025-08-29), slide 73",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2020",
+   "position": 223,
+   "field": "quote",
+   "stored": null,
+   "corrected": "We’re getting better at understanding how ice sheets and sea levels change over time.",
+   "reason": "No quote was captured because the page heading reads \"Unpredictable, Rising Sea Levels\" (contents: \"Unpredictable Sea Level Rise\"); first sentence of its KEY INSIGHT block. The page also prints 2ND YEAR ON THE LIST.",
+   "evidence": "Report page 211; SlideShare transcript, 2020 section 1 (Wayback 2025-08-29), slide 212",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2021",
+   "position": 3,
+   "field": "quote",
+   "stored": null,
+   "corrected": "Mining very large, unstructured datasets is now easier thanks to advanced natural language processing collection and classification.",
+   "reason": "No quote was captured (the body continues in the next column); first sentence under the heading.",
+   "evidence": "PDF page 48; 2021 full report PDF (Dropbox, FTI_2021_Tech_Trends_Volume_All.pdf)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2021",
+   "position": 37,
+   "field": "quote",
+   "stored": null,
+   "corrected": "Google’s TensorFlow and Facebook’s PyTorch are two popular frameworks used by researchers, and the relative popularity of different frameworks typically mirrors trends in the commercial application landscape.",
+   "reason": "No quote was captured (the sentence runs across a column break); first sentence under the heading.",
+   "evidence": "PDF pages 66-67; 2021 full report PDF (Dropbox, FTI_2021_Tech_Trends_Volume_All.pdf)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2022",
+   "position": 106,
+   "field": "quote",
+   "stored": null,
+   "corrected": "The proliferation of consumer DNA testing services represents significant untapped opportunity in myriad industries and fields, including insurance, pharmaceuticals, and law enforcement.",
+   "reason": "No quote was captured (the sentence runs across a column break); first sentence under the heading.",
+   "evidence": "PDF page 111; 2022 full report PDF (Wayback 2022-03-16, FTI_Tech_Trends_2022_All.pdf)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 516,
+   "field": "quote",
+   "stored": null,
+   "corrected": "New technologies promise to stabilize climate change, but they could damage international relations.",
+   "reason": "No quote was captured; first sentence of the WHAT IT IS block in the text layer.",
+   "evidence": "Report page 604, WHAT IT IS block; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 620,
+   "field": "quote",
+   "stored": null,
+   "corrected": "Theme parks are ramping up visitor personalization by integrating AR and VR technologies, providing more immersive and interactive experiences, and offering individualized promotions and services informed by wearables and preferences.",
+   "reason": "No quote was captured because the contents label was cut at a line wrap and matched no heading; first sentence of the WHAT IT IS block.",
+   "evidence": "Report page 788, WHAT IT IS block; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 23,
+   "field": "label",
+   "stored": "Managing the Looming Genome Storage",
+   "corrected": "Managing the Looming Genome Storage Problem",
+   "reason": "Contents title cut at a line wrap; the contents continuation line and the page heading print the full title.",
+   "evidence": "Contents page 166 and report page 189 heading \"GENOME STORAGE PROBLEM\"; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 376,
+   "field": "label",
+   "stored": "Immersive Vehicles Connect",
+   "corrected": "Immersive Vehicles Connect to Other Ecosystems",
+   "reason": "Contents title cut at a line wrap; the divider and essay pages print the full title.",
+   "evidence": "Contents page 304, report pages 326-327; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 382,
+   "field": "label",
+   "stored": "Data Collection Enables",
+   "corrected": "Data Collection Enables Safety and Autonomy",
+   "reason": "Contents title cut at a line wrap; the essay page prints the full title (the divider page prints \"Safety & Autonomy\").",
+   "evidence": "Contents page 304, report pages 329-330; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 620,
+   "field": "label",
+   "stored": "Catering Amusement Park",
+   "corrected": "Catering Amusement Park Experiences to an Audience of One",
+   "reason": "Contents title cut at a line wrap; full contents title kept (the page heading reads \"Catering Amusement Experiences to an Audience of One\").",
+   "evidence": "Contents page 752, report page 788; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2022",
+   "position": 403,
+   "field": "label",
+   "stored": "Self-Finding Digital Infrastructure",
+   "corrected": "Self-Funding Digital Infrastructure",
+   "reason": "Publisher misprint: contents and page print \"Self-Finding\". The page carries 2ND YEAR ON THE LIST and continues 2021 \"Self-Funding Digital Infrastructure\", and its text is about funding (\"helps source and fund\").",
+   "evidence": "PDF contents page 459 and page 487; 2022 full report PDF (Wayback 2022-03-16, FTI_Tech_Trends_2022_All.pdf); 2021 PDF",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 264,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section heading, not a trend: printed in mixed case in the contents (sections are otherwise upper case), the page before its first trend like every other section (288, then 289). The publisher states 315 trends; trend 225 is entry 226, so entries 227-321 hold 90 trends and 5 non-trends, which are exactly these five headings.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30); trend numbers from the 2019 SlideShare part 2 transcript (Wayback 2019-06-03)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 274,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section heading, not a trend: printed in mixed case in the contents (sections are otherwise upper case), the page before its first trend like every other section (296, then 297). The publisher states 315 trends; trend 225 is entry 226, so entries 227-321 hold 90 trends and 5 non-trends, which are exactly these five headings.",
+   "evidence": "Contents page 296; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30); trend numbers from the 2019 SlideShare part 2 transcript (Wayback 2019-06-03)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 281,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section heading, not a trend: printed in mixed case in the contents (sections are otherwise upper case), the page before its first trend like every other section (304, then 305). The publisher states 315 trends; trend 225 is entry 226, so entries 227-321 hold 90 trends and 5 non-trends, which are exactly these five headings.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30); trend numbers from the 2019 SlideShare part 2 transcript (Wayback 2019-06-03)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 292,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section heading, not a trend: printed in mixed case in the contents (sections are otherwise upper case), the page before its first trend like every other section (326, then 327). The publisher states 315 trends; trend 225 is entry 226, so entries 227-321 hold 90 trends and 5 non-trends, which are exactly these five headings.",
+   "evidence": "Contents page 326; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30); trend numbers from the 2019 SlideShare part 2 transcript (Wayback 2019-06-03)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 299,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section heading, not a trend: printed in mixed case in the contents (sections are otherwise upper case), the page before its first trend like every other section (332, then 333). The publisher states 315 trends; trend 225 is entry 226, so entries 227-321 hold 90 trends and 5 non-trends, which are exactly these five headings.",
+   "evidence": "Contents page 332; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30); trend numbers from the 2019 SlideShare part 2 transcript (Wayback 2019-06-03)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2021",
+   "position": 131,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section intro page, not a trend: definitions of AR, VR, MR, XR and DR, no year tag and no KEY INSIGHT block (D40); the trends under it are separate entries.",
+   "evidence": "PDF page 122; 2021 full report PDF (Dropbox, FTI_2021_Tech_Trends_Volume_All.pdf)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2021",
+   "position": 142,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Group heading, not a trend: the left-column title of a page whose trends (Speech Synthesis to Mapped Synthetic Environments) are separate entries; no year tag, no KEY INSIGHT block. Same layout as 2021-148.",
+   "evidence": "PDF page 135; 2021 full report PDF (Dropbox, FTI_2021_Tech_Trends_Volume_All.pdf)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2021",
+   "position": 148,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Group heading, not a trend: the left-column title of a page whose trends (Live Portraits to Synthetic Voice Fraud) are separate entries; the stored quote is its one-line caption. No year tag, no KEY INSIGHT block.",
+   "evidence": "PDF page 136; 2021 full report PDF (Dropbox, FTI_2021_Tech_Trends_Volume_All.pdf)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 376,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section divider, not a trend: the page prints only the title and \"MOBILITY TRENDS\"; the essay that follows has run-in sub-heads stored as separate entries (2023-377 to 381). No year tag, no WHAT IT IS block.",
+   "evidence": "Report pages 326-328; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 382,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Section divider, not a trend: the page prints only the title and \"MOBILITY TRENDS\"; the trends under it are separate entries (2023-383 to 390). No year tag, no WHAT IT IS block.",
+   "evidence": "Report pages 329-332; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 518,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Run-in sub-head of the \"Spotlight on China\" essay, not a trend; Spotlight overview blocks are excluded elsewhere in 2023. No year tag, no WHAT IT IS block.",
+   "evidence": "Report page 607; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 519,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Run-in sub-head of the \"Spotlight on China\" essay, not a trend. No year tag, no WHAT IT IS block.",
+   "evidence": "Report page 607; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 520,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Run-in sub-head of the \"Spotlight on China\" essay, not a trend. No year tag, no WHAT IT IS block.",
+   "evidence": "Report page 607; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 521,
+   "field": "not_a_trend",
+   "stored": null,
+   "corrected": true,
+   "reason": "Run-in sub-head of the \"Spotlight on China\" essay, not a trend. No year tag, no WHAT IT IS block.",
+   "evidence": "Report page 608; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 265,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 266,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 267,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 268,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 269,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 270,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 271,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 272,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 273,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Home Automation and the Internet of Things",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Home Automation and the Internet of Things\" (contents page 288), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 288; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 275,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Workplace and Learning Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Workplace and Learning Technologies\" (contents page 296), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 296; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 276,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Workplace and Learning Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Workplace and Learning Technologies\" (contents page 296), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 296; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 277,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Workplace and Learning Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Workplace and Learning Technologies\" (contents page 296), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 296; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 278,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Workplace and Learning Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Workplace and Learning Technologies\" (contents page 296), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 296; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 279,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Workplace and Learning Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Workplace and Learning Technologies\" (contents page 296), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 296; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 280,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Workplace and Learning Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Workplace and Learning Technologies\" (contents page 296), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 296; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 282,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 283,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 284,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 285,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 286,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 287,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 288,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 289,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 290,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 291,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Blockchains, Tokens and Cryptocurrencies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Blockchains, Tokens and Cryptocurrencies\" (contents page 304), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 304; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 293,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Financial Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Financial Technologies\" (contents page 326), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 326; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 294,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Financial Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Financial Technologies\" (contents page 326), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 326; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 295,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Financial Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Financial Technologies\" (contents page 326), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 326; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 296,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Financial Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Financial Technologies\" (contents page 326), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 326; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 297,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Financial Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Financial Technologies\" (contents page 326), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 326; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 298,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Financial Technologies",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Financial Technologies\" (contents page 326), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 326; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 300,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Smart Cities",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Smart Cities\" (contents page 332), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 332; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 301,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Smart Cities",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Smart Cities\" (contents page 332), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 332; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 302,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Smart Cities",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Smart Cities\" (contents page 332), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 332; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2019",
+   "position": 303,
+   "field": "section",
+   "stored": "Health Technologies, Digital Self-Care and Wearables",
+   "corrected": "Smart Cities",
+   "reason": "Wrong section: the entry follows the mixed-case section heading \"Smart Cities\" (contents page 332), which the capture missed; it was stored under the previous upper-case section.",
+   "evidence": "Contents page 332; 2019 SlideShare part 1 transcript, contents pages (Wayback 2020-08-30)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 412,
+   "field": "subsection",
+   "stored": "All The Gs",
+   "corrected": "All The Gs / 5G Enabled Technologies",
+   "reason": "Sub-section band \"5G Enabled Technologies\" missing from the path.",
+   "evidence": "Contents page 360, report pages 368-369; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 413,
+   "field": "subsection",
+   "stored": "All The Gs",
+   "corrected": "All The Gs / 5G Enabled Technologies",
+   "reason": "Sub-section band \"5G Enabled Technologies\" missing from the path.",
+   "evidence": "Contents page 360, report pages 368-369; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 414,
+   "field": "subsection",
+   "stored": "All The Gs",
+   "corrected": "All The Gs / 5G Enabled Technologies",
+   "reason": "Sub-section band \"5G Enabled Technologies\" missing from the path.",
+   "evidence": "Contents page 360, report pages 368-369; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 415,
+   "field": "subsection",
+   "stored": "All The Gs",
+   "corrected": "All The Gs / 5G Enabled Technologies",
+   "reason": "Sub-section band \"5G Enabled Technologies\" missing from the path.",
+   "evidence": "Contents page 360, report pages 368-369; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 491,
+   "field": "subsection",
+   "stored": "Global Innovation and",
+   "corrected": "Global Innovation and GovTech Advancements",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 568; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 492,
+   "field": "subsection",
+   "stored": "Global Innovation and",
+   "corrected": "Global Innovation and GovTech Advancements",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 568; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 493,
+   "field": "subsection",
+   "stored": "Global Innovation and",
+   "corrected": "Global Innovation and GovTech Advancements",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 568; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 531,
+   "field": "subsection",
+   "stored": "Security / Policy",
+   "corrected": "Security / Cyberwarfare",
+   "reason": "Stored under \"Security / Policy\"; the contents and the page band print \"Cyberwarfare\".",
+   "evidence": "Contents page 568, report pages 616-618 (band CYBERWARFARE); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 532,
+   "field": "subsection",
+   "stored": "Security / Policy",
+   "corrected": "Security / Cyberwarfare",
+   "reason": "Stored under \"Security / Policy\"; the contents and the page band print \"Cyberwarfare\".",
+   "evidence": "Contents page 568, report pages 616-618 (band CYBERWARFARE); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 533,
+   "field": "subsection",
+   "stored": "Security / Policy",
+   "corrected": "Security / Cyberwarfare",
+   "reason": "Stored under \"Security / Policy\"; the contents and the page band print \"Cyberwarfare\".",
+   "evidence": "Contents page 568, report pages 616-618 (band CYBERWARFARE); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 534,
+   "field": "subsection",
+   "stored": "Security / Policy",
+   "corrected": "Security / Cyberwarfare",
+   "reason": "Stored under \"Security / Policy\"; the contents and the page band print \"Cyberwarfare\".",
+   "evidence": "Contents page 568, report pages 616-618 (band CYBERWARFARE); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 535,
+   "field": "subsection",
+   "stored": "Security / Policy",
+   "corrected": "Security / Cyberwarfare",
+   "reason": "Stored under \"Security / Policy\"; the contents and the page band print \"Cyberwarfare\".",
+   "evidence": "Contents page 568, report pages 616-618 (band CYBERWARFARE); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 536,
+   "field": "subsection",
+   "stored": "Security / Policy",
+   "corrected": "Security / Cyberwarfare",
+   "reason": "Stored under \"Security / Policy\"; the contents and the page band print \"Cyberwarfare\".",
+   "evidence": "Contents page 568, report pages 616-618 (band CYBERWARFARE); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 560,
+   "field": "subsection",
+   "stored": "Origins of a Multi-Planetary",
+   "corrected": "Origins of a Multi-Planetary Species",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 641, report page 661; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 561,
+   "field": "subsection",
+   "stored": "Origins of a Multi-Planetary",
+   "corrected": "Origins of a Multi-Planetary Species",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 641, report page 661; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 562,
+   "field": "subsection",
+   "stored": "Origins of a Multi-Planetary",
+   "corrected": "Origins of a Multi-Planetary Species",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 641, report page 661; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 583,
+   "field": "subsection",
+   "stored": "Labor Development, Upheavals,",
+   "corrected": "Labor Development, Upheavals, and Shortages",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695 (band \"& SHORTAGES\"); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 584,
+   "field": "subsection",
+   "stored": "Labor Development, Upheavals,",
+   "corrected": "Labor Development, Upheavals, and Shortages",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695 (band \"& SHORTAGES\"); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 585,
+   "field": "subsection",
+   "stored": "Labor Development, Upheavals,",
+   "corrected": "Labor Development, Upheavals, and Shortages",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695 (band \"& SHORTAGES\"); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 586,
+   "field": "subsection",
+   "stored": "Labor Development, Upheavals,",
+   "corrected": "Labor Development, Upheavals, and Shortages",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695 (band \"& SHORTAGES\"); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 587,
+   "field": "subsection",
+   "stored": "Labor Development, Upheavals,",
+   "corrected": "Labor Development, Upheavals, and Shortages",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695 (band \"& SHORTAGES\"); 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 591,
+   "field": "subsection",
+   "stored": "Resiliency Through",
+   "corrected": "Resiliency Through Diversification",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 592,
+   "field": "subsection",
+   "stored": "Resiliency Through",
+   "corrected": "Resiliency Through Diversification",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  },
+  {
+   "edition": "2023",
+   "position": 593,
+   "field": "subsection",
+   "stored": "Resiliency Through",
+   "corrected": "Resiliency Through Diversification",
+   "reason": "Sub-section cut at a contents line wrap.",
+   "evidence": "Contents page 692, report page 695; 2023 full report, Scribd text layer (Wayback 2026-09-23)",
+   "at": "2026-10-02"
+  }
+ ]
+}

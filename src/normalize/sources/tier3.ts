@@ -5,8 +5,9 @@
  * (scenarios, D6: graded on coverage only). One claim per raw entry; ids follow D15. Rows
  * outside `entries` (Accenture's 2017 predictions box) follow the last entry.
  */
+import { existsSync } from "node:fs";
 import { join } from "node:path";
-import type { Institution, Source } from "../../schema.ts";
+import { type Institution, RawCorrections, type RawCorrection, type Source } from "../../schema.ts";
 import { type Bundle, type LabelRef, type Raw, RAW, clean, editionFiles, editionId, firstUrl, fit, num, readJson, str, year } from "../lib.ts";
 
 type ClaimBody = Bundle["drafts"][number]["claim"];
@@ -38,24 +39,74 @@ interface Spec {
   extra?: (d: Raw) => Raw[];
 }
 
+/**
+ * Capture corrections (D43): `data/raw/<source>/corrections.json`, append-only. Returns, per
+ * `<edition>|<position>`, the corrections in file order with a later record for the same field
+ * replacing an earlier one. Each record's `stored` must still equal the raw value.
+ */
+function loadCorrections(source: string): Map<string, Map<string, RawCorrection>> {
+  const path = join(RAW, source, "corrections.json");
+  const out = new Map<string, Map<string, RawCorrection>>();
+  if (!existsSync(path)) return out;
+  for (const c of RawCorrections.parse(readJson(path)).corrections) {
+    const k = `${c.edition}|${c.position}`;
+    const m = out.get(k) ?? new Map<string, RawCorrection>();
+    m.set(c.field, c);
+    out.set(k, m);
+  }
+  return out;
+}
+
+/** The raw entry with its corrections applied, plus a note naming them. The raw entry is not changed. */
+function corrected(e: Raw, m: Map<string, RawCorrection> | undefined, where: string): { e: Raw; note?: string } {
+  if (m === undefined) return { e };
+  const out: Raw = { ...e };
+  const notes: string[] = [];
+  for (const c of m.values()) {
+    const raw = e[c.field] === undefined ? null : e[c.field];
+    if (raw !== c.stored) throw new Error(`${where}: correction of ${c.field} names stored ${JSON.stringify(c.stored)}, raw has ${JSON.stringify(raw)}`);
+    out[c.field] = c.corrected;
+    // The publisher's subject label follows a corrected label when it was the label.
+    if (c.field === "label" && (e.subject === undefined || e.subject === null || e.subject === e.label)) out.subject = c.corrected;
+    if (c.field === "label") notes.push(`Printed label: ${String(c.stored)}.`);
+    if (c.field === "quote" && typeof c.stored === "string") notes.push("Stored quote replaced.");
+    // A quote found after capture makes the capture's "No quote: ..." remark stale.
+    if (c.field === "quote" && typeof c.corrected === "string" && typeof e.note === "string") out.note = e.note.replace(/\s*No quote:[^.]*\./, "").trim() || undefined;
+  }
+  const fields = [...m.keys()].filter((f) => f !== "not_a_trend");
+  if (fields.length > 0) notes.unshift(`Capture correction (D43): ${fields.join(", ")}.`);
+  return notes.length > 0 ? { e: out, note: notes.join(" ") } : { e: out };
+}
+
 function build(spec: Spec): Bundle {
   const id = spec.source.id;
   const b: Bundle = { source: spec.source, institution: spec.institution, editions: [], drafts: [], skipped: {}, keyRule: spec.keyRule };
+  const corrections = loadCorrections(id);
+  const used = new Set<string>();
   for (const f of editionFiles(id)) {
     const d = readJson(join(RAW, id, f));
     const ed = String(d.edition);
     b.editions.push(edRow(id, d));
     const rows = [...((d.entries ?? []) as Raw[]), ...(spec.extra ? spec.extra(d) : [])];
-    rows.forEach((e, i) => {
+    rows.forEach((raw, i) => {
+      const k = `${ed}|${i + 1}`;
+      if (corrections.has(k)) used.add(k);
+      const { e, note } = corrected(raw, corrections.get(k), `${id} ${k}`);
       // An entry captured from a contents list that turned out not to be a trend (a section
       // divider) stays in the raw file so later positions keep their ids (D15); it is not a claim.
+      // Marked in place (before D43) or by a not_a_trend correction.
       if (e.not_a_trend === true) {
         b.skipped["contents entry that is not a trend (section heading or divider)"] = (b.skipped["contents entry that is not a trend (section heading or divider)"] ?? 0) + 1;
         return;
       }
-      b.drafts.push({ key: spec.key(e), index: i + 1, edition: ed, labels: spec.labels(e), quantityIds: [], claim: spec.claim(e, d, ed) });
+      // The natural key is read from the raw entry, so a corrected label, section or sub-section
+      // never moves a claim id (D15, D43); the claim shows the corrected values.
+      const claim = spec.claim(e, d, ed);
+      b.drafts.push({ key: spec.key(raw), index: i + 1, edition: ed, labels: spec.labels(e), quantityIds: [], claim: note ? { ...claim, note: joinNotes(claim.note, note) } : claim });
     });
   }
+  const unused = [...corrections.keys()].filter((k) => !used.has(k));
+  if (unused.length > 0) throw new Error(`${id}: corrections for entries that do not exist: ${unused.join(", ")}`);
   return b;
 }
 

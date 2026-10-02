@@ -648,3 +648,15 @@ AEO2026 (issue #13) is captured from its own tables: AEO2026 renamed the Referen
 **Cost.** One more generated baseline file. More ECB rows carry flags.
 
 **Overturned by.** A history store for numeric grades (D2) that records which grade each audit record checked.
+
+## D43: Append-only capture corrections (issue #72)
+
+*Recorded 2026-10-02. MZ's instruction of 2026-10-02: build the append-only quote-corrections mechanism once a real misaligned quote appears; the pass-2 rename checks found real cases.*
+
+**Decision.** A capture error in a raw entry is fixed by a record in `data/raw/<source>/corrections.json` (shape `RawCorrections` in `src/schema.ts`), never by editing the raw entry. A record names the edition, the entry's position, the field (`quote`, `label`, `section`, `subsection` or `not_a_trend`), the stored value, the corrected value, the reason, the evidence (page and source) and the date. Normalize applies the records over the raw entry; a later record for the same entry and field replaces an earlier one, and normalize stops when a record's stored value no longer matches the raw file. The claim id never changes: label, section and sub-section are part of the FTSG natural key (D15), so the key is read from the raw entry and a correction of these fields changes only what the claim shows (position, label note, statement, subject label); the claim note names the corrected fields and the printed label. A `not_a_trend` correction drops the entry from the claims while its id stays in `ids.json`; it replaces the in-place `not_a_trend` marker for new cases (2024-039 keeps its marker). First use, FTSG: 88 records (10 quotes, 5 labels, 35 sections, 24 sub-sections, 14 not-a-trend), each read again in the PDF, transcript or text layer.
+
+**Why.** D40 deferred corrections until a misaligned quote was real. The pass-2 rename checkers found quotes made of graphic labels, missing quotes, cut labels and section headings stored as trends. Editing raw files in place would lose what was captured; a new natural key would move permalinks.
+
+**Cost.** One more file per source to read; the displayed values of a claim can differ from its raw entry and its natural key. A correction whose stored value drifts after a re-capture stops normalize until it is re-checked.
+
+**Overturned by.** A history store for raw entries (D2) that keeps every captured value as its own row.

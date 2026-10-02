@@ -46,6 +46,9 @@ pdftohtml -xml -i -q $S/fti2023_health.pdf $S/fti2023_health;   pdftotext -raw $
 python3 check_2023_contents.py $S/scribd2023.pages.json [--json out.json]   # all 14 contents lists vs 2023.json (no writes)
 python3 append_2023_missing.py $S                       # dry run: prints the rows
 python3 append_2023_missing.py $S --write               # appends the missing trends to 2023
+# contents check of the other PDF editions (no writes):
+pdftohtml -xml -i -q $S/fti2022.pdf $S/fti2022             # likewise fti2024, ftsg2025 (fti2021 above)
+python3 check_contents.py $S
 ```
 
 ## Files
@@ -62,6 +65,7 @@ python3 append_2023_missing.py $S --write               # appends the missing tr
 - `check_quotes.py`: boilerplate, shared and neighbour-matching quote flags.
 - `append_umbrella_d40.py`: appends umbrella section pages with a year tag and a KEY INSIGHT / WHAT IT IS block (D40) to 2020 (transcripts), 2021 (PDF XML) and 2023 (Scribd text layer), after the existing entries. The page list is fixed in the script; it was found by listing every year tag in the full text of each edition and keeping tagged pages that match no entry.
 - `check_2023_contents.py`: compares the contents pages of all 14 volumes of 2023 (Scribd text layer, which also carries the seven PDF volumes) with `2023.json`. Reports contents items that match no entry, skipped item or stored sub-section (front/back matter, scenarios, expert perspectives, divider pages and a short hand-checked list are left out); loose title lines that belong to no stored text (titles whose page number the text layer detached); stored labels cut at a contents line wrap (body heading = label + loose contents line); stored entries whose page prints only a title (a section divider stored as a trend); and entries without quote or matching heading. No writes. First run 2026-10-02 found the Climate & Energy contents page 2 unread, plus four other missing trends; `append_2023_missing.py` appended them (entries 622-674). Labels it reports as cut are listed in INDEX.md "Known issues" and not edited (D15).
-- An entry that is not a trend is marked `not_a_trend: true` (with a note) in place; the normalize adapter skips it.
+- `check_contents.py`: the contents check of `check_2023_contents.py` for the PDF editions 2021, 2022, 2024 and 2025 (unlisted or continued contents pages, contents items that match nothing stored). No writes. Run 2026-10-02: nothing missing.
+- An entry that is not a trend was marked `not_a_trend: true` in place (2024 position 39 only). Since D43, every capture fix (quote, label, section, sub-section, not a trend) is an append-only record in `data/raw/ftsg-tech-trends/corrections.json`, written by hand after reading the source page; raw entries are not edited.
 
 Re-running a build rewrites the edition file in the same printed order. Do not re-run after claim ids are assigned unless the order is unchanged (D15).
