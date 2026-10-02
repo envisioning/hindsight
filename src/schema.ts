@@ -245,6 +245,77 @@ export const SubjectTechnologyLink = z.object({
   created_at: z.string().datetime(),
 });
 
+/** A forecast about a linked subject, as listed in `by-technology.json` (D48, #59). */
+export const LinkedClaim = z.object({
+  /** The claim id, as on envisioning.com/hindsight/claims/<id>. */
+  id: Id,
+  subject_id: Id,
+  source_id: Id,
+  /** Institution name of the source's publisher. */
+  publisher: z.string().min(1),
+  /** Year the edition was published. */
+  year: z.number().int(),
+  /** Published verdict (D20 final, D33 trend final, or D19 numeric grade); null when there is none, it is still open, or it is contested. */
+  verdict: z.union([Verdict, z.literal("ungradable")]).nullable(),
+});
+
+/** Claims about the subjects linked to one technology. Publishers are alphabetical, never ranked (D17). */
+export const LinkedClaims = z.object({
+  count: z.number().int().min(0),
+  publishers: z.array(z.string().min(1)),
+  first_year: z.number().int().nullable(),
+  last_year: z.number().int().nullable(),
+  /** Count per published verdict; claims without one are left out. */
+  verdicts: z.record(z.string(), z.number().int().min(1)),
+  /** Up to 20 claims, newest edition first. */
+  latest: z.array(LinkedClaim).max(20),
+});
+
+/** `data/links/by-technology.json` (technology to forecasts), written by `pnpm links` from the active rows of `research.json`. */
+export const LinksByTechnology = z.object({
+  rule: z.literal("D48"),
+  /** `created_at` of the newest row of `research.json` read; the file changes only when the links or claims do. */
+  links_as_of: z.string().datetime().nullable(),
+  /** Keyed by `<research_slug>/<original_id>`, the URL parts of envisioning.com/research/<research_slug>/<original_id>. */
+  technologies: z.record(
+    z.string(),
+    z.object({
+      technology_id: z.string().uuid(),
+      research_slug: Id,
+      original_id: Id,
+      title: z.string().min(1),
+      /** Linked subjects; `same` first. */
+      subjects: z.array(z.object({ subject_id: Id, name: z.string().min(1), relation: LinkRelation })),
+      claims: LinkedClaims,
+    }),
+  ),
+});
+
+/** `data/links/by-subject.json` (forecast to technology), written by `pnpm links`. */
+export const LinksBySubject = z.object({
+  rule: z.literal("D48"),
+  links_as_of: z.string().datetime().nullable(),
+  /** Keyed by subject id. */
+  subjects: z.record(
+    z.string(),
+    z.object({
+      name: z.string().min(1),
+      /** `same` first, then by research slug and original_id. */
+      technologies: z.array(
+        z.object({
+          technology_id: z.string().uuid(),
+          research_slug: Id,
+          original_id: Id,
+          title: z.string().min(1),
+          relation: LinkRelation,
+        }),
+      ),
+      /** Every published claim about the subject, newest edition first. www uses it for the subject page and to find a claim's technologies. */
+      claims: z.array(LinkedClaim),
+    }),
+  ),
+});
+
 /** Text embedded for a subject (D48): name, other aliases, and one claim text per source. Written by `pnpm normalize`. */
 export const SubjectText = z.object({
   subject_id: Id,
@@ -586,6 +657,9 @@ export type LinkCandidate = z.infer<typeof LinkCandidate>;
 export type LinkVerdict = z.infer<typeof LinkVerdict>;
 export type LinkVerdictFile = z.infer<typeof LinkVerdictFile>;
 export type LinkAuditRecord = z.infer<typeof LinkAuditRecord>;
+export type LinkedClaim = z.infer<typeof LinkedClaim>;
+export type LinksByTechnology = z.infer<typeof LinksByTechnology>;
+export type LinksBySubject = z.infer<typeof LinksBySubject>;
 export type NumericRule = z.infer<typeof NumericRule>;
 export type PublishedVerdict = z.infer<typeof PublishedVerdict>;
 export type NumericAudit = z.infer<typeof NumericAudit>;

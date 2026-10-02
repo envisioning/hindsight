@@ -16,6 +16,8 @@ Hindsight subjects (kind `technology`) linked to technologies in Envisioning's r
 | `runs/<run>/audit.json` | Fixed-seed sample of accepted links and the auditor's records. | `audit-sample.mjs`, auditor agent |
 | `runs/<run>/final.json` | Verdict counts and the audit error rate of the run. | `final.mjs` |
 | `research.json` | The links. Append-only `SubjectTechnologyLink` rows; the latest row of a pair is its state. | `final.mjs` |
+| `by-technology.json` | Technology to forecasts (`LinksByTechnology`), keyed by `<research_slug>/<original_id>`: the linked subjects with their relation, and the published claims about them (count, publishers alphabetical (D17), first and last year, verdict counts, up to 20 claims newest first with publisher, year and verdict). | `pnpm links` |
+| `by-subject.json` | Forecast to technology (`LinksBySubject`), keyed by subject id: the linked technologies with research slug, `original_id`, title and relation, and every published claim about the subject (newest first, same fields as above). | `pnpm links` |
 
 Subject text (the embedding input) is `data/normalized/subject-text.json`, written by `pnpm normalize`.
 
@@ -34,7 +36,11 @@ node scripts/links/agreement.mjs <run> --out <verifier dir>                     
 node scripts/links/audit-sample.mjs <run> --out <verifier dir>
 # auditor (docs/grading/link-auditor.md) -> runs/<run>/audit.json records
 node scripts/links/final.mjs <run>
+pnpm links                                                                       # by-technology.json, by-subject.json
+git add data/links && pnpm manifest
 ```
+
+`pnpm links` (`scripts/links/publish.mjs`) reads the latest row of each pair in `research.json` (a `curated` row is never overridden by a later agent row) and keeps active rows only. Titles and URL parts come from `technologies-snapshot.json`, not from the row (D48); a link whose technology or subject is missing from the snapshot or `subjects.json` is dropped and counted. Claims are the published claims in `data/normalized/claims`; the verdict is the D20 final (`final-d20.json`), else the D33 trend final (`final-d33.json`), else a graded D19 numeric row; contested, `open` and `gap` rows carry no verdict. Run it after `pnpm normalize`, grading and `final.mjs`. The output is deterministic; `pnpm links --check` fails when the committed files are stale. `pnpm manifest` lists the tracked files of `data/links` under `links` in `data/raw/manifest.json`; www reads them from GitHub raw at `data/links/<file>` (local `../hindsight/data/links` in development).
 
 Reading of the verdicts (D48, applied from `d48-r0`): a technology whose `original_id` has a region prefix (`china__`, `usa__`, `europe__`, `canada__`, and the other country series such as `japan__` or `india__`) is a regional landscape entry: its summary and examples are one country's or region's companies, programmes and policy. Against a subject with no regional scope it is `narrower` (a direct regional case, kept as a related link), never `link`, even when its description opens with a general definition; a project can hold both the general page and the regional one (`apogee/commercial-space-stations` and `apogee/usa__commercial-space-stations`). A page without a prefix whose summary only frames the technology for its project (urban, financial, gaming) is `link` when it describes the technology itself, and `narrower` only when it names a specific application (`cities/generative-ai`: urban design scenarios).
 
