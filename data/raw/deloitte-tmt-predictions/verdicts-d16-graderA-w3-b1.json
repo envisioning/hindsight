@@ -1,0 +1,247 @@
+{
+ "rule": "D16",
+ "grader": "A",
+ "model": "agent (model not recorded in the public repo)",
+ "verdicts": [
+  {
+   "id": "deloitte-tmt-predictions-2003-009",
+   "verdict": "ungradable",
+   "reading": "In 2003 the minority of European companies that pair mobile data roll-outs with business process analysis will earn high ROI, with payback in two years or less.",
+   "mainstream_test": "Event/quantity test (D30): a public measure of ROI or payback periods of business mobile data projects, split by whether process analysis was done.",
+   "reason": "Looked for a survey or regulator/industry series measuring ROI or payback of European enterprise mobile data projects in 2003-2005, split by process redesign. e-Business W@tch 2003/04 measures only whether firms offer (wireless) remote access, not returns; vendor case studies are not a measure. No public measure of what the claim states exists (D22).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20071006002532/http://www.ebusiness-watch.org/key_reports/documents/EBR04.pdf",
+     "title": "European Commission e-Business W@tch, The European e-Business Report 2004 edition (survey 2003/04)",
+     "date": "2004-09",
+     "shows": "The EU's enterprise ICT survey for 2003/04 reports adoption shares (remote access 16% of enterprises across sectors; wireless remote access via phones/PDAs 5% in business services) and case studies, but no ROI or payback measure for mobile data projects."
+    },
+    {
+     "url": "https://web.archive.org/web/20031204215942/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_research_mobileoutlookeurope_070103.pdf",
+     "title": "Deloitte Research, Mobile Outlook for 2003: Predictions for the Mobile Sector in Europe",
+     "date": "2003-01",
+     "shows": "The report states the ROI claim with no metric or survey named for checking it."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-010",
+   "verdict": "miss",
+   "reading": "By end-2003 close to two thirds of European businesses will have deployed mobile data at least at trial level, but disappointing trials (laptops rather than PDAs) will stall further deployment.",
+   "mainstream_test": "Quantity test (D30/D16 numeric): share of European businesses with mobile data deployed at least at trial level by end-2003, against ~67%.",
+   "reason": "The EU e-Business W@tch survey of 2003/04 found remote access to the company network in 16% of enterprises across nine sectors and wireless remote access by phones or PDAs in only 5% of business services enterprises (12% employment-weighted), the most mobile-intensive sector. Even allowing for trials not counted as deployment, two thirds of businesses is far off. The 'disappoints' framing held (non-SMS data stayed 2% of UK mobile revenue), but the numeric core missed. Trial-level use is not measured directly, so this rests on deployment shares.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20071006002532/http://www.ebusiness-watch.org/key_reports/documents/EBR04.pdf",
+     "title": "European Commission e-Business W@tch, The European e-Business Report 2004 edition (survey 2003/04)",
+     "date": "2004-09",
+     "shows": "2003/04 survey: 16% of enterprises (nine sectors) give staff remote access to the company system; in business services 20% remote access and 5% of enterprises (12% of employment) offer remote access with wireless devices such as mobile phones or PDAs."
+    },
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "UK mobile retail revenue: non-SMS data GBP 0.1bn of 10.6bn in 2003 and 2% of 12.3bn in 2004; non-SMS data 'remains small'."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-011",
+   "verdict": "hit",
+   "reading": "In 2003 European 3G will be confined to early adopters, a few million users at most, with interoperability/coverage problems, incumbents delaying roll-out, and only a few 3G handsets launched.",
+   "mainstream_test": "Event/state test (D30): European 3G users at most a few million in 2003, incumbents delaying launch, few handsets.",
+   "reason": "The EC estimated 3G subscriptions in late 2003 at about 375,000 (Italy), 195,000 (UK), 12,000 (Sweden) and 10,000 (Austria): well under one million, all on Hutchison's new-entrant 3 networks. Incumbents delayed: Vodafone UK launched only a data card in early 2004, Orange and SFR delayed to end-2004, T-Mobile Germany delayed; OECD notes handset shortages and software problems. All parts held.",
+   "evidence": [
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52003DC0715",
+     "title": "European Commission, Ninth Report on the Implementation of the Telecommunications Regulatory Package, COM(2003) 715",
+     "date": "2003-11-19",
+     "shows": "First commercial 3G launch in Europe in H1 2003; 3G subscriptions estimated at around 375 000 in Italy, 195 000 in the UK, 12 000 in Sweden and 10 000 in Austria."
+    },
+    {
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2004/09/development-of-third-generation-mobile-services-in-the-oecd_g17a1bd2/232562017400.pdf",
+     "title": "OECD, Development of Third-Generation Mobile Services in the OECD, Digital Economy Papers No. 85",
+     "date": "2004-09-14",
+     "shows": "3 UK started March 2003, 3 Italy March 2003, 3 Austria/Sweden May 2003 (3 Austria ~17,000 subs Dec 2003); Orange and SFR delayed to end-2004; T-Mobile, Vodafone delayed; Vodafone UK data card Feb 2004; 3 Italy ran out of handsets; handset shortages delayed diffusion."
+    },
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "Up to end-2004 3UK was the only UK operator offering 3G; major handset makers only recently devoted real attention to 3G handsets."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-012",
+   "verdict": "partial",
+   "reading": "In 2003 the European mobile industry will fail to develop the fledgling machine-embedded (M2M) market: no QoS guarantees, no machine tariffs, little vendor work on embedded modules.",
+   "mainstream_test": "Event test (D30): did operators and vendors develop M2M offerings and a market in 2003, or did it stay neglected?",
+   "reason": "The market stayed small in 2003, but the claim that the industry would ignore it failed in part: on 27 January 2003 Orange Business Solutions launched M2M Connect in the UK, a dedicated M2M platform over GSM/GPRS/SMS with machine-specific airtime pricing (contradicting 'operators will not develop tariffs for machines'). Neglect held for most operators, not for all. I found no Europe-wide 2003 M2M connection count to settle how far the market grew.",
+   "evidence": [
+    {
+     "url": "https://www.theregister.com/2003/01/27/orange_pitches_standardsbased_m2m/",
+     "title": "The Register (ComputerWire), Orange pitches standards-based M2M",
+     "date": "2003-01-27",
+     "shows": "Orange Business Solutions launched M2M Connect, a standards-based M2M platform for UK wireless telemetry (alarms, parking meters, vending, in-car), charging by airtime rather than per SIM; M2M described as in early stages."
+    },
+    {
+     "url": "https://web.archive.org/web/20031204215942/http://www.deloitte.com:80/dtt/cda/doc/content/dtt_research_mobileoutlookeurope_070103.pdf",
+     "title": "Deloitte Research, Mobile Outlook for 2003: Predictions for the Mobile Sector in Europe",
+     "date": "2003-01",
+     "shows": "Prediction published January 2003, before the Orange launch."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-013",
+   "verdict": "partial",
+   "reading": "In 2003 SMS volumes and revenues in Europe will rise strongly, driven by business rather than consumer use and boosted by premium SMS; consumer SMS volumes will tail off as early adopters move to GPRS instant messaging.",
+   "mainstream_test": "Event/state test (D30): SMS volume and revenue growth in 2003 and its driver (business vs consumer).",
+   "reason": "SMS volumes and revenues did rise strongly: UK SMS per active customer rose from 7.2 to 9.6 a week in 2003 and SMS revenue from GBP 1.4bn to 1.8bn. But the stated driver was wrong: growth was consumer texting, per-subscriber consumer use rose rather than tailing off, and GPRS instant messaging did not displace SMS (non-SMS data stayed 'relatively insignificant'). Headline held, mechanism did not: happened in part.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "UK SMS retail revenue GBP 1.4bn (2002), 1.8bn (2003), 1.9bn (2004); average SMS/MMS per active customer per week 7.2 (2002), 9.6 (2003), 9.6 (2004); over 28bn texts in 2004; 40% of consumers text instead of making a fixed call; non-SMS data services remain small."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-014",
+   "verdict": "partial",
+   "reading": "Mobile payments in Europe progress slowly in 2003: operators launch pre-pay top-up from the phone and easier credit transfer between phones, and only limited trials use phones to buy from machines via Bluetooth or infrared.",
+   "mainstream_test": "Event/state test (D30): mobile payments stay marginal in 2003, with the named operator launches and limited machine-payment trials.",
+   "reason": "The core 'slowly' held: European proximity mobile payments stayed at trial stage for years (first European transit trials in 2005; Orange/Cofinoga NFC trial 2005), and Ofcom shows non-SMS mobile data/transactions negligible in UK revenue. But the affirmative parts (operators launching top-up from the handset and phone-to-phone credit transfer in Europe in 2003) were not confirmed in the sources I opened; credit transfer as an operator service is documented in the Philippines, not Europe. Partly verified: partial.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_payment",
+     "title": "Mobile payment - Wikipedia",
+     "date": "accessed 2026-10-02",
+     "shows": "In Europe the first mobile payment experiments on transport ran from May 2005 (Hanau, NFC); contactless phone payment trials in France from October 2005; wide adoption came much later."
+    },
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "UK non-SMS data revenue GBP 0.1bn in 2003 and 0.2bn in 2004 of ~12bn retail; new mobile data services 'remain small'."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-015",
+   "verdict": "partial",
+   "reading": "In 2003 colour-screen, GPRS and Java phones will make mobile games a serious-money market in Europe, dominated by arcade ports, with the industry neglecting multiplayer games.",
+   "mainstream_test": "Event/quantity test (D30): did mobile game revenue in 2003 reach a substantial level, driven by Java/colour phones?",
+   "reason": "The mechanism held (Java/colour handsets launched the downloadable-games market; ports of arcade titles dominated and multiplayer stayed marginal), but the money was modest: the UK mobile games market was expected at about GBP 50m in 2003, and all non-SMS UK mobile data retail revenue was about GBP 0.1bn. 'Serious money' read against operator revenues did not happen in 2003; growth to ~GBP 211m was forecast only for 2006. Happened in part.",
+   "evidence": [
+    {
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2004/09/development-of-third-generation-mobile-services-in-the-oecd_g17a1bd2/232562017400.pdf",
+     "title": "OECD, Development of Third-Generation Mobile Services in the OECD, Digital Economy Papers No. 85",
+     "date": "2004-09-14",
+     "shows": "In the United Kingdom the market for mobile games was expected to be worth over GBP 50 million (USD 79 million) in 2003 and GBP 211 million by 2006; games cited as a likely 3G application."
+    },
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "UK mobile retail revenue 2003: voice GBP 8.7bn, SMS 1.8bn, other data 0.1bn."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-016",
+   "verdict": "partial",
+   "reading": "MMS interoperability and roaming stay limited in H1 2003, but growth in MMS handsets drives consumer MMS take-up, so MMS pulls through.",
+   "mainstream_test": "Event/state test (D30): consumer MMS take-up growing from MMS handset growth in 2003-2004 to a meaningful level.",
+   "reason": "MMS handsets spread (17m MMS-capable devices, about a third of UK handsets, by end-2004) and use grew, but from a tiny base: UK MMS per active customer was about 0.1 a month in 2003 and 0.2 in 2004, and Ofcom said MMS use and revenue 'remain small, especially given the growing number of camera phones'. Take-up driven by handsets happened in part; 'pulls through' did not by 2004. Interoperability in H1 2003 was not checked directly.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "Average monthly MMS per customer ~0.1 (2003) and 0.2 (2004); 17 million MMS-capable devices at end-2004 (~a third of UK handsets); MMS usage and revenue 'remain small, especially given the growing number of camera phones in circulation'."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-017",
+   "verdict": "hit",
+   "reading": "In 2003 WAP use revives in Europe as colour, more powerful phones and better GPRS coverage bring mobile-specific content.",
+   "mainstream_test": "Event/state test (D30): did WAP usage grow markedly in 2003 on GPRS/colour handsets?",
+   "reason": "UK average WAP page impressions per customer roughly doubled from 7.8 a month in 2002 to 14.9 in 2003 and rose to 21.3 in 2004, which Ofcom attributes to better functionality on enhanced GPRS handsets; GPRS devices reached about half of UK subscribers by 2004. Revenue stayed small, but the claim is a revival of use and content, which held.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "Average monthly WAP page impressions per customer 7.8 (2002), 14.9 (2003), 21.3 (2004); increase reflects better functionality on enhanced GPRS handsets; 26m GPRS devices (~half of subscribers) by Sept 2004; mobile internet services grew but remain relatively insignificant in revenue."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-018",
+   "verdict": "hit",
+   "reading": "In 2003 public WLAN hotspots will not dent the prospects of GPRS or 3G in Europe; the two are complementary and hotspots will be few.",
+   "mainstream_test": "Event/state test (D30): did public WLAN substitute for or threaten cellular data in Europe in 2003?",
+   "reason": "Public WLAN did not threaten cellular data: in 2004 Ofcom found hotspot usage still low, coverage 'tiny in comparison with mobile networks', and WiFi 'usually viewed as a complement rather than a direct competitor'; mobile operators themselves resold hotspot access. Hotspots grew (European count ~27,000 by November 2004, Frost & Sullivan calling the market a hype bubble in October 2003), so 'few' is relative, but the headline held.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "WiFi hotspots growing in number but usage still low; even with thousands of hotspots coverage tiny next to mobile networks; WiFi usually a complement, not a direct competitor; packages mostly for corporate users; Orange and Vodafone resell BT Openzone access."
+    },
+    {
+     "url": "https://www.telecompaper.com/news/35-000-european-wi-fi-hotspots-in-place-by-2006--361812",
+     "title": "Telecompaper, 35,000 European Wi-Fi hotspots in place by 2006 (Frost & Sullivan)",
+     "date": "2003-10-16",
+     "shows": "October 2003: the European WLAN public access hotspot market 'starting to look like a hype bubble', with widespread failure to address technical and business challenges; 35,000 hotspots forecast for 2006."
+    },
+    {
+     "url": "https://www.telecompaper.com/news/number-of-wi-fi-hotspots-in-europe-reaches-27-000--422652",
+     "title": "Telecompaper, Number of Wi-Fi hotspots in Europe reaches 27,000 (BroadGroup survey)",
+     "date": "2004-11-08",
+     "shows": "November 2004: European hotspot deployment approaching 27,000; prices still above US and Asia."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-019",
+   "verdict": "hit",
+   "reading": "During 2003 European mobile operators will increasingly turn to network sharing (GSM and 3G) to cut capex, helped by relaxed regulation, and some will outsource network infrastructure.",
+   "mainstream_test": "Event/state test (D30): network-sharing agreements and regulatory relaxation in Europe in 2003.",
+   "reason": "The European Commission cleared the O2/T-Mobile 3G network-sharing agreements for the UK (30 April 2003) and Germany (16 July 2003); 3, Vodafone and Orange shared rural 3G build in Sweden via 3GIS; regulators relaxed rules (Spain January 2004, Finland April 2004). Sharing and its regulatory easing happened as stated.",
+   "evidence": [
+    {
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52003DC0715",
+     "title": "European Commission, Ninth Report on the Implementation of the Telecommunications Regulatory Package, COM(2003) 715",
+     "date": "2003-11-19",
+     "shows": "Commission adopted two exemption decisions in April and July 2003 setting how far mobile operators in Germany and the UK can cooperate through network sharing (COMP/38.370 O2 UK/T-Mobile UK; COMP/38.369 T-Mobile Deutschland/O2 Germany)."
+    },
+    {
+     "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2004/09/development-of-third-generation-mobile-services-in-the-oecd_g17a1bd2/232562017400.pdf",
+     "title": "OECD, Development of Third-Generation Mobile Services in the OECD, Digital Economy Papers No. 85",
+     "date": "2004-09-14",
+     "shows": "EC permitted T-Mobile/mmO2 UK 3G site sharing (April 2003) and German plan (July 2003); Spain permitted 3G infrastructure sharing January 2004; Finland from April 2004; Sweden 3GIS joint venture of 3, Vodafone Sweden and Orange to share rural 3G infrastructure."
+    }
+   ]
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-020",
+   "verdict": "miss",
+   "reading": "In 2003 European mobile voice revenues stay flat, so data (business SMS, MMS, premium SMS, file transfer) is the main driver of mobile revenue growth.",
+   "mainstream_test": "Event/quantity test (D30): was 2003 mobile revenue growth driven mainly by data, with voice revenue stable?",
+   "reason": "In the UK voice retail revenue rose by about GBP 1.0bn in 2003 (7.7bn to 8.7bn) while SMS and other data together rose by about 0.5bn (1.4bn to 1.9bn); Ofcom attributes revenue growth mainly to growing customer numbers and small increases in voice and SMS use. Voice was not stable and was the main source of growth; non-SMS data was negligible.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+     "title": "Ofcom, The Communications Market 2005: Telecommunications",
+     "date": "2005-07",
+     "shows": "UK mobile retail revenues: voice GBP 7.7bn (2002), 8.7bn (2003), 10.1bn (2004); SMS 1.4bn, 1.8bn, 1.9bn; other data not shown for 2002, 0.1bn (2003), 0.2bn (2004); growth 'driven by continued growth in customer numbers'; non-SMS data 2% of revenue in 2004."
+    }
+   ]
+  }
+ ]
+}

@@ -759,3 +759,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** A pair decided `no_link` in r0 is not seen again in r1 even if its vectors would have ranked it first. The skewed-run gate tolerates up to 10% disagreement where kappa would not test it; the adjudicator and audit still check those pairs.
 
 **Overturned by.** An r0 audit error rate above 10% (title matching proposes too many wrong pairs to keep), or a reason to re-decide pairs wholesale, recorded as a new decision.
+
+## D50: Small grading waves are gated on pooled kappa (amends D11, D26)
+
+*Recorded 2026-10-02. Approved by MZ.*
+
+**Decision.** A grading wave (D26) with fewer than 30 claims passes the D11 agreement gate when the kappa of that wave pooled with the source's previous wave is at least 0.6. The wave's own kappa is still computed and published beside the pooled figure (`agreement-d16.json`, `waves.<w>.kappa` and `kappa_pooled`). Adjudication, audit and final then run as usual.
+
+**Why.** On a dozen claims one disagreement moves kappa by about 0.1, so a per-wave gate measures chance more than the rubric. First case: Deloitte TMT wave w3 (the 12 predictions of the recovered 2003 report), 8 of 12 agreed, kappa 0.52; pooled with w2 it passes.
+
+**Cost.** A small wave with a rubric problem of its own can pass on the strength of the previous wave. The published per-wave kappa keeps that visible.
+
+**Overturned by.** A small wave whose adjudications show a systematic reading problem.

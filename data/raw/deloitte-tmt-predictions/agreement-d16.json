@@ -4,10 +4,10 @@
   "A",
   "B"
  ],
- "n": 438,
- "agree": 368,
- "raw_agreement": 0.8402,
- "kappa": 0.7387,
+ "n": 450,
+ "agree": 376,
+ "raw_agreement": 0.8356,
+ "kappa": 0.7345,
  "passes_d11": true,
  "waves": {
   "w1": {
@@ -21,34 +21,42 @@
    "agree": 123,
    "kappa": 0.6053,
    "passes_d11": true
+  },
+  "w3": {
+   "n": 12,
+   "agree": 8,
+   "kappa": 0.5248,
+   "gate": "D50: pooled with w2",
+   "kappa_pooled": 0.6045,
+   "passes_d11": true
   }
  },
  "graderA": {
-  "hit": 163,
-  "partial": 21,
-  "miss": 40,
+  "hit": 167,
+  "partial": 26,
+  "miss": 42,
   "unfalsifiable": 6,
-  "ungradable": 208
+  "ungradable": 209
  },
  "graderB": {
-  "hit": 156,
-  "partial": 22,
+  "hit": 161,
+  "partial": 26,
   "miss": 29,
   "unfalsifiable": 3,
-  "ungradable": 228
+  "ungradable": 231
  },
  "agreed": {
-  "hit": 135,
-  "partial": 12,
+  "hit": 139,
+  "partial": 15,
   "miss": 27,
-  "ungradable": 194
+  "ungradable": 195
  },
  "hit_rate_agreed": {
-  "hits": 135,
-  "of_graded_hit_partial_miss": 174,
+  "hits": 139,
+  "of_graded_hit_partial_miss": 181,
   "wilson95": [
-   0.708,
-   0.831
+   0.701,
+   0.823
   ],
   "note": "Among claims both graders agree on, excluding unfalsifiable and ungradable. Not yet audited (D11 audit pending)."
  },
@@ -1096,6 +1104,48 @@
    "label": "DTT TMT predicts that in 2010 North American network operators – both wireless and wireline – will likely move away from “all you can eat” data pricing plans.",
    "verdict": "hit",
    "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-011",
+   "label": "3. 3G launches with a whimper, not a bang. Users will be confined in 2003 to early adopters and beta testers, and will number a few million at most in Europe. ... Only a few 3G handsets will be launched by the end of 2003.",
+   "verdict": "hit",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-013",
+   "label": "5. SMS flourishes. SMS volumes will rise strongly in 2003, driven by business rather than consumer use. ... SMS revenues will also grow, boosted by premium SMS services. SMS volumes made by consumers will tail off as early adopter consumers migrate to instant messaging platforms running on GPRS.",
+   "verdict": "partial",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-014",
+   "label": "6. Slowly, slowly for mobile payments. Operators will launch a mobile payment facility as pre-pay top-up from phones. Operators will also make it easier to transfer credit between phones. Limited trials will test the use of mobile phones for buying goods and services from machines via Bluetooth and infrared connections.",
+   "verdict": "partial",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-016",
+   "label": "8. MMS is troubled - but ultimately pulls through. Interoperability between networks and MMS roaming will remain limited for the first half of the year. But the growth of MMS phones will drive the consumer take-up of MMS.",
+   "verdict": "partial",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-017",
+   "label": "9. WAP rises from the ashes. Colour, higher powered, new generation phones and improving GPRS coverage mean that content providers will develop compelling content specifically for mobile users.",
+   "verdict": "hit",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-018",
+   "label": "10. Public WLAN will not threaten GPRS or 3G. Publicly offered WLAN will make little or no impact on the prospects for GPRS, or where this is available, 3G. ... there will be few WLAN hotspots in Europe.",
+   "verdict": "hit",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-019",
+   "label": "11. Operators share to save. Mobile operators, as part of their year long campaign to reduce capital expenditure, will increasingly look to network sharing to reduce costs. This will apply to both GSM and 3G networks.",
+   "verdict": "hit",
+   "wave": "w3"
   }
  ],
  "unfalsifiable_agreed": [],
@@ -2069,6 +2119,11 @@
    "id": "deloitte-tmt-predictions-2010-022",
    "label": "On a per-line basis, emissions could fall by an average 10 percent – albeit against a background of increasing numbers of lines",
    "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-009",
+   "label": "1. Mobile data + process improvement = ROI. The minority of companies that match mobile data implementation to business process analysis will earn high returns on investment and payback periods within two years or less.",
+   "wave": "w3"
   }
  ],
  "contested": [
@@ -2561,6 +2616,34 @@
    "graderA": "ungradable",
    "graderB": "hit",
    "wave": "w2"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-010",
+   "label": "2. Mobile data in business disappoints. ... Close to two thirds of businesses in Europe will have deployed mobile data at least at trial level by the end of 2003. But companies will make mistakes of adding to lap-tops, instead of choosing PDAs. Disappointing trials will halt further deployment of mobile data.",
+   "graderA": "miss",
+   "graderB": "ungradable",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-012",
+   "label": "4. Mobilising machines will be ignored. The mobile industry will fail to develop the fledgling market for mobile embedded into machines.",
+   "graderA": "partial",
+   "graderB": "ungradable",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-015",
+   "label": "7. Mobile gaming makes serious money. Phones with colour screens, GPRS and Java will propel the market for mobile games. ... The industry will overlook the opportunity to create multi player games, based either on connections over cellular or over Bluetooth.",
+   "graderA": "partial",
+   "graderB": "hit",
+   "wave": "w3"
+  },
+  {
+   "id": "deloitte-tmt-predictions-2003-020",
+   "label": "12. Data will drive revenue growth. Voice revenues will remain stable, with price and quality unlikely to change significantly over the year. ... Thus data needs to be the main driver for growth.",
+   "graderA": "miss",
+   "graderB": "partial",
+   "wave": "w3"
   }
  ]
 }

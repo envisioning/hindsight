@@ -4,7 +4,7 @@
 // (verdicts-d16-graderA-<batch>.json) are merged with the main file when present.
 // A batch named w<N> or w<N>-<batch> is grading wave N (D26): claims added to a source
 // after its first wave was graded. Files without a wave name are wave w1. Each wave gets
-// its own kappa; every wave must pass D11.
+// its own kappa; every wave must pass D11 (a wave under 30 claims on kappa pooled with the previous wave, D50).
 // Writes data/raw/<source>/agreement-d16.json. Labels come from the raw edition
 // file named by the claim id (<source>-<edition>-<nnn>, or et-<edition>-<nnn>):
 // the entry with that id, else the entry at position nnn (D15).
@@ -100,7 +100,15 @@ const out = {
 					waveNames.map((name) => {
 						const ps = pairs.filter(([a]) => a.wave === name);
 						const k = r4(kappaOf(ps));
-						return [name, { n: ps.length, agree: ps.filter(([a, b]) => a.verdict === b.verdict).length, kappa: k, passes_d11: k >= 0.6 }];
+						const base = { n: ps.length, agree: ps.filter(([a, b]) => a.verdict === b.verdict).length, kappa: k };
+						// D50: a wave under 30 claims is gated on kappa pooled with the previous wave; its own kappa is still published.
+						const i = waveNames.indexOf(name);
+						if (ps.length < 30 && i > 0) {
+							const prev = waveNames[i - 1];
+							const pooled = r4(kappaOf(pairs.filter(([a]) => a.wave === name || a.wave === prev)));
+							return [name, { ...base, gate: `D50: pooled with ${prev}`, kappa_pooled: pooled, passes_d11: pooled >= 0.6 }];
+						}
+						return [name, { ...base, passes_d11: k >= 0.6 }];
 					}),
 				),
 			}
