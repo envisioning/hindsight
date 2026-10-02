@@ -1,0 +1,113 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #71",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:bp-energy-outlook:numeric",
+ "recheck_of": "data/graded/audit/bp-energy-outlook.json",
+ "scope": "The two sampled EO2015 rows the #53 audit checked against the wrong workbook: commit f760bcf found that the archive.org .xlsx at the 2015 path is the January 2014 workbook, and re-read bp-energy-outlook-2015-002 to -006 from bp's 2015 .xls. 2015-002 (contest) and 2015-003 (confirm) refer to the first values (3.0 and 4.0).",
+ "how": "bp's February 2015 summary tables (BP-Energy-Outlook-2035-Summary-Tables-2015.xls, Wayback capture 20150301044017, sha256 4bcd6c75f819ebf37baa248d570d7c2ed82c0778f5d505a5cdc789a143efcfd6) fetched on 2026-10-02 and read with scripts/bp-energy-outlook/xls_dump.py, not from repo files; share = (Total Renewables Consumption + Of which Biofuels) / Total Energy Consumption, World, sheet 'Consumption by fuel'. Actual re-derived from the current OWID energy-data CSV (Energy Institute Statistical Review): World renewables_share_energy minus hydro_share_energy. bp's own later-stated 2015 share read from the EO2017 summary tables (Wayback capture 20170128204854) to test the bp-vs-EI basis gap the #53 contest raised. Verdict recomputed under D18.",
+ "counts": {
+  "rechecked": 2,
+  "confirm": 2,
+  "correct": 0
+ },
+ "records": {
+  "bp-energy-outlook-2015-002": {
+   "claim_id": "bp-energy-outlook-2015-002",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:19:43+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 3.51,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json); forecast read from the January 2014 workbook"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 3.51,
+    "verdict": "hit",
+    "actual_vintage": "Energy Institute Statistical Review 2025 via OWID energy-data (retrieved 2026-09-28)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 3.51,
+    "actual_series": "EI Statistical Review via OWID energy-data, World renewables_share_energy minus hydro_share_energy, 2015 (10.000 - 6.485 = 3.515)",
+    "error": -0.41,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20150301044017id_/http://www.bp.com:80/content/dam/bp/excel/Energy-Economics/energy-outlook-2015/BP-Energy-Outlook-2035-Summary-Tables-2015.xls",
+     "title": "BP Energy Outlook 2035: February 2015, summary tables",
+     "date": "2015-02-17",
+     "shows": "Contents sheet: 'BP Energy Outlook 2035: February 2015' (file last saved 2015-02-17, columns 1990 ... 2013, 2015, 2020 ... 2035). 'Consumption by fuel', World, 2015 column: Total Renewables Consumption 346.54 + Of which Biofuels 68.33 = 414.86 Mtoe / Total Energy Consumption 13186.54 = 3.146%, stored 3.1. Base year 2013: (279.29 + 65.35) / 12730.43 = 2.707%."
+    },
+    {
+     "url": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
+     "title": "OWID energy-data (Energy Institute Statistical Review)",
+     "date": "2026-10-02",
+     "shows": "World 2015: renewables_share_energy 10.000, hydro_share_energy 6.485, so renewables excluding hydro 3.515%; 2013: 9.367 - 6.515 = 2.852."
+    },
+    {
+     "url": "https://web.archive.org/web/20170128204854id_/http://www.bp.com/content/dam/bp/excel/energy-economics/energy-outlook-2017/bp-energy-outlook-2017-summary-tables.xlsx",
+     "title": "BP Energy Outlook 2017, summary tables",
+     "date": "2017-01",
+     "shows": "'Consumption by fuel', 2015 column: (364.86 renewables + 74.24 biofuels) / 13147.34 = 3.340%, bp's own later-stated 2015 share on its 38% efficiency basis."
+    }
+   ],
+   "note": "The #53 contest was made on the January 2014 workbook (forecast 3.0, error -0.51, partial, 0.01 point from the threshold) and argued that bp's own basis (3.34) gives a hit. On the real 2015 workbook the forecast is 3.146%, stored 3.1: error -0.41 against the EI actual (-0.37 unrounded), a D18 hit, and -0.19 against bp's own 2015 statement, also a hit. The verdict no longer depends on the bp-vs-EI basis gap (0.14 to 0.18 points, which only moves the error toward zero here), so no threshold flag is needed and the contest is moot. Current row confirmed.",
+   "at": "2026-10-02T14:05:31Z"
+  },
+  "bp-energy-outlook-2015-003": {
+   "claim_id": "bp-energy-outlook-2015-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:19:43+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 4,
+    "actual": 5.92,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json); forecast read from the January 2014 workbook"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 5.92,
+    "verdict": "miss",
+    "actual_vintage": "Energy Institute Statistical Review 2025 via OWID energy-data (retrieved 2026-09-28)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "status": "graded",
+    "forecast": 4.2,
+    "actual": 5.92,
+    "actual_series": "EI Statistical Review via OWID energy-data, World renewables_share_energy minus hydro_share_energy, 2020 (12.781 - 6.864 = 5.917)",
+    "error": -1.72,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20150301044017id_/http://www.bp.com:80/content/dam/bp/excel/Energy-Economics/energy-outlook-2015/BP-Energy-Outlook-2035-Summary-Tables-2015.xls",
+     "title": "BP Energy Outlook 2035: February 2015, summary tables",
+     "date": "2015-02-17",
+     "shows": "'Consumption by fuel', World, 2020 column: Total Renewables Consumption 536.29 + Of which Biofuels 82.09 = 618.37 Mtoe / Total Energy Consumption 14650.91 = 4.221%, stored 4.2. (The January 2014 workbook the #53 audit read gave 3.99%, stored 4.0.)"
+    },
+    {
+     "url": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
+     "title": "OWID energy-data (Energy Institute Statistical Review)",
+     "date": "2026-10-02",
+     "shows": "World 2020: renewables_share_energy 12.781, hydro_share_energy 6.864, so renewables excluding hydro 5.917%."
+    }
+   ],
+   "note": "Forecast 4.221% (stored 4.2) from the real 2015 workbook; error -1.72 points (-1.70 unrounded), a D18 miss. Robust to the 0.14 to 0.18 point bp-vs-EI basis gap (at most -1.54, still a miss). Verdict unchanged from the #53 confirm; forecast changed from 4.0 to 4.2. Current row confirmed.",
+   "at": "2026-10-02T14:05:31Z"
+  }
+ }
+}

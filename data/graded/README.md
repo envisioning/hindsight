@@ -43,7 +43,7 @@ An agent checked a fixed-seed sample of graded rows per source (`node scripts/nu
 |---|---|---|---|---|---|---|---|---|---|---|
 | bcb-focus | 78 of 78 | 75 | 0 | 3 | 4% | 3 | 0 (0%) | 3 (3 / 0) | 0 | [35%, 42%] |
 | bnef-evo | 9 of 9 | 8 | 0 | 1 | 11% | 0 | 1 (11%) | 0 (0 / 0) | 0 | counts only |
-| bp-energy-outlook | 5 of 5 | 4 | 0 | 1 | 20% | 0 | 1 (20%) | 0 (0 / 0) | 1 | counts only |
+| bp-energy-outlook | 5 of 5 | 4 | 0 | 1 | 20% | 1 | 0 (0%) | 2 (2 / 0) | 0 | counts only |
 | cbo-projections | 145 of 145 | 145 | 0 | 0 | 0% | 0 | 0 (0%) | 49 (49 / 0) | 0 | [28%, 33%] |
 | ecb-projections | 52 of 52 | 47 | 4 | 1 | 10% | 5 | 0 (0%) | 20 (20 / 0) | 0 | [53%, 62%] |
 | eia-aeo | 433 of 433 | 417 | 12 | 4 | 4% | 16 | 0 (0%) | 4 (4 / 0) | 0 | [45%, 48%] |
