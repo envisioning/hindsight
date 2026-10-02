@@ -14,12 +14,7 @@ You continue Hindsight (envisioning/hindsight): a public record of published for
 
 ## Work, in this order
 
-1. **Grade under the approved rules:** #47 Eurasia (D31), #48 WEF (D32), trend sources #26 to #31 (D33), scenario sets #32 to #34 (D34; capture observed emissions, CO2 concentration and primary energy first). Long Bets as baseline only (D35).
-2. **#66** numeric open items.
-3. **#59** links, only if `OPENROUTER_API_KEY` is set.
-4. **#26** FTSG 2015-2017 transcripts; **#27** McKinsey 2026 PDF.
-5. **www issues** envisioning.com #46 to #49, then **#60** and **#3** as MZ decides.
-6. **#64** issue housekeeping.
+Follow "Order of work" in `docs/HANDOFF.md`. It is the current list; this prompt does not repeat it.
 
 ## How to grade a source (D20)
 
