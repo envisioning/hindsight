@@ -7,7 +7,9 @@ import csv, json, os, re, sys, datetime, html
 from html.parser import HTMLParser
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-IN = sys.argv[1] if len(sys.argv) > 1 else HERE
+REALIZED_ONLY = '--realized-only' in sys.argv
+ARGS = [a for a in sys.argv[1:] if a != '--realized-only']
+IN = ARGS[0] if ARGS else HERE
 OUT = os.path.join(HERE, '..', '..', 'data', 'raw', 'fed-sep')
 os.makedirs(OUT, exist_ok=True)
 ALF = 'https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=%s&vintage_date=%s'
@@ -53,6 +55,62 @@ def read_csv(path):
         if len(row) > 1 and row[1] not in ('', '.'):
             out[row[0]] = float(row[1])
     return r[0][1], out
+
+
+# Realized values (latest ALFRED vintage).
+def write_realized():
+    """realized.json from the latest ALFRED vintages in IN/alfred. Run alone with --realized-only (#66 vintage refresh)."""
+    def series(s):
+        return read_csv(os.path.join(IN, 'alfred', '%s_latest.csv' % s))
+
+
+    def q4avg(m, y):
+        xs = [m.get('%d-%02d-01' % (y, k)) for k in (10, 11, 12)]
+        return None if None in xs else sum(xs) / 3
+
+
+    rz = []
+    vint = {}
+    hG, gdp = series('GDPC1'); hP, pce = series('PCEPI'); hC, core = series('PCEPILFE'); hU, un = series('UNRATE')
+    _, tar = series('DFEDTAR'); _, tu = series('DFEDTARU'); _, tl = series('DFEDTARL')
+    for y in range(2007, 2026):
+        g1, g0 = gdp.get('%d-10-01' % y), gdp.get('%d-10-01' % (y - 1))
+        if g1 and g0:
+            rz.append({'variable': 'real GDP growth', 'target_year': y, 'value': round((g1 / g0 - 1) * 100, 2), 'unit': '%',
+                       'definition': DEF['real GDP growth'], 'computed_from': 'GDPC1 (quarterly, SAAR, chained dollars): Q4 level / previous Q4 level',
+                       'source_url': ALF_LATEST % 'GDPC1', 'vintage': hG, 'confidence': 'high'})
+        for var, m, s, h in (('PCE inflation', pce, 'PCEPI', hP), ('core PCE inflation', core, 'PCEPILFE', hC)):
+            a, b = q4avg(m, y), q4avg(m, y - 1)
+            if a and b:
+                rz.append({'variable': var, 'target_year': y, 'value': round((a / b - 1) * 100, 2), 'unit': '%', 'definition': DEF[var],
+                           'computed_from': '%s (monthly index): average of Oct-Dec / average of Oct-Dec of the previous year' % s,
+                           'source_url': ALF_LATEST % s, 'vintage': h, 'confidence': 'high'})
+        u = q4avg(un, y)
+        if u is None and '%d-12-01' % y in un:
+            months = {k: un[k] for k in ('%d-10-01' % y, '%d-11-01' % y, '%d-12-01' % y) if k in un}
+            rz.append({'variable': 'unemployment rate', 'target_year': y, 'value': None, 'unit': '%', 'definition': DEF['unemployment rate'],
+                       'available_months': months, 'source_url': ALF_LATEST % 'UNRATE', 'vintage': hU, 'confidence': 'low',
+                       'note': 'BLS published no unemployment rate for some fourth-quarter months (October 2025: no household survey during the federal government shutdown). The fourth-quarter average is not computed.'})
+        if u is not None:
+            rz.append({'variable': 'unemployment rate', 'target_year': y, 'value': round(u, 2), 'unit': '%', 'definition': DEF['unemployment rate'],
+                       'computed_from': 'UNRATE (monthly, SA): average of Oct-Dec', 'source_url': ALF_LATEST % 'UNRATE', 'vintage': hU, 'confidence': 'high'})
+        k = '%d-12-31' % y
+        if k in tu and k in tl:
+            rz.append({'variable': 'federal funds rate', 'target_year': y, 'value': round((tu[k] + tl[k]) / 2, 3), 'unit': '%', 'definition': DEF['federal funds rate'],
+                       'computed_from': 'midpoint of DFEDTARU and DFEDTARL on %s' % k, 'source_url': ALF_LATEST % 'DFEDTARU', 'confidence': 'high'})
+        elif k in tar:
+            rz.append({'variable': 'federal funds rate', 'target_year': y, 'value': tar[k], 'unit': '%', 'definition': DEF['federal funds rate'],
+                       'computed_from': 'DFEDTAR on %s' % k, 'source_url': ALF_LATEST % 'DFEDTAR', 'confidence': 'high'})
+    json.dump({'source': 'FRED/ALFRED, Federal Reserve Bank of St. Louis (underlying data: BEA for GDPC1, PCEPI, PCEPILFE; BLS for UNRATE; Federal Reserve Board for DFEDTAR, DFEDTARU, DFEDTARL)',
+               'retrieved': datetime.date.today().isoformat(),
+               'notes': 'Latest vintage values, not first releases. GDP and PCE values change with every BEA comprehensive revision, so a later grading step may prefer first-release values (ALFRED vintages). Years 2007 to 2025. Values are computed by Hindsight from the level series with the SEP definitions; they are not errors or grades.',
+               'entries': rz}, open(os.path.join(OUT, 'realized.json'), 'w'), indent=1, ensure_ascii=False)
+    return rz
+
+
+if REALIZED_ONLY:
+    print(len(write_realized()), 'realized rows')
+    sys.exit(0)
 
 
 def ed_of(d):
@@ -351,52 +409,7 @@ for ed, why in MISSING.items():
     prog.append('| %s | missing | 0 | %s |' % (ed, now))
 open(os.path.join(OUT, 'PROGRESS.md'), 'w').write('\n'.join(prog) + '\n')
 
-# Realized values (latest ALFRED vintage).
-def series(s):
-    return read_csv(os.path.join(IN, 'alfred', '%s_latest.csv' % s))
-
-
-def q4avg(m, y):
-    xs = [m.get('%d-%02d-01' % (y, k)) for k in (10, 11, 12)]
-    return None if None in xs else sum(xs) / 3
-
-
-rz = []
-vint = {}
-hG, gdp = series('GDPC1'); hP, pce = series('PCEPI'); hC, core = series('PCEPILFE'); hU, un = series('UNRATE')
-_, tar = series('DFEDTAR'); _, tu = series('DFEDTARU'); _, tl = series('DFEDTARL')
-for y in range(2007, 2026):
-    g1, g0 = gdp.get('%d-10-01' % y), gdp.get('%d-10-01' % (y - 1))
-    if g1 and g0:
-        rz.append({'variable': 'real GDP growth', 'target_year': y, 'value': round((g1 / g0 - 1) * 100, 2), 'unit': '%',
-                   'definition': DEF['real GDP growth'], 'computed_from': 'GDPC1 (quarterly, SAAR, chained dollars): Q4 level / previous Q4 level',
-                   'source_url': ALF_LATEST % 'GDPC1', 'vintage': hG, 'confidence': 'high'})
-    for var, m, s, h in (('PCE inflation', pce, 'PCEPI', hP), ('core PCE inflation', core, 'PCEPILFE', hC)):
-        a, b = q4avg(m, y), q4avg(m, y - 1)
-        if a and b:
-            rz.append({'variable': var, 'target_year': y, 'value': round((a / b - 1) * 100, 2), 'unit': '%', 'definition': DEF[var],
-                       'computed_from': '%s (monthly index): average of Oct-Dec / average of Oct-Dec of the previous year' % s,
-                       'source_url': ALF_LATEST % s, 'vintage': h, 'confidence': 'high'})
-    u = q4avg(un, y)
-    if u is None and '%d-12-01' % y in un:
-        months = {k: un[k] for k in ('%d-10-01' % y, '%d-11-01' % y, '%d-12-01' % y) if k in un}
-        rz.append({'variable': 'unemployment rate', 'target_year': y, 'value': None, 'unit': '%', 'definition': DEF['unemployment rate'],
-                   'available_months': months, 'source_url': ALF_LATEST % 'UNRATE', 'vintage': hU, 'confidence': 'low',
-                   'note': 'BLS published no unemployment rate for some fourth-quarter months (October 2025: no household survey during the federal government shutdown). The fourth-quarter average is not computed.'})
-    if u is not None:
-        rz.append({'variable': 'unemployment rate', 'target_year': y, 'value': round(u, 2), 'unit': '%', 'definition': DEF['unemployment rate'],
-                   'computed_from': 'UNRATE (monthly, SA): average of Oct-Dec', 'source_url': ALF_LATEST % 'UNRATE', 'vintage': hU, 'confidence': 'high'})
-    k = '%d-12-31' % y
-    if k in tu and k in tl:
-        rz.append({'variable': 'federal funds rate', 'target_year': y, 'value': round((tu[k] + tl[k]) / 2, 3), 'unit': '%', 'definition': DEF['federal funds rate'],
-                   'computed_from': 'midpoint of DFEDTARU and DFEDTARL on %s' % k, 'source_url': ALF_LATEST % 'DFEDTARU', 'confidence': 'high'})
-    elif k in tar:
-        rz.append({'variable': 'federal funds rate', 'target_year': y, 'value': tar[k], 'unit': '%', 'definition': DEF['federal funds rate'],
-                   'computed_from': 'DFEDTAR on %s' % k, 'source_url': ALF_LATEST % 'DFEDTAR', 'confidence': 'high'})
-json.dump({'source': 'FRED/ALFRED, Federal Reserve Bank of St. Louis (underlying data: BEA for GDPC1, PCEPI, PCEPILFE; BLS for UNRATE; Federal Reserve Board for DFEDTAR, DFEDTARU, DFEDTARL)',
-           'retrieved': datetime.date.today().isoformat(),
-           'notes': 'Latest vintage values, not first releases. GDP and PCE values change with every BEA comprehensive revision, so a later grading step may prefer first-release values (ALFRED vintages). Years 2007 to 2025. Values are computed by Hindsight from the level series with the SEP definitions; they are not errors or grades.',
-           'entries': rz}, open(os.path.join(OUT, 'realized.json'), 'w'), indent=1, ensure_ascii=False)
+rz = write_realized()
 
 json.dump({'problems': problems, 'editions': {k: [v['status'], v['stats'], len(v['entries'])] for k, v in editions.items()}},
           open(os.path.join(IN, 'build_summary.json'), 'w'), indent=1)

@@ -194,11 +194,36 @@ def es(path):
         for s in reversed(size):
             idx.append(k % s); k //= s
         idx = list(reversed(idx))
-        out.setdefault(gix[idx[gpos]], {})[int(tix[idx[tpos]])] = v
+        t = tix[idx[tpos]]
+        out.setdefault(gix[idx[gpos]], {})[t if '-Q' in t else int(t)] = v
     return out, d.get('updated')
 
 hicp, hu = es('hicp.json')
 gdp, gu = es('gdp.json')
+
+
+def ex_year(x):
+    yy = int(x[1:])
+    return 1900 + yy if yy > 50 else 2000 + yy
+
+
+# GDP actual (#66): the ECB's own history in its latest MPD exercise, on the working-day-adjusted
+# definition the ECB projects, euro area with changing composition. Eurostat's annual nama_10_gdp is
+# not calendar adjusted; it is kept as value_eurostat_nsa for reference.
+latest = max((k[0] for k in mpd if k[1] == 'YER'), key=lambda x: (ex_year(x), 'WGSA'.index(x[0])))
+mpd_hist = {y: v for y, (v, st) in mpd[(latest, 'YER')].items() if st == 'A'}
+# Cross-check: Eurostat namq_10_gdp, seasonally and calendar adjusted, chain-linked volumes (CLV20_MEUR), EA20;
+# annual growth from the sum of the four quarters. Fixed composition, so not the graded value.
+sca = {}
+qpath = os.path.join(IN, 'namq_gdp.json')
+if os.path.exists(qpath):
+    q, qu = es('namq_gdp.json')
+    ys = {}
+    for t, v in q.get('EA20', {}).items():
+        ys.setdefault(int(t[:4]), []).append(v)
+    for y in ys:
+        if len(ys[y]) == 4 and len(ys.get(y - 1, [])) == 4:
+            sca[y] = round((sum(ys[y]) / sum(ys[y - 1]) - 1) * 100, 3)
 rz = []
 for y in range(1999, 2026):
     if y in hicp.get('EA', {}):
@@ -206,16 +231,20 @@ for y in range(1999, 2026):
                    'definition': 'Annual average rate of change, all-items HICP, euro area (changing composition)',
                    'source_url': 'https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table?lang=en',
                    'series': 'prc_hicp_aind, geo=EA, coicop=CP00, unit=RCH_A_AVG', 'vintage': hu, 'confidence': 'high'})
-    if y in gdp.get('EA', {}):
-        e = {'economy': 'Euro area', 'variable': 'real GDP growth', 'target_year': y, 'value': gdp['EA'][y], 'unit': '%',
-             'definition': 'Chain-linked volumes, percentage change on previous year, not calendar adjusted, euro area (changing composition)',
-             'source_url': 'https://ec.europa.eu/eurostat/databrowser/view/nama_10_gdp/default/table?lang=en',
-             'series': 'nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE', 'vintage': gu, 'confidence': 'high'}
+    if y in mpd_hist:
+        e = {'economy': 'Euro area', 'variable': 'real GDP growth', 'target_year': y, 'value': mpd_hist[y], 'unit': '%',
+             'definition': 'Annual percentage change of real GDP, working-day adjusted, euro area (changing composition): the history (status A) of the latest ECB projection exercise',
+             'source_url': MPD_SERIES % ('YER', latest),
+             'series': 'MPD.A.U2.YER.A.%s.0000' % latest, 'vintage': 'MPD exercise %s' % latest, 'confidence': 'high'}
+        if y in gdp.get('EA', {}):
+            e['value_eurostat_nsa'] = gdp['EA'][y]
         if y in gdp.get('EA20', {}):
-            e['value_ea20'] = gdp['EA20'][y]
+            e['value_eurostat_nsa_ea20'] = gdp['EA20'][y]
+        if y in sca:
+            e['value_eurostat_sca_ea20'] = sca[y]
         rz.append(e)
-json.dump({'source': 'Eurostat', 'retrieved': datetime.date.today().isoformat(),
-           'notes': 'Latest Eurostat values, not first releases. EA is the euro area with changing composition (EA11 in 1999 to EA21 in 2026); value_ea20 is the fixed 20-country aggregate. ECB projections refer to the euro area composition of the projection year. The ECB projects working-day-adjusted real GDP in most editions; the annual Eurostat series here is not calendar adjusted, so small differences are expected. No errors or grades are computed.',
+json.dump({'source': 'Eurostat (HICP); ECB Macroeconomic Projection Database (real GDP)', 'retrieved': datetime.date.today().isoformat(),
+           'notes': 'Latest values, not first releases. HICP: Eurostat, EA is the euro area with changing composition (EA11 in 1999 to EA21 in 2026). Real GDP (#66): the history the ECB states in its latest projection exercise (%s), working-day adjusted, euro area with changing composition, the definition the ECB projects; one decimal as the ECB publishes it. value_eurostat_nsa is Eurostat nama_10_gdp CLV_PCH_PRE geo=EA (not calendar adjusted, the actual used before #66), value_eurostat_nsa_ea20 the same for the fixed EA20, value_eurostat_sca_ea20 the growth of the annual sum of Eurostat namq_10_gdp SCA chain-linked volumes for the fixed EA20 (cross-check). No errors or grades are computed.' % latest,
            'entries': rz}, open(os.path.join(OUT, 'realized.json'), 'w'), indent=1, ensure_ascii=False)
 
 json.dump({'problems': problems, 'mpd_only': mpd_only, 'dups': dups, 'editions': summary}, open(os.path.join(IN, 'build_summary.json'), 'w'), indent=1)

@@ -262,16 +262,21 @@ function ecb(): Grader {
   const by = new Map<string, [string, Actual][]>();
   for (const e of d.entries as Raw[]) {
     const list = by.get(e.variable) ?? [];
-    list.push([String(e.target_year), { value: e.value, vintage: `Eurostat ${e.series} (updated ${String(e.vintage).slice(0, 10)})` }]);
+    // #66: real GDP is the ECB's own history in its latest MPD exercise (working-day adjusted, as projected).
+    const vintage = String(e.series).startsWith("MPD.")
+      ? `ECB MPD ${e.series} (history of exercise ${String(e.vintage).replace("MPD exercise ", "")}, retrieved ${d.retrieved})`
+      : `Eurostat ${e.series} (updated ${String(e.vintage).slice(0, 10)})`;
+    list.push([String(e.target_year), { value: e.value, vintage }]);
     by.set(e.variable, list);
   }
-  const s = new Map([...by].map(([k, v]) => [k, series(`Eurostat ${k}`, v)]));
+  const s = new Map([...by].map(([k, v]) => [k, series(k === "real GDP growth" ? "ECB MPD real GDP history" : `Eurostat ${k}`, v)]));
   return {
     statistic: (e) => String(e.statistic),
     match: ({ e, target }) => {
       const variable = String(e?.variable);
       const notes = ["Euro area with changing composition in forecast and actual."];
-      if (variable === "real GDP growth") notes.push("The ECB projects working-day-adjusted GDP; the Eurostat annual series is not calendar adjusted.");
+      if (variable === "real GDP growth")
+        notes.push("Working-day-adjusted GDP in forecast and actual: the actual is the ECB's own history in its latest projection exercise (#66), not the Eurostat annual series, which is not calendar adjusted.");
       if (e?.statistic === "range midpoint") notes.push("The ECB published a range; the midpoint is graded.");
       return lookup(s.get(variable), target as number, target as number, notes);
     },
@@ -282,10 +287,11 @@ function ecb(): Grader {
 
 function cbo(): Grader {
   const d = readJson(join(RAW, "cbo-projections", "realized.json"));
+  const retrieved = String(d.vintage); // "retrieved YYYY-MM-DD"
   const bySeries = new Map<string, Series>();
   for (const x of d.series as Raw[]) {
     const id = String(x.series_id);
-    const vintage = id.startsWith("eval-projections") ? "CBO eval-projections actuals.csv (commit 682559ca58)" : `FRED ${id} (retrieved 2026-09-28)`;
+    const vintage = id.startsWith("eval-projections") ? "CBO eval-projections actuals.csv (commit 682559ca58)" : `FRED ${id} (${retrieved})`;
     bySeries.set(id, series(`${x.metric} (${id})`, (x.entries as Raw[]).map((e) => [String(e.target_year), { value: e.value, vintage }] as [string, Actual])));
   }
   const ANNUAL: Record<string, string> = {
@@ -325,7 +331,7 @@ function cbo(): Grader {
           ...m,
           actual: (m.actual / gdpBn) * 100,
           rescaled: { forecast: (f / gdpBn) * 100, unit: "% of GDP" },
-          vintage: `${m.vintage}; fiscal-year GDP ${Math.round(gdpBn)} billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-09-28)`,
+          vintage: `${m.vintage}; fiscal-year GDP ${Math.round(gdpBn)} billion USD from FRED FYFSD / FYFSGDA188S (${retrieved})`,
           notes: [...m.notes, `Graded in percent of GDP (#54): forecast ${f} and actual ${m.actual} billion USD, each divided by actual fiscal-year GDP, as CBO's own evaluations do.`],
         };
       }
@@ -353,7 +359,7 @@ function cbo(): Grader {
       return {
         kind: "actual",
         actual: value,
-        vintage: `FRED ${avg.id} (retrieved 2026-09-28), ${avg.how} average of ${years[0]} to ${years[years.length - 1]} computed by Hindsight`,
+        vintage: `FRED ${avg.id} (${retrieved}), ${avg.how} average of ${years[0]} to ${years[years.length - 1]} computed by Hindsight`,
         notes: [`Actual is the ${avg.how} average of the annual actuals over ${m[1]} to ${m[2]}, as CBO defines its own averages.`],
       };
     },
@@ -395,6 +401,9 @@ function obr(): Grader {
 
 // ---------------------------------------------------------------- BCB Focus
 
+/** First Focus report that labels the Selic indicator as the Copom target ("Meta Taxa Selic"); the report of 2004-04-08 still says "Over-Selic" (#66). */
+const SELIC_TARGET_FROM = "2004-04-16";
+
 function bcb(): Grader {
   const d = readJson(join(RAW, "bcb-focus", "realized.json"));
   const by = new Map<string, [string, Actual][]>();
@@ -416,7 +425,13 @@ function bcb(): Grader {
         case "PIB Total":
           return lookup(get("PIB Total", "GDP"), y, y);
         case "Selic":
-          return lookup(get("Selic", "Selic"), y, y, ["Selic target in force at year end in forecast and actual."]);
+          // #66: the Focus report labels the indicator "Over-Selic, fim de período" (effective rate) up to the report of
+          // 2004-04-08 and "Meta Taxa Selic" (Copom target) from the report of 2004-04-16.
+          if (String(e.survey_date) < SELIC_TARGET_FROM)
+            return lookup(get("Selic", "Over-Selic"), y, y, [
+              "Survey before 2004-04-16: the Focus indicator was the Over-Selic (effective rate) at year end; the actual is SGS 1178 on the last business day of the year.",
+            ]);
+          return lookup(get("Selic", "target"), y, y, ["Selic target in force at year end in forecast and actual."]);
         case "Câmbio":
           if (e.definition === "average PTAX sell rate in December")
             return lookup(get("Câmbio", "December average"), y, y, ["Definition from 2021-01-25: December average PTAX, in forecast and actual."]);
@@ -627,17 +642,19 @@ const MATCH_RULES: Record<string, string[]> = {
   ],
   "fed-sep": [
     "Actual: FRED/ALFRED latest vintage computed on the SEP definitions: GDP and PCE Q4 over Q4, unemployment Q4 average, federal funds target midpoint at year end.",
+    "Vintage refresh (#66): realized.json re-captured 2026-10-02 (GDPC1, PCEPI and PCEPILFE vintages of 2026-09-30) after the BEA revised GDP, PCE and core PCE for 2021 to 2025 (`build.py --realized-only`).",
     "Statistic: the published median (from 2015-09), the central tendency midpoint (2007-10 to 2015-06), and the dot-plot median for the federal funds rate (2012-01 to 2015-06).",
     "Excluded: medians computed from individual projections (not public at the time; already skipped at normalize), the June 2015 medians other than the federal funds rate (published only in September 2015), and longer-run projections (no target year).",
     "Ungradable: 2025 unemployment (BLS published no October 2025 rate).",
   ],
   "ecb-projections": [
-    "Actual: Eurostat, euro area with changing composition (the ECB projects the composition of the projection year).",
+    "Actual: euro area with changing composition (the ECB projects the composition of the projection year). HICP: Eurostat prc_hicp_aind.",
+    "Real GDP (#66): the ECB's own history in its latest projection exercise (MPD, September 2026, status A rows), working-day adjusted like the projections, one decimal as published. Eurostat nama_10_gdp (used before #66) is not calendar adjusted and differed by 0.1 to 0.2 points, enough to flip verdicts; it stays in realized.json for reference, with an Eurostat namq_10_gdp SCA cross-check for the fixed EA20.",
     "2000-12 to 2013-03 published ranges only: the midpoint is graded. 2013-06 onward: the published point.",
-    "GDP: the ECB projects working-day-adjusted growth; the Eurostat annual series is not calendar adjusted. Graded with a note.",
   ],
   "cbo-projections": [
     "Annual (2000 onward): FRED actuals on CBO's definitions: real GDP annual average, CPI-U annual average, unemployment annual average, 10-year Treasury annual average.",
+    "Vintage refresh (#66): realized.json re-captured 2026-10-02 after the BEA revised real GDP and GNP for 2021 to 2025 (`build.py --realized-only`); CPI-U, unemployment, the 10-year rate and the deficits did not change.",
     "Two- and five-year averages: the actual average is computed from annual actuals (geometric for growth and CPI, arithmetic for the 10-year rate). Real GNP before 1992.",
     "Deficits: actual is CBO's own actuals (eval-projections), not FRED FYFSD. Graded in percent of GDP under D18 (#54): forecast and actual, in billions of dollars, are each divided by actual fiscal-year GDP (FRED FYFSD / FYFSGDA188S), as CBO's own evaluations do. A relative error in dollars explodes when the actual is near zero (FY1997 to FY2001).",
     "Ungradable: CPI averages of 1986 to 1989 (CBO forecast the CPI-W), and Aaa bond rate averages (no actual captured).",
@@ -649,6 +666,7 @@ const MATCH_RULES: Record<string, string[]> = {
   ],
   "bcb-focus": [
     "Actual: BCB SGS. IPCA December over December (13522), GDP (7326), Selic target at year end (432).",
+    "Selic before April 2004 (#66): the Focus report labels the indicator 'Over-Selic, fim de período' (the effective rate) up to the report of 2004-04-08 and 'Meta Taxa Selic' (the Copom target) from 2004-04-16 (weekly reports checked from 2003-12-26 to 2004-06-25; the API holds one series without a label). Surveys before 2004-04-16 are graded against SGS 1178 (effective Selic) on the last business day of the year. The December collection stop agrees: the current-year Selic is collected to the last business day of December up to 2003 and stops after the December Copom meeting from 2004.",
     "Exchange rate by the definition of each survey date: last business day before 2021-01-25 (SGS 3696), December average from then (SGS 3697). Exchange rate is a level (D16).",
   ],
   "eia-aeo": [
@@ -906,6 +924,22 @@ interface AuditRecord {
   corrected?: { status?: string; verdict?: string; actual?: number };
 }
 
+/**
+ * Contested audit records whose definition problem the command now fixes (#66): the actual series the row must
+ * use (a substring of actual_vintage) and the verdict the audit note gives on that series. The records themselves
+ * stay as stored.
+ */
+const CONTESTS_RESOLVED: Record<string, { vintage: string; verdict: "hit" | "partial" | "miss"; why: string }> = {
+  "bcb-focus-2000-12-006": { vintage: "SGS 1178", verdict: "miss", why: "Over-Selic survey graded against SGS 1178 (19.05 on 31 Dec 2001); audit: miss on either series" },
+  "bcb-focus-2002-06-005": { vintage: "SGS 1178", verdict: "miss", why: "Over-Selic survey graded against SGS 1178 (24.9 on 31 Dec 2002); audit: miss on either series" },
+  "bcb-focus-2002-06-006": { vintage: "SGS 1178", verdict: "miss", why: "Over-Selic survey graded against SGS 1178 (16.33 on 31 Dec 2003); audit: miss on either series" },
+  "ecb-projections-2003-09-004": {
+    vintage: "ECB MPD",
+    verdict: "partial",
+    why: "GDP graded against the ECB's own working-day-adjusted history (MPD S26, 2004 = 2.1); the audit gives partial on that series (hit on Eurostat SCA 1.99/2.04)",
+  },
+};
+
 /** D11 matching audit (#53): data/graded/audit/<source>.json, compared with the current grades. */
 function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined {
   const file = join(GRADED, "audit", `${source}.json`);
@@ -933,7 +967,11 @@ function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined
       continue;
     }
     if (r.decision === "contest") {
-      residual++;
+      // A contest names a definition problem without a corrected verdict. It is fixed in code when the row now uses
+      // the actual series the contest asked for (CONTESTS_RESOLVED) and the verdict the auditor gave for that series.
+      const res = CONTESTS_RESOLVED[id];
+      if (res !== undefined && (row.actual_vintage ?? "").includes(res.vintage) && row.verdict === res.verdict) fixed++;
+      else residual++;
       continue;
     }
     const c = r.corrected ?? {};
@@ -996,7 +1034,7 @@ function summarize(all: Map<string, NumericGrade[]>): NumericSummary {
 const COMPARISON_CAVEATS: Record<string, string[]> = {
   "euro-area-real-gdp-growth": [
     "OECD 'Euro area' is the euro area members of the OECD (EA16/EA17), not the full euro area.",
-    "The ECB projects working-day-adjusted GDP; its actual (Eurostat) is not calendar adjusted.",
+    "ECB rows are graded against the ECB's own working-day-adjusted history (MPD, September 2026); the other sources against their own databases.",
   ],
   "united-states-real-gdp-growth": ["CBO year_1 comes from January or February baselines; IMF, OECD and World Bank current-year values come from spring and autumn editions."],
   "brazil-real-gdp-growth": ["BCB Focus values are the median of market forecasts, sampled quarterly; the others are institutional forecasts."],

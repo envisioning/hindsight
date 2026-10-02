@@ -848,7 +848,7 @@
    "horizon": "current_year",
    "caveats": [
     "OECD 'Euro area' is the euro area members of the OECD (EA16/EA17), not the full euro area.",
-    "The ECB projects working-day-adjusted GDP; its actual (Eurostat) is not calendar adjusted."
+    "ECB rows are graded against the ECB's own working-day-adjusted history (MPD, September 2026); the other sources against their own databases."
    ],
    "sources": [
     {
@@ -857,24 +857,24 @@
      "last_target_year": 2025,
      "stats": {
       "n_graded": 101,
-      "hits": 64,
-      "partials": 22,
+      "hits": 65,
+      "partials": 21,
       "misses": 15,
       "ungradable": 0,
       "open": 3,
       "excluded": 0,
-      "hit_rate": 0.6337,
+      "hit_rate": 0.6436,
       "hit_rate_ci95": [
-       0.5364,
-       0.7211
+       0.5465,
+       0.7301
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
         "n": 101,
-        "bias": -0.189,
-        "mae": 0.623
+        "bias": -0.226,
+        "mae": 0.638
        }
       ]
      }
@@ -985,23 +985,23 @@
       "source_id": "ecb-projections",
       "stats": {
        "n_graded": 52,
-       "hits": 31,
-       "partials": 13,
+       "hits": 35,
+       "partials": 9,
        "misses": 8,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": 0.5962,
+       "hit_rate": 0.6731,
        "hit_rate_ci95": [
-        0.4607,
-        0.7184
+        0.5376,
+        0.7848
        ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
          "n": 52,
-         "bias": -0.34,
+         "bias": -0.356,
          "mae": 0.717
         }
        ]
@@ -1093,7 +1093,7 @@
    "horizon": "next_year",
    "caveats": [
     "OECD 'Euro area' is the euro area members of the OECD (EA16/EA17), not the full euro area.",
-    "The ECB projects working-day-adjusted GDP; its actual (Eurostat) is not calendar adjusted."
+    "ECB rows are graded against the ECB's own working-day-adjusted history (MPD, September 2026); the other sources against their own databases."
    ],
    "sources": [
     {
@@ -1102,24 +1102,24 @@
      "last_target_year": 2025,
      "stats": {
       "n_graded": 97,
-      "hits": 39,
-      "partials": 18,
-      "misses": 40,
+      "hits": 43,
+      "partials": 11,
+      "misses": 43,
       "ungradable": 0,
       "open": 7,
       "excluded": 0,
-      "hit_rate": 0.4021,
+      "hit_rate": 0.4433,
       "hit_rate_ci95": [
-       0.31,
-       0.5016
+       0.3485,
+       0.5424
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
         "n": 97,
-        "bias": 0.586,
-        "mae": 1.39
+        "bias": 0.552,
+        "mae": 1.38
        }
       ]
      }
@@ -1229,24 +1229,24 @@
       "source_id": "ecb-projections",
       "stats": {
        "n_graded": 48,
-       "hits": 30,
-       "partials": 7,
-       "misses": 11,
+       "hits": 31,
+       "partials": 3,
+       "misses": 14,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
-       "hit_rate": 0.625,
+       "hit_rate": 0.6458,
        "hit_rate_ci95": [
-        0.4836,
-        0.7478
+        0.5044,
+        0.7657
        ],
        "errors": [
         {
          "rule": "D18",
          "unit": "pp",
          "n": 48,
-         "bias": 0.425,
-         "mae": 1.229
+         "bias": 0.417,
+         "mae": 1.233
         }
        ]
       }
@@ -2468,24 +2468,24 @@
      "last_target_year": 2025,
      "stats": {
       "n_graded": 42,
-      "hits": 20,
+      "hits": 19,
       "partials": 12,
-      "misses": 10,
+      "misses": 11,
       "ungradable": 0,
       "open": 1,
       "excluded": 0,
-      "hit_rate": 0.4762,
+      "hit_rate": 0.4524,
       "hit_rate_ci95": [
-       0.3336,
-       0.6228
+       0.3122,
+       0.6005
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
         "n": 42,
-        "bias": 0.121,
-        "mae": 0.815
+        "bias": 0.099,
+        "mae": 0.836
        }
       ]
      }
@@ -2591,9 +2591,9 @@
       "source_id": "cbo-projections",
       "stats": {
        "n_graded": 15,
-       "hits": 8,
+       "hits": 7,
        "partials": 1,
-       "misses": 6,
+       "misses": 7,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,
@@ -2696,8 +2696,8 @@
      "stats": {
       "n_graded": 40,
       "hits": 12,
-      "partials": 9,
-      "misses": 19,
+      "partials": 8,
+      "misses": 20,
       "ungradable": 0,
       "open": 3,
       "excluded": 0,
@@ -2711,8 +2711,8 @@
         "rule": "D18",
         "unit": "pp",
         "n": 40,
-        "bias": 0.665,
-        "mae": 1.435
+        "bias": 0.645,
+        "mae": 1.465
        }
       ]
      }
@@ -2818,8 +2818,8 @@
       "stats": {
        "n_graded": 13,
        "hits": 6,
-       "partials": 1,
-       "misses": 6,
+       "partials": 0,
+       "misses": 7,
        "ungradable": 0,
        "open": 0,
        "excluded": 0,

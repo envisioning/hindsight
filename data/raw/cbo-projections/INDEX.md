@@ -43,7 +43,7 @@ Source: *CBO's Economic Forecasting Record: 2025 Update*, July 2025, https://www
 
 ## realized.json
 
-Annual actuals 1975 to 2025, retrieved from FRED on 2026-09-28 (latest vintage, not first release): real GDP growth (BEA, A191RL1A225NBEA), real GNP growth (BEA, A001RL1A225NBEA, for forecasts before 1992), unemployment rate annual average (BLS, UNRATE), CPI-U annual-average inflation (BLS, CPIAUCNS, not seasonally adjusted, the CBO calendar-year-average method), 10-year Treasury rate annual average (Federal Reserve, GS10), federal surplus or deficit in millions (FYFSD) and as % of GDP (FYFSGDA188S). It also holds CBO's own deficit actuals in billions from eval-projections `actuals.csv`. 2025 values have confidence `medium`. No averages or errors are computed.
+Annual actuals 1975 to 2025, retrieved from FRED on 2026-10-02 (latest vintage, not first release; re-captured for #66 with `python3 scripts/cbo-projections/build.py --realized-only <input folder>` after the BEA revised real GDP and GNP for 2021 to 2025: GDP 2021 6.2 to 6.3, 2022 2.5 to 2.4, 2024 2.8 to 3.0, 2025 2.1 to 2.3; the first capture was 2026-09-28): real GDP growth (BEA, A191RL1A225NBEA), real GNP growth (BEA, A001RL1A225NBEA, for forecasts before 1992), unemployment rate annual average (BLS, UNRATE), CPI-U annual-average inflation (BLS, CPIAUCNS, not seasonally adjusted, the CBO calendar-year-average method), 10-year Treasury rate annual average (Federal Reserve, GS10), federal surplus or deficit in millions (FYFSD) and as % of GDP (FYFSGDA188S). It also holds CBO's own deficit actuals in billions from eval-projections `actuals.csv`. 2025 values have confidence `medium`. No averages or errors are computed.
 
 ## Editions
 

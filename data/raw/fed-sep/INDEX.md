@@ -44,7 +44,7 @@ fred.stlouisfed.org (`fredgraph.csv`) timed out for curl; alfred.stlouisfed.org 
 
 ## realized.json
 
-Latest-vintage values (ALFRED, retrieved 2026-09-28) for 2007 to 2025, computed with the SEP definitions:
+Latest-vintage values (ALFRED, retrieved 2026-10-02; GDPC1, PCEPI and PCEPILFE vintages of 2026-09-30) for 2007 to 2025. Re-captured for #66 with `python3 scripts/fed-sep/build.py --realized-only <input folder>` (needs only the `alfred/*_latest.csv` realized series) after the BEA revised GDP, PCE and core PCE: 15 values for 2021 to 2025 changed (for example GDP Q4/Q4 2024 2.40 to 2.64, core PCE 2023 3.29 to 3.41); the first capture was 2026-09-28. Values, computed with the SEP definitions:
 - real GDP growth: `GDPC1` Q4 level / previous Q4 level.
 - PCE and core PCE inflation: `PCEPI` and `PCEPILFE` monthly index, Oct-Dec average / previous Oct-Dec average.
 - unemployment rate: `UNRATE`, Oct-Dec average.

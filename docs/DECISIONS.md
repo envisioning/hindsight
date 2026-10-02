@@ -564,3 +564,19 @@ Not captured: the Future of Money timeline and reports (no dated claims), the Fu
 **Cost.** Three sources, two rules. Their rates are not comparable with the posters graded under D16, and are shown separately.
 
 **Overturned by.** Evidence that a poster's own text meant mainstream adoption after all.
+
+## D38 (lane A): Numeric actuals on the forecast's own definition: ECB GDP and early Focus Selic (issue #66)
+
+*Recorded 2026-10-02.*
+
+**Decision.** Two numeric sources change the actual they are graded against, to match what the forecast measured (D19: definition wins over vintage).
+
+- **ECB real GDP.** Graded against the ECB's own history: the rows with status `A` of the latest Macroeconomic Projection Database exercise (S26, September 2026), working-day adjusted, euro area with changing composition, one decimal. The ECB projects this series; Eurostat's annual `nama_10_gdp`, used until now, is not calendar adjusted and differed by 0.1 to 0.2 points, which flipped verdicts in the #53 audit. Eurostat `namq_10_gdp` SCA was the other candidate; it is kept as a cross-check (fixed EA20, within 0.1 point of the MPD history in every year) but not graded against, because Eurostat's changing-composition quarterly levels break at each enlargement and its unrounded values put rows on the other side of a D18 threshold than the one-decimal series both the ECB and the audit use (2015: 2.04 against 2.0). HICP stays on Eurostat.
+- **BCB Focus Selic.** Focus surveys before 2004-04-16 are graded against the effective Selic rate (Over-Selic, SGS 1178) on the last business day of the year; later surveys against the Copom target (SGS 432). The weekly Focus reports label the indicator "Over-Selic" up to 2004-04-08 and "Meta Taxa Selic" from 2004-04-16, and the API's December collection stop changes with it. The switch date sits between two quarterly editions (2004-03 and 2004-06), so no edition mixes definitions.
+- Contested #53 audit records whose definition problem these rules fix count as fixed in code when the row uses the series the contest asked for and has the verdict the audit gave on it (`CONTESTS_RESOLVED` in `src/grade/numeric.ts`). The stored records do not change.
+
+**Why.** A forecast is graded only against what it said (AGENTS.md). Both gaps were definition mismatches found by the matching audit, not judgment calls.
+
+**Cost.** The ECB actual now depends on the ECB's own statement of history, which a later exercise can restate, and is rounded to one decimal. The Selic switch date rests on the report labels (the API has no label); a survey made between 2004-04-08 and 2004-04-16 would be ambiguous, but no edition falls there.
+
+**Overturned by.** An ECB statement that its published history is on another basis than its projections; a BCB methodology note giving a different switch date for the Focus Selic indicator.
