@@ -1,0 +1,565 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #66",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:imf-weo:numeric",
+ "recheck_of": "data/graded/audit/imf-weo.json",
+ "scope": "Sampled India rows from editions before July 2013 that #66 (D39) moved from ungradable to graded on the WEO April 2013 calendar-year vintage; all are AUDIT_RESOLVED. The other sampled India and EMDE corrections stay ungradable and are not re-checked here.",
+ "how": "Rows found by comparing data/graded/numeric/imf-weo.json at 1f8c794 (before #66) with HEAD 646a65a for every sampled id: status, forecast, actual or verdict changed. Forecast, actual and verdict re-derived from the sources fetched on 2026-10-02, not from repo files.",
+ "counts": {
+  "rechecked": 11,
+  "confirm": 11,
+  "correct": 0
+ },
+ "records": {
+  "imf-weo-1993-10-011": {
+   "claim_id": "imf-weo-1993-10-011",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 4.804,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 4.804,
+    "actual": 4.938,
+    "verdict": "hit",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 4.804,
+    "actual": 4.938,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 1993, column F1993ngdp_rpch = 4.8044."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 1993 = 4.938."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 4.804 (F1993) and calendar-year actual 4.938 verified; error -0.134 pp, D18 hit. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch. Before 1997 the April 2013 calendar-year values are IMF conversions of fiscal-year data (3/4 of year t, 1/4 of t+1), per the country note; same calendar-year concept as the forecast.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-1994-04-011": {
+   "claim_id": "imf-weo-1994-04-011",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 4.757,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 4.757,
+    "actual": 6.199,
+    "verdict": "miss",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 4.757,
+    "actual": 6.199,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 1994, column S1994ngdp_rpch = 4.7573."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 1994 = 6.199."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 4.757 (S1994) and calendar-year actual 6.199 verified; error -1.442 pp, D18 miss. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch. Before 1997 the April 2013 calendar-year values are IMF conversions of fiscal-year data (3/4 of year t, 1/4 of t+1), per the country note; same calendar-year concept as the forecast.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-1994-04-012": {
+   "claim_id": "imf-weo-1994-04-012",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 6.139,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 6.139,
+    "actual": 7.352,
+    "verdict": "miss",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 6.139,
+    "actual": 7.352,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 1995, column S1994ngdp_rpch = 6.1386."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 1995 = 7.352."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 6.139 (S1994) and calendar-year actual 7.352 verified; error -1.213 pp, D18 miss. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch. Before 1997 the April 2013 calendar-year values are IMF conversions of fiscal-year data (3/4 of year t, 1/4 of t+1), per the country note; same calendar-year concept as the forecast.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-1997-10-011": {
+   "claim_id": "imf-weo-1997-10-011",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 6.571,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 6.571,
+    "actual": 4.616,
+    "verdict": "miss",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 6.571,
+    "actual": 4.616,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 1997, column F1997ngdp_rpch = 6.5714."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 1997 = 4.616."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 6.571 (F1997) and calendar-year actual 4.616 verified; error +1.955 pp, D18 miss. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-1998-04-011": {
+   "claim_id": "imf-weo-1998-04-011",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 5.184,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 5.184,
+    "actual": 5.987,
+    "verdict": "partial",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 5.184,
+    "actual": 5.987,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 1998, column S1998ngdp_rpch = 5.1842."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 1998 = 5.987."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 5.184 (S1998) and calendar-year actual 5.987 verified; error -0.803 pp, D18 partial. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-1998-04-012": {
+   "claim_id": "imf-weo-1998-04-012",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 5.663,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 5.663,
+    "actual": 6.895,
+    "verdict": "miss",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 5.663,
+    "actual": 6.895,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 1999, column S1998ngdp_rpch = 5.6629."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 1999 = 6.895."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 5.663 (S1998) and calendar-year actual 6.895 verified; error -1.232 pp, D18 miss. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-2002-10-013": {
+   "claim_id": "imf-weo-2002-10-013",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 4.995,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 4.995,
+    "actual": 4.558,
+    "verdict": "hit",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 4.995,
+    "actual": 4.558,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 2002, column F2002ngdp_rpch = 4.9951."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 2002 = 4.558."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 4.995 (F2002) and calendar-year actual 4.558 verified; error +0.437 pp, D18 hit. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch. Close to a D18 threshold (margin 0.063 pp) but three-decimal values on both sides.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-2002-10-014": {
+   "claim_id": "imf-weo-2002-10-014",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 5.731,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 5.731,
+    "actual": 6.852,
+    "verdict": "miss",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 5.731,
+    "actual": 6.852,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 2003, column F2002ngdp_rpch = 5.7311."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 2003 = 6.852."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 5.731 (F2002) and calendar-year actual 6.852 verified; error -1.121 pp, D18 miss. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-2008-10-013": {
+   "claim_id": "imf-weo-2008-10-013",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 7.925,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 7.925,
+    "actual": 6.187,
+    "verdict": "miss",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 7.925,
+    "actual": 6.187,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 2008, column F2008ngdp_rpch = 7.9252."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 2008 = 6.187."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 7.925 (F2008) and calendar-year actual 6.187 verified; error +1.738 pp, D18 miss. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-2012-04-013": {
+   "claim_id": "imf-weo-2012-04-013",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 6.858,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 6.858,
+    "actual": 3.986,
+    "verdict": "miss",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 6.858,
+    "actual": 3.986,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 2012, column S2012ngdp_rpch = 6.8584."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 2012 = 3.986."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 6.858 (S2012) and calendar-year actual 3.986 verified; error +2.872 pp, D18 miss. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch. 2012 is the latest actual year in this vintage (estimates start after 2012), based on advance official estimates.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "imf-weo-2012-10-013": {
+   "claim_id": "imf-weo-2012-10-013",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:21:32Z"
+   },
+   "grade_before_66": {
+    "status": "ungradable",
+    "forecast": 4.86,
+    "actual": null,
+    "verdict": null,
+    "actual_vintage": null
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 4.86,
+    "actual": 3.986,
+    "verdict": "partial",
+    "actual_vintage": "IMF WEO database April 2013 (calendar year; via DBnomics IMF/WEO:2013-04)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 4.86,
+    "actual": 3.986,
+    "actual_series": "IMF WEO April 2013 database, India NGDP_RPCH, calendar year",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260403062405/https://www.imf.org/-/media/files/publications/weo/weo-database/2025/april/weohistorical.xlsx",
+     "title": "IMF WEO historical forecasts database (April 2025 update), sheet ngdp_rpch",
+     "date": "2025-04-22",
+     "shows": "India, year 2012, column F2012ngdp_rpch = 4.8598."
+    },
+    {
+     "url": "https://api.db.nomics.world/v22/series/IMF/WEO:2013-04/IND.NGDP_RPCH?observations=1",
+     "title": "DBnomics mirror, IMF WEO April 2013 release, India NGDP_RPCH",
+     "date": "2013-04-16",
+     "shows": "India 2012 = 3.986."
+    },
+    {
+     "url": "https://web.archive.org/web/20220901080153/https://www.imf.org/external/pubs/ft/weo/2013/01/weodata/WEOApr2013all.xls",
+     "title": "IMF WEO database April 2013, full file (Internet Archive copy)",
+     "date": "2013-04-16",
+     "shows": "India NGDP_RPCH identical to the DBnomics mirror; Estimates Start After 2012; NGDP_R country note: calendar-year data (IMF staff converted fiscal-year data to calendar years before 1997), latest actual data 2012."
+    }
+   ],
+   "note": "Forecast 4.86 (F2012) and calendar-year actual 3.986 verified; error +0.874 pp, D18 partial. The April 2013 vintage column of the historical file shows the same calendar-year history (2012 = 3.986), and the Fall 2013 column restates 2012 on a fiscal-year basis (3.237), consistent with the July 2013 switch. 2012 is the latest actual year in this vintage (estimates start after 2012), based on advance official estimates.",
+   "at": "2026-10-02T13:14:52Z"
+  }
+ }
+}

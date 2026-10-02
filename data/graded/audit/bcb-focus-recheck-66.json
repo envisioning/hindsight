@@ -1,0 +1,177 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #66",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:bcb-focus:numeric",
+ "recheck_of": "data/graded/audit/bcb-focus.json",
+ "scope": "Sampled Selic rows from Focus surveys before 2004-04-16 whose actual changed with D38 (SGS 1178 replacing SGS 432); all 3 are CONTESTS_RESOLVED records.",
+ "how": "Rows found by comparing data/graded/numeric/bcb-focus.json at 1f8c794 (before #66) with HEAD 646a65a for every sampled id: status, forecast, actual or verdict changed. Forecast, actual and verdict re-derived from the sources fetched on 2026-10-02, not from repo files.",
+ "counts": {
+  "rechecked": 3,
+  "confirm": 3,
+  "correct": 0
+ },
+ "records": {
+  "bcb-focus-2000-12-006": {
+   "claim_id": "bcb-focus-2000-12-006",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:21:49Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 14,
+    "actual": 19,
+    "verdict": "miss",
+    "actual_vintage": "BCB SGS 432 (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 14,
+    "actual": 19.05,
+    "verdict": "miss",
+    "actual_vintage": "BCB SGS 1178 (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 14.0,
+    "actual": 19.05,
+    "actual_series": "BCB SGS 1178 (effective Over-Selic), last business day of the year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "title": "BCB Focus, ExpectativasMercadoAnuais, indicator Selic, median, baseCalculo 0",
+     "date": "2000-12-29",
+     "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?$format=json&$filter=Indicador%20eq%20'Selic'%20and%20Data%20eq%20'2000-12-29'",
+     "shows": "Survey 2000-12-29, Selic for 2001: median 14.0."
+    },
+    {
+     "title": "BCB SGS 1178 (Taxa de juros Selic, effective, % a.a.)",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados?formato=json&dataInicial=24/12/2001&dataFinal=31/12/2001",
+     "date": "2001-12-31",
+     "shows": "31/12/2001 = 19.05."
+    },
+    {
+     "title": "BCB SGS 432 (Meta Selic definida pelo Copom, % a.a.)",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=24/12/2001&dataFinal=31/12/2001",
+     "date": "2001-12-31",
+     "shows": "31/12/2001 = 19.0 (Copom target, for comparison)."
+    }
+   ],
+   "note": "Forecast 14.0 and effective Selic 19.05 on the last business day of 2001 verified; error -5.05 pp, D18 miss; also miss on the Copom target 19.0 (-5.00), as the contest said. The 5 Jan 2001 Focus report prints no Selic line, so the Over-Selic label rests on the 2002 reports and the BCB collection stop (D38); the verdict does not depend on it.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "bcb-focus-2002-06-005": {
+   "claim_id": "bcb-focus-2002-06-005",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:21:49Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 17,
+    "actual": 25,
+    "verdict": "miss",
+    "actual_vintage": "BCB SGS 432 (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 17,
+    "actual": 24.9,
+    "verdict": "miss",
+    "actual_vintage": "BCB SGS 1178 (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 17.0,
+    "actual": 24.9,
+    "actual_series": "BCB SGS 1178 (effective Over-Selic), last business day of the year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "title": "BCB Focus, ExpectativasMercadoAnuais, indicator Selic, median, baseCalculo 0",
+     "date": "2002-06-28",
+     "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?$format=json&$filter=Indicador%20eq%20'Selic'%20and%20Data%20eq%20'2002-06-28'",
+     "shows": "Survey 2002-06-28, Selic for 2002: median 17.0."
+    },
+    {
+     "title": "BCB SGS 1178 (Taxa de juros Selic, effective, % a.a.)",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados?formato=json&dataInicial=24/12/2002&dataFinal=31/12/2002",
+     "date": "2002-12-31",
+     "shows": "31/12/2002 = 24.9."
+    },
+    {
+     "title": "BCB SGS 432 (Meta Selic definida pelo Copom, % a.a.)",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=24/12/2002&dataFinal=31/12/2002",
+     "date": "2002-12-31",
+     "shows": "31/12/2002 = 25.0 (Copom target, for comparison)."
+    },
+    {
+     "url": "https://www.bcb.gov.br/content/focus/focus/R20020628.pdf",
+     "title": "BCB Focus Relatorio de Mercado, 28 June 2002",
+     "date": "2002-06-28",
+     "shows": "Indicator printed as 'Taxa Over-Selic' with medians 17,00 (2002) and 15,00 (2003)."
+    }
+   ],
+   "note": "Forecast 17.0 and effective Selic 24.9 on the last business day of 2002 verified; error -7.90 pp, D18 miss; also miss on the Copom target 25.0 (-8.00), as the contest said.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "bcb-focus-2002-06-006": {
+   "claim_id": "bcb-focus-2002-06-006",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:21:49Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 15,
+    "actual": 16.5,
+    "verdict": "miss",
+    "actual_vintage": "BCB SGS 432 (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 15,
+    "actual": 16.33,
+    "verdict": "miss",
+    "actual_vintage": "BCB SGS 1178 (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 15.0,
+    "actual": 16.33,
+    "actual_series": "BCB SGS 1178 (effective Over-Selic), last business day of the year",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "title": "BCB Focus, ExpectativasMercadoAnuais, indicator Selic, median, baseCalculo 0",
+     "date": "2002-06-28",
+     "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?$format=json&$filter=Indicador%20eq%20'Selic'%20and%20Data%20eq%20'2002-06-28'",
+     "shows": "Survey 2002-06-28, Selic for 2003: median 15.0."
+    },
+    {
+     "title": "BCB SGS 1178 (Taxa de juros Selic, effective, % a.a.)",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1178/dados?formato=json&dataInicial=24/12/2003&dataFinal=31/12/2003",
+     "date": "2003-12-31",
+     "shows": "31/12/2003 = 16.33."
+    },
+    {
+     "title": "BCB SGS 432 (Meta Selic definida pelo Copom, % a.a.)",
+     "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=24/12/2003&dataFinal=31/12/2003",
+     "date": "2003-12-31",
+     "shows": "31/12/2003 = 16.5 (Copom target, for comparison)."
+    },
+    {
+     "url": "https://www.bcb.gov.br/content/focus/focus/R20020628.pdf",
+     "title": "BCB Focus Relatorio de Mercado, 28 June 2002",
+     "date": "2002-06-28",
+     "shows": "Indicator printed as 'Taxa Over-Selic' with medians 17,00 (2002) and 15,00 (2003)."
+    }
+   ],
+   "note": "Forecast 15.0 and effective Selic 16.33 on the last business day of 2003 verified; error -1.33 pp, D18 miss; also miss on the Copom target 16.5 (-1.50), as the contest said.",
+   "at": "2026-10-02T13:14:52Z"
+  }
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #66",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:eia-aeo:numeric",
+ "recheck_of": "data/graded/audit/eia-aeo.json",
+ "scope": "Sampled AEO2009 rows whose forecast changed with D39 (March 2009 Reference case); all 4 are the contested records AUDIT_RESOLVED counts as fixed.",
+ "how": "Rows found by comparing data/graded/numeric/eia-aeo.json at 1f8c794 (before #66) with HEAD 646a65a for every sampled id: status, forecast, actual or verdict changed. Forecast, actual and verdict re-derived from the sources fetched on 2026-10-02, not from repo files.",
+ "counts": {
+  "rechecked": 4,
+  "confirm": 4,
+  "correct": 0
+ },
+ "records": {
+  "eia-aeo-2009-220": {
+   "claim_id": "eia-aeo-2009-220",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:26:07Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 28.2775,
+    "actual": 28.4013,
+    "verdict": "hit",
+    "actual_vintage": "EIA AEO Retrospective 2022 actuals (EIA open data API, accessed April 2022)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 28.9593,
+    "actual": 28.4613,
+    "verdict": "hit",
+    "actual_vintage": "EIA AEO Retrospective 2025 actuals (EIA data file, August 2025 (case_name ACTUAL, product MER))"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 28.9593,
+    "actual": 28.4613,
+    "actual_series": "EIA AEO Retrospective 2025 ACTUAL row (MER), total delivered transportation energy, quadrillion Btu",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://www.eia.gov/outlooks/archive/aeo09/excel/aeotab_2.xls",
+     "title": "EIA AEO2009 (DOE/EIA-0383(2009), release March 2009, NEMS run aeo2009.d120908a) Table 2, Energy Consumption by Sector and Source",
+     "date": "2009-03",
+     "shows": "Transportation, Delivered Energy, 2018 = 28.9593 quadrillion Btu (March 2009 Reference case)."
+    },
+    {
+     "url": "https://www.eia.gov/outlooks/aeo/retrospective/csv/dashappdata_allcases.csv",
+     "title": "EIA AEO Retrospective 2025 data file, case_name ACTUAL (edition 2025-08, product MER), CNSM_ENU_TRN_NA_DELE_NA_NA_QBTU",
+     "date": "2025-08",
+     "shows": "2018 = 28.461347."
+    }
+   ],
+   "note": "Forecast 28.9593 matches the March 2009 AEO2009 Table 2 (release March 2009, run aeo2009.d120908a), the case D39 grades; the earlier record cited the printed 28.959. Actual 28.4613 from the R2025 ACTUAL row (MER), delivered energy on both sides (excludes electricity losses, so the captured-energy basis change in R2025 does not apply). Error +1.75% of actual, D16 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "eia-aeo-2009-221": {
+   "claim_id": "eia-aeo-2009-221",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:26:07Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 28.4153,
+    "actual": 28.3262,
+    "verdict": "hit",
+    "actual_vintage": "EIA AEO Retrospective 2022 actuals (EIA open data API, accessed April 2022)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 29.0554,
+    "actual": 28.6289,
+    "verdict": "hit",
+    "actual_vintage": "EIA AEO Retrospective 2025 actuals (EIA data file, August 2025 (case_name ACTUAL, product MER))"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 29.0554,
+    "actual": 28.6289,
+    "actual_series": "EIA AEO Retrospective 2025 ACTUAL row (MER), total delivered transportation energy, quadrillion Btu",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://www.eia.gov/outlooks/archive/aeo09/excel/aeotab_2.xls",
+     "title": "EIA AEO2009 (DOE/EIA-0383(2009), release March 2009, NEMS run aeo2009.d120908a) Table 2, Energy Consumption by Sector and Source",
+     "date": "2009-03",
+     "shows": "Transportation, Delivered Energy, 2019 = 29.0554 quadrillion Btu (March 2009 Reference case)."
+    },
+    {
+     "url": "https://www.eia.gov/outlooks/aeo/retrospective/csv/dashappdata_allcases.csv",
+     "title": "EIA AEO Retrospective 2025 data file, case_name ACTUAL (edition 2025-08, product MER), CNSM_ENU_TRN_NA_DELE_NA_NA_QBTU",
+     "date": "2025-08",
+     "shows": "2019 = 28.628866."
+    }
+   ],
+   "note": "Forecast 29.0554 matches the March 2009 AEO2009 Table 2 (release March 2009, run aeo2009.d120908a), the case D39 grades; the earlier record cited the printed 29.055. Actual 28.6289 from the R2025 ACTUAL row (MER), delivered energy on both sides (excludes electricity losses, so the captured-energy basis change in R2025 does not apply). Error +1.49% of actual, D16 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "eia-aeo-2009-222": {
+   "claim_id": "eia-aeo-2009-222",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:26:07Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 28.557,
+    "actual": 24.3064,
+    "verdict": "partial",
+    "actual_vintage": "EIA AEO Retrospective 2022 actuals (EIA open data API, accessed April 2022)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 29.1461,
+    "actual": 24.4192,
+    "verdict": "partial",
+    "actual_vintage": "EIA AEO Retrospective 2025 actuals (EIA data file, August 2025 (case_name ACTUAL, product MER))"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 29.1461,
+    "actual": 24.4192,
+    "actual_series": "EIA AEO Retrospective 2025 ACTUAL row (MER), total delivered transportation energy, quadrillion Btu",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://www.eia.gov/outlooks/archive/aeo09/excel/aeotab_2.xls",
+     "title": "EIA AEO2009 (DOE/EIA-0383(2009), release March 2009, NEMS run aeo2009.d120908a) Table 2, Energy Consumption by Sector and Source",
+     "date": "2009-03",
+     "shows": "Transportation, Delivered Energy, 2020 = 29.1461 quadrillion Btu (March 2009 Reference case)."
+    },
+    {
+     "url": "https://www.eia.gov/outlooks/aeo/retrospective/csv/dashappdata_allcases.csv",
+     "title": "EIA AEO Retrospective 2025 data file, case_name ACTUAL (edition 2025-08, product MER), CNSM_ENU_TRN_NA_DELE_NA_NA_QBTU",
+     "date": "2025-08",
+     "shows": "2020 = 24.419216."
+    }
+   ],
+   "note": "Forecast 29.1461 matches the March 2009 AEO2009 Table 2 (release March 2009, run aeo2009.d120908a), the case D39 grades; the earlier record cited the printed 29.146. Actual 24.4192 from the R2025 ACTUAL row (MER), delivered energy on both sides (excludes electricity losses, so the captured-energy basis change in R2025 does not apply). Error +19.36% of actual, D16 partial.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "eia-aeo-2009-223": {
+   "claim_id": "eia-aeo-2009-223",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:26:07Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 28.6771,
+    "actual": 26.8952,
+    "verdict": "hit",
+    "actual_vintage": "EIA AEO Retrospective 2022 actuals (EIA open data API, accessed April 2022)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 29.2967,
+    "actual": 27.0414,
+    "verdict": "hit",
+    "actual_vintage": "EIA AEO Retrospective 2025 actuals (EIA data file, August 2025 (case_name ACTUAL, product MER))"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 29.2967,
+    "actual": 27.0414,
+    "actual_series": "EIA AEO Retrospective 2025 ACTUAL row (MER), total delivered transportation energy, quadrillion Btu",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://www.eia.gov/outlooks/archive/aeo09/excel/aeotab_2.xls",
+     "title": "EIA AEO2009 (DOE/EIA-0383(2009), release March 2009, NEMS run aeo2009.d120908a) Table 2, Energy Consumption by Sector and Source",
+     "date": "2009-03",
+     "shows": "Transportation, Delivered Energy, 2021 = 29.2967 quadrillion Btu (March 2009 Reference case)."
+    },
+    {
+     "url": "https://www.eia.gov/outlooks/aeo/retrospective/csv/dashappdata_allcases.csv",
+     "title": "EIA AEO Retrospective 2025 data file, case_name ACTUAL (edition 2025-08, product MER), CNSM_ENU_TRN_NA_DELE_NA_NA_QBTU",
+     "date": "2025-08",
+     "shows": "2021 = 27.041355."
+    }
+   ],
+   "note": "Forecast 29.2967 matches the March 2009 AEO2009 Table 2 (release March 2009, run aeo2009.d120908a), the case D39 grades; the earlier record cited the printed 29.297. Actual 27.0414 from the R2025 ACTUAL row (MER), delivered energy on both sides (excludes electricity losses, so the captured-energy basis change in R2025 does not apply). Error +8.34% of actual, D16 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  }
+ }
+}

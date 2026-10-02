@@ -1,0 +1,265 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #66",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:cbo-projections:numeric",
+ "recheck_of": "data/graded/audit/cbo-projections.json",
+ "scope": "Sampled rows whose actual changed in the #66 FRED vintage refresh.",
+ "how": "Rows found by comparing data/graded/numeric/cbo-projections.json at 1f8c794 (before #66) with HEAD 646a65a for every sampled id: status, forecast, actual or verdict changed. Forecast, actual and verdict re-derived from the sources fetched on 2026-10-02, not from repo files.",
+ "counts": {
+  "rechecked": 5,
+  "confirm": 5,
+  "correct": 0
+ },
+ "records": {
+  "cbo-projections-2020-01-017": {
+   "claim_id": "cbo-projections-2020-01-017",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.947,
+    "actual": 6.2,
+    "verdict": "miss",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.947,
+    "actual": 6.3,
+    "verdict": "miss",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.947,
+    "actual": 6.3,
+    "actual_series": "BEA real GDP, calendar-year annual average growth (FRED/ALFRED A191RL1A225NBEA, vintage 20261002)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20200128/https://www.cbo.gov/system/files/2020-01/51135-2020-01-economicprojections_0.xlsx",
+     "title": "CBO 2020-01 10-year economic projections, sheet 2. Calendar Year (Internet Archive copy)",
+     "date": "2020-01",
+     "shows": "Real GDP (billions of chained 2012 dollars) 2020 = 19494.5, 2021 = 19874: growth 1.947%."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=A191RL1A225NBEA",
+     "title": "ALFRED A191RL1A225NBEA, real GDP percent change from preceding year (vintage 20261002)",
+     "date": "20261002",
+     "shows": "2021 = 6.3."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Annual average of quarterly levels gives 6.268% for 2021."
+    }
+   ],
+   "note": "Forecast 1.947 (from CBO calendar-year levels) and actual 6.3 (A191RL1A225NBEA) verified; error -4.353 pp, D18 miss. Unrounded check from GDPC1 annual averages: 6.268, error -4.321, miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "cbo-projections-2020-01-018": {
+   "claim_id": "cbo-projections-2020-01-018",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.655,
+    "actual": 2.5,
+    "verdict": "partial",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.655,
+    "actual": 2.4,
+    "verdict": "partial",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.655,
+    "actual": 2.4,
+    "actual_series": "BEA real GDP, calendar-year annual average growth (FRED/ALFRED A191RL1A225NBEA, vintage 20261002)",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20200128/https://www.cbo.gov/system/files/2020-01/51135-2020-01-economicprojections_0.xlsx",
+     "title": "CBO 2020-01 10-year economic projections, sheet 2. Calendar Year (Internet Archive copy)",
+     "date": "2020-01",
+     "shows": "Real GDP (billions of chained 2012 dollars) 2021 = 19874, 2022 = 20203: growth 1.655%."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=A191RL1A225NBEA",
+     "title": "ALFRED A191RL1A225NBEA, real GDP percent change from preceding year (vintage 20261002)",
+     "date": "20261002",
+     "shows": "2022 = 2.4."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Annual average of quarterly levels gives 2.430% for 2022."
+    }
+   ],
+   "note": "Forecast 1.655 (from CBO calendar-year levels) and actual 2.4 (A191RL1A225NBEA) verified; error -0.745 pp, D18 partial. Unrounded check from GDPC1 annual averages: 2.430, error -0.775, partial.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "cbo-projections-2020-01-020": {
+   "claim_id": "cbo-projections-2020-01-020",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.556,
+    "actual": 2.8,
+    "verdict": "miss",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.556,
+    "actual": 3,
+    "verdict": "miss",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.556,
+    "actual": 3.0,
+    "actual_series": "BEA real GDP, calendar-year annual average growth (FRED/ALFRED A191RL1A225NBEA, vintage 20261002)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20200128/https://www.cbo.gov/system/files/2020-01/51135-2020-01-economicprojections_0.xlsx",
+     "title": "CBO 2020-01 10-year economic projections, sheet 2. Calendar Year (Internet Archive copy)",
+     "date": "2020-01",
+     "shows": "Real GDP (billions of chained 2012 dollars) 2023 = 20522.8, 2024 = 20842.1: growth 1.556%."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=A191RL1A225NBEA",
+     "title": "ALFRED A191RL1A225NBEA, real GDP percent change from preceding year (vintage 20261002)",
+     "date": "20261002",
+     "shows": "2024 = 3.0."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Annual average of quarterly levels gives 2.952% for 2024."
+    }
+   ],
+   "note": "Forecast 1.556 (from CBO calendar-year levels) and actual 3.0 (A191RL1A225NBEA) verified; error -1.444 pp, D18 miss. Unrounded check from GDPC1 annual averages: 2.952, error -1.396, miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "cbo-projections-2022-05-016": {
+   "claim_id": "cbo-projections-2022-05-016",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 3.79,
+    "actual": 2.5,
+    "verdict": "miss",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.79,
+    "actual": 2.4,
+    "verdict": "miss",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.79,
+    "actual": 2.4,
+    "actual_series": "BEA real GDP, calendar-year annual average growth (FRED/ALFRED A191RL1A225NBEA, vintage 20261002)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20220528/https://www.cbo.gov/system/files/2022-05/51135-2022-05-Economic-Projections.xlsx",
+     "title": "CBO 2022-05 10-year economic projections, sheet 2. Calendar Year (Internet Archive copy)",
+     "date": "2022-05",
+     "shows": "Real GDP (billions of chained 2012 dollars) 2021 = 19428.4, 2022 = 20164.8: growth 3.79%."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=A191RL1A225NBEA",
+     "title": "ALFRED A191RL1A225NBEA, real GDP percent change from preceding year (vintage 20261002)",
+     "date": "20261002",
+     "shows": "2022 = 2.4."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Annual average of quarterly levels gives 2.430% for 2022."
+    }
+   ],
+   "note": "Forecast 3.79 (from CBO calendar-year levels) and actual 2.4 (A191RL1A225NBEA) verified; error +1.390 pp, D18 miss. Unrounded check from GDPC1 annual averages: 2.430, error +1.360, miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "cbo-projections-2023-02-018": {
+   "claim_id": "cbo-projections-2023-02-018",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.726,
+    "actual": 2.1,
+    "verdict": "partial",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-09-28)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.726,
+    "actual": 2.3,
+    "verdict": "hit",
+    "actual_vintage": "FRED A191RL1A225NBEA (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.726,
+    "actual": 2.3,
+    "actual_series": "BEA real GDP, calendar-year annual average growth (FRED/ALFRED A191RL1A225NBEA, vintage 20261002)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20230228/https://www.cbo.gov/system/files/2023-02/51135-2023-02-Economic-Projections.xlsx",
+     "title": "CBO 2023-02 10-year economic projections, sheet 2. Calendar Year (Internet Archive copy)",
+     "date": "2023-02",
+     "shows": "Real GDP (billions of chained 2012 dollars) 2024 = 20398.1, 2025 = 20954.1: growth 2.726%."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=A191RL1A225NBEA",
+     "title": "ALFRED A191RL1A225NBEA, real GDP percent change from preceding year (vintage 20261002)",
+     "date": "20261002",
+     "shows": "2025 = 2.3."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Annual average of quarterly levels gives 2.344% for 2025."
+    }
+   ],
+   "note": "Forecast 2.726 (from CBO calendar-year levels) and actual 2.3 (A191RL1A225NBEA) verified; error +0.426 pp, D18 hit. Unrounded check from GDPC1 annual averages: 2.344, error +0.382, hit. Verdict moved partial to hit with the 2026 annual update (2025 growth 2.1 to 2.3); the move holds on unrounded data (0.38 pp).",
+   "at": "2026-10-02T13:14:52Z"
+  }
+ }
+}

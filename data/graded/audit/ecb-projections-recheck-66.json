@@ -1,0 +1,907 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #66",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:ecb-projections:numeric",
+ "recheck_of": "data/graded/audit/ecb-projections.json",
+ "scope": "Sampled euro area GDP rows whose actual changed with D38 (ECB MPD S26 history replacing Eurostat nama_10_gdp), including the CONTESTS_RESOLVED record ecb-projections-2003-09-004.",
+ "how": "Rows found by comparing data/graded/numeric/ecb-projections.json at 1f8c794 (before #66) with HEAD 646a65a for every sampled id: status, forecast, actual or verdict changed. Forecast, actual and verdict re-derived from the sources fetched on 2026-10-02, not from repo files.",
+ "counts": {
+  "rechecked": 20,
+  "confirm": 20,
+  "correct": 0
+ },
+ "records": {
+  "ecb-projections-2000-12-004": {
+   "claim_id": "ecb-projections-2000-12-004",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 3.4,
+    "actual": 3.9,
+    "verdict": "hit",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.4,
+    "actual": 4,
+    "verdict": "partial",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.4,
+    "actual": 4.0,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2000 = 4.0 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A00.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A00",
+     "date": "2000-12",
+     "shows": "2000 = 3.4 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 3.4 (MPD A00) and actual 4.0 (MPD S26) verified; error -0.6 pp, D18 partial on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2000-12-005": {
+   "claim_id": "ecb-projections-2000-12-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 2.1,
+    "verdict": "partial",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 2.2,
+    "verdict": "partial",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.1,
+    "actual": 2.2,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2001 = 2.2 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A00.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A00",
+     "date": "2000-12",
+     "shows": "2001 = 3.1 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 3.1 (MPD A00) and actual 2.2 (MPD S26) verified; error +0.9 pp, D18 partial on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2000-12-006": {
+   "claim_id": "ecb-projections-2000-12-006",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 0.8,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3,
+    "actual": 0.9,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.0,
+    "actual": 0.9,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2002 = 0.9 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A00.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A00",
+     "date": "2000-12",
+     "shows": "2002 = 3.0 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 3.0 (MPD A00) and actual 0.9 (MPD S26) verified; error +2.1 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2003-09-003": {
+   "claim_id": "ecb-projections-2003-09-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 0.4,
+    "actual": 0.6,
+    "verdict": "hit",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 0.4,
+    "actual": 0.7,
+    "verdict": "hit",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 0.4,
+    "actual": 0.7,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2003 = 0.7 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S03.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise S03",
+     "date": "2003-09",
+     "shows": "2003 = 0.4 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 0.4 (MPD S03) and actual 0.7 (MPD S26) verified; error -0.3 pp, D18 hit on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2003-09-004": {
+   "claim_id": "ecb-projections-2003-09-004",
+   "earlier": {
+    "decision": "contest",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.2,
+    "verdict": "partial",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.1,
+    "verdict": "partial",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.5,
+    "actual": 2.1,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2004 = 2.1 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S03.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise S03",
+     "date": "2003-09",
+     "shows": "2004 = 1.5 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 1.5 (MPD S03) and actual 2.1 (MPD S26) verified; error -0.6 pp, D18 partial on the stated one-decimal values (D38). This was the contested record: on the series D38 chose the verdict is partial for any unrounded value in the rounding interval (-0.55 to -0.65), so the D38 grade stands; on Eurostat SCA (1.99/2.04) it would be hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2006-12-006": {
+   "claim_id": "ecb-projections-2006-12-006",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.4,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.3,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.3,
+    "actual": 0.3,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2008 = 0.3 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A06.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A06",
+     "date": "2006-12",
+     "shows": "2008 = 2.3 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 2.3 (MPD A06) and actual 0.3 (MPD S26) verified; error +2.0 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2007-09-004": {
+   "claim_id": "ecb-projections-2007-09-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.4,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.3,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.3,
+    "actual": 0.3,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2008 = 0.3 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S07.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise S07",
+     "date": "2007-09",
+     "shows": "2008 = 2.3 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 2.3 (MPD S07) and actual 0.3 (MPD S26) verified; error +2.0 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2009-06-004": {
+   "claim_id": "ecb-projections-2009-06-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": -0.3,
+    "actual": 2.1,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -0.3,
+    "actual": 2,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -0.3,
+    "actual": 2.0,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2010 = 2.0 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.G09.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise G09",
+     "date": "2009-06",
+     "shows": "2010 = -0.3 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast -0.3 (MPD G09) and actual 2.0 (MPD S26) verified; error -2.3 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2009-09-004": {
+   "claim_id": "ecb-projections-2009-09-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 0.2,
+    "actual": 2.1,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 0.2,
+    "actual": 2,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 0.2,
+    "actual": 2.0,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2010 = 2.0 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S09.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise S09",
+     "date": "2009-09",
+     "shows": "2010 = 0.2 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 0.2 (MPD S09) and actual 2.0 (MPD S26) verified; error -1.8 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2010-03-003": {
+   "claim_id": "ecb-projections-2010-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 0.8,
+    "actual": 2.1,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 0.8,
+    "actual": 2,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 0.8,
+    "actual": 2.0,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2010 = 2.0 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.W10.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise W10",
+     "date": "2010-03",
+     "shows": "2010 = 0.8 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 0.8 (MPD W10) and actual 2.0 (MPD S26) verified; error -1.2 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2010-03-004": {
+   "claim_id": "ecb-projections-2010-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.7,
+    "verdict": "hit",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.8,
+    "verdict": "hit",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.5,
+    "actual": 1.8,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2011 = 1.8 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.W10.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise W10",
+     "date": "2010-03",
+     "shows": "2011 = 1.5 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 1.5 (MPD W10) and actual 1.8 (MPD S26) verified; error -0.3 pp, D18 hit on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2011-03-004": {
+   "claim_id": "ecb-projections-2011-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": -1,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": -0.9,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.8,
+    "actual": -0.9,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2012 = -0.9 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.W11.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise W11",
+     "date": "2011-03",
+     "shows": "2012 = 1.8 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 1.8 (MPD W11) and actual -0.9 (MPD S26) verified; error +2.7 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2015-12-004": {
+   "claim_id": "ecb-projections-2015-12-004",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2.1,
+    "verdict": "partial",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 2,
+    "verdict": "hit",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.5,
+    "actual": 2.0,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2015 = 2.0 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A15.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A15",
+     "date": "2015-12",
+     "shows": "2015 = 1.5 (projection; range midpoint for exercises that published ranges)."
+    },
+    {
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=EA20&geo=EA19&na_item=B1GQ&unit=CLV10_MEUR&s_adj=SCA",
+     "title": "Eurostat namq_10_gdp, B1GQ chain-linked volumes, SCA, EA19/EA20 (cross-check only, D38)",
+     "date": "2026-10-02",
+     "shows": "2015 growth from SCA quarterly levels: EA19 2.042, EA20 2.043."
+    }
+   ],
+   "note": "Forecast 1.5 (MPD A15) and actual 2.0 (MPD S26) verified; error -0.5 pp, D18 hit on the stated one-decimal values (D38). The ECB history is published to one decimal, so the actual lies in [1.95, 2.05) and the error between -0.55 and -0.45: the verdict could be partial or hit. The row note carries no Threshold flag, which D39 asks for where published rounding can flip a verdict. Eurostat namq_10_gdp SCA (EA19 2.042, EA20 2.043) would give -0.54, partial; D38 grades on the one-decimal MPD history.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2016-12-006": {
+   "claim_id": "ecb-projections-2016-12-006",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 2.6,
+    "verdict": "partial",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": 2.8,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.7,
+    "actual": 2.8,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2017 = 2.8 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A16.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A16",
+     "date": "2016-12",
+     "shows": "2017 = 1.7 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 1.7 (MPD A16) and actual 2.8 (MPD S26) verified; error -1.1 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2017-03-004": {
+   "claim_id": "ecb-projections-2017-03-004",
+   "earlier": {
+    "decision": "correct",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.6,
+    "verdict": "partial",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.8,
+    "verdict": "partial",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.8,
+    "actual": 2.8,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2017 = 2.8 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.W17.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise W17",
+     "date": "2017-03",
+     "shows": "2017 = 1.8 (projection; range midpoint for exercises that published ranges)."
+    },
+    {
+     "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?geo=EA20&geo=EA19&na_item=B1GQ&unit=CLV10_MEUR&s_adj=SCA",
+     "title": "Eurostat namq_10_gdp, B1GQ chain-linked volumes, SCA, EA19/EA20 (cross-check only, D38)",
+     "date": "2026-10-02",
+     "shows": "2017 growth from SCA quarterly levels: EA19 2.800, EA20 2.802."
+    }
+   ],
+   "note": "Forecast 1.8 (MPD W17) and actual 2.8 (MPD S26) verified; error -1.0 pp, D18 partial on the stated one-decimal values (D38). The ECB history is published to one decimal, so the actual lies in [2.75, 2.85) and the error between -1.05 and -0.95: the verdict could be miss or partial. The row note carries no Threshold flag, which D39 asks for where published rounding can flip a verdict. Eurostat namq_10_gdp SCA (EA19 2.800, EA20 2.802) gives -1.00, partial at the threshold.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2018-12-007": {
+   "claim_id": "ecb-projections-2018-12-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": -6,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.7,
+    "actual": -6.1,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.7,
+    "actual": -6.1,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2020 = -6.1 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A18.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A18",
+     "date": "2018-12",
+     "shows": "2020 = 1.7 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 1.7 (MPD A18) and actual -6.1 (MPD S26) verified; error +7.8 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2021-12-007": {
+   "claim_id": "ecb-projections-2021-12-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 0.4,
+    "verdict": "miss",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 0.5,
+    "verdict": "miss",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.9,
+    "actual": 0.5,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2023 = 0.5 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.A21.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise A21",
+     "date": "2021-12",
+     "shows": "2023 = 2.9 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 2.9 (MPD A21) and actual 0.5 (MPD S26) verified; error +2.4 pp, D18 miss on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2023-06-004": {
+   "claim_id": "ecb-projections-2023-06-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 0.9,
+    "actual": 0.4,
+    "verdict": "hit",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 0.9,
+    "actual": 0.5,
+    "verdict": "hit",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 0.9,
+    "actual": 0.5,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2023 = 0.5 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.G23.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise G23",
+     "date": "2023-06",
+     "shows": "2023 = 0.9 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 0.9 (MPD G23) and actual 0.5 (MPD S26) verified; error +0.4 pp, D18 hit on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2023-06-005": {
+   "claim_id": "ecb-projections-2023-06-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.2,
+    "verdict": "hit",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.5,
+    "actual": 1.1,
+    "verdict": "hit",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.5,
+    "actual": 1.1,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2024 = 1.1 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.G23.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise G23",
+     "date": "2023-06",
+     "shows": "2024 = 1.5 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 1.5 (MPD G23) and actual 1.1 (MPD S26) verified; error +0.4 pp, D18 hit on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "ecb-projections-2023-06-006": {
+   "claim_id": "ecb-projections-2023-06-006",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:29+00:00"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.2,
+    "verdict": "hit",
+    "actual_vintage": "Eurostat nama_10_gdp, geo=EA, na_item=B1GQ, unit=CLV_PCH_PRE (updated 2026-09-21)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 1.3,
+    "verdict": "hit",
+    "actual_vintage": "ECB MPD MPD.A.U2.YER.A.S26.0000 (history of exercise S26, retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.6,
+    "actual": 1.3,
+    "actual_series": "ECB MPD S26 history (MPD.A.U2.YER.A.S26.0000, status A), working-day adjusted, euro area changing composition, one decimal",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.S26.0000",
+     "title": "ECB MPD, euro area real GDP growth, Summer/September 2026 staff projections (history rows, OBS_STATUS A)",
+     "date": "2026-09",
+     "shows": "2025 = 1.3 (status A)."
+    },
+    {
+     "url": "https://data-api.ecb.europa.eu/service/data/MPD/A.U2.YER.A.G23.0000",
+     "title": "ECB MPD, euro area real GDP growth, exercise G23",
+     "date": "2023-06",
+     "shows": "2025 = 1.6 (projection; range midpoint for exercises that published ranges)."
+    }
+   ],
+   "note": "Forecast 1.6 (MPD G23) and actual 1.3 (MPD S26) verified; error +0.3 pp, D18 hit on the stated one-decimal values (D38).",
+   "at": "2026-10-02T13:14:52Z"
+  }
+ }
+}

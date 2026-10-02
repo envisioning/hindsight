@@ -1,0 +1,1159 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #66",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:fed-sep:numeric",
+ "recheck_of": "data/graded/audit/fed-sep.json",
+ "scope": "Sampled rows whose actual changed in the #66 ALFRED vintage refresh.",
+ "how": "Rows found by comparing data/graded/numeric/fed-sep.json at 1f8c794 (before #66) with HEAD 646a65a for every sampled id: status, forecast, actual or verdict changed. Forecast, actual and verdict re-derived from the sources fetched on 2026-10-02, not from repo files.",
+ "counts": {
+  "rechecked": 26,
+  "confirm": 26,
+  "correct": 0
+ },
+ "records": {
+  "fed-sep-2019-03-011": {
+   "claim_id": "fed-sep-2019-03-011",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 5.8,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 5.73,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 5.731,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2019-03-20",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2019-03-20",
+     "date": "2019-03-20",
+     "shows": "2021 = 2.0."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2021 = 5.731."
+    }
+   ],
+   "note": "Forecast 2.0 (SEP median, 2019-03-20) and Q4/Q4 actual 5.731 verified; error -3.731 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2019-03-015": {
+   "claim_id": "fed-sep-2019-03-015",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 4.85,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 4.75,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 4.752,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2019-03-20",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2019-03-20",
+     "date": "2019-03-20",
+     "shows": "2021 = 2.0."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2021 = 4.752."
+    }
+   ],
+   "note": "Forecast 2.0 (SEP median, 2019-03-20) and Q4/Q4 actual 4.752 verified; error -2.752 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2021-03-002": {
+   "claim_id": "fed-sep-2021-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 3.3,
+    "actual": 1.32,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.3,
+    "actual": 1.23,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.3,
+    "actual": 1.231,
+    "actual_series": "Real GDP Q4/Q4 from ALFRED GDPC1 (vintage 20260930)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1MD&vintage_date=2021-03-17",
+     "title": "ALFRED GDPC1MD, FOMC SEP median, vintage 2021-03-17",
+     "date": "2021-03-17",
+     "shows": "2022 = 3.3."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Q4/Q4 2022 = 1.231."
+    }
+   ],
+   "note": "Forecast 3.3 (SEP median, 2021-03-17) and Q4/Q4 actual 1.231 verified; error +2.069 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2021-03-003": {
+   "claim_id": "fed-sep-2021-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 3.39,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 3.42,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.2,
+    "actual": 3.415,
+    "actual_series": "Real GDP Q4/Q4 from ALFRED GDPC1 (vintage 20260930)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1MD&vintage_date=2021-03-17",
+     "title": "ALFRED GDPC1MD, FOMC SEP median, vintage 2021-03-17",
+     "date": "2021-03-17",
+     "shows": "2023 = 2.2."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Q4/Q4 2023 = 3.415."
+    }
+   ],
+   "note": "Forecast 2.2 (SEP median, 2021-03-17) and Q4/Q4 actual 3.415 verified; error -1.215 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2021-03-009": {
+   "claim_id": "fed-sep-2021-03-009",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 5.8,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.4,
+    "actual": 5.73,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.4,
+    "actual": 5.731,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2021-03-17",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2021-03-17",
+     "date": "2021-03-17",
+     "shows": "2021 = 2.4."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2021 = 5.731."
+    }
+   ],
+   "note": "Forecast 2.4 (SEP median, 2021-03-17) and Q4/Q4 actual 5.731 verified; error -3.331 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2021-03-010": {
+   "claim_id": "fed-sep-2021-03-010",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 6,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 6.07,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 6.065,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2021-03-17",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2021-03-17",
+     "date": "2021-03-17",
+     "shows": "2022 = 2.0."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2022 = 6.065."
+    }
+   ],
+   "note": "Forecast 2.0 (SEP median, 2021-03-17) and Q4/Q4 actual 6.065 verified; error -4.065 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2021-03-013": {
+   "claim_id": "fed-sep-2021-03-013",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 4.85,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 4.75,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.2,
+    "actual": 4.752,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2021-03-17",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2021-03-17",
+     "date": "2021-03-17",
+     "shows": "2021 = 2.2."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2021 = 4.752."
+    }
+   ],
+   "note": "Forecast 2.2 (SEP median, 2021-03-17) and Q4/Q4 actual 4.752 verified; error -2.552 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2021-03-014": {
+   "claim_id": "fed-sep-2021-03-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 5.21,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 5.29,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 5.288,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2021-03-17",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2021-03-17",
+     "date": "2021-03-17",
+     "shows": "2022 = 2.0."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2022 = 5.288."
+    }
+   ],
+   "note": "Forecast 2.0 (SEP median, 2021-03-17) and Q4/Q4 actual 5.288 verified; error -3.288 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2021-03-015": {
+   "claim_id": "fed-sep-2021-03-015",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 3.29,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 3.41,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.1,
+    "actual": 3.406,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2021-03-17",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2021-03-17",
+     "date": "2021-03-17",
+     "shows": "2023 = 2.1."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2023 = 3.406."
+    }
+   ],
+   "note": "Forecast 2.1 (SEP median, 2021-03-17) and Q4/Q4 actual 3.406 verified; error -1.306 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-09-001": {
+   "claim_id": "fed-sep-2022-09-001",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 0.2,
+    "actual": 1.32,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 0.2,
+    "actual": 1.23,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 0.2,
+    "actual": 1.231,
+    "actual_series": "Real GDP Q4/Q4 from ALFRED GDPC1 (vintage 20260930)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1MD&vintage_date=2022-09-21",
+     "title": "ALFRED GDPC1MD, FOMC SEP median, vintage 2022-09-21",
+     "date": "2022-09-21",
+     "shows": "2022 = 0.2."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Q4/Q4 2022 = 1.231."
+    }
+   ],
+   "note": "Forecast 0.2 (SEP median, 2022-09-21) and Q4/Q4 actual 1.231 verified; error -1.031 pp, D18 miss. Within 0.031 pp of a D18 threshold; computed from unrounded index levels, so no rounding range applies, but a later revision of about that size would move it.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-09-002": {
+   "claim_id": "fed-sep-2022-09-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 3.39,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 3.42,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.2,
+    "actual": 3.415,
+    "actual_series": "Real GDP Q4/Q4 from ALFRED GDPC1 (vintage 20260930)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1MD&vintage_date=2022-09-21",
+     "title": "ALFRED GDPC1MD, FOMC SEP median, vintage 2022-09-21",
+     "date": "2022-09-21",
+     "shows": "2023 = 1.2."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Q4/Q4 2023 = 3.415."
+    }
+   ],
+   "note": "Forecast 1.2 (SEP median, 2022-09-21) and Q4/Q4 actual 3.415 verified; error -2.215 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-09-004": {
+   "claim_id": "fed-sep-2022-09-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 1.99,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED GDPC1_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.05,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED GDPC1_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.8,
+    "actual": 2.046,
+    "actual_series": "Real GDP Q4/Q4 from ALFRED GDPC1 (vintage 20260930)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1MD&vintage_date=2022-09-21",
+     "title": "ALFRED GDPC1MD, FOMC SEP median, vintage 2022-09-21",
+     "date": "2022-09-21",
+     "shows": "2025 = 1.8."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Q4/Q4 2025 = 2.046."
+    }
+   ],
+   "note": "Forecast 1.8 (SEP median, 2022-09-21) and Q4/Q4 actual 2.046 verified; error -0.246 pp, D18 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-09-019": {
+   "claim_id": "fed-sep-2022-09-019",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.85,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.77,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.1,
+    "actual": 2.766,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2022-09-21",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2022-09-21",
+     "date": "2022-09-21",
+     "shows": "2025 = 2.1."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2025 = 2.766."
+    }
+   ],
+   "note": "Forecast 2.1 (SEP median, 2022-09-21) and Q4/Q4 actual 2.766 verified; error -0.666 pp, D18 partial.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-002": {
+   "claim_id": "fed-sep-2022-12-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 0.5,
+    "actual": 3.39,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 0.5,
+    "actual": 3.42,
+    "verdict": "miss",
+    "actual_vintage": "ALFRED GDPC1_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 0.5,
+    "actual": 3.415,
+    "actual_series": "Real GDP Q4/Q4 from ALFRED GDPC1 (vintage 20260930)",
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1MD&vintage_date=2022-12-14",
+     "title": "ALFRED GDPC1MD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2023 = 0.5."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=GDPC1",
+     "title": "ALFRED GDPC1, real GDP, quarterly SAAR chained dollars (vintage 20260930)",
+     "date": "20260930",
+     "shows": "Q4/Q4 2023 = 3.415."
+    }
+   ],
+   "note": "Forecast 0.5 (SEP median, 2022-12-14) and Q4/Q4 actual 3.415 verified; error -2.915 pp, D18 miss.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-011": {
+   "claim_id": "fed-sep-2022-12-011",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 6,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 6.07,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 5.6,
+    "actual": 6.065,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2022-12-14",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2022 = 5.6."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2022 = 6.065."
+    }
+   ],
+   "note": "Forecast 5.6 (SEP median, 2022-12-14) and Q4/Q4 actual 6.065 verified; error -0.465 pp, D18 hit. Within 0.035 pp of a D18 threshold; computed from unrounded index levels, so no rounding range applies, but a later revision of about that size would move it.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-012": {
+   "claim_id": "fed-sep-2022-12-012",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 2.85,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 2.95,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.1,
+    "actual": 2.95,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2022-12-14",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2023 = 3.1."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2023 = 2.950."
+    }
+   ],
+   "note": "Forecast 3.1 (SEP median, 2022-12-14) and Q4/Q4 actual 2.950 verified; error +0.150 pp, D18 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-013": {
+   "claim_id": "fed-sep-2022-12-013",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.6,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.52,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.5,
+    "actual": 2.515,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2022-12-14",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2024 = 2.5."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2024 = 2.515."
+    }
+   ],
+   "note": "Forecast 2.5 (SEP median, 2022-12-14) and Q4/Q4 actual 2.515 verified; error -0.015 pp, D18 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-014": {
+   "claim_id": "fed-sep-2022-12-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.8,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.72,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.1,
+    "actual": 2.715,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2022-12-14",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2025 = 2.1."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2025 = 2.715."
+    }
+   ],
+   "note": "Forecast 2.1 (SEP median, 2022-12-14) and Q4/Q4 actual 2.715 verified; error -0.615 pp, D18 partial.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-016": {
+   "claim_id": "fed-sep-2022-12-016",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 4.8,
+    "actual": 5.21,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 4.8,
+    "actual": 5.29,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 4.8,
+    "actual": 5.288,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2022-12-14",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2022 = 4.8."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2022 = 5.288."
+    }
+   ],
+   "note": "Forecast 4.8 (SEP median, 2022-12-14) and Q4/Q4 actual 5.288 verified; error -0.488 pp, D18 hit. Within 0.012 pp of a D18 threshold; computed from unrounded index levels, so no rounding range applies, but a later revision of about that size would move it.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-017": {
+   "claim_id": "fed-sep-2022-12-017",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 3.5,
+    "actual": 3.29,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.5,
+    "actual": 3.41,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.5,
+    "actual": 3.406,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2022-12-14",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2023 = 3.5."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2023 = 3.406."
+    }
+   ],
+   "note": "Forecast 3.5 (SEP median, 2022-12-14) and Q4/Q4 actual 3.406 verified; error +0.094 pp, D18 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-018": {
+   "claim_id": "fed-sep-2022-12-018",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.99,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.89,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.5,
+    "actual": 2.894,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2022-12-14",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2024 = 2.5."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2024 = 2.894."
+    }
+   ],
+   "note": "Forecast 2.5 (SEP median, 2022-12-14) and Q4/Q4 actual 2.894 verified; error -0.394 pp, D18 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2022-12-019": {
+   "claim_id": "fed-sep-2022-12-019",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.85,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.77,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.1,
+    "actual": 2.766,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2022-12-14",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2022-12-14",
+     "date": "2022-12-14",
+     "shows": "2025 = 2.1."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2025 = 2.766."
+    }
+   ],
+   "note": "Forecast 2.1 (SEP median, 2022-12-14) and Q4/Q4 actual 2.766 verified; error -0.666 pp, D18 partial.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2024-09-011": {
+   "claim_id": "fed-sep-2024-09-011",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 2.6,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 2.52,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.3,
+    "actual": 2.515,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2024-09-18",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2024-09-18",
+     "date": "2024-09-18",
+     "shows": "2024 = 2.3."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2024 = 2.515."
+    }
+   ],
+   "note": "Forecast 2.3 (SEP median, 2024-09-18) and Q4/Q4 actual 2.515 verified; error -0.215 pp, D18 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2024-09-012": {
+   "claim_id": "fed-sep-2024-09-012",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.8,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPI_20260928"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 2.72,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPI_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.1,
+    "actual": 2.715,
+    "actual_series": "PCE price index Q4/Q4 from ALFRED PCECTPI (vintage 20261002; PCEPI monthly Q4 averages give the same to 3 decimals)",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPIMD&vintage_date=2024-09-18",
+     "title": "ALFRED PCECTPIMD, FOMC SEP median, vintage 2024-09-18",
+     "date": "2024-09-18",
+     "shows": "2025 = 2.1."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=PCECTPI",
+     "title": "ALFRED PCECTPI, PCE chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2025 = 2.715."
+    }
+   ],
+   "note": "Forecast 2.1 (SEP median, 2024-09-18) and Q4/Q4 actual 2.715 verified; error -0.615 pp, D18 partial.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2024-09-016": {
+   "claim_id": "fed-sep-2024-09-016",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 2.99,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 2.89,
+    "verdict": "hit",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.6,
+    "actual": 2.894,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2024-09-18",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2024-09-18",
+     "date": "2024-09-18",
+     "shows": "2024 = 2.6."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2024 = 2.894."
+    }
+   ],
+   "note": "Forecast 2.6 (SEP median, 2024-09-18) and Q4/Q4 actual 2.894 verified; error -0.294 pp, D18 hit.",
+   "at": "2026-10-02T13:14:52Z"
+  },
+  "fed-sep-2024-09-017": {
+   "claim_id": "fed-sep-2024-09-017",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:58Z"
+   },
+   "grade_before_66": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 2.85,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPILFE_20260915"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.2,
+    "actual": 2.77,
+    "verdict": "partial",
+    "actual_vintage": "ALFRED PCEPILFE_20260930"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.2,
+    "actual": 2.766,
+    "actual_series": "Core PCE price index Q4/Q4 from ALFRED JCXFE (vintage 20261002; PCEPILFE monthly Q4 averages agree within 0.001)",
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFEMD&vintage_date=2024-09-18",
+     "title": "ALFRED JCXFEMD, FOMC SEP median, vintage 2024-09-18",
+     "date": "2024-09-18",
+     "shows": "2025 = 2.2."
+    },
+    {
+     "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=JCXFE",
+     "title": "ALFRED JCXFE, PCE excluding food and energy chain-type price index, quarterly (vintage 20261002)",
+     "date": "20261002",
+     "shows": "Q4/Q4 2025 = 2.766."
+    }
+   ],
+   "note": "Forecast 2.2 (SEP median, 2024-09-18) and Q4/Q4 actual 2.766 verified; error -0.566 pp, D18 partial.",
+   "at": "2026-10-02T13:14:52Z"
+  }
+ }
+}
