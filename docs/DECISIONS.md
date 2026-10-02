@@ -819,3 +819,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** Links whose texts are worded differently enough to fall under 0.65 and are not mutual nearest neighbours are missed until a later run lowers the floor.
 
 **Overturned by.** An audit of a random sample below the floor that finds a meaningful share of real links.
+
+## D55: Subspace excluded from linking (amends D52)
+
+*Recorded 2026-10-02. Approved by MZ.*
+
+**Decision.** The research project `subspace` joins `data/links/excluded-projects.json` (D52). It catalogues science-fiction technologies (Star Trek: Medical Tricorder, Universal Translator, Genesis Device, Replicator) under plain technology titles. 129 technologies leave the snapshot (3,841 to 3,712). The d48-r0 link `medical-tricorder` to `subspace/medical-tricorder` (`same`) is retracted with reason `project excluded (D52)`. `scripts/links/final.mjs` and `scripts/links/audit-sample.mjs` now read the exclusion list: candidates of an excluded project in a run already under way (10 in d48-r1, one of them agreed `broader`) are left out of the decisions, the adjudication, the audit pool and `research.json`, so no row is written for them; and `final.mjs` appends the retraction for any active row to an excluded project.
+
+**Why.** Same reason as D52: verifiers confirm a fictional device on its title and opening definition, and a forecast about real medical tricorders should not point to the Star Trek prop. The d48-r1 candidates were drawn before the decision, so filtering at final keeps the run without redrawing it.
+
+**Cost.** Pages in Subspace that discuss a real precursor technology are not linked. Excluded candidates are not in `final.json` `decisions`, so if the exclusion is lifted a later run proposes them again.
+
+**Overturned by.** A per-technology filter for fictional framing, or a change in the project's framing, recorded as a new decision.

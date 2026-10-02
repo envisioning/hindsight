@@ -1,0 +1,758 @@
+{
+ "run": "d48-r1",
+ "batch": "b005",
+ "role": "A",
+ "agent": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "candidate_id": "decentralized-governance-daos~a3b3e9a7-dcdf-455c-8ce6-dac02fcd0978",
+   "verdict": "link",
+   "reason": "DAO governance via token voting and smart contracts is the subject's decentralized governance (DAOs)."
+  },
+  {
+   "candidate_id": "decentralized-identity~7874bf63-ed04-4d7c-964a-7b08dcd7f81f",
+   "verdict": "link",
+   "reason": "Same: user-controlled identity without central authorities is decentralized identity."
+  },
+  {
+   "candidate_id": "decentralized-identity~4a5d3dc7-656b-4396-889a-0130a039ffec",
+   "verdict": "link",
+   "reason": "Wallet-based verifiable credentials for identity verification is decentralized identity itself, framed as apps."
+  },
+  {
+   "candidate_id": "decentralized-identity~ab9a3ca0-87b6-4d53-974d-8c3a8cfd1260",
+   "verdict": "narrower",
+   "reason": "DIDs are the identifier standard, one component of decentralized identity (which also covers credentials, wallets)."
+  },
+  {
+   "candidate_id": "decentralized-identity~f8f930bc-9c1f-4323-9e8e-f01d4e6737ac",
+   "verdict": "broader",
+   "reason": "Covers decentralized identity plus cross-platform reputation tracking; contains the subject."
+  },
+  {
+   "candidate_id": "decentralized-science-desci-platforms~6e31a8c2-e076-4471-8a70-63ca064083a2",
+   "verdict": "link",
+   "reason": "Same: DeSci, blockchain-based funding and sharing of science."
+  },
+  {
+   "candidate_id": "deep-learning-applied-to-medical-imaging~976be006-e924-4042-a8a0-fbbb17b57677",
+   "verdict": "narrower",
+   "reason": "israel__ country landscape entry for AI medical imaging; subject has no regional scope."
+  },
+  {
+   "candidate_id": "deepfake-detection~535ec0a3-53da-40e7-a8ca-36de4e697417",
+   "verdict": "link",
+   "reason": "Same: AI systems detecting synthetic or manipulated media."
+  },
+  {
+   "candidate_id": "deepfake-detection~ee12e1bb-dfab-4836-9252-76a331c5c3d0",
+   "verdict": "link",
+   "reason": "Deepfake detection described as the technology itself; financial-fraud framing is the project's lens."
+  },
+  {
+   "candidate_id": "deepfake-detection~7f6ae70b-0a7d-4cf7-a61a-00c16dd02cdd",
+   "verdict": "link",
+   "reason": "Same: AI verifying audio/video authenticity by detecting synthetic manipulation."
+  },
+  {
+   "candidate_id": "deepfake-detection~6cd9671c-60b1-469e-b2fa-34f09287fd29",
+   "verdict": "narrower",
+   "reason": "Deepfake detection applied to intelligence operations, a named application."
+  },
+  {
+   "candidate_id": "deepfake-detection~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "link",
+   "reason": "Synthetic media detection is deepfake detection under another name."
+  },
+  {
+   "candidate_id": "deepfake-detection~a887216a-36cf-477a-838b-0f248fa131b9",
+   "verdict": "narrower",
+   "reason": "Real-time streaming pipelines are a specific variant of deepfake detection."
+  },
+  {
+   "candidate_id": "deepfake-detectors~ee12e1bb-dfab-4836-9252-76a331c5c3d0",
+   "verdict": "link",
+   "reason": "Deepfake detectors = deepfake detection systems; fraud framing is project lens."
+  },
+  {
+   "candidate_id": "deepfake-detectors~535ec0a3-53da-40e7-a8ca-36de4e697417",
+   "verdict": "link",
+   "reason": "Same technology: detecting synthetic or manipulated media."
+  },
+  {
+   "candidate_id": "deepfake-detectors~7f6ae70b-0a7d-4cf7-a61a-00c16dd02cdd",
+   "verdict": "link",
+   "reason": "Same technology: verifying media authenticity against deepfakes."
+  },
+  {
+   "candidate_id": "deepfake-detectors~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "link",
+   "reason": "Synthetic media detection = deepfake detectors."
+  },
+  {
+   "candidate_id": "deepfake-detectors~6cd9671c-60b1-469e-b2fa-34f09287fd29",
+   "verdict": "narrower",
+   "reason": "Deepfake detection for intelligence operations, a named application."
+  },
+  {
+   "candidate_id": "deepfake-detectors~459e8575-feed-43a8-b910-d192a5734f2d",
+   "verdict": "link",
+   "reason": "Same: ML systems identifying AI-generated or manipulated media."
+  },
+  {
+   "candidate_id": "deepfake-regulation-and-synthetic-media-literacy~ee12e1bb-dfab-4836-9252-76a331c5c3d0",
+   "verdict": "no_link",
+   "reason": "Subject is regulation and media literacy for deepfakes; technology is detection tooling. Adjacent only."
+  },
+  {
+   "candidate_id": "deepfake-regulation-and-synthetic-media-literacy~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "no_link",
+   "reason": "Subject is legislation and literacy; detection forensics is adjacent, neither contains the other."
+  },
+  {
+   "candidate_id": "deepfake-regulation-and-synthetic-media-literacy~6cd9671c-60b1-469e-b2fa-34f09287fd29",
+   "verdict": "no_link",
+   "reason": "Regulation/literacy subject vs intelligence deepfake detection tooling; adjacent."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~ee12e1bb-dfab-4836-9252-76a331c5c3d0",
+   "verdict": "narrower",
+   "reason": "Subject is deepfake defense (policies plus tech); detection technology is one component."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "narrower",
+   "reason": "Detection forensics is the technology component of synthetic media defense."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~7f6ae70b-0a7d-4cf7-a61a-00c16dd02cdd",
+   "verdict": "narrower",
+   "reason": "Deepfake detection is a component of the broader synthetic-media defense subject."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~6cd9671c-60b1-469e-b2fa-34f09287fd29",
+   "verdict": "narrower",
+   "reason": "Detection (here for intelligence) is a component of synthetic-media defense."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~535ec0a3-53da-40e7-a8ca-36de4e697417",
+   "verdict": "narrower",
+   "reason": "Deepfake detection platforms are the tech component of synthetic-media defense."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~a887216a-36cf-477a-838b-0f248fa131b9",
+   "verdict": "narrower",
+   "reason": "Real-time detection pipelines are one defensive technology within the subject."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~459e8575-feed-43a8-b910-d192a5734f2d",
+   "verdict": "narrower",
+   "reason": "Synthetic media detection is one component of the defense subject."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~953e9ec4-55a6-4052-aef3-17f645523c17",
+   "verdict": "narrower",
+   "reason": "Forensics tools are one component of synthetic media defense."
+  },
+  {
+   "candidate_id": "deepfakes-and-synthetic-media-defense~98c55435-1c8b-4919-82a6-1953f101e581",
+   "verdict": "narrower",
+   "reason": "Provenance verification is one defensive technique within synthetic media defense."
+  },
+  {
+   "candidate_id": "defining-parenthood~8525b314-5d0a-4a86-991d-99e89e4d7232",
+   "verdict": "no_link",
+   "reason": "Subject is the social/legal definition of parenthood; technology is ethics frameworks for fertility tech. Adjacent."
+  },
+  {
+   "candidate_id": "defining-patient-access-to-medical-data~6a33eeec-ce1d-4785-b1a4-be8d9cf5039c",
+   "verdict": "no_link",
+   "reason": "Subject is policy on patient data access rules; technology is decentralized patient-controlled records. Adjacent."
+  },
+  {
+   "candidate_id": "deorbiting-debris~80c7168c-585a-493b-a0a8-8e3f64bec6f8",
+   "verdict": "link",
+   "reason": "Same: capturing and removing defunct satellites and debris from orbit."
+  },
+  {
+   "candidate_id": "deorbiting-debris~fc1ed22c-b9c1-448d-8366-966d8007d3db",
+   "verdict": "link",
+   "reason": "Active debris removal = deorbiting debris."
+  },
+  {
+   "candidate_id": "deorbiting-debris~a86eaba7-1a75-4b17-8e22-d11ce6259a65",
+   "verdict": "broader",
+   "reason": "Governance frameworks plus removal technologies; contains deorbiting."
+  },
+  {
+   "candidate_id": "desalination~188be61b-ba7e-43a4-b314-acf6542ae0e7",
+   "verdict": "narrower",
+   "reason": "gulf-states__ regional landscape entry for desalination."
+  },
+  {
+   "candidate_id": "desalination~f796aea4-f5e3-4e9c-bfaf-84b424509145",
+   "verdict": "narrower",
+   "reason": "israel__ regional entry on seawater reverse osmosis."
+  },
+  {
+   "candidate_id": "diagnostic-beds~51e74833-80c6-4cee-8f8b-ec32a3676145",
+   "verdict": "no_link",
+   "reason": "Subject is hospital smart beds monitoring patients; technology is infant mattress sensors. Adjacent."
+  },
+  {
+   "candidate_id": "digital-addiction~cddb4d50-08ab-4284-8731-790d6f3ff0bd",
+   "verdict": "no_link",
+   "reason": "Subject is the phenomenon of digital addiction; technology scans products for dark patterns. Adjacent."
+  },
+  {
+   "candidate_id": "digital-and-ai-skills-tools~fc2a762f-65f5-463a-a0d7-7ea1a97c4be4",
+   "verdict": "narrower",
+   "reason": "AI reskilling for factory workers is one application of digital/AI skills tools."
+  },
+  {
+   "candidate_id": "digital-autonomous-organizations-daos~8aedff00-5359-4242-8003-353016d91aa6",
+   "verdict": "link",
+   "reason": "Service providers coordinated by smart contracts instead of hierarchies = DAOs."
+  },
+  {
+   "candidate_id": "digital-autonomous-organizations-daos~a3b3e9a7-dcdf-455c-8ce6-dac02fcd0978",
+   "verdict": "narrower",
+   "reason": "DAO governance stacks are the governance tooling component of DAOs."
+  },
+  {
+   "candidate_id": "digital-beauty~01e1e3fa-5e7b-426b-af08-2f547e6ca27f",
+   "verdict": "narrower",
+   "reason": "AR makeup try-on is one application of digital beauty/digital makeup."
+  },
+  {
+   "candidate_id": "digital-content-provenance-and-authentication~9caad582-e528-438d-aecc-3eb3de32b64a",
+   "verdict": "link",
+   "reason": "Same: tracking and verifying origin of digital media."
+  },
+  {
+   "candidate_id": "digital-content-provenance-and-authentication~b3c9ecdd-3418-4181-9bdf-73266d67dfc9",
+   "verdict": "no_link",
+   "reason": "Physical goods and document provenance; subject is digital content provenance."
+  },
+  {
+   "candidate_id": "digital-content-provenance-and-authentication~81e4ca17-4fdf-4d8b-97fa-bb307e5dcd21",
+   "verdict": "narrower",
+   "reason": "C2PA is one specific standard for digital content provenance."
+  },
+  {
+   "candidate_id": "digital-content-provenance-and-authentication~122a8aa3-1e6f-41f2-82f9-c5bb6c0a6aaa",
+   "verdict": "no_link",
+   "reason": "Provenance ledgers for physical goods, not digital content."
+  },
+  {
+   "candidate_id": "digital-fashion~c8734d72-9aa6-4c94-9366-4c95daba299a",
+   "verdict": "link",
+   "reason": "Virtual clothing for avatars is digital fashion."
+  },
+  {
+   "candidate_id": "digital-fashion-in-virtual-worlds~c8734d72-9aa6-4c94-9366-4c95daba299a",
+   "verdict": "link",
+   "reason": "Virtual clothing for avatars across games and metaverse = digital fashion in virtual worlds."
+  },
+  {
+   "candidate_id": "digital-fitness-and-health-tech~efdf1c84-c37c-426f-a9e0-6a3e006a0bfd",
+   "verdict": "no_link",
+   "reason": "Consumer digital fitness vs GCC telemedicine infrastructure; different."
+  },
+  {
+   "candidate_id": "digital-governance-models~eaeeb9e1-f5a3-4fc1-98cf-0d30c795527b",
+   "verdict": "no_link",
+   "reason": "Subject is CIO IT governance models; technology is commons stewardship of shared infrastructure."
+  },
+  {
+   "candidate_id": "digital-humans~3363706b-9a3f-4ded-ba5a-c797a56ac6ca",
+   "verdict": "link",
+   "reason": "Photorealistic virtual humans from mocap and AI = digital humans."
+  },
+  {
+   "candidate_id": "digital-identity-management~9ed8d605-9750-433b-b673-8c1c48a62f0a",
+   "verdict": "narrower",
+   "reason": "Compartmentalizing digital personas is a specific tool within digital identity management."
+  },
+  {
+   "candidate_id": "digital-identity-programs~4454eab2-aab7-4073-b5ec-b0ffafc673a4",
+   "verdict": "narrower",
+   "reason": "africa__ regional entry for government digital ID programmes."
+  },
+  {
+   "candidate_id": "digital-passports-and-smart-contracts~c1400c3b-ef73-4365-af7e-403205dd970f",
+   "verdict": "link",
+   "reason": "Same: digital product passports documenting supply chain materials."
+  },
+  {
+   "candidate_id": "digital-passports-and-smart-contracts~27a3d4ec-c42b-47ca-9183-c4d56a121384",
+   "verdict": "narrower",
+   "reason": "Product passports applied to garments, a named application."
+  },
+  {
+   "candidate_id": "digital-resiliency~3432e472-60b5-4a3f-94b1-9b7cded4568d",
+   "verdict": "no_link",
+   "reason": "Subject is enterprise digital resiliency; technology is disaster-resistant comms networks."
+  },
+  {
+   "candidate_id": "digital-signatures~9944d1aa-9b6e-4346-919a-6a4f3f285abf",
+   "verdict": "narrower",
+   "reason": "Homomorphic signatures are a specific type of digital signature."
+  },
+  {
+   "candidate_id": "digital-sovereignty~aafa364c-413d-4211-96c3-113dc1042b6d",
+   "verdict": "link",
+   "reason": "Same: national control over data and digital infrastructure."
+  },
+  {
+   "candidate_id": "digital-spaces~9e03d39f-4806-4aa7-b99a-af90f1f2d304",
+   "verdict": "narrower",
+   "reason": "Persistent social XR venues are one kind of virtual 3D digital space."
+  },
+  {
+   "candidate_id": "digital-supply-chains~174f21c0-52a9-4338-9d2c-3106cb4c33c0",
+   "verdict": "narrower",
+   "reason": "Supply chain digital twins are one tool within digital supply chains."
+  },
+  {
+   "candidate_id": "digital-supply-chains~7a4bf360-94b8-4279-9ce7-81ced54fe73b",
+   "verdict": "narrower",
+   "reason": "Supply chain digital twins are one tool within digital supply chains."
+  },
+  {
+   "candidate_id": "digital-twin~2a04f09c-6245-45b5-a8f5-87b21f927b71",
+   "verdict": "narrower",
+   "reason": "Supply chain twins are one application of digital twins."
+  },
+  {
+   "candidate_id": "digital-twin~32f363e7-6078-4c77-bacb-aa34112f5d7e",
+   "verdict": "narrower",
+   "reason": "Urban twins are one application of digital twins."
+  },
+  {
+   "candidate_id": "digital-twin~d86087a2-6d06-42c8-9bc4-35fa1cc29e46",
+   "verdict": "narrower",
+   "reason": "Telecom network twin is one application of digital twins."
+  },
+  {
+   "candidate_id": "digital-twin~174f21c0-52a9-4338-9d2c-3106cb4c33c0",
+   "verdict": "narrower",
+   "reason": "Supply chain twins are one application of digital twins."
+  },
+  {
+   "candidate_id": "digital-twin~bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
+   "verdict": "narrower",
+   "reason": "usa__ regional entry, industrial digital twins: application of digital twins."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
+   "verdict": "narrower",
+   "reason": "usa__ industrial twins: a regional, application-specific case of twins of physical structures."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~11c49cff-325f-4dbb-9f34-5ebc5d73c95b",
+   "verdict": "narrower",
+   "reason": "Industrial asset twins for predictive maintenance: one case of the subject's predictive twins."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~32f363e7-6078-4c77-bacb-aa34112f5d7e",
+   "verdict": "narrower",
+   "reason": "City twins are one case of twins of physical structures."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~2a04f09c-6245-45b5-a8f5-87b21f927b71",
+   "verdict": "no_link",
+   "reason": "Supply network twin, not a twin of a physical structure as the subject's claim uses it."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~81e20eb5-9b08-4c77-833f-652eb0642aa9",
+   "verdict": "narrower",
+   "reason": "City twins are one case of twins of physical structures."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~327e53a3-4a61-41c6-b637-9b1a4f444863",
+   "verdict": "narrower",
+   "reason": "Construction site twins are one case of built-structure twins."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~e06a553a-e77e-48a8-9ed8-e9b962c64b49",
+   "verdict": "narrower",
+   "reason": "Spacecraft twins predicting failures: one case of predictive twins of physical assets."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~f44e846d-84eb-45b4-a7cf-2545a7d58788",
+   "verdict": "no_link",
+   "reason": "Earth-system climate twins; subject is twins of physical structures."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning~d86087a2-6d06-42c8-9bc4-35fa1cc29e46",
+   "verdict": "narrower",
+   "reason": "Telecom infrastructure twin: one case of predictive twins of physical structures."
+  },
+  {
+   "candidate_id": "digital-twin-predictive-planning-and-prevention-monitoring~327e53a3-4a61-41c6-b637-9b1a4f444863",
+   "verdict": "narrower",
+   "reason": "Construction-site twins are one case of built-environment predictive twins."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~2a04f09c-6245-45b5-a8f5-87b21f927b71",
+   "verdict": "link",
+   "reason": "Subject's claim is twins modelling resources, production and shipping routes = supply chain twins."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~174f21c0-52a9-4338-9d2c-3106cb4c33c0",
+   "verdict": "link",
+   "reason": "Supply chain twins match the subject's preparedness use (production needs, shipping routes)."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~2c324312-4aa0-4267-8d30-088ebae24f20",
+   "verdict": "link",
+   "reason": "Supply chain twins match the subject's preparedness use."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~7a4bf360-94b8-4279-9ce7-81ced54fe73b",
+   "verdict": "link",
+   "reason": "Supply chain twins match the subject's preparedness use."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~81e20eb5-9b08-4c77-833f-652eb0642aa9",
+   "verdict": "no_link",
+   "reason": "City twins; subject's preparedness twins are about resources and supply/shipping."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~73312b0a-3190-4eb7-8ae4-3afce7a85d5f",
+   "verdict": "no_link",
+   "reason": "Transport network twins; subject is supply chain preparedness twins."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~672fc624-603f-40bf-a454-ee8e6f2de59b",
+   "verdict": "no_link",
+   "reason": "Spacecraft twins; unrelated to supply preparedness."
+  },
+  {
+   "candidate_id": "digital-twin-testing-for-preparedness~e06a553a-e77e-48a8-9ed8-e9b962c64b49",
+   "verdict": "no_link",
+   "reason": "Spacecraft twins; unrelated to supply preparedness."
+  },
+  {
+   "candidate_id": "digital-twins-and-cognitive-twins-in-the-enterprise~46f849a9-cbb7-42b8-bbff-26c147d057f9",
+   "verdict": "no_link",
+   "reason": "City cognitive twin; subject is enterprise digital/cognitive twins."
+  },
+  {
+   "candidate_id": "digital-twins-and-cognitive-twins-in-the-enterprise~2aa7f2cd-5344-453d-b793-6be94e683303",
+   "verdict": "narrower",
+   "reason": "Cognitive twins are one of the two things the subject covers."
+  },
+  {
+   "candidate_id": "digital-twins-and-cognitive-twins-in-the-enterprise~32f363e7-6078-4c77-bacb-aa34112f5d7e",
+   "verdict": "no_link",
+   "reason": "City twins; subject is enterprise twins."
+  },
+  {
+   "candidate_id": "digital-twins-and-cognitive-twins-in-the-enterprise~bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
+   "verdict": "narrower",
+   "reason": "usa__ industrial twins: regional enterprise application of digital twins."
+  },
+  {
+   "candidate_id": "digital-twins-and-cognitive-twins-in-the-enterprise~11c49cff-325f-4dbb-9f34-5ebc5d73c95b",
+   "verdict": "narrower",
+   "reason": "Industrial asset twins are one enterprise application of digital twins."
+  },
+  {
+   "candidate_id": "digital-twins-of-earth~f44e846d-84eb-45b4-a7cf-2545a7d58788",
+   "verdict": "link",
+   "reason": "Same: virtual replicas of Earth systems for climate."
+  },
+  {
+   "candidate_id": "digital-twins-of-earth~dd049e2a-5d01-4475-8c7c-e98ae0f5f6ae",
+   "verdict": "no_link",
+   "reason": "Climate simulation models, adjacent to Earth twins but not described as twins."
+  },
+  {
+   "candidate_id": "digital-twins-of-earth~32f363e7-6078-4c77-bacb-aa34112f5d7e",
+   "verdict": "no_link",
+   "reason": "City twins, not Earth twins."
+  },
+  {
+   "candidate_id": "digital-twins-of-earth~ec3ecfb7-8056-4040-8ea5-97e6e764900f",
+   "verdict": "narrower",
+   "reason": "Land-use and nature twins are a component of Earth digital twins."
+  },
+  {
+   "candidate_id": "digital-twins-of-earth~81e20eb5-9b08-4c77-833f-652eb0642aa9",
+   "verdict": "no_link",
+   "reason": "City/region twins, not Earth twins."
+  },
+  {
+   "candidate_id": "digitalization~0cf34342-77f4-462f-808b-a3ce9cf11d2c",
+   "verdict": "narrower",
+   "reason": "Subject is energy-sector digitalization (hydropower twin claim); grid twins are one case."
+  },
+  {
+   "candidate_id": "digitalization~af5c91ff-da6f-438e-be50-615884ef8f52",
+   "verdict": "no_link",
+   "reason": "Water network twins; subject is energy digitalization. Too far apart."
+  },
+  {
+   "candidate_id": "digitalization~bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
+   "verdict": "no_link",
+   "reason": "usa__ industrial twins; two levels from generic digitalization."
+  },
+  {
+   "candidate_id": "digitally-intermediated-field-trips~4d4ac408-ff1d-4c88-977a-87168da6d851",
+   "verdict": "link",
+   "reason": "Same: VR/360 field trips."
+  },
+  {
+   "candidate_id": "direct-to-consumer-health-care-models~da99f50c-af22-4209-9706-cb34f5b3bd13",
+   "verdict": "no_link",
+   "reason": "DTC membership health models vs Swiss longevity clinic programmes."
+  },
+  {
+   "candidate_id": "direct-to-device-satellite-connectivity~ed063658-83c3-4462-b660-39afc8a54c01",
+   "verdict": "narrower",
+   "reason": "usa__ regional entry on direct-to-cell satellite connectivity."
+  },
+  {
+   "candidate_id": "disinformation-security~496268e2-dcaa-48b2-a1b7-38a59d398117",
+   "verdict": "link",
+   "reason": "Detecting and countering information manipulation = disinformation security."
+  },
+  {
+   "candidate_id": "dissolving-bioelectronics~67eb579a-1df0-4f81-a66e-7ecd17217795",
+   "verdict": "link",
+   "reason": "Same: implants that dissolve in the body."
+  },
+  {
+   "candidate_id": "distributed-generation~aa4fd7a2-15fb-43ec-b166-017430852671",
+   "verdict": "narrower",
+   "reason": "Building-integrated and plug-in renewables are one form of distributed generation."
+  },
+  {
+   "candidate_id": "distributed-storage~639d6e44-b074-4721-9b4d-fbf36f369d0c",
+   "verdict": "narrower",
+   "reason": "P2P replicated knowledge archives are one application of distributed storage."
+  },
+  {
+   "candidate_id": "diversified-ai-inferencing~d06fa6e5-b70f-4bb7-82e6-c4be56cf08fe",
+   "verdict": "no_link",
+   "reason": "Inference chips are adjacent hardware; subject is diversified delivery of inferencing."
+  },
+  {
+   "candidate_id": "diversified-ai-inferencing~d778f152-1010-4cd6-9400-5f557da711bb",
+   "verdict": "narrower",
+   "reason": "usa__ edge inference: one part of core-to-device diversified inferencing."
+  },
+  {
+   "candidate_id": "diy-vaccines~97424efe-1f9e-4c1c-975d-bc9eb4796165",
+   "verdict": "no_link",
+   "reason": "Citizen-science DIY vaccines vs Turkey's state inactivated vaccine platform."
+  },
+  {
+   "candidate_id": "dna-as-an-alternative-to-future-data-storage~58a49acb-e706-47f1-8095-47ae9e201f8b",
+   "verdict": "link",
+   "reason": "Same: DNA as archival data storage."
+  },
+  {
+   "candidate_id": "dna-as-an-alternative-to-future-data-storage~050bf418-b0ac-40a6-8e2b-90657b00f4e1",
+   "verdict": "link",
+   "reason": "Same: DNA data storage."
+  },
+  {
+   "candidate_id": "dna-as-an-alternative-to-future-data-storage~3111c8c0-2636-4b91-ae31-7ce54e9dbe98",
+   "verdict": "link",
+   "reason": "Same: DNA data storage."
+  },
+  {
+   "candidate_id": "dna-as-an-alternative-to-future-data-storage~beb196aa-e60d-4c2c-bd4d-7a6f5b2d21e4",
+   "verdict": "narrower",
+   "reason": "Enzymatic DNA writer devices are a component of DNA data storage."
+  },
+  {
+   "candidate_id": "dna-based-marketing~bbe56e68-e68d-4863-b9ba-24f7dd0fd412",
+   "verdict": "narrower",
+   "reason": "DNA-based skincare is one case of DNA-based marketing."
+  },
+  {
+   "candidate_id": "dna-based-molecular-computing~2e465bb2-30bd-48ef-bc17-75dd6b1ab77e",
+   "verdict": "no_link",
+   "reason": "Neuron-based biocomputing, not DNA molecular computing."
+  },
+  {
+   "candidate_id": "dna-computing-and-storage~58a49acb-e706-47f1-8095-47ae9e201f8b",
+   "verdict": "narrower",
+   "reason": "DNA data storage is one half of DNA computing and storage."
+  },
+  {
+   "candidate_id": "dna-computing-and-storage~050bf418-b0ac-40a6-8e2b-90657b00f4e1",
+   "verdict": "narrower",
+   "reason": "DNA data storage is one half of DNA computing and storage."
+  },
+  {
+   "candidate_id": "dna-sequencing~f8c1f4bf-85dd-490d-8dc6-a24792481c59",
+   "verdict": "narrower",
+   "reason": "gulf-states__ regional entry for population sequencing."
+  },
+  {
+   "candidate_id": "dna-storage~050bf418-b0ac-40a6-8e2b-90657b00f4e1",
+   "verdict": "link",
+   "reason": "Same: DNA data storage."
+  },
+  {
+   "candidate_id": "dna-storage~58a49acb-e706-47f1-8095-47ae9e201f8b",
+   "verdict": "link",
+   "reason": "Same: DNA data storage."
+  },
+  {
+   "candidate_id": "dna-storage~3111c8c0-2636-4b91-ae31-7ce54e9dbe98",
+   "verdict": "link",
+   "reason": "Same: DNA data storage."
+  },
+  {
+   "candidate_id": "dna-storage~beb196aa-e60d-4c2c-bd4d-7a6f5b2d21e4",
+   "verdict": "narrower",
+   "reason": "DNA writer devices are a component of DNA storage."
+  },
+  {
+   "candidate_id": "dna-storage-and-compute~58a49acb-e706-47f1-8095-47ae9e201f8b",
+   "verdict": "narrower",
+   "reason": "DNA storage is one half of DNA storage and compute."
+  },
+  {
+   "candidate_id": "dna-storage-and-compute~050bf418-b0ac-40a6-8e2b-90657b00f4e1",
+   "verdict": "narrower",
+   "reason": "DNA storage is one half of DNA storage and compute."
+  },
+  {
+   "candidate_id": "dna-storage-and-compute~3111c8c0-2636-4b91-ae31-7ce54e9dbe98",
+   "verdict": "narrower",
+   "reason": "DNA storage is one half of DNA storage and compute."
+  },
+  {
+   "candidate_id": "dna-storage-and-compute~beb196aa-e60d-4c2c-bd4d-7a6f5b2d21e4",
+   "verdict": "no_link",
+   "reason": "DNA writer hardware is two levels below storage-and-compute."
+  },
+  {
+   "candidate_id": "dna-supply-lines-get-new-digital-defense~8583c3de-e12c-476f-911d-1adc755a26e0",
+   "verdict": "narrower",
+   "reason": "Sequence screening before synthesis is one defence for DNA/biotech supply chains."
+  },
+  {
+   "candidate_id": "dna-technology-gets-new-security-shield~8583c3de-e12c-476f-911d-1adc755a26e0",
+   "verdict": "link",
+   "reason": "Screening DNA designs before synthesis = the subject's cyberbiosecurity against DNA synthesis misuse."
+  },
+  {
+   "candidate_id": "doctors-train-in-virtual-reality-simulations~056cb229-eebe-466f-82a1-a38c6a9a8ca7",
+   "verdict": "broader",
+   "reason": "Simulation training via mannequins, VR and haptics contains VR training for doctors."
+  },
+  {
+   "candidate_id": "dream-communication~07420750-4c99-4f12-bf21-af24ca160999",
+   "verdict": "link",
+   "reason": "Same: communication between lucid dreamers."
+  },
+  {
+   "candidate_id": "drone-delivery~c4fd7bd0-552e-420d-8a28-9d6617bcf886",
+   "verdict": "link",
+   "reason": "Same: drone package delivery."
+  },
+  {
+   "candidate_id": "drone-delivery~edd74e31-b931-4704-95bc-b229d4da72c6",
+   "verdict": "no_link",
+   "reason": "Heavy-lift middle-mile cargo drones; subject is light package delivery."
+  },
+  {
+   "candidate_id": "drone-delivery~a158d245-0739-493a-a43f-81dd7c27905f",
+   "verdict": "broader",
+   "reason": "Covers delivery robots and drones; contains drone delivery."
+  },
+  {
+   "candidate_id": "drone-delivery~afbb555c-8cd4-430e-ba5c-1ebc51ca542d",
+   "verdict": "no_link",
+   "reason": "Heavy-lift middle-mile cargo drones; subject is light package delivery."
+  },
+  {
+   "candidate_id": "drone-delivery-market~6b45202e-5a01-4661-ba9c-0b7699106353",
+   "verdict": "narrower",
+   "reason": "gulf-states__ UAE regional drone delivery entry."
+  },
+  {
+   "candidate_id": "drone-enabled-infrastructure~aa01fcfc-e1a2-4bea-b39d-9381c6c766c9",
+   "verdict": "no_link",
+   "reason": "No claims; subject is ambiguous (infrastructure for drones); swarm repair after disasters is adjacent."
+  },
+  {
+   "candidate_id": "drone-operation-centers~608de36c-b3eb-4a4a-8a03-7d3d49cfad6d",
+   "verdict": "no_link",
+   "reason": "Industrial remote ops centres, not drone operation centres."
+  },
+  {
+   "candidate_id": "drone-swarming-for-defense~14b3a6df-f1e5-4fe4-88c9-d2c53ef81c3e",
+   "verdict": "link",
+   "reason": "Same: coordinated autonomous drone swarms for missions."
+  },
+  {
+   "candidate_id": "drone-swarming-for-defense~ebf61ab6-f624-46b5-83f7-d3eb1e0dc04b",
+   "verdict": "narrower",
+   "reason": "israel__ regional entry for defense drone swarms."
+  },
+  {
+   "candidate_id": "drone-swarming-for-defense~cd0fca39-8319-4b0d-96f7-7e16702a8d4b",
+   "verdict": "narrower",
+   "reason": "iran__ regional entry for drone swarm attack capability."
+  },
+  {
+   "candidate_id": "drone-swarming-for-defense~2a40c6ac-0ac2-42b7-bc6d-2f61553643ec",
+   "verdict": "no_link",
+   "reason": "Counter-swarm defence is the opposite side, adjacent."
+  },
+  {
+   "candidate_id": "drone-swarming-for-defense~405b012d-5d28-4b5d-8b1b-58498747d594",
+   "verdict": "no_link",
+   "reason": "Single uncrewed autonomous platforms; swarming is adjacent, not contained."
+  },
+  {
+   "candidate_id": "drone-swarming-for-defense~6bf18606-5e50-4e8b-b500-a2802e44422a",
+   "verdict": "broader",
+   "reason": "General multi-agent swarm coordination protocols contain defense drone swarming."
+  },
+  {
+   "candidate_id": "drone-swarms~14b3a6df-f1e5-4fe4-88c9-d2c53ef81c3e",
+   "verdict": "link",
+   "reason": "Same: drone swarms."
+  },
+  {
+   "candidate_id": "drone-traffic-management~5dca2432-b0b8-4087-b1cf-13f5b9e91d90",
+   "verdict": "link",
+   "reason": "UTM is drone traffic management."
+  },
+  {
+   "candidate_id": "drones-for-dangerous-and-hard-to-reach-areas~f1aae647-6b3a-46f1-a7c2-ee861bbd742c",
+   "verdict": "no_link",
+   "reason": "Industrial inspection robots overlap only partly with drones for hazardous areas."
+  },
+  {
+   "candidate_id": "dvd-rental-kiosks~e66f81f2-845c-45b8-988f-d6b49158f129",
+   "verdict": "no_link",
+   "reason": "DVD rental kiosks vs Japan vending machines."
+  },
+  {
+   "candidate_id": "dynamic-line-rating-systems~da0e8b83-a177-451c-8ae4-bfa3060b1d1c",
+   "verdict": "link",
+   "reason": "Same: dynamic line rating."
+  },
+  {
+   "candidate_id": "dynamic-operations-for-entertainment-venues~8041128d-a27d-4a6b-b8dd-f33e973d6dfb",
+   "verdict": "narrower",
+   "reason": "Crowd-aware booking is one tool of dynamic venue operations."
+  },
+  {
+   "candidate_id": "e-tailer-partnerships-for-personalization~f53cf2b4-04c0-426b-b297-adc68aa36fb9",
+   "verdict": "no_link",
+   "reason": "Subject is e-tailer partnership strategy; technology is personalization engines."
+  }
+ ]
+}

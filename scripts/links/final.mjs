@@ -7,25 +7,32 @@
 // Append-only: a pair whose latest row already says the same thing gets no new row; a changed
 // relation or a newly rejected active link gets a new row (the old one is retracted by it).
 // A pair whose latest row has method `curated` is never touched.
+// Excluded projects (data/links/excluded-projects.json, D52): their candidates are left out (no row, not in
+// `decisions`, no adjudication or audit needed), and every active row to one gets a `retracted` row.
 // Writes data/links/runs/<run>/final.json (counts, audit error rate, every decided pair) and appends to data/links/research.json.
 import path from "node:path";
 import { LinkAuditRecord, LinkVerdictFile, SubjectTechnologyLink } from "../../src/schema.ts";
-import { LINKS, exists, readJson, writeJson } from "./lib.mjs";
+import { LINKS, excludedProjects, exists, readJson, writeJson } from "./lib.mjs";
 
 const run = process.argv[2];
 const dry = process.argv.includes("--dry");
 if (!run || !/^[a-z0-9-]+$/.test(run)) throw new Error("usage: final.mjs <run> [--dry]");
 const dir = path.join(LINKS, "runs", run);
-const { candidates } = readJson(path.join(dir, "candidates.json"));
+const excluded = excludedProjects();
+const { candidates: allCandidates } = readJson(path.join(dir, "candidates.json"));
+const candidates = allCandidates.filter((c) => !excluded.has(c.research_slug));
+const excludedIds = new Set(allCandidates.filter((c) => excluded.has(c.research_slug)).map((c) => c.id));
 const agreement = readJson(path.join(dir, "agreement.json"));
 if (!agreement.passes) throw new Error(`${run}: agreement gate failed (${agreement.gate})`);
 if (agreement.missing.length) throw new Error(`${run}: ${agreement.missing.length} candidates not judged by both verifiers`);
 const adjFile = path.join(dir, "adjudicated.json");
 const adj = exists(adjFile) ? LinkVerdictFile.parse(readJson(adjFile)) : null;
 const adjudicated = new Map((adj?.verdicts ?? []).map((v) => [v.candidate_id, v]));
-const open = agreement.contested.filter((c) => !adjudicated.has(c.id));
+const open = agreement.contested.filter((c) => !excludedIds.has(c.id) && !adjudicated.has(c.id));
 if (open.length) throw new Error(`${run}: ${open.length} contested pairs without an adjudicated verdict`);
 const audit = readJson(path.join(dir, "audit.json"));
+const stale = audit.sample.filter((id) => excludedIds.has(id));
+if (stale.length) throw new Error(`${run}: audit sample holds ${stale.length} pairs of excluded projects; redraw with audit-sample.mjs`);
 const unaudited = audit.sample.filter((id) => !audit.records?.[id]);
 if (unaudited.length) throw new Error(`${run}: ${unaudited.length} sampled links without an audit record`);
 const records = new Map(audit.sample.map((id) => [id, LinkAuditRecord.parse(audit.records[id])]));
@@ -108,6 +115,26 @@ for (const { c, verdict, agent, reason } of decisions) {
 	added.push(row);
 }
 
+// Active rows to excluded projects, from any run, are retracted (D52).
+let excludedRetracted = 0;
+for (const [k, prev] of latest) {
+	if (!excluded.has(prev.research_slug) || prev.status !== "active" || prev.method === "curated") continue;
+	if (added.some((r) => `${r.subject_id}~${r.technology_id}` === k)) continue;
+	const n = (countOf.get(k) ?? 0) + 1;
+	countOf.set(k, n);
+	added.push(
+		SubjectTechnologyLink.parse({
+			...prev,
+			id: `${k}#${n}`,
+			agent: "project-exclusion:D52",
+			status: "retracted",
+			reason: "project excluded (D52)",
+			created_at: at,
+		}),
+	);
+	excludedRetracted++;
+}
+
 const tally = (f) => decisions.filter(f).length;
 const sampleDecisions = [...records.values()];
 const errors = sampleDecisions.filter((r) => r.decision !== "confirm").length;
@@ -126,6 +153,8 @@ const summary = {
 		reject: sampleDecisions.filter((r) => r.decision === "reject").length,
 		error_rate: Number((errors / audit.sample.length).toFixed(4)),
 	},
+	excluded_project_candidates: excludedIds.size,
+	excluded_project_retractions: excludedRetracted,
 	rows_appended: added.length,
 	rows_unchanged: unchanged,
 	curated_kept: curatedKept,

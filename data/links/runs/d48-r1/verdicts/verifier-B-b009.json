@@ -1,0 +1,758 @@
+{
+ "run": "d48-r1",
+ "batch": "b009",
+ "role": "B",
+ "agent": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "candidate_id": "metaverse-and-immersive-internet-ar-vr~c9f31d48-c83e-45c7-b616-a9757aace673",
+   "verdict": "narrower",
+   "reason": "Industrial metaverse (factory digital twins) is one enterprise application of the AR/VR metaverse subject."
+  },
+  {
+   "candidate_id": "metaverse-and-immersive-internet-ar-vr~c2f6d03a-ba58-49e3-a187-1def433780dc",
+   "verdict": "narrower",
+   "reason": "XR collaborative spaces are a collaboration use case of AR/VR metaverse, not the whole immersive internet."
+  },
+  {
+   "candidate_id": "metaverse-and-immersive-internet-ar-vr~a687352e-6fbe-44a4-9bb5-5c0726ee7e95",
+   "verdict": "narrower",
+   "reason": "Industrial metaverse for factory monitoring is a specific application of the metaverse/AR-VR subject."
+  },
+  {
+   "candidate_id": "micro-data-centers~0ef2ae26-d76d-49f1-936e-9abda7431feb",
+   "verdict": "narrower",
+   "reason": "Ruggedized forward-deployed containerized data centers are a military application of micro/modular data centers."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~4a02b6f1-d13c-480d-9aac-b087aca58ed3",
+   "verdict": "narrower",
+   "reason": "usa__ landscape entry on microreactors; same technology but region-prefixed against a subject without regional scope."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~dc979db5-3098-4790-87a3-0ab777cfea72",
+   "verdict": "broader",
+   "reason": "Modular nuclear systems of 1-300 MW span SMRs and microreactors; micro-nuclear reactors are the small end of that field."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~00fc592d-765c-4899-b1f9-a9a28a20dbd7",
+   "verdict": "no_link",
+   "reason": "usa__ SMR entry about NuScale, Kairos; broader reactor class but one-country scope, does not cover microreactors; containment crosses."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~e2094b26-6bdd-4235-a5cc-d44695219c2c",
+   "verdict": "broader",
+   "reason": "SMRs are the broader reactor class that contains micro-nuclear reactors."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~95ac7697-28d9-4e53-8234-dfc866e8eda7",
+   "verdict": "broader",
+   "reason": "SMRs (framed for remote industrial sites) are the broader class containing microreactors."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~119d2416-7bcc-48a5-9b20-fc9465fb7b9c",
+   "verdict": "narrower",
+   "reason": "europe__ entry on Naarea's molten salt microreactor: one country/design case of micro-nuclear reactors."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~2eb5799e-1912-4f40-b51b-8e1ff7f8d1c2",
+   "verdict": "broader",
+   "reason": "Generic SMR page; SMRs contain microreactors as their smallest class."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~e879f431-cd19-4e44-a75a-fea47707d3aa",
+   "verdict": "broader",
+   "reason": "Generic SMR page; broader reactor class containing micro-nuclear reactors."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~8f586120-00ac-49e4-b4bd-fdbc5f792eda",
+   "verdict": "broader",
+   "reason": "Factory-built small transportable reactors for urban energy: the SMR class, broader than micro-reactors."
+  },
+  {
+   "candidate_id": "micro-nuclear-reactors~ad192de9-80c2-459b-8c77-d5f669c7f291",
+   "verdict": "no_link",
+   "reason": "europe__ SMR landscape: broader reactor class but regional scope, about PWR/lead-cooled SMRs, not microreactors."
+  },
+  {
+   "candidate_id": "microbiome-test-kits~8bb45868-2eb1-462b-a330-2aa0c238ecb8",
+   "verdict": "no_link",
+   "reason": "Consumer microbiome test kits vs metagenomic analytics for therapeutics: adjacent microbiome uses, neither contains the other."
+  },
+  {
+   "candidate_id": "microfluidic-optical-fibers~28e91ac0-7fe2-4bdb-9b55-e514f999e707",
+   "verdict": "no_link",
+   "reason": "Fluid droplets in fiber channels vs hollow-core air-guided fiber: different fiber technologies sharing only the optical-fiber field."
+  },
+  {
+   "candidate_id": "microgrids~42bcb534-6a22-4d02-b871-b79f6d88c393",
+   "verdict": "link",
+   "reason": "Same technology: local microgrids that island and keep power during outages, matching the resilience claim."
+  },
+  {
+   "candidate_id": "microgrids~98803174-7adf-41f2-a91d-d47e1837be2f",
+   "verdict": "link",
+   "reason": "Resilient microgrids that disconnect from the grid in outages are the subject's microgrids as the claim uses them."
+  },
+  {
+   "candidate_id": "microgrids~d0ecccae-e39e-44dc-87de-95ee1da8fa2b",
+   "verdict": "link",
+   "reason": "Autonomous microgrids that disconnect and run independently describe microgrids themselves."
+  },
+  {
+   "candidate_id": "micromobility~a863cfa1-8423-4fd3-8a48-e7f7d0318bc4",
+   "verdict": "link",
+   "reason": "Micromobility (e-scooters, e-bikes, shared cycles) in urban transport is the same subject."
+  },
+  {
+   "candidate_id": "microplastic-reduction~76393d60-f29b-4e5b-b1ec-4569208079cc",
+   "verdict": "link",
+   "reason": "Claim is about laundry microfibers reaching the ocean; the technology is filters preventing exactly that."
+  },
+  {
+   "candidate_id": "microservices-blockchain-and-smart-contracts-for-partnerships~766c1c63-6b8b-4dc9-8f16-853f4808db86",
+   "verdict": "no_link",
+   "reason": "Partnership platforms on microservices/blockchain vs smart contracts for personal relationships; only shares the word smart contract."
+  },
+  {
+   "candidate_id": "military-applications~cfc9a873-0a8a-4932-a371-06b95f7d5d25",
+   "verdict": "no_link",
+   "reason": "Subject is a broad military-applications bucket; a China 6G research page is not contained in or containing it."
+  },
+  {
+   "candidate_id": "mining~c8166695-84e1-4648-b758-2cd9027b0d9d",
+   "verdict": "narrower",
+   "reason": "Subject as claimed is space mining (asteroids, moon, planets); asteroid mining is one case of it."
+  },
+  {
+   "candidate_id": "mixed-reality-arcades~38d825e2-9287-4e34-b762-3e111841046d",
+   "verdict": "link",
+   "reason": "Mixed reality arcades and location-based VR arcades are the same out-of-home immersive gaming venue."
+  },
+  {
+   "candidate_id": "mixture-of-experts~1f37a992-41bb-4347-b27c-62f7f1eb0f17",
+   "verdict": "link",
+   "reason": "Same technology: mixture-of-experts architectures activating specialized sub-models."
+  },
+  {
+   "candidate_id": "mobile-cryptocurrency-for-the-unbanked~fef34a9b-1c15-4118-add6-3451dcaa2431",
+   "verdict": "no_link",
+   "reason": "Crypto accounts for the unbanked vs SE Asia mobile-money wallets (GCash): different instrument, regional; adjacent only."
+  },
+  {
+   "candidate_id": "mobile-games~4576c5c0-88ed-473b-9540-d5f587a2c862",
+   "verdict": "narrower",
+   "reason": "turkey__ mobile gaming studio ecosystem: one country's slice of the mobile games subject."
+  },
+  {
+   "candidate_id": "mobile-learning-platforms~481960d4-1342-4b10-a7e9-8704fdb01a9c",
+   "verdict": "link",
+   "reason": "Mobile learning on smartphones/tablets is the same as mobile learning platforms."
+  },
+  {
+   "candidate_id": "mobile-operating-systems~e974c426-6ed3-4d31-b031-882bd1aaf8e6",
+   "verdict": "narrower",
+   "reason": "HarmonyOS is one specific mobile operating system; direct containment."
+  },
+  {
+   "candidate_id": "mobility-simulation~f581dc29-b9e9-4814-a32a-c1d117e6b7ed",
+   "verdict": "link",
+   "reason": "Same: simulation applied across mobility and transport networks."
+  },
+  {
+   "candidate_id": "mobility-superapps~c9578820-9ccd-46c2-9e71-7d90b705c407",
+   "verdict": "link",
+   "reason": "Mobility superapps and MaaS superapps both name multi-service mobility platforms; same concept."
+  },
+  {
+   "candidate_id": "modifying-fungi-for-building-and-packaging~008e9936-9ed4-4d00-bb49-30a2595d9f13",
+   "verdict": "narrower",
+   "reason": "Mycelium construction covers buildings only; subject spans fungi for buildings and packaging."
+  },
+  {
+   "candidate_id": "modular-construction~920ec5da-de9a-4a82-af71-d4f60e4b760e",
+   "verdict": "narrower",
+   "reason": "Modular micro-hospitals are one application of modular construction; claim even cites hospital suites."
+  },
+  {
+   "candidate_id": "modular-construction~0d839148-d462-4d26-8dd2-f22db6eeb16e",
+   "verdict": "narrower",
+   "reason": "Modular hotel units are a specific application of modular construction."
+  },
+  {
+   "candidate_id": "monitoring-and-field-simulation-with-immersive-ar-vr~f3c9fd6c-da97-4d8a-bde7-bbf4a4ca4da5",
+   "verdict": "no_link",
+   "reason": "AR/VR for supply chain monitoring and training vs game-engine factory simulators; overlapping use, different technology."
+  },
+  {
+   "candidate_id": "monitoring-orbital-debris~80c7168c-585a-493b-a0a8-8e3f64bec6f8",
+   "verdict": "no_link",
+   "reason": "Subject is tracking/surveillance of debris; technology is active capture and removal. Adjacent, not containment."
+  },
+  {
+   "candidate_id": "monitoring-orbital-debris~1648ca3e-72b9-4938-a083-8173f945965e",
+   "verdict": "link",
+   "reason": "Tracking and collision-avoidance systems for orbital debris match monitoring orbital debris."
+  },
+  {
+   "candidate_id": "moocs~bcc61413-ca42-4c06-9b7b-e0797a309aac",
+   "verdict": "link",
+   "reason": "Same: massive open online course platforms."
+  },
+  {
+   "candidate_id": "moonshots-private-ventures-on-the-moon~5b8581bf-88b2-4e7f-a81c-41295b5028cd",
+   "verdict": "narrower",
+   "reason": "japan__ ispace lunar exploration: one company/country case of private lunar ventures."
+  },
+  {
+   "candidate_id": "more-fertile-soil~8d9b25d3-9745-4d9e-9840-fc31360b434f",
+   "verdict": "narrower",
+   "reason": "usa__ biological nitrogen fixation (Pivot Bio): a regional, specific approach within the more-fertile-soil subject."
+  },
+  {
+   "candidate_id": "moving-across-modalities~662d216e-539f-4eb5-a06b-b28a2aa910c5",
+   "verdict": "no_link",
+   "reason": "Multi-modality robot movement vs modular swappable robot hardware; different ideas sharing robotics."
+  },
+  {
+   "candidate_id": "mrna-cancer-vaccines~687f94ef-92f9-418c-87b4-bf8c5f8df821",
+   "verdict": "link",
+   "reason": "Claim is about a personalized mRNA cancer vaccine trial; the technology is personalized mRNA cancer vaccines."
+  },
+  {
+   "candidate_id": "mrna-cancer-vaccines~611b6d44-89b9-4ab4-b33b-aae68b872a33",
+   "verdict": "narrower",
+   "reason": "europe__ BioNTech mRNA platform page centred on personalized cancer treatment; regional entry covering the subject."
+  },
+  {
+   "candidate_id": "multi-agent-orchestration-in-enterprises~2e8319fb-172b-4552-9387-ed4b1478438f",
+   "verdict": "link",
+   "reason": "Frameworks coordinating multiple AI agents across workflows is the subject's multi-agent orchestration."
+  },
+  {
+   "candidate_id": "multi-agent-orchestration-in-enterprises~33d09807-edd7-4772-8e20-be6817664f76",
+   "verdict": "no_link",
+   "reason": "Agentic workflow orchestrators are autonomous process agents, not necessarily multi-agent coordination; adjacent."
+  },
+  {
+   "candidate_id": "multi-omics~9aeb065e-acb3-4403-9d34-0a64dd1a3243",
+   "verdict": "narrower",
+   "reason": "Multi-omic engines for beauty and wellness personalization are one application of multi-omics."
+  },
+  {
+   "candidate_id": "multi-use-spaces~b9aa7fdb-0731-47eb-a4ee-11c805a15bdd",
+   "verdict": "no_link",
+   "reason": "Subject is hybrid art/exhibition spaces; technology is adaptable domestic rooms. Shares only the term multi-use."
+  },
+  {
+   "candidate_id": "multiagent-systems~ffdb6f16-da8c-4ce8-be06-c4b86721f05c",
+   "verdict": "link",
+   "reason": "Agent societies are multi-agent AI systems coordinating via roles; same as multiagent systems."
+  },
+  {
+   "candidate_id": "multicloud-management-metacloud-supercloud~e0a52436-041e-462e-a187-a157f60b7e96",
+   "verdict": "no_link",
+   "reason": "Enterprise multicloud management abstraction vs military multi-domain battle clouds; shares only the word cloud."
+  },
+  {
+   "candidate_id": "multimodal-ai-creative-tools~26c6f298-7c40-4d62-af82-85c7aadd1d4c",
+   "verdict": "link",
+   "reason": "AI co-creation tools for content production match multimodal AI creative tools as claimed."
+  },
+  {
+   "candidate_id": "multimodal-generative-ai~bdb442f4-9cba-4b53-bec7-5389d9a33693",
+   "verdict": "narrower",
+   "reason": "usa__ multimodal foundation models: regional landscape entry of the subject."
+  },
+  {
+   "candidate_id": "multimodal-generative-ai~aaceaae5-763d-49b7-962e-144ffadcb81d",
+   "verdict": "link",
+   "reason": "Multimodal foundation models processing text, image, audio, video are multimodal generative AI."
+  },
+  {
+   "candidate_id": "multiparty-systems-blockchain-shared-data-platforms~08db450e-7e2a-4cd1-9812-06bf4bff9b1b",
+   "verdict": "no_link",
+   "reason": "Multiparty systems (shared ledgers, data platforms for partners) vs secure MPC cryptography; different meaning of multi-party."
+  },
+  {
+   "candidate_id": "multiplex-editing-enables-complex-changes~93e68ca4-2c5d-4d7b-b6c2-23bbbf315588",
+   "verdict": "link",
+   "reason": "Same: multiplex CRISPR gene editing platforms."
+  },
+  {
+   "candidate_id": "multitasking-solar~0a2d7ca5-21ea-47ba-8b2e-7e392a173450",
+   "verdict": "narrower",
+   "reason": "Agrivoltaics is one form of solar built for benefits beyond power generation."
+  },
+  {
+   "candidate_id": "mycelium-leathers~32f8cc66-0fe4-40a8-b1c4-363e4e482748",
+   "verdict": "link",
+   "reason": "Same: leather-like material grown from mycelium."
+  },
+  {
+   "candidate_id": "nano-fulfillment-centers~67465658-4a93-4d28-8e0a-187696c357f8",
+   "verdict": "link",
+   "reason": "Nano-fulfillment and urban micro-fulfilment centers are the same small automated city warehouses."
+  },
+  {
+   "candidate_id": "nanobot-treatments~f0e806cf-ac23-49db-9ce5-fc9cac01ebf5",
+   "verdict": "broader",
+   "reason": "Nanobot page covers medicine, diagnostics and environment; nanobot treatments are its medical use."
+  },
+  {
+   "candidate_id": "nanocomposite-drug-carriers~5df8d45a-3764-478b-8327-5b870038bbec",
+   "verdict": "narrower",
+   "reason": "iran__ nano drug delivery (nano-polymeric etc.) is a regional landscape entry of nanoscale drug carriers."
+  },
+  {
+   "candidate_id": "nanofactories~a95fbabd-e396-4cda-b537-05f763f932e4",
+   "verdict": "link",
+   "reason": "Same: molecular manufacturing nanofactory."
+  },
+  {
+   "candidate_id": "nanoimprint-lithography~02d3bae7-f8fa-4b99-b87f-df6e8bc39509",
+   "verdict": "narrower",
+   "reason": "japan__ Canon NIL entry: regional landscape page of nanoimprint lithography."
+  },
+  {
+   "candidate_id": "nanomachines~f0e806cf-ac23-49db-9ce5-fc9cac01ebf5",
+   "verdict": "link",
+   "reason": "Nanomachines/molecular robotics for therapies equal cell-scale nanobots."
+  },
+  {
+   "candidate_id": "nanopiezoelectronics~190d04e5-8799-4565-a23a-6cff692b820b",
+   "verdict": "no_link",
+   "reason": "Piezoelectric nanowires for implants vs piezoelectric textile fibers for wearables; sibling technologies."
+  },
+  {
+   "candidate_id": "nanosheet-transistors~268a663a-ea77-45ba-8eae-d1949ab8bec2",
+   "verdict": "narrower",
+   "reason": "Samsung's GAA logic is one company's nanosheet transistor implementation, region-prefixed."
+  },
+  {
+   "candidate_id": "nanotechnology~5b9599cf-2d82-42bd-8a13-5c5c33bd223c",
+   "verdict": "narrower",
+   "reason": "iran__ nanotechnology research landscape: one country's slice of nanotechnology."
+  },
+  {
+   "candidate_id": "national-ai-compute-infrastructure-ai-hypercenters~b8c10b15-deb8-4a07-80ee-3dcd8298e980",
+   "verdict": "narrower",
+   "reason": "usa__ hyperscale AI data centers: one country's AI compute build-out, a case of national AI compute."
+  },
+  {
+   "candidate_id": "national-ai-compute-infrastructure-ai-hypercenters~ff7fabae-6dfd-490e-bedb-f2884723ece6",
+   "verdict": "narrower",
+   "reason": "gulf-states__ hyperscale AI DC build-out: regional case of national AI compute infrastructure."
+  },
+  {
+   "candidate_id": "nefarious-ai-misuse~cc1e87d2-418f-402e-a71b-671385657fb5",
+   "verdict": "no_link",
+   "reason": "AI misuse by bad actors vs repurposing of defensive tech for surveillance; related risk themes, no containment."
+  },
+  {
+   "candidate_id": "nerve-coolers~cce1525b-56bc-4419-b917-e03e620da2cb",
+   "verdict": "no_link",
+   "reason": "Nerve cooling for pain vs electrical stimulation implants; different technologies for the same symptom."
+  },
+  {
+   "candidate_id": "net-neutrality~c99fdbc0-da08-4432-846b-3c8f02e91830",
+   "verdict": "narrower",
+   "reason": "Systems that monitor ISP traffic discrimination are an enforcement tool within the net neutrality topic."
+  },
+  {
+   "candidate_id": "network-slicing-market~6fc98f4c-473c-4f4d-bdb9-1401f9a24194",
+   "verdict": "link",
+   "reason": "Network slicing market claim and network slicing orchestration describe the same technology."
+  },
+  {
+   "candidate_id": "networked-collective-intelligence~65f5062f-c210-4459-a881-6fbd2b6e94d8",
+   "verdict": "no_link",
+   "reason": "Subspace page is a fictional Borg hive memory; not a real technology for networked collective intelligence."
+  },
+  {
+   "candidate_id": "neural-biofeedback~45e0329e-0110-4dd5-a381-a83ed54e10bb",
+   "verdict": "link",
+   "reason": "Neural biofeedback and neurofeedback are synonyms."
+  },
+  {
+   "candidate_id": "neural-rendering~14a6fc86-66c5-444c-9544-2ea744de6651",
+   "verdict": "narrower",
+   "reason": "NeRFs are one neural rendering technique; subject is the wider field."
+  },
+  {
+   "candidate_id": "neuralink~9ef4516e-8cf4-4bf6-9c61-a4c3881d524c",
+   "verdict": "broader",
+   "reason": "Neuralink is one company's implanted BCI; brain chip implant is the broader technology."
+  },
+  {
+   "candidate_id": "neuro-symbolic-a-i-algorithms-and-systems~c6e4bf51-a4f1-4366-bf71-d3ff331eadb5",
+   "verdict": "link",
+   "reason": "Same: neuro-symbolic AI combining neural and symbolic approaches."
+  },
+  {
+   "candidate_id": "neuro-symbolic-a-i-algorithms-and-systems~ab2456c2-1f52-47e1-8737-e94aca87785b",
+   "verdict": "link",
+   "reason": "Neuro-symbolic reasoning systems are the same neuro-symbolic AI."
+  },
+  {
+   "candidate_id": "neuro-symbolic-ai~ab2456c2-1f52-47e1-8737-e94aca87785b",
+   "verdict": "link",
+   "reason": "Same: neural networks combined with symbolic logic."
+  },
+  {
+   "candidate_id": "neurodivergent-talent-recruitment~7ed8751e-ac11-4b12-8261-192abda57302",
+   "verdict": "no_link",
+   "reason": "Hiring neurodivergent talent vs inclusive interface design; shared theme, different subject."
+  },
+  {
+   "candidate_id": "neuromorphic-computing~823d7874-0b68-440a-a8eb-e0ff962b6182",
+   "verdict": "link",
+   "reason": "Neuromorphic chip is the hardware of neuromorphic computing; same technology as claimed."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware~4296fda8-5f21-4a88-843c-54b1554339bf",
+   "verdict": "link",
+   "reason": "Summary describes brain-inspired neuromorphic AI chips generally despite the payments slug; same as neuromorphic hardware."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware~96055bb4-d6b1-4a94-9bda-849073d92ef5",
+   "verdict": "narrower",
+   "reason": "usa__ neuromorphic computing landscape entry (Loihi, NorthPole): regional."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware~6ff3b7ac-2426-4ec9-b90f-8befd5761778",
+   "verdict": "link",
+   "reason": "Brain-inspired neuromorphic processors: same technology."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware~e0ed065d-aea5-43b1-8b67-fe4a2a2b3c0e",
+   "verdict": "link",
+   "reason": "Neuromorphic edge processors with spiking networks describe neuromorphic hardware as generally pitched."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware~f6149d8c-bc6b-4412-ba52-eb21b97801c9",
+   "verdict": "narrower",
+   "reason": "Neuromorphic chips for streaming video/audio devices: a specific application."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware~1041662a-8b0b-4bff-af08-05c1e8acfcca",
+   "verdict": "link",
+   "reason": "Edge neuromorphic processors running spiking networks: same technology."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware-for-audio-applications~823d7874-0b68-440a-a8eb-e0ff962b6182",
+   "verdict": "broader",
+   "reason": "General neuromorphic chip page contains the audio-specific application."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware-for-audio-applications~4296fda8-5f21-4a88-843c-54b1554339bf",
+   "verdict": "broader",
+   "reason": "General neuromorphic AI chips contain neuromorphic hardware for audio."
+  },
+  {
+   "candidate_id": "neuromorphic-meets-ai~823d7874-0b68-440a-a8eb-e0ff962b6182",
+   "verdict": "link",
+   "reason": "Claim is about a neuromorphic chip running AI tasks; same technology."
+  },
+  {
+   "candidate_id": "neuromorphic-meets-ai~96055bb4-d6b1-4a94-9bda-849073d92ef5",
+   "verdict": "narrower",
+   "reason": "usa__ neuromorphic computing landscape: regional entry."
+  },
+  {
+   "candidate_id": "neuromorphic-meets-ai~4296fda8-5f21-4a88-843c-54b1554339bf",
+   "verdict": "link",
+   "reason": "Neuromorphic AI chips are the subject's neuromorphic AI hardware."
+  },
+  {
+   "candidate_id": "neuromorphic-meets-ai~6ff3b7ac-2426-4ec9-b90f-8befd5761778",
+   "verdict": "link",
+   "reason": "Neuromorphic processors: same technology."
+  },
+  {
+   "candidate_id": "neuromorphic-meets-ai~f6149d8c-bc6b-4412-ba52-eb21b97801c9",
+   "verdict": "narrower",
+   "reason": "Neuromorphic chips for media streaming: specific application."
+  },
+  {
+   "candidate_id": "neuromorphic-meets-ai~e0ed065d-aea5-43b1-8b67-fe4a2a2b3c0e",
+   "verdict": "link",
+   "reason": "Neuromorphic edge processors are neuromorphic AI chips as claimed."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~1fe3d736-9953-48ba-bea6-e3b27ac1407e",
+   "verdict": "link",
+   "reason": "Neuro-rights legal frameworks for mental privacy are what neurorights campaigns pursue; same topic."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~fd85bc9e-b247-4e07-8e05-343b235180d0",
+   "verdict": "link",
+   "reason": "Neuro-rights and neural data privacy frameworks: same as neurorights."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~be763ccc-3396-433b-ad85-ee44a8b30151",
+   "verdict": "link",
+   "reason": "Cognitive liberty rights protecting neural data are the neurorights topic."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~cca1d871-f45a-4863-8e1d-527da7fb85c7",
+   "verdict": "narrower",
+   "reason": "Brain-data protections specifically for gaming interfaces: a narrower application of neurorights."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~192e72cf-c959-4dcb-b83b-67d64f2190d3",
+   "verdict": "link",
+   "reason": "Cognitive liberty frameworks protecting neural data match neurorights."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~146a012f-8efb-40c1-9209-89fa4f5815ba",
+   "verdict": "narrower",
+   "reason": "Automated policy engines enforcing neuro-rights rules: a component/tool within neurorights."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~4a553954-aa5b-4da0-91c0-36da01638fb6",
+   "verdict": "link",
+   "reason": "Cognitive liberty frameworks: same neurorights topic."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~1c8dc73a-c545-4cc5-918c-874bcb844143",
+   "verdict": "narrower",
+   "reason": "Neuro-rights frameworks for workplace neurotech: narrower setting."
+  },
+  {
+   "candidate_id": "neurorights-campaigns~9a94b222-03f7-402d-b37d-3bd5fe1ef97f",
+   "verdict": "link",
+   "reason": "Cognitive liberty/mental privacy standards: same neurorights topic."
+  },
+  {
+   "candidate_id": "new-architectures-to-make-ai-workloads-more-efficient~3b172930-d572-43b9-a247-d2d7fce529f1",
+   "verdict": "narrower",
+   "reason": "Analog AI accelerators are one new architecture for efficient AI workloads."
+  },
+  {
+   "candidate_id": "new-cityscape-designs~bb85eb1e-f7ca-47ba-9dd8-46d74aafda77",
+   "verdict": "no_link",
+   "reason": "City redesign for AVs and drones vs Alibaba's Hangzhou City Brain traffic AI; adjacent urban tech."
+  },
+  {
+   "candidate_id": "new-domestic-supply-chain~58424661-0f74-437b-a6c0-5ae90e15660f",
+   "verdict": "narrower",
+   "reason": "usa__ domestic rare earth magnets (MP Materials) is one country's case of the domestic rare earth supply chain subject."
+  },
+  {
+   "candidate_id": "new-domestic-supply-chain~13550d28-4c4c-4339-a18b-194773207d1d",
+   "verdict": "no_link",
+   "reason": "China's rare earth processing dominance is what the subject seeks to escape, not a case of a new domestic supply chain."
+  },
+  {
+   "candidate_id": "new-domestic-supply-chain~a5467b46-1e7e-4151-a61c-717897ea7c8d",
+   "verdict": "no_link",
+   "reason": "Substitutes for rare earths vs domestic sourcing of rare earths; alternative strategies, no containment."
+  },
+  {
+   "candidate_id": "new-domestic-supply-chain~d68db623-c1c3-4f49-a2ab-634f37e9a69e",
+   "verdict": "narrower",
+   "reason": "canada__ domestic rare earth processing: one country's case of building a non-China domestic supply."
+  },
+  {
+   "candidate_id": "new-domestic-supply-chain~13158ef0-ed5f-4e56-918a-18b1ee5c4910",
+   "verdict": "narrower",
+   "reason": "australia-nz__ rare earth refining outside China: regional case of the domestic supply chain subject."
+  },
+  {
+   "candidate_id": "new-domestic-supply-chain~a284753f-559e-47c9-bce2-1f5da0e66f99",
+   "verdict": "no_link",
+   "reason": "japan__ rare earth recycling and reduced-rare-earth motors: different strategy than domestic sourcing."
+  },
+  {
+   "candidate_id": "new-editing-tools~db5f0026-d2a8-49cf-b27a-74aedd298054",
+   "verdict": "narrower",
+   "reason": "usa__ base and prime editing: regional landscape entry of the base-editing tools in the claim."
+  },
+  {
+   "candidate_id": "new-heavy-launch-vehicles~71b2c312-0502-44be-b690-aa1c7552afd6",
+   "verdict": "narrower",
+   "reason": "usa__ Starship super-heavy launch: regional/specific case of new heavy launch vehicles."
+  },
+  {
+   "candidate_id": "new-heavy-launch-vehicles~d1f97931-e39a-479a-adaa-fd190a87e73e",
+   "verdict": "no_link",
+   "reason": "Medium-lift reusable rockets are a different class from heavy launch vehicles."
+  },
+  {
+   "candidate_id": "next-gen-bci~4f44e45b-b2b3-44df-b876-47fc4e29227a",
+   "verdict": "narrower",
+   "reason": "Noninvasive BCIs are a subset of next-generation BCI."
+  },
+  {
+   "candidate_id": "next-gen-bioprinters-create-living-tissue-with-multiple-cell-types~b4b4c062-08c2-477c-8da5-672a9f0cb322",
+   "verdict": "broader",
+   "reason": "3D bioprinting is the broader field; multi-cell-type bioprinters are an advance within it."
+  },
+  {
+   "candidate_id": "next-gen-bioprinters-create-living-tissue-with-multiple-cell-types~296e03c8-12c3-4c66-a264-de2ca9d440d5",
+   "verdict": "no_link",
+   "reason": "Vascularized constructs and multi-material printing are sibling advances within bioprinting; neither contains the other."
+  },
+  {
+   "candidate_id": "next-generation-gene-editors~db5f0026-d2a8-49cf-b27a-74aedd298054",
+   "verdict": "narrower",
+   "reason": "usa__ base and prime editing: regional entry of next-gen gene editors."
+  },
+  {
+   "candidate_id": "next-generation-gene-editors~93e68ca4-2c5d-4d7b-b6c2-23bbbf315588",
+   "verdict": "narrower",
+   "reason": "Miniaturized high-precision CRISPR variants are one family of next-generation gene editors."
+  },
+  {
+   "candidate_id": "next-generation-gene-editors~9cca485b-eb5e-4bee-8bdb-b0d7937c3c81",
+   "verdict": "no_link",
+   "reason": "CRISPR-Cas9 is the baseline the claim contrasts next-gen editors against; not the subject."
+  },
+  {
+   "candidate_id": "nomadic-and-modular-hotels~0d839148-d462-4d26-8dd2-f22db6eeb16e",
+   "verdict": "link",
+   "reason": "Relocatable modular hotel units are nomadic and modular hotels."
+  },
+  {
+   "candidate_id": "nuclear-in-space~dec7362a-4356-4cc7-8dbf-43d04fd7d0fb",
+   "verdict": "narrower",
+   "reason": "Nuclear propulsion is one part of nuclear in space, which also covers electricity generation."
+  },
+  {
+   "candidate_id": "nuclear-power-share~cfdf4b0d-abe9-443a-a3fb-8d92979f62b4",
+   "verdict": "no_link",
+   "reason": "Global nuclear share forecast vs France's reactor fleet operations; a country's fleet is not the subject quantity."
+  },
+  {
+   "candidate_id": "nutritional-labels-for-news~4149e68c-9c82-4326-9ecd-99ee27df26ef",
+   "verdict": "no_link",
+   "reason": "News credibility labels vs food nutrition scoring; shares only the label metaphor."
+  },
+  {
+   "candidate_id": "ocean~ae2faa13-af67-4f87-8d56-da1425c0b70c",
+   "verdict": "no_link",
+   "reason": "Subject 'Ocean' (shipping decarbonization) vs one Chinese electric container ship; too many levels apart."
+  },
+  {
+   "candidate_id": "ocean-chemistry~d69a134f-f05a-4c93-a047-96a9873a15b0",
+   "verdict": "link",
+   "reason": "Same: ocean alkalinity enhancement via mineral addition for carbon capture."
+  },
+  {
+   "candidate_id": "ocean-chemistry~a5a09f1d-942b-40ab-a88d-cfca1a070d39",
+   "verdict": "broader",
+   "reason": "Ocean-based carbon removal hardware is a broader set (electrochemical, macroalgae) containing alkalinity enhancement."
+  },
+  {
+   "candidate_id": "ocean-faring-drones~b5d2b8dc-e7cd-47b9-b4fc-4b42860504d3",
+   "verdict": "link",
+   "reason": "Uncrewed ships moving goods across oceans: same as ocean-faring drones."
+  },
+  {
+   "candidate_id": "ocean-faring-drones~c3aeecec-6bcf-471f-99d2-591450771034",
+   "verdict": "link",
+   "reason": "Self-navigating marine vessels for cargo: same as ocean-faring drones."
+  },
+  {
+   "candidate_id": "ocean-faring-drones~93380115-5f0b-4354-821e-85f89a84a515",
+   "verdict": "narrower",
+   "reason": "china__ Zhu Hai Yun drone mothership: one specific autonomous vessel."
+  },
+  {
+   "candidate_id": "off-planet-mining~c8166695-84e1-4648-b758-2cd9027b0d9d",
+   "verdict": "link",
+   "reason": "Claim is about asteroid mining; same technology."
+  },
+  {
+   "candidate_id": "off-planet-mining~39e225d2-35d3-4dc4-ba03-cd3b4b275ca0",
+   "verdict": "narrower",
+   "reason": "Asteroid prospecting surveys are one stage of off-planet mining."
+  },
+  {
+   "candidate_id": "off-planet-terraforming~6b7e19d5-5d58-4f76-bfbc-69c1f5f34827",
+   "verdict": "no_link",
+   "reason": "Subspace Genesis Device is fictional; not a real terraforming technology page."
+  },
+  {
+   "candidate_id": "off-planet-tourism~4740acbd-996e-4b34-bcc5-46e3f1563559",
+   "verdict": "link",
+   "reason": "Commercial suborbital and orbital passenger flight is off-planet tourism."
+  },
+  {
+   "candidate_id": "off-planet-tourism~a6a9ea62-d109-4cc8-ade1-216e80907db4",
+   "verdict": "narrower",
+   "reason": "Passenger capsules are the vehicles, a component of off-planet tourism."
+  },
+  {
+   "candidate_id": "off-planet-tourism-getting-to-space~4740acbd-996e-4b34-bcc5-46e3f1563559",
+   "verdict": "link",
+   "reason": "Commercial passenger spaceflight is getting tourists to space."
+  },
+  {
+   "candidate_id": "off-planet-tourism-getting-to-space~b2b50c97-28fd-49d2-ae53-87a0ba865242",
+   "verdict": "narrower",
+   "reason": "Suborbital tourism is one segment of getting tourists to space."
+  },
+  {
+   "candidate_id": "off-planet-tourism-getting-to-space~a6a9ea62-d109-4cc8-ade1-216e80907db4",
+   "verdict": "link",
+   "reason": "Passenger spaceflight vehicles are the means of getting to space for tourism; same scope."
+  },
+  {
+   "candidate_id": "offensive-government-hacking~f7d036e0-72f3-4403-8ebb-edc4e3094e3c",
+   "verdict": "narrower",
+   "reason": "israel__ offensive cyber capabilities (Stuxnet): one country's case of offensive government hacking."
+  },
+  {
+   "candidate_id": "offshore-floating-wind-turbines~cbc8843b-d237-40de-87ad-d40ae754f4bb",
+   "verdict": "link",
+   "reason": "Same: floating offshore wind turbines."
+  },
+  {
+   "candidate_id": "offshore-floating-wind-turbines~1532861f-f31e-4457-a919-2cec54f02763",
+   "verdict": "narrower",
+   "reason": "china__ floating offshore wind: regional landscape entry."
+  },
+  {
+   "candidate_id": "offshore-floating-wind-turbines~b2ff761b-7add-4ccd-8387-aa02bfd7a615",
+   "verdict": "narrower",
+   "reason": "south-korea__ floating offshore wind: regional landscape entry."
+  },
+  {
+   "candidate_id": "offshore-floating-wind-turbines~fd3d86bb-1aa2-4d30-b739-44daec9c3d1a",
+   "verdict": "narrower",
+   "reason": "japan__ offshore wind development centred on floating turbines: regional entry."
+  },
+  {
+   "candidate_id": "omnichannel-management-platforms~5a0df4b0-2e6f-4d1f-a5b0-5c3037af1b2d",
+   "verdict": "no_link",
+   "reason": "Integrated WMS/ERP/TMS omnichannel platforms vs logistics visibility control towers; adjacent supply chain software."
+  },
+  {
+   "candidate_id": "on-chain-surveillance~650725dd-2fc8-45d6-8a50-cf39b2e690fb",
+   "verdict": "link",
+   "reason": "On-chain surveillance and on-chain regulatory monitoring both track public ledger transactions."
+  },
+  {
+   "candidate_id": "on-demand-labor-platforms~0441ca6d-84fb-460f-b3f6-fa75596bb609",
+   "verdict": "no_link",
+   "reason": "External on-demand labor platforms vs internal talent marketplaces; different markets."
+  },
+  {
+   "candidate_id": "on-device-ai~d778f152-1010-4cd6-9400-5f557da711bb",
+   "verdict": "narrower",
+   "reason": "usa__ on-device AI and edge inference: regional landscape entry."
+  },
+  {
+   "candidate_id": "on-device-ai~4ca4deea-a7a8-46fb-b1be-3ed75ea35f9e",
+   "verdict": "link",
+   "reason": "Edge AI running models locally on devices for privacy is on-device AI."
+  },
+  {
+   "candidate_id": "on-device-ai-models~d778f152-1010-4cd6-9400-5f557da711bb",
+   "verdict": "narrower",
+   "reason": "usa__ on-device AI inference: regional landscape entry of on-device AI models."
+  }
+ ]
+}

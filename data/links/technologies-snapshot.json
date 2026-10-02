@@ -2,6 +2,7 @@
 	"taken_at": "2026-10-02T16:28:30.027Z",
 	"note": "Published technologies in published research projects, with the stored Core CMS embedding (text-embedding-3-large at 1536 dimensions). Vectors are not committed. Technologies of excluded projects (data/links/excluded-projects.json, D52) are left out.",
 	"excluded_projects": [
+		"subspace",
 		"xenotech"
 	],
 	"counts": {
@@ -9,8 +10,8 @@
 		"published_technologies": 4807,
 		"in_unpublished_project": 789,
 		"without_embedding": 0,
-		"excluded_project": 177,
-		"snapshot": 3841
+		"excluded_project": 306,
+		"snapshot": 3712
 	},
 	"technologies": [
 		{
@@ -105,13 +106,6 @@
 			"text_sha256": "a2e0a3bea7a702da452154926a1e1bf6f89e4986f005c966be93174d4d282c54"
 		},
 		{
-			"id": "00c2d36b-6d81-412f-adfa-b2bd12988b9a",
-			"research_slug": "subspace",
-			"original_id": "cortical-monitor",
-			"title": "Cortical Monitor",
-			"text_sha256": "cdae83a1dd8cd41fab47b311b8c48c877ad3490f1f50e3d8965bf6df04e9d65e"
-		},
-		{
 			"id": "00d56825-32af-4d37-85a8-2cee9df1e3e9",
 			"research_slug": "solace",
 			"original_id": "algorithmic-wellbeing-audits",
@@ -175,25 +169,11 @@
 			"text_sha256": "eb75e4856435540d3e65b0b1678322255318d7d89da7cb8684a0365803833f78"
 		},
 		{
-			"id": "0156c6c4-f8bb-4a7c-a52d-b01d8f5cd383",
-			"research_slug": "subspace",
-			"original_id": "holodeck",
-			"title": "Holodeck",
-			"text_sha256": "8c079f57b9e19890aca7ee82ca6e5c9e778fa41fc008c52219108a6b60ad8e12"
-		},
-		{
 			"id": "017039e7-64ee-4cc5-a975-6225c0668e66",
 			"research_slug": "substrate",
 			"original_id": "cislunar-nav-comms",
 			"title": "Cislunar Navigation & Communications Backbone",
 			"text_sha256": "4fb114f33e50da96a55a76efdae0ccad4a691d430bb9044a1c74d22c90b81c54"
-		},
-		{
-			"id": "019334c3-ec15-4d1d-a6e5-3bfe82e3406d",
-			"research_slug": "subspace",
-			"original_id": "emergency-medical-hologram",
-			"title": "Emergency Medical Hologram",
-			"text_sha256": "7435565e3df32da2493d6d5aa94aa415cfc6a31987438bb67926c0c9ceef0ca3"
 		},
 		{
 			"id": "0194c00e-2a7b-46b6-9953-cd92f6fa8534",
@@ -243,13 +223,6 @@
 			"original_id": "usa__autonomous-naval-vessels",
 			"title": "Autonomous Naval Vessels",
 			"text_sha256": "4b1d81a828bb8a26a3eaf402809e539053dd63bd9108ff262e7ad32fb19ae9eb"
-		},
-		{
-			"id": "0207fcac-52d5-4d71-a861-3ab3791bd81b",
-			"research_slug": "subspace",
-			"original_id": "graviton-scanner",
-			"title": "Graviton Scanner",
-			"text_sha256": "b3c5d5d44a2ddca75a2ff0b19a645d7184054a7661775e013f130b2061991c1d"
 		},
 		{
 			"id": "021cce10-bfad-4a2c-8114-7a1bb7a2518b",
@@ -509,13 +482,6 @@
 			"original_id": "precision-carbon-removal",
 			"title": "Precision Carbon Removal & Restoration",
 			"text_sha256": "ff241fe865a357e62847d109be542a1b5f9867332a82511ce8759a31414e3c90"
-		},
-		{
-			"id": "040112c0-24cf-445f-b1ce-56779d28fbe7",
-			"research_slug": "subspace",
-			"original_id": "genetic-resequencer",
-			"title": "Genetic Resequencer",
-			"text_sha256": "5498ac5011503d69a22143aa2e661e2172519f0236e8ded7af6d9dad2eeb970f"
 		},
 		{
 			"id": "0406bcc1-d94f-4cf0-b99c-1df959f616de",
@@ -945,13 +911,6 @@
 			"text_sha256": "f416b7b5c08e522b6362f306ed946157d4cc2b9a7b9d6f329f51d15708c9f552"
 		},
 		{
-			"id": "0800aa03-d532-4ca6-bb28-af85f8c883b7",
-			"research_slug": "subspace",
-			"original_id": "inertial-dampeners",
-			"title": "Inertial Dampening Field",
-			"text_sha256": "94d222f2c2836189eb9e6586c521b481fcf49770b4b64c3c42c964b7be737632"
-		},
-		{
 			"id": "0802ffe3-b7cd-4ad2-ae34-4c70eaa85ae6",
 			"research_slug": "substrate",
 			"original_id": "aquifer-storage-recovery",
@@ -1148,13 +1107,6 @@
 			"text_sha256": "b948102ac8ea5041a057a64d377beee2d83b5236970a7d938e35acc0482ed29d"
 		},
 		{
-			"id": "09d15218-f723-4793-809c-a30c7daddf12",
-			"research_slug": "subspace",
-			"original_id": "impulse-drive",
-			"title": "Impulse Drive",
-			"text_sha256": "833289dbfaac3065a6ca1bfdb956ed36d9c4eb7fa40bc9defa49eac690a2b8db"
-		},
-		{
 			"id": "09d9d800-d98e-467f-a8a9-a4c51669589a",
 			"research_slug": "haul",
 			"original_id": "electric-hydrogen-freight-trucks",
@@ -1260,13 +1212,6 @@
 			"text_sha256": "bb8a65ebdf511d97c37a4f0a657da0c5757543a5f39ee430c723f9270405a2cc"
 		},
 		{
-			"id": "0ae05742-6b0a-4646-834b-513c789b1173",
-			"research_slug": "subspace",
-			"original_id": "vulcan-meditation-lamps",
-			"title": "Vulcan Meditation Lamps",
-			"text_sha256": "970ff76aaa995ec40d21d983951a20707dde82d0e0bee642b047355357f62f46"
-		},
-		{
 			"id": "0b328455-36ac-499a-9407-36c8e72fc3c6",
 			"research_slug": "aegis",
 			"original_id": "mission-systems-integration-for-combat-aircraft",
@@ -1328,13 +1273,6 @@
 			"original_id": "rain-park",
 			"title": "Rain Park",
 			"text_sha256": "6666e493c0b17e21b7c06b08f66886e806c4c869a0bcf3a3534c6308c9d0468c"
-		},
-		{
-			"id": "0bed8de4-3cb0-4551-a15a-c061dec62250",
-			"research_slug": "subspace",
-			"original_id": "visor",
-			"title": "VISOR (Visual Instrument and Sensory Organ Replacement)",
-			"text_sha256": "1c3ac30f50aee574d5a264dce9e2b017d32826e9d0c5b520ced1ce186898a232"
 		},
 		{
 			"id": "0bfc5ac9-5d31-427f-bfed-ea5746316c0b",
@@ -1419,13 +1357,6 @@
 			"original_id": "soberania-governanca-dados-morador",
 			"title": "Soberania e Governança de Dados do Morador",
 			"text_sha256": "a4adc7d5f969a14e9bf48d05c1e6a3b3c7377a46f988eaee8ce89743741900b6"
-		},
-		{
-			"id": "0ccd3e44-a9f8-4917-9106-8e8b4c454126",
-			"research_slug": "subspace",
-			"original_id": "emergency-medical-transporter",
-			"title": "Emergency Medical Transporter",
-			"text_sha256": "f4c403c2db40959a60a1583b25901ff946292d938d47f42bbc077ac60373870f"
 		},
 		{
 			"id": "0cd575e9-8dff-4b6f-ae08-b6e479d9d80d",
@@ -1876,13 +1807,6 @@
 			"text_sha256": "1f7706ef51f42d2674510749ba5dc98c2ddbf339af24e1c1f40fd2666df01732"
 		},
 		{
-			"id": "10f81e50-b08a-487f-bb77-7f9844f25217",
-			"research_slug": "subspace",
-			"original_id": "regenerative-shielding",
-			"title": "Regenerative Shielding",
-			"text_sha256": "f61065302412c81db901ae68b319b62f985f3148f9e1f713b9307f82c6662009"
-		},
-		{
 			"id": "10fb08ac-ace9-4335-8ca1-797a521187ad",
 			"research_slug": "vortex",
 			"original_id": "interactive-ai-storytelling",
@@ -2014,13 +1938,6 @@
 			"original_id": "quantum-logistics",
 			"title": "Quantum Logistics Optimization",
 			"text_sha256": "fc1ec8ff6d861080642f0d161f8360d4902706aab98e29efd64dabc24472fcb6"
-		},
-		{
-			"id": "11e00ab4-6c32-400e-9abd-faa7e653742b",
-			"research_slug": "subspace",
-			"original_id": "biobed",
-			"title": "Biobed",
-			"text_sha256": "2d62c150f3fe23333a0fcf10f57f2ba94a9a58b7937eb93d0271f235e559500d"
 		},
 		{
 			"id": "121c9fa3-0b9b-4b31-91ad-7ab017b288b8",
@@ -2422,13 +2339,6 @@
 			"text_sha256": "bc608e78d312d8c61d3949789c4995412db179f8cbe371aad5860604533d4223"
 		},
 		{
-			"id": "156ae1f8-9b45-4458-9791-8918ed87b4e5",
-			"research_slug": "subspace",
-			"original_id": "deflector-shields",
-			"title": "Deflector Shields",
-			"text_sha256": "b06a3b0658e991162aa1bba44506891ba63b80f5f6a7ce3027df251637c8b5b0"
-		},
-		{
 			"id": "157c3658-0f58-484e-aa14-83f600887d6e",
 			"research_slug": "vault",
 			"original_id": "federated-learning",
@@ -2490,13 +2400,6 @@
 			"original_id": "ai-trend-forecasting",
 			"title": "AI-Driven Trend Forecasting",
 			"text_sha256": "3ecf6543775558a4a3b8d8226526b3ebb24078d8c1d1daa8295d7dddb6b6a96f"
-		},
-		{
-			"id": "15ddbe43-eb9e-4c6f-a3a5-5c4852951ab0",
-			"research_slug": "subspace",
-			"original_id": "borg-modular-components",
-			"title": "Modular Drone Components",
-			"text_sha256": "ce826f27605d624020aecda1b4579e6c644b1b4cc8c36b924bfb2188d4786960"
 		},
 		{
 			"id": "15e62fe4-9ae7-4166-9b76-9014dbedf0b5",
@@ -2569,13 +2472,6 @@
 			"text_sha256": "a4635a37cc18a66a835f9da7bf8db449ecc96a016f455bb393a9d64c3a17e740"
 		},
 		{
-			"id": "168d8a14-4765-4770-8d60-61ba10ff0500",
-			"research_slug": "subspace",
-			"original_id": "polarized-hull-plating",
-			"title": "Polarized Hull Plating",
-			"text_sha256": "94583c3c92cdd1fdcab3e02b8d3370bfb0ad1285c0017d8528e522e7bb5740de"
-		},
-		{
 			"id": "168ea69d-4ec4-474c-bca1-6c522ec274c4",
 			"research_slug": "wintermute",
 			"original_id": "scalable-oversight-and-evaluation",
@@ -2616,13 +2512,6 @@
 			"original_id": "obras-subterraneas-mecanizadas-tbm",
 			"title": "Obras Subterrâneas Mecanizadas",
 			"text_sha256": "910133063d1b6767e51a971ec2a0bf222fa5844696def53851119ad0f054ac4e"
-		},
-		{
-			"id": "16e8d7fc-f552-4af0-b588-e78341d15ad7",
-			"research_slug": "subspace",
-			"original_id": "tachyon-detection-grid",
-			"title": "Tachyon Detection Grid",
-			"text_sha256": "04ea7d3df50606387e6c78db3e1bb28bea298ab501fe25566999660586589303"
 		},
 		{
 			"id": "16eb7a46-c769-438d-8c6c-9093fd523e9c",
@@ -2714,13 +2603,6 @@
 			"original_id": "nitrogen-vacancy-diamond-sensors",
 			"title": "Nitrogen-Vacancy Diamond Sensors",
 			"text_sha256": "194120d8fe123e1d4407c0abd09eacff2261f8608e9becbbc844e91121dddd67"
-		},
-		{
-			"id": "1758ea2d-4d8d-4eba-a010-0b3f777be439",
-			"research_slug": "subspace",
-			"original_id": "chroniton-torpedo",
-			"title": "Chroniton Torpedo",
-			"text_sha256": "7446b8ead2be47718e7db301f32094f2280562d42876d8a8b86035f29314ee31"
 		},
 		{
 			"id": "176dbeb2-e3f2-4e09-9673-24666c0637d1",
@@ -2840,13 +2722,6 @@
 			"original_id": "digital-twin-surgery",
 			"title": "Digital Twin Surgery",
 			"text_sha256": "d078d589fa5d5feeac7c4a9d516fdee3cc620629558cd7ef58d75a090b8c210d"
-		},
-		{
-			"id": "18797308-0312-4775-bb09-ee8dfe3c9cfd",
-			"research_slug": "subspace",
-			"original_id": "eps-conduits",
-			"title": "EPS Conduits",
-			"text_sha256": "ec14e9382032597f150e2b4907e60029ef6f63c662a12b0f882cb65c1de12025"
 		},
 		{
 			"id": "1888b47e-8d63-4303-88a6-f347620b482d",
@@ -3143,13 +3018,6 @@
 			"text_sha256": "c73a1e2b0eb1ad84f9c427834f8fb271e2c191b3087cc861252c97e0b878acf7"
 		},
 		{
-			"id": "1b454884-787c-4c47-8e0e-0b4126c608f0",
-			"research_slug": "subspace",
-			"original_id": "subspace-transponder-beacon",
-			"title": "Subspace Transponder Beacon",
-			"text_sha256": "93187099143d96fbb72ba4ca207664a2bd5b5e24963c7cbc38297fe8f0856c72"
-		},
-		{
 			"id": "1b5ae63f-749b-42ef-aa21-8a999cf0fc4d",
 			"research_slug": "lattice",
 			"original_id": "data-as-value-networks",
@@ -3414,13 +3282,6 @@
 			"original_id": "mass-customization-platforms",
 			"title": "Mass Customization Platforms",
 			"text_sha256": "5294bfec7fd44c86f5d0ce20bd5170f644a22cb4fa5944874f637aa73006c30f"
-		},
-		{
-			"id": "1daa4a49-ae46-4757-a615-206fa9b90977",
-			"research_slug": "subspace",
-			"original_id": "quantum-singularity-core",
-			"title": "Quantum Singularity Power Core",
-			"text_sha256": "f434e3ebea5cf7d077552203ca6f5139ddcc2b5f5f894a7108d25545a6f10db6"
 		},
 		{
 			"id": "1dc1b258-9267-4b07-b611-c945e89b45b1",
@@ -4172,13 +4033,6 @@
 			"text_sha256": "6712299fc6887a19679d4ee3180f5d12151564395d2a44b96475980d5ff0368d"
 		},
 		{
-			"id": "24afd8b6-eaf3-4629-9f98-e0474bf27a09",
-			"research_slug": "subspace",
-			"original_id": "vulcan-learning-matrix",
-			"title": "Learning Matrices",
-			"text_sha256": "b2091caf16688ace3f4d0f0bcb634bd8fb8393e745d0263b8dddb082442ef9cb"
-		},
-		{
 			"id": "24eaf60d-5756-40ef-838d-bd5cb532b6c8",
 			"research_slug": "impulse",
 			"original_id": "social-influence-propagation-models",
@@ -4501,13 +4355,6 @@
 			"text_sha256": "d2003ba638f562c301df0a70f1d71d56bbedc60c2a3554534075a3bcead63ba2"
 		},
 		{
-			"id": "2883b8de-e14c-4b7e-a268-bab51ddf6941",
-			"research_slug": "subspace",
-			"original_id": "borg-alcove",
-			"title": "Borg Regeneration Alcove",
-			"text_sha256": "35651e7e82bbcc2debe2f79956ee90d0e9d6498bb071e4aa6a1f928f6d6765b4"
-		},
-		{
 			"id": "288c5bff-c833-4cc0-b401-5be9be5d5186",
 			"research_slug": "atmos",
 			"original_id": "direct-air-capture-plants",
@@ -4583,13 +4430,6 @@
 			"original_id": "india__it-services-transformation",
 			"title": "IT Services Industry AI Transformation",
 			"text_sha256": "302c69284404356c3e06283c8518b39464bf48b539e876b6c7896b3d51c67924"
-		},
-		{
-			"id": "293d5010-bd01-45a0-8469-f99078fed188",
-			"research_slug": "subspace",
-			"original_id": "klingon-painstik",
-			"title": "Painstik",
-			"text_sha256": "5b77d418a27770823689272023cb0a33d4a028525f7a2b6dcb62c764cd5d75c8"
 		},
 		{
 			"id": "2955cee2-0b18-4c21-a89e-c1db460b4da3",
@@ -4914,13 +4754,6 @@
 			"text_sha256": "cf81a9887669b5d5ff0e942772bd882ec54af463b2aee7de19fc8738b2876c31"
 		},
 		{
-			"id": "2bbcb4a8-4340-4893-939e-a9a094eddb50",
-			"research_slug": "subspace",
-			"original_id": "borg-hive-mind-network",
-			"title": "Borg Hive Mind / Subspace Network",
-			"text_sha256": "25703c6a0da3bd97bf001d6d8d822800742411ba043666684ce6dba97ae582a8"
-		},
-		{
 			"id": "2bbeb5f8-d55c-4e8b-9424-c4fed40de260",
 			"research_slug": "vector",
 			"original_id": "africa__eco-industrial-park-textile",
@@ -4998,13 +4831,6 @@
 			"text_sha256": "4dc3a107f13106d524c732d666bd7377278ad46285ef7a086f944a635896b301"
 		},
 		{
-			"id": "2c95b02c-4211-4be1-9e11-43b519a628c3",
-			"research_slug": "subspace",
-			"original_id": "borg-vinculum",
-			"title": "Vinculum",
-			"text_sha256": "774ece333e902bb54e50adeb5526a1d684a94108c6254bc98c22e662573d590e"
-		},
-		{
 			"id": "2c9baf31-b023-4ec0-8557-0211d1ac9902",
 			"research_slug": "soma",
 			"original_id": "algorithmic-governance",
@@ -5066,13 +4892,6 @@
 			"original_id": "integrated-autonomous-energy-grid",
 			"title": "Integrated Autonomous Energy Grid",
 			"text_sha256": "ecaf58910b8f2b62fe2db19bd1d457bca84cfad796947f06ff59cf10345f4b42"
-		},
-		{
-			"id": "2d381479-1060-4ca7-94f7-48cc97f9e0cf",
-			"research_slug": "subspace",
-			"original_id": "tr-116-rifle",
-			"title": "TR-116 Projectile Rifle",
-			"text_sha256": "426b6373d830b9dd1ac1ab6887f65664f9d87a884871073e3716a106a7e95b7c"
 		},
 		{
 			"id": "2d4b7b53-dfdf-4116-b378-25f60597f660",
@@ -5460,13 +5279,6 @@
 			"text_sha256": "0f7070705d354640028ef28961c5ebf296e452c63038fd2be1fd8c3b6c5deff1"
 		},
 		{
-			"id": "30e8cea9-7936-40e4-a7c9-bdc522e2e66d",
-			"research_slug": "subspace",
-			"original_id": "klingon-dahar-archives",
-			"title": "Dahar Master Archives",
-			"text_sha256": "c079061400dbf5b15de05afa724de6f554b58d93622c7f1eb1fd013380b19807"
-		},
-		{
 			"id": "3111c8c0-2636-4b91-ae31-7ce54e9dbe98",
 			"research_slug": "eclipse",
 			"original_id": "synthetic-dna-storage",
@@ -5493,13 +5305,6 @@
 			"original_id": "federated-learning-networks",
 			"title": "Federated Learning Networks",
 			"text_sha256": "fc22be718eb50c855716e2c2d523fb3824983b6aa45e79f745a6bf7b4de10499"
-		},
-		{
-			"id": "31596741-ef6e-404f-8ddf-45619f7864da",
-			"research_slug": "subspace",
-			"original_id": "dilithium-crystals",
-			"title": "Dilithium Crystals",
-			"text_sha256": "bf44bc07fdbdf9c46a95011da5ce351dde9bc804e0c4e1c7b3896f4c335dde8c"
 		},
 		{
 			"id": "316aefd6-7794-4291-9099-ec352409f984",
@@ -5733,13 +5538,6 @@
 			"text_sha256": "9065fc4a43a88153e2c43bfcb97d22c58ef0702a13d4dd8fd1f8120bc5a5ace4"
 		},
 		{
-			"id": "3386f128-d551-4f6b-832b-ebb822dec52a",
-			"research_slug": "subspace",
-			"original_id": "subspace-relay-network",
-			"title": "Subspace Relay Network",
-			"text_sha256": "07bb461704ac5558d48c4571d2ad90dadc4d1e7c3080cecdc6528836e79bf3f3"
-		},
-		{
 			"id": "338ea39b-a1df-4d33-bcd4-049885ab8b15",
 			"research_slug": "vitals",
 			"original_id": "in-silico-clinical-trials",
@@ -5838,13 +5636,6 @@
 			"text_sha256": "92b993b3e61775b89269d022d06969b7a5e848392620f9951bdcc49001ac07fa"
 		},
 		{
-			"id": "344b1b04-7500-4659-a48b-6ca8eb69732b",
-			"research_slug": "subspace",
-			"original_id": "stellar-energy-collector",
-			"title": "Stellar Energy Collection Array",
-			"text_sha256": "55654874b500ac94790f4656259666e31c8012e6f86ae4a23b0fac3cccd48250"
-		},
-		{
 			"id": "345ad399-4693-44a2-aa56-ed2eae641b6c",
 			"research_slug": "polis",
 			"original_id": "deliberative-assembly-platforms",
@@ -5864,13 +5655,6 @@
 			"original_id": "india__satellite-internet-battleground",
 			"title": "Satellite Internet Market: Starlink vs Jio vs OneWeb",
 			"text_sha256": "7a3a97571bd776f410052b767636af8e99f78fe8b0712ef6f08e772c1ac8a638"
-		},
-		{
-			"id": "348fd166-fed3-4d59-8ba5-bb3a9a4225de",
-			"research_slug": "subspace",
-			"original_id": "sarium-krellide-power-cell",
-			"title": "Sarium Krellide Power Cell",
-			"text_sha256": "ea5557cb27f0fdb8545c3baa0c252381c7df493f6fa1d3b48bac9ca77287ebb6"
 		},
 		{
 			"id": "34be9882-d537-4292-bcb6-f8065a0426d5",
@@ -6636,13 +6420,6 @@
 			"text_sha256": "bb5ad54ce679436e70e3e979373e33f43b14d38286fa601c5a19b0d193b14b8d"
 		},
 		{
-			"id": "3bef587f-87ea-4dd7-aa7a-2e8560ac2786",
-			"research_slug": "subspace",
-			"original_id": "duotronic-computer",
-			"title": "Duotronic Computer",
-			"text_sha256": "81ee6adabb7cfda0db2296fb1a240c8af64d7788a5414476fe3567f1ab139b85"
-		},
-		{
 			"id": "3bf6e199-33a6-4725-9076-7af9eaf60404",
 			"research_slug": "vortex",
 			"original_id": "generative-video-models",
@@ -6816,13 +6593,6 @@
 			"original_id": "flywheel-energy-storage",
 			"title": "Flywheel Energy Storage",
 			"text_sha256": "da0d7201a253015b98ea9ebe808a2d634bf5a34f96384e757ebf9622cb5685e4"
-		},
-		{
-			"id": "3e6e2738-e5c0-4f53-931c-090cf043d647",
-			"research_slug": "subspace",
-			"original_id": "structural-integrity-field",
-			"title": "Structural Integrity Field",
-			"text_sha256": "8dd1daf00a208140c91ecfafa95beb2683d192254f92710f3ce7fdb5f414cf0d"
 		},
 		{
 			"id": "3e6e5213-be91-4612-b357-dbc799800808",
@@ -7140,13 +6910,6 @@
 			"text_sha256": "b4a188bf134a28e5e384d018bde651a02c920b586094c5e96f0f93b449d256ca"
 		},
 		{
-			"id": "41c87967-5601-4864-baa4-099ea13bbdd4",
-			"research_slug": "subspace",
-			"original_id": "klingon-batleth",
-			"title": "Bat'leth (Sword of Honor)",
-			"text_sha256": "cdf1a2c344810c90dbc7383f40959f6a785501114b7a3a528fff6d7e7c0da1fe"
-		},
-		{
 			"id": "41d6b128-e08f-42a9-882a-02e129a4aa78",
 			"research_slug": "polis",
 			"original_id": "gulf-states__saudi-entertainment-tech",
@@ -7180,13 +6943,6 @@
 			"original_id": "digital-analog-laboratory",
 			"title": "Digital-Analog Laboratory",
 			"text_sha256": "80a65f1ca15a4fc4c8fbb8092a2ad467deda90b5611e1f93e2bb0930c124ba1c"
-		},
-		{
-			"id": "420d8c12-0d1e-4fd9-b7dd-4e09fdc9ab6b",
-			"research_slug": "subspace",
-			"original_id": "phaser-array",
-			"title": "Phaser Array",
-			"text_sha256": "c5e3de7cf5f7226a618733f41050cd7edf67f97be69c13b992af7a26c9619f9b"
 		},
 		{
 			"id": "420ffb0d-2098-4533-851d-7ce1744a8f26",
@@ -8001,13 +7757,6 @@
 			"text_sha256": "3cbc1b3c903a53757b85a1a236d38588ac6644a7984f456d7e597ffb0ae3b594"
 		},
 		{
-			"id": "4a4b626f-bee4-4833-971c-4d060e5ea04a",
-			"research_slug": "subspace",
-			"original_id": "portable-fusion-generator",
-			"title": "Portable Fusion Generator",
-			"text_sha256": "4822514b71dea5232a4ff3c4057b86630dfedcaa91c1cf7dd525fb5f98d69c37"
-		},
-		{
 			"id": "4a553954-aa5b-4da0-91c0-36da01638fb6",
 			"research_slug": "solace",
 			"original_id": "cognitive-liberty-frameworks",
@@ -8083,13 +7832,6 @@
 			"original_id": "norms-autonomous-cyber-operations",
 			"title": "Norms for Autonomous Cyber Operations",
 			"text_sha256": "8388bbf0b97db402170a7d383f1b4606decb7d307b5de19010b95bc4bd40f3be"
-		},
-		{
-			"id": "4b2f5c26-4237-4fb5-aaf6-30edec7c89d2",
-			"research_slug": "subspace",
-			"original_id": "stasis-field",
-			"title": "Stasis Field",
-			"text_sha256": "8692c753819d67a58cb4224e9e8da430a9f272b36bae0f9b85918e6e7bbd1478"
 		},
 		{
 			"id": "4b3cfd6f-df77-4c3c-9674-a305e2e5011a",
@@ -9093,13 +8835,6 @@
 			"text_sha256": "a2bcef90849cfb045ab66a085f6e122833a96bd9568f55ee784390d511d4d7fa"
 		},
 		{
-			"id": "53b98f03-4fab-49ef-9fcb-9c32c57550d6",
-			"research_slug": "subspace",
-			"original_id": "vulcan-mind-meld-enhancer",
-			"title": "Mind Meld Enhancers",
-			"text_sha256": "b27d8161ec56668eb184a4d38c23cb3860d56a452f95398e71796bbab30c5d88"
-		},
-		{
 			"id": "53e5f80c-db8e-47d1-b66a-64ac3b4603da",
 			"research_slug": "eros",
 			"original_id": "digital-afterlife-governance",
@@ -9478,13 +9213,6 @@
 			"text_sha256": "c7fe36c97536ba7ee14f09b0e4c1df96b0010a563e1b4e5e2e2202fb7423f229"
 		},
 		{
-			"id": "57056559-41c1-4f9a-9569-dc299ea6b255",
-			"research_slug": "subspace",
-			"original_id": "ferengi-acquisition-computer",
-			"title": "Acquisition Computers / Profit Algorithms",
-			"text_sha256": "898b7bc741c4f978bbf4a449fc9b31dcc2a082c261d8d1e043aa1b4acf532264"
-		},
-		{
 			"id": "570704a2-f2bf-4737-93ff-88fcca4ebc28",
 			"research_slug": "link",
 			"original_id": "ai-powered-network-security",
@@ -9497,13 +9225,6 @@
 			"original_id": "explainable-artificial-intelligence-xai",
 			"title": "Explainable Artificial Intelligence (XAI)",
 			"text_sha256": "7c5a4c0e2d5d6c3b6fb620f478efebd651dd6d792e43fbb1b95d1ce07e9aa779"
-		},
-		{
-			"id": "570a2bdd-d2b2-430e-8b8c-c9a3b82498b0",
-			"research_slug": "subspace",
-			"original_id": "cardassian-neural-conditioning",
-			"title": "Neural Conditioning Devices",
-			"text_sha256": "0fc97e247d088da72232554aca4358a7570a529e87d22096a96a822d718c023e"
 		},
 		{
 			"id": "570ea74e-4eb8-4ee0-9e38-8398bf974a03",
@@ -9968,13 +9689,6 @@
 			"text_sha256": "a0ea281bc6dd38291a7e6f50077f3c8fc23ac7deacdd9f78f2ba1137a7b31248"
 		},
 		{
-			"id": "5b58bbf7-0f66-4668-bd47-5f5632cffc74",
-			"research_slug": "subspace",
-			"original_id": "spore-drive",
-			"title": "Displacement-Activated Spore Hub Drive",
-			"text_sha256": "eea9d6e99463f8b76697b2133ff3ee55d4972e4a623c7ad5aa0fa9d0fb231a13"
-		},
-		{
 			"id": "5b638e61-a389-4d06-bf26-2d3135a5c076",
 			"research_slug": "liminal",
 			"original_id": "reality-authentication",
@@ -10045,13 +9759,6 @@
 			"text_sha256": "6e3704e9a14add97682991ac253d3296fdde747e89784436f7e258780e4c2a25"
 		},
 		{
-			"id": "5c035451-3c4f-4f9c-b3e8-5b70d6e48c7c",
-			"research_slug": "subspace",
-			"original_id": "transwarp",
-			"title": "Transwarp Drive",
-			"text_sha256": "6259c46af66f2716e58a4e2d3907401ab6f23acb25b2571e8e7c656490deb5af"
-		},
-		{
 			"id": "5c0deb0f-e29a-45ad-ace7-de09774662c7",
 			"research_slug": "prism",
 			"original_id": "south-korean-webtoon-infrastructure",
@@ -10106,13 +9813,6 @@
 			"original_id": "south-korea__ammonia-fueled-marine-propulsion",
 			"title": "Ammonia-Fueled Ship Propulsion",
 			"text_sha256": "fb55ef736e8a696a06fba5fa97fcd9686aa6d32ab53e8003a2e6bcba73ac68ee"
-		},
-		{
-			"id": "5c99989a-02fc-4651-9be0-8a64289491b7",
-			"research_slug": "subspace",
-			"original_id": "disruptor",
-			"title": "Disruptor",
-			"text_sha256": "015258f02daa9c95c653cfa6b1c5352fe84ebd987099b25b51dbee8f48aa7e52"
 		},
 		{
 			"id": "5c9f941b-e4d6-4ea5-80a1-e15cb9ddb128",
@@ -10276,13 +9976,6 @@
 			"text_sha256": "f08b247a93c8b8f79e759fdd8d47abc665d365f18c33bea42824274084c943b6"
 		},
 		{
-			"id": "5dfd31e2-6859-4784-a8fc-5e607dd109ce",
-			"research_slug": "subspace",
-			"original_id": "bussard-collectors",
-			"title": "Bussard Ramscoop Collectors",
-			"text_sha256": "08bb0f68033568a4f079de3e817bce7925d617c3096f84559a9be30adcf60550"
-		},
-		{
 			"id": "5e3a7d16-1c36-4f27-9c59-44675c98c597",
 			"research_slug": "aura",
 			"original_id": "smart-bio-makeup",
@@ -10309,13 +10002,6 @@
 			"original_id": "brazil__payments-for-ecosystem-services-icms-ecolgico",
 			"title": "Payments for Ecosystem Services (ICMS Ecológico)",
 			"text_sha256": "6b99f158d354e744e7c27d0afc4ae33652a2d3bc1a5aec4ff85241724e24bc24"
-		},
-		{
-			"id": "5e8ff6ec-29c6-42a8-b9f5-323bbdff80bc",
-			"research_slug": "subspace",
-			"original_id": "emergency-force-fields",
-			"title": "Emergency Force Fields",
-			"text_sha256": "16dda068a710f905ff92057a25db2c77603305a2cb4cbf10f8ada5ed5aafd40d"
 		},
 		{
 			"id": "5ea32147-335f-4acd-8a77-72a699fdbc5f",
@@ -10759,13 +10445,6 @@
 			"text_sha256": "f9685aa0413a5bd5cfd29a765892dfc0f843e4bbd1b665169291ad68d8f2e825"
 		},
 		{
-			"id": "630883c7-5220-407e-ba4f-4aab5bd9ec6d",
-			"research_slug": "subspace",
-			"original_id": "neutrino-detector",
-			"title": "Neutrino Detector",
-			"text_sha256": "450f0833aec9edff50e00886d2a751bc9a56937f5d7c83abade38f60630af7b8"
-		},
-		{
 			"id": "63184a45-80df-4ff0-9017-9e449391d0e1",
 			"research_slug": "fabric",
 			"original_id": "airystring-zipper-innovation",
@@ -11011,13 +10690,6 @@
 			"text_sha256": "0f307f494a098e7848f758399badf485fbcd08ae62c4fe11c9ff3aaa483de3a2"
 		},
 		{
-			"id": "65f5062f-c210-4459-a881-6fbd2b6e94d8",
-			"research_slug": "subspace",
-			"original_id": "borg-collective-memory-core",
-			"title": "Collective Memory Core",
-			"text_sha256": "d5cfc021093c568f4797b92e230ac56d5b81843ea6e71b2b11a0d612eca9023d"
-		},
-		{
 			"id": "660cbdd7-1e6d-4ae8-b9fc-9f883d474d2e",
 			"research_slug": "atmos",
 			"original_id": "green-hydrogen-production",
@@ -11130,25 +10802,11 @@
 			"text_sha256": "fd311771caf97a2698824f30283533ef5b4a38be9d72a12affc63853b1934fce"
 		},
 		{
-			"id": "67309aa1-de00-4819-9680-32066c3fe8d1",
-			"research_slug": "subspace",
-			"original_id": "replicator",
-			"title": "Replicator",
-			"text_sha256": "a7ecc25757ed9e9035b375c9bb74d36c0973dcc8892eca8ae701cbb10593aceb"
-		},
-		{
 			"id": "6736e290-66ff-4411-ac59-da00b8965f99",
 			"research_slug": "substrate",
 			"original_id": "japan__earthquake-early-warning-system",
 			"title": "Earthquake Early Warning System (EEW/J-Alert)",
 			"text_sha256": "5b1bb1249ab8b5e8c8a1a656ddd5533d2c57722c395b402cb8a30922921235eb"
-		},
-		{
-			"id": "673dfae8-d8ee-405f-a5b3-616eef3347a5",
-			"research_slug": "subspace",
-			"original_id": "hailing-frequencies",
-			"title": "Hailing Frequencies",
-			"text_sha256": "d45f5b55acb47091e5e7f59ff17b905cce01e03b7733ca540ceb8f19c6261524"
 		},
 		{
 			"id": "67465658-4a93-4d28-8e0a-187696c357f8",
@@ -11333,13 +10991,6 @@
 			"text_sha256": "0509bd9be64bf7ca3275e2f9732031e6944ddf8157ae6234cb4e51babf9d2bd3"
 		},
 		{
-			"id": "693627df-7ccc-4c1a-a65d-abc34bc3cd31",
-			"research_slug": "subspace",
-			"original_id": "quantum-torpedo",
-			"title": "Quantum Torpedo",
-			"text_sha256": "01d652b5477958e5f68220956c9e343227ab77ad928cef86e4118434742893aa"
-		},
-		{
 			"id": "693e17bf-6e86-4e5b-a29a-39c14ebe14d2",
 			"research_slug": "apogee",
 			"original_id": "china__tiangong-space-station-and-tianwen-missions",
@@ -11380,13 +11031,6 @@
 			"original_id": "electro-culture-stimulation",
 			"title": "Electro-Culture Growth Stimulation",
 			"text_sha256": "16f9e2f17ab73b16d88a44ddf6ef1288e5035d0cafe3b54adee63ce1156bc0d2"
-		},
-		{
-			"id": "69bed617-796e-4827-a697-dc134a28e9f6",
-			"research_slug": "subspace",
-			"original_id": "subspace-jammer",
-			"title": "Subspace Jammer",
-			"text_sha256": "34e6cf683aca87846a97a1d75f9cb8968f3b446b2d61bbdefefab146982b78be"
 		},
 		{
 			"id": "69cde13b-7d43-4d87-8ed7-e6b71d4b87aa",
@@ -11555,13 +11199,6 @@
 			"original_id": "australia-nz__remote-operations-center",
 			"title": "Remote Operations Centre Technology",
 			"text_sha256": "e0d51accf68a992d4c340bc80aa23f8387866e1c3d91b0ce9ace7f251c02c44e"
-		},
-		{
-			"id": "6b7e19d5-5d58-4f76-bfbc-69c1f5f34827",
-			"research_slug": "subspace",
-			"original_id": "genesis-device",
-			"title": "Genesis Device",
-			"text_sha256": "b2cbbb0cd2745f4db507d7d706175d5b2e55b76c998d4d468b4899a125643990"
 		},
 		{
 			"id": "6ba9e287-9461-4d04-a4b3-7ece0cb365c7",
@@ -11758,13 +11395,6 @@
 			"original_id": "latam-ex-brazil__co-deforestation-monitoring-ai",
 			"title": "AI-Powered Deforestation Monitoring",
 			"text_sha256": "a6b11c236fed4dcfc73db64f8204a00e29d27e46b2ed27ac21a2e2f2c1a7a82c"
-		},
-		{
-			"id": "6d75c945-5580-4714-9be0-abf5979d2a70",
-			"research_slug": "subspace",
-			"original_id": "borg-nanoprobes",
-			"title": "Borg Nanoprobes",
-			"text_sha256": "42353dccf10d80faacbca4761530bb078d00a1f289c880955d3278244c08ae47"
 		},
 		{
 			"id": "6d874a69-e298-427e-b43a-c1410298bb66",
@@ -12915,13 +12545,6 @@
 			"text_sha256": "976cd18c1d8889e3be90195c91864c399eae53459fca8e5e589156e6ee9547f4"
 		},
 		{
-			"id": "792ff8fe-604a-4b2a-ad6d-9d0c056e1b57",
-			"research_slug": "subspace",
-			"original_id": "bio-neural-gel-packs",
-			"title": "Bio-Neural Gel Packs",
-			"text_sha256": "1d938568497552aa22f3945ac072b1571e75690f9803a19612b4f0d034c325a4"
-		},
-		{
 			"id": "793fe705-6b8d-44c1-81d1-54577f3dc140",
 			"research_slug": "wintermute",
 			"original_id": "ai-powered-drug-discovery",
@@ -13384,13 +13007,6 @@
 			"text_sha256": "8b57434d4da66bdcaa9b7bbe7dc45e7e45f6ea8c44d061f8b2c5f5331535cb4e"
 		},
 		{
-			"id": "7f18b306-ecd4-4dd4-8a43-75ef9b8fe59f",
-			"research_slug": "subspace",
-			"original_id": "vulcan-logic-computer",
-			"title": "Vulcan Logic Computers",
-			"text_sha256": "fd54a64923f27a077aa70a380ae6ae51dcc329d3a2dbe987e88b11fa8aa06911"
-		},
-		{
 			"id": "7f1be7dd-04a1-49aa-97e7-58c78c0c21ae",
 			"research_slug": "axiom",
 			"original_id": "haptic-learning-devices",
@@ -13445,13 +13061,6 @@
 			"original_id": "memristor-crossbar-arrays",
 			"title": "Memristor Crossbar Arrays",
 			"text_sha256": "d628b622750645645ffb26c656415e2c6dbf41936112c1e646de1f308ddb3bf5"
-		},
-		{
-			"id": "7f825658-2882-47a8-873e-c761b4c9b861",
-			"research_slug": "subspace",
-			"original_id": "subspace-weapon",
-			"title": "Subspace Weapon",
-			"text_sha256": "61be362211de5a1ffdebcca7c803bff5899c8cf97dc28113cba92181ddfee681"
 		},
 		{
 			"id": "7f8306b6-6cc1-43e5-9e8e-c902c20eaf1c",
@@ -13557,13 +13166,6 @@
 			"original_id": "machine-vision-recycling-system",
 			"title": "Machine Vision Recycling System",
 			"text_sha256": "e302c80457a8cc6a268bd469ff1eec74d6c5f7d4f101f23557f0a76778c203e4"
-		},
-		{
-			"id": "8066f31f-b730-4f9b-a160-5150ecbd4acc",
-			"research_slug": "subspace",
-			"original_id": "environmental-control-system",
-			"title": "Environmental Control System",
-			"text_sha256": "10410ce004045fe75dbe6f47b5d3662452be34c19c27c5cee17611639b7b7aa1"
 		},
 		{
 			"id": "807d6d6a-70d3-403e-af93-bb06d9927a84",
@@ -13706,13 +13308,6 @@
 			"text_sha256": "2dfbb0f86e84a2598767c023b3fd97fc264e33ab7b0c4b61238e6fa8bf132ae9"
 		},
 		{
-			"id": "81dc86e2-b363-40e4-b215-a430a1e5cc12",
-			"research_slug": "subspace",
-			"original_id": "temporal-shielding",
-			"title": "Temporal Shielding",
-			"text_sha256": "06386fcdf7862109fe95076185ba29a09475961e2a841a055bb9f3dba74569c8"
-		},
-		{
 			"id": "81dd2260-16b7-4f26-865a-d74e46e5a3d3",
 			"research_slug": "vortex",
 			"original_id": "attention-and-wellbeing-guardrails",
@@ -13739,13 +13334,6 @@
 			"original_id": "economic-manipulation-fairness",
 			"title": "Economic Manipulation & Fairness",
 			"text_sha256": "0c432b7ac39ed4cbd85bca23a82fa9286f143052cbeb86e02a4aeb776f89d005"
-		},
-		{
-			"id": "81f45c75-f1c5-4fa5-bef2-7c46b63d7a2c",
-			"research_slug": "subspace",
-			"original_id": "tricobalt-device",
-			"title": "Tricobalt Device",
-			"text_sha256": "069889871dba20a1ae2ff0d4d30cb9f6b33eb8a024f65e986a93637f53e286d3"
 		},
 		{
 			"id": "82111acc-07e3-4acb-9e27-13c803c61a66",
@@ -14861,13 +14449,6 @@
 			"text_sha256": "98cb12846cba490a0b4330beb4efa0448430abe4ae21a9c5c98d1ee0034cc8b4"
 		},
 		{
-			"id": "8cfe672e-4462-4fd4-8c14-269535cac2b0",
-			"research_slug": "subspace",
-			"original_id": "disruptor-pistol-rifle",
-			"title": "Disruptor Pistols & Rifles",
-			"text_sha256": "1985b2c38f159d90d2af366ad24c22a7c714811a9e9a96a26d05213484ea8b9c"
-		},
-		{
 			"id": "8d03e07f-6543-4248-806f-c43edadc914f",
 			"research_slug": "grid",
 			"original_id": "usa__perovskite-tandem-solar",
@@ -14973,13 +14554,6 @@
 			"text_sha256": "6345afe85d8fff8f4492f0c4dca7c76d0ed5d230cf0efc2de0940e0f03ca2885"
 		},
 		{
-			"id": "8e09adcb-8cc8-41b7-a8e3-adbeff57de59",
-			"research_slug": "subspace",
-			"original_id": "tetryon-beam",
-			"title": "Tetryon Beam Emitter",
-			"text_sha256": "013f54b59ea4547eead94db27c31388fd2b4b191c8ffee8a1e86d1167539135e"
-		},
-		{
 			"id": "8e0b8170-0aaa-4c82-bd88-738085ebeda5",
 			"research_slug": "stratum",
 			"original_id": "australia-nz__lithium-hydroxide-refining",
@@ -15069,13 +14643,6 @@
 			"original_id": "china__ultra-deep-underground-particle-detection",
 			"title": "Ultra-Deep Underground Particle Detection",
 			"text_sha256": "1fb1e88acacc75bf37c163d0a5b268ae87d348eaafbd096a63eeaa57f7aecb94"
-		},
-		{
-			"id": "8eb41bc4-3c83-4b3b-90b9-9a56d2cebdf8",
-			"research_slug": "subspace",
-			"original_id": "baryon-sweep",
-			"title": "Baryon Sweep",
-			"text_sha256": "502394259497146d8ba83c5b8a1137eb8362be75de6dc3608cfff6a8e61163e8"
 		},
 		{
 			"id": "8eb743e2-5b9d-44dd-b74b-cf0ca4945cc4",
@@ -15328,13 +14895,6 @@
 			"original_id": "south-korea__korean-education-technology",
 			"title": "AI-Powered Education Technology",
 			"text_sha256": "372aebea03d8eddb37b2ed849fcf271390f84160463efd4294e92c8db996c166"
-		},
-		{
-			"id": "90c0f01d-725a-4d52-8375-62307c7b3492",
-			"research_slug": "subspace",
-			"original_id": "vulcan-katric-ark",
-			"title": "Katric Arks (Katra Containers)",
-			"text_sha256": "5a334f87bf34d722df89993319c859cfc135c8838766a4376a534424cd99c855"
 		},
 		{
 			"id": "90c51a53-4532-4f14-b07d-bf77cf0394f2",
@@ -15652,13 +15212,6 @@
 			"text_sha256": "3f2322425fc1db2c2bf2a7f04afdefa3fd50d4fdc109a1b7525a349a696743dd"
 		},
 		{
-			"id": "94ad248f-70a2-4af6-84a8-dbc4adfc26a2",
-			"research_slug": "subspace",
-			"original_id": "transporter-biofilter",
-			"title": "Transporter Biofilter",
-			"text_sha256": "1e35cd903d7cfece7038884e761c3a8bac4301f8a1dabd387ecbc7308b637513"
-		},
-		{
 			"id": "94b4f881-dcde-4354-b603-658a83c024a4",
 			"research_slug": "eclipse",
 			"original_id": "death-doula-marketplaces",
@@ -15974,25 +15527,11 @@
 			"text_sha256": "5e02ece1b580cf322d0ef24ad61199e3f726840fe79265b27969b9fc0766dd34"
 		},
 		{
-			"id": "978fc984-cc39-4194-a311-1192fc5176aa",
-			"research_slug": "subspace",
-			"original_id": "transport-inhibitor",
-			"title": "Transport Inhibitor",
-			"text_sha256": "632ea1a3fb19b302fd497a667dc9f484fb95fbb08342d76aa40e5f85003301cc"
-		},
-		{
 			"id": "979d1302-d87d-48dc-98e9-2dfa544fc760",
 			"research_slug": "superposition",
 			"original_id": "quantum-magnetometers",
 			"title": "Quantum Magnetometers",
 			"text_sha256": "f229e7d640d63858d9f35d4d776f42a717a877cdce5e330aa96adcbb4e5e4532"
-		},
-		{
-			"id": "97ab2efd-6bc2-4fe2-a6ba-c3627ba53225",
-			"research_slug": "subspace",
-			"original_id": "holoemitter-grid",
-			"title": "Holographic Emitter Grid",
-			"text_sha256": "411523219471337059e54b140285170ca807ade234be1c48cbe6b23cbb57b6bc"
 		},
 		{
 			"id": "97abd467-d042-4b0f-8f06-a8e940bae1dd",
@@ -16807,13 +16346,6 @@
 			"text_sha256": "eed75b55b93758ceec7f6d185d43367472bd55fe4d841e8b34fe63f8c4904117"
 		},
 		{
-			"id": "9eef13a7-49aa-4c71-a940-17d3596f4e62",
-			"research_slug": "subspace",
-			"original_id": "communicator",
-			"title": "Communicator Badge",
-			"text_sha256": "70582343e8babc1d1b916d79caee630af378ce84006a8cce7c634a8aa2c13ead"
-		},
-		{
 			"id": "9ef4516e-8cf4-4bf6-9c61-a4c3881d524c",
 			"research_slug": "horizons",
 			"original_id": "brain-chip-implant",
@@ -16996,13 +16528,6 @@
 			"text_sha256": "d89bb9d21f3750db690c96371d8bb124bff2a9dbdda4111c9b060b7d3970006e"
 		},
 		{
-			"id": "a1511601-e66c-4c16-a232-7efb43014568",
-			"research_slug": "subspace",
-			"original_id": "dyson-sphere",
-			"title": "Dyson Sphere",
-			"text_sha256": "dd6fd99bf373504d34c2574e85e3b8dc4f9f1f7ce6d36e659188df6cb5833155"
-		},
-		{
 			"id": "a158d245-0739-493a-a43f-81dd7c27905f",
 			"research_slug": "harvest",
 			"original_id": "autonomous-delivery",
@@ -17057,13 +16582,6 @@
 			"original_id": "mycelium-brick",
 			"title": "Mycelium Brick",
 			"text_sha256": "b240ecbc97b7e1f0e5438c9b7ae633dea5090e038b6de43b7ecb434b2a759deb"
-		},
-		{
-			"id": "a1c7378d-86bf-43cd-a53b-a5ff40aaac8e",
-			"research_slug": "subspace",
-			"original_id": "industrial-replicator",
-			"title": "Industrial Replicator",
-			"text_sha256": "1a7b4a97c94da0a0024fdf70e270960bd06c686cb83d41d02c95e9cb760fb535"
 		},
 		{
 			"id": "a1ca0d34-1f08-42bf-9e67-dd66e343cdb9",
@@ -17381,13 +16899,6 @@
 			"text_sha256": "f476762dc106d219c1957672160eb2fd55af6f79b7e4893acd45f3838514b028"
 		},
 		{
-			"id": "a47366a8-42f8-4d5f-8541-306a551dd240",
-			"research_slug": "subspace",
-			"original_id": "transporter-pattern-buffer-storage",
-			"title": "Transporter Pattern Buffer (Extended)",
-			"text_sha256": "837bafefc84fcf8155db475f82bd24ae00b8af13870db245fc642260bd40e305"
-		},
-		{
 			"id": "a48e7dad-a9fc-4e1a-836f-1b40a30ec450",
 			"research_slug": "aegis",
 			"original_id": "israel__intelligence-fusion-platforms",
@@ -17500,13 +17011,6 @@
 			"text_sha256": "567c66917d561e10d11e52f9ed85401bc57efe4dc68fe1efc72784128657045a"
 		},
 		{
-			"id": "a5cc66b9-1f58-4776-9359-adfa18b7a6b5",
-			"research_slug": "subspace",
-			"original_id": "plasma-weapon",
-			"title": "Plasma Weapon",
-			"text_sha256": "5cc492ad4f53d4ea7e44315d2babfc678f33934ce15ca699a850f3c7394a7c29"
-		},
-		{
 			"id": "a5d76aaa-a322-4d95-b646-7abacf7a5582",
 			"research_slug": "link",
 			"original_id": "quantum-communication-backbones",
@@ -17575,13 +17079,6 @@
 			"original_id": "canada__perimeter-institute-theoretical-physics",
 			"title": "Perimeter Institute Theoretical Physics Research",
 			"text_sha256": "e03c15e730c8922544f93986d5260a5d693662b8dc1415ad4d00b44a30baf0fe"
-		},
-		{
-			"id": "a6280051-fcca-49a1-9ee8-e5e82c2d3c29",
-			"research_slug": "subspace",
-			"original_id": "site-to-site-transport",
-			"title": "Site-to-Site Transport",
-			"text_sha256": "5954dbaa97783fb639d15656469ecfecbae4d7cc0ea926d2fb774d743cab9457"
 		},
 		{
 			"id": "a63caa01-c6f7-4336-9b2a-887aa8e804bd",
@@ -17913,13 +17410,6 @@
 			"text_sha256": "10c5baed11175faa327e2ead57e035e70719e85d400fe046d20996eb6cc77323"
 		},
 		{
-			"id": "a8dd587c-e9c8-4f5b-946c-f857925bbbae",
-			"research_slug": "subspace",
-			"original_id": "ferengi-rules-database",
-			"title": "Rules of Acquisition Database Nodes",
-			"text_sha256": "10230e4ec86e0ab605526221960154c0d9a09d3ec2b304104feef56f2f4f3d7b"
-		},
-		{
 			"id": "a8df3e3c-b451-4795-9429-33d9066a2b6d",
 			"research_slug": "harvest",
 			"original_id": "soft-robotic-grippers",
@@ -17932,13 +17422,6 @@
 			"original_id": "japan__h3-launch-vehicle",
 			"title": "H3 Launch Vehicle",
 			"text_sha256": "54fae0b5002183263c753f7cfa4b1696ba66c39081a798ec8fc4179d3924750b"
-		},
-		{
-			"id": "a8e28d68-50d1-4c62-91a3-f5ea60c2b541",
-			"research_slug": "subspace",
-			"original_id": "mobile-emitter",
-			"title": "Mobile Holographic Emitter",
-			"text_sha256": "8596ea4db663b4ddf67748bfe7e154fe6058ee819db92a8eb6bad9cb0ac4190a"
 		},
 		{
 			"id": "a8e5af81-a0c1-4f90-9bdc-9c9c30a98919",
@@ -18123,13 +17606,6 @@
 			"text_sha256": "44b05a987746d19bec57eeae97901bf41abbf688a6efef181d9d5e7cbd441147"
 		},
 		{
-			"id": "aaceb0ff-afea-411a-b1d7-42ec82aba7ef",
-			"research_slug": "subspace",
-			"original_id": "universal-translator",
-			"title": "Universal Translator",
-			"text_sha256": "8fac7f51089cf1d580cfa19862205aba2c028169f1313f631f4c4589980f2c41"
-		},
-		{
 			"id": "aad640fe-88b9-4d53-b3b0-32ef9c91a919",
 			"research_slug": "grid",
 			"original_id": "israel__natural-gas-offshore-extraction",
@@ -18177,13 +17653,6 @@
 			"original_id": "neuro-symbolic-reasoning-systems",
 			"title": "Neuro-Symbolic Reasoning Systems",
 			"text_sha256": "8bef6ea61fc21532ad92d6b6b6b3b2c917c96e9f158c88833d73bd5cd106327f"
-		},
-		{
-			"id": "ab247c4c-fd6a-4281-8ed6-d67ec140e692",
-			"research_slug": "subspace",
-			"original_id": "sonic-shower",
-			"title": "Sonic Shower",
-			"text_sha256": "744a41b8781d590a98528b105d093eb880ebddb87acff36286ee459f0031f4e9"
 		},
 		{
 			"id": "ab31d166-fb96-45a1-9f43-a903c44243fe",
@@ -18284,13 +17753,6 @@
 			"text_sha256": "f3499369913af25bfeeb8c07d673dd6449c3f5b4dbec7e0cd96331c73470a899"
 		},
 		{
-			"id": "ac21081a-bd0e-463b-96ac-2e780ae24ee4",
-			"research_slug": "subspace",
-			"original_id": "jefferies-tubes",
-			"title": "Jefferies Tubes",
-			"text_sha256": "ab2a5ad3f53ee9c844cfd9fcfa874c4a43782037a8634bd1c6435d5ff851e460"
-		},
-		{
 			"id": "ac21a0ec-d691-4df1-9acb-ccf967c726da",
 			"research_slug": "meridian",
 			"original_id": "africa__meerkat-radio-telescope",
@@ -18310,13 +17772,6 @@
 			"original_id": "physical-internet",
 			"title": "Physical Internet (PI)",
 			"text_sha256": "678c4f78c14cc907fa06d9583885ce5229025ecf41f2ac5d5d7e61b1d9123d90"
-		},
-		{
-			"id": "ac868264-f519-46e1-9db2-6b1eef6dbdbe",
-			"research_slug": "subspace",
-			"original_id": "zero-point-energy-module",
-			"title": "Zero-Point Energy Module",
-			"text_sha256": "a890d766e91b1ac921c0f55a79a510fe2a25aca3dc7f26f29098f9cf1d98dcfc"
 		},
 		{
 			"id": "ac9b2c68-aa2f-4b0e-914b-2d7e2c3de265",
@@ -18340,25 +17795,11 @@
 			"text_sha256": "5ff92b9fc87dd58a6ead56337cdd801569386476d647c4830e42cd5dcf2fc4ba"
 		},
 		{
-			"id": "accacde1-b71c-448e-a81e-8fd8673fada4",
-			"research_slug": "subspace",
-			"original_id": "borg-assimilation-tubules",
-			"title": "Assimilation Tubules",
-			"text_sha256": "90d14d791d9df5430b46361123018a6828943de1b79888f11db9c582f41097e0"
-		},
-		{
 			"id": "ad192de9-80c2-459b-8c77-d5f669c7f291",
 			"research_slug": "grid",
 			"original_id": "europe__small-modular-nuclear-reactors",
 			"title": "Small Modular Nuclear Reactors",
 			"text_sha256": "365a710e7c0d1d2c8ab5dcf1674fc3ae92f43cb41806bedc583aa7558c917a86"
-		},
-		{
-			"id": "ad23c87f-29ae-42a1-9517-a8d6268bc2bc",
-			"research_slug": "subspace",
-			"original_id": "navigational-deflector",
-			"title": "Navigational Deflector Array",
-			"text_sha256": "b325ae487289f7b9e470a7b0abc92d4830406628f375cbda8fbdb8ac1e08e6c2"
 		},
 		{
 			"id": "ad578138-3c3c-4b6a-858c-43dc80c7592a",
@@ -18921,13 +18362,6 @@
 			"text_sha256": "94d99c812503e375e4ad077d68f8938bc0b273d9bda8d2c48dbf101f88a8b023"
 		},
 		{
-			"id": "b34c2ab0-cfc6-4fe9-aad9-958f492dac25",
-			"research_slug": "subspace",
-			"original_id": "tricorder",
-			"title": "Tricorder",
-			"text_sha256": "b716db8265f4cc6c110c82ac53caec71f0f1f24e47f09a03eb4e10f20e363113"
-		},
-		{
 			"id": "b34c7057-59da-42a7-a7f5-166a890e9c8c",
 			"research_slug": "continuum",
 			"original_id": "planetary-gene-banks",
@@ -19355,13 +18789,6 @@
 			"text_sha256": "94d04b9d54384b0015e7cc087f3b8fcae991db30637efbee1a98237a10a4255c"
 		},
 		{
-			"id": "b7bf40e2-2afd-4ec8-b9e0-4a64359de701",
-			"research_slug": "subspace",
-			"original_id": "artificial-gravity",
-			"title": "Artificial Gravity Plating",
-			"text_sha256": "ba93bd8517c40dd44f0c8ccaf743b86447d74236df77a78a6c6749fdc27e5501"
-		},
-		{
 			"id": "b7ce376c-3e43-4d6d-83af-9bdf808fab9a",
 			"research_slug": "cortex",
 			"original_id": "wetware-computer",
@@ -19607,32 +19034,11 @@
 			"text_sha256": "274d2698603e1a67332b0d34f1e75540b34ab9c6b61c56087e84cf5f08d03962"
 		},
 		{
-			"id": "b9e2adae-ba0c-4b61-8beb-7078a76a77ef",
-			"research_slug": "subspace",
-			"original_id": "multitronic-m5",
-			"title": "Multitronic M-5",
-			"text_sha256": "c7c68a10dc126bc75ed895d0b4d7d44c529cb3b50997a8d345ce30d04a561cf9"
-		},
-		{
-			"id": "b9e870c5-ae00-4fc1-8120-4726bc7713ce",
-			"research_slug": "subspace",
-			"original_id": "vulcan-kolinahr-apparatus",
-			"title": "Kolinahr Ritual Apparatus",
-			"text_sha256": "2487a2d07cd3a2ee3ad2bb2353fba73f43c54ee2898b0c582fd38a5d03aa6e12"
-		},
-		{
 			"id": "ba1ce377-8877-4ac2-ab5d-a1b555330d38",
 			"research_slug": "helix",
 			"original_id": "south-korea__antibody-drug-conjugate-platforms",
 			"title": "Antibody-Drug Conjugate (ADC) Technology Platforms",
 			"text_sha256": "56212945ea71696775ef522013cee96c910fc6c89ba8b439990fceec06a06831"
-		},
-		{
-			"id": "ba2aa97c-7211-4f56-a47c-131a49abcaa8",
-			"research_slug": "subspace",
-			"original_id": "ablative-armor",
-			"title": "Ablative Armor",
-			"text_sha256": "cdb3ce3eb3809d824af087de246fbae28fa6cdb20850f9e8e523f223abe5a4cb"
 		},
 		{
 			"id": "ba36bcd6-cd9d-4d2e-ad11-33e089666f2b",
@@ -19668,13 +19074,6 @@
 			"original_id": "blockchain-of-things-bot",
 			"title": "Blockchain of Things (BoT)",
 			"text_sha256": "c37b0a66dd80b205f06ac4baa17b837d8f1da9c95425e68dcb9b6f7ba80f0a38"
-		},
-		{
-			"id": "ba7fa4e2-97b7-4546-bd9b-0430cc6fe755",
-			"research_slug": "subspace",
-			"original_id": "dermal-regenerator",
-			"title": "Dermal Regenerator",
-			"text_sha256": "a2ce6518bfc503db6b6fc5c351a4710d8461452494983fc7127bbcb0203da852"
 		},
 		{
 			"id": "ba7fa5c3-f5b0-4cc8-ad2d-aaddbbf9b566",
@@ -19719,13 +19118,6 @@
 			"text_sha256": "20ea78ea5874205be8026b68dcd3bc7c50a0cc1679313b0b0360a3dc56407fe5"
 		},
 		{
-			"id": "bacc7307-82a1-4047-944f-7d92b7219696",
-			"research_slug": "subspace",
-			"original_id": "viewscreen",
-			"title": "Main Viewscreen",
-			"text_sha256": "cf06d8f2e87ad973e06db64354226c0268a97565fe9422debf96a9be10557a89"
-		},
-		{
 			"id": "bacd7910-a4d3-4c2e-9c11-8d01b055816b",
 			"research_slug": "prism",
 			"original_id": "electromagnetic-haptic-arrays",
@@ -19738,13 +19130,6 @@
 			"original_id": "cognitive-security-platforms",
 			"title": "Information Operations & Cognitive Security Platforms",
 			"text_sha256": "08352c7ed498af36173a014763a2e0868881a411e07ba88017b86e2d51d95766"
-		},
-		{
-			"id": "bb046c19-acc2-46ae-8679-12dfa1ef5da6",
-			"research_slug": "subspace",
-			"original_id": "positronic-brain",
-			"title": "Positronic Brain",
-			"text_sha256": "df9f4aac7a2003e9a7316809dff40a7c584a0f323d5e95c6017a879b46fb8c24"
 		},
 		{
 			"id": "bb05db55-33b4-4e61-9f21-c5f1ae22f30a",
@@ -19836,13 +19221,6 @@
 			"original_id": "south-korea__kass-satellite-augmentation",
 			"title": "Korea Augmentation Satellite System (KASS)",
 			"text_sha256": "6c67bbbced6ef4dc1662c7a33c7340591f67f7c24f1e1415a3f6b5522310bf79"
-		},
-		{
-			"id": "bbd58c91-a7fa-4076-b818-bb03c40fdaa0",
-			"research_slug": "subspace",
-			"original_id": "transporter",
-			"title": "Transporter",
-			"text_sha256": "b5fa22d62270677aab11719435cd5c4898c09a4364a119eb3f6ae79f7b311018"
 		},
 		{
 			"id": "bbdc8dc5-33f7-4e53-83bd-039cfee7ba56",
@@ -20342,13 +19720,6 @@
 			"text_sha256": "0bc4d04448d34e3d1846ccf6286d555fd9cccda11894a5aac9af481ab0cf0e7e"
 		},
 		{
-			"id": "c0e6b087-b7e7-410f-aa41-8404e7c5f9ac",
-			"research_slug": "subspace",
-			"original_id": "warp-drive",
-			"title": "Warp Drive",
-			"text_sha256": "d878264009a83900086fe88c4224c3893c4bf130a0438317a598d54135f185cd"
-		},
-		{
 			"id": "c0ffed5b-f9fa-4dc4-9cc5-0a399dbebcc5",
 			"research_slug": "link",
 			"original_id": "ris",
@@ -20361,13 +19732,6 @@
 			"original_id": "death-care-environmental-monitoring",
 			"title": "Death Care Environmental Monitoring",
 			"text_sha256": "d83126baedabcecaa6f77d7879e3cacdf38ea144cd77b55f8047cc683a9bf47e"
-		},
-		{
-			"id": "c130ee5f-fb20-4259-a99d-7859bc455766",
-			"research_slug": "subspace",
-			"original_id": "metaphasic-shields",
-			"title": "Metaphasic Shields",
-			"text_sha256": "da3c82e4c6bb856f8450d05830d97b07ab034d9b7986cabd68f47b04fc62f7d0"
 		},
 		{
 			"id": "c1400c3b-ef73-4365-af7e-403205dd970f",
@@ -21042,13 +20406,6 @@
 			"text_sha256": "f3f214008f8f475e18cf48aeab7cb109dcefcd6936e5e3d1f0f58008ecccebd1"
 		},
 		{
-			"id": "c7f15b8e-5fb8-4752-be79-7492ae540d04",
-			"research_slug": "subspace",
-			"original_id": "long-range-sensors",
-			"title": "Long-Range Sensors",
-			"text_sha256": "05c3b96c83da41e07f86c62cd7d4e28ea9b0e88976f4a8a217a5006be2100efb"
-		},
-		{
 			"id": "c808d0b0-d348-441a-9618-f8f7c1f8c99a",
 			"research_slug": "moradia",
 			"original_id": "privacidade-dados-espacos-publicos",
@@ -21098,13 +20455,6 @@
 			"text_sha256": "d61ac497c417e0ebef4eb24ea65a9d76b34dab6b41fa7efdfd22d744bb12e596"
 		},
 		{
-			"id": "c84ddb2d-7c97-4d6f-8cf4-d6ade136ba6b",
-			"research_slug": "subspace",
-			"original_id": "medical-tricorder",
-			"title": "Medical Tricorder",
-			"text_sha256": "4bccc36ef7fb0b474eb0047a16b3adb9af014d7c463fa871c8aa7d9781f46542"
-		},
-		{
 			"id": "c84fcde8-5156-4b24-92b4-32e4ff6cbb77",
 			"research_slug": "quadrant",
 			"original_id": "soft-robotics-actuators",
@@ -21145,20 +20495,6 @@
 			"original_id": "south-korea__bipedal-logistics-robots",
 			"title": "Warehouse and Logistics Robots",
 			"text_sha256": "3dad3943f63e0a05706810e124c453b764485bfbcb78b8d099ad65b854db067d"
-		},
-		{
-			"id": "c8bd0971-28a8-435f-bbee-6fee0309a223",
-			"research_slug": "subspace",
-			"original_id": "q-continuum-constructs",
-			"title": "Q Continuum Spatial Constructs",
-			"text_sha256": "86d7e5ff8a0554c30fc3579fa7cea311e2a137eddfa9669fe80f96c2c667c9e8"
-		},
-		{
-			"id": "c8c74a74-798e-4ecb-811c-4b7885536edb",
-			"research_slug": "subspace",
-			"original_id": "rcs-thrusters",
-			"title": "RCS Thrusters",
-			"text_sha256": "3b7a8f9d4c70025f22e6dbdb723e443ccfca0aeff9179df0f4ac50dfeaa2be23"
 		},
 		{
 			"id": "c8d8f6bc-581d-4e44-9338-8890f1781836",
@@ -21413,13 +20749,6 @@
 			"text_sha256": "ad87d49639d66a6e640c68e48734339f07fd4a9d0668fad0cf3e1f8d97e45a08"
 		},
 		{
-			"id": "cb208b00-528a-4d99-8ba3-310ba041ddf9",
-			"research_slug": "subspace",
-			"original_id": "soliton-wave",
-			"title": "Soliton Wave Rider",
-			"text_sha256": "dcbc9d3068310493ff823c46734a9ed9abe4db6b619099be9dfa28213059dd75"
-		},
-		{
 			"id": "cb2af21c-0029-4cb2-9683-393b8044a44f",
 			"research_slug": "vitals",
 			"original_id": "chronic-virtual-care-programs",
@@ -21432,13 +20761,6 @@
 			"original_id": "gulf-states__tii-autonomous-robotics",
 			"title": "TII Autonomous Robotics Research",
 			"text_sha256": "272625abe79c66e674c605f9a6293afd258bb069b54233d9857dae3942b533d0"
-		},
-		{
-			"id": "cb3a3045-d918-4cd1-b88a-369b5071ea5a",
-			"research_slug": "subspace",
-			"original_id": "subspace-anomaly-detector",
-			"title": "Subspace Anomaly Detector",
-			"text_sha256": "a6f7658496fea74552bd7e464b68cfd790662f45268575c2aeebb1cb2b50274d"
 		},
 		{
 			"id": "cb3a7893-fe08-46e2-8b9b-a355b6d8d22e",
@@ -21567,13 +20889,6 @@
 			"text_sha256": "fda1363f2b1b1e2362cd5a38bd50b824d788da3b8f1d493e470be147912385f5"
 		},
 		{
-			"id": "cc75166f-1ac4-499f-ab80-afeb04f3a3e3",
-			"research_slug": "subspace",
-			"original_id": "nanite-swarm",
-			"title": "Nanite Swarm",
-			"text_sha256": "8ed5cf4dc69f7a9638c103b07e43a2d37d99b5ed586990900bf30bdb80a2bb7c"
-		},
-		{
 			"id": "cc77b952-a087-476d-bb4b-4659beabb338",
 			"research_slug": "aegis",
 			"original_id": "usa__directed-energy-weapons",
@@ -21607,13 +20922,6 @@
 			"original_id": "cognitive-liberty-rights",
 			"title": "Cognitive Liberty Rights",
 			"text_sha256": "ea8fbfc455cda4d97f2f6d2f7fcc463c96f0ed6ca94626ae4c39c18360c96ee5"
-		},
-		{
-			"id": "ccb4fcd3-7c98-454a-82b8-4b77c10f9229",
-			"research_slug": "subspace",
-			"original_id": "ablative-armor-generator",
-			"title": "Deployable Ablative Armor Generator",
-			"text_sha256": "145c114d96f4e456891180d84c016af104c14f9df997410c99947c0f4f07feb9"
 		},
 		{
 			"id": "ccb51496-1ad7-469b-90d4-cc3c22d347df",
@@ -21663,13 +20971,6 @@
 			"original_id": "responsabilidade-legal-falhas-tecnicas",
 			"title": "Responsabilidade Legal por Falhas Técnicas",
 			"text_sha256": "47d01637ceb9d1fc9074754100cf53184b27c7002861f414a4b0e4d7ae6516d2"
-		},
-		{
-			"id": "cce9baf9-cae8-4661-991b-86d9dc567cbf",
-			"research_slug": "subspace",
-			"original_id": "trilithium-weapon",
-			"title": "Trilithium Weapon",
-			"text_sha256": "284822b4104c5fa481218db6f1baaa3d104a5c09d550df61b7904ba1063e866f"
 		},
 		{
 			"id": "ccf66a7e-8d33-4baf-98b5-0fc030c3386c",
@@ -21796,13 +21097,6 @@
 			"original_id": "indigenous-identity-protection",
 			"title": "Indigenous Identity Protection Frameworks",
 			"text_sha256": "a0e86e6d69d9db9897b63e4bd2893cdfb75a5afd4e5069d19ea3ba4d61ed7db3"
-		},
-		{
-			"id": "ce7648bd-9376-4734-be76-ed6787068438",
-			"research_slug": "subspace",
-			"original_id": "planetary-shield-grid",
-			"title": "Planetary Shield Grid",
-			"text_sha256": "09bce7a37eeab98a23693cb23092db49aa3d7cb6d182e51aaddd384b8b8b6920"
 		},
 		{
 			"id": "ce89129a-9c6c-4606-990a-8efdf2402463",
@@ -22176,13 +21470,6 @@
 			"text_sha256": "c5cbbf89fc568d0b1a6c7c295f1dffad18966bb26d33b792a2d56fa8a2fd7a88"
 		},
 		{
-			"id": "d1a1bd3f-dfb3-41aa-96f2-86af39607b3b",
-			"research_slug": "subspace",
-			"original_id": "klingon-ascension-chamber",
-			"title": "Rite of Ascension Chamber",
-			"text_sha256": "82624bf286a3ff71893b82c7ac066b5499ef620f3b6e595528e17271bf08d736"
-		},
-		{
 			"id": "d1dc1976-55c0-46c3-8e32-23daa9e65133",
 			"research_slug": "grid",
 			"original_id": "usa__fusion-energy-frc",
@@ -22251,13 +21538,6 @@
 			"original_id": "edible-beauty-supplements",
 			"title": "Edible Beauty Supplements",
 			"text_sha256": "636b8ea9f2f4623935a9a6f266803a07613db9ef5bedcc277aec36ba4d7fe727"
-		},
-		{
-			"id": "d249c333-f806-46c2-94a0-0a2c6d903c45",
-			"research_slug": "subspace",
-			"original_id": "cloaking-device",
-			"title": "Cloaking Device",
-			"text_sha256": "cce787883ef8eb303ca95436374181b07d923a71012cac472f144f1f4f96dd3d"
 		},
 		{
 			"id": "d26fa40d-7011-4a37-a174-8d8a15dc273b",
@@ -22533,13 +21813,6 @@
 			"text_sha256": "6fd9cd86380ec00a024605725be87b53ba5d9bd50afe267d2ef7df7ffc35c169"
 		},
 		{
-			"id": "d5374c4b-da77-4bcc-ab22-52c4c1c06c06",
-			"research_slug": "subspace",
-			"original_id": "borg-industrial-replicator",
-			"title": "Borg Industrial Replicator",
-			"text_sha256": "2c3b3c644328fde2538d0db8575cb990640ef7b670cb243928303bea44969ca5"
-		},
-		{
 			"id": "d571f8d8-bcb6-45a1-9a58-b805573db352",
 			"research_slug": "fabric",
 			"original_id": "ai-material-property-modeling",
@@ -22813,13 +22086,6 @@
 			"text_sha256": "ef5ea59c9753b8c6357c9e419a9f4c9f105d421f28f49c0665a413c5b7bb8ab6"
 		},
 		{
-			"id": "d7b1b7f1-69e1-40fe-9cfa-77366e492c09",
-			"research_slug": "subspace",
-			"original_id": "photon-torpedo",
-			"title": "Photon Torpedo",
-			"text_sha256": "0cb37528dd56c63a317e6f81acbcf21b8886f7ad977a4c47b9359d079d264fd1"
-		},
-		{
 			"id": "d7d90e4c-6933-4f51-b6ed-bc55f0308543",
 			"research_slug": "spore",
 			"original_id": "green-nitrogen-fixation",
@@ -23065,13 +22331,6 @@
 			"text_sha256": "6f901c4d3fa43d5413c829956c741682b95f78b241db596cad1644a6d7d732c8"
 		},
 		{
-			"id": "da3e94ee-520e-4838-9e7f-d92625a657ee",
-			"research_slug": "subspace",
-			"original_id": "phaser-rifle",
-			"title": "Compression Phaser Rifle",
-			"text_sha256": "b724f72202e132fd4d73a79fbd4d2d96a5e31f8f02d53bf3a1b3bc5285e7d03a"
-		},
-		{
 			"id": "da4c690f-00e4-46f3-acf7-90623acfa20f",
 			"research_slug": "superposition",
 			"original_id": "cat-qubits",
@@ -23091,13 +22350,6 @@
 			"original_id": "digital-mortality-norms",
 			"title": "Digital Mortality & Lifecycle Norms",
 			"text_sha256": "b0ccf7f9ea517403d0b9d7473dc25de4715f4f1d4e9f444a748666a5b4391ecb"
-		},
-		{
-			"id": "da74eef4-6d05-42d9-9325-564b391339ff",
-			"research_slug": "subspace",
-			"original_id": "hypospray",
-			"title": "Hypospray",
-			"text_sha256": "c60ca3a99dd55702ef91f5f41dde5580cd691bc6d0cf9c3468907b080175442c"
 		},
 		{
 			"id": "da90a0f1-c758-4b5b-9ee6-fdb0bf6c22cb",
@@ -23275,13 +22527,6 @@
 			"text_sha256": "2a15d13bca69ad385ad7d8fdeddbe7b228ff4dc0e00ea0f2bc304899b80cf764"
 		},
 		{
-			"id": "dc50c4ab-c8f9-4143-a7cc-ce2b41f45d60",
-			"research_slug": "subspace",
-			"original_id": "fusion-reactor",
-			"title": "Fusion Reactor",
-			"text_sha256": "ad850d870634a5871b80cd0dcd1f4a95b5d15efc1c09d853ef45876fdd9c8554"
-		},
-		{
 			"id": "dc5b3eb6-80f2-4ce6-912a-e58432cb3f74",
 			"research_slug": "aura",
 			"original_id": "ultrasonic-skin-cleansing-tools",
@@ -23336,13 +22581,6 @@
 			"original_id": "cryopreservation-systems",
 			"title": "Cryopreservation Systems",
 			"text_sha256": "d70ee0e4e241576c84b64db3f898aefdec9e56cee15aa415cd1b08e1f0e527d0"
-		},
-		{
-			"id": "dcce2542-756a-43b8-81bb-5a9da6e74359",
-			"research_slug": "subspace",
-			"original_id": "optical-data-network",
-			"title": "Optical Data Network (ODN)",
-			"text_sha256": "6e0571066a6c50118a1b6e2dca6056484897eef2576569ae71bf781ae696bf51"
 		},
 		{
 			"id": "dd049e2a-5d01-4475-8c7c-e98ae0f5f6ae",
@@ -23413,13 +22651,6 @@
 			"original_id": "climate-resilient-crop-systems",
 			"title": "Climate-Resilient Crop Systems",
 			"text_sha256": "f37210c5f68dd70d94d935a7fe39bf174c8f5862bb2a1a3ff841f9a34d0530b1"
-		},
-		{
-			"id": "ddc39dad-0225-4bd3-9356-fc5540d58a86",
-			"research_slug": "subspace",
-			"original_id": "neural-interface-implant",
-			"title": "Neural Interface Implant",
-			"text_sha256": "28e2f745f3f246ba2f1513aa035b927f47f03edebb7b296f60b2fc2641105ce6"
 		},
 		{
 			"id": "ddcecda6-edb1-4f6b-864d-def3e1c5d96d",
@@ -23786,13 +23017,6 @@
 			"text_sha256": "29f61f71d9c55a9f30c265299c1d7a88aab1ff78c988089a468950389f54d477"
 		},
 		{
-			"id": "e113f92b-4529-4c53-9d89-38f6da88ce3b",
-			"research_slug": "subspace",
-			"original_id": "turbolift",
-			"title": "Turbolift",
-			"text_sha256": "e935663472ceb913577ad7fdf4fb394beb29b415ac657f8699cbcc4796db01cb"
-		},
-		{
 			"id": "e11b6ab7-eafa-436b-8691-a6e671501bad",
 			"research_slug": "fabric",
 			"original_id": "biofabricated-collagen-fibers",
@@ -23896,13 +23120,6 @@
 			"original_id": "equitable-death-tech-access",
 			"title": "Equitable Death Tech Access",
 			"text_sha256": "0ba7ffb65bd3b786b07acc4a2a795c634e575698a0a5d0b6cc8e47c096446758"
-		},
-		{
-			"id": "e22eee67-08de-4b5e-9f6d-2cc181553659",
-			"research_slug": "subspace",
-			"original_id": "variable-geometry-warp-nacelles",
-			"title": "Variable Geometry Warp Nacelles",
-			"text_sha256": "6b742e4f5e04fbdaf695963d535cc79ad796b94604a10533698a03c10f6d5d41"
 		},
 		{
 			"id": "e231028d-d503-419d-975f-fa02e2ad93ad",
@@ -24122,13 +23339,6 @@
 			"text_sha256": "bf633a7eeab6e727d0047435ac7e4694974a677f11b9c8b59f5d4e2033979b8e"
 		},
 		{
-			"id": "e37f55df-3554-48e0-ad4e-104cdc1c41b2",
-			"research_slug": "subspace",
-			"original_id": "astrometrics",
-			"title": "Astrometrics Lab",
-			"text_sha256": "e9e4d03a81b452f3add55a615bf1d23165218d43de91e9b05be9e162e34a3910"
-		},
-		{
 			"id": "e3853057-da6e-4755-993c-12e56897a3e0",
 			"research_slug": "fabric",
 			"original_id": "fast-fashion-jit-replenishment-networks",
@@ -24346,13 +23556,6 @@
 			"text_sha256": "bd787ecd69c035ae608ff698db240ab4a6f10d8e7e5741ed39c4f0a25db05cad"
 		},
 		{
-			"id": "e6e1fb11-1daa-4ab8-9fbd-17a916b19a88",
-			"research_slug": "subspace",
-			"original_id": "pattern-enhancer",
-			"title": "Transport Pattern Enhancer",
-			"text_sha256": "9e9d09b23a196871bfd3fa4b2410305a1f7a1c278eba58949dd66b92b6e0e578"
-		},
-		{
 			"id": "e707b4f9-84b2-45c0-9f96-a77de73b25a8",
 			"research_slug": "grid",
 			"original_id": "gulf-states__gcc-smart-grid",
@@ -24470,13 +23673,6 @@
 			"original_id": "responsible-recommendation-systems",
 			"title": "Responsible Recommendation Systems",
 			"text_sha256": "6df9bb23ed7b687b4ad77737e147379549c8f3ccad8fe71be1d891968fa004e5"
-		},
-		{
-			"id": "e7db9887-9ef1-4888-9fdf-0a2f19075267",
-			"research_slug": "subspace",
-			"original_id": "phase-cloak",
-			"title": "Phased Cloaking Device",
-			"text_sha256": "fd7492b621d9c6dde8e4046174e846db15e9e9062680235ee18a0fd72d05c45c"
 		},
 		{
 			"id": "e7dd6b3d-491d-4365-b93c-2a400d19cebe",
@@ -24598,13 +23794,6 @@
 			"text_sha256": "c63249374ceb6e1e55431bd2bfb372f687c29609b8769fd5331178c3f806bdca"
 		},
 		{
-			"id": "e8d88522-ad85-4483-af03-24b34c03d5dd",
-			"research_slug": "subspace",
-			"original_id": "tractor-beam",
-			"title": "Tractor Beam",
-			"text_sha256": "a281eb053a55798dfa8d84f7829d6e178811b55c08a0398cdcdc475c4b64e9dc"
-		},
-		{
 			"id": "e8f16cf2-cfe7-495e-99fa-7a3371a5df10",
 			"research_slug": "vector",
 			"original_id": "iran__indigenous-metro-rolling-stock",
@@ -24694,13 +23883,6 @@
 			"original_id": "canada__shopify-commerce-platform",
 			"title": "Shopify Commerce Infrastructure",
 			"text_sha256": "18169bb0974569ef53b8d5329e74c8c19eb6ae764e280df1efefe1d9f0711827"
-		},
-		{
-			"id": "ea715fa0-f5a0-40b8-85b1-81d14b028051",
-			"research_slug": "subspace",
-			"original_id": "subspace-radio",
-			"title": "Subspace Radio",
-			"text_sha256": "bda81ada6c48974be24e7e64a741e3f3c32ebe88bb3429c1c1d81f10f780d831"
 		},
 		{
 			"id": "eac52e20-db94-41b2-b6b7-e682491f19e3",
@@ -24885,13 +24067,6 @@
 			"text_sha256": "da0ca5789ee52ee48d9d55d264af68f6d7cb415eb15684d532dd77b06cb35100"
 		},
 		{
-			"id": "ed968f3a-bd9b-4de9-8a18-3adaf7dbf440",
-			"research_slug": "subspace",
-			"original_id": "bio-signature-scanner",
-			"title": "Bio-Signature Scanner",
-			"text_sha256": "7b4c32c24282ed9922fe668f75885d03247753d18e6bbe8e2d1ca5ed71e855b7"
-		},
-		{
 			"id": "ed96a2e6-f70c-4fc5-a03b-61b467d656a1",
 			"research_slug": "vault",
 			"original_id": "europe__sepa-instant-payment-infrastructure",
@@ -25051,13 +24226,6 @@
 			"original_id": "israel__concentrated-solar-power",
 			"title": "Concentrated Solar Power and Agri-Solar Integration",
 			"text_sha256": "ddbad85a9595b52dc796fd753d11623f08caf3ca20182d116e02a4d884d7389a"
-		},
-		{
-			"id": "ef4d8436-fb4e-4a6c-ad36-9f2814137bec",
-			"research_slug": "subspace",
-			"original_id": "vulcan-neuropressure-system",
-			"title": "Vulcan Neuropressure",
-			"text_sha256": "0c35ed31d83d5759ecd53cb7e4fa7ea24239312f39116c19a3e12014d5434886"
 		},
 		{
 			"id": "ef4e302d-0f3b-4e10-a35d-564f7162290d",
@@ -25361,13 +24529,6 @@
 			"text_sha256": "88b9884e1cf56aa31e5060cfbfd4cc7de80f25ebb40620034aaf152797b9615f"
 		},
 		{
-			"id": "f1f35f77-c4f0-4f90-8335-b1f7c780f051",
-			"research_slug": "subspace",
-			"original_id": "visual-communication-system",
-			"title": "Visual Communication System",
-			"text_sha256": "9f7aa6aeff326e1fda543fb6c22725dd2917dfa4e49d41a957203c4c82334adf"
-		},
-		{
 			"id": "f20973fd-d473-41c1-8bf6-8e536305fd23",
 			"research_slug": "eros",
 			"original_id": "collective-ritual-hardware",
@@ -25557,25 +24718,11 @@
 			"text_sha256": "23d646554d183ea557926c1fb11eff3a3dc5cc0d1543cf0c390d9625754bc1bc"
 		},
 		{
-			"id": "f371f01c-e37e-4cc2-b95c-789c8778582a",
-			"research_slug": "subspace",
-			"original_id": "isolinear-chips",
-			"title": "Isolinear Chips",
-			"text_sha256": "e883066f0fe4eda5a0b219e8ddd136e5adf3abfb4b18639a8bd5db521798e6aa"
-		},
-		{
 			"id": "f37acf18-b960-40ad-bfbe-5e7d29685863",
 			"research_slug": "substrate",
 			"original_id": "australia-nz__silicon-phosphorus-quantum-computing",
 			"title": "Silicon-Phosphorus Quantum Computing",
 			"text_sha256": "eb5d314cbd3767d720f52696a7ec9acc48646a67bc24fc4a618d443898ecec9b"
-		},
-		{
-			"id": "f37d506d-a730-4c9b-9fb0-30e6e606989b",
-			"research_slug": "subspace",
-			"original_id": "neural-stimulator",
-			"title": "Cortical Stimulator",
-			"text_sha256": "5f1fdb96cef3fe4ad83436ab06058ab770f83b5e501a51c0b56d40c74d5718dd"
 		},
 		{
 			"id": "f38009de-401b-49ae-bb83-cce834a56dcd",
@@ -25695,13 +24842,6 @@
 			"original_id": "supply-chain-blockchain",
 			"title": "Supply Chain Blockchain",
 			"text_sha256": "6f93db156feef0324c0198e7346a050fea131cd7bd4f6110ef79f2ea9b031cf4"
-		},
-		{
-			"id": "f47c1ac3-4f8f-4610-bc7c-231c7e8634b5",
-			"research_slug": "subspace",
-			"original_id": "matter-antimatter-reactor",
-			"title": "Matter-Antimatter Reactor",
-			"text_sha256": "f2f6dbe0aa1ecbcdd23c878766d90268226095995dd1e9f26108bc4fc58a341d"
 		},
 		{
 			"id": "f4baa08f-544f-43e5-b94a-383b0581934a",
@@ -26033,13 +25173,6 @@
 			"text_sha256": "670fe05fd29cbed00cba03071987cf75899ef9b26d4c7802aeb7bc082d38dc82"
 		},
 		{
-			"id": "f73cc9d1-75a7-442f-8dd0-e2a8603e7626",
-			"research_slug": "subspace",
-			"original_id": "quantum-slipstream",
-			"title": "Quantum Slipstream Drive",
-			"text_sha256": "0bc0796c01bc9bf25aa271bb950ddd82971e4893061a105d9c6bc6811e1f31bf"
-		},
-		{
 			"id": "f7419eeb-347b-478f-b8d4-30d9a5426c8d",
 			"research_slug": "harvest",
 			"original_id": "agri-food-blockchain",
@@ -26136,13 +25269,6 @@
 			"original_id": "wi-fi-sensing",
 			"title": "Wi-fi Sensing",
 			"text_sha256": "0ff6d03c9d40fdfa26a6fb9805151fc3c34a454b0dc05d5e3db6f1fd785526dd"
-		},
-		{
-			"id": "f816e100-4506-435e-90fe-0d616d4c5e9a",
-			"research_slug": "subspace",
-			"original_id": "multiphasic-scanner",
-			"title": "Multiphase Scanner",
-			"text_sha256": "9574f99898ce6410d2bfd342f22e118f2e1596fbc860b7bd1f9608f9c187188d"
 		},
 		{
 			"id": "f839e3f7-8500-48e0-8e9d-44e3d338d9ac",
@@ -26488,13 +25614,6 @@
 			"text_sha256": "6fa1fa8e31843b501dab623fd154d05d8ea34a363006cef38e00bb30bcc9d10b"
 		},
 		{
-			"id": "fbe31f09-a9c6-40a4-9207-ebfdc2bfb340",
-			"research_slug": "subspace",
-			"original_id": "lcars",
-			"title": "LCARS",
-			"text_sha256": "dcd466d8ea07acf3325e6591eeac3e7add43c6235f6edf2dff28e63e88c5ce19"
-		},
-		{
 			"id": "fbfb1c65-cc33-4afe-b6c8-75c9158047ac",
 			"research_slug": "helix",
 			"original_id": "india__aravind-eye-care-model",
@@ -26577,13 +25696,6 @@
 			"original_id": "latam-ex-brazil__ar-hb4-drought-resistant-wheat",
 			"title": "HB4 Drought-Resistant Wheat Technology",
 			"text_sha256": "c98992a31964eb44ba39428c171d380aecde76c8884d26b7126ca3370311ff5a"
-		},
-		{
-			"id": "fd14b8c0-ed68-453e-bdd5-dfe9734ba504",
-			"research_slug": "subspace",
-			"original_id": "chroniton-detector",
-			"title": "Chroniton Detector",
-			"text_sha256": "6677e7a2fa129bbc6b1548cc9165989d322397b92b25e86408d9be4cc67b1645"
 		},
 		{
 			"id": "fd2ce04c-10f3-4b01-a10b-71f91d6ce95a",
@@ -26719,13 +25831,6 @@
 			"text_sha256": "2f8d5553876427d6283f9759c14cc313df28f7a779f95c5e083b09876bdf43d3"
 		},
 		{
-			"id": "fe713fbe-7f8d-4a08-a034-d9ad0bceaa6b",
-			"research_slug": "subspace",
-			"original_id": "matter-recycler",
-			"title": "Matter Recycler",
-			"text_sha256": "0816be605b47e8329cbba637940ba7aa11f60879380e0c80c7348b96411dda93"
-		},
-		{
 			"id": "fe7ef0ae-0dea-4e92-8fd6-661f05fc3aa3",
 			"research_slug": "substrate",
 			"original_id": "japan__semiconductor-coating-equipment",
@@ -26829,13 +25934,6 @@
 			"original_id": "gulf-states__gulf-hyperscale-data-centers",
 			"title": "Hyperscale AI Data Center Build-out",
 			"text_sha256": "c303decde812f53d61120a3a0650b852879abe604899cc4ea0829ab67416998a"
-		},
-		{
-			"id": "ff93e669-4b19-48e1-a09d-1ce37ad20450",
-			"research_slug": "subspace",
-			"original_id": "personal-shield",
-			"title": "Personal Force Field",
-			"text_sha256": "1a3ee2eecc69f7b63c6e927d7640933e9512f6bfad03346dbfdb8a63e5ff8063"
 		},
 		{
 			"id": "ff9b805f-021a-4388-bee0-c4ba468d3377",

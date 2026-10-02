@@ -2,12 +2,13 @@
 // Usage: node scripts/links/audit-sample.mjs <run> [--out <dir outside git>] [--check]
 // Pool: every candidate whose decided verdict is link, broader or narrower: verifier consensus,
 // or the adjudicator's call on a contested pair. Every contested pair must be adjudicated first.
+// Candidates of excluded projects (data/links/excluded-projects.json, D52) are left out: they publish nothing.
 // Size: at least 50 or 10% of the pool, stratified by verdict, seed d48:<run>.
 // Writes data/links/runs/<run>/audit.json {rule, auditor, seed, sample, records}. Never redraws over records.
 // With --out, writes <out>/audit/sample.json: each sampled pair as the verifiers saw it, with the decided verdict.
 import path from "node:path";
 import { LinkVerdictFile } from "../../src/schema.ts";
-import { LINKS, exists, readJson, writeJson } from "./lib.mjs";
+import { LINKS, excludedProjects, exists, readJson, writeJson } from "./lib.mjs";
 
 const run = process.argv[2];
 if (!run || !/^[a-z0-9-]+$/.test(run)) throw new Error("usage: audit-sample.mjs <run> [--out <dir>] [--check]");
@@ -17,12 +18,21 @@ const dir = path.join(LINKS, "runs", run);
 const agreement = readJson(path.join(dir, "agreement.json"));
 if (!agreement.passes) throw new Error(`${run}: agreement gate failed (${agreement.gate}; kappa ${agreement.kappa}, agreement ${agreement.agreement}); revise the verifier prompt before the audit`);
 if (agreement.missing.length) throw new Error(`${run}: ${agreement.missing.length} candidates not judged by both verifiers`);
+const excluded = excludedProjects();
+const excludedIds = new Set(
+	readJson(path.join(dir, "candidates.json"))
+		.candidates.filter((c) => excluded.has(c.research_slug))
+		.map((c) => c.id),
+);
 const adjFile = path.join(dir, "adjudicated.json");
 const adjudicated = exists(adjFile) ? new Map(LinkVerdictFile.parse(readJson(adjFile)).verdicts.map((v) => [v.candidate_id, v])) : new Map();
-const open = agreement.contested.filter((c) => !adjudicated.has(c.id));
+const open = agreement.contested.filter((c) => !excludedIds.has(c.id) && !adjudicated.has(c.id));
 if (open.length) throw new Error(`${run}: ${open.length} contested pairs without an adjudicated verdict`);
 
-const decided = [...agreement.consensus, ...agreement.contested.map((c) => ({ id: c.id, verdict: adjudicated.get(c.id).verdict }))];
+const decided = [
+	...agreement.consensus,
+	...agreement.contested.filter((c) => !excludedIds.has(c.id)).map((c) => ({ id: c.id, verdict: adjudicated.get(c.id).verdict })),
+].filter((d) => !excludedIds.has(d.id));
 const pool = decided.filter((d) => d.verdict !== "no_link");
 
 function fnv1a(s) {

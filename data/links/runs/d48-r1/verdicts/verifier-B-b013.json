@@ -1,0 +1,748 @@
+{
+ "run": "d48-r1",
+ "batch": "b013",
+ "role": "B",
+ "agent": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "candidate_id": "synthetic-data-and-privacy~3797dcf8-4fb3-4bdc-af43-ad23797525b4",
+   "verdict": "link",
+   "reason": "Privacy-preserving synthetic data; urban framing only."
+  },
+  {
+   "candidate_id": "synthetic-data-and-privacy~d7070034-c922-4376-89ae-e41569cca104",
+   "verdict": "link",
+   "reason": "Synthetic data replacing customer data; financial framing only."
+  },
+  {
+   "candidate_id": "synthetic-data-and-privacy~942b3de3-4a5c-478e-8b28-3fd4b0cf29a2",
+   "verdict": "link",
+   "reason": "Privacy-preserving synthetic datasets; travel framing only."
+  },
+  {
+   "candidate_id": "synthetic-data-for-ai-training~9290ba8a-5f71-416a-9306-50139a4984be",
+   "verdict": "link",
+   "reason": "Synthetic data generated for ML training = subject."
+  },
+  {
+   "candidate_id": "synthetic-data-sets~3797dcf8-4fb3-4bdc-af43-ad23797525b4",
+   "verdict": "link",
+   "reason": "Synthetic datasets for privacy-safe analysis = subject; urban framing."
+  },
+  {
+   "candidate_id": "synthetic-data-sets~29900306-8bc3-4a28-be31-643ddf86ffd7",
+   "verdict": "narrower",
+   "reason": "Synthetic population sandboxes for policy testing are a specific application of synthetic datasets."
+  },
+  {
+   "candidate_id": "synthetic-data-sets~d7070034-c922-4376-89ae-e41569cca104",
+   "verdict": "link",
+   "reason": "Synthetic data generation; financial framing only."
+  },
+  {
+   "candidate_id": "synthetic-data-sets~942b3de3-4a5c-478e-8b28-3fd4b0cf29a2",
+   "verdict": "link",
+   "reason": "Synthetic data generation; travel framing only."
+  },
+  {
+   "candidate_id": "synthetic-data-sets~9290ba8a-5f71-416a-9306-50139a4984be",
+   "verdict": "link",
+   "reason": "Synthetic data generation = synthetic data sets."
+  },
+  {
+   "candidate_id": "synthetic-health-data~9290ba8a-5f71-416a-9306-50139a4984be",
+   "verdict": "broader",
+   "reason": "General synthetic data generation contains synthetic patient/health data."
+  },
+  {
+   "candidate_id": "synthetic-health-data~3797dcf8-4fb3-4bdc-af43-ad23797525b4",
+   "verdict": "broader",
+   "reason": "General synthetic data contains synthetic health data."
+  },
+  {
+   "candidate_id": "synthetic-media~459e8575-feed-43a8-b910-d192a5734f2d",
+   "verdict": "no_link",
+   "reason": "Synthetic media generation vs detection tools; countermeasure, adjacent, not containment."
+  },
+  {
+   "candidate_id": "synthetic-media~953e9ec4-55a6-4052-aef3-17f645523c17",
+   "verdict": "no_link",
+   "reason": "Forensics for AI media is a countermeasure to synthetic media, not the same or contained."
+  },
+  {
+   "candidate_id": "synthetic-media~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "no_link",
+   "reason": "Detection tools vs synthetic media itself; adjacent."
+  },
+  {
+   "candidate_id": "synthetic-media-and-ai-authenticity~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "narrower",
+   "reason": "Subject frames synthetic media around authenticity; detection for authenticity verification is a direct part of it."
+  },
+  {
+   "candidate_id": "synthetic-media-and-content~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "no_link",
+   "reason": "Claim is about deepfake categories (the media itself); detection is a countermeasure."
+  },
+  {
+   "candidate_id": "synthetic-media-in-the-classroom-and-workplace~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "no_link",
+   "reason": "Subject is beneficial use of synthetic media in classrooms; detection is unrelated in scope."
+  },
+  {
+   "candidate_id": "synthetic-personalities~a3b67e6f-4680-4af8-83c9-f3a38384086c",
+   "verdict": "no_link",
+   "reason": "LLM-invented personas vs provenance tracking for personas; adjacent countermeasure."
+  },
+  {
+   "candidate_id": "synthetic-voice-fraud~ee12e1bb-dfab-4836-9252-76a331c5c3d0",
+   "verdict": "no_link",
+   "reason": "Subject is the voice-fraud threat; financial deepfake detection is a countermeasure, not same or contained."
+  },
+  {
+   "candidate_id": "synthetic-voice-fraud~72848caa-b83f-45cf-8078-c85b230034fc",
+   "verdict": "no_link",
+   "reason": "Voice cloning governance is a countermeasure to voice fraud; adjacent."
+  },
+  {
+   "candidate_id": "synthetic-wombs~2a12efab-9c80-422e-901b-6e69755765dd",
+   "verdict": "link",
+   "reason": "Synthetic wombs = artificial wombs (external fetal development)."
+  },
+  {
+   "candidate_id": "synthetic-wombs~942aff5c-1331-4fa7-96b2-7d939b0b2bb3",
+   "verdict": "link",
+   "reason": "Artificial wombs for premature infants = synthetic wombs; neonatal framing."
+  },
+  {
+   "candidate_id": "teaching-news-literacy~4627472d-85c3-40fd-b62c-56af3b2ba199",
+   "verdict": "broader",
+   "reason": "Media literacy programs contain teaching news literacy."
+  },
+  {
+   "candidate_id": "tech-venture-debt~2292fd87-8d63-42e8-83a5-89fe239bfe6d",
+   "verdict": "no_link",
+   "reason": "US tech venture debt vs European deep tech VC ecosystem; different instrument and region."
+  },
+  {
+   "candidate_id": "technological-sovereignty~e2593f98-685b-4690-903a-97880ed91b42",
+   "verdict": "narrower",
+   "reason": "Claim is sovereign AI compute; Australia sovereign AI cloud is a regional case."
+  },
+  {
+   "candidate_id": "technological-sovereignty~391df5b5-10c6-4948-9a92-d066669b3ce4",
+   "verdict": "narrower",
+   "reason": "Domestic AI chips are one component of technological sovereignty as claimed (AI compute)."
+  },
+  {
+   "candidate_id": "technology-assisted-workplace-safety~1fde17ab-bed4-47d6-ba13-dd0ff1d249b2",
+   "verdict": "narrower",
+   "reason": "Hazard-detecting monitoring systems are one kind of technology-assisted workplace safety."
+  },
+  {
+   "candidate_id": "telecom-sustainability~6879244a-17e0-4e58-ac14-5cb55933f7c0",
+   "verdict": "narrower",
+   "reason": "Network carbon accounting is the measurement part of telecom sustainability."
+  },
+  {
+   "candidate_id": "terrestrial-microwave-power-beaming~37c871d3-fbec-4573-ab1e-5e95215c1a4f",
+   "verdict": "broader",
+   "reason": "Power beaming by microwaves or lasers contains terrestrial microwave power beaming."
+  },
+  {
+   "candidate_id": "terrestrial-microwave-power-beaming~4b5568af-5b32-412d-b880-c2eaf8738eaa",
+   "verdict": "broader",
+   "reason": "Power beaming in general contains terrestrial microwave beaming."
+  },
+  {
+   "candidate_id": "terrestrial-microwave-power-beaming~57885fe2-cf66-49fc-afa8-0a4fd9f67f5b",
+   "verdict": "no_link",
+   "reason": "SBSP is a sibling application of beaming, not terrestrial point-to-point beaming."
+  },
+  {
+   "candidate_id": "the-6g-cyber-physical-continuum~2e1e6403-151c-4b45-923d-786db389eecd",
+   "verdict": "link",
+   "reason": "6G networks = the 6G subject."
+  },
+  {
+   "candidate_id": "the-6g-cyber-physical-continuum~c276aaf0-fbc0-471c-8678-ee97cb5dfaae",
+   "verdict": "link",
+   "reason": "6G mobile network = the 6G subject."
+  },
+  {
+   "candidate_id": "the-ai-driven-chip-war~f5557606-d03b-40f6-a68d-df1f6d4e3eac",
+   "verdict": "narrower",
+   "reason": "usa__ AI chip export controls page is a regional facet of the US-China AI chip war."
+  },
+  {
+   "candidate_id": "the-ai-driven-chip-war~56350398-15ae-43f3-bece-ebb9a358d8ac",
+   "verdict": "narrower",
+   "reason": "china__ inference ecosystem under export controls is a regional facet of the chip war."
+  },
+  {
+   "candidate_id": "the-ai-training-data-market~7f16ef87-8a6b-4204-9433-d390096b4693",
+   "verdict": "narrower",
+   "reason": "Data unions licensing data to AI firms are one mechanism of the AI training data market."
+  },
+  {
+   "candidate_id": "the-connected-worker~56130a62-237c-4b2b-80f8-090c5fdcb68e",
+   "verdict": "link",
+   "reason": "Sensor/wearable connected worker for risk reduction = connected worker ecosystems."
+  },
+  {
+   "candidate_id": "the-end-of-attention-metrics~8e6b4de7-f9a3-43bf-ad5e-4852feecd4c7",
+   "verdict": "no_link",
+   "reason": "Measurement of attention vs regulation of addictive design; adjacent."
+  },
+  {
+   "candidate_id": "the-end-of-remote-control~63a3c3c8-e63f-448a-912e-0eb25d3f3b56",
+   "verdict": "no_link",
+   "reason": "Video metadata tagging vs engagement-ranked feeds; adjacent."
+  },
+  {
+   "candidate_id": "the-european-approach-to-regulating-ai~edd18d46-1431-4ed1-9018-3e16b2c0a15f",
+   "verdict": "link",
+   "reason": "Both Europe-scoped: European AI regulation proposal = EU AI Act."
+  },
+  {
+   "candidate_id": "the-evolution-to-nano-fulfillment-centers~67465658-4a93-4d28-8e0a-187696c357f8",
+   "verdict": "link",
+   "reason": "Claim is micro-fulfillment centers entering markets; tech is urban micro-fulfilment centres."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~ce4e965b-2ad3-44b5-9262-79b7b35174f0",
+   "verdict": "narrower",
+   "reason": "Volumetric capture is a named enabling component of holographic live shows."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~72e4ea9d-81ba-4c3f-bd3b-c8b93b3bef14",
+   "verdict": "no_link",
+   "reason": "Remote 3D concert streaming vs on-stage hologram shows; adjacent delivery modes."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~170d6605-1121-43c8-913a-2585139b4273",
+   "verdict": "no_link",
+   "reason": "Holographic video calls vs live hologram performance; adjacent."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~79c633bc-d8ab-4115-81cd-e5ce901e6275",
+   "verdict": "no_link",
+   "reason": "Volumetric video streaming vs hologram live shows; adjacent."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~17b50487-77fd-4751-956d-d80fdbf973db",
+   "verdict": "no_link",
+   "reason": "Holographic telepresence calls, not live performance."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~863caa3e-65d1-4cb5-b2a5-b92a0d056905",
+   "verdict": "narrower",
+   "reason": "Volumetric capture studios are an enabling component of hologram performance."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~093cbe02-ed6d-40f6-bed9-2fde342c48e7",
+   "verdict": "narrower",
+   "reason": "Volumetric capture arrays: enabling component."
+  },
+  {
+   "candidate_id": "the-holographic-live-performance~bba02fa7-a34d-4be3-9832-5eda48670c86",
+   "verdict": "narrower",
+   "reason": "Volumetric capture rigs: enabling component."
+  },
+  {
+   "candidate_id": "the-internet-of-senses~030d4b4a-49ec-4aff-86cd-f159c5e3cca2",
+   "verdict": "link",
+   "reason": "Same technology: internet of senses."
+  },
+  {
+   "candidate_id": "the-lunar-cargo-and-mobility-gap~555f570b-e2f7-4d4c-b404-947fca3468d9",
+   "verdict": "no_link",
+   "reason": "Lunar surface cargo mobility vs cislunar in-space tugs; different segment."
+  },
+  {
+   "candidate_id": "the-new-hybrid-workweek~5fb0bd9c-a30c-46a3-b1e1-67880d9de613",
+   "verdict": "narrower",
+   "reason": "Hybrid scheduling engines are one tool within the hybrid workweek trend."
+  },
+  {
+   "candidate_id": "the-new-mil-tech-industrial-complex~c4cbafdf-e327-4c26-8e4c-d5f639618a2c",
+   "verdict": "narrower",
+   "reason": "usa__ Anduril/Palantir command page is a case of the US mil-tech AI complex."
+  },
+  {
+   "candidate_id": "the-proliferation-of-splinternets~e1d221b7-5191-4bec-9c03-78239b0db03d",
+   "verdict": "link",
+   "reason": "Splinternets are fragmented internets with independent routing/DNS = alternative internet architectures."
+  },
+  {
+   "candidate_id": "the-race-for-smart-ports~4487a75d-e563-45e2-a613-8d7265f22049",
+   "verdict": "link",
+   "reason": "Smart ports and automated terminals = subject."
+  },
+  {
+   "candidate_id": "the-space-economy~64e1e776-7c47-4490-8221-cd1543be0a0b",
+   "verdict": "narrower",
+   "reason": "Orbital finance is one segment of the space economy."
+  },
+  {
+   "candidate_id": "the-space-economy~a6a9ea62-d109-4cc8-ade1-216e80907db4",
+   "verdict": "no_link",
+   "reason": "Tourism capsules are two levels below the space economy."
+  },
+  {
+   "candidate_id": "thorium-reactors~09edd986-4e4a-4733-9556-2b9329875fde",
+   "verdict": "narrower",
+   "reason": "china__ thorium MSR page is a regional case of thorium reactors."
+  },
+  {
+   "candidate_id": "tidal-turbines~b39e3e92-2b01-41ca-9e58-742875bb3c93",
+   "verdict": "broader",
+   "reason": "Tidal and wave converters contain tidal turbines."
+  },
+  {
+   "candidate_id": "tidal-turbines~b36d482f-a1fb-460d-9a18-6d0591c5d9b1",
+   "verdict": "broader",
+   "reason": "Tidal and wave energy converters contain tidal turbines."
+  },
+  {
+   "candidate_id": "tiny-ai~d778f152-1010-4cd6-9400-5f557da711bb",
+   "verdict": "narrower",
+   "reason": "usa__ on-device AI landscape: regional case of tiny/on-device AI."
+  },
+  {
+   "candidate_id": "tiny-ai~4ca4deea-a7a8-46fb-b1be-3ed75ea35f9e",
+   "verdict": "link",
+   "reason": "Claim is local on-device AI without cloud = edge AI."
+  },
+  {
+   "candidate_id": "tiny-ai~8fb14b21-fb9e-488c-b760-5791ef25fd99",
+   "verdict": "narrower",
+   "reason": "Offline travel assistants are a specific application of on-device AI."
+  },
+  {
+   "candidate_id": "tissue-embedded-sensors~635cfe32-161d-482c-8e8d-71c27b56e04b",
+   "verdict": "no_link",
+   "reason": "Skin-worn neonatal monitors are not tissue-embedded sensors; adjacent."
+  },
+  {
+   "candidate_id": "tokenization-of-tradfi-digital-assets-and-security-tokens~2799d8ae-3ee2-4e90-8841-6ad26a6e2ea2",
+   "verdict": "link",
+   "reason": "Tokenization of real-world assets/security tokens = tokenized RWA."
+  },
+  {
+   "candidate_id": "tokenization-of-tradfi-digital-assets-and-security-tokens~becd731b-3a89-4a7c-8446-38810ebbba7f",
+   "verdict": "narrower",
+   "reason": "usa__ tokenized RWA landscape page: regional."
+  },
+  {
+   "candidate_id": "tokenization-of-tradfi-digital-assets-and-security-tokens~3b3d34b9-27b3-47a7-9464-11a156c585c8",
+   "verdict": "link",
+   "reason": "Tokenized real-world assets = subject."
+  },
+  {
+   "candidate_id": "tokenization-of-unconventional-assets~2799d8ae-3ee2-4e90-8841-6ad26a6e2ea2",
+   "verdict": "broader",
+   "reason": "Tokenized RWA in general contains tokenization of unconventional assets."
+  },
+  {
+   "candidate_id": "tokenized-government-bonds~5f771849-f3ba-4468-9c95-654809d547c0",
+   "verdict": "no_link",
+   "reason": "Tokenized treasuries vs tokenized public infrastructure revenue rights; different asset class."
+  },
+  {
+   "candidate_id": "tools-for-detecting-copyright-violations-in-ai-outputs~3d1a7144-d027-43f6-841b-dfd67c7defaf",
+   "verdict": "no_link",
+   "reason": "Detection of copyright reproduction vs attribution standards for cultural sources; adjacent."
+  },
+  {
+   "candidate_id": "tools-for-exposing-deepfakes~7f6ae70b-0a7d-4cf7-a61a-00c16dd02cdd",
+   "verdict": "link",
+   "reason": "Deepfake detection = tools for exposing deepfakes."
+  },
+  {
+   "candidate_id": "tools-for-exposing-deepfakes~6cd9671c-60b1-469e-b2fa-34f09287fd29",
+   "verdict": "link",
+   "reason": "Deepfake detection; intelligence framing only."
+  },
+  {
+   "candidate_id": "tools-for-exposing-deepfakes~ee12e1bb-dfab-4836-9252-76a331c5c3d0",
+   "verdict": "link",
+   "reason": "Deepfake detection; financial framing only."
+  },
+  {
+   "candidate_id": "tools-for-exposing-deepfakes~953e9ec4-55a6-4052-aef3-17f645523c17",
+   "verdict": "link",
+   "reason": "Synthetic media forensics detects deepfakes = subject."
+  },
+  {
+   "candidate_id": "tools-to-combat-broadly-malicious-ai-behavior~8ff09c95-ddad-40fa-8e33-d7d1494e92e6",
+   "verdict": "no_link",
+   "reason": "Adversarial ML tests attacks on AI; subject is safeguards against AI acting maliciously. Different problem."
+  },
+  {
+   "candidate_id": "tools-to-manage-digital-identity-and-assets~7874bf63-ed04-4d7c-964a-7b08dcd7f81f",
+   "verdict": "narrower",
+   "reason": "Decentralized identity is the identity part of the subject's identity-and-asset tools."
+  },
+  {
+   "candidate_id": "tools-to-thwart-recognition-systems~5299a225-f80e-4ff8-a454-08086e249a29",
+   "verdict": "narrower",
+   "reason": "Adversarial noise cloaks are one tool for thwarting facial recognition."
+  },
+  {
+   "candidate_id": "tracking-platforms~11b64d93-4646-458d-8294-ded665a2dc85",
+   "verdict": "link",
+   "reason": "Corporate carbon tracking software = carbon accounting platforms."
+  },
+  {
+   "candidate_id": "trains~bc914990-a7f4-4758-9cdd-c5e349fff147",
+   "verdict": "no_link",
+   "reason": "Generic trains (claim: solar for rail) vs high-speed rail; adjacent."
+  },
+  {
+   "candidate_id": "transactions-from-anywhere~f7b151e1-5885-42a5-a395-19aeb1559b69",
+   "verdict": "narrower",
+   "reason": "Machine wallets let devices transact autonomously, one implementation of transactions from vehicles/devices."
+  },
+  {
+   "candidate_id": "transcranial-magnetic-stimulation~1c208b18-c59a-4379-a291-78140d38749b",
+   "verdict": "link",
+   "reason": "Same technology: TMS."
+  },
+  {
+   "candidate_id": "trusted-computing-platforms~bf73825a-52ef-4b9c-ab2b-1c45c8233757",
+   "verdict": "narrower",
+   "reason": "TPM chip is the core component of trusted computing platforms."
+  },
+  {
+   "candidate_id": "truth-decay-in-an-era-of-synthetic-media~0d3b9a46-a2b9-4aff-acb2-a64f81b9a38f",
+   "verdict": "no_link",
+   "reason": "Truth decay from synthetic media vs detection tools; adjacent."
+  },
+  {
+   "candidate_id": "two-factor-biometric-authentication~176dbeb2-e3f2-4e09-9673-24666c0637d1",
+   "verdict": "broader",
+   "reason": "Multi-layered biometric access control contains two-factor biometric authentication."
+  },
+  {
+   "candidate_id": "two-factor-biometric-based-authentication~7a2bf8df-f96f-42d5-878d-abf0498e812e",
+   "verdict": "link",
+   "reason": "Subsurface biomarker identification = biosignal authentication."
+  },
+  {
+   "candidate_id": "ubiquitous-sensor-distribution~219a0fad-d478-4b41-b4f0-92187456eee9",
+   "verdict": "narrower",
+   "reason": "Transport-hub IoT sensors are one setting of ubiquitous built-environment sensors."
+  },
+  {
+   "candidate_id": "uhv-power-lines~4c527c33-eb57-4ea3-9f88-8e602440bc6c",
+   "verdict": "link",
+   "reason": "UHV DC transmission lines = UHV power lines."
+  },
+  {
+   "candidate_id": "uhv-power-lines~c6bf1abd-a50d-4f13-aaad-2e47aab22129",
+   "verdict": "narrower",
+   "reason": "china__ UHV grid page: regional case."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-direct-current-and-macro-grids~c6bf1abd-a50d-4f13-aaad-2e47aab22129",
+   "verdict": "narrower",
+   "reason": "china__ UHV grid page against a non-regional UHVDC subject: narrower."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-direct-current-and-macro-grids~4c527c33-eb57-4ea3-9f88-8e602440bc6c",
+   "verdict": "link",
+   "reason": "UHV DC transmission = UHVDC subject."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-direct-current-and-macro-grids~1526a850-6572-4a20-ab46-01ecc0e2df8a",
+   "verdict": "link",
+   "reason": "HVDC supergrids = UHVDC macro grids."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-direct-current-and-macro-grids~e73437cb-46b7-4bf7-b0ba-1989630c2fe1",
+   "verdict": "link",
+   "reason": "Continental HVDC supergrids = macro grids."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-direct-current-and-macro-grids~64b08dad-ffe8-4793-a388-1d09bb0afb3d",
+   "verdict": "link",
+   "reason": "Long-distance HVDC corridors = UHVDC macro grids."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-power-lines~c6bf1abd-a50d-4f13-aaad-2e47aab22129",
+   "verdict": "narrower",
+   "reason": "china__ UHV grid page; subject name is not region-scoped though its claim is China: narrower per region rule."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-power-lines~4c527c33-eb57-4ea3-9f88-8e602440bc6c",
+   "verdict": "link",
+   "reason": "UHV DC transmission = UHV power lines."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-power-lines~64b08dad-ffe8-4793-a388-1d09bb0afb3d",
+   "verdict": "broader",
+   "reason": "HVDC corridors in general contain ultra-high-voltage lines."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-power-lines~1526a850-6572-4a20-ab46-01ecc0e2df8a",
+   "verdict": "broader",
+   "reason": "HVDC supergrids contain UHV lines."
+  },
+  {
+   "candidate_id": "ultra-high-voltage-power-lines~e73437cb-46b7-4bf7-b0ba-1989630c2fe1",
+   "verdict": "broader",
+   "reason": "HVDC supergrids contain UHV lines."
+  },
+  {
+   "candidate_id": "ultrasound-stickers~05100123-4e05-4c26-87bd-691db21bec4b",
+   "verdict": "no_link",
+   "reason": "Ultrasound imaging patch vs uterine contraction patch; different sensing."
+  },
+  {
+   "candidate_id": "underground-cities~86917c00-6149-4062-a870-4640fc36a733",
+   "verdict": "no_link",
+   "reason": "Underground cities vs catastrophe refuges; adjacent."
+  },
+  {
+   "candidate_id": "united-arab-emirates-balancing-innovation-with-guidelines~53865230-7cdb-498a-9542-e4d47955d4eb",
+   "verdict": "no_link",
+   "reason": "UAE AI policy vs Abu Dhabi AI government services deployment; adjacent."
+  },
+  {
+   "candidate_id": "united-states-accelerating-ai-fast~07b009d2-61a9-41cc-a9bc-72c7b79c8404",
+   "verdict": "no_link",
+   "reason": "US AI regulation vs Japan AI framework; different jurisdictions."
+  },
+  {
+   "candidate_id": "universe-mapping~e37f55df-3554-48e0-ad4e-104cdc1c41b2",
+   "verdict": "no_link",
+   "reason": "Astrophysics universe mapping vs fictional Star Trek astrometrics lab."
+  },
+  {
+   "candidate_id": "unmanned-traffic-management~5dca2432-b0b8-4087-b1cf-13f5b9e91d90",
+   "verdict": "link",
+   "reason": "UTM for drones = UTM systems."
+  },
+  {
+   "candidate_id": "upcycled-and-circular-fashion~0bb537fa-a417-4705-8741-ddfe3f14e56f",
+   "verdict": "narrower",
+   "reason": "Subscription garment rental is one circular fashion model."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~3ab8a98e-f98b-4b28-bef6-793daf41105f",
+   "verdict": "link",
+   "reason": "Subject is NIST PQC standards transition; usa__ PQC page is about NIST standards and US migration, same scope."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~41018b06-963b-47f8-98a6-10cae2661d6f",
+   "verdict": "link",
+   "reason": "PQC = subject's new cryptography standards."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~193173e2-0ea8-4e47-854e-5ee631a4514f",
+   "verdict": "link",
+   "reason": "PQC = subject."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~11b77d78-ffb1-43fc-989c-ee592969dee1",
+   "verdict": "narrower",
+   "reason": "europe__ PQC migration page: regional case."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~9058c455-b79d-4869-b5bc-9950d9b6c5ea",
+   "verdict": "narrower",
+   "reason": "PQC for government communications is a specific application."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~10c25a00-8bb2-49a1-ac27-309df187432f",
+   "verdict": "link",
+   "reason": "PQC = subject."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~5303cdca-7bb4-4bb0-b60c-9494fe70e585",
+   "verdict": "link",
+   "reason": "PQC = subject."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~861c66f4-849b-41b0-964d-4e59632ef974",
+   "verdict": "link",
+   "reason": "PQC = subject."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~bb2f7caf-9362-4b1c-884f-68970a7b0757",
+   "verdict": "link",
+   "reason": "PQC = subject."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~4392a6e4-3c15-4c2d-8ccf-0ea3e766b86c",
+   "verdict": "link",
+   "reason": "PQC = subject; grid framing only."
+  },
+  {
+   "candidate_id": "updating-post-quantum-cryptography-standards~4e84651e-0481-47ee-845b-9194b35bdeed",
+   "verdict": "link",
+   "reason": "PQC = subject."
+  },
+  {
+   "candidate_id": "upgrading-photosynthesis~3f7cd31e-f2fe-4608-9741-ad77c9e09330",
+   "verdict": "link",
+   "reason": "Boosting photosynthetic efficiency by enzyme redesign = upgrading photosynthesis."
+  },
+  {
+   "candidate_id": "us-battery-factories~9acf4674-becf-47ec-9d56-5322506c546d",
+   "verdict": "no_link",
+   "reason": "US battery factories vs European gigafactory buildout; different region."
+  },
+  {
+   "candidate_id": "user-generated-game-content~c0511a75-9634-4718-a9d8-bc1040f62053",
+   "verdict": "link",
+   "reason": "UGC game platforms paying creators = creator-led game economies."
+  },
+  {
+   "candidate_id": "using-a-i-to-speed-the-process-of-scientific-discovery~1683af9b-0815-4e07-847e-0af71062f550",
+   "verdict": "link",
+   "reason": "AI-run experiments to speed discovery = AI-accelerated science."
+  },
+  {
+   "candidate_id": "using-a-i-to-speed-the-process-of-scientific-discovery~a799cd50-4215-4fa2-adfd-e2b193423f25",
+   "verdict": "narrower",
+   "reason": "usa__ AI for science page: regional."
+  },
+  {
+   "candidate_id": "using-dna-to-store-data~050bf418-b0ac-40a6-8e2b-90657b00f4e1",
+   "verdict": "link",
+   "reason": "DNA data storage = subject."
+  },
+  {
+   "candidate_id": "using-dna-to-store-data~58a49acb-e706-47f1-8095-47ae9e201f8b",
+   "verdict": "link",
+   "reason": "DNA data storage = subject."
+  },
+  {
+   "candidate_id": "using-dna-to-store-data~3111c8c0-2636-4b91-ae31-7ce54e9dbe98",
+   "verdict": "link",
+   "reason": "DNA data storage = subject."
+  },
+  {
+   "candidate_id": "using-dna-to-store-data~beb196aa-e60d-4c2c-bd4d-7a6f5b2d21e4",
+   "verdict": "narrower",
+   "reason": "Nanopore writers are a component of DNA data storage."
+  },
+  {
+   "candidate_id": "using-our-dna-as-hard-drives~58a49acb-e706-47f1-8095-47ae9e201f8b",
+   "verdict": "link",
+   "reason": "DNA data storage = DNA as hard drives."
+  },
+  {
+   "candidate_id": "using-our-dna-as-hard-drives~3111c8c0-2636-4b91-ae31-7ce54e9dbe98",
+   "verdict": "link",
+   "reason": "DNA data storage = subject."
+  },
+  {
+   "candidate_id": "using-our-dna-as-hard-drives~050bf418-b0ac-40a6-8e2b-90657b00f4e1",
+   "verdict": "link",
+   "reason": "DNA data storage = subject."
+  },
+  {
+   "candidate_id": "vasimr~09d15218-f723-4793-809c-a30c7daddf12",
+   "verdict": "no_link",
+   "reason": "VASIMR plasma thruster vs fictional fusion impulse drive."
+  },
+  {
+   "candidate_id": "vehicle-to-vehicle-communications~5536bc7e-6464-465a-8b06-f5b38089849d",
+   "verdict": "broader",
+   "reason": "V2X contains vehicle-to-vehicle communications."
+  },
+  {
+   "candidate_id": "vera-c-rubin-observatory~3634fbbe-3366-4994-b759-9d3ce53b6fe4",
+   "verdict": "no_link",
+   "reason": "Rubin Observatory vs ELT adaptive optics; different telescope."
+  },
+  {
+   "candidate_id": "verification~e227546d-0fe9-49c3-920b-7087f95433f4",
+   "verdict": "narrower",
+   "reason": "Identity graph verifiers verify real creators, one tool for verifying real people."
+  },
+  {
+   "candidate_id": "verification~98c55435-1c8b-4919-82a6-1953f101e581",
+   "verdict": "no_link",
+   "reason": "Media provenance tracing vs verifying real people; adjacent."
+  },
+  {
+   "candidate_id": "verification~6dbb4a4c-c4a6-4e4f-9ee4-73506a1ebc75",
+   "verdict": "no_link",
+   "reason": "Crowd fact-checking vs person verification; adjacent."
+  },
+  {
+   "candidate_id": "vertical-earth-observation-products~0265df5c-a8a0-4809-bdcf-be88ca065354",
+   "verdict": "broader",
+   "reason": "Earth observation capability contains vertical EO products built on it."
+  },
+  {
+   "candidate_id": "vertical-farming~15b3c81b-3162-4fab-abcf-953f44578ce7",
+   "verdict": "link",
+   "reason": "Same technology: vertical farming."
+  },
+  {
+   "candidate_id": "vertical-farming-grows-up~15b3c81b-3162-4fab-abcf-953f44578ce7",
+   "verdict": "link",
+   "reason": "Vertical farming = subject."
+  },
+  {
+   "candidate_id": "vertical-farming-grows-up~d4a51240-7630-427d-ace2-77a1367255ab",
+   "verdict": "narrower",
+   "reason": "usa__ vertical farming automation page: regional."
+  },
+  {
+   "candidate_id": "video-on-demand-in-africa~4cedd945-aeb7-4c39-aea1-50f0468ef194",
+   "verdict": "link",
+   "reason": "Both Africa-scoped: VOD in Sub-Saharan Africa = African streaming platforms."
+  },
+  {
+   "candidate_id": "video-telepresence~170d6605-1121-43c8-913a-2585139b4273",
+   "verdict": "narrower",
+   "reason": "Holographic telepresence is a specific high-end kind of video telepresence."
+  },
+  {
+   "candidate_id": "virtual-power-plants~1e5669f9-0827-4a41-bc74-af4473e7c4a6",
+   "verdict": "link",
+   "reason": "Same technology: VPP."
+  },
+  {
+   "candidate_id": "virtual-power-plants~e3b0b93a-41eb-4283-9885-6c75e65330fc",
+   "verdict": "link",
+   "reason": "Same technology: VPP."
+  },
+  {
+   "candidate_id": "virtual-power-plants~089826bd-89e8-408e-94fb-3cff35b5ff4d",
+   "verdict": "link",
+   "reason": "VPP software = VPP."
+  },
+  {
+   "candidate_id": "virtual-production~fc713766-bae9-4b25-a797-8b78b932d31a",
+   "verdict": "link",
+   "reason": "Virtual production pipelines = virtual production."
+  },
+  {
+   "candidate_id": "virtual-production~aad84bbd-48f0-448f-8ecc-84f5c289462e",
+   "verdict": "narrower",
+   "reason": "LED volumes are the core component of virtual production."
+  },
+  {
+   "candidate_id": "virtual-trainers~600ca2f5-e4de-4474-ba33-740879bff07e",
+   "verdict": "link",
+   "reason": "VR training for athletes = virtual trainers."
+  },
+  {
+   "candidate_id": "virtual-training-for-real-world-jobs~f3c9fd6c-da97-4d8a-bde7-bbf4a4ca4da5",
+   "verdict": "link",
+   "reason": "Simulated job training environments = virtual training for jobs."
+  },
+  {
+   "candidate_id": "voice-gesture-and-neural-interfaces~3bccdef0-a59d-468d-aef4-90655c412972",
+   "verdict": "narrower",
+   "reason": "Silent speech is one kind of voice/neural interface."
+  }
+ ]
+}
