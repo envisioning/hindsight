@@ -50,6 +50,10 @@ const pe = CATS.reduce((s, k) => {
 	return s + a * b;
 }, 0);
 const kappa = pe === 1 ? 1 : (po - pe) / (1 - pe);
+// D49: when one verdict dominates (expected agreement 0.8 or more), kappa says little even at high
+// agreement (a title-match run is mostly `link`); the gate is then observed agreement of 0.9 or more.
+const skewed = pe >= 0.8;
+const passes = skewed ? po >= 0.9 : kappa >= 0.6;
 // Accept or not: the decision that matters for a primary or related link.
 const accept = (v) => v !== "no_link";
 const agreeAccept = both.filter((c) => accept(A.calls.get(c.id).verdict) === accept(B.calls.get(c.id).verdict)).length;
@@ -69,7 +73,10 @@ const result = {
 	judged_by_both: n,
 	agreement: Number(po.toFixed(4)),
 	kappa: Number(kappa.toFixed(4)),
+	expected_agreement: Number(pe.toFixed(4)),
 	kappa_passes_d11: kappa >= 0.6,
+	gate: skewed ? "D49: expected agreement >= 0.8, observed agreement >= 0.9" : "D11: kappa >= 0.6",
+	passes,
 	accept_agreement: Number((agreeAccept / n).toFixed(4)),
 	matrix_A_rows_B_columns: matrix,
 	consensus_counts: Object.fromEntries(CATS.map((k) => [k, consensus.filter((c) => c.verdict === k).length])),
@@ -89,5 +96,5 @@ if (out) {
 	writeJson(path.join(out, "adjudicate", "contested.json"), { run, contested: contested.map((c) => ({ ...input(c), A: c.A, B: c.B })) });
 }
 console.log(
-	JSON.stringify({ run, judged_by_both: n, agreement: result.agreement, kappa: result.kappa, passes: result.kappa_passes_d11, consensus: result.consensus_counts, contested: contested.length, missing: missing.length }),
+	JSON.stringify({ run, judged_by_both: n, agreement: result.agreement, kappa: result.kappa, passes, gate: result.gate, consensus: result.consensus_counts, contested: contested.length, missing: missing.length }),
 );

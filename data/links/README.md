@@ -36,6 +36,11 @@ node scripts/links/audit-sample.mjs <run> --out <verifier dir>
 node scripts/links/final.mjs <run>
 ```
 
+Amendment (D49): run `d48-r0` is titles only (`candidates.mjs --titles-only`): exact and alias title matches, no vectors, similarity null. Every later run skips pairs decided in an earlier run (`final.json` `decisions`) and pairs held by a curated link. When one verdict dominates (expected agreement 0.8 or more), the agreement gate is observed agreement 0.9 or more instead of kappa 0.6.
+
 ## State
 
-No run has been decided yet. Audit error rate: not yet measured.
+- `d48-r0` (titles only): 100 candidates (97 exact, 3 alias), 79 subjects, 1 batch. Awaiting verifiers A and B.
+- `d48-r1` (embeddings): blocked on a working embedding key.
+
+Audit error rate: not yet measured.

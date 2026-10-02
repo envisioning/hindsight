@@ -743,3 +743,19 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** At least five candidates per subject, two verifier passes over every one, and an auditor; a few cents of embeddings. Agent verifiers share blind spots, and the audit measures disagreement with the auditor, not truth. Broader and narrower links depend on judgment more than same links.
 
 **Overturned by.** An audit error rate above 10% on `same` links, or wrong links that readers notice (D5); or a canonical concept layer in the research database (D4).
+
+## D49: Title-match links ship before embedding links (amends D48)
+
+*Recorded 2026-10-02. Issue #59.*
+
+**Decision.**
+
+- **Run `d48-r0`, titles only.** While no embedding key works, `node scripts/links/candidates.mjs --titles-only` proposes only the exact and alias title matches (D13 normalized key) and needs no vectors: 100 candidates (97 exact, 3 alias) over 79 subjects and 100 technologies. `similarity` is null in these candidates (`LinkCandidate.similarity` is nullable) and absent from their link rows; method is `d48:exact` or `d48:alias`. Verification, adjudication, audit and final are the D48 steps unchanged.
+- **Decided pairs are not re-proposed.** `final.mjs` records every decided pair of a run (link or not) in `runs/<run>/final.json` `decisions`. `candidates.mjs` skips every pair decided in another run, and every pair whose latest link row is `curated`, and reports both counts. The embedding run `d48-r1` therefore judges only pairs that `d48-r0` did not. A decided pair is reopened only by a later decision, not by a re-run.
+- **Agreement gate under a dominant verdict.** When one verdict dominates (expected chance agreement 0.8 or more, as in a title-match run that is mostly `link`), Cohen's kappa is near zero even at high agreement. The gate is then observed agreement of 0.9 or more; otherwise kappa of at least 0.6 (D11). `agreement.json` records kappa, expected and observed agreement, and which gate applied.
+
+**Why.** The title matches need no vectors and are the most likely links, so they can ship while the key is missing. Skipping decided pairs keeps one decision per pair across runs and avoids paying verifiers twice. A kappa gate on a near-unanimous run would block it for a statistical reason, not for disagreement.
+
+**Cost.** A pair decided `no_link` in r0 is not seen again in r1 even if its vectors would have ranked it first. The skewed-run gate tolerates up to 10% disagreement where kappa would not test it; the adjudicator and audit still check those pairs.
+
+**Overturned by.** An r0 audit error rate above 10% (title matching proposes too many wrong pairs to keep), or a reason to re-decide pairs wholesale, recorded as a new decision.
