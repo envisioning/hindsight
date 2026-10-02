@@ -1,0 +1,285 @@
+{
+ "rule": "D11 audit of D34 narrative scenario verdicts (D20, D45)",
+ "checks": "the scenario's premise as printed in the edition (Wayback copy of the official file); the graders' cited evidence on the world at the horizon year; the verdict (covered: the defining premise held; partly_covered: a defining premise feature held, not all; not_covered: none held).",
+ "auditor": "agent (D20)",
+ "seed": "d11:nic-global-trends:d34",
+ "of": 9,
+ "sample": [
+  "nic-global-trends-2000-016",
+  "nic-global-trends-2000-019",
+  "nic-global-trends-2004-014",
+  "nic-global-trends-2004-016",
+  "nic-global-trends-2004-017",
+  "nic-global-trends-2008-017",
+  "nic-global-trends-2008-018",
+  "nic-global-trends-2008-019",
+  "nic-global-trends-2008-020"
+ ],
+ "records": {
+  "nic-global-trends-2000-016": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered"
+   },
+   "note": "Premise (GT2015 pp.83-85): a majority of the world's people benefit from globalization; a left-behind minority (Sub-Saharan Africa, Middle East, Central/South Asia) keeps internal conflict. WDI re-read: extreme poverty 36.2% (2000) to 13.4% (2015); low/middle-income per-capita growth positive every year (2.1-7.3%). Caveats that do not overturn the premise: the driver table's 'on average 4% annual global growth' did not hold at market rates (2000-2015 average about 3.0%), governance was weak (2008-09 crisis), and Russia-Ukraine 2014 breaks 'conflict minimal between emerging market countries'.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20030617174230id_/http://www.cia.gov:80/cia/reports/globaltrends2015/globaltrends2015.pdf",
+     "title": "NIC, Global Trends 2015 (Dec 2000), Appendix, Scenario One and driver table",
+     "date": "2000-12",
+     "shows": "Majority benefit; conflict minimal among developed and emerging countries; internal conflicts persist in left-behind regions; 4% average global growth."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/SI.POV.DDAY?date=2000:2015&format=json",
+     "title": "World Bank WDI: poverty headcount at $2.15/day, World",
+     "date": "2000-2015",
+     "shows": "36.2% (2000) to 13.4% (2015)."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/LMY/indicator/NY.GDP.PCAP.KD.ZG?date=2000:2015&format=json",
+     "title": "World Bank WDI: GDP per capita growth, low and middle income",
+     "date": "2000-2015",
+     "shows": "2.07% (2001, lowest) to 7.33% (2007); 2009 +2.52%."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?date=2000:2015&format=json",
+     "title": "World Bank WDI: world real GDP growth",
+     "date": "2000-2015",
+     "shows": "Average about 3.0% a year (2009 -1.33%), below the scenario's 4%."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2000-019": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered"
+   },
+   "note": "Premise (GT2015 p.84): US economy slows then stagnates, the US-European alliance deteriorates as US troops leave, the US withdraws from Korea and Japan, and Asian rivalry reaches a China-Japan brink of war. Only US inward turn held in part (Pew 2013: 52% say the US should 'mind its own business internationally', a 1964-series high); US growth 1.6-2.9% a year 2010-2015 is not stagnation, US forces stayed in Europe (ERI, June 2014), Korea and Japan, and the 2012 Senkaku crisis stayed short of war. The scenario's distinguishing features all failed, so not_covered stands.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20030617174230id_/http://www.cia.gov:80/cia/reports/globaltrends2015/globaltrends2015.pdf",
+     "title": "NIC, Global Trends 2015 (Dec 2000), Appendix, Scenario Four",
+     "date": "2000-12",
+     "shows": "US stagnation, troop withdrawals from Europe, Korea and Japan; China-Japan crisis at the brink of major war."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/USA/indicator/NY.GDP.MKTP.KD.ZG?date=2000:2015&format=json",
+     "title": "World Bank WDI: US real GDP growth",
+     "date": "2000-2015",
+     "shows": "2008 +0.11%, 2009 -2.58%, then 1.56-2.95% a year 2010-2015."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/European_Deterrence_Initiative",
+     "title": "European Deterrence Initiative (earlier European Reassurance Initiative)",
+     "date": "2014-06",
+     "shows": "US program from June 2014 to increase US military presence in Europe."
+    },
+    {
+     "url": "https://www.pewresearch.org/short-reads/2013/07/29/americans-want-to-mind-their-own-business/",
+     "title": "Pew Research Center: Americans want to mind their own business",
+     "date": "2013",
+     "shows": "52% say the US should mind its own business internationally, highest since 1964: the inward-turn strand held in part."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2004-014": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "covered"
+   },
+   "note": "Premise (GT2020 exec summary and section 1): robust growth led by China and India over 15 years gives globalization a more non-Western face; Asian giants outpace most Western economies; Western job insecurity. WDI re-read: China 6.1-14.2% a year 2004-2019, India mostly 5-8.5%, world 2.1-4.5% apart from 2009; China second-largest economy from 2010; AIIB and BRI. Caveats: the 2020 horizon year itself was a COVID contraction (world -2.9%) and the US stayed the largest economy, so the 'political playing field' strand held only in part; the defining growth premise held.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2006id_/http://www.dni.gov:80/nic/NIC_globaltrend2020_s1.html",
+     "title": "NIC, Mapping the Global Future (GT2020), section 1, Fictional Scenario: Davos World",
+     "date": "2004-12",
+     "shows": "Asian giants and other developing states outpace most Western economies; globalization gets a more non-Western face."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/CHN;IND/indicator/NY.GDP.MKTP.KD.ZG?date=2004:2020&format=json",
+     "title": "World Bank WDI: China and India real GDP growth",
+     "date": "2004-2020",
+     "shows": "China 6.07-14.15% (2004-2019), 2.34% (2020); India 3.09-8.5% (2004-2019), -5.78% (2020)."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?date=2000:2020&format=json",
+     "title": "World Bank WDI: world real GDP growth",
+     "date": "2004-2020",
+     "shows": "2.09-4.52% a year apart from 2009 (-1.33%) and 2020 (-2.89%)."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2004-016": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered"
+   },
+   "note": "Premise (GT2020 section 3): a global movement fuelled by radical religious identity proclaims a new Caliphate with widespread appeal and convulses places in Africa and Asia, constituting a challenge to Western norms as the foundation of the global system. The Islamic State proclaimed a caliphate in June 2014, held territory (more than the scenario, which ends before territorial authority) and drew affiliates in Africa and Asia, but lost its last territory in March 2019 and by 2020 did not challenge the foundations of the global system. One defining strand held, the other did not: partly_covered.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2006id_/http://www.dni.gov:80/nic/NIC_globaltrend2020_s3.html",
+     "title": "NIC, Mapping the Global Future (GT2020), section 3, Scenario: A New Caliphate",
+     "date": "2004-12",
+     "shows": "Caliphate proclaimed; counter-ideology with widespread appeal; Africa and Asia convulsed; ends before territorial authority."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Islamic_State",
+     "title": "Islamic State",
+     "date": "2014-2019",
+     "shows": "Caliphate proclaimed 29 June 2014; peak 8-12 million people ruled; last territory lost at Baghuz, March 2019."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2004-017": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered"
+   },
+   "note": "Premise (GT2020 exec summary and section 4): proliferation concerns rise until large-scale intrusive security measures are taken to prevent deadly attacks; the section text names 'draconian measures ... to stem proliferation and guard against terrorism' after WMD-laden terrorist attacks. Large-scale intrusive surveillance against terrorism did come (NSA bulk collection disclosed 2013; China's Xinjiang system) and proliferation worry rose (six North Korean tests), but no WMD terrorist attack occurred and the measures were not a proliferation-driven cycle. One defining strand held: partly_covered.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2006id_/http://www.dni.gov:80/nic/NIC_globaltrend2020_s4.html",
+     "title": "NIC, Mapping the Global Future (GT2020), section 4, Scenario: Cycle of Fear",
+     "date": "2004-12",
+     "shows": "Cycle of fear from WMD-laden terrorist attacks; draconian measures to stem proliferation and guard against terrorism."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/2010s_global_surveillance_disclosures",
+     "title": "Global surveillance disclosures",
+     "date": "2013-06",
+     "shows": "NSA/GCHQ bulk collection under post-9/11 counterterrorism authorities."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/North_Korea_and_weapons_of_mass_destruction",
+     "title": "North Korea and weapons of mass destruction",
+     "date": "2006-2017",
+     "shows": "Six nuclear tests 2006-2017."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2008-017": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered"
+   },
+   "note": "Premise (GT2025 p.xii and p.4): new powers supplant the West; the US withdraws from Central Asia including Afghanistan; the SCO gains while NATO declines; anti-China protectionism in the US and Europe; Russia and China in a marriage of convenience. Held by 2025: US exit from Kabul (Aug 2021), Russia-China 'no limits' statement (Feb 2022), SCO enlargement (India, Pakistan, Iran, Belarus), US and EU tariffs on China. Did not hold: the West was not supplanted (US 26% of world GDP and 37% of military spending in 2024) and NATO grew to 32. Several defining features held, the central one did not: partly_covered.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2020id_/https://www.dni.gov/files/documents/Newsroom/Reports%20and%20Pubs/2025_Global_Trends_Final_Report.pdf",
+     "title": "NIC, Global Trends 2025 (Nov 2008), p.xii and p.4, A World Without the West",
+     "date": "2008-11",
+     "shows": "New powers supplant the West; US withdraws from Central Asia; SCO rises, NATO declines; anti-China protectionism; Russia-China marriage of convenience."
+    },
+    {
+     "url": "http://www.en.kremlin.ru/supplement/5770",
+     "title": "Joint Statement of Russia and China",
+     "date": "2022-02-04",
+     "shows": "'Friendship between the two States has no limits'."
+    },
+    {
+     "url": "https://www.sipri.org/media/press-release/2025/unprecedented-rise-global-military-expenditure-european-and-middle-east-spending-surges",
+     "title": "SIPRI press release",
+     "date": "2025-04-28",
+     "shows": "US $997bn, 37% of world military spending in 2024; China $314bn."
+    },
+    {
+     "url": "https://api.worldbank.org/v2/country/USA;CHN;IND;WLD/indicator/NY.GDP.MKTP.CD?date=2024&format=json",
+     "title": "World Bank WDI: GDP (current US$)",
+     "date": "2024",
+     "shows": "US $29.3T of world $111.7T (26%); China $18.7T."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2008-018": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered"
+   },
+   "note": "Premise (GT2025 p.xii, p.4 and the diary box): countries chase growth over the environment, carbon emissions keep climbing, and unexpected major climate impacts (a hurricane damaging the NY Stock Exchange) narrow options and force drastic measures. Held: emissions kept rising, 2024 was the first calendar year above 1.5C (Copernicus, 1.60C), Sandy closed US stock trading 29-30 Oct 2012. Not held: attention did not lapse (Paris Agreement 2015), and no shock forced drastic measures such as relocating coastal cities by 2025. partly_covered.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2020id_/https://www.dni.gov/files/documents/Newsroom/Reports%20and%20Pubs/2025_Global_Trends_Final_Report.pdf",
+     "title": "NIC, Global Trends 2025 (Nov 2008), p.4 and Presidential Diary Entry, October Surprise",
+     "date": "2008-11",
+     "shows": "Growth at the expense of the environment; NYC hurricane damages the NYSE; leaders consider drastic measures such as relocating parts of coastal cities."
+    },
+    {
+     "url": "https://climate.copernicus.eu/global-climate-highlights-2024",
+     "title": "Copernicus: Global Climate Highlights 2024",
+     "date": "2025-01",
+     "shows": "2024 1.60C above pre-industrial, first calendar year above 1.5C."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Effects_of_Hurricane_Sandy_in_New_York",
+     "title": "Effects of Hurricane Sandy in New York",
+     "date": "2012-10",
+     "shows": "NYSE closed two consecutive days; first two-day weather closure since 1888."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2008-019": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "partly_covered"
+   },
+   "note": "Premise (GT2025 p.xii, p.4, p.98): conflict breaks out between China and India over access to vital resources (energy insecurity), outside powers intervene. Held: lethal India-China clashes in Galwan (June 2020) and the first shots on the LAC in 45 years (Sept 2020). Not held: the dispute was territorial, not over resources; no outside intervention; the Medog dam (construction began 19 July 2025) is a diplomatic water dispute. The great-power clash between the named parties held, the resource cause did not: partly_covered, the least certain of the nine (not_covered is a close second reading).",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2020id_/https://www.dni.gov/files/documents/Newsroom/Reports%20and%20Pubs/2025_Global_Trends_Final_Report.pdf",
+     "title": "NIC, Global Trends 2025 (Nov 2008), p.4 and p.98, BRICs' Bust-Up",
+     "date": "2008-11",
+     "shows": "Conflict between China and India over access to vital resources; outside powers intervene; triggered by Chinese fears over energy supplies."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/2020%E2%80%932021_China%E2%80%93India_skirmishes",
+     "title": "2020-2021 China-India skirmishes",
+     "date": "2020-06-15",
+     "shows": "Galwan Valley clash; 7 Sept 2020 first shots fired on the LAC in 45 years; territorial dispute."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Medog_Hydropower_Station",
+     "title": "Medog Hydropower Station",
+     "date": "2025-07-19",
+     "shows": "Construction began 19 July 2025 on the Yarlung Tsangpo near Arunachal Pradesh; no armed conflict over water."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  },
+  "nic-global-trends-2008-020": {
+   "decision": "confirm",
+   "seen": {
+    "verdict": "not_covered"
+   },
+   "note": "Premise (GT2025 p.xii and p.4): nonstate networks set the international environmental agenda, eclipse governments, use their clout to elect the UN Secretary-General and secure a new climate agreement. Guterres was chosen by Security Council recommendation and General Assembly acclamation (Oct 2016), with NGOs pressing only for transparency; Paris (2015) was negotiated by states; by 2025 nonstate climate coalitions were retreating (NZBA ceased operations 3 Oct 2025). No defining feature held at the horizon: not_covered.",
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/2020id_/https://www.dni.gov/files/documents/Newsroom/Reports%20and%20Pubs/2025_Global_Trends_Final_Report.pdf",
+     "title": "NIC, Global Trends 2025 (Nov 2008), p.4, Politics is Not Always Local",
+     "date": "2008-11",
+     "shows": "Nonstate networks set the environmental agenda, elect the UN Secretary-General, secure a new climate agreement."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/2016_United_Nations_Secretary-General_selection",
+     "title": "2016 United Nations Secretary-General selection",
+     "date": "2016-10-13",
+     "shows": "Security Council recommended Guterres; GA selected him by acclamation; NGOs such as 1 for 7 Billion pushed for transparency."
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Net-Zero_Banking_Alliance",
+     "title": "Net-Zero Banking Alliance",
+     "date": "2025-10-03",
+     "shows": "The group formally ceased operations on 3 October 2025."
+    }
+   ],
+   "at": "2026-10-02T17:00:00Z"
+  }
+ },
+ "method": "Population: the 9 NIC scenario verdicts both blind graders agreed on (coverage-d34.json); fewer than 50, so the sample is all of them (scripts/measure-audit-sample.mjs, seed d11:nic-global-trends:d34). Per scenario: the premise re-read in the edition (GT2015 PDF and GT2025 PDF and GT2020 HTML, Wayback copies of the official files), the graders' cited sources re-checked (World Bank WDI API re-queried, SIPRI, Copernicus, kremlin.ru, Wikipedia), the D34 verdict applied again. In coverage-d34.json a correct replaces a scenario verdict and a contest removes it; a set whose scenarios the audit changed is re-derived (covered when any scenario is covered)."
+}

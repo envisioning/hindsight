@@ -10,6 +10,9 @@
 //     (an observed value exists; the comparison itself is arithmetic), counting rows a fix after the
 //     audit took out of grading by their `pre_fix` comparison. id = `<edition>|<metric>|<year>`.
 //     Seed d11:<source>:d34. Writes audit-d34.json.
+//   D34 (nic-global-trends): population = the scenario verdicts both blind graders agreed on
+//     (coverage-d34.json rows[].scenario_verdicts, status `agreed`, or audited with the graders' verdict in `was`).
+//     id = scenario claim id. Seed d11:nic-global-trends:d34. Writes audit-d34.json.
 // Keeps existing records. Refuses to change a sample that already has records (D24: a fix in code
 // never moves an audited sample). --check only compares.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -31,7 +34,16 @@ if (source === "wef-global-risks") {
 	// A row a later fix took out of grading keeps its earlier comparison in `pre_fix` (D24: the sample never moves).
 	population = read("coverage-d34.json").rows.filter((r) => r.status === "graded" || r.pre_fix).map((r) => ({ id: `${r.edition}|${r.metric}|${r.year}`, verdict: r.pre_fix?.verdict ?? r.verdict }));
 	file = "audit-d34.json";
-} else throw new Error("usage: measure-audit-sample.mjs <wef-global-risks|shell-scenarios|ipcc-pathways> [--check]");
+} else if (source === "nic-global-trends") {
+	rule = "d34";
+	// Narrative sets: the scenario verdicts both blind graders agreed on (D20 audits agreed verdicts, not the
+	// adjudicated ones). An audited scenario keeps the graders' verdict in `was`.
+	population = read("coverage-d34.json")
+		.rows.flatMap((r) => r.scenario_verdicts ?? [])
+		.filter((v) => v.status === "agreed" || v.was !== undefined)
+		.map((v) => ({ id: v.id, verdict: v.was ?? v.verdict }));
+	file = "audit-d34.json";
+} else throw new Error("usage: measure-audit-sample.mjs <wef-global-risks|shell-scenarios|ipcc-pathways|nic-global-trends> [--check]");
 
 function fnv1a(s) {
 	let h = 0x811c9dc5;
@@ -83,7 +95,7 @@ if (check) {
 	console.log(source, `sample unchanged (${sample.length} of ${population.length})`, JSON.stringify(strata));
 } else {
 	if (existing && Object.keys(existing.records ?? {}).length) throw new Error(`${source}: ${file} has records for another sample; do not redraw over audit records.`);
-	const head = rule === "d32" ? { rule: "D11 audit of D32 event matches (D20)", checks: "event meets a D32 criterion (UCDP-first death tally, GDP effect, or IMF/World Bank review); match to the WEF risk; that risk's rank in the January edition of the event year; the verdict under D32." } : { rule: "D11 matching audit of D34 pathway coverage (D19, D20)", checks: "scenario values as printed in the edition; observed series, definition, unit and year; observed value; the verdict." };
+	const head = source === "nic-global-trends" ? { rule: "D11 audit of D34 narrative scenario verdicts (D20, D45)", checks: "the scenario's premise as printed in the edition (Wayback copy of the official file); the graders' cited evidence on the world at the horizon year; the verdict (covered: the defining premise held; partly_covered: a defining premise feature held, not all; not_covered: none held)." } : rule === "d32" ? { rule: "D11 audit of D32 event matches (D20)", checks: "event meets a D32 criterion (UCDP-first death tally, GDP effect, or IMF/World Bank review); match to the WEF risk; that risk's rank in the January edition of the event year; the verdict under D32." } : { rule: "D11 matching audit of D34 pathway coverage (D19, D20)", checks: "scenario values as printed in the edition; observed series, definition, unit and year; observed value; the verdict." };
 	writeFileSync(target, `${JSON.stringify({ ...head, auditor: "agent (D20)", seed, of: population.length, sample, records: existing?.records ?? {} }, null, 1)}\n`);
 	console.log(source, `sample written (${sample.length} of ${population.length})`, JSON.stringify(strata));
 }

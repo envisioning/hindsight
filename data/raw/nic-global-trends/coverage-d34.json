@@ -24,8 +24,17 @@
   "scenarios_agreed": 9,
   "adjudicated": 3
  },
- "audit": null,
- "audit_note": "No D11 audit sample has been drawn for the NIC scenario verdicts.",
+ "audit": {
+  "rule": "D11 audit of the agreed scenario verdicts (D20, D45)",
+  "seed": "d11:nic-global-trends:d34",
+  "sample": 9,
+  "of_agreed": 9,
+  "audited": 9,
+  "confirmed": 9,
+  "corrected": 0,
+  "contested": 0,
+  "error_rate": 0
+ },
  "rows": [
   {
    "edition": "2000",

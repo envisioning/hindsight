@@ -221,6 +221,11 @@ for (const src of ["ipcc-pathways", "shell-scenarios"]) {
 // (scenarios-d34-graderA/B.json); an adjudicator settled disagreements (scenarios-adjudicated-d34.json).
 // The unit is the set: covered when the world at the horizon fell inside any scenario's premise (D34).
 // Sets whose horizon is after 2025 stay open. Regional scenarios are not graded.
+// D11 audit (D20, D45): audit-d34.json audits the agreed scenario verdicts (sample from
+// scripts/measure-audit-sample.mjs, seed d11:nic-global-trends:d34). As for WEF D32, a `correct` replaces
+// the verdict and a `contest` removes it (the graders' verdict stays in `was`); a set with an audited change
+// is re-derived from its scenarios (covered when any scenario is covered). The audit error rate widens the
+// share's interval (D28) once a share is published.
 {
 	const src = "nic-global-trends";
 	const dir = `data/raw/${src}`;
@@ -230,11 +235,19 @@ for (const src of ["ipcc-pathways", "shell-scenarios"]) {
 	const claims = read(`data/normalized/claims/${src}.json`).filter((c) => c.claim_type === "scenario");
 	const vB = new Map(B.verdicts.map((v) => [v.id, v.verdict]));
 	const vJ = new Map(J.verdicts.map((v) => [v.id, v]));
+	const auditPath = path.join(root, dir, "audit-d34.json");
+	const auditFile = existsSync(auditPath) ? JSON.parse(readFileSync(auditPath, "utf8")) : null;
+	const records = auditFile?.records ?? {};
 	const scen = new Map(
 		A.verdicts.map((a) => {
 			const b = vB.get(a.id);
 			if (b === undefined) throw new Error(`${src}: grader B has no verdict for ${a.id}`);
-			if (a.verdict === b) return [a.id, { id: a.id, verdict: a.verdict, status: "agreed" }];
+			if (a.verdict === b) {
+				const rec = records[a.id];
+				if (rec?.decision === "correct") return [a.id, { id: a.id, verdict: rec.corrected_verdict, status: "corrected", was: a.verdict, reason: rec.note }];
+				if (rec?.decision === "contest") return [a.id, { id: a.id, verdict: "contested", status: "contested", was: a.verdict, reason: rec.note }];
+				return [a.id, { id: a.id, verdict: a.verdict, status: "agreed" }];
+			}
 			const j = vJ.get(a.id);
 			return [a.id, j ? { id: a.id, verdict: j.verdict, status: "adjudicated", graderA: a.verdict, graderB: b } : { id: a.id, verdict: "contested", status: "contested", graderA: a.verdict, graderB: b }];
 		}),
@@ -248,32 +261,52 @@ for (const src of ["ipcc-pathways", "shell-scenarios"]) {
 		const agreed = a && b && a.covered === b.covered;
 		const set = agreed ? a : j;
 		if (!set) return { edition: ed, horizon, scenarios: ids.length, verdict: "contested", status: "contested" };
+		const scenario_verdicts = ids.map((id) => scen.get(id) ?? { id, verdict: null, status: "not_graded" });
+		// An audited change to a scenario re-derives the set from its scenarios.
+		const audited = scenario_verdicts.some((v) => v.was !== undefined);
+		const covered = audited ? scenario_verdicts.some((v) => v.verdict === "covered") : set.covered;
 		return {
 			edition: ed,
 			horizon,
 			scenarios: ids.length,
-			verdict: set.covered ? "covered" : "not_covered",
-			status: agreed ? "agreed" : "adjudicated",
+			verdict: covered ? "covered" : "not_covered",
+			status: audited && covered !== set.covered ? "audited" : agreed ? "agreed" : "adjudicated",
+			...(audited && covered !== set.covered ? { was: set.covered ? "covered" : "not_covered" } : {}),
 			closest_id: (j ?? a).closest,
 			reason: (j ?? a).reason,
-			scenario_verdicts: ids.map((id) => scen.get(id) ?? { id, verdict: null, status: "not_graded" }),
+			scenario_verdicts,
 		};
 	});
 	const graded = rows.filter((r) => r.verdict === "covered" || r.verdict === "not_covered");
 	const sv = [...scen.values()];
 	const sc = (v) => sv.filter((x) => x.verdict === v).length;
 	const setsAgreed = graded.filter((r) => r.status === "agreed").length;
+	const recs = Object.values(records);
+	const nAud = (d) => recs.filter((r) => r.decision === d).length;
+	const audit = auditFile
+		? {
+				rule: "D11 audit of the agreed scenario verdicts (D20, D45)",
+				seed: auditFile.seed,
+				sample: auditFile.sample.length,
+				of_agreed: auditFile.of,
+				audited: recs.length,
+				confirmed: nAud("confirm"),
+				corrected: nAud("correct"),
+				contested: nAud("contest"),
+				error_rate: recs.length ? Math.round(((nAud("correct") + nAud("contest")) / recs.length) * 1000) / 1000 : null,
+			}
+		: null;
 	const out = {
 		rule: "D34",
 		note: "Narrative set coverage: did the world at the set's horizon year fall inside any scenario's premise? Judged by two blind agents per scenario and per set, disagreements adjudicated (D20). Coverage share of sets, never a hit rate. D11: fewer than 20 graded sets, counts only.",
 		counts: { covered: graded.filter((r) => r.verdict === "covered").length, not_covered: graded.filter((r) => r.verdict === "not_covered").length, open: rows.filter((r) => r.status === "open").length, contested: rows.filter((r) => r.verdict === "contested").length },
-		...share(graded.filter((r) => r.verdict === "covered").length, graded.length, null),
+		...share(graded.filter((r) => r.verdict === "covered").length, graded.length, audit?.error_rate),
 		scenario_counts: { covered: sc("covered"), partly_covered: sc("partly_covered"), not_covered: sc("not_covered"), contested: sc("contested") },
-		agreement: { sets: graded.length, sets_agreed: setsAgreed, scenarios: sv.length, scenarios_agreed: sv.filter((x) => x.status === "agreed").length, adjudicated: sv.filter((x) => x.status === "adjudicated").length },
-		audit: null,
-		audit_note: "No D11 audit sample has been drawn for the NIC scenario verdicts.",
+		agreement: { sets: graded.length, sets_agreed: setsAgreed, scenarios: sv.length, scenarios_agreed: sv.filter((x) => x.status === "agreed" || x.was !== undefined).length, adjudicated: sv.filter((x) => x.status === "adjudicated").length },
+		audit,
+		...(audit ? {} : { audit_note: "No D11 audit sample has been drawn for the NIC scenario verdicts." }),
 		rows,
 	};
 	writeFileSync(path.join(root, dir, "coverage-d34.json"), `${JSON.stringify(out, null, 1)}\n`);
-	console.log(src, JSON.stringify(out.counts), JSON.stringify(out.agreement));
+	console.log(src, JSON.stringify(out.counts), JSON.stringify(out.agreement), JSON.stringify(audit));
 }
