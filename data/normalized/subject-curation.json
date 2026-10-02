@@ -1,5 +1,5 @@
 {
-  "note": "Judgment calls for subjects, read by `pnpm normalize`. `aliases`: labels mapped to a subject by judgment, each with a one-line reason. `subjects`: names for new ids and `related` links (not the same thing, but close). `unmapped`: labels deliberately left without a subject. Quantity subjects keep their related links in src/normalize/quantities.ts.",
+  "note": "Judgment calls for subjects, read by `pnpm normalize`. `aliases`: labels mapped to a subject by judgment, each with a one-line reason. `subjects`: names for new ids and `related` links (not the same thing, but close). `unmapped`: labels deliberately left without a subject. Quantity subjects keep their related links in src/normalize/quantities.ts. `claims`: per-claim subject labels (D53): the claim's publisher label `label` is replaced, for that claim only, by `subject_label`, which names its own subject (a recurring field label shared by claims that say different things); claim ids never change.",
   "aliases": [
     {
       "label": "3D Flat-Panel TVs and Displays",
@@ -2751,7 +2751,9 @@
     {
       "id": "cio-role",
       "related": [
-        "cio-role-it-portfolio-management"
+        "cio-role-it-portfolio-management",
+        "cio-role-catalyst-for-business-revolution",
+        "cio-role-postdigital-catalyst"
       ]
     },
     {
@@ -2759,7 +2761,77 @@
       "related": [
         "cio-role"
       ]
+    },
+    {
+      "id": "cio-role-catalyst-for-business-revolution",
+      "related": [
+        "cio-role"
+      ]
+    },
+    {
+      "id": "cio-role-postdigital-catalyst",
+      "related": [
+        "cio-role"
+      ]
+    },
+    {
+      "id": "cybersecurity-priority-business-discipline",
+      "related": [
+        "cybersecurity"
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "related": [
+        "cybersecurity-priority-business-discipline",
+        "cybersecurity-cyber-intelligence",
+        "cybersecurity-breach-is-inevitable"
+      ]
+    },
+    {
+      "id": "cybersecurity-cyber-intelligence",
+      "related": [
+        "cybersecurity"
+      ]
+    },
+    {
+      "id": "cybersecurity-breach-is-inevitable",
+      "related": [
+        "cybersecurity"
+      ]
     }
   ],
-  "unmapped": []
+  "unmapped": [],
+  "claims": [
+    {
+      "claim_id": "deloitte-tech-trends-2011-004",
+      "label": "CIO role",
+      "subject_label": "CIO role (catalyst for business revolution)",
+      "reason": "D53: Deloitte's CIO chapter recurs with a new thesis each year (a field). 2011 'CIOs as Revolutionaries': CIOs shift from stewards of the business to catalysts for business revolution. Not the claim of 2013 (postdigital forces) or 2015 (integration). Related to cio-role."
+    },
+    {
+      "claim_id": "deloitte-tech-trends-2013-001",
+      "label": "CIO role",
+      "subject_label": "CIO role (postdigital catalyst)",
+      "reason": "D53: Deloitte's CIO chapter recurs with a new thesis each year (a field). 2013 'CIO as the Postdigital Catalyst': CIOs harness the five postdigital forces to move from systems to capabilities. Not the claim of 2011 (revolutionaries) or 2015 (integration). Related to cio-role."
+    },
+    {
+      "claim_id": "deloitte-tech-trends-2010-003",
+      "label": "Cybersecurity",
+      "subject_label": "Cybersecurity (priority business discipline)",
+      "reason": "D53: Deloitte's cyber chapter recurs with a new thesis (a field). 2010 'Cyber-security': security moves from background technology to a priority business discipline. Not the claim of 2011 (cyber intelligence) or 2013 (breach is inevitable). Related to cybersecurity."
+    },
+    {
+      "claim_id": "deloitte-tech-trends-2011-003",
+      "label": "Cybersecurity",
+      "subject_label": "Cybersecurity (cyber intelligence)",
+      "reason": "D53: Deloitte's cyber chapter recurs with a new thesis (a field). 2011 'Cyber Intelligence': protecting information assets demands a full-spectrum, intelligence-led cyber approach. Not the claim of 2010 (business discipline) or 2013 (breach is inevitable). Related to cybersecurity."
+    },
+    {
+      "claim_id": "deloitte-tech-trends-2013-009",
+      "label": "Cybersecurity",
+      "subject_label": "Cybersecurity (breach is inevitable)",
+      "reason": "D53: Deloitte's cyber chapter recurs with a new thesis (a field). 2013 'No Such Thing as Hacker-proof': every organisation has been or will be breached. Not the claim of 2011 (cyber intelligence) or the 2014 exponential (boilerplate, kept on cybersecurity with its 2015 continuation). Related to cybersecurity."
+    }
+  ]
 }

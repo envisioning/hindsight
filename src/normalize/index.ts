@@ -189,7 +189,7 @@ function main(): void {
           if (d.rawId !== undefined) posterIds.set(d.rawId, id);
           const subjectIds = [...d.quantityIds];
           for (const ref of d.labels) {
-            const s = subjects.resolve(ref, name);
+            const s = subjects.resolve(subjects.forClaim(id, ref), name);
             if (s !== undefined && !subjectIds.includes(s)) subjectIds.push(s);
           }
           const row = { id, source_edition_id: editionId(name, ed), subject_ids: subjectIds, ...d.claim };
@@ -385,6 +385,8 @@ function main(): void {
     unmapped,
   });
   writeProgress();
+  const unusedClaimLabels = subjects.unusedClaimLabels();
+  if (unusedClaimLabels.length > 0) failures.push(`subject-curation.json claims rows that match no claim and label: ${unusedClaimLabels.join(", ")}`);
   if (failures.length > 0) {
     console.error(`normalize failed closed:\n${failures.join("\n")}`);
     process.exitCode = 1;
@@ -454,7 +456,7 @@ function writeReadme(r: ReadmeInput): void {
     "## Subjects",
     "",
     "- Economic and energy series map to deterministic subjects defined in `src/normalize/quantities.ts` (for example `world-real-gdp-growth`, `brazil-ipca-inflation`, `global-solar-pv-installed-capacity`). The same economy and measure from any publisher gets the same id. A different measure of a close quantity gets its own id and a `related` link, and the difference is in `notes`.",
-    "- Publisher labels (technologies, risks, prose metrics) map through `subject-aliases.json`. A label is first matched exactly, then by a normalized key (case, accents, punctuation and a final plural ignored). Judgment merges and related links come from `subject-curation.json`, each with a one-line reason. Otherwise a label names a new subject.",
+    "- Publisher labels (technologies, risks, prose metrics) map through `subject-aliases.json`. A label is first matched exactly, then by a normalized key (case, accents, punctuation and a final plural ignored). Judgment merges, related links and per-claim subject labels (D53: a recurring field label shared by claims that say different things) come from `subject-curation.json`, each with a one-line reason. Otherwise a label names a new subject.",
     `- Alias methods: ${Object.entries(r.methodCount)
       .map(([k, v]) => `${k} ${v}`)
       .join(", ")}.`,

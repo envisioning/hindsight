@@ -1,0 +1,191 @@
+{
+ "rule": "D53 (field subjects do not make trends persist; amends D13, D33)",
+ "recorded": "2026-10-02",
+ "reviewer": "agent (D20)",
+ "trigger": "data/reviews/subject-dupes-d48.json rechecks (cio-role, 'open'): Deloitte's recurring CIO chapter (2011-004, 2013-001, 2015-001) shares the capture's subject 'CIO role', so 2011-004 and 2013-001 were mechanically persisted and never rename-checked, while the D33 audit had already read the CIO-role link of 2014-001 as a field, not a trend.",
+ "sweep": "Every row that scripts/trend-persistence.mjs computed as persisted at fc360b5, in all six trend sources, with the trend of the first next edition that shares its subject id (matched_in): accenture-tech-vision 0 pairs, a16z-big-ideas 0, deloitte-tech-trends 21, ftsg-tech-trends 1,315, mckinsey-tech-trends 36, trendwatching 5. Each pair was read on label, quote, note and position. Every pair whose two labels differ was read (Deloitte 16, FTSG 77, McKinsey 1, trendwatching 2), every pair whose shared label is one word (FTSG 127), and every Deloitte, McKinsey and trendwatching pair. Rule: a subject is a field subject only when the persisted pairs it creates assert different things about a broad topic (a role, a function, 'cyber', an umbrella against a specific application); a trend that continues under the same or a reworded name is not.",
+ "result": "Two field subjects, both Deloitte Tech Trends: cio-role and cybersecurity. 5 persisted rows become rename candidates (pass 3, renames-d33-pass3-scope.json). No field subject in Accenture or a16z (no persisted rows), McKinsey (one trend list re-published yearly under the same names and definitions), trendwatching or FTSG (differing labels are spelling variants or the same trend; same-label pairs carry the same or updated text, and FTSG's own year tags count them as one trend, D40).",
+ "counts": {
+  "pairs_read": 1377,
+  "field_subjects": 2,
+  "field_pairs": 5,
+  "rows_to_candidate": 5,
+  "link_rows_affected": 0
+ },
+ "field_subjects": [
+  {
+   "source": "deloitte-tech-trends",
+   "subject": "cio-role",
+   "claims_read": {
+    "deloitte-tech-trends-2011-004": "CIOs as Revolutionaries: CIOs shift from stewards of, to catalysts for, business revolution.",
+    "deloitte-tech-trends-2013-001": "CIO as the Postdigital Catalyst: CIOs harness the convergence of the five postdigital forces to move the conversation from systems to capabilities.",
+    "deloitte-tech-trends-2015-001": "CIO as chief integration officer: the CIO role evolves with integration at the core of its mission."
+   },
+   "pairs": [
+    {
+     "from": "deloitte-tech-trends-2011-004",
+     "to": "deloitte-tech-trends-2013-001",
+     "reading": "Different claims: CIOs as agents of business revolution vs CIOs harnessing the postdigital forces (mobile, social, cloud, analytics, cyber) to shift from systems to capabilities. Shared ground is the CIO chapter."
+    },
+    {
+     "from": "deloitte-tech-trends-2013-001",
+     "to": "deloitte-tech-trends-2015-001",
+     "reading": "Different claims: postdigital catalyst vs chief integration officer (integration across the business as the CIO's mission). Same reading as the D33 audit of 2014-001 against 2015-001."
+    }
+   ],
+   "decision": "split",
+   "split": {
+    "deloitte-tech-trends-2011-004": "cio-role-catalyst-for-business-revolution",
+    "deloitte-tech-trends-2013-001": "cio-role-postdigital-catalyst",
+    "deloitte-tech-trends-2015-001": "cio-role (kept; its claim is the evolving CIO role itself)"
+   },
+   "related": "Each new subject related to cio-role both ways; cio-role-it-portfolio-management (2014-001, split earlier) stays as it is."
+  },
+  {
+   "source": "deloitte-tech-trends",
+   "subject": "cybersecurity",
+   "claims_read": {
+    "deloitte-tech-trends-2010-003": "Cyber-security: moving from background technology to a priority business discipline.",
+    "deloitte-tech-trends-2011-003": "Cyber Intelligence: protecting vital information assets demands a full-spectrum cyber approach.",
+    "deloitte-tech-trends-2013-009": "No Such Thing as Hacker-proof: you've either been breached or you soon will be.",
+    "deloitte-tech-trends-2014-013": "Cyber security (Exponentials): label only; the quote is the chapter sentence shared by all five exponentials.",
+    "deloitte-tech-trends-2015-014": "Cyber security (Exponentials): cybercrime goes from two dimensions to three (physical-cyber threats)."
+   },
+   "pairs": [
+    {
+     "from": "deloitte-tech-trends-2010-003",
+     "to": "deloitte-tech-trends-2011-003",
+     "reading": "Different claims: security becomes a business priority vs an intelligence-led, full-spectrum cyber approach. Shared ground is the yearly cyber chapter."
+    },
+    {
+     "from": "deloitte-tech-trends-2011-003",
+     "to": "deloitte-tech-trends-2013-009",
+     "reading": "Different claims: cyber intelligence vs breach is inevitable (resilience, assume compromise). Shared ground is the topic."
+    },
+    {
+     "from": "deloitte-tech-trends-2013-009",
+     "to": "deloitte-tech-trends-2014-013",
+     "reading": "Different kinds of entry: a full chapter with a thesis vs a one-line exponential that states none. Nothing shows the same claim."
+    },
+    {
+     "from": "deloitte-tech-trends-2014-013",
+     "to": "deloitte-tech-trends-2015-014",
+     "reading": "Kept: the same Exponentials entry under the identical label in consecutive editions; both pass-1 checkers had judged it `same` before the merge. Not a field pair."
+    }
+   ],
+   "decision": "split",
+   "split": {
+    "deloitte-tech-trends-2010-003": "cybersecurity-priority-business-discipline",
+    "deloitte-tech-trends-2011-003": "cybersecurity-cyber-intelligence",
+    "deloitte-tech-trends-2013-009": "cybersecurity-breach-is-inevitable",
+    "deloitte-tech-trends-2014-013": "cybersecurity (kept)",
+    "deloitte-tech-trends-2015-014": "cybersecurity (kept)"
+   },
+   "related": "Each new subject related to cybersecurity both ways."
+  }
+ ],
+ "rows_to_candidate": [
+  {
+   "id": "deloitte-tech-trends-2010-003",
+   "was": "persisted (computed), matched_in 2011 via cybersecurity",
+   "now": "candidate, next 2011, 2012"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-003",
+   "was": "persisted (computed), matched_in 2013 via cybersecurity",
+   "now": "candidate, next 2012, 2013"
+  },
+  {
+   "id": "deloitte-tech-trends-2011-004",
+   "was": "persisted (computed), matched_in 2013 via cio-role",
+   "now": "candidate, next 2012, 2013"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-001",
+   "was": "persisted (computed), matched_in 2015 via cio-role",
+   "now": "candidate, next 2014, 2015"
+  },
+  {
+   "id": "deloitte-tech-trends-2013-009",
+   "was": "persisted (computed), matched_in 2014 via cybersecurity",
+   "now": "candidate, next 2014, 2015"
+  }
+ ],
+ "kept": [
+  {
+   "source": "deloitte-tech-trends",
+   "subject": "enterprise-mobility",
+   "pairs": [
+    "deloitte-tech-trends-2010-005 > 2011-009",
+    "deloitte-tech-trends-2011-009 > 2012-003",
+    "deloitte-tech-trends-2012-003 > 2013-002"
+   ],
+   "reading": "One thesis carried on: mobility as the enterprise's frontier for innovation (2010 'battleground for innovation in the untethered enterprise', 2011 'the edge has become the new battleground for innovation'), then its scaling (2012 'now comes the hard part', 2013 'Mobile Only (and beyond)'). Continuation, not a field. Borderline: the checkers would likely call these renamed."
+  },
+  {
+   "source": "deloitte-tech-trends",
+   "subject": "cloud-computing",
+   "pairs": [
+    "deloitte-tech-trends-2010-012 > 2011-010"
+   ],
+   "reading": "Cloud moving from technology to business value (revolution; capacity to capabilities): the same claim reworded."
+  },
+  {
+   "source": "deloitte-tech-trends",
+   "subject": "enterprise-resource-planning-erp",
+   "pairs": [
+    "deloitte-tech-trends-2011-005 > 2013-008"
+   ],
+   "reading": "ERP is not dead and is reinventing itself: same claim."
+  },
+  {
+   "source": "deloitte-tech-trends",
+   "subject": "gamification, core-system-modernization, blockchain, it-operating-model-transformation, affective-computing, ambient-computing, user-engagement-and-enterprise-user-experience",
+   "pairs": [
+    "deloitte-tech-trends-2012-002 > 2013-007",
+    "deloitte-tech-trends-2015-006 > 2016-004",
+    "deloitte-tech-trends-2016-006 > 2018-006",
+    "deloitte-tech-trends-2017-001 > 2018-001",
+    "deloitte-tech-trends-2020-004 > 2022-008",
+    "deloitte-tech-trends-2020-006 > 2022-009",
+    "deloitte-tech-trends-2010-009 > 2011-008"
+   ],
+   "reading": "Each pair carries one phenomenon and claim forward under a reworded or identical label."
+  },
+  {
+   "source": "deloitte-tech-trends",
+   "subject": "artificial-intelligence, robotics, 3d-printing",
+   "pairs": [
+    "deloitte-tech-trends-2014-011 > 2015-009",
+    "deloitte-tech-trends-2014-012 > 2015-010",
+    "deloitte-tech-trends-2014-014 > 2015-011"
+   ],
+   "reading": "Exponentials entries under identical labels in consecutive editions: the same entry."
+  },
+  {
+   "source": "mckinsey-tech-trends",
+   "subject": "all 17 (applied-ai, cloud-and-edge-computing, advanced-connectivity, quantum-technologies, ...)",
+   "pairs": "36",
+   "reading": "McKinsey re-publishes one trend list with the same names and definitions each year; broad names ('Applied AI') name the same trend every time. 2021-005 Distributed infrastructure > 2022-004 Cloud and edge computing is a rename of the same trend."
+  },
+  {
+   "source": "trendwatching",
+   "subject": "status-beyond-traditional-consumption, urbanization-and-urban-consumers, localism-and-place-making, guilt-free-convenience, meaningful-social-connection",
+   "pairs": "5",
+   "reading": "2007 STATUS LIFESTYLES > 2008 STATUS SPHERES is the publisher's own stated succession (audit-confirmed renamed); URBANY > URBANOMICS both claim urbanisation as a consumer driver; the rest repeat the 2022 trend name in 2023."
+  },
+  {
+   "source": "ftsg-tech-trends",
+   "subject": "1,315 pairs over 806 subjects",
+   "pairs": "77 differing labels, 1,238 identical",
+   "reading": "Differing labels are spelling or abbreviation variants (A.I./AI, as a Service/-as-a-Service, 3D Printing/Additive Manufacturing, Blockchain/Blockchain Technologies). Identical labels, including broad one-word ones (Privacy, Security, Data, Video, Space, Scoring, Recognition, Drones), repeat the same or updated text and FTSG's year tags count them as one trend on its list (D40). Closest calls, kept: 2014-013 Privacy (core trend, text about cyber security) > 2015-009 Privacy umbrella; 2022-364 Drones (logistics) > 2023-666 Drones (climate monitoring); 2023-651 Bioengineering (de-extinction) > 2024-353 Bioengineering. Same publisher label and topic, no clear change of claim."
+  },
+  {
+   "source": "accenture-tech-vision, a16z-big-ideas",
+   "subject": "-",
+   "pairs": "0",
+   "reading": "No row is mechanically persisted: every trend went to the rename checkers."
+  }
+ ],
+ "links": "No row in data/links/research.json names cio-role, cybersecurity or a new subject; nothing to move (D51). pnpm links re-run."
+}

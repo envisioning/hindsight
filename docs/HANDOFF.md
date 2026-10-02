@@ -1,6 +1,6 @@
 # Hindsight handoff (2026-10-02, fourth session, local)
 
-Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D51). Every next step is an open issue in envisioning/hindsight.
+Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D53). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -56,7 +56,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 ## Order of work
 
 1. **#59** embedding run d48-r1 once MZ sets a working key (`scripts/set-openrouter-key.sh`): `check-model.mjs` (must PASS), `embed-subjects.mjs`, `candidates.mjs --run d48-r1`, then blind verifiers, agreement, adjudicator, audit, `final.mjs`, `pnpm links`. Then the upkeep check (#59 step 7).
-2. Small follow-ups: Deloitte Tech Trends 2014-001 is persisted through the `cio-role` merge although the pass-1 audit had corrected it to faded (re-check the merge); `trend-final-d33.mjs` keeps pass 2+ audit records of rows that are no longer candidates in the pass audit summaries; FTSG 2020-234 match id (INDEX Known issues).
+2. Small follow-ups: Deloitte Tech Trends rename pass 3 (D53, field subjects): 5 rows that persisted only through the recurring `cio-role` and `cybersecurity` chapters are candidates in `renames-d33-pass3-scope.json`; run checkers A and B, adjudicator, audit, `trend-final-d33.mjs` (the committed `final-d33.json` still shows them persisted until then); `trend-final-d33.mjs` keeps pass 2+ audit records of rows that are no longer candidates in the pass audit summaries; FTSG 2020-234 match id (INDEX Known issues).
 3. Missing editions with no known source: McKinsey 2026 PDF (#27, withdrawn at the origin); FTSG 2008-2013 and 2018 (#26, not public; 2019 stays titles only).
 4. Next release (`hindsight-2026.2`) when enough has changed; ask MZ.
 5. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.

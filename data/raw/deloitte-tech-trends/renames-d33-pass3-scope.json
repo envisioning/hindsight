@@ -1,0 +1,101 @@
+{
+ "rule": "D24 pass 3 of D33 rename checks (D53)",
+ "recorded": "2026-10-02",
+ "note": "Rows that trend-persistence.mjs computed as persisted only through a field subject: a recurring topic (a role, a function, a broad field) shared by trends that make different claims (data/reviews/field-subjects-d53.json). D53 splits those subjects into claim-specific ones (subject-curation.json `claims`), so the rows become rename candidates and go to the checkers with their two-edition window. field_subject: formerly persisted through the subject named in field_subject, now a candidate. Rows not listed keep their earlier verdicts; listed rows are pending until both pass-3 checkers have a verdict. previous is the earlier final verdict (D24).",
+ "counts": {
+  "field_subject": 5,
+  "rows": 5
+ },
+ "rows": [
+  {
+   "id": "deloitte-tech-trends-2010-003",
+   "edition": "2010",
+   "next_editions": [
+    "2011",
+    "2012"
+   ],
+   "reasons": [
+    "field_subject"
+   ],
+   "field_subject": "cybersecurity",
+   "previous": {
+    "pass": 1,
+    "verdict": "persisted",
+    "status": "computed",
+    "matched_in": "2011"
+   }
+  },
+  {
+   "id": "deloitte-tech-trends-2011-003",
+   "edition": "2011",
+   "next_editions": [
+    "2012",
+    "2013"
+   ],
+   "reasons": [
+    "field_subject"
+   ],
+   "field_subject": "cybersecurity",
+   "previous": {
+    "pass": 1,
+    "verdict": "persisted",
+    "status": "computed",
+    "matched_in": "2013"
+   }
+  },
+  {
+   "id": "deloitte-tech-trends-2011-004",
+   "edition": "2011",
+   "next_editions": [
+    "2012",
+    "2013"
+   ],
+   "reasons": [
+    "field_subject"
+   ],
+   "field_subject": "cio-role",
+   "previous": {
+    "pass": 1,
+    "verdict": "persisted",
+    "status": "computed",
+    "matched_in": "2013"
+   }
+  },
+  {
+   "id": "deloitte-tech-trends-2013-001",
+   "edition": "2013",
+   "next_editions": [
+    "2014",
+    "2015"
+   ],
+   "reasons": [
+    "field_subject"
+   ],
+   "field_subject": "cio-role",
+   "previous": {
+    "pass": 1,
+    "verdict": "persisted",
+    "status": "computed",
+    "matched_in": "2015"
+   }
+  },
+  {
+   "id": "deloitte-tech-trends-2013-009",
+   "edition": "2013",
+   "next_editions": [
+    "2014",
+    "2015"
+   ],
+   "reasons": [
+    "field_subject"
+   ],
+   "field_subject": "cybersecurity",
+   "previous": {
+    "pass": 1,
+    "verdict": "persisted",
+    "status": "computed",
+    "matched_in": "2014"
+   }
+  }
+ ]
+}

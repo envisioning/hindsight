@@ -1020,6 +1020,16 @@
    "scope": "all merge groups",
    "check": "Every D33 final row whose verdict or status changed in the post-merge persistence re-run (bd4862d, four trend sources), compared with the audit and adjudication files.",
    "result": "26 rows changed. 23 went from a checker or audit verdict of persisted to mechanically persisted: no conflict. 1 was the CIO row above (audit faded, now persisted): reversed. 2 went from renamed to persisted: trendwatching-2007-001 (audit confirmed renamed to 2008-001 'STATUS SPHERES') and ftsg-tech-trends-2019-282 (adjudicated renamed to the 2020 Blockchain umbrella, 'one step broader'). Renamed means the same phenomenon under a new label, so these merges agree with the audit and adjudication; the FTSG adjudicator's 'one step broader' is the only scope caveat. Kept."
+  },
+  {
+   "at": "2026-10-02",
+   "group": 14,
+   "subjects": [
+    "cio-role"
+   ],
+   "trigger": "The 'open' note of the cio-role recheck above: 2011-004 and 2013-001 persisted only through the capture's shared subject 'CIO role'.",
+   "decision": "D53 (field subjects do not make trends persist): cio-role is a field subject; 2011-004 and 2013-001 get claim-specific subjects (subject-curation.json `claims`), related to cio-role; 2015-001 keeps cio-role. Same sweep found Deloitte cybersecurity. See data/reviews/field-subjects-d53.json.",
+   "effect": "5 Deloitte rows are rename candidates in pass 3 (renames-d33-pass3-scope.json). No link rows on either subject."
   }
  ]
 }

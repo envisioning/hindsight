@@ -9,6 +9,11 @@
  *   2. registry row from an earlier run (method kept)
  *   3. same normalized key as a label already mapped (method `normalized`)
  *   4. new subject named after the label (method `exact`)
+ *
+ * A curation `claims` row gives one claim its own subject label in place of the publisher's
+ * label (D53: a recurring field label shared by claims that say different things). The
+ * replacement label resolves like a curation alias (method `judgment`, the row's reason) to a
+ * subject named after it. Claim ids never change.
  */
 import { join } from "node:path";
 import { type Subject, SubjectAlias } from "../schema.ts";
@@ -19,6 +24,8 @@ interface Curation {
   aliases: { label: string; subject_id: string; reason: string }[];
   subjects: (Partial<Omit<Subject, "aliases">> & { id: string })[];
   unmapped: { label: string; reason: string }[];
+  /** Per-claim subject labels (D53). `label` must be the claim's publisher label. */
+  claims?: { claim_id: string; label: string; subject_label: string; reason: string }[];
 }
 
 const ALIASES = join(OUT, "subject-aliases.json");
@@ -29,6 +36,8 @@ export class SubjectResolver {
   private curatedAlias = new Map<string, { subject_id: string; reason: string }>();
   private curatedTargets = new Set<string>();
   private registry = new Map<string, SubjectAlias>();
+  private claimLabels = new Map<string, { label: string; subject_label: string }>();
+  private claimLabelsUsed = new Set<string>();
   /** This run's table, label -> alias row. */
   readonly table = new Map<string, SubjectAlias>();
   private byKey = new Map<string, string>();
@@ -40,6 +49,13 @@ export class SubjectResolver {
     for (const a of this.curation.aliases) {
       this.curatedAlias.set(a.label, a);
       this.curatedTargets.add(a.subject_id);
+    }
+    for (const c of this.curation.claims ?? []) {
+      if (this.claimLabels.has(c.claim_id)) throw new Error(`subject-curation.json: two claims rows for ${c.claim_id}`);
+      if (this.curatedAlias.has(c.subject_label)) throw new Error(`subject-curation.json: claims label "${c.subject_label}" is also an alias`);
+      this.claimLabels.set(c.claim_id, c);
+      this.curatedAlias.set(c.subject_label, { subject_id: slug(c.subject_label), reason: c.reason });
+      this.curatedTargets.add(slug(c.subject_label));
     }
     for (const row of readJsonIf<unknown[]>(ALIASES, [])) {
       const a = SubjectAlias.parse(row);
@@ -56,6 +72,19 @@ export class SubjectResolver {
   private taken(id: string): boolean {
     for (const a of this.table.values()) if (a.subject_id === id) return true;
     return QUANTITIES.some((q) => q.id === id);
+  }
+
+  /** The label to resolve for one claim: its own subject label from the curation `claims` rows (D53), else the publisher's. */
+  forClaim(claimId: string, ref: LabelRef): LabelRef {
+    const c = this.claimLabels.get(claimId);
+    if (c === undefined || c.label !== ref.label) return ref;
+    this.claimLabelsUsed.add(claimId);
+    return { ...ref, label: c.subject_label };
+  }
+
+  /** Curation `claims` rows that matched no claim and label in this run. */
+  unusedClaimLabels(): string[] {
+    return [...this.claimLabels].filter(([id]) => !this.claimLabelsUsed.has(id)).map(([id, c]) => `${id} "${c.label}"`);
   }
 
   /** Resolve a label to a subject id, or undefined when the curation leaves it unmapped on purpose. */
