@@ -123,6 +123,13 @@ export function worldBankGep(): Bundle {
       "Emerging market and developing economies": "emerging-and-developing-economies-real-gdp-growth-world-bank",
       "High-income countries": "high-income-countries-real-gdp-growth",
       "Developing countries": "developing-countries-real-gdp-growth",
+      // #11: regional rows of the scanned 1990s editions.
+      "East Asia and Pacific": "east-asia-and-pacific-real-gdp-growth-world-bank",
+      "South Asia": "south-asia-real-gdp-growth-world-bank",
+      "Sub-Saharan Africa": "sub-saharan-africa-real-gdp-growth-world-bank",
+      "Latin America and the Caribbean": "latin-america-and-caribbean-real-gdp-growth-world-bank",
+      "Middle East and North Africa": "middle-east-and-north-africa-real-gdp-growth-world-bank",
+      "Europe and Central Asia": "europe-and-central-asia-real-gdp-growth-world-bank",
     },
   );
 }

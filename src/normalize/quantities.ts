@@ -34,6 +34,18 @@ export const QUANTITIES: Q[] = [
   gdp("emerging-and-developing-economies-real-gdp-growth-world-bank", "Emerging market and developing economies real GDP growth (World Bank grouping)", " World Bank grouping, from June 2016; not the IMF grouping of the same name."),
   gdp("high-income-countries-real-gdp-growth", "High-income countries real GDP growth (World Bank grouping)", " World Bank grouping used until January 2016."),
   gdp("developing-countries-real-gdp-growth", "Developing countries real GDP growth (World Bank grouping)", " Low- and middle-income countries, World Bank grouping used until January 2016."),
+  ...(
+    [
+      ["east-asia-and-pacific", "East Asia and Pacific"],
+      ["south-asia", "South Asia"],
+      ["sub-saharan-africa", "Sub-Saharan Africa"],
+      ["latin-america-and-caribbean", "Latin America and the Caribbean"],
+      ["middle-east-and-north-africa", "Middle East and North Africa"],
+      ["europe-and-central-asia", "Europe and Central Asia"],
+    ] as const
+  ).map(([id, name]) =>
+    gdp(`${id}-real-gdp-growth-world-bank`, `${name} real GDP growth (World Bank region)`, " Developing countries of the World Bank region as defined in each edition; membership and weights change between editions."),
+  ),
   {
     id: "united-states-real-gdp-growth-q4-over-q4",
     name: "United States real GDP growth, Q4 over Q4",

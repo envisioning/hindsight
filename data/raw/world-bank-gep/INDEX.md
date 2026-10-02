@@ -8,7 +8,8 @@ Facts only: economy, target year, forecast value, source. Nothing here is graded
 - Metric: real GDP growth, annual percent change, as printed in the GEP real GDP table (Table 1.1 in recent editions, "The global outlook in summary" in older ones).
 - Economies (9 slots): World, Advanced economies, Emerging market and developing economies (EMDEs), United States, Euro area, Japan, China, India, Brazil.
 - Per edition: the value for the publication year (`horizon: current_year`) and the next year (`horizon: next_year`). 18 entries per full edition. For editions released in November or December the current-year column is an estimate, not a forecast; each such entry has a note.
-- Editions captured: 44, from GEP 2000 (released 1999-12) to June 2026. Earlier editions (1991 to 1999) are recorded as missing below.
+- Editions captured: 49. 44 from GEP 2000 (released 1999-12) to June 2026 from the table files, and 5 from scanned 1990s reports (#11, below). The other 1990s editions print no single-year forecast and are recorded as not captured below.
+- 1990s editions also carry World Bank regional aggregates (East Asia and Pacific, South Asia, Sub-Saharan Africa, Latin America and the Caribbean, Middle East and North Africa, Europe and Central Asia), as defined in each edition.
 
 ## Verify-first answers (issue #11)
 
@@ -40,7 +41,16 @@ Two World Bank sources, kept apart by the `source` field on each row. (1) GEP Ju
 
 | Edition | Published | Title | Entries | Status | Notes |
 |---|---|---|---|---|---|
-| (1991 to 1999) | 1991 to 1999 | Global Economic Prospects and the Developing Countries 1991 to 1998/99, and the 1995 and 1996 short-term updates | 0 | missing | not in the World Bank "gdp-growth" files; the full reports are on https://documents.worldbank.org (scanned). Not extracted. |
+| 1991-05 | 1991-05 | Global Economic Prospects and the Developing Countries 1991 | 10 | partial | OCR (medium), Table 3.4 p. 41: developing countries and 4 regions, 1991 and 1992; no World, high-income or country GDP rows (G-7 table is GNP) |
+| 1992-04 | 1992-04 | Global Economic Prospects and the Developing Countries 1992 | 6 | partial | OCR (medium), Table 1-6 p. 18: developing countries and 5 regions, 1992 only (1991 estimate, 1990-2000 average) |
+| 1993-04 | 1993-04 | Global Economic Prospects and the Developing Countries 1993 | 0 | not captured | forecast tables give decade averages only (1992-2002) |
+| 1994-04 | 1994-04 | Global Economic Prospects and the Developing Countries 1994 | 0 | not captured | Table 1-1: 1991-93 estimate and 1994-2003 average only |
+| 1995-04 | 1995-04 | Global Economic Prospects and the Developing Countries 1995 | 0 | not captured | Table 1-1: 1994 estimate, 1995-96 two-year average, 1995-2004 average; no single-year forecast |
+| 1995-08 | 1995-08 | GEP 1995 short-term update | 28 | partial | OCR (medium), Annex Table C.1 p. 49, 1987 U.S. dollars: World, high income, low and middle income, US, Japan, China, India, Brazil, 6 regions, 1995 and 1996 |
+| 1996-04 | 1996-04 | Global Economic Prospects and the Developing Countries 1996 | 0 | not captured | Table 1-3: 1995 estimate, 1996-97 two-year average, 1996-2005 average; no single-year forecast |
+| 1996-08 | 1996-08 | GEP 1996 short-term update | 26 | partial | OCR (medium), Annex Table A.1 p. 39, 1987 U.S. dollars: as 1995-08 but no Brazil row, 1996 and 1997 |
+| 1997-09 | 1997-09 | Global Economic Prospects and the Developing Countries 1997 | 0 | not captured | Table 1-2: 1996 estimate and 1997-2006 average only; its World 1996 estimate is used as a later statement (`world_restated`) |
+| 1998-12 | 1998-12 | Global Economic Prospects and the Developing Countries 1998/99 | 18 | partial | OCR (medium), Table 1-2: World, high income, developing, 6 regions, 1998 and 1999; English scan illegible, read from the World Bank's Chinese edition p. 25 |
 | 1999-12 | 1999-12 | Global Economic Prospects 2000 | 8 | partial | groups: Advanced economies shown as "High-income countries", Emerging market and developing economies shown as "Low- and middle-income countriesa"; not in source: United States, Japan, China, India, Brazil |
 | 2000-12 | 2000-12 | Global Economic Prospects 2001 | 12 | partial | groups: Advanced economies shown as "High-income countries", Emerging market and developing economies shown as "Developing countries"; not in source: China, India, Brazil |
 | 2002-01 | 2002-01 | Global Economic Prospects 2002 | 12 | partial | groups: Advanced economies shown as "High-income countries", Emerging market and developing economies shown as "Developing countries"; not in source: China, India, Brazil |
@@ -90,7 +100,9 @@ Status `complete` means every slot was filled (possibly by the older group, see 
 
 ## Open problems and source anomalies
 
-- **Editions before GEP 2000** are missing. The World Bank data files start with GEP 2000. The older reports exist as scanned PDFs; reading them needs OCR or a person.
+- **Editions before GEP 2000** (#11) come from scanned reports on documents.worldbank.org, read by OCR (tesseract, 400 dpi) and checked by a second read (the PDF's own OCR text layer, a second table in the same edition, or GDP minus per-capita growth). Values in `scripts/world-bank-gep/gep_1990s.py`; every entry has confidence medium and a `#page=` link. No digit was guessed. The 1993, 1994, 1995, 1996 and 1997 reports print only decade or two-year averages, which are not single-year forecasts. The 1995 and 1996 short-term updates also reprint the March forecasts of GEP 1995 and GEP 1996 by year; those reprints were not public when the forecasts were made and are not captured. The GEP 1998/99 English scan is a broken 1-bit image; its Table 1-2 was read from the World Bank's Chinese edition of the same report (same rows, columns, note and November 1998 baseline).
+- **1990s World weights.** Every 1990s table states 1987 prices and exchange rates (`world_weights` = "1987 prices"); World forecasts are graded against later 1990s statements on 1987 prices (`world_restated`: 1995-08, 1996-08, 1997-09, 1998-12). GEP 1998/99 World forecasts are ungradable: GEP 2000 states no base.
+- **WDI 1990 to 1997** for United States, Japan, China, India and Brazil were added to `realized.json` from the same WDI vintage (last updated 2026-07-13) to grade the 1990s country rows. India rows of the 1990s tables state no basis and stay ungradable.
 - **2009 mid-year forecast updates** (the World Bank issued interim GEP forecast updates in 2009) are not in the data files and are not captured.
 - **India** is on a fiscal-year basis in the GEP (the 2024 column is the fiscal year April 2024 to March 2025) in editions whose table notes say so (all editions since January 2010, and some earlier). Entries carry a note.
 - **January 2017, United States:** the values carry an asterisk. Table note: "The U.S. forecasts do not incorporate the effect of policy proposals by the new U.S. administration, as their overall scope and ultimate form are still uncertain."

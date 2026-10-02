@@ -33483,36 +33483,36 @@
   {
    "source_id": "world-bank-gep",
    "totals": {
-    "n_graded": 525,
-    "hits": 217,
-    "partials": 126,
-    "misses": 182,
-    "ungradable": 167,
+    "n_graded": 543,
+    "hits": 225,
+    "partials": 128,
+    "misses": 190,
+    "ungradable": 237,
     "open": 54,
     "excluded": 0,
-    "hit_rate": 0.4133,
+    "hit_rate": 0.4144,
     "hit_rate_ci95": [
-     0.372,
-     0.4559
+     0.3737,
+     0.4563
     ],
     "errors": [
      {
       "rule": "D18",
       "unit": "pp",
-      "n": 525,
-      "bias": 0.307,
-      "mae": 1.209
+      "n": 543,
+      "bias": 0.288,
+      "mae": 1.2
      }
     ]
    },
    "audit": {
-    "seed": "d11:world-bank-gep:numeric",
-    "sample": 50,
-    "audited": 50,
-    "confirmed": 44,
+    "seed": "d11:world-bank-gep:numeric + d11:world-bank-gep:numeric:1990s",
+    "sample": 68,
+    "audited": 68,
+    "confirmed": 62,
     "corrected": 6,
     "contested": 0,
-    "error_rate": 0.12,
+    "error_rate": 0.0882,
     "fixed_in_code": 6,
     "residual_errors": 0,
     "residual_error_rate": 0,
@@ -33522,32 +33522,32 @@
     "pending_recheck": 0
    },
    "hit_rate_audit_adjusted95": [
-    0.372,
-    0.4559
+    0.3737,
+    0.4563
    ],
    "by_horizon": [
     {
      "horizon": "all",
      "stats": {
-      "n_graded": 525,
-      "hits": 217,
-      "partials": 126,
-      "misses": 182,
-      "ungradable": 167,
+      "n_graded": 543,
+      "hits": 225,
+      "partials": 128,
+      "misses": 190,
+      "ungradable": 237,
       "open": 54,
       "excluded": 0,
-      "hit_rate": 0.4133,
+      "hit_rate": 0.4144,
       "hit_rate_ci95": [
-       0.372,
-       0.4559
+       0.3737,
+       0.4563
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 525,
-        "bias": 0.307,
-        "mae": 1.209
+        "n": 543,
+        "bias": 0.288,
+        "mae": 1.2
        }
       ]
      }
@@ -33555,25 +33555,25 @@
     {
      "horizon": "current_year",
      "stats": {
-      "n_graded": 272,
-      "hits": 126,
-      "partials": 65,
-      "misses": 81,
-      "ungradable": 83,
+      "n_graded": 281,
+      "hits": 131,
+      "partials": 66,
+      "misses": 84,
+      "ungradable": 121,
       "open": 18,
       "excluded": 0,
-      "hit_rate": 0.4632,
+      "hit_rate": 0.4662,
       "hit_rate_ci95": [
-       0.4049,
-       0.5226
+       0.4087,
+       0.5246
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 272,
-        "bias": -0.012,
-        "mae": 0.953
+        "n": 281,
+        "bias": -0.024,
+        "mae": 0.945
        }
       ]
      }
@@ -33581,25 +33581,25 @@
     {
      "horizon": "next_year",
      "stats": {
-      "n_graded": 253,
-      "hits": 91,
-      "partials": 61,
-      "misses": 101,
-      "ungradable": 84,
+      "n_graded": 262,
+      "hits": 94,
+      "partials": 62,
+      "misses": 106,
+      "ungradable": 116,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.3597,
+      "hit_rate": 0.3588,
       "hit_rate_ci95": [
        0.3031,
-       0.4205
+       0.4185
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 253,
-        "bias": 0.649,
-        "mae": 1.484
+        "n": 262,
+        "bias": 0.622,
+        "mae": 1.474
        }
       ]
      }
@@ -33610,25 +33610,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 525,
-      "hits": 217,
-      "partials": 126,
-      "misses": 182,
-      "ungradable": 167,
+      "n_graded": 543,
+      "hits": 225,
+      "partials": 128,
+      "misses": 190,
+      "ungradable": 237,
       "open": 54,
       "excluded": 0,
-      "hit_rate": 0.4133,
+      "hit_rate": 0.4144,
       "hit_rate_ci95": [
-       0.372,
-       0.4559
+       0.3737,
+       0.4563
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 525,
-        "bias": 0.307,
-        "mae": 1.209
+        "n": 543,
+        "bias": 0.288,
+        "mae": 1.2
        }
       ]
      }
@@ -33637,25 +33637,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 272,
-      "hits": 126,
-      "partials": 65,
-      "misses": 81,
-      "ungradable": 83,
+      "n_graded": 281,
+      "hits": 131,
+      "partials": 66,
+      "misses": 84,
+      "ungradable": 121,
       "open": 18,
       "excluded": 0,
-      "hit_rate": 0.4632,
+      "hit_rate": 0.4662,
       "hit_rate_ci95": [
-       0.4049,
-       0.5226
+       0.4087,
+       0.5246
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 272,
-        "bias": -0.012,
-        "mae": 0.953
+        "n": 281,
+        "bias": -0.024,
+        "mae": 0.945
        }
       ]
      }
@@ -33664,25 +33664,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 253,
-      "hits": 91,
-      "partials": 61,
-      "misses": 101,
-      "ungradable": 84,
+      "n_graded": 262,
+      "hits": 94,
+      "partials": 62,
+      "misses": 106,
+      "ungradable": 116,
       "open": 36,
       "excluded": 0,
-      "hit_rate": 0.3597,
+      "hit_rate": 0.3588,
       "hit_rate_ci95": [
        0.3031,
-       0.4205
+       0.4185
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 253,
-        "bias": 0.649,
-        "mae": 1.484
+        "n": 262,
+        "bias": 0.622,
+        "mae": 1.474
        }
       ]
      }
@@ -33769,25 +33769,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 68,
+      "n_graded": 70,
       "hits": 18,
-      "partials": 11,
-      "misses": 39,
+      "partials": 12,
+      "misses": 40,
       "ungradable": 0,
       "open": 6,
       "excluded": 0,
-      "hit_rate": 0.2647,
+      "hit_rate": 0.2571,
       "hit_rate_ci95": [
-       0.1745,
-       0.3801
+       0.1693,
+       0.3703
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 68,
-        "bias": 0.549,
-        "mae": 1.816
+        "n": 70,
+        "bias": 0.576,
+        "mae": 1.807
        }
       ]
      }
@@ -33797,25 +33797,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 35,
+      "n_graded": 36,
       "hits": 11,
-      "partials": 8,
+      "partials": 9,
       "misses": 16,
       "ungradable": 0,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.3143,
+      "hit_rate": 0.3056,
       "hit_rate_ci95": [
-       0.1855,
-       0.4798
+       0.18,
+       0.4686
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 35,
-        "bias": -0.141,
-        "mae": 1.372
+        "n": 36,
+        "bias": -0.118,
+        "mae": 1.352
        }
       ]
      }
@@ -33825,24 +33825,24 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 33,
+      "n_graded": 34,
       "hits": 7,
       "partials": 3,
-      "misses": 23,
+      "misses": 24,
       "ungradable": 0,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.2121,
+      "hit_rate": 0.2059,
       "hit_rate_ci95": [
-       0.1068,
-       0.3775
+       0.1035,
+       0.368
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 33,
-        "bias": 1.28,
+        "n": 34,
+        "bias": 1.31,
         "mae": 2.288
        }
       ]
@@ -33853,25 +33853,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 68,
-      "hits": 35,
-      "partials": 15,
-      "misses": 18,
+      "n_graded": 72,
+      "hits": 37,
+      "partials": 16,
+      "misses": 19,
       "ungradable": 0,
       "open": 6,
       "excluded": 0,
-      "hit_rate": 0.5147,
+      "hit_rate": 0.5139,
       "hit_rate_ci95": [
-       0.3983,
-       0.6295
+       0.4007,
+       0.6257
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 68,
-        "bias": 0.004,
-        "mae": 0.856
+        "n": 72,
+        "bias": -0.024,
+        "mae": 0.847
        }
       ]
      }
@@ -33881,25 +33881,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 35,
-      "hits": 22,
+      "n_graded": 37,
+      "hits": 23,
       "partials": 4,
-      "misses": 9,
+      "misses": 10,
       "ungradable": 0,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.6286,
+      "hit_rate": 0.6216,
       "hit_rate_ci95": [
-       0.4634,
-       0.7683
+       0.461,
+       0.7594
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 35,
-        "bias": -0.064,
-        "mae": 0.659
+        "n": 37,
+        "bias": -0.104,
+        "mae": 0.666
        }
       ]
      }
@@ -33909,25 +33909,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 33,
-      "hits": 13,
-      "partials": 11,
+      "n_graded": 35,
+      "hits": 14,
+      "partials": 12,
       "misses": 9,
       "ungradable": 0,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.3939,
+      "hit_rate": 0.4,
       "hit_rate_ci95": [
-       0.2468,
-       0.5632
+       0.2555,
+       0.5643
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 33,
-        "bias": 0.075,
-        "mae": 1.064
+        "n": 35,
+        "bias": 0.06,
+        "mae": 1.037
        }
       ]
      }
@@ -33941,7 +33941,7 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 46,
+      "ungradable": 55,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33958,7 +33958,7 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 23,
+      "ungradable": 28,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -33975,7 +33975,58 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 23,
+      "ungradable": 27,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "east-asia-and-pacific-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 9,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "east-asia-and-pacific-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 5,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "east-asia-and-pacific-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 4,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34143,6 +34194,57 @@
      }
     },
     {
+     "subject_id": "europe-and-central-asia-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 6,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "europe-and-central-asia-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 3,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "europe-and-central-asia-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 3,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
      "subject_id": "high-income-countries-real-gdp-growth",
      "family": "real GDP growth",
      "horizon": "all",
@@ -34151,7 +34253,7 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 46,
+      "ungradable": 52,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34168,7 +34270,7 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 23,
+      "ungradable": 26,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34185,7 +34287,7 @@
       "hits": 0,
       "partials": 0,
       "misses": 0,
-      "ungradable": 23,
+      "ungradable": 26,
       "open": 0,
       "excluded": 0,
       "hit_rate": null,
@@ -34202,7 +34304,7 @@
       "hits": 11,
       "partials": 17,
       "misses": 32,
-      "ungradable": 8,
+      "ungradable": 12,
       "open": 6,
       "excluded": 0,
       "hit_rate": 0.1833,
@@ -34230,7 +34332,7 @@
       "hits": 7,
       "partials": 10,
       "misses": 14,
-      "ungradable": 4,
+      "ungradable": 6,
       "open": 2,
       "excluded": 0,
       "hit_rate": 0.2258,
@@ -34258,7 +34360,7 @@
       "hits": 4,
       "partials": 7,
       "misses": 18,
-      "ungradable": 4,
+      "ungradable": 6,
       "open": 4,
       "excluded": 0,
       "hit_rate": 0.1379,
@@ -34282,25 +34384,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 80,
-      "hits": 28,
+      "n_graded": 84,
+      "hits": 29,
       "partials": 23,
-      "misses": 29,
+      "misses": 32,
       "ungradable": 0,
       "open": 6,
       "excluded": 0,
-      "hit_rate": 0.35,
+      "hit_rate": 0.3452,
       "hit_rate_ci95": [
-       0.2545,
-       0.4592
+       0.2524,
+       0.4517
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 80,
-        "bias": 0.556,
-        "mae": 1.173
+        "n": 84,
+        "bias": 0.522,
+        "mae": 1.177
        }
       ]
      }
@@ -34310,25 +34412,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 41,
-      "hits": 15,
+      "n_graded": 43,
+      "hits": 16,
       "partials": 11,
-      "misses": 15,
+      "misses": 16,
       "ungradable": 0,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.3659,
+      "hit_rate": 0.3721,
       "hit_rate_ci95": [
-       0.2359,
-       0.5188
+       0.2438,
+       0.5214
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 41,
-        "bias": 0.271,
-        "mae": 0.988
+        "n": 43,
+        "bias": 0.225,
+        "mae": 0.985
        }
       ]
      }
@@ -34338,27 +34440,231 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 39,
+      "n_graded": 41,
       "hits": 13,
       "partials": 12,
-      "misses": 14,
+      "misses": 16,
       "ungradable": 0,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.3333,
+      "hit_rate": 0.3171,
       "hit_rate_ci95": [
-       0.2063,
-       0.4902
+       0.1956,
+       0.4698
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 39,
-        "bias": 0.857,
-        "mae": 1.369
+        "n": 41,
+        "bias": 0.834,
+        "mae": 1.378
        }
       ]
+     }
+    },
+    {
+     "subject_id": "latin-america-and-caribbean-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 9,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "latin-america-and-caribbean-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 5,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "latin-america-and-caribbean-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "middle-east-and-north-africa-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 7,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "middle-east-and-north-africa-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "middle-east-and-north-africa-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 3,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "south-asia-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 9,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "south-asia-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 5,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "south-asia-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "sub-saharan-africa-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "all",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 9,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "sub-saharan-africa-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "current_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 5,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "subject_id": "sub-saharan-africa-real-gdp-growth-world-bank",
+     "family": "real GDP growth",
+     "horizon": "next_year",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 4,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
      }
     },
     {
@@ -34366,25 +34672,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 80,
-      "hits": 40,
+      "n_graded": 84,
+      "hits": 41,
       "partials": 14,
-      "misses": 26,
+      "misses": 29,
       "ungradable": 0,
       "open": 6,
       "excluded": 0,
-      "hit_rate": 0.5,
+      "hit_rate": 0.4881,
       "hit_rate_ci95": [
-       0.393,
-       0.607
+       0.3841,
+       0.5931
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 80,
-        "bias": 0.132,
-        "mae": 0.953
+        "n": 84,
+        "bias": 0.063,
+        "mae": 0.973
        }
       ]
      }
@@ -34394,24 +34700,24 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 41,
-      "hits": 23,
+      "n_graded": 43,
+      "hits": 24,
       "partials": 6,
-      "misses": 12,
+      "misses": 13,
       "ungradable": 0,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.561,
+      "hit_rate": 0.5581,
       "hit_rate_ci95": [
-       0.4104,
-       0.7011
+       0.4111,
+       0.6957
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 41,
-        "bias": -0.057,
+        "n": 43,
+        "bias": -0.086,
         "mae": 0.801
        }
       ]
@@ -34422,25 +34728,25 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 39,
+      "n_graded": 41,
       "hits": 17,
       "partials": 8,
-      "misses": 14,
+      "misses": 16,
       "ungradable": 0,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.4359,
+      "hit_rate": 0.4146,
       "hit_rate_ci95": [
-       0.293,
-       0.5902
+       0.2776,
+       0.5663
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 39,
-        "bias": 0.331,
-        "mae": 1.113
+        "n": 41,
+        "bias": 0.219,
+        "mae": 1.154
        }
       ]
      }
@@ -34450,25 +34756,25 @@
      "family": "real GDP growth",
      "horizon": "all",
      "stats": {
-      "n_graded": 63,
-      "hits": 36,
+      "n_graded": 67,
+      "hits": 40,
       "partials": 18,
       "misses": 9,
-      "ungradable": 19,
+      "ungradable": 21,
       "open": 6,
       "excluded": 0,
-      "hit_rate": 0.5714,
+      "hit_rate": 0.597,
       "hit_rate_ci95": [
-       0.4486,
-       0.686
+       0.4774,
+       0.7061
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 63,
-        "bias": 0.387,
-        "mae": 0.822
+        "n": 67,
+        "bias": 0.37,
+        "mae": 0.785
        }
       ]
      }
@@ -34478,25 +34784,25 @@
      "family": "real GDP growth",
      "horizon": "current_year",
      "stats": {
-      "n_graded": 35,
-      "hits": 23,
+      "n_graded": 37,
+      "hits": 25,
       "partials": 9,
       "misses": 3,
-      "ungradable": 7,
+      "ungradable": 8,
       "open": 2,
       "excluded": 0,
-      "hit_rate": 0.6571,
+      "hit_rate": 0.6757,
       "hit_rate_ci95": [
-       0.4915,
-       0.7917
+       0.5146,
+       0.8037
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 35,
-        "bias": 0.049,
-        "mae": 0.603
+        "n": 37,
+        "bias": 0.051,
+        "mae": 0.586
        }
       ]
      }
@@ -34506,31 +34812,127 @@
      "family": "real GDP growth",
      "horizon": "next_year",
      "stats": {
-      "n_graded": 28,
-      "hits": 13,
+      "n_graded": 30,
+      "hits": 15,
       "partials": 9,
       "misses": 6,
-      "ungradable": 12,
+      "ungradable": 13,
       "open": 4,
       "excluded": 0,
-      "hit_rate": 0.4643,
+      "hit_rate": 0.5,
       "hit_rate_ci95": [
-       0.2953,
-       0.6419
+       0.3315,
+       0.6685
       ],
       "errors": [
        {
         "rule": "D18",
         "unit": "pp",
-        "n": 28,
-        "bias": 0.811,
-        "mae": 1.096
+        "n": 30,
+        "bias": 0.763,
+        "mae": 1.03
        }
       ]
      }
     }
    ],
    "by_edition": [
+    {
+     "edition": "1991-05",
+     "published": "1991-05",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 10,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "edition": "1992-04",
+     "published": "1992-04",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 6,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
+    {
+     "edition": "1995-08",
+     "published": "1995-08",
+     "stats": {
+      "n_graded": 10,
+      "hits": 3,
+      "partials": 2,
+      "misses": 5,
+      "ungradable": 18,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 10,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1996-08",
+     "published": "1996-08",
+     "stats": {
+      "n_graded": 8,
+      "hits": 5,
+      "partials": 0,
+      "misses": 3,
+      "ungradable": 18,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": [
+       {
+        "rule": "D18",
+        "unit": "pp",
+        "n": 8,
+        "bias": null,
+        "mae": null
+       }
+      ]
+     }
+    },
+    {
+     "edition": "1998-12",
+     "published": "1998-12",
+     "stats": {
+      "n_graded": 0,
+      "hits": 0,
+      "partials": 0,
+      "misses": 0,
+      "ungradable": 18,
+      "open": 0,
+      "excluded": 0,
+      "hit_rate": null,
+      "hit_rate_ci95": null,
+      "errors": []
+     }
+    },
     {
      "edition": "1999-12",
      "published": "1999-12",
