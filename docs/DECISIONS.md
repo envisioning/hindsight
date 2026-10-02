@@ -679,3 +679,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** One wide table with many empty columns, because the four kinds carry different figures. The D34 interval and the D33 adjusted interval are computed in the export rather than by the scripts that own those files.
 
 **Overturned by.** Pipelines that write every interval themselves, after which the export only copies.
+
+## D45: Audits for ranking and scenario measures (D32, D34; amends D44)
+
+*Recorded 2026-10-02.*
+
+**Decision.** The D31 to D34 measures get the same audit as every other published figure (D11, D20, D28). WEF D32: an agent audits a fixed-seed sample (seed `d11:wef-global-risks:d32`, 50 of the events both matchers agreed on, drawn by `scripts/measure-audit-sample.mjs`) against the edition PDFs and the UCDP-first tallies; a correction replaces a verdict, a contest removes it, and the summary carries the audit-adjusted interval. Shell and IPCC D34: the comparison is arithmetic, but the choice of observed series, definition and edition is judgment made in code, so they get a matching audit like the numeric sources (#53): findings are fixed in the script for every row and the stored sample does not change. Every D34 coverage share applies D11 (no share under 20 graded values) and carries a Wilson interval. NIC narrative sets get a coverage summary from the two blind graders and the adjudicator; their audit is the D11 audit of the scenario verdicts. This amends the D44 note that D32 has no audit.
+
+**Why.** A share without an audit would be the only published figure without an error rate beside it.
+
+**Cost.** The audits changed published figures: WEF 2007 to 2020 is 12 of 51 ranked high (was 14 of 53); IPCC graded values went from 18 to 10 (counts only); Shell gets a rate (14 of 51 covered).
+
+**Overturned by.** Measures whose inputs need no judgment at all.
