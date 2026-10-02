@@ -3,6 +3,9 @@
  "process": "Mechanical subject matching, then two blind rename checkers on the rest, adjudicator on disagreements, agent audit of agreed checks (D20, D11). Never a hit rate.",
  "editions": [
   "2014",
+  "2015",
+  "2016",
+  "2017",
   "2019",
   "2020",
   "2021",
@@ -14,51 +17,50 @@
  "capture_gaps_before": [
   2019
  ],
- "n": 3893,
+ "n": 4183,
  "counts": {
-  "gap": 13,
-  "renamed": 482,
-  "persisted": 1369,
-  "recycled": 12,
-  "faded": 634,
-  "contested": 2,
+  "renamed": 532,
+  "persisted": 1554,
+  "gap": 54,
+  "recycled": 26,
+  "faded": 636,
   "open": 1381
  },
  "shares": {
   "persisted": {
-   "k": 1369,
-   "n": 2497,
-   "share": 0.5483,
+   "k": 1554,
+   "n": 2748,
+   "share": 0.5655,
    "wilson95": [
-    0.529,
-    0.568
+    0.547,
+    0.584
    ]
   },
   "renamed": {
-   "k": 482,
-   "n": 2497,
-   "share": 0.193,
+   "k": 532,
+   "n": 2748,
+   "share": 0.1936,
    "wilson95": [
-    0.178,
+    0.179,
     0.209
    ]
   },
   "faded": {
-   "k": 634,
-   "n": 2497,
-   "share": 0.2539,
+   "k": 636,
+   "n": 2748,
+   "share": 0.2314,
    "wilson95": [
-    0.237,
-    0.271
+    0.216,
+    0.248
    ]
   },
   "recycled": {
-   "k": 12,
-   "n": 2497,
-   "share": 0.0048,
+   "k": 26,
+   "n": 2748,
+   "share": 0.0095,
    "wilson95": [
-    0.003,
-    0.008
+    0.006,
+    0.014
    ]
   }
  },
@@ -73,38 +75,56 @@
   "resolved_by_gap_rule": 0,
   "residual_error_rate": 0.125,
   "superseded_by_pass2": 5,
-  "superseded_by_pass3": 24,
+  "superseded_by_pass3": 23,
+  "superseded_by_pass4": 1,
   "no_longer_candidate": 13
  },
  "pass2": {
   "scope": 1191,
-  "superseded": 326,
+  "superseded": 300,
   "audit": {
    "seed": "d11:ftsg-tech-trends:d33:pass2",
    "sample": 50,
-   "audited": 15,
-   "confirmed": 14,
+   "audited": 12,
+   "confirmed": 11,
    "corrected": 1,
    "contested": 0,
-   "error_rate": 0.067,
+   "error_rate": 0.083,
    "resolved_by_gap_rule": 0,
-   "residual_error_rate": 0.067,
-   "superseded_by_pass3": 35
+   "residual_error_rate": 0.083,
+   "superseded_by_pass3": 34,
+   "superseded_by_pass4": 4
   }
  },
  "pass3": {
   "scope": 628,
-  "superseded": 586,
+  "superseded": 568,
   "audit": {
    "seed": "d11:ftsg-tech-trends:d33:pass3",
    "sample": 50,
-   "audited": 50,
-   "confirmed": 47,
+   "audited": 47,
+   "confirmed": 46,
    "corrected": 1,
-   "contested": 2,
-   "error_rate": 0.06,
+   "contested": 0,
+   "error_rate": 0.021,
    "resolved_by_gap_rule": 0,
-   "residual_error_rate": 0.06
+   "residual_error_rate": 0.021,
+   "superseded_by_pass4": 3
+  }
+ },
+ "pass4": {
+  "scope": 166,
+  "superseded": 42,
+  "audit": {
+   "seed": "d11:ftsg-tech-trends:d33:pass4",
+   "sample": 50,
+   "audited": 50,
+   "confirmed": 48,
+   "corrected": 1,
+   "contested": 1,
+   "error_rate": 0.04,
+   "resolved_by_gap_rule": 1,
+   "residual_error_rate": 0.02
   }
  },
  "passes": [
@@ -121,42 +141,40 @@
   "renames-d33-checkerA-pass3.json",
   "renames-d33-checkerB-pass3.json",
   "renames-adjudicated-d33-pass3.json",
-  "renames-audit-d33-pass3.json"
+  "renames-audit-d33-pass3.json",
+  "renames-d33-pass4-scope.json",
+  "renames-d33-checkerA-pass4.json",
+  "renames-d33-checkerB-pass4.json",
+  "renames-adjudicated-d33-pass4.json",
+  "renames-audit-d33-pass4.json"
  ],
  "verdicts": [
   {
    "id": "ftsg-tech-trends-2014-001",
    "edition": "2014",
-   "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2015-007",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
-   },
-   "was": "faded",
-   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+   }
   },
   {
    "id": "ftsg-tech-trends-2014-002",
    "edition": "2014",
-   "verdict": "renamed",
-   "status": "agreed",
-   "match_id": "ftsg-tech-trends-2019-002",
-   "pass": 2,
-   "pass1": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2019-002"
-   }
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2015"
   },
   {
    "id": "ftsg-tech-trends-2014-003",
    "edition": "2014",
    "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    },
@@ -166,36 +184,29 @@
   {
    "id": "ftsg-tech-trends-2014-004",
    "edition": "2014",
-   "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2015-029",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
-   },
-   "was": "faded",
-   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+   }
   },
   {
    "id": "ftsg-tech-trends-2014-005",
    "edition": "2014",
-   "verdict": "renamed",
-   "status": "agreed",
-   "match_id": "ftsg-tech-trends-2020-304",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "agreed",
-    "match_id": "ftsg-tech-trends-2019-264"
-   }
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
   },
   {
    "id": "ftsg-tech-trends-2014-006",
    "edition": "2014",
    "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    },
@@ -207,11 +218,11 @@
    "edition": "2014",
    "verdict": "renamed",
    "status": "audited",
-   "match_id": "ftsg-tech-trends-2020-089",
-   "pass": 3,
-   "pass2": {
+   "match_id": "ftsg-tech-trends-2015-031",
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
-    "status": "adjudicated",
+    "status": "audited",
     "match_id": "ftsg-tech-trends-2020-089"
    }
   },
@@ -219,9 +230,9 @@
    "id": "ftsg-tech-trends-2014-008",
    "edition": "2014",
    "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    },
@@ -233,10 +244,10 @@
    "edition": "2014",
    "verdict": "gap",
    "status": "audited",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    },
    "was": "faded",
    "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
@@ -244,23 +255,22 @@
   {
    "id": "ftsg-tech-trends-2014-010",
    "edition": "2014",
-   "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2016-018",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
-   },
-   "was": "faded",
-   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+   }
   },
   {
    "id": "ftsg-tech-trends-2014-011",
    "edition": "2014",
    "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    },
@@ -270,26 +280,26 @@
   {
    "id": "ftsg-tech-trends-2014-012",
    "edition": "2014",
-   "verdict": "persisted",
+   "verdict": "recycled",
    "status": "computed",
-   "matched_in": "2019"
+   "matched_in": "2017"
   },
   {
    "id": "ftsg-tech-trends-2014-013",
    "edition": "2014",
-   "verdict": "recycled",
+   "verdict": "persisted",
    "status": "computed",
-   "matched_in": "2021"
+   "matched_in": "2015"
   },
   {
    "id": "ftsg-tech-trends-2014-014",
    "edition": "2014",
    "verdict": "gap",
    "status": "audited",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
-    "status": "agreed"
+    "status": "audited"
    },
    "was": "faded",
    "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
@@ -297,32 +307,38 @@
   {
    "id": "ftsg-tech-trends-2014-015",
    "edition": "2014",
-   "verdict": "renamed",
+   "verdict": "gap",
    "status": "audited",
-   "match_id": "ftsg-tech-trends-2019-311",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "renamed",
-    "status": "agreed",
+    "status": "audited",
     "match_id": "ftsg-tech-trends-2019-311"
-   }
+   },
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
   },
   {
    "id": "ftsg-tech-trends-2014-016",
    "edition": "2014",
-   "verdict": "persisted",
-   "status": "adjudicated",
-   "match_id": "ftsg-tech-trends-2019-301",
-   "reason": "Smart Cities and Smart City Initiatives are a wording variant of the general city-technology trend.",
-   "pass": 3
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "pass3": {
+    "verdict": "persisted",
+    "status": "adjudicated",
+    "match_id": "ftsg-tech-trends-2019-301"
+   },
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
   },
   {
    "id": "ftsg-tech-trends-2014-017",
    "edition": "2014",
    "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    },
@@ -334,23 +350,23 @@
    "edition": "2014",
    "verdict": "persisted",
    "status": "computed",
-   "matched_in": "2020"
+   "matched_in": "2015"
   },
   {
    "id": "ftsg-tech-trends-2014-019",
    "edition": "2014",
    "verdict": "persisted",
    "status": "computed",
-   "matched_in": "2019"
+   "matched_in": "2015"
   },
   {
    "id": "ftsg-tech-trends-2014-020",
    "edition": "2014",
-   "verdict": "renamed",
-   "status": "agreed",
-   "match_id": "ftsg-tech-trends-2019-147",
-   "pass": 2,
-   "pass1": {
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2015-045",
+   "pass": 4,
+   "pass2": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2019-147"
@@ -360,10 +376,10 @@
    "id": "ftsg-tech-trends-2014-021",
    "edition": "2014",
    "verdict": "renamed",
-   "status": "agreed",
-   "match_id": "ftsg-tech-trends-2019-284",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2015-048",
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2019-284"
@@ -374,28 +390,22 @@
    "edition": "2014",
    "verdict": "persisted",
    "status": "computed",
-   "matched_in": "2020"
+   "matched_in": "2015"
   },
   {
    "id": "ftsg-tech-trends-2014-023",
    "edition": "2014",
-   "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
-    "verdict": "faded",
-    "status": "agreed"
-   },
-   "was": "faded",
-   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2015"
   },
   {
    "id": "ftsg-tech-trends-2014-024",
    "edition": "2014",
    "verdict": "gap",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    },
@@ -405,15 +415,2221 @@
   {
    "id": "ftsg-tech-trends-2014-025",
    "edition": "2014",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2015"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-001",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-002",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2016-008",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-003",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-004",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-005",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-014",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-006",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-007",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-008",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-009",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-010",
+   "edition": "2015",
    "verdict": "gap",
    "status": "agreed",
-   "pass": 2,
-   "pass1": {
-    "verdict": "faded",
-    "status": "agreed"
-   },
+   "pass": 4,
    "was": "faded",
    "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-011",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2016-030",
+   "reason": "The 2015 Passwords text expects providers to demand two- or three-factor authentication (Nymi: heartbeat, device, wristband); 2016 Selfie Security opens with the same forecast (two- or three-factor authentication with biometrics instead of passwords). New label, same claim; no 2015 sibling continues there. Checker A read the label only.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-012",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-013",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-014",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-015",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-016",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2016-035",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-017",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-018",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-019",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2016-029",
+   "reason": "Identical first sentence (malware can be sent to anything that plugs into a wall or another machine): the 2016 Security sub-trend carries the 2015 Malware text under the label Internet of Things. Label changed, so renamed, not same.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-020",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-021",
+   "edition": "2015",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-022",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-023",
+   "edition": "2015",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2022"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-024",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-025",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-026",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-027",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2016-059",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-028",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-029",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-030",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-031",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-032",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-033",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2016-017",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-034",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-035",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-036",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-135",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-037",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-022",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-038",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-136",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-039",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-040",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-041",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2016-065",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-042",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-043",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-131",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-044",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2016-066",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-045",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-046",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-047",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-048",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-097",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-049",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-050",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2016-072",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-051",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "corrected",
+   "was": "faded",
+   "match_id": "ftsg-tech-trends-2016-022",
+   "reason": "2016 Complicated Legal Decisions reuses the API Protection text verbatim as its first example ('What does it mean if APIs ... can be protected under copyright?', Oracle v. Google Java APIs, 'thousands of public-facing APIs'; SlideShare 2016 transcript, trend 21). The court-decided API copyright claim continues one step broader; no 2015 sibling claims 2016-022. Both checkers missed the example text.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-052",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-053",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-054",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2015-055",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-056",
+   "edition": "2015",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2016-024",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2015-057",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-058",
+   "edition": "2015",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2016"
+  },
+  {
+   "id": "ftsg-tech-trends-2015-059",
+   "edition": "2015",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-001",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-002",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2017-001",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-003",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-004",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-005",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-006",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2017-013",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-007",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-008",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-043",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-009",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "audited",
+   "reason": "Neither checker weighed 2019 Social Tweaks to Social Network Algorithms (2019-181, title only, news and social networks section). The 2016 text is about Facebook NewsFeed and Google/Yahoo news algorithms deciding what content is shown, the same feed-curation algorithms. With 2019 titles only, renamed to 2019-181 and faded cannot be told apart. A next edition is a partial capture; not finding the trend there is not evidence it faded.",
+   "pass": 4,
+   "was": "faded"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-010",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-011",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-012",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-013",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-014",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-015",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-016",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-017",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-018",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-038",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-019",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-020",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-021",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-022",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2017-116",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-023",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-024",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-025",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-026",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2021"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-027",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-028",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-029",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-030",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-031",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-032",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-033",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-034",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2021"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-035",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-036",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-037",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-038",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-039",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-040",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-041",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-042",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-043",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-044",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-045",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-046",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-047",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-048",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-049",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-050",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-051",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2017-055",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-052",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-053",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-054",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-055",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-056",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-057",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-058",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-059",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-060",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-061",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-062",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-063",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-064",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-065",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-130",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-066",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-067",
+   "edition": "2016",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-147",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-068",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-069",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-070",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-071",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2017"
+  },
+  {
+   "id": "ftsg-tech-trends-2016-072",
+   "edition": "2016",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2017-033",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2016-073",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-074",
+   "edition": "2016",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2016-075",
+   "edition": "2016",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-001",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-002",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-003",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-004",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-030",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-005",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-006",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-026",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-007",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-027",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-008",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-027",
+   "reason": "Merger exception: Generative Algorithms For Voice, Sound and Video names sound, and absorbs sibling Generative Algorithms For Voice (2017-007, agreed to the same match); precedents 2023-649, 2022-373. Checker A applied the sibling rule without the merger exception.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-009",
+   "edition": "2017",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-010",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "adjudicated",
+   "reason": "Chain ruling with 2016-018 and 2017-038: Personality Recognition (2019, Recognition section) continues the recognition line Personality Analytics (2016, own trend page) -> Character Recognition and Analytics (2017, recognition group 034-038). Algorithmic Personality Detection is a sub-item of the AI page in 2016 and 2017, and the 2019 AI section has no personality item. Sibling rule: not renamed to a trend that continues 2017-038. A next edition is a partial capture; not finding the trend there is not evidence it faded.",
+   "pass": 4,
+   "was": "faded"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-011",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-012",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-020",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-013",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-007",
+   "reason": "AI bias, only the modifier changes (Uncovering Hidden to Ongoing); precedent 2019-074 (modifier change is same). AI Bias Leads To Societal Problems (2019-008) is the consequence sibling, not this trend.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-014",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-015",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-016",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-033",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-017",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-018",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-002",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-019",
+   "edition": "2017",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2022"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-020",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-021",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-022",
+   "reason": "Consolidation in AI and Even More Consolidation in AI: same trend, intensifier only.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-022",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-023",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-024",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-025",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-157",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-026",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-027",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-028",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-275",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-029",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-276",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-030",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-031",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-032",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-033",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-034",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-035",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-059",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-036",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-017",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-037",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2020-089",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-038",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-048",
+   "reason": "Chain ruling: Character Recognition and Analytics (2017 recognition group; continues 2016 Personality Analytics, agreed) continues as Personality Recognition in the 2019 Recognition section. New label, same phenomenon (recognising personality from data). 2017-010 is faded under the sibling rule. Checker B gave the match to the AI-section sibling.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-039",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-163",
+   "reason": "Attention (2016 key insight: capturing split attention, with an Attention Matrix to measure whether a strategy commands attention) continues one step narrower as The End of Attention Metrics (2020 text: the attention economy is not as easily measured). Both lead the media section in their edition; Transparency in Metrics (2017-046) was agreed not to continue there. Low certainty: title-only 2017 and 2019 rows; year tags on the later Attention Metrics pages conflict (2nd in 2021, 3rd in 2022, 8th in 2023).",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-040",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-041",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-042",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-171",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-043",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-044",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-045",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-176",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-046",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-047",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-048",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-169",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-049",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-050",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-177",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-051",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-052",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-053",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-054",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-055",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-056",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-165",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-057",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-058",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-059",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-166",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-060",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-061",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-062",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-063",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-064",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-065",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-066",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-067",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-068",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-069",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-070",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-079",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-071",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-072",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-083",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-073",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-084",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-074",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-075",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2020-090",
+   "reason": "Selfie Security (2016 text: two- or three-factor authentication with biometrics instead of passwords) continues as Two-factor Biometric-based Authentication (2020, vein biomarkers as an identity factor). Same phenomenon, new label; nothing in 2019; no 2017 sibling continues there. Consistent with 2015-011 and 2021-105.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-076",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-086",
+   "reason": "Prize Hacks (2016 text) is the 2015 Bounty Programs text rewritten (successful years for hackers, bigger targets, Krebs on a compulsory bounty program, HackerOne bug bounties); the 2020 Bounty Programs page opens on the same premise (successful years for hackers). The label returns to Bounty Programs. Checker A read Prize Hacks as breach targets only.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-077",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2019-063",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-078",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-079",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-066",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-080",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-081",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-082",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-083",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-084",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-085",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-086",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-087",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-111",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-088",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-089",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-090",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-091",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-096",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-092",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-093",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-109",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-094",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-095",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-283",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-096",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-097",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-282",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-098",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-196",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-099",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-197",
+   "reason": "FOBO sits between VR Marketing and Retail APIs in the 2017 marketing list; Offline Connections takes the same slot in 2019 (VR For Marketing, Offline Connections, Retail APIs, both neighbours agreed persisted) and is printed fourth year on the list, so it is not new in 2019. Apps that work offline answer the fear of being offline. Medium certainty: 2017 row is title-only.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-100",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-101",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-102",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-103",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-104",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-105",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-106",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-121",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-107",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-108",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2020-412",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-109",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2020-302",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-110",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-111",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-112",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-113",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-114",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-115",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-140",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-116",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-117",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-118",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-310",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-119",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2020-126",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-120",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-311",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-121",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-122",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2019-301",
+   "reason": "Smart City Systems and Smart City Initiatives: wording variant of the general city-technology trend (2020 text: cities' technological systems and infrastructure); precedent pass 3, 2014-016.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-123",
+   "edition": "2017",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2024"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-124",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-125",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-236",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-126",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-127",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-128",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-240",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-129",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-241",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-130",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-131",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-132",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-133",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-134",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-135",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-136",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-137",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-138",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-139",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2020-276",
+   "reason": "Merger exception: Programmable, Ingestible, and Implantable Microbots names this item (Ingestibles/ Implantables) as well as the nanobot line of sibling 2017-125 (via Nanobot Nurses 2019); in-body ingestible and implantable devices, one step narrower. Nothing in 2019 (the 2019 wearables group keeps Tattooables and Thinkables, drops this item). Low certainty: 2017 row is title-only.",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-140",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-254",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-141",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-142",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-143",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-237",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-144",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-145",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-146",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2020"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-147",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-148",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-149",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-150",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2019-207",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-151",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2020-415",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-152",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-153",
+   "edition": "2017",
+   "verdict": "renamed",
+   "status": "agreed",
+   "match_id": "ftsg-tech-trends-2020-407",
+   "pass": 4
+  },
+  {
+   "id": "ftsg-tech-trends-2017-154",
+   "edition": "2017",
+   "verdict": "persisted",
+   "status": "computed",
+   "matched_in": "2019"
+  },
+  {
+   "id": "ftsg-tech-trends-2017-155",
+   "edition": "2017",
+   "verdict": "gap",
+   "status": "agreed",
+   "pass": 4,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
+  },
+  {
+   "id": "ftsg-tech-trends-2017-156",
+   "edition": "2017",
+   "verdict": "recycled",
+   "status": "computed",
+   "matched_in": "2021"
   },
   {
    "id": "ftsg-tech-trends-2019-001",
@@ -633,8 +2849,8 @@
    "verdict": "persisted",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2020-015",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "persisted",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2020-015"
@@ -2631,11 +4847,12 @@
   {
    "id": "ftsg-tech-trends-2019-232",
    "edition": "2019",
-   "verdict": "renamed",
-   "status": "agreed",
+   "verdict": "persisted",
+   "status": "adjudicated",
    "match_id": "ftsg-tech-trends-2020-270",
-   "pass": 2,
-   "pass1": {
+   "reason": "The 2020 Genetic Screening text is embryo testing before implantation in fertility centres, i.e. IVF genetic screening; label drops the qualifier with the same content (precedent 2022-525, 2021-251). Pass 2 had agreed renamed to the same match.",
+   "pass": 4,
+   "pass2": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2020-270"
@@ -4366,12 +6583,12 @@
   {
    "id": "ftsg-tech-trends-2020-091",
    "edition": "2020",
-   "verdict": "persisted",
-   "status": "agreed",
+   "verdict": "renamed",
+   "status": "audited",
    "match_id": "ftsg-tech-trends-2021-100",
-   "pass": 2,
-   "pass1": {
-    "verdict": "renamed",
+   "pass": 4,
+   "pass2": {
+    "verdict": "persisted",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2021-100"
    }
@@ -4408,10 +6625,10 @@
    "id": "ftsg-tech-trends-2020-096",
    "edition": "2020",
    "verdict": "persisted",
-   "status": "agreed",
+   "status": "audited",
    "match_id": "ftsg-tech-trends-2021-097",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "persisted",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2021-097"
@@ -4892,8 +7109,8 @@
    "verdict": "persisted",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2021-167",
-   "pass": 3,
-   "pass2": {
+   "pass": 4,
+   "pass3": {
     "verdict": "persisted",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2021-167"
@@ -5996,11 +8213,11 @@
   {
    "id": "ftsg-tech-trends-2020-270",
    "edition": "2020",
-   "verdict": "renamed",
+   "verdict": "persisted",
    "status": "agreed",
-   "match_id": "ftsg-tech-trends-2021-463",
-   "pass": 3,
-   "pass2": {
+   "match_id": "ftsg-tech-trends-2022-467",
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2021-463"
@@ -7106,8 +9323,8 @@
    "verdict": "persisted",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2021-432",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "persisted",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2021-432"
@@ -7145,8 +9362,8 @@
    "verdict": "persisted",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2021-435",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "persisted",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2021-435"
@@ -7158,8 +9375,8 @@
    "verdict": "renamed",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2022-435",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2022-435"
@@ -7200,10 +9417,10 @@
    "id": "ftsg-tech-trends-2020-390",
    "edition": "2020",
    "verdict": "persisted",
-   "status": "agreed",
+   "status": "audited",
    "match_id": "ftsg-tech-trends-2021-436",
-   "pass": 2,
-   "pass1": {
+   "pass": 4,
+   "pass2": {
     "verdict": "persisted",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2021-436"
@@ -7213,9 +9430,9 @@
    "id": "ftsg-tech-trends-2020-391",
    "edition": "2020",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 2,
-   "pass1": {
+   "status": "audited",
+   "pass": 4,
+   "pass2": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7251,13 +9468,13 @@
    "id": "ftsg-tech-trends-2020-395",
    "edition": "2020",
    "verdict": "renamed",
-   "status": "adjudicated",
+   "status": "audited",
    "match_id": "ftsg-tech-trends-2021-434",
-   "reason": "Same NRL satellite-steering text under a new label.",
-   "pass": 2,
-   "pass1": {
-    "verdict": "faded",
-    "status": "agreed"
+   "pass": 4,
+   "pass2": {
+    "verdict": "renamed",
+    "status": "adjudicated",
+    "match_id": "ftsg-tech-trends-2021-434"
    }
   },
   {
@@ -7411,11 +9628,15 @@
   {
    "id": "ftsg-tech-trends-2020-415",
    "edition": "2020",
-   "verdict": "persisted",
-   "status": "adjudicated",
+   "verdict": "renamed",
+   "status": "audited",
    "match_id": "ftsg-tech-trends-2021-504",
-   "reason": "Umbrella rule (same umbrella): the 2020 section is already titled Space and Off-Planet Trends and the year tag runs 13th to 14th.",
-   "pass": 2
+   "pass": 4,
+   "pass2": {
+    "verdict": "persisted",
+    "status": "adjudicated",
+    "match_id": "ftsg-tech-trends-2021-504"
+   }
   },
   {
    "id": "ftsg-tech-trends-2021-001",
@@ -7521,9 +9742,9 @@
    "id": "ftsg-tech-trends-2021-013",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 4,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -7587,14 +9808,13 @@
   {
    "id": "ftsg-tech-trends-2021-020",
    "edition": "2021",
-   "verdict": "persisted",
-   "status": "adjudicated",
+   "verdict": "renamed",
+   "status": "audited",
    "match_id": "ftsg-tech-trends-2022-015",
-   "reason": "Algorithm marketplaces and AI marketplaces (hubs to share, buy and sell models) are synonyms.",
-   "pass": 3,
-   "pass2": {
+   "pass": 4,
+   "pass3": {
     "verdict": "persisted",
-    "status": "agreed",
+    "status": "adjudicated",
     "match_id": "ftsg-tech-trends-2022-015"
    }
   },
@@ -8114,8 +10334,8 @@
    "verdict": "renamed",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2022-082",
-   "pass": 3,
-   "pass2": {
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2022-082"
@@ -8205,8 +10425,8 @@
    "verdict": "renamed",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2022-101",
-   "pass": 3,
-   "pass2": {
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2022-101"
@@ -8300,10 +10520,11 @@
    "id": "ftsg-tech-trends-2021-105",
    "edition": "2021",
    "verdict": "renamed",
-   "status": "agreed",
+   "status": "adjudicated",
    "match_id": "ftsg-tech-trends-2022-113",
-   "pass": 3,
-   "pass2": {
+   "reason": "Multi-input Recognition (2022) carries the vein-biomarker text of Two-factor Biometric-based Authentication (2020-090, persisted into this row), corrected under D43. Same text, new label. Checker A missed the corrected quote; consistent with pass 1 to 3.",
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2022-113"
@@ -9753,8 +11974,8 @@
    "verdict": "renamed",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2022-301",
-   "pass": 3,
-   "pass2": {
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2022-301"
@@ -10758,12 +12979,12 @@
    "id": "ftsg-tech-trends-2021-387",
    "edition": "2021",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "audited",
-    "match_id": "ftsg-tech-trends-2022-384"
+   "status": "adjudicated",
+   "reason": "Sibling rule: New Cityscape Designs (2022-384, 2nd year on the list) continues its own 2021 sibling New Cityscape Designs (2021-389, 1st year), not this trend; Multi-Use Spaces (2023, 1st year) is buildings, not roads. Checker B missed the 2021 sibling; consistent with pass 3 (agreed faded).",
+   "pass": 4,
+   "pass3": {
+    "verdict": "faded",
+    "status": "agreed"
    }
   },
   {
@@ -11177,12 +13398,12 @@
   {
    "id": "ftsg-tech-trends-2021-435",
    "edition": "2021",
-   "verdict": "renamed",
+   "verdict": "persisted",
    "status": "agreed",
    "match_id": "ftsg-tech-trends-2022-423",
-   "pass": 3,
-   "pass2": {
-    "verdict": "persisted",
+   "pass": 4,
+   "pass3": {
+    "verdict": "renamed",
     "status": "agreed",
     "match_id": "ftsg-tech-trends-2022-423"
    }
@@ -11191,13 +13412,14 @@
    "id": "ftsg-tech-trends-2021-436",
    "edition": "2021",
    "verdict": "renamed",
-   "status": "agreed",
-   "match_id": "ftsg-tech-trends-2022-564",
-   "pass": 3,
-   "pass2": {
+   "status": "adjudicated",
+   "match_id": "ftsg-tech-trends-2023-553",
+   "reason": "The Space Economy (2021 text: private commercial space companies lifting off on investor money, aggressive investment, space economy above $1 trillion) continues one step narrower as Space Opens Up to Smaller Private Companies under the 2023 Space Economy sub-section (cheaper launches; its 2024 successor: record private investment in the new space economy). Space Barons (2022) is the billionaires' affluent space-tourism race, a different claim (pass 3 ruled it not Private Missions). Low certainty: 2023 tag is 1st year.",
+   "pass": 4,
+   "pass3": {
     "verdict": "renamed",
     "status": "agreed",
-    "match_id": "ftsg-tech-trends-2023-553"
+    "match_id": "ftsg-tech-trends-2022-564"
    }
   },
   {
@@ -12977,9 +15199,9 @@
    "id": "ftsg-tech-trends-2022-113",
    "edition": "2022",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 4,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -13543,9 +15765,9 @@
    "id": "ftsg-tech-trends-2022-168",
    "edition": "2022",
    "verdict": "faded",
-   "status": "agreed",
-   "pass": 3,
-   "pass2": {
+   "status": "audited",
+   "pass": 4,
+   "pass3": {
     "verdict": "faded",
     "status": "agreed"
    }
@@ -15275,15 +17497,12 @@
   {
    "id": "ftsg-tech-trends-2022-354",
    "edition": "2022",
-   "verdict": "contested",
-   "status": "contested",
-   "was": "faded",
-   "reason": "2022 text: pandemic robots became essential workers (hospital sanitising, deliveries) and firms hired 37% more robots to fill repetitive jobs. 2023 Elevating Human Contributions (2023-394; robots across warehouses and hospital cleaning) and Accelerated Adoption (2023-391; cobots replacing scarce workers) are both close. The faded verdict rests on Cobots taking 394, but pass-3 checkers split on Cobots (A 394, B 391) and pass 2 adjudicated this row renamed to 394. Without the 2023 Mobility text, no verdict is supported.",
-   "pass": 3,
-   "pass2": {
-    "verdict": "renamed",
-    "status": "adjudicated",
-    "match_id": "ftsg-tech-trends-2023-394"
+   "verdict": "faded",
+   "status": "agreed",
+   "pass": 4,
+   "pass3": {
+    "verdict": "contested",
+    "status": "contested"
    }
   },
   {
@@ -17735,14 +19954,13 @@
   {
    "id": "ftsg-tech-trends-2022-584",
    "edition": "2022",
-   "verdict": "contested",
-   "status": "contested",
-   "was": "faded",
-   "reason": "Checkers judged by label only (no quote captured). The 2022 text layer (p.642) shows the trend: humanity needs a plan B, so a 1,000-year mission to Proxima b. 2023 Space Arks (2023-565, unclaimed) opens with 'Humanity doesn't have a backup', the same premise. Whether Space Arks means generation ships (renamed) or a lunar gene bank (faded) needs the 2023 Space page, which is not available locally.",
-   "pass": 3,
-   "pass2": {
-    "verdict": "faded",
-    "status": "agreed"
+   "verdict": "faded",
+   "status": "adjudicated",
+   "reason": "The 2022 page is a 1,000-year crewed mission as humanity's plan B. Space Arks (2023, 1st year on the list) shares the premise (Humanity doesn't have a backup) but the page (full report p.668, local text layer) is about archives of DNA, seeds and data sent to space, and explicitly sets aside transporting people. Different technology; nothing on long-duration missions in 2023 or 2024. Resolves the pass-3 audit contest.",
+   "pass": 4,
+   "pass3": {
+    "verdict": "contested",
+    "status": "contested"
    }
   },
   {
