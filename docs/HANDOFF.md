@@ -1,6 +1,6 @@
 # Hindsight handoff (2026-10-02, fourth session, local)
 
-Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D53). Every next step is an open issue in envisioning/hindsight.
+Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D56). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -34,7 +34,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 - **Disputes (D29), refresh (#58):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month.
 - **Releases:** `hindsight-2026.1` and `hindsight-2026.2` (both 2026-10-02, approved by MZ). 2026.2: 28,306 claims, 1,952 verdicts, 18,751 numeric grades, 68 validation rows. `data/out` holds 2026.2; later work changes it only at the next tag. envisioning.com/hindsight links the latest release.
 - **Subjects:** 5,893 after the D13 duplicate review (data/reviews/subject-dupes-d48.json, 47 retired; merges move link rows and can change trend persistence, D51).
-- **Links to research technologies (#59, D48, D49):** pipeline built (`scripts/links/`, `pnpm links`). Run d48-r0 (title matches) published: 98 links (83 same, 15 narrower; region-prefixed pages are narrower), agreement 99/100, audit 50/50. Shown on envisioning.com research pages ("What was expected"), claim pages ("In our research") and `/hindsight/subjects/[id]`. Embedding run d48-r1 (D54) published 2026-10-02: 1,971 pairs decided (10 `subspace` pairs filtered out, D55), 1,514 links added (577 same, 156 broader, 781 narrower), audit error rate 9.8% (8.5% on same). 1,609 active links in all. Excluded projects: xenotech (D52), subspace (D55).
+- **Links to research technologies (#59, D48, D49):** pipeline built (`scripts/links/`, `pnpm links`). Run d48-r0 (title matches) published: 98 links (83 same, 15 narrower; region-prefixed pages are narrower), agreement 99/100, audit 50/50. Shown on envisioning.com research pages ("What was expected"), claim pages ("In our research") and `/hindsight/subjects/[id]`. Embedding run d48-r1 (D54) published 2026-10-02: 1,971 pairs decided (10 `subspace` pairs filtered out, D55), 1,514 links added (577 same, 156 broader, 781 narrower), audit error rate 9.8% (8.5% on same). Region pages re-checked (D56, 87 corrections): 1,529 active links (658 same, 159 broader, 712 narrower) over 867 subjects and 961 technologies; d48-r1 audit residual 4.6%. Excluded projects: xenotech (D52), subspace (D55). #59 closed; upkeep in #74.
 - **Site:** launched 2026-10-01 (envisioning.com dd9e9ceb). Reads `main` through GitHub raw; new files show after `git add` and `pnpm manifest`.
 - **Meet:** project "Hindsight" (2026-10-02). Spec docs marked dated with a current-state section (#65 closed).
 
@@ -55,7 +55,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **#59** upkeep check (#59 step 7). d48-r1 is published; a later run can verify the 29,172 candidates left under the D54 floor.
+1. **#74** links upkeep (new or changed technologies and subjects; retract links to unpublished or excluded pages); a later run can verify the 29,172 candidates left under the D54 floor.
 2. Small follow-ups: Deloitte Tech Trends rename pass 3 (D53, field subjects): 5 rows that persisted only through the recurring `cio-role` and `cybersecurity` chapters are candidates in `renames-d33-pass3-scope.json`; run checkers A and B, adjudicator, audit, `trend-final-d33.mjs` (the committed `final-d33.json` still shows them persisted until then); `trend-final-d33.mjs` keeps pass 2+ audit records of rows that are no longer candidates in the pass audit summaries; FTSG 2020-234 match id (INDEX Known issues).
 3. Missing editions with no known source: McKinsey 2026 PDF (#27, withdrawn at the origin); FTSG 2008-2013 and 2018 (#26, not public; 2019 stays titles only).
 4. Next release (`hindsight-2026.3`) when enough has changed; ask MZ, then update the link in www `app/hindsight/page.tsx`.
@@ -65,7 +65,7 @@ Run grading waves in parallel only within the search budget. Push each source wh
 
 ## Decisions taken by MZ (2026-10-02, in chat)
 
-Tag release 2026.1 (done). Use an existing OpenRouter key for #59 (the www key turned out dead). Keep D49 (skewed link runs gate on observed agreement). Keep D23 as is (no later-survey bounds). Pool small grading waves for the kappa gate (D50). FTSG umbrella pages with the publisher's year tag and key insight count as trends in every edition (D40). Build the append-only capture-corrections file once a real misaligned quote appears (D43; real cases appeared the same day). The OpenRouter key and the release approval wait.
+Tag release 2026.1 (done). Use an existing OpenRouter key for #59 (the www key turned out dead). Keep D49 (skewed link runs gate on observed agreement). Keep D23 as is (no later-survey bounds). Pool small grading waves for the kappa gate (D50). FTSG umbrella pages with the publisher's year tag and key insight count as trends in every edition (D40). Build the append-only capture-corrections file once a real misaligned quote appears (D43; real cases appeared the same day). MZ set a working OpenRouter key (scripts/set-openrouter-key.sh). Verify links at similarity 0.65 or mutual NN (D54). Exclude subspace (D55). Release 2026.2 (done).
 
 ## Notes from the fourth session (local, 2026-10-02)
 
