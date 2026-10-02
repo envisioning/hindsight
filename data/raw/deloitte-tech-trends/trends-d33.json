@@ -1,6 +1,6 @@
 {
  "rule": "D33",
- "note": "Mechanical part of D33. persisted, recycled and open are computed from shared subject ids; candidate rows go to two blind rename checkers. Next editions are the next captured editions; a gap year in the capture is skipped.",
+ "note": "Mechanical part of D33. persisted and open are computed from shared subject ids; candidate rows go to two blind rename checkers. A candidate with reappears_in (a shared subject back in a later edition) becomes recycled only when the checkers find it faded (D47). Next editions are the next captured editions; a gap year in the capture is skipped.",
  "editions": [
   "2010",
   "2011",
@@ -706,9 +706,8 @@
  },
  "partial_editions": [],
  "counts": {
-  "candidate": 121,
+  "candidate": 124,
   "persisted": 19,
-  "recycled": 3,
   "open": 19
  },
  "rows": [
@@ -1428,8 +1427,12 @@
    "subject_ids": [
     "apis-and-the-api-economy"
    ],
-   "status": "recycled",
-   "matched_in": "2018"
+   "status": "candidate",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2018"
   },
   {
    "id": "deloitte-tech-trends-2015-003",
@@ -1500,8 +1503,12 @@
    "subject_ids": [
     "technology-talent-and-workforce"
    ],
-   "status": "recycled",
-   "matched_in": "2023"
+   "status": "candidate",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2023"
   },
   {
    "id": "deloitte-tech-trends-2015-009",
@@ -1549,8 +1556,12 @@
    "subject_ids": [
     "quantum-computing"
    ],
-   "status": "recycled",
-   "matched_in": "2020"
+   "status": "candidate",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2020"
   },
   {
    "id": "deloitte-tech-trends-2015-013",

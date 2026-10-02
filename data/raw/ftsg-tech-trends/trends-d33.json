@@ -1,6 +1,6 @@
 {
  "rule": "D33",
- "note": "Mechanical part of D33. persisted, recycled and open are computed from shared subject ids; candidate rows go to two blind rename checkers. Next editions are the next captured editions; a gap year in the capture is skipped.",
+ "note": "Mechanical part of D33. persisted and open are computed from shared subject ids; candidate rows go to two blind rename checkers. A candidate with reappears_in (a shared subject back in a later edition) becomes recycled only when the checkers find it faded (D47). Next editions are the next captured editions; a gap year in the capture is skipped.",
  "editions": [
   "2014",
   "2015",
@@ -16779,9 +16779,8 @@
   2019
  ],
  "counts": {
-  "candidate": 1494,
+  "candidate": 1520,
   "persisted": 1282,
-  "recycled": 26,
   "open": 1381
  },
  "rows": [
@@ -16929,8 +16928,12 @@
    "subject_ids": [
     "leaking"
    ],
-   "status": "recycled",
-   "matched_in": "2017"
+   "status": "candidate",
+   "next_editions": [
+    "2015",
+    "2016"
+   ],
+   "reappears_in": "2017"
   },
   {
    "id": "ftsg-tech-trends-2014-013",
@@ -17311,8 +17314,12 @@
    "subject_ids": [
     "bounty-programs"
    ],
-   "status": "recycled",
-   "matched_in": "2019"
+   "status": "candidate",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2019"
   },
   {
    "id": "ftsg-tech-trends-2015-022",
@@ -17334,8 +17341,12 @@
    "subject_ids": [
     "mesh-networking"
    ],
-   "status": "recycled",
-   "matched_in": "2022"
+   "status": "candidate",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2022"
   },
   {
    "id": "ftsg-tech-trends-2015-024",
@@ -18028,8 +18039,12 @@
    "subject_ids": [
     "security"
    ],
-   "status": "recycled",
-   "matched_in": "2020"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2020"
   },
   {
    "id": "ftsg-tech-trends-2016-026",
@@ -18038,8 +18053,12 @@
    "subject_ids": [
     "zero-day-exploits-rising"
    ],
-   "status": "recycled",
-   "matched_in": "2021"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2021"
   },
   {
    "id": "ftsg-tech-trends-2016-027",
@@ -18118,8 +18137,12 @@
    "subject_ids": [
     "privacy"
    ],
-   "status": "recycled",
-   "matched_in": "2021"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2021"
   },
   {
    "id": "ftsg-tech-trends-2016-035",
@@ -18357,8 +18380,12 @@
    "subject_ids": [
     "blockchain"
    ],
-   "status": "recycled",
-   "matched_in": "2020"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2020"
   },
   {
    "id": "ftsg-tech-trends-2016-058",
@@ -18377,8 +18404,12 @@
    "subject_ids": [
     "drones"
    ],
-   "status": "recycled",
-   "matched_in": "2020"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2020"
   },
   {
    "id": "ftsg-tech-trends-2016-060",
@@ -18430,8 +18461,12 @@
    "subject_ids": [
     "wearables"
    ],
-   "status": "recycled",
-   "matched_in": "2020"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2020"
   },
   {
    "id": "ftsg-tech-trends-2016-065",
@@ -18486,8 +18521,12 @@
    "subject_ids": [
     "space"
    ],
-   "status": "recycled",
-   "matched_in": "2020"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2020"
   },
   {
    "id": "ftsg-tech-trends-2016-070",
@@ -18555,8 +18594,12 @@
    "subject_ids": [
     "genomic-editing"
    ],
-   "status": "recycled",
-   "matched_in": "2020"
+   "status": "candidate",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reappears_in": "2020"
   },
   {
    "id": "ftsg-tech-trends-2017-001",
@@ -18660,8 +18703,12 @@
    "subject_ids": [
     "zero-knowledge-proofs"
    ],
-   "status": "recycled",
-   "matched_in": "2024"
+   "status": "candidate",
+   "next_editions": [
+    "2019",
+    "2020"
+   ],
+   "reappears_in": "2024"
   },
   {
    "id": "ftsg-tech-trends-2017-010",
@@ -18778,8 +18825,12 @@
    "subject_ids": [
     "ambient-interfaces"
    ],
-   "status": "recycled",
-   "matched_in": "2022"
+   "status": "candidate",
+   "next_editions": [
+    "2019",
+    "2020"
+   ],
+   "reappears_in": "2022"
   },
   {
    "id": "ftsg-tech-trends-2017-020",
@@ -19977,8 +20028,12 @@
    "subject_ids": [
     "precision-medicine"
    ],
-   "status": "recycled",
-   "matched_in": "2024"
+   "status": "candidate",
+   "next_editions": [
+    "2019",
+    "2020"
+   ],
+   "reappears_in": "2024"
   },
   {
    "id": "ftsg-tech-trends-2017-124",
@@ -20352,8 +20407,12 @@
    "subject_ids": [
     "5g"
    ],
-   "status": "recycled",
-   "matched_in": "2021"
+   "status": "candidate",
+   "next_editions": [
+    "2019",
+    "2020"
+   ],
+   "reappears_in": "2021"
   },
   {
    "id": "ftsg-tech-trends-2019-001",
@@ -22910,8 +22969,12 @@
    "subject_ids": [
     "terraforming"
    ],
-   "status": "recycled",
-   "matched_in": "2022"
+   "status": "candidate",
+   "next_editions": [
+    "2020",
+    "2021"
+   ],
+   "reappears_in": "2022"
   },
   {
    "id": "ftsg-tech-trends-2019-225",
@@ -23693,8 +23756,12 @@
    "subject_ids": [
     "open-banking"
    ],
-   "status": "recycled",
-   "matched_in": "2022"
+   "status": "candidate",
+   "next_editions": [
+    "2020",
+    "2021"
+   ],
+   "reappears_in": "2022"
   },
   {
    "id": "ftsg-tech-trends-2019-295",
@@ -24554,8 +24621,12 @@
    "subject_ids": [
     "algorithmic-fact-checking"
    ],
-   "status": "recycled",
-   "matched_in": "2024"
+   "status": "candidate",
+   "next_editions": [
+    "2021",
+    "2022"
+   ],
+   "reappears_in": "2024"
   },
   {
    "id": "ftsg-tech-trends-2020-050",
@@ -26434,8 +26505,12 @@
    "subject_ids": [
     "better-batteries"
    ],
-   "status": "recycled",
-   "matched_in": "2023"
+   "status": "candidate",
+   "next_editions": [
+    "2021",
+    "2022"
+   ],
+   "reappears_in": "2023"
   },
   {
    "id": "ftsg-tech-trends-2020-217",
@@ -26546,8 +26621,12 @@
    "subject_ids": [
     "geoengineering"
    ],
-   "status": "recycled",
-   "matched_in": "2024"
+   "status": "candidate",
+   "next_editions": [
+    "2021",
+    "2022"
+   ],
+   "reappears_in": "2024"
   },
   {
    "id": "ftsg-tech-trends-2020-227",
@@ -27362,8 +27441,12 @@
    "subject_ids": [
     "interoperability"
    ],
-   "status": "recycled",
-   "matched_in": "2024"
+   "status": "candidate",
+   "next_editions": [
+    "2021",
+    "2022"
+   ],
+   "reappears_in": "2024"
   },
   {
    "id": "ftsg-tech-trends-2020-299",
@@ -31090,8 +31173,12 @@
    "subject_ids": [
     "emerging-wearables"
    ],
-   "status": "recycled",
-   "matched_in": "2024"
+   "status": "candidate",
+   "next_editions": [
+    "2022",
+    "2023"
+   ],
+   "reappears_in": "2024"
   },
   {
    "id": "ftsg-tech-trends-2021-219",
@@ -31176,8 +31263,12 @@
    "subject_ids": [
     "mature-wearables"
    ],
-   "status": "recycled",
-   "matched_in": "2024"
+   "status": "candidate",
+   "next_editions": [
+    "2022",
+    "2023"
+   ],
+   "reappears_in": "2024"
   },
   {
    "id": "ftsg-tech-trends-2021-227",
@@ -39202,8 +39293,12 @@
    "subject_ids": [
     "6g"
    ],
-   "status": "recycled",
-   "matched_in": "2025"
+   "status": "candidate",
+   "next_editions": [
+    "2023",
+    "2024"
+   ],
+   "reappears_in": "2025"
   },
   {
    "id": "ftsg-tech-trends-2022-420",
@@ -40823,8 +40918,12 @@
    "subject_ids": [
     "grid-management"
    ],
-   "status": "recycled",
-   "matched_in": "2025"
+   "status": "candidate",
+   "next_editions": [
+    "2023",
+    "2024"
+   ],
+   "reappears_in": "2025"
   },
   {
    "id": "ftsg-tech-trends-2022-556",
@@ -40973,8 +41072,12 @@
    "subject_ids": [
     "space-tourism"
    ],
-   "status": "recycled",
-   "matched_in": "2025"
+   "status": "candidate",
+   "next_editions": [
+    "2023",
+    "2024"
+   ],
+   "reappears_in": "2025"
   },
   {
    "id": "ftsg-tech-trends-2022-568",

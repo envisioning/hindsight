@@ -12,7 +12,11 @@
 // scope keep their pass-1 verdicts.
 // Verdicts: persisted (shared subject in the next two editions, or a wording variant: "same"),
 // renamed, faded, recycled, open (fewer than two later editions), gap (faded, but a next edition
-// is a partial capture: not counted). Writes final-d33.json with
+// is a partial capture: not counted). Recycled (D47): a candidate whose final check is faded and
+// whose subject is listed again after its window (`reappears_in` in trends-d33.json). Order: the
+// recycled rule runs before the gap rule, so a faded row with a later reappearance is recycled even
+// when its window holds a partial edition (the reappearance is evidence; D36 keeps recycled).
+// Writes final-d33.json with
 // shares over graded trends (not open), each with a Wilson 95% interval. Never a hit rate (D33).
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -81,6 +85,9 @@ for (const source of sources) {
 		const j = adj.get(r.id);
 		return j ? { id: r.id, edition: r.edition, verdict: toVerdict(j.verdict), status: "adjudicated", ...(j.match_id ? { match_id: j.match_id } : {}), reason: j.reason } : { id: r.id, edition: r.edition, verdict: "contested", status: "contested" };
 	};
+	// D47: faded plus a later reappearance of a shared subject is recycled. Runs before gapIfPartial.
+	const backIn = new Map(mech.rows.filter((r) => r.status === "candidate" && r.reappears_in).map((r) => [r.id, r.reappears_in]));
+	const recycledIfBack = (row) => (row.verdict === "faded" && backIn.has(row.id) ? { ...row, verdict: "recycled", was: "faded", matched_in: backIn.get(row.id) } : row);
 	const superseded = new Map(later.map((p) => [p.n, 0]));
 	const passFiles = (n) => (n === 1 ? { A, B, adj, recs } : later.find((p) => p.n === n));
 	for (const r of mech.rows) {
@@ -106,7 +113,7 @@ for (const source of sources) {
 		}
 		rows.push(n === 1 ? row : { ...row, pass: n, ...(prev ? { [`pass${prev.m}`]: { verdict: prev.p.verdict, status: prev.p.status, ...(prev.p.match_id ? { match_id: prev.p.match_id } : {}) } } : {}) });
 	}
-	for (let i = 0; i < rows.length; i++) rows[i] = gapIfPartial(rows[i]);
+	for (let i = 0; i < rows.length; i++) rows[i] = gapIfPartial(recycledIfBack(rows[i]));
 	const counts = {};
 	for (const r of rows) counts[r.verdict] = (counts[r.verdict] ?? 0) + 1;
 	const graded = ["persisted", "renamed", "faded", "recycled"].reduce((s, v) => s + (counts[v] ?? 0), 0);
@@ -126,7 +133,12 @@ for (const source of sources) {
 	if (auditOut) {
 		auditOut.error_rate = auditOut.audited ? Math.round(((auditOut.corrected + auditOut.contested) / auditOut.audited) * 1000) / 1000 : null;
 		// Contests resolved by the partial-edition gap rule are not residual errors.
-		const resolved = Object.entries(recs).filter(([id, x]) => x.decision === "contest" && rows.find((r) => r.id === id)?.verdict === "gap").length;
+		// A contested faded that the audit-contest branch kept as faded (partial window) and D47 then
+		// made recycled is resolved too.
+		const resolved = Object.entries(recs).filter(([id, x]) => {
+			const r = x.decision === "contest" ? rows.find((y) => y.id === id) : null;
+			return r && (r.verdict === "gap" || (r.verdict === "recycled" && r.was === "faded" && r.status === "audited"));
+		}).length;
 		auditOut.resolved_by_gap_rule = resolved;
 		auditOut.residual_error_rate = auditOut.audited ? Math.round(((auditOut.corrected + auditOut.contested - resolved) / auditOut.audited) * 1000) / 1000 : null;
 	}

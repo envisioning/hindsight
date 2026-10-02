@@ -703,3 +703,15 @@ Every other figure is copied from the file named in the row's `inputs`, not reco
 **Cost.** The pooled error rate weights the new rows more than their share of all rows (50 of 100 audited, 342 of 726 graded). A source with several supplements carries several seeds.
 
 **Overturned by.** A full redraw policy for audits after large additions, or a weighting of pooled audit rates by stratum size.
+
+## D47: Recycled trends are checked for renames first (amends D33)
+
+*Recorded 2026-10-02. Issue #73.*
+
+**Decision.** `recycled` is no longer computed from subject ids alone. A trend with no shared subject in its next two captured editions is a rename candidate, whether or not a shared subject appears later; `trends-d33.json` names the first later edition with a shared subject in `reappears_in`. The two blind checkers judge it on its two-edition window like any candidate (D33, D24 passes). `trend-final-d33.mjs` then makes a row `recycled` (with `was: faded` and `matched_in`) when its final verdict is `faded` and it has `reappears_in`; a `renamed` or `same` verdict stands. Order with D36: the recycled rule runs before the gap rule, so a faded row whose window holds a partial edition is `recycled`, not `gap`, when its subject is listed again later; the later listing is evidence, which D36 already lets stand. A contested faded verdict that the gap rule would have resolved and that becomes recycled counts as resolved too. The rows that were `recycled` before this decision are re-checked as a new pass with reason `recycled_check`: FTSG Tech Trends pass 5 (26 rows), Deloitte Tech Trends pass 2 (3 rows); Accenture, a16z, McKinsey and trendwatching had none. Until both checkers of that pass have a row it is pending and left out of every share.
+
+**Why.** A trend continued under a new label inside its window was reported as dropped and brought back: FTSG 2015-021 Bounty Programs was `recycled` (subject back in 2019) though its text continues almost verbatim as 2016-033 Prize Hacks. Recycling claims the publisher dropped a trend; that needs the same check as `faded`.
+
+**Cost.** 29 more rename checks. Recycled shares fall to zero until the passes are published, and the graded totals shrink by the pending rows (FTSG 2,748 to 2,722, Deloitte 143 to 140).
+
+**Overturned by.** Subject mapping good enough that a missing subject reliably means a missing trend (D13), so that checkers add nothing on these rows.

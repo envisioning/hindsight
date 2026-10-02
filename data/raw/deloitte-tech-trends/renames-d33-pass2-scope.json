@@ -1,0 +1,65 @@
+{
+ "rule": "D24 pass 2 of D33 rename checks (D47)",
+ "recorded": "2026-10-02",
+ "note": "Rows that trend-persistence.mjs computed as recycled before D47 (no shared subject in the next two captured editions, a shared subject in a later one). D47 sends them to the rename checkers with their two-edition window first; they are recycled only when the final check says faded. recycled_check: formerly recycled, now a candidate. reappears_in: the first later edition with a shared subject. Rows not listed keep their earlier verdicts; listed rows are pending until both pass-2 checkers have a verdict. previous is the earlier final verdict (D24).",
+ "counts": {
+  "recycled_check": 3,
+  "rows": 3
+ },
+ "rows": [
+  {
+   "id": "deloitte-tech-trends-2015-002",
+   "edition": "2015",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2018",
+   "reasons": [
+    "recycled_check"
+   ],
+   "previous": {
+    "pass": 1,
+    "verdict": "recycled",
+    "status": "computed",
+    "matched_in": "2018"
+   }
+  },
+  {
+   "id": "deloitte-tech-trends-2015-008",
+   "edition": "2015",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2023",
+   "reasons": [
+    "recycled_check"
+   ],
+   "previous": {
+    "pass": 1,
+    "verdict": "recycled",
+    "status": "computed",
+    "matched_in": "2023"
+   }
+  },
+  {
+   "id": "deloitte-tech-trends-2015-012",
+   "edition": "2015",
+   "next_editions": [
+    "2016",
+    "2017"
+   ],
+   "reappears_in": "2020",
+   "reasons": [
+    "recycled_check"
+   ],
+   "previous": {
+    "pass": 1,
+    "verdict": "recycled",
+    "status": "computed",
+    "matched_in": "2020"
+   }
+  }
+ ]
+}
