@@ -46,6 +46,12 @@ Reading of the verdicts (D48, applied from `d48-r0`): a technology whose `origin
 
 Amendment (D49): run `d48-r0` is titles only (`candidates.mjs --titles-only`): exact and alias title matches, no vectors, similarity null. Every later run skips pairs decided in an earlier run (`final.json` `decisions`) and pairs held by a curated link. When one verdict dominates (expected agreement 0.8 or more), the agreement gate is observed agreement 0.9 or more instead of kappa 0.6.
 
+## Subject merges
+
+A judgment merge (D13, `subject-curation.json`) moves every label of the retired subject to the surviving one, so the retired id leaves `subjects.json` (ids are never reused). Link rows do not follow by themselves: `final.mjs` keys pairs by subject id. For each active row of a retired subject, two rows are appended to `research.json`: a `retracted` row on the old pair (agent `subject-merge:<review>`), and an `active` row on the surviving subject's pair with the same relation, method, run and verifier agent, its reason naming the row it moves. A pair the survivor already holds active gets only the retraction. The moved pair is not in any run's `decisions`, so a later run may decide it again (D48: a merged subject needs a new run for its pairs).
+
+- 2026-10-02, `data/reviews/subject-dupes-d48.json`: `space-based-solar-power-sbsp` merged into `space-based-solar-power`; its 2 `same` links (`apogee/space-based-solar-power`, `substrate/sbsp`) moved. No other retired subject had link rows.
+
 ## State
 
 - `d48-r0` (titles only): 100 candidates (97 exact, 3 alias), 79 subjects, 1 batch. Verifiers agree on 99 of 100 (kappa 0.97); 1 adjudicated (`synthetic-data` to `cities/synthetic-data`: `link`). Verdicts: 83 link, 15 narrower (14 region-prefixed pages, plus `cities/generative-ai`), 0 broader, 2 no_link. 98 rows appended to `research.json` (83 `same`, 15 `narrower`).

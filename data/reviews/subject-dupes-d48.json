@@ -1,0 +1,998 @@
+{
+ "found_by": "link run d48-r0 (subjects space-based-solar-power and space-based-solar-power-sbsp both linked to the same research technologies)",
+ "rule": "D13 (merge only when the thing is the same; otherwise related), D20 (an agent decides)",
+ "reviewer": "agent (D20)",
+ "sweep": "All 5,940 subjects at 843469c. Each name and alias normalized: accents and case folded, text in parentheses removed, punctuation and hyphens removed, a final 'system(s)', 'technology', 'technologies' or 'tech' removed, a final plural removed; subjects sharing a key form a group. Also: a subject whose parenthesized acronym or gloss equals another subject's normalized name. Decisions read the claims of every subject in a group.",
+ "findings": [
+  {
+   "item": "space-based-solar-power-sbsp",
+   "decision": "merge into space-based-solar-power",
+   "reason": "See group 1. The two d48-r0 link rows of the retired subject were retracted and re-appended on the survivor (data/links/README.md, 'Subject merges')."
+  },
+  {
+   "item": "Mobility-as-a-Service on robotaxis (#55 borderline keep, n 141)",
+   "decision": "keep",
+   "reason": "The label is ARK's 2017-2018 chapter name. Its 9 claims: autonomous travel cost per mile (2017-002, 2018-001), autonomous MaaS gross sales (2017-005), autonomous platform value (2018-002), auto sales flat on taxi-fleet utilization (2018-005), and EV price parity and EV sales (2017-003/004, 2018-003/004). ARK's MaaS is autonomous electric ride-hail, not multimodal journey-planning MaaS; the EV claims sit in the chapter as context, as oil demand and insurance claims sit in the later 'Autonomous Ride-Hailing' chapters, and each also carries its own quantity subject. No claim is about MaaS in the generic sense, so no split. Alias reason rewritten. Risk noted: a future generic 'Mobility as a Service' label from another source would fold into robotaxis by normalized key; it needs a curation entry when it arrives."
+  },
+  {
+   "item": "brain-to-brain-communication (ftsg-tech-trends-2023-158)",
+   "decision": "keep mapping; note added",
+   "reason": "Checked on the source PDF (FTSG 2023 Health Care & Medicine, p. 35): the quote is the first sentence of FTSG's own 'Brain-to-Brain Communication' entry. The entry describes Rice University's MOANA magnetic control of fruit flies (a computer-to-brain proof of concept, DARPA-funded) and says DARPA hopes to build wireless headsets for brain-to-brain communication. The subject is right; the quote is the entry's lede, not its forecast. Claim and id unchanged; subject note added so readers see why the quote reads as computer-to-brain."
+  }
+ ],
+ "counts": {
+  "groups": 68,
+  "merge_groups": 43,
+  "keep_groups": 25,
+  "subjects_retired": 47,
+  "keep_groups_with_related": 11
+ },
+ "retired": {
+  "space-based-solar-power-sbsp": "space-based-solar-power",
+  "additive-manufacturing-3d-printing": "3d-printing",
+  "advanced-connectivity-5g-6g-lpwa-leo-satellites": "advanced-connectivity",
+  "affective-computing-emotion-ai": "affective-computing",
+  "emotion-ai": "affective-computing",
+  "edge-ai-on-device-processing": "edge-ai",
+  "a-i-at-the-edge": "edge-ai",
+  "a-i-at-the-edge-or-a-i-not-in-the-cloud": "edge-ai",
+  "ai-powered-automated-hacking": "a-i-powered-automated-hacking-systems",
+  "ambient-computing-ubiquitous-interfaces": "ambient-computing",
+  "internet-of-things-ambient-computing": "ambient-computing",
+  "blockchain-technologies": "blockchain",
+  "brain-machine-interfaces-bmis": "brain-computer-interface",
+  "cio-role-it-portfolio-management": "cio-role",
+  "core-system-modernization-legacy-erp-cloud-migration": "core-system-modernization",
+  "cultivated-lab-grown-meat": "cultivated-meat",
+  "cybersecurity-physical-cyber-threats": "cybersecurity",
+  "dynamic-line-rating-dlr-systems": "dynamic-line-rating-systems",
+  "extreme-weather": "extreme-weather-events",
+  "flying-taxis-evtols": "flying-taxis",
+  "generative-adversarial-networks-gans": "generative-adversarial-networks",
+  "industry-vertical-clouds": "industry-cloud-platforms",
+  "journalism-as-a-service-jaas": "journalism-as-a-service",
+  "lab-on-a-chip-loc": "lab-on-a-chip",
+  "light-based-quantum-technologies": "light-based-quantum",
+  "living-breakwater": "living-breakwaters",
+  "machine-reading-comprehension-mrc": "machine-reading-comprehension",
+  "mixed-reality-ar-and-vr": "mixed-reality",
+  "natural-language-generation-nlg": "natural-language-generation",
+  "non-fungible-tokens": "nft",
+  "quantum-technologies-computing-sensing-communications": "quantum-technologies",
+  "quantum-encryption-quantum-safe-cryptography": "quantum-encryption",
+  "real-time-machine-learning-rtml": "real-time-machine-learning",
+  "remote-patient-monitoring-rpm": "remote-patient-monitoring",
+  "retrofitting-old-homes-with-new-tech": "retrofitting-old-homes-with-new-technology",
+  "robotic-process-automation-rpa": "robotic-process-automation",
+  "securing-the-hot-home-of-things": "securing-the-hot",
+  "self-assembly-tech": "self-assembly-technology",
+  "self-repairing-quantum": "self-repairing-quantum-systems",
+  "skinput-systems": "skinput",
+  "status-beyond-traditional-consumption-experience-participation-connection-eco-status": "status-beyond-traditional-consumption",
+  "synthetic-biology-crispr-gene-editing": "synthetic-biology",
+  "universal-basic-income-ubi": "universal-basic-income",
+  "webassembly-wasm": "webassembly",
+  "weapons-of-mass-destruction": "diffusion-of-weapons-of-mass-destruction",
+  "direct-air-capture": "carbon-removal",
+  "user-empowerment-consumerization-of-it": "consumerization-of-it"
+ },
+ "groups": [
+  {
+   "n": 1,
+   "subjects": [
+    "space-based-solar-power",
+    "space-based-solar-power-sbsp"
+   ],
+   "decision": "merge",
+   "survivor": "space-based-solar-power",
+   "claims": {
+    "space-based-solar-power": 3,
+    "space-based-solar-power-sbsp": 1
+   },
+   "reason": "Same technology; '(SBSP)' is only the acronym. FTSG 2025's claim defines SBSP as collecting solar energy in space and beaming it to Earth, as the other three sources do."
+  },
+  {
+   "n": 2,
+   "subjects": [
+    "3d-printing",
+    "additive-manufacturing-3d-printing"
+   ],
+   "decision": "merge",
+   "survivor": "3d-printing",
+   "claims": {
+    "3d-printing": 28,
+    "additive-manufacturing-3d-printing": 2
+   },
+   "reason": "Deloitte's 'Additive manufacturing' exponential is 3D printing (its 2015 text says so); the curation already maps additive manufacturing to 3D printing."
+  },
+  {
+   "n": 3,
+   "subjects": [
+    "advanced-connectivity",
+    "advanced-connectivity-5g-6g-lpwa-leo-satellites"
+   ],
+   "decision": "merge",
+   "survivor": "advanced-connectivity",
+   "claims": {
+    "advanced-connectivity": 4,
+    "advanced-connectivity-5g-6g-lpwa-leo-satellites": 1
+   },
+   "reason": "Same McKinsey trend 'Advanced connectivity'; the 2022 parenthesis only lists the technologies the trend has covered every year."
+  },
+  {
+   "n": 4,
+   "subjects": [
+    "affective-computing",
+    "affective-computing-emotion-ai",
+    "emotion-ai"
+   ],
+   "decision": "merge",
+   "survivor": "affective-computing",
+   "claims": {
+    "affective-computing": 7,
+    "affective-computing-emotion-ai": 2,
+    "emotion-ai": 1
+   },
+   "reason": "Emotion AI is the newer name of affective computing (Gartner's 2019 entry succeeds its 2013-2016 Affective Computing); Deloitte's 2022 claim says 'affective computing' and its 2020 human-experience chapter is the same emotion-sensing field."
+  },
+  {
+   "n": 5,
+   "subjects": [
+    "edge-ai",
+    "edge-ai-on-device-processing",
+    "a-i-at-the-edge",
+    "a-i-at-the-edge-or-a-i-not-in-the-cloud"
+   ],
+   "decision": "merge",
+   "survivor": "edge-ai",
+   "claims": {
+    "edge-ai": 2,
+    "edge-ai-on-device-processing": 1,
+    "a-i-at-the-edge": 8,
+    "a-i-at-the-edge-or-a-i-not-in-the-cloud": 1
+   },
+   "reason": "AI at the edge and edge AI name the same thing: AI inference on devices near the data instead of in the cloud (FTSG 2025 text calls its own trend 'edge AI'; Deloitte's parenthesis says on-device). Word-order variant found alongside the acronym group."
+  },
+  {
+   "n": 6,
+   "subjects": [
+    "a-i-powered-automated-hacking-systems",
+    "ai-powered-automated-hacking"
+   ],
+   "decision": "merge",
+   "survivor": "a-i-powered-automated-hacking-systems",
+   "claims": {
+    "a-i-powered-automated-hacking-systems": 2,
+    "ai-powered-automated-hacking": 1
+   },
+   "reason": "Same FTSG trend across 2019-2021; 'Systems' suffix and 'A.I.' punctuation only."
+  },
+  {
+   "n": 7,
+   "subjects": [
+    "ambient-computing",
+    "ambient-computing-ubiquitous-interfaces",
+    "internet-of-things-ambient-computing"
+   ],
+   "decision": "merge",
+   "survivor": "ambient-computing",
+   "claims": {
+    "ambient-computing": 1,
+    "ambient-computing-ubiquitous-interfaces": 1,
+    "internet-of-things-ambient-computing": 1
+   },
+   "reason": "Deloitte's recurring ambient chapter: 'Ambient computing' (2015), 'Ambient experience' (2020) and 'Ambient experience: Life beyond the glass' (2022, quote says ambient computing); the parentheses are the capture's glosses."
+  },
+  {
+   "n": 8,
+   "subjects": [
+    "advanced-connectivity",
+    "advanced-connectivity-5g-edge-networking"
+   ],
+   "decision": "keep",
+   "claims": {
+    "advanced-connectivity": 4,
+    "advanced-connectivity-5g-edge-networking": 1
+   },
+   "reason": "Deloitte 2019 'Connectivity of tomorrow' spans 5G, edge computing and software-defined networking, wider than McKinsey's advanced-connectivity trend. Related.",
+   "related": true
+  },
+  {
+   "n": 9,
+   "subjects": [
+    "augmented-intelligence",
+    "augmented-intelligence-ai-and-advanced-analytics"
+   ],
+   "decision": "keep",
+   "claims": {
+    "augmented-intelligence": 1,
+    "augmented-intelligence-ai-and-advanced-analytics": 1
+   },
+   "reason": "Deloitte 2015 'Amplified intelligence' covers AI and advanced analytics for workers broadly; Gartner's 2019 Augmented Intelligence is a narrower human-AI partnership model. Related, not merged."
+  },
+  {
+   "n": 10,
+   "subjects": [
+    "blockchain",
+    "blockchain-technologies"
+   ],
+   "decision": "merge",
+   "survivor": "blockchain",
+   "claims": {
+    "blockchain": 9,
+    "blockchain-technologies": 1
+   },
+   "reason": "FTSG 2019 'Blockchain Technologies' is blockchain; the suffix adds nothing."
+  },
+  {
+   "n": 11,
+   "subjects": [
+    "blockchain",
+    "blockchain-digital-identity-and-reputation"
+   ],
+   "decision": "keep",
+   "claims": {
+    "blockchain": 9,
+    "blockchain-digital-identity-and-reputation": 1
+   },
+   "reason": "Deloitte 2017 'Trust economy' is blockchain for digital identity and reputation, one application; already a separate subject. Related.",
+   "related": true
+  },
+  {
+   "n": 12,
+   "subjects": [
+    "brain-computer-interface",
+    "brain-machine-interfaces-bmis"
+   ],
+   "decision": "merge",
+   "survivor": "brain-computer-interface",
+   "claims": {
+    "brain-computer-interface": 14,
+    "brain-machine-interfaces-bmis": 1
+   },
+   "reason": "Brain-machine interfaces are already an alias of brain-computer interface; '(BMIs)' is only the acronym."
+  },
+  {
+   "n": 13,
+   "subjects": [
+    "chronic-disease",
+    "chronic-disease-in-developed-countries"
+   ],
+   "decision": "keep",
+   "claims": {
+    "chronic-disease": 4,
+    "chronic-disease-in-developed-countries": 2
+   },
+   "reason": "WEF 2007-2008 scoped the risk to developed countries; 2009-2010 'Chronic disease' carries no such scope. Different risks as ranked. Related.",
+   "related": true
+  },
+  {
+   "n": 14,
+   "subjects": [
+    "cio-role",
+    "cio-role-it-portfolio-management"
+   ],
+   "decision": "merge",
+   "survivor": "cio-role",
+   "claims": {
+    "cio-role": 3,
+    "cio-role-it-portfolio-management": 1
+   },
+   "reason": "Deloitte's recurring CIO-role chapter (2011, 2013, 2015 already merged); 2014 'CIO as venture capitalist' is the same chapter series, the parenthesis is that year's angle."
+  },
+  {
+   "n": 15,
+   "subjects": [
+    "clean-energy",
+    "clean-energy-technologies"
+   ],
+   "decision": "keep",
+   "claims": {
+    "clean-energy": 1,
+    "clean-energy-technologies": 1
+   },
+   "reason": "McKinsey 2021 'Future of clean technologies' included carbon capture and other non-energy clean tech; 2022 'Future of clean energy' is energy only. Related.",
+   "related": true
+  },
+  {
+   "n": 16,
+   "subjects": [
+    "climate",
+    "climate-technologies-ccus-carbon-removal-circularity"
+   ],
+   "decision": "keep",
+   "claims": {
+    "climate": 1,
+    "climate-technologies-ccus-carbon-removal-circularity": 2
+   },
+   "reason": "FTSG 2015 'Climate' (building energy waste) and McKinsey's carbon-capture and circularity technologies are different subjects."
+  },
+  {
+   "n": 17,
+   "subjects": [
+    "cloud-computing",
+    "cloud-computing-saas-paas"
+   ],
+   "decision": "keep",
+   "claims": {
+    "cloud-computing": 14,
+    "cloud-computing-saas-paas": 1
+   },
+   "reason": "Accenture 2011 claims value moves to the SaaS and PaaS layers rather than IaaS: a claim about layers within cloud computing, narrower than cloud adoption. Related.",
+   "related": true
+  },
+  {
+   "n": 18,
+   "subjects": [
+    "core-system-modernization",
+    "core-system-modernization-legacy-erp-cloud-migration"
+   ],
+   "decision": "merge",
+   "survivor": "core-system-modernization",
+   "claims": {
+    "core-system-modernization": 2,
+    "core-system-modernization-legacy-erp-cloud-migration": 1
+   },
+   "reason": "Deloitte's recurring core chapter ('Core renaissance' 2015, 'Reimagining core systems' 2016, 'Core revival' 2021); the parenthesis is a gloss."
+  },
+  {
+   "n": 19,
+   "subjects": [
+    "cultivated-meat",
+    "cultivated-lab-grown-meat"
+   ],
+   "decision": "merge",
+   "survivor": "cultivated-meat",
+   "claims": {
+    "cultivated-meat": 1,
+    "cultivated-lab-grown-meat": 1
+   },
+   "reason": "Cultivated meat and lab-grown meat are the same product (trendwatching 2021 'LAB TO TABLE', McKinsey 2023)."
+  },
+  {
+   "n": 20,
+   "subjects": [
+    "cybersecurity",
+    "cybersecurity-physical-cyber-threats"
+   ],
+   "decision": "merge",
+   "survivor": "cybersecurity",
+   "claims": {
+    "cybersecurity": 4,
+    "cybersecurity-physical-cyber-threats": 1
+   },
+   "reason": "Deloitte's 'Cyber security' exponential (2015) continues its 2014 'Cybersecurity' exponential already on this subject; 'physical-cyber threats' is the year's angle."
+  },
+  {
+   "n": 21,
+   "subjects": [
+    "retrenchment-from-globalization",
+    "retrenchment-from-globalization-developed",
+    "retrenchment-from-globalization-emerging"
+   ],
+   "decision": "keep",
+   "claims": {
+    "retrenchment-from-globalization": 2,
+    "retrenchment-from-globalization-developed": 3,
+    "retrenchment-from-globalization-emerging": 1
+   },
+   "reason": "WEF ranks the developed- and emerging-economy variants as separate risks."
+  },
+  {
+   "n": 22,
+   "subjects": [
+    "dynamic-line-rating-systems",
+    "dynamic-line-rating-dlr-systems"
+   ],
+   "decision": "merge",
+   "survivor": "dynamic-line-rating-systems",
+   "claims": {
+    "dynamic-line-rating-systems": 1,
+    "dynamic-line-rating-dlr-systems": 1
+   },
+   "reason": "Same FTSG trend (2024, 2025); '(DLR)' is only the acronym."
+  },
+  {
+   "n": 23,
+   "subjects": [
+    "extreme-weather-events",
+    "extreme-weather"
+   ],
+   "decision": "merge",
+   "survivor": "extreme-weather-events",
+   "claims": {
+    "extreme-weather-events": 30,
+    "extreme-weather": 2
+   },
+   "reason": "FTSG's 'Extreme Weather Events' (2019-2022) is retitled 'Extreme Weather' (2023-2024) with the same content; WEF's 'Extreme weather' is already on this subject."
+  },
+  {
+   "n": 24,
+   "subjects": [
+    "flying-taxis",
+    "flying-taxis-evtols"
+   ],
+   "decision": "merge",
+   "survivor": "flying-taxis",
+   "claims": {
+    "flying-taxis": 5,
+    "flying-taxis-evtols": 2
+   },
+   "reason": "Flying taxis are eVTOLs; acronym only."
+  },
+  {
+   "n": 25,
+   "subjects": [
+    "generative-adversarial-networks",
+    "generative-adversarial-networks-gans"
+   ],
+   "decision": "merge",
+   "survivor": "generative-adversarial-networks",
+   "claims": {
+    "generative-adversarial-networks": 3,
+    "generative-adversarial-networks-gans": 2
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 26,
+   "subjects": [
+    "industry-cloud-platforms",
+    "industry-vertical-clouds"
+   ],
+   "decision": "merge",
+   "survivor": "industry-cloud-platforms",
+   "claims": {
+    "industry-cloud-platforms": 4,
+    "industry-vertical-clouds": 1
+   },
+   "reason": "Deloitte's 'Cloud goes vertical' industry clouds and Gartner's Industry Cloud Platforms are the same offering (claim text says 'industry clouds')."
+  },
+  {
+   "n": 27,
+   "subjects": [
+    "internet-of-things",
+    "internet-of-things-ambient-computing"
+   ],
+   "decision": "keep",
+   "claims": {
+    "internet-of-things": 12,
+    "internet-of-things-ambient-computing": 1
+   },
+   "reason": "Deloitte 2015's chapter is titled 'Ambient computing'; it is merged into ambient-computing instead (see that group). Internet of Things stays as is."
+  },
+  {
+   "n": 28,
+   "subjects": [
+    "journalism-as-a-service",
+    "journalism-as-a-service-jaas"
+   ],
+   "decision": "merge",
+   "survivor": "journalism-as-a-service",
+   "claims": {
+    "journalism-as-a-service": 4,
+    "journalism-as-a-service-jaas": 1
+   },
+   "reason": "Acronym only; same FTSG trend."
+  },
+  {
+   "n": 29,
+   "subjects": [
+    "lab-on-a-chip",
+    "lab-on-a-chip-loc"
+   ],
+   "decision": "merge",
+   "survivor": "lab-on-a-chip",
+   "claims": {
+    "lab-on-a-chip": 1,
+    "lab-on-a-chip-loc": 1
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 30,
+   "subjects": [
+    "light-based-quantum",
+    "light-based-quantum-technologies"
+   ],
+   "decision": "merge",
+   "survivor": "light-based-quantum",
+   "claims": {
+    "light-based-quantum": 1,
+    "light-based-quantum-technologies": 1
+   },
+   "reason": "Same FTSG trend (2022, 2024); suffix only."
+  },
+  {
+   "n": 31,
+   "subjects": [
+    "living-breakwaters",
+    "living-breakwater"
+   ],
+   "decision": "merge",
+   "survivor": "living-breakwaters",
+   "claims": {
+    "living-breakwaters": 1,
+    "living-breakwater": 1
+   },
+   "reason": "Same FTSG trend (2023, 2024); plural only."
+  },
+  {
+   "n": 32,
+   "subjects": [
+    "machine-reading-comprehension",
+    "machine-reading-comprehension-mrc"
+   ],
+   "decision": "merge",
+   "survivor": "machine-reading-comprehension",
+   "claims": {
+    "machine-reading-comprehension": 1,
+    "machine-reading-comprehension-mrc": 2
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 33,
+   "subjects": [
+    "mixed-reality",
+    "mixed-reality-ar-and-vr"
+   ],
+   "decision": "merge",
+   "survivor": "mixed-reality",
+   "claims": {
+    "mixed-reality": 2,
+    "mixed-reality-ar-and-vr": 1
+   },
+   "reason": "Deloitte 2017 chapter is titled 'Mixed reality'; the parenthesis is a gloss."
+  },
+  {
+   "n": 34,
+   "subjects": [
+    "mobile-payment",
+    "mobile-payments-touch-commerce"
+   ],
+   "decision": "keep",
+   "claims": {
+    "mobile-payment": 7,
+    "mobile-payments-touch-commerce": 1
+   },
+   "reason": "Split on purpose in #55: touch commerce is a narrower mode of mobile payment. Related already.",
+   "related": true
+  },
+  {
+   "n": 35,
+   "subjects": [
+    "natural-language-generation",
+    "natural-language-generation-nlg"
+   ],
+   "decision": "merge",
+   "survivor": "natural-language-generation",
+   "claims": {
+    "natural-language-generation": 2,
+    "natural-language-generation-nlg": 2
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 36,
+   "subjects": [
+    "nft",
+    "non-fungible-tokens"
+   ],
+   "decision": "merge",
+   "survivor": "nft",
+   "claims": {
+    "nft": 2,
+    "non-fungible-tokens": 1
+   },
+   "reason": "Same thing; hyphenation and acronym only."
+  },
+  {
+   "n": 37,
+   "subjects": [
+    "global-oil-demand",
+    "oil-demand"
+   ],
+   "decision": "keep",
+   "claims": {
+    "global-oil-demand": 94,
+    "oil-demand": 4
+   },
+   "reason": "ARK's oil demand claims are changes relative to expectations or ARK scenarios, not the world-demand series in million barrels per day (D13: different measure). Related.",
+   "related": true
+  },
+  {
+   "n": 38,
+   "subjects": [
+    "quantum-technologies",
+    "quantum-technologies-computing-sensing-communications"
+   ],
+   "decision": "merge",
+   "survivor": "quantum-technologies",
+   "claims": {
+    "quantum-technologies": 5,
+    "quantum-technologies-computing-sensing-communications": 1
+   },
+   "reason": "McKinsey's 'Quantum technologies' covers computing, sensing and communications; Deloitte 2022 'Quantum and then some' names the same three. Same scope."
+  },
+  {
+   "n": 39,
+   "subjects": [
+    "quantum-computing",
+    "quantum-computing-quantum-optimization"
+   ],
+   "decision": "keep",
+   "claims": {
+    "quantum-computing": 22,
+    "quantum-computing-quantum-optimization": 1
+   },
+   "reason": "Deloitte 2017 focuses on quantum optimization, one application of quantum computing; narrower. Related.",
+   "related": true
+  },
+  {
+   "n": 40,
+   "subjects": [
+    "quantum-encryption",
+    "quantum-encryption-quantum-safe-cryptography"
+   ],
+   "decision": "merge",
+   "survivor": "quantum-encryption",
+   "claims": {
+    "quantum-encryption": 1,
+    "quantum-encryption-quantum-safe-cryptography": 1
+   },
+   "reason": "Both publishers use the label 'Quantum encryption' (FTSG 2022, Deloitte 2018) for securing data against quantum attack; the parenthesis is a gloss."
+  },
+  {
+   "n": 41,
+   "subjects": [
+    "real-time-machine-learning",
+    "real-time-machine-learning-rtml"
+   ],
+   "decision": "merge",
+   "survivor": "real-time-machine-learning",
+   "claims": {
+    "real-time-machine-learning": 4,
+    "real-time-machine-learning-rtml": 1
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 42,
+   "subjects": [
+    "remote-patient-monitoring",
+    "remote-patient-monitoring-rpm"
+   ],
+   "decision": "merge",
+   "survivor": "remote-patient-monitoring",
+   "claims": {
+    "remote-patient-monitoring": 4,
+    "remote-patient-monitoring-rpm": 1
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 43,
+   "subjects": [
+    "retrofitting-old-homes-with-new-technology",
+    "retrofitting-old-homes-with-new-tech"
+   ],
+   "decision": "merge",
+   "survivor": "retrofitting-old-homes-with-new-technology",
+   "claims": {
+    "retrofitting-old-homes-with-new-technology": 2,
+    "retrofitting-old-homes-with-new-tech": 1
+   },
+   "reason": "Same FTSG trend (2020-2022); 'Tech' is short for 'Technology'."
+  },
+  {
+   "n": 44,
+   "subjects": [
+    "rfid",
+    "rfid-case-pallet",
+    "rfid-item",
+    "rfid-passive"
+   ],
+   "decision": "keep",
+   "claims": {
+    "rfid": 2,
+    "rfid-case-pallet": 5,
+    "rfid-item": 2,
+    "rfid-passive": 2
+   },
+   "reason": "Gartner charts case/pallet, item-level and passive RFID as separate entries with separate positions."
+  },
+  {
+   "n": 45,
+   "subjects": [
+    "robotic-process-automation",
+    "robotic-process-automation-rpa"
+   ],
+   "decision": "merge",
+   "survivor": "robotic-process-automation",
+   "claims": {
+    "robotic-process-automation": 4,
+    "robotic-process-automation-rpa": 1
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 46,
+   "subjects": [
+    "securing-the-hot",
+    "securing-the-hot-home-of-things"
+   ],
+   "decision": "merge",
+   "survivor": "securing-the-hot",
+   "claims": {
+    "securing-the-hot": 1,
+    "securing-the-hot-home-of-things": 1
+   },
+   "reason": "Same FTSG trend; the parenthesis expands the acronym."
+  },
+  {
+   "n": 47,
+   "subjects": [
+    "self-assembly-technology",
+    "self-assembly-tech"
+   ],
+   "decision": "merge",
+   "survivor": "self-assembly-technology",
+   "claims": {
+    "self-assembly-technology": 1,
+    "self-assembly-tech": 1
+   },
+   "reason": "Same FTSG trend (2023, 2024); 'Tech' is short for 'Technology'."
+  },
+  {
+   "n": 48,
+   "subjects": [
+    "self-repairing-quantum-systems",
+    "self-repairing-quantum"
+   ],
+   "decision": "merge",
+   "survivor": "self-repairing-quantum-systems",
+   "claims": {
+    "self-repairing-quantum-systems": 1,
+    "self-repairing-quantum": 1
+   },
+   "reason": "Same FTSG trend (2022, 2023); suffix only."
+  },
+  {
+   "n": 49,
+   "subjects": [
+    "skinput",
+    "skinput-systems"
+   ],
+   "decision": "merge",
+   "survivor": "skinput",
+   "claims": {
+    "skinput": 1,
+    "skinput-systems": 3
+   },
+   "reason": "Suffix only."
+  },
+  {
+   "n": 50,
+   "subjects": [
+    "space",
+    "space-technologies"
+   ],
+   "decision": "keep",
+   "claims": {
+    "space": 4,
+    "space-technologies": 5
+   },
+   "reason": "FTSG's 'Space' is an umbrella section on the commercial space boom; McKinsey's 'Future of space technologies' is a technology trend scored on investment and adoption. Close but not the same unit. Related.",
+   "related": true
+  },
+  {
+   "n": 51,
+   "subjects": [
+    "status-beyond-traditional-consumption",
+    "status-beyond-traditional-consumption-experience-participation-connection-eco-status"
+   ],
+   "decision": "merge",
+   "survivor": "status-beyond-traditional-consumption",
+   "claims": {
+    "status-beyond-traditional-consumption": 1,
+    "status-beyond-traditional-consumption-experience-participation-connection-eco-status": 1
+   },
+   "reason": "trendwatching's 2008 STATUS SPHERES says it succeeds 2007 STATUS LIFESTYLES; the parenthesis lists the 2007 sub-lifestyles."
+  },
+  {
+   "n": 52,
+   "subjects": [
+    "synthetic-biology",
+    "synthetic-biology-crispr-gene-editing"
+   ],
+   "decision": "merge",
+   "survivor": "synthetic-biology",
+   "claims": {
+    "synthetic-biology": 7,
+    "synthetic-biology-crispr-gene-editing": 1
+   },
+   "reason": "Deloitte 2017 names this exponential's focus 'Synthetic biology'; the CRISPR parenthesis is a gloss."
+  },
+  {
+   "n": 53,
+   "subjects": [
+    "universal-basic-income",
+    "universal-basic-income-ubi"
+   ],
+   "decision": "merge",
+   "survivor": "universal-basic-income",
+   "claims": {
+    "universal-basic-income": 2,
+    "universal-basic-income-ubi": 1
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 54,
+   "subjects": [
+    "webassembly",
+    "webassembly-wasm"
+   ],
+   "decision": "merge",
+   "survivor": "webassembly",
+   "claims": {
+    "webassembly": 1,
+    "webassembly-wasm": 1
+   },
+   "reason": "Acronym only."
+  },
+  {
+   "n": 55,
+   "subjects": [
+    "diffusion-of-weapons-of-mass-destruction",
+    "weapons-of-mass-destruction"
+   ],
+   "decision": "merge",
+   "survivor": "diffusion-of-weapons-of-mass-destruction",
+   "claims": {
+    "diffusion-of-weapons-of-mass-destruction": 9,
+    "weapons-of-mass-destruction": 2
+   },
+   "reason": "NIC's 'weapons of mass destruction' differs from WEF's 'Weapons of mass destruction' (already on this subject) only by case; NIC's claims are about WMD use and proliferation, as WEF's risk is."
+  },
+  {
+   "n": 56,
+   "subjects": [
+    "carbon-removal",
+    "direct-air-capture"
+   ],
+   "decision": "merge",
+   "survivor": "carbon-removal",
+   "claims": {
+    "carbon-removal": 2,
+    "direct-air-capture": 3
+   },
+   "reason": "The carbon-removal subject is named 'Carbon removal (direct air capture)': MIT's carbon dioxide catcher and carbon removal factory are direct-air-capture plants, as FTSG's Direct Air Capture trend is."
+  },
+  {
+   "n": 57,
+   "subjects": [
+    "consumerization-of-it",
+    "user-empowerment-consumerization-of-it"
+   ],
+   "decision": "merge",
+   "survivor": "consumerization-of-it",
+   "claims": {
+    "consumerization-of-it": 1,
+    "user-empowerment-consumerization-of-it": 1
+   },
+   "reason": "Deloitte 2012 'User Empowerment' is the consumerization of IT (end users' own devices and apps driving enterprise IT), as Deloitte TMT 2010 predicts."
+  },
+  {
+   "n": 58,
+   "subjects": [
+    "crowdsourcing",
+    "companies-co-creating-with-skilled-consumers-crowdsourcing"
+   ],
+   "decision": "keep",
+   "claims": {
+    "crowdsourcing": 2,
+    "companies-co-creating-with-skilled-consumers-crowdsourcing": 1
+   },
+   "reason": "trendwatching 2007 is about companies courting skilled consumers to co-create products; Accenture's and Gartner's crowdsourcing is about distributed workforces and tasks. Related.",
+   "related": true
+  },
+  {
+   "n": 59,
+   "subjects": [
+    "3d",
+    "volumetric-3d-screens"
+   ],
+   "decision": "keep",
+   "claims": {
+    "3d": 1,
+    "volumetric-3d-screens": 1
+   },
+   "reason": "Split on purpose in #55: stereoscopic 3D is not volumetric display. Related already.",
+   "related": true
+  },
+  {
+   "n": 60,
+   "subjects": [
+    "advanced-economies-real-gdp-growth",
+    "advanced-economies-real-gdp-growth-world-bank"
+   ],
+   "decision": "keep",
+   "reason": "World Bank and IMF advanced-economy groups differ (D13)."
+  },
+  {
+   "n": 61,
+   "subjects": [
+    "emerging-and-developing-economies-real-gdp-growth",
+    "emerging-and-developing-economies-real-gdp-growth-world-bank"
+   ],
+   "decision": "keep",
+   "reason": "World Bank and IMF country groups differ (D13)."
+  },
+  {
+   "n": 62,
+   "subjects": [
+    "brazil-usd-brl-exchange-rate-december-average",
+    "brazil-usd-brl-exchange-rate-last-business-day"
+   ],
+   "decision": "keep",
+   "reason": "December average and last business day are different measures (D13)."
+  },
+  {
+   "n": 63,
+   "subjects": [
+    "global-solar-generation",
+    "global-solar-pv-generation",
+    "global-wind-generation"
+   ],
+   "decision": "keep",
+   "reason": "Different quantities sharing the metric word 'generation'."
+  },
+  {
+   "n": 64,
+   "subjects": [
+    "global-solar-installed-capacity",
+    "global-solar-pv-installed-capacity",
+    "global-wind-installed-capacity"
+   ],
+   "decision": "keep",
+   "reason": "Different quantities sharing the metric words 'installed capacity'."
+  },
+  {
+   "n": 65,
+   "subjects": [
+    "us-imported-crude-oil-price-nominal",
+    "us-imported-crude-oil-price-real"
+   ],
+   "decision": "keep",
+   "reason": "Nominal and real prices are different measures."
+  },
+  {
+   "n": 66,
+   "subjects": [
+    "us-natural-gas-price-electric-power-nominal",
+    "us-natural-gas-price-electric-power-real"
+   ],
+   "decision": "keep",
+   "reason": "Nominal and real prices are different measures."
+  },
+  {
+   "n": 67,
+   "subjects": [
+    "united-states-unemployment-rate",
+    "united-states-unemployment-rate-q4"
+   ],
+   "decision": "keep",
+   "reason": "Annual average and Q4 are different measures (D13)."
+  },
+  {
+   "n": 68,
+   "subjects": [
+    "*-real-gdp-growth (24 economies and groups)"
+   ],
+   "decision": "keep",
+   "reason": "Different economies sharing the metric 'real GDP growth'; deterministic quantities (D13)."
+  }
+ ]
+}
