@@ -29,3 +29,19 @@ Needs `pdftotext` (poppler).
 ```
 python3 extract.py gx-tmt-predictions2011.pdf
 ```
+
+## Internet Archive inputs (2002 to 2010)
+
+Found with the Wayback CDX API, for example:
+
+```
+curl -sL -A "Mozilla/5.0" "https://web.archive.org/cdx/search/cdx?url=deloitte.com/dtt/&matchType=prefix&filter=mimetype:application/pdf&collapse=urlkey&fl=timestamp,original,statuscode,length&limit=20000"
+curl -sL -A "Mozilla/5.0" "https://web.archive.org/cdx/search/cdx?url=deloitte.com/assets/&matchType=prefix&collapse=urlkey&fl=timestamp,original,mimetype,statuscode&limit=200000"
+curl -sL -A "Mozilla/5.0" "https://web.archive.org/cdx/search/cdx?url=dc.com&matchType=domain&collapse=urlkey&fl=timestamp,original,mimetype,statuscode&filter=original:.*redict.*&to=2005"
+```
+
+Download a capture byte-for-byte with the `id_` suffix: `https://web.archive.org/web/<timestamp>id_/<original>`. The capture URLs used (timestamp and original) are the `source_url` values in the 2002 to 2010 edition files, without `#page=`. Wayback answers 429 or 504 under load: wait and retry.
+
+## findpage.py
+
+`python3 findpage.py <file.pdf> "<quote>"` prints the PDF page holding a quote (for the `#page=` anchor), ignoring case, spacing and punctuation; "..." splits a quote into parts that must share a page. `python3 findpage.py <file.pdf> --check <edition.json> <source_url prefix>` re-checks the anchors of an edition's entries from that PDF. It writes nothing.
