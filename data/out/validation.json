@@ -24,6 +24,7 @@
    "open": 96
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -77,6 +78,7 @@
    "open": 96
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -130,6 +132,7 @@
    "open": 96
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -183,6 +186,7 @@
    "open": 96
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -230,6 +234,7 @@
    "hit": 1
   },
   "kappa": 1,
+  "kappa_pooled": null,
   "agreement_n": 3,
   "agreement_agreed": 3,
   "raw_agreement": 1,
@@ -285,6 +290,7 @@
    "open": 8
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -339,6 +345,7 @@
    "open": 8
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -393,6 +400,7 @@
    "open": 8
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -447,6 +455,7 @@
    "open": 8
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -502,6 +511,7 @@
    "ungradable": 32
   },
   "kappa": 0.8863,
+  "kappa_pooled": null,
   "agreement_n": 75,
   "agreement_agreed": 70,
   "raw_agreement": 0.9333,
@@ -559,6 +569,7 @@
    "excluded": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -608,6 +619,7 @@
    "excluded": 6
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -657,6 +669,7 @@
    "excluded": 178
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -712,6 +725,7 @@
    "excluded": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -747,25 +761,26 @@
   "measure": "persisted_share",
   "n": 162,
   "n_graded": 143,
-  "k": 23,
-  "share": 0.1608,
+  "k": 18,
+  "share": 0.1259,
   "ci95": [
-   0.11,
-   0.23
+   0.081,
+   0.19
   ],
   "ci95_audit_adjusted": [
-   0.091,
-   0.249
+   0.062,
+   0.209
   ],
   "rate_withheld": null,
   "counts": {
-   "faded": 76,
-   "persisted": 23,
-   "renamed": 42,
+   "faded": 80,
+   "persisted": 18,
+   "renamed": 43,
    "recycled": 2,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -773,8 +788,8 @@
   "adjudicated": null,
   "audit_seed": "d11:deloitte-tech-trends:d33 + d11:deloitte-tech-trends:d33:pass2",
   "audit_sample": 53,
-  "audited": 53,
-  "audit_confirmed": 52,
+  "audited": 52,
+  "audit_confirmed": 51,
   "audit_corrected": 1,
   "audit_contested": 0,
   "audit_error_rate": 0.019,
@@ -796,7 +811,11 @@
    "renames-d33-pass2-scope.json",
    "renames-d33-checkerA-pass2.json",
    "renames-d33-checkerB-pass2.json",
-   "renames-audit-d33-pass2.json"
+   "renames-audit-d33-pass2.json",
+   "renames-d33-pass3-scope.json",
+   "renames-d33-checkerA-pass3.json",
+   "renames-d33-checkerB-pass3.json",
+   "renames-audit-d33-pass3.json"
   ],
   "inputs": [
    "data/raw/deloitte-tech-trends/final-d33.json",
@@ -812,25 +831,26 @@
   "measure": "renamed_share",
   "n": 162,
   "n_graded": 143,
-  "k": 42,
-  "share": 0.2937,
+  "k": 43,
+  "share": 0.3007,
   "ci95": [
-   0.225,
-   0.373
+   0.232,
+   0.38
   ],
   "ci95_audit_adjusted": [
-   0.206,
-   0.392
+   0.213,
+   0.399
   ],
   "rate_withheld": null,
   "counts": {
-   "faded": 76,
-   "persisted": 23,
-   "renamed": 42,
+   "faded": 80,
+   "persisted": 18,
+   "renamed": 43,
    "recycled": 2,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -838,8 +858,8 @@
   "adjudicated": null,
   "audit_seed": "d11:deloitte-tech-trends:d33 + d11:deloitte-tech-trends:d33:pass2",
   "audit_sample": 53,
-  "audited": 53,
-  "audit_confirmed": 52,
+  "audited": 52,
+  "audit_confirmed": 51,
   "audit_corrected": 1,
   "audit_contested": 0,
   "audit_error_rate": 0.019,
@@ -861,7 +881,11 @@
    "renames-d33-pass2-scope.json",
    "renames-d33-checkerA-pass2.json",
    "renames-d33-checkerB-pass2.json",
-   "renames-audit-d33-pass2.json"
+   "renames-audit-d33-pass2.json",
+   "renames-d33-pass3-scope.json",
+   "renames-d33-checkerA-pass3.json",
+   "renames-d33-checkerB-pass3.json",
+   "renames-audit-d33-pass3.json"
   ],
   "inputs": [
    "data/raw/deloitte-tech-trends/final-d33.json",
@@ -877,25 +901,26 @@
   "measure": "faded_share",
   "n": 162,
   "n_graded": 143,
-  "k": 76,
-  "share": 0.5315,
+  "k": 80,
+  "share": 0.5594,
   "ci95": [
-   0.45,
-   0.611
+   0.478,
+   0.638
   ],
   "ci95_audit_adjusted": [
-   0.431,
-   0.63
+   0.459,
+   0.657
   ],
   "rate_withheld": null,
   "counts": {
-   "faded": 76,
-   "persisted": 23,
-   "renamed": 42,
+   "faded": 80,
+   "persisted": 18,
+   "renamed": 43,
    "recycled": 2,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -903,8 +928,8 @@
   "adjudicated": null,
   "audit_seed": "d11:deloitte-tech-trends:d33 + d11:deloitte-tech-trends:d33:pass2",
   "audit_sample": 53,
-  "audited": 53,
-  "audit_confirmed": 52,
+  "audited": 52,
+  "audit_confirmed": 51,
   "audit_corrected": 1,
   "audit_contested": 0,
   "audit_error_rate": 0.019,
@@ -926,7 +951,11 @@
    "renames-d33-pass2-scope.json",
    "renames-d33-checkerA-pass2.json",
    "renames-d33-checkerB-pass2.json",
-   "renames-audit-d33-pass2.json"
+   "renames-audit-d33-pass2.json",
+   "renames-d33-pass3-scope.json",
+   "renames-d33-checkerA-pass3.json",
+   "renames-d33-checkerB-pass3.json",
+   "renames-audit-d33-pass3.json"
   ],
   "inputs": [
    "data/raw/deloitte-tech-trends/final-d33.json",
@@ -954,13 +983,14 @@
   ],
   "rate_withheld": null,
   "counts": {
-   "faded": 76,
-   "persisted": 23,
-   "renamed": 42,
+   "faded": 80,
+   "persisted": 18,
+   "renamed": 43,
    "recycled": 2,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -968,8 +998,8 @@
   "adjudicated": null,
   "audit_seed": "d11:deloitte-tech-trends:d33 + d11:deloitte-tech-trends:d33:pass2",
   "audit_sample": 53,
-  "audited": 53,
-  "audit_confirmed": 52,
+  "audited": 52,
+  "audit_confirmed": 51,
   "audit_corrected": 1,
   "audit_contested": 0,
   "audit_error_rate": 0.019,
@@ -991,7 +1021,11 @@
    "renames-d33-pass2-scope.json",
    "renames-d33-checkerA-pass2.json",
    "renames-d33-checkerB-pass2.json",
-   "renames-audit-d33-pass2.json"
+   "renames-audit-d33-pass2.json",
+   "renames-d33-pass3-scope.json",
+   "renames-d33-checkerA-pass3.json",
+   "renames-d33-checkerB-pass3.json",
+   "renames-audit-d33-pass3.json"
   ],
   "inputs": [
    "data/raw/deloitte-tech-trends/final-d33.json",
@@ -1005,40 +1039,41 @@
   "scope": "all",
   "rule": "D16",
   "measure": "hit_rate",
-  "n": 438,
-  "n_graded": 234,
-  "k": 166,
-  "share": 0.7094,
+  "n": 450,
+  "n_graded": 245,
+  "k": 171,
+  "share": 0.698,
   "ci95": [
-   0.648,
-   0.764
+   0.638,
+   0.752
   ],
   "ci95_audit_adjusted": [
-   0.568,
-   0.844
+   0.563,
+   0.827
   ],
   "rate_withheld": null,
   "counts": {
-   "hit": 166,
-   "miss": 41,
-   "partial": 27,
+   "hit": 171,
+   "miss": 43,
+   "partial": 31,
    "contested": 7,
-   "ungradable": 194,
+   "ungradable": 195,
    "unfalsifiable": 3
   },
-  "kappa": 0.7387,
-  "agreement_n": 438,
-  "agreement_agreed": 368,
-  "raw_agreement": 0.8402,
+  "kappa": 0.7345,
+  "kappa_pooled": null,
+  "agreement_n": 450,
+  "agreement_agreed": 376,
+  "raw_agreement": 0.8356,
   "passes_d11": true,
-  "adjudicated": 68,
-  "audit_seed": "d11:deloitte-tmt-predictions:d16 + d11:deloitte-tmt-predictions:d16:w2",
-  "audit_sample": 100,
-  "audited": 100,
-  "audit_confirmed": 92,
+  "adjudicated": 72,
+  "audit_seed": "d11:deloitte-tmt-predictions:d16 + d11:deloitte-tmt-predictions:d16:w2 + d11:deloitte-tmt-predictions:d16:w3",
+  "audit_sample": 107,
+  "audited": 107,
+  "audit_confirmed": 99,
   "audit_corrected": 1,
   "audit_contested": 7,
-  "audit_error_rate": 0.08,
+  "audit_error_rate": 0.075,
   "audit_residual_error_rate": null,
   "audit_resolved_by_gap_rule": null,
   "audit_fixed_in_code": null,
@@ -1049,7 +1084,8 @@
   "pending_recheck": null,
   "waves": [
    "w1",
-   "w2"
+   "w2",
+   "w3"
   ],
   "in_published_rate": null,
   "passes": [
@@ -1060,6 +1096,7 @@
    "data/raw/deloitte-tmt-predictions/final-d20.json",
    "data/raw/deloitte-tmt-predictions/agreement-d16.json",
    "data/raw/deloitte-tmt-predictions/audit-d11-w2.json",
+   "data/raw/deloitte-tmt-predictions/audit-d11-w3.json",
    "data/raw/deloitte-tmt-predictions/audit-d11.json"
   ]
  },
@@ -1078,6 +1115,7 @@
   "rate_withheld": null,
   "counts": {},
   "kappa": 0.7952,
+  "kappa_pooled": null,
   "agreement_n": 276,
   "agreement_agreed": 245,
   "raw_agreement": 0.8877,
@@ -1123,6 +1161,7 @@
   "rate_withheld": null,
   "counts": {},
   "kappa": 0.6053,
+  "kappa_pooled": null,
   "agreement_n": 162,
   "agreement_agreed": 123,
   "raw_agreement": 0.7593,
@@ -1154,6 +1193,52 @@
   ]
  },
  {
+  "source_id": "deloitte-tmt-predictions",
+  "kind": "judgment",
+  "scope": "w3",
+  "rule": "D16",
+  "measure": null,
+  "n": 12,
+  "n_graded": null,
+  "k": null,
+  "share": null,
+  "ci95": null,
+  "ci95_audit_adjusted": null,
+  "rate_withheld": null,
+  "counts": {},
+  "kappa": 0.5248,
+  "kappa_pooled": 0.6045,
+  "agreement_n": 12,
+  "agreement_agreed": 8,
+  "raw_agreement": 0.6667,
+  "passes_d11": true,
+  "adjudicated": null,
+  "audit_seed": "d11:deloitte-tmt-predictions:d16:w3",
+  "audit_sample": 7,
+  "audited": 7,
+  "audit_confirmed": 7,
+  "audit_corrected": 0,
+  "audit_contested": 0,
+  "audit_error_rate": 0,
+  "audit_residual_error_rate": null,
+  "audit_resolved_by_gap_rule": null,
+  "audit_fixed_in_code": null,
+  "audit_residual_errors": null,
+  "rechecked": null,
+  "recheck_confirmed": null,
+  "recheck_corrected": null,
+  "pending_recheck": null,
+  "waves": [
+   "w3"
+  ],
+  "in_published_rate": true,
+  "passes": [],
+  "inputs": [
+   "data/raw/deloitte-tmt-predictions/agreement-d16.json",
+   "data/raw/deloitte-tmt-predictions/audit-d11-w3.json"
+  ]
+ },
+ {
   "source_id": "ecb-projections",
   "kind": "numeric",
   "scope": "all",
@@ -1181,6 +1266,7 @@
    "excluded": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -1236,6 +1322,7 @@
    "ungradable": 1
   },
   "kappa": 0.8984,
+  "kappa_pooled": null,
   "agreement_n": 148,
   "agreement_agreed": 138,
   "raw_agreement": 0.9324,
@@ -1293,6 +1380,7 @@
    "excluded": 392
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -1345,6 +1433,7 @@
    "contested": 1
   },
   "kappa": 0.6329,
+  "kappa_pooled": null,
   "agreement_n": 29,
   "agreement_agreed": 25,
   "raw_agreement": 0.8621,
@@ -1399,6 +1488,7 @@
    "miss": 3
   },
   "kappa": 0.8777,
+  "kappa_pooled": null,
   "agreement_n": 28,
   "agreement_agreed": 26,
   "raw_agreement": 0.9286,
@@ -1454,6 +1544,7 @@
    "miss": 8
   },
   "kappa": 0.919,
+  "kappa_pooled": null,
   "agreement_n": 56,
   "agreement_agreed": 54,
   "raw_agreement": 0.9643,
@@ -1510,6 +1601,7 @@
    "unfalsifiable": 2
   },
   "kappa": 0.7541,
+  "kappa_pooled": null,
   "agreement_n": 113,
   "agreement_agreed": 95,
   "raw_agreement": 0.8407,
@@ -1560,6 +1652,7 @@
    "ungradable": 1
   },
   "kappa": 0.8067,
+  "kappa_pooled": null,
   "agreement_n": 258,
   "agreement_agreed": 234,
   "raw_agreement": 0.907,
@@ -1617,6 +1710,7 @@
    "unfalsifiable": 0
   },
   "kappa": 0.8067,
+  "kappa_pooled": null,
   "agreement_n": 258,
   "agreement_agreed": 234,
   "raw_agreement": 0.907,
@@ -1675,6 +1769,7 @@
    "unfalsifiable": 0
   },
   "kappa": 0.8067,
+  "kappa_pooled": null,
   "agreement_n": 258,
   "agreement_agreed": 234,
   "raw_agreement": 0.907,
@@ -1733,6 +1828,7 @@
    "excluded": 287
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -1768,26 +1864,27 @@
   "measure": "persisted_share",
   "n": 4185,
   "n_graded": 2750,
-  "k": 1565,
-  "share": 0.5691,
+  "k": 1566,
+  "share": 0.5695,
   "ci95": [
-   0.55,
-   0.587
+   0.551,
+   0.588
   ],
   "ci95_audit_adjusted": [
-   0.445,
-   0.692
+   0.446,
+   0.693
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 558,
-   "persisted": 1565,
+   "renamed": 557,
+   "persisted": 1566,
    "gap": 54,
    "recycled": 8,
    "faded": 619,
    "open": 1381
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -1859,8 +1956,8 @@
   "measure": "renamed_share",
   "n": 4185,
   "n_graded": 2750,
-  "k": 558,
-  "share": 0.2029,
+  "k": 557,
+  "share": 0.2025,
   "ci95": [
    0.188,
    0.218
@@ -1871,14 +1968,15 @@
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 558,
-   "persisted": 1565,
+   "renamed": 557,
+   "persisted": 1566,
    "gap": 54,
    "recycled": 8,
    "faded": 619,
    "open": 1381
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -1962,14 +2060,15 @@
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 558,
-   "persisted": 1565,
+   "renamed": 557,
+   "persisted": 1566,
    "gap": 54,
    "recycled": 8,
    "faded": 619,
    "open": 1381
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2053,14 +2152,15 @@
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 558,
-   "persisted": 1565,
+   "renamed": 557,
+   "persisted": 1566,
    "gap": 54,
    "recycled": 8,
    "faded": 619,
    "open": 1381
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2151,6 +2251,7 @@
    "unfalsifiable": 3
   },
   "kappa": 0.6634,
+  "kappa_pooled": null,
   "agreement_n": 409,
   "agreement_agreed": 325,
   "raw_agreement": 0.7946,
@@ -2190,26 +2291,27 @@
   "rule": "D16",
   "measure": "hit_rate",
   "n": 186,
-  "n_graded": 47,
+  "n_graded": 48,
   "k": 14,
-  "share": 0.2979,
+  "share": 0.2917,
   "ci95": [
-   0.187,
-   0.44
+   0.182,
+   0.432
   ],
   "ci95_audit_adjusted": [
-   0.068,
-   0.559
+   0.063,
+   0.551
   ],
   "rate_withheld": null,
   "counts": {
    "hit": 14,
-   "miss": 29,
+   "miss": 30,
    "contested": 4,
    "partial": 4,
-   "ungradable": 135
+   "ungradable": 134
   },
   "kappa": 0.8843,
+  "kappa_pooled": null,
   "agreement_n": 186,
   "agreement_agreed": 177,
   "raw_agreement": 0.9516,
@@ -2226,14 +2328,16 @@
   "audit_resolved_by_gap_rule": null,
   "audit_fixed_in_code": null,
   "audit_residual_errors": null,
-  "rechecked": 6,
+  "rechecked": 20,
   "recheck_confirmed": null,
   "recheck_corrected": null,
   "pending_recheck": null,
   "waves": [],
   "in_published_rate": null,
   "passes": [
-   "adjudicated-d20-pass1.json"
+   "adjudicated-d20-pass1.json",
+   "adjudicated-d20-pass2.json",
+   "adjudicated-d20-pass3.json"
   ],
   "inputs": [
    "data/raw/gartner-strategic-predictions/final-d20.json",
@@ -2262,6 +2366,7 @@
    "partial": 1
   },
   "kappa": 0.8166,
+  "kappa_pooled": null,
   "agreement_n": 157,
   "agreement_agreed": 154,
   "raw_agreement": 0.9809,
@@ -2321,6 +2426,7 @@
    "excluded": 16
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2376,6 +2482,7 @@
    "excluded": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2425,6 +2532,7 @@
    "unmapped_claims": 4
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2481,6 +2589,7 @@
    "unfalsifiable": 3
   },
   "kappa": 0.7193,
+  "kappa_pooled": null,
   "agreement_n": 271,
   "agreement_agreed": 219,
   "raw_agreement": 0.8081,
@@ -2529,6 +2638,7 @@
   "rate_withheld": null,
   "counts": {},
   "kappa": 0.7072,
+  "kappa_pooled": null,
   "agreement_n": 147,
   "agreement_agreed": 118,
   "raw_agreement": 0.8027,
@@ -2574,6 +2684,7 @@
   "rate_withheld": null,
   "counts": {},
   "kappa": 0.7288,
+  "kappa_pooled": null,
   "agreement_n": 124,
   "agreement_agreed": 101,
   "raw_agreement": 0.8145,
@@ -2625,6 +2736,7 @@
    "ungradable": 10
   },
   "kappa": 0.9206,
+  "kappa_pooled": null,
   "agreement_n": 20,
   "agreement_agreed": 19,
   "raw_agreement": 0.95,
@@ -2680,6 +2792,7 @@
    "open": 27
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2687,8 +2800,8 @@
   "adjudicated": null,
   "audit_seed": "d11:mckinsey-tech-trends:d33",
   "audit_sample": 18,
-  "audited": 18,
-  "audit_confirmed": 18,
+  "audited": 17,
+  "audit_confirmed": 17,
   "audit_corrected": 0,
   "audit_contested": 0,
   "audit_error_rate": 0,
@@ -2734,6 +2847,7 @@
    "open": 27
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2741,8 +2855,8 @@
   "adjudicated": null,
   "audit_seed": "d11:mckinsey-tech-trends:d33",
   "audit_sample": 18,
-  "audited": 18,
-  "audit_confirmed": 18,
+  "audited": 17,
+  "audit_confirmed": 17,
   "audit_corrected": 0,
   "audit_contested": 0,
   "audit_error_rate": 0,
@@ -2788,6 +2902,7 @@
    "open": 27
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2795,8 +2910,8 @@
   "adjudicated": null,
   "audit_seed": "d11:mckinsey-tech-trends:d33",
   "audit_sample": 18,
-  "audited": 18,
-  "audit_confirmed": 18,
+  "audited": 17,
+  "audit_confirmed": 17,
   "audit_corrected": 0,
   "audit_contested": 0,
   "audit_error_rate": 0,
@@ -2842,6 +2957,7 @@
    "open": 27
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -2849,8 +2965,8 @@
   "adjudicated": null,
   "audit_seed": "d11:mckinsey-tech-trends:d33",
   "audit_sample": 18,
-  "audited": 18,
-  "audit_confirmed": 18,
+  "audited": 17,
+  "audit_confirmed": 17,
   "audit_corrected": 0,
   "audit_contested": 0,
   "audit_error_rate": 0,
@@ -2897,6 +3013,7 @@
    "ungradable": 3
   },
   "kappa": 0.7667,
+  "kappa_pooled": null,
   "agreement_n": 71,
   "agreement_agreed": 60,
   "raw_agreement": 0.8451,
@@ -2945,6 +3062,7 @@
   "rate_withheld": null,
   "counts": {},
   "kappa": 0.6657,
+  "kappa_pooled": null,
   "agreement_n": 39,
   "agreement_agreed": 30,
   "raw_agreement": 0.7692,
@@ -2990,6 +3108,7 @@
   "rate_withheld": null,
   "counts": {},
   "kappa": 0.8919,
+  "kappa_pooled": null,
   "agreement_n": 32,
   "agreement_agreed": 30,
   "raw_agreement": 0.9375,
@@ -3047,6 +3166,7 @@
    "ungradable": 6
   },
   "kappa": 0.8864,
+  "kappa_pooled": null,
   "agreement_n": 76,
   "agreement_agreed": 71,
   "raw_agreement": 0.9342,
@@ -3096,6 +3216,7 @@
    "contested": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": 12,
   "agreement_agreed": 9,
   "raw_agreement": 0.75,
@@ -3155,6 +3276,7 @@
    "excluded": 132
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -3188,37 +3310,38 @@
   "scope": "all",
   "rule": "D19",
   "measure": "hit_rate",
-  "n": 762,
-  "n_graded": 726,
-  "k": 319,
-  "share": 0.4394,
+  "n": 954,
+  "n_graded": 918,
+  "k": 399,
+  "share": 0.4346,
   "ci95": [
-   0.4037,
-   0.4757
+   0.4029,
+   0.4669
   ],
   "ci95_audit_adjusted": [
-   0.4037,
-   0.4757
+   0.4029,
+   0.4669
   ],
   "rate_withheld": null,
   "counts": {
-   "hit": 319,
-   "partial": 165,
-   "miss": 242,
+   "hit": 399,
+   "partial": 212,
+   "miss": 307,
    "ungradable": 0,
    "open": 36,
    "excluded": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
   "passes_d11": null,
   "adjudicated": null,
-  "audit_seed": "d11:oecd-economic-outlook:numeric + d11:oecd-economic-outlook:numeric:vintages",
-  "audit_sample": 100,
-  "audited": 100,
-  "audit_confirmed": 100,
+  "audit_seed": "d11:oecd-economic-outlook:numeric + d11:oecd-economic-outlook:numeric:pdfs + d11:oecd-economic-outlook:numeric:vintages",
+  "audit_sample": 150,
+  "audited": 150,
+  "audit_confirmed": 150,
   "audit_corrected": 0,
   "audit_contested": 0,
   "audit_error_rate": 0,
@@ -3264,6 +3387,7 @@
    "ungradable": 7
   },
   "kappa": 0.6414,
+  "kappa_pooled": null,
   "agreement_n": 53,
   "agreement_agreed": 39,
   "raw_agreement": 0.7358,
@@ -3321,6 +3445,7 @@
    "unmapped_claims": 54
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -3357,26 +3482,27 @@
   "measure": "persisted_share",
   "n": 186,
   "n_graded": 151,
-  "k": 6,
-  "share": 0.0397,
+  "k": 7,
+  "share": 0.0464,
   "ci95": [
-   0.018,
-   0.084
+   0.023,
+   0.093
   ],
   "ci95_audit_adjusted": [
-   0,
-   0.104
+   0.003,
+   0.113
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 48,
+   "persisted": 7,
+   "renamed": 47,
    "faded": 97,
-   "persisted": 6,
    "contested": 1,
    "gap": 15,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -3384,8 +3510,8 @@
   "adjudicated": null,
   "audit_seed": "d11:trendwatching:d33",
   "audit_sample": 50,
-  "audited": 50,
-  "audit_confirmed": 49,
+  "audited": 49,
+  "audit_confirmed": 48,
   "audit_corrected": 0,
   "audit_contested": 1,
   "audit_error_rate": 0.02,
@@ -3413,26 +3539,27 @@
   "measure": "renamed_share",
   "n": 186,
   "n_graded": 151,
-  "k": 48,
-  "share": 0.3179,
+  "k": 47,
+  "share": 0.3113,
   "ci95": [
-   0.249,
-   0.396
+   0.243,
+   0.389
   ],
   "ci95_audit_adjusted": [
-   0.229,
-   0.416
+   0.223,
+   0.409
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 48,
+   "persisted": 7,
+   "renamed": 47,
    "faded": 97,
-   "persisted": 6,
    "contested": 1,
    "gap": 15,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -3440,8 +3567,8 @@
   "adjudicated": null,
   "audit_seed": "d11:trendwatching:d33",
   "audit_sample": 50,
-  "audited": 50,
-  "audit_confirmed": 49,
+  "audited": 49,
+  "audit_confirmed": 48,
   "audit_corrected": 0,
   "audit_contested": 1,
   "audit_error_rate": 0.02,
@@ -3481,14 +3608,15 @@
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 48,
+   "persisted": 7,
+   "renamed": 47,
    "faded": 97,
-   "persisted": 6,
    "contested": 1,
    "gap": 15,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -3496,8 +3624,8 @@
   "adjudicated": null,
   "audit_seed": "d11:trendwatching:d33",
   "audit_sample": 50,
-  "audited": 50,
-  "audit_confirmed": 49,
+  "audited": 49,
+  "audit_confirmed": 48,
   "audit_corrected": 0,
   "audit_contested": 1,
   "audit_error_rate": 0.02,
@@ -3537,14 +3665,15 @@
   ],
   "rate_withheld": null,
   "counts": {
-   "renamed": 48,
+   "persisted": 7,
+   "renamed": 47,
    "faded": 97,
-   "persisted": 6,
    "contested": 1,
    "gap": 15,
    "open": 19
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,
@@ -3552,8 +3681,8 @@
   "adjudicated": null,
   "audit_seed": "d11:trendwatching:d33",
   "audit_sample": 50,
-  "audited": 50,
-  "audit_confirmed": 49,
+  "audited": 49,
+  "audit_confirmed": 48,
   "audit_corrected": 0,
   "audit_contested": 1,
   "audit_error_rate": 0.02,
@@ -3600,6 +3729,7 @@
    "dropped_by_audit": 1
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": 86,
   "agreement_agreed": 85,
   "raw_agreement": 0.9884,
@@ -3649,6 +3779,7 @@
    "dropped_by_audit": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": 86,
   "agreement_agreed": 85,
   "raw_agreement": 0.9884,
@@ -3698,6 +3829,7 @@
    "dropped_by_audit": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": 86,
   "agreement_agreed": 85,
   "raw_agreement": 0.9884,
@@ -3754,6 +3886,7 @@
    "excluded": 0
   },
   "kappa": null,
+  "kappa_pooled": null,
   "agreement_n": null,
   "agreement_agreed": null,
   "raw_agreement": null,

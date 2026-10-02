@@ -8,7 +8,7 @@ Hindsight is made by [Envisioning](https://www.envisioning.com).
 
 ## Status
 
-First dataset release: `hindsight-2026.1` (2 October 2026). It holds 28,102 dated claims from 36 sources (consultancies, analysts, central banks, international bodies, trend reports, scenario sets, and Envisioning's own posters from 2011 to 2014), with every published verdict, every numeric grade, and a validation table that gives the sample sizes, grader agreement, audit results and intervals behind each rate. The files are in `data/out` (JSON, CSV, JSON Schemas, `datapackage.json`). The site is at [envisioning.com/hindsight](https://www.envisioning.com/hindsight).
+Latest dataset release: `hindsight-2026.2` (2 October 2026). It holds 28,306 dated claims from 36 sources (consultancies, analysts, central banks, international bodies, trend reports, scenario sets, and Envisioning's own posters from 2011 to 2014), with every published verdict, every numeric grade, and a validation table that gives the sample sizes, grader agreement, audit results and intervals behind each rate. The files are in `data/out` (JSON, CSV, JSON Schemas, `datapackage.json`). The site is at [envisioning.com/hindsight](https://www.envisioning.com/hindsight).
 
 ## How claims are graded
 

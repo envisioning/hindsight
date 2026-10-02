@@ -164,6 +164,18 @@
       }
      ]
     },
+    "kappa_pooled": {
+     "anyOf": [
+      {
+       "type": "number",
+       "minimum": -1,
+       "maximum": 1
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
     "agreement_n": {
      "anyOf": [
       {
@@ -421,6 +433,7 @@
     "rate_withheld",
     "counts",
     "kappa",
+    "kappa_pooled",
     "agreement_n",
     "agreement_agreed",
     "raw_agreement",
