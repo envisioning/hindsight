@@ -1,0 +1,508 @@
+{
+ "run": "d48-r0",
+ "batch": "b001",
+ "role": "B",
+ "agent": "claude-opus-5-5",
+ "verdicts": [
+  {
+   "candidate_id": "3d-bioprinting~b4b4c062-08c2-477c-8da5-672a9f0cb322",
+   "verdict": "link",
+   "reason": "Same technology: '3D Bioprinting' and '3D Bioprinting' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "4d-printing~3955a5b4-536d-4bd0-a728-49d994c59a76",
+   "verdict": "link",
+   "reason": "Same technology: '4D Printing' and '4D Printing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "4d-printing~4afe8bdb-9849-4bf7-becb-58d2f83caf73",
+   "verdict": "link",
+   "reason": "Same technology: '4D Printing' and '4D Printing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "5g~73f9d595-31ff-40bf-a55a-776dd333e945",
+   "verdict": "link",
+   "reason": "Same technology: '5G' and '5G' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "aerogel~e2acb9d8-46d7-452f-95ab-8ce932ffaf75",
+   "verdict": "link",
+   "reason": "Same technology: 'Aerogel' and 'Aerogel' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "agricultural-drones~58ccd0d7-b817-422a-8c6e-cc324fa4fc97",
+   "verdict": "link",
+   "reason": "Same technology: 'Agricultural Drones' and 'Agricultural Drones' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "ai-agents~82111acc-07e3-4acb-9e27-13c803c61a66",
+   "verdict": "link",
+   "reason": "Same technology: 'AI Agents' and 'Agentic AI' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "artificial-general-intelligence~d0b17ce4-aea7-45bc-9cbe-ce440440300b",
+   "verdict": "link",
+   "reason": "Same technology: 'Artificial General Intelligence' and 'Artificial General Intelligence' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "artificial-intelligence~75995a27-38fa-47ff-8c9a-3c28086087c1",
+   "verdict": "link",
+   "reason": "Same technology: 'Artificial Intelligence' and 'Artificial Intelligence' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "augmented-reality~61e5295e-7345-4076-8c06-9ebae91b1001",
+   "verdict": "link",
+   "reason": "Same technology: 'Augmented reality' and 'Augmented Reality' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "autonomous-last-mile-delivery~a158d245-0739-493a-a43f-81dd7c27905f",
+   "verdict": "link",
+   "reason": "Same technology: autonomous robots/drones for last-mile delivery; food/grocery framing is project context."
+  },
+  {
+   "candidate_id": "autonomous-mobile-robots~5ee03d0c-82d8-4238-9656-91dfb30a0014",
+   "verdict": "link",
+   "reason": "Same technology: 'Autonomous Mobile Robots' and 'Autonomous Mobile Robots' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "autonomous-vehicles~b92ae431-6af3-4884-b6bd-e1725837ad50",
+   "verdict": "link",
+   "reason": "Same technology: 'Autonomous Vehicles' and 'Autonomous Vehicle' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "blockchain~fc977b95-ad83-42ca-ba06-eaef1a551b0b",
+   "verdict": "link",
+   "reason": "Same technology: 'Blockchain' and 'Blockchain' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "brain-computer-interface~41feaa1a-2e05-400e-8240-f88a5db544fa",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (China; slug 'china__brain-computer-interfaces', summary on China activity) of 'Brain-Computer Interfaces'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "brain-to-brain-communication~86057003-7f18-4cc3-b823-c1b6207e48bd",
+   "verdict": "link",
+   "reason": "Same concept: direct brain-to-brain/neural transmission; subject named for it, claims on neural remote control fit."
+  },
+  {
+   "candidate_id": "cellular-agriculture~33c7be34-5e65-46d4-bd5c-b2df59a8082f",
+   "verdict": "link",
+   "reason": "Same technology: 'Cellular Agriculture' and 'Cellular Agriculture' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "cellular-agriculture~74e31da6-2eda-46f0-81a4-53d97b987699",
+   "verdict": "link",
+   "reason": "Same technology: 'Cellular Agriculture' and 'Cellular Agriculture' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "cellular-agriculture~c3c60889-c98c-403c-940c-8579c4071fea",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (Canada; slug 'canada__cellular-agriculture', summary on Canada activity) of 'Cellular Agriculture'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "closed-ecological-systems~97799660-4ddb-4dd7-ab3f-0d2fa0de01e2",
+   "verdict": "link",
+   "reason": "Same technology: 'Closed ecological systems' and 'Closed Ecological Systems' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "commercial-space-stations~1499c2bf-17b4-4311-8710-a088969989ff",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (US; slug 'usa__commercial-space-stations', summary on US activity) of 'Commercial Space Stations'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "commercial-space-stations~e833a3ac-11bc-43c3-a67b-201c9dc9501e",
+   "verdict": "link",
+   "reason": "Same technology: 'Commercial space stations' and 'Commercial Space Stations' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "confidential-computing~8502e104-75f6-4e96-b560-135096f1ed20",
+   "verdict": "link",
+   "reason": "Same technology: 'Confidential Computing' and 'Confidential Computing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "differential-privacy~ad6fcc64-055f-4647-aa1c-709b8af0e27b",
+   "verdict": "link",
+   "reason": "Same technology: 'Differential Privacy' and 'Differential Privacy' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "digital-wallets~3322fcac-de2f-483c-b173-4308a712b541",
+   "verdict": "link",
+   "reason": "Same technology: 'Digital wallets' and 'Digital Wallets' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "direct-to-device-satellite-connectivity~38a6b145-51a7-4a72-8a0b-a0fbac37f69d",
+   "verdict": "link",
+   "reason": "Same technology: 'Direct-to-device satellite connectivity' and 'Direct-to-Device Satellite Connectivity' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "domed-cities~e742f241-cbe5-4fb9-812c-1af3fca08c48",
+   "verdict": "link",
+   "reason": "Same technology: 'Domed Cities' and 'Domed Cities' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "edge-ai~4ca4deea-a7a8-46fb-b1be-3ed75ea35f9e",
+   "verdict": "link",
+   "reason": "Same technology: 'Edge AI' and 'Edge AI' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "edge-computing~1fa4469a-33d0-42da-a00f-163919d31d74",
+   "verdict": "link",
+   "reason": "Same technology: 'Edge Computing' and 'Edge Computing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "embodied-ai~cd9bef8a-7df4-4dc1-8f80-7dea731b875e",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (China; slug 'china__embodied-ai', summary on China activity) of 'Embodied AI'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "energy-harvesting~324548cf-ad68-4b39-ad66-8d2e81e0fda4",
+   "verdict": "link",
+   "reason": "Same technology: 'Energy harvesting' and 'Energy Harvesting' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "exocortex~7282d479-a419-41eb-adfe-ee2c6debd510",
+   "verdict": "link",
+   "reason": "Same technology: 'Exocortex' and 'Exocortex' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "federated-learning~fd3c584b-fb96-4c99-aebb-06c4e9303625",
+   "verdict": "link",
+   "reason": "Same technology: 'Federated Learning' and 'Federated Learning' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "flow-batteries~4e7ddecf-2e8a-41f0-a1bf-d4290c3a7032",
+   "verdict": "link",
+   "reason": "Same technology: liquid-electrolyte flow batteries; grid-scale is their main use, not a narrower scope."
+  },
+  {
+   "candidate_id": "general-purpose-robots~e7247782-1412-42c0-b1e1-722fba5716dc",
+   "verdict": "link",
+   "reason": "Same technology: 'General Purpose Robots' and 'General Purpose Robot' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "generative-ai~4d93cd97-562b-406a-b24e-38ddb3d3a46c",
+   "verdict": "narrower",
+   "reason": "Tech is generative AI applied to urban design scenarios (Cities); subject is generative AI in general. Direct application case."
+  },
+  {
+   "candidate_id": "homomorphic-encryption~a6b1d747-9e98-4cd5-916c-13c93fe625cf",
+   "verdict": "link",
+   "reason": "Same technology: 'Homomorphic Encryption' and 'Homomorphic Encryption' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "industrial-digital-twins~11c49cff-325f-4dbb-9f34-5ebc5d73c95b",
+   "verdict": "link",
+   "reason": "Same technology: 'Industrial Digital Twins' and 'Industrial Digital Twins' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "industrial-digital-twins~bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (US; slug 'usa__digital-twins-industrial', summary on US activity) of 'Industrial Digital Twins'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "interactive-whiteboards~808ad443-794b-4a30-90b2-4a2f562f963c",
+   "verdict": "link",
+   "reason": "Same technology: 'Interactive whiteboards' and 'Interactive Whiteboards' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "internal-talent-marketplaces~0441ca6d-84fb-460f-b3f6-fa75596bb609",
+   "verdict": "link",
+   "reason": "Same technology: 'Internal Talent Marketplaces' and 'Internal Talent Marketplaces' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "lab-on-a-chip~8d7bcd88-48e7-4b5b-98e9-5ffd528f6982",
+   "verdict": "link",
+   "reason": "Same technology: 'Lab-on-a-Chip' and 'Lab-on-a-Chip' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "machine-learning~484462ca-62b1-411f-81bb-bee96d20e512",
+   "verdict": "link",
+   "reason": "Same technology: 'Machine Learning' and 'Machine Learning' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "medical-tricorder~c84ddb2d-7c97-4d6f-8cf4-d6ade136ba6b",
+   "verdict": "link",
+   "reason": "Same technology: 'Medical tricorder' and 'Medical Tricorder' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "meta-materials~2ac4400d-3830-4d73-84bb-a8ebe3a663c8",
+   "verdict": "no_link",
+   "reason": "Tech is alleged UAP crash-site bismuth-magnesium samples labelled metamaterials, not the engineered-materials field the subject's claims describe; linking would mislead."
+  },
+  {
+   "candidate_id": "micromobility~29dda8e2-53c0-4b29-a21e-0e62d9add147",
+   "verdict": "link",
+   "reason": "Same technology: 'Micromobility' and 'Micromobility' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "nanobots~f0e806cf-ac23-49db-9ce5-fc9cac01ebf5",
+   "verdict": "link",
+   "reason": "Same technology: 'Nanobots' and 'Nanobot' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "nanoradio~ab8fc233-ae4e-47d4-8dac-6b4d57cee118",
+   "verdict": "link",
+   "reason": "Same technology: 'NanoRadio' and 'Nanoradio' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "nanotechnology~d8d72041-98ea-4cff-b78a-453b0b7b540a",
+   "verdict": "link",
+   "reason": "Same technology: 'Nanotechnology' and 'Nanotechnology' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "neuro-symbolic-ai~c6e4bf51-a4f1-4366-bf71-d3ff331eadb5",
+   "verdict": "link",
+   "reason": "Same technology: 'Neuro-Symbolic AI' and 'Neuro-Symbolic AI' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "neuromorphic-computing~96055bb4-d6b1-4a94-9bda-849073d92ef5",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (US; slug 'usa__neuromorphic-computing', summary on US activity) of 'Neuromorphic Computing'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "neuromorphic-hardware~823d7874-0b68-440a-a8eb-e0ff962b6182",
+   "verdict": "link",
+   "reason": "Neuromorphic chip = neuromorphic hardware; subject alias is 'Neuromorphic Chip'. Same thing."
+  },
+  {
+   "candidate_id": "ocean-thermal-energy-conversion~406082f7-34e4-4d8a-b60f-820377337111",
+   "verdict": "link",
+   "reason": "Same technology: 'Ocean Thermal Energy Conversion' and 'Ocean Thermal Energy Conversion' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "optical-computing~9a43e4b4-68ba-4c11-ae61-dfaa8d2363e1",
+   "verdict": "link",
+   "reason": "Same technology: 'Optical Computing' and 'Optical Computing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "organ-on-a-chip~8be62a1c-b7c6-4d07-86db-65b771f8b43f",
+   "verdict": "link",
+   "reason": "Same technology: 'Organ-on-a-Chip' and 'Organ on a Chip' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "physical-ai~650bab47-c489-4705-9a42-5709b8137006",
+   "verdict": "link",
+   "reason": "Same technology: 'Physical AI' and 'Physical AI' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~10c25a00-8bb2-49a1-ac27-309df187432f",
+   "verdict": "link",
+   "reason": "Same technology: 'Postquantum Cryptography' and 'Post-Quantum Cryptography' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~193173e2-0ea8-4e47-854e-5ee631a4514f",
+   "verdict": "link",
+   "reason": "Same technology: 'Postquantum Cryptography' and 'Post-Quantum Cryptography' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~3ab8a98e-f98b-4b28-bef6-793daf41105f",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (US; slug 'usa__post-quantum-cryptography', summary on US activity) of 'Post-Quantum Cryptography'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~41018b06-963b-47f8-98a6-10cae2661d6f",
+   "verdict": "link",
+   "reason": "Same technology: 'Postquantum Cryptography' and 'Post-Quantum Cryptography' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~4392a6e4-3c15-4c2d-8ccf-0ea3e766b86c",
+   "verdict": "link",
+   "reason": "Same technology: 'Postquantum Cryptography' and 'Post-Quantum Cryptography' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~4e84651e-0481-47ee-845b-9194b35bdeed",
+   "verdict": "link",
+   "reason": "Same technology: 'Postquantum Cryptography' and 'Post-Quantum Cryptography' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~5303cdca-7bb4-4bb0-b60c-9494fe70e585",
+   "verdict": "link",
+   "reason": "Same technology: 'Postquantum Cryptography' and 'Post-Quantum Cryptography' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "postquantum-cryptography~861c66f4-849b-41b0-964d-4e59632ef974",
+   "verdict": "link",
+   "reason": "Same technology: 'Postquantum Cryptography' and 'Post-Quantum Cryptography' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "precision-fermentation~570ea74e-4eb8-4ee0-9e38-8398bf974a03",
+   "verdict": "link",
+   "reason": "Same technology: 'Precision Fermentation' and 'Precision Fermentation' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "programmable-matter~b9f9f001-c5c8-4867-a21b-651bccb53f95",
+   "verdict": "link",
+   "reason": "Same concept: matter that changes shape/properties on demand; summary is generic despite Xenotech project."
+  },
+  {
+   "candidate_id": "programmable-money~abcbb5e1-60a8-46e7-9775-08f54389d0dc",
+   "verdict": "link",
+   "reason": "Tech describes conditional/streaming payments, i.e. programmable money; 'toolkits' slug is implementation framing. Subject claims on automated money match."
+  },
+  {
+   "candidate_id": "quantum-computing~6870e3d8-4797-4eed-a0de-00be210e4ef0",
+   "verdict": "link",
+   "reason": "Same technology: 'Quantum Computing' and 'Quantum Computing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "quantum-error-correction~ad578138-3c3c-4b6a-858c-43dc80c7592a",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (US; slug 'usa__quantum-error-correction', summary on US activity) of 'Quantum Error Correction'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "reusable-rockets~d321b9aa-9db0-47a1-b89a-9b314c3a1a7b",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (China; slug 'china__reusable-rockets', summary on China activity) of 'Reusable Rockets'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "robotaxis~f23c10b7-de29-46a6-9866-f300e78b72be",
+   "verdict": "no_link",
+   "reason": "Alias match via 'Mobility-as-a-Service', but subject claims are about robotaxis/autonomous ride-hail; tech is a multimodal transit-integration app. Adjacent, neither contains the other."
+  },
+  {
+   "candidate_id": "self-healing-materials~354e6361-2c89-40d9-81ba-5e6d2e942148",
+   "verdict": "link",
+   "reason": "Same technology: 'Self-healing materials' and 'Self-Healing Materials' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "self-healing-materials~831b4263-cb82-477b-ac31-4d885274d9c0",
+   "verdict": "link",
+   "reason": "Same technology: 'Self-healing materials' and 'Self-healing Material' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "self-healing-materials~8cfda0aa-95d9-4937-8983-191f50906c7e",
+   "verdict": "link",
+   "reason": "Same technology: 'Self-healing materials' and 'Self-healing Material' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "small-modular-nuclear-reactors~ad192de9-80c2-459b-8c77-d5f669c7f291",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (Europe; slug 'europe__small-modular-nuclear-reactors', summary on Europe activity) of 'Small Modular Nuclear Reactors'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "smart-contact-lenses~d2cb542e-d945-4106-afa1-6d4a52cb5dac",
+   "verdict": "link",
+   "reason": "Same technology: 'Smart Contact Lenses' and 'Smart Contact Lenses' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "sodium-ion-batteries~d0bff329-e3dc-48c8-b96d-5a4abea8248a",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (China; slug 'china__sodium-ion-batteries', summary on China activity) of 'Sodium-Ion Batteries'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "solid-state-batteries~064d3848-076a-44fa-822f-0c4e12905924",
+   "verdict": "link",
+   "reason": "Same technology: 'Solid-State Batteries' and 'Solid-State Batteries' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "solid-state-batteries~2df8d421-4e67-42df-92fa-5173d3f951bb",
+   "verdict": "link",
+   "reason": "Same technology: 'Solid-State Batteries' and 'Solid-State Batteries' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "solid-state-batteries~9f574b63-a846-4288-b250-a2ead2a6d924",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (US; slug 'usa__solid-state-batteries', summary on US activity) of 'Solid-State Batteries'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "space-based-solar-power~57885fe2-cf66-49fc-afa8-0a4fd9f67f5b",
+   "verdict": "link",
+   "reason": "Same technology: 'Space-based solar power' and 'Space-Based Solar Power' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "space-based-solar-power~7df79835-5a43-40c5-8f8d-7e84cad5a57f",
+   "verdict": "link",
+   "reason": "Same technology: 'Space-based solar power' and 'Space-Based Solar Power' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "space-based-solar-power~dc7b8555-1f46-4c09-bef8-2b9fc40772f0",
+   "verdict": "link",
+   "reason": "Same technology: 'Space-based solar power' and 'Space-Based Solar Power' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "space-based-solar-power~f542a235-c2bc-4081-802a-c8b281e69a5e",
+   "verdict": "link",
+   "reason": "Same technology: 'Space-based solar power' and 'Space-Based Solar Power' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "space-based-solar-power-sbsp~2ebf2176-e564-4400-a88a-d90af2d3eb19",
+   "verdict": "link",
+   "reason": "Same technology: 'Space-Based Solar Power (SBSP)' and 'Space-Based Solar Power (SBSP)' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "space-based-solar-power-sbsp~3399db55-3208-4f8e-8b1f-792787dd062f",
+   "verdict": "link",
+   "reason": "Same technology: 'Space-Based Solar Power (SBSP)' and 'Space-Based Solar Power (SBSP)' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "space-elevator~41aacd3c-d867-4d2c-9737-7437acf43434",
+   "verdict": "link",
+   "reason": "Same technology: 'Space elevator' and 'Space Elevator' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "space-traffic-management~ccf66a7e-8d33-4baf-98b5-0fc030c3386c",
+   "verdict": "link",
+   "reason": "Same technology: 'Space Traffic Management' and 'Space Traffic Management' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "spatial-computing~2a52fac1-f071-4d18-9c04-04c662649c4f",
+   "verdict": "link",
+   "reason": "Same technology: 'Spatial Computing' and 'Spatial Computing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "spatial-computing~37014c4c-8194-4457-8225-0873bee11775",
+   "verdict": "link",
+   "reason": "Same technology: 'Spatial Computing' and 'Spatial Computing' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "spintronics~25f87d5f-758b-48f3-be6c-88d73d1105f9",
+   "verdict": "link",
+   "reason": "Same technology: 'Spintronics' and 'Spintronics' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "swarm-robotics~50f4e8da-d71a-4a3b-9ecf-c0b31207bc3a",
+   "verdict": "link",
+   "reason": "Same technology: 'Swarm robotics' and 'Swarm Robotics' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "synthetic-data~3797dcf8-4fb3-4bdc-af43-ad23797525b4",
+   "verdict": "link",
+   "reason": "Same technique: artificially generated datasets mimicking real data with privacy protection; urban framing is the project's context, not a different technology."
+  },
+  {
+   "candidate_id": "thermoelectric-generators~cbcbbf6c-3263-4a2d-8581-c3599fb6b8d1",
+   "verdict": "link",
+   "reason": "Same technology: 'Thermoelectric Generators' and 'Thermoelectric Generators' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "ultra-capacitors~f7f59b88-3a48-48df-b4d8-f2e2bc5a6b5b",
+   "verdict": "link",
+   "reason": "Same device class (ultracapacitors/supercapacitors); aerospace mention is application framing."
+  },
+  {
+   "candidate_id": "universal-basic-income~6f21525e-0393-4641-b0b4-ba67285580e3",
+   "verdict": "link",
+   "reason": "Same technology: 'Universal basic income' and 'Universal Basic Income' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "vertical-farming~429aefbd-75e3-46b7-9418-eedf6f9d3650",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (China; slug 'china__vertical-farming', summary on China activity) of 'Vertical Farming'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "virtual-reality~561c4ce6-d448-4bde-af07-fe22180d2dc2",
+   "verdict": "link",
+   "reason": "Same technology: 'Virtual Reality' and 'Virtual Reality' name the same thing; tech summary matches the subject's claims at the same scope."
+  },
+  {
+   "candidate_id": "wireless-power-transfer~742a2eb3-ce3f-40f6-bd19-680507b269d7",
+   "verdict": "narrower",
+   "reason": "Tech page is region-scoped (Europe; slug 'europe__wireless-power-transfer', summary on Europe activity) of 'Wireless Power Transfer'; subject is the technology globally. Direct regional case."
+  },
+  {
+   "candidate_id": "zero-knowledge-proofs~fc997da8-3351-4401-ba6b-6c8d622a48a6",
+   "verdict": "link",
+   "reason": "Same technology: 'Zero-Knowledge Proofs' and 'Zero-Knowledge Proofs' name the same thing; tech summary matches the subject's claims at the same scope."
+  }
+ ]
+}

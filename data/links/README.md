@@ -36,11 +36,13 @@ node scripts/links/audit-sample.mjs <run> --out <verifier dir>
 node scripts/links/final.mjs <run>
 ```
 
+Reading of the verdicts (D48, applied from `d48-r0`): a technology whose `original_id` has a region prefix (`china__`, `usa__`, `europe__`, `canada__`, and the other country series such as `japan__` or `india__`) is a regional landscape entry: its summary and examples are one country's or region's companies, programmes and policy. Against a subject with no regional scope it is `narrower` (a direct regional case, kept as a related link), never `link`, even when its description opens with a general definition; a project can hold both the general page and the regional one (`apogee/commercial-space-stations` and `apogee/usa__commercial-space-stations`). A page without a prefix whose summary only frames the technology for its project (urban, financial, gaming) is `link` when it describes the technology itself, and `narrower` only when it names a specific application (`cities/generative-ai`: urban design scenarios).
+
 Amendment (D49): run `d48-r0` is titles only (`candidates.mjs --titles-only`): exact and alias title matches, no vectors, similarity null. Every later run skips pairs decided in an earlier run (`final.json` `decisions`) and pairs held by a curated link. When one verdict dominates (expected agreement 0.8 or more), the agreement gate is observed agreement 0.9 or more instead of kappa 0.6.
 
 ## State
 
-- `d48-r0` (titles only): 100 candidates (97 exact, 3 alias), 79 subjects, 1 batch. Awaiting verifiers A and B.
+- `d48-r0` (titles only): 100 candidates (97 exact, 3 alias), 79 subjects, 1 batch. Verifiers agree on 99 of 100 (kappa 0.97); 1 adjudicated (`synthetic-data` to `cities/synthetic-data`: `link`). Verdicts: 83 link, 15 narrower (14 region-prefixed pages, plus `cities/generative-ai`), 0 broader, 2 no_link. 98 rows appended to `research.json` (83 `same`, 15 `narrower`).
 - `d48-r1` (embeddings): blocked on a working embedding key.
 
-Audit error rate: not yet measured.
+Audit error rate: `d48-r0` 0% (50 sampled of 98 accepted links: 43 link, 7 narrower; 50 confirm, 0 correct, 0 reject). Audited on the CMS title, summary and description, because the research pages answered 429 behind a bot checkpoint.

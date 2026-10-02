@@ -1,0 +1,457 @@
+{
+	"rule": "D48",
+	"run": "d48-r0",
+	"verifier_A": [
+		"claude-opus-5-5"
+	],
+	"verifier_B": [
+		"claude-opus-5-5"
+	],
+	"candidates": 100,
+	"judged_by_both": 100,
+	"agreement": 0.99,
+	"kappa": 0.9661,
+	"expected_agreement": 0.705,
+	"kappa_passes_d11": true,
+	"gate": "D11: kappa >= 0.6",
+	"passes": true,
+	"accept_agreement": 1,
+	"matrix_A_rows_B_columns": {
+		"link": {
+			"link": 82,
+			"no_link": 0,
+			"broader": 0,
+			"narrower": 0
+		},
+		"no_link": {
+			"link": 0,
+			"no_link": 2,
+			"broader": 0,
+			"narrower": 0
+		},
+		"broader": {
+			"link": 0,
+			"no_link": 0,
+			"broader": 0,
+			"narrower": 0
+		},
+		"narrower": {
+			"link": 1,
+			"no_link": 0,
+			"broader": 0,
+			"narrower": 15
+		}
+	},
+	"consensus_counts": {
+		"link": 82,
+		"no_link": 2,
+		"broader": 0,
+		"narrower": 15
+	},
+	"consensus": [
+		{
+			"id": "3d-bioprinting~b4b4c062-08c2-477c-8da5-672a9f0cb322",
+			"verdict": "link"
+		},
+		{
+			"id": "4d-printing~3955a5b4-536d-4bd0-a728-49d994c59a76",
+			"verdict": "link"
+		},
+		{
+			"id": "4d-printing~4afe8bdb-9849-4bf7-becb-58d2f83caf73",
+			"verdict": "link"
+		},
+		{
+			"id": "5g~73f9d595-31ff-40bf-a55a-776dd333e945",
+			"verdict": "link"
+		},
+		{
+			"id": "aerogel~e2acb9d8-46d7-452f-95ab-8ce932ffaf75",
+			"verdict": "link"
+		},
+		{
+			"id": "agricultural-drones~58ccd0d7-b817-422a-8c6e-cc324fa4fc97",
+			"verdict": "link"
+		},
+		{
+			"id": "ai-agents~82111acc-07e3-4acb-9e27-13c803c61a66",
+			"verdict": "link"
+		},
+		{
+			"id": "artificial-general-intelligence~d0b17ce4-aea7-45bc-9cbe-ce440440300b",
+			"verdict": "link"
+		},
+		{
+			"id": "artificial-intelligence~75995a27-38fa-47ff-8c9a-3c28086087c1",
+			"verdict": "link"
+		},
+		{
+			"id": "augmented-reality~61e5295e-7345-4076-8c06-9ebae91b1001",
+			"verdict": "link"
+		},
+		{
+			"id": "autonomous-last-mile-delivery~a158d245-0739-493a-a43f-81dd7c27905f",
+			"verdict": "link"
+		},
+		{
+			"id": "autonomous-mobile-robots~5ee03d0c-82d8-4238-9656-91dfb30a0014",
+			"verdict": "link"
+		},
+		{
+			"id": "autonomous-vehicles~b92ae431-6af3-4884-b6bd-e1725837ad50",
+			"verdict": "link"
+		},
+		{
+			"id": "blockchain~fc977b95-ad83-42ca-ba06-eaef1a551b0b",
+			"verdict": "link"
+		},
+		{
+			"id": "brain-computer-interface~41feaa1a-2e05-400e-8240-f88a5db544fa",
+			"verdict": "narrower"
+		},
+		{
+			"id": "brain-to-brain-communication~86057003-7f18-4cc3-b823-c1b6207e48bd",
+			"verdict": "link"
+		},
+		{
+			"id": "cellular-agriculture~33c7be34-5e65-46d4-bd5c-b2df59a8082f",
+			"verdict": "link"
+		},
+		{
+			"id": "cellular-agriculture~74e31da6-2eda-46f0-81a4-53d97b987699",
+			"verdict": "link"
+		},
+		{
+			"id": "cellular-agriculture~c3c60889-c98c-403c-940c-8579c4071fea",
+			"verdict": "narrower"
+		},
+		{
+			"id": "closed-ecological-systems~97799660-4ddb-4dd7-ab3f-0d2fa0de01e2",
+			"verdict": "link"
+		},
+		{
+			"id": "commercial-space-stations~1499c2bf-17b4-4311-8710-a088969989ff",
+			"verdict": "narrower"
+		},
+		{
+			"id": "commercial-space-stations~e833a3ac-11bc-43c3-a67b-201c9dc9501e",
+			"verdict": "link"
+		},
+		{
+			"id": "confidential-computing~8502e104-75f6-4e96-b560-135096f1ed20",
+			"verdict": "link"
+		},
+		{
+			"id": "differential-privacy~ad6fcc64-055f-4647-aa1c-709b8af0e27b",
+			"verdict": "link"
+		},
+		{
+			"id": "digital-wallets~3322fcac-de2f-483c-b173-4308a712b541",
+			"verdict": "link"
+		},
+		{
+			"id": "direct-to-device-satellite-connectivity~38a6b145-51a7-4a72-8a0b-a0fbac37f69d",
+			"verdict": "link"
+		},
+		{
+			"id": "domed-cities~e742f241-cbe5-4fb9-812c-1af3fca08c48",
+			"verdict": "link"
+		},
+		{
+			"id": "edge-ai~4ca4deea-a7a8-46fb-b1be-3ed75ea35f9e",
+			"verdict": "link"
+		},
+		{
+			"id": "edge-computing~1fa4469a-33d0-42da-a00f-163919d31d74",
+			"verdict": "link"
+		},
+		{
+			"id": "embodied-ai~cd9bef8a-7df4-4dc1-8f80-7dea731b875e",
+			"verdict": "narrower"
+		},
+		{
+			"id": "energy-harvesting~324548cf-ad68-4b39-ad66-8d2e81e0fda4",
+			"verdict": "link"
+		},
+		{
+			"id": "exocortex~7282d479-a419-41eb-adfe-ee2c6debd510",
+			"verdict": "link"
+		},
+		{
+			"id": "federated-learning~fd3c584b-fb96-4c99-aebb-06c4e9303625",
+			"verdict": "link"
+		},
+		{
+			"id": "flow-batteries~4e7ddecf-2e8a-41f0-a1bf-d4290c3a7032",
+			"verdict": "link"
+		},
+		{
+			"id": "general-purpose-robots~e7247782-1412-42c0-b1e1-722fba5716dc",
+			"verdict": "link"
+		},
+		{
+			"id": "generative-ai~4d93cd97-562b-406a-b24e-38ddb3d3a46c",
+			"verdict": "narrower"
+		},
+		{
+			"id": "homomorphic-encryption~a6b1d747-9e98-4cd5-916c-13c93fe625cf",
+			"verdict": "link"
+		},
+		{
+			"id": "industrial-digital-twins~11c49cff-325f-4dbb-9f34-5ebc5d73c95b",
+			"verdict": "link"
+		},
+		{
+			"id": "industrial-digital-twins~bfc78f3b-9f27-48bf-ba8a-c7563ad1e080",
+			"verdict": "narrower"
+		},
+		{
+			"id": "interactive-whiteboards~808ad443-794b-4a30-90b2-4a2f562f963c",
+			"verdict": "link"
+		},
+		{
+			"id": "internal-talent-marketplaces~0441ca6d-84fb-460f-b3f6-fa75596bb609",
+			"verdict": "link"
+		},
+		{
+			"id": "lab-on-a-chip~8d7bcd88-48e7-4b5b-98e9-5ffd528f6982",
+			"verdict": "link"
+		},
+		{
+			"id": "machine-learning~484462ca-62b1-411f-81bb-bee96d20e512",
+			"verdict": "link"
+		},
+		{
+			"id": "medical-tricorder~c84ddb2d-7c97-4d6f-8cf4-d6ade136ba6b",
+			"verdict": "link"
+		},
+		{
+			"id": "meta-materials~2ac4400d-3830-4d73-84bb-a8ebe3a663c8",
+			"verdict": "no_link"
+		},
+		{
+			"id": "micromobility~29dda8e2-53c0-4b29-a21e-0e62d9add147",
+			"verdict": "link"
+		},
+		{
+			"id": "nanobots~f0e806cf-ac23-49db-9ce5-fc9cac01ebf5",
+			"verdict": "link"
+		},
+		{
+			"id": "nanoradio~ab8fc233-ae4e-47d4-8dac-6b4d57cee118",
+			"verdict": "link"
+		},
+		{
+			"id": "nanotechnology~d8d72041-98ea-4cff-b78a-453b0b7b540a",
+			"verdict": "link"
+		},
+		{
+			"id": "neuro-symbolic-ai~c6e4bf51-a4f1-4366-bf71-d3ff331eadb5",
+			"verdict": "link"
+		},
+		{
+			"id": "neuromorphic-computing~96055bb4-d6b1-4a94-9bda-849073d92ef5",
+			"verdict": "narrower"
+		},
+		{
+			"id": "neuromorphic-hardware~823d7874-0b68-440a-a8eb-e0ff962b6182",
+			"verdict": "link"
+		},
+		{
+			"id": "ocean-thermal-energy-conversion~406082f7-34e4-4d8a-b60f-820377337111",
+			"verdict": "link"
+		},
+		{
+			"id": "optical-computing~9a43e4b4-68ba-4c11-ae61-dfaa8d2363e1",
+			"verdict": "link"
+		},
+		{
+			"id": "organ-on-a-chip~8be62a1c-b7c6-4d07-86db-65b771f8b43f",
+			"verdict": "link"
+		},
+		{
+			"id": "physical-ai~650bab47-c489-4705-9a42-5709b8137006",
+			"verdict": "link"
+		},
+		{
+			"id": "postquantum-cryptography~10c25a00-8bb2-49a1-ac27-309df187432f",
+			"verdict": "link"
+		},
+		{
+			"id": "postquantum-cryptography~193173e2-0ea8-4e47-854e-5ee631a4514f",
+			"verdict": "link"
+		},
+		{
+			"id": "postquantum-cryptography~3ab8a98e-f98b-4b28-bef6-793daf41105f",
+			"verdict": "narrower"
+		},
+		{
+			"id": "postquantum-cryptography~41018b06-963b-47f8-98a6-10cae2661d6f",
+			"verdict": "link"
+		},
+		{
+			"id": "postquantum-cryptography~4392a6e4-3c15-4c2d-8ccf-0ea3e766b86c",
+			"verdict": "link"
+		},
+		{
+			"id": "postquantum-cryptography~4e84651e-0481-47ee-845b-9194b35bdeed",
+			"verdict": "link"
+		},
+		{
+			"id": "postquantum-cryptography~5303cdca-7bb4-4bb0-b60c-9494fe70e585",
+			"verdict": "link"
+		},
+		{
+			"id": "postquantum-cryptography~861c66f4-849b-41b0-964d-4e59632ef974",
+			"verdict": "link"
+		},
+		{
+			"id": "precision-fermentation~570ea74e-4eb8-4ee0-9e38-8398bf974a03",
+			"verdict": "link"
+		},
+		{
+			"id": "programmable-matter~b9f9f001-c5c8-4867-a21b-651bccb53f95",
+			"verdict": "link"
+		},
+		{
+			"id": "programmable-money~abcbb5e1-60a8-46e7-9775-08f54389d0dc",
+			"verdict": "link"
+		},
+		{
+			"id": "quantum-computing~6870e3d8-4797-4eed-a0de-00be210e4ef0",
+			"verdict": "link"
+		},
+		{
+			"id": "quantum-error-correction~ad578138-3c3c-4b6a-858c-43dc80c7592a",
+			"verdict": "narrower"
+		},
+		{
+			"id": "reusable-rockets~d321b9aa-9db0-47a1-b89a-9b314c3a1a7b",
+			"verdict": "narrower"
+		},
+		{
+			"id": "robotaxis~f23c10b7-de29-46a6-9866-f300e78b72be",
+			"verdict": "no_link"
+		},
+		{
+			"id": "self-healing-materials~354e6361-2c89-40d9-81ba-5e6d2e942148",
+			"verdict": "link"
+		},
+		{
+			"id": "self-healing-materials~831b4263-cb82-477b-ac31-4d885274d9c0",
+			"verdict": "link"
+		},
+		{
+			"id": "self-healing-materials~8cfda0aa-95d9-4937-8983-191f50906c7e",
+			"verdict": "link"
+		},
+		{
+			"id": "small-modular-nuclear-reactors~ad192de9-80c2-459b-8c77-d5f669c7f291",
+			"verdict": "narrower"
+		},
+		{
+			"id": "smart-contact-lenses~d2cb542e-d945-4106-afa1-6d4a52cb5dac",
+			"verdict": "link"
+		},
+		{
+			"id": "sodium-ion-batteries~d0bff329-e3dc-48c8-b96d-5a4abea8248a",
+			"verdict": "narrower"
+		},
+		{
+			"id": "solid-state-batteries~064d3848-076a-44fa-822f-0c4e12905924",
+			"verdict": "link"
+		},
+		{
+			"id": "solid-state-batteries~2df8d421-4e67-42df-92fa-5173d3f951bb",
+			"verdict": "link"
+		},
+		{
+			"id": "solid-state-batteries~9f574b63-a846-4288-b250-a2ead2a6d924",
+			"verdict": "narrower"
+		},
+		{
+			"id": "space-based-solar-power~57885fe2-cf66-49fc-afa8-0a4fd9f67f5b",
+			"verdict": "link"
+		},
+		{
+			"id": "space-based-solar-power~7df79835-5a43-40c5-8f8d-7e84cad5a57f",
+			"verdict": "link"
+		},
+		{
+			"id": "space-based-solar-power~dc7b8555-1f46-4c09-bef8-2b9fc40772f0",
+			"verdict": "link"
+		},
+		{
+			"id": "space-based-solar-power~f542a235-c2bc-4081-802a-c8b281e69a5e",
+			"verdict": "link"
+		},
+		{
+			"id": "space-based-solar-power-sbsp~2ebf2176-e564-4400-a88a-d90af2d3eb19",
+			"verdict": "link"
+		},
+		{
+			"id": "space-based-solar-power-sbsp~3399db55-3208-4f8e-8b1f-792787dd062f",
+			"verdict": "link"
+		},
+		{
+			"id": "space-elevator~41aacd3c-d867-4d2c-9737-7437acf43434",
+			"verdict": "link"
+		},
+		{
+			"id": "space-traffic-management~ccf66a7e-8d33-4baf-98b5-0fc030c3386c",
+			"verdict": "link"
+		},
+		{
+			"id": "spatial-computing~2a52fac1-f071-4d18-9c04-04c662649c4f",
+			"verdict": "link"
+		},
+		{
+			"id": "spatial-computing~37014c4c-8194-4457-8225-0873bee11775",
+			"verdict": "link"
+		},
+		{
+			"id": "spintronics~25f87d5f-758b-48f3-be6c-88d73d1105f9",
+			"verdict": "link"
+		},
+		{
+			"id": "swarm-robotics~50f4e8da-d71a-4a3b-9ecf-c0b31207bc3a",
+			"verdict": "link"
+		},
+		{
+			"id": "thermoelectric-generators~cbcbbf6c-3263-4a2d-8581-c3599fb6b8d1",
+			"verdict": "link"
+		},
+		{
+			"id": "ultra-capacitors~f7f59b88-3a48-48df-b4d8-f2e2bc5a6b5b",
+			"verdict": "link"
+		},
+		{
+			"id": "universal-basic-income~6f21525e-0393-4641-b0b4-ba67285580e3",
+			"verdict": "link"
+		},
+		{
+			"id": "vertical-farming~429aefbd-75e3-46b7-9418-eedf6f9d3650",
+			"verdict": "narrower"
+		},
+		{
+			"id": "virtual-reality~561c4ce6-d448-4bde-af07-fe22180d2dc2",
+			"verdict": "link"
+		},
+		{
+			"id": "wireless-power-transfer~742a2eb3-ce3f-40f6-bd19-680507b269d7",
+			"verdict": "narrower"
+		},
+		{
+			"id": "zero-knowledge-proofs~fc997da8-3351-4401-ba6b-6c8d622a48a6",
+			"verdict": "link"
+		}
+	],
+	"contested": [
+		{
+			"id": "synthetic-data~3797dcf8-4fb3-4bdc-af43-ad23797525b4",
+			"A": "narrower",
+			"B": "link"
+		}
+	],
+	"missing": []
+}
