@@ -1,0 +1,156 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #71",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:world-bank-gep:numeric",
+ "recheck_of": "data/graded/audit/world-bank-gep.json",
+ "scope": "The 3 sampled World rows confirmed by the #53 audit whose actual changed under the D41 GEP World rule (#70), reported as pending_recheck after #70.",
+ "how": "Rows found by comparing data/graded/numeric/world-bank-gep.json with data/graded/audit/audited-grades-53.json (6e11858) for every confirmed sampled id. Forecasts and actuals re-read from the GEP Table 1.1 PDFs (World Bank thedocs zips and PDFs, fetched 2026-10-02, pdftotext -layout), weights base from each table note, not from repo files; verdict recomputed under D18.",
+ "counts": {
+  "rechecked": 3,
+  "confirm": 3,
+  "correct": 0
+ },
+ "records": {
+  "world-bank-gep-2019-01-002": {
+   "claim_id": "world-bank-gep-2019-01-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:09Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": -2.886,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": -4.3,
+    "verdict": "miss",
+    "actual_vintage": "World Bank GEP 2021-01, real GDP growth table (column 2020e)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.8,
+    "actual": -4.3,
+    "actual_series": "World real GDP growth at 2010 prices (GEP headline aggregate), GEP January 2021 (2020e), the latest later table on 2010 prices",
+    "error": 7.1,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://thedocs.worldbank.org/en/doc/2d83dc6f2b64291e7c6943d1b6a2eea9-0350012021/related/GEP-GDP-growth-2015-2019.zip",
+     "title": "GEP January 2019, Table 1.1 (GEP-January-2019-gdp-growth.pdf)",
+     "date": "2019-01",
+     "shows": "World 2020f = 2.8; note 1: aggregate growth rates calculated using constant 2010 U.S. dollar GDP weights."
+    },
+    {
+     "url": "https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-GDP-growth-2020-2024.zip",
+     "title": "GEP January 2021, Table 1.1 (GEP-January-2021-gdp-growth.pdf)",
+     "date": "2021-01",
+     "shows": "World 2020e = -4.3; note 1: GDP weights at 2010 prices and market exchange rates. The last edition on 2010 prices: June 2021 moves to average 2010-19 prices (its note 1 says so)."
+    }
+   ],
+   "note": "Forecast 2.8 and actual -4.3 verified in the GEP tables; same weights base (2010 prices) in forecast and actual; error +7.1 pp, D18 miss. The #53 audit confirmed the WDI-based grade (actual -2.886, miss); D41 moved World to the GEP's own same-base statement.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "world-bank-gep-2021-06-001": {
+   "claim_id": "world-bank-gep-2021-06-001",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:09Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 6.485,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 5.6,
+    "actual": 6.3,
+    "verdict": "partial",
+    "actual_vintage": "World Bank GEP 2024-06, real GDP growth table (column 2021)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 5.6,
+    "actual": 6.3,
+    "actual_series": "World real GDP growth at average 2010-19 prices (GEP headline aggregate), GEP June 2024 (2021), the latest later table on average 2010-19 prices that prints 2021",
+    "error": -0.7,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-GDP-growth-2020-2024.zip",
+     "title": "GEP June 2021, Table 1.1 (GEP-June-2021-gdp-growth.pdf)",
+     "date": "2021-06",
+     "shows": "World 2021f = 5.6, 2022f = 4.3; note 1: GDP weights at average 2010-19 prices and market exchange rates."
+    },
+    {
+     "url": "https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-GDP-growth-2020-2024.zip",
+     "title": "GEP June 2024, Table 1.1 (GEP-June-2024-gdp-growth.pdf)",
+     "date": "2024-06",
+     "shows": "World 2021 = 6.3 (columns 2021, 2022, 2023e); note 1: average 2010-19 prices. January 2025 and later tables start at 2022."
+    }
+   ],
+   "note": "Forecast 5.6 and actual 6.3 verified in the GEP tables; same weights base (average 2010-19 prices) in forecast and actual; error -0.7 pp, D18 partial. The #53 audit confirmed the WDI-based grade (actual 6.485, partial); D41 moved World to the GEP's own same-base statement.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "world-bank-gep-2021-06-002": {
+   "claim_id": "world-bank-gep-2021-06-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:22:09Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 4.3,
+    "actual": 3.44,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 4.3,
+    "actual": 3.3,
+    "verdict": "partial",
+    "actual_vintage": "World Bank GEP 2025-06, real GDP growth table (column 2022)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 4.3,
+    "actual": 3.3,
+    "actual_series": "World real GDP growth at average 2010-19 prices (GEP headline aggregate), GEP June 2025 (2022), the latest later table on average 2010-19 prices that prints 2022",
+    "error": 1.0,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-GDP-growth-2020-2024.zip",
+     "title": "GEP June 2021, Table 1.1 (GEP-June-2021-gdp-growth.pdf)",
+     "date": "2021-06",
+     "shows": "World 2022f = 4.3; note 1: average 2010-19 prices."
+    },
+    {
+     "url": "https://thedocs.worldbank.org/en/doc/8bf0b62ec6bcb886d97295ad930059e9-0050012025/related/GEP-June-2025-gdp-growth.pdf",
+     "title": "GEP June 2025, Table 1.1",
+     "date": "2025-06",
+     "shows": "World 2022 = 3.3 (columns 2022, 2023, 2024e); note 1: average 2010-19 prices."
+    },
+    {
+     "url": "https://thedocs.worldbank.org/en/doc/7ce50b5aa95bef66048680bba9926ec8-0050012026/related/GEP-Jan-2026-gdp-growth.pdf",
+     "title": "GEP January 2026 and June 2026, Table 1.1",
+     "date": "2026-01",
+     "shows": "Both start at 2023 (also average 2010-19 prices; June 2026: https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-Jun-2026-gdp-growth.pdf), so June 2025 is the latest statement of 2022."
+    }
+   ],
+   "note": "Forecast 4.3 and actual 3.3 verified in the GEP tables; same weights base (average 2010-19 prices) in forecast and actual; error +1.0 pp, D18 partial. The error sits on the 1.0-point threshold; the actual is printed to one decimal, so the row carries the D41 threshold flag (partial or miss), graded partial on the stated values. The #53 audit confirmed the WDI-based grade (actual 3.44, partial); D41 moved World to the GEP's own same-base statement.",
+   "at": "2026-10-02T13:53:05Z"
+  }
+ }
+}

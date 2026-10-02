@@ -1,0 +1,2157 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #71",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:obr-forecasts:numeric",
+ "recheck_of": "data/graded/audit/obr-forecasts.json",
+ "scope": "The 44 sampled GDP and CPI rows confirmed by the #53 audit on their 6b1a8a2 grade (one-decimal ONS actuals) whose actual changed in 6e11858 (unrounded ABMI growth and OBR outturn row) before any re-check. The two rows the audit corrected (obr-forecasts-2010-06-006, -2019-03-003) are fixed in code and not re-checked here.",
+ "how": "Rows found by comparing data/graded/numeric/obr-forecasts.json at 6b1a8a2 (what the #53 auditor read) and 6e11858 for every sampled id. Forecast and CPI outturn re-read from the OBR Spring 2026 database (Internet Archive snapshot), GDP growth recomputed from ONS ABMI, fetched on 2026-10-02, not from repo files; verdict recomputed under D18.",
+ "counts": {
+  "rechecked": 44,
+  "confirm": 44,
+  "correct": 0
+ },
+ "records": {
+  "obr-forecasts-2010-06-002": {
+   "claim_id": "obr-forecasts-2010-06-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 3.3,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 3.298,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.1,
+    "actual": 3.298,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.198,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2010: 3.1."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2010: 3.298%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2010: 3.3 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 3.1 and actual 3.298 verified; error -0.198 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (3.3, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-003": {
+   "claim_id": "obr-forecasts-2010-06-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 4.5,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 4.464,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.5,
+    "actual": 4.464,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -1.964,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2011: 2.5."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2011: 4.464%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2011: 4.5 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.5 and actual 4.464 verified; error -1.964 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (4.5, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-004": {
+   "claim_id": "obr-forecasts-2010-06-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.8,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.828,
+    "verdict": "partial",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.9,
+    "actual": 2.828,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.928,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2012: 1.9."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2012: 2.828%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2012: 2.8 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.9 and actual 2.828 verified; error -0.928 pp, D18 partial. The #53 auditor read the one-decimal ONS actual (2.8, partial); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-005": {
+   "claim_id": "obr-forecasts-2010-06-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.6,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.565,
+    "verdict": "partial",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 2.565,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.565,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2013: 2."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2013: 2.565%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2013: 2.6 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2 and actual 2.565 verified; error -0.565 pp, D18 partial. The #53 auditor read the one-decimal ONS actual (2.6, partial); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-007": {
+   "claim_id": "obr-forecasts-2010-06-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.04,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 0.04,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 1.96,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2015: 2."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2015: 0.040%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2015: 0.0 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2 and actual 0.040 verified; error +1.960 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-023": {
+   "claim_id": "obr-forecasts-2010-06-023",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 2.3,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 2.261,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.2,
+    "actual": 2.261,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": -1.061,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2010: 1.2."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2009 and 2010: growth 2.261%."
+    }
+   ],
+   "note": "Forecast 1.2 and actual 2.261 verified; error -1.061 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (2.3, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-024": {
+   "claim_id": "obr-forecasts-2010-06-024",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.9,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.851,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.3,
+    "actual": 0.851,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 1.449,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2011: 2.3."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2010 and 2011: growth 0.851%."
+    }
+   ],
+   "note": "Forecast 2.3 and actual 0.851 verified; error +1.449 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0.9, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-025": {
+   "claim_id": "obr-forecasts-2010-06-025",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 1.5,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 1.528,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.8,
+    "actual": 1.528,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 1.272,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2012: 2.8."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2011 and 2012: growth 1.528%."
+    }
+   ],
+   "note": "Forecast 2.8 and actual 1.528 verified; error +1.272 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (1.5, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-06-026": {
+   "claim_id": "obr-forecasts-2010-06-026",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.7,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.718,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.9,
+    "actual": 1.718,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 1.182,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-06 forecast, column 2013: 2.9."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2012 and 2013: growth 1.718%."
+    }
+   ],
+   "note": "Forecast 2.9 and actual 1.718 verified; error +1.182 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (1.7, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-11-023": {
+   "claim_id": "obr-forecasts-2010-11-023",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.3,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.261,
+    "verdict": "hit",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.8,
+    "actual": 2.261,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": -0.461,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-11 forecast, column 2010: 1.8."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2009 and 2010: growth 2.261%."
+    }
+   ],
+   "note": "Forecast 1.8 and actual 2.261 verified; error -0.461 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (2.3, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-11-024": {
+   "claim_id": "obr-forecasts-2010-11-024",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0.9,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0.851,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.1,
+    "actual": 0.851,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 1.249,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-11 forecast, column 2011: 2.1."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2010 and 2011: growth 0.851%."
+    }
+   ],
+   "note": "Forecast 2.1 and actual 0.851 verified; error +1.249 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0.9, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-11-025": {
+   "claim_id": "obr-forecasts-2010-11-025",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 1.5,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 1.528,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.6,
+    "actual": 1.528,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 1.072,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-11 forecast, column 2012: 2.6."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2011 and 2012: growth 1.528%."
+    }
+   ],
+   "note": "Forecast 2.6 and actual 1.528 verified; error +1.072 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (1.5, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-11-026": {
+   "claim_id": "obr-forecasts-2010-11-026",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.7,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.718,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.9,
+    "actual": 1.718,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 1.182,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-11 forecast, column 2013: 2.9."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2012 and 2013: growth 1.718%."
+    }
+   ],
+   "note": "Forecast 2.9 and actual 1.718 verified; error +1.182 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (1.7, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-11-027": {
+   "claim_id": "obr-forecasts-2010-11-027",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 3.2,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 3.16,
+    "verdict": "hit",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.8,
+    "actual": 3.16,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": -0.36,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-11 forecast, column 2014: 2.8."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2013 and 2014: growth 3.160%."
+    }
+   ],
+   "note": "Forecast 2.8 and actual 3.160 verified; error -0.360 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (3.2, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2010-11-028": {
+   "claim_id": "obr-forecasts-2010-11-028",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 2.1,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 2.14,
+    "verdict": "partial",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.7,
+    "actual": 2.14,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 0.56,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2010-11 forecast, column 2015: 2.7."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2014 and 2015: growth 2.140%."
+    }
+   ],
+   "note": "Forecast 2.7 and actual 2.140 verified; error +0.560 pp, D18 partial. The #53 auditor read the one-decimal ONS actual (2.1, partial); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2012-12-002": {
+   "claim_id": "obr-forecasts-2012-12-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 2.8,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 2.828,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.8,
+    "actual": 2.828,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.028,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2012-12 forecast, column 2012: 2.8."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2012: 2.828%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2012: 2.8 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.8 and actual 2.828 verified; error -0.028 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (2.8, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2012-12-003": {
+   "claim_id": "obr-forecasts-2012-12-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.6,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.565,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.5,
+    "actual": 2.565,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.065,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2012-12 forecast, column 2013: 2.5."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2013: 2.565%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2013: 2.6 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.5 and actual 2.565 verified; error -0.065 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (2.6, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2012-12-005": {
+   "claim_id": "obr-forecasts-2012-12-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.04,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 0.04,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 1.96,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2012-12 forecast, column 2015: 2."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2015: 0.040%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2015: 0.0 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2 and actual 0.040 verified; error +1.960 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2012-12-006": {
+   "claim_id": "obr-forecasts-2012-12-006",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.7,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.66,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 0.66,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 1.34,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2012-12 forecast, column 2016: 2."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2016: 0.660%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2016: 0.7 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2 and actual 0.660 verified; error +1.340 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0.7, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2013-03-004": {
+   "claim_id": "obr-forecasts-2013-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0.04,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.1,
+    "actual": 0.04,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 2.06,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2013-03 forecast, column 2015: 2.1."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2015: 0.040%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2015: 0.0 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.1 and actual 0.040 verified; error +2.060 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2013-03-005": {
+   "claim_id": "obr-forecasts-2013-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.7,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.66,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 0.66,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 1.34,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2013-03 forecast, column 2016: 2."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2016: 0.660%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2016: 0.7 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2 and actual 0.660 verified; error +1.340 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0.7, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2015-11-028": {
+   "claim_id": "obr-forecasts-2015-11-028",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": -10,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": -10.048,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.3,
+    "actual": -10.048,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 12.348,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2015-11 forecast, column 2020: 2.3."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2019 and 2020: growth -10.048%."
+    }
+   ],
+   "note": "Forecast 2.3 and actual -10.048 verified; error +12.348 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (-10, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2016-03-003": {
+   "claim_id": "obr-forecasts-2016-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 2.7,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 2.683,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.6,
+    "actual": 2.683,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -1.083,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2016-03 forecast, column 2017: 1.6."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2017: 2.683%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2017: 2.7 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.6 and actual 2.683 verified; error -1.083 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (2.7, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2017-03-002": {
+   "claim_id": "obr-forecasts-2017-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.424,
+    "actual": 2.7,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.424,
+    "actual": 2.683,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.424,
+    "actual": 2.683,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.259,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2017-03 forecast, column 2017: 2.42438."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2017: 2.683%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2017: 2.7 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.42438 and actual 2.683 verified; error -0.259 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (2.7, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2017-03-003": {
+   "claim_id": "obr-forecasts-2017-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.337,
+    "actual": 2.5,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.337,
+    "actual": 2.478,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.337,
+    "actual": 2.478,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.141,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2017-03 forecast, column 2018: 2.33728."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2018: 2.478%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2018: 2.5 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.33728 and actual 2.478 verified; error -0.141 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (2.5, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2017-03-004": {
+   "claim_id": "obr-forecasts-2017-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.999,
+    "actual": 1.8,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.999,
+    "actual": 1.791,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.999,
+    "actual": 1.791,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 0.208,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2017-03 forecast, column 2019: 1.99947."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2019: 1.791%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2019: 1.8 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.99947 and actual 1.791 verified; error +0.208 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (1.8, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2017-03-005": {
+   "claim_id": "obr-forecasts-2017-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.993,
+    "actual": 0.9,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.993,
+    "actual": 0.851,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.993,
+    "actual": 0.851,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 1.142,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2017-03 forecast, column 2020: 1.99307."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2020: 0.851%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2020: 0.9 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.99307 and actual 0.851 verified; error +1.142 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0.9, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2017-03-006": {
+   "claim_id": "obr-forecasts-2017-03-006",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.6,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.588,
+    "verdict": "partial",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 2.588,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.588,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2017-03 forecast, column 2021: 2."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2021: 2.588%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2021: 2.6 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2 and actual 2.588 verified; error -0.588 pp, D18 partial. The #53 auditor read the one-decimal ONS actual (2.6, partial); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-002": {
+   "claim_id": "obr-forecasts-2019-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.054,
+    "actual": 1.8,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.054,
+    "actual": 1.791,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.054,
+    "actual": 1.791,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 0.263,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2019: 2.05354."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2019: 1.791%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2019: 1.8 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.05354 and actual 1.791 verified; error +0.263 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (1.8, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-004": {
+   "claim_id": "obr-forecasts-2019-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.985,
+    "actual": 2.6,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.985,
+    "actual": 2.588,
+    "verdict": "partial",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.985,
+    "actual": 2.588,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.603,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2021: 1.9848."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2021: 2.588%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2021: 2.6 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.9848 and actual 2.588 verified; error -0.603 pp, D18 partial. The #53 auditor read the one-decimal ONS actual (2.6, partial); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-005": {
+   "claim_id": "obr-forecasts-2019-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 9.1,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 9.067,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 9.067,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -7.067,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2022: 1.99959."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2022: 9.067%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2022: 9.1 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.99959 and actual 9.067 verified; error -7.067 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (9.1, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-006": {
+   "claim_id": "obr-forecasts-2019-03-006",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 7.3,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 7.303,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.0,
+    "actual": 7.303,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -5.303,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2023: 2."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2023: 7.303%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2023: 7.3 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2 and actual 7.303 verified; error -5.303 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (7.3, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-036": {
+   "claim_id": "obr-forecasts-2019-03-036",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.229,
+    "actual": 1.3,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.229,
+    "actual": 1.256,
+    "verdict": "hit",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.229,
+    "actual": 1.256,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": -0.028,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2019: 1.22864."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2018 and 2019: growth 1.256%."
+    }
+   ],
+   "note": "Forecast 1.22864 and actual 1.256 verified; error -0.028 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (1.3, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-037": {
+   "claim_id": "obr-forecasts-2019-03-037",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.447,
+    "actual": -10,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.447,
+    "actual": -10.048,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.447,
+    "actual": -10.048,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 11.494,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2020: 1.44654."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2019 and 2020: growth -10.048%."
+    }
+   ],
+   "note": "Forecast 1.44654 and actual -10.048 verified; error +11.494 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (-10, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-038": {
+   "claim_id": "obr-forecasts-2019-03-038",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.596,
+    "actual": 8.5,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.596,
+    "actual": 8.543,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.596,
+    "actual": 8.543,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": -6.947,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2021: 1.59575."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2020 and 2021: growth 8.543%."
+    }
+   ],
+   "note": "Forecast 1.59575 and actual 8.543 verified; error -6.947 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (8.5, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-039": {
+   "claim_id": "obr-forecasts-2019-03-039",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.601,
+    "actual": 5.1,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.601,
+    "actual": 5.15,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.601,
+    "actual": 5.15,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": -3.549,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2022: 1.60114."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2021 and 2022: growth 5.150%."
+    }
+   ],
+   "note": "Forecast 1.60114 and actual 5.150 verified; error -3.549 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (5.1, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2019-03-040": {
+   "claim_id": "obr-forecasts-2019-03-040",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.595,
+    "actual": 0.3,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.595,
+    "actual": 0.272,
+    "verdict": "miss",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.595,
+    "actual": 0.272,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": 1.324,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2019-03 forecast, column 2023: 1.59535."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2022 and 2023: growth 0.272%."
+    }
+   ],
+   "note": "Forecast 1.59535 and actual 0.272 verified; error +1.324 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (0.3, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2020-03-002": {
+   "claim_id": "obr-forecasts-2020-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.408,
+    "actual": 0.9,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.408,
+    "actual": 0.851,
+    "verdict": "partial",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.408,
+    "actual": 0.851,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 0.557,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2020-03 forecast, column 2020: 1.40798."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2020: 0.851%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2020: 0.9 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.40798 and actual 0.851 verified; error +0.557 pp, D18 partial. The #53 auditor read the one-decimal ONS actual (0.9, partial); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2020-03-003": {
+   "claim_id": "obr-forecasts-2020-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.803,
+    "actual": 2.6,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.803,
+    "actual": 2.588,
+    "verdict": "partial",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.803,
+    "actual": 2.588,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -0.785,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2020-03 forecast, column 2021: 1.80285."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2021: 2.588%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2021: 2.6 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.80285 and actual 2.588 verified; error -0.785 pp, D18 partial. The #53 auditor read the one-decimal ONS actual (2.6, partial); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2020-03-005": {
+   "claim_id": "obr-forecasts-2020-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 2.051,
+    "actual": 7.3,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.051,
+    "actual": 7.303,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.051,
+    "actual": 7.303,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -5.252,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2020-03 forecast, column 2023: 2.05136."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2023: 7.303%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2023: 7.3 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 2.05136 and actual 7.303 verified; error -5.252 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (7.3, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2023-11-002": {
+   "claim_id": "obr-forecasts-2023-11-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 7.455,
+    "actual": 7.3,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 7.455,
+    "actual": 7.303,
+    "verdict": "hit",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 7.455,
+    "actual": 7.303,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 0.152,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2023-11 forecast, column 2023: 7.4554."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2023: 7.303%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2023: 7.3 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 7.4554 and actual 7.303 verified; error +0.152 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (7.3, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2023-11-003": {
+   "claim_id": "obr-forecasts-2023-11-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 3.611,
+    "actual": 2.5,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 3.611,
+    "actual": 2.53,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 3.611,
+    "actual": 2.53,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": 1.081,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2023-11 forecast, column 2024: 3.61142."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2024: 2.530%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2024: 2.5 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 3.61142 and actual 2.530 verified; error +1.081 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (2.5, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2023-11-004": {
+   "claim_id": "obr-forecasts-2023-11-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1.776,
+    "actual": 3.4,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1.776,
+    "actual": 3.373,
+    "verdict": "miss",
+    "actual_vintage": "ONS CPI annual rate as compiled by the OBR historical official forecasts database, outturn row (March 2026), unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1.776,
+    "actual": 3.373,
+    "actual_series": "OBR historical official forecasts database (Spring 2026), CPI sheet, outturn row (ONS CPI annual rate, 3 decimals)",
+    "error": -1.597,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI",
+     "date": "2026-03",
+     "shows": "Row for the 2023-11 forecast, column 2025: 1.77609."
+    },
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet CPI, outturn row",
+     "date": "2026-03",
+     "shows": "2025: 3.373%."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/mm23",
+     "title": "ONS D7G7, CPI annual rate (release 2026-09-16), cross-check",
+     "date": "2026-09-16",
+     "shows": "2025: 3.4 (one decimal), consistent with the outturn row."
+    }
+   ],
+   "note": "Forecast 1.77609 and actual 3.373 verified; error -1.597 pp, D18 miss. The #53 auditor read the one-decimal ONS actual (3.4, miss); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "obr-forecasts-2025-03-022": {
+   "claim_id": "obr-forecasts-2025-03-022",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:18:41+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 0.972,
+    "actual": 1.3,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 0.972,
+    "actual": 1.315,
+    "verdict": "hit",
+    "actual_vintage": "ONS ABMI (PN2) levels, release 2026-08-13; growth computed unrounded"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 0.972,
+    "actual": 1.315,
+    "actual_series": "ONS ABMI (PN2) annual chained-volume GDP levels, release 2026-08-13; growth computed unrounded",
+    "error": -0.343,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://web.archive.org/web/20260326123133id_/https://obr.uk/docs/dlm_uploads/Historical_official_forecasts_database_Spring_2026.xlsx",
+     "title": "OBR historical official forecasts database, Spring 2026, sheet UKGDP",
+     "date": "2026-03",
+     "shows": "Row for the 2025-03 forecast, column 2025: 0.971593."
+    },
+    {
+     "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/abmi/pn2",
+     "title": "ONS ABMI, GDP chained volume measures, seasonally adjusted, £m (release 2026-08-13)",
+     "date": "2026-08-13",
+     "shows": "Annual levels 2024 and 2025: growth 1.315%."
+    }
+   ],
+   "note": "Forecast 0.971593 and actual 1.315 verified; error -0.343 pp, D18 hit. The #53 auditor read the one-decimal ONS actual (1.3, hit); 6e11858 moved to the unrounded actual, which gives the same verdict here.",
+   "at": "2026-10-02T13:53:05Z"
+  }
+ }
+}

@@ -1,0 +1,1431 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #71",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:iea-weo:numeric",
+ "recheck_of": "data/graded/audit/iea-weo.json",
+ "scope": "The 28 sampled rows confirmed by the #53 audit whose actual changed under the D39 later-statement rule (#66: 2020 wind and solar PV generation and solar PV capacity from WEO 2022, 2010 wind capacity 181 GW from WEO 2021 to 2025), reported as pending_recheck after #70.",
+ "how": "Rows found by comparing data/graded/numeric/iea-weo.json with data/graded/audit/audited-grades-53.json (6e11858) for every confirmed sampled id. Forecasts re-read from each edition's Annex A World table (WEO 2000: the figure WEO 2001 states for it) and actuals from the WEO 2022 and WEO 2025 Annex A tables, PDFs fetched from iea.blob.core.windows.net on 2026-10-02 and read with pdftotext -layout, not from repo files; verdict recomputed under D16.",
+ "counts": {
+  "rechecked": 28,
+  "confirm": 28,
+  "correct": 0
+ },
+ "records": {
+  "iea-weo-2000-001": {
+   "claim_id": "iea-weo-2000-001",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 178,
+    "actual": 1596,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 178,
+    "actual": 1597,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 178,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -88.85,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/3e3fcda4-e33c-4319-a987-179a0372b035/WorldEnergyOutlook2001-AssessingTodaysSuppliestoFuelTomorrowsGrowth.pdf",
+     "title": "WEO 2001 text on the WEO 2000 Reference Scenario",
+     "date": "2001",
+     "shows": "PDF page 352: wind generation 2020 = 178 TWh (WEO 2001 states the WEO 2000 Reference Scenario figure: 11 TWh in 1997 to 178 TWh in 2020)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 178 TWh and actual 1597 TWh verified in the PDFs; error -88.9% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2002-007": {
+   "claim_id": "iea-weo-2002-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 307,
+    "actual": 1596,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 307,
+    "actual": 1597,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 307,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -80.78,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/11bc7b29-db2a-46fb-a515-1f5e7d2c7dfd/WorldEnergyOutlook2002.pdf",
+     "title": "WEO 2002 Annex, Reference Scenario: World",
+     "date": "2002",
+     "shows": "PDF page 413: wind generation 2020 = 307 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 307 TWh and actual 1597 TWh verified in the PDFs; error -80.8% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2002-014": {
+   "claim_id": "iea-weo-2002-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 55,
+    "actual": 198,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 55,
+    "actual": 181,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2025 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 55,
+    "actual": 181,
+    "actual_series": "IEA-stated history, WEO 2025 Annex A Table A.3a historical column (World wind capacity, 2010)",
+    "error": -69.61,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/11bc7b29-db2a-46fb-a515-1f5e7d2c7dfd/WorldEnergyOutlook2002.pdf",
+     "title": "WEO 2002 Annex, Reference Scenario: World",
+     "date": "2002",
+     "shows": "PDF page 413: wind capacity 2010 = 55 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/9753df19-0a71-422a-b725-012c555763b3/WorldEnergyOutlook2025.pdf",
+     "title": "WEO 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2025",
+     "shows": "PDF page 417: Wind capacity 2010: 181 GW (historical column; also 181 in WEO 2023 Table A.3b)."
+    }
+   ],
+   "note": "Forecast 55 GW and actual 181 GW verified in the PDFs; error -69.6% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (198); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2004-007": {
+   "claim_id": "iea-weo-2004-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 559,
+    "actual": 1596,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 559,
+    "actual": 1597,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 559,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -65.0,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/e2be51f1-b04c-433f-9a68-93bfd46c7ad4/WorldEnergyOutlook2004.pdf",
+     "title": "WEO 2004 Annex A, Reference Scenario: World",
+     "date": "2004",
+     "shows": "PDF page 433: wind generation 2020 = 559 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 559 TWh and actual 1597 TWh verified in the PDFs; error -65.0% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2004-014": {
+   "claim_id": "iea-weo-2004-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 97,
+    "actual": 198,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 97,
+    "actual": 181,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2025 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 97,
+    "actual": 181,
+    "actual_series": "IEA-stated history, WEO 2025 Annex A Table A.3a historical column (World wind capacity, 2010)",
+    "error": -46.41,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/e2be51f1-b04c-433f-9a68-93bfd46c7ad4/WorldEnergyOutlook2004.pdf",
+     "title": "WEO 2004 Annex A, Reference Scenario: World",
+     "date": "2004",
+     "shows": "PDF page 433: wind capacity 2010 = 97 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/9753df19-0a71-422a-b725-012c555763b3/WorldEnergyOutlook2025.pdf",
+     "title": "WEO 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2025",
+     "shows": "PDF page 417: Wind capacity 2010: 181 GW (historical column; also 181 in WEO 2023 Table A.3b)."
+    }
+   ],
+   "note": "Forecast 97 GW and actual 181 GW verified in the PDFs; error -46.4% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (198); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2008-008": {
+   "claim_id": "iea-weo-2008-008",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 970,
+    "actual": 1596,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 970,
+    "actual": 1597,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 970,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -39.26,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/89d1f68c-f4bf-4597-805f-901cfa6ce889/weo2008.pdf",
+     "title": "WEO 2008 Annex A, Reference Scenario: World",
+     "date": "2008",
+     "shows": "PDF page 509: wind generation 2020 = 970 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 970 TWh and actual 1597 TWh verified in the PDFs; error -39.3% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2009-008": {
+   "claim_id": "iea-weo-2009-008",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1010,
+    "actual": 1596,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1010,
+    "actual": 1597,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1010,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -36.76,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/ac80b701-bdfc-48cf-ac4c-00e60e1246a0/weo2009.pdf",
+     "title": "WEO 2009 Annex A, Reference Scenario: World",
+     "date": "2009",
+     "shows": "PDF page 625: wind generation 2020 = 1010 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1010 TWh and actual 1597 TWh verified in the PDFs; error -36.8% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2010-003": {
+   "claim_id": "iea-weo-2010-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 130,
+    "actual": 833,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 130,
+    "actual": 824,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 130,
+    "actual": 824,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV generation, 2020)",
+    "error": -84.22,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/1b090169-1c58-4f5d-9451-ee838f6f00e5/weo2010.pdf",
+     "title": "WEO 2010 Annex A, World: New Policies Scenario",
+     "date": "2010",
+     "shows": "PDF page 622: solar PV generation 2020 = 130 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV generation 2020: 824 TWh (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 130 TWh and actual 824 TWh verified in the PDFs; error -84.2% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (833); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2010-009": {
+   "claim_id": "iea-weo-2010-009",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1229,
+    "actual": 1596,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1229,
+    "actual": 1597,
+    "verdict": "partial",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1229,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -23.04,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/1b090169-1c58-4f5d-9451-ee838f6f00e5/weo2010.pdf",
+     "title": "WEO 2010 Annex A, World: New Policies Scenario",
+     "date": "2010",
+     "shows": "PDF page 622: wind generation 2020 = 1229 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1229 TWh and actual 1597 TWh verified in the PDFs; error -23.0% of the actual, D16 partial. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2010-015": {
+   "claim_id": "iea-weo-2010-015",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 110,
+    "actual": 739,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 110,
+    "actual": 741,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 110,
+    "actual": 741,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV capacity, 2020)",
+    "error": -85.16,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/1b090169-1c58-4f5d-9451-ee838f6f00e5/weo2010.pdf",
+     "title": "WEO 2010 Annex A, World: New Policies Scenario",
+     "date": "2010",
+     "shows": "PDF page 622: solar PV capacity 2020 = 110 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV capacity 2020: 741 GW (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 110 GW and actual 741 GW verified in the PDFs; error -85.2% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (739); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2011-003": {
+   "claim_id": "iea-weo-2011-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 230,
+    "actual": 833,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 230,
+    "actual": 824,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 230,
+    "actual": 824,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV generation, 2020)",
+    "error": -72.09,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/cc401107-a401-40cb-b6ce-c9832bb88d85/WorldEnergyOutlook2011.pdf",
+     "title": "WEO 2011 Annex A, World: New Policies Scenario",
+     "date": "2011",
+     "shows": "PDF page 548: solar PV generation 2020 = 230 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV generation 2020: 824 TWh (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 230 TWh and actual 824 TWh verified in the PDFs; error -72.1% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (833); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2011-009": {
+   "claim_id": "iea-weo-2011-009",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1282,
+    "actual": 1596,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1282,
+    "actual": 1597,
+    "verdict": "partial",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1282,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -19.72,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/cc401107-a401-40cb-b6ce-c9832bb88d85/WorldEnergyOutlook2011.pdf",
+     "title": "WEO 2011 Annex A, World: New Policies Scenario",
+     "date": "2011",
+     "shows": "PDF page 548: wind generation 2020 = 1282 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1282 TWh and actual 1597 TWh verified in the PDFs; error -19.7% of the actual, D16 partial. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2011-015": {
+   "claim_id": "iea-weo-2011-015",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 184,
+    "actual": 739,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 184,
+    "actual": 741,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 184,
+    "actual": 741,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV capacity, 2020)",
+    "error": -75.17,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/cc401107-a401-40cb-b6ce-c9832bb88d85/WorldEnergyOutlook2011.pdf",
+     "title": "WEO 2011 Annex A, World: New Policies Scenario",
+     "date": "2011",
+     "shows": "PDF page 548: solar PV capacity 2020 = 184 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV capacity 2020: 741 GW (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 184 GW and actual 741 GW verified in the PDFs; error -75.2% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (739); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2012-003": {
+   "claim_id": "iea-weo-2012-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 332,
+    "actual": 833,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 332,
+    "actual": 824,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 332,
+    "actual": 824,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV generation, 2020)",
+    "error": -59.71,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/ebe15dfb-30c8-42cf-8733-672b3500aed7/WEO2012_free.pdf",
+     "title": "WEO 2012 Annex A, World: New Policies Scenario",
+     "date": "2012",
+     "shows": "PDF page 572: solar PV generation 2020 = 332 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV generation 2020: 824 TWh (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 332 TWh and actual 824 TWh verified in the PDFs; error -59.7% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (833); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2012-009": {
+   "claim_id": "iea-weo-2012-009",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1272,
+    "actual": 1596,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1272,
+    "actual": 1597,
+    "verdict": "partial",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1272,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -20.35,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/ebe15dfb-30c8-42cf-8733-672b3500aed7/WEO2012_free.pdf",
+     "title": "WEO 2012 Annex A, World: New Policies Scenario",
+     "date": "2012",
+     "shows": "PDF page 572: wind generation 2020 = 1272 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1272 TWh and actual 1597 TWh verified in the PDFs; error -20.4% of the actual, D16 partial. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2012-015": {
+   "claim_id": "iea-weo-2012-015",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 266,
+    "actual": 739,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 266,
+    "actual": 741,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 266,
+    "actual": 741,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV capacity, 2020)",
+    "error": -64.1,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/ebe15dfb-30c8-42cf-8733-672b3500aed7/WEO2012_free.pdf",
+     "title": "WEO 2012 Annex A, World: New Policies Scenario",
+     "date": "2012",
+     "shows": "PDF page 572: solar PV capacity 2020 = 266 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV capacity 2020: 741 GW (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 266 GW and actual 741 GW verified in the PDFs; error -64.1% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (739); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2013-002": {
+   "claim_id": "iea-weo-2013-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 379,
+    "actual": 833,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 379,
+    "actual": 824,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 379,
+    "actual": 824,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV generation, 2020)",
+    "error": -54.0,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/a22dedb8-c2c3-448c-b104-051236618b38/WEO2013.pdf",
+     "title": "WEO 2013 Annex A, World: New Policies Scenario",
+     "date": "2013",
+     "shows": "PDF page 592: solar PV generation 2020 = 379 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV generation 2020: 824 TWh (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 379 TWh and actual 824 TWh verified in the PDFs; error -54.0% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (833); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2013-007": {
+   "claim_id": "iea-weo-2013-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1326,
+    "actual": 1596,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1326,
+    "actual": 1597,
+    "verdict": "partial",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1326,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -16.97,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/a22dedb8-c2c3-448c-b104-051236618b38/WEO2013.pdf",
+     "title": "WEO 2013 Annex A, World: New Policies Scenario",
+     "date": "2013",
+     "shows": "PDF page 592: wind generation 2020 = 1326 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1326 TWh and actual 1597 TWh verified in the PDFs; error -17.0% of the actual, D16 partial. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2013-012": {
+   "claim_id": "iea-weo-2013-012",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 312,
+    "actual": 739,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 312,
+    "actual": 741,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 312,
+    "actual": 741,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV capacity, 2020)",
+    "error": -57.89,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/a22dedb8-c2c3-448c-b104-051236618b38/WEO2013.pdf",
+     "title": "WEO 2013 Annex A, World: New Policies Scenario",
+     "date": "2013",
+     "shows": "PDF page 592: solar PV capacity 2020 = 312 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV capacity 2020: 741 GW (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 312 GW and actual 741 GW verified in the PDFs; error -57.9% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (739); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2014-002": {
+   "claim_id": "iea-weo-2014-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 449,
+    "actual": 833,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 449,
+    "actual": 824,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 449,
+    "actual": 824,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV generation, 2020)",
+    "error": -45.51,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/e6f58562-203e-474c-97a3-486f409aa7ff/WEO2014.pdf",
+     "title": "WEO 2014 Annex A, World: New Policies Scenario",
+     "date": "2014",
+     "shows": "PDF page 628: solar PV generation 2020 = 449 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV generation 2020: 824 TWh (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 449 TWh and actual 824 TWh verified in the PDFs; error -45.5% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (833); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2014-008": {
+   "claim_id": "iea-weo-2014-008",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1333,
+    "actual": 1596,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1333,
+    "actual": 1597,
+    "verdict": "partial",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1333,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -16.53,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/e6f58562-203e-474c-97a3-486f409aa7ff/WEO2014.pdf",
+     "title": "WEO 2014 Annex A, World: New Policies Scenario",
+     "date": "2014",
+     "shows": "PDF page 628: wind generation 2020 = 1333 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1333 TWh and actual 1597 TWh verified in the PDFs; error -16.5% of the actual, D16 partial. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2014-014": {
+   "claim_id": "iea-weo-2014-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 364,
+    "actual": 739,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 364,
+    "actual": 741,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 364,
+    "actual": 741,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV capacity, 2020)",
+    "error": -50.88,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/e6f58562-203e-474c-97a3-486f409aa7ff/WEO2014.pdf",
+     "title": "WEO 2014 Annex A, World: New Policies Scenario",
+     "date": "2014",
+     "shows": "PDF page 628: solar PV capacity 2020 = 364 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV capacity 2020: 741 GW (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 364 GW and actual 741 GW verified in the PDFs; error -50.9% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (739); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2015-002": {
+   "claim_id": "iea-weo-2015-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 494,
+    "actual": 833,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 494,
+    "actual": 824,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 494,
+    "actual": 824,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV generation, 2020)",
+    "error": -40.05,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/5a314029-69c2-42a9-98ac-d1c5deeb59b3/WEO2015.pdf",
+     "title": "WEO 2015 Annex A, World: New Policies Scenario",
+     "date": "2015",
+     "shows": "PDF page 602: solar PV generation 2020 = 494 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV generation 2020: 824 TWh (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 494 TWh and actual 824 TWh verified in the PDFs; error -40.0% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (833); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2015-008": {
+   "claim_id": "iea-weo-2015-008",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1407,
+    "actual": 1596,
+    "verdict": "partial",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1407,
+    "actual": 1597,
+    "verdict": "partial",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1407,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -11.9,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/5a314029-69c2-42a9-98ac-d1c5deeb59b3/WEO2015.pdf",
+     "title": "WEO 2015 Annex A, World: New Policies Scenario",
+     "date": "2015",
+     "shows": "PDF page 602: wind generation 2020 = 1407 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1407 TWh and actual 1597 TWh verified in the PDFs; error -11.9% of the actual, D16 partial. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2015-014": {
+   "claim_id": "iea-weo-2015-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 397,
+    "actual": 739,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 397,
+    "actual": 741,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 397,
+    "actual": 741,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV capacity, 2020)",
+    "error": -46.42,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/5a314029-69c2-42a9-98ac-d1c5deeb59b3/WEO2015.pdf",
+     "title": "WEO 2015 Annex A, World: New Policies Scenario",
+     "date": "2015",
+     "shows": "PDF page 602: solar PV capacity 2020 = 397 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV capacity 2020: 741 GW (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 397 GW and actual 741 GW verified in the PDFs; error -46.4% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (739); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2016-002": {
+   "claim_id": "iea-weo-2016-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 599,
+    "actual": 833,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 599,
+    "actual": 824,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 599,
+    "actual": 824,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV generation, 2020)",
+    "error": -27.31,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/680c05c8-1d6e-42ae-b953-68e0420d46d5/WEO2016.pdf",
+     "title": "WEO 2016 Annex A, World: New Policies Scenario",
+     "date": "2016",
+     "shows": "PDF page 566: solar PV generation 2020 = 599 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV generation 2020: 824 TWh (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 599 TWh and actual 824 TWh verified in the PDFs; error -27.3% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (833); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2016-008": {
+   "claim_id": "iea-weo-2016-008",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 1508,
+    "actual": 1596,
+    "verdict": "hit",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 1508,
+    "actual": 1597,
+    "verdict": "hit",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 1508,
+    "actual": 1597,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World wind generation, 2020)",
+    "error": -5.57,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/680c05c8-1d6e-42ae-b953-68e0420d46d5/WEO2016.pdf",
+     "title": "WEO 2016 Annex A, World: New Policies Scenario",
+     "date": "2016",
+     "shows": "PDF page 566: wind generation 2020 = 1508 TWh, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Wind generation 2020: 1 597 TWh (historical column; 2010 = 342)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 1508 TWh and actual 1597 TWh verified in the PDFs; error -5.6% of the actual, D16 hit. The #53 audit confirmed the same verdict on the earlier IEA statement (1596); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "iea-weo-2016-014": {
+   "claim_id": "iea-weo-2016-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:21:19Z"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 481,
+    "actual": 739,
+    "verdict": "miss",
+    "from": "6e11858 (audited-grades-53.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 481,
+    "actual": 741,
+    "verdict": "miss",
+    "actual_vintage": "IEA WEO 2022 Annex A, historical value"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 481,
+    "actual": 741,
+    "actual_series": "IEA-stated history, WEO 2022 Annex A Table A.3a historical column (World solar PV capacity, 2020)",
+    "error": -35.09,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://iea.blob.core.windows.net/assets/680c05c8-1d6e-42ae-b953-68e0420d46d5/WEO2016.pdf",
+     "title": "WEO 2016 Annex A, World: New Policies Scenario",
+     "date": "2016",
+     "shows": "PDF page 566: solar PV capacity 2020 = 481 GW, main scenario."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/830fe099-5530-48f2-a7c1-11f35d510983/WorldEnergyOutlook2022.pdf",
+     "title": "WEO 2022 Annex A, Table A.3a: World electricity sector",
+     "date": "2022",
+     "shows": "PDF page 438: Solar PV capacity 2020: 741 GW (historical column)."
+    },
+    {
+     "url": "https://iea.blob.core.windows.net/assets/86ede39e-4436-42d7-ba2a-edf61467e070/WorldEnergyOutlook2023.pdf",
+     "title": "WEO 2023 to 2025 Annex A, Table A.3a: World electricity sector",
+     "date": "2023",
+     "shows": "Historical columns are 2010, 2021, 2022 (WEO 2023), 2010, 2022, 2023 (WEO 2024) and 2010, 2023, 2024 (WEO 2025): no later IEA statement of 2020, so WEO 2022 is the latest."
+    }
+   ],
+   "note": "Forecast 481 GW and actual 741 GW verified in the PDFs; error -35.1% of the actual, D16 miss. The #53 audit confirmed the same verdict on the earlier IEA statement (739); D39 replaced it with the later restatement, verdict unchanged.",
+   "at": "2026-10-02T13:53:05Z"
+  }
+ }
+}
