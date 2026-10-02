@@ -19,6 +19,9 @@ function parse(text, edition) {
 	const t = text.toLowerCase().trim();
 	let m;
 	if (/^now\b|^this year$/.test(t)) return { low: 0, high: 0, note: t === "now" || t === "this year" ? null : `Read as now: "${text}".` };
+	if (t === "later this year") return { low: 0, high: 0, note: `Read as the edition year: "${text}".` };
+	// Months from a January edition (2023 on) that stay inside the edition year.
+	if ((m = t.match(new RegExp(`^${W}\\s*months?$`))) && n(m[1]) < 12) return { low: 0, high: 0, note: `${n(m[1])} months from a January edition: read as the edition year.` };
 	if ((m = t.match(new RegExp(`^${W}\\s*(?:to|-)\\s*${W}(\\+)?\\s*years?$`)))) return { low: n(m[1]), high: n(m[2]), note: m[3] ? "Open upper bound; graded at the stated upper bound." : null };
 	if ((m = t.match(new RegExp(`^(?:about\\s+)?${W}\\s*years?$`)))) return { low: n(m[1]), high: n(m[1]), note: t.startsWith("about") ? "\"About\" read as the stated number." : null };
 	if ((m = t.match(new RegExp(`^(?:less than|within)\\s+${W}\\s*years?$`)))) return { low: 0, high: n(m[1]), note: null };
