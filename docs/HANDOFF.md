@@ -1,6 +1,6 @@
 # Hindsight handoff (2026-10-02, fourth session, local)
 
-Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D46). Every next step is an open issue in envisioning/hindsight.
+Read this first (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D51). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -25,14 +25,16 @@ A public, citable record of published forecasts (publications x predictions), gr
 - **Judgment sources under D20** (two blind graders, adjudicator, agent audit; hit rate over hit + partial + miss, Wilson 95%; audit-adjusted interval D28 in brackets):
   - Envisioning posters: technology 2011-2012 45% (36-55) [28-63] over 108; education 2012 75% over 28; health 2012 43% over 28; Horizons 2014 75% over 55 (D37, not comparable with D16). 72 later placements open (#69).
   - Gartner Hype Cycle 60% (55-64) [45-74] over 403. Kurzweil 38% (32-44) [27-49] over 262. Gartner Strategic Predictions 30% over 47 [7-56]. ARK 14% over 42. IDC counts only.
-  - Deloitte TMT 71% (65-76) [57-84] over 234: waves w1 and w2 (2002-2010 recovered from the Internet Archive), D24 passes 1 and 2.
+  - Deloitte TMT 70% (64-75) [56-83] over 245: waves w1-w3 (every edition 2002-2026; 2003 report recovered; w3 gated on pooled kappa, D50), D24 passes 1 and 2.
   - MIT TR10 48% (36-60) [31-65] over 65: waves w1 and w2 (availability lines for 2021-2026).
   - The Economist 59% over 127. Pew/Elon 40% over 45. NIC projections 69% over 68. McKinsey and Accenture dated forecasts counts only.
-- **Numeric (D19):** 12 publishers. Matching audit (#53) plus D24 re-checks (#66, #70, #71, bp 2015) and a supplementary audit for rows added later (D46, OECD). Residual errors: bnef-evo 1, all other sources 0; pending re-checks 0. Hit rates: ECB 58%, Fed SEP 51%, EIA 46%, OECD 44% (726 graded, 29 vintages added), World Bank 41% (GEP 1991-1998 added from scans, #11), IMF 41%, BCB 38%, OBR 34%, CBO 31%, IEA 10%; bp and BNEF counts only. Actuals on the forecast's own definition (D38, D39, D41, D42), one-decimal threshold flags.
+- **Numeric (D19):** 12 publishers. Matching audit (#53) plus D24 re-checks (#66, #70, #71, bp 2015) and a supplementary audit for rows added later (D46, OECD). Residual errors: bnef-evo 1, all other sources 0; pending re-checks 0. Hit rates: ECB 58%, Fed SEP 51%, EIA 46%, OECD 43% (918 graded, all 73 editions EO47-EO119), World Bank 41% (GEP 1991-1998 added from scans, #11), IMF 41%, BCB 38%, OBR 34%, CBO 31%, IEA 10%; bp and BNEF counts only. Actuals on the forecast's own definition (D38, D39, D41, D42), one-decimal threshold flags.
 - **Trends (D33, D36, D40, D43):** faded within two editions: Accenture 62%, a16z 60%, Deloitte Tech Trends 53%, trendwatching 64%, McKinsey 6%, FTSG 22.5% over 2,750 after passes 2 to 7 (2015, 2020, 2022, 2023 complete; 2016, 2017, 2019 partial; umbrella pages as trends, D40, swept for every year tag; 101 capture corrections, D43; recycled only after a rename check, D47; 54 rows in `gap`).
 - **Rankings and scenarios (D31, D32, D34, D45):** Eurasia top risks materialised in 70% of 184, red herrings calm in 68% of 72. WEF 2007-2020 ranked 12 of 51 major events high (23.5%, 14-37) [10-41] after its first audit (48/50). Shell 14 of 51 values covered (27.5%, 17-41); IPCC counts only (10 graded after the matching audit); NIC sets 2 covered, 1 not covered, 3 open (audit 9/9).
-- **Disputes (D29), refresh (#58), export (#3):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month. `pnpm export` writes the `validation` table (D44, #40) and prints no warnings; no release tagged.
-- **Subjects:** about 5,400. **Links to research technologies (#59):** not built; `OPENROUTER_API_KEY` is not set in this checkout (`scripts/set-openrouter-key.sh`).
+- **Disputes (D29), refresh (#58):** built. No dispute issues yet. The refresh workflow opens issues on the 1st of each month.
+- **Release:** `hindsight-2026.1` tagged and published 2026-10-02 (431b125, approved by MZ): 28,102 claims, 36 sources, 1,927 verdicts, 18,559 numeric grades, validation table (D44). `data/out` holds that release; later work changes it only at the next tag. Linked from envisioning.com/hindsight.
+- **Subjects:** 5,893 after the D13 duplicate review (data/reviews/subject-dupes-d48.json, 47 retired; merges move link rows and can change trend persistence, D51).
+- **Links to research technologies (#59, D48, D49):** pipeline built (`scripts/links/`, `pnpm links`). Run d48-r0 (title matches) published: 98 links (83 same, 15 narrower; region-prefixed pages are narrower), agreement 99/100, audit 50/50. Shown on envisioning.com research pages ("What was expected"), claim pages ("In our research") and `/hindsight/subjects/[id]`. The embedding run d48-r1 waits on a working OpenRouter key (the www key returns 401).
 - **Site:** launched 2026-10-01 (envisioning.com dd9e9ceb). Reads `main` through GitHub raw; new files show after `git add` and `pnpm manifest`.
 - **Meet:** project "Hindsight" (2026-10-02). Spec docs marked dated with a current-state section (#65 closed).
 
@@ -53,16 +55,17 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
-1. **#3** first tagged dataset release: `pnpm export` is clean. Ask MZ before tagging.
-2. **#59** links (needs `OPENROUTER_API_KEY`), then the forecasts block on research pages.
-3. Missing editions with no known source: OECD EO47-59, 61, 69, 71, 73, 82, 91, 92 (#10); Deloitte TMT 2003 (#7); McKinsey 2026 PDF (#27, withdrawn at the origin); FTSG 2008-2013 and 2018 (#26, not public; 2019 stays titles only).
+1. **#59** embedding run d48-r1 once MZ sets a working key (`scripts/set-openrouter-key.sh`): `check-model.mjs` (must PASS), `embed-subjects.mjs`, `candidates.mjs --run d48-r1`, then blind verifiers, agreement, adjudicator, audit, `final.mjs`, `pnpm links`. Then the upkeep check (#59 step 7).
+2. Small follow-ups: Deloitte Tech Trends 2014-001 is persisted through the `cio-role` merge although the pass-1 audit had corrected it to faded (re-check the merge); `trend-final-d33.mjs` keeps pass 2+ audit records of rows that are no longer candidates in the pass audit summaries; FTSG 2020-234 match id (INDEX Known issues).
+3. Missing editions with no known source: McKinsey 2026 PDF (#27, withdrawn at the origin); FTSG 2008-2013 and 2018 (#26, not public; 2019 stays titles only).
+4. Next release (`hindsight-2026.2`) when enough has changed; ask MZ.
 4. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
 ## Decisions taken by MZ (2026-10-02, in chat)
 
-FTSG umbrella pages with the publisher's year tag and key insight count as trends in every edition (D40). Build the append-only capture-corrections file once a real misaligned quote appears (D43; real cases appeared the same day). The OpenRouter key and the release approval wait.
+Tag release 2026.1 (done). Use an existing OpenRouter key for #59 (the www key turned out dead). Keep D49 (skewed link runs gate on observed agreement). Keep D23 as is (no later-survey bounds). Pool small grading waves for the kappa gate (D50). FTSG umbrella pages with the publisher's year tag and key insight count as trends in every edition (D40). Build the append-only capture-corrections file once a real misaligned quote appears (D43; real cases appeared the same day). The OpenRouter key and the release approval wait.
 
 ## Notes from the fourth session (local, 2026-10-02)
 
