@@ -333,6 +333,8 @@ function ecb(): Grader {
       const m = lookup(s.get(variable), target as number, target as number, notes);
       // #70 (D41): the MPD history is stated to one decimal.
       if (variable === "real GDP growth" && m.kind === "actual") return { ...m, uncertainty: ONE_DECIMAL("the ECB states its GDP history to one decimal") };
+      // #71 (D41): Eurostat publishes the annual HICP rate (prc_hicp_aind) to one decimal.
+      if (variable === "HICP inflation" && m.kind === "actual") return { ...m, uncertainty: ONE_DECIMAL("Eurostat publishes the annual HICP rate to one decimal") };
       return m;
     },
   };
@@ -748,7 +750,7 @@ const MATCH_RULES: Record<string, string[]> = {
     "Actual: euro area with changing composition (the ECB projects the composition of the projection year). HICP: Eurostat prc_hicp_aind.",
     "Real GDP (#66): the ECB's own history in its latest projection exercise (MPD, September 2026, status A rows), working-day adjusted like the projections, one decimal as published. Eurostat nama_10_gdp (used before #66) is not calendar adjusted and differed by 0.1 to 0.2 points, enough to flip verdicts; it stays in realized.json for reference, with an Eurostat namq_10_gdp SCA cross-check for the fixed EA20.",
     "2000-12 to 2013-03 published ranges only: the midpoint is graded. 2013-06 onward: the published point.",
-    "Threshold flag (#70, D41): the MPD history is stated to one decimal, so the GDP actual is known only within 0.05 points; a GDP row whose error sits on a D18 threshold (or, for a range midpoint, within 0.05 of one) carries a threshold flag. HICP (Eurostat, also one decimal) is not flagged yet.",
+    "Threshold flag (#70, D41): the MPD history is stated to one decimal, so the GDP actual is known only within 0.05 points; a GDP row whose error sits on a D18 threshold (or, for a range midpoint, within 0.05 of one) carries a threshold flag. HICP (#71): Eurostat prc_hicp_aind is also one decimal, so HICP rows get the same flag.",
   ],
   "cbo-projections": [
     "Annual (2000 onward): FRED actuals on CBO's definitions: real GDP annual average, CPI-U annual average, unemployment annual average, 10-year Treasury annual average.",
@@ -1106,7 +1108,8 @@ const sameGrade = (row: NumericGrade, g: GradeSnap) =>
  * - a re-check `confirm` whose grade_rechecked equals the current row: confirmed (or fixed, if the first audit found an error);
  * - a re-check `correct`: fixed when the current row equals what the re-check checked, else residual;
  * - a re-check whose grade no longer equals the current row: pending_recheck;
- * - no re-check: a confirm whose grade changed since the audit (data/graded/audit/audited-grades-53.json) is
+ * - no re-check: a confirm whose grade changed since the audit (data/graded/audit/audited-grades-53.json, or the grade
+ *   the auditor read where 6e11858 changed it, data/graded/audit/audited-grades-53-seen.json, #71) is
  *   pending_recheck; a finding fixed in code by AUDIT_RESOLVED or CONTESTS_RESOLVED (a new capture, not a correction
  *   the auditor wrote) is pending_recheck until a re-check confirms it; other findings as before.
  */
@@ -1127,8 +1130,13 @@ function auditOf(source: string, rows: NumericGrade[]): NumericAudit | undefined
       rechecks.set(id, r);
     }
   }
-  const baseFile = join(GRADED, "audit", "audited-grades-53.json");
-  const baseline = existsSync(baseFile) ? (((readJson(baseFile).sources as Raw)[source] ?? {}) as Record<string, GradeSnap>) : {};
+  const baseOf = (name: string) => {
+    const f = join(GRADED, "audit", name);
+    return existsSync(f) ? (((readJson(f).sources as Raw)[source] ?? {}) as Record<string, GradeSnap>) : {};
+  };
+  // #71 (D42): the grade a confirming auditor read. 6e11858 stored the #53 records together with definition changes
+  // (CBO deficits in % of GDP, OBR unrounded actuals), so for those confirms the grade seen is the one at 6b1a8a2.
+  const baseline = { ...baseOf("audited-grades-53.json"), ...baseOf("audited-grades-53-seen.json") };
   const byId = new Map(rows.map((r) => [r.claim_id, r]));
   let fixed = 0;
   let residual = 0;
@@ -1322,7 +1330,7 @@ function readme(all: Map<string, NumericGrade[]>, summary: NumericSummary, compa
   L.push("- **Levels (D16):** GW, TWh, barrels, prices, vehicles, billions of dollars or pounds. Error = (forecast minus actual) / |actual|, in percent. `hit` within 10%, `partial` within 25%, else `miss`.");
   L.push("- **Status.** `graded`: forecast and actual on the same definition. `ungradable`: the definitions differ or no actual on the forecast's definition exists; the reason is in `note`. `open`: target year after 2025, or the actual series does not reach the target year yet. `excluded`: not a forecast to grade (scenario, longer-run projection with no year, estimate of a past year, value not public at the time, quote without a value).");
   L.push("- **Actual.** The latest captured value on the forecast's definition, with its vintage in `actual_vintage`. Where the latest vintage uses a different definition, definition wins (EIA, IEA).");
-  L.push("- **Threshold flag (#66, #70).** Where the actual is known only within a range (published rounding, or a basis gap the source states), a graded row whose verdict could change inside that range stays graded on the stated values; its note starts the caveat with `Threshold flag` and names the verdicts the range allows. One-decimal actuals (GEP tables, ECB MPD GDP history) are known within 0.05 points (D41).");
+  L.push("- **Threshold flag (#66, #70).** Where the actual is known only within a range (published rounding, or a basis gap the source states), a graded row whose verdict could change inside that range stays graded on the stated values; its note starts the caveat with `Threshold flag` and names the verdicts the range allows. One-decimal actuals (GEP tables, ECB MPD GDP history, Eurostat HICP for the ECB) are known within 0.05 points (D41).");
   L.push("- **Horizon.** `horizon_years` = years between publication and target (0 = current year), from the source's own label where it has one (`horizon_label`).");
   L.push("- **Statistics (D11).** Hit rate = hits / graded, with a Wilson 95% interval. Bias = mean error, MAE = mean absolute error. Below 20 graded rows: counts only.", "");
   L.push("## Files", "");
@@ -1339,7 +1347,7 @@ function readme(all: Map<string, NumericGrade[]>, summary: NumericSummary, compa
   L.push("");
   L.push("## Matching audit (D11, D20, #53)", "");
   L.push(
-    "An agent checked a fixed-seed sample of graded rows per source (`node scripts/numeric-audit-sample.mjs <source>`, seed `d11:<source>:numeric`, at least 50 rows or 10%, misses weighted 1.5): forecast as printed, actual series and definition, year, actual value. Records are in `data/graded/audit/<source>.json`. A matching error found in the sample is fixed in this command for every row; `residual` counts sampled rows whose grade still differs from the audit. The audit-adjusted interval widens the hit-rate interval by the residual error rate (D28). The sample is not redrawn after a fix (D24), so a sampled row may now be ungradable. D24 re-check passes are in `data/graded/audit/<source>-recheck-<tag>.json`, read in name order; a later record replaces an earlier one for the same claim, and a re-check may only cover sampled claims. A finding that a later capture answered (D38, D39, #66: the AEO2009 contests, the IMF India rows before July 2013, the early Focus Selic and ECB GDP contests) counts as fixed in code only when a re-check confirms the row on its current grade. A sampled row whose current grade no audit or re-check has seen counts as `pending re-check`, neither fixed nor residual: a confirmed row whose grade changed since the audit (against `data/graded/audit/audited-grades-53.json`, the grades the audit records refer to), a re-checked row that changed again, or a capture fix without a confirming re-check. A re-check correction is residual until the row carries what the re-check checked.",
+    "An agent checked a fixed-seed sample of graded rows per source (`node scripts/numeric-audit-sample.mjs <source>`, seed `d11:<source>:numeric`, at least 50 rows or 10%, misses weighted 1.5): forecast as printed, actual series and definition, year, actual value. Records are in `data/graded/audit/<source>.json`. A matching error found in the sample is fixed in this command for every row; `residual` counts sampled rows whose grade still differs from the audit. The audit-adjusted interval widens the hit-rate interval by the residual error rate (D28). The sample is not redrawn after a fix (D24), so a sampled row may now be ungradable. D24 re-check passes are in `data/graded/audit/<source>-recheck-<tag>.json`, read in name order; a later record replaces an earlier one for the same claim, and a re-check may only cover sampled claims. A finding that a later capture answered (D38, D39, #66: the AEO2009 contests, the IMF India rows before July 2013, the early Focus Selic and ECB GDP contests) counts as fixed in code only when a re-check confirms the row on its current grade. A sampled row whose current grade no audit or re-check has seen counts as `pending re-check`, neither fixed nor residual: a confirmed row whose grade changed since the audit (against `data/graded/audit/audited-grades-53.json`, the grades the audit records refer to, or, where commit 6e11858 changed a confirmed row in the same commit that stored the records, against the grade the auditor read in `data/graded/audit/audited-grades-53-seen.json`: 44 CBO deficit rows and 44 OBR rows, #71), a re-checked row that changed again, or a capture fix without a confirming re-check. A re-check correction is residual until the row carries what the re-check checked.",
     "",
     "| Source | Audited | Confirm | Correct | Contest | Error rate found | Fixed in code | Residual | Re-checked (confirm / correct) | Pending re-check | Audit-adjusted interval |",
     "|---|---|---|---|---|---|---|---|---|---|---|",

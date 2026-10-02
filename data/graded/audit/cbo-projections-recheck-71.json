@@ -1,0 +1,2391 @@
+{
+ "rule": "D24 re-check pass of the D11 matching audit (D19, D20), issue #71",
+ "auditor": "agent (D20), independent re-check",
+ "seed": "d11:cbo-projections:numeric",
+ "recheck_of": "data/graded/audit/cbo-projections.json",
+ "scope": "The 44 sampled federal deficit rows confirmed by the #53 audit on their 6b1a8a2 grade (billions of USD, D16) whose grade changed in 6e11858 (#54: deficits in percent of GDP, D18) before any re-check.",
+ "how": "Rows found by comparing data/graded/numeric/cbo-projections.json at 6b1a8a2 (what the #53 auditor read) and 6e11858 for every sampled id. Forecast and actual re-read from CBO eval-projections (commit 682559ca58, the current main) and fiscal-year GDP from FRED, fetched on 2026-10-02, not from repo files; verdict recomputed under D18.",
+ "counts": {
+  "rechecked": 44,
+  "confirm": 44,
+  "correct": 0
+ },
+ "records": {
+  "cbo-projections-1985-02-007": {
+   "claim_id": "cbo-projections-1985-02-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -240.01,
+    "actual": -149.73,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.943504,
+    "actual": -3.084,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 4855 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.943,
+    "actual": -3.084,
+    "forecast_usd_bn": -240.01,
+    "actual_usd_bn": -149.73,
+    "fiscal_year_gdp_usd_bn": 4855.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -1.859,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1985-02, fiscal year 1987: deficit -240.01 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1987: actual deficit -149.73 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1987: implied fiscal-year GDP 4855.2 billion USD (FRED FYGDP cross-check: 4767.65)."
+    }
+   ],
+   "note": "Forecast -240.01 and actual -149.73 billion USD re-read at the CBO source; each divided by FY1987 GDP 4855.2 billion USD gives -4.943 and -3.084 percent of GDP, error -1.859 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-240.01 vs -149.73, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1985-02-008": {
+   "claim_id": "cbo-projections-1985-02-008",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -257.049,
+    "actual": -155.178,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.908145,
+    "actual": -2.963,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 5237 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.909,
+    "actual": -2.963,
+    "forecast_usd_bn": -257.049,
+    "actual_usd_bn": -155.178,
+    "fiscal_year_gdp_usd_bn": 5236.4,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -1.945,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1985-02, fiscal year 1988: deficit -257.049 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1988: actual deficit -155.178 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1988: implied fiscal-year GDP 5236.4 billion USD (FRED FYGDP cross-check: 5138.55)."
+    }
+   ],
+   "note": "Forecast -257.049 and actual -155.178 billion USD re-read at the CBO source; each divided by FY1988 GDP 5236.4 billion USD gives -4.909 and -2.963 percent of GDP, error -1.945 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-257.049 vs -155.178, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1985-02-009": {
+   "claim_id": "cbo-projections-1985-02-009",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -279.571,
+    "actual": -152.639,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.956264,
+    "actual": -2.706,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 5641 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.956,
+    "actual": -2.706,
+    "forecast_usd_bn": -279.571,
+    "actual_usd_bn": -152.639,
+    "fiscal_year_gdp_usd_bn": 5641.6,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -2.25,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1985-02, fiscal year 1989: deficit -279.571 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1989: actual deficit -152.639 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1989: implied fiscal-year GDP 5641.6 billion USD (FRED FYGDP cross-check: 5554.675)."
+    }
+   ],
+   "note": "Forecast -279.571 and actual -152.639 billion USD re-read at the CBO source; each divided by FY1989 GDP 5641.6 billion USD gives -4.956 and -2.706 percent of GDP, error -2.250 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-279.571 vs -152.639, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1988-03-005": {
+   "claim_id": "cbo-projections-1988-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -160.837,
+    "actual": -155.178,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.071054,
+    "actual": -2.963,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 5237 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.071,
+    "actual": -2.963,
+    "forecast_usd_bn": -160.837,
+    "actual_usd_bn": -155.178,
+    "fiscal_year_gdp_usd_bn": 5236.4,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.108,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1988-03, fiscal year 1988: deficit -160.837 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1988: actual deficit -155.178 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1988: implied fiscal-year GDP 5236.4 billion USD (FRED FYGDP cross-check: 5138.55)."
+    }
+   ],
+   "note": "Forecast -160.837 and actual -155.178 billion USD re-read at the CBO source; each divided by FY1988 GDP 5236.4 billion USD gives -3.071 and -2.963 percent of GDP, error -0.108 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-160.837 vs -155.178, D16 hit); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1988-03-006": {
+   "claim_id": "cbo-projections-1988-03-006",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -177.061,
+    "actual": -152.639,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.138956,
+    "actual": -2.706,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 5641 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.139,
+    "actual": -2.706,
+    "forecast_usd_bn": -177.061,
+    "actual_usd_bn": -152.639,
+    "fiscal_year_gdp_usd_bn": 5641.6,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.433,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1988-03, fiscal year 1989: deficit -177.061 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1989: actual deficit -152.639 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1989: implied fiscal-year GDP 5641.6 billion USD (FRED FYGDP cross-check: 5554.675)."
+    }
+   ],
+   "note": "Forecast -177.061 and actual -152.639 billion USD re-read at the CBO source; each divided by FY1989 GDP 5641.6 billion USD gives -3.139 and -2.706 percent of GDP, error -0.433 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-177.061 vs -152.639, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1988-03-007": {
+   "claim_id": "cbo-projections-1988-03-007",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -169.668,
+    "actual": -221.035,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.845506,
+    "actual": -3.706983,
+    "verdict": "partial",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 5963 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.845,
+    "actual": -3.707,
+    "forecast_usd_bn": -169.668,
+    "actual_usd_bn": -221.035,
+    "fiscal_year_gdp_usd_bn": 5963.1,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 0.861,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1988-03, fiscal year 1990: deficit -169.668 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1990: actual deficit -221.035 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1990: implied fiscal-year GDP 5963.1 billion USD (FRED FYGDP cross-check: 5898.75)."
+    }
+   ],
+   "note": "Forecast -169.668 and actual -221.035 billion USD re-read at the CBO source; each divided by FY1990 GDP 5963.1 billion USD gives -2.845 and -3.707 percent of GDP, error +0.861 pp, D18 partial. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-169.668 vs -221.035, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1988-03-009": {
+   "claim_id": "cbo-projections-1988-03-009",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -153.926,
+    "actual": -290.321,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.360947,
+    "actual": -4.453,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 6520 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.361,
+    "actual": -4.453,
+    "forecast_usd_bn": -153.926,
+    "actual_usd_bn": -290.321,
+    "fiscal_year_gdp_usd_bn": 6520.3,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 2.092,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1988-03, fiscal year 1992: deficit -153.926 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1992: actual deficit -290.321 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1992: implied fiscal-year GDP 6520.3 billion USD (FRED FYGDP cross-check: 6416.25)."
+    }
+   ],
+   "note": "Forecast -153.926 and actual -290.321 billion USD re-read at the CBO source; each divided by FY1992 GDP 6520.3 billion USD gives -2.361 and -4.453 percent of GDP, error +2.092 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-153.926 vs -290.321, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1993-03-001": {
+   "claim_id": "cbo-projections-1993-03-001",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -301.564,
+    "actual": -255.052,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.397225,
+    "actual": -3.719015,
+    "verdict": "partial",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 6858 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.397,
+    "actual": -3.719,
+    "forecast_usd_bn": -301.564,
+    "actual_usd_bn": -255.052,
+    "fiscal_year_gdp_usd_bn": 6858.6,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.678,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1993-03, fiscal year 1993: deficit -301.564 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1993: actual deficit -255.052 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1993: implied fiscal-year GDP 6858.6 billion USD (FRED FYGDP cross-check: 6775.325)."
+    }
+   ],
+   "note": "Forecast -301.564 and actual -255.052 billion USD re-read at the CBO source; each divided by FY1993 GDP 6858.6 billion USD gives -4.397 and -3.719 percent of GDP, error -0.678 pp, D18 partial. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-301.564 vs -255.052, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1993-03-002": {
+   "claim_id": "cbo-projections-1993-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -286.687,
+    "actual": -203.186,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.933752,
+    "actual": -2.788,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 7288 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.934,
+    "actual": -2.788,
+    "forecast_usd_bn": -286.687,
+    "actual_usd_bn": -203.186,
+    "fiscal_year_gdp_usd_bn": 7287.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -1.146,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1993-03, fiscal year 1994: deficit -286.687 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1994: actual deficit -203.186 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1994: implied fiscal-year GDP 7287.2 billion USD (FRED FYGDP cross-check: 7176.85)."
+    }
+   ],
+   "note": "Forecast -286.687 and actual -203.186 billion USD re-read at the CBO source; each divided by FY1994 GDP 7287.2 billion USD gives -3.934 and -2.788 percent of GDP, error -1.146 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-286.687 vs -203.186, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1993-03-003": {
+   "claim_id": "cbo-projections-1993-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -284.374,
+    "actual": -163.952,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.722227,
+    "actual": -2.146,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 7640 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.722,
+    "actual": -2.146,
+    "forecast_usd_bn": -284.374,
+    "actual_usd_bn": -163.952,
+    "fiscal_year_gdp_usd_bn": 7639.7,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -1.576,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1993-03, fiscal year 1995: deficit -284.374 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1995: actual deficit -163.952 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1995: implied fiscal-year GDP 7639.7 billion USD (FRED FYGDP cross-check: 7560.425)."
+    }
+   ],
+   "note": "Forecast -284.374 and actual -163.952 billion USD re-read at the CBO source; each divided by FY1995 GDP 7639.7 billion USD gives -3.722 and -2.146 percent of GDP, error -1.576 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-284.374 vs -163.952, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1993-03-004": {
+   "claim_id": "cbo-projections-1993-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -290.049,
+    "actual": -107.431,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.593518,
+    "actual": -1.331,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 8071 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.593,
+    "actual": -1.331,
+    "forecast_usd_bn": -290.049,
+    "actual_usd_bn": -107.431,
+    "fiscal_year_gdp_usd_bn": 8073.1,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -2.262,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1993-03, fiscal year 1996: deficit -290.049 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1996: actual deficit -107.431 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1996: implied fiscal-year GDP 8073.1 billion USD (FRED FYGDP cross-check: 7951.325)."
+    }
+   ],
+   "note": "Forecast -290.049 and actual -107.431 billion USD re-read at the CBO source; each divided by FY1996 GDP 8073.1 billion USD gives -3.593 and -1.331 percent of GDP, error -2.262 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-290.049 vs -107.431, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-1993-03-005": {
+   "claim_id": "cbo-projections-1993-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -321.679,
+    "actual": -21.884,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.748316,
+    "actual": -0.255,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 8582 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.75,
+    "actual": -0.255,
+    "forecast_usd_bn": -321.679,
+    "actual_usd_bn": -21.884,
+    "fiscal_year_gdp_usd_bn": 8577.6,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -3.495,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 1993-03, fiscal year 1997: deficit -321.679 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 1997: actual deficit -21.884 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY1997: implied fiscal-year GDP 8577.6 billion USD (FRED FYGDP cross-check: 8451.025)."
+    }
+   ],
+   "note": "Forecast -321.679 and actual -21.884 billion USD re-read at the CBO source; each divided by FY1997 GDP 8577.6 billion USD gives -3.750 and -0.255 percent of GDP, error -3.495 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-321.679 vs -21.884, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2000-01-018": {
+   "claim_id": "cbo-projections-2000-01-018",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 320.909,
+    "actual": -377.585,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.801266,
+    "actual": -3.296,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 11456 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.801,
+    "actual": -3.296,
+    "forecast_usd_bn": 320.909,
+    "actual_usd_bn": -377.585,
+    "fiscal_year_gdp_usd_bn": 11456.4,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 6.097,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2000-01, fiscal year 2003: deficit 320.909 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2003: actual deficit -377.585 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2003: implied fiscal-year GDP 11456.4 billion USD (FRED FYGDP cross-check: 11278.75)."
+    }
+   ],
+   "note": "Forecast 320.909 and actual -377.585 billion USD re-read at the CBO source; each divided by FY2003 GDP 11456.4 billion USD gives 2.801 and -3.296 percent of GDP, error +6.097 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (320.909 vs -377.585, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2000-01-019": {
+   "claim_id": "cbo-projections-2000-01-019",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 345.047,
+    "actual": -412.727,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.824067,
+    "actual": -3.378,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 12218 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.824,
+    "actual": -3.378,
+    "forecast_usd_bn": 345.047,
+    "actual_usd_bn": -412.727,
+    "fiscal_year_gdp_usd_bn": 12217.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 6.203,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2000-01, fiscal year 2004: deficit 345.047 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2004: actual deficit -412.727 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2004: implied fiscal-year GDP 12217.2 billion USD (FRED FYGDP cross-check: 12028.425)."
+    }
+   ],
+   "note": "Forecast 345.047 and actual -412.727 billion USD re-read at the CBO source; each divided by FY2004 GDP 12217.2 billion USD gives 2.824 and -3.378 percent of GDP, error +6.203 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (345.047 vs -412.727, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2000-04-005": {
+   "claim_id": "cbo-projections-2000-04-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": 347.792,
+    "actual": -412.727,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": 2.846534,
+    "actual": -3.378,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 12218 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": 2.847,
+    "actual": -3.378,
+    "forecast_usd_bn": 347.792,
+    "actual_usd_bn": -412.727,
+    "fiscal_year_gdp_usd_bn": 12217.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 6.225,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2000-04, fiscal year 2004: deficit 347.792 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2004: actual deficit -412.727 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2004: implied fiscal-year GDP 12217.2 billion USD (FRED FYGDP cross-check: 12028.425)."
+    }
+   ],
+   "note": "Forecast 347.792 and actual -412.727 billion USD re-read at the CBO source; each divided by FY2004 GDP 12217.2 billion USD gives 2.847 and -3.378 percent of GDP, error +6.225 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (347.792 vs -412.727, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2004-03-004": {
+   "claim_id": "cbo-projections-2004-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -274.281,
+    "actual": -160.701,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -1.894524,
+    "actual": -1.11,
+    "verdict": "partial",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14478 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -1.895,
+    "actual": -1.11,
+    "forecast_usd_bn": -274.281,
+    "actual_usd_bn": -160.701,
+    "fiscal_year_gdp_usd_bn": 14474.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.785,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2004-03, fiscal year 2007: deficit -274.281 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2007: actual deficit -160.701 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2007: implied fiscal-year GDP 14474.2 billion USD (FRED FYGDP cross-check: 14305.375)."
+    }
+   ],
+   "note": "Forecast -274.281 and actual -160.701 billion USD re-read at the CBO source; each divided by FY2007 GDP 14474.2 billion USD gives -1.895 and -1.110 percent of GDP, error -0.785 pp, D18 partial. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-274.281 vs -160.701, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2004-03-005": {
+   "claim_id": "cbo-projections-2004-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -285.884,
+    "actual": -458.553,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -1.935806,
+    "actual": -3.105,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14768 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -1.936,
+    "actual": -3.105,
+    "forecast_usd_bn": -285.884,
+    "actual_usd_bn": -458.553,
+    "fiscal_year_gdp_usd_bn": 14769.9,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 1.169,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2004-03, fiscal year 2008: deficit -285.884 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2008: actual deficit -458.553 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2008: implied fiscal-year GDP 14769.9 billion USD (FRED FYGDP cross-check: 14796.575)."
+    }
+   ],
+   "note": "Forecast -285.884 and actual -458.553 billion USD re-read at the CBO source; each divided by FY2008 GDP 14769.9 billion USD gives -1.936 and -3.105 percent of GDP, error +1.169 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-285.884 vs -458.553, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2005-08-011": {
+   "claim_id": "cbo-projections-2005-08-011",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -331.277,
+    "actual": -318.346,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.540152,
+    "actual": -2.441,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 13042 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.541,
+    "actual": -2.441,
+    "forecast_usd_bn": -331.277,
+    "actual_usd_bn": -318.346,
+    "fiscal_year_gdp_usd_bn": 13039.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.099,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2005-08, fiscal year 2005: deficit -331.277 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2005: actual deficit -318.346 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2005: implied fiscal-year GDP 13039.2 billion USD (FRED FYGDP cross-check: 12839.95)."
+    }
+   ],
+   "note": "Forecast -331.277 and actual -318.346 billion USD re-read at the CBO source; each divided by FY2005 GDP 13039.2 billion USD gives -2.541 and -2.441 percent of GDP, error -0.099 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-331.277 vs -318.346, D16 hit); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2005-08-012": {
+   "claim_id": "cbo-projections-2005-08-012",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -314.469,
+    "actual": -248.181,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.275703,
+    "actual": -1.796,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 13819 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.276,
+    "actual": -1.796,
+    "forecast_usd_bn": -314.469,
+    "actual_usd_bn": -248.181,
+    "fiscal_year_gdp_usd_bn": 13815.6,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.48,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2005-08, fiscal year 2006: deficit -314.469 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2006: actual deficit -248.181 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2006: implied fiscal-year GDP 13815.6 billion USD (FRED FYGDP cross-check: 13636.75)."
+    }
+   ],
+   "note": "Forecast -314.469 and actual -248.181 billion USD re-read at the CBO source; each divided by FY2006 GDP 13815.6 billion USD gives -2.276 and -1.796 percent of GDP, error -0.480 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-314.469 vs -248.181, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2005-08-013": {
+   "claim_id": "cbo-projections-2005-08-013",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -324.474,
+    "actual": -160.701,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.241219,
+    "actual": -1.11,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14478 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.242,
+    "actual": -1.11,
+    "forecast_usd_bn": -324.474,
+    "actual_usd_bn": -160.701,
+    "fiscal_year_gdp_usd_bn": 14474.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -1.131,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2005-08, fiscal year 2007: deficit -324.474 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2007: actual deficit -160.701 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2007: implied fiscal-year GDP 14474.2 billion USD (FRED FYGDP cross-check: 14305.375)."
+    }
+   ],
+   "note": "Forecast -324.474 and actual -160.701 billion USD re-read at the CBO source; each divided by FY2007 GDP 14474.2 billion USD gives -2.242 and -1.110 percent of GDP, error -1.131 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-324.474 vs -160.701, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2005-08-014": {
+   "claim_id": "cbo-projections-2005-08-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -334.574,
+    "actual": -458.553,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.265501,
+    "actual": -3.105,
+    "verdict": "partial",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14768 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.265,
+    "actual": -3.105,
+    "forecast_usd_bn": -334.574,
+    "actual_usd_bn": -458.553,
+    "fiscal_year_gdp_usd_bn": 14769.9,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 0.839,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2005-08, fiscal year 2008: deficit -334.574 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2008: actual deficit -458.553 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2008: implied fiscal-year GDP 14769.9 billion USD (FRED FYGDP cross-check: 14796.575)."
+    }
+   ],
+   "note": "Forecast -334.574 and actual -458.553 billion USD re-read at the CBO source; each divided by FY2008 GDP 14769.9 billion USD gives -2.265 and -3.105 percent of GDP, error +0.839 pp, D18 partial. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-334.574 vs -458.553, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2005-08-015": {
+   "claim_id": "cbo-projections-2005-08-015",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -321.472,
+    "actual": -1321.424,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.220308,
+    "actual": -9.126668,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14479 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.22,
+    "actual": -9.127,
+    "forecast_usd_bn": -321.472,
+    "actual_usd_bn": -1321.424,
+    "fiscal_year_gdp_usd_bn": 14478.1,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 6.907,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2005-08, fiscal year 2009: deficit -321.472 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2009: actual deficit -1321.424 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2009: implied fiscal-year GDP 14478.1 billion USD (FRED FYGDP cross-check: 14467.3)."
+    }
+   ],
+   "note": "Forecast -321.472 and actual -1321.424 billion USD re-read at the CBO source; each divided by FY2009 GDP 14478.1 billion USD gives -2.220 and -9.127 percent of GDP, error +6.907 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-321.472 vs -1321.424, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2007-03-001": {
+   "claim_id": "cbo-projections-2007-03-001",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -176.856,
+    "actual": -160.701,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -1.221586,
+    "actual": -1.11,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14478 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -1.222,
+    "actual": -1.11,
+    "forecast_usd_bn": -176.856,
+    "actual_usd_bn": -160.701,
+    "fiscal_year_gdp_usd_bn": 14474.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.112,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2007-03, fiscal year 2007: deficit -176.856 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2007: actual deficit -160.701 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2007: implied fiscal-year GDP 14474.2 billion USD (FRED FYGDP cross-check: 14305.375)."
+    }
+   ],
+   "note": "Forecast -176.856 and actual -160.701 billion USD re-read at the CBO source; each divided by FY2007 GDP 14474.2 billion USD gives -1.222 and -1.110 percent of GDP, error -0.112 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-176.856 vs -160.701, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2007-03-002": {
+   "claim_id": "cbo-projections-2007-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -113.345,
+    "actual": -458.553,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -0.767493,
+    "actual": -3.105,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14768 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -0.767,
+    "actual": -3.105,
+    "forecast_usd_bn": -113.345,
+    "actual_usd_bn": -458.553,
+    "fiscal_year_gdp_usd_bn": 14769.9,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 2.337,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2007-03, fiscal year 2008: deficit -113.345 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2008: actual deficit -458.553 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2008: implied fiscal-year GDP 14769.9 billion USD (FRED FYGDP cross-check: 14796.575)."
+    }
+   ],
+   "note": "Forecast -113.345 and actual -458.553 billion USD re-read at the CBO source; each divided by FY2008 GDP 14769.9 billion USD gives -0.767 and -3.105 percent of GDP, error +2.337 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-113.345 vs -458.553, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2007-03-003": {
+   "claim_id": "cbo-projections-2007-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -133.782,
+    "actual": -1321.424,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -0.923991,
+    "actual": -9.126668,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 14479 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -0.924,
+    "actual": -9.127,
+    "forecast_usd_bn": -133.782,
+    "actual_usd_bn": -1321.424,
+    "fiscal_year_gdp_usd_bn": 14478.1,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 8.203,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2007-03, fiscal year 2009: deficit -133.782 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2009: actual deficit -1321.424 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2009: implied fiscal-year GDP 14478.1 billion USD (FRED FYGDP cross-check: 14467.3)."
+    }
+   ],
+   "note": "Forecast -133.782 and actual -1321.424 billion USD re-read at the CBO source; each divided by FY2009 GDP 14478.1 billion USD gives -0.924 and -9.127 percent of GDP, error +8.203 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-133.782 vs -1321.424, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2007-03-004": {
+   "claim_id": "cbo-projections-2007-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -156.584,
+    "actual": -1253.915,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -1.040488,
+    "actual": -8.33216,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 15049 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -1.04,
+    "actual": -8.332,
+    "forecast_usd_bn": -156.584,
+    "actual_usd_bn": -1253.915,
+    "fiscal_year_gdp_usd_bn": 15049.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 7.292,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2007-03, fiscal year 2010: deficit -156.584 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2010: actual deficit -1253.915 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2010: implied fiscal-year GDP 15049.0 billion USD (FRED FYGDP cross-check: 14884.4)."
+    }
+   ],
+   "note": "Forecast -156.584 and actual -1253.915 billion USD re-read at the CBO source; each divided by FY2010 GDP 15049.0 billion USD gives -1.040 and -8.332 percent of GDP, error +7.292 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-156.584 vs -1253.915, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2007-03-005": {
+   "claim_id": "cbo-projections-2007-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -34.582,
+    "actual": -1294.421,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -0.221686,
+    "actual": -8.297807,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 15600 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -0.222,
+    "actual": -8.298,
+    "forecast_usd_bn": -34.582,
+    "actual_usd_bn": -1294.421,
+    "fiscal_year_gdp_usd_bn": 15599.7,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 8.076,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2007-03, fiscal year 2011: deficit -34.582 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2011: actual deficit -1294.421 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2011: implied fiscal-year GDP 15599.7 billion USD (FRED FYGDP cross-check: 15466.525)."
+    }
+   ],
+   "note": "Forecast -34.582 and actual -1294.421 billion USD re-read at the CBO source; each divided by FY2011 GDP 15599.7 billion USD gives -0.222 and -8.298 percent of GDP, error +8.076 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-34.582 vs -1294.421, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2010-03-001": {
+   "claim_id": "cbo-projections-2010-03-001",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1347.969,
+    "actual": -1253.915,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -8.957141,
+    "actual": -8.33216,
+    "verdict": "partial",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 15049 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -8.957,
+    "actual": -8.332,
+    "forecast_usd_bn": -1347.969,
+    "actual_usd_bn": -1253.915,
+    "fiscal_year_gdp_usd_bn": 15049.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.625,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2010-03, fiscal year 2010: deficit -1347.969 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2010: actual deficit -1253.915 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2010: implied fiscal-year GDP 15049.0 billion USD (FRED FYGDP cross-check: 14884.4)."
+    }
+   ],
+   "note": "Forecast -1347.969 and actual -1253.915 billion USD re-read at the CBO source; each divided by FY2010 GDP 15049.0 billion USD gives -8.957 and -8.332 percent of GDP, error -0.625 pp, D18 partial. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1347.969 vs -1253.915, D16 hit); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2010-03-002": {
+   "claim_id": "cbo-projections-2010-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -982.402,
+    "actual": -1294.421,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -6.297628,
+    "actual": -8.297807,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 15600 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -6.298,
+    "actual": -8.298,
+    "forecast_usd_bn": -982.402,
+    "actual_usd_bn": -1294.421,
+    "fiscal_year_gdp_usd_bn": 15599.7,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 2.0,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2010-03, fiscal year 2011: deficit -982.402 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2011: actual deficit -1294.421 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2011: implied fiscal-year GDP 15599.7 billion USD (FRED FYGDP cross-check: 15466.525)."
+    }
+   ],
+   "note": "Forecast -982.402 and actual -1294.421 billion USD re-read at the CBO source; each divided by FY2011 GDP 15599.7 billion USD gives -6.298 and -8.298 percent of GDP, error +2.000 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-982.402 vs -1294.421, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2010-03-003": {
+   "claim_id": "cbo-projections-2010-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -631.292,
+    "actual": -1076.468,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.883663,
+    "actual": -6.622354,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 16255 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.884,
+    "actual": -6.623,
+    "forecast_usd_bn": -631.292,
+    "actual_usd_bn": -1076.468,
+    "fiscal_year_gdp_usd_bn": 16254.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 2.739,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2010-03, fiscal year 2012: deficit -631.292 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2012: actual deficit -1076.468 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2012: implied fiscal-year GDP 16254.0 billion USD (FRED FYGDP cross-check: 16109.425)."
+    }
+   ],
+   "note": "Forecast -631.292 and actual -1076.468 billion USD re-read at the CBO source; each divided by FY2012 GDP 16254.0 billion USD gives -3.884 and -6.623 percent of GDP, error +2.739 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-631.292 vs -1076.468, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2011-03-001": {
+   "claim_id": "cbo-projections-2011-03-001",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1388.19,
+    "actual": -1294.421,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -8.898907,
+    "actual": -8.297807,
+    "verdict": "partial",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 15600 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -8.899,
+    "actual": -8.298,
+    "forecast_usd_bn": -1388.19,
+    "actual_usd_bn": -1294.421,
+    "fiscal_year_gdp_usd_bn": 15599.7,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.601,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2011-03, fiscal year 2011: deficit -1388.19 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2011: actual deficit -1294.421 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2011: implied fiscal-year GDP 15599.7 billion USD (FRED FYGDP cross-check: 15466.525)."
+    }
+   ],
+   "note": "Forecast -1388.19 and actual -1294.421 billion USD re-read at the CBO source; each divided by FY2011 GDP 15599.7 billion USD gives -8.899 and -8.298 percent of GDP, error -0.601 pp, D18 partial. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1388.19 vs -1294.421, D16 hit); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2011-03-002": {
+   "claim_id": "cbo-projections-2011-03-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1073.283,
+    "actual": -1076.468,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -6.60276,
+    "actual": -6.622354,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 16255 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -6.603,
+    "actual": -6.623,
+    "forecast_usd_bn": -1073.283,
+    "actual_usd_bn": -1076.468,
+    "fiscal_year_gdp_usd_bn": 16254.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 0.02,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2011-03, fiscal year 2012: deficit -1073.283 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2012: actual deficit -1076.468 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2012: implied fiscal-year GDP 16254.0 billion USD (FRED FYGDP cross-check: 16109.425)."
+    }
+   ],
+   "note": "Forecast -1073.283 and actual -1076.468 billion USD re-read at the CBO source; each divided by FY2012 GDP 16254.0 billion USD gives -6.603 and -6.623 percent of GDP, error +0.020 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1073.283 vs -1076.468, D16 hit); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2011-03-003": {
+   "claim_id": "cbo-projections-2011-03-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -686.429,
+    "actual": -776.448,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.066418,
+    "actual": -4.599693,
+    "verdict": "partial",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 16880 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.066,
+    "actual": -4.6,
+    "forecast_usd_bn": -686.429,
+    "actual_usd_bn": -776.448,
+    "fiscal_year_gdp_usd_bn": 16880.7,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 0.533,
+    "verdict": "partial"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2011-03, fiscal year 2013: deficit -686.429 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2013: actual deficit -776.448 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2013: implied fiscal-year GDP 16880.7 billion USD (FRED FYGDP cross-check: 16687.775)."
+    }
+   ],
+   "note": "Forecast -686.429 and actual -776.448 billion USD re-read at the CBO source; each divided by FY2013 GDP 16880.7 billion USD gives -4.066 and -4.600 percent of GDP, error +0.533 pp, D18 partial. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-686.429 vs -776.448, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2011-03-004": {
+   "claim_id": "cbo-projections-2011-03-004",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -510.332,
+    "actual": -559.186,
+    "verdict": "hit",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.898029,
+    "actual": -3.175456,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 17610 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.898,
+    "actual": -3.176,
+    "forecast_usd_bn": -510.332,
+    "actual_usd_bn": -559.186,
+    "fiscal_year_gdp_usd_bn": 17608.2,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 0.277,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2011-03, fiscal year 2014: deficit -510.332 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2014: actual deficit -559.186 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2014: implied fiscal-year GDP 17608.2 billion USD (FRED FYGDP cross-check: 17428.1)."
+    }
+   ],
+   "note": "Forecast -510.332 and actual -559.186 billion USD re-read at the CBO source; each divided by FY2014 GDP 17608.2 billion USD gives -2.898 and -3.176 percent of GDP, error +0.277 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-510.332 vs -559.186, D16 hit); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2011-03-005": {
+   "claim_id": "cbo-projections-2011-03-005",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -534.873,
+    "actual": -464.693,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.923914,
+    "actual": -2.540271,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 18293 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.924,
+    "actual": -2.54,
+    "forecast_usd_bn": -534.873,
+    "actual_usd_bn": -464.693,
+    "fiscal_year_gdp_usd_bn": 18295.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.384,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2011-03, fiscal year 2015: deficit -534.873 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2015: actual deficit -464.693 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2015: implied fiscal-year GDP 18295.0 billion USD (FRED FYGDP cross-check: 18164.25)."
+    }
+   ],
+   "note": "Forecast -534.873 and actual -464.693 billion USD re-read at the CBO source; each divided by FY2015 GDP 18295.0 billion USD gives -2.924 and -2.540 percent of GDP, error -0.384 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-534.873 vs -464.693, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2017-06-002": {
+   "claim_id": "cbo-projections-2017-06-002",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -561.095,
+    "actual": -788.567,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -2.716623,
+    "actual": -3.817962,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 20654 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -2.716,
+    "actual": -3.818,
+    "forecast_usd_bn": -561.095,
+    "actual_usd_bn": -788.567,
+    "fiscal_year_gdp_usd_bn": 20656.5,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 1.101,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2017-06, fiscal year 2018: deficit -561.095 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2018: actual deficit -788.567 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2018: implied fiscal-year GDP 20656.5 billion USD (FRED FYGDP cross-check: 20436.325)."
+    }
+   ],
+   "note": "Forecast -561.095 and actual -788.567 billion USD re-read at the CBO source; each divided by FY2018 GDP 20656.5 billion USD gives -2.716 and -3.818 percent of GDP, error +1.101 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-561.095 vs -788.567, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2017-06-003": {
+   "claim_id": "cbo-projections-2017-06-003",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -687.923,
+    "actual": -1002.77,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.193468,
+    "actual": -4.655046,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 21542 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.194,
+    "actual": -4.655,
+    "forecast_usd_bn": -687.923,
+    "actual_usd_bn": -1002.77,
+    "fiscal_year_gdp_usd_bn": 21540.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 1.462,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2017-06, fiscal year 2019: deficit -687.923 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2019: actual deficit -1002.77 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2019: implied fiscal-year GDP 21540.0 billion USD (FRED FYGDP cross-check: 21286.15)."
+    }
+   ],
+   "note": "Forecast -687.923 and actual -1002.77 billion USD re-read at the CBO source; each divided by FY2019 GDP 21540.0 billion USD gives -3.194 and -4.655 percent of GDP, error +1.462 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-687.923 vs -1002.77, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2020-01-011": {
+   "claim_id": "cbo-projections-2020-01-011",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1019.384,
+    "actual": -3136.694,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.768855,
+    "actual": -14.673997,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 21376 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.769,
+    "actual": -14.674,
+    "forecast_usd_bn": -1019.384,
+    "actual_usd_bn": -3136.694,
+    "fiscal_year_gdp_usd_bn": 21375.3,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 9.905,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2020-01, fiscal year 2020: deficit -1019.384 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2020: actual deficit -3136.694 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2020: implied fiscal-year GDP 21375.3 billion USD (FRED FYGDP cross-check: 21336.775)."
+    }
+   ],
+   "note": "Forecast -1019.384 and actual -3136.694 billion USD re-read at the CBO source; each divided by FY2020 GDP 21375.3 billion USD gives -4.769 and -14.674 percent of GDP, error +9.905 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1019.384 vs -3136.694, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2020-01-012": {
+   "claim_id": "cbo-projections-2020-01-012",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -999.321,
+    "actual": -2780.28,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.211886,
+    "actual": -11.71818,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 23726 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.212,
+    "actual": -11.718,
+    "forecast_usd_bn": -999.321,
+    "actual_usd_bn": -2780.28,
+    "fiscal_year_gdp_usd_bn": 23725.6,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 7.506,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2020-01, fiscal year 2021: deficit -999.321 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2021: actual deficit -2780.28 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2021: implied fiscal-year GDP 23725.6 billion USD (FRED FYGDP cross-check: 23044.05)."
+    }
+   ],
+   "note": "Forecast -999.321 and actual -2780.28 billion USD re-read at the CBO source; each divided by FY2021 GDP 23725.6 billion USD gives -4.212 and -11.718 percent of GDP, error +7.506 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-999.321 vs -2780.28, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2020-01-013": {
+   "claim_id": "cbo-projections-2020-01-013",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1112.228,
+    "actual": -1003.097,
+    "verdict": "partial",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.268676,
+    "actual": -3.849836,
+    "verdict": "hit",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 26056 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.269,
+    "actual": -3.85,
+    "forecast_usd_bn": -1112.228,
+    "actual_usd_bn": -1003.097,
+    "fiscal_year_gdp_usd_bn": 26054.6,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": -0.419,
+    "verdict": "hit"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2020-01, fiscal year 2022: deficit -1112.228 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2022: actual deficit -1003.097 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2022: implied fiscal-year GDP 26054.6 billion USD (FRED FYGDP cross-check: 25565.375)."
+    }
+   ],
+   "note": "Forecast -1112.228 and actual -1003.097 billion USD re-read at the CBO source; each divided by FY2022 GDP 26054.6 billion USD gives -4.269 and -3.850 percent of GDP, error -0.419 pp, D18 hit. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1112.228 vs -1003.097, D16 partial); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2020-01-014": {
+   "claim_id": "cbo-projections-2020-01-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1115.909,
+    "actual": -2032.974,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.012722,
+    "actual": -7.310416,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 27809 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.012,
+    "actual": -7.31,
+    "forecast_usd_bn": -1115.909,
+    "actual_usd_bn": -2032.974,
+    "fiscal_year_gdp_usd_bn": 27811.5,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 3.297,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2020-01, fiscal year 2023: deficit -1115.909 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2023: actual deficit -2032.974 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2023: implied fiscal-year GDP 27811.5 billion USD (FRED FYGDP cross-check: 27397.95)."
+    }
+   ],
+   "note": "Forecast -1115.909 and actual -2032.974 billion USD re-read at the CBO source; each divided by FY2023 GDP 27811.5 billion USD gives -4.012 and -7.310 percent of GDP, error +3.297 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1115.909 vs -2032.974, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2020-01-015": {
+   "claim_id": "cbo-projections-2020-01-015",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1148.531,
+    "actual": -1837.301,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.920011,
+    "actual": -6.270828,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 29299 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.92,
+    "actual": -6.271,
+    "forecast_usd_bn": -1148.531,
+    "actual_usd_bn": -1837.301,
+    "fiscal_year_gdp_usd_bn": 29298.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 2.351,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2020-01, fiscal year 2024: deficit -1148.531 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2024: actual deficit -1837.301 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2024: implied fiscal-year GDP 29298.0 billion USD (FRED FYGDP cross-check: 28947.9)."
+    }
+   ],
+   "note": "Forecast -1148.531 and actual -1837.301 billion USD re-read at the CBO source; each divided by FY2024 GDP 29298.0 billion USD gives -3.920 and -6.271 percent of GDP, error +2.351 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1148.531 vs -1837.301, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2022-05-013": {
+   "claim_id": "cbo-projections-2022-05-013",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1049.467,
+    "actual": -1837.301,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -3.581899,
+    "actual": -6.270828,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 29299 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -3.582,
+    "actual": -6.271,
+    "forecast_usd_bn": -1049.467,
+    "actual_usd_bn": -1837.301,
+    "fiscal_year_gdp_usd_bn": 29298.0,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 2.689,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2022-05, fiscal year 2024: deficit -1049.467 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2024: actual deficit -1837.301 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2024: implied fiscal-year GDP 29298.0 billion USD (FRED FYGDP cross-check: 28947.9)."
+    }
+   ],
+   "note": "Forecast -1049.467 and actual -1837.301 billion USD re-read at the CBO source; each divided by FY2024 GDP 29298.0 billion USD gives -3.582 and -6.271 percent of GDP, error +2.689 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1049.467 vs -1837.301, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  },
+  "cbo-projections-2022-05-014": {
+   "claim_id": "cbo-projections-2022-05-014",
+   "earlier": {
+    "decision": "confirm",
+    "at": "2026-10-01T10:20:20+00:00"
+   },
+   "grade_audited": {
+    "status": "graded",
+    "forecast": -1310.866,
+    "actual": -1781.77,
+    "verdict": "miss",
+    "from": "6b1a8a2 (the grade the #53 auditor read; audited-grades-53-seen.json)"
+   },
+   "grade_rechecked": {
+    "status": "graded",
+    "forecast": -4.261258,
+    "actual": -5.792035,
+    "verdict": "miss",
+    "actual_vintage": "CBO eval-projections actuals.csv (commit 682559ca58); fiscal-year GDP 30762 billion USD from FRED FYFSD / FYFSGDA188S (retrieved 2026-10-02)"
+   },
+   "decision": "confirm",
+   "checked": {
+    "forecast": -4.261,
+    "actual": -5.792,
+    "forecast_usd_bn": -1310.866,
+    "actual_usd_bn": -1781.77,
+    "fiscal_year_gdp_usd_bn": 30762.1,
+    "actual_series": "CBO eval-projections actuals.csv, deficit Total (CBO's own actual), divided by fiscal-year GDP derived from FRED FYFSD / FYFSGDA188S",
+    "error": 1.531,
+    "verdict": "miss"
+   },
+   "evidence": [
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/baselines.csv",
+     "title": "CBO eval-projections, input_data/baselines.csv (deficit, Total)",
+     "date": "2026-02-17",
+     "shows": "Baseline 2022-05, fiscal year 2025: deficit -1310.866 billion USD."
+    },
+    {
+     "url": "https://github.com/US-CBO/eval-projections/blob/682559ca5800ee7be57a398085fd023a050c7cb9/input_data/actuals.csv",
+     "title": "CBO eval-projections, input_data/actuals.csv (deficit, Total)",
+     "date": "2026-01-16",
+     "shows": "Fiscal year 2025: actual deficit -1781.77 billion USD."
+    },
+    {
+     "url": "https://fred.stlouisfed.org/series/FYFSD",
+     "title": "FRED FYFSD (federal surplus or deficit, millions USD) and FYFSGDA188S (same as % of GDP), retrieved 2026-10-02",
+     "date": "2026-10-02",
+     "shows": "FY2025: implied fiscal-year GDP 30762.1 billion USD (FRED FYGDP cross-check: 30322.847)."
+    }
+   ],
+   "note": "Forecast -1310.866 and actual -1781.77 billion USD re-read at the CBO source; each divided by FY2025 GDP 30762.1 billion USD gives -4.261 and -5.792 percent of GDP, error +1.531 pp, D18 miss. The row carries the same values to within 0.003 pp (it rounds GDP to whole billions); same verdict with FRED FYGDP as the denominator. The #53 auditor confirmed the dollar grade (-1310.866 vs -1781.77, D16 miss); #54 moved deficits to percent of GDP in 6e11858.",
+   "at": "2026-10-02T13:53:05Z"
+  }
+ }
+}

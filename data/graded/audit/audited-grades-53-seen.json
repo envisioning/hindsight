@@ -1,0 +1,539 @@
+{
+ "rule": "D11 matching audit (#53), D24 re-check accounting (#71, D42)",
+ "of": "data/graded/numeric/<source>.json at commit 6b1a8a2, the grades the #53 auditor read (no numeric grade changed between 6b1a8a2 and 07b8f6b, the commit that drew the audit samples)",
+ "how": "One row per confirmed audit record whose grade at 6b1a8a2 differs from its grade at 6e11858 (the audited-grades-53.json baseline): status, forecast, actual and verdict as the auditor saw them. 6e11858 stored the audit records together with definition changes made in the same commit (#54: CBO deficits in percent of GDP; #53: OBR unrounded actuals), so for these rows the 6e11858 grade is one the auditor never saw. src/grade/numeric.ts (auditOf) uses this row instead of audited-grades-53.json for these confirms: if no D24 re-check confirms the current grade, the row counts as pending_recheck. Every source was checked; only cbo-projections and obr-forecasts have such rows. Generated once from git history; never edited.",
+ "sources": {
+  "cbo-projections": {
+   "cbo-projections-1985-02-007": {
+    "status": "graded",
+    "forecast": -240.01,
+    "actual": -149.73,
+    "verdict": "miss"
+   },
+   "cbo-projections-1985-02-008": {
+    "status": "graded",
+    "forecast": -257.049,
+    "actual": -155.178,
+    "verdict": "miss"
+   },
+   "cbo-projections-1985-02-009": {
+    "status": "graded",
+    "forecast": -279.571,
+    "actual": -152.639,
+    "verdict": "miss"
+   },
+   "cbo-projections-1988-03-005": {
+    "status": "graded",
+    "forecast": -160.837,
+    "actual": -155.178,
+    "verdict": "hit"
+   },
+   "cbo-projections-1988-03-006": {
+    "status": "graded",
+    "forecast": -177.061,
+    "actual": -152.639,
+    "verdict": "partial"
+   },
+   "cbo-projections-1988-03-007": {
+    "status": "graded",
+    "forecast": -169.668,
+    "actual": -221.035,
+    "verdict": "partial"
+   },
+   "cbo-projections-1988-03-009": {
+    "status": "graded",
+    "forecast": -153.926,
+    "actual": -290.321,
+    "verdict": "miss"
+   },
+   "cbo-projections-1993-03-001": {
+    "status": "graded",
+    "forecast": -301.564,
+    "actual": -255.052,
+    "verdict": "partial"
+   },
+   "cbo-projections-1993-03-002": {
+    "status": "graded",
+    "forecast": -286.687,
+    "actual": -203.186,
+    "verdict": "miss"
+   },
+   "cbo-projections-1993-03-003": {
+    "status": "graded",
+    "forecast": -284.374,
+    "actual": -163.952,
+    "verdict": "miss"
+   },
+   "cbo-projections-1993-03-004": {
+    "status": "graded",
+    "forecast": -290.049,
+    "actual": -107.431,
+    "verdict": "miss"
+   },
+   "cbo-projections-1993-03-005": {
+    "status": "graded",
+    "forecast": -321.679,
+    "actual": -21.884,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-018": {
+    "status": "graded",
+    "forecast": 320.909,
+    "actual": -377.585,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-01-019": {
+    "status": "graded",
+    "forecast": 345.047,
+    "actual": -412.727,
+    "verdict": "miss"
+   },
+   "cbo-projections-2000-04-005": {
+    "status": "graded",
+    "forecast": 347.792,
+    "actual": -412.727,
+    "verdict": "miss"
+   },
+   "cbo-projections-2004-03-004": {
+    "status": "graded",
+    "forecast": -274.281,
+    "actual": -160.701,
+    "verdict": "miss"
+   },
+   "cbo-projections-2004-03-005": {
+    "status": "graded",
+    "forecast": -285.884,
+    "actual": -458.553,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-011": {
+    "status": "graded",
+    "forecast": -331.277,
+    "actual": -318.346,
+    "verdict": "hit"
+   },
+   "cbo-projections-2005-08-012": {
+    "status": "graded",
+    "forecast": -314.469,
+    "actual": -248.181,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-013": {
+    "status": "graded",
+    "forecast": -324.474,
+    "actual": -160.701,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-014": {
+    "status": "graded",
+    "forecast": -334.574,
+    "actual": -458.553,
+    "verdict": "miss"
+   },
+   "cbo-projections-2005-08-015": {
+    "status": "graded",
+    "forecast": -321.472,
+    "actual": -1321.424,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-001": {
+    "status": "graded",
+    "forecast": -176.856,
+    "actual": -160.701,
+    "verdict": "partial"
+   },
+   "cbo-projections-2007-03-002": {
+    "status": "graded",
+    "forecast": -113.345,
+    "actual": -458.553,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-003": {
+    "status": "graded",
+    "forecast": -133.782,
+    "actual": -1321.424,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-004": {
+    "status": "graded",
+    "forecast": -156.584,
+    "actual": -1253.915,
+    "verdict": "miss"
+   },
+   "cbo-projections-2007-03-005": {
+    "status": "graded",
+    "forecast": -34.582,
+    "actual": -1294.421,
+    "verdict": "miss"
+   },
+   "cbo-projections-2010-03-001": {
+    "status": "graded",
+    "forecast": -1347.969,
+    "actual": -1253.915,
+    "verdict": "hit"
+   },
+   "cbo-projections-2010-03-002": {
+    "status": "graded",
+    "forecast": -982.402,
+    "actual": -1294.421,
+    "verdict": "partial"
+   },
+   "cbo-projections-2010-03-003": {
+    "status": "graded",
+    "forecast": -631.292,
+    "actual": -1076.468,
+    "verdict": "miss"
+   },
+   "cbo-projections-2011-03-001": {
+    "status": "graded",
+    "forecast": -1388.19,
+    "actual": -1294.421,
+    "verdict": "hit"
+   },
+   "cbo-projections-2011-03-002": {
+    "status": "graded",
+    "forecast": -1073.283,
+    "actual": -1076.468,
+    "verdict": "hit"
+   },
+   "cbo-projections-2011-03-003": {
+    "status": "graded",
+    "forecast": -686.429,
+    "actual": -776.448,
+    "verdict": "partial"
+   },
+   "cbo-projections-2011-03-004": {
+    "status": "graded",
+    "forecast": -510.332,
+    "actual": -559.186,
+    "verdict": "hit"
+   },
+   "cbo-projections-2011-03-005": {
+    "status": "graded",
+    "forecast": -534.873,
+    "actual": -464.693,
+    "verdict": "partial"
+   },
+   "cbo-projections-2017-06-002": {
+    "status": "graded",
+    "forecast": -561.095,
+    "actual": -788.567,
+    "verdict": "miss"
+   },
+   "cbo-projections-2017-06-003": {
+    "status": "graded",
+    "forecast": -687.923,
+    "actual": -1002.77,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-011": {
+    "status": "graded",
+    "forecast": -1019.384,
+    "actual": -3136.694,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-012": {
+    "status": "graded",
+    "forecast": -999.321,
+    "actual": -2780.28,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-013": {
+    "status": "graded",
+    "forecast": -1112.228,
+    "actual": -1003.097,
+    "verdict": "partial"
+   },
+   "cbo-projections-2020-01-014": {
+    "status": "graded",
+    "forecast": -1115.909,
+    "actual": -2032.974,
+    "verdict": "miss"
+   },
+   "cbo-projections-2020-01-015": {
+    "status": "graded",
+    "forecast": -1148.531,
+    "actual": -1837.301,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-013": {
+    "status": "graded",
+    "forecast": -1049.467,
+    "actual": -1837.301,
+    "verdict": "miss"
+   },
+   "cbo-projections-2022-05-014": {
+    "status": "graded",
+    "forecast": -1310.866,
+    "actual": -1781.77,
+    "verdict": "miss"
+   }
+  },
+  "obr-forecasts": {
+   "obr-forecasts-2010-06-002": {
+    "status": "graded",
+    "forecast": 3.1,
+    "actual": 3.3,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2010-06-003": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 4.5,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-004": {
+    "status": "graded",
+    "forecast": 1.9,
+    "actual": 2.8,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2010-06-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.6,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2010-06-007": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-023": {
+    "status": "graded",
+    "forecast": 1.2,
+    "actual": 2.3,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-024": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": 0.9,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-025": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 1.5,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-06-026": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.7,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-023": {
+    "status": "graded",
+    "forecast": 1.8,
+    "actual": 2.3,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2010-11-024": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0.9,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-025": {
+    "status": "graded",
+    "forecast": 2.6,
+    "actual": 1.5,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-026": {
+    "status": "graded",
+    "forecast": 2.9,
+    "actual": 1.7,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2010-11-027": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 3.2,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2010-11-028": {
+    "status": "graded",
+    "forecast": 2.7,
+    "actual": 2.1,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2012-12-002": {
+    "status": "graded",
+    "forecast": 2.8,
+    "actual": 2.8,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2012-12-003": {
+    "status": "graded",
+    "forecast": 2.5,
+    "actual": 2.6,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2012-12-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2012-12-006": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.7,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2013-03-004": {
+    "status": "graded",
+    "forecast": 2.1,
+    "actual": 0,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2013-03-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 0.7,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2015-11-028": {
+    "status": "graded",
+    "forecast": 2.3,
+    "actual": -10,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2016-03-003": {
+    "status": "graded",
+    "forecast": 1.6,
+    "actual": 2.7,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2017-03-002": {
+    "status": "graded",
+    "forecast": 2.424,
+    "actual": 2.7,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2017-03-003": {
+    "status": "graded",
+    "forecast": 2.337,
+    "actual": 2.5,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2017-03-004": {
+    "status": "graded",
+    "forecast": 1.999,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2017-03-005": {
+    "status": "graded",
+    "forecast": 1.993,
+    "actual": 0.9,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2017-03-006": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 2.6,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2019-03-002": {
+    "status": "graded",
+    "forecast": 2.054,
+    "actual": 1.8,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2019-03-004": {
+    "status": "graded",
+    "forecast": 1.985,
+    "actual": 2.6,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2019-03-005": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 9.1,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-006": {
+    "status": "graded",
+    "forecast": 2,
+    "actual": 7.3,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-036": {
+    "status": "graded",
+    "forecast": 1.229,
+    "actual": 1.3,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2019-03-037": {
+    "status": "graded",
+    "forecast": 1.447,
+    "actual": -10,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-038": {
+    "status": "graded",
+    "forecast": 1.596,
+    "actual": 8.5,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-039": {
+    "status": "graded",
+    "forecast": 1.601,
+    "actual": 5.1,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2019-03-040": {
+    "status": "graded",
+    "forecast": 1.595,
+    "actual": 0.3,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2020-03-002": {
+    "status": "graded",
+    "forecast": 1.408,
+    "actual": 0.9,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2020-03-003": {
+    "status": "graded",
+    "forecast": 1.803,
+    "actual": 2.6,
+    "verdict": "partial"
+   },
+   "obr-forecasts-2020-03-005": {
+    "status": "graded",
+    "forecast": 2.051,
+    "actual": 7.3,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2023-11-002": {
+    "status": "graded",
+    "forecast": 7.455,
+    "actual": 7.3,
+    "verdict": "hit"
+   },
+   "obr-forecasts-2023-11-003": {
+    "status": "graded",
+    "forecast": 3.611,
+    "actual": 2.5,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2023-11-004": {
+    "status": "graded",
+    "forecast": 1.776,
+    "actual": 3.4,
+    "verdict": "miss"
+   },
+   "obr-forecasts-2025-03-022": {
+    "status": "graded",
+    "forecast": 0.972,
+    "actual": 1.3,
+    "verdict": "hit"
+   }
+  }
+ }
+}

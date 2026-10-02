@@ -633,3 +633,18 @@ AEO2026 (issue #13) is captured from its own tables: AEO2026 renamed the Referen
 **Cost.** Four World rows lose their grade. AEO2015 and AEO2016 now mix retrospectives within an edition (by series, as AEO2009 does). More rows carry flags. `pending_recheck` rows count neither as fixed nor as residual, so D28 intervals do not widen for them until a re-check is made; 28 IEA rows changed by the #66 restatements are pending today.
 
 **Overturned by.** A re-weighted GEP World history on WDI weights from the World Bank; an EIA note explaining the Retrospective 2022 AEO2015 and AEO2016 rows; unrounded GEP or MPD history.
+
+## D42: Re-check baseline is the grade the auditor read; HICP threshold flag (issue #71)
+
+*Recorded 2026-10-02.*
+
+**Decision.** Two extensions of D41 for numeric grading (D19):
+
+- **Baseline of a confirm.** A confirmed #53 audit record is compared with the grade the auditor read, not with the grade stored next to the record. Commit 6e11858 stored the #53 records together with definition changes made in the same commit (#54: CBO deficits in percent of GDP; #53: OBR unrounded actuals), so 88 confirms (44 CBO, 44 OBR) referred to grades at 6b1a8a2 that `audited-grades-53.json` (6e11858) does not hold. `data/graded/audit/audited-grades-53-seen.json` holds the 6b1a8a2 grade of those rows, generated once from git (no numeric grade changed between 6b1a8a2 and 07b8f6b, which drew the samples; no other source has such rows), and `auditOf` reads it over `audited-grades-53.json`. Without a re-check those rows count as `pending_recheck`; the D24 pass of #71 (`<source>-recheck-71.json`) confirms all 88 on their current grade. Neither baseline file and no audit record is edited.
+- **HICP threshold flag.** Eurostat publishes the annual euro area HICP rate (`prc_hicp_aind`) to one decimal, so the D41 one-decimal threshold flag (plus or minus 0.05 points) applies to ECB HICP rows as it does to ECB GDP rows.
+
+**Why.** A confirm vouches only for the grade the auditor saw. Counting a row as audited when its grade changed in the same commit as the audit overstated the audit, the same gap D41 closed for later changes.
+
+**Cost.** One more generated baseline file. More ECB rows carry flags.
+
+**Overturned by.** A history store for numeric grades (D2) that records which grade each audit record checked.
