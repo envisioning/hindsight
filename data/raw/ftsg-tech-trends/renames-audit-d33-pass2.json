@@ -1,0 +1,312 @@
+{
+ "rule": "D11 audit of D33 rename checks",
+ "auditor": "agent (D20)",
+ "model": "agent (model not recorded in the public repo)",
+ "seed": "d11:ftsg-tech-trends:d33:pass2",
+ "draw": "node scripts/renames-audit-sample-d33.mjs ftsg-tech-trends --pass2: pass-2 scope rows where checkers A and B agree (same verdict; same match_id for same/renamed), 1058 rows; first 50 by fnv1a(seed:id), no weights (the pass-1 draw, reproduced by the same script without --pass2).",
+ "sample": [
+  "ftsg-tech-trends-2014-009",
+  "ftsg-tech-trends-2014-014",
+  "ftsg-tech-trends-2014-015",
+  "ftsg-tech-trends-2019-056",
+  "ftsg-tech-trends-2019-057",
+  "ftsg-tech-trends-2019-310",
+  "ftsg-tech-trends-2019-313",
+  "ftsg-tech-trends-2019-314",
+  "ftsg-tech-trends-2019-316",
+  "ftsg-tech-trends-2020-028",
+  "ftsg-tech-trends-2020-029",
+  "ftsg-tech-trends-2020-121",
+  "ftsg-tech-trends-2020-127",
+  "ftsg-tech-trends-2020-137",
+  "ftsg-tech-trends-2020-157",
+  "ftsg-tech-trends-2020-171",
+  "ftsg-tech-trends-2021-224",
+  "ftsg-tech-trends-2021-241",
+  "ftsg-tech-trends-2021-242",
+  "ftsg-tech-trends-2021-243",
+  "ftsg-tech-trends-2021-246",
+  "ftsg-tech-trends-2021-254",
+  "ftsg-tech-trends-2021-319",
+  "ftsg-tech-trends-2021-387",
+  "ftsg-tech-trends-2021-388",
+  "ftsg-tech-trends-2021-394",
+  "ftsg-tech-trends-2021-448",
+  "ftsg-tech-trends-2021-450",
+  "ftsg-tech-trends-2021-451",
+  "ftsg-tech-trends-2021-452",
+  "ftsg-tech-trends-2021-453",
+  "ftsg-tech-trends-2021-454",
+  "ftsg-tech-trends-2021-478",
+  "ftsg-tech-trends-2022-328",
+  "ftsg-tech-trends-2022-351",
+  "ftsg-tech-trends-2022-352",
+  "ftsg-tech-trends-2022-355",
+  "ftsg-tech-trends-2022-356",
+  "ftsg-tech-trends-2022-357",
+  "ftsg-tech-trends-2022-454",
+  "ftsg-tech-trends-2022-460",
+  "ftsg-tech-trends-2022-462",
+  "ftsg-tech-trends-2022-464",
+  "ftsg-tech-trends-2022-465",
+  "ftsg-tech-trends-2022-480",
+  "ftsg-tech-trends-2022-490",
+  "ftsg-tech-trends-2022-492",
+  "ftsg-tech-trends-2022-494",
+  "ftsg-tech-trends-2023-606",
+  "ftsg-tech-trends-2023-607"
+ ],
+ "records": {
+  "ftsg-tech-trends-2014-009": {
+   "decision": "confirm",
+   "note": "faded confirmed: no native advertising or branded content trend in 2019 or 2020 (2019 \"Next-Gen Native Video and Audio Story Formats\" is platform-native formats, not ads). Window includes partial 2019: D36 turns this to gap.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2014-014": {
+   "decision": "confirm",
+   "note": "faded confirmed: no fan fiction or community-developed content trend in 2019 or 2020. Window includes partial 2019: D36 turns this to gap.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2014-015": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Healthcare.gov failure and fixing government IT continues as Overhauling Government Tech Infrastructure (2019 title; also 2020-361, \"comically old technology\").",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2019-056": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Computational Photography (2019 title) -> Object Recognition in Computational Photography (2020), one step narrower; no exact-label match in 2020 or 2021.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2019-057": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Synthetic Voices (2019 title) -> Speech Synthesis (2020, \"synthetic speech ... mimics real human voices\"). 2020 Modulating Custom Voices would also fit; verdict unchanged.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2019-310": {
+   "decision": "confirm",
+   "note": "renamed confirmed: the 2020 Content Moderation in the Name of National Security quote restates the 2019 title (governments expect tech to fight misinformation, propaganda, terrorism).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2019-313": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Commercial Space Programs (2019 title) -> The New Space Economy (2020, private commercial companies achieving liftoff).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2019-314": {
+   "decision": "confirm",
+   "note": "renamed confirmed: MicroSats and CubeSats -> Lots (and Lots) of Satellite Launches (2020, thousands of low-cost satellites); 2021 Satellite Megaconstellations is the same line.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2019-316": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Mercury Problems (2019 title) -> Mercury Rain (2020, mercury-fuelled propulsion spreading toxic chemicals); 2021 repeats Mercury Rain.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2020-028": {
+   "decision": "contest",
+   "note": "2020 Deep Learning Scales text (local SlideShare transcript) is about deep learning becoming practical after decades (Hinton backprop, Turing Award); the transcript runs into the next trend, so the claim is truncated. 2022 Supersized AI Models is about model size. Nothing closer in 2021. Evidence too thin for renamed or faded.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2020-029": {
+   "decision": "confirm",
+   "note": "renamed confirmed: open source AI frameworks (TensorFlow, PyTorch, BERT) -> Framework Consolidation (2021 text: TensorFlow and PyTorch as the popular frameworks). Stored 2021-037 has no quote though the 2021 PDF text has one.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2020-121": {
+   "decision": "confirm",
+   "note": "same confirmed: IRL Geography Reshapes the Virtual World -> Geography Reshapes the Virtual World (2021), identical first sentence, 2ND YEAR tag.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2020-127": {
+   "decision": "confirm",
+   "note": "faded confirmed: no decentralized content or influencer platform trend in 2021 or 2022 (Decentralized Hacktivists, Decentralized Exchanges and Policing the Creator Economy are different claims).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2020-137": {
+   "decision": "confirm",
+   "note": "renamed confirmed: identical first sentence under Kids Fitness Games and Toys (2021, 2ND YEAR). Relabel more than a spelling variant, so renamed, not same.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2020-157": {
+   "decision": "confirm",
+   "note": "faded confirmed: no pop-up newsroom or limited-edition news product trend in 2021 or 2022.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2020-171": {
+   "decision": "confirm",
+   "note": "same confirmed: Collaborative Robots -> Cobots (2021), same definition sentence.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-224": {
+   "decision": "confirm",
+   "note": "same confirmed: Connected Fabrics -> Connected Fabrics and Apparel (2022; also 2023), smart clothing as sensory interface.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-241": {
+   "decision": "confirm",
+   "note": "renamed confirmed: GAA Homes (few platforms connect all devices) -> HoT Platforms (2022, \"few devices work across platforms\"; HoT = Home of Things). Year tag jumps 6TH to 8TH, a publisher count oddity.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-242": {
+   "decision": "confirm",
+   "note": "same confirmed: Home Service Bots -> Service Bots (2022, robots performing repetitive tasks around the home; 6TH -> 7TH YEAR).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-243": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Disinfecting Bots -> Cleaning Bots (2022, sterilizing and disinfecting robots; 1ST -> 2ND YEAR).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-246": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Forced Obsolescence -> Right to Repair (2022), near-identical first sentence, 5TH -> 6TH YEAR.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-254": {
+   "decision": "confirm",
+   "note": "renamed confirmed under the D40 one-step-broader rule: state antitrust suits -> Antitrust (2022). Caveat: by its year tag (4TH -> 5TH) 2022 Antitrust continues 2021-253 Antitrust Action, a sibling of this row, so two 2021 trends map to one 2022 trend.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-319": {
+   "decision": "confirm",
+   "note": "faded confirmed: no glitch trend in 2022 or 2023 (labels and 2023 full text searched).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-387": {
+   "decision": "confirm",
+   "note": "renamed confirmed: multi-use roads in urban planning -> New Cityscape Designs (2022, \"importance placed on roads is decreasing in urban planning\").",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-388": {
+   "decision": "confirm",
+   "note": "renamed confirmed: China car-industry ambition -> China’s Global Auto Ambitions (2022; 1ST -> 2ND YEAR).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-394": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Million-Mile Batteries -> Building Better Batteries (2022), same battery-race sentence, 2ND -> 3RD YEAR.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-448": {
+   "decision": "confirm",
+   "note": "renamed confirmed: SNP profiling text (upgrade children before birth) is repeated verbatim under Upgrading Babies (2022). Quote checked against neighbours: aligned.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-450": {
+   "decision": "confirm",
+   "note": "renamed confirmed under the D40 one-step-broader rule: Assembloids -> Organoids (2022). Caveat: 2021 also lists Organoids (2021-449) beside this row, so 2022 Organoids continues that sibling too.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-451": {
+   "decision": "confirm",
+   "note": "same confirmed: Organoids for COVID-19 Research -> COVID-19 Organoids (2022), same sentence.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-452": {
+   "decision": "confirm",
+   "note": "renamed confirmed: same sentence (synthetic biology produces molecules on demand) under On-Demand Molecules (2022).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-453": {
+   "decision": "confirm",
+   "note": "same confirmed: DNA Storage -> Using DNA to Store Data (2022), identical sentence.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-454": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Computational Biology Advancements opens on proteins; 2022 Protein Folding (AlphaFold) is the protein-structure prediction it describes. Moderately certain: only first sentences compared.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2021-478": {
+   "decision": "confirm",
+   "note": "renamed confirmed: same microbiome mass-extinction sentence under Improving Micro-Biodiversity (2022).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-328": {
+   "decision": "correct",
+   "corrected_verdict": "same",
+   "note": "The 2023 report lists Remote Kill Switches (Government, Policy & Security TOC, p. 616; heading \"REMOTE KILL SWITCHES\" with the same first sentence, after Government Requests for Backdoor Access on p. 615 in the Scribd text). The 2023 capture omits it, so no window id exists; persisted. No corrected_match_id: fix the 2023 capture and re-check.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-351": {
+   "decision": "confirm",
+   "note": "faded confirmed: Smart Dust not in 2023 or 2024 labels or full text.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-352": {
+   "decision": "confirm",
+   "note": "same confirmed: Commercial Quadrupedal Robots -> Quadrupedal Robots (2023).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-355": {
+   "decision": "confirm",
+   "note": "faded confirmed: no robot rights trend in 2023 or 2024 (Neurorights and immersive rights are different claims); phrase absent from both full texts.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-356": {
+   "decision": "confirm",
+   "note": "faded confirmed, low certainty: pandemic-exposed supply chain fragility has no successor; 2023 Nearshoring and Global Conflicts Spur Re-Globalization are responses to disruption, both 1ST YEAR ON THE LIST.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-357": {
+   "decision": "confirm",
+   "note": "renamed confirmed: supply chain provenance verification -> Technology-Assisted Supply Chain Transparency (2023). 2023 Digital Passports and Smart Contracts would fit too; verdict unchanged.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-454": {
+   "decision": "confirm",
+   "note": "faded confirmed: gene vandalism (damaged DNA from editing) absent from 2023 and 2024; CRISPR tool and therapy trends are different claims.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-460": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Venter minimal synthetic cell -> Minimal Viable Lifeforms (2023; 2024 repeats).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-462": {
+   "decision": "confirm",
+   "note": "faded confirmed: no virus cloning or synthesis trend in 2023 or 2024; Using Viruses to Deliver DNA and Reviving Ancient Viruses are different claims.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-464": {
+   "decision": "confirm",
+   "note": "renamed confirmed: identical molecular robotics sentence under Nanomachines (2023).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-465": {
+   "decision": "confirm",
+   "note": "faded confirmed: no engineered signalling-cell trend in 2023 or 2024 (Cell Therapy 2.0, Growing Sex Cells differ); label absent from both full texts.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-480": {
+   "decision": "confirm",
+   "note": "renamed confirmed: same microbiome sentence under Improving Gut Biomes (2023).",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-490": {
+   "decision": "confirm",
+   "note": "same confirmed: Bias in Genetic Research -> Resolving Bias in Genome Research (2023), identical sentence.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-492": {
+   "decision": "confirm",
+   "note": "renamed confirmed: genome storage shortage -> Managing the Looming Genome Storage (2023), same sentence; the 2023 label looks truncated.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2022-494": {
+   "decision": "confirm",
+   "note": "same confirmed: International Collaborations to Advance Biology -> ...Bioengineering (2023), identical sentence.",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2023-606": {
+   "decision": "confirm",
+   "note": "renamed confirmed: Fusion Theater (participation, alternate realities) -> Performances Embrace Technology (2024, 2ND YEAR, \"showcase alternate realities\").",
+   "at": "2026-10-02T13:46:00+00:00"
+  },
+  "ftsg-tech-trends-2023-607": {
+   "decision": "confirm",
+   "note": "same confirmed: Holographic Live Performances -> The Holographic Live Performance (2024, 2ND YEAR).",
+   "at": "2026-10-02T13:46:00+00:00"
+  }
+ }
+}
