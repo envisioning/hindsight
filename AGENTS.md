@@ -19,6 +19,7 @@ node scripts/measure-audit-sample.mjs <source>   D32/D34 measures -> fixed-seed 
 node scripts/scenario-coverage-d34.mjs     D34 coverage-d34.json for Shell, IPCC (with the matching audit) and NIC; D11 applied
 scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
 node scripts/links/<step>.mjs           research links (D48): snapshot, check-model, embed-subjects, candidates, agreement, audit-sample, final; see data/links/README.md
+pnpm links        data/links/research.json + claims + final verdicts -> data/links/by-technology.json, by-subject.json (read by www); --check to verify
 ```
 
 pnpm only. The build is the gate. MZ tests by hand: do not write automated tests or drive a browser unless asked.
