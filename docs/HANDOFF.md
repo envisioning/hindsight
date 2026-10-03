@@ -60,7 +60,7 @@ Every next step is an open issue in envisioning/hindsight:
 1. **#74** links upkeep (new or changed technologies and subjects; retract links to unpublished or excluded pages); a later run can verify the 29,172 candidates left under the D54 floor.
 2. **#75** D33 follow-ups: pass audit summaries, FTSG 2020-234 match id, FTSG 2016-029 subject.
 3. **#76** release `hindsight-2026.3` (with the links as an export table); ask MZ before tagging, then update the link in www `app/hindsight/page.tsx`.
-4. **#57** phase 2: Origins as the fiction source, linked to technologies.
+4. **#85** Origins epic (#77 to #84): fiction as a source; canon, depictions, three milestones, imagination lead time, links, site. Objectives decided by MZ 2026-10-02 (in the epic).
 5. Missing editions: **#27** McKinsey 2026 PDF (needs a manual browser download); **#26** FTSG 2008-2013 and 2018 (not public; 2019 stays titles only).
 6. Recurring: **#69** poster placements each January (D26 waves); **#58** refresh issues opened on the 1st of each month.
 
