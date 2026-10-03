@@ -679,6 +679,112 @@ export const NumericComparison = z.object({
   ),
 });
 
+// ---------------------------------------------------------------- adaptation lag (#86, proposed)
+
+/**
+ * Adaptation lag (#86): definitions proposed in docs/proposals/adaptation-lag.md, not yet a decision.
+ * Written by `pnpm measure:adaptation-lag` (src/measure/adaptation-lag.ts) to data/measures/adaptation-lag/.
+ */
+
+/** One vintage of a numeric forecast path: a graded forecast of one target period from one edition. */
+export const AdaptationVintage = z.object({
+  claim_id: Id,
+  edition: z.string().min(1),
+  published: IsoDate,
+  /** Months from the publication month to the end of the target period. Null when only the publication year is known. */
+  months_before_end: z.number().int().nullable(),
+  forecast: z.number(),
+  /** D18 points or D16 percent of actual, as in the numeric grade. */
+  error: z.number(),
+  /** Inside the hit band of the row's rule (D18: 0.5 points; D16: 10%). */
+  in_band: z.boolean(),
+});
+
+/** Every graded vintage of one publisher's forecast of one series for one target period, oldest first. */
+export const AdaptationPath = z.object({
+  source_id: Id,
+  subject_id: Id,
+  family: z.string().min(1),
+  statistic: z.string().nullable(),
+  target_year: z.number().int(),
+  target_period: z.string().nullable(),
+  unit: z.string().nullable(),
+  rule: NumericRule,
+  /** Last month of the target period (YYYY-MM): December, March for UK fiscal years, September for US fiscal years. */
+  period_end: z.string().regex(/^\d{4}-\d{2}$/),
+  actual: z.number(),
+  vintages: z.array(AdaptationVintage).min(1),
+  /** First vintage inside the band, and first vintage from which every later vintage stays inside (null: never). */
+  first_in_band: z.object({ index: z.number().int().min(0), edition: z.string(), months_before_end: z.number().int().nullable() }).nullable(),
+  settled_in_band: z.object({ index: z.number().int().min(0), edition: z.string(), months_before_end: z.number().int().nullable() }).nullable(),
+});
+
+/** One forecast path around a shock: the forecast standing at the trigger and how many editions it took to reach the band. */
+export const AdaptationShockRow = z.object({
+  shock_id: Id,
+  source_id: Id,
+  subject_id: Id,
+  family: z.string().min(1),
+  statistic: z.string().nullable(),
+  target_year: z.number().int(),
+  rule: NumericRule,
+  /** Last vintage published in or before the shock's start month. */
+  before: z.object({ edition: z.string(), error: z.number(), in_band: z.boolean() }),
+  /** First vintage published after the start month (the trigger edition). */
+  trigger: z.object({ edition: z.string(), error: z.number(), in_band: z.boolean() }),
+  /** `in_band_before`: the standing forecast was already inside the band, nothing to adapt. `reached`: a vintage after the start month is inside the band. `censored`: no vintage of the target period is. */
+  outcome: z.enum(["in_band_before", "reached", "censored"]),
+  /** Editions after the start month up to and including the first one inside the band (1 = the trigger edition). Null unless reached. */
+  lag_editions: z.number().int().min(1).nullable(),
+  /** Months from the start month to the publication month of that edition. Null unless reached, or when the month is unknown. */
+  lag_months: z.number().int().nullable(),
+  /** Editions after the start month that were observed (for a censored row: none inside the band). */
+  editions_after: z.number().int().min(0),
+  /** Censored rows: `short` when the last vintage still erred on the same side as the forecast before the shock, `overshot` when it moved past the actual to the other side. */
+  censored_side: z.enum(["short", "overshot"]).nullable(),
+  /** 1 - |trigger error| / |error before|: the share of the standing error the trigger edition removed (negative: it grew). Null when the error before was zero. */
+  error_closed_at_trigger: z.number().nullable(),
+});
+
+export const AdaptationHypeClass = z.enum(["mainstream", "failed", "stalled", "ambiguous"]);
+
+/** One reading of a Hype Cycle subject's adaptation, computed from one D21 timeline (settled, or one builder's). */
+export const AdaptationHypeReading = z.object({
+  timeline: z.enum(["settled", "builderA", "builderB"]),
+  class: AdaptationHypeClass,
+  year_5pct: z.number().int().nullable(),
+  year_mainstream: z.number().int().nullable(),
+  abandoned_year: z.number().int().nullable(),
+  /** Failed or stalled: the year the first graded placement could no longer be a D16 hit (placed year + 2), or the abandonment year if earlier. */
+  contradiction_year: z.number().int().nullable(),
+  /** Failed or stalled: editions from the contradiction year on that still list the subject. */
+  listings_after_contradiction: z.number().int().min(0).nullable(),
+  /** Failed or stalled: first edition after the first placement that delayed, dropped or marked it obsolete; years from the contradiction year (negative: before). */
+  first_move_toward_evidence: z.object({ edition: z.number().int(), change: z.string(), lag_years: z.number().int() }).nullable(),
+  /** Mainstream: first edition with a band under 2 years or the plateau phase; years after the mainstream year (negative: early). */
+  arrival_call: z.object({ edition: z.number().int(), gap_years: z.number().int() }).nullable(),
+  /** Mainstream: editions after the mainstream year that still placed it 2 or more years from the plateau. */
+  late_listings: z.number().int().min(0).nullable(),
+  /** Mainstream: exit edition minus the mainstream year (negative: left the chart before mainstream). Null while still listed. */
+  exit_gap_years: z.number().int().nullable(),
+  /** The bucket the summary counts. */
+  bucket: z.string().min(1),
+});
+
+export const AdaptationHypeSubject = z.object({
+  subject_id: Id,
+  name: z.string().min(1),
+  /** Editions that list the subject, with Gartner's band and phase. */
+  listings: z.array(z.object({ edition: z.number().int(), claim_id: Id, band: z.string().nullable(), phase: z.string().nullable() })),
+  /** Every revision row of the subject (revisions.json), with the edition the change is visible in. */
+  changes: z.array(z.object({ edition: z.number().int(), change: z.string(), note: z.string().nullable() })),
+  /** First edition with no listing after the last one; null while listed in the latest edition (right-censored). */
+  exit_edition: z.number().int().nullable(),
+  /** `settled`: an adjudicated timeline (D20, D24). `agreed`: both builders, same class and same bucket. `years_differ`: same class, different bucket. `unsettled`: builders disagree on the class. */
+  basis: z.enum(["settled", "agreed", "years_differ", "unsettled"]),
+  readings: z.array(AdaptationHypeReading).min(1).max(2),
+});
+
 export type Source = z.infer<typeof Source>;
 export type SourceEdition = z.infer<typeof SourceEdition>;
 export type Institution = z.infer<typeof Institution>;
@@ -714,3 +820,9 @@ export type NumericSummary = z.infer<typeof NumericSummary>;
 export type NumericComparison = z.infer<typeof NumericComparison>;
 export type RawCorrection = z.infer<typeof RawCorrection>;
 export type ValidationRow = z.infer<typeof ValidationRow>;
+export type AdaptationVintage = z.infer<typeof AdaptationVintage>;
+export type AdaptationPath = z.infer<typeof AdaptationPath>;
+export type AdaptationShockRow = z.infer<typeof AdaptationShockRow>;
+export type AdaptationHypeClass = z.infer<typeof AdaptationHypeClass>;
+export type AdaptationHypeReading = z.infer<typeof AdaptationHypeReading>;
+export type AdaptationHypeSubject = z.infer<typeof AdaptationHypeSubject>;

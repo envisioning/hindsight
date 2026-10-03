@@ -1,0 +1,2201 @@
+{
+ "measure": "adaptation lag (#86)",
+ "status": "proposed: definitions in docs/proposals/adaptation-lag.md await MZ; not published",
+ "note": "Publishers side by side, alphabetical, never ranked (D6, D17). No share or median below 20 rows (D11). Intervals: Wilson 95% and D28 audit-adjusted.",
+ "numeric_paths": [
+  {
+   "source_id": "bcb-focus",
+   "family": "exchange rate",
+   "rule": "D16",
+   "paths": 27,
+   "paths_with_2_or_more_vintages": 27,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": 21,
+   "ever_in_band": {
+    "k": 23,
+    "n": 27,
+    "share": 0.8519,
+    "ci95": [
+     0.6752,
+     0.9408
+    ],
+    "ci95_audit_adjusted": [
+     0.6752,
+     0.9408
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 23,
+    "n": 27,
+    "share": 0.8519,
+    "ci95": [
+     0.6752,
+     0.9408
+    ],
+    "ci95_audit_adjusted": [
+     0.6752,
+     0.9408
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 23,
+    "median": 6,
+    "iqr": [
+     3,
+     15
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "bcb-focus",
+   "family": "inflation",
+   "rule": "D18",
+   "paths": 26,
+   "paths_with_2_or_more_vintages": 26,
+   "median_vintages": 8,
+   "median_months_before_end_first_vintage": 21,
+   "ever_in_band": {
+    "k": 26,
+    "n": 26,
+    "share": 1,
+    "ci95": [
+     0.8713,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.8713,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 26,
+    "n": 26,
+    "share": 1,
+    "ci95": [
+     0.8713,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.8713,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 26,
+    "median": 3,
+    "iqr": [
+     0,
+     6
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "bcb-focus",
+   "family": "interest rate",
+   "rule": "D18",
+   "paths": 26,
+   "paths_with_2_or_more_vintages": 26,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": 21,
+   "ever_in_band": {
+    "k": 24,
+    "n": 26,
+    "share": 0.9231,
+    "ci95": [
+     0.7586,
+     0.9786
+    ],
+    "ci95_audit_adjusted": [
+     0.7586,
+     0.9786
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 21,
+    "n": 26,
+    "share": 0.8077,
+    "ci95": [
+     0.6212,
+     0.9149
+    ],
+    "ci95_audit_adjusted": [
+     0.6212,
+     0.9149
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 21,
+    "median": 6,
+    "iqr": [
+     3,
+     9
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "bcb-focus",
+   "family": "real GDP growth",
+   "rule": "D18",
+   "paths": 27,
+   "paths_with_2_or_more_vintages": 27,
+   "median_vintages": 8,
+   "median_months_before_end_first_vintage": 21,
+   "ever_in_band": {
+    "k": 24,
+    "n": 27,
+    "share": 0.8889,
+    "ci95": [
+     0.7194,
+     0.9615
+    ],
+    "ci95_audit_adjusted": [
+     0.7194,
+     0.9615
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 16,
+    "n": 27,
+    "share": 0.5926,
+    "ci95": [
+     0.4073,
+     0.7549
+    ],
+    "ci95_audit_adjusted": [
+     0.4073,
+     0.7549
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 16,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "bnef-evo",
+   "family": "EV sales share",
+   "rule": "D18",
+   "paths": 3,
+   "paths_with_2_or_more_vintages": 0,
+   "median_vintages": null,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 0,
+    "n": 0,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 0,
+    "n": 0,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0.1111
+  },
+  {
+   "source_id": "bnef-evo",
+   "family": "EV sales",
+   "rule": "D16",
+   "paths": 3,
+   "paths_with_2_or_more_vintages": 1,
+   "median_vintages": 4,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 1,
+    "n": 1,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 1,
+    "n": 1,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 1,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0.1111
+  },
+  {
+   "source_id": "bp-energy-outlook",
+   "family": "renewables share",
+   "rule": "D18",
+   "paths": 2,
+   "paths_with_2_or_more_vintages": 2,
+   "median_vintages": 4,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 2,
+    "n": 2,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 2,
+    "n": 2,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 2,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "cbo-projections",
+   "family": "government borrowing",
+   "rule": "D18",
+   "paths": 42,
+   "paths_with_2_or_more_vintages": 41,
+   "median_vintages": 14,
+   "median_months_before_end_first_vintage": 56,
+   "ever_in_band": {
+    "k": 35,
+    "n": 41,
+    "share": 0.8537,
+    "ci95": [
+     0.7156,
+     0.9312
+    ],
+    "ci95_audit_adjusted": [
+     0.7156,
+     0.9312
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 35,
+    "n": 41,
+    "share": 0.8537,
+    "ci95": [
+     0.7156,
+     0.9312
+    ],
+    "ci95_audit_adjusted": [
+     0.7156,
+     0.9312
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 35,
+    "median": 4,
+    "iqr": [
+     1,
+     14.5
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "cbo-projections",
+   "family": "inflation",
+   "rule": "D18",
+   "paths": 25,
+   "paths_with_2_or_more_vintages": 25,
+   "median_vintages": 9,
+   "median_months_before_end_first_vintage": 59,
+   "ever_in_band": {
+    "k": 20,
+    "n": 25,
+    "share": 0.8,
+    "ci95": [
+     0.6087,
+     0.9114
+    ],
+    "ci95_audit_adjusted": [
+     0.6087,
+     0.9114
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 20,
+    "n": 25,
+    "share": 0.8,
+    "ci95": [
+     0.6087,
+     0.9114
+    ],
+    "ci95_audit_adjusted": [
+     0.6087,
+     0.9114
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 20,
+    "median": 11,
+    "iqr": [
+     4.8,
+     22.3
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "cbo-projections",
+   "family": "interest rate",
+   "rule": "D18",
+   "paths": 25,
+   "paths_with_2_or_more_vintages": 25,
+   "median_vintages": 9,
+   "median_months_before_end_first_vintage": 59,
+   "ever_in_band": {
+    "k": 23,
+    "n": 25,
+    "share": 0.92,
+    "ci95": [
+     0.7503,
+     0.9778
+    ],
+    "ci95_audit_adjusted": [
+     0.7503,
+     0.9778
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 21,
+    "n": 25,
+    "share": 0.84,
+    "ci95": [
+     0.6535,
+     0.936
+    ],
+    "ci95_audit_adjusted": [
+     0.6535,
+     0.936
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 21,
+    "median": 11,
+    "iqr": [
+     5,
+     11
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "cbo-projections",
+   "family": "real GDP growth",
+   "rule": "D18",
+   "paths": 25,
+   "paths_with_2_or_more_vintages": 25,
+   "median_vintages": 9,
+   "median_months_before_end_first_vintage": 59,
+   "ever_in_band": {
+    "k": 17,
+    "n": 25,
+    "share": 0.68,
+    "ci95": [
+     0.4841,
+     0.8279
+    ],
+    "ci95_audit_adjusted": [
+     0.4841,
+     0.8279
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 9,
+    "n": 25,
+    "share": 0.36,
+    "ci95": [
+     0.2025,
+     0.5548
+    ],
+    "ci95_audit_adjusted": [
+     0.2025,
+     0.5548
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 9,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "cbo-projections",
+   "family": "unemployment rate",
+   "rule": "D18",
+   "paths": 25,
+   "paths_with_2_or_more_vintages": 25,
+   "median_vintages": 9,
+   "median_months_before_end_first_vintage": 59,
+   "ever_in_band": {
+    "k": 21,
+    "n": 25,
+    "share": 0.84,
+    "ci95": [
+     0.6535,
+     0.936
+    ],
+    "ci95_audit_adjusted": [
+     0.6535,
+     0.936
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 20,
+    "n": 25,
+    "share": 0.8,
+    "ci95": [
+     0.6087,
+     0.9114
+    ],
+    "ci95_audit_adjusted": [
+     0.6087,
+     0.9114
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 20,
+    "median": 11,
+    "iqr": [
+     7.3,
+     17.8
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "ecb-projections",
+   "family": "inflation",
+   "rule": "D18",
+   "paths": 28,
+   "paths_with_2_or_more_vintages": 27,
+   "median_vintages": 9,
+   "median_months_before_end_first_vintage": 24,
+   "ever_in_band": {
+    "k": 26,
+    "n": 27,
+    "share": 0.963,
+    "ci95": [
+     0.8172,
+     0.9934
+    ],
+    "ci95_audit_adjusted": [
+     0.8172,
+     0.9934
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 26,
+    "n": 27,
+    "share": 0.963,
+    "ci95": [
+     0.8172,
+     0.9934
+    ],
+    "ci95_audit_adjusted": [
+     0.8172,
+     0.9934
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 26,
+    "median": 12,
+    "iqr": [
+     9,
+     17.3
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "ecb-projections",
+   "family": "real GDP growth",
+   "rule": "D18",
+   "paths": 28,
+   "paths_with_2_or_more_vintages": 27,
+   "median_vintages": 9,
+   "median_months_before_end_first_vintage": 24,
+   "ever_in_band": {
+    "k": 23,
+    "n": 27,
+    "share": 0.8519,
+    "ci95": [
+     0.6752,
+     0.9408
+    ],
+    "ci95_audit_adjusted": [
+     0.6752,
+     0.9408
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 21,
+    "n": 27,
+    "share": 0.7778,
+    "ci95": [
+     0.5924,
+     0.8939
+    ],
+    "ci95_audit_adjusted": [
+     0.5924,
+     0.8939
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 21,
+    "median": 9,
+    "iqr": [
+     3,
+     15
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "CO2 emissions",
+   "rule": "D16",
+   "paths": 32,
+   "paths_with_2_or_more_vintages": 31,
+   "median_vintages": 16,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 31,
+    "n": 31,
+    "share": 1,
+    "ci95": [
+     0.8897,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.8897,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 31,
+    "n": 31,
+    "share": 1,
+    "ci95": [
+     0.8897,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.8897,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "electricity sales",
+   "rule": "D16",
+   "paths": 40,
+   "paths_with_2_or_more_vintages": 40,
+   "median_vintages": 15,
+   "median_months_before_end_first_vintage": 94,
+   "ever_in_band": {
+    "k": 40,
+    "n": 40,
+    "share": 1,
+    "ci95": [
+     0.9124,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.9124,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 40,
+    "n": 40,
+    "share": 1,
+    "ci95": [
+     0.9124,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.9124,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 5,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "energy consumption",
+   "rule": "D16",
+   "paths": 77,
+   "paths_with_2_or_more_vintages": 77,
+   "median_vintages": 14,
+   "median_months_before_end_first_vintage": 100,
+   "ever_in_band": {
+    "k": 77,
+    "n": 77,
+    "share": 1,
+    "ci95": [
+     0.9525,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.9525,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 76,
+    "n": 77,
+    "share": 0.987,
+    "ci95": [
+     0.93,
+     0.9977
+    ],
+    "ci95_audit_adjusted": [
+     0.93,
+     0.9977
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 7,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "natural gas price",
+   "rule": "D16",
+   "paths": 85,
+   "paths_with_2_or_more_vintages": 58,
+   "median_vintages": 13,
+   "median_months_before_end_first_vintage": 94,
+   "ever_in_band": {
+    "k": 35,
+    "n": 58,
+    "share": 0.6034,
+    "ci95": [
+     0.4749,
+     0.7191
+    ],
+    "ci95_audit_adjusted": [
+     0.4749,
+     0.7191
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 14,
+    "n": 58,
+    "share": 0.2414,
+    "ci95": [
+     0.1496,
+     0.3653
+    ],
+    "ci95_audit_adjusted": [
+     0.1496,
+     0.3653
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "oil consumption",
+   "rule": "D16",
+   "paths": 68,
+   "paths_with_2_or_more_vintages": 55,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": 94,
+   "ever_in_band": {
+    "k": 55,
+    "n": 55,
+    "share": 1,
+    "ci95": [
+     0.9347,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.9347,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 53,
+    "n": 55,
+    "share": 0.9636,
+    "ci95": [
+     0.8768,
+     0.99
+    ],
+    "ci95_audit_adjusted": [
+     0.8768,
+     0.99
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 6,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "oil price",
+   "rule": "D16",
+   "paths": 56,
+   "paths_with_2_or_more_vintages": 43,
+   "median_vintages": 16,
+   "median_months_before_end_first_vintage": 94,
+   "ever_in_band": {
+    "k": 34,
+    "n": 43,
+    "share": 0.7907,
+    "ci95": [
+     0.6479,
+     0.8858
+    ],
+    "ci95_audit_adjusted": [
+     0.6479,
+     0.8858
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 12,
+    "n": 43,
+    "share": 0.2791,
+    "ci95": [
+     0.1675,
+     0.4269
+    ],
+    "ci95_audit_adjusted": [
+     0.1675,
+     0.4269
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "solar generation",
+   "rule": "D16",
+   "paths": 15,
+   "paths_with_2_or_more_vintages": 14,
+   "median_vintages": 8.5,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 13,
+    "n": 14,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 9,
+    "n": 14,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "eia-aeo",
+   "family": "wind generation",
+   "rule": "D16",
+   "paths": 18,
+   "paths_with_2_or_more_vintages": 17,
+   "median_vintages": 10,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 16,
+    "n": 17,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 15,
+    "n": 17,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "fed-sep",
+   "family": "core inflation",
+   "rule": "D18",
+   "paths": 22,
+   "paths_with_2_or_more_vintages": 21,
+   "median_vintages": 13,
+   "median_months_before_end_first_vintage": 39,
+   "ever_in_band": {
+    "k": 21,
+    "n": 21,
+    "share": 1,
+    "ci95": [
+     0.8454,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.8454,
+     1
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 20,
+    "n": 21,
+    "share": 0.9524,
+    "ci95": [
+     0.7733,
+     0.9915
+    ],
+    "ci95_audit_adjusted": [
+     0.7733,
+     0.9915
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 20,
+    "median": 16.5,
+    "iqr": [
+     12,
+     29.5
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "fed-sep",
+   "family": "inflation",
+   "rule": "D18",
+   "paths": 22,
+   "paths_with_2_or_more_vintages": 21,
+   "median_vintages": 13,
+   "median_months_before_end_first_vintage": 39,
+   "ever_in_band": {
+    "k": 20,
+    "n": 21,
+    "share": 0.9524,
+    "ci95": [
+     0.7733,
+     0.9915
+    ],
+    "ci95_audit_adjusted": [
+     0.7733,
+     0.9915
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 20,
+    "n": 21,
+    "share": 0.9524,
+    "ci95": [
+     0.7733,
+     0.9915
+    ],
+    "ci95_audit_adjusted": [
+     0.7733,
+     0.9915
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 20,
+    "median": 12,
+    "iqr": [
+     6.8,
+     29.5
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "fed-sep",
+   "family": "interest rate",
+   "rule": "D18",
+   "paths": 17,
+   "paths_with_2_or_more_vintages": 17,
+   "median_vintages": 13,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 15,
+    "n": 17,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 15,
+    "n": 17,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 15,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "fed-sep",
+   "family": "real GDP growth, Q4 over Q4",
+   "rule": "D18",
+   "paths": 22,
+   "paths_with_2_or_more_vintages": 21,
+   "median_vintages": 13,
+   "median_months_before_end_first_vintage": 39,
+   "ever_in_band": {
+    "k": 16,
+    "n": 21,
+    "share": 0.7619,
+    "ci95": [
+     0.5491,
+     0.8937
+    ],
+    "ci95_audit_adjusted": [
+     0.5491,
+     0.8937
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 13,
+    "n": 21,
+    "share": 0.619,
+    "ci95": [
+     0.4088,
+     0.7925
+    ],
+    "ci95_audit_adjusted": [
+     0.4088,
+     0.7925
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 13,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "fed-sep",
+   "family": "unemployment rate",
+   "rule": "D18",
+   "paths": 21,
+   "paths_with_2_or_more_vintages": 20,
+   "median_vintages": 13,
+   "median_months_before_end_first_vintage": 38,
+   "ever_in_band": {
+    "k": 19,
+    "n": 20,
+    "share": 0.95,
+    "ci95": [
+     0.7639,
+     0.9911
+    ],
+    "ci95_audit_adjusted": [
+     0.7639,
+     0.9911
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 19,
+    "n": 20,
+    "share": 0.95,
+    "ci95": [
+     0.7639,
+     0.9911
+    ],
+    "ci95_audit_adjusted": [
+     0.7639,
+     0.9911
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 19,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "iea-weo",
+   "family": "solar capacity",
+   "rule": "D16",
+   "paths": 1,
+   "paths_with_2_or_more_vintages": 1,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 0,
+    "n": 1,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 0,
+    "n": 1,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "iea-weo",
+   "family": "solar generation",
+   "rule": "D16",
+   "paths": 3,
+   "paths_with_2_or_more_vintages": 1,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 0,
+    "n": 1,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 0,
+    "n": 1,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 0,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "iea-weo",
+   "family": "wind capacity",
+   "rule": "D16",
+   "paths": 2,
+   "paths_with_2_or_more_vintages": 2,
+   "median_vintages": 6.5,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 1,
+    "n": 2,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 1,
+    "n": 2,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 1,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "iea-weo",
+   "family": "wind generation",
+   "rule": "D16",
+   "paths": 3,
+   "paths_with_2_or_more_vintages": 3,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 2,
+    "n": 3,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 2,
+    "n": 3,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 2,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "imf-weo",
+   "family": "real GDP growth",
+   "rule": "D18",
+   "paths": 362,
+   "paths_with_2_or_more_vintages": 361,
+   "median_vintages": 4,
+   "median_months_before_end_first_vintage": 20,
+   "ever_in_band": {
+    "k": 255,
+    "n": 361,
+    "share": 0.7064,
+    "ci95": [
+     0.6574,
+     0.751
+    ],
+    "ci95_audit_adjusted": [
+     0.6574,
+     0.751
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 198,
+    "n": 361,
+    "share": 0.5485,
+    "ci95": [
+     0.4969,
+     0.599
+    ],
+    "ci95_audit_adjusted": [
+     0.4969,
+     0.599
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 198,
+    "median": 8,
+    "iqr": [
+     2,
+     19
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "obr-forecasts",
+   "family": "government borrowing",
+   "rule": "D16",
+   "paths": 6,
+   "paths_with_2_or_more_vintages": 5,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 2,
+    "n": 5,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 1,
+    "n": 5,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 1,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "obr-forecasts",
+   "family": "government borrowing",
+   "rule": "D18",
+   "paths": 6,
+   "paths_with_2_or_more_vintages": 5,
+   "median_vintages": 7,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 4,
+    "n": 5,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 2,
+    "n": 5,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 2,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "obr-forecasts",
+   "family": "inflation",
+   "rule": "D18",
+   "paths": 16,
+   "paths_with_2_or_more_vintages": 16,
+   "median_vintages": 10,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 16,
+    "n": 16,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 16,
+    "n": 16,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 16,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "obr-forecasts",
+   "family": "real GDP growth",
+   "rule": "D18",
+   "paths": 16,
+   "paths_with_2_or_more_vintages": 16,
+   "median_vintages": 10,
+   "median_months_before_end_first_vintage": null,
+   "ever_in_band": {
+    "k": 12,
+    "n": 16,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_in_band": {
+    "k": 11,
+    "n": 16,
+    "share": null,
+    "ci95": null,
+    "ci95_audit_adjusted": null,
+    "withheld": "fewer than 20 paths (D11): counts only"
+   },
+   "settled_months_before_end": {
+    "n": 11,
+    "median": null,
+    "iqr": null
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "oecd-economic-outlook",
+   "family": "real GDP growth",
+   "rule": "D18",
+   "paths": 252,
+   "paths_with_2_or_more_vintages": 232,
+   "median_vintages": 4,
+   "median_months_before_end_first_vintage": 18,
+   "ever_in_band": {
+    "k": 170,
+    "n": 232,
+    "share": 0.7328,
+    "ci95": [
+     0.6724,
+     0.7856
+    ],
+    "ci95_audit_adjusted": [
+     0.6724,
+     0.7856
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 138,
+    "n": 232,
+    "share": 0.5948,
+    "ci95": [
+     0.5306,
+     0.656
+    ],
+    "ci95_audit_adjusted": [
+     0.5306,
+     0.656
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 138,
+    "median": 7,
+    "iqr": [
+     1,
+     16.8
+    ]
+   },
+   "audit_residual_error_rate": 0
+  },
+  {
+   "source_id": "world-bank-gep",
+   "family": "real GDP growth",
+   "rule": "D18",
+   "paths": 177,
+   "paths_with_2_or_more_vintages": 145,
+   "median_vintages": 4,
+   "median_months_before_end_first_vintage": 23,
+   "ever_in_band": {
+    "k": 97,
+    "n": 145,
+    "share": 0.669,
+    "ci95": [
+     0.5889,
+     0.7403
+    ],
+    "ci95_audit_adjusted": [
+     0.5889,
+     0.7403
+    ],
+    "withheld": null
+   },
+   "settled_in_band": {
+    "k": 73,
+    "n": 145,
+    "share": 0.5034,
+    "ci95": [
+     0.423,
+     0.5837
+    ],
+    "ci95_audit_adjusted": [
+     0.423,
+     0.5837
+    ],
+    "withheld": null
+   },
+   "settled_months_before_end": {
+    "n": 73,
+    "median": 11,
+    "iqr": [
+     6,
+     23
+    ]
+   },
+   "audit_residual_error_rate": 0
+  }
+ ],
+ "shocks": [
+  {
+   "shock_id": "gfc-2008",
+   "label": "Global financial crisis",
+   "start": "2008-09",
+   "start_note": "Lehman Brothers filed for bankruptcy on 15 September 2008.",
+   "target_years": [
+    2008,
+    2009
+   ],
+   "families": "all",
+   "sources": [
+    {
+     "source_id": "bcb-focus",
+     "paths": 7,
+     "in_band_before": 3,
+     "contradicted": 4,
+     "reached": 4,
+     "censored": 0,
+     "buckets": {
+      "reached_0_to_3_months": 1,
+      "reached_4_to_6_months": 3
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 1,
+       "reached": 1,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 3,
+       "reached": 3,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "cbo-projections",
+     "paths": 5,
+     "in_band_before": 0,
+     "contradicted": 5,
+     "reached": 5,
+     "censored": 0,
+     "buckets": {
+      "reached_4_to_6_months": 5
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 0,
+       "reached": 0,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 5,
+       "reached": 5,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "ecb-projections",
+     "paths": 4,
+     "in_band_before": 1,
+     "contradicted": 3,
+     "reached": 2,
+     "censored": 1,
+     "buckets": {
+      "censored_short": 1,
+      "reached_4_to_6_months": 1,
+      "reached_7_to_12_months": 1
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 1,
+       "reached": 0,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 2,
+       "reached": 2,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "eia-aeo",
+     "paths": 8,
+     "in_band_before": 4,
+     "contradicted": 4,
+     "reached": 3,
+     "censored": 1,
+     "buckets": {
+      "censored_short": 1,
+      "reached_month_unknown": 3
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 0,
+       "reached": 0,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 4,
+       "reached": 3,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "fed-sep",
+     "paths": 8,
+     "in_band_before": 0,
+     "contradicted": 8,
+     "reached": 5,
+     "censored": 3,
+     "buckets": {
+      "censored_short": 3,
+      "reached_0_to_3_months": 4,
+      "reached_7_to_12_months": 1
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 4,
+       "reached": 1,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 4,
+       "reached": 4,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "imf-weo",
+     "paths": 22,
+     "in_band_before": 4,
+     "contradicted": 18,
+     "reached": 7,
+     "censored": 11,
+     "buckets": {
+      "censored_short": 8,
+      "censored_overshot": 3,
+      "reached_7_to_12_months": 5,
+      "reached_after_12_months": 2
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 8,
+       "reached": 0,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 10,
+       "reached": 7,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "paths": 12,
+     "in_band_before": 0,
+     "contradicted": 12,
+     "reached": 4,
+     "censored": 8,
+     "buckets": {
+      "censored_short": 8,
+      "reached_after_12_months": 1,
+      "reached_7_to_12_months": 3
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 6,
+       "reached": 0,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 6,
+       "reached": 4,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "world-bank-gep",
+     "paths": 10,
+     "in_band_before": 0,
+     "contradicted": 10,
+     "reached": 2,
+     "censored": 8,
+     "buckets": {
+      "censored_short": 7,
+      "reached_0_to_3_months": 2,
+      "censored_overshot": 1
+     },
+     "by_target_year": {
+      "2008": {
+       "contradicted": 5,
+       "reached": 2,
+       "median_lag_months": null
+      },
+      "2009": {
+       "contradicted": 5,
+       "reached": 0,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    }
+   ]
+  },
+  {
+   "shock_id": "covid-2020",
+   "label": "COVID-19 pandemic",
+   "start": "2020-03",
+   "start_note": "The WHO called COVID-19 a pandemic on 11 March 2020; lockdowns in Europe and the US followed that month.",
+   "target_years": [
+    2020
+   ],
+   "families": "all",
+   "sources": [
+    {
+     "source_id": "bcb-focus",
+     "paths": 4,
+     "in_band_before": 0,
+     "contradicted": 4,
+     "reached": 3,
+     "censored": 1,
+     "buckets": {
+      "reached_7_to_12_months": 1,
+      "censored_overshot": 1,
+      "reached_0_to_3_months": 2
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 4,
+       "reached": 3,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "cbo-projections",
+     "paths": 5,
+     "in_band_before": 0,
+     "contradicted": 5,
+     "reached": 2,
+     "censored": 3,
+     "buckets": {
+      "censored_overshot": 3,
+      "reached_4_to_6_months": 2
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 5,
+       "reached": 2,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "ecb-projections",
+     "paths": 2,
+     "in_band_before": 0,
+     "contradicted": 2,
+     "reached": 1,
+     "censored": 1,
+     "buckets": {
+      "reached_0_to_3_months": 1,
+      "censored_overshot": 1
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 2,
+       "reached": 1,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "fed-sep",
+     "paths": 5,
+     "in_band_before": 1,
+     "contradicted": 4,
+     "reached": 3,
+     "censored": 1,
+     "buckets": {
+      "censored_overshot": 1,
+      "reached_7_to_12_months": 1,
+      "reached_0_to_3_months": 2
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 4,
+       "reached": 3,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "imf-weo",
+     "paths": 11,
+     "in_band_before": 0,
+     "contradicted": 11,
+     "reached": 3,
+     "censored": 8,
+     "buckets": {
+      "reached_0_to_3_months": 1,
+      "censored_overshot": 8,
+      "reached_7_to_12_months": 2
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 11,
+       "reached": 3,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "obr-forecasts",
+     "paths": 2,
+     "in_band_before": 0,
+     "contradicted": 2,
+     "reached": 1,
+     "censored": 1,
+     "buckets": {
+      "reached_7_to_12_months": 1,
+      "censored_overshot": 1
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 2,
+       "reached": 1,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "oecd-economic-outlook",
+     "paths": 9,
+     "in_band_before": 0,
+     "contradicted": 9,
+     "reached": 0,
+     "censored": 9,
+     "buckets": {
+      "censored_overshot": 9
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 9,
+       "reached": 0,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "world-bank-gep",
+     "paths": 7,
+     "in_band_before": 0,
+     "contradicted": 7,
+     "reached": 0,
+     "censored": 7,
+     "buckets": {
+      "censored_overshot": 6,
+      "censored_short": 1
+     },
+     "by_target_year": {
+      "2020": {
+       "contradicted": 7,
+       "reached": 0,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    }
+   ]
+  },
+  {
+   "shock_id": "inflation-2021",
+   "label": "Inflation surge 2021-22",
+   "start": "2021-05",
+   "start_note": "US CPI for April 2021 (4.2% over a year earlier), published 12 May 2021, was the first print of the surge far above target. One start month for every economy: regional starts differ.",
+   "target_years": [
+    2021,
+    2022
+   ],
+   "families": "inflation",
+   "sources": [
+    {
+     "source_id": "bcb-focus",
+     "paths": 2,
+     "in_band_before": 0,
+     "contradicted": 2,
+     "reached": 2,
+     "censored": 0,
+     "buckets": {
+      "reached_7_to_12_months": 1,
+      "reached_after_12_months": 1
+     },
+     "by_target_year": {
+      "2021": {
+       "contradicted": 1,
+       "reached": 1,
+       "median_lag_months": null
+      },
+      "2022": {
+       "contradicted": 1,
+       "reached": 1,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "cbo-projections",
+     "paths": 2,
+     "in_band_before": 0,
+     "contradicted": 2,
+     "reached": 0,
+     "censored": 2,
+     "buckets": {
+      "censored_short": 2
+     },
+     "by_target_year": {
+      "2021": {
+       "contradicted": 1,
+       "reached": 0,
+       "median_lag_months": null
+      },
+      "2022": {
+       "contradicted": 1,
+       "reached": 0,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "ecb-projections",
+     "paths": 2,
+     "in_band_before": 0,
+     "contradicted": 2,
+     "reached": 2,
+     "censored": 0,
+     "buckets": {
+      "reached_4_to_6_months": 1,
+      "reached_after_12_months": 1
+     },
+     "by_target_year": {
+      "2021": {
+       "contradicted": 1,
+       "reached": 1,
+       "median_lag_months": null
+      },
+      "2022": {
+       "contradicted": 1,
+       "reached": 1,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "fed-sep",
+     "paths": 4,
+     "in_band_before": 0,
+     "contradicted": 4,
+     "reached": 4,
+     "censored": 0,
+     "buckets": {
+      "reached_7_to_12_months": 2,
+      "reached_after_12_months": 2
+     },
+     "by_target_year": {
+      "2021": {
+       "contradicted": 2,
+       "reached": 2,
+       "median_lag_months": null
+      },
+      "2022": {
+       "contradicted": 2,
+       "reached": 2,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    },
+    {
+     "source_id": "obr-forecasts",
+     "paths": 2,
+     "in_band_before": 0,
+     "contradicted": 2,
+     "reached": 2,
+     "censored": 0,
+     "buckets": {
+      "reached_4_to_6_months": 1,
+      "reached_after_12_months": 1
+     },
+     "by_target_year": {
+      "2021": {
+       "contradicted": 1,
+       "reached": 1,
+       "median_lag_months": null
+      },
+      "2022": {
+       "contradicted": 1,
+       "reached": 1,
+       "median_lag_months": null
+      }
+     },
+     "median_lag_editions": null,
+     "median_lag_months": null
+    }
+   ]
+  }
+ ],
+ "hype_cycle": {
+  "subjects": 199,
+  "by_basis": {
+   "agreed": 135,
+   "settled": 53,
+   "years_differ": 4,
+   "unsettled": 7
+  },
+  "by_class": {
+   "failed": 21,
+   "mainstream": 138,
+   "stalled": 31,
+   "unsettled": 7,
+   "ambiguous": 2
+  },
+  "tenure_by_class": {
+   "failed": {
+    "subjects": 20,
+    "median_listings": 2,
+    "listings_iqr": [
+     1,
+     2
+    ],
+    "still_listed": 0
+   },
+   "stalled": {
+    "subjects": 31,
+    "median_listings": 2,
+    "listings_iqr": [
+     1,
+     3
+    ],
+    "still_listed": 0
+   },
+   "mainstream": {
+    "subjects": 135,
+    "median_listings": 2,
+    "listings_iqr": [
+     1,
+     3
+    ],
+    "still_listed": 0
+   }
+  },
+  "first_move_by_change": {
+   "dropped": 47,
+   "delayed": 4
+  },
+  "mainstream_exit": {
+   "buckets": {
+    "left_chart_within_2_years_of_mainstream": 64,
+    "left_chart_over_2_years_before_mainstream": 60,
+    "left_chart_over_2_years_after_mainstream": 11
+   },
+   "median_exit_gap_years": -2,
+   "exit_gap_iqr": [
+    -6,
+    1
+   ],
+   "n": 135,
+   "note": "exit edition minus mainstream year, settled and agreed subjects; negative: Gartner took it off the chart before it was mainstream"
+  },
+  "failed_or_stalled": {
+   "subjects": 52,
+   "buckets": {
+    "moved_before_contradiction": 48,
+    "moved_0_to_2_years_after": 3,
+    "builder_dependent": 1
+   },
+   "measurable": 51,
+   "share": {
+    "k": 51,
+    "n": 51,
+    "share": 1,
+    "ci95": [
+     0.93,
+     1
+    ],
+    "ci95_audit_adjusted": [
+     0.83,
+     1
+    ],
+    "withheld": null
+   },
+   "share_of": [
+    "moved_before_contradiction",
+    "moved_0_to_2_years_after"
+   ],
+   "note": "share = moved toward the evidence (delayed, dropped, obsolete) before or within 2 years of the contradiction year, over subjects whose contradiction year has passed and whose bucket does not depend on the builder",
+   "median_lag_years": -6,
+   "lag_years_iqr": [
+    -8.5,
+    -3.5
+   ],
+   "n_lags": 51
+  },
+  "mainstream": {
+   "subjects": 138,
+   "buckets": {
+    "arrival_never_called": 103,
+    "arrival_called_on_time": 16,
+    "builder_dependent": 3,
+    "arrival_called_early": 13,
+    "arrival_called_late": 3
+   },
+   "measurable": 135,
+   "share": {
+    "k": 16,
+    "n": 135,
+    "share": 0.1185,
+    "ci95": [
+     0.0743,
+     0.1839
+    ],
+    "ci95_audit_adjusted": [
+     0,
+     0.2839
+    ],
+    "withheld": null
+   },
+   "share_of": [
+    "arrival_called_on_time"
+   ],
+   "note": "share = arrival called (band under 2 years or plateau phase) within 2 years either side of the mainstream year, over subjects with an arrival call or none before exit",
+   "median_arrival_gap_years": -2,
+   "arrival_gap_iqr": [
+    -3.2,
+    0
+   ],
+   "n_gaps": 32,
+   "late_listings_total": 24
+  },
+  "audit_error_rate": 0.1
+ }
+}

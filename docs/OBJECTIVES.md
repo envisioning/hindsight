@@ -22,8 +22,8 @@ Accuracy per publication, side by side and never ranked (D6, D17), and how accur
 
 The positioning question: do institutions revise their expectations when the evidence changes, and how fast? Adaptation lag is the metric named in the 2026-09-27 pilot spec.
 
-- **State:** not measured yet. Revisions (682), numeric vintages and ranking histories are already in the data.
-- **Next:** #86 adaptation lag; #90 tie-in to the capability benchmarks (needs MZ's call on a data link); #89 the adaptability audit as a client product.
+- **State:** first deterministic build of adaptation lag (#86): numeric forecast paths, shock lags (2008, 2020, 2021-22) and Hype Cycle arrival and exit timing in `data/measures/adaptation-lag/` (`pnpm measure:adaptation-lag`). Definitions are a proposal awaiting MZ (`docs/proposals/adaptation-lag.md`); nothing published.
+- **Next:** #86 MZ review of the proposal, then validation rows and site text; rankings pass; #90 tie-in to the capability benchmarks (needs MZ's call on a data link); #89 the adaptability audit as a client product.
 
 ## 4. Imagination: what fiction saw first (Origins)
 
