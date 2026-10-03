@@ -845,3 +845,15 @@ Result: 249 confirmed, 87 corrected (80 `narrower` to `no_link`; 3 `narrower` to
 **Cost.** One agent, not two blind verifiers with adjudication: the re-check is itself a judgment and can err, as the audit can. Reading (a) is strict: a regional page on one approach or one use of the subject (hydrometallurgy for battery recycling, vertical farms for indoor farming) is no longer linked, though a reader might find it useful.
 
 **Overturned by.** A later re-check or audit of the re-checked rows that finds the readings misapplied, or a revision of readings (a) and (c), recorded as a new decision.
+
+## D58: Envisioning's research ratings: readiness only, against dated milestones (#95)
+
+*Recorded 2026-10-03. Approved by MZ (proposal `docs/proposals/research-ratings-grading.md`, as written).*
+
+**Decision.** The monthly snapshot of the research database (`data/raw/envisioning-research/<date>.json`) is Envisioning's own dated record. Only readiness (`metric1`, TRL 1 to 9, on the default scale and on `cities`) is graded: each (technology, level) is a state-of-affairs claim (D30) dated at the first snapshot that shows it, of a new claim type `rating`; a changed level is a new claim plus a revision. It is checked against the dated milestones of the technology's subject (first prototype, first product, mainstream; #81, reached through `same` links only) with the proposal's TRL band table: `accurate` within one level of the band, `early` or `late` two or more levels off, `unfalsifiable`, or `open` while the milestones are undated. Milestone dates come from blind graders who do not see the rating (D20); a rule script computes the verdict. Impact and Investment are recorded, never graded; `moradia`, `subspace` and `xenotech` are recorded only. No score (D6). #81 extends to the subjects linked to research pages (about 448), so one milestone set serves Origins, research pages (#97) and this grading.
+
+**Why.** Envisioning grades its own record first; the database is its present record, and the CMS overwrites ratings in place, so only snapshots keep the history.
+
+**Cost.** Most ratings stay `open` until #81 dates their subjects; TRL bands are coarse.
+
+**Overturned by.** The research apps publishing a time horizon per readiness level, which would make ratings forecasts in their own right.
