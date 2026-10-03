@@ -4,7 +4,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import type { Claim, Evidence, Institution, Source, SourceEdition, VerdictRow } from "../schema.ts";
+import type { Claim, Evidence, FictionDepiction, Institution, OriginsWork, Source, SourceEdition, VerdictRow } from "../schema.ts";
 
 export const REPO = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const RAW = join(REPO, "data", "raw");
@@ -132,6 +132,8 @@ export interface Draft {
   claim: Omit<Claim, "id" | "source_edition_id" | "subject_ids">;
   /** Raw per-entry id, when the source has one (posters). */
   rawId?: string;
+  /** Fiction-specific fields of an Origins depiction (D57); the claim id is added after id assignment. */
+  depiction?: Omit<FictionDepiction, "claim_id">;
 }
 
 export interface VerdictDraft {
@@ -151,6 +153,10 @@ export interface Bundle {
   verdicts?: VerdictDraft[];
   /** Natural key description, for PROGRESS.md. */
   keyRule: string;
+  /** Further institutions the source names, for example the authors of Origins works (D57). */
+  extraInstitutions?: Institution[];
+  /** Origins works (D57), written to origins-works.json. */
+  works?: OriginsWork[];
   /** Extra aliases the source itself asserts, for example WEF's retrospective relabels. */
   extraAliases?: { label: string; sameAs: string; reason: string; kind: LabelRef["kind"] }[];
 }

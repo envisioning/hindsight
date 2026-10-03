@@ -2,7 +2,7 @@
 // Usage: node scripts/links/publish.mjs [--check]
 // Reads data/links/research.json (latest row per subject-technology pair; a curated row is never
 // overridden by a later agent row; active rows only), data/links/technologies-snapshot.json (titles),
-// data/normalized (subjects, published claims, editions, sources, institutions) and the published
+// data/normalized (subjects, published claims except fiction depictions (D57), editions, sources, institutions) and the published
 // verdicts (data/raw/<source>/final-d20.json, final-d33.json, data/graded/numeric/<source>.json).
 // Writes data/links/by-technology.json (technology -> forecasts) and data/links/by-subject.json
 // (forecast -> technology). Deterministic: the same inputs give byte-identical files.
@@ -87,7 +87,8 @@ const claimsBySubject = new Map();
 const claimDir = path.join(NORMALIZED, "claims");
 for (const f of readdirSync(claimDir).filter((x) => x.endsWith(".json")).sort()) {
 	for (const c of readJson(path.join(claimDir, f))) {
-		if (c.published !== true) continue;
+		// Forecasts only: Origins depictions (claim type `fiction`, D57) are not forecasts and reach www through the Origins tables (#84).
+		if (c.published !== true || c.claim_type === "fiction") continue;
 		const ed = editions.get(c.source_edition_id);
 		const src = ed && sources.get(ed.source_id);
 		const year = Number(String(ed?.published ?? ed?.edition ?? "").slice(0, 4));
@@ -109,12 +110,17 @@ for (const f of readdirSync(claimDir).filter((x) => x.endsWith(".json")).sort())
 	}
 }
 
+// A subject without a published forecast has nothing to show on www (an Origins-only subject, D57). Its links stay
+// in research.json and publish once the subject has a forecast or www reads the Origins tables (#84).
+const shown = links.filter((l) => claimsBySubject.has(l.subject_id));
+const heldNoForecasts = links.length - shown.length;
+
 const byRelation = (a, b) => RELATION_ORDER[a.relation] - RELATION_ORDER[b.relation];
 const cmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
 // 4. by-technology.json
 const techGroups = new Map();
-for (const l of links) {
+for (const l of shown) {
 	const key = `${l.research_slug}/${l.original_id}`;
 	const g = techGroups.get(key) ?? { l, subjects: [] };
 	g.subjects.push({ subject_id: l.subject_id, name: l.name, relation: l.relation });
@@ -152,7 +158,7 @@ const byTechnology = LinksByTechnology.parse({ rule: "D48", links_as_of: linksAs
 
 // 5. by-subject.json
 const subjectGroups = new Map();
-for (const l of links) {
+for (const l of shown) {
 	const list = subjectGroups.get(l.subject_id) ?? [];
 	list.push({ technology_id: l.technology_id, research_slug: l.research_slug, original_id: l.original_id, title: l.title, relation: l.relation });
 	subjectGroups.set(l.subject_id, list);
@@ -190,7 +196,8 @@ console.log(
 		rows: rows.length,
 		pairs: state.size,
 		active: active.length,
-		published_links: links.length,
+		published_links: shown.length,
+		held_no_forecasts: heldNoForecasts,
 		dropped_missing_technology: missing.technology,
 		dropped_missing_subject: missing.subject,
 		technologies: Object.keys(technologies).length,

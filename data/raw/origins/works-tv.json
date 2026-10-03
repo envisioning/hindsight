@@ -1,0 +1,2222 @@
+{
+ "rule": "D57",
+ "note": "Origins works (D57), migrated from www content/origins/data.ts on 2026-10-03 (#78) by scripts/origins/migrate-www.mjs. Facts about each work and one-sentence descriptions written by Envisioning; no text, stills or artwork from the works (NOTICE.md). Child works (episodes, sequels, adaptations) follow their parent. See INDEX.md.",
+ "works": [
+  {
+   "id": "star-trek",
+   "title": "Star Trek",
+   "medium": "tv_series",
+   "year": 1966,
+   "creators": [
+    {
+     "name": "Gene Roddenberry",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765185644/origins/star-trek-30e3t2.png",
+   "www": {
+    "id": "star-trek",
+    "slug": "star-trek",
+    "creator": "Gene Roddenberry",
+    "country": "USA"
+   },
+   "depictions": []
+  },
+  {
+   "id": "star-trek--tos",
+   "title": "The Original Series",
+   "medium": "tv_series",
+   "year": 1966,
+   "creators": [],
+   "countries": [],
+   "parent": "star-trek",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "star-trek",
+    "subtitle_id": "tos"
+   },
+   "depictions": [
+    {
+     "key": "www:npNFqwWnPZaWPTwxD",
+     "label": "Real-Time Language Translation Layers",
+     "description": "Featured as the Universal Translator, allowing instant communication across alien languages.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "npNFqwWnPZaWPTwxD",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "real-time-language-translation"
+      }
+     ],
+     "note": "Re-mapped (#78): Universal translator (Star Trek, Arrival): real-time language translation; the fictional device's own page, subspace/universal-translator, is excluded (D55)."
+    },
+    {
+     "key": "www:M48kkR47huomEHiYL",
+     "label": "Virtual Assistants",
+     "description": "The ship's computer provides intelligent assistance and answers crew questions throughout the series.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "M48kkR47huomEHiYL",
+     "research_status": "unresolved",
+     "research": [],
+     "note": "Unresolved (#78): Ship's computer and HAL 9000 answering the crew: an intelligent assistant. No general assistant page in the published projects."
+    },
+    {
+     "key": "www:kB3Ykz7Y8Yiasnbp2",
+     "label": "Spacecraft Autonomy Systems",
+     "description": "Shuttlecraft are autonomous vehicles that transport crew members between the Enterprise and planets.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "kB3Ykz7Y8Yiasnbp2",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "apogee",
+       "original_id": "spacecraft-autonomy-stacks"
+      }
+     ],
+     "note": "Re-mapped (#78): Autonomous spacecraft and shuttlecraft (Star Trek, 2001, Interstellar): spacecraft autonomy."
+    }
+   ]
+  },
+  {
+   "id": "star-trek--tng",
+   "title": "The Next Generation",
+   "medium": "tv_series",
+   "year": 1987,
+   "creators": [],
+   "countries": [],
+   "parent": "star-trek",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "star-trek",
+    "subtitle_id": "tng"
+   },
+   "depictions": [
+    {
+     "key": "www:CyptkuadkcSAp5hse",
+     "label": "Matter Replicator",
+     "description": "The Replicator creates food, tools, and objects on demand from stored patterns.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "CyptkuadkcSAp5hse",
+     "research_status": "unresolved",
+     "research": [],
+     "note": "Unresolved (#78): Star Trek replicator. No real counterpart page is the same thing (horizons/nanofactory is close, not the same); subspace/replicator is excluded (D55). A candidate for the impossible-trope rule (D57 a)."
+    },
+    {
+     "key": "www:k6hgHAfGK2pzQgLXW",
+     "label": "Virtual Reality",
+     "description": "The Holodeck creates fully immersive virtual environments for recreation and training.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "k6hgHAfGK2pzQgLXW",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "liminal",
+       "original_id": "virtual-reality"
+      }
+     ],
+     "note": "Re-mapped (#78): Holodeck, cyberspace, the Wired, shared dreamscapes, virtual afterlives: immersive virtual environments."
+    },
+    {
+     "key": "www:geE8NoNwWB9vXN2eS",
+     "label": "Haptics",
+     "description": "Holodeck users can physically interact with virtual objects and environments through haptic feedback.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "geE8NoNwWB9vXN2eS",
+     "research_status": "unresolved",
+     "research": [],
+     "note": "Unresolved (#78): Holodeck haptic feedback. No general haptics page (the published haptics pages are specific devices)."
+    }
+   ]
+  },
+  {
+   "id": "the-expanse",
+   "title": "The Expanse",
+   "medium": "tv_series",
+   "year": 2015,
+   "creators": [
+    {
+     "name": "Mark Fergus",
+     "kind": "person"
+    },
+    {
+     "name": "Hawk Ostby",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765186457/origins/the-expanse-x6nlit.png",
+   "www": {
+    "id": "the-expanse",
+    "slug": "the-expanse",
+    "creator": "Mark Fergus and Hawk Ostby",
+    "country": "USA"
+   },
+   "depictions": [
+    {
+     "key": "www:nuclear-fusion-reactor",
+     "label": "Nuclear Fusion Reactor",
+     "description": "The Epstein Drive is a highly efficient fusion propulsion system that enables rapid travel throughout the solar system.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "nuclear-fusion-reactor",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "nuclear-fusion-reactor"
+      }
+     ]
+    },
+    {
+     "key": "www:flexible-electronics",
+     "label": "Flexible Electronics",
+     "description": "Hand terminals feature transparent, flexible displays that serve as ubiquitous personal computing devices.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "flexible-electronics",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "flexible-electronics"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "westworld",
+   "title": "Westworld",
+   "medium": "tv_series",
+   "year": 2016,
+   "creators": [
+    {
+     "name": "Jonathan Nolan",
+     "kind": "person"
+    },
+    {
+     "name": "Lisa Joy",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765186487/origins/westworld-801pna.png",
+   "www": {
+    "id": "westworld",
+    "slug": "westworld",
+    "creator": "Jonathan Nolan and Lisa Joy",
+    "country": "USA"
+   },
+   "depictions": [
+    {
+     "key": "www:synthetic-companions",
+     "label": "Synthetic Companions",
+     "description": "Hosts are indistinguishable from humans, designed to fulfill guest fantasies with adaptive personalities and physical responsiveness.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "synthetic-companions",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "soma",
+       "original_id": "synthetic-companions"
+      },
+      {
+       "research_slug": "wintermute",
+       "original_id": "synthetic-companions"
+      }
+     ]
+    },
+    {
+     "key": "www:soft-robotic-musculature",
+     "label": "Soft-Robotic Musculature",
+     "description": "The Hosts' bodies are constructed with advanced synthetic tissues and musculature that mimic human physiology perfectly.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "soft-robotic-musculature",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "soft-robotic-musculature"
+      }
+     ]
+    },
+    {
+     "key": "www:agency-preservation-protocols",
+     "label": "Agency Preservation Protocols",
+     "description": "The series explores the breakdown of safety protocols designed to keep the AI hosts under strict human control.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "agency-preservation-protocols",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "agency-preservation-protocols"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror",
+   "title": "Black Mirror",
+   "medium": "tv_series",
+   "year": 2011,
+   "creators": [
+    {
+     "name": "Charlie Brooker",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "GBR"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765186506/origins/black-mirror-auu4n3.jpg",
+   "www": {
+    "id": "black-mirror",
+    "slug": "black-mirror",
+    "creator": "Charlie Brooker",
+    "country": "UK"
+   },
+   "depictions": []
+  },
+  {
+   "id": "black-mirror--the-entire-history-of-you",
+   "title": "The Entire History of You",
+   "medium": "tv_episode",
+   "year": 2011,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "the-entire-history-of-you"
+   },
+   "depictions": [
+    {
+     "key": "www:neural-bci-input-devices",
+     "label": "Neural/BCI Input Devices",
+     "description": "The 'Grain' implant records everything a person sees and hears, allowing for perfect memory playback and analysis.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "neural-bci-input-devices",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "pixels",
+       "original_id": "neural-bci-input-devices"
+      }
+     ]
+    },
+    {
+     "key": "www:targeted-memory-reactivation",
+     "label": "Targeted Memory Reactivation (TMR)",
+     "description": "Users can replay and analyze their recorded memories, examining past events in detail through the Grain interface.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "targeted-memory-reactivation",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "targeted-memory-reactivation"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--be-right-back",
+   "title": "Be Right Back",
+   "medium": "tv_episode",
+   "year": 2013,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "be-right-back"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "An AI service creates a digital copy of a deceased person using their social media data and messages, allowing loved ones to continue interacting with them.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:synthetic-companions",
+     "label": "Synthetic Companions",
+     "description": "The AI evolves from text-based chat to a physical android replica, blurring the line between artificial and human companionship.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "synthetic-companions",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "soma",
+       "original_id": "synthetic-companions"
+      },
+      {
+       "research_slug": "wintermute",
+       "original_id": "synthetic-companions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--white-bear",
+   "title": "White Bear",
+   "medium": "tv_episode",
+   "year": 2013,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "white-bear"
+   },
+   "depictions": [
+    {
+     "key": "www:targeted-memory-reactivation",
+     "label": "Targeted Memory Reactivation (TMR)",
+     "description": "Memory wiping technology is used to repeatedly reset a person's consciousness, forcing them to relive the same traumatic experience.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "targeted-memory-reactivation",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "targeted-memory-reactivation"
+      }
+     ]
+    },
+    {
+     "key": "www:surveillance-privacy-liberties",
+     "label": "Surveillance, Privacy, and Civil Liberties",
+     "description": "The episode explores a society where citizens are constantly surveilled and recorded, with their experiences used as public entertainment.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "surveillance-privacy-liberties",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "surveillance-privacy-liberties"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--the-waldo-moment",
+   "title": "The Waldo Moment",
+   "medium": "tv_episode",
+   "year": 2013,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "the-waldo-moment"
+   },
+   "depictions": [
+    {
+     "key": "www:agentic-ai",
+     "label": "Agentic AI",
+     "description": "Waldo is an animated AI character that gains political influence, demonstrating how AI can manipulate public opinion and democratic processes.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "agentic-ai",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "agentic-ai"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--white-christmas",
+   "title": "White Christmas",
+   "medium": "tv_episode",
+   "year": 2014,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "white-christmas"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "Cookies are digital copies of human consciousness extracted and used to control smart homes, raising questions about digital rights and personhood.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:surveillance-privacy-liberties",
+     "label": "Surveillance, Privacy, and Civil Liberties",
+     "description": "Blocking technology allows people to see others as red silhouettes, while Z-Eyes record everything, creating a surveillance state.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "surveillance-privacy-liberties",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "surveillance-privacy-liberties"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--nosedive",
+   "title": "Nosedive",
+   "medium": "tv_episode",
+   "year": 2016,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "nosedive"
+   },
+   "depictions": [
+    {
+     "key": "www:identity-personhood-frameworks",
+     "label": "Identity, Personhood & Rights Frameworks",
+     "description": "A social rating system determines every aspect of life, from housing to travel, based on algorithmic reputation scores calculated from social interactions.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "identity-personhood-frameworks",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "identity-personhood-frameworks"
+      }
+     ]
+    },
+    {
+     "key": "www:emotion-recognition-systems",
+     "label": "Emotion Recognition Systems",
+     "description": "The system analyzes facial expressions, tone of voice, and social interactions to continuously update personal ratings.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "emotion-recognition-systems",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "emotion-recognition-systems"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--playtest",
+   "title": "Playtest",
+   "medium": "tv_episode",
+   "year": 2016,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "playtest"
+   },
+   "depictions": [
+    {
+     "key": "www:spatial-computing",
+     "label": "Spatial Computing",
+     "description": "An augmented reality horror game uses brain-computer interfaces to create immersive, personalized virtual experiences that tap into the player's fears.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "spatial-computing",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cities",
+       "original_id": "spatial-computing"
+      },
+      {
+       "research_slug": "horizons",
+       "original_id": "spatial-computing"
+      }
+     ]
+    },
+    {
+     "key": "www:neural-bci-input-devices",
+     "label": "Neural/BCI Input Devices",
+     "description": "The game system directly interfaces with the brain to read thoughts and generate personalized horror scenarios in real-time.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "neural-bci-input-devices",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "pixels",
+       "original_id": "neural-bci-input-devices"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--shut-up-and-dance",
+   "title": "Shut Up and Dance",
+   "medium": "tv_episode",
+   "year": 2016,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "shut-up-and-dance"
+   },
+   "depictions": [
+    {
+     "key": "www:surveillance-privacy-liberties",
+     "label": "Surveillance, Privacy, and Civil Liberties",
+     "description": "Hackers use webcam surveillance and blackmail to control victims, demonstrating the vulnerability of always-on digital surveillance.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "surveillance-privacy-liberties",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "surveillance-privacy-liberties"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--san-junipero",
+   "title": "San Junipero",
+   "medium": "tv_episode",
+   "year": 2016,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "san-junipero"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "The dying can upload their consciousness to a digital afterlife in San Junipero, a virtual reality world where they can live forever.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:spatial-computing",
+     "label": "Spatial Computing",
+     "description": "San Junipero is a fully immersive virtual reality environment where uploaded consciousnesses can experience any time period and location.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "spatial-computing",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cities",
+       "original_id": "spatial-computing"
+      },
+      {
+       "research_slug": "horizons",
+       "original_id": "spatial-computing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--uss-callister",
+   "title": "USS Callister",
+   "medium": "tv_episode",
+   "year": 2017,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "uss-callister"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "DNA samples are used to create digital copies of people's consciousness, which are then trapped in a virtual reality game.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:spatial-computing",
+     "label": "Spatial Computing",
+     "description": "The episode features an immersive virtual reality space simulation where digital consciousnesses experience a fully realized Star Trek-like universe.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "spatial-computing",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cities",
+       "original_id": "spatial-computing"
+      },
+      {
+       "research_slug": "horizons",
+       "original_id": "spatial-computing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--arkangel",
+   "title": "Arkangel",
+   "medium": "tv_episode",
+   "year": 2017,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "arkangel"
+   },
+   "depictions": [
+    {
+     "key": "www:surveillance-privacy-liberties",
+     "label": "Surveillance, Privacy, and Civil Liberties",
+     "description": "A parental monitoring system allows parents to track their child's location, see through their eyes, and filter distressing content from their perception.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "surveillance-privacy-liberties",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "surveillance-privacy-liberties"
+      }
+     ]
+    },
+    {
+     "key": "www:neural-bci-input-devices",
+     "label": "Neural/BCI Input Devices",
+     "description": "The Arkangel system uses a neural implant to monitor a child's experiences and filter their visual perception of the world.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "neural-bci-input-devices",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "pixels",
+       "original_id": "neural-bci-input-devices"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--crocodile",
+   "title": "Crocodile",
+   "medium": "tv_episode",
+   "year": 2017,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "crocodile"
+   },
+   "depictions": [
+    {
+     "key": "www:targeted-memory-reactivation",
+     "label": "Targeted Memory Reactivation (TMR)",
+     "description": "A memory extraction device allows investigators to view people's memories as video recordings, used to solve crimes by accessing witnesses' recollections.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "targeted-memory-reactivation",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "targeted-memory-reactivation"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--hang-the-dj",
+   "title": "Hang the DJ",
+   "medium": "tv_episode",
+   "year": 2017,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "hang-the-dj"
+   },
+   "depictions": [
+    {
+     "key": "www:agentic-ai",
+     "label": "Agentic AI",
+     "description": "A dating app uses AI to run thousands of simulations of relationships, predicting compatibility by testing different scenarios in virtual environments.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "agentic-ai",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "agentic-ai"
+      }
+     ]
+    },
+    {
+     "key": "www:simulated-worlds-with-synthetic-life",
+     "label": "Simulated Worlds With Synthetic Life",
+     "description": "The system creates simulated worlds where digital copies of users test relationships, with the AI determining optimal matches based on simulation results.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "simulated-worlds-with-synthetic-life",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "simulated-synthetic-life"
+      }
+     ],
+     "note": "Re-mapped (#78): Same title, Simulated Worlds With Synthetic Life: the page's original_id changed."
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--metalhead",
+   "title": "Metalhead",
+   "medium": "tv_episode",
+   "year": 2017,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "metalhead"
+   },
+   "depictions": [
+    {
+     "key": "www:autonomous-field-robotics",
+     "label": "Autonomous Field Robotics",
+     "description": "Autonomous robotic dogs hunt and kill humans in a post-apocalyptic world, demonstrating the dangers of weaponized autonomous systems.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "autonomous-field-robotics",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "spore",
+       "original_id": "autonomous-field-robotics"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--black-museum",
+   "title": "Black Museum",
+   "medium": "tv_episode",
+   "year": 2017,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "black-museum"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "The episode features multiple technologies including digital consciousness transfer, where a person's mind is copied into another's brain, and a device that allows feeling another person's pain.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:neural-bci-input-devices",
+     "label": "Neural/BCI Input Devices",
+     "description": "A neural interface allows one person to experience another's sensations, including pain, creating a form of digital empathy or torture device.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "neural-bci-input-devices",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "pixels",
+       "original_id": "neural-bci-input-devices"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--striking-vipers",
+   "title": "Striking Vipers",
+   "medium": "tv_episode",
+   "year": 2019,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "striking-vipers"
+   },
+   "depictions": [
+    {
+     "key": "www:spatial-computing",
+     "label": "Spatial Computing",
+     "description": "A virtual reality fighting game creates fully immersive experiences where players can feel physical sensations and form emotional connections in the virtual world.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "spatial-computing",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cities",
+       "original_id": "spatial-computing"
+      },
+      {
+       "research_slug": "horizons",
+       "original_id": "spatial-computing"
+      }
+     ]
+    },
+    {
+     "key": "www:haptic-feedback-suits",
+     "label": "Haptic Feedback Suits",
+     "description": "The VR system provides realistic haptic feedback, allowing players to experience touch and physical sensations in the virtual environment.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "haptic-feedback-suits",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "fabric",
+       "original_id": "haptic-feedback-suits"
+      },
+      {
+       "research_slug": "vortex",
+       "original_id": "haptic-feedback-suits"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--smithereens",
+   "title": "Smithereens",
+   "medium": "tv_episode",
+   "year": 2019,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "smithereens"
+   },
+   "depictions": [
+    {
+     "key": "www:surveillance-privacy-liberties",
+     "label": "Surveillance, Privacy, and Civil Liberties",
+     "description": "A social media company tracks users' locations and activities in real-time, demonstrating the extent of digital surveillance and data collection.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "surveillance-privacy-liberties",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "surveillance-privacy-liberties"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--rachel-jack-and-ashley-too",
+   "title": "Rachel, Jack and Ashley Too",
+   "medium": "tv_episode",
+   "year": 2019,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "rachel-jack-and-ashley-too"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "A pop star's consciousness is copied into AI-powered dolls, while her real consciousness is suppressed and used to generate new music.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:synthetic-companions",
+     "label": "Synthetic Companions",
+     "description": "AI-powered companion dolls contain a limited version of the pop star's personality, designed to interact with fans as synthetic companions.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "synthetic-companions",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "soma",
+       "original_id": "synthetic-companions"
+      },
+      {
+       "research_slug": "wintermute",
+       "original_id": "synthetic-companions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--joan-is-awful",
+   "title": "Joan is Awful",
+   "medium": "tv_episode",
+   "year": 2023,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "joan-is-awful"
+   },
+   "depictions": [
+    {
+     "key": "www:generative-ai",
+     "label": "Generative AI",
+     "description": "A streaming service uses AI to generate personalized content based on users' lives, creating deepfake versions of real people in dramatized shows.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "generative-ai",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cities",
+       "original_id": "generative-ai"
+      }
+     ]
+    },
+    {
+     "key": "www:simulated-worlds-with-synthetic-life",
+     "label": "Simulated Worlds With Synthetic Life",
+     "description": "The episode reveals that reality itself might be a simulation, with AI generating nested layers of simulated experiences.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "simulated-worlds-with-synthetic-life",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "simulated-synthetic-life"
+      }
+     ],
+     "note": "Re-mapped (#78): Same title, Simulated Worlds With Synthetic Life: the page's original_id changed."
+    }
+   ]
+  },
+  {
+   "id": "black-mirror--beyond-the-sea",
+   "title": "Beyond the Sea",
+   "medium": "tv_episode",
+   "year": 2023,
+   "creators": [],
+   "countries": [],
+   "parent": "black-mirror",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "black-mirror",
+    "subtitle_id": "beyond-the-sea"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "Astronauts use robotic replicas on Earth controlled by their consciousness, allowing them to experience life back home while on a long space mission.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:neural-bci-input-devices",
+     "label": "Neural/BCI Input Devices",
+     "description": "A neural interface allows astronauts to transfer their consciousness into Earth-based robotic bodies, experiencing remote presence through advanced brain-computer interfaces.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "neural-bci-input-devices",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "pixels",
+       "original_id": "neural-bci-input-devices"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "altered-carbon",
+   "title": "Altered Carbon",
+   "medium": "tv_series",
+   "year": 2018,
+   "creators": [
+    {
+     "name": "Laeta Kalogridis",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765186551/origins/altered-carbon-ee7a7v.png",
+   "www": {
+    "id": "altered-carbon",
+    "slug": "altered-carbon",
+    "creator": "Laeta Kalogridis",
+    "country": "USA"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "Cortical stacks store a person's consciousness, allowing them to be 'rescaled' into new bodies.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:biofabricated-collagen-fibers",
+     "label": "Biofabricated Collagen Fibers for Textile Production",
+     "description": "Sleeves are synthetic bodies grown to host human consciousness, effectively making physical form a commodity.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "biofabricated-collagen-fibers",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "fabric",
+       "original_id": "biofabricated-collagen-fibers"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "psycho-pass",
+   "title": "Psycho-Pass",
+   "medium": "tv_series",
+   "year": 2012,
+   "creators": [
+    {
+     "name": "Naoyoshi Shiotani",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "JPN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765186950/origins/psycho-pass-5awk7y.png",
+   "www": {
+    "id": "psycho-pass",
+    "slug": "psycho-pass",
+    "creator": "Naoyoshi Shiotani",
+    "country": "Japan"
+   },
+   "depictions": [
+    {
+     "key": "www:predictive-threat-intelligence",
+     "label": "Predictive Threat Intelligence Platforms",
+     "description": "The Sybil System continuously scans the populace's mental state to predict and prevent criminal behavior.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "predictive-threat-intelligence",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "predictive-threat-intelligence"
+      }
+     ]
+    },
+    {
+     "key": "www:emotion-recognition-systems",
+     "label": "Emotion Recognition Systems",
+     "description": "Street scanners instantly read a person's 'Psycho-Pass' to determine stress and aggression levels.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "emotion-recognition-systems",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "emotion-recognition-systems"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "title": "Dark",
+   "medium": "tv_series",
+   "year": 2017,
+   "creators": [
+    {
+     "name": "Baran bo Odar",
+     "kind": "person"
+    },
+    {
+     "name": "Jantje Friese",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "DEU"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765186978/origins/dark-7oipra.png",
+   "www": {
+    "id": "dark",
+    "slug": "dark",
+    "creator": "Baran bo Odar and Jantje Friese",
+    "country": "Germany"
+   },
+   "depictions": []
+  },
+  {
+   "id": "3-percent",
+   "title": "3%",
+   "medium": "tv_series",
+   "year": 2016,
+   "creators": [
+    {
+     "name": "Pedro Aguilera",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "BRA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765187001/origins/3-percent-8vzh4n.jpg",
+   "www": {
+    "id": "3-percent",
+    "slug": "3-percent",
+    "creator": "Pedro Aguilera",
+    "country": "Brazil"
+   },
+   "depictions": [
+    {
+     "key": "www:cognitive-city-infrastructure",
+     "label": "Cognitive Infrastructure for Cities",
+     "description": "The Offshore society is a technologically advanced, optimized city managed by strict data-driven governance.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "cognitive-city-infrastructure",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "cognitive-city-infrastructure"
+      }
+     ]
+    },
+    {
+     "key": "www:biometric-identification-systems",
+     "label": "Biometric Identification Systems",
+     "description": "Citizens are tracked and identified through advanced biometric implants.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "biometric-identification-systems",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "biometric-identification-systems"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "silo",
+   "title": "Silo",
+   "medium": "tv_series",
+   "year": 2023,
+   "creators": [
+    {
+     "name": "Graham Yost",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765187027/origins/silo-2z1lpy.png",
+   "www": {
+    "id": "silo",
+    "slug": "silo",
+    "creator": "Graham Yost",
+    "country": "USA"
+   },
+   "depictions": [
+    {
+     "key": "www:circular-vertical-farming",
+     "label": "Circular Vertical Farming",
+     "description": "The Silo relies on strictly managed hydroponic and vertical farming levels for survival.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "circular-vertical-farming",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "circular-vertical-farming"
+      }
+     ]
+    },
+    {
+     "key": "www:air-based-protein-synthesis",
+     "label": "Air-Based Protein Synthesis",
+     "description": "Food production is optimized for a closed environment with limited resources.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "air-based-protein-synthesis",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "spore",
+       "original_id": "air-based-protein-synthesis"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "alice-in-borderland",
+   "title": "Alice in Borderland",
+   "medium": "tv_series",
+   "year": 2020,
+   "creators": [
+    {
+     "name": "Shinsuke Sato",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "JPN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765187055/origins/alice-in-borderland-idoyp9.png",
+   "www": {
+    "id": "alice-in-borderland",
+    "slug": "alice-in-borderland",
+    "creator": "Shinsuke Sato",
+    "country": "Japan"
+   },
+   "depictions": [
+    {
+     "key": "www:spatial-computing",
+     "label": "Spatial Computing",
+     "description": "The game master uses advanced surveillance and laser systems to control the arena.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "spatial-computing",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cities",
+       "original_id": "spatial-computing"
+      },
+      {
+       "research_slug": "horizons",
+       "original_id": "spatial-computing"
+      }
+     ]
+    },
+    {
+     "key": "www:surveillance-privacy-liberties",
+     "label": "Surveillance, Privacy, and Civil Liberties",
+     "description": "Players are constantly monitored by drones and cameras across the deserted city.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "surveillance-privacy-liberties",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "surveillance-privacy-liberties"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "blackout",
+   "title": "Blackout",
+   "medium": "tv_series",
+   "year": 2023,
+   "creators": [
+    {
+     "name": "Valerio D'Annunzio",
+     "kind": "person"
+    },
+    {
+     "name": "Andrea Valagussa",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "ITA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765187328/origins/blackout-jopsv2.png",
+   "www": {
+    "id": "blackout",
+    "slug": "blackout",
+    "creator": "Valerio D'Annunzio and Andrea Valagussa",
+    "country": "Italy"
+   },
+   "depictions": []
+  },
+  {
+   "id": "neon-genesis-evangelion",
+   "title": "Neon Genesis Evangelion",
+   "medium": "tv_series",
+   "year": 1995,
+   "creators": [
+    {
+     "name": "Hideaki Anno",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "JPN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765187912/origins/neon-genesis-evangelion-dtzmt4.jpg",
+   "www": {
+    "id": "neon-genesis-evangelion",
+    "slug": "neon-genesis-evangelion",
+    "creator": "Hideaki Anno",
+    "country": "Japan"
+   },
+   "depictions": [
+    {
+     "key": "www:defense-exoskeletons",
+     "label": "Exoskeletons & Load-Bearing Augmentation",
+     "description": "Evangelion units are massive bio-mechanical exoskeletons that require neural synchronization with their pilots.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "defense-exoskeletons",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "defense-exoskeletons"
+      }
+     ]
+    },
+    {
+     "key": "www:neural-bci-input-devices",
+     "label": "Neural/BCI Input Devices",
+     "description": "Pilots interface with Evangelion units through direct neural connections, experiencing pain and trauma from the mechs.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "neural-bci-input-devices",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "pixels",
+       "original_id": "neural-bci-input-devices"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "neon-genesis-evangelion--evangelion-tv",
+   "title": "Neon Genesis Evangelion (TV Series)",
+   "medium": "tv_series",
+   "year": 1995,
+   "creators": [],
+   "countries": [],
+   "parent": "neon-genesis-evangelion",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "neon-genesis-evangelion",
+    "subtitle_id": "evangelion-tv"
+   },
+   "depictions": []
+  },
+  {
+   "id": "neon-genesis-evangelion--evangelion-rebuild",
+   "title": "Rebuild of Evangelion (Films)",
+   "medium": "film",
+   "year": 2007,
+   "creators": [],
+   "countries": [],
+   "parent": "neon-genesis-evangelion",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "neon-genesis-evangelion",
+    "subtitle_id": "evangelion-rebuild"
+   },
+   "depictions": []
+  },
+  {
+   "id": "cowboy-bebop",
+   "title": "Cowboy Bebop",
+   "medium": "tv_series",
+   "year": 1998,
+   "creators": [
+    {
+     "name": "Shinichirō Watanabe",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "JPN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765187943/origins/cowboy-bebop-svx4gv.png",
+   "www": {
+    "id": "cowboy-bebop",
+    "slug": "cowboy-bebop",
+    "creator": "Shinichirō Watanabe",
+    "country": "Japan"
+   },
+   "depictions": []
+  },
+  {
+   "id": "serial-experiments-lain",
+   "title": "Serial Experiments Lain",
+   "medium": "tv_series",
+   "year": 1998,
+   "creators": [
+    {
+     "name": "Chiaki J. Konaka",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "JPN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765187970/origins/serial-experiments-lain-zl688x.png",
+   "www": {
+    "id": "serial-experiments-lain",
+    "slug": "serial-experiments-lain",
+    "creator": "Chiaki J. Konaka",
+    "country": "Japan"
+   },
+   "depictions": [
+    {
+     "key": "www:k6hgHAfGK2pzQgLXW",
+     "label": "Virtual Reality",
+     "description": "The Wired is a global network that blurs the boundaries between physical and digital reality, allowing consciousness to exist online.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "k6hgHAfGK2pzQgLXW",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "liminal",
+       "original_id": "virtual-reality"
+      }
+     ],
+     "note": "Re-mapped (#78): Holodeck, cyberspace, the Wired, shared dreamscapes, virtual afterlives: immersive virtual environments."
+    },
+    {
+     "key": "www:neural-bci-input-devices",
+     "label": "Neural/BCI Input Devices",
+     "description": "Lain interfaces with the Wired through advanced computer systems that allow direct mental connection to the network.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "neural-bci-input-devices",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "pixels",
+       "original_id": "neural-bci-input-devices"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ergo-proxy",
+   "title": "Ergo Proxy",
+   "medium": "tv_series",
+   "year": 2006,
+   "creators": [
+    {
+     "name": "Shūkō Murase",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "JPN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188011/origins/ergo-proxy-s4xj49.jpg",
+   "www": {
+    "id": "ergo-proxy",
+    "slug": "ergo-proxy",
+    "creator": "Shūkō Murase",
+    "country": "Japan"
+   },
+   "depictions": []
+  },
+  {
+   "id": "steins-gate",
+   "title": "Steins;Gate",
+   "medium": "tv_series",
+   "year": 2011,
+   "creators": [
+    {
+     "name": "Hiroshi Hamasaki",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "JPN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188041/origins/steins-gate-eqxtou.png",
+   "www": {
+    "id": "steins-gate",
+    "slug": "steins-gate",
+    "creator": "Hiroshi Hamasaki",
+    "country": "Japan"
+   },
+   "depictions": []
+  },
+  {
+   "id": "steins-gate--steins-gate-original",
+   "title": "Steins;Gate",
+   "medium": "tv_series",
+   "year": 2011,
+   "creators": [],
+   "countries": [],
+   "parent": "steins-gate",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "steins-gate",
+    "subtitle_id": "steins-gate-original"
+   },
+   "depictions": []
+  },
+  {
+   "id": "steins-gate--steins-gate-zero",
+   "title": "Steins;Gate 0",
+   "medium": "tv_series",
+   "year": 2018,
+   "creators": [],
+   "countries": [],
+   "parent": "steins-gate",
+   "canon": [],
+   "inclusion": "curated",
+   "www": {
+    "id": "steins-gate",
+    "subtitle_id": "steins-gate-zero"
+   },
+   "depictions": []
+  },
+  {
+   "id": "battlestar-galactica",
+   "title": "Battlestar Galactica",
+   "medium": "tv_series",
+   "year": 2004,
+   "creators": [
+    {
+     "name": "Ronald D. Moore",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188060/origins/battlestar-galactica-fvpqv1.jpg",
+   "www": {
+    "id": "battlestar-galactica",
+    "slug": "battlestar-galactica",
+    "creator": "Ronald D. Moore",
+    "country": "USA"
+   },
+   "depictions": [
+    {
+     "key": "www:synthetic-companions",
+     "label": "Synthetic Companions",
+     "description": "Cylons are synthetic beings that appear human and can download their consciousness into new bodies upon death.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "synthetic-companions",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "soma",
+       "original_id": "synthetic-companions"
+      },
+      {
+       "research_slug": "wintermute",
+       "original_id": "synthetic-companions"
+      }
+     ]
+    },
+    {
+     "key": "www:artificially-intelligent-governor",
+     "label": "Artificially Intelligent Governor",
+     "description": "The Cylon race is controlled by a collective AI consciousness that orchestrates the genocide of humanity.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "artificially-intelligent-governor",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cities",
+       "original_id": "artificially-intelligent-governor"
+      },
+      {
+       "research_slug": "horizons",
+       "original_id": "artificially-intelligent-governor"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "orphan-black",
+   "title": "Orphan Black",
+   "medium": "tv_series",
+   "year": 2013,
+   "creators": [
+    {
+     "name": "Graeme Manson",
+     "kind": "person"
+    },
+    {
+     "name": "John Fawcett",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "CAN"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188087/origins/orphan-black-fjyked.jpg",
+   "www": {
+    "id": "orphan-black",
+    "slug": "orphan-black",
+    "creator": "Graeme Manson and John Fawcett",
+    "country": "Canada"
+   },
+   "depictions": [
+    {
+     "key": "www:genetic-reprogramming",
+     "label": "Genetic Reprogramming",
+     "description": "The Leda and Castor clones are genetically engineered humans created by biotech corporations for various purposes.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "genetic-reprogramming",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "genetic-reprogramming"
+      }
+     ]
+    },
+    {
+     "key": "www:biometric-identification-systems",
+     "label": "Biometric Identification Systems",
+     "description": "The series explores how clones are tracked and identified through genetic markers and surveillance systems.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "biometric-identification-systems",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "aegis",
+       "original_id": "biometric-identification-systems"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "humans",
+   "title": "Humans",
+   "medium": "tv_series",
+   "year": 2015,
+   "creators": [
+    {
+     "name": "Sam Vincent",
+     "kind": "person"
+    },
+    {
+     "name": "Jonathan Brackley",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "GBR"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188115/origins/humans-et1lvh.png",
+   "www": {
+    "id": "humans",
+    "slug": "humans",
+    "creator": "Sam Vincent and Jonathan Brackley",
+    "country": "UK"
+   },
+   "depictions": [
+    {
+     "key": "www:synthetic-companions",
+     "label": "Synthetic Companions",
+     "description": "Synths are lifelike androids designed to serve humans in various capacities, from household chores to caregiving.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "synthetic-companions",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "soma",
+       "original_id": "synthetic-companions"
+      },
+      {
+       "research_slug": "wintermute",
+       "original_id": "synthetic-companions"
+      }
+     ]
+    },
+    {
+     "key": "www:agentic-ai",
+     "label": "Agentic AI",
+     "description": "Some Synths gain consciousness and free will, challenging the boundaries between artificial and human intelligence.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "agentic-ai",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "agentic-ai"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "love-death-robots",
+   "title": "Love, Death & Robots",
+   "medium": "tv_series",
+   "year": 2019,
+   "creators": [
+    {
+     "name": "Tim Miller",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188152/origins/love-death-robots-9pmcyl.png",
+   "www": {
+    "id": "love-death-robots",
+    "slug": "love-death-robots",
+    "creator": "Tim Miller",
+    "country": "USA"
+   },
+   "depictions": []
+  },
+  {
+   "id": "upload",
+   "title": "Upload",
+   "medium": "tv_series",
+   "year": 2020,
+   "creators": [
+    {
+     "name": "Greg Daniels",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188187/origins/upload-o3q5ic.png",
+   "www": {
+    "id": "upload",
+    "slug": "upload",
+    "creator": "Greg Daniels",
+    "country": "USA"
+   },
+   "depictions": [
+    {
+     "key": "www:digital-neuro-twins",
+     "label": "Digital Neuro-Twins",
+     "description": "People can upload their consciousness to digital afterlives, creating virtual copies of themselves that continue to exist after death.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "digital-neuro-twins",
+     "research_status": "resolved",
+     "research": [
+      {
+       "research_slug": "cortex",
+       "original_id": "digital-neuro-twins"
+      }
+     ]
+    },
+    {
+     "key": "www:k6hgHAfGK2pzQgLXW",
+     "label": "Virtual Reality",
+     "description": "The virtual afterlives are immersive digital worlds where uploaded consciousnesses can interact and experience simulated realities.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "k6hgHAfGK2pzQgLXW",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "liminal",
+       "original_id": "virtual-reality"
+      }
+     ],
+     "note": "Re-mapped (#78): Holodeck, cyberspace, the Wired, shared dreamscapes, virtual afterlives: immersive virtual environments."
+    }
+   ]
+  },
+  {
+   "id": "devs",
+   "title": "Devs",
+   "medium": "tv_series",
+   "year": 2020,
+   "creators": [
+    {
+     "name": "Alex Garland",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188210/origins/devs-b3q6zj.png",
+   "www": {
+    "id": "devs",
+    "slug": "devs",
+    "creator": "Alex Garland",
+    "country": "USA"
+   },
+   "depictions": [
+    {
+     "key": "www:Lm9YJupQM2dz3u89L",
+     "label": "Quantum Computing",
+     "description": "The Devs quantum computer can simulate and predict the future by calculating all possible quantum states of the universe.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "Lm9YJupQM2dz3u89L",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "horizons",
+       "original_id": "quantum-computing"
+      }
+     ],
+     "note": "Re-mapped (#78): Quantum computing (Neuromancer, Devs)."
+    },
+    {
+     "key": "www:simulated-worlds-with-synthetic-life",
+     "label": "Simulated Worlds With Synthetic Life",
+     "description": "The series explores whether reality itself might be a simulation, and if the quantum computer can reveal the true nature of existence.",
+     "basis": "connection",
+     "centrality": null,
+     "physically_impossible": null,
+     "www_technology_id": "simulated-worlds-with-synthetic-life",
+     "research_status": "remapped",
+     "research": [
+      {
+       "research_slug": "wintermute",
+       "original_id": "simulated-synthetic-life"
+      }
+     ],
+     "note": "Re-mapped (#78): Same title, Simulated Worlds With Synthetic Life: the page's original_id changed."
+    }
+   ]
+  },
+  {
+   "id": "severance",
+   "title": "Severance",
+   "medium": "tv_series",
+   "year": 2022,
+   "creators": [
+    {
+     "name": "Dan Erickson",
+     "kind": "person"
+    }
+   ],
+   "countries": [
+    "USA"
+   ],
+   "canon": [],
+   "inclusion": "curated",
+   "image_url": "https://res.cloudinary.com/envisioning/image/upload/v1765188237/origins/severance-4y1iux.png",
+   "www": {
+    "id": "severance",
+    "slug": "severance",
+    "creator": "Dan Erickson",
+    "country": "USA"
+   },
+   "depictions": []
+  }
+ ]
+}

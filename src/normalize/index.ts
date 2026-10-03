@@ -12,7 +12,9 @@ import { join } from "node:path";
 import {
   Claim,
   Evidence,
+  FictionDepiction,
   Institution,
+  OriginsWork,
   Revision,
   Source,
   SourceEdition,
@@ -33,6 +35,7 @@ import { bcbFocus, bnefEvo, bpEnergyOutlook, eiaAeo, ieaWeo, imfWeo } from "./so
 import { SubjectResolver } from "./subjects.ts";
 import { a16zBigIdeas, accentureTechVision, deloitteTechTrends, ftsgTechTrends, ipccPathways, mckinseyTechTrends, nicGlobalTrends, shellScenarios, trendwatching } from "./sources/tier3.ts";
 import { economistWorldAhead, eurasiaTopRisks, kurzweil, pewElonImagining } from "./sources/tier2.ts";
+import { origins } from "./sources/origins.ts";
 
 type ClaimRow = Claim & { edition: string };
 
@@ -74,6 +77,7 @@ const ADAPTERS: Record<string, () => Bundle> = {
   "nic-global-trends": nicGlobalTrends,
   "shell-scenarios": shellScenarios,
   "ipcc-pathways": ipccPathways,
+  origins,
 };
 
 interface Progress {
@@ -140,6 +144,8 @@ function main(): void {
   const claimsBySource = new Map<string, ClaimRow[]>();
   const verdicts: VerdictRow[] = [];
   const evidence: Evidence[] = [];
+  const works: OriginsWork[] = [];
+  const depictions: FictionDepiction[] = [];
   let phaseChecks: PhaseCheck[] = [];
   const posterIds = new Map<string, string>();
   const skippedTotals: Record<string, Record<string, number>> = {};
@@ -170,6 +176,7 @@ function main(): void {
 
     const errors: string[] = [];
     const rows: ClaimRow[] = [];
+    const sourceDepictions: FictionDepiction[] = [];
     const idSnap = ids.snapshot();
     const subjectSnap = subjects.snapshot();
     const verdictCount = verdicts.length;
@@ -196,6 +203,11 @@ function main(): void {
           const parsed = Claim.safeParse(row);
           if (!parsed.success) errors.push(`${id}: ${parsed.error.issues.map((i) => `${i.path.join(".")} ${i.message}`).join("; ")}`);
           else rows.push({ ...parsed.data, edition: ed });
+          if (d.depiction !== undefined) {
+            const dp = FictionDepiction.safeParse({ claim_id: id, ...d.depiction });
+            if (!dp.success) errors.push(`${id} depiction: ${dp.error.issues.map((i) => `${i.path.join(".")} ${i.message}`).join("; ")}`);
+            else sourceDepictions.push(dp.data);
+          }
         }
       }
       for (const e of bundle.editions) {
@@ -204,8 +216,17 @@ function main(): void {
       }
       const s = Source.safeParse(bundle.source);
       if (!s.success) errors.push(`source: ${s.error.message}`);
-      const inst = Institution.safeParse(bundle.institution);
-      if (!inst.success) errors.push(`institution: ${inst.error.message}`);
+      for (const i of [bundle.institution, ...(bundle.extraInstitutions ?? [])]) {
+        const inst = Institution.safeParse(i);
+        if (!inst.success) errors.push(`institution ${i.id}: ${inst.error.message}`);
+        const known = institutions.get(i.id);
+        if (known !== undefined && JSON.stringify(known) !== JSON.stringify(Institution.parse(i))) errors.push(`institution ${i.id}: differs from the row another source wrote`);
+      }
+      for (const w of bundle.works ?? []) {
+        const p = OriginsWork.safeParse(w);
+        if (!p.success) errors.push(`work ${w.id}: ${p.error.issues.map((x) => `${x.path.join(".")} ${x.message}`).join("; ")}`);
+        for (const c of w.creator_ids) if (!(bundle.extraInstitutions ?? []).some((i) => i.id === c)) errors.push(`work ${w.id}: creator ${c} is not an institution`);
+      }
       for (const v of bundle.verdicts ?? []) {
         const claimId = posterIds.get(v.rawClaimKey);
         const claim = rows.find((c) => c.id === claimId);
@@ -250,6 +271,9 @@ function main(): void {
     rmSync(join(OUT, "errors", `${name}.txt`), { force: true });
     sources.push(Source.parse(bundle.source));
     institutions.set(bundle.institution.id, Institution.parse(bundle.institution));
+    for (const i of bundle.extraInstitutions ?? []) institutions.set(i.id, Institution.parse(i));
+    works.push(...(bundle.works ?? []).map((w) => OriginsWork.parse(w)));
+    depictions.push(...sourceDepictions);
     editions.push(...bundle.editions.map((e) => SourceEdition.parse(e)));
     claimsBySource.set(name, rows);
     writeJson(
@@ -342,6 +366,8 @@ function main(): void {
     writeJson(join(OUT, "revisions.json"), revisions);
     writeJson(join(OUT, "verdicts.json"), verdicts);
     writeJson(join(OUT, "evidence.json"), evidence);
+    writeJson(join(OUT, "origins-works.json"), works);
+    writeJson(join(OUT, "origins-depictions.json"), depictions);
   }
 
   // Cross-source subjects.
@@ -372,6 +398,8 @@ function main(): void {
     posterAdded,
     verdicts: verdicts.length,
     evidence: evidence.length,
+    works: works.length,
+    depictions: depictions.length,
     editions: editions.length,
     skippedTotals,
     phaseChecks,
@@ -405,6 +433,8 @@ interface ReadmeInput {
   posterAdded: number;
   verdicts: number;
   evidence: number;
+  works: number;
+  depictions: number;
   editions: number;
   skippedTotals: Record<string, Record<string, number>>;
   phaseChecks: PhaseCheck[];
@@ -431,6 +461,8 @@ function writeReadme(r: ReadmeInput): void {
     `| revisions.json | ${Object.values(r.revCount).reduce((a, b) => a + b, 0)} | Revision |`,
     `| verdicts.json | ${r.verdicts} | VerdictRow (grader 1 of 2, Envisioning posters only; D7) |`,
     `| evidence.json | ${r.evidence} | Evidence |`,
+    `| origins-works.json | ${r.works} | OriginsWork (works of fiction, D57) |`,
+    `| origins-depictions.json | ${r.depictions} | FictionDepiction (fiction fields of each depiction claim, D57) |`,
     "| hype-cycle-phase-boundaries.json | 13 editions | HypePhaseBoundaries |",
     "| ids.json | registry | see below |",
     "",

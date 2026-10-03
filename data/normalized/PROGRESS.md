@@ -40,7 +40,9 @@ Written by `pnpm normalize`. One line per source. Re-run the command to pick up 
 | nic-global-trends | normalized | 7 | 137 | 0 | kind + label + quote with case and punctuation removed | 2026-10-03T07:31:03Z |
 | shell-scenarios | normalized | 17 | 340 | 0 | kind + scenario or label + metric + target_year | 2026-10-03T07:31:03Z |
 | ipcc-pathways | normalized | 5 | 205 | 0 | kind + scenario + metric + target_year | 2026-10-03T07:31:03Z |
+| origins | normalized | 167 | 165 | 0 | depiction key (migrated connections: www:<research original_id>) | 2026-10-03T07:45:21Z |
 | crowd-baseline | captured, no normalize adapter yet |  |  |  |  | 2026-10-03T07:31:06Z |
+| envisioning-research | captured, no normalize adapter yet |  |  |  |  | 2026-10-03T07:45:24Z |
 | links | not yet captured: no INDEX.md |  |  |  |  | 2026-10-03T07:31:06Z |
 
 ## Hype Cycle phase cross-check
