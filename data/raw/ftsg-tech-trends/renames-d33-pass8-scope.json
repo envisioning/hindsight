@@ -1,0 +1,48 @@
+{
+ "rule": "D24 pass 8 of D33 rename checks (D53, issue #75)",
+ "recorded": "2026-10-03",
+ "note": "field_subject: 2016-029, a sub-item of the 2016 Security page printed as 'Internet of Things' that carries the 2015 Malware text, shared subject internet-of-things with the IoT trends and was computed persisted (matched in 2017) without a check; a D53 claims row in subject-curation.json gives it its own subject internet-of-things-malware, so it is now a candidate. status_changed: the row's mechanical status changed with that re-run (2016-029 only; 2014-005 still persists through 2016-066). match_id_check: 2020-234 Enzymes to Eat Ocean Trash was published same to 2021-417 Plastic-Eating Enzymes from the label (pass 2); on the text it continues as 2021-418 Smart Ocean Filters (pass-7 adjudication of sibling 2020-239). Rows not listed keep their earlier verdicts; listed rows are pending until both pass-8 checkers have a verdict. previous is the earlier final verdict (D24).",
+ "counts": {
+  "field_subject": 1,
+  "status_changed": 1,
+  "match_id_check": 1,
+  "rows": 2
+ },
+ "rows": [
+  {
+   "id": "ftsg-tech-trends-2016-029",
+   "edition": "2016",
+   "next_editions": [
+    "2017",
+    "2019"
+   ],
+   "reasons": [
+    "field_subject",
+    "status_changed"
+   ],
+   "previous": {
+    "pass": 1,
+    "verdict": "persisted",
+    "status": "computed",
+    "matched_in": "2017"
+   }
+  },
+  {
+   "id": "ftsg-tech-trends-2020-234",
+   "edition": "2020",
+   "next_editions": [
+    "2021",
+    "2022"
+   ],
+   "reasons": [
+    "match_id_check"
+   ],
+   "previous": {
+    "pass": 2,
+    "verdict": "persisted",
+    "status": "adjudicated",
+    "match_id": "ftsg-tech-trends-2021-417"
+   }
+  }
+ ]
+}

@@ -1900,7 +1900,21 @@
     {
       "id": "internet-of-things",
       "related": [
-        "iot-devices"
+        "iot-devices",
+        "internet-of-things-malware"
+      ]
+    },
+    {
+      "id": "internet-of-things-malware",
+      "related": [
+        "internet-of-things",
+        "malware"
+      ]
+    },
+    {
+      "id": "malware",
+      "related": [
+        "internet-of-things-malware"
       ]
     },
     {
@@ -2832,6 +2846,12 @@
       "label": "Cybersecurity",
       "subject_label": "Cybersecurity (breach is inevitable)",
       "reason": "D53: Deloitte's cyber chapter recurs with a new thesis (a field). 2013 'No Such Thing as Hacker-proof': every organisation has been or will be breached. Not the claim of 2011 (cyber intelligence) or the 2014 exponential (boilerplate, kept on cybersecurity with its 2015 continuation). Related to cybersecurity."
+    },
+    {
+      "claim_id": "ftsg-tech-trends-2016-029",
+      "label": "Internet of Things",
+      "subject_label": "Internet of Things (malware)",
+      "reason": "D53, issue #75: a sub-item of the FTSG 2016 Security page printed as 'Internet of Things' whose text is the 2015 Malware text (malware can be sent to anything that plugs into a wall or another machine). Its claim is connected devices as a malware target, not the IoT trend of 2014-005, 2016-066 and 2017-108. Related to internet-of-things and malware."
     }
   ]
 }
