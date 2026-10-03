@@ -205,7 +205,7 @@ export async function readList(def) {
 export async function readSightAndSound(def) {
   const html = await get(def.url);
   const out = [];
-  const re = /<article id="[^"]*" class="PreviewCard__Article[^"]*"><a href="[^"]*"><h1>([^<]*)<\/h1>.*?PreviewCard__label">([^<]*?\d+)<\/p>.*?ResultsPage__P[^"]*">(\d{4})(?:<!-- -->)?\s*([^<]*)<\/p>(?:<p class="ResultsPage__P[^"]*">Directed by (?:<!-- -->)?([^<]*)<\/p>)?/gs;
+  const re = /<article id="[^"]*" class="PreviewCard__Article[^"]*"><a href="[^"]*"><h1>([^<]*)<\/h1>.*?PreviewCard__label">(.*?)<\/p>.*?ResultsPage__P[^"]*">(\d{4})(?:<!-- -->)?\s*([^<]*)<\/p>(?:<p class="ResultsPage__P[^"]*">Directed by (?:<!-- -->)?([^<]*)<\/p>)?/gs;
   const dec = (s) => s.replace(/&#x27;/g, "'").replace(/&amp;/g, "&").replace(/&quot;/g, '"').trim();
   const seen = new Set();
   for (const m of html.matchAll(re)) {

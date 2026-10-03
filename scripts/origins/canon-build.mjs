@@ -32,6 +32,8 @@ const year = (t) => (typeof t === "string" ? Number(t.match(/^[+-](\d{4})/)?.[1]
 function classify(labels) {
   const l = labels.join(" | ").toLowerCase();
   if (/episode/.test(l)) return "tv_episode";
+  // A book series, franchise or fictional universe is not the listed work.
+  if (/series|franchise|universe|saga|trilogy|sequence|cycle/.test(l) && !/television|tv |tv series|web series|anime|comic|manga|graphic novel|video game|webcomic/.test(l)) return "series";
   if (/television series season|season of|anime season/.test(l)) return "tv_season";
   if (/miniseries|original video animation|\bova\b/.test(l)) return "miniseries";
   if (/short film/.test(l)) return "short_film";
@@ -86,7 +88,9 @@ async function main() {
     if (!e) return undefined;
     const classes = claimValues(e, "P31").map(label).filter(Boolean);
     if (claimValues(e, "P31").some((c) => ["Q5", "Q4167410", "Q43229", "Q95074", "Q15632617", "Q13442814", "Q1914636"].includes(c))) return undefined;
-    const yrs = [...claimValues(e, "P577"), ...claimValues(e, "P580"), ...claimValues(e, "P571")].map(year).filter(Boolean);
+    // First publication or release (P577); else start time (P580); else inception (P571).
+    const pick = (p) => claimValues(e, p).map(year).filter(Boolean);
+    const yrs = pick("P577").length ? pick("P577") : pick("P580").length ? pick("P580") : pick("P571");
     const genres = claimValues(e, "P136").map(label).filter(Boolean);
     const titleClaim = (e.claims?.P1476 ?? []).map((c) => c.mainsnak.datavalue?.value).find((v) => v && !/^en/.test(v.language));
     const enwiki = e.sitelinks?.enwiki?.title;
@@ -115,7 +119,15 @@ async function main() {
   for (const e of entries) {
     const def = e.def;
     const r = e.work.link ? q.get(e.work.link) : undefined;
-    let f = r && !r.fragment ? facts(r.qid) : r ? facts(r.qid) : undefined;
+    let f = r ? facts(r.qid) : undefined;
+    // The link names the work's source, series or adaptation rather than the listed work
+    // (a film entry linking to the novel, a novel entry linking to its series): no Wikidata facts.
+    if (f) {
+      const fFam = f.medium === "series" ? "series" : FAMILY_OF[f.medium];
+      const lFam = def.id === "seiun-dramatic-presentation" ? FAMILY_OF[seiunMedium(e.mediaType) ?? "film"] : def.family;
+      const ok = fFam === undefined ? true : lFam === "book" ? fFam === "book" : lFam === "comic" ? fFam === "comic" : ["film", "tv", "short", "game"].includes(fFam) && (lFam !== "game" || fFam === "game");
+      if (!ok) f = undefined;
+    }
     let seriesF = e.work.series?.link ? facts(q.get(e.work.series.link)?.qid) : undefined;
     // Medium.
     let medium = def.medium;
@@ -147,16 +159,21 @@ async function main() {
   // 4. Dedupe into works: by Wikidata id, else by title and first creator.
   const works = new Map(); // key -> work
   const byKey2 = new Map();
+  const episodeAlias = new Map();
   const key2 = (title, persons, family) => `${family}|${norm(title)}|${lastName(persons[0]?.name)}`;
   const workOf = (c) => {
     const fam = FAMILY_OF[c.medium];
     const title = c.f?.label ?? c.e.work.title;
-    const k = c.f ? `q:${c.f.qid}` : `t:${key2(c.e.work.title, c.persons, fam)}|${c.parentF?.qid ?? norm(c.seriesTitle ?? "")}`;
-    let w = works.get(k);
+    const episode = c.parentF || c.seriesTitle;
+    const k = c.f ? `q:${c.f.qid}` : episode ? `e:${c.parentF?.qid ?? norm(c.seriesTitle)}|${norm(c.e.work.title)}` : `t:${key2(c.e.work.title, c.persons, fam)}`;
+    const eKey = episode ? `e:${c.parentF?.qid ?? norm(c.seriesTitle)}|${norm(c.e.work.title)}` : undefined;
+    let w = works.get(k) ?? (!c.f && eKey ? episodeAlias.get(eKey) : undefined);
+    if (w && eKey && !episodeAlias.has(eKey)) episodeAlias.set(eKey, w);
     if (!w && !c.f && !c.parentF && !c.seriesTitle) w = byKey2.get(key2(c.e.work.title, c.persons, fam));
     if (!w) {
       w = { key: k, f: c.f, title, listTitle: c.e.work.title, medium: c.medium, family: fam, parentF: c.parentF, seriesTitle: c.seriesTitle, persons: c.persons, originals: c.e.work.originals, jpn: false, memberships: [], sfOk: false, aka: c.e.work.aka };
       works.set(k, w);
+      if (eKey) episodeAlias.set(eKey, w);
     }
     for (const t of [c.e.work.title, title, c.e.work.aka].filter(Boolean)) {
       const kk = key2(t, c.persons.length ? c.persons : w.persons, fam);
@@ -166,7 +183,8 @@ async function main() {
     if ((!w.originals || w.originals.length === 0) && c.e.work.originals?.length) w.originals = c.e.work.originals;
     return w;
   };
-  for (const c of cands) {
+  // Works with a Wikidata item first, so a list row without a link joins the linked work.
+  for (const c of [...cands.filter((x) => x.f), ...cands.filter((x) => !x.f)]) {
     const w = workOf(c);
     if (c.def.japanese || c.e.work.flagJpn) w.jpn = true;
     w.memberships.push({ c });
@@ -226,9 +244,12 @@ async function main() {
   const matchExisting = (w) => {
     if (w.f && byQid.has(w.f.qid)) return byQid.get(w.f.qid);
     for (const t of [w.title, w.listTitle, w.aka].filter(Boolean)) {
-      const hits = (titleIdx.get(`${w.family}|${norm(t)}`) ?? []).filter((x) => Math.abs(x.w.year - w.year) <= 1 && (w.parentF ? x.w.parent !== undefined : true));
-      if (hits.length === 1 && !hits[0].w.wikidata) return hits[0];
-      if (hits.length === 1 && hits[0].w.wikidata === w.f?.qid) return hits[0];
+      // Same title and family, and the same first creator or a year within one; roots before child works.
+      const sameCreator = (x) => w.creators[0] && x.w.creators.some((c) => lastName(c.name) === lastName(w.creators[0].name));
+      const all = (titleIdx.get(`${w.family}|${norm(t)}`) ?? []).filter((x) => (Math.abs(x.w.year - w.year) <= 1 || (sameCreator(x) && Math.abs(x.w.year - w.year) <= 3)) && (!x.w.wikidata || x.w.wikidata === w.f?.qid));
+      const roots = all.filter((x) => !x.w.parent);
+      const hits = roots.length > 0 ? roots : all;
+      if (hits.length === 1) return hits[0];
     }
     return undefined;
   };
@@ -247,7 +268,9 @@ async function main() {
       .filter((m) => { const k = `${m.list_id}|${m.year}|${m.category ?? ""}|${m.entry_title ?? ""}`; if (seen.has(k)) return false; seen.add(k); return true; })
       .sort((a, b) => a.year - b.year || a.list_id.localeCompare(b.list_id) || (a.entry_title ?? "").localeCompare(b.entry_title ?? ""));
   };
-  const newId = (title, year, prefix = "") => {
+  const newId = (title, year, prefix = "", fallback = "") => {
+    // A title in Japanese script only: the first creator and the year make the id.
+    if (slug(title) === "work") title = fallback || "work";
     let id = prefix + slug(title);
     if (ids.has(id)) id = `${prefix}${slug(title)}-${year}`;
     let n = 2;
@@ -291,7 +314,7 @@ async function main() {
       if (w.f) byQid.set(w.f.qid, hit);
       continue;
     }
-    const r = toRaw(w, newId(w.title, w.year));
+    const r = toRaw(w, newId(w.title, w.year, "", `${w.creators[0]?.name ?? w.family} ${w.year}`));
     r.canon = membershipsOf({ ...w, out: r });
     appended[w.family].push(r);
     if (w.f) byQid.set(w.f.qid, { fam: w.family, w: r });
