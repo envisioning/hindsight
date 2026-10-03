@@ -29,8 +29,8 @@ The positioning question: do institutions revise their expectations when the evi
 
 Imagination lead time: years from a work's depiction of a technology to its first prototype, first product and mainstream adoption, over a defined canon of works. Fiction is never graded right or wrong (D6).
 
-- **State:** 76 hand-made works in www; plan decided by MZ 2026-10-02.
-- **Next:** epic #85 (#77 to #84).
+- **State:** D57 records the design (works as editions, depictions as `fiction` claims, milestones per subject); two rules are open for MZ (impossible tropes; canon lists). The 76 www works, 91 child works and 165 connections are in `data/raw/origins/` (#78) as `curated` works with `connection` depictions over 66 subjects, with 67 curated research links (19 published, 48 held until #84).
+- **Next:** MZ's answers to D57 (a) and (b); #79 canon, #80 extraction, #81 milestones, #82 lead time, #83 links, #84 site.
 
 ## 5. One connected map of expectations and technologies
 

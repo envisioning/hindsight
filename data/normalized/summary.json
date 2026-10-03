@@ -35,13 +35,14 @@
   "ftsg-tech-trends": 4185,
   "nic-global-trends": 137,
   "shell-scenarios": 340,
-  "ipcc-pathways": 205
+  "ipcc-pathways": 205,
+  "origins": 165
  },
- "subjects": 5900,
+ "subjects": 5946,
  "aliases": {
-  "exact": 5833,
-  "judgment": 230,
-  "normalized": 218
+  "exact": 5879,
+  "judgment": 239,
+  "normalized": 219
  },
  "cross_source": [
   {
@@ -71,6 +72,40 @@
    ]
   },
   {
+   "subject_id": "quantum-computing",
+   "sources": [
+    "ark-big-ideas",
+    "deloitte-tech-trends",
+    "deloitte-tmt-predictions",
+    "ftsg-tech-trends",
+    "gartner-hype-cycle",
+    "mit-tr-10-breakthrough",
+    "origins"
+   ]
+  },
+  {
+   "subject_id": "ai-agents",
+   "sources": [
+    "ark-big-ideas",
+    "deloitte-tech-trends",
+    "deloitte-tmt-predictions",
+    "gartner-hype-cycle",
+    "mckinsey-tech-trends",
+    "origins"
+   ]
+  },
+  {
+   "subject_id": "blockchain",
+   "sources": [
+    "ark-big-ideas",
+    "deloitte-tech-trends",
+    "ftsg-tech-trends",
+    "gartner-hype-cycle",
+    "mckinsey-tech-trends",
+    "origins"
+   ]
+  },
+  {
    "subject_id": "leo-satellite-broadband",
    "sources": [
     "deloitte-tmt-predictions",
@@ -82,14 +117,14 @@
    ]
   },
   {
-   "subject_id": "quantum-computing",
+   "subject_id": "virtual-reality",
    "sources": [
-    "ark-big-ideas",
-    "deloitte-tech-trends",
     "deloitte-tmt-predictions",
+    "envisioning-education",
+    "envisioning-technology",
     "ftsg-tech-trends",
     "gartner-hype-cycle",
-    "mit-tr-10-breakthrough"
+    "origins"
    ]
   },
   {
@@ -100,26 +135,6 @@
     "envisioning-technology",
     "ftsg-tech-trends",
     "gartner-hype-cycle"
-   ]
-  },
-  {
-   "subject_id": "ai-agents",
-   "sources": [
-    "ark-big-ideas",
-    "deloitte-tech-trends",
-    "deloitte-tmt-predictions",
-    "gartner-hype-cycle",
-    "mckinsey-tech-trends"
-   ]
-  },
-  {
-   "subject_id": "blockchain",
-   "sources": [
-    "ark-big-ideas",
-    "deloitte-tech-trends",
-    "ftsg-tech-trends",
-    "gartner-hype-cycle",
-    "mckinsey-tech-trends"
    ]
   },
   {
@@ -173,16 +188,6 @@
    ]
   },
   {
-   "subject_id": "virtual-reality",
-   "sources": [
-    "deloitte-tmt-predictions",
-    "envisioning-education",
-    "envisioning-technology",
-    "ftsg-tech-trends",
-    "gartner-hype-cycle"
-   ]
-  },
-  {
    "subject_id": "anti-aging-drugs",
    "sources": [
     "envisioning-health",
@@ -210,12 +215,30 @@
    ]
   },
   {
+   "subject_id": "brain-computer-interface",
+   "sources": [
+    "ftsg-tech-trends",
+    "gartner-hype-cycle",
+    "mit-tr-10-breakthrough",
+    "origins"
+   ]
+  },
+  {
    "subject_id": "brazil-real-gdp-growth",
    "sources": [
     "bcb-focus",
     "imf-weo",
     "oecd-economic-outlook",
     "world-bank-gep"
+   ]
+  },
+  {
+   "subject_id": "conversational-user-interfaces",
+   "sources": [
+    "ftsg-tech-trends",
+    "gartner-hype-cycle",
+    "mit-tr-10-breakthrough",
+    "origins"
    ]
   },
   {
@@ -255,6 +278,15 @@
    ]
   },
   {
+   "subject_id": "generative-ai",
+   "sources": [
+    "deloitte-tech-trends",
+    "gartner-hype-cycle",
+    "mckinsey-tech-trends",
+    "origins"
+   ]
+  },
+  {
    "subject_id": "gesture-recognition",
    "sources": [
     "envisioning-technology",
@@ -291,6 +323,15 @@
    ]
   },
   {
+   "subject_id": "spatial-computing",
+   "sources": [
+    "accenture-tech-vision",
+    "deloitte-tech-trends",
+    "gartner-hype-cycle",
+    "origins"
+   ]
+  },
+  {
    "subject_id": "tablets",
    "sources": [
     "deloitte-tmt-predictions",
@@ -318,6 +359,15 @@
    ]
   },
   {
+   "subject_id": "virtual-assistants",
+   "sources": [
+    "gartner-hype-cycle",
+    "kurzweil",
+    "mit-tr-10-breakthrough",
+    "origins"
+   ]
+  },
+  {
    "subject_id": "3d-bioprinting-systems-for-organ-transplant",
    "sources": [
     "envisioning-horizons",
@@ -342,6 +392,22 @@
    ]
   },
   {
+   "subject_id": "ai-companions",
+   "sources": [
+    "a16z-big-ideas",
+    "mit-tr-10-breakthrough",
+    "origins"
+   ]
+  },
+  {
+   "subject_id": "ar-cloud",
+   "sources": [
+    "ftsg-tech-trends",
+    "gartner-hype-cycle",
+    "origins"
+   ]
+  },
+  {
    "subject_id": "autonomous-vehicles",
    "sources": [
     "ark-big-ideas",
@@ -358,14 +424,6 @@
    ]
   },
   {
-   "subject_id": "brain-computer-interface",
-   "sources": [
-    "ftsg-tech-trends",
-    "gartner-hype-cycle",
-    "mit-tr-10-breakthrough"
-   ]
-  },
-  {
    "subject_id": "china-real-gdp-growth",
    "sources": [
     "imf-weo",
@@ -379,14 +437,6 @@
     "eurasia-top-risks",
     "nic-global-trends",
     "wef-global-risks"
-   ]
-  },
-  {
-   "subject_id": "conversational-user-interfaces",
-   "sources": [
-    "ftsg-tech-trends",
-    "gartner-hype-cycle",
-    "mit-tr-10-breakthrough"
    ]
   },
   {
@@ -475,14 +525,6 @@
     "ftsg-tech-trends",
     "gartner-hype-cycle",
     "mit-tr-10-breakthrough"
-   ]
-  },
-  {
-   "subject_id": "generative-ai",
-   "sources": [
-    "deloitte-tech-trends",
-    "gartner-hype-cycle",
-    "mckinsey-tech-trends"
    ]
   },
   {
@@ -622,14 +664,6 @@
    ]
   },
   {
-   "subject_id": "spatial-computing",
-   "sources": [
-    "accenture-tech-vision",
-    "deloitte-tech-trends",
-    "gartner-hype-cycle"
-   ]
-  },
-  {
    "subject_id": "tele-medicine",
    "sources": [
     "deloitte-tmt-predictions",
@@ -651,14 +685,6 @@
     "imf-weo",
     "obr-forecasts",
     "oecd-economic-outlook"
-   ]
-  },
-  {
-   "subject_id": "virtual-assistants",
-   "sources": [
-    "gartner-hype-cycle",
-    "kurzweil",
-    "mit-tr-10-breakthrough"
    ]
   },
   {

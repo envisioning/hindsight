@@ -1,6 +1,6 @@
 {
 	"rule": "D48",
-	"links_as_of": "2026-10-02T21:00:00.000Z",
+	"links_as_of": "2026-10-03T00:00:00.000Z",
 	"technologies": {
 		"aegis/biometric-access-control": {
 			"technology_id": "176dbeb2-e3f2-4e09-9673-24666c0637d1",
@@ -48532,19 +48532,28 @@
 			"title": "Brain-Computer Interfaces (BCI)",
 			"subjects": [
 				{
+					"subject_id": "brain-computer-interface",
+					"name": "Brain-Computer Interface",
+					"relation": "same"
+				},
+				{
 					"subject_id": "brain-computer-interfaces-and-neuroprosthetics",
 					"name": "Brain-Computer Interfaces and Neuroprosthetics",
 					"relation": "narrower"
 				}
 			],
 			"claims": {
-				"count": 2,
+				"count": 17,
 				"publishers": [
-					"Future Today Strategy Group (formerly Future Today Institute)"
+					"Future Today Strategy Group (formerly Future Today Institute)",
+					"Gartner, Inc.",
+					"MIT Technology Review"
 				],
-				"first_year": 2024,
+				"first_year": 2001,
 				"last_year": 2025,
-				"verdicts": {},
+				"verdicts": {
+					"persisted": 4
+				},
 				"latest": [
 					{
 						"id": "ftsg-tech-trends-2025-560",
@@ -48555,11 +48564,131 @@
 						"verdict": null
 					},
 					{
+						"id": "mit-tr-10-breakthrough-2025-011",
+						"subject_id": "brain-computer-interface",
+						"source_id": "mit-tr-10-breakthrough",
+						"publisher": "MIT Technology Review",
+						"year": 2025,
+						"verdict": null
+					},
+					{
 						"id": "ftsg-tech-trends-2024-563",
 						"subject_id": "brain-computer-interfaces-and-neuroprosthetics",
 						"source_id": "ftsg-tech-trends",
 						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 						"year": 2024,
+						"verdict": null
+					},
+					{
+						"id": "ftsg-tech-trends-2023-156",
+						"subject_id": "brain-computer-interface",
+						"source_id": "ftsg-tech-trends",
+						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
+						"year": 2023,
+						"verdict": "persisted"
+					},
+					{
+						"id": "ftsg-tech-trends-2022-250",
+						"subject_id": "brain-computer-interface",
+						"source_id": "ftsg-tech-trends",
+						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
+						"year": 2022,
+						"verdict": "persisted"
+					},
+					{
+						"id": "ftsg-tech-trends-2021-240",
+						"subject_id": "brain-computer-interface",
+						"source_id": "ftsg-tech-trends",
+						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
+						"year": 2021,
+						"verdict": "persisted"
+					},
+					{
+						"id": "ftsg-tech-trends-2020-283",
+						"subject_id": "brain-computer-interface",
+						"source_id": "ftsg-tech-trends",
+						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
+						"year": 2020,
+						"verdict": "persisted"
+					},
+					{
+						"id": "gartner-hype-cycle-2018-034",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2018,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2017-012",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2017,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2016-014",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2016,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2015-007",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2015,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2014-007",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2014,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2013-006",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2013,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2011-004",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2011,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2010-003",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2010,
+						"verdict": null
+					},
+					{
+						"id": "gartner-hype-cycle-2004-002",
+						"subject_id": "brain-computer-interface",
+						"source_id": "gartner-hype-cycle",
+						"publisher": "Gartner, Inc.",
+						"year": 2004,
+						"verdict": null
+					},
+					{
+						"id": "mit-tr-10-breakthrough-2001-001",
+						"subject_id": "brain-computer-interface",
+						"source_id": "mit-tr-10-breakthrough",
+						"publisher": "MIT Technology Review",
+						"year": 2001,
 						"verdict": null
 					}
 				]
@@ -50497,13 +50626,18 @@
 					"relation": "same"
 				},
 				{
+					"subject_id": "emotion-recognition",
+					"name": "Emotion Recognition",
+					"relation": "same"
+				},
+				{
 					"subject_id": "simulating-empathy-and-emotion",
 					"name": "Simulating Empathy and Emotion",
 					"relation": "narrower"
 				}
 			],
 			"claims": {
-				"count": 13,
+				"count": 15,
 				"publishers": [
 					"Deloitte Touche Tohmatsu Limited",
 					"Future Today Strategy Group (formerly Future Today Institute)",
@@ -50512,8 +50646,8 @@
 				"first_year": 2013,
 				"last_year": 2023,
 				"verdicts": {
-					"faded": 2,
-					"persisted": 5,
+					"faded": 3,
+					"persisted": 6,
 					"renamed": 1
 				},
 				"latest": [
@@ -50534,6 +50668,14 @@
 						"verdict": "persisted"
 					},
 					{
+						"id": "ftsg-tech-trends-2022-098",
+						"subject_id": "emotion-recognition",
+						"source_id": "ftsg-tech-trends",
+						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
+						"year": 2022,
+						"verdict": "faded"
+					},
+					{
 						"id": "ftsg-tech-trends-2022-115",
 						"subject_id": "affective-computing",
 						"source_id": "ftsg-tech-trends",
@@ -50552,6 +50694,14 @@
 					{
 						"id": "ftsg-tech-trends-2021-004",
 						"subject_id": "simulating-empathy-and-emotion",
+						"source_id": "ftsg-tech-trends",
+						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
+						"year": 2021,
+						"verdict": "persisted"
+					},
+					{
+						"id": "ftsg-tech-trends-2021-097",
+						"subject_id": "emotion-recognition",
 						"source_id": "ftsg-tech-trends",
 						"publisher": "Future Today Strategy Group (formerly Future Today Institute)",
 						"year": 2021,
@@ -51224,19 +51374,25 @@
 			"title": "Real-Time Language Translation Layers",
 			"subjects": [
 				{
+					"subject_id": "real-time-language-translation",
+					"name": "Real-time language translation",
+					"relation": "same"
+				},
+				{
 					"subject_id": "real-time-translation",
 					"name": "Real-time translation",
 					"relation": "same"
 				}
 			],
 			"claims": {
-				"count": 1,
+				"count": 2,
 				"publishers": [
 					"Ray Kurzweil"
 				],
-				"first_year": 2005,
+				"first_year": 1999,
 				"last_year": 2005,
 				"verdicts": {
+					"miss": 1,
 					"partial": 1
 				},
 				"latest": [
@@ -51247,6 +51403,14 @@
 						"publisher": "Ray Kurzweil",
 						"year": 2005,
 						"verdict": "partial"
+					},
+					{
+						"id": "kurzweil-1999-055",
+						"subject_id": "real-time-language-translation",
+						"source_id": "kurzweil",
+						"publisher": "Ray Kurzweil",
+						"year": 1999,
+						"verdict": "miss"
 					}
 				]
 			}

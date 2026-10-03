@@ -785,8 +785,190 @@ export const AdaptationHypeSubject = z.object({
   readings: z.array(AdaptationHypeReading).min(1).max(2),
 });
 
+// ---------------------------------------------------------------- Origins: fiction as a source (D57)
+
+/** Medium of a work of fiction (D57). `collection`: a book of short stories. */
+export const OriginsMedium = z.enum([
+  "novel",
+  "novella",
+  "short_story",
+  "collection",
+  "film",
+  "short_film",
+  "tv_series",
+  "tv_season",
+  "tv_episode",
+  "miniseries",
+  "game",
+  "comic",
+]);
+
+/**
+ * A work's place on a published list (D57, #79). `standing` keeps winners, shortlisted and
+ * otherwise listed works apart, so the canon rule (winners only, or shortlists too) is a
+ * filter on the rows and never a re-capture.
+ */
+export const CanonMembership = z.object({
+  /** Stable id of the list, for example `hugo-best-novel`. */
+  list_id: Id,
+  list_name: z.string().min(1),
+  /** Award year or edition year of the list. */
+  year: z.number().int(),
+  category: z.string().optional(),
+  standing: z.enum(["winner", "shortlisted", "listed"]),
+  source_url: Url.optional(),
+});
+
+/**
+ * A creator of a work as recorded in the raw file. A person or a named group (a duo credited
+ * together) becomes an `Institution` of kind `author`; a studio or publisher is metadata only (D57).
+ */
+export const OriginsCreator = z.object({
+  name: z.string().min(1),
+  kind: z.enum(["person", "group"]),
+});
+
+/** Where a depiction stands against Envisioning's research database when it was captured (#78). */
+export const OriginsResearchTarget = z.object({
+  research_slug: Id,
+  original_id: Id,
+});
+
+/**
+ * One depiction in a raw work entry (`data/raw/origins/works-<medium>.json`). It becomes a Claim
+ * of type `fiction` (D57) and a `FictionDepiction` row.
+ */
+export const OriginsRawDepiction = z.object({
+  /** Natural key, unique within the work (D15). Migrated rows: `www:<research original_id>`. */
+  key: z.string().min(1),
+  /** Subject label, resolved through subject-aliases.json and subject-curation.json (D13). */
+  label: z.string().min(1),
+  /** One sentence we write on how the work shows the technology. Never the work's text. */
+  description: z.string().min(1).max(300),
+  /** `connection`: a hand-made Origins connection to a research technology (envisioning.com, migrated #78); `extraction`: a depiction from the D20 extraction (#80). */
+  basis: z.enum(["connection", "extraction"]),
+  /** Episode, chapter or scene where the technology appears. */
+  context: z.string().optional(),
+  /** Short attributed quote that states the device (NOTICE.md), when the extraction keeps one. */
+  quote: z.string().min(1).max(400).optional(),
+  /** Plot device or background (#80); null until judged. */
+  centrality: z.enum(["plot_device", "background"]).nullable(),
+  /**
+   * Whether the depiction is a physically impossible trope (warp drive). Null until judged.
+   * What the record does with `true` (record as `not_yet` with a note, or exclude) is open,
+   * MZ decides (D57 rule a); the field holds either answer without a re-capture.
+   */
+  physically_impossible: z.boolean().nullable(),
+  /** The research technology id the www connection named (`original_id`, CMS or legacy), kept as given. */
+  www_technology_id: z.string().min(1).optional(),
+  /** `resolved`: the id is a published page; `remapped`: the id is gone and the same technology has another page; `unresolved`: no current page. */
+  research_status: z.enum(["resolved", "remapped", "unresolved"]).optional(),
+  /** Published research pages the connection points to (several projects can share an `original_id`). Empty when unresolved. */
+  research: z.array(OriginsResearchTarget),
+  note: z.string().optional(),
+});
+
+/** One work in a raw file. Child works (episodes, seasons, sequels, adaptations) follow their parent with `parent`. */
+export const OriginsRawWork = z.object({
+  /** Stable work id: the www id for migrated works, `<parent>--<child>` for child works. */
+  id: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*(?:--[a-z0-9]+(?:-[a-z0-9]+)*)?$/),
+  title: z.string().min(1),
+  original_title: z.string().optional(),
+  medium: OriginsMedium,
+  /** First publication or release of this work (D57: the depiction year). */
+  year: z.number().int().min(1800).max(2100),
+  creators: z.array(OriginsCreator),
+  /** Studio, developer or publisher, as metadata (D57). */
+  studio: z.string().optional(),
+  /** ISO 3166-1 alpha-3, as recorded; empty when not recorded. */
+  countries: z.array(z.string().length(3)),
+  /** Parent work id for an episode, season, sequel or adaptation. */
+  parent: z.string().optional(),
+  /** Canon list memberships (#79). Empty for a work outside the canon. */
+  canon: z.array(CanonMembership),
+  /** `canon`: on at least one list under the canon rule; `curated`: a hand-picked extra (the 76 migrated works until #79). */
+  inclusion: z.enum(["canon", "curated"]),
+  /** Envisioning's own generated artwork (Cloudinary), metadata only (NOTICE.md: no publisher artwork). */
+  image_url: Url.optional(),
+  /** Where the record came from in www (`content/origins/data.ts`), for the migration check. */
+  www: z.object({ id: z.string().min(1), slug: z.string().min(1).optional(), subtitle_id: z.string().min(1).optional(), creator: z.string().optional(), country: z.string().optional() }).optional(),
+  depictions: z.array(OriginsRawDepiction),
+  note: z.string().optional(),
+});
+
+export const OriginsRawFile = z.object({
+  rule: z.literal("D57"),
+  note: z.string().min(1),
+  works: z.array(OriginsRawWork),
+});
+
+/**
+ * A work of fiction as a source edition of `origins` (D57): `data/normalized/origins-works.json`.
+ * `edition` is the work id and `published` its year.
+ */
+export const OriginsWork = SourceEdition.extend({
+  title: z.string().min(1),
+  original_title: z.string().optional(),
+  medium: OriginsMedium,
+  year: z.number().int(),
+  /** Institutions of kind `author`. Empty when only a studio is recorded. */
+  creator_ids: z.array(Id),
+  studio: z.string().optional(),
+  countries: z.array(z.string().length(3)),
+  /** Edition id of the parent work. */
+  parent_edition_id: Id.optional(),
+  canon: z.array(CanonMembership),
+  inclusion: z.enum(["canon", "curated"]),
+  image_url: Url.optional(),
+});
+
+/**
+ * Fiction-specific fields of a depiction claim (D57), keyed by the claim id: `data/normalized/origins-depictions.json`.
+ * The claim itself is a `Claim` of type `fiction`; its verdicts are `VERDICTS_BY_TYPE.fiction`.
+ */
+export const FictionDepiction = z.object({
+  claim_id: Id,
+  source_edition_id: Id,
+  year: z.number().int(),
+  basis: OriginsRawDepiction.shape.basis,
+  centrality: OriginsRawDepiction.shape.centrality,
+  physically_impossible: OriginsRawDepiction.shape.physically_impossible,
+  www_technology_id: z.string().min(1).optional(),
+  research_status: OriginsRawDepiction.shape.research_status,
+  research: z.array(OriginsResearchTarget),
+});
+
+/**
+ * One dated milestone of a subject (D57, #81): first working prototype, first commercial product,
+ * mainstream (the D16 test). Per subject, not per work. Append-only: the latest row of a
+ * (subject, milestone) pair is its state, decided under D20 like a verdict.
+ */
+export const Milestone = z
+  .object({
+    id: Id,
+    subject_id: Id,
+    milestone: z.enum(["prototype", "product", "mainstream"]),
+    status: z.enum(["dated", "not_yet"]),
+    /** The year the milestone was reached; absent for `not_yet`. */
+    year: z.number().int().optional(),
+    evidence_ids: z.array(Id).min(1),
+    reason: z.string().min(1),
+    agent: z.string().min(1),
+    model: z.string().min(1),
+    prompt_version: z.string().min(1),
+    created_at: z.string().datetime(),
+  })
+  .refine((m) => (m.status === "dated") === (m.year !== undefined), { message: "a dated milestone has a year, not_yet has none" });
+
 export type Source = z.infer<typeof Source>;
 export type SourceEdition = z.infer<typeof SourceEdition>;
+export type OriginsRawFile = z.infer<typeof OriginsRawFile>;
+export type OriginsRawWork = z.infer<typeof OriginsRawWork>;
+export type OriginsRawDepiction = z.infer<typeof OriginsRawDepiction>;
+export type OriginsWork = z.infer<typeof OriginsWork>;
+export type FictionDepiction = z.infer<typeof FictionDepiction>;
+export type Milestone = z.infer<typeof Milestone>;
+export type CanonMembership = z.infer<typeof CanonMembership>;
 export type Institution = z.infer<typeof Institution>;
 export type Subject = z.infer<typeof Subject>;
 export type SubjectAlias = z.infer<typeof SubjectAlias>;

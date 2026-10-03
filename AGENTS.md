@@ -21,6 +21,7 @@ node scripts/scenario-coverage-d34.mjs     D34 coverage-d34.json for Shell, IPCC
 scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
 node scripts/links/<step>.mjs           research links (D48): snapshot, check-model, embed-subjects, candidates, agreement, audit-sample, final, apply-recheck (D56); see data/links/README.md
 node scripts/envisioning-research/snapshot.mjs   research ratings (#95) -> data/raw/envisioning-research/<date>.json, append-only; monthly by .github/workflows/research-snapshot.yml
+node scripts/origins/<step>.mjs        Origins (D57): migrate-www, check-www (nothing dropped from www), curated-links; see scripts/origins/README.md
 pnpm links        data/links/research.json + claims + final verdicts -> data/links/by-technology.json, by-subject.json (read by www); --check to verify
 ```
 
