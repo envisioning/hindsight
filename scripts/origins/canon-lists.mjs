@@ -205,21 +205,29 @@ export async function readList(def) {
 export async function readSightAndSound(def) {
   const html = await get(def.url);
   const out = [];
-  const re = /<article id="[^"]*" class="PreviewCard__Article[^"]*"><a href="[^"]*"><h1>([^<]*)<\/h1>.*?PreviewCard__label">(.*?)<\/p>.*?ResultsPage__P[^"]*">(\d{4})(?:<!-- -->)?\s*([^<]*)<\/p>(?:<p class="ResultsPage__P[^"]*">Directed by (?:<!-- -->)?([^<]*)<\/p>)?/gs;
+  const re = /<article id="[^"]*" class="PreviewCard__Article[^"]*"><a href="[^"]*"><h1>([^<]*)<\/h1>.*?PreviewCard__label">(.*?)<\/p>.*?ResultsPage__P[^"]*">(\d{4})(.*?)<\/p>(?:<p class="ResultsPage__P[^"]*">Directed by (?:<!-- -->)?([^<]*)<\/p>)?/gs;
   const dec = (s) => s.replace(/&#x27;/g, "'").replace(/&amp;/g, "&").replace(/&quot;/g, '"').trim();
   const seen = new Set();
-  for (const m of html.matchAll(re)) {
+  const films = [];
+  // One card per <article>; matching card by card keeps the pattern linear.
+  const cards = html.split('<article id="').slice(1).map((c) => '<article id="' + c.split("</article>")[0]);
+  for (const card of cards) {
+    const m = card.match(new RegExp(re.source, "s"));
+    if (!m) continue;
     const title = dec(m[1]);
     const y = Number(m[3]);
     if (seen.has(`${title}|${y}`)) continue;
     seen.add(`${title}|${y}`);
-    const tries = [`${title} (${y} film)`, `${title} (film)`, title];
-    const found = await qids(tries);
+    films.push({ m, title, y, tries: [`${title} (${y} film)`, `${title} (film)`, title] });
+  }
+  const found = await qids(films.flatMap((x) => x.tries));
+  const ents = await entities([...found.values()].map((r) => r.qid));
+  for (const { m, title, y, tries } of films) {
     let link;
     for (const t of tries) {
       const r = found.get(t);
       if (!r) continue;
-      const e = (await entities([r.qid])).get(r.qid);
+      const e = ents.get(r.qid);
       const yrs = (e?.claims?.P577 ?? []).map((c) => Number(c.mainsnak.datavalue?.value?.time?.slice(1, 5))).filter(Boolean);
       if (yrs.some((x) => Math.abs(x - y) <= 1)) { link = r.title; break; }
     }

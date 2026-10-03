@@ -87,6 +87,7 @@ async function main() {
     const e = ents.get(qid);
     if (!e) return undefined;
     const classes = claimValues(e, "P31").map(label).filter(Boolean);
+    if (classes.some((c) => /character|^human$|organization|company/i.test(c))) return undefined;
     if (claimValues(e, "P31").some((c) => ["Q5", "Q4167410", "Q43229", "Q95074", "Q15632617", "Q13442814", "Q1914636"].includes(c))) return undefined;
     // First publication or release (P577); else start time (P580); else inception (P571).
     const pick = (p) => claimValues(e, p).map(year).filter(Boolean);
@@ -237,7 +238,8 @@ async function main() {
   const byQid = new Map(existing.filter((x) => x.w.wikidata).map((x) => [x.w.wikidata, x]));
   const famOfExisting = (x) => FAMILY_OF[x.w.medium];
   const titleIdx = new Map();
-  for (const x of existing) for (const t of [x.w.title, x.w.original_title].filter(Boolean)) {
+  // Migrated child works carry www subtitles such as "I, Robot (Film)": index them without the medium note too.
+  for (const x of existing) for (const t of [x.w.title, x.w.original_title, x.w.title.replace(/\s*\((?:film|novel|movie|series|tv series|game|book|short story collection|manga|anime)\)\s*$/i, "")].filter(Boolean)) {
     const k = `${famOfExisting(x)}|${norm(t)}`;
     titleIdx.set(k, [...(titleIdx.get(k) ?? []), x]);
   }
@@ -246,7 +248,7 @@ async function main() {
     for (const t of [w.title, w.listTitle, w.aka].filter(Boolean)) {
       // Same title and family, and the same first creator or a year within one; roots before child works.
       const sameCreator = (x) => w.creators[0] && x.w.creators.some((c) => lastName(c.name) === lastName(w.creators[0].name));
-      const all = (titleIdx.get(`${w.family}|${norm(t)}`) ?? []).filter((x) => (Math.abs(x.w.year - w.year) <= 1 || (sameCreator(x) && Math.abs(x.w.year - w.year) <= 3)) && (!x.w.wikidata || x.w.wikidata === w.f?.qid));
+      const all = [...new Set(titleIdx.get(`${w.family}|${norm(t)}`) ?? [])].filter((x) => (Math.abs(x.w.year - w.year) <= 1 || (sameCreator(x) && Math.abs(x.w.year - w.year) <= 3)) && (!x.w.wikidata || x.w.wikidata === w.f?.qid));
       const roots = all.filter((x) => !x.w.parent);
       const hits = roots.length > 0 ? roots : all;
       if (hits.length === 1) return hits[0];

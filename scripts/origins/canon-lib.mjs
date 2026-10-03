@@ -17,7 +17,14 @@ export async function get(url) {
   if (existsSync(f)) return readFileSync(f, "utf8");
   let status = 0;
   for (let i = 0; i < 4; i++) {
-    const r = await fetch(url, { headers: { "User-Agent": UA, "Api-User-Agent": UA } });
+    let r;
+    try {
+      r = await fetch(url, { headers: { "User-Agent": UA, "Api-User-Agent": UA }, signal: AbortSignal.timeout(60000) });
+    } catch (err) {
+      status = String(err?.name ?? err);
+      await sleep(5000 * (i + 1));
+      continue;
+    }
     status = r.status;
     if (r.ok) {
       const t = await r.text();

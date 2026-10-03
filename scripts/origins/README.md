@@ -6,7 +6,19 @@
 | `check-www.mjs [data.ts]` | Proves nothing was dropped: every work, subtitle and connection of data.ts exists in the raw files with an id, as a normalized claim and a `FictionDepiction` row. Exit 1 on any gap. |
 | `curated-links.mjs [--check]` | One `curated` row in `data/links/research.json` per (subject, research page) pair of the depictions (D48: never overwritten by agent runs). Idempotent. |
 
-Default input of the first two: `../www/content/origins/data.ts` next to the repository; pass the path otherwise.
+| `canon-build.mjs [--dry]` | The canon (#79, D59): reads every list in `canon-lists.mjs`, resolves linked works to Wikidata, dedupes, merges into `data/raw/origins/works-*.json` (existing works keep id, order and depictions; new works appended, new episodes after their series) and rewrites every `canon` array. Deterministic on a warm cache. `--dry` with `CANON_OUT=<dir>` writes the files elsewhere; `CANON_REPORT=<file>` writes counts, matches and excluded entries. |
+| `canon-lists.mjs` | The list definitions (id, page, medium, year convention, how winners are marked, SF rule) and the readers. |
+| `wikitable.mjs`, `canon-lib.mjs` | Wikitext table reader; cached GET of the Wikipedia and Wikidata APIs (`CANON_CACHE`, default `<tmpdir>/hindsight-canon`, never in the repo; generic User-Agent). |
+
+Inputs of the canon: the English Wikipedia pages named in `LISTS` (MediaWiki API, `action=parse`), `https://www.bfi.org.uk/sight-and-sound/greatest-films-all-time`, and Wikidata (`wbgetentities`). A cold run makes about 300 requests and takes about 15 minutes. Rules and gaps: `data/raw/origins/INDEX.md`.
+
+```
+node scripts/origins/canon-build.mjs
+pnpm normalize
+node scripts/origins/check-www.mjs ../www/content/origins/data.ts
+```
+
+Default input of `migrate-www.mjs` and `check-www.mjs`: `../www/content/origins/data.ts` next to the repository; pass the path otherwise.
 
 ```
 node scripts/origins/migrate-www.mjs ../www/content/origins/data.ts
