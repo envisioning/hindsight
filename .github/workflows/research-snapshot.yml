@@ -1,0 +1,34 @@
+# Envisioning research ratings (#95): once a month, snapshot the research database ratings and commit the
+# dated file to main. The CMS overwrites ratings in place, so each snapshot is the only record of its date.
+# Needs repo secrets CMS_URL and CMS_ANON_KEY (the public anon key of the Core CMS, read only).
+name: research-snapshot
+on:
+  schedule:
+    - cron: "0 10 1 * *" # an hour after refresh-due
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: research-snapshot
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node scripts/envisioning-research/snapshot.mjs
+        env:
+          CMS_URL: ${{ secrets.CMS_URL }}
+          CMS_ANON_KEY: ${{ secrets.CMS_ANON_KEY }}
+      - name: Commit the snapshot to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw/envisioning-research
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -m "Research ratings snapshot $(date -u +%Y-%m-%d) (#95)"
+          git pull --rebase origin main
+          git push origin HEAD:main
