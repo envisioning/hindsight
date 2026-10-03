@@ -55,11 +55,14 @@ A public, citable record of published forecasts (publications x predictions), gr
 
 ## Order of work
 
+Every next step is an open issue in envisioning/hindsight:
+
 1. **#74** links upkeep (new or changed technologies and subjects; retract links to unpublished or excluded pages); a later run can verify the 29,172 candidates left under the D54 floor.
-2. Small follow-ups: Deloitte Tech Trends rename pass 3 (D53, field subjects): 5 rows that persisted only through the recurring `cio-role` and `cybersecurity` chapters are candidates in `renames-d33-pass3-scope.json`; run checkers A and B, adjudicator, audit, `trend-final-d33.mjs` (the committed `final-d33.json` still shows them persisted until then); `trend-final-d33.mjs` keeps pass 2+ audit records of rows that are no longer candidates in the pass audit summaries; FTSG 2020-234 match id (INDEX Known issues).
-3. Missing editions with no known source: McKinsey 2026 PDF (#27, withdrawn at the origin); FTSG 2008-2013 and 2018 (#26, not public; 2019 stays titles only).
-4. Next release (`hindsight-2026.3`) when enough has changed; ask MZ, then update the link in www `app/hindsight/page.tsx`.
-5. **#69** poster placements each January (D26 waves). **#58** refresh issues on the 1st of each month.
+2. **#75** D33 follow-ups: pass audit summaries, FTSG 2020-234 match id, FTSG 2016-029 subject.
+3. **#76** release `hindsight-2026.3` (with the links as an export table); ask MZ before tagging, then update the link in www `app/hindsight/page.tsx`.
+4. **#57** phase 2: Origins as the fiction source, linked to technologies.
+5. Missing editions: **#27** McKinsey 2026 PDF (needs a manual browser download); **#26** FTSG 2008-2013 and 2018 (not public; 2019 stays titles only).
+6. Recurring: **#69** poster placements each January (D26 waves); **#58** refresh issues opened on the 1st of each month.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 
