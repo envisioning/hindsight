@@ -19,6 +19,7 @@ node scripts/measure-audit-sample.mjs <source>   D32/D34 measures -> fixed-seed 
 node scripts/scenario-coverage-d34.mjs     D34 coverage-d34.json for Shell, IPCC (with the matching audit) and NIC; D11 applied
 scripts/set-openrouter-key.sh          hidden prompt; writes OPENROUTER_API_KEY to local .env files
 node scripts/links/<step>.mjs           research links (D48): snapshot, check-model, embed-subjects, candidates, agreement, audit-sample, final, apply-recheck (D56); see data/links/README.md
+node scripts/envisioning-research/snapshot.mjs   research ratings (#95) -> data/raw/envisioning-research/<date>.json, append-only; monthly by .github/workflows/research-snapshot.yml
 pnpm links        data/links/research.json + claims + final verdicts -> data/links/by-technology.json, by-subject.json (read by www); --check to verify
 ```
 
@@ -59,7 +60,7 @@ Hindsight connects to other Envisioning systems only where the product needs it.
 
 | Neighbour | Contract |
 |---|---|
-| Research database (Core CMS `technologies`) | One link table, `SubjectTechnologyLink` in `data/links/research.json` (D48). Read-only, published rows, anon key. The research tables do not change. |
+| Research database (Core CMS `technologies`) | One link table, `SubjectTechnologyLink` in `data/links/research.json` (D48). Read-only, published rows, anon key. The research tables do not change. Monthly ratings snapshot (#95) in `data/raw/envisioning-research/`, same key; not graded until MZ approves `docs/proposals/research-ratings-grading.md`. |
 | National Capability Benchmark | Nothing at runtime. `Institution.ncb_id` is an optional note. |
 | Signals | Evidence is copied (URL, date, title). `signal_ref` is an optional note, never a foreign key. |
 
