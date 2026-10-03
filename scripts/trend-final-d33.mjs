@@ -150,20 +150,24 @@ for (const source of sources) {
 	const live = (id) => nextOf.has(id) && passOf(id) === 1;
 	const auditOut = summarize(audit, Object.fromEntries(Object.entries(recs).filter(([id]) => live(id))));
 	for (const p of later) {
-		const k = Object.keys(recs).filter((id) => p.scope.has(id) && passOf(id) === p.n).length;
+		const k = Object.keys(recs).filter((id) => nextOf.has(id) && p.scope.has(id) && passOf(id) === p.n).length;
 		if (auditOut && p.scope.size && (k || p.n === 2)) auditOut[`superseded_by_pass${p.n}`] = k;
 	}
 	if (auditOut && Object.keys(recs).some((id) => !nextOf.has(id))) auditOut.no_longer_candidate = Object.keys(recs).filter((id) => !nextOf.has(id)).length;
+	// Every later pass follows the pass-1 rule: records of rows that are no longer candidates are
+	// dropped from its summary and counted in `no_longer_candidate`.
 	const laterOut = {};
 	for (const p of later) {
 		if (!p.scope.size) continue;
-		const own = Object.fromEntries(Object.entries(p.recs).filter(([id]) => passOf(id) <= p.n));
+		const own = Object.fromEntries(Object.entries(p.recs).filter(([id]) => nextOf.has(id) && passOf(id) <= p.n));
 		const a = summarize(p.audit, own);
 		for (const q of later) {
 			if (q.n <= p.n || !a) continue;
-			const k = Object.keys(p.recs).filter((id) => passOf(id) === q.n).length;
+			const k = Object.keys(p.recs).filter((id) => nextOf.has(id) && passOf(id) === q.n).length;
 			if (k) a[`superseded_by_pass${q.n}`] = k;
 		}
+		const gone = Object.keys(p.recs).filter((id) => !nextOf.has(id)).length;
+		if (a && gone) a.no_longer_candidate = gone;
 		laterOut[`pass${p.n}`] = { scope: p.scope.size, superseded: superseded.get(p.n), audit: a };
 	}
 	const out = {

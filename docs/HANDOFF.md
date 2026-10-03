@@ -58,7 +58,7 @@ A public, citable record of published forecasts (publications x predictions), gr
 Every next step is an open issue in envisioning/hindsight:
 
 1. **#74** links upkeep (new or changed technologies and subjects; retract links to unpublished or excluded pages); a later run can verify the 29,172 candidates left under the D54 floor.
-2. **#75** D33 follow-ups: pass audit summaries, FTSG 2020-234 match id, FTSG 2016-029 subject.
+2. **#75** D33 follow-ups: audit summaries of every pass drop rows that are no longer candidates (done); FTSG 2016-029 has its own subject (D53 `claims` row, done). Left: FTSG pass 8 (2016-029 and 2020-234, `renames-d33-pass8-scope.json`): two blind checkers, adjudicator, audit, then `trend-final-d33.mjs ftsg-tech-trends`; until then `final-d33.json` keeps the earlier verdicts.
 3. **#76** release `hindsight-2026.3` (with the links as an export table); ask MZ before tagging, then update the link in www `app/hindsight/page.tsx`.
 4. Research objectives (docs/OBJECTIVES.md): **#86** adaptation lag, **#87** accuracy by horizon, **#88** herding, **#89** adaptability audit (client product), **#90** capability-benchmark tie-in; findability: **#91** finding pages (Hype Cycle report first), **#92** DOI and Dataset markup, **#93** structured data and citations, **#94** annual January report.
 5. Research database: **#95** monthly snapshot of Envisioning's own research ratings (time-critical), **#96** project pages and index, **#97** maturity timeline, **#98** section paths, **#99** below-floor link audit.
