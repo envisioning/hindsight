@@ -61,9 +61,10 @@ Every next step is an open issue in envisioning/hindsight:
 2. **#75** D33 follow-ups: pass audit summaries, FTSG 2020-234 match id, FTSG 2016-029 subject.
 3. **#76** release `hindsight-2026.3` (with the links as an export table); ask MZ before tagging, then update the link in www `app/hindsight/page.tsx`.
 4. Research objectives (docs/OBJECTIVES.md): **#86** adaptation lag, **#87** accuracy by horizon, **#88** herding, **#89** adaptability audit (client product), **#90** capability-benchmark tie-in; findability: **#91** finding pages (Hype Cycle report first), **#92** DOI and Dataset markup, **#93** structured data and citations, **#94** annual January report.
-5. **#85** Origins epic (#77 to #84): fiction as a source; canon, depictions, three milestones, imagination lead time, links, site. Objectives decided by MZ 2026-10-02 (in the epic).
-6. Missing editions: **#27** McKinsey 2026 PDF (needs a manual browser download); **#26** FTSG 2008-2013 and 2018 (not public; 2019 stays titles only).
-7. Recurring: **#69** poster placements each January (D26 waves); **#58** refresh issues opened on the 1st of each month.
+5. Research database: **#95** monthly snapshot of Envisioning's own research ratings (time-critical), **#96** project pages and index, **#97** maturity timeline, **#98** section paths, **#99** below-floor link audit.
+6. **#85** Origins epic (#77 to #84): fiction as a source; canon, depictions, three milestones, imagination lead time, links, site. Objectives decided by MZ 2026-10-02 (in the epic).
+7. Missing editions: **#27** McKinsey 2026 PDF (needs a manual browser download); **#26** FTSG 2008-2013 and 2018 (not public; 2019 stays titles only).
+8. Recurring: **#69** poster placements each January (D26 waves); **#58** refresh issues opened on the 1st of each month.
 
 Run grading waves in parallel only within the search budget. Push each source when it passes kappa 0.6 and has its final file.
 

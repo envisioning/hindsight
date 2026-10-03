@@ -2,14 +2,14 @@
 
 What Hindsight is for, and how far each objective has come. Agents read this with `docs/HANDOFF.md` and update it when an objective moves: change the state line, add the issue, and record any change of objective as a decision in `docs/DECISIONS.md` approved by MZ. Do not change an objective without MZ.
 
-Last reviewed: 2026-10-03.
+Last reviewed: 2026-10-03 (research database link reviewed).
 
 ## 1. A citable public record of published forecasts
 
 Every published forecast we can find, as a dated claim with a source and a stable id, graded against what happened, with the evidence and the error rate beside every figure.
 
 - **State:** 37 sources captured as far as public copies exist (about 28,300 claims). Every source graded under D20 with audits (D11, D28). Releases 2026.1 and 2026.2 published.
-- **Next:** #76 release 2026.3 (with links); #92 DOI and Dataset markup; #94 the yearly January cycle; #58 monthly refresh; gaps with no public copy: #26, #27.
+- **Next:** #95 snapshot Envisioning's own research ratings monthly (time-critical: the CMS overwrites them) so our present research becomes gradable; #76 release 2026.3 (with links); #92 DOI and Dataset markup; #94 the yearly January cycle; #58 monthly refresh; gaps with no public copy: #26, #27.
 
 ## 2. Anticipation: how well institutions see ahead
 
@@ -36,8 +36,8 @@ Imagination lead time: years from a work's depiction of a technology to its firs
 
 Forecasts, fiction and Envisioning's research database joined through shared subjects, so a reader moves between what was expected, what was imagined and what exists.
 
-- **State:** 1,529 verified subject-technology links (D48 to D56), shown on research, claim and subject pages.
-- **Next:** #74 links upkeep; #83 Origins links.
+- **State:** 1,529 verified subject-technology links (D48 to D56), shown on 961 of 3,712 research technology pages (26%; 5% to 65% by project), on claim and subject pages. Research project pages, the /research index and section navigation carry nothing yet.
+- **Next:** #96 project pages and index; #97 maturity timeline from dated milestones; #98 section-level paths; #99 coverage audit below the D54 floor; #74 links upkeep; #83 Origins links.
 
 ## 6. Findable and quotable
 
