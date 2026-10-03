@@ -884,3 +884,27 @@ Result: 249 confirmed, 87 corrected (80 `narrower` to `no_link`; 3 `narrower` to
 **Cost.** Most ratings stay `open` until #81 dates their subjects; TRL bands are coarse.
 
 **Overturned by.** The research apps publishing a time horizon per readiness level, which would make ratings forecasts in their own right.
+
+## D59: Origins open points settled (amends D57)
+
+*Recorded 2026-10-03. Decided by MZ.*
+
+**Decision.** (a) Physically impossible tropes (warp drive, transporters, time travel, matter replicators where no real analogue exists) are recorded as depictions with `physically_impossible: true` and verdict `not_yet`; they are shown separately and left out of every lead-time statistic. (b) The canon takes award winners and shortlists and critics' canon lists across media, **including comics and anime/manga now** (not a later phase); each membership keeps its `standing` (winner, shortlisted, listed) so a stricter canon remains a filter.
+
+**Why.** Recording the impossible keeps the catalogue honest about what fiction imagined without distorting lead time; including comics and anime widens the canon beyond English-language prose and film.
+
+**Cost.** A larger canon and more extraction work in #79 and #80.
+
+**Overturned by.** A canon too large to extract with two blind extractors per work, which would call for a sampling rule.
+
+## D60: Adaptation lag, definitions (#86)
+
+*Recorded 2026-10-03. Decided by MZ (proposal `docs/proposals/adaptation-lag.md`).*
+
+**Decision.** Numeric forecasts: a forecast path has **adapted** when it first enters the D18 hit band of the actual; a path that moved past the actual is **overshot**, published as its own outcome beside **adapted** and **not yet** (right-censored). Shock triggers stay fixed per shock for every economy (2008-09 Lehman, 2020-03 WHO pandemic, 2021-05 US CPI) with the caveat stated; a later pass replaces them with first data-release dates per economy. Hype Cycle: only the arrival-call timing (Gartner placing a technology under 2 years or on the plateau, against the D21 mainstream year) and exit timing against the mainstream year are published; the drop share is not, because dropping entries is the chart's normal turnover. No ranking of institutions (D6, D17); D11 and D28 apply.
+
+**Why.** Entering the band is the grading rule readers already know; overshooting is updating too far, not failing to update.
+
+**Cost.** Fixed triggers misdate shocks for some economies; the Hype Cycle measure covers only technologies with D21 timelines.
+
+**Overturned by.** First-release dates per economy, captured.
