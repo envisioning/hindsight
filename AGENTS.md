@@ -10,6 +10,7 @@ pnpm typecheck    the green gate
 pnpm build        compile src to dist
 pnpm normalize    data/raw -> data/normalized (Node 24 type stripping)
 pnpm grade:numeric    grade numeric forecasts -> data/graded (deterministic, D19)
+pnpm measure:adaptation-lag    numeric grades + Hype Cycle timelines -> data/measures/adaptation-lag (#86, proposed definitions in docs/proposals/adaptation-lag.md)
 pnpm manifest     list git-tracked raw files for the live site (run after git add)
 pnpm export       data/normalized + final verdicts + numeric grades + validation figures (D44) -> data/out (JSON, CSV, JSON Schemas, datapackage.json); fails closed
 node scripts/agreement-d16.mjs <source>    grader A + grader B -> agreement-d16.json (kappa, consensus, contested)
