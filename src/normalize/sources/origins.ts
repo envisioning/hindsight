@@ -76,6 +76,7 @@ export function origins(): Bundle {
       parent_edition_id: parent === undefined ? undefined : editionId(SOURCE, parent.id),
       canon: w.canon,
       inclusion: w.inclusion,
+      wikidata: w.wikidata,
       image_url: w.image_url,
     });
     b.works?.push(work);

@@ -816,8 +816,13 @@ export const CanonMembership = z.object({
   year: z.number().int(),
   category: z.string().optional(),
   standing: z.enum(["winner", "shortlisted", "listed"]),
+  /** The entry as the list names it, when it differs from the work's title (an episode, a volume, a translated title). */
+  entry_title: z.string().min(1).optional(),
   source_url: Url.optional(),
 });
+
+/** Wikidata item of a work (#79): the source of its year, country and creators where the list gives none. */
+export const WikidataId = z.string().regex(/^Q[1-9]\d*$/);
 
 /**
  * A creator of a work as recorded in the raw file. A person or a named group (a duo credited
@@ -890,6 +895,8 @@ export const OriginsRawWork = z.object({
   inclusion: z.enum(["canon", "curated"]),
   /** Envisioning's own generated artwork (Cloudinary), metadata only (NOTICE.md: no publisher artwork). */
   image_url: Url.optional(),
+  /** Wikidata item the canon capture resolved the work to (#79). */
+  wikidata: WikidataId.optional(),
   /** Where the record came from in www (`content/origins/data.ts`), for the migration check. */
   www: z.object({ id: z.string().min(1), slug: z.string().min(1).optional(), subtitle_id: z.string().min(1).optional(), creator: z.string().optional(), country: z.string().optional() }).optional(),
   depictions: z.array(OriginsRawDepiction),
@@ -919,6 +926,7 @@ export const OriginsWork = SourceEdition.extend({
   parent_edition_id: Id.optional(),
   canon: z.array(CanonMembership),
   inclusion: z.enum(["canon", "curated"]),
+  wikidata: WikidataId.optional(),
   image_url: Url.optional(),
 });
 
