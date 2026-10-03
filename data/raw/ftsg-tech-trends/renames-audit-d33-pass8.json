@@ -1,0 +1,23 @@
+{
+ "rule": "D11 audit of D33 rename checks",
+ "pass": 8,
+ "seed": "d11:ftsg-tech-trends:d33:pass8",
+ "sample": [
+  "ftsg-tech-trends-2016-029",
+  "ftsg-tech-trends-2020-234"
+ ],
+ "records": {
+  "ftsg-tech-trends-2016-029": {
+   "decision": "confirm",
+   "note": "faded confirmed on the 2016 Security text (ss2016.txt: malware sent to anything that plugs into a wall, USB drives, routers, refrigerators). 2017 IoT (2017-108) has no text and sits with the Drones/Vehicles IoT theme (continuing 2016-066); 2019 has only titles for Consumer Device Targeting and 'GDPR, Privacy Laws, and Hackers Threaten the IoT', no text to show the same phenomenon. Both 2017 and 2019 are partial (D36), so the script turns faded into gap.",
+   "at": "2026-10-03T09:00:00+00:00"
+  },
+  "ftsg-tech-trends-2020-234": {
+   "decision": "confirm",
+   "note": "renamed to 2021-418 confirmed: fti2021.raw.txt Smart Ocean Filters repeats the 2020 Enzymes to Eat Ocean Trash text (Pacific Trash Vortex, 2018 finding of 16x size, 5 trillion pieces, Trash Isles, Ocean Cleanup 60 screens, Seabin). Sibling 2021-417 Plastic-Eating Enzymes carries the enzyme text, not this paragraph.",
+   "at": "2026-10-03T09:00:00+00:00"
+  }
+ },
+ "auditor": "agent (D20)",
+ "model": "agent (model not recorded in the public repo)"
+}

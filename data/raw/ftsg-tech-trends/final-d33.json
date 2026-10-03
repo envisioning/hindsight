@@ -19,27 +19,27 @@
  ],
  "n": 4185,
  "counts": {
-  "renamed": 557,
-  "persisted": 1566,
-  "gap": 54,
+  "renamed": 558,
+  "persisted": 1564,
+  "gap": 55,
   "recycled": 8,
   "faded": 619,
   "open": 1381
  },
  "shares": {
   "persisted": {
-   "k": 1566,
-   "n": 2750,
-   "share": 0.5695,
+   "k": 1564,
+   "n": 2749,
+   "share": 0.5689,
    "wilson95": [
-    0.551,
-    0.588
+    0.55,
+    0.587
    ]
   },
   "renamed": {
-   "k": 557,
-   "n": 2750,
-   "share": 0.2025,
+   "k": 558,
+   "n": 2749,
+   "share": 0.203,
    "wilson95": [
     0.188,
     0.218
@@ -47,8 +47,8 @@
   },
   "faded": {
    "k": 619,
-   "n": 2750,
-   "share": 0.2251,
+   "n": 2749,
+   "share": 0.2252,
    "wilson95": [
     0.21,
     0.241
@@ -56,7 +56,7 @@
   },
   "recycled": {
    "k": 8,
-   "n": 2750,
+   "n": 2749,
    "share": 0.0029,
    "wilson95": [
     0.001,
@@ -81,7 +81,7 @@
  },
  "pass2": {
   "scope": 1191,
-  "superseded": 239,
+  "superseded": 238,
   "audit": {
    "seed": "d11:ftsg-tech-trends:d33:pass2",
    "sample": 50,
@@ -179,6 +179,21 @@
    "residual_error_rate": 0
   }
  },
+ "pass8": {
+  "scope": 2,
+  "superseded": 1,
+  "audit": {
+   "seed": "d11:ftsg-tech-trends:d33:pass8",
+   "sample": 2,
+   "audited": 2,
+   "confirmed": 2,
+   "corrected": 0,
+   "contested": 0,
+   "error_rate": 0,
+   "resolved_by_gap_rule": 0,
+   "residual_error_rate": 0
+  }
+ },
  "passes": [
   "renames-d33-checkerA.json",
   "renames-d33-checkerB.json",
@@ -212,7 +227,11 @@
   "renames-d33-checkerA-pass7.json",
   "renames-d33-checkerB-pass7.json",
   "renames-adjudicated-d33-pass7.json",
-  "renames-audit-d33-pass7.json"
+  "renames-audit-d33-pass7.json",
+  "renames-d33-pass8-scope.json",
+  "renames-d33-checkerA-pass8.json",
+  "renames-d33-checkerB-pass8.json",
+  "renames-audit-d33-pass8.json"
  ],
  "verdicts": [
   {
@@ -1159,9 +1178,11 @@
   {
    "id": "ftsg-tech-trends-2016-029",
    "edition": "2016",
-   "verdict": "persisted",
-   "status": "computed",
-   "matched_in": "2017"
+   "verdict": "gap",
+   "status": "audited",
+   "pass": 8,
+   "was": "faded",
+   "reason": "A next edition is a partial capture; not finding the trend there is not evidence it faded."
   },
   {
    "id": "ftsg-tech-trends-2016-030",
@@ -7971,14 +7992,13 @@
   {
    "id": "ftsg-tech-trends-2020-234",
    "edition": "2020",
-   "verdict": "persisted",
-   "status": "adjudicated",
-   "match_id": "ftsg-tech-trends-2021-417",
-   "reason": "Enzymes that eat ocean trash and plastic-eating enzymes: wording variant.",
-   "pass": 2,
-   "pass1": {
-    "verdict": "renamed",
-    "status": "agreed",
+   "verdict": "renamed",
+   "status": "audited",
+   "match_id": "ftsg-tech-trends-2021-418",
+   "pass": 8,
+   "pass2": {
+    "verdict": "persisted",
+    "status": "adjudicated",
     "match_id": "ftsg-tech-trends-2021-417"
    }
   },
