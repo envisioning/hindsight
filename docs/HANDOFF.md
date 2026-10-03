@@ -1,6 +1,6 @@
 # Hindsight handoff (2026-10-02, fourth session, local)
 
-Read this first, with `docs/OBJECTIVES.md` (what the research is for and how far each objective has come; update it as objectives move) (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D56). Every next step is an open issue in envisioning/hindsight.
+Read this first, with `docs/OBJECTIVES.md` (what the research is for and how far each objective has come; update it as objectives move) (a short start prompt for a new agent is in `docs/NEXT-AGENT.md`), then `AGENTS.md`, `docs/AGENT-RULES.md` and `docs/DECISIONS.md` (D1 to D61). Every next step is an open issue in envisioning/hindsight.
 
 ## What Hindsight is
 
@@ -62,7 +62,7 @@ Every next step is an open issue in envisioning/hindsight:
 3. **#76** release `hindsight-2026.3` (with the links as an export table); ask MZ before tagging, then update the link in www `app/hindsight/page.tsx`.
 4. Research objectives (docs/OBJECTIVES.md): **#86** adaptation lag, **#87** accuracy by horizon, **#88** herding, **#89** adaptability audit (client product), **#90** capability-benchmark tie-in; findability: **#91** finding pages (Hype Cycle report first), **#92** DOI and Dataset markup, **#93** structured data and citations, **#94** annual January report.
 5. Research database: **#95** monthly snapshot of Envisioning's own research ratings (time-critical), **#96** project pages and index, **#97** maturity timeline, **#98** section paths, **#99** below-floor link audit.
-6. **#85** Origins epic (#79 to #84 open; #77, #78 done: D57, D59). #79 canon capture was running at session end in an agent worktree (branch `worktree-agent-ac15df78e2b52cf25` under `.claude/worktrees/`): merge its commit if present, else restart #79. Then #80 extraction, #81 milestones (scope extended by D58), #82 lead time, #83 links, #84 site.
+6. **#85** Origins epic (#80 to #84 open; #77, #78, #79 done: D57, D59, D61). Canon: 3,079 listed works from 32 lists, ten times the planned size; #80 needs a sampling rule from MZ before extraction (D59 'overturned by'). Then #81 milestones (scope extended by D58), #82, #83, #84.
 7. Missing editions: **#27** McKinsey 2026 PDF (needs a manual browser download); **#26** FTSG 2008-2013 and 2018 (not public; 2019 stays titles only).
 8. Recurring: **#69** poster placements each January (D26 waves); **#58** refresh issues opened on the 1st of each month.
 
