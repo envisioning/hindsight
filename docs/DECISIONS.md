@@ -908,3 +908,15 @@ Result: 249 confirmed, 87 corrected (80 `narrower` to `no_link`; 3 `narrower` to
 **Cost.** Fixed triggers misdate shocks for some economies; the Hype Cycle measure covers only technologies with D21 timelines.
 
 **Overturned by.** First-release dates per economy, captured.
+
+## D61: Origins canon, lists and capture rules (#79; applies D57, D59)
+
+*Recorded 2026-10-03.*
+
+**Decision.** The canon is the works on 32 published lists (`scripts/origins/canon-lists.mjs`; table and gaps in `data/raw/origins/INDEX.md`): Hugo, Nebula, Locus, Clarke and Philip K. Dick (novel, novella, Retro Hugos), Saturn SF film and SF TV series, AFI 10 Top 10 SF, the Sight and Sound 2022 critics' poll, the Hugo and Nebula dramatic-presentation and script lists, Hugo and Nebula game lists, BAFTA and GDCA game of the year, Hugo graphic story, Eisner best continuing series, Seiun (Japanese long and short work, dramatic presentation, comic) and the Japan Media Arts Festival (animation, manga). Winners and shortlists (D59), each with `standing`. Lists that are not SF-specific (BAFTA, GDCA, Eisner, Japan Media Arts, Sight and Sound) count a work only when Wikidata gives it a science-fiction genre or the work is on an SF&F list. Facts of a work come from the list and its Wikidata item (`wikidata`, new optional field on `OriginsRawWork` and `OriginsWork`); the list's eligibility year stands in where Wikidata has no date or a later one. A listed episode or season is a child work of its series; the series enters as canon through it. `CanonMembership.entry_title` (new, optional) keeps the entry as listed when it differs from the work's title.
+
+**Why.** Lists read from stable public pages make the inclusion rule mechanical and repeatable; Wikidata (CC0) supplies dates and countries without copying descriptive text.
+
+**Cost.** 3,079 listed works, far above "several hundred": D59's sampling trigger for #80 applies. Fantasy works enter through the SF&F awards. 1,082 works have no country and 1,157 a list-derived year. Locus shortlists, Harvey and most Eisner categories are not captured.
+
+**Overturned by.** A sampling rule for #80; a decision to narrow the canon to SF-only lists or winners (a filter on `canon`).
