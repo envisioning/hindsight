@@ -4,7 +4,7 @@ You continue Hindsight (envisioning/hindsight): a public record of published for
 
 ## Read first
 
-`docs/HANDOFF.md` (state, decisions waiting, notes, traps), `AGENTS.md`, `docs/AGENT-RULES.md`, `docs/DECISIONS.md` (D1 to D46), `docs/grading/`.
+`docs/OBJECTIVES.md` (what the research is for; keep it current), `docs/HANDOFF.md` (state, decisions waiting, notes, traps), `AGENTS.md`, `docs/AGENT-RULES.md`, `docs/DECISIONS.md` (D1 to D56), `docs/grading/`.
 
 ## Start checks (stop and report if one fails)
 
