@@ -920,3 +920,15 @@ Result: 249 confirmed, 87 corrected (80 `narrower` to `no_link`; 3 `narrower` to
 **Cost.** 3,079 listed works, far above "several hundred": D59's sampling trigger for #80 applies. Fantasy works enter through the SF&F awards. 1,082 works have no country and 1,157 a list-derived year. Locus shortlists, Harvey and most Eisner categories are not captured.
 
 **Overturned by.** A sampling rule for #80; a decision to narrow the canon to SF-only lists or winners (a filter on `canon`).
+
+## D62: Extraction scope: winners and critics' lists (amends D59, D61)
+
+*Recorded 2026-10-03. Decided by MZ.*
+
+**Decision.** Depiction extraction (#80) and the lead-time statistics (#82) cover the works with at least one `winner` or `listed` canon membership (785 works on 2026-10-03), plus the 76 curated works already migrated. Works that are only `shortlisted` stay in the canon files as captured facts but are not extracted for now.
+
+**Why.** The full canon (3,079 works, D61) is about ten times the planned size; two blind extractors per work would cost more than the finding needs. Winners and critics' lists are the works the canon is built to represent.
+
+**Cost.** Shortlisted works, often the more experimental ones, are left out of lead time until a later pass.
+
+**Overturned by.** A later pass with budget for the shortlisted works, or evidence that winners depict technologies differently from shortlisted works.
