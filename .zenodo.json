@@ -1,0 +1,16 @@
+{
+  "title": "Envisioning Hindsight: published forecasts, graded against what happened",
+  "upload_type": "dataset",
+  "description": "<p>Hindsight is a public record of published forecasts about the future, checked against what happened. Each forecast is a dated claim with a named source and a stable id, graded with cited evidence; every change to a grade stays in the record.</p><p>The data in <code>data/out</code> (JSON, CSV, JSON Schemas, <code>datapackage.json</code>) is licensed CC BY 4.0, except rows derived from <code>data/raw/bcb-focus</code>, which are ODbL 1.0. The code is MIT licensed. See NOTICE.md.</p><p>Site: <a href=\"https://www.envisioning.com/hindsight\">envisioning.com/hindsight</a></p>",
+  "creators": [
+    { "name": "Envisioning" }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": ["forecasting", "forecast evaluation", "foresight", "trend reports", "dataset"],
+  "related_identifiers": [
+    { "identifier": "https://github.com/envisioning/hindsight", "relation": "isSupplementTo", "scheme": "url" },
+    { "identifier": "https://www.envisioning.com/hindsight", "relation": "isDocumentedBy", "scheme": "url" }
+  ],
+  "notes": "Code: MIT. Data: CC BY 4.0 (Banco Central do Brasil Focus rows: ODbL 1.0)."
+}

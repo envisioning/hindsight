@@ -32,6 +32,16 @@ Two AI agents grade each claim separately. When they disagree, a third agent set
 
 If you think a verdict is wrong, [open a dispute](../../issues/new?template=dispute-verdict.yml) with the claim id and your evidence. A dispute reopens the claim, and its history shows what changed and why.
 
+## How to cite
+
+Cite the dataset release you used:
+
+> Envisioning (2026). *Envisioning Hindsight: published forecasts, graded against what happened* (Version 2026.2) [Data set]. https://github.com/envisioning/hindsight/releases/tag/hindsight-2026.2
+
+To cite a single claim, use its stable id and the date of its verdict: "Hindsight, claim `<id>`, `<verdict>` as of `<date>`. Envisioning." with the claim's page on [envisioning.com/hindsight](https://www.envisioning.com/hindsight). Machine-readable metadata is in [CITATION.cff](CITATION.cff); GitHub's "Cite this repository" button reads it.
+
+A DOI is not minted yet. [.zenodo.json](.zenodo.json) holds the Zenodo metadata, so once an Envisioning org admin enables the GitHub-Zenodo integration for this repository (zenodo.org, "GitHub" settings, toggle `envisioning/hindsight`), each new tagged release gets a DOI. Then add the DOI to `CITATION.cff` and here.
+
 ## Licence
 
 The code is MIT licensed (see [LICENSE](LICENSE)). The data is CC BY 4.0 (see [NOTICE.md](NOTICE.md)).
