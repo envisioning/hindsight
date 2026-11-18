@@ -968,3 +968,13 @@ Also reported, not tested: the share with any non-technical cause (primary or se
 **Cost.** 200 of 502 subjects. Agent coders share blind spots, and causes are more contestable than verdicts: most misses have several causes, and the primary one is a judgment. Graders recorded whether a forecast came true, not why, so many causes need new evidence.
 
 **Overturned by.** An audit error rate above 15% on primary family, or a later full-population run that disagrees with this sample.
+
+## D64: Out-of-scope claims leave the D63 test (amends D63)
+
+*Recorded 2026-11-18, after the D63 coder agreement (pooled family kappa 0.61, observed 0.71; batches b2 0.53 and b5 0.50 alone, pooled under D50) and before any H1 figure was computed.*
+
+**Decision.** Coders reported two kinds of sampled claims that have no shortfall cause to name: (a) the outcome ran above the forecast (the forecast was too low: internet users 2012, online ad share, LTE carriers, crowdfunding); (b) the claim is not about a technology's development or adoption (continued prosperity, stock market levels, an Occupy-type movement), although its subject is of kind `technology`. Two blind scope screeners (`docs/grading/cause-scope.md`, no web, claim and grader text only, no coder calls) mark every sampled claim `in_scope`, `above_forecast` or `not_technology`. A claim leaves the H1 denominator only when both screeners mark it out of scope. Excluded claims and their causes are still published, and H1 is also reported with every claim kept.
+
+**Why.** The D63 list has no cause for a forecast that was too low, and coders forced those claims into `overreach` or `unknown`. H1 asks why technology forecasts fall short; these claims do not test it.
+
+**Cost.** A smaller denominator. The rule is fixed after agreement was seen but before H1 was computed.

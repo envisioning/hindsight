@@ -1012,6 +1012,14 @@ export const MissCauseCall = z
   .refine((c) => c.primary === "unknown" || c.evidence.length > 0, { message: "a known cause needs evidence" })
   .refine((c) => !c.secondary.includes(c.primary as never), { message: "secondary repeats primary" });
 
+/** D64 scope screen: whether a sampled claim tests D63's question. */
+export const MissCauseScopeFile = z.object({
+  run: z.string().min(1),
+  role: z.enum(["A", "B"]),
+  agent: z.string().min(1),
+  calls: z.array(z.object({ claim_id: Id, scope: z.enum(["in_scope", "above_forecast", "not_technology"]), reason: z.string().min(1).max(300) })),
+});
+
 export const MissCauseFile = z.object({
   run: z.string().min(1),
   batch: z.string().min(1),
@@ -1072,3 +1080,4 @@ export type MissCause = z.infer<typeof MissCause>;
 export type MissCauseCandidate = z.infer<typeof MissCauseCandidate>;
 export type MissCauseCall = z.infer<typeof MissCauseCall>;
 export type MissCauseFile = z.infer<typeof MissCauseFile>;
+export type MissCauseScopeFile = z.infer<typeof MissCauseScopeFile>;

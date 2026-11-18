@@ -1,0 +1,3070 @@
+{
+	"run": "r1",
+	"seed": "d63:r1:audit",
+	"claims": [
+		{
+			"id": "gartner-strategic-predictions-2014-003",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "algorithm-conceived-business",
+			"verdict": "miss",
+			"batch": "b5",
+			"claim": "By 2017, a significant disruptive digital business will be launched that was conceived by a computer algorithm.; position: top prediction 2; target: 2017",
+			"graders": [
+				{
+					"reading": "By 2017 a significant, disruptive digital business conceived by a computer algorithm will be launched.",
+					"reason": "No such business was reported by 2017 or in the following years; the disruptive digital businesses of the period (ride-hailing, delivery, fintech) were conceived by people. Absence after looking in tech press coverage of algorithmic creativity; low-medium confidence.",
+					"evidence": [
+						{
+							"url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+							"shows": "Claim text; no business conceived by an algorithm was found in reporting through 2019."
+						}
+					]
+				},
+				{
+					"reading": "By 2017 a significant disruptive digital business will be launched that a computer algorithm conceived.",
+					"reason": "No significant disruptive business conceived by an algorithm was reported by 2017 (or in the following years before generative AI). Absence of evidence; low-medium certainty.",
+					"evidence": [
+						{
+							"url": "https://www.gartner.com/en/newsroom/press-releases/2014-10-07-gartner-reveals-top-predictions-for-it-organizations-and-users-for-2015-and-beyond",
+							"shows": "The claim. No record found of a significant algorithm-conceived disruptive business launched by 2017."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-strategic-predictions-2014-003",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No opened page shows why no algorithm-conceived business appeared.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "gartner-strategic-predictions-2014-003",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page opened shows the cause. Grader evidence shows only the shortfall.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "kurzweil-1999-112",
+			"source_id": "kurzweil",
+			"subject_id": "software-assisted-composition",
+			"verdict": "partial",
+			"batch": "b3",
+			"claim": "Cybernetic music creation systems allow people who appreciate music but who are not knowledgeable about music theory and practice to create music in collaboration with their automatic composition software.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; The Arts; Chapter 9, \"2009\"; item The Arts 7 in Kurzweil 2010, p. 94; target: 2009",
+			"graders": [
+				{
+					"reading": "Non-experts create music together with software that composes parts automatically.",
+					"reason": "Software that composes parts for the user existed: Band-in-a-Box generates accompaniment and solos from chords and style, and Magic GarageBand assembled a band. But collaboration with automatic composition software was not a common way for non-musicians to make music; most used loops they arranged by hand.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Band-in-a-Box",
+							"shows": "Generates accompaniment, melodies and solos automatically; forum with thousands of customer songs."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/GarageBand",
+							"shows": "Magic GarageBand virtual jam session (version 4)."
+						}
+					]
+				},
+				{
+					"reading": "Dominant reading: software that composes or completes music for users with no theory knowledge is available. The claim is about availability ('allow'), not a usage share.",
+					"reason": "Consumer software that generates musical material for users existed and was in use by 2009. Band-in-a-Box (since 1990) generates complete accompaniments from chords, key, tempo and style. GarageBand supplies ready-made loops and virtual session bands. These are limited forms of 'automatic composition', but they let people without music-theory knowledge produce music together with the software. The claim says such systems 'allow' this, and they did.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Band-in-a-Box",
+							"shows": "Since 1990 generates accompaniments from chords, key, tempo and style; customer forum showcases thousands of user songs."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/GarageBand",
+							"shows": "Apple Loops and Magic GarageBand virtual jam sessions for casual users."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-112",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "Music generation software (Band-in-a-Box since 1990, GarageBand) was in use by 2009. Use by non-musicians stayed moderate; no source names a barrier.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Band-in-a-Box",
+						"title": "Band-in-a-Box - Wikipedia",
+						"shows": "Generates accompaniments and solos from chords, key, tempo and style since 1990."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-112",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "Band-in-a-Box and GarageBand did let non-experts make music with generated parts; the claim of common collaboration with composing software was set beyond actual use. No barrier named.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Band-in-a-Box",
+						"title": "Band-in-a-Box",
+						"shows": "Generates accompaniment and solos from chords, key, tempo, style; used by amateurs and performers."
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-1999-003",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "text-mining",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 1999: Text Mining, Innovation Trigger, plateau in 2 to 5 years. (label: Text Mining); position: Innovation Trigger; rank 3; horizon: 2 to 5 years; phase: innovation_trigger",
+			"graders": [
+				{
+					"reading": "Automated discovery of patterns, entities and relationships in large collections of unstructured text for business or research analysis.",
+					"reason": "Reached 5% only in 2005; not mainstream by 2009 (placed year 2004 plus 5). Low certainty; same evidence base as text analytics, the later name for the same practice. Text mining was a specialist tool in 1999-2005; the GreenBook GRIT tracking series (market research organisations) shows growing use from 2014. Both years are estimates.",
+					"evidence": [
+						{
+							"url": "https://www.statista.com/statistics/966852/market-research-industry-text-analytics/",
+							"shows": "Share of market research organisations using text analytics increased from 2014 to 2020 (values paywalled)."
+						}
+					]
+				},
+				{
+					"reading": "Automated discovery of patterns, entities and relationships in large collections of unstructured text (documents, email, feedback), as an enterprise analytics technique.",
+					"reason": "Reached 5% only in 2005; not mainstream by 2009 (placed year 2004 plus 5). Text mining was relabelled 'text analytics' in the late 2000s; the timelines are shared. Statista/GRIT data show market research use of text analytics rising 2014-2020 (values paywalled). Specialist use (pharma literature mining, intelligence, e-discovery) passed 5% of relevant organisations by the mid-2000s (estimate). Mainstream year is an estimate; LLMs from 2023 made text processing routine across organisations. Low certainty.",
+					"evidence": [
+						{
+							"url": "https://www.statista.com/statistics/966852/market-research-industry-text-analytics/",
+							"shows": "Share of market research organisations using text analytics increased from 2014 to 2020 (values paywalled)."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-1999-003",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "Text mining became routine as text analytics about 2005 to 2020, later than the 2 to 5 year plateau; sources name no barrier.",
+				"evidence": [
+					{
+						"url": "https://www.statista.com/statistics/966852/market-research-industry-text-analytics/",
+						"title": "Statista: text analytics in market research",
+						"shows": "Use rose 2014 to 2020."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-1999-003",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "Text mining spread as a specialist tool and later as text analytics. No opened source names a barrier; the plateau date was set early.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Text_mining",
+						"title": "Text mining",
+						"shows": "Text mining, now also called text analytics, is an established process; no adoption barrier named"
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2008-016",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "service-oriented-business-applications",
+			"verdict": "partial",
+			"batch": "b4",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2008: Service-Oriented Business Applications, Trough of Disillusionment, plateau in 2 to 5 years. (label: Service-Oriented Business Applications); position: Trough of Disillusionment; x 38.181, y 36.205; horizon: 2 to 5 years; phase: trough",
+			"graders": [
+				{
+					"reading": "Packaged business applications (ERP, CRM) built from and exposed as services on an SOA foundation (e.g., SAP enterprise SOA, Oracle Fusion).",
+					"reason": "At least 5% from 2008, below mainstream by the placed year 2013. Low evidence and fuzzy boundary. Vendors re-architected suites on services in 2007-2012, and customers adopted them gradually; the category name disappeared as SaaS suites with APIs became the norm. No survey measures a distinct SOBA share, so mainstream is null; a grader who counts API-based SaaS suites would date mainstream to the early 2010s.",
+					"evidence": [
+						{
+							"url": "https://www.govtech.com/pcio/gartner-first-time-soa-adoption-falling.html",
+							"shows": "SOA foundation widely adopted by large firms in 2007-2008, the base for service-oriented applications."
+						}
+					]
+				},
+				{
+					"reading": "ambiguous: packaged business applications re-architected as SOA services (SAP enterprise SOA, Oracle Fusion Applications) vs any business application exposed as composable services (including later SaaS APIs)",
+					"reason": "No dominant reading of the label; the readings give different verdicts (D16). Under the narrow vendor reading, SOA-based suites shipped (SAP ERP 6.0 enterprise services, Oracle Fusion Applications 2011) but customers rarely used them as composable services and the label faded by about 2012. Under the broad reading, SaaS suites with service APIs became mainstream in the 2010s. No dominant reading; years left null. SOA adoption evidence is shared with the SOA subject.",
+					"evidence": [
+						{
+							"url": "https://avasant.com/report/soa-adoption-trends-executive-summary/",
+							"shows": "SOA itself at 19% implemented in 2006; no separate data for SOA-based business applications."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2008-016",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page opened shows why service-oriented business applications fell short; the label faded and no adoption series exists.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2008-016",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "The label is fuzzy and faded; no opened source shows why adoption fell short of the plateau.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2023-003",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "a-chip-design-that-changes-everything",
+			"verdict": "partial",
+			"batch": "b3",
+			"claim": "MIT Technology Review 10 Breakthrough Technologies 2023: A chip design that changes everything, availability now. (label: RISC-V is upending those power dynamics.); position: list position 3; horizon: now",
+			"graders": [
+				{
+					"reading": "The open RISC-V instruction set is in mainstream use in chip design at the 2023 edition year ('the chips will be everywhere').",
+					"reason": "SHD Group (Apr 2026) puts RISC-V SoC unit penetration at 7.4% in 2023, 10.8% in 2024 and 13.0% in 2025, forecast to cross 20% only around 2029 (22.1%). At least 5% at the placed year, below mainstream by 2025, and 20% not forecast within 2028: partial. A 2025 RISC-V International '25% penetration' headline was flagged as ambiguous about the market base.",
+					"evidence": [
+						{
+							"url": "https://theshdgroup.com/wp-content/uploads/2026/04/RISC-V-Market-Analysis-2026-Final-abridged.pdf",
+							"shows": "Table 18: RISC-V SoC penetration by units 4.4% (2022), 7.4% (2023), 10.8% (2024), 13.0% (2025), 18.6% (2028f), 22.1% (2029f)."
+						},
+						{
+							"url": "https://riscv.org/ecosystem-news/2025/10/risc-v-set-to-announce-25-market-penetration-open-standard-isa-is-ahead-of-schedule-securing-fast-growing-silicon-footprint/",
+							"shows": "25% figure; uncertain whether it covers all microprocessors or only MCU/IoT/auto markets RISC-V has entered."
+						},
+						{
+							"url": "https://www.technologyreview.com/2023/01/09/1064876/riscv-computer-chips-10-breakthough-technologies-2023/",
+							"shows": "10 billion cores shipped; proponents predict chips everywhere within a few years."
+						}
+					]
+				},
+				{
+					"reading": "The open RISC-V instruction set is in use now (2023) and is spreading across the chip industry, upending proprietary architectures.",
+					"reason": "Placed 2023. SHD Group (April 2026) puts RISC-V SoC market penetration at 7.4% of units in 2023, ~11% in 2024 and ~13% forecast for 2025, reaching 20%+ only around 2029. At least 5% at the placed year but not mainstream within 2 years: partial.",
+					"evidence": [
+						{
+							"url": "https://theshdgroup.com/wp-content/uploads/2026/04/RISC-V-Market-Analysis-2026-Final-abridged.pdf",
+							"shows": "RISC-V SoC unit penetration: 4.4% (2022), 7.4% (2023), 11.2% (2024), 13.5% fcst (2025), 22.1% fcst (2029); 2.95B units in 2023."
+						},
+						{
+							"url": "https://www.technologyreview.com/2023/01/09/1064876/riscv-computer-chips-10-breakthough-technologies-2023/",
+							"shows": "Availability: Now; 10 billion RISC-V cores shipped; proponents expect it 'everywhere' in a few years."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "mit-tr-10-breakthrough-2023-003",
+				"primary": "overreach",
+				"secondary": [
+					"complements"
+				],
+				"reason": "RISC-V reached about 7-13% of SoC units by 2023-2025, a normal climb for a new ISA. No source names a barrier except a young software ecosystem against incumbent Arm.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/RISC-V",
+						"title": "RISC-V - Wikipedia",
+						"shows": "Linux Foundation Europe started the RISE software-ecosystem initiative in 2023 to widen software for RISC-V; incumbents Arm and MIPS charge royalties."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "mit-tr-10-breakthrough-2023-003",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "RISC-V did spread (about 10 billion cores shipped; graders cite 7-13% of SoC units) on an ordinary path. The 'everywhere in a few years' pitch ran ahead; no barrier named.",
+				"evidence": [
+					{
+						"url": "https://www.technologyreview.com/2023/01/09/1064876/riscv-computer-chips-10-breakthough-technologies-2023/",
+						"title": "A chip design that changes everything",
+						"shows": "About 10 billion cores shipped; proponents predict everywhere in a few years; no barriers named."
+					}
+				]
+			}
+		},
+		{
+			"id": "deloitte-tmt-predictions-2008-008",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "led-lighting",
+			"verdict": "partial",
+			"batch": "b2",
+			"claim": "The conventional, highly inefficient, incandescent light bulb may finally start to be superseded by the white LED in 2008. ... In 2008, the LED should become commercially viable; position: Technology, 3: \"Let there be light emitting diodes\"; target: 2008",
+			"graders": [
+				{
+					"reading": "In 2008 white LED lighting would become commercially viable and begin to replace incandescent bulbs.",
+					"reason": "Mainstream retrofit LED lamps came late: Ushio's LED filament lamp 2008, Philips' first LED lamp 2009 and the first 60W-equivalent 2010; LEDs approached mainstream in the US only around 2016. The start happened, but 1-2 years late.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/LED_lamp",
+							"shows": "2008 Ushio LED filament lamp; 2009 Philips first LED lamp; 2010 first 60W-equivalent; close to mainstream in US by 2016."
+						}
+					]
+				},
+				{
+					"reading": "In 2008 white LEDs become commercially viable and begin to replace incandescent bulbs.",
+					"reason": "First LED replacement lamps appeared 2008-2009 (Ushio 2008, Philips 2009) but the first 60 W-equivalent LED lamp came in 2010 and mass adoption followed in the 2010s (near mainstream in the US by 2016). The start happened, but viability arrived about two years late.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/LED_lamp",
+							"shows": "Ushio LED filament lamp 2008; Philips first LED lamp 2009; first 60 W equivalent 2010; LED near mainstream in US by 2016."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "deloitte-tmt-predictions-2008-008",
+				"primary": "cost",
+				"secondary": [
+					"technical",
+					"complements"
+				],
+				"reason": "Early LED lamps cost about three times conventional lighting, had droop and heat limits, and lacked colour standards until 2008.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/LED_lamp",
+						"title": "LED lamp",
+						"shows": "2008 project cost three times conventional; efficiency droop; heat management; 60 W-equivalent only in 2010; ANSI colour standard 2008."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "deloitte-tmt-predictions-2008-008",
+				"primary": "cost",
+				"secondary": [
+					"technical"
+				],
+				"reason": "White LED lamps arrived late: early LEDs lacked general-lighting performance (efficiency droop, thermal limits) and lamp prices stayed higher than other lamps.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/LED_lamp",
+						"title": "LED lamp",
+						"shows": "Purchase prices higher than most lamps; efficiency droop; thermal management and drivers add cost"
+					}
+				]
+			}
+		},
+		{
+			"id": "et-2012-030",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"batch": "b2",
+			"claim": "Privately developed and operated spaceflight services (launch, cargo, crew, passengers), the 2012 NewSpace sense (SpaceX Dragon, Virgin Galactic).",
+			"graders": [
+				{
+					"reading": "Privately developed and operated spaceflight services (launch, cargo, crew, passengers), the 2012 NewSpace sense (SpaceX Dragon, Virgin Galactic).",
+					"reason": "Private NewSpace providers had a measurable share at the placed year: Falcon 9 Full Thrust flew 36 times from Dec 2015 to Jun 2018 (about 14 per year, about 15% of about 85-91 global orbital launches per year). SpaceX alone passed 20% of global launches only in 2020-2022 (117 Falcon 9 launches), 4-6 years after 2016, when private crew and tourist flights also began (Crew Dragon 2020, Inspiration4, New Shepard and Unity 2021). Under a pure space-tourism reading the verdict would be miss: only 9 orbital tourists by end-2021.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches",
+							"shows": "Falcon 9 Full Thrust launched 36 times Dec 2015-Jun 2018; Falcon 9 launched 117 times Jan 2020-end 2022."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/2016_in_spaceflight",
+							"shows": "85 orbital launches worldwide in 2016 (denominator)."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Space_tourism",
+							"shows": "Only 9 orbital space tourists by end-2021; suborbital tourist flights began July 2021."
+						}
+					]
+				},
+				{
+					"reading": "Spaceflight provided by private companies on a commercial basis (launch services, cargo and crew to orbit), as with SpaceX Dragon's 2012 ISS flight; not only space tourism.",
+					"reason": "Privately operated launch services became routine in the launch industry. In 2017, 23 of 91 orbital launches worldwide (25%) flew under FAA commercial licenses alone, and in 2018 SpaceX flew 21 of 114 orbital launches (18%) before counting Arianespace and other commercial operators. The alternative reading, paying tourists flying to space, would be a miss: the first commercial tourist suborbital flights came in 2021 and remain a tiny number.",
+					"evidence": [
+						{
+							"url": "https://brycetech.com/reports/report-documents/FAA_Annual_Compendium_2018.pdf",
+							"shows": "91 orbital launches in 2017; a record 23 under FAA commercial licenses."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/2018_in_spaceflight",
+							"shows": "114 orbital launches in 2018; SpaceX Falcon family flew 21."
+						}
+					]
+				},
+				{
+					"reason": "Read as commercial (privately operated) human spaceflight. Commercial cargo flights to the ISS started in 2012, but commercial crew began only with SpaceX Crew-1 in November 2020, and paying private passengers first flew in 2021 (16 non-professional astronauts that year on Virgin Galactic, Blue Origin and SpaceX). Commercial operators became the routine way to fly crew about 4-5 years after 2016, but passenger flight stayed a tiny niche for the very rich, and by 2026 both suborbital operators had paused flights. Partial.",
+					"evidence": [
+						{
+							"url": "https://www.nasa.gov/news-release/nasas-spacex-crew-1-astronauts-headed-to-international-space-station/",
+							"shows": "First operational commercial crew rotation flight launched in November 2020."
+						},
+						{
+							"url": "https://www.cnbc.com/2021/10/15/bransons-virgin-galactic-trails-bezos-blue-origin-in-space-tourism-while-musks-spacex-is-in-a-league-of-its-own.html",
+							"shows": "Private passenger spaceflight began in 2021 with a handful of flights."
+						},
+						{
+							"url": "https://spacedaily.com/t-suborbital-space-tourism-blue-origin-virgin-galactic-pause/",
+							"shows": "By 2026 neither suborbital tourism operator was flying."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2012-030",
+				"primary": "cost",
+				"secondary": [
+					"technical",
+					"regulation"
+				],
+				"reason": "Seats cost about $20-25M, and the 2014 SpaceShipTwo accident and XCOR failure delayed suborbital flights; liability rules limited operators.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Space_tourism",
+						"title": "Space tourism",
+						"shows": "Tourist seats $20M+; VSS Enterprise broke apart 2014; XCOR bankrupt; FAA licensing and liability limits."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "et-2012-030",
+				"primary": "cost",
+				"secondary": [
+					"regulation",
+					"technical"
+				],
+				"reason": "Private launch grew, but private passenger flight stayed niche: orbital seats cost 20-25m, suborbital 250k, with liability and licensing gaps and safety setbacks.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Space_tourism",
+						"title": "Space tourism",
+						"shows": "Seat prices 20-25m orbital, 250k suborbital; FAA licences; liability gaps; 2014 Enterprise breakup"
+					}
+				]
+			}
+		},
+		{
+			"id": "deloitte-tmt-predictions-2017-002",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "ddos-attacks",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "Deloitte Global expects there will be on average a Tbit/s (terabit per second) attack per month, over 10 million attacks in total, and an average attack size of between 1.25 and 1.5 Gbit/s; position: null, 2: \"DDoS attacks enter the terabit era\"; target: 2017",
+			"graders": [
+				{
+					"reading": "In 2017 there will be on average one Tbit/s DDoS attack per month.",
+					"reason": "No Tbit/s-class attack was publicly reported in 2017; the next record after the 2016 Mirai attacks was the 1.35 Tbit/s memcached attack on GitHub in February 2018, reported as the largest ever. Arbor/NETSCOUT's 13th WISR gave the largest 2017 attack reported by respondents as about 600 Gbit/s (report not opened in session).",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Memcached",
+							"shows": "GitHub hit by 1.35 Tbit/s memcached DDoS in March 2018, 'largest DDoS attack ever recorded' (TechSpot, 2018-03-01)."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Denial-of-service_attack",
+							"shows": "Lists record attacks: 2016 Mirai (>1 Tbit/s), 2018 GitHub, 2020 AWS 2.3 Tbit/s; none in 2017."
+						}
+					]
+				},
+				{
+					"reading": "In 2017 there would be on average about one DDoS attack of 1 Tbit/s or more per month (about 12 in the year).",
+					"reason": "No terabit-scale attack was reported in 2017; the next record after the 2016 Mirai attacks (~1 Tbit/s, OVH/Dyn) was GitHub's 1.35 Tbit/s memcached attack on 28 Feb 2018, reported as a new record. Arbor/NETSCOUT's report for 2017 gave a largest attack of about 600 Gbit/s (not retrieved here). Far below ~12 Tbit/s attacks: miss.",
+					"evidence": [
+						{
+							"url": "https://github.blog/news-insights/company-news/ddos-incident-report/",
+							"shows": "Attack peaked at 1.35 Tbit/s on 2018-02-28."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Denial-of-service_attack",
+							"shows": "Attacks exceeded 1 Tbit/s by 2016; no 2017 terabit attacks listed."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "deloitte-tmt-predictions-2017-002",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "DDoS attacks grew but no terabit attack came in 2017 (next record 1.35 Tbit/s in Feb 2018); the forecast frequency exceeded the ordinary growth path.",
+				"evidence": [
+					{
+						"url": "https://github.blog/news-insights/company-news/ddos-incident-report/",
+						"title": "GitHub DDoS incident report",
+						"shows": "1.35 Tbit/s attack on 2018-02-28."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "deloitte-tmt-predictions-2017-002",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "DDoS records grew on the ordinary path: Mirai about 1 Tbit/s in 2016, GitHub 1.35 Tbit/s in 2018. The forecast of a monthly Tbit/s attack in 2017 set the level above it.",
+				"evidence": [
+					{
+						"url": "https://github.blog/news-insights/company-news/ddos-incident-report/",
+						"title": "February 28th DDoS incident report (GitHub)",
+						"shows": "Attack peaked at 1.35 Tbit/s in February 2018"
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-strategic-predictions-2011-002",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "social-network-investment-bubble",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "In 2013, the investment bubble will burst for consumer social networks, and for enterprise social software companies in 2014.; position: top prediction 2; target: 2013",
+			"graders": [
+				{
+					"reading": "The investment bubble in consumer social networks will burst in 2013, and in enterprise social software in 2014 (sharp fall in valuations and funding).",
+					"reason": "No burst: Twitter's November 2013 IPO valued it at about $31 billion on the first day, Facebook's stock recovered past its IPO price in 2013, and in 2014 Facebook paid about $19 billion for WhatsApp; social funding and valuations rose. Enterprise social software saw consolidation (Microsoft-Yammer 2012) and weak Jive shares, but no sector-wide collapse in 2014.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Twitter,_Inc.",
+							"shows": "Twitter IPO in November 2013 with a first-day valuation of about $31 billion."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/WhatsApp",
+							"shows": "Facebook agreed to acquire WhatsApp for about $19 billion in February 2014, the opposite of a burst bubble."
+						}
+					]
+				},
+				{
+					"reading": "The investment bubble in consumer social networks will burst in 2013 and in enterprise social software in 2014.",
+					"reason": "No burst: Facebook shares recovered and more than doubled in 2013, and valuations rose further (Facebook bought WhatsApp for about $19bn in February 2014; Snapchat, Pinterest rounds at rising valuations). Enterprise social saw consolidation (Yammer to Microsoft 2012) but no collapse of investment in 2014.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/WhatsApp",
+							"shows": "Facebook announced acquisition of WhatsApp for about US$19 billion, its largest to date: consumer social valuations at a peak, not burst, in 2014."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-strategic-predictions-2011-002",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "No bubble burst: Twitter IPO and the WhatsApp purchase show valuations rose. The forecast set an event beyond the actual path; no barrier applies.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/WhatsApp",
+						"title": "WhatsApp - Wikipedia",
+						"shows": "Facebook agreed to buy WhatsApp for about US$19 billion in Feb 2014."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-strategic-predictions-2011-002",
+				"primary": "overreach",
+				"secondary": [
+					"market"
+				],
+				"reason": "The predicted bust did not occur: Twitter IPO'd in 2013 and Facebook paid about 19 billion for WhatsApp in 2014. Investment kept rising; no barrier, the forecast direction was wrong.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Twitter,_Inc.",
+						"title": "Twitter, Inc.",
+						"shows": "Twitter IPO in November 2013 at a multi-billion valuation, not a collapse"
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-004",
+			"source_id": "kurzweil",
+			"subject_id": "small-but-high-resolution-interfaces",
+			"verdict": "partial",
+			"batch": "b1",
+			"claim": "Computers with a high-resolution visual interface range from rings and pins and credit cards up to the size of a thin book.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; Computers; Chapter 9, \"2009\"; item Computers 4 in Kurzweil 2010, p. 13; target: 2009",
+			"graders": [
+				{
+					"reading": "High-resolution computers exist across the full range of sizes from rings to thin books.",
+					"reason": "The upper and middle of the range existed in 2009: smartphones with high-resolution screens and e-book readers the size of a thin book. The lower end (rings, pins, credit cards with high-resolution displays) did not exist.",
+					"evidence": [
+						{
+							"url": "https://www.pewresearch.org/internet/2009/07/22/wireless-internet-use/",
+							"shows": "32% of Americans had gone online with a mobile device by April 2009."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Smartwatch",
+							"shows": "Wrist-size computers were experimental in 2009."
+						}
+					]
+				},
+				{
+					"reading": "A continuous size range of display computers from jewelry scale to thin-book scale.",
+					"reason": "Handheld devices with high-resolution screens (phones, iPod touch, Kindle at book size) were mainstream by 2009. The small end of the range (rings, pins, credit-card computers) did not exist as products.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
+							"shows": "2007 iPhone: flash storage, multi-touch screen, no physical keyboard; 6.1M units sold to mid-2008."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+							"shows": "Kindle Nov 2007, 6-inch 167 ppi e-ink; Amazon e-books passed paperbacks Q4 2010 and print overall early 2011."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Wearable_computer",
+							"shows": "Pebble 2012, Google Glass test 2013, Apple Watch April 2015; no commercial ring/earring computers documented."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-004",
+				"primary": "technical",
+				"secondary": [
+					"cost"
+				],
+				"reason": "Wearables face battery, heat and display limits, and price; tiny ring or card computers with high-resolution displays were not products. Weakly shown.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Wearable_computer",
+						"title": "Wearable computer",
+						"shows": "Batteries and heat dissipation are issues; displays can be massive; price is one of the biggest challenges."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-004",
+				"primary": "technical",
+				"secondary": [
+					"cost",
+					"substitution"
+				],
+				"reason": "Early wearable computers had poor battery life, small monochrome screens and heavy bodies; costs and phone dependence added to this.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Smartwatch",
+						"title": "Smartwatch - Wikipedia",
+						"shows": "Poor battery life, 90x126 pixel screens, 108 g weight, subscription fees; components later became small and cheap."
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-120",
+			"source_id": "kurzweil",
+			"subject_id": "software-assisted-writing",
+			"verdict": "partial",
+			"batch": "b2",
+			"claim": "Style improvement and automatic editing software is widely used to improve the quality of writing.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; The Arts; Chapter 9, \"2009\"; item The Arts 15 in Kurzweil 2010, p. 98; target: 2009",
+			"graders": [
+				{
+					"reading": "Software that improves style and edits text is widely used by writers.",
+					"reason": "Spelling and grammar checking was universal in word processors, and Word had style options. But dedicated style-improvement and automatic-editing software was not widely used in 2009; Grammarly was founded in 2009 and such tools spread in the 2010s.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Grammar_checker",
+							"shows": "Style checkers existed since the 1970s-1980s (Writer's Workbench, Grammatik); integrated browser tools like Grammarly came later."
+						}
+					]
+				},
+				{
+					"reading": "Dominant reading: software that edits and improves writing style is in wide routine use.",
+					"reason": "Style and grammar checking was built into Microsoft Word and so was available to most writers in 2009. It was basic, and experts judged its advice unreliable. Software that improves style in a way writers widely rely on (Grammarly and similar tools) spread in the mid-2010s. Availability was near universal, but real use for style improvement was limited.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Grammar_checker",
+							"shows": "Grammatik (1981) was the first commercial diction and style checker; integrated into Word from 1992; quality criticized in 2007; Grammarly and others widespread by 2019."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-120",
+				"primary": "technical",
+				"secondary": [
+					"acceptance"
+				],
+				"reason": "Grammar and style checkers missed real errors and flagged correct text; a 2007 linguist argued they did more harm than good.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Grammar_checker",
+						"title": "Grammar checker",
+						"shows": "Criticised for missing errors and false flags; Pullum 2007: advice makes prose worse."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-120",
+				"primary": "technical",
+				"secondary": [
+					"market"
+				],
+				"reason": "Built-in style and grammar checkers were inaccurate (Pullum 2007: more harm than good) and wider use came with later tools; add-on checkers only became mainstream once bundled in Word.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Grammar_checker",
+						"title": "Grammar checker",
+						"shows": "Checkers miss errors and flag correct text; Pullum 2007; grammar checking in Word 1992 brought mainstream use"
+					}
+				]
+			}
+		},
+		{
+			"id": "deloitte-tmt-predictions-2011-009",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "digital-video-recorders-and-tv-advertising",
+			"verdict": "miss",
+			"batch": "b1",
+			"claim": "Deloitte predicts that digital video recorder (DVR) penetration in two large markets will exceed 50 percent of TV households by year-end 2011; but also predicts that TV advertising will be almost entirely unaffected despite that level of penetration.; position: Media, 9: \"DVRs proliferate! The 30 second spot doesn't die!\"; target: 2011",
+			"graders": [
+				{
+					"reading": "DVR penetration would exceed 50% of TV households in two large markets (dominant reading: the US and the UK) by end-2011, with TV advertising little affected.",
+					"reason": "US DVR penetration was 32% in 2009 and 38% in 2010, so about 42-45% in 2011, more than 5 points below 50%. The UK may have passed 50%, but the claim needs two markets. The markets are not named in the quote, a source of uncertainty.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Digital_video_recorder",
+							"shows": "US DVRs in 32% of TV households in 2009 and 38% in 2010."
+						}
+					]
+				},
+				{
+					"reading": "By end-2011 DVR penetration exceeds 50% of TV households in two large markets (the US and UK per the edition), while TV advertising is almost unaffected.",
+					"reason": "US DVR penetration was 38% in 2010 (40% of households mid-2010 per the edition) and stayed in the mid-40s through 2011, crossing 50% only around 2013-2014; the UK passed 50% around 2011-2012. One market on time at best, the other 2-3 years late: partial. TV ad spending was indeed little affected.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Digital_video_recorder",
+							"shows": "US DVRs in 32% of TV households in 2009 and 38% in 2010."
+						},
+						{
+							"url": "https://www.deloitte.com/content/dam/assets-shared/legacy/docs/perspectives/2022/gx-tmt-predictions2011.pdf",
+							"shows": "Markets named as US and UK; body text says penetration should cross 50% in 2011-2012."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "deloitte-tmt-predictions-2011-009",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "DVR use rose steadily (32% in 2009, 38% in 2010) on an ordinary path; the 50% level came later than forecast. No barrier is named in the page I opened.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Digital_video_recorder",
+						"title": "Digital video recorder",
+						"shows": "US DVR share 32% (2009), 38% (2010)."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "deloitte-tmt-predictions-2011-009",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "US DVR penetration rose 32% (2009) to 38% (2010) on an ordinary path; the page names no adoption barrier. The 50% level came a few years later than forecast.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Digital_video_recorder",
+						"title": "Digital video recorder - Wikipedia",
+						"shows": "US DVR households 32% in 2009, 38% in 2010; no adoption barriers named."
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2015-033",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "cryptocurrency-exchange",
+			"verdict": "partial",
+			"batch": "b4",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2015: Cryptocurrency Exchange, Trough of Disillusionment, plateau in 2 to 5 years. (label: Cryptocurrency Exchange); position: Trough of Disillusionment; x 42.395, y 32.463; horizon: 2 to 5 years; phase: trough",
+			"graders": [
+				{
+					"reading": "Online platforms where users buy, sell and trade cryptocurrencies for fiat money or other crypto assets.",
+					"reason": "At least 5% from 2018, below mainstream by the placed year 2020. Pew: 17% of US adults have ever invested in, traded or used cryptocurrency (Feb 2024), statistically unchanged since 2021 (16%). This stays below 20%. The 5% year is estimated from the 2017-2018 boom (Coinbase user growth); not directly retrieved.",
+					"evidence": [
+						{
+							"url": "https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/",
+							"shows": "17% of US adults have ever invested in, traded or used cryptocurrency (2024), statistically unchanged since 2021."
+						}
+					]
+				},
+				{
+					"reading": "Online exchanges where users buy, sell and trade cryptocurrencies (e.g. Coinbase, Binance) for fiat or other coins",
+					"reason": "At least 5% from 2017, below mainstream by the placed year 2020. Pew: 17% of US adults have ever invested in, traded or used cryptocurrency (2024), statistically unchanged since 2021 (16%); 39% of those no longer hold any. Most such use runs through exchanges. Below 20% through 2024. year_5pct 2017 is an estimate from the 2017 retail boom (Pew series starts 2021).",
+					"evidence": [
+						{
+							"url": "https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/",
+							"shows": "17% of US adults have ever invested in or used crypto (Feb 2024), unchanged since 2021"
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2015-033",
+				"primary": "acceptance",
+				"secondary": [
+					"regulation"
+				],
+				"reason": "Crypto use stalled at 17% of US adults; 63% have little or no confidence that crypto is reliable and safe (Pew 2024).",
+				"evidence": [
+					{
+						"url": "https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/",
+						"title": "Pew: Americans not confident in crypto safety",
+						"shows": "63% little or no confidence; 17% have used it."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2015-033",
+				"primary": "acceptance",
+				"secondary": [
+					"regulation"
+				],
+				"reason": "Crypto use stayed at 17% of US adults. Pew finds 63% of adults not confident in its safety and reliability; the 2024 survey also reports many users left.",
+				"evidence": [
+					{
+						"url": "https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/",
+						"title": "Majority of Americans aren't confident in the safety and reliability of cryptocurrency",
+						"shows": "63% not confident it is safe and reliable; 17% have ever used or invested"
+					}
+				]
+			}
+		},
+		{
+			"id": "deloitte-tmt-predictions-2009-010",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "mobile-apps",
+			"verdict": "miss",
+			"batch": "b3",
+			"claim": "In 2009, mobile phone users are expected to download over 10 billion applications to their mobile phones.; position: Telecommunications, 4: \"The Joys Of Disintermediation: Why Operators Should Embrace The Application Store\"; target: 2009",
+			"graders": [
+				{
+					"reading": "Mobile users would download over 10bn applications in 2009.",
+					"reason": "Apple's App Store, the largest store, went from about 0.5bn cumulative downloads at end-2008 (1bn on 24 Apr 2009) to 3bn on 5 Jan 2010, about 2.5bn in 2009; other stores were far smaller. Total 2009 downloads were about 3bn, under a third of the forecast.",
+					"evidence": [
+						{
+							"url": "https://www.apple.com/newsroom/2010/01/05Apples-App-Store-Downloads-Top-Three-Billion/",
+							"shows": "More than 3bn cumulative App Store downloads since July 2008."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/App_Store_(Apple)",
+							"shows": "Billionth app downloaded 24 Apr 2009; 100m by Sept 2008."
+						}
+					]
+				},
+				{
+					"reading": "Mobile users worldwide download more than 10 billion applications in 2009.",
+					"reason": "Apple's App Store went from 0.5 billion (16 Jan 2009) to 3 billion (5 Jan 2010) cumulative downloads, about 2.5 billion in 2009; other stores were much smaller in 2009. Total 2009 downloads were far below 10 billion (Gartner later put 2009 app-store downloads around 2.5 billion).",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/App_Store_(Apple)",
+							"shows": "Cumulative downloads: 500 million 16 Jan 2009; 3 billion 5 Jan 2010."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "deloitte-tmt-predictions-2009-010",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "App downloads grew fast (3bn cumulative at Jan 2010 after 18 months) but far under 10bn in 2009. No source names a barrier; the forecast level was set above an ordinary adoption path.",
+				"evidence": [
+					{
+						"url": "https://www.apple.com/newsroom/2010/01/05Apples-App-Store-Downloads-Top-Three-Billion/",
+						"title": "Apple App Store downloads top three billion",
+						"shows": "More than three billion apps downloaded in less than 18 months, as of 5 Jan 2010."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "deloitte-tmt-predictions-2009-010",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "App-store downloads grew fast but to about 3bn cumulative at Apple by Jan 2010, not 10bn in 2009. No source names a barrier; the figure was set too high.",
+				"evidence": [
+					{
+						"url": "https://www.apple.com/newsroom/2010/01/05Apples-App-Store-Downloads-Top-Three-Billion/",
+						"title": "Apple App Store downloads top three billion",
+						"shows": "3bn cumulative downloads on 5 Jan 2010, the largest store."
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-079",
+			"source_id": "kurzweil",
+			"subject_id": "greatest-gains-are-in-the-stock-market",
+			"verdict": "miss",
+			"batch": "b1",
+			"claim": "The greatest gains continue to be in the value of the stock market; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; Business & Economics; Chapter 9, \"2009\"; item Business & Economics 2 in Kurzweil 2010, p. 70; target: 2009",
+			"graders": [
+				{
+					"reading": "Stock market value shows the greatest gains over 1999-2009.",
+					"reason": "The stock market had its worst decade in generations. S&P 500 total returns were negative in 2000, 2001, 2002 and 2008 (-37%), and the index ended 2009 below its 1999 level.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/S%26P_500",
+							"shows": "Total returns: 2000 -9.10%, 2001 -11.89%, 2002 -22.10%, 2008 -37.00%, 2009 +26.46%; the decade compounds to a loss."
+						}
+					]
+				},
+				{
+					"reading": "Dominant reading: stock market values rose strongly and led the economy's gains through 2009.",
+					"reason": "The S&P 500 averaged 1,425.59 in January 2000 and 1,123.58 in January 2010. The index fell over the decade (the 'lost decade'). Stock values did not show the greatest gains.",
+					"evidence": [
+						{
+							"url": "https://www.multpl.com/s-p-500-historical-prices/table/by-year",
+							"shows": "Monthly average S&P 500: 1,248.77 (Jan 1999), 1,425.59 (Jan 2000), 865.58 (Jan 2009), 1,123.58 (Jan 2010)."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-079",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "The pages I opened do not show a cause for the equity result. Evidence shows index levels only.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-079",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "The S&P 500 page opened gives annual losses but does not state their causes, so no opened source shows why gains did not come.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "et-2012-016",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"batch": "b2",
+			"claim": "Volumetric displays that form an image in 3D space (not stereoscopic 3D TVs, which the label's word 'volumetric' excludes).",
+			"graders": [
+				{
+					"reading": "Volumetric displays that form an image in 3D space (not stereoscopic 3D TVs, which the label's word 'volumetric' excludes).",
+					"reason": "True volumetric displays stayed in specialist medical, defence and industrial niches. MarketsandMarkets sized the whole market at about USD 348m in 2020, which is negligible against a consumer display market above USD 100bn. No consumer volumetric screen reached 5% of any device category by 2019.",
+					"evidence": [
+						{
+							"url": "https://www.marketsandmarkets.com/PressReleases/volumetric-display.asp",
+							"shows": "Whole volumetric display market projected at USD 348.2m in 2020; applications medical, aerospace and defence, oil and gas."
+						}
+					]
+				},
+				{
+					"reading": "Displays that render images in a true 3D volume viewable without glasses (volumetric displays), not stereoscopic 3D TVs.",
+					"reason": "True volumetric displays stayed a niche for medical imaging, research and signage. The whole volumetric display market was still described as niche in 2020 to 2024, and no consumer product reached a measurable household or unit share by 2019.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Volumetric_display",
+							"shows": "Volumetric displays remain research and specialist products; no mass consumer adoption."
+						},
+						{
+							"url": "https://www.futuremarketinsights.com/reports/volumetric-display-market",
+							"shows": "Market described as niche from 2020 to 2024, led by medical and specialist applications."
+						}
+					]
+				},
+				{
+					"reason": "True volumetric displays remain a specialist product for medical, defense and industrial visualization. The whole volumetric display market was about USD 400 million in 2023. No consumer device class ships with volumetric screens. Stereoscopic 3D TV, the nearest consumer product, was abandoned around 2016-2017. Not mainstream by 2019 (2014 plus 5).",
+					"evidence": [
+						{
+							"url": "https://www.gminsights.com/industry-analysis/volumetric-display-market",
+							"shows": "Global volumetric display market about USD 400 million in 2023, concentrated in niche professional uses."
+						},
+						{
+							"url": "https://displaydaily.com/looking-glass-offers-a-volumetric-display-for-the-consumer/",
+							"shows": "Consumer volumetric/holographic displays are still first-generation niche products in the 2020s."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2012-016",
+				"primary": "technical",
+				"secondary": [
+					"cost",
+					"complements"
+				],
+				"reason": "Volumetric displays need about 1000x the data bandwidth and 100-1000x the processing of flat displays, and distort off-axis views.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Volumetric_display",
+						"title": "Volumetric display",
+						"shows": "Needs about three orders of magnitude more bandwidth and two to three more compute; occlusion trades off against parallax."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "et-2012-016",
+				"primary": "technical",
+				"secondary": [
+					"cost"
+				],
+				"reason": "Volumetric displays need huge bandwidth and processing (about 135 GB/s for a modest display) and trade off occlusion against view angle.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Volumetric_display",
+						"title": "Volumetric display",
+						"shows": "About 135 GB/s needed; 2-3 orders more compute than 2D; occlusion vs parallax trade-off"
+					}
+				]
+			}
+		},
+		{
+			"id": "health-2012-011",
+			"source_id": "envisioning-health",
+			"verdict": "partial",
+			"batch": "b1",
+			"claim": "Genetic modification of embryos or fetuses before birth is used in health care by about 2020.",
+			"graders": [
+				{
+					"reading": "Genetic modification of embryos or fetuses before birth is used in health care by about 2020.",
+					"reason": "The only known case, He Jiankui's CRISPR-edited twins (2018), was condemned and criminally punished (3-year sentence, Dec 2019); heritable editing remains prohibited. No clinical use by 2025; the practice was effectively abandoned.",
+					"evidence": [
+						{
+							"url": "https://www.npr.org/2019/12/30/792340177/chinese-researcher-who-created-gene-edited-babies-sentenced-to-3-years-in-prison",
+							"shows": "Sole case prosecuted as illegal medical practice"
+						},
+						{
+							"url": "https://ghrp.biomedcentral.com/articles/10.1186/s41256-020-00153-4",
+							"shows": "Germline editing for reproduction prohibited; no sanctioned clinical use"
+						}
+					]
+				},
+				{
+					"reading": "Genetic modification of embryos or fetuses before birth starts to be used in health care around 2020.",
+					"reason": "CRISPR embryo editing produced three babies in China (2018) and was criminalised, so that path is abandoned. But licensed mitochondrial donation (pronuclear transfer, a germline modification of the embryo) runs as an NHS clinical service in Newcastle (licensed 2017), with eight babies reported in July 2025. Real, licensed, tiny-scale use inside the window = partial. A strict 'nuclear gene editing' reading would give miss.",
+					"evidence": [
+						{
+							"url": "https://www.ncl.ac.uk/press/articles/archive/2025/07/mitochondrialdonationtreatment/",
+							"shows": "Licensed clinical mitochondrial donation by pronuclear transfer at Newcastle; eight babies born; licence granted 2017."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/He_Jiankui_affair",
+							"shows": "Only three CRISPR-edited babies (2018-2019); researcher jailed; China criminalised human germline editing in 2020."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "health-2012-011",
+				"primary": "regulation",
+				"secondary": [
+					"acceptance"
+				],
+				"reason": "Heritable embryo editing is banned: He Jiankui was jailed for 3 years in 2019, and Chinese law bars reproductive embryo editing; WHO calls for a ban.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/He_Jiankui_affair",
+						"title": "He Jiankui affair",
+						"shows": "3-year sentence Dec 2019; 2001 rules ban reproductive embryo manipulation; 2020 criminal law amendment; WHO says heritable editing should be banned."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "health-2012-011",
+				"primary": "regulation",
+				"secondary": [
+					"acceptance"
+				],
+				"reason": "Heritable embryo editing was criminalised in China after the 2018 case; WHO called for a ban and the Declaration of Helsinki calls it unethical.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/He_Jiankui_affair",
+						"title": "He Jiankui affair - Wikipedia",
+						"shows": "He convicted Dec 2019; Chinese criminal law bans gene editing of embryos; WHO committee says heritable editing should be banned."
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-139",
+			"source_id": "kurzweil",
+			"subject_id": "doctors-consult-knowledge-based-systems",
+			"verdict": "partial",
+			"batch": "b5",
+			"claim": "Doctors routinely consult knowledge-based systems (generally through two-way voice communication augmented by visual displays), which provide automated guidance, access to the most recent medical research, and practice guidelines.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; Health & Medicine; Chapter 9, \"2009\"; item Health & Medicine 7 in Kurzweil 2010, p. 115; target: 2009",
+			"graders": [
+				{
+					"reading": "Physicians routinely consult computer knowledge bases for guidance and recent research.",
+					"reason": "Doctors did consult knowledge systems, mainly text-based references such as UpToDate, used in over 1,000 US hospitals by 2004-2006. But these were not voice-driven, and automated guidance through clinical decision support was limited in 2009. Consultation of digital references was common; the voice-driven guidance model was not.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/UpToDate",
+							"shows": "Point-of-care evidence database founded 1992; used by 1,017 US hospitals between 2004 and 2006; subscription web software."
+						}
+					]
+				},
+				{
+					"reading": "Dominant reading: doctors routinely consult computer knowledge systems that give guidance, research and practice guidelines. The voice interface is described as the general mode, and it did not happen.",
+					"reason": "Physicians did routinely consult computerized knowledge resources by 2009. UpToDate, a point-of-care evidence database (from 1992), was used in more than 1,000 US hospitals in 2004-2006, and drug references on handhelds were common. These were text lookup tools, not voice-based automated guidance systems. Automated clinical decision support was limited because only 17% of office physicians had any functional EHR in 2008. The voice part is a miss. The knowledge-lookup part holds.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/UpToDate",
+							"shows": "Point-of-care evidence database founded 1992; used by 1,017 US hospitals in 2004-2006; text/web access."
+						},
+						{
+							"url": "https://pubmed.ncbi.nlm.nih.gov/18565855/",
+							"shows": "Only 4% fully functional and 13% basic EHR adoption in 2008, which limited integrated decision support."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-139",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No opened page shows why voice-driven knowledge systems did not spread. The PubMed page did not load.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-139",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page opened shows the cause. Grader evidence shows only the shortfall.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "et-2012-061",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"batch": "b5",
+			"claim": "Glass that generates electricity (solar windows, PV glazing in building envelopes).",
+			"graders": [
+				{
+					"reading": "Glass that generates electricity (solar windows, PV glazing in building envelopes).",
+					"reason": "Solar glass windows and facade glazing remain niche. Building-integrated PV of all types is less than 1% of installed global PV capacity (Nature Reviews Clean Technology, 2025). Transparent PV glass is a subset of that. Below 5% by 2025.",
+					"evidence": [
+						{
+							"url": "https://www.nature.com/articles/s44359-025-00059-9",
+							"shows": "BIPV comprises less than 1% of global installed PV capacity."
+						}
+					]
+				},
+				{
+					"reading": "Window and facade glass that generates electricity (transparent or semi-transparent PV glazing), not the ordinary cover glass on standard solar panels.",
+					"reason": "Electricity-generating glass (solar windows, PV glazing) stayed at pilot stage. In 2023 the main transparent-solar companies were still running demonstrations (22 windows at one site) and were not in full-scale production, while conventional PV reached 1.6 TW cumulative. PV glazing is far under 5% of glazing or solar. Window closed 2025.",
+					"evidence": [
+						{
+							"url": "https://www.solarpowerworldonline.com/2023/03/is-it-finally-time-to-take-solar-windows-seriously/",
+							"shows": "Solar windows still in pilot installations in 2023; 'not in full-scale production yet'; Ubiquitous Energy product expected in the second half of 2025."
+						},
+						{
+							"url": "https://iea-pvps.org/snapshot-reports/snapshot-2024/",
+							"shows": "Global cumulative PV reached 1.6 TW in 2023 with about 446 GW added, overwhelmingly conventional modules."
+						}
+					]
+				},
+				{
+					"reason": "Building-integrated PV glass is a real commercial niche (about 2 GW per year globally around 2022), but IEA PVPS puts BIPV at only 1-3% of the global PV market. Standard rack-mounted modules dominate. Niche by 2020, not mainstream by 2025.",
+					"evidence": [
+						{
+							"url": "https://iea-pvps.org/key-topics/t15-bipv-education-training-2026/",
+							"shows": "BIPV accounts for only 1-3% of the global PV market."
+						},
+						{
+							"url": "https://iea-pvps.org/wp-content/uploads/2023/10/PVPS_Trends_Report_2023_WEB.pdf",
+							"shows": "BIPV market 300-500 MW per year in Europe and about 2 GW globally."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2012-061",
+				"primary": "technical",
+				"secondary": [
+					"complements",
+					"market"
+				],
+				"reason": "Transparent solar glass has a see-through tradeoff and about 10% efficiency; products were not in full-scale production in 2023 and makers still raised funds for manufacturing lines.",
+				"evidence": [
+					{
+						"url": "https://www.solarpowerworldonline.com/2023/03/is-it-finally-time-to-take-solar-windows-seriously/",
+						"title": "Solar windows (Solar Power World, 2023)",
+						"shows": "See-through problem; not huge energy generators; not in full-scale production; still raising money for manufacturing line."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "et-2012-061",
+				"primary": "technical",
+				"secondary": [
+					"complements",
+					"market"
+				],
+				"reason": "Transparent PV trades transparency against output (up to 10% efficiency) and earlier silicon and perovskite attempts had little success. Production stayed at pilot scale.",
+				"evidence": [
+					{
+						"url": "https://www.solarpowerworldonline.com/2023/03/is-it-finally-time-to-take-solar-windows-seriously/",
+						"title": "Is it finally time to take solar windows seriously?",
+						"shows": "Transparency tradeoff limits output; earlier attempts little commercial success; not in full-scale production; depends on window fabricators."
+					}
+				]
+			}
+		},
+		{
+			"id": "deloitte-tmt-predictions-2011-015",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "4g",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "Deloitte expects that fewer than 30 LTE carriers in six countries will offer commercial service by the end of 2011.; position: Telecommunications, 15: \"Getting to 4G cheaply: will many carriers opt for 3.5G instead?\"; target: 2011",
+			"graders": [
+				{
+					"reading": "By end-2011 fewer than 30 carriers would offer commercial LTE service.",
+					"reason": "GSA counted 49 operators with commercially launched LTE by early January 2012, 63% above the ceiling of 30.",
+					"evidence": [
+						{
+							"url": "https://www.rcrwireless.com/20120105/americas/gsa-counts-49-lte-operators-globally-with-4-in-latin-america-caribbean-2",
+							"shows": "GSA: 49 LTE operators had launched commercial service by the start of January 2012."
+						}
+					]
+				},
+				{
+					"reading": "By end 2011 fewer than 30 carriers, in about six countries, would offer commercial LTE service.",
+					"reason": "GSA counted 80 commercial LTE networks in 38 countries by June 2012 and about 146 at end 2012; its own statement that the count had quadrupled in just over a year puts mid-2011 near 20 and end 2011 near 45-50 (GSA's end-2011 figure is commonly cited as 49 networks in 29 countries). The count and especially the country spread far exceed '<30 in six countries'; more than 25% above the bound.",
+					"evidence": [
+						{
+							"url": "https://convergedigest.com/gsa-80-lte-networks-launched-subscriber/",
+							"shows": "80 commercial LTE networks in 38 countries by June 2012; count quadrupled in just over a year."
+						},
+						{
+							"url": "https://www.telecompaper.com/news/about-200-lte-networks-operational-worldwide-gsa--960125",
+							"shows": "Nearly 146 commercial LTE networks at end 2012; 106 launched in the 12 months to July 2013."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "deloitte-tmt-predictions-2011-015",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "LTE rolled out faster than forecast: 49 operators launched by Jan 2012 against a ceiling of 30. The forecast level was off the ordinary path. Low certainty.",
+				"evidence": [
+					{
+						"url": "https://www.rcrwireless.com/20120105/americas/gsa-counts-49-lte-operators-globally-with-4-in-latin-america-caribbean-2",
+						"title": "GSA counts 49 LTE operators",
+						"shows": "49 LTE operators launched by Jan 2012."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "deloitte-tmt-predictions-2011-015",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "LTE launches ran ahead of the forecast: 49 operators had launched by January 2012 against under 30. The forecast was too low; no barrier.",
+				"evidence": [
+					{
+						"url": "https://www.rcrwireless.com/20120105/americas/gsa-counts-49-lte-operators-globally-with-4-in-latin-america-caribbean-2",
+						"title": "GSA counts 49 LTE operators globally",
+						"shows": "49 LTE operators had commercially launched by start of January 2012"
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-061",
+			"source_id": "kurzweil",
+			"subject_id": "telephone-communication-has-moving-images",
+			"verdict": "partial",
+			"batch": "b5",
+			"claim": "…and routinely includes high-resolution moving images.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; Communication; Chapter 9, \"2009\"; item Communication 4 in Kurzweil 2010, p. 52; target: 2009",
+			"graders": [
+				{
+					"reading": "Telephone calls routinely include live video.",
+					"reason": "Video calling was available but not routine in 2009-2010. By summer 2010, 19% of American adults (23% of internet users) had ever tried video calls, but only 4% of internet users made one on a typical day, and only 7% of cell owners had made video calls on their phones. Most phone calls were voice only.",
+					"evidence": [
+						{
+							"url": "https://www.pewresearch.org/internet/2010/10/13/video-calling-and-video-chat/",
+							"shows": "19% of Americans had tried video calls; 4% of internet users on a typical day; 7% of cell owners on phones."
+						}
+					]
+				},
+				{
+					"reading": "Phone calls routinely include video.",
+					"reason": "Video calling existed (Skype, iChat, FaceTime 2010) but was not routine: in 2010 only 7% of Americans had made a mobile video call.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Videotelephony",
+							"shows": "Video calling popularized by Skype/iChat; iPhone 4 (2010); a 2010 Pew study found 7% of Americans had made a mobile video call."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Skype",
+							"shows": "560M accounts Q4 2009; Skype 12% of international call market 2009, 36% in 2013."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-061",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "Pew gives usage rates and demographic gaps, not a named barrier to routine video calls.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-061",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page opened shows the cause. Grader evidence shows only the shortfall.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "kurzweil-1999-176",
+			"source_id": "kurzweil",
+			"subject_id": "reading-on-displays-and-direct-eye-displays",
+			"verdict": "partial",
+			"batch": "b1",
+			"claim": "People read documents either on the hand-held displays or, more commonly, from text that is projected into the ever present virtual environment using the ubiquitous direct-eye displays.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; The Computer Itself; Chapter 10, \"2019\"; target: 2019",
+			"graders": [
+				{
+					"reading": "By 2019 people read documents on hand-held displays or, more commonly, as text projected by ubiquitous direct-eye (eyeglass) displays.",
+					"reason": "Reading on handheld screens became common, but the sentence's main claim, that direct-eye displays are ubiquitous and the more common reading surface, failed: AR/retinal eyewear stayed niche through 2024 (see 149, 150).",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Virtual_retinal_display",
+							"shows": "Retinal projection eyewear remained niche through 2019-2024; North Focals discontinued 2020."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+							"shows": "Google Glass consumer product discontinued 2015; no mainstream adoption."
+						}
+					]
+				},
+				{
+					"reading": "By 2019 people read documents on handheld displays or, more commonly, as text projected by ubiquitous direct-eye displays.",
+					"reason": "Reading on handheld screens became routine (phones, tablets, e-readers), but direct-eye displays never became ubiquitous, so the 'more commonly' part fails. Half true.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Optical_head-mounted_display",
+							"shows": "Head-mounted displays had no major commercial success."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Mobile_web",
+							"shows": "Mobile handheld devices carried 63% of web traffic by 2015."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-176",
+				"primary": "acceptance",
+				"secondary": [
+					"cost",
+					"substitution"
+				],
+				"reason": "Smart glasses drew a privacy backlash and bans (casinos, venues), and Glass was withdrawn after a negative public reaction; handhelds took the reading role.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+						"title": "Smart glasses",
+						"shows": "Privacy concerns, venue bans; Glass retail ended Jan 2015 after negative public reaction; only 12% willing to wear."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-176",
+				"primary": "acceptance",
+				"secondary": [
+					"cost",
+					"technical"
+				],
+				"reason": "Smart glasses met privacy and social backlash (Google Glass sales ended 2015); battery and price also limited use. Handheld screens met the need.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+						"title": "Smart glasses - Wikipedia",
+						"shows": "Privacy and social acceptance concerns, negative reaction ended Glass retail Jan 2015; battery and cost limits."
+					},
+					{
+						"url": "https://en.wikipedia.org/wiki/Google_Glass",
+						"title": "Google Glass - Wikipedia",
+						"shows": "Backlash around price and privacy; $1,500 price; viewed as a failure."
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2004-020",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "ultrawideband",
+			"verdict": "miss",
+			"batch": "b3",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2004: UWB/803.15.3a/WiMedia, Peak of Inflated Expectations, plateau in 2 to 5 years. (label: UWB/803.15.3a/WiMedia); position: Peak of Inflated Expectations; rank 20; horizon: 2 to 5 years; phase: peak",
+			"graders": [
+				{
+					"reading": "Ultra-wideband radio for high-rate, short-range wireless data (IEEE 802.15.3a / WiMedia, Wireless USB) replacing cables between devices.",
+					"reason": "Abandoned in 2009 without reaching mainstream within 5 years after the placed year 2009. The IEEE 802.15.3a task group disbanded in spring 2006 without a standard; WiMedia handed its specifications to Bluetooth SIG and USB-IF in March 2009 and ceased operations in 2010; Wireless USB never took off. UWB returned from 2019 for precise positioning (iPhone 11, digital car keys, UWB Alliance from Dec 2018), which is a different reading and not scored here.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/WiMedia_Alliance",
+							"shows": "802.15.3a disbanded 2006; specs transferred 16 Mar 2009; ceased operations 2010; UWB Alliance launched Dec 2018."
+						}
+					]
+				},
+				{
+					"reading": "UWB radio as a high-speed short-range wireless link for consumer electronics (IEEE 802.15.3a, WiMedia, Wireless USB), as labelled on the 2003-2004 charts.",
+					"reason": "Abandoned in 2009 without reaching mainstream within 5 years after the placed year 2009. IEEE 802.15.3a was dissolved in 2006 after deadlock; WiMedia-based Wireless USB shipped in few products, several UWB vendors ceased operations in 2008-2009 and the WiMedia Alliance handed its specs over in 2009. Wi-Fi took the high-rate role. UWB later returned for precise ranging and positioning (iPhone 11 in 2019, Samsung flagships, car keys), a different use than the one charted; that revival is not scored here.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Ultra-wideband",
+							"shows": "802.15.3a dissolved 2006; slow standards, cost and weak performance led vendors to cease operations 2008-2009; UWB in iPhone 11 from 2019 for positioning."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2004-020",
+				"primary": "complements",
+				"secondary": [
+					"cost",
+					"technical",
+					"market"
+				],
+				"reason": "UWB for PANs lost its standard: IEEE 802.15.3a deadlocked and dissolved in 2006. Wikipedia also names implementation cost and lower-than-expected performance; vendors closed in 2008-2009.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Ultra-wideband",
+						"title": "Ultra-wideband - Wikipedia",
+						"shows": "Slow standards progress, cost of implementation, and performance below expectations limited UWB consumer use; vendors ceased operations 2008-2009."
+					},
+					{
+						"url": "https://en.wikipedia.org/wiki/WiMedia_Alliance",
+						"title": "WiMedia Alliance - Wikipedia",
+						"shows": "Alliance dissolved 2010; successor UWB Alliance."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2004-020",
+				"primary": "complements",
+				"secondary": [
+					"technical",
+					"cost"
+				],
+				"reason": "IEEE 802.15.3a stalled and was dissolved in 2006; Wikipedia names slow standards, implementation cost and performance below expectations, and vendors closed in 2008-09.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Ultra-wideband",
+						"title": "Ultra-wideband",
+						"shows": "Slow standards progress, cost of initial implementation, performance below expectations; 802.15.3a dissolved 2006; vendors shut 2008-09."
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-211",
+			"source_id": "kurzweil",
+			"subject_id": "continued-economic-expansion",
+			"verdict": "partial",
+			"batch": "b3",
+			"claim": "Rapid economic expansion and prosperity has continued.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; Business and Economics; Chapter 10, \"2019\"; target: 2019",
+			"graders": [
+				{
+					"reading": "Rapid economic expansion and prosperity continued through the two decades to 2019.",
+					"reason": "Growth resumed and the US expansion of 2009-2020 was the longest on record, but it was not continuous: the 2007-2009 Great Recession broke it, and the 2020 COVID recession fell inside the window; growth around 2019 was moderate, not rapid. Partly true.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Great_Recession",
+							"shows": "Late 2007 to mid-2009 downturn, the worst since the Great Depression; 59 of 71 countries in recession by Q1 2009."
+						},
+						{
+							"url": "https://www.worldbank.org/en/publication/poverty-prosperity-and-planet",
+							"shows": "Almost 700 million people (8.5% of world population) lived on less than $2.15 a day around 2019-2020."
+						}
+					]
+				},
+				{
+					"reading": "Around 2019 the economy (US and world) is in a continued period of rapid expansion and prosperity.",
+					"reason": "The US expansion from June 2009 continued to February 2020, the longest on record, so continuation held; but growth was moderate (US 2.6%, world 2.7% in 2019, below 2000s averages), not rapid, and a recession followed in 2020. Partly true.",
+					"evidence": [
+						{
+							"url": "https://www.nber.org/research/business-cycle-dating",
+							"shows": "Most recent US peak February 2020, trough April 2020: the expansion lasted until early 2020."
+						},
+						{
+							"url": "https://api.worldbank.org/v2/country/WLD;USA/indicator/NY.GDP.MKTP.KD.ZG?date=2015:2021&format=json",
+							"shows": "2019 GDP growth: US 2.58%, World 2.68%; 2020: US -2.08%, World -2.89%."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-211",
+				"primary": "market",
+				"secondary": [],
+				"reason": "The 2007-2009 Great Recession, a financial and housing crisis, broke the continuous expansion the book forecast. Low confidence: a macro shock fits no technology cause well.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Great_Recession",
+						"title": "Great Recession - Wikipedia",
+						"shows": "Causes section lists housing bubbles, debt, ineffective financial regulation; downturn Dec 2007 to Jun 2009."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-211",
+				"primary": "market",
+				"secondary": [],
+				"reason": "The 2007-09 Great Recession, set off by a financial-system failure and housing bubble, broke the continuous prosperity. Fit to the list is loose.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Great_Recession",
+						"title": "Great Recession",
+						"shows": "Late 2007 to mid-2009 contraction caused by financial system weakness and the US housing bubble bursting."
+					}
+				]
+			}
+		},
+		{
+			"id": "et-2012-054",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"batch": "b3",
+			"claim": "Computer-generated narrative for entertainment (games and AI story/role-play tools).",
+			"graders": [
+				{
+					"reading": "Computer-generated narrative for entertainment (games and AI story/role-play tools).",
+					"reason": "Algorithmic story generation stayed niche in games up to 2022 (RimWorld, Dwarf Fortress, nemesis-style systems). Generative AI made machine-made stories common after 2022. Pew found 22% of US adults used ChatGPT for entertainment in early 2025. Dedicated AI story and role-play apps (Character.AI about 20M MAU) stay small. Mainstream arrives about 2025, 5 years after the placed year.",
+					"evidence": [
+						{
+							"url": "https://www.pewresearch.org/short-reads/2025/06/25/34-of-us-adults-have-used-chatgpt-about-double-the-share-in-2023/",
+							"shows": "34% of US adults used ChatGPT; survey Feb 24 to Mar 2 2025; 22% of adults used it for entertainment."
+						},
+						{
+							"url": "https://www.businessofapps.com/data/character-ai-statistics/",
+							"shows": "Character.AI, the largest AI role-play/story app, holds about 20 million monthly active users through 2025."
+						}
+					]
+				},
+				{
+					"reading": "Software that generates story and plot dynamically (procedural or AI narrative in games and interactive media), not just procedural levels.",
+					"reason": "Runtime generation of story and narrative did not become routine in games or media by 2025. Procedural generation of levels and worlds is common, but narrative generation stayed niche (AI Dungeon, RimWorld-style story engines). Generative AI use in game development rose after 2023, but it is mostly art assets: 7% of the Steam library disclosed any genAI use in 2025 and visual assets are 60% of those disclosures, so narrative generation is well under 5% of titles. Window closed 2025.",
+					"evidence": [
+						{
+							"url": "https://www.tomshardware.com/video-games/pc-gaming/1-in-5-steam-games-released-in-2025-use-generative-ai-up-nearly-700-percent-year-on-year-7-818-titles-disclose-genai-asset-usage-7-percent-of-entire-steam-library",
+							"shows": "7,818 titles (7% of Steam library) disclose any genAI use; visual assets dominate the disclosures."
+						},
+						{
+							"url": "https://www.gamedeveloper.com/business/gdc-2024-state-of-the-game-industry-devs-discuss-layoffs-generative-ai-and-more",
+							"shows": "31% of developers personally use generative AI, mostly in business, marketing and production roles, not narrative systems."
+						},
+						{
+							"url": "https://arxiv.org/html/2410.15644v1",
+							"shows": "Academic survey treats LLM-based narrative generation as an emerging research area, not established practice."
+						}
+					]
+				},
+				{
+					"reason": "Procedural and generative narrative existed by 2020 in niche products: AI Dungeon reached about 1.5 million monthly users by early 2021, and systems games such as RimWorld and Dwarf Fortress use emergent story generation. Mainstream commercial games still ship authored narratives in 2025; LLM-driven story systems remain experimental in AAA production. Real niche adoption by 2020, not mainstream within 5 years.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/AI_Dungeon",
+							"shows": "AI Dungeon 2 released 2019; about 1.5 million monthly active users by early 2021."
+						},
+						{
+							"url": "https://arxiv.org/pdf/2404.19721",
+							"shows": "In 2024 procedural narrative with LLMs is still a research topic, not standard game production."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2012-054",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No opened source states why narrative generation stayed niche in games to 2025. Sources show the shortfall (genAI use is mostly non-narrative; LLM narrative is research) but no cause.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "et-2012-054",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "Graders show niche use but I opened no page that names why narrative generation lagged (the research paper returned unreadable PDF data). Likely LLM maturity, but unproven.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "et-2012-070",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"batch": "b3",
+			"claim": "Piezoelectric energy harvesting as a power source (floors, footwear, roads).",
+			"graders": [
+				{
+					"reading": "Piezoelectric energy harvesting as a power source (floors, footwear, roads).",
+					"reason": "Piezoelectric parts (sensors, buzzers, quartz) were common well before 2012, so the ENERGY placement means piezoelectric power generation. Piezo energy harvesting floors and devices stay niche: the piezoelectric floor harvesting market was about US$172.5 million in 2024, with showcase installs such as Pavegen at Heathrow. Share of energy supply is effectively 0% by 2026.",
+					"evidence": [
+						{
+							"url": "https://marketintelo.com/report/piezoelectric-floor-energy-harvesting-market",
+							"shows": "Global piezoelectric floor energy harvesting market about US$172.5 million in 2024."
+						},
+						{
+							"url": "https://theswitch.co.uk/energy/guides/technology/energy-harvesting-tiles",
+							"shows": "Kinetic tiles deployed as showcase installations; each step yields only a few watts."
+						}
+					]
+				},
+				{
+					"reading": "Generating useful electricity from mechanical stress via piezoelectric materials (energy harvesting from footsteps, traffic, vibration). Piezo sensors and igniters already existed in 2012 and are not the forecast.",
+					"reason": "Piezoelectric energy harvesting (roads, floors, footwear) did not reach commercial scale. The best-known road pilot company, Innowattech, closed in 2014 and its results were questioned. Floor tiles such as Pavegen remain symbolic installations, and harvested power stays too low for mainstream use. Provisional, window closes 2026.",
+					"evidence": [
+						{
+							"url": "https://medium.com/@AnnaJedrzejowska/self-sustainable-roads-using-piezoelectricity-14c37790cb06",
+							"shows": "Innowattech closed in 2014 and some of its findings were questioned; large-scale calibration proved an obstacle."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Energy_harvesting",
+							"shows": "Piezo harvesting is still an emerging technology used for niche low-power devices (switches, sensors, some Japanese ticket gates)."
+						}
+					]
+				},
+				{
+					"reason": "Under the ENERGY category the claim means piezoelectric energy harvesting. Piezoelectric materials were common in sensors and igniters long before 2012, but piezo harvesting (Pavegen-style floors, road and bridge harvesters) gives a few joules per step and stays at demonstration scale. No routine role in power supply by 2025. Provisional: the window closes at the end of 2026.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Pavegen",
+							"shows": "Pavegen floor tiles are installed as showcase projects in malls, stations and events."
+						},
+						{
+							"url": "https://energy-floors.com/piezo-electric-floors/",
+							"shows": "Piezoelectric floors produce very small power, usable only for low-energy loads such as LEDs and sensors."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2012-070",
+				"primary": "technical",
+				"secondary": [
+					"cost"
+				],
+				"reason": "Piezoelectric floors and roads yield very little energy per step: one calculation gives 0.02% of a person's energy needs from four hours of walking on tiles. Use stays symbolic.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Pavegen",
+						"title": "Pavegen - Wikipedia",
+						"shows": "Criticism: walking 4 hours on Pavegen paving generates 0.02% of average European energy needs."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "et-2012-070",
+				"primary": "technical",
+				"secondary": [
+					"cost"
+				],
+				"reason": "Piezo floors yield tiny energy per step (tile powers an LED lamp for 30 seconds; 0.02% of one person's needs per 4h walking), so not usable as a power source.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Pavegen",
+						"title": "Pavegen",
+						"shows": "Each pedestrian yields enough for an LED lamp for 30 s; study: 0.5% of building energy from busiest 3.1% of floor."
+					}
+				]
+			}
+		},
+		{
+			"id": "et-2012-053",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "Human sub-orbital flight as a consumer or routine transport service.",
+			"graders": [
+				{
+					"reading": "Human sub-orbital flight as a consumer or routine transport service.",
+					"reason": "Paid suborbital passenger flights began only in July 2021. By September 2025 Blue Origin and Virgin Galactic flew 116 commercial suborbital passengers in total. By 2026 neither operator flew regularly. This is far below 5% of any population by 2024.",
+					"evidence": [
+						{
+							"url": "https://www.spaceportlounge.com/p/suborbital-space-passenger-data",
+							"shows": "116 suborbital commercial passengers flown July 2021 to September 2025, all by Blue Origin and Virgin Galactic."
+						},
+						{
+							"url": "https://spacedaily.com/t-suborbital-space-tourism-blue-origin-virgin-galactic-pause/",
+							"shows": "By 2026 Blue Origin paused New Shepard for at least two years and Virgin Galactic's next passenger flight slipped to February 2027."
+						}
+					]
+				},
+				{
+					"reading": "Commercial sub-orbital passenger spaceflight (Virgin Galactic, Blue Origin) as a routine consumer service.",
+					"reason": "Commercial sub-orbital passenger flight started only in 2021 and stayed tiny. Blue Origin flew 86 seats (80 people) on New Shepard by November 2025 and paused tourism flights in January 2026. Virgin Galactic carried 32 people on 12 missions and has not flown since June 2024. Total riders are in the low hundreds, far below 5% of any target market by 2024.",
+					"evidence": [
+						{
+							"url": "https://www.blueorigin.com/news/new-shepard-ns-36-mission",
+							"shows": "New Shepard has flown 86 people (80 individuals) in total by NS-36."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/New_Shepard",
+							"shows": "In January 2026 Blue Origin paused New Shepard tourism launches for two years or more."
+						},
+						{
+							"url": "https://www.space.com/space-exploration/private-spaceflight/virgin-galactic-delays-next-commercial-spaceflight-to-2027",
+							"shows": "Virgin Galactic carried 32 people across 12 missions; last flight June 2024; next commercial flight delayed to 2027."
+						}
+					]
+				},
+				{
+					"reason": "Commercial crewed sub-orbital flights started only in July 2021 (Virgin Galactic Unity 22, Blue Origin NS-16). By late 2025 New Shepard had flown 86 seats (80 people) in total, and Virgin Galactic paused flights in mid-2024. A few hundred people in total by 2024 is not mainstream. The window (2017-2024) closed without mainstream adoption.",
+					"evidence": [
+						{
+							"url": "https://www.blueorigin.com/news/new-shepard-ns-32-mission",
+							"shows": "12 crewed New Shepard flights since 2021 and 64 people flown in total by May 2025."
+						},
+						{
+							"url": "https://spacenews.com/blue-origin-flies-sixth-crewed-new-shepard-flight-of-2025/",
+							"shows": "Crewed sub-orbital flights run at about six per year with six seats each."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2012-053",
+				"primary": "cost",
+				"secondary": [
+					"technical",
+					"regulation"
+				],
+				"reason": "Tickets cost $450,000 and more, narrowing demand; a fatal 2014 crash, FAA licensing and grounding added delay.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Virgin_Galactic",
+						"title": "Virgin Galactic - Wikipedia",
+						"shows": "Tickets $450,000 from 2022; 2014 crash; FAA licence and grounding."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "et-2012-053",
+				"primary": "cost",
+				"secondary": [
+					"technical",
+					"market"
+				],
+				"reason": "Seats sold at 450,000 USD and more, and Virgin Galactic had a fatal crash and long delays. Total riders stayed in the low hundreds.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Virgin_Galactic",
+						"title": "Virgin Galactic",
+						"shows": "Tickets at 450,000 USD, later estimated 600,000; VSS Enterprise crash; Unity last flew 2024"
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-strategic-predictions-2018-007",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "eprivacy-regulation-and-cookies",
+			"verdict": "miss",
+			"batch": "b2",
+			"claim": "By 2023, ePrivacy regulations will increase online costs by minimizing the use of “cookies” thus crippling the current internet ad revenue machine.; position: top prediction 7; target: 2023",
+			"graders": [
+				{
+					"reading": "By 2023, EU ePrivacy regulation sharply limits cookies, raising online costs and crippling internet ad revenue.",
+					"reason": "The ePrivacy Regulation was never adopted (still in trilogue, later withdrawn in the Commission 2025 work programme), and internet ad revenue kept growing: US internet ad revenue reached a record $225B in 2023, +7.3%.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+							"shows": "Regulation intended for May 2018 has not been adopted."
+						},
+						{
+							"url": "https://www.iab.com/insights/internet-advertising-revenue-report-2024/",
+							"shows": "US internet ad revenue record $225B in 2023, +7.3% YoY."
+						}
+					]
+				},
+				{
+					"reading": "By 2023 EU ePrivacy rules cut cookie use, raising online costs and crippling internet ad revenue.",
+					"reason": "The ePrivacy Regulation was never adopted; internet ad revenue kept growing to records ($225B US in 2023).",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+							"shows": "The proposed ePrivacy Regulation, meant for May 2018, was never adopted."
+						},
+						{
+							"url": "https://www.iab.com/insights/internet-advertising-revenue-report-2024/",
+							"shows": "US internet advertising revenue reached a record $225B in 2023, +7.3% on 2022."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-strategic-predictions-2018-007",
+				"primary": "regulation",
+				"secondary": [
+					"market"
+				],
+				"reason": "The ePrivacy Regulation was never adopted. Disputes over data retention, cookie walls and national security exemptions stalled talks.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+						"title": "ePrivacy Regulation",
+						"shows": "Not adopted after the 2018 target; contested points in 2021 negotiations."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-strategic-predictions-2018-007",
+				"primary": "regulation",
+				"secondary": [
+					"market"
+				],
+				"reason": "The ePrivacy Regulation was never adopted: negotiators stayed in dispute over scope, cookie walls and national security exemptions, so the predicted cookie limits did not arrive.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+						"title": "ePrivacy Regulation",
+						"shows": "Not adopted; scope under discussion; disputes over cookie walls, data retention, national security exemptions"
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2006-006",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "offline-ajax",
+			"verdict": "miss",
+			"batch": "b3",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2006: Offline Ajax, Innovation Trigger, plateau in 2 to 5 years. (label: Offline Ajax); position: Innovation Trigger; x 16.92, y 59.233; horizon: 2 to 5 years; phase: innovation_trigger",
+			"graders": [
+				{
+					"reading": "Techniques and browser plug-ins (Google Gears, Dojo Offline, later HTML5 app cache and service workers) that let Ajax web applications keep working without a network connection.",
+					"reason": "Reached 5% only in 2019; not mainstream by 2016 (placed year 2011 plus 5). Google Gears (2007) was discontinued in 2011, but the capability moved into HTML5 and then service workers, so the concept is not abandoned. HTTP Archive 2022: service workers on about 1.6-1.8% of all sites and about 8.3-8.7% of the top 1,000 sites. The 5% year applies only to top sites and is an estimate; across all sites it never reached 5%.",
+					"evidence": [
+						{
+							"url": "https://almanac.httparchive.org/en/2022/pwa",
+							"shows": "Service workers on 1.63% desktop / 1.81% mobile of sites; 8.3%/8.7% of top 1,000 sites in 2022."
+						}
+					]
+				},
+				{
+					"reading": "Techniques that let browser-based Ajax web applications keep working without a network connection (Google Gears, then HTML5 AppCache, then service workers).",
+					"reason": "Never reached 5%; not mainstream by 2016 (placed year 2011 plus 5). Google Gears (2007) was retired in 2011 and HTML5 AppCache was later removed, but the capability continued as service workers. HTTP Archive Web Almanac 2022: only about 1.4-1.8% of all sites register a service worker (8% of the top 1,000). Major apps (Gmail, Google Docs) do work offline, but no measure of all sites or web apps reaches 5%. Years null; not abandoned because the capability lives on in web standards.",
+					"evidence": [
+						{
+							"url": "https://almanac.httparchive.org/en/2022/pwa",
+							"shows": "Service workers on 1.6-1.8% of sites; 8.3-8.7% of top 1,000 sites; no noticeable change in top sites."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2006-006",
+				"primary": "substitution",
+				"secondary": [
+					"complements"
+				],
+				"reason": "Google Gears was dropped in favour of standardised HTML5 methods, which carried offline web apps instead. The standard, not the Ajax add-on, met the need.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Gears_(software)",
+						"title": "Gears (software) - Wikipedia",
+						"shows": "Gears was discontinued in favor of the standardized HTML5 methods that eventually became prevalent."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2006-006",
+				"primary": "substitution",
+				"secondary": [],
+				"reason": "Google dropped Gears in 2010 to move its features into HTML5 standards; HTML5/service workers took the offline role.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Google_Gears",
+						"title": "Gears (software)",
+						"shows": "Gears development stopped Feb 2010 to bring capabilities into HTML5; removed from Chrome 2011."
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-214",
+			"source_id": "kurzweil",
+			"subject_id": "agents-exchange-structured-knowledge",
+			"verdict": "miss",
+			"batch": "b3",
+			"claim": "In this case, the assistants skip the natural language and communicate directly by exchanging appropriate knowledge structures.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; Business and Economics; Chapter 10, \"2019\"; target: 2019",
+			"graders": [
+				{
+					"reading": "In those agent-to-agent transactions the assistants skip natural language and exchange knowledge structures directly.",
+					"reason": "The agent-to-agent personal-assistant transactions it describes did not occur by 2021 (Duplex spoke to humans in natural language). Machine APIs exist but are not personal assistants negotiating for users.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Google_Duplex",
+							"shows": "Duplex calls businesses (human staff) to book restaurants and salons; limited release late 2018, eight countries by Oct 2020. Agent talks to humans, not to other agents."
+						}
+					]
+				},
+				{
+					"reading": "By 2019, when personal assistants transact with other automated personalities, they skip natural language and exchange structured knowledge directly.",
+					"reason": "The practice described (personal assistants transacting with other agents) did not exist, so the agent-to-agent knowledge exchange did not either. APIs carry structured data but not between personal assistants acting for people.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Virtual_assistant",
+							"shows": "No agent-to-agent transaction layer between personal assistants in 2019-2021."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-214",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No opened source shows why personal assistants do not trade knowledge structures with each other. Virtual-assistant sources show no such layer but name no cause.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-214",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "Graders show the practice did not occur, but no page I opened names why agents did not exchange knowledge structures.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "et-2012-009",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"batch": "b4",
+			"claim": "Total internet-connected devices worldwide in 2012.",
+			"graders": [
+				{
+					"reading": "Total internet-connected devices worldwide in 2012.",
+					"reason": "Estimates for 2012 vary widely by definition. Cisco IBSG counted 12.5 billion internet-connected devices already in 2010 and forecast 25 billion for 2015, so its 2012 figure is at least 12.5 billion; 10 billion is at least 20% below that baseline. Later bottom-up counts (IoT Analytics: 17 billion total in 2018) imply a lower 2012 total. The forecast sits inside the 25% band on the conservative baseline.",
+					"evidence": [
+						{
+							"url": "https://www.cisco.com/c/dam/en_us/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf",
+							"shows": "12.5 billion devices connected to the internet in 2010; 25 billion forecast for 2015."
+						},
+						{
+							"url": "https://iot-analytics.com/state-of-the-iot-update-q1-q2-2018-number-of-iot-devices-now-7b/",
+							"shows": "Connected devices in use worldwide exceeded 17 billion in 2018, of which 7 billion IoT."
+						}
+					]
+				},
+				{
+					"reading": "Total number of devices connected to the internet in 2012.",
+					"reason": "Estimates of connected devices differ by definition. Cisco IBSG counted 12.5 billion connected devices already in 2010 (10 billion is 20% below that, and 2012 was higher). IoT Analytics, with a stricter count, gave 17 billion total connected devices in 2018, which implies roughly 10 to 12 billion in 2012. The forecast is within 25% of the range, not clearly within 10%.",
+					"evidence": [
+						{
+							"url": "https://www.cisco.com/c/dam/en_us/about/ac79/docs/innov/IoT_IBSG_0411FINAL.pdf",
+							"shows": "12.5 billion devices connected to the internet in 2010; 25 billion forecast for 2015."
+						},
+						{
+							"url": "https://iot-analytics.com/state-of-the-iot-update-q1-q2-2018-number-of-iot-devices-now-7b/",
+							"shows": "17 billion connected devices in use in 2018."
+						}
+					]
+				},
+				{
+					"reason": "Cisco estimated 8.7 billion connected objects in 2012 (passing 10 billion in 2013). The poster's 10 billion is about 15% above that figure: outside 10%, inside 25%. Estimates differ by method, which adds uncertainty.",
+					"evidence": [
+						{
+							"url": "https://blogs.cisco.com/news/cisco-connections-counter",
+							"shows": "Cisco: 8.7 billion connected objects in 2012."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2012-009",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "Connected devices reached about 8.7 billion in 2012 by Cisco's count; the 10 billion figure sat above the ordinary count. No barrier involved, only a level set too high.",
+				"evidence": [
+					{
+						"url": "https://blogs.cisco.com/news/cisco-connections-counter",
+						"title": "Cisco Connections Counter",
+						"shows": "Cisco: 8.7 billion connected objects in 2012."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "et-2012-009",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "Connected-device counts grew on the ordinary path; the forecast of 10 billion sat above Cisco's 8.7 billion count for 2012. No barrier; the level was set too high.",
+				"evidence": [
+					{
+						"url": "https://blogs.cisco.com/news/cisco-connections-counter",
+						"title": "Cisco Connections Counter",
+						"shows": "Cisco counted 8.7 billion connected objects in 2012, passing 10 billion in 2013"
+					}
+				]
+			}
+		},
+		{
+			"id": "hz-2014-069",
+			"source_id": "envisioning-horizons",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "Small sealed nuclear reactors that can be shipped or flown to a site (about 10 MW, later 50 MW) are generally available around 2024.",
+			"graders": [
+				{
+					"reading": "Small sealed nuclear reactors that can be shipped or flown to a site (about 10 MW, later 50 MW) are generally available around 2024.",
+					"reason": "No microreactor operated commercially by 2025: Project Pele is in construction with first power targeted around 2028, Oklo Aurora and eVinci target 2028 or later. Russia's 70 MW floating plant is not a shippable micro-reactor.",
+					"evidence": [
+						{
+							"url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+							"shows": "Commercial microreactor deployments planned from 2028."
+						},
+						{
+							"url": "https://energyforgrowth.org/article/sept-2025-update-which-advanced-nuclear-models-are-likely-to-hit-emerging-markets-first/",
+							"shows": "Microreactor designs still pre-commercial as of September 2025."
+						}
+					]
+				},
+				{
+					"reading": "Small transportable sealed nuclear reactors (~10-50 MW) are generally available around 2024.",
+					"reason": "No commercial micro-reactor operates as of 2026. Project Pele is a military demonstrator targeting first power around 2028; Kairos and others target ~2030. Window open to 2029.",
+					"evidence": [
+						{
+							"url": "https://inl.gov/news-release/inl-advances-department-of-wars-project-pele-demonstration-microreactor-with-first-triso-fuel-delivery/",
+							"shows": "Leading microreactor still a demonstration with first power years away."
+						},
+						{
+							"url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+							"shows": "Commercial microreactors planned from 2028, none earlier."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "hz-2014-069",
+				"primary": "regulation",
+				"secondary": [
+					"complements",
+					"technical"
+				],
+				"reason": "Commercial microreactors need NRC licensing (Oklo targets 2030 pending NRC) and reactor-ready HALEU/TRISO fuel; designs still unproven, first units from 2028.",
+				"evidence": [
+					{
+						"url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+						"title": "The Janus Five: 20 commercial microreactors starting in 2028",
+						"shows": "NRC licensing needed; HALEU fuel fabrication a separate constraint; designs still being proven."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "hz-2014-069",
+				"primary": "regulation",
+				"secondary": [
+					"technical",
+					"market"
+				],
+				"reason": "No commercial microreactor runs by 2025. Vendors pursue NRC-licensed projects and first power targets are 2028 or later; licensing and first-of-a-kind build-out set the date.",
+				"evidence": [
+					{
+						"url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+						"title": "The Janus Five: 20 commercial nuclear microreactors starting in 2028",
+						"shows": "Vendors pursue NRC-licensed projects, building a regulatory record; initial operations as early as 2028"
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-242",
+			"source_id": "kurzweil",
+			"subject_id": "genome-life-processes-understood",
+			"verdict": "partial",
+			"batch": "b5",
+			"claim": "Many of the life processes encoded in the human genome, which was deciphered more than ten years earlier, are now largely understood, along with the information-processing mechanisms underlying aging and degenerative conditions such as cancer and heart disease.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; Health and Medicine; Chapter 10, \"2019\"; target: 2019",
+			"graders": [
+				{
+					"reading": "Around 2019 many life processes encoded in the genome, decoded over ten years earlier, are largely understood, along with mechanisms of aging, cancer and heart disease.",
+					"reason": "Genome sequencing was complete over ten years earlier (2003) and the hallmarks of aging were catalogued (2013), but aging mechanisms remain 'incompletely understood' and mostly not amendable. Partly true.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Hallmarks_of_aging",
+							"shows": "Hallmarks of aging listed 2013, updated 2023; mechanisms remain incompletely understood ('still quite unclear') and most cannot yet be amended in living organisms."
+						}
+					]
+				},
+				{
+					"reading": "By 2019, with the genome deciphered over ten years earlier, many genome-encoded life processes and the mechanisms behind aging, cancer and heart disease are largely understood.",
+					"reason": "The genome was declared complete in April 2003 (over ten years earlier: true), and many pathways (cancer driver genes, lipid and inflammatory pathways in heart disease) were mapped; but the mechanisms of aging remained debated and genome function was far from largely understood (gapless sequence only in 2022). Partly true.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Human_Genome_Project",
+							"shows": "Declared complete 14 April 2003 at about 92%; full sequence only in 2022-2023; functional understanding continued well beyond 2003."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-242",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "Aging and genome function remain incompletely understood; mitochondrial causes unclear and hallmarks interact, so the science did not reach the claimed level.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Hallmarks_of_aging",
+						"title": "Hallmarks of aging - Wikipedia",
+						"shows": "Causes of mitochondrial decline still quite unclear; hallmarks interact; evidence thin for new candidates."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-242",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "Aging mechanisms stay unclear and interconnected; showing that changing a hallmark slows aging is the hardest step. Understanding did not reach the forecast level.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Hallmarks_of_aging",
+						"title": "Hallmarks of aging - Wikipedia",
+						"shows": "Causes of mitochondrial decline still unclear; hallmarks interconnected; intervention evidence incomplete."
+					}
+				]
+			}
+		},
+		{
+			"id": "et-2011-059",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"batch": "b2",
+			"claim": "Immersive 3D projected imagery (holographic or projected 3D displays), not head-mounted VR.",
+			"graders": [
+				{
+					"reading": "Immersive 3D projected imagery (holographic or projected 3D displays), not head-mounted VR.",
+					"reason": "Immersive 3D projection did not reach the home or workplace. Stereoscopic 3D TV peaked at 23% of TV sales dollars in 2012, fell to 8% in 2016, and LG and Sony dropped it in 2017. Holographic and room-scale projection stayed in venues and demos. VR headsets are head-mounted displays, not projections. Provisional, window closes 2030.",
+					"evidence": [
+						{
+							"url": "https://techcrunch.com/2017/01/25/3d-tvs-are-dead",
+							"shows": "LG and Sony stopped 3D TV support in 2017; 3D TVs fell from 23% of TV sales dollars in 2012 to 8% in 2016."
+						}
+					]
+				},
+				{
+					"reading": "Projected 3D images or holograms that surround viewers in rooms and venues, without head-mounted displays.",
+					"reason": "Immersive 3D imagery without headsets did not take off. The mass-market 3D display, 3D TV, was dropped: production ended in 2016 and Sony and LG, the last makers, ended 3D support in January 2017. Holographic and projection-based immersive rooms remain venue and lab installations. Provisional, window closes 2030.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/3D_television",
+							"shows": "3D TV production ended in 2016; Sony and LG stopped 3D support in January 2017."
+						}
+					]
+				},
+				{
+					"reason": "Immersive 3D projection did not become mainstream. The main consumer 3D display format, 3D TV, was abandoned: Samsung dropped it in 2016, LG and Sony in 2017. Holographic and projection-based 3D stays in venues and demos. Headset VR is a different technology and is also not mainstream. Provisional: the window closes in 2030.",
+					"evidence": [
+						{
+							"url": "https://techcrunch.com/2017/01/25/3d-tvs-are-dead",
+							"shows": "LG and Sony stopped 3D TV support in 2017; Samsung in 2016."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "et-2011-059",
+				"primary": "acceptance",
+				"secondary": [],
+				"reason": "3D TV died for weak consumer interest and glasses that clashed with second-screen habits; LG said it was not a top buying consideration.",
+				"evidence": [
+					{
+						"url": "https://techcrunch.com/2017/01/25/3d-tvs-are-dead",
+						"title": "3D TVs are dead",
+						"shows": "LG: not a top buying consideration; glasses blocked second-screen use."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "et-2011-059",
+				"primary": "acceptance",
+				"secondary": [
+					"substitution",
+					"cost"
+				],
+				"reason": "3D TV was dropped because buyers did not rank it a top feature and rarely used it; 4K and HDR drew interest instead, and glasses clashed with second-screen use.",
+				"evidence": [
+					{
+						"url": "https://techcrunch.com/2017/01/25/3d-tvs-are-dead",
+						"title": "3D TVs are dead",
+						"shows": "LG: 3D not a top buying consideration; little use; shift to 4K/HDR; glasses conflict with phones"
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-strategic-predictions-2004-004",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "device-convergence",
+			"verdict": "miss",
+			"batch": "b2",
+			"claim": "By 2008, the technological differences between PCs, mobile devices, e-books, TVs and cellular phones will be eradicated; position: top prediction null; target: 2008",
+			"graders": [
+				{
+					"reading": "By 2008 PCs, mobile devices, e-books, TVs and cell phones will no longer differ technologically (full device convergence).",
+					"reason": "Distinct device classes persisted and new single-purpose ones launched: Amazon's dedicated e-ink Kindle reader (Nov 2007), the iPhone as a separate phone platform (2007), TVs without general computing. Convergence was partial at most and differences were not eradicated.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+							"shows": "First Kindle launched Nov 2007 as a dedicated e-ink e-book reader, a distinct device class with its own display technology."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
+							"shows": "Smartphone launched 2007 as a separate category from PCs and TVs; device classes remained distinct in 2008."
+						}
+					]
+				},
+				{
+					"reading": "By 2008 PCs, mobile devices, e-book readers, TVs and cell phones will no longer differ technologically (full convergence).",
+					"reason": "They stayed distinct: dedicated e-readers launched as a new device class (Kindle, November 2007), TVs, PCs and phones remained separate product categories with different platforms in 2008. Not happened, not within 5 years either.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+							"shows": "First Kindle released November 2007 as a dedicated e-reader, i.e. e-books remained a separate device class."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-strategic-predictions-2004-004",
+				"primary": "overreach",
+				"secondary": [
+					"market"
+				],
+				"reason": "Device classes stayed separate by design: dedicated e-ink Kindle was sold as a narrow-purpose reader. No source names a barrier to convergence itself.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+						"title": "Amazon Kindle",
+						"shows": "Kindle described as a narrow-purpose reading device, a separate class from multipurpose tablets."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-strategic-predictions-2004-004",
+				"primary": "overreach",
+				"secondary": [
+					"market"
+				],
+				"reason": "Device classes stayed distinct; dedicated devices such as the Kindle (narrow-purpose by design) launched in 2007. No source names a barrier; convergence followed a partial path.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+						"title": "Amazon Kindle",
+						"shows": "First Kindle Nov 2007 a narrow-purpose e-reader"
+					}
+				]
+			}
+		},
+		{
+			"id": "deloitte-tmt-predictions-2006-017",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "digital-radio-and-podcasting",
+			"verdict": "partial",
+			"batch": "b4",
+			"claim": "The business model for radio will likely be on the cusp of significant change in 2006.; position: Media, 6: \"Tuning in to Radio 2.0\"; target: 2006",
+			"graders": [
+				{
+					"reading": "In 2006 radio's business model would be on the cusp of significant change.",
+					"reason": "Reading A gives a hit: broadcasters launched podcasts and online radio brands in 2005-06. Reading B gives a miss: broadcast radio kept its advertising/licence model and broad reach through 2006. 'On the cusp' supports both equally.",
+					"evidence": [
+						{
+							"url": "https://web.archive.org/web/20060924220459/http://www.ofcom.org.uk/research/cm/cm06/tv.pdf",
+							"shows": "Radio operators launched web radio brands offering podcasts; national plus local radio still reached a large share of the population."
+						}
+					]
+				},
+				{
+					"reading": "In 2006 the business model for radio is on the cusp of significant change.",
+					"reason": "'On the cusp of change' names no measurable outcome or threshold; radio revenue mixes by source were not found for 2006. Looked for: radio revenue by stream (advertising, digital, podcast) 2005-2007.",
+					"evidence": [
+						{
+							"url": "https://www.ofcom.org.uk/__data/assets/pdf_file/0013/25222/cmr_2010_final.pdf",
+							"shows": "Radio listening by platform data for 2010 (e.g. streamed music/podcasts), not a 2006 business-model measure."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "deloitte-tmt-predictions-2006-017",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "The claim names no measurable outcome and no opened page shows a cause.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "deloitte-tmt-predictions-2006-017",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "The claim names no measurable outcome; opened sources show no cause.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2010-002",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "context-delivery-architecture",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2010: Context Delivery Architecture, Innovation Trigger, plateau in 5 to 10 years. (label: Context Delivery Architecture); position: Innovation Trigger; x 10.999, y 27.996; horizon: 5 to 10 years; phase: innovation_trigger",
+			"graders": [
+				{
+					"reading": "Gartner's CoDA architectural style extending SOA and event-driven architecture with formal components (context brokers, sensors, analytics) that discover and apply user context in real time.",
+					"reason": "Abandoned in 2011 without reaching mainstream within 5 years after the placed year 2020. CoDA stayed a Gartner-defined architectural pattern; no vendor category or adoption measurement emerged, and Gartner shifted to 'context-enriched services' in 2011. Context-aware features did become mainstream through smartphone platforms, but not via this architecture.",
+					"evidence": [
+						{
+							"url": "https://www.gartner.com/en/information-technology/glossary/coda-context-delivery-architecture",
+							"shows": "CoDA is an architectural style building on SOA and EDA, adding mechanisms to discover and apply user context in real time (per search summary)."
+						}
+					]
+				},
+				{
+					"reading": "Gartner's architectural pattern for gathering user context (location, presence, device, preferences) and delivering it to applications as a shared enterprise service",
+					"reason": "Abandoned in 2011 without reaching mainstream within 5 years after the placed year 2020. An analyst-defined architecture pattern with no product market or adoption data. Gartner itself replaced the label with 'context-enriched services' in 2011. Context-aware features did spread through smartphone platforms (see context-enriched services), but not as an enterprise architecture tier. Low certainty on the abandonment year.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Context_awareness",
+							"shows": "Context-aware computing from ubiquitous computing research (Schilit 1994; Dey and Abowd 1999); no commercial adoption timeline or mention of context delivery architecture"
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2010-002",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "CoDA stayed an analyst pattern; no opened page shows why it fell short.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2010-002",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "CoDA was an analyst-defined architecture; no opened source shows why it did not reach mainstream.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "kurzweil-1999-107",
+			"source_id": "kurzweil",
+			"subject_id": "intelligent-art-software",
+			"verdict": "miss",
+			"batch": "b5",
+			"claim": "Most visual art is the result of collaboration between human artists and their intelligent art software.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; The Arts; Chapter 9, \"2009\"; item The Arts 2 in Kurzweil 2010, p. 91; target: 2009",
+			"graders": [
+				{
+					"reading": "Most visual art is co-created with software that makes creative decisions.",
+					"reason": "Most visual art in 2009 was not made in collaboration with intelligent software. Tools like Photoshop are instruments, not creative partners. Autonomous art programs such as Harold Cohen's AARON remained unique examples. Generative AI art arrived only around 2022.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/AARON",
+							"shows": "AARON, the pioneering autonomous art program, had one developer and user (Harold Cohen) and was exceptional, not typical practice."
+						}
+					]
+				},
+				{
+					"reading": "Dominant reading: art software acts as an intelligent creative partner, beyond a passive tool, for most visual art.",
+					"reason": "In 2009 most visual art was not co-created with intelligent software. Digital tools were used, but they were editing tools (Photoshop, Illustrator), not collaborators that generate art. Generative AI image tools reached the mainstream only in 2022 (DALL-E 2, Midjourney, Stable Diffusion), long after 2014. The later backlash against AI art on DeviantArt dates from 2020 onward.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/DeviantArt",
+							"shows": "User exodus since 2020 tied partly to AI decisions, which dates AI-generated art to the 2020s, not 2009."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-107",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "AARON could not learn new styles on its own and needed hand-coded additions; no creative AI partner for art existed in 2009.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/AARON",
+						"title": "AARON - Wikipedia",
+						"shows": "Cannot learn new styles or imagery on its own; progress depended on one developer hand-coding each addition."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-107",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "AARON could not learn new styles; Cohen hand-coded each capability, and development ended with him. Autonomous art software stayed a single case. Low certainty.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/AARON",
+						"title": "AARON - Wikipedia",
+						"shows": "Cannot learn new styles; capabilities hand-coded; closed source; development ended 2016."
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2002-013",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "speech-recognition-on-desktops",
+			"verdict": "miss",
+			"batch": "b2",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2002: Speech recognition on desktops, Trough of Disillusionment, plateau in 2 to 5 years. (label: Speech recognition on desktops); position: Trough of Disillusionment; rank 13; horizon: 2 to 5 years; phase: trough",
+			"graders": [
+				{
+					"reading": "Dictation and voice command software on desktop PCs (e.g., Dragon NaturallySpeaking, Windows Speech Recognition).",
+					"reason": "Never reached 5%; not mainstream by 2012 (placed year 2007 plus 5). Dragon launched continuous dictation in 1997 and stayed a niche product (medical, legal, accessibility); Mac version ended 2018; Nuance bought by Microsoft 2022. Built-in OS dictation exists but no source shows regular use by 5% of PC users. Not abandoned: products are still sold.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Dragon_NaturallySpeaking",
+							"shows": "Continuous dictation from 1997; Mac support ended 2018; Dragon Professional 16 released Feb 2023."
+						}
+					]
+				},
+				{
+					"reading": "Dictation and voice command software on desktop PCs (Dragon NaturallySpeaking, IBM ViaVoice, Windows Speech Recognition).",
+					"reason": "Never reached 5%; not mainstream by 2012 (placed year 2007 plus 5). Desktop dictation stayed a professional niche (medical and legal transcription, accessibility). No survey shows even 5% of PC users dictating regularly. Speech input became mainstream on phones and smart speakers instead (see speech-recognition-for-mobile-devices). Nuance was acquired by Microsoft in 2022; OS-level voice typing exists but is not widely used on desktops. Absence of a 5% year is a judgement from the lack of any adoption data.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Dragon_NaturallySpeaking",
+							"shows": "Product history through the Microsoft acquisition in 2022; no mass-market usage data."
+						},
+						{
+							"url": "https://www.callcentrehelper.com/contact-centres-hang-up-on-speech-recognition-27512.htm",
+							"shows": "Real-world perceived recognition accuracy around 70% as late as 2012, limiting adoption."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2002-013",
+				"primary": "technical",
+				"secondary": [
+					"acceptance",
+					"substitution"
+				],
+				"reason": "Real-life recognition accuracy was about 70% in 2012, with accents and noise as problems. Speech use moved to phones.",
+				"evidence": [
+					{
+						"url": "https://www.callcentrehelper.com/contact-centres-hang-up-on-speech-recognition-27512.htm",
+						"title": "Contact centres hang up on speech recognition",
+						"shows": "Users rate accuracy around 70%; accents and noise degrade it; some users uncomfortable."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2002-013",
+				"primary": "technical",
+				"secondary": [
+					"acceptance",
+					"substitution"
+				],
+				"reason": "Desktop dictation stayed niche: recognition errors rise with vocabulary size and early systems needed per-voice training; ASR has not seen expected use in document production.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Speech_recognition",
+						"title": "Speech recognition",
+						"shows": "Per-voice training required; error rates 3%/7%/45% by vocabulary size; ASR not seen expected increases in document production"
+					}
+				]
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2004-024",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "web-services-enabled-business-models",
+			"verdict": "partial",
+			"batch": "b4",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2004: Web-Services-Enabled Business Models, Trough of Disillusionment, plateau in 5 to 10 years. (label: Web-Services-Enabled Business Models); position: Trough of Disillusionment; rank 24; horizon: 5 to 10 years; phase: trough",
+			"graders": [
+				{
+					"reading": "Business models in which firms sell or extend their capabilities to partners and customers through web service interfaces (the API economy).",
+					"reason": "Mainstream in 2019, 3 to 5 years after the placed year 2014. MuleSoft Connectivity Benchmark (2019, 650 IT leaders at large firms): for 36% of companies APIs generate over 25% of revenue; a 2018 edition (search summary) gave comparable figures, so the crossing may be 2018 or earlier. Early examples (Amazon, eBay, Salesforce APIs) date from the early 2000s. 5% year is an estimate; the sample skews to large, integration-heavy firms.",
+					"evidence": [
+						{
+							"url": "https://www.salesforce.com/blog/mulesoft-connectivity-benchmark-report/",
+							"shows": "For 36% of companies, APIs generate over 25% of revenue (2019 survey of 650 IT leaders)."
+						}
+					]
+				},
+				{
+					"reading": "Business models in which firms sell or extend their products through web service interfaces offered to partners and developers (API-based distribution and revenue).",
+					"reason": "Mainstream in 2018, 3 to 5 years after the placed year 2014. MuleSoft Connectivity Benchmark (survey Dec 2018, 650 IT leaders at 1,000+ employee firms): 29% of API-using organisations reported revenue growth from APIs; the 2020-2022 reports show 28% rising to 40%. Samples are large enterprises. Early examples (Amazon, eBay, Salesforce APIs) date from about 2002-2006; 5% year estimated. Medium-low certainty.",
+					"evidence": [
+						{
+							"url": "https://www.salesforce.com/news/press-releases/2019/02/27/global-study-majority-of-organizations-plan-to-digitally-transform-yet-84-of-businesses-stalled-by-integration-challenges/",
+							"shows": "Dec 2018 survey: 91% of API users see positive outcomes, 29% revenue growth from APIs."
+						},
+						{
+							"url": "https://blogs.mulesoft.com/news/state-of-api-led-connectivity/",
+							"shows": "Share of organisations reporting API-driven revenue growth rose to 40% by 2022 (per search summary)."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2004-024",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "API-led business models became mainstream about 2018, four years after the placed date, on an ordinary path; no source names a barrier.",
+				"evidence": [
+					{
+						"url": "https://www.salesforce.com/news/press-releases/2019/02/27/global-study-majority-of-organizations-plan-to-digitally-transform-yet-84-of-businesses-stalled-by-integration-challenges/",
+						"title": "MuleSoft connectivity benchmark 2019",
+						"shows": "29% of API users report revenue growth from APIs."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2004-024",
+				"primary": "overreach",
+				"secondary": [],
+				"reason": "API-driven business models spread on an ordinary path to large-firm majorities around 2018-2019; the 2014 plateau date was early. No barrier named.",
+				"evidence": [
+					{
+						"url": "https://www.salesforce.com/blog/mulesoft-connectivity-benchmark-report/",
+						"title": "MuleSoft Connectivity Benchmark Report",
+						"shows": "For 36% of respondents APIs generate over 25% of revenue (2019 survey); API-based models spread among large firms, no barrier named"
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-149",
+			"source_id": "kurzweil",
+			"subject_id": "3d-direct-eye-displays-in-glasses-and-contacts",
+			"verdict": "miss",
+			"batch": "b2",
+			"claim": "People routinely use three-dimensional displays built into their glasses, or contact lenses. These \"direct eye\" displays create highly realistic, virtual visual environments overlaying the \"real\" environment.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; The Computer Itself; Chapter 10, \"2019\"; target: 2019",
+			"graders": [
+				{
+					"reading": "By 2019 people routinely use 3D displays built into eyeglasses or contact lenses that overlay realistic virtual environments on the real one (AR glasses).",
+					"reason": "Consumer AR glasses stayed niche through 2024: Google Glass consumer sales ended in 2015, retinal-projection glasses (North Focals) were discontinued in 2020, HoloLens was an enterprise device at $3,500. Use far below 5% within 5 years.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+							"shows": "Google Glass discontinued for consumers in January 2015, refocused on enterprise in 2017; no mainstream adoption figures."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Microsoft_HoloLens",
+							"shows": "HoloLens 2 announced Feb 2019 at $3,500, an enterprise device."
+						}
+					]
+				},
+				{
+					"reading": "By 2019 people routinely use 3D displays built into eyeglasses or contact lenses that overlay realistic virtual imagery on the real world.",
+					"reason": "Optical head-mounted displays (Google Glass 2013, HoloLens 2016/2019, Magic Leap) never had major commercial success; usage far below 5% of people by 2024. Display contact lenses never shipped.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Optical_head-mounted_display",
+							"shows": "OHMD technology has existed since 1997 but 'has yet to have had major commercial success'; forecasts of millions of smart-glasses units did not materialize."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-149",
+				"primary": "acceptance",
+				"secondary": [
+					"technical",
+					"complements"
+				],
+				"reason": "Google Glass drew privacy backlash and venue bans; Google ended retail sales in 2015. Battery, stabilisation and phone-pairing limits also appear.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+						"title": "Smart glasses",
+						"shows": "Privacy concerns, venue bans, negative public reaction ended consumer sales Jan 2015; battery life and 60% transcription accuracy limits."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-149",
+				"primary": "acceptance",
+				"secondary": [
+					"technical",
+					"cost"
+				],
+				"reason": "Google Glass consumer sales ended after negative public reaction over covert recording and bans by venues; HoloLens stayed enterprise-priced.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+						"title": "Smart glasses",
+						"shows": "Negative public reaction, privacy worries, business bans; consumer sales ended Jan 2015"
+					}
+				]
+			}
+		},
+		{
+			"id": "hz-2014-070",
+			"source_id": "envisioning-horizons",
+			"verdict": "miss",
+			"batch": "b3",
+			"claim": "Products or services (power) using inertial confinement fusion are generally available around 2022.",
+			"graders": [
+				{
+					"reading": "Products or services (power) using inertial confinement fusion are generally available around 2022.",
+					"reason": "NIF first reached scientific ignition in December 2022 with net loss at the wall plug (about 300 MJ in for 3.15 MJ out); LLNL's LIFE power-plant programme ended in 2014. No ICF electricity or product is sold.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/National_Ignition_Facility",
+							"shows": "Ignition achieved December 2022; no commercial ICF power; LIFE programme ended April 2014."
+						}
+					]
+				},
+				{
+					"reading": "Electricity products or services from inertial confinement fusion are generally available around 2022.",
+					"reason": "NIF achieved scientific ignition in Dec 2022, but no ICF power plant or product exists; commercial ICF firms target the 2030s.",
+					"evidence": [
+						{
+							"url": "https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition",
+							"shows": "Scientific milestone only; no electricity generation."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "hz-2014-070",
+				"primary": "technical",
+				"secondary": [
+					"cost"
+				],
+				"reason": "NIF reached scientific ignition in Dec 2022 but a power plant needs far more output than the energy to drive the lasers. LLNL's LIFE plant programme ended in 2014.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/National_Ignition_Facility",
+						"title": "National Ignition Facility - Wikipedia",
+						"shows": "A fusion facility must produce output an order of magnitude above laser energy; LIFE power plant programme ended April 2014."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "hz-2014-070",
+				"primary": "technical",
+				"secondary": [
+					"cost"
+				],
+				"reason": "NIF reached ignition in 2022 but the laser used about 300 MJ for 3 MJ out; low laser efficiency, low repetition rate and target issues block a power plant.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/National_Ignition_Facility",
+						"title": "National Ignition Facility",
+						"shows": "Full power needs gain far above current; laser wall-plug efficiency low; shot rate about one per two days."
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-173",
+			"source_id": "kurzweil",
+			"subject_id": "autonomous-nanoengineered-machines",
+			"verdict": "miss",
+			"batch": "b1",
+			"claim": "Autonomous nanoengineered machines can control their own mobility and include significant computational engines.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; The Computer Itself; Chapter 10, \"2019\"; target: 2019",
+			"graders": [
+				{
+					"reading": "By 2019 autonomous nanoengineered machines exist that control their own movement and carry significant onboard computation.",
+					"reason": "Nanomachines remained in research and development; demonstrated devices (molecular cars, nanomotors) are externally driven, with no autonomous nanorobots carrying significant computation by 2024.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+							"shows": "Nanomachines are largely in the research and development phase; only primitive molecular machines and nanomotors tested; molecular car driven externally."
+						}
+					]
+				},
+				{
+					"reading": "By 2019 autonomous nanoengineered machines exist that control their own movement and carry significant onboard computation.",
+					"reason": "Nanomachines remained in research: primitive molecular machines and externally powered/steered micro- and nanorobots; none with significant onboard computation by 2024.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+							"shows": "'Nanomachines are largely in the research and development phase'; only primitive molecular machines and nanomotors are studied."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Microbotics",
+							"shows": "Microrobots use externally induced power (magnetic fields, ultrasound, light); prototypes only."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-173",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "Nanorobotics stays in research: assembly needs very fine tools, and adhesion and friction at nano scale can break parts before they move.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+						"title": "Nanorobotics",
+						"shows": "Manufacturing and assembly are hard; adhesion and static friction exceed material strength; long way to clinical use."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-173",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "Nanomachines remain at research stage: fabrication is hard, friction and adhesion dominate, and control and power come from external fields, not onboard computation.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+						"title": "Nanorobotics - Wikipedia",
+						"shows": "Manufacturing nanomachines is challenging; surface adhesion; control and power by external fields."
+					}
+				]
+			}
+		},
+		{
+			"id": "edu-2012-026",
+			"source_id": "envisioning-education",
+			"verdict": "partial",
+			"batch": "b1",
+			"claim": "Computing and sensors embedded in everyday classroom objects influence learning environments around 2022.",
+			"graders": [
+				{
+					"reading": "Computing and sensors embedded in everyday classroom objects influence learning environments around 2022.",
+					"reason": "England delivered ~329k CO2 sensors to all state-funded schools in 2021; the BBC micro:bit (embedded computing for physical-computing lessons) went to ~1M UK Year 7 pupils in 2016. Both are sensors/computing in classroom objects at full-population scale before Y+2; the 'intelligence' part (smart, networked objects) is weaker.",
+					"evidence": [
+						{
+							"url": "https://explore-education-statistics.service.gov.uk/find-statistics/co2-monitors-cumulative-delivery-statistics/2021-week-48",
+							"shows": "329,231 CO2 monitors delivered to state-funded education settings by 26 Nov 2021"
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Micro_Bit",
+							"shows": "About 1M micro:bits given to UK Year 7 pupils from Feb 2016"
+						}
+					]
+				},
+				{
+					"reading": "Computing and sensors embedded in everyday classroom objects (IoT) influence learning from around 2022.",
+					"reason": "Sensor-laden programmable devices reached schools at scale (BBC micro:bit, about 1M to UK Year 7 pupils from 2016) and building sensors spread, but intelligence embedded in everyday classroom objects as a learning environment has no measure near 5%. Real but limited.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Micro_Bit",
+							"shows": "About 1M sensor-equipped micro:bits given to UK Year 7 pupils from Feb 2016"
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "edu-2012-026",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page I opened shows a cause. Grader evidence shows device counts only.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "edu-2012-026",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "Opened micro:bit page shows school rollout (1M devices, delay to 2016) but no cause for the missing embedded-object learning environments.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "gartner-hype-cycle-2004-021",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "leps-oleds",
+			"verdict": "miss",
+			"batch": "b5",
+			"claim": "Gartner Hype Cycle for Emerging Technologies 2004: LEPs/OLEDs, Trough of Disillusionment, plateau in 2 to 5 years. (label: LEPs/OLEDs); position: Trough of Disillusionment; rank 21; horizon: 2 to 5 years; phase: trough",
+			"graders": [
+				{
+					"reading": "Organic light-emitting displays, both polymer (LEP) and small-molecule (OLED), used as emissive flat-panel displays in devices.",
+					"reason": "Reached 5% only in 2010; not mainstream by 2014 (placed year 2009 plus 5). OLED moved into mainstream smartphones in the 2010s (Samsung Galaxy line from 2010; iPhone X 2017). Omdia: AMOLED passed TFT LCD for the first time in 2024 with 51% of smartphone display shipments (784M vs 761M). 5% year is an estimate. Small-molecule OLED, not polymer, carried this adoption.",
+					"evidence": [
+						{
+							"url": "https://omdia.tech.informa.com/pr/2025/mar/omdia-oled-display-shipments-surpass-tft-lcd-for-the-first-time-capturing-51percent-market-share-in-2024",
+							"shows": "AMOLED 51% of smartphone display shipments in 2024 (784M units vs 761M LCD) (per search summary)."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/OLED",
+							"shows": "Kodak first full-colour OLED camera display 2003; Sony XEL-1 OLED TV 2007; OLED in mainstream smartphones from the 2010s; polymer displays less prevalent than small-molecule."
+						}
+					]
+				},
+				{
+					"reading": "Organic light-emitting displays (small-molecule OLED and light-emitting polymer) replacing LCD in devices, mainly phone displays",
+					"reason": "Reached 5% only in 2010; not mainstream by 2014 (placed year 2009 plus 5). First OLED products: Pioneer car stereo 1997, Kodak camera 2003; AMOLED phones spread from 2010 (Samsung). Counterpoint: OLED share of smartphones 29% (Q1 2020), 42% (2021), 44% (2022), 49% (Q1 2023); TrendForce 50.8% for 2023; Omdia 53% (2024). So 2023 is the first year above half. OLED in TVs, laptops and tablets remains under ~3%. year_5pct 2010 is an estimate. Polymer (LEP) variants specifically did not win; small-molecule OLED did.",
+					"evidence": [
+						{
+							"url": "https://www.trendforce.com/presscenter/news/20230718-11770.html",
+							"shows": "OLED over 50% of smartphones in 2023; under 3% in TVs, laptops, tablets"
+						},
+						{
+							"url": "https://counterpointresearch.com/en/insights/smartphone-oled-penetration-q1-2023",
+							"shows": "OLED share 29% Q1 2020, 42% 2021, 44% 2022, 49% Q1 2023 (search-result extract)"
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/OLED",
+							"shows": "Invented 1987 at Kodak; first products Pioneer 1997, Kodak camera 2003; small-molecule and polymer types"
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-hype-cycle-2004-021",
+				"primary": "technical",
+				"secondary": [
+					"cost",
+					"substitution"
+				],
+				"reason": "Early OLED had short blue lifetime and low manufacturing yield; fabrication stayed costlier than TFT LCD, the established rival.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/OLED",
+						"title": "OLED - Wikipedia",
+						"shows": "Blue OLED lifetime below LCD/LED; shadow-mask yield loss on large displays; substrate fabrication costlier than TFT LCD as of 2018; LCD established and cheaper."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-hype-cycle-2004-021",
+				"primary": "technical",
+				"secondary": [
+					"cost"
+				],
+				"reason": "OLED has a limited organic-material lifetime, with fast blue degradation and yield loss in large panels. Fabrication costs more than TFT LCD.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/OLED",
+						"title": "OLED - Wikipedia",
+						"shows": "Biggest technical problem is limited lifetime; blue degrades fast; shadow-mask yield loss; substrate fabrication costlier than TFT LCD."
+					}
+				]
+			}
+		},
+		{
+			"id": "kurzweil-1999-174",
+			"source_id": "kurzweil",
+			"subject_id": "commercial-nanomachines",
+			"verdict": "miss",
+			"batch": "b4",
+			"claim": "These microscopic machines are beginning to be applied to commercial applications, particularly in manufacturing and process control, but are not yet in the mainstream.; position: The Age of Spiritual Machines: When Computers Exceed Human Intelligence; The Computer Itself; Chapter 10, \"2019\"; target: 2019",
+			"graders": [
+				{
+					"reading": "By 2019 such autonomous microscopic machines are starting to be used commercially, especially in manufacturing and process control, though not yet mainstream.",
+					"reason": "No commercial manufacturing or process-control use of autonomous nanomachines is documented by 2024; MEMS sensors are not autonomous mobile machines. Even the modest 'beginning' did not occur.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+							"shows": "No commercial manufacturing applications of autonomous nanorobots; medical nanorobots have a long way to go before commercialization."
+						}
+					]
+				},
+				{
+					"reading": "By 2019 these microscopic autonomous nanomachines are beginning to be used commercially, especially in manufacturing and process control, though not mainstream.",
+					"reason": "The machines meant are the autonomous nanomachines of the preceding sentence, not MEMS. No commercial use in manufacturing or process control documented by 2024.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+							"shows": "No commercial manufacturing or process-control deployments; corporate activity limited to research and patents."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "kurzweil-1999-174",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "Autonomous nanomachines do not work yet: adhesion and friction exceed material strength, precision assembly is unsolved, and no commercial manufacturing use exists.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+						"title": "Nanorobotics - Wikipedia",
+						"shows": "Adhesion and static friction can exceed material strength; assembly hard; no commercial use."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "kurzweil-1999-174",
+				"primary": "technical",
+				"secondary": [],
+				"reason": "Autonomous nanomachines for manufacturing do not exist commercially; the article says medical nanorobots have a long way to go and corporate activity stays in research.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+						"title": "Nanorobotics",
+						"shows": "No commercial manufacturing use of autonomous nanorobots; challenges in building and powering nanoscale machines"
+					}
+				]
+			}
+		},
+		{
+			"id": "health-2012-037",
+			"source_id": "envisioning-health",
+			"verdict": "partial",
+			"batch": "b5",
+			"claim": "Swallowable sensors (digital pills) report from inside the body in routine care by about 2020.",
+			"graders": [
+				{
+					"reading": "Swallowable sensors (digital pills) report from inside the body in routine care by about 2020.",
+					"reason": "The forward-looking product, Proteus ingestible sensor in Abilify MyCite (FDA 2017), saw limited uptake and Proteus went bankrupt in 2020 (assets sold to Otsuka). Niche real use, well below 5%. Capsule endoscopy predates 2012 and is not what the poster forecast.",
+					"evidence": [
+						{
+							"url": "https://www.statnews.com/2020/08/19/otsuka-approved-proteus-sale-abilify-mycite/",
+							"shows": "Proteus bankrupt; MyCite limited uptake"
+						},
+						{
+							"url": "https://www.fiercehealthcare.com/tech/digital-medicine-company-proteus-digital-health-files-for-chapter-11-bankruptcy",
+							"shows": "Limited clinician and payer uptake"
+						}
+					]
+				},
+				{
+					"reading": "Swallowable sensor pills that report from inside the body start to affect health care around 2020.",
+					"reason": "Sensor-in-pill adherence (Proteus, Abilify MyCite) reached market but was abandoned (Proteus bankrupt 2020; MyCite discontinued Oct 2024). Capsule endoscopy and motility capsules remain routine niche procedures (over 4 million PillCams sold) but are a small share of GI diagnostics and predate the poster. Real, niche use = partial; reading only the adherence-sensor line would give miss.",
+					"evidence": [
+						{
+							"url": "https://www.drugs.com/history/abilify-mycite.html",
+							"shows": "Approved 2017; Otsuka discontinued US commercialisation in Oct 2024."
+						},
+						{
+							"url": "https://endoscopyonair.com/wp-content/uploads/2021/06/PillCam-Capsule-Endoscopy-Platform.pdf",
+							"shows": "More than 4 million PillCam capsules sold worldwide; ambulatory GI procedure."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "health-2012-037",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "Both news pages about Proteus failed to show a cause (one gave 403, one did not explain it).",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "health-2012-037",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page opened shows the cause. Grader evidence shows only the shortfall.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "gartner-strategic-predictions-2019-010",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "online-shopping-addiction",
+			"verdict": "miss",
+			"batch": "b5",
+			"claim": "By 2024, the World Health Organization will identify online shopping as an addictive disorder, as millions abuse digital commerce and encounter financial stress.; position: top prediction 10; target: 2024",
+			"graders": [
+				{
+					"reading": "By 2024, WHO formally identifies online shopping as an addictive disorder.",
+					"reason": "ICD-11 'disorders due to addictive behaviours' lists only gambling and gaming; compulsive buying-shopping disorder appears only as an example under 'other specified impulse control disorders' (6C7Y), not as an addictive disorder or as online shopping.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Compulsive_buying_disorder",
+							"shows": "ICD-11 places compulsive buying-shopping disorder under other specified impulse control disorders (6C7Y); no separate online shopping disorder."
+						}
+					]
+				},
+				{
+					"reading": "By 2024 WHO classifies online shopping as an addictive disorder.",
+					"reason": "ICD-11 has only gambling and gaming disorders under addictive behaviours; compulsive buying-shopping appears only as an example of other specified impulse control disorders, adopted before the prediction; no change by 2024.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/Compulsive_buying_disorder",
+							"shows": "ICD-11 lists compulsive buying-shopping disorder only as an example under 6C7Y Other specified impulse control disorders, not under disorders due to addictive behaviours; ICD-11 was adopted in May 2019, before the prediction."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "gartner-strategic-predictions-2019-010",
+				"primary": "regulation",
+				"secondary": [
+					"acceptance"
+				],
+				"reason": "ICD-11 places compulsive buying under impulse control disorders; DSM-5 left it out of addictions because experts still debate it. The public standard did not change.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Compulsive_buying_disorder",
+						"title": "Compulsive buying disorder - Wikipedia",
+						"shows": "ICD-11 lists it as an other specified impulse control disorder; DSM-5 excluded it from addictive disorders due to debate."
+					}
+				]
+			},
+			"other_call": {
+				"claim_id": "gartner-strategic-predictions-2019-010",
+				"primary": "regulation",
+				"secondary": [],
+				"reason": "WHO ICD-11 places compulsive buying under other specified impulse control disorders, and DSM-5 left it out of addictive disorders as the question is still debated.",
+				"evidence": [
+					{
+						"url": "https://en.wikipedia.org/wiki/Compulsive_buying_disorder",
+						"title": "Compulsive buying disorder - Wikipedia",
+						"shows": "ICD-11 lists it as other specified impulse control disorder; DSM-5 excluded it from addictive disorders pending debate."
+					}
+				]
+			}
+		},
+		{
+			"id": "deloitte-tmt-predictions-2002-001",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "enterprise-mobile-applications",
+			"verdict": "partial",
+			"batch": "b1",
+			"claim": "The last perceived barrier to adoption of mobile applications has disappeared. And organisations across the globe now see mobile as a reliable and viable platform for business processes.; position: Mobile, 1: \"Business mobile take-up will accelerate\"; target: 2002",
+			"graders": [
+				{
+					"reading": "In 2002 business adoption of mobile applications would accelerate, with organisations treating mobile as a viable platform for business processes.",
+					"reason": "Enterprise mobile e-mail grew fast (BlackBerry subscribers roughly doubled each year from 534k in early 2003), but business mobile data stayed a small share of mobile use in major markets: in the UK non-SMS data was 2% of mobile revenue in 2004. Growth yes, broad take-up no.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/BlackBerry_Limited",
+							"shows": "Active BlackBerry subscribers 534,000 (FY2003), 1,069,000 (FY2004), 2,510,000 (FY2005); BES push e-mail drove enterprise and government use."
+						},
+						{
+							"url": "https://web.archive.org/web/20051105064957/http://www.ofcom.org.uk:80/research/cm/cm05/telecommunications.pdf",
+							"shows": "UK 2004: mobile retail revenue GBP 12.3bn, of which voice 10.1bn, SMS 1.9bn, other data 0.2bn (2%); non-SMS data 'remains small', MMS small, mobile internet 'relatively insignificant'; data revenue 1.4bn (2002), 1.9bn (2003), 2.1bn (2004); SMS per subscriber unchanged in 2004 though total texts >28bn; subscriptions 53.4m to 61.2m (>100% of population); fixed voice 164bn vs mobile 62bn minutes in 2004; WiFi hotspots 'growing in number, but usage is still low'; WiMAX certified equipment and initial trials expected 2005."
+						}
+					]
+				},
+				{
+					"reading": "In 2002 business adoption of mobile applications accelerates because organisations now see mobile as a reliable platform for business processes.",
+					"reason": "No public series measures enterprise mobile-application take-up for 2001-2002. The nearest proxy, RIM's BlackBerry subscriber base, kept growing (about 534,000 by FY2003, 1.07 million FY2004) but the series does not start early enough to show whether growth accelerated in 2002, a year of sharp IT-spending cuts. Looked for: enterprise mobile adoption surveys 2001-2002, BlackBerry subscriber growth 2001-2002.",
+					"evidence": [
+						{
+							"url": "https://en.wikipedia.org/wiki/BlackBerry_Limited",
+							"shows": "Active BlackBerry subscribers 534,000 (2003), 1,069,000 (2004), 2,510,000 (2005); no 2001-2002 figures; enterprise and government usage driven by security features."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "deloitte-tmt-predictions-2002-001",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page I opened shows a cause. Grader evidence shows subscriber counts and mobile data revenue only.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "deloitte-tmt-predictions-2002-001",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "BlackBerry page shows enterprise email growth and a narrow-bandwidth design, but no opened source shows what limited business mobile data.",
+				"evidence": []
+			}
+		},
+		{
+			"id": "hz-2014-018",
+			"source_id": "envisioning-horizons",
+			"verdict": "partial",
+			"batch": "b5",
+			"claim": "Two readings: (a) intelligence-amplifying IT tools that augment human cognition are generally available around 2022; (b) closed-loop systems that read brain signals and feed back stimulation to augment cognitive functions are generally available around 2022.",
+			"graders": [
+				{
+					"reading": "Two readings: (a) intelligence-amplifying IT tools that augment human cognition are generally available around 2022; (b) closed-loop systems that read brain signals and feed back stimulation to augment cognitive functions are generally available around 2022.",
+					"reason": "The description's first sentence (IT tools that amplify intelligence) is met by general software long before 2022, which would be a hit. The second sentence (brain readout driving stimulus) has only therapeutic closed-loop devices for epilepsy (NeuroPace RNS) and Parkinson's (Medtronic aDBS, FDA Feb 2025); none augments cognition, which would be a provisional miss. Both readings are equally supported by the poster text.",
+					"evidence": [
+						{
+							"url": "https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons",
+							"shows": "First approved closed-loop DBS adjusting stimulation to brain activity, for Parkinson's motor symptoms, not cognitive enhancement."
+						}
+					]
+				},
+				{
+					"reading": "Closed-loop systems that read information from the brain and feed back stimulation to augment human cognition are generally available around 2022.",
+					"reason": "Closed-loop neurostimulators exist only as therapies for disease (NeuroPace RNS for epilepsy, 2013; Medtronic adaptive DBS for Parkinson's, 2025), not cognitive augmentation. Consumer neurostimulation headsets are open-loop and their cognitive claims are unproven. No cognition-augmenting closed-loop product by 2026.",
+					"evidence": [
+						{
+							"url": "https://news.medtronic.com/2025-02-24-Medtronic-earns-U-S-FDA-approval-for-the-worlds-first-Adaptive-deep-brain-stimulation-system-for-people-with-Parkinsons",
+							"shows": "First closed-loop DBS approved, for Parkinson's motor symptoms, not cognition."
+						},
+						{
+							"url": "https://en.wikipedia.org/wiki/Responsive_neurostimulation_device",
+							"shows": "Closed-loop brain stimulation approved only to treat epilepsy."
+						}
+					]
+				}
+			],
+			"call": {
+				"claim_id": "hz-2014-018",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No opened page shows why cognition-augmenting closed-loop systems did not appear.",
+				"evidence": []
+			},
+			"other_call": {
+				"claim_id": "hz-2014-018",
+				"primary": "unknown",
+				"secondary": [],
+				"reason": "No page opened shows the cause. Grader evidence shows only the shortfall.",
+				"evidence": []
+			}
+		}
+	]
+}

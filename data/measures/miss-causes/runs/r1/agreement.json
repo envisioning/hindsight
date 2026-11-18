@@ -1,0 +1,154 @@
+{
+	"run": "r1",
+	"rule": "D63",
+	"gate": "kappa on primary family >= 0.6",
+	"passes": true,
+	"family": {
+		"n": 200,
+		"observed": 0.71,
+		"expected": 0.256,
+		"kappa": 0.61
+	},
+	"cause": {
+		"n": 200,
+		"observed": 0.69,
+		"expected": 0.16,
+		"kappa": 0.631
+	},
+	"by_batch": {
+		"b1": {
+			"n": 40,
+			"observed": 0.75,
+			"expected": 0.271,
+			"kappa": 0.657
+		},
+		"b2": {
+			"n": 40,
+			"observed": 0.65,
+			"expected": 0.251,
+			"kappa": 0.533
+		},
+		"b3": {
+			"n": 40,
+			"observed": 0.725,
+			"expected": 0.269,
+			"kappa": 0.624
+		},
+		"b4": {
+			"n": 40,
+			"observed": 0.775,
+			"expected": 0.311,
+			"kappa": 0.674
+		},
+		"b5": {
+			"n": 40,
+			"observed": 0.65,
+			"expected": 0.304,
+			"kappa": 0.497
+		}
+	},
+	"matrix_A_rows_B_cols": {
+		"technical": {
+			"technical": 31,
+			"cost": 3,
+			"regulation": 0,
+			"acceptance": 2,
+			"complements": 0,
+			"market": 1,
+			"substitution": 0,
+			"overreach": 0,
+			"unknown": 3
+		},
+		"cost": {
+			"technical": 3,
+			"cost": 15,
+			"regulation": 0,
+			"acceptance": 0,
+			"complements": 0,
+			"market": 0,
+			"substitution": 0,
+			"overreach": 1,
+			"unknown": 0
+		},
+		"regulation": {
+			"technical": 1,
+			"cost": 0,
+			"regulation": 6,
+			"acceptance": 0,
+			"complements": 0,
+			"market": 0,
+			"substitution": 0,
+			"overreach": 1,
+			"unknown": 0
+		},
+		"acceptance": {
+			"technical": 2,
+			"cost": 0,
+			"regulation": 0,
+			"acceptance": 13,
+			"complements": 0,
+			"market": 0,
+			"substitution": 1,
+			"overreach": 1,
+			"unknown": 1
+		},
+		"complements": {
+			"technical": 0,
+			"cost": 1,
+			"regulation": 0,
+			"acceptance": 0,
+			"complements": 7,
+			"market": 0,
+			"substitution": 0,
+			"overreach": 0,
+			"unknown": 2
+		},
+		"market": {
+			"technical": 0,
+			"cost": 0,
+			"regulation": 0,
+			"acceptance": 0,
+			"complements": 1,
+			"market": 4,
+			"substitution": 1,
+			"overreach": 0,
+			"unknown": 2
+		},
+		"substitution": {
+			"technical": 1,
+			"cost": 0,
+			"regulation": 1,
+			"acceptance": 0,
+			"complements": 1,
+			"market": 0,
+			"substitution": 7,
+			"overreach": 2,
+			"unknown": 0
+		},
+		"overreach": {
+			"technical": 3,
+			"cost": 1,
+			"regulation": 0,
+			"acceptance": 2,
+			"complements": 0,
+			"market": 2,
+			"substitution": 0,
+			"overreach": 22,
+			"unknown": 7
+		},
+		"unknown": {
+			"technical": 3,
+			"cost": 0,
+			"regulation": 2,
+			"acceptance": 0,
+			"complements": 0,
+			"market": 1,
+			"substitution": 1,
+			"overreach": 8,
+			"unknown": 33
+		}
+	},
+	"agreed": 138,
+	"contested": 62,
+	"missing": []
+}

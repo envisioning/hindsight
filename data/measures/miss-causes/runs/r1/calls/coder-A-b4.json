@@ -1,0 +1,550 @@
+{
+ "run": "r1",
+ "batch": "b4",
+ "role": "A",
+ "agent": "agent (model not recorded in the public repo)",
+ "calls": [
+  {
+   "claim_id": "health-2012-040",
+   "primary": "overreach",
+   "secondary": [
+    "market",
+    "regulation"
+   ],
+   "reason": "The community model spread (830,000 members) on an ordinary path; the forecast level (5% of patients) sat above it. The source names only slow per-condition growth, no barrier.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/PatientsLikeMe",
+     "title": "PatientsLikeMe - Wikipedia",
+     "shows": "Per-condition community growth was slow; 2019 divestment forced by US government; no adoption barrier named."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-036",
+   "primary": "cost",
+   "secondary": [
+    "acceptance"
+   ],
+   "reason": "Intelligent tutors cost 200 to 300 hours of development per hour of instruction, so they stayed commercially hard to scale; they reached a minority of schools.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+     "title": "Intelligent tutoring system - Wikipedia",
+     "shows": "Development cost 200-300 hours per instruction hour; adoption needs institutional willingness."
+    }
+   ]
+  },
+  {
+   "claim_id": "hz-2014-014",
+   "primary": "cost",
+   "secondary": [
+    "technical"
+   ],
+   "reason": "7T scanners are sold but few; very high procurement and maintenance cost inhibits ultra-high-field MRI, and 14T is still an engineering design.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+     "title": "Magnetic resonance imaging - Wikipedia",
+     "shows": "High procurement and maintenance costs of very high field MRI inhibit popularity; 14T is a design proposal."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-009",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "Connected devices reached about 8.7 billion in 2012 by Cisco's count; the 10 billion figure sat above the ordinary count. No barrier involved, only a level set too high.",
+   "evidence": [
+    {
+     "url": "https://blogs.cisco.com/news/cisco-connections-counter",
+     "title": "Cisco Connections Counter",
+     "shows": "Cisco: 8.7 billion connected objects in 2012."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2010-027",
+   "primary": "substitution",
+   "secondary": [
+    "cost"
+   ],
+   "reason": "Costly immersive telepresence rooms gave way to cheaper standard HD video rooms and cloud meetings that met the same need; sources show cost and a shift to lighter options.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Telepresence",
+     "title": "Telepresence - Wikipedia",
+     "shows": "Video conferencing superior except in cost; shift to cheaper portable options; hotel use low."
+    },
+    {
+     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2009/m09/cisco-fosters-intercompany-collaboration-with-global-cisco-telepresence-network.html",
+     "title": "Cisco TelePresence network (2009)",
+     "shows": "Adoption confined to 350 organisations; grader notes HD rooms and cloud meetings absorbed use."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2008-016",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "No page opened shows why service-oriented business applications fell short; the label faded and no adoption series exists.",
+   "evidence": []
+  },
+  {
+   "claim_id": "kurzweil-1999-138",
+   "primary": "complements",
+   "secondary": [
+    "technical",
+    "acceptance"
+   ],
+   "reason": "Most practices lacked the electronic record infrastructure for routine decision support: only 21.8% of office physicians had a basic EHR in 2009.",
+   "evidence": [
+    {
+     "url": "https://www.cdc.gov/nchs/data/hestat/emr_ehr_09/emr_ehr_09.htm",
+     "title": "CDC: EMR/EHR use 2009",
+     "shows": "48.3% any EMR; 21.8% basic system."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2011-002",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "No bubble burst: Twitter IPO and the WhatsApp purchase show valuations rose. The forecast set an event beyond the actual path; no barrier applies.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/WhatsApp",
+     "title": "WhatsApp - Wikipedia",
+     "shows": "Facebook agreed to buy WhatsApp for about US$19 billion in Feb 2014."
+    }
+   ]
+  },
+  {
+   "claim_id": "hz-2014-069",
+   "primary": "regulation",
+   "secondary": [
+    "complements",
+    "technical"
+   ],
+   "reason": "Commercial microreactors need NRC licensing (Oklo targets 2030 pending NRC) and reactor-ready HALEU/TRISO fuel; designs still unproven, first units from 2028.",
+   "evidence": [
+    {
+     "url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+     "title": "The Janus Five: 20 commercial microreactors starting in 2028",
+     "shows": "NRC licensing needed; HALEU fuel fabrication a separate constraint; designs still being proven."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-051",
+   "primary": "technical",
+   "secondary": [
+    "regulation",
+    "acceptance"
+   ],
+   "reason": "Nootropics lack accepted efficacy: evidence is weak and effects modest; AMA discourages use in healthy people, and regulators warn on misleading products.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nootropic",
+     "title": "Nootropic - Wikipedia",
+     "shows": "Weak evidence for most compounds; AMA discourages prescribing to healthy people; FDA warnings on products."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2009-010",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "Machine-to-machine traffic stayed well under 1% of IP traffic in 2012; the 20% level was beyond the adoption path. No barrier named.",
+   "evidence": [
+    {
+     "url": "https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/VNI_Hyperconnectivity_WP.html",
+     "title": "Cisco VNI",
+     "shows": "M2M a fraction of a percent of IP traffic in 2012."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-174",
+   "primary": "technical",
+   "secondary": [],
+   "reason": "Autonomous nanomachines do not work yet: adhesion and friction exceed material strength, precision assembly is unsolved, and no commercial manufacturing use exists.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nanorobotics",
+     "title": "Nanorobotics - Wikipedia",
+     "shows": "Adhesion and static friction can exceed material strength; assembly hard; no commercial use."
+    }
+   ]
+  },
+  {
+   "claim_id": "ark-big-ideas-2020-012",
+   "primary": "overreach",
+   "secondary": [
+    "market"
+   ],
+   "reason": "Robot installations grew to 542,000 in 2024, on an ordinary path, but the forecast of 1.6 million was three times higher. IFR names demand cycles and trade disruption but no single barrier.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+     "title": "IFR: global robot demand doubles over 10 years",
+     "shows": "542,000 installations in 2024; macro and sector cycles named."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-040",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "Sources show print-to-speech software served users with disabilities only. No page opened shows why it did not reach all young children.",
+   "evidence": []
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2005-007",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "The label faded with no distinct product class; no opened page shows the cause.",
+   "evidence": []
+  },
+  {
+   "claim_id": "kurzweil-1999-010",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "Personal servers and VR objects were rare, but no opened page shows why; Windows Home Server page gives no reason for its end.",
+   "evidence": []
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2019-001",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "US employment of people with disabilities rose 1.3x, not 3x; the forecast set a level far above the ordinary path. No source names a barrier.",
+   "evidence": [
+    {
+     "url": "https://www.bls.gov/news.release/archives/disabl_02222024.htm",
+     "title": "BLS Persons with a Disability 2023",
+     "shows": "7.528M employed in 2023 against 5.767M in 2018."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2011-006",
+   "primary": "market",
+   "secondary": [
+    "substitution"
+   ],
+   "reason": "Dedicated social TV apps closed (tvtag shut down in Dec 2014 to refocus the company) while the behaviour moved to general social platforms.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/GetGlue",
+     "title": "GetGlue - Wikipedia",
+     "shows": "tvtag shut down Dec 2014 to refocus on other initiatives."
+    },
+    {
+     "url": "https://www.pewresearch.org/internet/2012/07/17/the-rise-of-the-connected-viewer/",
+     "title": "Pew: Rise of the connected viewer",
+     "shows": "Only 11% posted about shows; 23% texted."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-016",
+   "primary": "technical",
+   "secondary": [
+    "cost",
+    "complements"
+   ],
+   "reason": "E Ink gave paper-like reading but the first Kindle had 4 gray levels and slow refresh; LCDs lacked paper qualities. Price ($399) also held early uptake.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+     "title": "Amazon Kindle - Wikipedia",
+     "shows": "Original Kindle: 4 gray levels, US$399."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2007-017",
+   "primary": "regulation",
+   "secondary": [
+    "acceptance",
+    "market"
+   ],
+   "reason": "The 2007 UK phone-in scandal brought suspension of premium-rate services, Ofcom/ICSTIS fines over GBP 11 million and tighter rules, with warned loss of viewer trust.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/2007_British_premium-rate_phone-in_scandal",
+     "title": "2007 British premium-rate phone-in scandal",
+     "shows": "Fines over GBP 11m; tighter regulation; ICSTIS warned of lost viewer trust."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2003-013",
+   "primary": "substitution",
+   "secondary": [
+    "market"
+   ],
+   "reason": "Commercial grid offerings (Sun Grid, shut 2010) were overtaken by cloud computing, a conceptually similar model that became popular from 2007.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Grid_computing",
+     "title": "Grid computing - Wikipedia",
+     "shows": "Cloud computing, popular from 2007, is conceptually similar to grid computing."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2015-033",
+   "primary": "acceptance",
+   "secondary": [
+    "regulation"
+   ],
+   "reason": "Crypto use stalled at 17% of US adults; 63% have little or no confidence that crypto is reliable and safe (Pew 2024).",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/",
+     "title": "Pew: Americans not confident in crypto safety",
+     "shows": "63% little or no confidence; 17% have used it."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2010-002",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "CoDA stayed an analyst pattern; no opened page shows why it fell short.",
+   "evidence": []
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2004-024",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "API-led business models became mainstream about 2018, four years after the placed date, on an ordinary path; no source names a barrier.",
+   "evidence": [
+    {
+     "url": "https://www.salesforce.com/news/press-releases/2019/02/27/global-study-majority-of-organizations-plan-to-digitally-transform-yet-84-of-businesses-stalled-by-integration-challenges/",
+     "title": "MuleSoft connectivity benchmark 2019",
+     "shows": "29% of API users report revenue growth from APIs."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2013-008",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "No larger economic-grievance movement began; Occupy faded. Not a technology path, and no source names a cause. Low certainty.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Occupy_movement",
+     "title": "Occupy movement - Wikipedia",
+     "shows": "By 2014 only small residual Occupy actions remained."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2011-033",
+   "primary": "technical",
+   "secondary": [
+    "market",
+    "acceptance"
+   ],
+   "reason": "Second Life growth stalled after 2009 with latency, crashes and high bandwidth demands; user counts were inflated and its successor Sansar had low uptake.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Life",
+     "title": "Second Life - Wikipedia",
+     "shows": "Latency, crashes, 300 kbit/s needs; growth failed after 2009; Sansar halted 2020."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-053",
+   "primary": "cost",
+   "secondary": [
+    "technical",
+    "regulation"
+   ],
+   "reason": "Tickets cost $450,000 and more, narrowing demand; a fatal 2014 crash, FAA licensing and grounding added delay.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Virgin_Galactic",
+     "title": "Virgin Galactic - Wikipedia",
+     "shows": "Tickets $450,000 from 2022; 2014 crash; FAA licence and grounding."
+    }
+   ]
+  },
+  {
+   "claim_id": "mit-tr-10-breakthrough-2024-007",
+   "primary": "cost",
+   "secondary": [
+    "complements"
+   ],
+   "reason": "Casgevy costs $2 to 3 million and needs a complex hospital procedure, limiting treated patients to a tiny share of eligible ones.",
+   "evidence": [
+    {
+     "url": "https://www.technologyreview.com/2024/01/08/1085101/crispr-gene-editing-sickle-cell-disease-breakthrough-technologies/",
+     "title": "MIT TR: first gene-editing treatment",
+     "shows": "$2-3M cost; hospital stay and complex regimen; no plans for Africa."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2017-002",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "DDoS attacks grew but no terabit attack came in 2017 (next record 1.35 Tbit/s in Feb 2018); the forecast frequency exceeded the ordinary growth path.",
+   "evidence": [
+    {
+     "url": "https://github.blog/news-insights/company-news/ddos-incident-report/",
+     "title": "GitHub DDoS incident report",
+     "shows": "1.35 Tbit/s attack on 2018-02-28."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-163",
+   "primary": "cost",
+   "secondary": [
+    "substitution"
+   ],
+   "reason": "Flash passed HDD in revenue but SSDs still cost four to nine times more per bit, so HDDs keep dominating bulk storage.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hard_disk_drive",
+     "title": "Hard disk drive - Wikipedia",
+     "shows": "SSD cost per bit four to nine times higher; HDD dominates exabytes for servers."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-1999-003",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "Text mining became routine as text analytics about 2005 to 2020, later than the 2 to 5 year plateau; sources name no barrier.",
+   "evidence": [
+    {
+     "url": "https://www.statista.com/statistics/966852/market-research-industry-text-analytics/",
+     "title": "Statista: text analytics in market research",
+     "shows": "Use rose 2014 to 2020."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2011-015",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "LTE rolled out faster than forecast: 49 operators launched by Jan 2012 against a ceiling of 30. The forecast level was off the ordinary path. Low certainty.",
+   "evidence": [
+    {
+     "url": "https://www.rcrwireless.com/20120105/americas/gsa-counts-49-lte-operators-globally-with-4-in-latin-america-caribbean-2",
+     "title": "GSA counts 49 LTE operators",
+     "shows": "49 LTE operators launched by Jan 2012."
+    }
+   ]
+  },
+  {
+   "claim_id": "ark-big-ideas-2019-009",
+   "primary": "cost",
+   "secondary": [],
+   "reason": "Utility-scale storage stayed far above the forecast cost: Lazard 2023 gives unsubsidized LCOS of USD 170 to 296 per MWh against about USD 0.08 per kWh forecast.",
+   "evidence": [
+    {
+     "url": "https://www.energy-storage.news/lazard-ira-brings-lcos-of-100mw-4-hour-standalone-bess-down-as-low-as-us124-mwh/",
+     "title": "Lazard LCOS 2023",
+     "shows": "Unsubsidized USD 170-296/MWh; subsidized from USD 124."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2025-007",
+   "primary": "overreach",
+   "secondary": [
+    "regulation",
+    "market"
+   ],
+   "reason": "Shipments grew 2% against the 7% forecast. Counterpoint names tariff front-loading and inventory, not weak AI appeal. Low certainty.",
+   "evidence": [
+    {
+     "url": "https://counterpointresearch.com/en/insights/global-smartphone-shipments-grew-2-percent-YoY-in-2025",
+     "title": "Counterpoint: 2025 smartphone shipments +2%",
+     "shows": "Tariff front-loading in H1; Q4 held back by inventory."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2002-002",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "The label has no dominant reading and no opened page shows a cause.",
+   "evidence": []
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2002-003",
+   "primary": "complements",
+   "secondary": [
+    "technical",
+    "market"
+   ],
+   "reason": "Mobile data lagged outside Japan: slow pre-GPRS networks, poor early handsets and carrier walled gardens left little content (WAP critique), with UK non-SMS data at 2% of revenue in 2004.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Wireless_Application_Protocol",
+     "title": "Wireless Application Protocol - Wikipedia",
+     "shows": "Slow speeds, small screens, walled gardens, little content incentive."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-089",
+   "primary": "cost",
+   "secondary": [
+    "technical",
+    "market"
+   ],
+   "reason": "Vertical farms need large capital and heavy lighting energy and pay off only for high-value greens; several leaders went bankrupt before profit.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vertical_farming",
+     "title": "Vertical farming - Wikipedia",
+     "shows": "Start-up costs above $100M; LED energy; limited crops; bankruptcies."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2003-001",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "ZigBee spread invisibly in smart meters and chipsets, mainstream about 2018 to 2019, years after the placed date; no source opened names a barrier. Low certainty.",
+   "evidence": [
+    {
+     "url": "https://www.businesswire.com/news/home/20180807005170/en/Analysts-Confirm-Billion-Zigbee-Chipsets-Sold-Igniting/",
+     "title": "Zigbee chipsets sold",
+     "shows": "Half a billion chipsets sold by 2018."
+    }
+   ]
+  },
+  {
+   "claim_id": "mit-tr-10-breakthrough-2024-003",
+   "primary": "cost",
+   "secondary": [
+    "complements",
+    "technical"
+   ],
+   "reason": "Vision Pro launched at $3,499 and critics called the price too high for the mainstream; few apps at launch and heavy weight added.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro",
+     "title": "Apple Vision Pro - Wikipedia",
+     "shows": "Price too high to go mainstream; no Netflix/YouTube app at launch; weight."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2006-017",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "The claim names no measurable outcome and no opened page shows a cause.",
+   "evidence": []
+  }
+ ]
+}

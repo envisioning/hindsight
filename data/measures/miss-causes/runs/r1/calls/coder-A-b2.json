@@ -1,0 +1,528 @@
+{
+ "run": "r1",
+ "batch": "b2",
+ "role": "A",
+ "agent": "agent (model not recorded in the public repo)",
+ "calls": [
+  {
+   "claim_id": "gartner-hype-cycle-2015-016",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "No opened page shows why citizen data science stayed below the forecast level. The Gartner page returned 403.",
+   "evidence": []
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2013-005",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "The forecast was below actual volume, not above it. Graders found no shortfall that a cause explains.",
+   "evidence": []
+  },
+  {
+   "claim_id": "kurzweil-1999-171",
+   "primary": "technical",
+   "secondary": [
+    "complements"
+   ],
+   "reason": "Metasurface optics were hard to make at commercial scale; first product shipped in 2022 (Optica article on manufacturing and average-performance limits).",
+   "evidence": [
+    {
+     "url": "https://www.optica-opn.org/home/industry/2022/june/metasurfaces_come_to_the_market/",
+     "title": "Metasurfaces come to the market",
+     "shows": "Metasurfaces were hard to produce at commercial scale; lab peak performance had to become consistent mass-production performance."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2001-009",
+   "primary": "substitution",
+   "secondary": [
+    "complements",
+    "regulation"
+   ],
+   "reason": "Simpler e-signatures (email, PIN, clickwrap) were legally accepted, so PKI digital signatures were not needed; qualified signatures also need certificate infrastructure.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electronic_signature",
+     "title": "Electronic signature",
+     "shows": "Courts upheld agreements by email, PIN and clickwrap; qualified signatures need qualified trust providers and devices; US has no qualified signature."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-179",
+   "primary": "cost",
+   "secondary": [
+    "technical",
+    "complements"
+   ],
+   "reason": "Intelligent tutoring systems are expensive to develop (about 200-300 development hours per hour of content) and weaker than human tutors at dialogue.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+     "title": "Intelligent tutoring system",
+     "shows": "Expensive to develop and implement; 200-300 development hours per instruction hour; weaker dialogue; adoption needs sponsors and curriculum integration."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2009-001",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "Actual 2009 smart-grid revenue was above $25bn by one estimate, and definitions vary. No shortfall cause applies.",
+   "evidence": []
+  },
+  {
+   "claim_id": "kurzweil-1999-155",
+   "primary": "technical",
+   "secondary": [
+    "acceptance"
+   ],
+   "reason": "Voice assistants misunderstood commands often, so use stayed command-like; Pew reports only 39% of users say they understand most of the time.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2017/12/12/nearly-half-of-americans-use-digital-voice-assistants-mostly-on-their-smartphones/",
+     "title": "Nearly half of Americans use digital voice assistants",
+     "shows": "About 39% say assistants understand commands correctly most of the time; 16% not very often; 27% of non-users cite privacy."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2011-055",
+   "primary": "substitution",
+   "secondary": [
+    "cost",
+    "market"
+   ],
+   "reason": "Cheaper PV took the role of solar electricity; PV was about a third of CSP contract prices by 2015, and financing and subsidies for CSP ended.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Concentrated_solar_power",
+     "title": "Concentrated solar power",
+     "shows": "PV price fall from 2011 undercut CSP; by 2015 PV sold for about a third of CSP prices; Spain halted feed-in tariffs in 2012; capacity peaked 2014."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2004-004",
+   "primary": "overreach",
+   "secondary": [
+    "market"
+   ],
+   "reason": "Device classes stayed separate by design: dedicated e-ink Kindle was sold as a narrow-purpose reader. No source names a barrier to convergence itself.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+     "title": "Amazon Kindle",
+     "shows": "Kindle described as a narrow-purpose reading device, a separate class from multipurpose tablets."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2005-030",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "Claim reads as cumulative (met, 2.4bn) or annual (0.6bn, missed). No opened page shows a cause for the annual shortfall.",
+   "evidence": []
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2008-008",
+   "primary": "cost",
+   "secondary": [
+    "technical",
+    "complements"
+   ],
+   "reason": "Early LED lamps cost about three times conventional lighting, had droop and heat limits, and lacked colour standards until 2008.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/LED_lamp",
+     "title": "LED lamp",
+     "shows": "2008 project cost three times conventional; efficiency droop; heat management; 60 W-equivalent only in 2010; ANSI colour standard 2008."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2008-001",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "Apple grew from about 6% to 10.7-11.6% US share in 2011, near the doubled target. No barrier is named; the target was slightly high.",
+   "evidence": [
+    {
+     "url": "https://www.macrumors.com/2012/01/11/apple-maintains-third-place-ranking-with-11-6-of-u-s-pc-shipments-in-4q-2011/",
+     "title": "Apple maintains third place with 11.6% of US PC shipments",
+     "shows": "IDC 2011 US share 10.73% up from 8.83%; Gartner Q4 11.6%."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-048",
+   "primary": "acceptance",
+   "secondary": [
+    "technical",
+    "cost"
+   ],
+   "reason": "Assistive technology is often abandoned for poor design, comfort and stigma, and needs training and fitting. Employment gaps stayed large.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Assistive_technology",
+     "title": "Assistive technology",
+     "shows": "Often not adopted or abandoned because of design, comfort and ergonomics; training, fitting and acceptance barriers."
+    },
+    {
+     "url": "https://www.bls.gov/news.release/archives/disabl_08252010.htm",
+     "title": "Persons with a disability: labor force characteristics 2009",
+     "shows": "Employment-population ratio 19.2% for disabled vs 64.5% non-disabled."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-120",
+   "primary": "technical",
+   "secondary": [
+    "acceptance"
+   ],
+   "reason": "Grammar and style checkers missed real errors and flagged correct text; a 2007 linguist argued they did more harm than good.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Grammar_checker",
+     "title": "Grammar checker",
+     "shows": "Criticised for missing errors and false flags; Pullum 2007: advice makes prose worse."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-149",
+   "primary": "acceptance",
+   "secondary": [
+    "technical",
+    "complements"
+   ],
+   "reason": "Google Glass drew privacy backlash and venue bans; Google ended retail sales in 2015. Battery, stabilisation and phone-pairing limits also appear.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smart_glasses",
+     "title": "Smart glasses",
+     "shows": "Privacy concerns, venue bans, negative public reaction ended consumer sales Jan 2015; battery life and 60% transcription accuracy limits."
+    }
+   ]
+  },
+  {
+   "claim_id": "ark-big-ideas-2020-004",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "No opened page shows a cause. Omdia page returned 403 and graders disagree on scope.",
+   "evidence": []
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2020-002",
+   "primary": "regulation",
+   "secondary": [
+    "market"
+   ],
+   "reason": "IFR names regulatory frameworks that prevent large-scale deployment of outdoor transport robots in most countries; revenue was $6.7B against $16B.",
+   "evidence": [
+    {
+     "url": "https://ifr.org/ifr-press-releases/news/service-robots-hit-double-digit-growth-worldwide",
+     "title": "Service robots hit double-digit growth worldwide",
+     "shows": "Professional service robots $6.7B in 2020; regulation still prevents large-scale deployment of outdoor transport robots."
+    }
+   ]
+  },
+  {
+   "claim_id": "mit-tr-10-breakthrough-2019-003",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "Mirvie sells only a preeclampsia test; its page gives no reason why preterm-birth prediction stayed research-only.",
+   "evidence": []
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2005-008",
+   "primary": "overreach",
+   "secondary": [],
+   "reason": "AR spread through smartphones (Pokemon Go 2016) about 3-5 years after the placed date. No opened source names a barrier.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go",
+     "title": "Pokemon Go",
+     "shows": "Credited with popularising location-based AR technology."
+    }
+   ]
+  },
+  {
+   "claim_id": "mit-tr-10-breakthrough-2018-009",
+   "primary": "technical",
+   "secondary": [
+    "regulation"
+   ],
+   "reason": "Polygenic scores are weakly predictive (AUC about 0.64 for coronary disease), biased toward European ancestry, and were not standard of care.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Polygenic_score",
+     "title": "Polygenic score",
+     "shows": "Most scores not predictive enough to diagnose; worse in non-European ancestry; not standard of care as of 2021."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2006-003",
+   "primary": "substitution",
+   "secondary": [],
+   "reason": "Young users moved from blogging to status-update microblogging on social networks (Pew 2010); blogging did not peak but others grew faster.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/internet/2010/02/03/social-media-and-young-adults/",
+     "title": "Social media and young adults",
+     "shows": "Teen blogging fell; status-update microblogging on social sites appears to replace blogging."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-strategic-predictions-2018-007",
+   "primary": "regulation",
+   "secondary": [
+    "market"
+   ],
+   "reason": "The ePrivacy Regulation was never adopted. Disputes over data retention, cookie walls and national security exemptions stalled talks.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+     "title": "ePrivacy Regulation",
+     "shows": "Not adopted after the 2018 target; contested points in 2021 negotiations."
+    }
+   ]
+  },
+  {
+   "claim_id": "deloitte-tmt-predictions-2007-027",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "Forecast of flat penetration was wrong in the other direction: penetration rose 3-19 points. No shortfall to explain.",
+   "evidence": []
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2003-024",
+   "primary": "complements",
+   "secondary": [],
+   "reason": "MEMS accelerometer use in phones rose only once smartphone interfaces (rotation, motion games) needed them; one in 11 phones in 2008.",
+   "evidence": [
+    {
+     "url": "https://www.eetimes.com/huge-take-up-seen-for-accelerometers-in-cellphones/",
+     "title": "Huge take-up seen for accelerometers in cellphones",
+     "shows": "Accelerometers play an essential role in smartphone UIs; 1 in 11 phones 2008, 1 in 5 in 2009."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-016",
+   "primary": "technical",
+   "secondary": [
+    "cost",
+    "complements"
+   ],
+   "reason": "Volumetric displays need about 1000x the data bandwidth and 100-1000x the processing of flat displays, and distort off-axis views.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Volumetric_display",
+     "title": "Volumetric display",
+     "shows": "Needs about three orders of magnitude more bandwidth and two to three more compute; occlusion trades off against parallax."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-087",
+   "primary": "complements",
+   "secondary": [
+    "acceptance",
+    "market"
+   ],
+   "reason": "E-book formats split by device, some publishers refused digital sales, and many readers preferred print, so digital share was 3% in 2009.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/E-book",
+     "title": "E-book",
+     "shows": "Device-specific formats split the market; some publishers rejected e-publishing; readers valued printed books; 3% share 2009 per graders."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-065",
+   "primary": "technical",
+   "secondary": [
+    "substitution"
+   ],
+   "reason": "Areal density growth slowed to about 10% a year in 2010-2016 (superparamagnetic limit); HAMR shipped only in 2024. SSDs also took demand.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hard_disk_drive",
+     "title": "Hard disk drive",
+     "shows": "Superparamagnetic trilemma; density gains about 10% per year 2010-2016; HAMR delayed over a decade; NAND outpaced HDD cost."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2004-018",
+   "primary": "substitution",
+   "secondary": [
+    "complements",
+    "market"
+   ],
+   "reason": "LTE took the role: Yota moved to LTE in 2010 and Sprint dropped WiMAX devices in 2012. Few handsets and no uniform spectrum also limited it.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/WiMAX",
+     "title": "WiMAX",
+     "shows": "Operators moved to LTE; few handsets; no uniform global licensed spectrum; Sprint financial circumstances."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-251",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "No opened page shows a cause. The LaMDA page was not opened.",
+   "evidence": []
+  },
+  {
+   "claim_id": "kurzweil-1999-184",
+   "primary": "complements",
+   "secondary": [
+    "cost"
+   ],
+   "reason": "Lower-income homes lacked a computer or broadband: 25% of teens under $30,000 lack a home computer; 17% cannot finish homework.",
+   "evidence": [
+    {
+     "url": "https://www.pewresearch.org/short-reads/2018/10/26/nearly-one-in-five-teens-cant-always-finish-their-homework-because-of-the-digital-divide/",
+     "title": "Nearly one-in-five teens cannot always finish homework",
+     "shows": "Income-linked gaps in home computer and high-speed internet."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-083",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "The NASA page gives operational date (January 2026) but no reason for the delay.",
+   "evidence": []
+  },
+  {
+   "claim_id": "et-2012-030",
+   "primary": "cost",
+   "secondary": [
+    "technical",
+    "regulation"
+   ],
+   "reason": "Seats cost about $20-25M, and the 2014 SpaceShipTwo accident and XCOR failure delayed suborbital flights; liability rules limited operators.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Space_tourism",
+     "title": "Space tourism",
+     "shows": "Tourist seats $20M+; VSS Enterprise broke apart 2014; XCOR bankrupt; FAA licensing and liability limits."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2003-028",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "No opened page shows a cause. The Pew location-services page was not opened.",
+   "evidence": []
+  },
+  {
+   "claim_id": "kurzweil-1999-209",
+   "primary": "cost",
+   "secondary": [
+    "technical"
+   ],
+   "reason": "Full haptic suits stayed too expensive to go mainstream, and available suits had tens of vibration points, not total touch. Evidence is thin.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Haptic_suit",
+     "title": "Haptic suit",
+     "shows": "Teslasuit described as too expensive to go mainstream."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2002-013",
+   "primary": "technical",
+   "secondary": [
+    "acceptance",
+    "substitution"
+   ],
+   "reason": "Real-life recognition accuracy was about 70% in 2012, with accents and noise as problems. Speech use moved to phones.",
+   "evidence": [
+    {
+     "url": "https://www.callcentrehelper.com/contact-centres-hang-up-on-speech-recognition-27512.htm",
+     "title": "Contact centres hang up on speech recognition",
+     "shows": "Users rate accuracy around 70%; accents and noise degrade it; some users uncomfortable."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2011-059",
+   "primary": "acceptance",
+   "secondary": [],
+   "reason": "3D TV died for weak consumer interest and glasses that clashed with second-screen habits; LG said it was not a top buying consideration.",
+   "evidence": [
+    {
+     "url": "https://techcrunch.com/2017/01/25/3d-tvs-are-dead",
+     "title": "3D TVs are dead",
+     "shows": "LG: not a top buying consideration; glasses blocked second-screen use."
+    }
+   ]
+  },
+  {
+   "claim_id": "kurzweil-1999-148",
+   "primary": "unknown",
+   "secondary": [],
+   "reason": "No opened page shows a cause. The Pew wearables page was not opened.",
+   "evidence": []
+  },
+  {
+   "claim_id": "health-2012-041",
+   "primary": "regulation",
+   "secondary": [
+    "technical"
+   ],
+   "reason": "The first fully implantable CGM got FDA approval only in June 2018, for adults, with a 90-day sensor and a post-approval safety study.",
+   "evidence": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/fda-approves-first-continuous-glucose-monitoring-system-with-a-fully-implantable-glucose-sensor-and-compatible-mobile-app-for-adults-with-diabetes-300670465.html",
+     "title": "FDA approves first fully implantable CGM",
+     "shows": "Approved 21 June 2018; adults only; sensor lasts up to 90 days; post-approval study."
+    }
+   ]
+  },
+  {
+   "claim_id": "gartner-hype-cycle-2000-013",
+   "primary": "complements",
+   "secondary": [
+    "substitution"
+   ],
+   "reason": "VRML needed third-party browser plug-ins, which slowed adoption (source tagged citation needed); Flash 3D frameworks competed.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Web3D",
+     "title": "Web3D",
+     "shows": "Plug-in requirement was the main drawback; Flash 3D frameworks competed 2000-2010."
+    }
+   ]
+  },
+  {
+   "claim_id": "et-2012-050",
+   "primary": "technical",
+   "secondary": [
+    "regulation",
+    "cost",
+    "acceptance"
+   ],
+   "reason": "Software and mapping are the primary obstacle; edge cases confine Level 4 service to mapped areas. Liability rules, cost and low public trust add to it.",
+   "evidence": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Self-driving_car",
+     "title": "Self-driving car",
+     "shows": "Software and mapping the primary obstacle; unsettled liability standards; Ford and VW scaled back; 27% would feel safe."
+    }
+   ]
+  }
+ ]
+}
