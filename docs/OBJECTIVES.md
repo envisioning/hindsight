@@ -17,7 +17,7 @@ Accuracy per publication, side by side and never ranked (D6, D17), and how accur
 
 - **State:** hit rates and intervals for every judgment and numeric source; trend persistence (D33); ranking and scenario measures (D31 to D34).
 - **Next:** #87 accuracy by horizon; #88 herding and joint misses.
-- **Why forecasts miss (D63, 2026-11-18):** cause coding of 200 missed or partial technology forecasts, test fixed before coding (`data/measures/miss-causes/`). Feeds MZ's choice of non-technical driver lenses for the research database.
+- **Why forecasts miss (D63, 2026-11-18):** cause coding of 200 missed or partial technology forecasts, test fixed before coding (`data/measures/miss-causes/`). Feeds MZ's choice of non-technical driver lenses for the research database. **Run r1 result:** H1 fails (non-technical primary cause 40% [33%, 48%] of known causes); a non-technical cause is present in 73%; cost, acceptance and complements lead, regulation trails; overreach 32 and substitution 13 of 157.
 
 ## 3. Adaptability: whether institutions update
 

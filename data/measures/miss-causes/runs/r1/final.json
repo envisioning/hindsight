@@ -1,0 +1,4467 @@
+{
+	"run": "r1",
+	"rule": "D63, D64",
+	"n": 200,
+	"scope": {
+		"screen_agreement": {
+			"observed": 0.99,
+			"kappa": 0.936
+		},
+		"in_scope": 184,
+		"above_forecast": 6,
+		"not_technology": 10,
+		"out_split": 0
+	},
+	"status": {
+		"agreed": 132,
+		"adjudicated": 62,
+		"audit_corrected": 6
+	},
+	"agreement": {
+		"family": {
+			"n": 200,
+			"observed": 0.71,
+			"expected": 0.256,
+			"kappa": 0.61
+		},
+		"cause": {
+			"n": 200,
+			"observed": 0.69,
+			"expected": 0.16,
+			"kappa": 0.631
+		}
+	},
+	"audit": {
+		"n": 50,
+		"confirm": 44,
+		"correct_within_family": 0,
+		"correct_family": 6,
+		"family_error_rate": 0.12
+	},
+	"unknown_share": 0.147,
+	"h1": {
+		"k": 63,
+		"n": 157,
+		"share": 0.401,
+		"low": 0.328,
+		"high": 0.479,
+		"verdict": "fails"
+	},
+	"h1_all_claims_kept": {
+		"k": 66,
+		"n": 162,
+		"share": 0.407,
+		"low": 0.335,
+		"high": 0.484
+	},
+	"any_non_technical": {
+		"k": 114,
+		"n": 157,
+		"share": 0.726,
+		"low": 0.652,
+		"high": 0.79
+	},
+	"h1_cost_as_technical": {
+		"k": 44,
+		"n": 157,
+		"share": 0.28,
+		"low": 0.216,
+		"high": 0.355
+	},
+	"technical_vs_non_technical": {
+		"k": 63,
+		"n": 112,
+		"share": 0.563,
+		"low": 0.47,
+		"high": 0.651
+	},
+	"causes": {
+		"technical": {
+			"primary": 49,
+			"any": 89
+		},
+		"cost": {
+			"primary": 19,
+			"any": 57
+		},
+		"regulation": {
+			"primary": 5,
+			"any": 30
+		},
+		"acceptance": {
+			"primary": 17,
+			"any": 47
+		},
+		"complements": {
+			"primary": 14,
+			"any": 39
+		},
+		"market": {
+			"primary": 8,
+			"any": 39
+		},
+		"substitution": {
+			"primary": 13,
+			"any": 35
+		},
+		"overreach": {
+			"primary": 32,
+			"any": 32
+		},
+		"unknown": {
+			"primary": 27,
+			"any": 27
+		}
+	},
+	"by_source": {
+		"accenture-tech-vision": {
+			"n": 1,
+			"known": 1,
+			"non_technical": 0
+		},
+		"ark-big-ideas": {
+			"n": 5,
+			"known": 4,
+			"non_technical": 3
+		},
+		"deloitte-tmt-predictions": {
+			"n": 18,
+			"known": 12,
+			"non_technical": 5
+		},
+		"envisioning-education": {
+			"n": 3,
+			"known": 0,
+			"non_technical": 0
+		},
+		"envisioning-health": {
+			"n": 8,
+			"known": 8,
+			"non_technical": 3
+		},
+		"envisioning-horizons": {
+			"n": 7,
+			"known": 6,
+			"non_technical": 2
+		},
+		"envisioning-technology": {
+			"n": 19,
+			"known": 17,
+			"non_technical": 7
+		},
+		"gartner-hype-cycle": {
+			"n": 42,
+			"known": 35,
+			"non_technical": 16,
+			"interval": {
+				"k": 16,
+				"n": 35,
+				"share": 0.457,
+				"low": 0.305,
+				"high": 0.618
+			}
+		},
+		"gartner-strategic-predictions": {
+			"n": 12,
+			"known": 10,
+			"non_technical": 2
+		},
+		"idc-futurescape": {
+			"n": 1,
+			"known": 1,
+			"non_technical": 0
+		},
+		"kurzweil": {
+			"n": 52,
+			"known": 49,
+			"non_technical": 17,
+			"interval": {
+				"k": 17,
+				"n": 49,
+				"share": 0.347,
+				"low": 0.229,
+				"high": 0.487
+			}
+		},
+		"mit-tr-10-breakthrough": {
+			"n": 16,
+			"known": 14,
+			"non_technical": 8
+		}
+	},
+	"rows": [
+		{
+			"id": "kurzweil-1999-195",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "exoskeletons-for-paraplegics",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"acceptance"
+			],
+			"reason": "Control and intent recognition are called a grand challenge, with bulk, battery and usability limits; A won because the page itself calls high price a misconception, so control weighs more than cost.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Exoskeleton_(human)",
+					"title": "Exoskeleton (human)",
+					"shows": "Control in coordination with the user is still a grand challenge; limited battery life, bulk, complexity, usability, intent recognition; prices span hundreds to hundreds of thousands USD."
+				}
+			]
+		},
+		{
+			"id": "et-2012-029",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"cost",
+				"substitution",
+				"technical"
+			],
+			"reason": "Fuel cell cars lacked hydrogen stations (most California stations could not dispense), hydrogen and cells were costly, and battery EVs took the role.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Hydrogen_vehicle",
+					"title": "Hydrogen vehicle",
+					"shows": "Few working stations; hydrogen $36/kg; platinum cost; share shrinking against battery EVs; 38% efficiency vs 80-95%."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Fuel_cell_vehicle",
+					"title": "Fuel cell vehicle - Wikipedia",
+					"shows": "43 US public stations in 2020; $36/kg hydrogen; Daimler cites battery progress; 3,143 FCEVs vs 380,000 BEVs sold in US 2023."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2011-009",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "digital-video-recorders-and-tv-advertising",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "DVR use rose steadily (32% in 2009, 38% in 2010) on an ordinary path; the 50% level came later than forecast. No barrier is named in the page I opened.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Digital_video_recorder",
+					"title": "Digital video recorder - Wikipedia",
+					"shows": "US DVR households 32% in 2009, 38% in 2010; no adoption barriers named."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2021-002",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "cloud-computing",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Cloud kept growing fast (public cloud +21%, IaaS/PaaS +29% in 2022) but under 30% as the base grew; B won because the technology spread on an ordinary path and no technology barrier is named, only currency headwinds.",
+			"evidence": [
+				{
+					"url": "https://www.srgresearch.com/articles/total-public-cloud-revenues-jumped-21-in-2022-surpassing-500-billion-despite-economic-headwinds",
+					"title": "Total Public Cloud Revenues Jumped 21% in 2022",
+					"shows": "Public cloud revenue up 21% in 2022, IaaS/PaaS up 29%, despite strong US dollar and China headwinds."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-153",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "keyboards-rare",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"technical"
+			],
+			"reason": "Virtual keyboards spread on touch devices but keyboards stayed central; speech is unsuitable in many places because of lack of privacy. Cause weakly shown.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Computer_keyboard",
+					"title": "Computer keyboard - Wikipedia",
+					"shows": "Keyboards remain central to human-computer interaction; voice dictation lacks privacy and is unsuitable for many environments."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2010-011",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "news-paywalls",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The claim forecast inaction; The Times did put up a paywall, but no opened page says why publishers acted. B won because the page shows the event, not a cause of a shortfall.",
+			"evidence": []
+		},
+		{
+			"id": "et-2012-060",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "A 2007 statement in the Metamaterial article names energy loss, 3D isotropic materials and unindustrialised production as conditions for applications; B won because this names a cause, while A opened none.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Metamaterial",
+					"title": "Metamaterial",
+					"shows": "For applications to be realised, energy loss must be reduced, materials extended to 3D isotropic form and production industrialised (2007)."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2005-013",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "electronic-paper",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"technical"
+			],
+			"reason": "E Ink spread in e-readers, labels and signs on an ordinary path. The page names colour limits (4,096 colours, supply issues) but no main barrier to adoption.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/E_Ink",
+					"title": "E Ink - Wikipedia",
+					"shows": "E-readers from 2007 (Vizplex, Pearl); earlier displays had short lifetimes and manufacturing difficulty; no barrier to later adoption named."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-190",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "reading-navigation-systems-used-by-sighted",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Phones with Google Lens took the role of camera-based visual interpretation; the function became mainstream through phones, not eyeglass systems.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Google_Lens",
+					"title": "Google Lens - Wikipedia",
+					"shows": "Lens launched on Pixel 2 and spread through Photos, Assistant and the Android/iOS apps: phone delivery."
+				}
+			]
+		},
+		{
+			"id": "et-2011-014",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"market"
+			],
+			"reason": "Gartner says most gamified applications fail because poor design fails to engage people (points and badges without skilled game design).",
+			"evidence": [
+				{
+					"url": "https://www.cmswire.com/cms/social-business/gartner-gamification-report-80-of-implementations-will-fail-by-2014-from-poor-design-018424.php",
+					"title": "Gartner gamification report: 80% of implementations will fail (CMSWire)",
+					"shows": "Poor design, superficial leaderboards and badges, meaningless rewards fail to motivate users."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2002-015",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "public-key-infrastructure",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"regulation",
+				"cost"
+			],
+			"reason": "The PKI article names insufficient standards, hard deployment and differing laws as reasons progress was slower than pioneers imagined; B won because vendor failure (A's market) is an outcome there, not the cause.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Public_key_infrastructure",
+					"title": "Public key infrastructure",
+					"shows": "Laws differed; technical and operational problems; engineering not easy to deploy; standards insufficient; progress much slower than pioneers imagined; certificates costly for small business."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-113",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "brain-generated-music",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"acceptance"
+			],
+			"reason": "EEG signals are noisy and low resolution, so consumer EEG did not support a popular brainwave music genre; music use stayed experimental (Lucier 1965).",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface",
+					"title": "Brain-computer interface - Wikipedia",
+					"shows": "EEG BCIs have low spatial resolution, motion degrades signal, training takes hours; music use is only Lucier 1965."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2010-009",
+			"scope": "above_forecast",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "online-advertising",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The measured share was near the forecast (16% vs 15%); no page I opened shows a cause for the gap.",
+			"evidence": []
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2017-004",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "quantum-computing",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"complements"
+			],
+			"reason": "Error rates and decoherence block useful machines; error correction needs millions of physical qubits and scaling is hard.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Quantum_computing",
+					"title": "Quantum computing - Wikipedia",
+					"shows": "Decoherence, error correction overhead and scaling are named; fault-tolerant computing out of reach as of 2026."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-055",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "real-time-language-translation",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Real-time spoken translation started as an experimental mode in 2011 limited to English and Spanish, with uneven quality across languages.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Google_Translate",
+					"title": "Google Translate - Wikipedia",
+					"shows": "Statistical era weak grammar; Conversation Mode Jan 2011 English-Spanish; neural MT Nov 2016."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2006-002",
+			"scope": "not_technology",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "asia-pacific-it-service-providers",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The claim's scope is unclear and no page I opened shows a cause. Fujitsu-type firms already sat in the top 20.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-1999-016",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "speech-recognition",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Speech recognition was held back by insufficient training data and computing power until deep learning cut error rates; B won because this page names a cause, while A opened none.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Speech_recognition",
+					"title": "Speech recognition",
+					"shows": "Difficulties combined with insufficient training data and computing power; deep learning decreased error rates by 30%."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-176",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "reading-on-displays-and-direct-eye-displays",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"cost",
+				"substitution",
+				"technical"
+			],
+			"reason": "Smart glasses drew a privacy backlash and bans (casinos, venues), and Glass was withdrawn after a negative public reaction; handhelds took the reading role.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+					"title": "Smart glasses - Wikipedia",
+					"shows": "Privacy and social acceptance concerns, negative reaction ended Glass retail Jan 2015; battery and cost limits."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Google_Glass",
+					"title": "Google Glass - Wikipedia",
+					"shows": "Backlash around price and privacy; $1,500 price; viewed as a failure."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-172",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "pinhead-cameras-everywhere",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "The smallest commercial sensor (OV6948, 0.575 mm) has only 200x200 pixels and serves endoscopes; B won because the resolution limit at pinhead size is a performance barrier, so overreach (no barrier) does not fit. Weak.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/OmniVision_Technologies",
+					"title": "OmniVision Technologies",
+					"shows": "OV6948 0.575 mm sensor, 200x200 pixels, used in disposable endoscopes and catheters."
+				}
+			]
+		},
+		{
+			"id": "edu-2012-026",
+			"scope": "in_scope",
+			"source_id": "envisioning-education",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No page I opened shows a cause. Grader evidence shows device counts only.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-strategic-predictions-2012-002",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "chinese-mobile-handset-vendors",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Chinese vendors reached the top five on smartphone counts in Q4 2014 and on full-year smartphones in 2015, but not on 2014 all-phone counts; B won because this is a one-year lag on an ordinary path with no barrier named.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/List_of_best-selling_mobile_phones",
+					"title": "List of best-selling mobile phones",
+					"shows": "2014 all phones: Samsung, Apple, Microsoft, Lenovo/Motorola, LG; Huawei 6th, Xiaomi 8th; 2015 smartphones: Huawei and Lenovo in top five."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2001-002",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "head-mounted-displays",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"complements",
+				"acceptance"
+			],
+			"reason": "VR needs very low latency; motion sickness, screen-door effect and weak hardware limited early headsets, and platforms were fragmented.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Virtual_reality_headset",
+					"title": "Virtual reality headset - Wikipedia",
+					"shows": "Early headsets failed commercially due to limited technology; latency causes VR sickness; resolution and tracking improved by 2016."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-173",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "autonomous-nanoengineered-machines",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Nanorobotics stays in research: assembly needs very fine tools, and adhesion and friction at nano scale can break parts before they move.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+					"title": "Nanorobotics - Wikipedia",
+					"shows": "Manufacturing nanomachines is challenging; surface adhesion; control and power by external fields."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-205",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "media-consumption-via-wearable-devices",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"cost",
+				"substitution",
+				"technical"
+			],
+			"reason": "Google Glass was pulled in 2015 after a backlash over price and privacy, with venue bans; handheld devices kept the reading role.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Google_Glass",
+					"title": "Google Glass - Wikipedia",
+					"shows": "Backlash around price and privacy; sales halted Jan 2015."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Virtual_reality_headset",
+					"title": "Virtual reality headset - Wikipedia",
+					"shows": "Early headsets limited by technology, latency and VR sickness."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2005-037",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "handwriting-recognition",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"substitution"
+			],
+			"reason": "Handwriting recognition was unreliable for a long time (Newton), and keyboards, including on-screen keyboards, were faster and more reliable.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Handwriting_recognition",
+					"title": "Handwriting recognition - Wikipedia",
+					"shows": "Accuracy still a problem in 2006; Newton unreliable; keyboard input faster and more reliable."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2019-005",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "ai-designer-self-regulation",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "Government-led codes and laws (G7 Hiroshima code, EU AI Act) took the AI oversight role that the forecast gave to a self-regulating designer body; A won because the government route replaced the body rather than blocking it.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Regulation_of_artificial_intelligence",
+					"title": "Regulation of artificial intelligence",
+					"shows": "AI governance in G7 countries runs through governments and intergovernmental codes (Hiroshima Process 2023, EU AI Act), not designer self-regulation."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-079",
+			"scope": "not_technology",
+			"source_id": "kurzweil",
+			"subject_id": "greatest-gains-are-in-the-stock-market",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The pages I opened do not show a cause for the equity result. Evidence shows index levels only.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-186",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "reading-navigation-glasses-for-the-blind",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"market",
+				"substitution",
+				"acceptance"
+			],
+			"reason": "MyEye costs 4,000 to 6,000 USD, which limits use among blind people; the page gives no other cause. Cost is the only cause shown.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/OrCam",
+					"title": "OrCam - Wikipedia",
+					"shows": "MyEye 2.0 retail $4,000 to $6,000; no navigation function."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2003-017",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "tablet-pc",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"substitution"
+			],
+			"reason": "Tablet PCs cost US$2,000 or more and relied heavily on the stylus, which kept them from displacing laptops before the iPad.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Microsoft_Tablet_PC",
+					"title": "Microsoft Tablet PC - Wikipedia",
+					"shows": "Early Tablet PCs cost $2,000 or more; stylus reliance kept them from displacing laptops before the iPad."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2010-017",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "wireless-power",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance",
+				"market",
+				"technical"
+			],
+			"reason": "Omdia names the extra charger cost, low charging efficiency and low valuation by Chinese buyers as limits on wireless charging below USD 600; A won because this page explains the phone-share measure the graders used, while B's range limits do not.",
+			"evidence": [
+				{
+					"url": "https://www.eetasia.com/shipments-of-smartphones-with-wireless-charging-capability-surge/",
+					"title": "Shipments of smartphones with wireless charging capability surge",
+					"shows": "Low charging efficiency, additional charger cost for consumers, low valuation in China; not a priority for OEMs below USD 600."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2010-11-006",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "corporate-applications-on-personal-devices",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"regulation",
+				"cost"
+			],
+			"reason": "The BYOD page names security and data breach risk, legal duties (HIPAA, reimbursement), privacy resistance to MDM and cost as limits for organisations.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Bring_your_own_device",
+					"title": "Bring your own device - Wikipedia",
+					"shows": "Barriers: security, device control, privacy resistance, HIPAA and court reimbursement issues."
+				}
+			]
+		},
+		{
+			"id": "health-2012-011",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "regulation",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance"
+			],
+			"reason": "Heritable embryo editing is banned: He Jiankui was jailed for 3 years in 2019, and Chinese law bars reproductive embryo editing; WHO calls for a ban.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/He_Jiankui_affair",
+					"title": "He Jiankui affair - Wikipedia",
+					"shows": "He convicted Dec 2019; Chinese criminal law bans gene editing of embryos; WHO committee says heritable editing should be banned."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2015-009",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "smart-agents-and-the-post-app-era",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"market"
+			],
+			"reason": "App stores kept growing to 1.8 million apps and 155 billion USD developer revenue by 2020. No page I opened names a barrier to agents.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/App_Store_(Apple)",
+					"title": "App Store (Apple) - Wikipedia",
+					"shows": "Developer revenue $70bn (2017) to $155bn (2020); app count 1.8M in 2020; Apple platform control."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2009-008",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "surface-computers",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"substitution",
+				"market"
+			],
+			"reason": "Surface 1.0 cost 10,000 USD and the SUR40 8,400 USD, sold to commercial customers; sales ended in 2011 and 2013. Price is the only cause shown.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Microsoft_PixelSense",
+					"title": "Microsoft PixelSense - Wikipedia",
+					"shows": "Surface 1.0 from $10,000, SUR40 $8,400; sales ended 2011; SUR40 discontinued 2013."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2002-001",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "enterprise-mobile-applications",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No page I opened shows a cause. Grader evidence shows subscriber counts and mobile data revenue only.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-228",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "machine-monitoring-of-public-spaces",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "regulation",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance"
+			],
+			"reason": "Outside China, EU law bans real-time remote biometric identification in public spaces for law enforcement, with narrow exceptions, which limits AI public monitoring.",
+			"evidence": [
+				{
+					"url": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-restricting-real-time-remote-biometric-identification-systems-for-law-enforcement-purposes/",
+					"title": "Red lines under the EU AI Act: real-time remote biometric identification",
+					"shows": "EU AI Act Art. 5(1)(h) generally prohibits real-time RBI in public spaces for law enforcement; three narrow exceptions."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Facial_recognition_system",
+					"title": "Facial recognition system - Wikipedia",
+					"shows": "Bans in several US cities; UK Court of Appeal 2020 ruled police use violated human rights; privacy objections."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Mass_surveillance_in_China",
+					"title": "Mass surveillance in China - Wikipedia",
+					"shows": "Skynet about 200M cameras by 2019; Sharp Eyes aimed at all public space by 2020."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-004",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "small-but-high-resolution-interfaces",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"substitution"
+			],
+			"reason": "Wearables face battery, heat and display limits, and price; tiny ring or card computers with high-resolution displays were not products. Weakly shown.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Wearable_computer",
+					"title": "Wearable computer",
+					"shows": "Batteries and heat dissipation are issues; displays can be massive; price is one of the biggest challenges."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Smartwatch",
+					"title": "Smartwatch - Wikipedia",
+					"shows": "Poor battery life, 90x126 pixel screens, 108 g weight, subscription fees; components later became small and cheap."
+				}
+			]
+		},
+		{
+			"id": "health-2012-033",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "Non-invasive devices do not directly test blood glucose, so accuracy is unproven; FDA has authorised none and warns of dosing errors.",
+			"evidence": [
+				{
+					"url": "https://www.fda.gov/medical-devices/safety-communications/do-not-use-smartwatches-or-smart-rings-measure-blood-glucose-levels-fda-safety-communication",
+					"title": "FDA safety communication: do not use smartwatches or rings to measure blood glucose",
+					"shows": "No non-invasive glucose device authorised; readings may be inaccurate."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-117",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "writing-with-voice-recognition",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"technical"
+			],
+			"reason": "The keyboard article says speech is starting to replace keyboards for writing but lack of privacy makes dictation unsuitable for many environments; A won because writers' non-use persisted after accuracy improved. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Computer_keyboard",
+					"title": "Computer keyboard",
+					"shows": "Speech recognition starting to replace the keyboard for some uses incl. writing; lack of privacy makes dictation unsuitable for many environments."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2009-021",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "internet-radio",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No page I opened gives 2009 data or a cause for Internet radio device use.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2015-016",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "citizen-data-science",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened page shows why citizen data science stayed below the forecast level. The Gartner page returned 403.",
+			"evidence": []
+		},
+		{
+			"id": "deloitte-tmt-predictions-2013-005",
+			"scope": "above_forecast",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "crowdfunding",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Crowdfunding raised more than Deloitte forecast (2.66bn already in 2012), so there is no shortfall to explain; A won because overreach means a forecast set beyond the path, not below it.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-171",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "quantum-diffraction-optical-imaging",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"complements",
+				"cost"
+			],
+			"reason": "Metasurface optics were hard to make at commercial scale; first product shipped in 2022 (Optica article on manufacturing and average-performance limits).",
+			"evidence": [
+				{
+					"url": "https://www.optica-opn.org/home/industry/2022/june/metasurfaces_come_to_the_market/",
+					"title": "Metasurfaces come to the market",
+					"shows": "Lab work targets best devices; commercial production needs millions of consistent devices; new design tools and fabrication approach were needed"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2001-009",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "digital-signatures",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"complements",
+				"regulation"
+			],
+			"reason": "Courts accepted simple e-signatures (email, PIN, clickwrap), so PKI-based digital signatures were not needed for most uses; A won because B's varying definitions do not show why uptake was slow. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Electronic_signature",
+					"title": "Electronic signature",
+					"shows": "Courts upheld agreements by email, PIN and clickwrap; qualified signatures need trust-provider certificates and devices."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-179",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "simulated-teachers",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"complements",
+				"acceptance"
+			],
+			"reason": "Intelligent tutoring systems are expensive to develop (about 200-300 development hours per hour of content) and weaker than human tutors at dialogue.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+					"title": "Intelligent tutoring system",
+					"shows": "Expensive to develop and implement; 200:1 development ratio; not in general commercially feasible; sponsors must integrate"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2009-001",
+			"scope": "above_forecast",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "smart-grid",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The 2009 smart grid market was estimated well above Deloitte's 25bn, with definitions varying; A won because overreach means a forecast set beyond the path, not below it.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-155",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "human-like-computer-interaction",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"acceptance"
+			],
+			"reason": "Pew shows only 39% of users say voice assistants respond accurately most of the time, so use stayed command-like; A won because it opened a page that shows this cause, B opened none.",
+			"evidence": [
+				{
+					"url": "https://www.pewresearch.org/short-reads/2017/12/12/nearly-half-of-americans-use-digital-voice-assistants-mostly-on-their-smartphones/",
+					"title": "Nearly half of Americans use digital voice assistants",
+					"shows": "39% say assistants respond accurately most of the time, 42% some of the time; 27% of non-users cite privacy."
+				}
+			]
+		},
+		{
+			"id": "et-2011-055",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"cost",
+				"market",
+				"technical",
+				"regulation"
+			],
+			"reason": "Cheaper PV took the role of solar electricity; PV was about a third of CSP contract prices by 2015, and financing and subsidies for CSP ended.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Concentrated_solar_power",
+					"title": "Concentrated solar power",
+					"shows": "Growth slow due to technical difficulties and high prices; PV price drop; 5x costlier than PV in 2020; Spain stopped feed-in tariffs 2012"
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2004-004",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "device-convergence",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"market"
+			],
+			"reason": "Device classes stayed separate by design: dedicated e-ink Kindle was sold as a narrow-purpose reader. No source names a barrier to convergence itself.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+					"title": "Amazon Kindle",
+					"shows": "First Kindle Nov 2007 a narrow-purpose e-reader"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2005-030",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "rfid",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Claim reads as cumulative (met, 2.4bn) or annual (0.6bn, missed). No opened page shows a cause for the annual shortfall.",
+			"evidence": []
+		},
+		{
+			"id": "deloitte-tmt-predictions-2008-008",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "led-lighting",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"complements"
+			],
+			"reason": "Early LED lamps cost about three times conventional lighting, had droop and heat limits, and lacked colour standards until 2008.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/LED_lamp",
+					"title": "LED lamp",
+					"shows": "Purchase prices higher than most lamps; efficiency droop; thermal management and drivers add cost"
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2008-001",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "apple-computer-market-share",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Apple grew from about 6% to 10.7-11.6% US share in 2011, near the doubled target. No barrier is named; the target was slightly high.",
+			"evidence": [
+				{
+					"url": "https://www.macrumors.com/2012/01/11/apple-maintains-third-place-ranking-with-11-6-of-u-s-pc-shipments-in-4q-2011/",
+					"title": "Apple 11.6% of US PC shipments 4Q 2011",
+					"shows": "IDC full-year 2011 10.73%, up from 8.83%; no reasons given"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-048",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "disabled-people-fast-overcoming-handicaps",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"cost"
+			],
+			"reason": "Assistive technology is often not adopted or abandoned for design, comfort and stigma reasons; A won because a barrier is named, which rules out overreach.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Assistive_technology",
+					"title": "Assistive technology",
+					"shows": "Often not adopted or abandoned because of design or comfort; stigma linked to device visibility; training and fitting matter."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-120",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "software-assisted-writing",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"acceptance",
+				"market"
+			],
+			"reason": "Grammar and style checkers missed real errors and flagged correct text; a 2007 linguist argued they did more harm than good.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Grammar_checker",
+					"title": "Grammar checker",
+					"shows": "Checkers miss errors and flag correct text; Pullum 2007; grammar checking in Word 1992 brought mainstream use"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-149",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "3d-direct-eye-displays-in-glasses-and-contacts",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"complements",
+				"cost"
+			],
+			"reason": "Google Glass drew privacy backlash and venue bans; Google ended retail sales in 2015. Battery, stabilisation and phone-pairing limits also appear.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Smart_glasses",
+					"title": "Smart glasses",
+					"shows": "Negative public reaction, privacy worries, business bans; consumer sales ended Jan 2015"
+				}
+			]
+		},
+		{
+			"id": "ark-big-ideas-2020-004",
+			"scope": "in_scope",
+			"source_id": "ark-big-ideas",
+			"subject_id": "streaming",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened page shows a cause. Omdia page returned 403 and graders disagree on scope.",
+			"evidence": []
+		},
+		{
+			"id": "deloitte-tmt-predictions-2020-002",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "professional-service-robots",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "Professional service robots grew to USD 6.7bn in 2020, 2.4x below 16bn; B won because IFR names regulation only for one sub-segment, outdoor transport robots, not for the market level.",
+			"evidence": [
+				{
+					"url": "https://ifr.org/ifr-press-releases/news/service-robots-hit-double-digit-growth-worldwide",
+					"title": "Service robots hit double-digit growth worldwide",
+					"shows": "Professional service robot turnover USD 6.7bn, up 12%; regulatory frameworks still prevent large-scale outdoor transport robots."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2019-003",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "predicting-preemies",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Mirvie sells only a preeclampsia test; its page gives no reason why preterm-birth prediction stayed research-only.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2005-008",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "augmented-reality",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"technical"
+			],
+			"reason": "AR reached mass use through smartphones (Pokemon Go 2016) a few years after the placed date; A won because B's headset optics limits do not explain the phone path the graders measured.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go",
+					"title": "Pokemon Go",
+					"shows": "2016 augmented reality mobile game for iOS and Android."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2018-009",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "genetic-fortune-telling",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"regulation",
+				"acceptance"
+			],
+			"reason": "Polygenic scores are weakly predictive (AUC about 0.64 for coronary disease), biased toward European ancestry, and were not standard of care.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Polygenic_score",
+					"title": "Polygenic score",
+					"shows": "AUC about 0.63-0.71; poorer performance for non-European ancestry; not standard of care Jan 2021"
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2006-003",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "blogging",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Adult blogging stayed steady and contributors kept growing, so the forecast peak was too early, not too high; a third call won because neither substitution (it would support a peak) nor overreach (a level beyond the path) explains a missed decline.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-strategic-predictions-2018-007",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "eprivacy-regulation-and-cookies",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "regulation",
+			"family": "non_technical",
+			"secondary": [
+				"market"
+			],
+			"reason": "The ePrivacy Regulation was never adopted. Disputes over data retention, cookie walls and national security exemptions stalled talks.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+					"title": "ePrivacy Regulation",
+					"shows": "Not adopted; scope under discussion; disputes over cookie walls, data retention, national security exemptions"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2007-027",
+			"scope": "above_forecast",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "internet-penetration",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Forecast of flat penetration was wrong in the other direction: penetration rose 3-19 points. No shortfall to explain.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2003-024",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "microelectromechanical-systems",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [],
+			"reason": "iSuppli ties accelerometer uptake in phones to smartphones such as iPhone and Pre, whose user interfaces need them; A won because the source names the missing ecosystem, while B opened nothing.",
+			"evidence": [
+				{
+					"url": "https://www.eetimes.com/huge-take-up-seen-for-accelerometers-in-cellphones/",
+					"title": "Huge take-up seen for accelerometers in cellphones",
+					"shows": "Uptake spurred by smartphones where sensors play an essential role in user interfaces; 1 in 11 phones in 2008, 1 in 5 in 2009."
+				}
+			]
+		},
+		{
+			"id": "et-2012-016",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"complements"
+			],
+			"reason": "Volumetric displays need about 1000x the data bandwidth and 100-1000x the processing of flat displays, and distort off-axis views.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Volumetric_display",
+					"title": "Volumetric display",
+					"shows": "About 135 GB/s needed; 2-3 orders more compute than 2D; occlusion vs parallax trade-off"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-087",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "new-models-for-distributing-media",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance",
+				"market"
+			],
+			"reason": "E-book formats split by device, some publishers refused digital sales, and many readers preferred print, so digital share was 3% in 2009.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/E-book",
+					"title": "E-book",
+					"shows": "DRM restrictions, format fragmentation, publisher resistance; 3% in 2009, 8.5% mid-2010"
+				}
+			]
+		},
+		{
+			"id": "et-2012-065",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"substitution"
+			],
+			"reason": "Areal density growth slowed to about 10% a year in 2010-2016 because of the superparamagnetic trilemma, and HAMR was hard to bring in; A won because the HDD article names this cause, B opened none.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Hard_disk_drive",
+					"title": "Hard disk drive",
+					"shows": "Superparamagnetic trilemma since mid-2000s; areal density growth slowed to 10% per year 2010-2016; price decline slowed to -12% a year."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2004-018",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "802-16-2004-wimax",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"complements",
+				"market"
+			],
+			"reason": "LTE took the role: Yota moved to LTE in 2010 and Sprint dropped WiMAX devices in 2012. Few handsets and no uniform spectrum also limited it.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/WiMAX",
+					"title": "WiMAX",
+					"shows": "Yota moved to LTE 2010; Sprint dropped WiMAX devices 2012; limited devices; no uniform spectrum"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-251",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "machine-subjective-experience-discussed",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Wide serious discussion of machine sentience came with the June 2022 LaMDA episode, three years late; B won because it opened the page and no barrier is named.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/LaMDA",
+					"title": "LaMDA",
+					"shows": "June 2022 Lemoine sentience claim drew widespread attention and debate."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-184",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "computation-everywhere-for-students",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"complements"
+			],
+			"reason": "Pew ties the homework gap to income: lower-income households lack home computers and broadband far more often; B won because the gap follows income (affordability), not missing infrastructure.",
+			"evidence": [
+				{
+					"url": "https://www.pewresearch.org/short-reads/2018/10/26/nearly-one-in-five-teens-cant-always-finish-their-homework-because-of-the-digital-divide/",
+					"title": "Nearly one-in-five teens can't always finish their homework because of the digital divide",
+					"shows": "17% of teens at least sometimes cannot finish homework for lack of computer or internet; gaps sharpest in households under USD 30,000."
+				}
+			]
+		},
+		{
+			"id": "et-2012-083",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The NASA page gives operational date (January 2026) but no reason for the delay.",
+			"evidence": []
+		},
+		{
+			"id": "et-2012-030",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"regulation"
+			],
+			"reason": "Seats cost about $20-25M, and the 2014 SpaceShipTwo accident and XCOR failure delayed suborbital flights; liability rules limited operators.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Space_tourism",
+					"title": "Space tourism",
+					"shows": "Seat prices 20-25m orbital, 250k suborbital; FAA licences; liability gaps; 2014 Enterprise breakup"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2003-028",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "location-aware-services",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "Operator LBS stayed small and mass use came with GPS smartphones (35% of US adults in 2011); a third call won because CAN-SPAM was one challenge for carrier services, while the missing device base weighs more. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Location-based_service",
+					"title": "Location-based service",
+					"shows": "Newer phones carry A-GPS; CAN-SPAM 2003 added a challenge for carrier-centric LBS."
+				},
+				{
+					"url": "https://www.pewresearch.org/internet/fact-sheet/mobile/",
+					"title": "Mobile fact sheet",
+					"shows": "Smartphone ownership 35% of US adults in 2011, 91% now."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-209",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "haptic-vr-for-medicine-and-sex",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "Consumer haptic suits had tens of vibration points, far from total touch; B won because the fidelity gap means it did not work at any price, while 'too expensive' refers to one suit only.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Haptic_suit",
+					"title": "Haptic suit",
+					"shows": "bHaptics vest with 40 haptic points; Teslasuit too expensive to go mainstream."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2002-013",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "speech-recognition-on-desktops",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"acceptance",
+				"substitution"
+			],
+			"reason": "Real-life recognition accuracy was about 70% in 2012, with accents and noise as problems. Speech use moved to phones.",
+			"evidence": [
+				{
+					"url": "https://www.callcentrehelper.com/contact-centres-hang-up-on-speech-recognition-27512.htm",
+					"title": "Contact centres hang up on speech recognition",
+					"shows": "Users rate accuracy around 70%; accents and noise degrade it; some users uncomfortable."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Speech_recognition",
+					"title": "Speech recognition",
+					"shows": "Per-voice training required; error rates 3%/7%/45% by vocabulary size; ASR not seen expected increases in document production"
+				}
+			]
+		},
+		{
+			"id": "et-2011-059",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"substitution",
+				"cost"
+			],
+			"reason": "3D TV died for weak consumer interest and glasses that clashed with second-screen habits; LG said it was not a top buying consideration.",
+			"evidence": [
+				{
+					"url": "https://techcrunch.com/2017/01/25/3d-tvs-are-dead",
+					"title": "3D TVs are dead",
+					"shows": "LG: 3D not a top buying consideration; little use; shift to 4K/HDR; glasses conflict with phones"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-148",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "invisible-embedded-computers",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Wearables reached 21% of US adults by 2019 while computers in walls, furniture and clothing stayed rare; B won because embedded computing spread and no opened page names a barrier.",
+			"evidence": [
+				{
+					"url": "https://www.pewresearch.org/short-reads/2020/01/09/about-one-in-five-americans-use-a-smart-watch-or-fitness-tracker/",
+					"title": "About one-in-five Americans use a smart watch or fitness tracker",
+					"shows": "21% of US adults regularly wear a smartwatch or fitness tracker (2019)."
+				}
+			]
+		},
+		{
+			"id": "health-2012-041",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"regulation",
+				"acceptance"
+			],
+			"reason": "The first fully implantable CGM lasts only 90 days and carries insertion and removal risks; B won because approval in 2018 fell before the 2020 target, so device limits explain the niche use more than regulation.",
+			"evidence": [
+				{
+					"url": "https://www.prnewswire.com/news-releases/fda-approves-first-continuous-glucose-monitoring-system-with-a-fully-implantable-glucose-sensor-and-compatible-mobile-app-for-adults-with-diabetes-300670465.html",
+					"title": "FDA approves first CGM with fully implantable sensor",
+					"shows": "Sensor lasts up to 90 days; adverse effects of insertion and removal incl. infection and sensor fracture; post-approval study."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2000-013",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "3d-web",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"substitution"
+			],
+			"reason": "VRML needed third-party browser plug-ins, which slowed adoption (source tagged citation needed); Flash 3D frameworks competed.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Web3D",
+					"title": "Web3D",
+					"shows": "Plug-in requirement slowed adoption of VRML; Flash widely installed 2000-2010"
+				}
+			]
+		},
+		{
+			"id": "et-2012-050",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"regulation",
+				"cost",
+				"acceptance"
+			],
+			"reason": "Software and mapping are the primary obstacle; edge cases confine Level 4 service to mapped areas. Liability rules, cost and low public trust add to it.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Self-driving_car",
+					"title": "Self-driving car",
+					"shows": "Technical limits and edge cases; no liability standard; cost; trust drops after failures"
+				}
+			]
+		},
+		{
+			"id": "hz-2014-036",
+			"scope": "in_scope",
+			"source_id": "envisioning-horizons",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Designing whole food organisms from scratch is not yet possible: synthetic biology can build genomes and edit cells, but entire organisms have not been created from scratch.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Synthetic_biology",
+					"title": "Synthetic biology - Wikipedia",
+					"shows": "Entire organisms have yet to be created from scratch, although living cells can be transformed with new DNA."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Synthetic_genomics",
+					"title": "Synthetic genomics",
+					"shows": "Largest synthetic genomes are bacterial (~600 kb); errors rise with length; computer-designed changes disrupted unknown regulation; field is nascent."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2021-006",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "green-hydrogen",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"complements",
+				"regulation",
+				"market"
+			],
+			"reason": "Green hydrogen stayed about three times the cost of gas-derived hydrogen. IEA says uptake is held back by high costs, uncertain demand, regulation and slow infrastructure.",
+			"evidence": [
+				{
+					"url": "https://www.iea.org/reports/global-hydrogen-review-2025/executive-summary",
+					"title": "IEA Global Hydrogen Review 2025, executive summary",
+					"shows": "Low-emissions hydrogen costs more than fossil hydrogen, a key barrier; demand policy slow; regulation and infrastructure slow; projects cancelled."
+				},
+				{
+					"url": "https://www.technologyreview.com/2021/02/24/1017822/green-hydrogen-clean-energy/",
+					"title": "Green hydrogen (MIT Technology Review, 2021)",
+					"shows": "Green hydrogen is about three times more expensive to produce than gas-derived hydrogen; $4 trillion infrastructure needed."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2009-010",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "mobile-apps",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "App downloads grew fast (3bn cumulative at Jan 2010 after 18 months) but far under 10bn in 2009. No source names a barrier; the forecast level was set above an ordinary adoption path.",
+			"evidence": [
+				{
+					"url": "https://www.apple.com/newsroom/2010/01/05Apples-App-Store-Downloads-Top-Three-Billion/",
+					"title": "Apple App Store downloads top three billion",
+					"shows": "3bn cumulative downloads on 5 Jan 2010, the largest store."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2020-003",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "neuromorphic-computing-digital-wall",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"technical"
+			],
+			"reason": "Conventional silicon scaling (TSMC 2 nm volume production Q4 2025) and CPU/GPU exascale systems kept meeting demand, so no shift to neuromorphic was forced; A won because a rival path took the role.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/2_nm_process",
+					"title": "2 nm process",
+					"shows": "TSMC entered 2 nm volume production in Q4 2025 as planned."
+				},
+				{
+					"url": "https://www.top500.org/lists/top500/2025/06/",
+					"title": "TOP500 June 2025",
+					"shows": "El Capitan, Frontier and Aurora, conventional exascale systems, lead the list."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2001-012",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "b2b-e-markets",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [
+				"substitution",
+				"acceptance"
+			],
+			"reason": "The industry-consortium B2B exchange model failed as a business: Covisint, the flagship exchange, was bought by Compuware in 2004 and moved to enterprise software. Supplier networks and marketplaces met the need later.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Covisint",
+					"title": "Covisint",
+					"shows": "Founded 2000 by GM, Ford, DaimlerChrysler as one supplier exchange; bought by Compuware 2004; later sold to OpenText."
+				}
+			]
+		},
+		{
+			"id": "et-2012-054",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened source states why narrative generation stayed niche in games to 2025. Sources show the shortfall (genAI use is mostly non-narrative; LLM narrative is research) but no cause.",
+			"evidence": []
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2025-004",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "cattle-burping-remedies",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "Danish farmers reported falling milk yields and animal health problems after the 2025 Bovaer mandate; opt-outs followed. Farm-level distrust, not availability, limits use.",
+			"evidence": [
+				{
+					"url": "https://undark.org/2026/01/05/denmark-cows-bovaer/",
+					"title": "Undark: Denmark cows Bovaer",
+					"shows": "434 of 644 farms reported lower yield; farmer distrust; UK social-media controversy; Danish mandate with opt-outs."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2022-005",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "malaria-vaccine",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [
+				"cost",
+				"regulation",
+				"complements"
+			],
+			"reason": "WHO says vaccine supply is enough, but most countries run the vaccine below target scale because funding is limited. Wider rollout waited on WHO pilots and donor financing.",
+			"evidence": [
+				{
+					"url": "https://www.who.int/news-room/questions-and-answers/item/q-a-on-rts-s-malaria-vaccine",
+					"title": "WHO Q&A on RTS,S malaria vaccine",
+					"shows": "Most countries implement below national target scale due to limited funding; supply sufficient; price as low as US$0.20 per dose."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2003-016",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "multimedia-messaging-mms",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"cost"
+			],
+			"reason": "UK users did not take up MMS despite capable handsets: 80% had never used it and 17% only did not know how. A cited analyst names low picture quality of phone cameras.",
+			"evidence": [
+				{
+					"url": "https://www.theregister.com/on-prem/2004/05/12/brits-avoid-mms-in-droves/863516",
+					"title": "Brits avoid MMS in droves",
+					"shows": "80% never used MMS; 'just not interested'; 55% had MMS phones; image quality below entry cameras."
+				}
+			]
+		},
+		{
+			"id": "health-2012-026",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "The first FDA-cleared AR navigation system reached 10,000 patients by April 2025; B won because use grew on an ordinary path and the page names no barrier.",
+			"evidence": [
+				{
+					"url": "https://augmedics.com/news/augmedics-completes-ten-thousandth-ar-surgery-xvision-spine-system/",
+					"title": "Augmedics completes ten-thousandth AR surgery",
+					"shows": "10,000 patients treated by April 2025 with first FDA-cleared AR navigation system; no barriers named."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2006-007",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "interactive-whiteboards",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"acceptance",
+				"substitution"
+			],
+			"reason": "UK schools came near full coverage, but 'every classroom in developed countries by 2010' set a level above an ordinary adoption path. Academics also questioned the learning value of whiteboards.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Interactive_whiteboard",
+					"title": "Interactive whiteboard",
+					"shows": "Mixed benefit evidence; only ~10% of teachers used boards transformatively; LCD displays replace projectors in some settings."
+				}
+			]
+		},
+		{
+			"id": "hz-2014-061",
+			"scope": "in_scope",
+			"source_id": "envisioning-horizons",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical"
+			],
+			"reason": "Power-to-gas works but round-trip efficiency was well below 50% and electrolysers carry high investment cost, leaving pilots only; B won because the technology runs and the barrier is its economics.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Power-to-gas",
+					"title": "Power-to-gas",
+					"shows": "Round-trip efficiency well below 50% (2013); high investment and capital costs for electrolysers; plants at demonstration scale."
+				}
+			]
+		},
+		{
+			"id": "et-2012-070",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "Piezoelectric floors and roads yield very little energy per step: one calculation gives 0.02% of a person's energy needs from four hours of walking on tiles. Use stays symbolic.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Pavegen",
+					"title": "Pavegen",
+					"shows": "Each pedestrian yields enough for an LED lamp for 30 s; study: 0.5% of building energy from busiest 3.1% of floor."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-214",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "agents-exchange-structured-knowledge",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened source shows why personal assistants do not trade knowledge structures with each other. Virtual-assistant sources show no such layer but name no cause.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-157",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "custom-assistant-personalities",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Replika (2017) and Character.ai (public beta Sept 2022) delivered user-built persona assistants about three years late; A won because it opened sources and no barrier is named.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Replika",
+					"title": "Replika",
+					"shows": "Released Nov 2017; origin in a chatbot built from a friend's messages."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Character.ai",
+					"title": "Character.ai",
+					"shows": "Public beta 16 Sept 2022; characters based on celebrities and others."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2006-006",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "offline-ajax",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"complements"
+			],
+			"reason": "Google Gears was dropped in favour of standardised HTML5 methods, which carried offline web apps instead. The standard, not the Ajax add-on, met the need.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Gears_(software)",
+					"title": "Gears (software) - Wikipedia",
+					"shows": "Gears was discontinued in favor of the standardized HTML5 methods that eventually became prevalent."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Google_Gears",
+					"title": "Gears (software)",
+					"shows": "Gears development stopped Feb 2010 to bring capabilities into HTML5; removed from Chrome 2011."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-042",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "synthetic-voices-sound-fully-human",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "2009 concatenative speech synthesis was recognisably machine-made. Even WaveNet in 2016 was less convincing than human speech; broadly natural voices needed neural TTS.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/WaveNet",
+					"title": "WaveNet",
+					"shows": "Pre-2016 TTS sounds unnatural; WaveNet still less convincing than human speech in 2016."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-211",
+			"scope": "not_technology",
+			"source_id": "kurzweil",
+			"subject_id": "continued-economic-expansion",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [],
+			"reason": "The 2007-2009 Great Recession, a financial and housing crisis, broke the continuous expansion the book forecast. Low confidence: a macro shock fits no technology cause well.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Great_Recession",
+					"title": "Great Recession",
+					"shows": "Late 2007 to mid-2009 contraction caused by financial system weakness and the US housing bubble bursting."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2021-004",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "lithium-metal-batteries",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"complements",
+				"cost"
+			],
+			"reason": "QuantumScape, the lead player, has samples and prototypes but no commercial product in production vehicles. Lithium-metal cells were not yet producible at automotive scale.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/QuantumScape",
+					"title": "QuantumScape - Wikipedia",
+					"shows": "Company has no commercial product or revenue; B-sample cell in Oct 2024; volume-production deal with VW PowerCo July 2024."
+				},
+				{
+					"url": "https://www.sec.gov/Archives/edgar/data/1811414/000095017025097898/qs-ex99_1.htm",
+					"title": "QuantumScape Q2 2025 shareholder letter",
+					"shows": "Cobra separator process baselined; B1 samples next; field testing targeted 2026; focus on reliability and process stability."
+				}
+			]
+		},
+		{
+			"id": "accenture-tech-vision-2017-018",
+			"scope": "in_scope",
+			"source_id": "accenture-tech-vision",
+			"subject_id": "human-centered-and-behavioral-design",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Emotion coaching (Cogito at MetLife) spread by 2018-19 with cues about customer emotion and tone; B won because the narrower form spread and no barrier is named.",
+			"evidence": [
+				{
+					"url": "https://emerj.com/artificial-intelligence-at-metlife/",
+					"title": "Artificial intelligence at MetLife",
+					"shows": "Agents get tools that analyse customer emotion and tone; no limits stated."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-023",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "virtual-parallel-supercomputers",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Folding@home reached 5 native petaFLOPS in Feb 2009, above any supercomputer, against a 20 PF claim; A won because the user decline B cites dates to 2020, not 2009.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Folding@home",
+					"title": "Folding@home",
+					"shows": "1 PF Sept 2007, 5 PF 18 Feb 2009; users down to 30,000 only by Jan 2020."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-200",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "telepresence-realism",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "Co-presence needs a light-field booth with depth sensors that existed only as a 2021 demo; A won because in 2019 the technology did not exist at any price, so cost cannot be primary.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Google_Beam",
+					"title": "Google Beam",
+					"shows": "Booth with light-field display and depth sensors; first commercial version HP Dimension 2025 at USD 24,999."
+				}
+			]
+		},
+		{
+			"id": "ark-big-ideas-2018-010",
+			"scope": "in_scope",
+			"source_id": "ark-big-ideas",
+			"subject_id": "gene-editing",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [
+				"technical"
+			],
+			"reason": "Costs plunged while vendors competed, then plateaued at USD 500-600 under Illumina dominance (>90%), and new competitors in 2022 pushed toward USD 100; B won because the sources tie the plateau to slowed competition.",
+			"evidence": [
+				{
+					"url": "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2023.02.002",
+					"title": "Engineering: sequencing costs",
+					"shows": "Fierce competition drove costs to about USD 1000 by 2015; Illumina share over 90%; plateau at USD 500-600; new competitors 2022."
+				},
+				{
+					"url": "https://www.genengnews.com/insights/sequencing-within-reach/",
+					"title": "Sequencing within reach",
+					"shows": "Cost decline plateaued; competition has also slowed."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2020-004",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "anti-aging-drugs",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "No senolytic drug is approved. Candidates remain in preliminary research and early-stage human trials, so efficacy and safety are not yet shown.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Senolytic",
+					"title": "Senolytic",
+					"shows": "Under preliminary research; early-stage human trials; no approvals."
+				},
+				{
+					"url": "https://lifespan.io/news/a-review-of-clinical-trials-of-senolytics/",
+					"title": "A Review of Clinical Trials of Senolytics",
+					"shows": "Most evidence from mice; navitoclax off-target platelet deficiency and neutropenia."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2017-005",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "the-360-degree-selfie",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"complements"
+			],
+			"reason": "MIT notes cameras cost under USD 500 but amateur 360 footage was blurry and mundane, boring to watch; B won because a barrier is named, which rules out overreach. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://www.technologyreview.com/technology/the-360-degree-selfie/",
+					"title": "The 360-degree selfie",
+					"shows": "Cameras under USD 500; much amateur 360 content is blurry and mundane, almost as boring as regular footage."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-097",
+			"scope": "not_technology",
+			"source_id": "kurzweil",
+			"subject_id": "privacy-is-a-critical-issue",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [],
+			"reason": "Most people did not treat online privacy as a pressing concern: in 2007, 60% of US internet users were not worried about their online information. The issue rose only after 2013.",
+			"evidence": [
+				{
+					"url": "https://www.pewresearch.org/internet/2007/12/16/digital-footprints/",
+					"title": "Digital Footprints (Pew, 2007)",
+					"shows": "60% not worried about information online; 43% unfazed and inactive."
+				}
+			]
+		},
+		{
+			"id": "health-2012-050",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Smell restoration devices remain in development: the VCU implant is a research device and others are tested on few volunteers. No clinical product exists.",
+			"evidence": [
+				{
+					"url": "https://news.vcu.edu/article/vcu_researchers_are_developing_a_device_to_restore_a_persons",
+					"title": "VCU researchers developing a device to restore smell",
+					"shows": "Smell restoration technology is being developed; no clinical device available."
+				},
+				{
+					"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10255882/",
+					"title": "Olfactory display prototype study",
+					"shows": "Early-stage; vortex prototype tested on four volunteers; scent buildup, switching delay, sensor limits."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2004-020",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "ultrawideband",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"cost",
+				"technical",
+				"market"
+			],
+			"reason": "UWB for PANs lost its standard: IEEE 802.15.3a deadlocked and dissolved in 2006. Wikipedia also names implementation cost and lower-than-expected performance; vendors closed in 2008-2009.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Ultra-wideband",
+					"title": "Ultra-wideband",
+					"shows": "Slow standards progress, cost of initial implementation, performance below expectations; 802.15.3a dissolved 2006; vendors shut 2008-09."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/WiMedia_Alliance",
+					"title": "WiMedia Alliance - Wikipedia",
+					"shows": "Alliance dissolved 2010; successor UWB Alliance."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2023-003",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "a-chip-design-that-changes-everything",
+			"verdict": "partial",
+			"status": "audit_corrected",
+			"audited": "correct_family",
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"market"
+			],
+			"reason": "correct: overreach needs no named barrier, but the opened RISC-V page names a small software ecosystem (RISE founded 2023 to widen software), extension fragmentation and high-performance cores still in development.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/RISC-V",
+					"title": "RISC-V - Wikipedia",
+					"shows": "RISE initiative (2023) to expand software for high-performance RISC-V; fragmentation from optional extensions; mobile, desktop and server cores still in development; ecosystem small."
+				},
+				{
+					"url": "https://www.technologyreview.com/2023/01/09/1064876/riscv-computer-chips-10-breakthough-technologies-2023/",
+					"title": "RISC-V: 10 Breakthrough Technologies 2023 - MIT Technology Review",
+					"shows": "About 10 billion cores shipped; proponents expect chips everywhere in a few years."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2005-020",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "micro-fuel-cells",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"regulation",
+				"substitution",
+				"complements"
+			],
+			"reason": "Micro fuel cells stayed at low efficiency and power density, with cost, safety and regulatory hurdles. Only Toshiba's 3,000-unit Dynario shipped.",
+			"evidence": [
+				{
+					"url": "https://www.electronicdesign.com/technologies/power/portable-power-management/article/21187043/micro-fuel-cells-strive-for-commercialization",
+					"title": "Micro fuel cells strive for commercialization",
+					"shows": "Technical limits (methanol crossover), cost, cartridge standards missing, cartridges banned on aircraft, retailers reluctant."
+				},
+				{
+					"url": "https://phys.org/news/2009-10-toshiba-portable-fuel-cell-mobiles.html",
+					"title": "Toshiba portable fuel cell for mobiles",
+					"shows": "Dynario sold as a limited run in Japan."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-112",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "software-assisted-composition",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Music generation software (Band-in-a-Box since 1990, GarageBand) was in use by 2009. Use by non-musicians stayed moderate; no source names a barrier.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Band-in-a-Box",
+					"title": "Band-in-a-Box",
+					"shows": "Generates accompaniment and solos from chords, key, tempo, style; used by amateurs and performers."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2001-013",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "asps",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [
+				"substitution"
+			],
+			"reason": "The single-tenant ASP business model faded after the dot-com bust and reappeared as multi-tenant SaaS, which reached the mainstream later than the label's 2-5 year window.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Software_as_a_service",
+					"title": "Software as a service",
+					"shows": "ASPs hosted individual applications; SaaS delivers standardised applications on subscription."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-007",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "keyboardless-computers",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "The claim was early, not blocked: touch-screen smartphones and tablets without physical keyboards became the majority of portable computers around 2012-2014.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Smartphone",
+					"title": "Smartphone",
+					"shows": "Smartphones replaced many standalone devices; most have touchscreens."
+				}
+			]
+		},
+		{
+			"id": "idc-futurescape-2015-006",
+			"scope": "in_scope",
+			"source_id": "idc-futurescape",
+			"subject_id": "iot-devices",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "IoT grew to about 7 billion devices in 2018 by IoT Analytics count (17 billion with phones and PCs). The forecast of 22 billion set the level above the observed adoption path; no barrier is named.",
+			"evidence": [
+				{
+					"url": "https://iot-analytics.com/state-of-the-iot-update-q1-q2-2018-number-of-iot-devices-now-7b/",
+					"title": "State of the IoT 2018",
+					"shows": "7 billion IoT devices in 2018, 17 billion connected devices; growth accelerating."
+				}
+			]
+		},
+		{
+			"id": "ark-big-ideas-2019-019",
+			"scope": "in_scope",
+			"source_id": "ark-big-ideas",
+			"subject_id": "dna-sequencing",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [
+				"technical"
+			],
+			"reason": "Same cause as the 2022 genome-cost claim: the cost plateau at USD 500-600 came under Illumina dominance and slowed competition; B won for consistency with the source that ties price to competition.",
+			"evidence": [
+				{
+					"url": "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2023.02.002",
+					"title": "Engineering: sequencing costs",
+					"shows": "Plateau at USD 500-600 under Illumina dominance; new competitors 2022 push toward USD 100."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-162",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "nonhuman-share-of-total-computing-capacity",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "AI Impacts finds hardware growth slowed sharply after 2007 as Moore's Law ends for price of computation; B won because the source names this barrier, and the rule bars overreach when a barrier is named. Low certainty: the gap is so large the forecast also overreached.",
+			"evidence": [
+				{
+					"url": "https://aiimpacts.org/global-computing-capacity/",
+					"title": "Global computing capacity",
+					"shows": "2e20-1.5e21 FLOPS in 2015; hardware growth must have slowed substantially; Moore's Law ending for price of computation."
+				}
+			]
+		},
+		{
+			"id": "et-2012-021",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"complements",
+				"market"
+			],
+			"reason": "Tidal stream power has a high initial cost and limited sites, and faces corrosion and fouling in the sea. Capacity stayed at demonstration scale.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Tidal_power",
+					"title": "Tidal power",
+					"shows": "High cost; Race Rocks closed as uneconomical; corrosion and fouling; Snohomish project cancelled when budget rose."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-053",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "voice-operated-assistive-technology-for-the-blind",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "2009 aids for blind users were button-driven with speech output, and spoken-command input came later as speech recognition improved; a third call won because price (B) does not explain the missing voice interaction and a barrier is named (not A's overreach).",
+			"evidence": [
+				{
+					"url": "https://afb.org/aw/10/2/16127",
+					"title": "AccessWorld: Trekker Breeze review",
+					"shows": "Talking GPS operated with buttons and speech output."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Speech_recognition",
+					"title": "Speech recognition",
+					"shows": "Insufficient training data and computing power until deep learning cut error rates."
+				}
+			]
+		},
+		{
+			"id": "hz-2014-070",
+			"scope": "in_scope",
+			"source_id": "envisioning-horizons",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "NIF reached scientific ignition in Dec 2022 but a power plant needs far more output than the energy to drive the lasers. LLNL's LIFE plant programme ended in 2014.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/National_Ignition_Facility",
+					"title": "National Ignition Facility",
+					"shows": "Full power needs gain far above current; laser wall-plug efficiency low; shot rate about one per two days."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-231",
+			"scope": "not_technology",
+			"source_id": "kurzweil",
+			"subject_id": "basic-necessities-provided",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened source shows why basic necessities were not secured for all. World Bank data shows about 700 million in extreme poverty, which is a shortfall, not a cause.",
+			"evidence": []
+		},
+		{
+			"id": "health-2012-040",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"market",
+				"regulation"
+			],
+			"reason": "The community model spread (830,000 members) on an ordinary path; the forecast level (5% of patients) sat above it. The source names only slow per-condition growth, no barrier.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/PatientsLikeMe",
+					"title": "PatientsLikeMe",
+					"shows": "Pooled-data patient community operating since 2005 selling de-identified data to research clients; no barrier named"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-036",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "intelligent-courseware-is-common",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance"
+			],
+			"reason": "Building tutors took 200-300 development hours per hour of instruction and ITSs are called not commercially feasible; A won because a barrier is named, ruling out overreach.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Intelligent_tutoring_system",
+					"title": "Intelligent tutoring system",
+					"shows": "300 hours of development per instruction hour; Cognitive Tutor at least 200:1; ITSs not in general commercially feasible."
+				}
+			]
+		},
+		{
+			"id": "hz-2014-014",
+			"scope": "in_scope",
+			"source_id": "envisioning-horizons",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "14 T and higher human scanners are still in conceptual or engineering design, while 7 T is sold but held back by cost; B won because the claim names 14 T becoming common, which no price could buy.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+					"title": "Magnetic resonance imaging",
+					"shows": "Commercial systems up to 7 T; 14 T in conceptual proposal or engineering design; high procurement and maintenance costs inhibit very high field MRI."
+				}
+			]
+		},
+		{
+			"id": "et-2012-009",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Connected devices reached about 8.7 billion in 2012 by Cisco's count; the 10 billion figure sat above the ordinary count. No barrier involved, only a level set too high.",
+			"evidence": [
+				{
+					"url": "https://blogs.cisco.com/news/cisco-connections-counter",
+					"title": "Cisco Connections Counter",
+					"shows": "Cisco counted 8.7 billion connected objects in 2012, passing 10 billion in 2013"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2010-027",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "video-telepresence",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"cost",
+				"market"
+			],
+			"reason": "Costly immersive telepresence rooms gave way to cheaper standard HD video rooms and cloud meetings that met the same need; sources show cost and a shift to lighter options.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Telepresence",
+					"title": "Telepresence",
+					"shows": "Lists HP Halo, Cisco TelePresence and cheaper video-call rivals such as Skype and Zoom (opened; substitution inferred from this and grader reasons)"
+				},
+				{
+					"url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2009/m09/cisco-fosters-intercompany-collaboration-with-global-cisco-telepresence-network.html",
+					"title": "Cisco TelePresence network 2009",
+					"shows": "350+ organisations and 2,500 systems; adoption concentrated in the largest firms"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2008-016",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "service-oriented-business-applications",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No page opened shows why service-oriented business applications fell short; the label faded and no adoption series exists.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-138",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "doctors-using-pattern-recognition-software",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"acceptance",
+				"cost"
+			],
+			"reason": "Most practices lacked the electronic record infrastructure for routine decision support: only 21.8% of office physicians had a basic EHR in 2009.",
+			"evidence": [
+				{
+					"url": "https://www.cdc.gov/nchs/data/hestat/emr_ehr_09/emr_ehr_09.htm",
+					"title": "CDC: EMR/EHR use 2009",
+					"shows": "48.3% any EMR; 21.8% basic system."
+				},
+				{
+					"url": "https://pubmed.ncbi.nlm.nih.gov/18565855/",
+					"title": "EHRs in ambulatory care: a national survey of physicians (NEJM 2008)",
+					"shows": "4% extensive and 13% basic EHR; financial barriers had the greatest effect on adoption decisions"
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2011-002",
+			"scope": "not_technology",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "social-network-investment-bubble",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"market"
+			],
+			"reason": "No bubble burst: Twitter IPO and the WhatsApp purchase show valuations rose. The forecast set an event beyond the actual path; no barrier applies.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/WhatsApp",
+					"title": "WhatsApp - Wikipedia",
+					"shows": "Facebook agreed to buy WhatsApp for about US$19 billion in Feb 2014."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Twitter,_Inc.",
+					"title": "Twitter, Inc.",
+					"shows": "Twitter IPO in November 2013 at a multi-billion valuation, not a collapse"
+				}
+			]
+		},
+		{
+			"id": "hz-2014-069",
+			"scope": "in_scope",
+			"source_id": "envisioning-horizons",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "regulation",
+			"family": "non_technical",
+			"secondary": [
+				"complements",
+				"technical",
+				"market"
+			],
+			"reason": "Commercial microreactors need NRC licensing (Oklo targets 2030 pending NRC) and reactor-ready HALEU/TRISO fuel; designs still unproven, first units from 2028.",
+			"evidence": [
+				{
+					"url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+					"title": "The Janus Five: 20 commercial nuclear microreactors starting in 2028",
+					"shows": "Vendors pursue NRC-licensed projects, building a regulatory record; initial operations as early as 2028"
+				}
+			]
+		},
+		{
+			"id": "et-2012-051",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"regulation",
+				"acceptance"
+			],
+			"reason": "Nootropic effects are limited or modest at best and many supplements lack evidence (AMA 2016, FDA warnings); A won because it fits the claim's nootropic reading, while B leaned on the digital-pill reading.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Nootropic",
+					"title": "Nootropic",
+					"shows": "AMA discourages use in healthy people since effects are variable and modest at best; many supplements lack evidence; FDA/FTC warnings."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2009-010",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "sensor-internet-traffic",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Machine-to-machine traffic stayed well under 1% of IP traffic in 2012; the 20% level was beyond the adoption path. No barrier named.",
+			"evidence": [
+				{
+					"url": "https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/VNI_Hyperconnectivity_WP.html",
+					"title": "Cisco VNI",
+					"shows": "M2M a fraction of a percent of IP traffic in 2012."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Machine_to_machine",
+					"title": "Machine to machine",
+					"shows": "Cellular M2M connections 47.7 million in 2008; forecast 187 million in 2014 (connections, not traffic share)"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-174",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "commercial-nanomachines",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Autonomous nanomachines do not work yet: adhesion and friction exceed material strength, precision assembly is unsolved, and no commercial manufacturing use exists.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Nanorobotics",
+					"title": "Nanorobotics",
+					"shows": "No commercial manufacturing use of autonomous nanorobots; challenges in building and powering nanoscale machines"
+				}
+			]
+		},
+		{
+			"id": "ark-big-ideas-2020-012",
+			"scope": "in_scope",
+			"source_id": "ark-big-ideas",
+			"subject_id": "automation",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"market"
+			],
+			"reason": "Robot installations grew to 542,000 in 2024, on an ordinary path, but the forecast of 1.6 million was three times higher. IFR names demand cycles and trade disruption but no single barrier.",
+			"evidence": [
+				{
+					"url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+					"title": "IFR: global robot demand in factories doubles over 10 years",
+					"shows": "542,000 industrial robots installed in 2024; China 54% of installs"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-040",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "children-use-print-to-speech-reading-software",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Print-to-speech software served students with disabilities only; A won because the product's target market describes the niche but no page shows why general use did not form.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2005-007",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "business-process-platforms",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The label faded with no distinct product class; no opened page shows the cause.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-010",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "users-servers-store-virtual-reality-environments",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"acceptance",
+				"market"
+			],
+			"reason": "Users kept files on cloud services such as Dropbox (100M users by 2012) rather than personal servers, and virtual worlds stalled; B won because a rival service took the role and B opened it.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Dropbox",
+					"title": "Dropbox",
+					"shows": "50M users Oct 2011, 100M Nov 2012."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Second_Life",
+					"title": "Second Life",
+					"shows": "Largest virtual world had stability problems and stalled growth."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2019-001",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "employment-of-people-with-disabilities",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "US employment of people with disabilities rose to 7.5M in 2023, about 1.3x, not 3x; A won because the forecast level ran far beyond an ordinary path and BLS names no barrier.",
+			"evidence": [
+				{
+					"url": "https://www.bls.gov/news.release/archives/disabl_02222024.htm",
+					"title": "Persons with a disability: labor force characteristics 2023",
+					"shows": "7,528 thousand employed in 2023, ratio 22.5%; no reason given for the rise."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2011-006",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "social-tv",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [
+				"substitution"
+			],
+			"reason": "The dedicated social-TV app tvtag (GetGlue) shut down in Dec 2014 to refocus the company, and only 11% posted about shows; A won because B gives no source that viewers moved to other platforms. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Tvtag",
+					"title": "tvtag",
+					"shows": "Shut down Dec 2014 to refocus on other initiatives after USD 25M venture funding."
+				},
+				{
+					"url": "https://www.pewresearch.org/internet/2012/07/17/the-rise-of-the-connected-viewer/",
+					"title": "The rise of the connected viewer",
+					"shows": "Only 11% posted comments online about a TV show."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-016",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "computer-displays-have-all-the-qualities-of-paper",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"complements"
+			],
+			"reason": "E Ink gave paper-like reading but the first Kindle had 4 gray levels and slow refresh; LCDs lacked paper qualities. Price ($399) also held early uptake.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+					"title": "Amazon Kindle",
+					"shows": "Kindle 1 in 2007 at 399 USD with 6-inch E Ink display; e-books overtook print later"
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/E-book",
+					"title": "E-book",
+					"shows": "E-books about 3% of US trade sales in 2009, passing hardcover in 2012"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2007-017",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "participation-tv-revenue",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "regulation",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance",
+				"market"
+			],
+			"reason": "The 2007 UK phone-in scandal brought suspension of premium-rate services, Ofcom/ICSTIS fines over GBP 11 million and tighter rules, with warned loss of viewer trust.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/2007_British_premium-rate_phone-in_scandal",
+					"title": "2007 British premium-rate phone-in scandal",
+					"shows": "ITV suspended premium-rate services; Ofcom and ICSTIS investigations led to fines and reform"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2003-013",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "commercial-grids",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"market"
+			],
+			"reason": "Commercial grid offerings (Sun Grid, shut 2010) were overtaken by cloud computing, a conceptually similar model that became popular from 2007.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Grid_computing",
+					"title": "Grid computing",
+					"shows": "Utility computing offered by Sun, IBM, HP; cloud computing later became dominant"
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Sun_Grid",
+					"title": "Sun Cloud (Sun Grid)",
+					"shows": "Sun utility computing offering launched 2006 and discontinued after Oracle takeover"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2015-033",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "cryptocurrency-exchange",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"regulation"
+			],
+			"reason": "Crypto use stalled at 17% of US adults; 63% have little or no confidence that crypto is reliable and safe (Pew 2024).",
+			"evidence": [
+				{
+					"url": "https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/",
+					"title": "Majority of Americans aren't confident in the safety and reliability of cryptocurrency",
+					"shows": "63% not confident it is safe and reliable; 17% have ever used or invested"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2010-002",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "context-delivery-architecture",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "CoDA stayed an analyst pattern; no opened page shows why it fell short.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2004-024",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "web-services-enabled-business-models",
+			"verdict": "partial",
+			"status": "audit_corrected",
+			"audited": "correct_family",
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"technical"
+			],
+			"reason": "correct: overreach needs no named barrier, but both cited 2019 MuleSoft/Salesforce pages name one: 84% of organisations say integration challenges slow them, with data silos and legacy infrastructure; only 29% of applications integrated.",
+			"evidence": [
+				{
+					"url": "https://www.salesforce.com/news/press-releases/2019/02/27/global-study-majority-of-organizations-plan-to-digitally-transform-yet-84-of-businesses-stalled-by-integration-challenges/",
+					"title": "Global study: 84% of businesses stalled by integration challenges - Salesforce",
+					"shows": "84% say integration challenges slow digital transformation; data silos 83%; only 29% of applications integrated; legacy infrastructure most reported challenge; 29% report revenue growth from APIs."
+				},
+				{
+					"url": "https://www.salesforce.com/blog/mulesoft-connectivity-benchmark-report/",
+					"title": "MuleSoft Connectivity Benchmark Report - Salesforce",
+					"shows": "For 36% APIs generate over 25% of revenue; about 84% say integration challenges slow digital transformation."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2013-008",
+			"scope": "not_technology",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "occupy-style-protest-movement",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No larger Occupy-type movement began and none of the causes on the list covers a social-protest forecast; B won because overreach needs a technology on an ordinary path.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2011-033",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "virtual-worlds",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"acceptance",
+				"market"
+			],
+			"reason": "Second Life suffered system instability, latency, client crashes and high bandwidth needs while growth stalled; A won because the opened page names these technical problems and no acceptance source.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Second_Life",
+					"title": "Second Life",
+					"shows": "Difficulties with system instability: increased latency, intermittent crashes; 300 kbit/s minimum bandwidth."
+				}
+			]
+		},
+		{
+			"id": "et-2012-053",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "audit_corrected",
+			"audited": "correct_family",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"regulation"
+			],
+			"reason": "correct: price was high (USD 450k+), but over 700 tickets sold before 2014 and demand outran flights; the page shows the binding limits were vehicle delays from 2008, the 2014 crash, groundings and a 2024 pause to build a new vehicle for more flights.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Virgin_Galactic",
+					"title": "Virgin Galactic - Wikipedia",
+					"shows": "Launch dates slipped 2009-2015; VSS Enterprise crash 2014; FAA grounding 2021; commercial service only June 2023; paused mid-2024 to develop Delta class for higher flight frequency; tickets USD 450k (2022)."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Space_tourism",
+					"title": "Space tourism - Wikipedia",
+					"shows": "Over 700 suborbital tickets sold before the October 2014 Enterprise crash."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2024-007",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "the-first-gene-editing-treatment",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"complements"
+			],
+			"reason": "Casgevy costs $2 to 3 million and needs a complex hospital procedure, limiting treated patients to a tiny share of eligible ones.",
+			"evidence": [
+				{
+					"url": "https://www.technologyreview.com/2024/01/08/1085101/crispr-gene-editing-sickle-cell-disease-breakthrough-technologies/",
+					"title": "Gene editing for sickle-cell disease (MIT Technology Review)",
+					"shows": "Expected price 2-3 million USD; treatment regimen is so complex it needs a hospital stay"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2017-002",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "ddos-attacks",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "DDoS attacks grew but no terabit attack came in 2017 (next record 1.35 Tbit/s in Feb 2018); the forecast frequency exceeded the ordinary growth path.",
+			"evidence": [
+				{
+					"url": "https://github.blog/news-insights/company-news/ddos-incident-report/",
+					"title": "February 28th DDoS incident report (GitHub)",
+					"shows": "Attack peaked at 1.35 Tbit/s in February 2018"
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-163",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "rotating-memory-fully-replaced",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"substitution"
+			],
+			"reason": "Flash passed HDD in revenue but SSDs still cost four to nine times more per bit, so HDDs keep dominating bulk storage.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Hard_disk_drive",
+					"title": "Hard disk drive",
+					"shows": "SSDs have four to nine times higher cost per bit; HDDs dominate storage volume produced"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-1999-003",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "text-mining",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Text mining became routine as text analytics about 2005 to 2020, later than the 2 to 5 year plateau; sources name no barrier.",
+			"evidence": [
+				{
+					"url": "https://www.statista.com/statistics/966852/market-research-industry-text-analytics/",
+					"title": "Statista: text analytics in market research",
+					"shows": "Use rose 2014 to 2020."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Text_mining",
+					"title": "Text mining",
+					"shows": "Text mining, now also called text analytics, is an established process; no adoption barrier named"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2011-015",
+			"scope": "above_forecast",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "4g",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "LTE rolled out faster than forecast: 49 operators launched by Jan 2012 against a ceiling of 30. The forecast level was off the ordinary path. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://www.rcrwireless.com/20120105/americas/gsa-counts-49-lte-operators-globally-with-4-in-latin-america-caribbean-2",
+					"title": "GSA counts 49 LTE operators globally",
+					"shows": "49 LTE operators had commercially launched by start of January 2012"
+				}
+			]
+		},
+		{
+			"id": "ark-big-ideas-2019-009",
+			"scope": "in_scope",
+			"source_id": "ark-big-ideas",
+			"subject_id": "energy-storage",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"complements"
+			],
+			"reason": "Utility-scale storage stayed far above the forecast cost: Lazard 2023 gives unsubsidized LCOS of USD 170 to 296 per MWh against about USD 0.08 per kWh forecast.",
+			"evidence": [
+				{
+					"url": "https://www.energy-storage.news/lazard-ira-brings-lcos-of-100mw-4-hour-standalone-bess-down-as-low-as-us124-mwh/",
+					"title": "Lazard LCOS 2023",
+					"shows": "Unsubsidized USD 170-296/MWh; subsidized from USD 124."
+				},
+				{
+					"url": "https://www.lazard.com/media/2ozoovyg/lazards-lcoeplus-april-2023.pdf",
+					"title": "Lazard LCOE+ April 2023",
+					"shows": "Utility-scale 4-hour standalone storage LCOS shown above ARK's forecast level; opened PDF"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2025-007",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "smartphone-shipments",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"regulation",
+				"market"
+			],
+			"reason": "Shipments grew 2% against the 7% forecast. Counterpoint names tariff front-loading and inventory, not weak AI appeal. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://counterpointresearch.com/en/insights/global-smartphone-shipments-grew-2-percent-YoY-in-2025",
+					"title": "Counterpoint: 2025 smartphone shipments +2%",
+					"shows": "Tariff front-loading in H1; Q4 held back by inventory."
+				},
+				{
+					"url": "https://www.fonearena.com/blog/470379/global-smartphone-shipments-2025-and-2026-forecast-idc.html",
+					"title": "IDC: 1.5% growth in 2025",
+					"shows": "IDC forecast 1.5% growth in 2025 and a 2026 decline from memory shortages"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2002-002",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "e-tags",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The label has no dominant reading and no opened page shows a cause.",
+			"evidence": []
+		},
+		{
+			"id": "deloitte-tmt-predictions-2002-003",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "mobile-data-services",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"market",
+				"cost"
+			],
+			"reason": "Mobile data lagged outside Japan: slow pre-GPRS networks, poor early handsets and carrier walled gardens left little content (WAP critique), with UK non-SMS data at 2% of revenue in 2004.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Wireless_Application_Protocol",
+					"title": "Wireless Application Protocol",
+					"shows": "WAP hyped at launch then criticised; resurgence came with GPRS networks"
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Vodafone_live!",
+					"title": "Vodafone live!",
+					"shows": "Launched October 2002, 1.5 million customers by May 2003"
+				}
+			]
+		},
+		{
+			"id": "et-2012-089",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"market"
+			],
+			"reason": "Vertical farms need large capital and heavy lighting energy and pay off only for high-value greens; several leaders went bankrupt before profit.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Vertical_farming",
+					"title": "Vertical farming",
+					"shows": "Large start-up costs and energy demands for lighting; cost-effective only for high-value salad crops; bankruptcies"
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2003-001",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "802-15-4-zigbee",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"substitution"
+			],
+			"reason": "ZigBee spread invisibly in smart meters and chipsets, mainstream about 2018 to 2019, years after the placed date; no source opened names a barrier. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://www.businesswire.com/news/home/20180807005170/en/Analysts-Confirm-Billion-Zigbee-Chipsets-Sold-Igniting/",
+					"title": "Zigbee chipsets sold",
+					"shows": "Half a billion chipsets sold by 2018."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Zigbee",
+					"title": "Zigbee",
+					"shows": "Standardised 2003; Dotdot and Thread interconnect; used in smart-energy meters"
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2024-003",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "apple-vision-pro",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"complements",
+				"technical",
+				"acceptance",
+				"substitution"
+			],
+			"reason": "Vision Pro launched at $3,499 and critics called the price too high for the mainstream; few apps at launch and heavy weight added.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro",
+					"title": "Apple Vision Pro - Wikipedia",
+					"shows": "Price too high to go mainstream; no Netflix/YouTube app at launch; weight."
+				},
+				{
+					"url": "https://www.theregister.com/2026/01/02/apple_vision_pro_meta_quest_sales_drop/",
+					"title": "Apple, Meta ship significantly fewer VR headsets in 2025",
+					"shows": "Vision Pro 3,500 USD, 45,000 shipped in 2025; Meta Quest costs about one-tenth"
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2006-017",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "digital-radio-and-podcasting",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The claim names no measurable outcome and no opened page shows a cause.",
+			"evidence": []
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2019-001",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "robot-dexterity",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"acceptance"
+			],
+			"reason": "Interact Analysis attributes slow picking-robot growth to fewer greenfield sites and longer sales cycles, with uncertainty about deployment; B won because the named causes are commercial. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://interactanalysis.com/robotic-picking-market-forecast-triple-in-size/",
+					"title": "Robotic picking market forecast to triple in size",
+					"shows": "Slower growth driven by fewer greenfield developments and longer sales cycles; integrated solutions reduce customer uncertainty."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-139",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "doctors-consult-knowledge-based-systems",
+			"verdict": "partial",
+			"status": "audit_corrected",
+			"audited": "correct_family",
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance",
+				"technical"
+			],
+			"reason": "correct: the CDSS page names a cause: workflow integration was the large roadblock (standalone systems made clinicians re-enter data), plus clinician trust and the work of keeping knowledge current; most offerings not widely adopted. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Clinical_decision_support_system",
+					"title": "Clinical decision support system - Wikipedia",
+					"shows": "Workflow integration historically a large roadblock; standalone systems forced data re-entry; widespread adoption not achieved; alert fatigue; hard to keep clinical knowledge current."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2004-021",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "leps-oleds",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"substitution"
+			],
+			"reason": "Early OLED had short blue lifetime and low manufacturing yield; fabrication stayed costlier than TFT LCD, the established rival.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/OLED",
+					"title": "OLED - Wikipedia",
+					"shows": "Biggest technical problem is limited lifetime; blue degrades fast; shadow-mask yield loss; substrate fabrication costlier than TFT LCD."
+				}
+			]
+		},
+		{
+			"id": "edu-2012-025",
+			"scope": "in_scope",
+			"source_id": "envisioning-education",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened page shows why eye tracking for learning stayed in research.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-185",
+			"scope": "not_technology",
+			"source_id": "kurzweil",
+			"subject_id": "adult-workers-mostly-learning",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Only time-use shortfall seen; no opened source shows a cause.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2014-043",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "3d-scanners",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"substitution"
+			],
+			"reason": "Professional 3D scanners cost EUR 75k to 300k and fail on dark, shiny or moving objects; consumer devices stayed niche.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/3D_scanning",
+					"title": "3D scanning - Wikipedia",
+					"shows": "Terrestrial laser scanners from EUR150,000; lidar about EUR300,000; accuracy limits on reflective and moving subjects."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-151",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "direct-eye-display-modes",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"acceptance"
+			],
+			"reason": "HoloLens had a 30x17.5 degree field of view, 2-3 h battery, vergence-accommodation conflict and USD 3,000 price; B won because these concrete limits weigh more than a hypothetical 12% willingness survey.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Microsoft_HoloLens",
+					"title": "Microsoft HoloLens",
+					"shows": "Field of view about 30x17.5 degrees; 2-3 h battery; vergence-accommodation conflict."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Optical_see-through_head-mounted_display",
+					"title": "Optical see-through head-mounted display",
+					"shows": "No major commercial success; about 12% willing to wear Glass-type device."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-061",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "telephone-communication-has-moving-images",
+			"verdict": "partial",
+			"status": "audit_corrected",
+			"audited": "correct_family",
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"complements"
+			],
+			"reason": "correct: the videotelephony page names a cause, not only the shortfall: video adds the burden of an acceptable on-screen appearance, and studies found it impaired communication; codecs and bandwidth were practical by the early 2000s. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Videotelephony",
+					"title": "Videotelephony - Wikipedia",
+					"shows": "Low-cost video calls practical from early 2000s; burden of on-screen appearance absent in audio calls; Chapanis studies: video impaired communication; interoperability limits; 7% of Americans made a mobile video call by 2010."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2022-005",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "semiconductor-shortage",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [],
+			"reason": "Chipmaking tools themselves waited on chips (equipment lead times 10-12 months), new fabs take years, and neon and palladium supply was disrupted; A won because it opened a page that shows the supply-chain cause.",
+			"evidence": [
+				{
+					"url": "https://techwireasia.com/?p=219281",
+					"title": "Chip shortage: chips to make chips",
+					"shows": "Equipment lead times rose from 3-4 to 10-12 months; insufficient chips for tools; neon and palladium disrupted."
+				}
+			]
+		},
+		{
+			"id": "edu-2012-016",
+			"scope": "in_scope",
+			"source_id": "envisioning-education",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened page shows why student game design stayed niche.",
+			"evidence": []
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2020-002",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "hyper-personalized-medicine",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The Milasen page returned 404; no opened page shows the barrier to routine n-of-1 drugs.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2006-020",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "social-network-analysis",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "Grader pages show niche use and no adoption series; no opened page names a cause.",
+			"evidence": []
+		},
+		{
+			"id": "et-2012-052",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "complements",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"cost",
+				"regulation",
+				"market"
+			],
+			"reason": "Microgrids face control and protection problems, expensive communication upgrades, and missing standards that limit them globally.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Microgrid",
+					"title": "Microgrid - Wikipedia",
+					"shows": "Lack of well-known standards; incumbent interests; grid connection needs regulatory and legal planning; protection and inertia problems."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-2005-008",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "real-time-translation",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Conversation mode launched January 2011 only for Spanish and English and had trouble with accents, background noise and rapid speech.",
+			"evidence": [
+				{
+					"url": "https://www.androidpolice.com/2011/01/12/google-translate-for-android-hits-version-2-0-receives-conversation-mode-updated-ui/",
+					"title": "Google Translate 2.0 conversation mode",
+					"shows": "Supports only Spanish and English; trouble with regional accents, background noise, rapid speech."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Word_Lens",
+					"title": "Word Lens - Wikipedia",
+					"shows": "Not 100% accurate; best on clearly printed text; English-Spanish only at launch, other pairs added 2011-2014."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2017-010",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "reinforcement-learning",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"technical"
+			],
+			"reason": "RL became routine across AI through RLHF after InstructGPT (2022), later than the 1-2 year date; A won because it opened a source and none names a barrier.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback",
+					"title": "Reinforcement learning from human feedback",
+					"shows": "RLHF gained popularity with InstructGPT; ChatGPT, Gemini, Claude are RLHF-trained."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2002-004",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "identity-services",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"regulation",
+				"market"
+			],
+			"reason": "Passport drew privacy and FTC complaints (2001) and an FTC settlement (2002); partners cancelled by 2004. Page does not state the partners' reasons, so low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Microsoft_account",
+					"title": "Microsoft account - Wikipedia",
+					"shows": "EFF privacy criticism; FTC settlement 2002; eBay and Monster agreements cancelled 2004; Expedia 2009."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-107",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "intelligent-art-software",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "AARON could not learn new styles on its own and needed hand-coded additions; no creative AI partner for art existed in 2009.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/AARON",
+					"title": "AARON - Wikipedia",
+					"shows": "Cannot learn new styles; capabilities hand-coded; closed source; development ended 2016."
+				}
+			]
+		},
+		{
+			"id": "health-2012-037",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "partial",
+			"status": "audit_corrected",
+			"audited": "correct_family",
+			"primary": "cost",
+			"family": "non_technical",
+			"secondary": [
+				"market",
+				"acceptance"
+			],
+			"reason": "correct: a cause is on record: Proteus (Abilify MyCite) failed mainly on payers, who would not pay about USD 1,650, double the plain drug, without proof of value; a failed USD 100M round and patient unease followed. Bankrupt June 2020.",
+			"evidence": [
+				{
+					"url": "https://medcitynews.com/2020/06/proteus-files-for-bankruptcy-where-did-it-falter/",
+					"title": "Proteus files for bankruptcy: where did it falter? - MedCity News",
+					"shows": "Insurers would not pay more; sensor drug about USD 1,650, double the brand drug; weak evidence of adherence benefit; patients wary of monitoring; failed USD 100M round; Otsuka partnership ended."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2007-004",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "ambient-and-glanceable-displays",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "market",
+			"family": "non_technical",
+			"secondary": [],
+			"reason": "Chumby, the main ambient device, ceased production in April 2012, and the cited source says its platform could die as funding dried up; A won because company failure is a named cause. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Ambient_device",
+					"title": "Ambient device",
+					"shows": "Chumby production ceased April 2012; cited Verge source: Chumby platform could die as funding dries up."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-2005-010",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "virtual-assistants",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [
+				"technical"
+			],
+			"reason": "Google Now delivered proactive cards from July 2012, two years after target, without a visual overlay; A won because it opened a source and none names a barrier.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Google_Now",
+					"title": "Google Now",
+					"shows": "Proactively delivered predicted information cards; launched 2012."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-132",
+			"scope": "not_technology",
+			"source_id": "kurzweil",
+			"subject_id": "biological-warfare-is-greatest-threat",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No evidence on a technology cause; the forecast is a threat ranking and no opened page explains the miss.",
+			"evidence": []
+		},
+		{
+			"id": "et-2012-008",
+			"scope": "above_forecast",
+			"source_id": "envisioning-technology",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "About 2.4 billion people (33.3%) were online in 2012, more than the 2 billion forecast; B won because overreach means a forecast set beyond the path, not below it.",
+			"evidence": []
+		},
+		{
+			"id": "kurzweil-1999-115",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "touchless-kinetic-musical-interfaces",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"technical",
+				"acceptance"
+			],
+			"reason": "Miyamoto blamed weak Wii Music sales on Guitar Hero and Rock Band dominating music games, and critics called its motion controls imprecise; B won because a rival product took the role.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Wii_Music",
+					"title": "Wii Music",
+					"shows": "2.65M sold; Miyamoto cites competition from Guitar Hero and Rock Band; imprecise motion controls criticised."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2001-005",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "personal-digital-assistant-phones",
+			"verdict": "partial",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "overreach",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Smartphones, the successors of PDA phones, rose from 35% of US adults in 2011 and passed half of global sales in 2013; A won because the technology spread on an ordinary path and no barrier is named.",
+			"evidence": [
+				{
+					"url": "https://www.pewresearch.org/internet/fact-sheet/mobile/",
+					"title": "Mobile fact sheet",
+					"shows": "US smartphone ownership 35% in 2011, rising to 91%."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-242",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "genome-life-processes-understood",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Aging and genome function remain incompletely understood; mitochondrial causes unclear and hallmarks interact, so the science did not reach the claimed level.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Hallmarks_of_aging",
+					"title": "Hallmarks of aging - Wikipedia",
+					"shows": "Causes of mitochondrial decline still unclear; hallmarks interconnected; intervention evidence incomplete."
+				}
+			]
+		},
+		{
+			"id": "hz-2014-018",
+			"scope": "in_scope",
+			"source_id": "envisioning-horizons",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened page shows why cognition-augmenting closed-loop systems did not appear.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-2005-006",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "corporate-semantic-web",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost",
+				"complements",
+				"market"
+			],
+			"reason": "Semantic web reasoning is brittle, authoring formal representations takes much more effort, and upper standard layers stayed unfinished.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Semantic_Web",
+					"title": "Semantic Web - Wikipedia",
+					"shows": "Criticism: skilled knowledge engineering effort, brittle reasoning, vagueness, weak incentives; vision largely unrealized (2006)."
+				}
+			]
+		},
+		{
+			"id": "mit-tr-10-breakthrough-2022-010",
+			"scope": "in_scope",
+			"source_id": "mit-tr-10-breakthrough",
+			"subject_id": "carbon-removal",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"cost"
+			],
+			"reason": "Climeworks' Orca and Mammoth captured only a fraction of nameplate capacity and did not offset their own emissions; A won because underperformance against rated capacity is a technical cause and B opened nothing.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Climeworks",
+					"title": "Climeworks",
+					"shows": "May 2025 Heimildin analysis: machines captured only a fraction of supposed CO2 levels; not offsetting own emissions."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-212",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "simulated-persons-in-transactions",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"technical"
+			],
+			"reason": "Pew finds 61% of voice-assistant non-users not interested and 27% citing privacy, with accuracy doubts among users; A won because it opened a page naming reasons, B opened none. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://www.pewresearch.org/short-reads/2017/12/12/nearly-half-of-americans-use-digital-voice-assistants-mostly-on-their-smartphones/",
+					"title": "Nearly half of Americans use digital voice assistants",
+					"shows": "61% of non-users not interested; 27% privacy; 39% of users say accurate most of the time."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-219",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "very-few-transportation-accidents",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "WHO lists speed, alcohol, roads and enforcement as risk factors for crashes, which explain crashes, not why technology failed to make them rare; A won because B's page does not show a cause of the forecast miss.",
+			"evidence": []
+		},
+		{
+			"id": "et-2012-061",
+			"scope": "in_scope",
+			"source_id": "envisioning-technology",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [
+				"complements",
+				"market"
+			],
+			"reason": "Transparent solar glass has a see-through tradeoff and about 10% efficiency; products were not in full-scale production in 2023 and makers still raised funds for manufacturing lines.",
+			"evidence": [
+				{
+					"url": "https://www.solarpowerworldonline.com/2023/03/is-it-finally-time-to-take-solar-windows-seriously/",
+					"title": "Is it finally time to take solar windows seriously?",
+					"shows": "Transparency tradeoff limits output; earlier attempts little commercial success; not in full-scale production; depends on window fabricators."
+				}
+			]
+		},
+		{
+			"id": "gartner-strategic-predictions-2019-010",
+			"scope": "not_technology",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "online-shopping-addiction",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "regulation",
+			"family": "non_technical",
+			"secondary": [
+				"acceptance"
+			],
+			"reason": "ICD-11 places compulsive buying under impulse control disorders; DSM-5 left it out of addictions because experts still debate it. The public standard did not change.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Compulsive_buying_disorder",
+					"title": "Compulsive buying disorder - Wikipedia",
+					"shows": "ICD-11 lists it as other specified impulse control disorder; DSM-5 excluded it from addictive disorders pending debate."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-033",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "interacting-with-computers-by-voice-and-stylus",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Speech recognition error rises with noise, accents and vocabulary and was limited by data and compute before deep learning; B won because it names a cause for voice not becoming the main classroom input. Low certainty.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Speech_recognition",
+					"title": "Speech recognition",
+					"shows": "Accuracy problems under noise; insufficient training data and computing power until deep learning."
+				}
+			]
+		},
+		{
+			"id": "kurzweil-1999-192",
+			"scope": "in_scope",
+			"source_id": "kurzweil",
+			"subject_id": "speech-to-text-lens-displays-for-the-deaf",
+			"verdict": "miss",
+			"status": "adjudicated",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [
+				"technical",
+				"acceptance"
+			],
+			"reason": "Phone-based real-time captioning (Live Transcribe, Feb 2019) took the role the forecast gave to lens displays; A won because a rival technology met the need, which the rules place before display limits.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Live_Transcribe",
+					"title": "Live Transcribe",
+					"shows": "Free Android real-time captioning app released Feb 2019, built with Gallaudet."
+				},
+				{
+					"url": "https://en.wikipedia.org/wiki/Optical_see-through_head-mounted_display",
+					"title": "Optical see-through head-mounted display",
+					"shows": "No major commercial success."
+				}
+			]
+		},
+		{
+			"id": "deloitte-tmt-predictions-2006-012",
+			"scope": "in_scope",
+			"source_id": "deloitte-tmt-predictions",
+			"subject_id": "digital-music-revenue",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "The IFPI report did not load; no opened page shows why digital share stayed near 10%.",
+			"evidence": []
+		},
+		{
+			"id": "health-2012-047",
+			"scope": "in_scope",
+			"source_id": "envisioning-health",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "acceptance",
+			"family": "non_technical",
+			"secondary": [
+				"technical",
+				"cost"
+			],
+			"reason": "Auditory sensory substitution devices risk noise pollution, block natural hearing, overload attention and can be bulky; blind users reject such devices.",
+			"evidence": [
+				{
+					"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5044782/",
+					"title": "Auditory sensory substitution design review",
+					"shows": "Noise pollution would prevent many blind users; interference with environmental hearing; sensory overload; bulky equipment likely rejected."
+				},
+				{
+					"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8078811/",
+					"title": "Sensory substitution devices training study (PMC8078811)",
+					"shows": "Training is the main bottleneck; algorithms hard to interpret; earlier setups expensive and cumbersome."
+				}
+			]
+		},
+		{
+			"id": "hz-2014-059",
+			"scope": "in_scope",
+			"source_id": "envisioning-horizons",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": null,
+			"primary": "technical",
+			"family": "technical",
+			"secondary": [],
+			"reason": "Lithium-air cells suffer cathode clogging, electrolyte degradation, anode dendrites and limited cycle life and power.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Lithium%E2%80%93air_battery",
+					"title": "Lithium-air battery - Wikipedia",
+					"shows": "Practical power and cycle life need significant improvement; electrolyte advances needed; dendrites; about 65% efficiency."
+				}
+			]
+		},
+		{
+			"id": "gartner-hype-cycle-2015-022",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "advanced-analytics-with-self-service-delivery",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened page shows why self-service advanced analytics came after 2020.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-strategic-predictions-2014-003",
+			"scope": "in_scope",
+			"source_id": "gartner-strategic-predictions",
+			"subject_id": "algorithm-conceived-business",
+			"verdict": "miss",
+			"status": "agreed",
+			"audited": "confirm",
+			"primary": "unknown",
+			"family": "unknown",
+			"secondary": [],
+			"reason": "No opened page shows why no algorithm-conceived business appeared.",
+			"evidence": []
+		},
+		{
+			"id": "gartner-hype-cycle-1999-020",
+			"scope": "in_scope",
+			"source_id": "gartner-hype-cycle",
+			"subject_id": "personal-digital-assistants",
+			"verdict": "partial",
+			"status": "agreed",
+			"audited": null,
+			"primary": "substitution",
+			"family": "forecast_error",
+			"secondary": [],
+			"reason": "Smartphones, and to a lesser extent tablets, absorbed the PDA function; PDAs merged with phones by the mid-2000s.",
+			"evidence": [
+				{
+					"url": "https://en.wikipedia.org/wiki/Personal_digital_assistant",
+					"title": "Personal digital assistant - Wikipedia",
+					"shows": "Mostly displaced in the early 2010s by smartphones and tablets; most PDAs merged with phones by mid-2000s."
+				}
+			]
+		}
+	]
+}

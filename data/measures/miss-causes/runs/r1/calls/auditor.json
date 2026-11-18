@@ -1,0 +1,702 @@
+{
+  "run": "r1",
+  "batch": "audit",
+  "role": "auditor",
+  "agent": "agent (model not recorded in the public repo)",
+  "calls": [
+    {
+      "claim_id": "gartner-strategic-predictions-2014-003",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: no opened page shows why no algorithm-conceived disruptive business launched by 2017; grader evidence shows only the shortfall.",
+      "evidence": []
+    },
+    {
+      "claim_id": "kurzweil-1999-112",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: Band-in-a-Box generated accompaniment and solos from 1990, so the technology existed and spread; the page notes a learning curve but names no barrier to use by non-musicians. Low certainty.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Band-in-a-Box",
+          "title": "Band-in-a-Box - Wikipedia",
+          "shows": "Software generates a full band arrangement from chords, key, tempo and style; long learning curve for full benefit, no adoption barrier named."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-hype-cycle-1999-003",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: text mining became an established practice, now often called text analytics; the opened page names no adoption barrier, so the 2 to 5 year plateau was set early. The Statista page cited by one coder returned 403.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Text_mining",
+          "title": "Text mining - Wikipedia",
+          "shows": "Text analytics is roughly synonymous with text mining and is used more in business settings; no adoption barrier named."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2008-016",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: the label faded and no opened page shows why service-oriented business applications fell short of the plateau.",
+      "evidence": []
+    },
+    {
+      "claim_id": "mit-tr-10-breakthrough-2023-003",
+      "primary": "complements",
+      "secondary": [
+        "technical",
+        "market"
+      ],
+      "reason": "correct: overreach needs no named barrier, but the opened RISC-V page names a small software ecosystem (RISE founded 2023 to widen software), extension fragmentation and high-performance cores still in development.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/RISC-V",
+          "title": "RISC-V - Wikipedia",
+          "shows": "RISE initiative (2023) to expand software for high-performance RISC-V; fragmentation from optional extensions; mobile, desktop and server cores still in development; ecosystem small."
+        },
+        {
+          "url": "https://www.technologyreview.com/2023/01/09/1064876/riscv-computer-chips-10-breakthough-technologies-2023/",
+          "title": "RISC-V: 10 Breakthrough Technologies 2023 - MIT Technology Review",
+          "shows": "About 10 billion cores shipped; proponents expect chips everywhere in a few years."
+        }
+      ]
+    },
+    {
+      "claim_id": "deloitte-tmt-predictions-2008-008",
+      "primary": "cost",
+      "secondary": [
+        "technical",
+        "complements"
+      ],
+      "reason": "confirm: a 2008 LED lighting project cost three times a conventional mix; droop and a 60 W equivalent only in 2010 are secondary technical limits.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/LED_lamp",
+          "title": "LED lamp - Wikipedia",
+          "shows": "2008 factory LED lighting cost three times incandescent and fluorescent; efficiency droop; first 60 W equivalent 2010; ANSI colour ranges 2008."
+        }
+      ]
+    },
+    {
+      "claim_id": "et-2012-030",
+      "primary": "cost",
+      "secondary": [
+        "technical",
+        "regulation"
+      ],
+      "reason": "confirm: private launch and cargo worked, but orbital tourist seats cost USD 20-25 million; the 2014 Enterprise breakup, XCOR bankruptcy and FAA licensing add delay.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Space_tourism",
+          "title": "Space tourism - Wikipedia",
+          "shows": "Orbital seats about USD 20-25 million; suborbital 200-250k; VSS Enterprise broke up 2014; XCOR bankrupt 2017; FAA licence required; liability framework gaps."
+        }
+      ]
+    },
+    {
+      "claim_id": "deloitte-tmt-predictions-2017-002",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: DDoS attack sizes grew on their ordinary path, with the 1.35 Tbit/s record only in February 2018; no barrier applies, the forecast frequency was set too high.",
+      "evidence": [
+        {
+          "url": "https://github.blog/news-insights/company-news/ddos-incident-report/",
+          "title": "February 28th DDoS Incident Report - The GitHub Blog",
+          "shows": "Memcached amplification attack peaked at 1.35 Tbit/s on 2018-02-28."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-strategic-predictions-2011-002",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: no bubble burst; Twitter IPO at about USD 31 billion (Nov 2013) and the USD 19 billion WhatsApp purchase (Feb 2014) show valuations rose. Forecast direction wrong; no barrier.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/WhatsApp",
+          "title": "WhatsApp - Wikipedia",
+          "shows": "Facebook agreed to buy WhatsApp for USD 19 billion on 19 Feb 2014."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Twitter,_Inc.",
+          "title": "Twitter, Inc. - Wikipedia",
+          "shows": "IPO on 7 Nov 2013, first-day valuation about USD 31 billion."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-004",
+      "primary": "technical",
+      "secondary": [
+        "cost"
+      ],
+      "reason": "confirm: tiny ring, pin and card computers with high-resolution displays did not appear; early wearables had poor battery life and small low-resolution screens, and the wearable page names batteries, heat and price. Weakly shown.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Wearable_computer",
+          "title": "Wearable computer - Wikipedia",
+          "shows": "Names batteries and heat dissipation as technical issues; price one of the biggest challenges."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Smartwatch",
+          "title": "Smartwatch - Wikipedia",
+          "shows": "Early smartwatches: poor battery life, small hard-to-read 90x126 monochrome screens, 108 g weight."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-120",
+      "primary": "technical",
+      "secondary": [
+        "acceptance"
+      ],
+      "reason": "confirm: grammar and style checkers miss errors and flag correct text; Pullum (2007) said they do more harm than good, so automatic editing did not reach the forecast quality.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Grammar_checker",
+          "title": "Grammar checker - Wikipedia",
+          "shows": "Checkers miss errors and flag correct text; Pullum 2007: generally do more harm than good; built into Word since 1992."
+        }
+      ]
+    },
+    {
+      "claim_id": "deloitte-tmt-predictions-2011-009",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: US DVR penetration rose 32% (2009) to 38% (2010) on an ordinary path; the page names no adoption barrier, and the 50% level came later.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Digital_video_recorder",
+          "title": "Digital video recorder - Wikipedia",
+          "shows": "US TV households with DVR: 32% in 2009, 38% in 2010; no adoption barrier named."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2015-033",
+      "primary": "acceptance",
+      "secondary": [
+        "regulation"
+      ],
+      "reason": "confirm: 63% of US adults have little or no confidence that ways to trade or use crypto are safe and reliable; only 17% have ever used it (Pew 2024).",
+      "evidence": [
+        {
+          "url": "https://www.pewresearch.org/short-reads/2024/10/24/majority-of-americans-arent-confident-in-the-safety-and-reliability-of-cryptocurrency/",
+          "title": "Majority of Americans aren't confident in the safety and reliability of cryptocurrency - Pew Research Center",
+          "shows": "63% little or no confidence crypto is safe and reliable; 17% have ever invested in, traded or used it."
+        }
+      ]
+    },
+    {
+      "claim_id": "deloitte-tmt-predictions-2009-010",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: App Store downloads grew fast but reached 3 billion cumulative only by Jan 2010, far below 10 billion in 2009; no barrier named, the level was set too high.",
+      "evidence": [
+        {
+          "url": "https://www.apple.com/newsroom/2010/01/05Apples-App-Store-Downloads-Top-Three-Billion/",
+          "title": "Apple's App Store Downloads Top Three Billion - Apple Newsroom",
+          "shows": "More than three billion apps downloaded in less than 18 months, as of 5 Jan 2010."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-079",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: grader evidence shows S&P 500 losses over 1999-2009 but no opened page states the cause of the result for this claim.",
+      "evidence": []
+    },
+    {
+      "claim_id": "et-2012-016",
+      "primary": "technical",
+      "secondary": [
+        "cost",
+        "complements"
+      ],
+      "reason": "confirm: volumetric displays need about three orders of magnitude more bandwidth and two to three more compute than 2D, and trade occlusion against vertical parallax.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Volumetric_display",
+          "title": "Volumetric display - Wikipedia",
+          "shows": "About 135 GB/s vs 135 MB/s for 2D; 2-3 orders more compute; occlusion only at cost of vertical parallax; not widely used."
+        }
+      ]
+    },
+    {
+      "claim_id": "health-2012-011",
+      "primary": "regulation",
+      "secondary": [
+        "acceptance"
+      ],
+      "reason": "confirm: China bans reproductive embryo manipulation (2001 rules, 2020 criminal law), He Jiankui got three years in 2019, and WHO says heritable editing should be banned.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/He_Jiankui_affair",
+          "title": "He Jiankui affair - Wikipedia",
+          "shows": "Three-year sentence Dec 2019; 2001 rules and 2020 criminal law amendment ban embryo gene editing for reproduction; WHO committee: heritable editing should be banned."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-139",
+      "primary": "complements",
+      "secondary": [
+        "acceptance",
+        "technical"
+      ],
+      "reason": "correct: the CDSS page names a cause: workflow integration was the large roadblock (standalone systems made clinicians re-enter data), plus clinician trust and the work of keeping knowledge current; most offerings not widely adopted. Low certainty.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Clinical_decision_support_system",
+          "title": "Clinical decision support system - Wikipedia",
+          "shows": "Workflow integration historically a large roadblock; standalone systems forced data re-entry; widespread adoption not achieved; alert fatigue; hard to keep clinical knowledge current."
+        }
+      ]
+    },
+    {
+      "claim_id": "et-2012-061",
+      "primary": "technical",
+      "secondary": [
+        "complements",
+        "market"
+      ],
+      "reason": "confirm: transparent PV trades transparency against output (up to 10% efficiency), earlier silicon and perovskite attempts had little success, and products stayed at pilot scale in 2023.",
+      "evidence": [
+        {
+          "url": "https://www.solarpowerworldonline.com/2023/03/is-it-finally-time-to-take-solar-windows-seriously/",
+          "title": "Is it finally time to take solar windows seriously? - Solar Power World",
+          "shows": "Transparency vs output trade-off; not huge energy generators; not in full-scale production; still raising money for a manufacturing line; relies on window makers."
+        }
+      ]
+    },
+    {
+      "claim_id": "deloitte-tmt-predictions-2011-015",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: 49 LTE operators launched by Jan 2012 against a ceiling of 30; the forecast was too low (an above-forecast case for the D64 screen); no barrier applies.",
+      "evidence": [
+        {
+          "url": "https://www.rcrwireless.com/20120105/americas/gsa-counts-49-lte-operators-globally-with-4-in-latin-america-caribbean-2",
+          "title": "GSA counts 49 LTE operators globally - RCR Wireless",
+          "shows": "GSA confirmed 49 LTE operators had launched commercial service by 5 Jan 2012."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-061",
+      "primary": "acceptance",
+      "secondary": [
+        "complements"
+      ],
+      "reason": "correct: the videotelephony page names a cause, not only the shortfall: video adds the burden of an acceptable on-screen appearance, and studies found it impaired communication; codecs and bandwidth were practical by the early 2000s. Low certainty.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Videotelephony",
+          "title": "Videotelephony - Wikipedia",
+          "shows": "Low-cost video calls practical from early 2000s; burden of on-screen appearance absent in audio calls; Chapanis studies: video impaired communication; interoperability limits; 7% of Americans made a mobile video call by 2010."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-176",
+      "primary": "acceptance",
+      "secondary": [
+        "technical",
+        "substitution"
+      ],
+      "reason": "confirm: smart glasses drew privacy concerns and venue bans, Glass retail ended Jan 2015 after negative public reaction, and only 12% would wear them; handheld screens kept the reading role.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Smart_glasses",
+          "title": "Smart glasses - Wikipedia",
+          "shows": "Privacy concerns; casinos and businesses banned Glass; retail availability ended Jan 2015 after negative public reaction; Forrester: about 12% would wear."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2004-020",
+      "primary": "complements",
+      "secondary": [
+        "technical",
+        "cost",
+        "market"
+      ],
+      "reason": "confirm: IEEE 802.15.3a deadlocked and dissolved in 2006, so UWB PANs lost their industry standard; the page also names implementation cost and performance below expectations, and vendors closed 2008-2009.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ultra-wideband",
+          "title": "Ultra-wideband - Wikipedia",
+          "shows": "Slow standards progress, cost of initial implementation and performance below expectations limited UWB consumer use; 802.15.3a dissolved 2006; vendors ceased operations 2008-2009."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/WiMedia_Alliance",
+          "title": "WiMedia Alliance - Wikipedia",
+          "shows": "Alliance dissolved 2010."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-211",
+      "primary": "market",
+      "secondary": [],
+      "reason": "confirm: the 2007-2009 Great Recession, from a housing bubble, a shadow-banking run and weak financial regulation, broke continuous expansion. Fit to the list is loose; not a technology claim (D64 screen).",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Great_Recession",
+          "title": "Great Recession - Wikipedia",
+          "shows": "US recession Dec 2007 to Jun 2009; causes: housing bubble, shadow banking run, weak regulation of derivatives, high private debt."
+        }
+      ]
+    },
+    {
+      "claim_id": "et-2012-054",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: grader evidence shows narrative generation stayed niche in games (genAI used mostly for art, LLM narrative still research) but no opened page states why.",
+      "evidence": []
+    },
+    {
+      "claim_id": "et-2012-070",
+      "primary": "technical",
+      "secondary": [
+        "cost"
+      ],
+      "reason": "confirm: piezoelectric floor tiles yield tiny energy; one calculation gives 0.02% of an average European's energy needs from four hours of walking, so it cannot serve as a power source.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Pavegen",
+          "title": "Pavegen - Wikipedia",
+          "shows": "Four hours of walking on Pavegen generates 0.02% of average European energy needs; The Register: tiny, pointless amounts of energy."
+        }
+      ]
+    },
+    {
+      "claim_id": "et-2012-053",
+      "primary": "technical",
+      "secondary": [
+        "cost",
+        "regulation"
+      ],
+      "reason": "correct: price was high (USD 450k+), but over 700 tickets sold before 2014 and demand outran flights; the page shows the binding limits were vehicle delays from 2008, the 2014 crash, groundings and a 2024 pause to build a new vehicle for more flights.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Virgin_Galactic",
+          "title": "Virgin Galactic - Wikipedia",
+          "shows": "Launch dates slipped 2009-2015; VSS Enterprise crash 2014; FAA grounding 2021; commercial service only June 2023; paused mid-2024 to develop Delta class for higher flight frequency; tickets USD 450k (2022)."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Space_tourism",
+          "title": "Space tourism - Wikipedia",
+          "shows": "Over 700 suborbital tickets sold before the October 2014 Enterprise crash."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-strategic-predictions-2018-007",
+      "primary": "regulation",
+      "secondary": [
+        "market"
+      ],
+      "reason": "confirm: the ePrivacy Regulation was never adopted; contested points (cookie walls, data retention, national security exemptions) kept it in negotiation, so the predicted cookie limits did not arrive.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/EPrivacy_Regulation",
+          "title": "ePrivacy Regulation - Wikipedia",
+          "shows": "Still not adopted; 2021 objections on cookie walls, data retention and national security exemptions; trilogue ongoing."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2006-006",
+      "primary": "substitution",
+      "secondary": [
+        "complements"
+      ],
+      "reason": "confirm: Google dropped Gears in 2010 in favour of standardised HTML5 offline methods, which took the role of offline Ajax add-ons.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gears_(software)",
+          "title": "Gears (software) - Wikipedia",
+          "shows": "Discontinued in favor of the standardized HTML5 methods that became prevalent; development stopped Feb 2010."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-214",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: no opened page shows why personal assistants do not exchange knowledge structures directly; evidence shows only the absence.",
+      "evidence": []
+    },
+    {
+      "claim_id": "et-2012-009",
+      "primary": "overreach",
+      "secondary": [],
+      "reason": "confirm: Cisco counted 8.7 billion connected objects in 2012, below the 10 billion forecast, on an ordinary growth path; no barrier involved.",
+      "evidence": [
+        {
+          "url": "https://blogs.cisco.com/news/cisco-connections-counter",
+          "title": "Cisco Connections Counter - Cisco Blogs",
+          "shows": "8.7 billion connected objects in 2012; about 80 new connections per second in 2013."
+        }
+      ]
+    },
+    {
+      "claim_id": "hz-2014-069",
+      "primary": "regulation",
+      "secondary": [
+        "complements",
+        "technical"
+      ],
+      "reason": "confirm: commercial microreactors wait on NRC licensing (Oklo Eielson 2030 pending NRC) and reactor-ready HALEU/TRISO fuel; first units target 2028 and several designs reached criticality only in 2026.",
+      "evidence": [
+        {
+          "url": "https://www.powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028/",
+          "title": "The Janus Five: 20 commercial nuclear microreactors starting in 2028 - POWER Magazine",
+          "shows": "Vendors pursue NRC-licensed projects; Oklo commercial operation 2030 pending NRC; HALEU access does not give reactor-ready fuel; first operations 2028 or later."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-242",
+      "primary": "technical",
+      "secondary": [],
+      "reason": "confirm: causes of mitochondrial decline remain unclear, hallmarks of aging are interconnected, and not all are backed by interventions, so understanding did not reach the forecast level.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Hallmarks_of_aging",
+          "title": "Hallmarks of aging - Wikipedia",
+          "shows": "Reasons for mitochondrial decline still quite unclear; hallmarks interconnected; not all hallmarks supported by interventions that ameliorate aging."
+        }
+      ]
+    },
+    {
+      "claim_id": "et-2011-059",
+      "primary": "acceptance",
+      "secondary": [
+        "substitution"
+      ],
+      "reason": "confirm: the mass-market 3D display, 3D TV, was dropped because buyers did not rank it a top buying consideration and rarely used it, glasses clashed with second-screen use, and 4K/HDR drew demand instead.",
+      "evidence": [
+        {
+          "url": "https://techcrunch.com/2017/01/25/3d-tvs-are-dead",
+          "title": "3D TVs are dead - TechCrunch",
+          "shows": "LG: not a top buying consideration, low usage; glasses prevent phone use while watching; buyers want 4K and HDR."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-strategic-predictions-2004-004",
+      "primary": "overreach",
+      "secondary": [
+        "market"
+      ],
+      "reason": "confirm: device classes stayed distinct and makers launched narrow-purpose devices such as the Kindle (Nov 2007); convergence followed a partial path and no source names a barrier to it.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Amazon_Kindle",
+          "title": "Amazon Kindle - Wikipedia",
+          "shows": "First Kindle released 19 Nov 2007 as a narrow-purpose device for reading, separate from multipurpose hardware."
+        }
+      ]
+    },
+    {
+      "claim_id": "deloitte-tmt-predictions-2006-017",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: the claim names no measurable outcome and no opened page shows a cause.",
+      "evidence": []
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2010-002",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: CoDA stayed an analyst-defined pattern that Gartner relabelled in 2011; no opened page shows why it did not reach the plateau.",
+      "evidence": []
+    },
+    {
+      "claim_id": "kurzweil-1999-107",
+      "primary": "technical",
+      "secondary": [],
+      "reason": "confirm: AARON, the leading art program, could not learn new styles or imagery on its own and each capability was hand-coded, so no capable art-collaboration software existed in 2009. Low certainty.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AARON",
+          "title": "AARON - Wikipedia",
+          "shows": "Cannot learn new styles or imagery on its own; each new capability hand-coded by Cohen; development ended 2016."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2002-013",
+      "primary": "technical",
+      "secondary": [
+        "acceptance",
+        "substitution"
+      ],
+      "reason": "confirm: desktop dictation needed per-voice training and error rates rose to 45% at 100,000-word vocabularies; ASR did not see the expected increase in document production. The call-centre page cited by one coder covers IVR, not desktops.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Speech_recognition",
+          "title": "Speech recognition - Wikipedia",
+          "shows": "Per-voice training until speaker independence; error rates 3%/7%/45% for 200/5,000/100,000-word vocabularies; ASR has not seen expected increases in document production."
+        },
+        {
+          "url": "https://www.callcentrehelper.com/contact-centres-hang-up-on-speech-recognition-27512.htm",
+          "title": "Contact centres hang up on speech recognition - Call Centre Helper",
+          "shows": "2012 survey: users rate accuracy about 70%; accents and background noise degrade it."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2004-024",
+      "primary": "complements",
+      "secondary": [
+        "technical"
+      ],
+      "reason": "correct: overreach needs no named barrier, but both cited 2019 MuleSoft/Salesforce pages name one: 84% of organisations say integration challenges slow them, with data silos and legacy infrastructure; only 29% of applications integrated.",
+      "evidence": [
+        {
+          "url": "https://www.salesforce.com/news/press-releases/2019/02/27/global-study-majority-of-organizations-plan-to-digitally-transform-yet-84-of-businesses-stalled-by-integration-challenges/",
+          "title": "Global study: 84% of businesses stalled by integration challenges - Salesforce",
+          "shows": "84% say integration challenges slow digital transformation; data silos 83%; only 29% of applications integrated; legacy infrastructure most reported challenge; 29% report revenue growth from APIs."
+        },
+        {
+          "url": "https://www.salesforce.com/blog/mulesoft-connectivity-benchmark-report/",
+          "title": "MuleSoft Connectivity Benchmark Report - Salesforce",
+          "shows": "For 36% APIs generate over 25% of revenue; about 84% say integration challenges slow digital transformation."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-149",
+      "primary": "acceptance",
+      "secondary": [
+        "technical",
+        "complements"
+      ],
+      "reason": "confirm: Google Glass drew privacy concerns, venue bans and a negative public reaction that ended retail sales in Jan 2015; Forrester found only about 12% would wear such glasses.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Smart_glasses",
+          "title": "Smart glasses - Wikipedia",
+          "shows": "Privacy concerns; casinos and businesses banned Glass; retail ended Jan 2015 after negative public reaction; about 12% would wear."
+        }
+      ]
+    },
+    {
+      "claim_id": "hz-2014-070",
+      "primary": "technical",
+      "secondary": [
+        "cost"
+      ],
+      "reason": "confirm: NIF reached scientific breakeven in Dec 2022, but the 2.05 MJ pulse took about 300 MJ to make, a plant needs output an order of magnitude above laser energy, shots run about one per two days, and LIFE ended 2014.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/National_Ignition_Facility",
+          "title": "National Ignition Facility - Wikipedia",
+          "shows": "3.15 MJ from 2.05 MJ pulse (Dec 2022); pulse needed about 300 MJ; plant needs output an order of magnitude above laser input; about one shot per two days; LIFE ended April 2014."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-173",
+      "primary": "technical",
+      "secondary": [],
+      "reason": "confirm: nanorobotics stays in research; precise assembly needs very fine tools, and adhesion and static friction can exceed material strength so parts break before they move.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nanorobotics",
+          "title": "Nanorobotics - Wikipedia",
+          "shows": "Assembly needs very fine tools; adhesion and static friction can exceed material strength; long way before commercialization."
+        }
+      ]
+    },
+    {
+      "claim_id": "edu-2012-026",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: grader evidence shows micro:bit and CO2 sensor counts only; no opened page states why embedded classroom objects did not shape learning environments.",
+      "evidence": []
+    },
+    {
+      "claim_id": "gartner-hype-cycle-2004-021",
+      "primary": "technical",
+      "secondary": [
+        "cost",
+        "substitution"
+      ],
+      "reason": "confirm: OLED's biggest technical problem was limited lifetime with fast blue degradation, and shadow-mask patterning caused large yield loss; substrate fabrication stayed costlier than TFT LCD.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/OLED",
+          "title": "OLED - Wikipedia",
+          "shows": "Limited lifetime the biggest technical problem; blue 14,000 h vs 25,000-40,000 h for LCD; shadow-mask yield loss on large displays; substrate costlier than TFT LCD as of 2018."
+        }
+      ]
+    },
+    {
+      "claim_id": "kurzweil-1999-174",
+      "primary": "technical",
+      "secondary": [],
+      "reason": "confirm: autonomous nanomachines do not work outside research: assembly is unsolved and adhesion and friction can exceed material strength; no commercial manufacturing use.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nanorobotics",
+          "title": "Nanorobotics - Wikipedia",
+          "shows": "Assembly needs very fine tools; adhesion and static friction can exceed material strength; long way before commercialization."
+        }
+      ]
+    },
+    {
+      "claim_id": "health-2012-037",
+      "primary": "cost",
+      "secondary": [
+        "market",
+        "acceptance"
+      ],
+      "reason": "correct: a cause is on record: Proteus (Abilify MyCite) failed mainly on payers, who would not pay about USD 1,650, double the plain drug, without proof of value; a failed USD 100M round and patient unease followed. Bankrupt June 2020.",
+      "evidence": [
+        {
+          "url": "https://medcitynews.com/2020/06/proteus-files-for-bankruptcy-where-did-it-falter/",
+          "title": "Proteus files for bankruptcy: where did it falter? - MedCity News",
+          "shows": "Insurers would not pay more; sensor drug about USD 1,650, double the brand drug; weak evidence of adherence benefit; patients wary of monitoring; failed USD 100M round; Otsuka partnership ended."
+        }
+      ]
+    },
+    {
+      "claim_id": "gartner-strategic-predictions-2019-010",
+      "primary": "regulation",
+      "secondary": [
+        "acceptance"
+      ],
+      "reason": "confirm: the public standard did not change: ICD-11 lists compulsive buying-shopping only under other specified impulse control disorders, and DSM-5 left it out of addictive disorders because the question is still debated.",
+      "evidence": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Compulsive_buying_disorder",
+          "title": "Compulsive buying disorder - Wikipedia",
+          "shows": "ICD-11 code 6C7Y other specified impulse control disorders; DSM-5 excluded it from addictive disorders due to ongoing debate."
+        }
+      ]
+    },
+    {
+      "claim_id": "deloitte-tmt-predictions-2002-001",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: grader evidence shows BlackBerry subscriber counts and a 2% UK non-SMS data revenue share, but no opened page names what limited business mobile take-up.",
+      "evidence": []
+    },
+    {
+      "claim_id": "hz-2014-018",
+      "primary": "unknown",
+      "secondary": [],
+      "reason": "confirm: closed-loop brain stimulation is approved only as therapy (epilepsy, Parkinson's); no opened page states why cognition-augmenting systems did not appear.",
+      "evidence": []
+    }
+  ]
+}
