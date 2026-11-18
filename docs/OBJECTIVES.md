@@ -17,6 +17,7 @@ Accuracy per publication, side by side and never ranked (D6, D17), and how accur
 
 - **State:** hit rates and intervals for every judgment and numeric source; trend persistence (D33); ranking and scenario measures (D31 to D34).
 - **Next:** #87 accuracy by horizon; #88 herding and joint misses.
+- **Why forecasts miss (D63, 2026-11-18):** cause coding of 200 missed or partial technology forecasts, test fixed before coding (`data/measures/miss-causes/`). Feeds MZ's choice of non-technical driver lenses for the research database.
 
 ## 3. Adaptability: whether institutions update
 

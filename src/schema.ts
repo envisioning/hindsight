@@ -968,6 +968,58 @@ export const Milestone = z
   })
   .refine((m) => (m.status === "dated") === (m.year !== undefined), { message: "a dated milestone has a year, not_yet has none" });
 
+/**
+ * Why a technology forecast missed (D63). One primary cause per claim from a closed list.
+ * Families: `technical`; `non_technical` (cost, regulation, acceptance, complements, market);
+ * `forecast_error` (substitution, overreach); `unknown`.
+ */
+export const MissCause = z.enum([
+  "technical", "cost", "regulation", "acceptance", "complements", "market", "substitution", "overreach", "unknown",
+]);
+export const MISS_CAUSE_FAMILY: Record<z.infer<typeof MissCause>, "technical" | "non_technical" | "forecast_error" | "unknown"> = {
+  technical: "technical",
+  cost: "non_technical",
+  regulation: "non_technical",
+  acceptance: "non_technical",
+  complements: "non_technical",
+  market: "non_technical",
+  substitution: "forecast_error",
+  overreach: "forecast_error",
+  unknown: "unknown",
+};
+
+/** One sampled missed or partial technology forecast, the input a coder reads (D63). */
+export const MissCauseCandidate = z.object({
+  id: Id,
+  source_id: Id,
+  subject_id: Id.optional(),
+  verdict: z.enum(["miss", "partial"]),
+  batch: z.string().min(1),
+  claim: z.string().min(1),
+  /** The graders' readings, reasons and evidence notes, copied from the D16 grader files. */
+  graders: z.array(z.object({ reading: z.string().optional(), reason: z.string().optional(), evidence: z.array(z.object({ url: z.string(), shows: z.string().optional() })) })),
+});
+
+/** One coder call (D63). A cause other than `unknown` needs at least one evidence row that shows it. */
+export const MissCauseCall = z
+  .object({
+    claim_id: Id,
+    primary: MissCause,
+    secondary: z.array(MissCause.exclude(["unknown"])).max(3),
+    reason: z.string().min(1).max(400),
+    evidence: z.array(z.object({ url: Url, title: z.string().min(1), shows: z.string().min(1) })),
+  })
+  .refine((c) => c.primary === "unknown" || c.evidence.length > 0, { message: "a known cause needs evidence" })
+  .refine((c) => !c.secondary.includes(c.primary as never), { message: "secondary repeats primary" });
+
+export const MissCauseFile = z.object({
+  run: z.string().min(1),
+  batch: z.string().min(1),
+  role: z.enum(["A", "B", "adjudicator", "auditor"]),
+  agent: z.string().min(1),
+  calls: z.array(MissCauseCall),
+});
+
 export type Source = z.infer<typeof Source>;
 export type SourceEdition = z.infer<typeof SourceEdition>;
 export type OriginsRawFile = z.infer<typeof OriginsRawFile>;
@@ -1016,3 +1068,7 @@ export type AdaptationShockRow = z.infer<typeof AdaptationShockRow>;
 export type AdaptationHypeClass = z.infer<typeof AdaptationHypeClass>;
 export type AdaptationHypeReading = z.infer<typeof AdaptationHypeReading>;
 export type AdaptationHypeSubject = z.infer<typeof AdaptationHypeSubject>;
+export type MissCause = z.infer<typeof MissCause>;
+export type MissCauseCandidate = z.infer<typeof MissCauseCandidate>;
+export type MissCauseCall = z.infer<typeof MissCauseCall>;
+export type MissCauseFile = z.infer<typeof MissCauseFile>;

@@ -932,3 +932,39 @@ Result: 249 confirmed, 87 corrected (80 `narrower` to `no_link`; 3 `narrower` to
 **Cost.** Shortlisted works, often the more experimental ones, are left out of lead time until a later pass.
 
 **Overturned by.** A later pass with budget for the shortlisted works, or evidence that winners depict technologies differently from shortlisted works.
+
+## D63: Why technology forecasts miss (miss-cause coding)
+
+*Recorded 2026-11-18. Decided by MZ in chat: run this test before Envisioning adds non-technical driver lenses (regulation, acceptance, cost, infrastructure, institutions) to its technology research.*
+
+**Question.** When a published technology forecast misses or only partly comes true, is the main cause technical, or something outside the technology?
+
+**Sample.** Every judgment source with a D20 final file; final verdict `miss` or `partial`; the claim's subject is of kind `technology` (Envisioning posters: every claim). On 2026-11-18: 605 claims over 502 subjects. One claim per subject, then 200 subjects, both picked by lowest sha256 of `d63:<run>:<id>` (`scripts/causes/candidates.mjs`). One claim per subject keeps a technology that appears in many Hype Cycle editions from counting many times. The sample is proportional to the record: Kurzweil and the Hype Cycle carry half of it.
+
+**Coding (D20 pattern).** Two blind coder agents per claim (`docs/grading/cause-coder.md`), batches of 40. One primary cause from a closed list, up to three secondary causes:
+- `technical`: the technology did not work, perform or scale well enough.
+- `cost`: it worked, but price or unit economics stayed too high for the forecast market.
+- `regulation`: law, approval, licensing, liability or public standards held it back.
+- `acceptance`: people or organisations did not want it: behaviour, values, privacy, safety, trust, stigma.
+- `complements`: missing infrastructure, ecosystem, content, industry standards or supply chain.
+- `market`: business model, incumbents, platform contests, company failure, funding.
+- `substitution`: another technology or product met the need instead.
+- `overreach`: the technology followed an ordinary adoption path; the forecast set the date or level beyond it, and no source names a barrier.
+- `unknown`: no evidence the coder opened shows the cause.
+
+Families: `technical`; `non_technical` (cost, regulation, acceptance, complements, market); `forecast_error` (substitution, overreach); `unknown`. A known cause needs at least one evidence row that shows the cause, not only the shortfall. Coders reuse grader evidence where it shows the cause, else open a page with WebFetch; at most 4 WebSearch calls per coder.
+
+**Agreement.** Cohen's kappa on the primary family, at least 0.6 (D11), or the prompt is revised and the batch recoded. Kappa on the nine causes is reported. An adjudicator agent settles every claim where the two primary causes differ. An auditor agent checks a fixed-seed sample of 50 agreed claims (seed `d63:<run>:audit`); a correction replaces the call, and the error rate is published.
+
+**Test, fixed before coding.** H1: among claims with a known primary cause, the share in `non_technical`, with a Wilson 95% interval.
+- **Holds** if the lower bound is above 50%.
+- **Fails** if the upper bound is below 50%.
+- **Inconclusive** otherwise, or if more than 40% of the sample is `unknown`.
+
+Also reported, not tested: the share with any non-technical cause (primary or secondary); the share of each cause; H1 with `cost` counted as technical; H1 by source; `technical` against `non_technical` only (forecast errors left out). The per-cause shares are the input to MZ's lens list; they do not choose it.
+
+**Why.** Hindsight already holds the shortfall and its evidence for each graded claim. The cause is the missing column. A rule fixed before coding lets the claim fail.
+
+**Cost.** 200 of 502 subjects. Agent coders share blind spots, and causes are more contestable than verdicts: most misses have several causes, and the primary one is a judgment. Graders recorded whether a forecast came true, not why, so many causes need new evidence.
+
+**Overturned by.** An audit error rate above 15% on primary family, or a later full-population run that disagrees with this sample.
