@@ -48,7 +48,7 @@ Two sources. (1) The "Outturn data" rows of the same database for all four serie
 
 ## Editions
 
-33 editions, all `complete` (every scope series is present for every EFO row). Entry counts are in `PROGRESS.md` (920 entries in total).
+34 editions, all `complete` (every scope series is present for every EFO row). Entry counts are in `PROGRESS.md` (948 entries in total). Edition `2026-10` (published 2026-10-28) was captured from Tables A.1 and A.9 of the October 2026 EFO web report (Wayback snapshot 2026-11-17, printed to one decimal place).
 
 ## Open problems and source anomalies
 
